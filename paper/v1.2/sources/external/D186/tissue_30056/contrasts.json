@@ -1,0 +1,1806 @@
+{
+  "capture__common__average_gain": {
+    "left": "capture__common__own__average",
+    "mean": {
+      "accuracy": 0.125,
+      "partner_accuracy": -0.125,
+      "preference": 0.25,
+      "projection_gap": 0.21309426206950335,
+      "theta_corr_parent": -0.012270427553080512
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.6919732710127316,
+        "theta_corr_parent": 0.007500528404826512
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.03977798427174287,
+        "theta_corr_parent": 0.03215381587701879
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.011351763775299561,
+        "theta_corr_parent": 0.01847287394043587
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.10927402921823948,
+        "theta_corr_parent": -0.10720892843460324
+      }
+    ],
+    "right": "input__common"
+  },
+  "capture__common__average_source": {
+    "left": "capture__common__own__average",
+    "mean": {
+      "accuracy": 0.25,
+      "partner_accuracy": -0.25,
+      "preference": 0.5,
+      "projection_gap": 0.4261885241390067,
+      "theta_corr_parent": 0.18769881253502782
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7033250347880311,
+        "theta_corr_parent": 0.17227429506328729
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.14905201348998234,
+        "theta_corr_parent": 0.07609648406106154
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7033250347880311,
+        "theta_corr_parent": 0.2632754534891969
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.14905201348998234,
+        "theta_corr_parent": 0.23914901752656553
+      }
+    ],
+    "right": "capture__common__partner__average"
+  },
+  "capture__common__capture_gain": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.25,
+      "partner_accuracy": -0.25,
+      "preference": 0.5,
+      "projection_gap": 0.37421619209968804,
+      "theta_corr_parent": -0.0071237468989070254
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7920103145550836,
+        "theta_corr_parent": -0.0032583325587256795
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.06506122693306447,
+        "theta_corr_parent": -0.10741237332124397
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.008663069811934418,
+        "theta_corr_parent": 0.0007692245447396273
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7612526109647986,
+        "theta_corr_parent": 0.08140649373960192
+      }
+    ],
+    "right": "common__own__live"
+  },
+  "capture__common__erasure": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.4375,
+      "partner_accuracy": -0.0625,
+      "preference": 0.5,
+      "projection_gap": 0.4148344038063973,
+      "theta_corr_parent": 0.09614563960896025
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.46408934877103364,
+        "theta_corr_parent": -0.035067643316500474
+      },
+      {
+        "accuracy": 0.75,
+        "partner_accuracy": 0.0,
+        "preference": 0.75,
+        "projection_gap": 0.04985916822993551,
+        "theta_corr_parent": 0.030163714076380563
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.49324279249925806,
+        "theta_corr_parent": 0.1595057923602661
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": 0.25,
+        "preference": 0.25,
+        "projection_gap": 0.652146305725362,
+        "theta_corr_parent": 0.22998069531569482
+      }
+    ],
+    "right": "capture__common__history_erased__live"
+  },
+  "capture__common__feedback": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.09375,
+      "partner_accuracy": -0.09375,
+      "preference": 0.1875,
+      "projection_gap": 0.11215647326721655,
+      "theta_corr_parent": -0.04131181218087995
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.11211696517242306,
+        "theta_corr_parent": -0.085287187268316
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.043894310563541414,
+        "theta_corr_parent": -0.04318699157855986
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.007307120937188039,
+        "theta_corr_parent": -0.003667378345895339
+      },
+      {
+        "accuracy": 0.375,
+        "partner_accuracy": -0.375,
+        "preference": 0.75,
+        "projection_gap": 0.38771035939717247,
+        "theta_corr_parent": -0.033105691530748604
+      }
+    ],
+    "right": "capture__common__own__fixed"
+  },
+  "capture__common__fixed_vs_average": {
+    "left": "capture__common__own__fixed",
+    "mean": {
+      "accuracy": 0.03125,
+      "partner_accuracy": -0.03125,
+      "preference": 0.0625,
+      "projection_gap": 0.08958366846967739,
+      "theta_corr_parent": 0.011011853812545751
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.14142452478526427,
+        "theta_corr_parent": 0.013948285436342245
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.005483432460413495,
+        "theta_corr_parent": -0.015288083704075583
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.007772737461761187,
+        "theta_corr_parent": 0.0008137621185778099
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": -0.125,
+        "preference": 0.25,
+        "projection_gap": 0.21462084409209758,
+        "theta_corr_parent": 0.044573451399338535
+      }
+    ],
+    "right": "capture__common__own__average"
+  },
+  "capture__common__gain": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.25,
+      "partner_accuracy": -0.25,
+      "preference": 0.5,
+      "projection_gap": 0.41483440380639724,
+      "theta_corr_parent": -0.04257038592141472
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.945514760970419,
+        "theta_corr_parent": -0.06383837342714724
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.009599758752212043,
+        "theta_corr_parent": -0.02632125940561665
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.011817380299872726,
+        "theta_corr_parent": 0.01561925771311834
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7116052327075095,
+        "theta_corr_parent": -0.09574116856601331
+      }
+    ],
+    "right": "input__common"
+  },
+  "capture__common__organization": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.3125,
+      "partner_accuracy": -0.125,
+      "preference": 0.4375,
+      "projection_gap": 0.2401261429752613,
+      "theta_corr_parent": 0.07363321544322891
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.38940716699380473,
+        "theta_corr_parent": 0.07682382337230192
+      },
+      {
+        "accuracy": 0.75,
+        "partner_accuracy": -0.25,
+        "preference": 1.0,
+        "projection_gap": 0.18351111889615807,
+        "theta_corr_parent": 0.15363095825910877
+      },
+      {
+        "accuracy": 0.25,
+        "partner_accuracy": -0.25,
+        "preference": 0.5,
+        "projection_gap": 0.14343316956062913,
+        "theta_corr_parent": 0.04093186894830436
+      },
+      {
+        "accuracy": 0.25,
+        "partner_accuracy": 0.0,
+        "preference": 0.25,
+        "projection_gap": 0.24415311645045326,
+        "theta_corr_parent": 0.023146211193200567
+      }
+    ],
+    "right": "capture__common__own_scrambled__live"
+  },
+  "capture__common__reference_refresh": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.046875,
+      "partner_accuracy": -0.015625,
+      "preference": 0.0625,
+      "projection_gap": -0.023753612062267945,
+      "theta_corr_parent": 0.04197820303270683
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.01625204306398005,
+        "theta_corr_parent": 0.059534910375112715
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": 0.0,
+        "preference": 0.125,
+        "projection_gap": 0.02298288615157533,
+        "theta_corr_parent": 0.034743950073536936
+      },
+      {
+        "accuracy": 0.0625,
+        "partner_accuracy": -0.0625,
+        "preference": 0.125,
+        "projection_gap": -0.00831383331826786,
+        "theta_corr_parent": 0.007763703774130021
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0934314580183992,
+        "theta_corr_parent": 0.06587024790804766
+      }
+    ],
+    "right": "capture__common__own__reference_held"
+  },
+  "capture__common__source": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.5,
+      "partner_accuracy": -0.5,
+      "preference": 1.0,
+      "projection_gap": 0.8296688076127945,
+      "theta_corr_parent": 0.3854527522036541
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.9573321412702916,
+        "theta_corr_parent": 0.1401581421914041
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7020054739552974,
+        "theta_corr_parent": 0.4729945500666989
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.9573321412702916,
+        "theta_corr_parent": 0.5519196372140212
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7020054739552974,
+        "theta_corr_parent": 0.37673867934249217
+      }
+    ],
+    "right": "capture__common__partner__live"
+  },
+  "capture__common__versus_average": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.125,
+      "partner_accuracy": -0.125,
+      "preference": 0.25,
+      "projection_gap": 0.20174014173689392,
+      "theta_corr_parent": -0.0302999583683342
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.2535414899576873,
+        "theta_corr_parent": -0.07133890183197375
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.04937774302395491,
+        "theta_corr_parent": -0.058475075282635444
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.00046561652457314737,
+        "theta_corr_parent": -0.002853616227317529
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.60233120348927,
+        "theta_corr_parent": 0.01146775986858993
+      }
+    ],
+    "right": "capture__common__own__average"
+  },
+  "capture__common__writer": {
+    "left": "capture__common__own__live",
+    "mean": {
+      "accuracy": 0.25,
+      "partner_accuracy": -0.25,
+      "preference": 0.5,
+      "projection_gap": 0.41483440380639724,
+      "theta_corr_parent": -0.04257038592141472
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.945514760970419,
+        "theta_corr_parent": -0.06383837342714724
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.009599758752212043,
+        "theta_corr_parent": -0.02632125940561665
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.011817380299872726,
+        "theta_corr_parent": 0.01561925771311834
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7116052327075095,
+        "theta_corr_parent": -0.09574116856601331
+      }
+    ],
+    "right": "capture__common__own__writer_off"
+  },
+  "capture__residual__average_gain": {
+    "left": "capture__residual__own__average",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.0,
+      "preference": -0.015625,
+      "projection_gap": 0.21956528597412228,
+      "theta_corr_parent": 0.25943679383760965
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.2743305561116863,
+        "theta_corr_parent": 0.3717768140294607
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.16681491754163102,
+        "theta_corr_parent": 0.245930409731184
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.143163255617048,
+        "theta_corr_parent": 0.39402248974790116
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.29395241462612387,
+        "theta_corr_parent": 0.026017461841892756
+      }
+    ],
+    "right": "input__residual"
+  },
+  "capture__residual__average_source": {
+    "left": "capture__residual__own__average",
+    "mean": {
+      "accuracy": 0.484375,
+      "partner_accuracy": -0.5,
+      "preference": 0.984375,
+      "projection_gap": 0.6829939267030354,
+      "theta_corr_parent": 0.2180930660945678
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.7377373081580698,
+        "theta_corr_parent": 0.11728419586634203
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.5413726031460346,
+        "theta_corr_parent": 0.3684248473291256
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.6500646040929248,
+        "theta_corr_parent": 0.268747188295641
+      },
+      {
+        "accuracy": 0.4375,
+        "partner_accuracy": -0.5,
+        "preference": 0.9375,
+        "projection_gap": 0.8028011914151121,
+        "theta_corr_parent": 0.1179160328871626
+      }
+    ],
+    "right": "capture__residual__partner__average"
+  },
+  "capture__residual__capture_gain": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.015625,
+      "preference": -0.015625,
+      "projection_gap": 0.06629427507778271,
+      "theta_corr_parent": 0.08888956880845261
+    },
+    "messages": [
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0625,
+        "preference": -0.125,
+        "projection_gap": 0.1394118709579687,
+        "theta_corr_parent": 0.13850097213227092
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": -0.012845884151899023,
+        "theta_corr_parent": 0.07476617501517428
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0788688593654778,
+        "theta_corr_parent": 0.1433970860177184
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": 0.0,
+        "preference": 0.125,
+        "projection_gap": 0.217479972870539,
+        "theta_corr_parent": -0.0011059579313532214
+      }
+    ],
+    "right": "residual__own__live"
+  },
+  "capture__residual__erasure": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.6875,
+      "partner_accuracy": -0.234375,
+      "preference": 0.921875,
+      "projection_gap": 0.44627066283314343,
+      "theta_corr_parent": 0.24501467273035238
+    },
+    "messages": [
+      {
+        "accuracy": 0.6875,
+        "partner_accuracy": -0.4375,
+        "preference": 1.125,
+        "projection_gap": 0.3540608459176988,
+        "theta_corr_parent": 0.1659736865802831
+      },
+      {
+        "accuracy": 0.9375,
+        "partner_accuracy": -0.25,
+        "preference": 1.1875,
+        "projection_gap": 0.45949858344801314,
+        "theta_corr_parent": 0.2971830315692695
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.25,
+        "preference": 0.75,
+        "projection_gap": 0.4264385298790435,
+        "theta_corr_parent": 0.3452234815543802
+      },
+      {
+        "accuracy": 0.625,
+        "partner_accuracy": 0.0,
+        "preference": 0.625,
+        "projection_gap": 0.545084692087818,
+        "theta_corr_parent": 0.17167849121747675
+      }
+    ],
+    "right": "capture__residual__history_erased__live"
+  },
+  "capture__residual__feedback": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": -0.03125,
+      "partner_accuracy": 0.015625,
+      "preference": -0.046875,
+      "projection_gap": -0.03160086141021154,
+      "theta_corr_parent": -0.006549961229213152
+    },
+    "messages": [
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0625,
+        "preference": -0.125,
+        "projection_gap": -0.055221471239871395,
+        "theta_corr_parent": -0.006601743966646367
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": -0.040065321147224636,
+        "theta_corr_parent": -0.010815049975545332
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.04218773749852443,
+        "theta_corr_parent": 0.008981243119924445
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.011071084244774293,
+        "theta_corr_parent": -0.017764294094585353
+      }
+    ],
+    "right": "capture__residual__own__fixed"
+  },
+  "capture__residual__fixed_vs_average": {
+    "left": "capture__residual__own__fixed",
+    "mean": {
+      "accuracy": 0.03125,
+      "partner_accuracy": 0.0,
+      "preference": 0.03125,
+      "projection_gap": 0.006246228211659096,
+      "theta_corr_parent": 0.018051238062173666
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.009512306112920255,
+        "theta_corr_parent": 0.0228805994027209
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.002713811402238503,
+        "theta_corr_parent": 0.019098239414530482
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0019243752245402118,
+        "theta_corr_parent": 0.024738603358178873
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": 0.0,
+        "preference": 0.125,
+        "projection_gap": 0.014683170556017838,
+        "theta_corr_parent": 0.005487510073264409
+      }
+    ],
+    "right": "capture__residual__own__average"
+  },
+  "capture__residual__gain": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.015625,
+      "preference": -0.03125,
+      "projection_gap": 0.19421065277556981,
+      "theta_corr_parent": 0.2709380706705702
+    },
+    "messages": [
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0625,
+        "preference": -0.125,
+        "projection_gap": 0.22862139098473508,
+        "theta_corr_parent": 0.38805566946553527
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.1294634077966449,
+        "theta_corr_parent": 0.25421359917016917
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.09905114289398337,
+        "theta_corr_parent": 0.42774233622600444
+      },
+      {
+        "accuracy": 0.0625,
+        "partner_accuracy": 0.0,
+        "preference": 0.0625,
+        "projection_gap": 0.31970666942691595,
+        "theta_corr_parent": 0.013740677820571812
+      }
+    ],
+    "right": "input__residual"
+  },
+  "capture__residual__organization": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.4375,
+      "partner_accuracy": -0.234375,
+      "preference": 0.671875,
+      "projection_gap": 0.2129394158420859,
+      "theta_corr_parent": 0.17995248748850723
+    },
+    "messages": [
+      {
+        "accuracy": 0.6875,
+        "partner_accuracy": -0.4375,
+        "preference": 1.125,
+        "projection_gap": 0.39194936191401053,
+        "theta_corr_parent": 0.27066744311794433
+      },
+      {
+        "accuracy": 0.6875,
+        "partner_accuracy": -0.25,
+        "preference": 0.9375,
+        "projection_gap": 0.27598526565483955,
+        "theta_corr_parent": 0.30917663887510183
+      },
+      {
+        "accuracy": 0.25,
+        "partner_accuracy": -0.25,
+        "preference": 0.5,
+        "projection_gap": 0.156501807478341,
+        "theta_corr_parent": 0.08984271368400654
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": 0.0,
+        "preference": 0.125,
+        "projection_gap": 0.027321228321152524,
+        "theta_corr_parent": 0.05012315427697618
+      }
+    ],
+    "right": "capture__residual__own_scrambled__live"
+  },
+  "capture__residual__reference_refresh": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.078125,
+      "partner_accuracy": -0.015625,
+      "preference": 0.09375,
+      "projection_gap": 0.017827436157613126,
+      "theta_corr_parent": 0.0066084289230998045
+    },
+    "messages": [
+      {
+        "accuracy": 0.1875,
+        "partner_accuracy": -0.0625,
+        "preference": 0.25,
+        "projection_gap": 0.028504545096686897,
+        "theta_corr_parent": 0.013413139958227654
+      },
+      {
+        "accuracy": 0.0625,
+        "partner_accuracy": 0.0,
+        "preference": 0.0625,
+        "projection_gap": 0.019012771667171413,
+        "theta_corr_parent": 0.010064405843739799
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.0033306813088611158,
+        "theta_corr_parent": 0.00047573202806731885
+      },
+      {
+        "accuracy": 0.0625,
+        "partner_accuracy": 0.0,
+        "preference": 0.0625,
+        "projection_gap": 0.020461746557733085,
+        "theta_corr_parent": 0.0024804378623644457
+      }
+    ],
+    "right": "capture__residual__own__reference_held"
+  },
+  "capture__residual__source": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.53125,
+      "partner_accuracy": -0.515625,
+      "preference": 1.046875,
+      "projection_gap": 0.9046496000088218,
+      "theta_corr_parent": 0.3795028357744187
+    },
+    "messages": [
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.5,
+        "preference": 1.0,
+        "projection_gap": 0.8693856732588585,
+        "theta_corr_parent": 0.17739713078224983
+      },
+      {
+        "accuracy": 0.4375,
+        "partner_accuracy": -0.5,
+        "preference": 0.9375,
+        "projection_gap": 0.8335255614297438,
+        "theta_corr_parent": 0.6360906690066885
+      },
+      {
+        "accuracy": 0.5,
+        "partner_accuracy": -0.4375,
+        "preference": 0.9375,
+        "projection_gap": 0.9341003791970562,
+        "theta_corr_parent": 0.5007678347047392
+      },
+      {
+        "accuracy": 0.6875,
+        "partner_accuracy": -0.625,
+        "preference": 1.3125,
+        "projection_gap": 0.9815867861496281,
+        "theta_corr_parent": 0.2037557086039971
+      }
+    ],
+    "right": "capture__residual__partner__live"
+  },
+  "capture__residual__versus_average": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.015625,
+      "preference": -0.015625,
+      "projection_gap": -0.025354633198552447,
+      "theta_corr_parent": 0.011501276832960514
+    },
+    "messages": [
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0625,
+        "preference": -0.125,
+        "projection_gap": -0.04570916512695114,
+        "theta_corr_parent": 0.016278855436074532
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": -0.03735150974498613,
+        "theta_corr_parent": 0.00828318943898515
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.044112112723064645,
+        "theta_corr_parent": 0.03371984647810332
+      },
+      {
+        "accuracy": 0.125,
+        "partner_accuracy": 0.0,
+        "preference": 0.125,
+        "projection_gap": 0.02575425480079213,
+        "theta_corr_parent": -0.012276784021320944
+      }
+    ],
+    "right": "capture__residual__own__average"
+  },
+  "capture__residual__writer": {
+    "left": "capture__residual__own__live",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.015625,
+      "preference": -0.03125,
+      "projection_gap": 0.19421065277556981,
+      "theta_corr_parent": 0.2709380706705702
+    },
+    "messages": [
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0625,
+        "preference": -0.125,
+        "projection_gap": 0.22862139098473508,
+        "theta_corr_parent": 0.38805566946553527
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.1294634077966449,
+        "theta_corr_parent": 0.25421359917016917
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.09905114289398337,
+        "theta_corr_parent": 0.42774233622600444
+      },
+      {
+        "accuracy": 0.0625,
+        "partner_accuracy": 0.0,
+        "preference": 0.0625,
+        "projection_gap": 0.31970666942691595,
+        "theta_corr_parent": 0.013740677820571812
+      }
+    ],
+    "right": "capture__residual__own__writer_off"
+  },
+  "common__average_gain": {
+    "left": "common__own__average",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.05110865927225739,
+      "theta_corr_parent": -0.04719078586199511
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.19963489212705188,
+        "theta_corr_parent": -0.07849642569358822
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.05953123786418163,
+        "theta_corr_parent": 0.07839770574078503
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.00924179888389881,
+        "theta_corr_parent": 0.007896371437460886
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.04548969401830516,
+        "theta_corr_parent": -0.19656079493263812
+      }
+    ],
+    "right": "input__common"
+  },
+  "common__average_source": {
+    "left": "common__own__average",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.10221731854451478,
+      "theta_corr_parent": 0.06062317745424981
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1903930932431531,
+        "theta_corr_parent": 0.0494744751273572
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.01404154384587647,
+        "theta_corr_parent": 0.018104260695821467
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1903930932431531,
+        "theta_corr_parent": 0.09853116313972027
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.01404154384587647,
+        "theta_corr_parent": 0.07638281085410034
+      }
+    ],
+    "right": "common__partner__average"
+  },
+  "common__feedback": {
+    "left": "common__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.0039625340740334185,
+      "theta_corr_parent": -0.0062118216184154605
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.02238583988966708,
+        "theta_corr_parent": -0.0024897012744324876
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0016655427291199232,
+        "theta_corr_parent": -0.0044073498643149855
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0023708206016963135,
+        "theta_corr_parent": -0.0012802684724060875
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.00249934026271717,
+        "theta_corr_parent": -0.01666996686250828
+      }
+    ],
+    "right": "common__own__fixed"
+  },
+  "common__fixed_vs_average": {
+    "left": "common__own__fixed",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": -0.014452981639581577,
+      "theta_corr_parent": 0.01795596845790288
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.06851628560138365,
+        "theta_corr_parent": 0.020406086099599152
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0024042269542092765,
+        "theta_corr_parent": 0.007100758039157273
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.014766929973533419,
+        "theta_corr_parent": 0.008233930203323914
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0016583439762667962,
+        "theta_corr_parent": 0.03608309948953119
+      }
+    ],
+    "right": "common__own__average"
+  },
+  "common__gain": {
+    "left": "common__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.04061821170670923,
+      "theta_corr_parent": -0.035446639022507685
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.15350444641533534,
+        "theta_corr_parent": -0.06058004086842156
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.05546146818085243,
+        "theta_corr_parent": 0.08109111391562732
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.0031543104879382944,
+        "theta_corr_parent": 0.014850033168378712
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.049647378257289126,
+        "theta_corr_parent": -0.17714766230561524
+      }
+    ],
+    "right": "input__common"
+  },
+  "common__organization": {
+    "left": "common__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.0037018792859578008,
+      "theta_corr_parent": 0.0006312475504008687
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.01433599581579413,
+        "theta_corr_parent": 0.00284601700539569
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0012905696370321407,
+        "theta_corr_parent": -0.0014873359374315276
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.00038155383499827167,
+        "theta_corr_parent": -5.5609949149409976e-05
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.0013805371300709413,
+        "theta_corr_parent": 0.0012219190827887222
+      }
+    ],
+    "right": "common__own_scrambled__live"
+  },
+  "common__source": {
+    "left": "common__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.08123642341341845,
+      "theta_corr_parent": 0.04787643219165404
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1566587569032736,
+        "theta_corr_parent": 0.04435089238640588
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.005814089923563304,
+        "theta_corr_parent": 0.01321347453092786
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1566587569032736,
+        "theta_corr_parent": 0.07983632210251626
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.005814089923563304,
+        "theta_corr_parent": 0.054105039746766184
+      }
+    ],
+    "right": "common__partner__live"
+  },
+  "common__versus_average": {
+    "left": "common__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": -0.010490447565548159,
+      "theta_corr_parent": 0.011744146839487421
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.046130445711716574,
+        "theta_corr_parent": 0.017916384825166665
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0040697696833292,
+        "theta_corr_parent": 0.002693408174842288
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.012396109371837105,
+        "theta_corr_parent": 0.006953661730917826
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.004157684238983966,
+        "theta_corr_parent": 0.019413132627022905
+      }
+    ],
+    "right": "common__own__average"
+  },
+  "native_feedback": {
+    "left": "native__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.01643774045150746,
+      "theta_corr_parent": 0.025062659044558303
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.004048604621289167,
+        "theta_corr_parent": 0.030956012141788086
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.020629228741874284,
+        "theta_corr_parent": 0.029605861201042943
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.018605825841853052,
+        "theta_corr_parent": 0.036699755057582245
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.022467302601013338,
+        "theta_corr_parent": 0.0029890077778199353
+      }
+    ],
+    "right": "native__own__fixed"
+  },
+  "native_gain": {
+    "left": "native__own__live",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.0,
+      "preference": -0.015625,
+      "projection_gap": 0.11288577704099859,
+      "theta_corr_parent": 0.17903609447984623
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.06576601426422998,
+        "theta_corr_parent": 0.2350267958219236
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.14298454445487713,
+        "theta_corr_parent": 0.19739691426146372
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.18332138869696382,
+        "theta_corr_parent": 0.2671804696353007
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.059471160747923385,
+        "theta_corr_parent": 0.016540198200696965
+      }
+    ],
+    "right": "input__residual"
+  },
+  "native_organization": {
+    "left": "native__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.019937707336223846,
+      "theta_corr_parent": 0.011253849600083878
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.02799463752037707,
+        "theta_corr_parent": 0.017579428478434814
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.011709151001769835,
+        "theta_corr_parent": 0.013988689495239529
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.0017063225955814554,
+        "theta_corr_parent": 0.007365535007209156
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.03834071822716703,
+        "theta_corr_parent": 0.006081745419452014
+      }
+    ],
+    "right": "native__own_scrambled__live"
+  },
+  "reset_change": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.015030600656788544,
+      "theta_corr_parent": 0.003012407382271348
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.023443505762536447,
+        "theta_corr_parent": 0.014527901511340716
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.0006752525063332127,
+        "theta_corr_parent": -0.017949490106468804
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.005401386437502653,
+        "theta_corr_parent": 0.017164780572985414
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.04275553580845359,
+        "theta_corr_parent": -0.001693562448771932
+      }
+    ],
+    "right": "native__own__live"
+  },
+  "residual__average_gain": {
+    "left": "residual__own__average",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.0,
+      "preference": -0.015625,
+      "projection_gap": 0.13748957513043186,
+      "theta_corr_parent": 0.19168858683772033
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.10568336077261736,
+        "theta_corr_parent": 0.26695518222339343
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1506419030819512,
+        "theta_corr_parent": 0.19145262347148356
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.17957424692781676,
+        "theta_corr_parent": 0.29522318894195404
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.11405878973934207,
+        "theta_corr_parent": 0.013123352714050365
+      }
+    ],
+    "right": "input__residual"
+  },
+  "residual__average_source": {
+    "left": "residual__own__average",
+    "mean": {
+      "accuracy": 0.046875,
+      "partner_accuracy": -0.0625,
+      "preference": 0.109375,
+      "projection_gap": 0.11737049456782928,
+      "theta_corr_parent": 0.029315238946081963
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.07451066017328492,
+        "theta_corr_parent": 0.00442408731654613
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.07316539471582999,
+        "theta_corr_parent": 0.058140040007093524
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.1325897747487392,
+        "theta_corr_parent": 0.05460169211396765
+      },
+      {
+        "accuracy": 0.1875,
+        "partner_accuracy": -0.25,
+        "preference": 0.4375,
+        "projection_gap": 0.18921614863346295,
+        "theta_corr_parent": 9.513634672053684e-05
+      }
+    ],
+    "right": "residual__partner__average"
+  },
+  "residual__feedback": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.020667742472732457,
+      "theta_corr_parent": 0.025338044793101765
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.013632430488545552,
+        "theta_corr_parent": 0.031839582183263215
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.016531383748752265,
+        "theta_corr_parent": 0.023788203638826
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.013599885457118127,
+        "theta_corr_parent": 0.04292599376409527
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.03890727019651388,
+        "theta_corr_parent": 0.0027983995862225775
+      }
+    ],
+    "right": "residual__own__fixed"
+  },
+  "residual__fixed_vs_average": {
+    "left": "residual__own__fixed",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": -0.030240939905377184,
+      "theta_corr_parent": -0.03497812976870452
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.03010627123439647,
+        "theta_corr_parent": -0.049240067073392305
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.02486399488215954,
+        "theta_corr_parent": -0.03579340295531466
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.015254130125473747,
+        "theta_corr_parent": -0.053803932497763204
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.05073936337947897,
+        "theta_corr_parent": -0.0010751165483479097
+      }
+    ],
+    "right": "residual__own__average"
+  },
+  "residual__gain": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.0,
+      "preference": -0.015625,
+      "projection_gap": 0.1279163776977871,
+      "theta_corr_parent": 0.1820485018621176
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.08920952002676644,
+        "theta_corr_parent": 0.24955469733326432
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.14230929194854391,
+        "theta_corr_parent": 0.17944742415499487
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.17792000225946114,
+        "theta_corr_parent": 0.2843452502082861
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.10222669655637698,
+        "theta_corr_parent": 0.014846635751925033
+      }
+    ],
+    "right": "input__residual"
+  },
+  "residual__organization": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": 0.01631818589152941,
+      "theta_corr_parent": 0.010484154388705699
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.022107876259676806,
+        "theta_corr_parent": 0.017232363171652165
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.01075552124001558,
+        "theta_corr_parent": 0.01412124668273855
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.0005034378416466923,
+        "theta_corr_parent": 0.005165600609856283
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.031905908224778554,
+        "theta_corr_parent": 0.005417407090575796
+      }
+    ],
+    "right": "residual__own_scrambled__live"
+  },
+  "residual__source": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": -0.015625,
+      "partner_accuracy": 0.0,
+      "preference": -0.015625,
+      "projection_gap": 0.09231798417538098,
+      "theta_corr_parent": 0.019443907410901313
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.05325414020285353,
+        "theta_corr_parent": -0.0034620462064014063
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.05342941615937906,
+        "theta_corr_parent": 0.03826943414015986
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": 0.12484051083982728,
+        "theta_corr_parent": 0.04745803461366073
+      },
+      {
+        "accuracy": -0.0625,
+        "partner_accuracy": 0.0,
+        "preference": -0.0625,
+        "projection_gap": 0.13774786949946405,
+        "theta_corr_parent": -0.004489792903813933
+      }
+    ],
+    "right": "residual__partner__live"
+  },
+  "residual__versus_average": {
+    "left": "residual__own__live",
+    "mean": {
+      "accuracy": 0.0,
+      "partner_accuracy": 0.0,
+      "preference": 0.0,
+      "projection_gap": -0.009573197432644726,
+      "theta_corr_parent": -0.009640084975602755
+    },
+    "messages": [
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.01647384074585092,
+        "theta_corr_parent": -0.01740048489012909
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.008332611133407275,
+        "theta_corr_parent": -0.012005199316488663
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.00165424466835562,
+        "theta_corr_parent": -0.010877938733667936
+      },
+      {
+        "accuracy": 0.0,
+        "partner_accuracy": 0.0,
+        "preference": 0.0,
+        "projection_gap": -0.01183209318296509,
+        "theta_corr_parent": 0.0017232830378746677
+      }
+    ],
+    "right": "residual__own__average"
+  }
+}

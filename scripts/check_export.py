@@ -30,9 +30,11 @@ def main():
     publication_rows = json.loads((ROOT/'reproducibility/publication-files.json').read_text())['files']
     publications = {item['path']: item for item in publication_rows}
     allowed_paths = {'paper/v1.1/how-forms-become-reconstructible-v1.1.pdf',
-                     'paper/v1.1/how-forms-become-reconstructible-supporting-v1.1.pdf'}
+                     'paper/v1.1/how-forms-become-reconstructible-supporting-v1.1.pdf',
+                     'paper/v1.2/how-forms-become-reconstructible-v1.2.pdf',
+                     'paper/v1.2/how-forms-become-reconstructible-supporting-v1.2.pdf'}
     if set(publications) != allowed_paths:
-        errors.append('Publication exception does not match the two authorized PDFs')
+        errors.append('Publication exception does not match the four authorized versioned PDFs')
     for name, item in publications.items():
         p = ROOT/name
         if not p.is_file() or p.stat().st_size != item['bytes'] or hashlib.sha256(p.read_bytes()).hexdigest() != item['sha256']:
@@ -52,7 +54,7 @@ def main():
             errors.append('Over 256 KiB: '+str(rel))
         if sensitive.search(p.read_bytes()):
             errors.append('Credential-pattern match: '+str(rel))
-    for name in ['README.md','MANUSCRIPT.md','EVIDENCE_LEDGER.md','METHODS_AND_PROVENANCE.md','SUPPLEMENTARY_EVIDENCE.md','experiments/README.md','reproducibility/README.md','reproducibility/AVAILABILITY.md'] + [str(p.relative_to(ROOT)) for p in (ROOT/'paper/v1.1').glob('*.md')]:
+    for name in ['README.md','MANUSCRIPT.md','EVIDENCE_LEDGER.md','METHODS_AND_PROVENANCE.md','SUPPLEMENTARY_EVIDENCE.md','experiments/README.md','reproducibility/README.md','reproducibility/AVAILABILITY.md'] + [str(p.relative_to(ROOT)) for p in (ROOT/'paper').glob('v*/*.md')]:
         p=ROOT/name
         for target in re.findall(r'\]\(([^\s)]+)\)',p.read_text()):
             if target.startswith(('http:', 'https:', 'mailto:', '#')):

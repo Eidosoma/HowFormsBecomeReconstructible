@@ -38,3 +38,7 @@ The export records a source Git commit for context, but was selected from the wo
 Continue using a one-way, explicitly selected export from the working research tree. Review new results before incorporating them. Keep fresh cohorts, reused records, exploratory tests and pending outcomes distinct. A later public release should add the remaining artifact retrieval/generation routes and full workflow checks before advertising complete end-to-end reproduction.
 
 The [v1.1 publication package](../paper/v1.1/README.md) contains both complete PDFs and versioned reading sources. Only those two hash-registered PDFs exceed the ordinary 256 KiB limit; raw-data and campaign-replay limitations remain unchanged.
+
+## Version 1.2 update
+
+The current [v1.2 main/SI package](../paper/v1.2/README.md) preserves the previous selection and adds D184–D186 exposed development. Its [source inventory and omissions](../paper/v1.2/SOURCE_AVAILABILITY.md) are explicit. The preceding v1.1 package remains historical; four exact PDF paths are now registered in `publication-files.json`. No large arrays or archives are added.

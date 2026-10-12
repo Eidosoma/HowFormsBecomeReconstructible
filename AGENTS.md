@@ -1,8 +1,8 @@
 # Public review repository
 
-This is a computational review snapshot with publication package v1.1. Preserve scientific source, numerical claims and qualifications. Use the export manifests to distinguish original content from public packaging changes.
+This is a computational review snapshot with publication package v1.2. Preserve scientific source, numerical claims and qualifications. Use the export manifests to distinguish original content from public packaging changes.
 
-- Keep supplied files at or below 256 KiB, except the two explicitly requested v1.1 publication PDFs listed in `reproducibility/publication-files.json`. Update their hashes when authorized revisions replace them. Other generated PDFs, HTML, arrays and archives stay ignored.
+- Keep supplied files at or below 256 KiB, except the four explicitly requested v1.1/v1.2 publication PDFs listed in `reproducibility/publication-files.json`. Update their hashes when authorized revisions replace them. Other generated PDFs, HTML, arrays and archives stay ignored.
 - Run `python3 scripts/check_export.py` for packaging verification and `bash scripts/run_python.sh scripts/smoke_checks.py` for small disposable checks.
 - `python3 scripts/build_review.py` creates an HTML reading copy. It is not the original PDF layout.
 - Do not start full experiment workflows, external downloads or background jobs as part of a documentation/build check.

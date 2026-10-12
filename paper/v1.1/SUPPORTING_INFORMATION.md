@@ -6,17 +6,19 @@
 
 ### Guide to the supporting information {#supporting-guide}
 
-This document supplies the full methods, model correspondence and supporting figures for the five-question main paper. The 44 methods retain their **C.1–C.44** identifiers to preserve links to frozen protocols and evidence notes. The main paper and this PDF are supplied together in the working repository and prepared for the public repository's versioned `paper/v1.1/` directory. A package manifest gives their SHA-256 hashes. At this preparation checkpoint the updated public checkout awaits a Git push; no Zenodo deposit or DOI is claimed.
+[Open the main paper v1.1](https://github.com/Eidosoma/HowFormsBecomeReconstructible/raw/main/paper/v1.1/how-forms-become-reconstructible-v1.1.pdf#page=1). Page numbers in the methods guide below refer to this supporting PDF.
+
+This document supplies the full methods, model correspondence and supporting figures for the five-question main paper. The 44 methods retain their **C.1–C.44** identifiers to preserve links to frozen protocols and evidence notes. The main paper and this PDF are distributed together in the public repository's versioned `paper/v1.1/` directory and retained in the working repository. A package manifest identifies the exact files by their SHA-256 hashes. No Zenodo deposit or DOI is claimed.
 
 The **89-note evidence ledger**, extended experimental comparisons and development history remain separate repository documents. Evidence codes identify stable notes, rather than a new sample or replication. References to D.1–D.10 denote the repository's *Extended evidence* document, not missing sections of this PDF. The full original v1.0 remains preserved in the working archive.
 
 | Main question | Principal methods retained here | Supporting detail |
 |---|---|---|
-| History across replacement | C.3, C.7–C.10, C.16 | Spatial capture, exact Q score, budgets, reference acquisition and editable cells. |
-| Embodied relationships | C.1–C.2, C.8–C.9, C.41 | Reciprocal repair, guide transform, erasure, writer placement and Hopfield reader conditions. |
-| Functional record structure | C.17, C.23, C.25–C.26, C.31–C.32, C.39 | Two-rule function, noise pairing, normalization, combined numerical challenges and feature interventions. |
-| Forecasts and repair | C.27, C.33–C.34, C.38, C.43 | Prediction inputs, computational work, complete frozen repair algorithm, serial cohorts and failed policy tests. |
-| Predictive theory | C.19–C.22, C.24, C.35–C.37, C.40, C.42–C.44 | Forecast limits, model correspondence, repeated futures, cellular readiness and exact-state rescue. |
+| History across replacement | [C.3](#c3) (p. 4), [C.7–C.10](#c7) (pp. 11–18), [C.16](#c16) (p. 26) | Spatial capture, exact Q score, budgets, reference acquisition and editable cells. |
+| Embodied relationships | [C.1–C.2](#c1) (pp. 2–3), [C.8–C.9](#c8) (pp. 14–17), [C.41](#c41) (p. 56) | Reciprocal repair, guide transform, erasure, writer placement and Hopfield reader conditions. |
+| Functional record structure | [C.17](#c17) (p. 28), [C.23](#c23) (p. 36), [C.25–C.26](#c25) (pp. 42–43), [C.31–C.32](#c31) (pp. 47–48), [C.39](#c39) (p. 55) | Two-rule function, noise pairing, normalization, combined numerical challenges and feature interventions. |
+| Forecasts and repair | [C.27](#c27) (p. 44), [C.33–C.34](#c33) (pp. 49–50), [C.38](#c38) (p. 54), [C.43](#c43) (p. 57) | Prediction inputs, computational work, complete frozen repair algorithm, serial cohorts and failed policy tests. |
+| Predictive theory | [C.19–C.22](#c19) (pp. 30–35), [C.24](#c24) (p. 40), [C.35–C.37](#c35) (pp. 52–53), [C.40](#c40) (p. 55), [C.42–C.44](#c42) (pp. 57–58) | Forecast limits, model correspondence, repeated futures, cellular readiness and exact-state rescue. |
 
 Methods preserve native scores, cohort definitions and uncertainty coverage. Independent blocks are distinguished from repeated reads, related cellular panels and solver resolutions. Post hoc analyses retain that designation. Missing raw archives or external models remain explicit limitations; source identities do not substitute for scientific replay.
 
@@ -28,7 +30,9 @@ The five supporting figures preserve measured supporting endpoints and two conce
 
 Methods retained from the v0.20/v1.0 evidence selection, including the dated 12 October 2026 addition. C.38–C.44 specify serial repair, capture timing, the completed cellular pause panel, the supporting Hopfield model, fresh-founder recipient matching, repair budgets and saved-boundary rescue. Cohorts, native endpoints and earlier contracts remain distinct. Source extraction verifies retained reports, native summaries and available receipt bindings without simulation, fitting or original audit reruns. Ongoing outcomes are excluded.
 
-### C.1. Tissue model and experimentally distinct records {#c1}
+<a id="c1"></a>
+
+### C.1. Tissue model and experimentally distinct records
 
 The central tissue cases use a 16 × 16 periodic voltage sheet, with a scalar state V at each site. These are dimensionless simulated fields, not calibrated membrane potentials. The native update combines a double-well drift, a site-specific threshold field theta, four-neighbor coupling, and mean-centered Gaussian noise. With spatial mean denoted by an overbar, neighbor mean N(V), clipping to [-2, 2] denoted by C, and mean removal P(z) = z - mean(z), its two successive body updates are
 
@@ -50,7 +54,9 @@ where the supplied projection subtracts the spatial mean and rescales its standa
 
 The native update and projection were checked in the retained [voltage configuration](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/voltage_web/src/voltage_web/config.py), [sheet update](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/ladder_web/src/ladder_web/engine.py), [reference update](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/blueprint_web/src/blueprint_web/engine.py), and [threshold projection](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/writable_landlord/src/writable_landlord/pipeline.py). Exact run configurations and seed manifests remain part of the underlying campaign records; this supplement is not a standalone replacement for the full executable archive.
 
-### C.2. Reciprocal repair: D073 and D074 {#c2}
+<a id="c2"></a>
+
+### C.2. Reciprocal repair: D073 and D074
 
 **Objects and samples.** D073 uses sixteen new tissues 30024–30039; D074 uses sixteen further tissues 30040–30055. Each tissue supplies four fixed balanced half-plane messages: horizontal halves, vertical halves, and their sign reversals. Four parent replicates per message produce sixteen records per tissue. Sixteen readout starts per record produce 4096 readouts per arm; inference remains at the sixteen-tissue level.
 
@@ -66,7 +72,9 @@ The native update and projection were checked in the retained [voltage configura
 
 Sources: [D073 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L22_FRESH_WRITING_REPLICATION_V1.md), [D073 report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L22_FRESH_WRITING_REPLICATION_2026-09-08.md), [D074 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L22_BODY_SOURCE_V1.md), and [D074 report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L22_BODY_SOURCE_2026-09-08.md). Manuscript evidence notes: E09–E10.
 
-### C.3. Acquired-reference test: D099 {#c3}
+<a id="c3"></a>
+
+### C.3. Acquired-reference test: D099
 
 **Design.** Eight main tissue blocks 45000–45007 each supply two paired lives and both old/new target orderings. Eight separate qualification blocks test constructed known-old, known-new, and erased references before main evaluation. The targets are left/right and top/bottom halves; reversal swaps their roles without rotating theta or noise. This tests two patterns, not arbitrary shapes or orientation invariance.
 
@@ -78,7 +86,9 @@ Readout lasts 200 unforced updates before branching into toward-old, toward-new,
 
 Sources: [protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L15_REVERSAL_DEFENSE_V1.md) and [report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L15_REVERSAL_DEFENSE_2026-09-12.md). Manuscript evidence note: E08. Supplementary Figure S1 retains the original summary's intervals and tissue means.
 
-### C.4. Repeated record replacement: L17 {#c4}
+<a id="c4"></a>
+
+### C.4. Repeated record replacement: L17
 
 **Objects and samples.** Eight retained G0 tissue blocks 10000–10007 carry four translated stripe messages, each with eight paired noise replicates. The messages are distinct from the repair study's half-planes. This is outcome-informed work on the same parent panel, not fresh-tissue confirmation.
 
@@ -90,7 +100,9 @@ The three predefined terminal contrasts use 10,000 paired tissue-bootstrap draws
 
 Sources: [protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L17_REPLACEMENT_CHAIN_V1.md) and [report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L17_REPLACEMENT_CHAIN_2026-09-08.md). Manuscript evidence note: E12.
 
-### C.5. Campaign identities and relationship to the companion v5 {#c5}
+<a id="c5"></a>
+
+### C.5. Campaign identities and relationship to the companion v5
 
 The companion v5 is the current cited version; its version note declares endpoints, analyses, and results unchanged from v4. References to v4 campaign identities below retain their historical meaning.
 
@@ -151,7 +163,9 @@ The gre-ideas log's 240 tested mutated offspring belong to a selection/robustnes
 
 Sources: [companion v5, results unchanged from v4](../../upstream/PlasticHeredity/PRE_PRINT_PAPER_DRAFT_V5.0.md), [CA Stage 4 report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/ca-motif-lineage-stage-4/REPORT.md), [Stage 4 structured results](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/ca-motif-lineage-stage-4/RESULTS.json), [CA direct-replication folder](../../reproducibility/AVAILABILITY.md), [Wagner v4 campaign folder](../../reproducibility/AVAILABILITY.md), [gre-ideas chronology](../../upstream/PlasticHeredity/NewIdeas/preprints/gre-ideas/DISCOVERY_LOG_EIDOSOMA_SCIENTIST.md), and [bounded gate correction](../../upstream/PlasticHeredity/NewIdeas/preprints/gre-ideas/diagnostics/wagner-lineage-carrier-initial-replication-v1-gate-correction/report.md).
 
-### C.6. Figure data and verification scope {#c6}
+<a id="c6"></a>
+
+### C.6. Figure data and verification scope
 
 Figure 4 presents E014's own-record, matched foreign-record and protected-copy qualified agreement at both prespecified budgets and all four post-rewrite checkpoints, with the paired own-minus-foreign differences below. The [renderer](../../paper_assets/plot_historical_specificity.py) reads the native summary from the existing v0.12 portable archive and verifies its completion/audit bindings. All 32 plotted means and original 95% intervals are transcribed; stored block means are checked against the summary's block arrays without rebootstrap. The [extract](../../paper_assets/data/historical-specificity-v0.18.json), [CSV](../../paper_assets/data/historical-specificity-v0.18.csv) and [asset manifest](../../paper_assets/figures/historical-specificity-assets-v0.18.json) retain this selection. The common upper axes span 60–80% of the 0–100% native score; lower axes report agreement-point differences. Protected-copy probes are exactly constant because checkpoint births/noise are paired across horizons. The separate completed saved-field decomposition appears in Supplementary Figure S5; it is not inferred from these aggregate scores. C.16 specifies both analyses and their provenance.
 
@@ -173,7 +187,9 @@ Figure 13 presents TT008's original post hoc reliability, subgroup contribution 
 
 Introduced for v0.19, Figure 2 presents the three main simulators using the tissue equations in C.1, functional updates and capture in C.17/C.23, and cellular state/transport in C.7. Current Figures 10 and 16 illustrate active-form tests and the discussion of embodiment. All three are explanatory diagrams rather than measured outputs. The [current infographic manifest](../../paper_assets/figures/infographic-prompts-v0.20.json) identifies the nine selected conceptual assets; original prompts and earlier versions remain preserved. The [simulator-overview record](../../reproducibility/AVAILABILITY.md) documents its placement and the resulting figure-number changes.
 
-### C.7. Cellular-state acquisition, replacement, and commitment {#c7}
+<a id="c7"></a>
+
+### C.7. Cellular-state acquisition, replacement, and commitment
 
 The cellular extensions use the reported native BITSEY revision `b2cb370aaecbc8299f259bc4251d5396c81f19a6`, with an epithelial-mesenchymal regulatory circuit coupled to ionic dynamics and junction transport. The source model is attributed to [Grodstein, Mathews, and Levin (2026)](https://doi.org/10.64898/2026.09.02.748840); the lineage assays are our program's extensions, not a reproduction of that paper's tables. Retained wrappers call the native miRNA regulatory, ionic and junction laws. The run manifest identifies 36 native Python files at the pinned revision; the integration adapter calls native `sim_slopes` while changing the clock as described below. Fixed source implementation, numerical procedure and correspondence to publication tables therefore have separate provenance.
 
@@ -223,7 +239,9 @@ Sources: [P4 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingress
 
 Updated methods: [P10 failure](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_CONTACT_SCHEDULE_FAILURE.md), [P10R protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_CONTACT_CLOCK_RECOVERY_PROTOCOL.md), [P11 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_EDITABLE_LINEAGE_PROTOCOL.md), and [P11 results](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_EDITABLE_LINEAGE_RESULTS.md).
 
-### C.8. L20 acquired records and serial writer alignment {#c8}
+<a id="c8"></a>
+
+### C.8. L20 acquired records and serial writer alignment
 
 **Targets and acquisition.** D116/D117 and the later guide series use two balanced supplied recipes: a horizontal half-plane and vertical four-column bands, disagreeing at 128 of 256 sites. They are not D099's two half-plane orientations or L17's four stripe translations. Instructed founders settle for 120 updates and undergo 1000 writing updates with the role pattern imposed at amplitude 1.2. Only theta crosses the acquisition boundary. The replacement of native theta and mean-centered dynamics cancel some nominal parameter differences; eight blocks must not be presented as eight distinct effective physics families.
 
@@ -275,7 +293,9 @@ The amplitude threshold is strict: sites with $|V_i|=0.2$ receive no qualified c
 
 Sources: [D116 report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L20_ACQUISITION_ONLY_2026-09-13.md), [D117 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L20_THREE_BOUNDARY_REWRITE_V1.md), [D131 guide](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L20_LEARNED_GUIDE_2026-09-16.md), [D135 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L20_SERIAL_ADDRESS_V1.md), and [D140 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/protocols/L20_FRESH_FOUNDERS_V1.md). The v0.10 clarification also checks [guide fitting/selection](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/src/laws_confirmation/l20_learned_guide.py), [translation](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/src/laws_confirmation/l20_blind_alignment.py), [reading/writing](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/src/laws_confirmation/l20_guide_renewal.py), [D135 transmission](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/src/laws_confirmation/l20_serial_address.py), and [D140 transmission](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/src/laws_confirmation/l20_fresh_founders.py). Evidence entries E27-E30 and their verdicts are unchanged.
 
-### C.9. Retained reconstruction histories {#c9}
+<a id="c9"></a>
+
+### C.9. Retained reconstruction histories
 
 **Selection and scope.** The [editorial selection record](../../paper_assets/data/reconstruction-history-selection-v1.json) was saved on 17 September 2026, before inspection of the selected raw fields and before the P11 archive became available locally. Aggregate campaign results were already known. This is an editorial selection rule, not an experimental preregistration. Figure 9 takes the smallest registered D140 block identifier, 78000, and first life, 0, retaining both supplied roles and both aligned/translated arms. Figure 5 takes P11's registered written-founder/open-route chain with M-open acquisition and E-open rewriting at the finer numerical resolution. Neither selection searches for a visually favorable history. The figures are descriptive illustrations of previously reported campaigns; they supply no additional independent replicates, effect estimates, or uncertainty intervals.
 
@@ -291,7 +311,9 @@ Each relay round has three successive 20,000-unit recipient-contact intervals, a
 
 The two figure asset manifests pin the portable inputs, metadata, renderers, PNGs and SVGs: [D140 manifest](../../paper_assets/figures/reconstruction-history-assets-v0.10.json) and [P11 manifest](../../paper_assets/figures/editable-lineage-history-assets-v0.10.json). Re-rendering needs only the portable extracts; re-extraction needs the corresponding retained archives. No scientific model is imported or executed by either workflow.
 
-### C.10. Unprescribed formation and compact renewal: E001/E004–E007 {#c10}
+<a id="c10"></a>
+
+### C.10. Unprescribed formation and compact renewal: E001/E004–E007
 
 **Dynamics and formation.** The paper-local implementation uses the dimensionless body/reference equations of C.1 with a = 0, step 0.2, four-neighbor coupling one, noise amplitude 0.3, reference rate 0.002, and projected theta writing at rate 0.001. The moving average updates as EMA' = 0.9 EMA + 0.1 U before reference feedback. No target image, label, reward, guide, or template enters formation/capture. Birth V is centered Gaussian with standard-deviation parameter 0.2; EMA and R initially equal V. Formation lasts 1000 updates with feedback gain zero and theta held. Theta is zero in the homogeneous pilot or a block-shared Gaussian field projected to standard deviation 0.3 in the heterogeneous condition. Four founders share this field but have independent birth/noise streams.
 
@@ -309,7 +331,9 @@ E001 uses eight blocks per background and exploratory pointwise 95% intervals. E
 
 Sources: [E001 protocol](../../experiments/E001_unprescribed_capture/PROTOCOL.md), [E004 protocol](../../experiments/E004_fresh_confirmation/PROTOCOL.md), [E005 protocol](../../experiments/E005_formation_drift/PROTOCOL.md), [E006 protocol](../../experiments/E006_compact_renewal/PROTOCOL.md), and [E007 protocol](../../experiments/E007_compact_confirmation/PROTOCOL.md). Evidence notes E31–E32 give completed results and report links; frozen copies are in the v0.11 source-record archive.
 
-### C.11. Exact finite accessibility: E002 {#c11}
+<a id="c11"></a>
+
+### C.11. Exact finite accessibility: E002
 
 Sixteen independently sampled Gaussian ten-gene matrices are normalized to unit row L2 norm. A sweep updates genes sequentially 0–9, setting positive/negative local fields to ±1 and retaining the bit at exact zero. All 1024 states are enumerated, with complete successor tables, recurrent cycles, basins, and transient lengths; no finite trajectory censor substitutes for cycle detection.
 
@@ -319,7 +343,9 @@ Native-orbit access is the fraction of uniformly weighted initial states enterin
 
 Sources: [protocol](../../experiments/E002_history_accessibility/PROTOCOL.md), [report](../../experiments/E002_history_accessibility/runs/pilot_v1/REPORT.md), and evidence note E33.
 
-### C.12. Response transfer and externally supplied repair: E003/E008–E012 {#c12}
+<a id="c12"></a>
+
+### C.12. Response transfer and externally supplied repair: E003/E008–E012
 
 **Embodiments and prediction boundary.** Source A uses the 16 × 16 cardinal-neighbor tissue and heterogeneous founder procedure in C.10. E003's B uses all four cardinal and four diagonal neighbors with weight 1/8. E008's B starts from the 256-node/512-edge native graph and replaces exactly 128 native edges through 64 degree-preserving double-edge swaps. Each new link has toroidal Manhattan length at least four; connectedness, degree four, and total coupling one remain fixed. Each block has a new graph shared by its four founders. E009–E012 use that same rewired-body family. Founders form and capture in A; none of these assays establishes native B formation.
 
@@ -347,13 +373,17 @@ On 64 fresh blocks 10000–10063, freeze all source observations, graphs, menus,
 
 Sources: [E003](../../experiments/E003_cross_embodiment/PROTOCOL.md), [E008](../../experiments/E008_rewired_transfer/PROTOCOL.md), [E009](../../experiments/E009_repair_selection/PROTOCOL.md), [E010](../../experiments/E010_record_strength/PROTOCOL.md), [E011](../../experiments/E011_content_strength/PROTOCOL.md), [E012](../../experiments/E012_graph_informed_repair/PROTOCOL.md), and [E013 prospective protocol](../../experiments/E013_wiring_replication/PROTOCOL.md). Evidence notes E34–E36 link the reports.
 
-### C.13. v0.11 source selection and checking scope {#c13}
+<a id="c13"></a>
+
+### C.13. v0.11 source selection and checking scope
 
 The [v0.11 source record](../../reproducibility/AVAILABILITY.md) names nineteen completed run phases from E001–E012 and thirteen selected report records, including E012's development report. Technical benchmarks are excluded. Every selected REPORT/summary hash matches its COMPLETE record; every COMPLETE hash matches the associated recorded passing audit. These are editorial consistency checks, not a rerun of those audits, the simulations, or their statistical analyses. The audit term “independent” denotes separate checking within the same human-directed program, not an independent laboratory.
 
 The [portable source-record archive](../../reproducibility/AVAILABILITY.md) retains frozen input code/protocol copies, reports, summaries, completion and audit records, and selected prediction/model freezes. The source record hashes every included file. Raw trajectory and endpoint arrays remain in the original experiment archives and are not included in this portable text/metadata package. E013 contributed only its protocol to that historical selection. The v0.12 additions have a separate source record and package; they do not rewrite the v0.11 selection.
 
-### C.14. Cellular P12: perturbations, selection, and editable-lineage controls {#c14}
+<a id="c14"></a>
+
+### C.14. Cellular P12: perturbations, selection, and editable-lineage controls
 
 **Model and numerical boundary.** P12 retains BITSEY revision b2cb370aaecbc8299f259bc4251d5396c81f19a6, the native biological equations, six-cell/eight-edge relay graph, six-cue/three-target writer, power 60, and Kd 1.25e−14. It uses the P10R bounded explicit-Euler method described in C.7, with maximum steps 100/50; the finer configuration also halves base steps and adaptive increments. Samples every 100 logical units include the initial and exact final state. Every cell continues evolving while waiting. Whole 17-component states and identities are retained, rather than reconstructed from E/M labels. Coarse/fine agreement is a numerical check, not proof of convergence or validated biological time calibration.
 
@@ -377,7 +407,9 @@ Seventy-eight controls branch from exact available live prefixes: RNA and bounda
 
 Sources: [P12 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_LINEAGE_ROBUSTNESS_PROTOCOL.md), [P12 report](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_LINEAGE_ROBUSTNESS_RESULTS.md), [P12 source record](../../reproducibility/AVAILABILITY.md), [portable results](../../paper_assets/data/cellular-robustness-v1.json), [earlier static integrity check](../../reproducibility/AVAILABILITY.md), and [prospective cellular P13 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_LINEAGE_RETURN_PROTOCOL.md).
 
-### C.15. L20 extension: forecasting, geometry, and reconstruction time {#c15}
+<a id="c15"></a>
+
+### C.15. L20 extension: forecasting, geometry, and reconstruction time
 
 **Shared apparatus and endpoints.** D141–D146 retain the tissue dynamics and the fixed D131 guide described in C.1/C.8. The 2048-byte little-endian float64 record is lineage state; the 4096-byte guide and host parameters are shared apparatus, unchanged across the interventions. Each ordinary replacement routes the incoming record with the guide, initializes fresh V/EMA/R, reads for 300 updates, removes direct incoming-packet access, resets writer theta to zero, and writes for 1000 updates. The guide has no direct writer input; it can affect writing through the developed body/reference. The outgoing record is the centered, standard-deviation-0.3 projection of tanh(final R), not final theta. No parent body, working reference, guide, RNG state, or optimizer state crosses as inherited state. Host parameters remain fixed along a case's lineage; fresh embodiment does not mean resampling its rulebook.
 
@@ -401,7 +433,9 @@ At every D145 boundary, a separate fresh 300-step reader assays the outgoing pac
 
 The [source selection](../../reproducibility/AVAILABILITY.md) identifies six completed runs, protocols/reports, and retained summaries/verification records. The [static review](../../reproducibility/AVAILABILITY.md) checks all 285 indexed output hashes and each summary/manifest/completion link; incorporation rechecks selected metadata. The [portable extract](../../reproducibility/AVAILABILITY.md) preserves native-unit estimates, intervals, and D145 table inputs without recomputing uncertainty. The [source package](../../reproducibility/AVAILABILITY.md) omits raw arrays and the complete executable dependency closure. Reported original replay and scientific-audit checks remain attributed to their records, not rerun here. E38–E41 link each protocol and report.
 
-### C.16. Fresh repair confirmation and longer unprescribed renewal {#c16}
+<a id="c16"></a>
+
+### C.16. Fresh repair confirmation and longer unprescribed renewal
 
 **E013.** Retain C.12's E012 ridge coefficients, feature transforms, target encoding, eight-option repair menus, seventeen native features and six graph features. Blocks 11000–11127 are new, with four founders per block and eight recipient futures per body. Each packet has 192 entries erased and each repair restores 64 values from a supplied clean backup. The correct graph and an independently generated structurally matched wrong graph are passed separately to the identical frozen graph predictor; the target simulator always uses its actual graph. Native, source-based, strongest-entry and uniform choices remain. Predictions and selected options are sealed before target readout. The original six positive-lower-bound criteria and the additional correct-versus-wrong-graph criterion all pass. Specificity is qualified own-founder agreement minus mean agreement to the other three founders sharing that block's bias. Recovery subtracts the unrepaired specificity. Inference uses 10,000 whole-block bootstrap resamples, with pointwise 95% intervals; no test-set refit, selection, or pooling with E012 occurs.
 
@@ -419,7 +453,9 @@ The first E014 detach request stopped before generating scientific blocks; `conf
 
 Sources: [E013 protocol](../../experiments/E013_wiring_replication/PROTOCOL.md), [E013 report](../../experiments/E013_wiring_replication/runs/evaluation_v1/REPORT.md), [E014 protocol](../../experiments/E014_long_renewal/PROTOCOL.md), [E014 report](../../experiments/E014_long_renewal/runs/confirmation_v2/REPORT.md). E42/E43 identify the claims.
 
-### C.17. Local functional acquisition, capture timing, and damaged renewal {#c17}
+<a id="c17"></a>
+
+### C.17. Local functional acquisition, capture timing, and damaged renewal
 
 **Dynamics and task.** This branch changes apparatus from the theta/reference tissue model. On a 16 × 16 torus, each site has signed activity v and four reciprocal nearest-neighbor edges. The 512 edge weights are serialized as little-endian float64 values (4096 bytes). With dt = 0.2, gain k = 2, and independent standard-normal update noise z, the ordinary step is
 
@@ -441,7 +477,9 @@ Protected-copy chains preserve exact founder packet bytes; reading-disabled chai
 
 Sources: [E015 protocol](../../experiments/E015_functional_inheritance/PROTOCOL.md), [E016](../../experiments/E016_teaching_consistency/PROTOCOL.md), [E017](../../experiments/E017_reader_timing/PROTOCOL.md), [E018](../../experiments/E018_functional_renewal/PROTOCOL.md), [E019](../../experiments/E019_capture_timing/PROTOCOL.md), [E020](../../experiments/E020_serial_capture/PROTOCOL.md), [E021](../../experiments/E021_damaged_renewal/PROTOCOL.md), [E022](../../experiments/E022_reader_compensation/PROTOCOL.md). E44–E46 link the completed reports; the v0.12 extract copies their native summaries without recomputing uncertainty.
 
-### C.18. Cellular return, tissue dependence, and turnover schedules {#c18}
+<a id="c18"></a>
+
+### C.18. Cellular return, tissue dependence, and turnover schedules
 
 **Shared model and ancestry.** P13–P16 retain the corrected native BITSEY equations, complete 17-component states and cell identities, bounded integration clocks, E/M/X classifier, and two isolated-hold criterion described in C.7/C.14. They are imposed contact/replacement experiments, not simulated cell division. Coarse/fine numerical comparisons share scientific conditions and are not biological replicates.
 
@@ -463,7 +501,9 @@ For a phase of duration H, samples occur every min(100,H/20), and steps are capp
 
 Sources: [P13 protocol](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_LINEAGE_RETURN_PROTOCOL.md), [P14](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_TISSUE_PERSISTENCE_PROTOCOL.md), [P15](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_TISSUE_DEPENDENCE_PROTOCOL.md), [P16](../../upstream/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_TURNOVER_LIMIT_PROTOCOL.md). E47–E49 link the reports.
 
-### C.19. L20 stopping, component edits, and forecast development {#c19}
+<a id="c19"></a>
+
+### C.19. L20 stopping, component edits, and forecast development
 
 **D147–D149.** Retain C.15's D146 cohort (sixteen blocks 93000–93015, four lives, two roles and two noise replicas). D147 compares immediate fresh readouts of packets after 1000 versus 1300 writing steps along the same extended ancestry; it does not stop the entire lineage early at every generation. D148 crosses the two packets with their two guide-selected placements, retaining values and noise while changing only translation. Primary B/G3 stopping and B/G2 placement effects remain unresolved.
 
@@ -475,7 +515,9 @@ The primary is B/G2 attenuation minus the mean of both shams; untouched comparis
 
 Sources: E50/E51 and the dated [cross-track review](../../reproducibility/AVAILABILITY.md); Appendix D gives the individual D150–D159 reports. The portable source record distinguishes new causal assays from later saved-data development.
 
-### C.20. Finite FEP models, preference choices, and bounded decisions {#c20}
+<a id="c20"></a>
+
+### C.20. Finite FEP models, preference choices, and bounded decisions
 
 **Record and reader.** Let X be a fair hidden bit, R = X XOR N a record with content-error probability eta, and Y = R XOR E the output of a separate reader. Maintenance changes reader reliability rho without changing R. A controller sees only Y and selects one of four binary report maps; paired with maintain/skip this gives eight deterministic policies. It does not receive X, R, realized faults, or an answer-bearing policy index. Retained information I(X;R) and accessible information I(X;Y) can differ; with eta = 1/2, X is independent of all available signals. The outcome is expected correct reporting minus maintenance cost. Bayesian utility, state risk and its exact decomposition, and explicitly defined information-target extensions are compared with the same channels, costs and access.
 
@@ -499,7 +541,9 @@ Both rules improve or retain objective value under the supplied model and meet i
 
 **Selection and verification.** E52–E54 identify reports, prospective specifications and later assumption reviews. The v0.12 package retains the selected text/metadata and finite results, including the structured-inference verdict and safe-cap manifest. Hash checks verify file identity; no checker, inference routine, fit or model trajectory was executed for manuscript incorporation. Arithmetic checks reported by the FEP studies are their own verification counts, not independent observations. The separately selected sensor studies below do not alter these earlier verdicts.
 
-### C.21. Prospective reconstruction prediction and diagnostic feedback location {#c21}
+<a id="c21"></a>
+
+### C.21. Prospective reconstruction prediction and diagnostic feedback location
 
 **D162 cohort and boundary.** The separately registered pilot uses 64 new founders 100000–100063, each with four lives, two supplied target families and two writer conditions: 1,024 cases. Four stochastic futures per case yield 4,096 terminal outcomes; founder is the statistical block. The existing 2048-byte record and frozen D131 guide are retained. Each lineage performs three fresh read–erase–rewrite cycles followed by a fresh G4 read. Reading lasts 300 steps and writing 1000; only the outgoing record crosses. Full controls run under the first future, while the remaining futures supply primary ordinary/aligned paths. Diagnostic copies and their records never enter an actual lineage.
 
@@ -517,7 +561,9 @@ The D151 residual edit is applied after the original incoming routing and is not
 
 Sources: E55–E57, the linked frozen protocols and reports, and the D160–D171 bridge in Appendix D. Selected native summaries and completion/audit records are in the [v0.13 source package](../../reproducibility/AVAILABILITY.md). The present check verifies selected file identities and saved-audit bindings; it does not rerun tissue dynamics, fits or bootstraps.
 
-### C.22. Learned sensor interpretation, costed acquisition, and deployment feedback {#c22}
+<a id="c22"></a>
+
+### C.22. Learned sensor interpretation, costed acquisition, and deployment feedback
 
 **Model and supplied resources.** A fair hidden bit W produces warnings Y_i = W XOR E_i. Error pairs are stationary IID with law Q over 00/01/10/11. Calibration supplies known-positive inputs, revealing error pairs; the same symmetric error law transfers to deployment. The independent model M0 has separate Beta(1,1) error-rate priors. The joint model M1 has a four-cell Dirichlet(1/2,1/2,1/2,1/2) prior; structural prior weights are 0.9 and 0.1. The candidate family, reference access and calibration transfer are supplied, and paired dependence does not identify a physical common cause. These studies neither reuse C.20's specific task nor inherit its risk guarantees.
 
@@ -535,7 +581,9 @@ The evaluator knowing Q receives the same warning and pays for references; it do
 
 **Provenance.** E58–E60 link the named specifications and reports. Generalization's original integration stopped at a wrong old-record field lookup before exporting or inspecting new outcomes. The preserved revision changes that lookup and qualification/provenance, leaving population, policies, costs and criteria fixed; successful execution is attempt two. Selected manifests, summaries and frozen-source identities are retained in the v0.13 package. No model, optimizer or scientific checker was executed for this incorporation, and no off-grid successor result is included.
 
-### C.23. Functional reconstruction under repeated damage: E023–E047 {#c23}
+<a id="c23"></a>
+
+### C.23. Functional reconstruction under repeated damage: E023–E047
 
 **Shared task, inherited state and reader.** Retain C.17's 16 × 16 periodic network, 512 reciprocal nearest-neighbour weights, 4096-byte float64 record, two supplied conditional rules, three public ports, time step 0.2, gain 2, birth standard deviation 0.05 and update-noise scale 0.02. Acquisition teaches the two output polarities under opposite input cues. Every renewal uses a fresh activity field and a new mask removing 24 non-port cells. Birth, noise and damage streams are paired across policies within a lineage and refreshed at each boundary. Only the current packet passes onward; there is no restart from the founder packet. The 32 independent blocks, each containing four founders and four descendant lineages per founder, are the resampling units.
 
@@ -615,7 +663,9 @@ E047 selects each lineage's first failed body at generations 1–31 before its n
 
 **Provenance.** E61–E64 link native reports. [E041 protocol](../../experiments/E041_full_rewrite_confirmation/PROTOCOL.md) and [E047 protocol](../../experiments/E047_onset_rollback/PROTOCOL.md) specify the frozen candidates. The v0.14 package retains protocols, reports, available native summaries and selected completion/audit records. Several scientific summaries and arrays are absent locally; the E041 figure therefore uses its completion-bound report, not fixture or benchmark data. Passing original audits are retained records, not audits rerun during manuscript preparation.
 
-### C.24. Cellular preparation, component substitutions and communication timing {#c24}
+<a id="c24"></a>
+
+### C.24. Cellular preparation, component substitutions and communication timing
 
 **Model, ancestry and endpoints.** P17–P31 retain C.7/C.14/C.18's corrected BITSEY regulatory/ionic model, full 17-component cell states, cell identities and imposed replacement schedules. E is classified when miR200 minus Zeb mRNA exceeds +2, M below −2, and X otherwise. These are regulatory labels, not diagnoses. Retention requires the matching endpoint and at least 95% matching samples in the final quarter of each of two isolated 10,000-unit holds. The stricter every-replacement-window criterion applies the corresponding occupancy/endpoint requirement during each renewal window and is reported separately. Onward assays expose three fresh M recipients to actual final donors for 20,000 units, remove donors, and assess both isolated holds. Open, RNA-blocked and boundary-cut readouts use the same donor outputs, including failures. Whole-trio wipe, ordinary-E capacity and historical controls remain required where declared; reuse of previously qualified controls is not a new independent replication. P31 is a focused numerical study without new onward assays.
 
@@ -635,7 +685,9 @@ P31 reproduces those disagreements, then varies preparation and downstream resol
 
 **Attribution and availability.** E65–E68 link the retained reports/protocols. Large P17+ trajectories and associated external files are unavailable at this checkout's `/mnt/workspaces/levin-cancer-gj-exploration` paths. The P19/P24 result links are broken external symlinks; their protocols do not establish an outcome, and later reports' contextual mentions are not a fresh verification of those campaigns. New cellular numbers retain report attribution. The 10 October source selection adds the P31 completed report, protocol and saved integrity review to the earlier launch record; it is not a complete execution archive. Neither simulations nor original mathematical audits were rerun. No cell division, autonomous turnover timing, unique molecular carrier, acquired-history advantage or treatment efficacy is established by these panels.
 
-### C.25. Rebuilding cue-pairing robustness: E051 {#c25}
+<a id="c25"></a>
+
+### C.25. Rebuilding cue-pairing robustness: E051
 
 **Cohort and information boundary.** E051 tests the original functional apparatus of C.23 on fresh blocks 34000–34031, with four founders and four recipients per block: 512 lineages per condition. Seven rebuilding pairings cross five fixed writing policies, giving 35 counterfactual histories per lineage. Prior scientific cases are neither reused nor pooled. Each history passes its own 4096-byte packet through 32 fresh damaged bodies, with 24 non-port cells absent under the matched injury schedule. Desired outputs are not retaught. Teaching, the post-capture holding phase and terminal assays keep their original paired-cue randomness; only the rebuilding trials before capture change.
 
@@ -653,7 +705,9 @@ The registered analysis uses 10,000 shared whole-block bootstrap resamples. Stro
 
 The 9 October incorporation checks completion/audit/closeout bindings, all 20 frozen input identities, the 1,966 saved block means and the five decisions without recomputing intervals or replaying dynamics. Its portable package contains 46 text, code and metadata records, including the native summary; the original NPZ arrays are absent locally. The separately completed E052 numerical comparisons enter the 10 October update as E70 and C.26. [E051 source selection](../../reproducibility/AVAILABILITY.md); [native extract](../../reproducibility/AVAILABILITY.md); [portable records](../../reproducibility/AVAILABILITY.md).
 
-### C.26. Precision, stored values and normalization: E052 {#c26}
+<a id="c26"></a>
+
+### C.26. Precision, stored values and normalization: E052
 
 E052 retains C.23/C.25's exact-zero writer and functional task. Blocks 35000–35031 are fresh; four founders and four descendants per block give 512 lineages. Eleven fixed numerical regimes cross rebuilding-noise correlations 1, 0.999 and 0, for 33 histories per lineage. Initial cue activities remain paired, as do teaching and terminal cue trials. Each condition transmits its own record through 32 damaged rebuilds; no prior cases are pooled.
 
@@ -663,7 +717,9 @@ At horizons 0, 8, 16, 24 and 32, each transmitted record receives native-reader 
 
 The original analysis uses 10,000 shared whole-block bootstrap draws. Secondary correlations, regimes, reader comparisons and interactions retain pointwise intervals. The saved audit and closeout pass; incorporation reads their receipts and summaries without replaying trajectories or bootstraps. C.26 adds no combined-stress result. [E70]
 
-### C.27. Prospective record-based forecasting and injury-transfer development {#c27}
+<a id="c27"></a>
+
+### C.27. Prospective record-based forecasting and injury-transfer development
 
 **TT008 frozen prediction.** A logistic candidate with ridge 0.01 is selected from TT007's exposed development panel and fitted once on all 512 development records. Two primary rivals use current expression/history, and those features plus unsigned access. The candidate additionally receives signed transfer. Secondary frozen rivals include quadratic features and nonlinear expression and full-packet models; their larger development searches do not make them new independent tests.
 
@@ -681,7 +737,9 @@ During incorporation, the [reproducible renderer](../../paper_assets/plot_tt008_
 
 **P03/TT009 injury comparisons.** Both P03 studies retain the same 64 generation-14 failures from eight exposed blocks. Fresh bodies read incoming, outgoing or deletion-control records under the original injury or fresh uniform 24-cell injuries, with paired repeats and the original strict scoring. Fixed-injury runs retain three timepoints through 4,096 updates; the primary comparison and transfer study use 2,048. Effects equally weight the eight blocks; the original 20,000-draw block-bootstrap intervals are descriptive. The fresh-injury prediction requires a positive mean outgoing-minus-incoming effect, which fails. Direct probing selects using repeats 0–3 and evaluates on 4–15; signed/unsigned diagnostics and direct probing have different costs. TT009 subsequently reproduces all trajectories and scores as an audit of exposed evidence, not another scientific cohort. [E72]
 
-### C.28. One-time partial rollback and fresh continuation: E048–E050 {#c28}
+<a id="c28"></a>
+
+### C.28. One-time partial rollback and fresh continuation: E048–E050
 
 E048/E049 use eligible E041 first failures; E050 generates new histories in blocks 33000–33031, with 512 lineages and no pooling. The unchanged path alone determines enrollment: first failure at generations 1–29 leaves three successors available. All 294 eligible E050 cases remain, including zero-edit cases; 21 later first failures and 197 never-failing lineages are reported separately.
 
@@ -689,7 +747,9 @@ At the failed body's outgoing boundary, available edges moving from incoming mag
 
 The third body's both-cue success is primary. Ten thousand whole-block bootstrap samples estimate pooled eligible-case ratios. Joint confirmation requires lower bounds above five points for half versus unchanged, above zero for half versus full, and above zero for reduced losses of originally successful cases. All-three success, any recovery and relapse are separate secondary endpoints. E050's original branch exactly reproduces its own unchanged history; the retained audit checks enrollment, all edits and serial records. Source qualification and the finite outcome do not establish an autonomous intervention trigger. [E64]
 
-### C.29. Finite decision-model timing confirmation and challenge {#c29}
+<a id="c29"></a>
+
+### C.29. Finite decision-model timing confirmation and challenge
 
 The two new FEP-track studies retain exact Bayesian/VFE inference and a separately supplied expected task-cost objective over the current plus two future decisions. A wrong report costs 1 and a purchased correct answer costs 0.1; only purchased answers provide deployment labels. Sixty-four calibration pairs cost 0.064 in total. CT3-flat retains calibration and supplied general/A-failed/B-failed change hypotheses, with weak new-rate priors. It differs from calibrated CT3 and from C3's earlier general-change model; the nine fixed policies are retained in both studies.
 
@@ -697,7 +757,9 @@ Each study uses 1,024 fresh paired blocks per fixed base law, 27,648 independent
 
 Post-change recovery averages each condition's cost over its remaining tasks and excludes sunk calibration. Complete-episode cost includes calibration; full-core means give stability half the weight. All three confirmation/challenge criteria require negative upper 95% bounds for recovery-minus-0.1, recovery-minus-C3 and full-core-minus-C3. Intervals are nominal stratified Monte Carlo mean ±1.96 SE, with policy contrasts paired within block; they do not quantify generalization to arbitrary worlds. Reports retain harms, transfer outcomes and zero-headroom cases. Saved-count verification is attributed to the source records, not rerun here. [E73]
 
-### C.30. Recipient-coupling pilot and source-selection limits {#c30}
+<a id="c30"></a>
+
+### C.30. Recipient-coupling pilot and source-selection limits
 
 D180 uses four exposed donor blocks (90000/90005/90010/90015), four lives each and both target families, giving 32 F0 records. Coupling multipliers 0.75/1/1.25 cross two writers, two paired future replicas and fixed copying/read-off/write-off controls. Three serial replacements produce 1,152 labelled lineages; these remain nested within four reused blocks. Coupling changes both reader and writer dynamics. A common reference reader assesses final record usefulness, alongside native-reader secondary results.
 
@@ -705,7 +767,9 @@ The focal group is family B with ordinary writing. Record, recipient and interac
 
 The [10 October source manifest](../../reproducibility/AVAILABILITY.md) and [portable records](../../reproducibility/AVAILABILITY.md) bind the selected reports, protocols, native summaries and audit metadata for C.26–C.30 and the P31 addition. They preserve that dated selection. The later E053, L20 fresh-futures and change-at-any-task outcomes enter separately below; the broader cellular pause archive remains unavailable. Neither manuscript package is a complete executable/raw archive.
 
-### C.31. Combined numerical challenges: E053 {#c31}
+<a id="c31"></a>
+
+### C.31. Combined numerical challenges: E053
 
 The fresh 32-block cohort has 512 lineages per condition and twenty conditions over 32 damaged renewals. The frozen primary uses independent cue noise during rebuilding; teaching, initial activity and terminal cue trials remain paired. The combined condition applies float32 computation, uniform rounding to a $2^{-16}$ grid, SD $10^{-4}$ noise on nonzero stored weights, and a $10^{-4}$ normalization floor. The packet allocation is unchanged.
 
@@ -717,7 +781,9 @@ The primary endpoint is both-cue success in the native-reader fresh scattered-in
 
 The saved independent audit replays all dynamics, channels, mechanism diagnostics and assays, checks 655,360 rebuilding-body and 556,032 terminal cue observations and 2,561 summary statistics, and binds the completion receipt. These observations are nested within 32 blocks. The manuscript verifies retained report/summary hashes and the audit's completion identity; it does not rerun this audit.
 
-### C.32. Record-feature interventions: E054 {#c32}
+<a id="c32"></a>
+
+### C.32. Record-feature interventions: E054
 
 All E051 blocks 34000–34031 remain, with four founders and four recipients per block. Acquired records and four horizon-32 histories (full rewrite or strong preservation, each under matched or independent cue noise) supply 512 records per history. Acquired records repeated across recipient slots do not create new acquisitions. Eleven intervention arms use fresh E054 reset/noise and injury draws paired across histories and arms, float64 computation, zero denominator floor, 2,048 reading steps, 1,024 settling steps and the strict output margin 0.25 over the last 32 observations. Intact, scattered-24 and square-9 injuries preserve task ports. The assay performs no writing.
 
@@ -737,7 +803,9 @@ The [analysis specification](../../reproducibility/AVAILABILITY.md), [source man
 
 The saved audit independently reconstructs source extraction, perturbations, graph/coupling diagnostics, reader trajectories, scores and all 1,632 summaries. Its 168,960 terminal cue observations do not increase the 32-block inference unit. Sign-cycle counts depend on the fixed cycle basis; comparison across changed supports is descriptive. Deletion changes both access and normalization. The interventions are not equal doses of a common quantity and do not isolate a unique mechanism for the observed writer-policy differences.
 
-### C.33. Repair development, protected resources and serial scope {#c33}
+<a id="c33"></a>
+
+### C.33. Repair development, protected resources and serial scope
 
 TT010–TT013 retain 64 failure-selected cases from eight exposed blocks. Equal-block averaging and descriptive whole-block bootstrap intervals preserve each source protocol; the same cases are not new confirmations at each stage. TT010 combines outgoing values on available edges with protected incoming values elsewhere. TT011 tests imported donor signs and exact compatibility, checking all 256 contradiction certificates and retained task flags but not replaying every nonlinear trajectory. TT012 implements approximate alignment and a recipient-based solver while retaining protected support/magnitudes. TT013 removes those protected resources: only the surviving outgoing record O, lattice, input pins and fixed optimizer options enter completion. Its 16-start, at-most-64-sweep sign solver uses fixed seed 2026101004, fills every exactly zero edge at the median nonzero absolute O weight and preserves all existing nonzero weights. An empty record stays empty. Shuffled controls preserve added support, magnitudes and sign counts. Native replay is complete for TT010/TT012/TT013; independent optimizer checks do not establish global optimality. Algorithm 1 in C.34 now gives the objective and complete update procedure. [E77]
 
@@ -745,7 +813,9 @@ Reported serial development instead starts from 256 exposed generation-14 record
 
 These serial reports contain independent construction/scoring checks and selected trajectory checks within the same lane. TT015 was running at the v0.19 cutoff and is now complete, with full native replay and separate scoring of the serial/noise studies (C.38). The withdrawal comparison uses exposed controls; because the repeated arm already retained every first-pass lineage and first reconstructions match, the possible direction of its uninterrupted contrast is constrained. These results are leads about continued supplied correction, not prospective fresh-cohort serial validation or autonomous maintenance.
 
-### C.34. Prospective surviving-record repair: TT014 {#c34}
+<a id="c34"></a>
+
+### C.34. Prospective surviving-record repair: TT014
 
 The frozen TT013 repair is tested on 64 new block identities 14000000–14000063 under a distinct seed namespace, excluding exposed development cohorts. Four writing histories are cyclically assigned between blocks: exact rewrite, one tolerance pulse, spaced pulses and clustered pulses, sixteen blocks each. Each block has four paired founders and four recipients. Every generation-14 outgoing record is enrolled before assessment; no success filter is applied. Consistent teaching has 512 steps and 128 captured observations; fourteen rebuilds retain the native 2,048-step reader, 1,024-step settling period, 24 missing non-port cells, dt 0.2, noise SD 0.02, birth SD 0.05 and writer beta 3.
 
@@ -783,7 +853,9 @@ The fixed analysis averages draws within records, records within blocks and bloc
 
 Registration and all 47 frozen executable inputs precede test generation; block enrollment and prepared-record commitments precede assessments. Recorded independent checks cover 64 teachings, 14,336 lineage reconstruction contexts, 32,768 assessment contexts, all optimizer/construction outputs and 65,536 dual-task flags. Maximum scalar-window discrepancy is $6.661\times10^{-16}$, with the nearest decision threshold 0.001091 away. The manuscript binds completion, selected outputs and closeout identities without repeating these checks. Procedural ordering in a shared filesystem is not external custody or independent-laboratory replication.
 
-### C.35. Four future reconstructions of reused tissue records: D181 {#c35}
+<a id="c35"></a>
+
+### C.35. Four future reconstructions of reused tissue records: D181
 
 The same D180 four founder blocks, four lives each and two target families give 32 F0 records. Four new future IDs 2/3/4/5, kept separate from earlier 0/1, cross coupling multipliers 0.75/1/1.25, ordinary/aligned writing and four controls. Three serial read/write/reset boundaries precede common/native terminal assays. The completed panel contains 2,304 labelled lineages, 6,912 serial pairs and 4,608 assay rows; independent founder information remains four exposed blocks.
 
@@ -791,7 +863,9 @@ The focal group stays common-reader B with ordinary writing; aligned B remains a
 
 Completion includes full native replay; the retained saved-only formal audit checks the complete panel without new dynamics. Source selection binds the completion receipt to native record and summary outputs. The later completed fresh-founder main cohort D182 is separate in C.42/E87. L20's existing unresolved forecasting contrasts and mixed adjudication are unchanged.
 
-### C.36. Change-at-any-task decision model and refresh provenance {#c36}
+<a id="c36"></a>
+
+### C.36. Change-at-any-task decision model and refresh provenance
 
 CT3-anytime assigns half prior mass to no deployment change and half uniformly across 100 possible times and three supplied change kinds, giving 301 components and conditional onset hazard $1/(201-t)$. It is a one-change model, not a stationary hazard or recurrent-change process. Nine existing policies are retained unchanged. Calibration informs the old phase; weak new-phase rate priors, exact conditional Bayesian/VFE inference, free warning signals, purchased answer labels and three-decision expected-cost planning remain. Actual change indicators and unpaid labels are unavailable. Expanding support also redistributes prior mass, so these effects are not isolated.
 
@@ -801,7 +875,9 @@ Native intervals are mean ±1.96 stratified Monte Carlo SE, with $\mathrm{SE}^2=
 
 The [v0.19 source manifest](../../reproducibility/AVAILABILITY.md) and [portable package](../../reproducibility/AVAILABILITY.md) freeze 122 selected records at 16:08 UTC on 11 October. [The extraction script](../../paper_assets/extract_evidence_v019.py) verifies member hashes, available report/summary-to-completion links and retained audit identities and reproduces the native summaries without source mounts, simulation or new inference. That historical snapshot retained only P32 launch documents and no completed E055/budget-policy outcomes. The v0.20 addition now supplies their completed records in C.39/C.40/C.43, while P32's full raw archive remains unavailable locally. This package is a reviewable evidence selection, not the full raw/executable release.
 
-### C.37. Active-form comparisons and their verification boundaries {#c37}
+<a id="c37"></a>
+
+### C.37. Active-form comparisons and their verification boundaries
 
 The main section 4.2 synthesis reuses the reference-acquisition, reciprocal-repair and writer-placement methods in C.2/C.3/C.8. Two additional historical comparisons are report-based additions, not new simulations. The [active-form source manifest](../../reproducibility/AVAILABILITY.md) and [portable records](../../reproducibility/AVAILABILITY.md) preserve the selected logs, protocols and implementation files separately from the earlier 122-record refresh.
 
@@ -811,7 +887,9 @@ The main section 4.2 synthesis reuses the reference-acquisition, reciprocal-repa
 
 The active-form extension asks whether differing body organization can write a distinction when incoming record bytes and auxiliary writing states are matched. Its boundary and pilot software have passed technical qualification; no completed repair result is incorporated here. Technical tests and a launched benchmark do not establish the proposed body-derived corrective contribution.
 
-### C.38. Prospective serial repair and completion of the exposed replay {#c38}
+<a id="c38"></a>
+
+### C.38. Prospective serial repair and completion of the exposed replay
 
 TT015 completes full native replay of the earlier serial and cue-noise studies described in C.33: 256 exposed generation-14 records in sixteen blocks. It independently checks 36,864 distinct reconstruction contexts; a total of 46,080 replay entries includes 9,216 overlapping contexts. Scoring, optimizer and provenance checks pass. These checks upgrade verification, not prospective status or the number of independent records. The separately reported withdrawal branch remains outcome-informed development. [E77]
 
@@ -821,7 +899,9 @@ The primary is intended function at **every one of the eighteen rebuilding-body 
 
 All policies allocate 4,096 transmitted bytes and 36,864 reader updates per record. Repeated repair adds 18,432 optimizer calls per noise regime, compared with 1,024 for one-time repair and zero for baseline. Shuffles preserve added support, magnitudes and sign counts relative to their own input; divergent histories can accumulate different added weights. Computation and total intervention dose are not matched. Full recorded replay covers 64 teachings, 14,336 preliminary and 147,456 continuation contexts, 75,776 optimizer checks, 17,472 native-array comparisons and 1,152 forcing checks. Separate scoring verifies 147,456 endpoints and 294,912 task flags. These are checks within this program, not independent laboratories; the manuscript verifies selected receipt bindings without executing these audits again.
 
-### C.39. Stress, recovery and sign–magnitude substitution at capture {#c39}
+<a id="c39"></a>
+
+### C.39. Stress, recovery and sign–magnitude substitution at capture
 
 E055 uses all 32 exposed E051 blocks, retaining acquired packets and two generation-32 renewal histories (matched or independent cue noise). In a new injured body, incoming weights remain fixed. Each cue trial runs 2,048 updates, the first 1,024 without amplification. Ongoing noise in this body is independent across cues for all histories, while births remain paired. A rule-blind signed pulse of amplitude one acts on 64 randomly chosen living nonport cells for 32 steps with dt 0.2; the same pulse field is used in both cue trials. A matched sham retains all other forcing. Capture occurs immediately after the pulse and again after 512 unforced recovery updates. Early capture is stored without feeding back into later development.
 
@@ -836,7 +916,9 @@ E057 freezes this apparatus before 32 new blocks 38000–38031: four founders an
 
 Ten thousand paired whole-block bootstrap draws supply two-sided 98.75% intervals, a Bonferroni family of four. All lower endpoints must exceed zero and numerical controls must pass. This tests positive direction, not E055's five-point loss/recovery thresholds, equivalence or complete restoration. Other comparisons retain pointwise 95% intervals. Acquired records repeated across recipient slots are not independent acquisitions. Float64, the zero normalization floor and the exact-zero fallback rule remain; this is separate from numerical-robustness qualification. The recorded independent audit checks fresh acquisition, all source boundaries, pulse/capture/recipient dynamics and 1,868 summaries, including 92,160 terminal cue observations. [E84]
 
-### C.40. Completed cellular pause boundary and onward transmission {#c40}
+<a id="c40"></a>
+
+### C.40. Completed cellular pause boundary and onward transmission
 
 P32 retains the native BITSEY equations and C.7/C.24 information boundary, with the registered finer numerical procedures. Its thirteen schedules are continuous RNA communication; immediate pauses of 5/10/15/20/25/100 model-time units; 100-unit pauses starting at 5/10/15/20/25; and full blockade throughout the 300-unit first challenge. Each crosses two historical origins, two fixed incoming-cell sequences, two archived source bundles and two resolutions q32/q64. The resulting sixteen variants per schedule are related deterministic panels, not sixteen independent samples from a biological population. All parents, including failed retention cases, enter onward tests.
 
@@ -844,7 +926,9 @@ After the fixed replacement schedule, all original carriers are absent. Actual p
 
 All 428 q32/q64 and 214 source-bundle comparisons pass the normalized primary-sample error limit $|x-y|/\max(1,|x|,|y|)\leq0.01$, together with the registered classification and inventory requirements. This is paired numerical/source agreement, not full-grid three-resolution contraction or independent biological replication. The recorded closeout checks 856 cases, 7,352 integrations and 525,505 assertions. Native counts, input identities and verification results are available in the retained completion-integrity JSON; the referenced external raw tree is unavailable locally. The paper did not rerun those integrations or audits. P27/P30's original failed gates and unresolved source-paper table/geometry correspondence in C.7 remain unchanged.
 
-### C.41. Hopfield reader intervention and complete activity replacement {#c41}
+<a id="c41"></a>
+
+### C.41. Hopfield reader intervention and complete activity replacement
 
 H004 uses a separate symmetric 64-node binary Hopfield model. A fixed shared base matrix B and acquired record W determine the effective couplings. Asynchronous updates set each unpinned activity to the sign of its local field; an exactly zero field retains its previous bit. Formation uses 24 sweeps with supplied input/output teaching. Later only four input sites (0–3) are clamped in two opposite cue episodes, each lasting eight sweeps. Both eight-site output patches must have mean activity strictly beyond 0.5 in their taught directions under both cues. This is a taught two-orientation task, not arbitrary competence discovery.
 
@@ -860,13 +944,17 @@ Seventy-two fresh base networks (14000–14071) each contain four founders and f
 
 Twenty thousand whole-network bootstrap draws provide pointwise two-sided 95% intervals. Seventeen primary directional lower bounds use one-sided level .05/17; specified minimum effects apply to point estimates. All must pass before the secondary sustained-minus-late criterion can qualify. No sample extension follows the result. All primary and eligible secondary gates pass; protected-copy inferiority remains visible. The retained audit reports 3,334 checks and four scientific fixtures. H002–H003 development and H005–H008 follow-ups are not pooled into confirmation. Further Hopfield work remains ongoing. [E86]
 
-### C.42. Fresh-founder extension of record–recipient interaction {#c42}
+<a id="c42"></a>
+
+### C.42. Fresh-founder extension of record–recipient interaction
 
 D182 uses four new founder blocks 120000/120005/120010/120015, four lives and two target families each, producing 32 records sealed before descendants. Four futures (2/3/4/5), three recipient-coupling settings (0.75/1/1.25), ordinary/aligned writers and retained controls follow C.35's three-rewrite boundary and common/native final readers. The 2,304 labelled lineages, 6,912 read/write pairs and 4,608 final assays remain nested under four independent founder blocks. No earlier cohort is pooled.
 
 The focal group is still common-reader B with ordinary writing; aligned B is the prospectively named secondary lead inherited from exposed development. Both fixed disjoint future pairs, all six pair products, omissions and four-future ranking reversals are reported without converting signed components to probabilities or adding a new significance test. All eight family/writer/assay groups and shape/copying controls remain. A separately frozen saved-only audit follows generation-time native replay and checks complete-panel membership, all saved outputs and statistics. Native summaries, record tables and completion/audit receipts are copied from the available external storage into the portable paper package; underlying simulations were not rerun. [E87]
 
-### C.43. Repair scheduling, call budgets and prospective efficiency {#c43}
+<a id="c43"></a>
+
+### C.43. Repair scheduling, call budgets and prospective efficiency
 
 The P08 budgeted pilot enrolls 256 generation-14 records from sixteen fresh blocks, four per acquisition-history stratum. Four policies continue every lineage through generations 15–32 using independent ongoing cue noise and paired resets/teaching. Warning, periodic and random policies each spend exactly nine repair calls; a continual reference spends eighteen. All share the first repair. The warning model uses six incoming-record measurements: missing/weak edges, weak nodes, strength variability, unsigned reach and signed output separation. A fixed ridge logistic model and rank-based quota rule are fitted on previously exposed histories with whole-block cross-validation. No current body, injury or future outcome enters scheduling. The fitted/scaled/calibration state uses 60,528 numeric bytes in shared apparatus. Calls, CPU, added edge events and weight are recorded separately.
 
@@ -881,7 +969,9 @@ D=p_6-\frac{10}{17}p_{18}-\frac{7}{17}p_1.
 
 The second inequality requires six calls to deliver more than twice the added benefit per extra call of eighteen, relative to one initial repair: five versus seventeen additional calls. A negative verdict requires either one-sided 97.5% upper bound below zero; otherwise the result is unresolved. Native paired bootstraps retain four equally weighted strata. G passes; D remains unresolved. This is not noninferiority, an optimum or a minimum safe budget. Separate optimizer, score and resource checks cover all cases; independent flat dynamics cover teaching and selected continuation states, not exhaustive native replay. This verification scope differs from TT016's full replay.
 
-### C.44. Matched saved-boundary rescue and revision provenance {#c44}
+<a id="c44"></a>
+
+### C.44. Matched saved-boundary rescue and revision provenance
 
 The failure-boundary study selects every first later failure in the six-call prospective cohort: 46 records from 36 independent source blocks, all at the second consecutive unrepaired reconstruction. Selection and analysis are frozen before the counterfactual reads. Each factual/intervention pair restores the same incoming packet, injury, birth and ongoing cue noise. Current repair is the only intervention. The original strict four-margin threshold remains; no successor record is written and no later continuation is simulated. Separate flat dynamics match all 92 reads byte for byte, and separate optimizer checks agree for every repair. Two already exposed technical examples, including one immediate harm, are excluded from the 46-case scientific cohort. All 46 immediate rescues therefore estimate an effect on these selected failures, not harm rates, safety or a better policy at the original call budget. [E89]
 

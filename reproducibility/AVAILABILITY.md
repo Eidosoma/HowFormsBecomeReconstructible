@@ -2,13 +2,13 @@
 
 ## Included
 
-The v1.1 main paper, supporting PDF and versioned Markdown sources are included alongside the unchanged v0.20/v1.0 evidence selection, ledger, historical source methods and bibliography. Scientific wording is retained; links and figure availability are adapted. Source code, protocols and compact reports cover the local E-series, theory and Hopfield work, with selected older non-AI source and exact small records from nineteen existing evidence packages. Successes, failures and unresolved findings remain represented.
+The v1.2 main paper, supporting PDF and versioned Markdown sources are included. The v0.20/v1.0 evidence selection is retained, with D184–D186 exposed development added; the v1.1 package remains historical. Scientific wording is retained; links and figure availability are adapted. Source code, protocols and compact reports cover the local E-series, theory and Hopfield work, with selected older non-AI source and exact small records from nineteen existing evidence packages. Successes, failures and unresolved findings remain represented.
 
-Every supplied file except the two publication PDFs is at most 256 KiB. The PDF exception is restricted to exact paths and hashes in `publication-files.json`; it does not include raw arrays or archives. The export manifest records copied-file hashes and original paths. Paginated records avoid turning the manifest itself into a large file.
+Every supplied file except the four registered v1.1/v1.2 publication PDFs is at most 256 KiB. The PDF exception is restricted to exact paths and hashes in `publication-files.json`; it does not include raw arrays or archives. The export manifest records copied-file hashes and original paths. Paginated records avoid turning the manifest itself into a large file.
 
 ## Figures
 
-Both [publication PDFs](../paper/v1.1/README.md) are included: all sixteen main figures remain in the main paper, and the five supporting figures remain in Supporting Information. Standalone large PNG assets and old PDFs are omitted. Markdown uses small measured SVGs where available and otherwise preserves full captions with an explicit pointer to the complete PDFs.
+Both [current publication PDFs](../paper/v1.2/README.md) are included: all sixteen main figures remain in the main paper, and the five supporting figures remain in Supporting Information. Standalone large PNG assets and old PDFs are omitted. Markdown uses small measured SVGs where available and otherwise preserves full captions with an explicit pointer to the complete PDFs.
 
 Original plotting and extraction scripts are provided. Their input requirements differ: some work from small included tables, while others need omitted arrays or complete original ZIP packages. Original figure provenance remains unchanged. AI-generated conceptual illustrations cannot be regenerated pixel-for-pixel by running the scientific code; their small prompt/provenance files are retained where available.
 
@@ -23,3 +23,7 @@ Some links in the original manuscript lead to this page because their target is 
 The source provides the procedures used to generate simulation data and figures. The public smoke command verifies three small computational paths in isolation. Complete campaign reproduction still requires all declared predecessors, original software/numerical settings and any external source model. The cellular native checkout and some retained raw run archives are not supplied by this export. These gaps are retained explicitly from the paper's release limitations.
 
 Run substantial computations only after reading the applicable protocol and choosing explicit resources and new output locations. Generated outputs belong in ignored directories or a separately versioned data release. No full scientific campaign, external data download, publication or background job is triggered by the review commands.
+
+## Version 1.2 update
+
+The current [v1.2 main/SI package](../paper/v1.2/README.md) preserves the previous selection and adds D184–D186 exposed development. Its [source inventory and omissions](../paper/v1.2/SOURCE_AVAILABILITY.md) are explicit. The preceding v1.1 package remains historical; four exact PDF paths are now registered in `publication-files.json`. No large arrays or archives are added.

@@ -1,0 +1,330 @@
+{
+  "scope": "Finishing-pass arithmetic and frozen-code correspondence; no new simulations, fits or intervals",
+  "source_extract_sha256": "d0d825f9f83f65c40fa8a6e1abd70fceef7d8b6c8a52a3445696fd1a0a0be48e",
+  "checks": {
+    "E057": {
+      "early": {
+        "sham": {
+          "successes": 449,
+          "denominator": 512,
+          "mean": 0.876953125
+        },
+        "pulse": {
+          "successes": 434,
+          "denominator": 512,
+          "mean": 0.84765625
+        }
+      },
+      "late": {
+        "sham": {
+          "successes": 447,
+          "denominator": 512,
+          "mean": 0.873046875
+        },
+        "pulse": {
+          "successes": 444,
+          "denominator": 512,
+          "mean": 0.8671875
+        }
+      }
+    },
+    "P32": {
+      "baseline": {
+        "parents": 16,
+        "retained_E": 0,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 0,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "full_block": {
+        "parents": 16,
+        "retained_E": 0,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 0,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_10": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_100": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_15": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_20": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_25": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_0_5": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_10_100": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_15_100": {
+        "parents": 16,
+        "retained_E": 0,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 0,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_20_100": {
+        "parents": 16,
+        "retained_E": 0,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 0,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_25_100": {
+        "parents": 16,
+        "retained_E": 0,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 0,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      },
+      "pause_5_100": {
+        "parents": 16,
+        "retained_E": 16,
+        "transmitted_E": {
+          "cut": 0,
+          "open": 16,
+          "rna": 0
+        },
+        "every_renewal_window_E": 0,
+        "all_original_carriers_replaced": true
+      }
+    },
+    "P08": {
+      "records": 2112,
+      "blocks": 132,
+      "counts": {
+        "repairs_1": {
+          "ever_recovered": 127,
+          "first_pass": 1879,
+          "later_loss": 118,
+          "terminal": 1884,
+          "terminal_after_failure": 123,
+          "uninterrupted": 1761
+        },
+        "repairs_18": {
+          "ever_recovered": 46,
+          "first_pass": 1879,
+          "later_loss": 0,
+          "terminal": 1925,
+          "terminal_after_failure": 46,
+          "uninterrupted": 1879
+        },
+        "repairs_6": {
+          "ever_recovered": 78,
+          "first_pass": 1879,
+          "later_loss": 46,
+          "terminal": 1911,
+          "terminal_after_failure": 78,
+          "uninterrupted": 1833
+        }
+      },
+      "contrasts": {
+        "continual_benefit": {
+          "mean": 0.05587121212121212,
+          "one_sided_95_lower": 0.047821969696969696,
+          "two_sided_95": [
+            0.045928030303030304,
+            0.06581439393939394
+          ]
+        },
+        "double_call_efficiency": {
+          "mean": 0.0012254901960784314,
+          "one_sided_95_lower": -0.003954991087344028,
+          "two_sided_95": [
+            -0.00493050913547237,
+            0.007214377228163932
+          ]
+        }
+      },
+      "verdict": "UNRESOLVED"
+    },
+    "D182": {
+      "ordinary": {
+        "pairs": [
+          {
+            "first": 2,
+            "second": 3,
+            "interaction": 0.0006162126859029134
+          },
+          {
+            "first": 2,
+            "second": 4,
+            "interaction": 0.00012863344616360128
+          },
+          {
+            "first": 2,
+            "second": 5,
+            "interaction": 0.00026974413130018447
+          },
+          {
+            "first": 3,
+            "second": 4,
+            "interaction": -2.7808878156873884e-05
+          },
+          {
+            "first": 3,
+            "second": 5,
+            "interaction": -0.00019838412602742514
+          },
+          {
+            "first": 4,
+            "second": 5,
+            "interaction": -3.460380766126846e-05
+          }
+        ],
+        "omitted": {
+          "leave_one_block_out": [
+            2.2605613425926136e-06,
+            -9.918997807757846e-05,
+            0.0002801133771982703,
+            0.00022334032097961692
+          ],
+          "leave_one_future_out": [
+            -8.693227061518917e-05,
+            0.00012125792326750578,
+            0.0002291908970585576,
+            0.00023901241796988029
+          ]
+        }
+      },
+      "aligned": {
+        "pairs": [
+          {
+            "first": 2,
+            "second": 3,
+            "interaction": 0.0006161861949496799
+          },
+          {
+            "first": 2,
+            "second": 4,
+            "interaction": 0.00028017494413587783
+          },
+          {
+            "first": 2,
+            "second": 5,
+            "interaction": 0.0003574093182881673
+          },
+          {
+            "first": 3,
+            "second": 4,
+            "interaction": 0.0005363954438103569
+          },
+          {
+            "first": 3,
+            "second": 5,
+            "interaction": 0.0003579060236612956
+          },
+          {
+            "first": 4,
+            "second": 5,
+            "interaction": 0.00017883380254109701
+          }
+        ],
+        "omitted": {
+          "leave_one_block_out": [
+            0.0004823119552047165,
+            0.00047654085198547616,
+            0.00036865595436881104,
+            0.00019019719504525143
+          ],
+          "leave_one_future_out": [
+            0.00035771175667091644,
+            0.0002721393549883807,
+            0.0004438338456330476,
+            0.0004775855276319715
+          ]
+        }
+      }
+    },
+    "H004": {
+      "experiments/hopfield-lane/run.py": "bd25f9288d577244b3dd52d4ee429423a37105cf3b7fcbce52678e8564fa9cf6",
+      "experiments/hopfield-lane/model.py": "49117698b29068e62edb7d5f7de29481f4381c428984085a87fe5cfbf3df07ea",
+      "experiments/hopfield-lane/h003/experiment.py": "24700a8da5d0cf20024075a82caa4c4d26407e28c36316e2192d7744715f06aa"
+    }
+  },
+  "status": "PASS"
+}

@@ -2,13 +2,13 @@
 
 ## Included
 
-The v0.20 manuscript, evidence ledger, methods, supporting discussion and bibliography are included. Scientific wording is retained; links and figure availability are adapted. Source code, protocols and compact reports cover the local E-series, theory and Hopfield work, with selected older non-AI source and exact small records from nineteen existing evidence packages. Successes, failures and unresolved findings remain represented.
+The v1.1 main paper, supporting PDF and versioned Markdown sources are included alongside the unchanged v0.20/v1.0 evidence selection, ledger, historical source methods and bibliography. Scientific wording is retained; links and figure availability are adapted. Source code, protocols and compact reports cover the local E-series, theory and Hopfield work, with selected older non-AI source and exact small records from nineteen existing evidence packages. Successes, failures and unresolved findings remain represented.
 
-Every supplied file is at most 256 KiB. The export manifest records copied-file hashes and original paths. Paginated records avoid turning the manifest itself into a large file.
+Every supplied file except the two publication PDFs is at most 256 KiB. The PDF exception is restricted to exact paths and hashes in `publication-files.json`; it does not include raw arrays or archives. The export manifest records copied-file hashes and original paths. Paginated records avoid turning the manifest itself into a large file.
 
 ## Figures
 
-Small measured SVG figures are included. Large PNG illustrations, raster plots and the original PDFs are omitted. The main paper uses the available SVG counterpart where possible; otherwise it retains the original full caption and an explicit omission marker.
+Both [publication PDFs](../paper/v1.1/README.md) are included: all sixteen main figures remain in the main paper, and the five supporting figures remain in Supporting Information. Standalone large PNG assets and old PDFs are omitted. Markdown uses small measured SVGs where available and otherwise preserves full captions with an explicit pointer to the complete PDFs.
 
 Original plotting and extraction scripts are provided. Their input requirements differ: some work from small included tables, while others need omitted arrays or complete original ZIP packages. Original figure provenance remains unchanged. AI-generated conceptual illustrations cannot be regenerated pixel-for-pixel by running the scientific code; their small prompt/provenance files are retained where available.
 

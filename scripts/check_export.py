@@ -27,6 +27,16 @@ def main():
             p = ROOT/row['path']
             if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:
                 errors.append('Changed public packaging: '+row['path'])
+    publication_rows = json.loads((ROOT/'reproducibility/publication-files.json').read_text())['files']
+    publications = {item['path']: item for item in publication_rows}
+    allowed_paths = {'paper/v1.1/how-forms-become-reconstructible-v1.1.pdf',
+                     'paper/v1.1/how-forms-become-reconstructible-supporting-v1.1.pdf'}
+    if set(publications) != allowed_paths:
+        errors.append('Publication exception does not match the two authorized PDFs')
+    for name, item in publications.items():
+        p = ROOT/name
+        if not p.is_file() or p.stat().st_size != item['bytes'] or hashlib.sha256(p.read_bytes()).hexdigest() != item['sha256']:
+            errors.append('Publication PDF missing or changed: '+name)
     sizes = []
     sensitive = re.compile(rb'(?:-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|AKIA[0-9A-Z]{16})')
     for p in ROOT.rglob('*'):
@@ -38,11 +48,11 @@ def main():
             continue
         size=p.stat().st_size
         sizes.append(size)
-        if size>LIMIT:
+        if size>LIMIT and str(rel) not in publications:
             errors.append('Over 256 KiB: '+str(rel))
         if sensitive.search(p.read_bytes()):
             errors.append('Credential-pattern match: '+str(rel))
-    for name in ['README.md','MANUSCRIPT.md','EVIDENCE_LEDGER.md','METHODS_AND_PROVENANCE.md','SUPPLEMENTARY_EVIDENCE.md','experiments/README.md','reproducibility/README.md','reproducibility/AVAILABILITY.md']:
+    for name in ['README.md','MANUSCRIPT.md','EVIDENCE_LEDGER.md','METHODS_AND_PROVENANCE.md','SUPPLEMENTARY_EVIDENCE.md','experiments/README.md','reproducibility/README.md','reproducibility/AVAILABILITY.md'] + [str(p.relative_to(ROOT)) for p in (ROOT/'paper/v1.1').glob('*.md')]:
         p=ROOT/name
         for target in re.findall(r'\]\(([^\s)]+)\)',p.read_text()):
             if target.startswith(('http:', 'https:', 'mailto:', '#')):
@@ -52,7 +62,7 @@ def main():
                 errors.append('Broken navigation in '+name+': '+target)
     result=dict(status='PASS' if not errors else 'FAIL',source_files_checked=checked,
                 public_files=len(sizes),total_bytes=sum(sizes),maximum_file_bytes=max(sizes),
-                per_file_limit=LIMIT,errors=errors,scientific_replay=False)
+                per_file_limit=LIMIT,publication_exceptions=len(publications),errors=errors,scientific_replay=False)
     print(json.dumps(result,indent=2))
     return bool(errors)
 

@@ -1,6 +1,6 @@
 # Reproducing the first review snapshot
 
-This repository exposes the v0.20 paper and its computational source in a bounded, small-file snapshot. The supported commands have distinct scopes.
+This repository exposes the v1.1 paper and supporting PDF alongside the unchanged v0.20/v1.0 computational evidence selection in a bounded snapshot. The supported commands have distinct scopes.
 
 | Level | Entry point | What it establishes |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Use a repository-local `.venv`; the public launcher accepts `FORMS_PYTHON` as an
 
 ## Finding an experiment
 
-The [index](experiment_index.csv) retains experiment identifiers and points to code, protocols and compact reports. Start from a claim in the [evidence ledger](../EVIDENCE_LEDGER.md), then inspect its protocol and completed report. Dates and statuses inside source READMEs or job records are historical; the paper's dated evidence selection is the authority for what v0.20 claims.
+The [index](experiment_index.csv) retains experiment identifiers and points to code, protocols and compact reports. Start from a claim in the [evidence ledger](../EVIDENCE_LEDGER.md), then inspect its protocol and completed report. Dates and statuses inside source READMEs or job records are historical; the paper's dated evidence selection is the authority for the v1.1 claims.
 
 Paper-local branches include E001–E057, both theory lanes through the selected completed work, and Hopfield studies. Older laws-confirmation, cellular, Wagner/GRN and FEP source is under `upstream/PlasticHeredity/`. The latter is a selected dependency copy, not a complete export of those projects.
 
@@ -36,3 +36,5 @@ The export records a source Git commit for context, but was selected from the wo
 ## Updating this snapshot
 
 Continue using a one-way, explicitly selected export from the working research tree. Review new results before incorporating them. Keep fresh cohorts, reused records, exploratory tests and pending outcomes distinct. A later public release should add the remaining artifact retrieval/generation routes and full workflow checks before advertising complete end-to-end reproduction.
+
+The [v1.1 publication package](../paper/v1.1/README.md) contains both complete PDFs and versioned reading sources. Only those two hash-registered PDFs exceed the ordinary 256 KiB limit; raw-data and campaign-replay limitations remain unchanged.

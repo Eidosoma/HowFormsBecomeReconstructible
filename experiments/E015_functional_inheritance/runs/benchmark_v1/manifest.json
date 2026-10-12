@@ -1,0 +1,64 @@
+{
+  "contract": {
+    "blocks": [
+      900015
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "experiment": "E015",
+    "gains": [
+      1.0,
+      2.0
+    ],
+    "mode": "technical",
+    "stage": "feasibility",
+    "workers": 1
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/PROTOCOL.md": "40e7229c98a0aea9ced3d0b9bde2e8e474d9b215bbf2cf143e91b85c4c17cd11",
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E015_functional_inheritance/plot.py": "142ebccf395c6db04748dca20dc2c3c6cf8c6cf4ee8c2e6657cd86bb2012f450",
+    "E015_functional_inheritance/run.py": "0db5e708a66be98a8c31fc6c3f14e4581f65bfe07db62c895aa57a41ad891dac",
+    "E015_functional_inheritance/tests.py": "ae85bb21c73f2bfcc12645b3b0d6f0c14f75df40effa2275a5e6912c456eb223",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-18T13:45:16.898155+00:00",
+  "status": "RUNNING"
+}

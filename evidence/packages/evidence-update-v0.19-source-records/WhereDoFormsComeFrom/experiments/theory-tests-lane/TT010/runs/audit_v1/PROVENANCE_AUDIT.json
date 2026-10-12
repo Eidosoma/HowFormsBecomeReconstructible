@@ -1,0 +1,91 @@
+{
+  "backup_changed_signs": 2318,
+  "backup_nonzero_edges": 4857,
+  "blocks": 8,
+  "cases_with_no_sign_change": 0,
+  "classification": "EXPOSED_SELECTED_DEVELOPMENT",
+  "diagnostic_contexts": 12288,
+  "enrolled_cases": 64,
+  "exact_unsigned_hybrid_identity": "PASS",
+  "forecast": {
+    "additive_equal_block_mean": 0.4224886983676046,
+    "by_block": {
+      "34000": {
+        "additive": 0.4196428571428571,
+        "erasure_reference": 0.15178571428571427,
+        "incoming_reference": 0.3482142857142857,
+        "outgoing_reference": 0.22321428571428573
+      },
+      "34001": {
+        "additive": 0.2159090909090909,
+        "erasure_reference": 0.028409090909090908,
+        "incoming_reference": 0.10795454545454546,
+        "outgoing_reference": 0.13636363636363635
+      },
+      "34002": {
+        "additive": 0.6666666666666666,
+        "erasure_reference": 0.14583333333333334,
+        "incoming_reference": 0.4444444444444444,
+        "outgoing_reference": 0.3680555555555556
+      },
+      "34003": {
+        "additive": 0.859375,
+        "erasure_reference": 0.125,
+        "incoming_reference": 0.640625,
+        "outgoing_reference": 0.34375
+      },
+      "34004": {
+        "additive": 0.0,
+        "erasure_reference": 0.0,
+        "incoming_reference": 0.0,
+        "outgoing_reference": 0.0
+      },
+      "34005": {
+        "additive": 0.265625,
+        "erasure_reference": 0.046875,
+        "incoming_reference": 0.078125,
+        "outgoing_reference": 0.234375
+      },
+      "34006": {
+        "additive": 0.60546875,
+        "erasure_reference": 0.13671875,
+        "incoming_reference": 0.41796875,
+        "outgoing_reference": 0.32421875
+      },
+      "34007": {
+        "additive": 0.3472222222222222,
+        "erasure_reference": 0.041666666666666664,
+        "incoming_reference": 0.2361111111111111,
+        "outgoing_reference": 0.1527777777777778
+      }
+    },
+    "clipped": false,
+    "fitted_parameters": 0,
+    "forecast_rules": [
+      "additive",
+      "incoming_reference",
+      "outgoing_reference"
+    ],
+    "formula": "prior outgoing + prior incoming - prior erasure_only",
+    "source_analysis_sha256": "989dcfeed1ed6044f4fb0f62c071a50b872face7af6eae05bc4cf00cad8e6972",
+    "status": "FROZEN_FROM_EXPOSED_PRIOR_RESULTS"
+  },
+  "independent_captures": 64,
+  "masked_operator_signed_zero_differences": 4572,
+  "maximum_csr_diagnostic_error": 1.3877787807814457e-16,
+  "maximum_ordered_diagnostic_error": 0.0,
+  "prepared_arrays_checked": 128,
+  "provenance_scope": "Local hash commitments and recorded chronology, with antecedents bound to completed TT009; no external custody or timestamp attestation.",
+  "recorded_chronology": [
+    "2026-10-10T13:00:50.530166+00:00",
+    "2026-10-10T13:04:11.295656+00:00",
+    "2026-10-10T13:04:11.296218+00:00",
+    "2026-10-10T13:04:36.172629+00:00",
+    "2026-10-10T13:38:46.518262+00:00"
+  ],
+  "source_bindings": 103,
+  "source_files": 92,
+  "source_manifest_status": "DRAFT_NOT_REGISTERED_DEVELOPMENT",
+  "status": "PASS",
+  "unique_diagnostic_contexts": 5967
+}

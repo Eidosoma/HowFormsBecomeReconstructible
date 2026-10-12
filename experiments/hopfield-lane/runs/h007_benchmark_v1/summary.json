@@ -1,0 +1,3298 @@
+{
+  "experiment": "H007",
+  "classification": "ENGINEERING_BENCHMARK",
+  "verdict": "ENGINEERING_ONLY",
+  "nominated_dose": null,
+  "passing_doses": [],
+  "replacements_generated": true,
+  "audit_passed": true,
+  "variants": [
+    "unchanged",
+    "hidden_swap"
+  ],
+  "arms": [
+    "renewal",
+    "restored",
+    "foreign",
+    "protected_copy",
+    "damaged_copy",
+    "read_off",
+    "write_off"
+  ],
+  "trials_per_network": 8,
+  "additional_replacements": 1,
+  "results": [
+    {
+      "dose": 1,
+      "current": {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "at_least_16_networks": false,
+          "unchanged_success_at_least_95pct": true,
+          "hidden_swap_success_at_least_95pct": true,
+          "success_equivalent_within_1pp": false,
+          "output_0_equivalent_within_1pp": false,
+          "output_1_equivalent_within_1pp": false,
+          "output_2_equivalent_within_1pp": false,
+          "output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9743303571428571,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_swap": {
+            "mean": 0.9765625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "success": {
+            "mean": 0.0022321428571429047,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.004464285714285698,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.004464285714285698,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "matches": 14,
+        "nonempty_blocks": 1,
+        "dose": 1,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 14,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                false,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9743303571428571,
+              0.9765625
+            ],
+            "current_outputs": [
+              [
+                0.9732142857142857,
+                0.9732142857142857,
+                0.9732142857142857,
+                0.9732142857142857
+              ],
+              [
+                0.9732142857142857,
+                0.9732142857142857,
+                0.9776785714285714,
+                0.9776785714285714
+              ]
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.1008414613964956,
+              2.098213808790516
+            ]
+          }
+        ]
+      },
+      "transmission": {
+        "passed": false,
+        "gates": {
+          "current_passed": false,
+          "integrity_passed": true,
+          "joint_functional_retention_minimum_mean": true,
+          "joint_functional_retention_lower_bound": false,
+          "renewal_minus_read_off_minimum_mean": true,
+          "renewal_minus_read_off_lower_bound": false,
+          "renewal_minus_write_off_minimum_mean": true,
+          "renewal_minus_write_off_lower_bound": false
+        },
+        "statistics": {
+          "joint_functional_retention": {
+            "mean": 0.9464285714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_read_off": {
+            "mean": 0.9464285714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_write_off": {
+            "mean": 0.9464285714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        }
+      },
+      "blocks": [
+        {
+          "seed": 12900,
+          "dose": 1,
+          "matched": 14,
+          "feasible": 16,
+          "matched_metrics": {
+            "joint_functional_retention": [
+              0.9464285714285714,
+              0.0,
+              0.0,
+              0.9107142857142857,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9910714285714286,
+                0.9910714285714286,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.9821428571428571,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9910714285714286,
+                0.9910714285714286,
+                0.0,
+                0.9553571428571429,
+                0.9910714285714286,
+                0.0,
+                0.9910714285714286
+              ],
+              [
+                0.9821428571428571,
+                0.9910714285714286,
+                0.0,
+                0.9642857142857143,
+                0.9821428571428571,
+                0.0,
+                0.9821428571428571
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9553571428571429,
+                0.9553571428571429,
+                0.008928571428571428,
+                0.9642857142857143,
+                0.9553571428571429,
+                0.0,
+                0.0
+              ],
+              [
+                0.9553571428571429,
+                0.9553571428571429,
+                0.0,
+                0.9732142857142857,
+                0.9821428571428571,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "all_feasible_metrics": {
+            "joint_functional_retention": [
+              0.9375,
+              0.0,
+              0.0,
+              0.90625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.984375,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                0.9609375,
+                0.9921875,
+                0.0,
+                0.9921875
+              ],
+              [
+                0.984375,
+                0.9921875,
+                0.0,
+                0.96875,
+                0.984375,
+                0.0,
+                0.984375
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9453125,
+                0.9453125,
+                0.0078125,
+                0.953125,
+                0.953125,
+                0.0,
+                0.0
+              ],
+              [
+                0.9453125,
+                0.9453125,
+                0.0,
+                0.9609375,
+                0.9765625,
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ],
+      "estimates": {
+        "joint_functional_retention": {
+          "renewal": {
+            "mean": 0.9464285714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 0.9107142857142857,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "own_retained": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.9821428571428571,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "distinct": {
+          "renewal": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "body_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.9821428571428571,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9821428571428571,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.9821428571428571,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "reader_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.008928571428571428,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9732142857142857,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9821428571428571,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "dose": 2,
+      "current": {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "at_least_16_networks": false,
+          "unchanged_success_at_least_95pct": true,
+          "hidden_swap_success_at_least_95pct": true,
+          "success_equivalent_within_1pp": false,
+          "output_0_equivalent_within_1pp": false,
+          "output_1_equivalent_within_1pp": false,
+          "output_2_equivalent_within_1pp": false,
+          "output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9765625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_swap": {
+            "mean": 0.9739583333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "success": {
+            "mean": -0.0026041666666666297,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": -0.00520833333333337,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": -0.00520833333333337,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "matches": 12,
+        "nonempty_blocks": 1,
+        "dose": 2,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 12,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                false,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9765625,
+              0.9739583333333334
+            ],
+            "current_outputs": [
+              [
+                0.9765625,
+                0.9765625,
+                0.9765625,
+                0.9765625
+              ],
+              [
+                0.9713541666666666,
+                0.9713541666666666,
+                0.9765625,
+                0.9765625
+              ]
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.102628327998291,
+              2.0971197294012236
+            ]
+          }
+        ]
+      },
+      "transmission": {
+        "passed": false,
+        "gates": {
+          "current_passed": false,
+          "integrity_passed": true,
+          "joint_functional_retention_minimum_mean": true,
+          "joint_functional_retention_lower_bound": false,
+          "renewal_minus_read_off_minimum_mean": true,
+          "renewal_minus_read_off_lower_bound": false,
+          "renewal_minus_write_off_minimum_mean": true,
+          "renewal_minus_write_off_lower_bound": false
+        },
+        "statistics": {
+          "joint_functional_retention": {
+            "mean": 0.9583333333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_read_off": {
+            "mean": 0.9583333333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_write_off": {
+            "mean": 0.9583333333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        }
+      },
+      "blocks": [
+        {
+          "seed": 12900,
+          "dose": 2,
+          "matched": 12,
+          "feasible": 16,
+          "matched_metrics": {
+            "joint_functional_retention": [
+              0.9583333333333334,
+              0.0,
+              0.0,
+              0.9166666666666666,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9895833333333334,
+                0.9895833333333334,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9895833333333334,
+                0.9895833333333334,
+                0.0,
+                0.9479166666666666,
+                0.9895833333333334,
+                0.0,
+                0.9895833333333334
+              ],
+              [
+                1.0,
+                0.9895833333333334,
+                0.0,
+                0.96875,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9583333333333334,
+                0.9583333333333334,
+                0.010416666666666666,
+                0.96875,
+                0.9479166666666666,
+                0.0,
+                0.0
+              ],
+              [
+                0.96875,
+                0.9583333333333334,
+                0.010416666666666666,
+                0.96875,
+                0.9791666666666666,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "all_feasible_metrics": {
+            "joint_functional_retention": [
+              0.9453125,
+              0.0,
+              0.0,
+              0.9140625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                0.9609375,
+                0.9921875,
+                0.0,
+                0.9921875
+              ],
+              [
+                1.0,
+                0.9921875,
+                0.0,
+                0.9765625,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9453125,
+                0.9453125,
+                0.0078125,
+                0.953125,
+                0.953125,
+                0.0,
+                0.0
+              ],
+              [
+                0.96875,
+                0.9453125,
+                0.0078125,
+                0.96875,
+                0.9765625,
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ],
+      "estimates": {
+        "joint_functional_retention": {
+          "renewal": {
+            "mean": 0.9583333333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 0.9166666666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "own_retained": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "distinct": {
+          "renewal": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "body_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9479166666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.96875,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "reader_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.010416666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.96875,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9479166666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.96875,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.010416666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.96875,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9791666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "dose": 4,
+      "current": {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "at_least_16_networks": false,
+          "unchanged_success_at_least_95pct": true,
+          "hidden_swap_success_at_least_95pct": true,
+          "success_equivalent_within_1pp": false,
+          "output_0_equivalent_within_1pp": false,
+          "output_1_equivalent_within_1pp": false,
+          "output_2_equivalent_within_1pp": false,
+          "output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.97265625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_swap": {
+            "mean": 0.9778645833333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "success": {
+            "mean": 0.00520833333333337,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.01041666666666663,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.01041666666666663,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "matches": 12,
+        "nonempty_blocks": 1,
+        "dose": 4,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 12,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            "current_success": [
+              0.97265625,
+              0.9778645833333334
+            ],
+            "current_outputs": [
+              [
+                0.9765625,
+                0.9765625,
+                0.96875,
+                0.96875
+              ],
+              [
+                0.9765625,
+                0.9765625,
+                0.9791666666666666,
+                0.9791666666666666
+              ]
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.099657230330157,
+              2.067508313698436
+            ]
+          }
+        ]
+      },
+      "transmission": {
+        "passed": false,
+        "gates": {
+          "current_passed": false,
+          "integrity_passed": true,
+          "joint_functional_retention_minimum_mean": true,
+          "joint_functional_retention_lower_bound": false,
+          "renewal_minus_read_off_minimum_mean": true,
+          "renewal_minus_read_off_lower_bound": false,
+          "renewal_minus_write_off_minimum_mean": true,
+          "renewal_minus_write_off_lower_bound": false
+        },
+        "statistics": {
+          "joint_functional_retention": {
+            "mean": 0.9479166666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_read_off": {
+            "mean": 0.9479166666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_write_off": {
+            "mean": 0.9479166666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        }
+      },
+      "blocks": [
+        {
+          "seed": 12900,
+          "dose": 4,
+          "matched": 12,
+          "feasible": 16,
+          "matched_metrics": {
+            "joint_functional_retention": [
+              0.9479166666666666,
+              0.0,
+              0.0,
+              0.9166666666666666,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9895833333333334,
+                0.9895833333333334,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9895833333333334,
+                0.9895833333333334,
+                0.0,
+                0.9583333333333334,
+                0.9895833333333334,
+                0.0,
+                0.9895833333333334
+              ],
+              [
+                1.0,
+                0.9895833333333334,
+                0.0,
+                0.9895833333333334,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9479166666666666,
+                0.9479166666666666,
+                0.010416666666666666,
+                0.9583333333333334,
+                0.9583333333333334,
+                0.0,
+                0.0
+              ],
+              [
+                0.9791666666666666,
+                0.9479166666666666,
+                0.0,
+                0.9791666666666666,
+                0.9791666666666666,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "all_feasible_metrics": {
+            "joint_functional_retention": [
+              0.9453125,
+              0.0,
+              0.0,
+              0.90625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                0.9609375,
+                0.9921875,
+                0.0,
+                0.9921875
+              ],
+              [
+                1.0,
+                0.9921875,
+                0.0,
+                0.984375,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9453125,
+                0.9453125,
+                0.0078125,
+                0.953125,
+                0.953125,
+                0.0,
+                0.0
+              ],
+              [
+                0.9765625,
+                0.9453125,
+                0.0,
+                0.9765625,
+                0.9765625,
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ],
+      "estimates": {
+        "joint_functional_retention": {
+          "renewal": {
+            "mean": 0.9479166666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 0.9166666666666666,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "own_retained": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "distinct": {
+          "renewal": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "body_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9895833333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "reader_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9479166666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9479166666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.010416666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9583333333333334,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.9791666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9479166666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9791666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9791666666666666,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "dose": 8,
+      "current": {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "at_least_16_networks": false,
+          "unchanged_success_at_least_95pct": true,
+          "hidden_swap_success_at_least_95pct": true,
+          "success_equivalent_within_1pp": false,
+          "output_0_equivalent_within_1pp": false,
+          "output_1_equivalent_within_1pp": false,
+          "output_2_equivalent_within_1pp": false,
+          "output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9732142857142857,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_swap": {
+            "mean": 0.9821428571428571,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "success": {
+            "mean": 0.008928571428571397,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": 0.004464285714285698,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": 0.004464285714285698,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.013392857142857095,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.013392857142857095,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "matches": 14,
+        "nonempty_blocks": 1,
+        "dose": 8,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 14,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9732142857142857,
+              0.9821428571428571
+            ],
+            "current_outputs": [
+              [
+                0.9754464285714286,
+                0.9754464285714286,
+                0.9709821428571429,
+                0.9709821428571429
+              ],
+              [
+                0.9799107142857143,
+                0.9799107142857143,
+                0.984375,
+                0.984375
+              ]
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.1008414613964956,
+              2.031688900059762
+            ]
+          }
+        ]
+      },
+      "transmission": {
+        "passed": false,
+        "gates": {
+          "current_passed": false,
+          "integrity_passed": true,
+          "joint_functional_retention_minimum_mean": true,
+          "joint_functional_retention_lower_bound": false,
+          "renewal_minus_read_off_minimum_mean": true,
+          "renewal_minus_read_off_lower_bound": false,
+          "renewal_minus_write_off_minimum_mean": true,
+          "renewal_minus_write_off_lower_bound": false
+        },
+        "statistics": {
+          "joint_functional_retention": {
+            "mean": 0.9375,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_read_off": {
+            "mean": 0.9375,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "renewal_minus_write_off": {
+            "mean": 0.9375,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        }
+      },
+      "blocks": [
+        {
+          "seed": 12900,
+          "dose": 8,
+          "matched": 14,
+          "feasible": 16,
+          "matched_metrics": {
+            "joint_functional_retention": [
+              0.9375,
+              0.0,
+              0.0,
+              0.8928571428571429,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9910714285714286,
+                0.9910714285714286,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9910714285714286,
+                0.9910714285714286,
+                0.0,
+                0.9553571428571429,
+                0.9910714285714286,
+                0.0,
+                0.9910714285714286
+              ],
+              [
+                1.0,
+                0.9910714285714286,
+                0.0,
+                0.9910714285714286,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9553571428571429,
+                0.9553571428571429,
+                0.008928571428571428,
+                0.9642857142857143,
+                0.9553571428571429,
+                0.0,
+                0.0
+              ],
+              [
+                0.9642857142857143,
+                0.9553571428571429,
+                0.008928571428571428,
+                0.9642857142857143,
+                0.9642857142857143,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "all_feasible_metrics": {
+            "joint_functional_retention": [
+              0.9296875,
+              0.0,
+              0.0,
+              0.890625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "own_retained": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "distinct": [
+              1.0,
+              0.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "body_success": [
+              [
+                0.9921875,
+                0.9921875,
+                0.0,
+                0.9609375,
+                0.9921875,
+                0.0,
+                0.9921875
+              ],
+              [
+                1.0,
+                0.9921875,
+                0.0,
+                0.9921875,
+                1.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reader_success": [
+              [
+                0.9453125,
+                0.9453125,
+                0.0078125,
+                0.953125,
+                0.953125,
+                0.0,
+                0.0
+              ],
+              [
+                0.9609375,
+                0.9453125,
+                0.0078125,
+                0.9609375,
+                0.96875,
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ],
+      "estimates": {
+        "joint_functional_retention": {
+          "renewal": {
+            "mean": 0.9375,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 0.8928571428571429,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "own_retained": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "distinct": {
+          "renewal": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "restored": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "foreign": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "protected_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "damaged_copy": {
+            "mean": 1.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "read_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "write_off": {
+            "mean": 0.0,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "body_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9910714285714286,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 1.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "reader_success": {
+          "unchanged": {
+            "renewal": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.008928571428571428,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_swap": {
+            "renewal": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "restored": {
+              "mean": 0.9553571428571429,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "foreign": {
+              "mean": 0.008928571428571428,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "protected_copy": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "damaged_copy": {
+              "mean": 0.9642857142857143,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "read_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "write_off": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-11T18:50:31.656504+00:00",
+  "trigger": "User requested status; first completed-result inspection in this lane.",
+  "complete_sha256": "2659edeb6fccff5b4f975ef0d4bfe23e3744c6aeff75bda8c58b979ffdcb64f7",
+  "manifest_sha256": "5f2ad1e9a55721a6409c7bff14051e7b396dca472cb0871aa7a1a194ca928293",
+  "report_sha256": "d1429051f7eb7aa58ca5570f388cc4014192eea5d1ef8d972f09f6f4ccd7cb01",
+  "analysis_sha256": "d2a100a4bf4dfdd1e058b6c2798a920f644ad09b8fcdbbbffc83024f1c7c98da",
+  "verification_sha256": "872237103cb39b906ae032a0f2040d90e7eccaea776dcffae3c244478047d628",
+  "frozen_inputs_checked": 72,
+  "output_hashes_checked": 63,
+  "verification_file_hashes_checked": 19,
+  "source_bindings_checked": 55,
+  "source_copies_checked": 38,
+  "causal_audit_file_hashes_checked": 8,
+  "elapsed_minutes": 40.280983388451084,
+  "worker_cpu_minutes": 38.54581014748333,
+  "total_cpu_minutes": 39.075401264149995,
+  "counts": {
+    "repairs_1": {
+      "first": 222,
+      "uninterrupted": 203,
+      "terminal": 219,
+      "later_losses": 19,
+      "repair_calls": 256
+    },
+    "repairs_3": {
+      "first": 222,
+      "uninterrupted": 208,
+      "terminal": 219,
+      "later_losses": 14,
+      "repair_calls": 768
+    },
+    "repairs_6": {
+      "first": 222,
+      "uninterrupted": 218,
+      "terminal": 224,
+      "later_losses": 4,
+      "repair_calls": 1536
+    },
+    "repairs_9": {
+      "first": 222,
+      "uninterrupted": 221,
+      "terminal": 226,
+      "later_losses": 1,
+      "repair_calls": 2304
+    },
+    "repairs_18": {
+      "first": 222,
+      "uninterrupted": 222,
+      "terminal": 226,
+      "later_losses": 0,
+      "repair_calls": 4608
+    }
+  },
+  "uninterrupted_counts_by_block": {
+    "82000": [
+      15,
+      16,
+      16,
+      16,
+      16
+    ],
+    "82001": [
+      12,
+      14,
+      16,
+      16,
+      16
+    ],
+    "82002": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "82003": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "82004": [
+      13,
+      13,
+      15,
+      15,
+      15
+    ],
+    "82005": [
+      15,
+      15,
+      16,
+      16,
+      16
+    ],
+    "82006": [
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "82007": [
+      13,
+      13,
+      15,
+      15,
+      15
+    ],
+    "82008": [
+      11,
+      14,
+      14,
+      14,
+      14
+    ],
+    "82009": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "82010": [
+      10,
+      9,
+      10,
+      10,
+      10
+    ],
+    "82011": [
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "82012": [
+      12,
+      12,
+      13,
+      13,
+      14
+    ],
+    "82013": [
+      12,
+      14,
+      14,
+      14,
+      14
+    ],
+    "82014": [
+      11,
+      10,
+      10,
+      12,
+      12
+    ],
+    "82015": [
+      14,
+      13,
+      14,
+      15,
+      15
+    ]
+  },
+  "contrast_summaries": {
+    "repairs_3_minus_repairs_1": {
+      "mean": 0.01953125,
+      "by_block": {
+        "82000": 0.0625,
+        "82001": 0.125,
+        "82002": 0.0,
+        "82003": 0.0,
+        "82004": 0.0,
+        "82005": 0.0,
+        "82006": 0.0,
+        "82007": 0.0,
+        "82008": 0.1875,
+        "82009": 0.0,
+        "82010": -0.0625,
+        "82011": 0.0,
+        "82012": 0.0,
+        "82013": 0.125,
+        "82014": -0.0625,
+        "82015": -0.0625
+      },
+      "descriptive_stratified_block_bootstrap_95": [
+        -0.0078125,
+        0.046875
+      ],
+      "positive_blocks": 4,
+      "tied_blocks": 9,
+      "negative_blocks": 3
+    },
+    "repairs_6_minus_repairs_3": {
+      "mean": 0.0390625,
+      "by_block": {
+        "82000": 0.0,
+        "82001": 0.125,
+        "82002": 0.0,
+        "82003": 0.0,
+        "82004": 0.125,
+        "82005": 0.0625,
+        "82006": 0.0,
+        "82007": 0.125,
+        "82008": 0.0,
+        "82009": 0.0,
+        "82010": 0.0625,
+        "82011": 0.0,
+        "82012": 0.0625,
+        "82013": 0.0,
+        "82014": 0.0,
+        "82015": 0.0625
+      },
+      "descriptive_stratified_block_bootstrap_95": [
+        0.015625,
+        0.0625
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 9,
+      "negative_blocks": 0
+    },
+    "repairs_9_minus_repairs_6": {
+      "mean": 0.01171875,
+      "by_block": {
+        "82000": 0.0,
+        "82001": 0.0,
+        "82002": 0.0,
+        "82003": 0.0,
+        "82004": 0.0,
+        "82005": 0.0,
+        "82006": 0.0,
+        "82007": 0.0,
+        "82008": 0.0,
+        "82009": 0.0,
+        "82010": 0.0,
+        "82011": 0.0,
+        "82012": 0.0,
+        "82013": 0.0,
+        "82014": 0.125,
+        "82015": 0.0625
+      },
+      "descriptive_stratified_block_bootstrap_95": [
+        0.0,
+        0.02734375
+      ],
+      "positive_blocks": 2,
+      "tied_blocks": 14,
+      "negative_blocks": 0
+    },
+    "repairs_18_minus_repairs_9": {
+      "mean": 0.00390625,
+      "by_block": {
+        "82000": 0.0,
+        "82001": 0.0,
+        "82002": 0.0,
+        "82003": 0.0,
+        "82004": 0.0,
+        "82005": 0.0,
+        "82006": 0.0,
+        "82007": 0.0,
+        "82008": 0.0,
+        "82009": 0.0,
+        "82010": 0.0,
+        "82011": 0.0,
+        "82012": 0.0625,
+        "82013": 0.0,
+        "82014": 0.0,
+        "82015": 0.0
+      },
+      "descriptive_stratified_block_bootstrap_95": [
+        0.0,
+        0.01171875
+      ],
+      "positive_blocks": 1,
+      "tied_blocks": 15,
+      "negative_blocks": 0
+    },
+    "repairs_18_minus_repairs_1": {
+      "mean": 0.07421875,
+      "by_block": {
+        "82000": 0.0625,
+        "82001": 0.25,
+        "82002": 0.0,
+        "82003": 0.0,
+        "82004": 0.125,
+        "82005": 0.0625,
+        "82006": 0.0,
+        "82007": 0.125,
+        "82008": 0.1875,
+        "82009": 0.0,
+        "82010": 0.0,
+        "82011": 0.0,
+        "82012": 0.125,
+        "82013": 0.125,
+        "82014": 0.0625,
+        "82015": 0.0625
+      },
+      "descriptive_stratified_block_bootstrap_95": [
+        0.046875,
+        0.10546875
+      ],
+      "positive_blocks": 10,
+      "tied_blocks": 6,
+      "negative_blocks": 0
+    }
+  },
+  "causal_audit_counts": {
+    "rescue_by_current_repair": 6,
+    "harm_by_current_repair": 0,
+    "both_fail": 1,
+    "both_pass": 0
+  },
+  "scientific_interpretation": "Uninterrupted counts rise 203,208,218,221,222 for the specified 1,3,6,9,18-call schedules. Six calls is a candidate resource-saving schedule, with four fewer uninterrupted successes than eighteen calls in this exposed cohort. Timing phase is part of each intervention; no minimum effective budget, equivalence, general monotonicity or unique RDT law is established. Selected-state causal repair rescues six of seven saved failures; it does not establish the warning schedule population effect or overturn its failed forecast.",
+  "exposure": "All 16 P08 frequency blocks, raw histories and model-family outcomes are exposed. Any outcome-informed budget selection needs a frozen quantitative criterion and new prospective cohort.",
+  "verification_scope": "Closeout checks frozen/source/output hashes, raw-window means and margins, intended/opposite endpoints, every generation schedule and every lineage repair quota. Completed run separately passed same-lane optimizer, preparation, capture, noise, policy, selected dynamics and analysis audits. No dynamics rerun at closeout.",
+  "automatic_successor": false
+}

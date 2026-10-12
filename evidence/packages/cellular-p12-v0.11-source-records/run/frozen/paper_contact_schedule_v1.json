@@ -1,0 +1,179 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 14400,
+  "total_budget_seconds": 64800,
+  "algorithm": "depol",
+  "power": 60,
+  "kd": 1.25e-14,
+  "teachers": 3,
+  "pupils": 3,
+  "maximum_rounds": 6,
+  "contact_window": 80000,
+  "hold_horizons": [
+    10000,
+    10000
+  ],
+  "round_horizon": 100000,
+  "late_fraction": 0.95,
+  "graph": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "schedules": {
+    "sequential": [
+      [
+        0,
+        20000
+      ],
+      [
+        20000,
+        40000
+      ],
+      [
+        40000,
+        60000
+      ]
+    ],
+    "simultaneous": [
+      [
+        0,
+        20000
+      ],
+      [
+        0,
+        20000
+      ],
+      [
+        0,
+        20000
+      ]
+    ],
+    "overlap_25": [
+      [
+        0,
+        20000
+      ],
+      [
+        15000,
+        35000
+      ],
+      [
+        30000,
+        50000
+      ]
+    ],
+    "overlap_50": [
+      [
+        0,
+        20000
+      ],
+      [
+        10000,
+        30000
+      ],
+      [
+        20000,
+        40000
+      ]
+    ],
+    "gaps_10": [
+      [
+        0,
+        20000
+      ],
+      [
+        30000,
+        50000
+      ],
+      [
+        60000,
+        80000
+      ]
+    ],
+    "short_10": [
+      [
+        0,
+        10000
+      ],
+      [
+        20000,
+        30000
+      ],
+      [
+        40000,
+        50000
+      ]
+    ],
+    "uneven": [
+      [
+        0,
+        20000
+      ],
+      [
+        18000,
+        38000
+      ],
+      [
+        41000,
+        61000
+      ]
+    ]
+  },
+  "founders": [
+    "rewritten_restored_E",
+    "ordinary_M"
+  ],
+  "lineage": "relay__rewritten_restored_E__sequential",
+  "alternative_priority": [
+    "simultaneous",
+    "overlap_50",
+    "overlap_25",
+    "uneven",
+    "gaps_10",
+    "short_10"
+  ],
+  "maximum_selected_schedules": 2,
+  "replay_cases": 2,
+  "calibration_cases": 8,
+  "screen_cases": 50,
+  "minimum_cases": 10,
+  "screened_cases": 60,
+  "maximum_cases": 84,
+  "all_six_cells_evolve": true,
+  "external_schedule": true,
+  "automatic_follow_on": false,
+  "stop_rule": "first_incomplete_three_M_round",
+  "source": "actual_P9_round6_live_group",
+  "selection": "eligible_sequential_plus_first_eligible_alternative_common_to_both_founders"
+}

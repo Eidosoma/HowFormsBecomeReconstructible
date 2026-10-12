@@ -1,0 +1,89 @@
+{
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "boundary_gates_passed": 10,
+  "boundary_gates_total": 12,
+  "figures_provenance_sha256": {
+    "benchmark_v1": "6931baba2406dc92ecdd52ade370ec60abc03911e7292e06c6ce4415b7e39693",
+    "renewal_v1": "bafa6c3f8a01c58ad8ff8c5f5258eed6efdfc92d22d4b22c4323f9d8eb50a6e9"
+  },
+  "fixture_receipt_and_evidence_verified": true,
+  "full_renewal_qualified": false,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1"
+  ],
+  "primary": {
+    "endpoint": "intact both-cue strict success after three renewed replacements",
+    "lower_bound_above_075": false,
+    "statistics": {
+      "block_means": [
+        0.25,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.75,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        1.0,
+        0.5,
+        0.0,
+        0.75,
+        0.25,
+        0.75,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.4375
+      ],
+      "ci95": [
+        0.171875,
+        0.3730957031249993
+      ],
+      "mean": 0.271484375
+    }
+  },
+  "renewed_original_gates_passed": {
+    "1": 15,
+    "3": 15
+  },
+  "runs": {
+    "benchmark_v1": {
+      "audit_seconds": 92.9430176820606,
+      "audit_sha256": "61bbd77fd5899423aa65f0112db9eca5c3636302d8df6aed34f9c5c78997498d",
+      "complete_sha256": "c7e6c5c72ebe1c41267e8a42d37596a1544ff8a450146fd9099601d1e5bbe174",
+      "individual_observations": 1512,
+      "simulation_seconds": 90.1567590162158,
+      "workflow_seconds": 184.44446874875575
+    },
+    "renewal_v1": {
+      "audit_seconds": 1288.6928926184773,
+      "audit_sha256": "87007d2d75b8a7a4c01d586eb2cf46b5ff38bb3cfbbe1156b884be675a608805",
+      "complete_sha256": "f35aaa471fddd5bf5d18d54ffbfc11cf3a41f7fed6be68570e82cf6897e65fe2",
+      "individual_observations": 193536,
+      "simulation_seconds": 1247.1623307773843,
+      "workflow_seconds": 2537.256375502795
+    }
+  },
+  "scientific_figure_visually_inspected": true,
+  "scientific_status": "FUNCTIONAL_RENEWAL_NOT_ESTABLISHED",
+  "status": "PASS",
+  "subsequent_experiment_started": false,
+  "verified_utc": "2026-09-19T11:49:19.138227+00:00"
+}

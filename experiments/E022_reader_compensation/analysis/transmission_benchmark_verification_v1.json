@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "utc": "2026-09-20T14:18:03.519101+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E022_reader_compensation/analysis/verify_transmission.py\", line 282, in <module>\n    verify(args.analysis.resolve(), args.output.resolve())\n    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E022_reader_compensation/analysis/verify_transmission.py\", line 154, in verify\n    assert np.array_equal(np.ascontiguousarray(rebuilt, dtype='<f8').view(np.uint8).reshape(computed.shape), computed)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

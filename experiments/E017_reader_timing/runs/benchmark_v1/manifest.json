@@ -1,0 +1,78 @@
+{
+  "contract": {
+    "blocks": [
+      900017
+    ],
+    "conditions": [
+      "baseline",
+      "extended",
+      "staged"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "experiment": "E017",
+    "gain": 2.0,
+    "mode": "technical",
+    "regimes": [
+      "consistent",
+      "engineered"
+    ],
+    "timing": {
+      "baseline_steps": 512,
+      "settling_steps": 256,
+      "total_steps": 2048
+    },
+    "workers": 1
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/PROTOCOL.md": "3ca6a56c2ab47ea34d77d2e8b34f9ffdf3a468342d4876886ca19ebd31329fe6",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E017_reader_timing/plot.py": "7ab08d78b4fabb3be6d8bfa1c4d5a16d605f49d1f7258b488cb56375cc8a685f",
+    "E017_reader_timing/run.py": "2102d3adea36cf7b8764e00b48476e723fcfb777a335d5d3a4f1ef3071494bc9",
+    "E017_reader_timing/tests.py": "48e36af89169efac1998ced9d7cbd789736d680d2f242bde511dee9519bd9675",
+    "E017_reader_timing/workflow.py": "c39b68a2b8ed656bf4288b2b79652f9853f0340cb0e5cfdf6223b39857346dde",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-18T16:16:48.495374+00:00",
+  "status": "RUNNING"
+}

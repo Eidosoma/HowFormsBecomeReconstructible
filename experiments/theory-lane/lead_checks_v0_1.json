@@ -1,0 +1,50 @@
+{
+  "status": "EXACT_CONSTRUCTED_DEVELOPMENT_NOT_NATIVE_EVIDENCE",
+  "created_at_utc": "2026-10-08T18:31:36.474998+00:00",
+  "contrast": [
+    0.5,
+    1e-05,
+    -0.5,
+    -0.5
+  ],
+  "common_component": [
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "body_values": [
+    1.0,
+    0.0,
+    -1.0,
+    -1.0
+  ],
+  "contrast_cycle_edges": [
+    5e-06,
+    -5e-06,
+    0.25,
+    -0.25
+  ],
+  "tolerance_cycle_edges": [
+    0.040005,
+    0.03999499999999999,
+    0.25,
+    -0.25
+  ],
+  "contrast_cycle_sign": 1,
+  "tolerance_cycle_sign": -1,
+  "weak_node_drive_original": 1.0,
+  "weak_node_drive_tolerance": 0.00012500000000012504,
+  "gauge_identity_max_error": 0.0,
+  "coactivity_identity_max_error": 2.7755575615628914e-17,
+  "checks": "Gauge change, coactivity decomposition, cycle signs and normalized-drive counterexample passed.",
+  "source_sha256": {
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E041_full_rewrite_confirmation/model.py": "d8ded1e0a692a5de363b067be7e4b151a81ba2a79328024fec7df154b6dbbe7e",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672"
+  },
+  "script_sha256": "58f41791e47db5b4654d6ee51d0d15d38dc415aef4164b72e02c3cdb5fcc7cd0",
+  "exposure_update": "Inspected targeted E051 live model.py excerpts: condition grid, tolerance mask, capture, diagnostic fields and rebuild calls. No E051 result files, raw histories, completed-block counts or protocol text were opened. Filenames revealed frozen/run copies; their contents were not read.",
+  "interpretation": "Mechanistic explanation of E051 remains a hypothesis informed by the user-supplied interim outcomes. These checks establish algebra and a possibility, not what caused the observed failures."
+}

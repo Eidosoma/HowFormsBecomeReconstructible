@@ -1,0 +1,205 @@
+{
+  "status": "COMPLETE",
+  "at_utc": "2026-10-11T17:59:13.341556+00:00",
+  "cpu_seconds": 21.454861985,
+  "contexts": [
+    {
+      "context": 0,
+      "block": 82000,
+      "case": 8,
+      "generation": 21,
+      "events": [
+        {
+          "block": 82000,
+          "case": 8,
+          "generation": 21,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": false,
+          "incoming_sha256": "4a1eeee08a112ff246ae6f088f736400aa3e77ed84139b616b79fa63b5eadd4a"
+        }
+      ],
+      "no_repair_margin": -1.0012259967512418,
+      "repair_margin": 0.9950956299740348,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "cd24942b4c2d647a27339e385af79bdaeffe6b774980ff1c710aa4f6d13a7bf7"
+    },
+    {
+      "context": 1,
+      "block": 82001,
+      "case": 9,
+      "generation": 28,
+      "events": [
+        {
+          "block": 82001,
+          "case": 9,
+          "generation": 28,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": false,
+          "incoming_sha256": "967ac7d8f898d0862c46a60697623768d0c1a25b21cb3fa42ad9f0d652c310ec"
+        }
+      ],
+      "no_repair_margin": 0.07710202008073466,
+      "repair_margin": 0.9927413548573936,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "d4933cc29ed659ee1704f074c8e998130ee8c98217015f64bebcafb4db1a69c5"
+    },
+    {
+      "context": 2,
+      "block": 82007,
+      "case": 10,
+      "generation": 19,
+      "events": [
+        {
+          "block": 82007,
+          "case": 10,
+          "generation": 19,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": false,
+          "incoming_sha256": "5234139c300ab86b1fa2ad27fadc1106c8fd5e15afcf4eff5a19181c41a3d600"
+        }
+      ],
+      "no_repair_margin": -1.000875662650273,
+      "repair_margin": 0.9974271615493983,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "8bedde96aef8e57125735958660637d17a5d8a4c61a21f891b8543727169252f"
+    },
+    {
+      "context": 3,
+      "block": 82010,
+      "case": 2,
+      "generation": 25,
+      "events": [
+        {
+          "block": 82010,
+          "case": 2,
+          "generation": 25,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": false,
+          "incoming_sha256": "cfcfb9fa965e37a04a0a135b96d30d98fcbe6a19703e67e76f3aa618aa3979b5"
+        }
+      ],
+      "no_repair_margin": -0.9504680187911391,
+      "repair_margin": 0.49697517155422144,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "36c1c97bfa87d9b2c13ced1dfbacd112193f9771948ceaed6e7d0aa4e51be04b"
+    },
+    {
+      "context": 4,
+      "block": 82012,
+      "case": 7,
+      "generation": 19,
+      "events": [
+        {
+          "block": 82012,
+          "case": 7,
+          "generation": 19,
+          "policy": "warning",
+          "source_variant": 0,
+          "source_repair_applied": true,
+          "incoming_sha256": "3ea50024c15fbd498265537baaeb38ebd4b8155b6824804a39bf69e621ac30c9"
+        },
+        {
+          "block": 82012,
+          "case": 7,
+          "generation": 19,
+          "policy": "periodic",
+          "source_variant": 1,
+          "source_repair_applied": true,
+          "incoming_sha256": "3ea50024c15fbd498265537baaeb38ebd4b8155b6824804a39bf69e621ac30c9"
+        },
+        {
+          "block": 82012,
+          "case": 7,
+          "generation": 19,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": true,
+          "incoming_sha256": "3ea50024c15fbd498265537baaeb38ebd4b8155b6824804a39bf69e621ac30c9"
+        }
+      ],
+      "no_repair_margin": -0.9526825476720663,
+      "repair_margin": -0.8067227794019602,
+      "outcome": "both_fail",
+      "sha256": "75efce1bcf101cac1c03466bbc191a66e9648f96aaa84df6d438beb0c74ef8de"
+    },
+    {
+      "context": 5,
+      "block": 82013,
+      "case": 4,
+      "generation": 21,
+      "events": [
+        {
+          "block": 82013,
+          "case": 4,
+          "generation": 21,
+          "policy": "warning",
+          "source_variant": 0,
+          "source_repair_applied": false,
+          "incoming_sha256": "08244de55642a6b16db1737d2a14f73abf2daa93a77e86eee3c70cd850c54b3f"
+        }
+      ],
+      "no_repair_margin": -0.9409894753614587,
+      "repair_margin": 0.9949344261707733,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "be97f1b9f654d6468e5b2f421badf76cee18be8d9c59b48e8e96ba1770c1fec6"
+    },
+    {
+      "context": 6,
+      "block": 82015,
+      "case": 8,
+      "generation": 19,
+      "events": [
+        {
+          "block": 82015,
+          "case": 8,
+          "generation": 19,
+          "policy": "warning",
+          "source_variant": 0,
+          "source_repair_applied": false,
+          "incoming_sha256": "aaa041b0e1176a76dc1cd006ec42bb93677ce686cf0b5f37557f0ef5871fcb3c"
+        },
+        {
+          "block": 82015,
+          "case": 8,
+          "generation": 19,
+          "policy": "random",
+          "source_variant": 2,
+          "source_repair_applied": false,
+          "incoming_sha256": "aaa041b0e1176a76dc1cd006ec42bb93677ce686cf0b5f37557f0ef5871fcb3c"
+        }
+      ],
+      "no_repair_margin": -0.7967428530089724,
+      "repair_margin": 0.9972204022321965,
+      "outcome": "rescue_by_current_repair",
+      "sha256": "3bfdbfdce6623bffb58b3710496489a8a9d7c7fa94969c97caa85a3ddacbbbae"
+    }
+  ],
+  "source_policy_events": 10,
+  "unique_contexts": 7,
+  "paired_read_contexts": 14,
+  "independent_optimizer_checks": 7,
+  "independent_replay_contexts": 14,
+  "all_factual_bytes_match": true,
+  "counts": {
+    "rescue_by_current_repair": 6,
+    "harm_by_current_repair": 0,
+    "both_fail": 1,
+    "both_pass": 0
+  },
+  "interpretation": "Post-hoc selected failing states under their realized current injury/noise. Tests only this repair at this boundary. Both-fail does not rule out earlier repair, other interventions, or success under another disturbance. Not a population repair-effect estimate or a schedule-level causal effect.",
+  "source_complete_sha256": "f6f7ac72c8d3d786d956a982ea304728384f6225beeb10a5fb7c374f8f3dfc1b",
+  "files_sha256": {
+    "context_00.npz": "cd24942b4c2d647a27339e385af79bdaeffe6b774980ff1c710aa4f6d13a7bf7",
+    "context_01.npz": "d4933cc29ed659ee1704f074c8e998130ee8c98217015f64bebcafb4db1a69c5",
+    "SELECTION.json": "250d7cea567ee9afd96a4a70367bfc2b9c1ba1db42bd5a326c71397491cbbb4b",
+    "context_03.npz": "36c1c97bfa87d9b2c13ced1dfbacd112193f9771948ceaed6e7d0aa4e51be04b",
+    "context_05.npz": "be97f1b9f654d6468e5b2f421badf76cee18be8d9c59b48e8e96ba1770c1fec6",
+    "context_06.npz": "3bfdbfdce6623bffb58b3710496489a8a9d7c7fa94969c97caa85a3ddacbbbae",
+    "context_02.npz": "8bedde96aef8e57125735958660637d17a5d8a4c61a21f891b8543727169252f",
+    "context_04.npz": "75efce1bcf101cac1c03466bbc191a66e9648f96aaa84df6d438beb0c74ef8de"
+  }
+}

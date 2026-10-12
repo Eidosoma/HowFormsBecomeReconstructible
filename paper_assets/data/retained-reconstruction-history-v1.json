@@ -1,0 +1,406 @@
+{
+  "schema": "forms_retained_d140_history_v1",
+  "selection": {
+    "campaign": "l20_fresh_founders_v1_attempt1",
+    "block": 78000,
+    "life": 0,
+    "roles": [
+      0,
+      1
+    ],
+    "arms": [
+      "aligned",
+      "translated"
+    ],
+    "generations": [
+      1,
+      2,
+      3
+    ],
+    "terminal_generation": 4,
+    "rule": "Use the smallest registered block and life identifiers in the completed fresh-founder campaign; show both supplied pattern roles and both writer arms, without selection by outcome.",
+    "fields": "Shared F0 packet, saved read-end and writer-end body voltage, outgoing record, and fresh terminal body where retained.",
+    "display": "Original stored coordinates; no extra alignment, per-panel rescaling, smoothing, or favorable-outcome filtering. Use one symmetric scale per field quantity, declared in the figure."
+  },
+  "selection_file": "paper_assets/data/reconstruction-history-selection-v1.json",
+  "selection_sha256": "335705fdeceff41d84d756b8fd096591c59c169c52a3155198b54c7af640afbf",
+  "sources": [
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/outputs/l20_fresh_founders_v1_attempt1/block_78000.npz",
+      "sha256": "9727020fcf29aa783305e380c1a2a36d4d5a833f0eb03b7fbc297a655e7c5327",
+      "bytes": 14820152
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/outputs/l20_fresh_founders_v1_attempt1/block_78000.json",
+      "sha256": "803677ce0d5438c7d33d1602ff051f5e08cc827eb0658e78a5fea551d1096f68",
+      "bytes": 787240
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/outputs/l20_fresh_founders_v1_attempt1/output_hashes.sha256",
+      "sha256": "d5075066cdd68fafd81b75ebef4429d851ed672eca9e534f1643b172cbbf76c9",
+      "bytes": 3298
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/runs/l20_fresh_founders_v1_attempt1/COMPLETE.json",
+      "sha256": "353e4c16236aae3ec6254e24d401ea7710f9578c75e69145bff28bfe6b97a415",
+      "bytes": 3947
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L20_FRESH_FOUNDERS_2026-09-16.md",
+      "sha256": "f4c522e7dd03ba3bf25fb7e6487718d88e950171d34436bb3b8c4bd47946e2b7",
+      "bytes": 10018
+    }
+  ],
+  "data": "paper_assets/data/retained-reconstruction-history-v1.npz",
+  "data_sha256": "ac451cc31edca28653e8fc790b817a8408c05501fc35110ffa7673b75e0b9814",
+  "arrays": {
+    "targets": {
+      "shape": [
+        2,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "initial_packets_u8": {
+      "shape": [
+        2,
+        2048
+      ],
+      "dtype": "uint8"
+    },
+    "incoming_packets_u8": {
+      "shape": [
+        2,
+        2,
+        3,
+        2048
+      ],
+      "dtype": "uint8"
+    },
+    "routed_packets_u8": {
+      "shape": [
+        2,
+        2,
+        3,
+        2048
+      ],
+      "dtype": "uint8"
+    },
+    "outgoing_packets_u8": {
+      "shape": [
+        2,
+        2,
+        3,
+        2048
+      ],
+      "dtype": "uint8"
+    },
+    "read_end_bodies": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "writer_end_bodies": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "writer_end_references": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "terminal_bodies": {
+      "shape": [
+        2,
+        2,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "terminal_input_packets_u8": {
+      "shape": [
+        2,
+        2,
+        2048
+      ],
+      "dtype": "uint8"
+    },
+    "generation_shifts": {
+      "shape": [
+        3,
+        2
+      ],
+      "dtype": "int64"
+    },
+    "initial_records": {
+      "shape": [
+        2,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "incoming_records": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "routed_records": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "outgoing_records": {
+      "shape": [
+        2,
+        2,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float64"
+    }
+  },
+  "state_axes": {
+    "read": [
+      "V",
+      "moving_average",
+      "R"
+    ],
+    "write": [
+      "V",
+      "moving_average",
+      "R",
+      "theta"
+    ]
+  },
+  "read_updates": 300,
+  "write_updates": 1000,
+  "terminal_read_updates": 300,
+  "record": "256 little-endian float64 values, decoded exactly; inherited record is normalized tanh(final R), not final writer theta",
+  "coordinates": "Stored coordinates, origin upper left; existing guide routing is part of the simulated dynamics, not plotting alignment",
+  "selection_checks": [
+    "Role 0: identical F0 bytes and first read-end body in both arms",
+    "Role 0, aligned: packet hashes match and G1/G2/G3 outputs enter the next body exactly",
+    "Role 0, translated: packet hashes match and G1/G2/G3 outputs enter the next body exactly",
+    "Role 1: identical F0 bytes and first read-end body in both arms",
+    "Role 1, aligned: packet hashes match and G1/G2/G3 outputs enter the next body exactly",
+    "Role 1, translated: packet hashes match and G1/G2/G3 outputs enter the next body exactly"
+  ],
+  "packet_lineage": [
+    {
+      "role": 0,
+      "arm": "aligned",
+      "generation": 1,
+      "input_sha256": "c422944d7d4f4c99faab6bb8425ed1d626934ef5c2c3cbad189ba29b37c56db7",
+      "output_sha256": "cb12e33ba46fa17aca300b2f278332470600f91af4c7f929f9124342275f0db6",
+      "guide_forward_shift": [
+        15,
+        0
+      ],
+      "writer_shift": [
+        3,
+        4
+      ]
+    },
+    {
+      "role": 0,
+      "arm": "aligned",
+      "generation": 2,
+      "input_sha256": "cb12e33ba46fa17aca300b2f278332470600f91af4c7f929f9124342275f0db6",
+      "output_sha256": "20d7ca30993d329082188f9557f3244f81a750604dd2f13393fcc8bce809ff8f",
+      "guide_forward_shift": [
+        0,
+        0
+      ],
+      "writer_shift": [
+        8,
+        12
+      ]
+    },
+    {
+      "role": 0,
+      "arm": "aligned",
+      "generation": 3,
+      "input_sha256": "20d7ca30993d329082188f9557f3244f81a750604dd2f13393fcc8bce809ff8f",
+      "output_sha256": "38847c021f3b4c6e7a750787942a962233521e9721e698f78199add4e8ce0e4a",
+      "guide_forward_shift": [
+        0,
+        0
+      ],
+      "writer_shift": [
+        13,
+        14
+      ]
+    },
+    {
+      "role": 0,
+      "arm": "translated",
+      "generation": 1,
+      "input_sha256": "c422944d7d4f4c99faab6bb8425ed1d626934ef5c2c3cbad189ba29b37c56db7",
+      "output_sha256": "f17d639b6731aec24aa2231e7378e0a93a46bad1e82686d2bbcdcfc1ec6cef3c",
+      "guide_forward_shift": [
+        15,
+        0
+      ],
+      "writer_shift": [
+        3,
+        4
+      ]
+    },
+    {
+      "role": 0,
+      "arm": "translated",
+      "generation": 2,
+      "input_sha256": "f17d639b6731aec24aa2231e7378e0a93a46bad1e82686d2bbcdcfc1ec6cef3c",
+      "output_sha256": "c1ce8b178dfba12948f58f5b0021074711acd7be84273e6bff59b5a09eef4154",
+      "guide_forward_shift": [
+        3,
+        4
+      ],
+      "writer_shift": [
+        8,
+        12
+      ]
+    },
+    {
+      "role": 0,
+      "arm": "translated",
+      "generation": 3,
+      "input_sha256": "c1ce8b178dfba12948f58f5b0021074711acd7be84273e6bff59b5a09eef4154",
+      "output_sha256": "61c120d1a7b149ae7e8ee752206058af7ce1765c71571d0688609c308205676c",
+      "guide_forward_shift": [
+        8,
+        12
+      ],
+      "writer_shift": [
+        13,
+        14
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "aligned",
+      "generation": 1,
+      "input_sha256": "ec3ee543bb2cc0a86e943c56617c064c4267228593653057f7905489c4cb9135",
+      "output_sha256": "6158ff90304463f20e65e9e394090332051fc4325cce4400693434338cd6274d",
+      "guide_forward_shift": [
+        0,
+        0
+      ],
+      "writer_shift": [
+        3,
+        4
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "aligned",
+      "generation": 2,
+      "input_sha256": "6158ff90304463f20e65e9e394090332051fc4325cce4400693434338cd6274d",
+      "output_sha256": "b2300f76d82f9d94511bbe7ae7dce3ebfc2d902c52b456bd551ef4de1e7e3bdc",
+      "guide_forward_shift": [
+        1,
+        0
+      ],
+      "writer_shift": [
+        8,
+        12
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "aligned",
+      "generation": 3,
+      "input_sha256": "b2300f76d82f9d94511bbe7ae7dce3ebfc2d902c52b456bd551ef4de1e7e3bdc",
+      "output_sha256": "05d86ecd6ec2eaea8333298700884a93c7c49553edfbcadc0eb7274396845d1a",
+      "guide_forward_shift": [
+        0,
+        0
+      ],
+      "writer_shift": [
+        13,
+        14
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "translated",
+      "generation": 1,
+      "input_sha256": "ec3ee543bb2cc0a86e943c56617c064c4267228593653057f7905489c4cb9135",
+      "output_sha256": "af3ad937ed6c1523e081f71d6b0c373b6296a85e8c2528ee724c445a25a292b4",
+      "guide_forward_shift": [
+        0,
+        0
+      ],
+      "writer_shift": [
+        3,
+        4
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "translated",
+      "generation": 2,
+      "input_sha256": "af3ad937ed6c1523e081f71d6b0c373b6296a85e8c2528ee724c445a25a292b4",
+      "output_sha256": "1baef26bbf96a0f83a4e420672877d13178dda35389a076c5aab22a5f0ad6260",
+      "guide_forward_shift": [
+        4,
+        4
+      ],
+      "writer_shift": [
+        8,
+        12
+      ]
+    },
+    {
+      "role": 1,
+      "arm": "translated",
+      "generation": 3,
+      "input_sha256": "1baef26bbf96a0f83a4e420672877d13178dda35389a076c5aab22a5f0ad6260",
+      "output_sha256": "dc66c71788681eb1269572754a69a2f0b835795f8beb4ee7ae3b45db0c18579f",
+      "guide_forward_shift": [
+        6,
+        12
+      ],
+      "writer_shift": [
+        13,
+        14
+      ]
+    }
+  ],
+  "interpretation": "Two supplied roles in one paired life, illustrative only; not an independent replication or an effect estimate",
+  "extraction": "Exact selection and packet decoding from retained arrays; no smoothing, trajectory interpolation, or model import",
+  "extractor": "paper_assets/extract_reconstruction_history.py",
+  "extractor_sha256": "37b7aa4ce411377aff470649c241061d68c26563c0d9d1719d10355c06556974",
+  "new_simulations": 0,
+  "new_statistical_tests": 0
+}

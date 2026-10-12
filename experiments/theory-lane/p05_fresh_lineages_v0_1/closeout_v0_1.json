@@ -1,0 +1,434 @@
+{
+  "anchors_sha256": {
+    "COMPLETE.json": "2fef2b1a3cfa1609ee74b161b89c72c93fc33a3c3c7b7ca284713f15d5aaa951",
+    "REPORT.md": "2d2add88ac41cbb42ddeb682c34ccbf63a37ac1d267f78714cc8b2ee06060929",
+    "VERIFICATION.json": "778536c84f879160ebe907c821ff61b7993e8c905bb217bad34c0971c812f581",
+    "analysis.json": "9961c3e74a6e7d6e9500da43ae4b5d9e40d651b57be43b76c71c54a97c695496",
+    "manifest.json": "e963d5e767d2e8bd111f873cef62a3e864e6bdb4398430ca09129df51ef68e86"
+  },
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "blocks": 16,
+  "body_subgroups": {
+    "body_fail": {
+      "completion_minus_outgoing": 0.15151515151515152,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.24621212121212122,
+        "recipient_completion": 0.3977272727272727,
+        "recipient_shuffled": 0.10606060606060606
+      },
+      "reads_per_variant": 264,
+      "records": 33,
+      "successes": {
+        "erased": 0,
+        "outgoing": 65,
+        "recipient_completion": 105,
+        "recipient_shuffled": 28
+      }
+    },
+    "body_pass": {
+      "completion_minus_outgoing": 0.061659192825112105,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.9271300448430493,
+        "recipient_completion": 0.9887892376681614,
+        "recipient_shuffled": 0.3094170403587444
+      },
+      "reads_per_variant": 1784,
+      "records": 223,
+      "successes": {
+        "erased": 0,
+        "outgoing": 1654,
+        "recipient_completion": 1764,
+        "recipient_shuffled": 552
+      }
+    }
+  },
+  "checked_at_utc": "2026-10-10T22:36:19.439643+00:00",
+  "completed_at_utc": "2026-10-10T21:30:14.769876+00:00",
+  "hash_and_receipt_checks": {
+    "benchmark_code": 12,
+    "benchmark_config": 1,
+    "benchmark_known_binding": 1,
+    "completed_outputs": 74,
+    "current_inputs": 38,
+    "frozen_inputs": 38,
+    "known_code": 2,
+    "known_config": 1,
+    "known_outputs": 1,
+    "known_sources": 11,
+    "manifest_known_binding": 1,
+    "reuse_sources": 11,
+    "start_manifest_binding": 1,
+    "unchanged_reuse": 10,
+    "validation_bindings": 3,
+    "validation_code": 21,
+    "validation_config": 1,
+    "validation_known_binding": 1,
+    "verification_files": 51,
+    "worker_outputs": 48,
+    "worker_receipts": 16
+  },
+  "history_summaries": {
+    "clustered_tolerance_rewrite": {
+      "blocks": 4,
+      "completion_minus_outgoing": 0.109375,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.66015625,
+        "recipient_completion": 0.76953125,
+        "recipient_shuffled": 0.1953125
+      },
+      "records": 64
+    },
+    "exact_rewrite": {
+      "blocks": 4,
+      "completion_minus_outgoing": 0.06640625,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.888671875,
+        "recipient_completion": 0.955078125,
+        "recipient_shuffled": 0.376953125
+      },
+      "records": 64
+    },
+    "single_tolerance_rewrite": {
+      "blocks": 4,
+      "completion_minus_outgoing": 0.03515625,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.931640625,
+        "recipient_completion": 0.966796875,
+        "recipient_shuffled": 0.29296875
+      },
+      "records": 64
+    },
+    "spaced_tolerance_rewrite": {
+      "blocks": 4,
+      "completion_minus_outgoing": 0.08203125,
+      "rates": {
+        "erased": 0.0,
+        "outgoing": 0.876953125,
+        "recipient_completion": 0.958984375,
+        "recipient_shuffled": 0.267578125
+      },
+      "records": 64
+    }
+  },
+  "limitations": [
+    "Only 16 independent blocks, four per history; stratified block-bootstrap intervals are descriptive.",
+    "No new task distribution, external replication, repeated repair or apparatus turnover tested.",
+    "Lattice, input ports, algorithm, reader and added edge resources remain supplied."
+  ],
+  "new_scientific_runs_started_during_status": 0,
+  "paired_counts": {
+    "completion_vs_outgoing": {
+      "both": 1709,
+      "left_only": 160,
+      "neither": 169,
+      "reads": 2048,
+      "right_only": 10
+    },
+    "completion_vs_shuffled": {
+      "both": 579,
+      "left_only": 1290,
+      "neither": 178,
+      "reads": 2048,
+      "right_only": 1
+    }
+  },
+  "primary": {
+    "by_block": {
+      "81000": 0.1015625,
+      "81001": 0.03125,
+      "81002": 0.1171875,
+      "81003": 0.15625,
+      "81004": 0.0859375,
+      "81005": 0.046875,
+      "81006": 0.078125,
+      "81007": 0.1328125,
+      "81008": 0.0078125,
+      "81009": 0.0390625,
+      "81010": 0.046875,
+      "81011": 0.1015625,
+      "81012": 0.0703125,
+      "81013": 0.0234375,
+      "81014": 0.0859375,
+      "81015": 0.046875
+    },
+    "descriptive_stratified_block_bootstrap_95": [
+      0.05810546875,
+      0.08740234375
+    ],
+    "mean": 0.0732421875,
+    "negative_blocks": 0,
+    "positive_blocks": 16,
+    "tied_blocks": 0
+  },
+  "rates": {
+    "erased": {
+      "intended": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0,
+          "81013": 0.0,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "negative_blocks": 0,
+        "positive_blocks": 0,
+        "reads": 2048,
+        "successes": 0,
+        "tied_blocks": 16
+      },
+      "opposite": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0,
+          "81013": 0.0,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "negative_blocks": 0,
+        "positive_blocks": 0,
+        "reads": 2048,
+        "successes": 0,
+        "tied_blocks": 16
+      }
+    },
+    "outgoing": {
+      "intended": {
+        "by_block": {
+          "81000": 0.8359375,
+          "81001": 0.96875,
+          "81002": 0.7890625,
+          "81003": 0.640625,
+          "81004": 0.9140625,
+          "81005": 0.890625,
+          "81006": 0.8515625,
+          "81007": 0.796875,
+          "81008": 0.875,
+          "81009": 0.953125,
+          "81010": 0.953125,
+          "81011": 0.640625,
+          "81012": 0.9296875,
+          "81013": 0.9140625,
+          "81014": 0.9140625,
+          "81015": 0.5625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.8115234375,
+          0.86865234375
+        ],
+        "mean": 0.83935546875,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "reads": 2048,
+        "successes": 1719,
+        "tied_blocks": 0
+      },
+      "opposite": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0,
+          "81013": 0.0,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "negative_blocks": 0,
+        "positive_blocks": 0,
+        "reads": 2048,
+        "successes": 0,
+        "tied_blocks": 16
+      }
+    },
+    "recipient_completion": {
+      "intended": {
+        "by_block": {
+          "81000": 0.9375,
+          "81001": 1.0,
+          "81002": 0.90625,
+          "81003": 0.796875,
+          "81004": 1.0,
+          "81005": 0.9375,
+          "81006": 0.9296875,
+          "81007": 0.9296875,
+          "81008": 0.8828125,
+          "81009": 0.9921875,
+          "81010": 1.0,
+          "81011": 0.7421875,
+          "81012": 1.0,
+          "81013": 0.9375,
+          "81014": 1.0,
+          "81015": 0.609375
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.8798828125,
+          0.94580078125
+        ],
+        "mean": 0.91259765625,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "reads": 2048,
+        "successes": 1869,
+        "tied_blocks": 0
+      },
+      "opposite": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0,
+          "81013": 0.0,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "negative_blocks": 0,
+        "positive_blocks": 0,
+        "reads": 2048,
+        "successes": 0,
+        "tied_blocks": 16
+      }
+    },
+    "recipient_shuffled": {
+      "intended": {
+        "by_block": {
+          "81000": 0.359375,
+          "81001": 0.28125,
+          "81002": 0.2421875,
+          "81003": 0.21875,
+          "81004": 0.3828125,
+          "81005": 0.328125,
+          "81006": 0.2734375,
+          "81007": 0.1640625,
+          "81008": 0.5,
+          "81009": 0.34375,
+          "81010": 0.2890625,
+          "81011": 0.328125,
+          "81012": 0.265625,
+          "81013": 0.21875,
+          "81014": 0.265625,
+          "81015": 0.0703125
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.25,
+          0.31640625
+        ],
+        "mean": 0.283203125,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "reads": 2048,
+        "successes": 580,
+        "tied_blocks": 0
+      },
+      "opposite": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0078125,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0078125,
+          "81013": 0.0,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.00244140625
+        ],
+        "mean": 0.0009765625,
+        "negative_blocks": 0,
+        "positive_blocks": 2,
+        "reads": 2048,
+        "successes": 2,
+        "tied_blocks": 14
+      }
+    }
+  },
+  "reason": "User requested status after detached run; no scientific rerun or successor.",
+  "records": 256,
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_fresh_lineages_v0_1/runs/pilot_v1",
+  "runtime_seconds": 2067.1378308918793,
+  "scientific_interpretation": "The frozen conventional repair generalizes to an unselected new-lineage cohort within the same simulator and balanced four-history population. All blocks improve on average, but paired reads include 10 losses and 160 rescues. This evaluates one subsequent reconstruction, not repeated repair or autonomous heredity, and does not uniquely confirm RDT.",
+  "scientific_read_contexts": 8192,
+  "status": "COMPLETE_VERIFIED",
+  "verification_scope": {
+    "development_mask_generator_shared": true,
+    "external_replication": false,
+    "independent_captures": 3584,
+    "independent_optimizer_checks": 256,
+    "native_audit_contexts": 32,
+    "same_lane_internal": true
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "blocks": [
+    35000,
+    35001,
+    35002,
+    35003,
+    35004,
+    35005,
+    35006,
+    35007,
+    35008,
+    35009,
+    35010,
+    35011,
+    35012,
+    35013,
+    35014,
+    35015,
+    35016,
+    35017,
+    35018,
+    35019,
+    35020,
+    35021,
+    35022,
+    35023,
+    35024,
+    35025,
+    35026,
+    35027,
+    35028,
+    35029,
+    35030,
+    35031
+  ],
+  "conditions": [
+    {
+      "id": "paired/reference",
+      "pairing": "paired",
+      "regime": "reference"
+    },
+    {
+      "id": "paired/record32",
+      "pairing": "paired",
+      "regime": "record32"
+    },
+    {
+      "id": "paired/arithmetic32",
+      "pairing": "paired",
+      "regime": "arithmetic32"
+    },
+    {
+      "id": "paired/grid_2m16",
+      "pairing": "paired",
+      "regime": "grid_2m16"
+    },
+    {
+      "id": "paired/grid_2m12",
+      "pairing": "paired",
+      "regime": "grid_2m12"
+    },
+    {
+      "id": "paired/record_noise_1e4",
+      "pairing": "paired",
+      "regime": "record_noise_1e4"
+    },
+    {
+      "id": "paired/record_noise_1e3",
+      "pairing": "paired",
+      "regime": "record_noise_1e3"
+    },
+    {
+      "id": "paired/record_noise_leakage_1e4",
+      "pairing": "paired",
+      "regime": "record_noise_leakage_1e4"
+    },
+    {
+      "id": "paired/floor_1e6",
+      "pairing": "paired",
+      "regime": "floor_1e6"
+    },
+    {
+      "id": "paired/floor_1e4",
+      "pairing": "paired",
+      "regime": "floor_1e4"
+    },
+    {
+      "id": "paired/floor_1e2",
+      "pairing": "paired",
+      "regime": "floor_1e2"
+    },
+    {
+      "id": "noise_0999/reference",
+      "pairing": "noise_0999",
+      "regime": "reference"
+    },
+    {
+      "id": "noise_0999/record32",
+      "pairing": "noise_0999",
+      "regime": "record32"
+    },
+    {
+      "id": "noise_0999/arithmetic32",
+      "pairing": "noise_0999",
+      "regime": "arithmetic32"
+    },
+    {
+      "id": "noise_0999/grid_2m16",
+      "pairing": "noise_0999",
+      "regime": "grid_2m16"
+    },
+    {
+      "id": "noise_0999/grid_2m12",
+      "pairing": "noise_0999",
+      "regime": "grid_2m12"
+    },
+    {
+      "id": "noise_0999/record_noise_1e4",
+      "pairing": "noise_0999",
+      "regime": "record_noise_1e4"
+    },
+    {
+      "id": "noise_0999/record_noise_1e3",
+      "pairing": "noise_0999",
+      "regime": "record_noise_1e3"
+    },
+    {
+      "id": "noise_0999/record_noise_leakage_1e4",
+      "pairing": "noise_0999",
+      "regime": "record_noise_leakage_1e4"
+    },
+    {
+      "id": "noise_0999/floor_1e6",
+      "pairing": "noise_0999",
+      "regime": "floor_1e6"
+    },
+    {
+      "id": "noise_0999/floor_1e4",
+      "pairing": "noise_0999",
+      "regime": "floor_1e4"
+    },
+    {
+      "id": "noise_0999/floor_1e2",
+      "pairing": "noise_0999",
+      "regime": "floor_1e2"
+    },
+    {
+      "id": "noise_0/reference",
+      "pairing": "noise_0",
+      "regime": "reference"
+    },
+    {
+      "id": "noise_0/record32",
+      "pairing": "noise_0",
+      "regime": "record32"
+    },
+    {
+      "id": "noise_0/arithmetic32",
+      "pairing": "noise_0",
+      "regime": "arithmetic32"
+    },
+    {
+      "id": "noise_0/grid_2m16",
+      "pairing": "noise_0",
+      "regime": "grid_2m16"
+    },
+    {
+      "id": "noise_0/grid_2m12",
+      "pairing": "noise_0",
+      "regime": "grid_2m12"
+    },
+    {
+      "id": "noise_0/record_noise_1e4",
+      "pairing": "noise_0",
+      "regime": "record_noise_1e4"
+    },
+    {
+      "id": "noise_0/record_noise_1e3",
+      "pairing": "noise_0",
+      "regime": "record_noise_1e3"
+    },
+    {
+      "id": "noise_0/record_noise_leakage_1e4",
+      "pairing": "noise_0",
+      "regime": "record_noise_leakage_1e4"
+    },
+    {
+      "id": "noise_0/floor_1e6",
+      "pairing": "noise_0",
+      "regime": "floor_1e6"
+    },
+    {
+      "id": "noise_0/floor_1e4",
+      "pairing": "noise_0",
+      "regime": "floor_1e4"
+    },
+    {
+      "id": "noise_0/floor_1e2",
+      "pairing": "noise_0",
+      "regime": "floor_1e2"
+    }
+  ],
+  "evaluation": {
+    "birth_rho": 1.0,
+    "common_assay_receives_same_already_processed_packet": true,
+    "common_reader": {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0
+    },
+    "cue_noise_rho": 1.0,
+    "damage": [
+      "intact",
+      "scattered",
+      "square"
+    ],
+    "erased_record_controls": true,
+    "h0_regime_assay": "after_one_source_record_channel_application",
+    "horizons": [
+      0,
+      8,
+      16,
+      24,
+      32
+    ],
+    "native_reader": "arithmetic and denominator floor of the assigned regime",
+    "offline_scoring_arithmetic": "float64_for_every_regime",
+    "unmodified_acquisition_reference": true
+  },
+  "excluded_blocks": [
+    900041
+  ],
+  "excluded_claims": [
+    "E041 full 17-part durability qualification",
+    "robustness under combinations of numerical challenges",
+    "robustness to independent teaching or terminal-assay cue noise",
+    "indefinite heredity",
+    "causal explanation of rewriting versus preservation",
+    "general robustness to all precisions, noise levels or floors"
+  ],
+  "execution": {
+    "benchmark_pending": true,
+    "detached_above_seconds": 600,
+    "forecast_seconds": null,
+    "implementation_pending": true,
+    "maximum_workers": 8,
+    "no_automatic_launch": true,
+    "no_automatic_polling": true,
+    "numerical_threads_per_worker": 1,
+    "shared_cpu_ceiling": 12,
+    "technical_validation_pending": true
+  },
+  "experiment": "E052",
+  "floor": {
+    "applied_in_common_assay": false,
+    "applied_in_native_assay": true,
+    "applied_in_rebuilding": true,
+    "denominator_recomputed_after_damage": true,
+    "formula": "max(sum(abs(surviving_incident_weights)), epsilon)",
+    "zero_floor_identity_branch": true
+  },
+  "founders_per_block": 4,
+  "generations": 32,
+  "inference": {
+    "bootstrap_namespace": [
+      "E052",
+      "bootstrap",
+      "precision_normalization"
+    ],
+    "independent_unit": "block",
+    "interval_quantiles": [
+      0.025,
+      0.975
+    ],
+    "no_optional_stopping": true,
+    "no_prior_scientific_cases_pooled": true,
+    "no_selection_on_E051_outcomes": true,
+    "resamples": 10000,
+    "secondary_intervals": "pointwise"
+  },
+  "model": {
+    "absent_nonport_cells": 24,
+    "activity_noise_sd": 0.02,
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "gain": 2.0,
+    "holding_steps": 128,
+    "margin": 0.25,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "side": 16,
+    "teach_steps": 512,
+    "writer_beta": 3.0
+  },
+  "pairings": [
+    {
+      "birth_rho": 1.0,
+      "id": "paired",
+      "noise_rho": 1.0
+    },
+    {
+      "birth_rho": 1.0,
+      "id": "noise_0999",
+      "noise_rho": 0.999
+    },
+    {
+      "birth_rho": 1.0,
+      "id": "noise_0",
+      "noise_rho": 0.0
+    }
+  ],
+  "primary": {
+    "absolute_lower95_must_exceed": 0.75,
+    "assay": "native",
+    "challenges": [
+      "arithmetic32",
+      "grid_2m16",
+      "record_noise_1e4",
+      "floor_1e4"
+    ],
+    "damage": "scattered",
+    "demonstrated_loss_if_difference_upper95_below": -0.05,
+    "difference_lower95_must_exceed": -0.05,
+    "failed_noninferiority_is_not_demonstrated_loss": true,
+    "horizon": 32,
+    "joint_requirements": 9,
+    "outcome": "both_cues_correct",
+    "pairing": "paired",
+    "reference": "reference"
+  },
+  "question": "Sensitivity of finite rebuilding to arithmetic precision, record representation/corruption, and a positive local-strength denominator floor",
+  "randomness": {
+    "base_streams": "existing E016/E022 teaching, injury, birth and update streams",
+    "cue_innovation_stream": "E051 namespace, with fresh E052 block IDs",
+    "record_noise_independent_of_activity_noise": true,
+    "record_noise_shared_between_comparison_conditions": true,
+    "record_noise_stream": [
+      "E052",
+      "block",
+      "record_noise",
+      "generation"
+    ]
+  },
+  "recipients_per_founder": 4,
+  "record_channel": {
+    "apply_after_generations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "apply_again_in_terminal_assay": false,
+    "apply_at_acquisition": true,
+    "mutate_each_undirected_edge_once": true,
+    "noise_clip_bounds": [
+      -1.0,
+      1.0
+    ],
+    "noise_support_control_pair": [
+      "record_noise_leakage_1e4",
+      "record_noise_1e4"
+    ],
+    "payload_container_bytes": 4096,
+    "precision_changes_are_not_compression_claims": true,
+    "protect_physically_erased_edges": true,
+    "quantization_rounding": "nearest_ties_to_even",
+    "record_noise_distribution": "standard_normal_times_sigma",
+    "zero_handling": "Protect exact zeros except in the explicitly identified all-available noise control; always protect physical erasures"
+  },
+  "regimes": [
+    {
+      "arithmetic": "float64",
+      "component": "none",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "reference",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_precision",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "record32",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float32"
+    },
+    {
+      "arithmetic": "float32",
+      "component": "arithmetic_beyond_record32",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "arithmetic32",
+      "primary_challenge": true,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float32"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_grid",
+      "denominator_floor": 0.0,
+      "grid_step": 1.52587890625e-05,
+      "id": "grid_2m16",
+      "primary_challenge": true,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_grid",
+      "denominator_floor": 0.0,
+      "grid_step": 0.000244140625,
+      "id": "grid_2m12",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_noise",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "record_noise_1e4",
+      "primary_challenge": true,
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_noise",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "record_noise_1e3",
+      "primary_challenge": false,
+      "record_noise_sd": 0.001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "record_noise_zero_support_control",
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "record_noise_leakage_1e4",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "all_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "reader_floor",
+      "denominator_floor": 1e-06,
+      "grid_step": 0.0,
+      "id": "floor_1e6",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "reader_floor",
+      "denominator_floor": 0.0001,
+      "grid_step": 0.0,
+      "id": "floor_1e4",
+      "primary_challenge": true,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "component": "reader_floor",
+      "denominator_floor": 0.01,
+      "grid_step": 0.0,
+      "id": "floor_1e2",
+      "primary_challenge": false,
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    }
+  ],
+  "scientific_run_launched": false,
+  "scope_of_current_request": "planning",
+  "status": "DRAFT_NOT_FROZEN",
+  "writer": {
+    "fallback_product_tolerance": 0.0,
+    "policy": "full_bridge_rewrite",
+    "preserve_strong_incoming": false
+  }
+}

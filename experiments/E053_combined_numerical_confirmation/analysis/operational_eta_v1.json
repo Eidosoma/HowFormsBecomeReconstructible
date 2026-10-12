@@ -1,0 +1,30 @@
+{
+  "status": "OPERATIONAL_ESTIMATE",
+  "utc": "2026-10-10T12:52:17.190238+00:00",
+  "method": "Unbuffered E053 benchmark scaled by E052 actual full workflow / its unbuffered benchmark; rounded working range around calibrated point",
+  "unbuffered_seconds": 36301.91700428724,
+  "E052_actual_seconds": 73352.61981688812,
+  "E052_unbuffered_seconds": 52216.54762417078,
+  "calibration_ratio": 1.4047772814251236,
+  "calibrated_point_seconds": 50996.1082798031,
+  "working_range_hours": [
+    12,
+    18
+  ],
+  "working_completion_utc": [
+    "2026-10-11T00:51:04.016948+00:00",
+    "2026-10-11T06:51:04.016948+00:00"
+  ],
+  "conservative_forecast_seconds": 109025.75101286173,
+  "conservative_completion_utc": "2026-10-11T19:08:09.767961+00:00",
+  "launch_utc": "2026-10-10T12:51:04.016948+00:00",
+  "basis_sha256": {
+    "E053_combined_numerical_confirmation/analysis/forecast_v1.json": "453daf1344b930f650164e1cafc8a154d740a87308d571321a783df1314cc290",
+    "E052_precision_normalization/analysis/forecast_v1.json": "c50d3cc8f395ca3b2c96c3ad836be838804b1ac58e8f108ee766ab0782858719",
+    "E052_precision_normalization/jobs/robustness_v1/status.json": "4aa0a3a76e4343f9e621fe5a23154f0da8133151d7a0964b09873357c3fde17b",
+    "E053_combined_numerical_confirmation/analysis/scientific_launch_verification_v1.json": "eef6563b7110a64a8db204ae20e2c2d633ebc568b287af2270e83beec25c446b"
+  },
+  "scientific_outputs_inspected": false,
+  "post_startup_poll_performed": false,
+  "depends_on_shared_cpu_and_replay_throughput": true
+}

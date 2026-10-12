@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ladder-web"
+version = "0.1.0"
+description = "E35: the machinery ladder and the first measured cognitive light cone"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23", "pandas>=2.0", "scipy>=1.11"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

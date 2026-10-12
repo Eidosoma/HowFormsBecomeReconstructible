@@ -1,0 +1,153 @@
+{
+  "status": "DEVELOPMENT_TOY_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T18:10:26.821818+00:00",
+  "calibration_sha256": "59d63cd2eff4e61b69e2deb927c749184e5a330851a369a0daeab108a8486482",
+  "interpretation": "Three constructed cases and one sampling realization each. No confidence interval, empirical superiority claim, or native-system validation.",
+  "cases": [
+    {
+      "name": "slow_loss_ready",
+      "true_params": [
+        0.8,
+        0.25,
+        0.99,
+        1.0,
+        1.0
+      ],
+      "fitted_params": [
+        0.8074744218498354,
+        0.2820699463424666,
+        0.9955694443274403,
+        1.0,
+        1.0
+      ],
+      "exact_inversion_max_error": 7.216449660063518e-16,
+      "h32": {
+        "truth": [
+          0.6899921343831414,
+          0.11000786561685866,
+          0.19999999999999996
+        ],
+        "forecast": [
+          0.753995695345947,
+          0.053478726503888394,
+          0.19252557815016458
+        ],
+        "ordinary_output_markov": null
+      },
+      "errors_over_horizons_greater_than_two": {
+        "forecasts": {
+          "rmse_target_A": 0.05652840436406187,
+          "max_absolute_category_error": 0.09736212561662916
+        },
+        "ordinary_output_markov_forecasts": {
+          "status": "UNSUPPORTED: Output baseline has an unobserved source category"
+        },
+        "ordinary_structured_hmm_forecasts": {
+          "rmse_target_A": 0.05652840436406187,
+          "max_absolute_category_error": 0.09736212561662916
+        }
+      },
+      "successful_optimizer_starts": 8
+    },
+    {
+      "name": "fast_loss_ready",
+      "true_params": [
+        0.8,
+        0.25,
+        0.92,
+        1.0,
+        1.0
+      ],
+      "fitted_params": [
+        0.8286566605862259,
+        0.23689392784600996,
+        0.9189916857736067,
+        1.0,
+        1.0
+      ],
+      "exact_inversion_max_error": 7.216449660063518e-16,
+      "h32": {
+        "truth": [
+          0.42775047788314363,
+          0.37224952211685636,
+          0.19999999999999996
+        ],
+        "forecast": [
+          0.44208167073785476,
+          0.38657498984837113,
+          0.1713433394137741
+        ],
+        "ordinary_output_markov": [
+          0.6556687877170516,
+          0.1597630115449724,
+          0.18456820073797814
+        ]
+      },
+      "errors_over_horizons_greater_than_two": {
+        "forecasts": {
+          "rmse_target_A": 0.017873408533461,
+          "max_absolute_category_error": 0.028656660586225846
+        },
+        "ordinary_output_markov_forecasts": {
+          "rmse_target_A": 0.17078623726484382,
+          "max_absolute_category_error": 0.25370914164771036
+        },
+        "ordinary_structured_hmm_forecasts": {
+          "rmse_target_A": 0.017873408533461,
+          "max_absolute_category_error": 0.028656660586225846
+        }
+      },
+      "successful_optimizer_starts": 8
+    },
+    {
+      "name": "slow_loss_initially_poor_expression",
+      "true_params": [
+        0.8,
+        0.25,
+        0.99,
+        0.25,
+        1.0
+      ],
+      "fitted_params": [
+        0.8218444936819307,
+        0.2411509409531803,
+        1.0,
+        0.2363281251509289,
+        0.9956616011976377
+      ],
+      "exact_inversion_max_error": 2.7755575615628914e-16,
+      "h32": {
+        "truth": [
+          0.6899921343831414,
+          0.11000786561685866,
+          0.19999999999999996
+        ],
+        "forecast": [
+          0.8200617490983718,
+          0.001782744583558873,
+          0.1781555063180693
+        ],
+        "ordinary_output_markov": [
+          0.8119609828241978,
+          0.011556947109975417,
+          0.17648207006582822
+        ]
+      },
+      "errors_over_horizons_greater_than_two": {
+        "forecasts": {
+          "rmse_target_A": 0.11929026349320904,
+          "max_absolute_category_error": 0.209823154088147
+        },
+        "ordinary_output_markov_forecasts": {
+          "rmse_target_A": 0.11104589544979747,
+          "max_absolute_category_error": 0.19344968351321312
+        },
+        "ordinary_structured_hmm_forecasts": {
+          "rmse_target_A": 0.11929026349320904,
+          "max_absolute_category_error": 0.209823154088147
+        }
+      },
+      "successful_optimizer_starts": 8
+    }
+  ]
+}

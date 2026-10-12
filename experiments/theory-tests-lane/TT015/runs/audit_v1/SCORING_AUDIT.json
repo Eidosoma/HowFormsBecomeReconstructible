@@ -1,0 +1,38 @@
+{
+  "dual_task_flags": 92160,
+  "duplicated_matched_endpoints": 9216,
+  "independent_blocks": 16,
+  "new_scientific_cohort": false,
+  "raw_endpoints": 46080,
+  "status": "PASS",
+  "studies": {
+    "noise": {
+      "descriptive_whole_block_inference": true,
+      "dual_task_flags": 55296,
+      "independent_bootstrap_multiplicity_check": true,
+      "nearest_threshold": 0.005072074657646447,
+      "raw_endpoints": 27648,
+      "scalar_window_max_error": 6.661338147750939e-16,
+      "status": "PASS",
+      "table_rows": {
+        "block_summaries": 96,
+        "reads": 27648,
+        "resources": 27648
+      }
+    },
+    "serial": {
+      "descriptive_whole_block_inference": true,
+      "dual_task_flags": 36864,
+      "independent_bootstrap_multiplicity_check": true,
+      "nearest_threshold": 0.0010656486959641498,
+      "raw_endpoints": 18432,
+      "scalar_window_max_error": 6.661338147750939e-16,
+      "status": "PASS",
+      "table_rows": {
+        "block_summaries": 64,
+        "reads": 18432,
+        "resources": 18432
+      }
+    }
+  }
+}

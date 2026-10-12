@@ -1,0 +1,476 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "reviewed_at_utc": "2026-10-10T14:36:37.443531+00:00",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p04_hybrid_composition_v0_1/runs/pilot_v1",
+  "scientific_status": "DEVELOPMENT_HYBRID_COMPOSITION_NOT_CONFIRMATORY",
+  "frozen_run_modified": false,
+  "anchors_sha256": {
+    "COMPLETE.json": "fa562bf684ee240c6b8e2e3285c55f072a1c3b0008a20f1b44aee9420afbae01",
+    "REPORT.md": "04a96cd05b13a6bf66206a1b85a01091519fda66ff0d5dbec87a46404b398cc5",
+    "VERIFICATION.json": "2864441345a89729173d3d8489975b950562af645af80157844e9b319ea7b33c",
+    "analysis.json": "33752f2085608c23049a16ffdeecb33b5793cb3e1a5b65fa99f618d1b3163902",
+    "manifest.json": "6b40f921972b8b70dfd7deb1837c07185eef16097468095c2a4f78785362ca08",
+    "hybrid_composition.png": "020fceb5a9222cb2d717e2b8971486f28219eb66e51a510ca53879dad4cd968a"
+  },
+  "checks_completed_during_status_review": {
+    "completed_output_hashes_verified": 32,
+    "frozen_input_files_verified": 38,
+    "current_input_files_verified": 38,
+    "verification_file_hashes_verified": 13,
+    "bound_source_hashes_verified": 13,
+    "prepared_output_hashes_verified": 11,
+    "source_reuse_hashes_verified": 9,
+    "unchanged_implementation_hashes_verified": 4,
+    "figure_visually_reviewed": true,
+    "figure_review": "Both panels are readable. Twelve rate labels, the frozen forecast marker, and all eight block labels are visible without clipping; displayed values agree with the report."
+  },
+  "figure_review_note": "This separate receipt resolves the visual-review flag in the frozen completion record; that record remains unchanged.",
+  "fresh_rate_summaries": {
+    "incoming": {
+      "mean": 0.2755731139520202,
+      "by_block": {
+        "34000": 0.375,
+        "34001": 0.14772727272727273,
+        "34002": 0.4097222222222222,
+        "34003": 0.59375,
+        "34004": 0.0,
+        "34005": 0.046875,
+        "34006": 0.40234375,
+        "34007": 0.22916666666666666
+      },
+      "descriptive_block_bootstrap_95": [
+        0.14585306186868685,
+        0.4055447048611111
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 1,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 304,
+      "cases_with_any_success": 31,
+      "cases_with_all_success": 1
+    },
+    "outgoing": {
+      "mean": 0.22543726889430016,
+      "by_block": {
+        "34000": 0.2767857142857143,
+        "34001": 0.09659090909090909,
+        "34002": 0.3541666666666667,
+        "34003": 0.359375,
+        "34004": 0.0,
+        "34005": 0.203125,
+        "34006": 0.33984375,
+        "34007": 0.1736111111111111
+      },
+      "descriptive_block_bootstrap_95": [
+        0.13674487269457974,
+        0.30624534970238093
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 1,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 247,
+      "cases_with_any_success": 28,
+      "cases_with_all_success": 1
+    },
+    "erasure_only": {
+      "mean": 0.0892476663961039,
+      "by_block": {
+        "34000": 0.22321428571428573,
+        "34001": 0.045454545454545456,
+        "34002": 0.1388888888888889,
+        "34003": 0.125,
+        "34004": 0.0,
+        "34005": 0.0,
+        "34006": 0.1328125,
+        "34007": 0.04861111111111111
+      },
+      "descriptive_block_bootstrap_95": [
+        0.040054563492063495,
+        0.14087301587301587
+      ],
+      "positive_blocks": 6,
+      "tied_blocks": 2,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 102,
+      "cases_with_any_success": 25,
+      "cases_with_all_success": 0
+    },
+    "hybrid": {
+      "mean": 0.2963423295454546,
+      "by_block": {
+        "34000": 0.3125,
+        "34001": 0.13636363636363635,
+        "34002": 0.3819444444444444,
+        "34003": 0.75,
+        "34004": 0.0,
+        "34005": 0.28125,
+        "34006": 0.328125,
+        "34007": 0.18055555555555555
+      },
+      "descriptive_block_bootstrap_95": [
+        0.16548295454545453,
+        0.4529079861111111
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 1,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 290,
+      "cases_with_any_success": 30,
+      "cases_with_all_success": 5
+    },
+    "scrambled_hybrid": {
+      "mean": 0.05797089195526696,
+      "by_block": {
+        "34000": 0.11607142857142858,
+        "34001": 0.06818181818181818,
+        "34002": 0.034722222222222224,
+        "34003": 0.03125,
+        "34004": 0.0,
+        "34005": 0.09375,
+        "34006": 0.078125,
+        "34007": 0.041666666666666664
+      },
+      "descriptive_block_bootstrap_95": [
+        0.03369485874368687,
+        0.08270765692640693
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 1,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 64,
+      "cases_with_any_success": 19,
+      "cases_with_all_success": 0
+    },
+    "erased": {
+      "mean": 0.0,
+      "by_block": {
+        "34000": 0.0,
+        "34001": 0.0,
+        "34002": 0.0,
+        "34003": 0.0,
+        "34004": 0.0,
+        "34005": 0.0,
+        "34006": 0.0,
+        "34007": 0.0
+      },
+      "descriptive_block_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "positive_blocks": 0,
+      "tied_blocks": 8,
+      "negative_blocks": 0,
+      "reads": 1024,
+      "successes": 0,
+      "cases_with_any_success": 0,
+      "cases_with_all_success": 0
+    }
+  },
+  "primary_directional_comparisons": {
+    "hybrid_minus_incoming": {
+      "mean": 0.020769215593434344,
+      "by_block": {
+        "34000": -0.0625,
+        "34001": -0.011363636363636364,
+        "34002": -0.027777777777777776,
+        "34003": 0.15625,
+        "34004": 0.0,
+        "34005": 0.234375,
+        "34006": -0.07421875,
+        "34007": -0.04861111111111111
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.043412642045454544,
+        0.10070122612847163
+      ],
+      "positive_blocks": 2,
+      "tied_blocks": 1,
+      "negative_blocks": 5,
+      "paired_reads": 1024,
+      "first_only": 92,
+      "second_only": 106,
+      "both_pass": 198,
+      "both_fail": 628
+    },
+    "hybrid_minus_outgoing": {
+      "mean": 0.0709050606511544,
+      "by_block": {
+        "34000": 0.03571428571428571,
+        "34001": 0.03977272727272727,
+        "34002": 0.027777777777777776,
+        "34003": 0.390625,
+        "34004": 0.0,
+        "34005": 0.078125,
+        "34006": -0.01171875,
+        "34007": 0.006944444444444444
+      },
+      "descriptive_block_bootstrap_95": [
+        0.011046922912157288,
+        0.16769325509559885
+      ],
+      "positive_blocks": 6,
+      "tied_blocks": 1,
+      "negative_blocks": 1,
+      "paired_reads": 1024,
+      "first_only": 77,
+      "second_only": 34,
+      "both_pass": 213,
+      "both_fail": 700
+    }
+  },
+  "primary_directional_interpretation": "Both prespecified equal-block point differences are positive. The hybrid-minus-incoming interval crosses zero, and only two blocks favor the hybrid (one tie, five favor incoming); robust superiority over incoming is not established. Pooled hybrid successes are fewer than pooled incoming successes because case counts differ across blocks.",
+  "secondary_sign_placement_comparison": {
+    "mean": 0.23837143759018758,
+    "by_block": {
+      "34000": 0.19642857142857142,
+      "34001": 0.06818181818181818,
+      "34002": 0.3472222222222222,
+      "34003": 0.71875,
+      "34004": 0.0,
+      "34005": 0.1875,
+      "34006": 0.25,
+      "34007": 0.1388888888888889
+    },
+    "descriptive_block_bootstrap_95": [
+      0.11529356060606061,
+      0.3991585779671708
+    ],
+    "positive_blocks": 7,
+    "tied_blocks": 1,
+    "negative_blocks": 0,
+    "paired_reads": 1024,
+    "first_only": 232,
+    "second_only": 6,
+    "both_pass": 58,
+    "both_fail": 728
+  },
+  "secondary_interpretation": "Preserved backup sign placement outperforms this fixed within-record sign permutation at identical support and magnitudes. This does not establish lineage-specific or task-specific inherited content, or a distinct RDT mechanism.",
+  "frozen_forecast_evaluation": {
+    "additive": {
+      "forecast_equal_block_mean": 0.4224886983676046,
+      "error": {
+        "mean": -0.12614636882215008,
+        "by_block": {
+          "34000": -0.1071428571428571,
+          "34001": -0.07954545454545456,
+          "34002": -0.2847222222222222,
+          "34003": -0.109375,
+          "34004": 0.0,
+          "34005": 0.015625,
+          "34006": -0.27734375,
+          "34007": -0.16666666666666666
+        },
+        "descriptive_block_bootstrap_95": [
+          -0.2002023584054834,
+          -0.0554315476190476
+        ],
+        "positive_blocks": 1,
+        "tied_blocks": 1,
+        "negative_blocks": 6
+      },
+      "brier": {
+        "mean": 0.19281450991586876,
+        "by_block": {
+          "34000": 0.2263233418367347,
+          "34001": 0.12409607438016526,
+          "34002": 0.31712962962962965,
+          "34003": 0.199462890625,
+          "34004": 0.0,
+          "34005": 0.202392578125,
+          "34006": 0.2973785400390625,
+          "34007": 0.17573302469135804
+        },
+        "descriptive_block_bootstrap_95": [
+          0.12488288848257323,
+          0.25359356256178867
+        ],
+        "positive_blocks": 7,
+        "tied_blocks": 1,
+        "negative_blocks": 0
+      },
+      "mean_absolute_block_error": 0.13005261882215008,
+      "root_mean_square_block_error": 0.1642323733671967
+    },
+    "incoming_reference": {
+      "forecast_equal_block_mean": 0.28418039209054835,
+      "error": {
+        "mean": 0.012161937454906206,
+        "by_block": {
+          "34000": -0.0357142857142857,
+          "34001": 0.028409090909090898,
+          "34002": -0.0625,
+          "34003": 0.109375,
+          "34004": 0.0,
+          "34005": 0.203125,
+          "34006": -0.08984375,
+          "34007": -0.05555555555555555
+        },
+        "descriptive_block_bootstrap_95": [
+          -0.04527839781746031,
+          0.08198615620490621
+        ],
+        "positive_blocks": 3,
+        "tied_blocks": 1,
+        "negative_blocks": 4
+      },
+      "brier": {
+        "mean": 0.1746384639624854,
+        "by_block": {
+          "34000": 0.2161192602040816,
+          "34001": 0.11857567148760334,
+          "34002": 0.23996913580246915,
+          "34003": 0.199462890625,
+          "34004": 0.0,
+          "34005": 0.243408203125,
+          "34006": 0.2285308837890625,
+          "34007": 0.15104166666666666
+        },
+        "descriptive_block_bootstrap_95": [
+          0.1153417706603498,
+          0.22175863798933923
+        ],
+        "positive_blocks": 7,
+        "tied_blocks": 1,
+        "negative_blocks": 0
+      },
+      "mean_absolute_block_error": 0.07306533527236653,
+      "root_mean_square_block_error": 0.09378820026228749
+    },
+    "outgoing_reference": {
+      "forecast_equal_block_mean": 0.22284437567640691,
+      "error": {
+        "mean": 0.07349795386904762,
+        "by_block": {
+          "34000": 0.08928571428571427,
+          "34001": 0.0,
+          "34002": 0.01388888888888884,
+          "34003": 0.40625,
+          "34004": 0.0,
+          "34005": 0.046875,
+          "34006": 0.00390625,
+          "34007": 0.027777777777777762
+        },
+        "descriptive_block_bootstrap_95": [
+          0.010904947916666661,
+          0.1733260866195435
+        ],
+        "positive_blocks": 6,
+        "tied_blocks": 2,
+        "negative_blocks": 0
+      },
+      "brier": {
+        "mean": 0.187865741436848,
+        "by_block": {
+          "34000": 0.2228156887755103,
+          "34001": 0.11776859504132231,
+          "34002": 0.23625578703703706,
+          "34003": 0.3525390625,
+          "34004": 0.0,
+          "34005": 0.204345703125,
+          "34006": 0.2204742431640625,
+          "34007": 0.14872685185185186
+        },
+        "descriptive_block_bootstrap_95": [
+          0.11843075972115193,
+          0.2534041287348958
+        ],
+        "positive_blocks": 7,
+        "tied_blocks": 1,
+        "negative_blocks": 0
+      },
+      "mean_absolute_block_error": 0.07349795386904762,
+      "root_mean_square_block_error": 0.1484031805009634
+    }
+  },
+  "additive_brier_minus_rivals": {
+    "incoming_reference": {
+      "mean": 0.018176045953383364,
+      "by_block": {
+        "34000": 0.0102040816326531,
+        "34001": 0.005520402892561921,
+        "34002": 0.0771604938271605,
+        "34003": 0.0,
+        "34004": 0.0,
+        "34005": -0.041015625,
+        "34006": 0.06884765625,
+        "34007": 0.024691358024691384
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.006322785118696245,
+        0.04328317289674373
+      ],
+      "positive_blocks": 5,
+      "tied_blocks": 2,
+      "negative_blocks": 1
+    },
+    "outgoing_reference": {
+      "mean": 0.004948768479020763,
+      "by_block": {
+        "34000": 0.003507653061224386,
+        "34001": 0.006327479338842951,
+        "34002": 0.08087384259259259,
+        "34003": -0.153076171875,
+        "34004": 0.0,
+        "34005": -0.001953125,
+        "34006": 0.076904296875,
+        "34007": 0.027006172839506182
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.046309083204042506,
+        0.044797943826242984
+      ],
+      "positive_blocks": 5,
+      "tied_blocks": 1,
+      "negative_blocks": 2
+    }
+  },
+  "forecast_interpretation": "The frozen additive forecast overpredicts hybrid success by 12.61 percentage points and has worse point Brier scores than both frozen reference forecasts. No forecast-accuracy acceptance threshold was specified; descriptive paired Brier-difference intervals cross zero.",
+  "fresh_factorial_interaction": {
+    "mean": -0.11542038690476192,
+    "by_block": {
+      "34000": -0.11607142857142858,
+      "34001": -0.0625,
+      "34002": -0.24305555555555555,
+      "34003": -0.078125,
+      "34004": 0.0,
+      "34005": 0.03125,
+      "34006": -0.28125,
+      "34007": -0.1736111111111111
+    },
+    "descriptive_block_bootstrap_95": [
+      -0.18762400793650794,
+      -0.044921875
+    ],
+    "positive_blocks": 1,
+    "tied_blocks": 1,
+    "negative_blocks": 6
+  },
+  "contemporaneous_additive_control_shift": {
+    "mean": -0.010725981917388158,
+    "by_block": {
+      "34000": 0.008928571428571452,
+      "34001": -0.017045454545454558,
+      "34002": -0.04166666666666663,
+      "34003": -0.03125,
+      "34004": 0.0,
+      "34005": -0.015625,
+      "34006": 0.00390625,
+      "34007": 0.006944444444444475
+    },
+    "descriptive_block_bootstrap_95": [
+      -0.02343860973011362,
+      0.0009300947533369551
+    ],
+    "positive_blocks": 3,
+    "tied_blocks": 1,
+    "negative_blocks": 4
+  },
+  "forecast_error_decomposition": "The -12.61 percentage point forecast error comprises a -11.54 point contemporaneous four-way interaction and a -1.07 point change in the additive control reference.",
+  "scope": "Eight exposed blocks; all 64 selected generation-14 failures; fresh random masks and noise are development draws. The independent reader is another implementation within this research lane. Incoming-record access during writing is supplied. Prior failed transfer predictions remain unchanged.",
+  "automatic_successor": false
+}

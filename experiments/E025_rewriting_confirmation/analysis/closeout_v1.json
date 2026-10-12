@@ -1,0 +1,163 @@
+{
+  "active_experiment_jobs": [],
+  "actual_minus_forecast_seconds": -7869.163094423624,
+  "actual_workflow_seconds": 22873.936013256985,
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "boundary_gates_passed": 12,
+  "csv_row_counts_verified": true,
+  "fixture_receipt_and_evidence_verified": true,
+  "forecast_seconds": 30743.09910768061,
+  "full_confirmation_qualified": true,
+  "launch_receipts_and_operational_launcher_verified": true,
+  "original_gates_passed": {
+    "1": {
+      "fixed_four": {
+        "baseline": 20,
+        "degree_compensated": 22,
+        "intact_renewed": 24,
+        "masked_copy": 22,
+        "protected_copy": 24,
+        "read_blocked": 0,
+        "strength_compensated": 22,
+        "write_blocked": 0
+      },
+      "local_strength": {
+        "baseline": 24,
+        "degree_compensated": 24,
+        "intact_renewed": 24,
+        "masked_copy": 24,
+        "protected_copy": 24,
+        "read_blocked": 0,
+        "strength_compensated": 24,
+        "write_blocked": 0
+      }
+    },
+    "3": {
+      "fixed_four": {
+        "baseline": 12,
+        "degree_compensated": 13,
+        "intact_renewed": 24,
+        "masked_copy": 15,
+        "protected_copy": 24,
+        "read_blocked": 0,
+        "strength_compensated": 17,
+        "write_blocked": 0
+      },
+      "local_strength": {
+        "baseline": 18,
+        "degree_compensated": 18,
+        "intact_renewed": 24,
+        "masked_copy": 24,
+        "protected_copy": 24,
+        "read_blocked": 0,
+        "strength_compensated": 24,
+        "write_blocked": 0
+      }
+    }
+  },
+  "predecessor_diagnosis_inputs_unchanged": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1",
+    "E022_reader_compensation/runs/compensation_v1",
+    "E023_receiver_compensation/runs/receiver_v1",
+    "E024_serial_compensation/runs/serial_v1"
+  ],
+  "predecessor_runtime_references_verified": true,
+  "primary": {
+    "endpoint": "scattered-assay both-cue success after three damaged replacements: strength-compensated renewal minus cumulative-erasure copying, both with local-strength receiver",
+    "lower_bound_above_010": true,
+    "statistics": {
+      "block_means": [
+        0.125,
+        0.125,
+        0.5,
+        0.1875,
+        0.3125,
+        -0.0625,
+        0.125,
+        0.3125,
+        0.0625,
+        0.3125,
+        0.3125,
+        0.3125,
+        0.125,
+        0.25,
+        0.0625,
+        0.0,
+        0.0625,
+        0.1875,
+        0.125,
+        0.1875,
+        0.125,
+        0.0625,
+        0.25,
+        0.1875,
+        0.1875,
+        0.25,
+        0.0625,
+        0.0,
+        0.1875,
+        0.4375,
+        0.0,
+        0.375
+      ],
+      "ci95": [
+        0.134765625,
+        0.2265625
+      ],
+      "mean": 0.1796875
+    }
+  },
+  "qualification_gates": {
+    "h1_candidate_intact_both_cue_lower_above_075": true,
+    "h1_candidate_scattered_both_cue_lower_above_075": true,
+    "h1_fixed_four_intact_reference_original_24_gates": true,
+    "h1_local_strength_intact_reference_original_24_gates": true,
+    "h1_normalized_candidate_original_24_gates": true,
+    "h3_candidate_intact_both_cue_lower_above_075": true,
+    "h3_candidate_scattered_both_cue_lower_above_075": true,
+    "h3_fixed_four_intact_reference_original_24_gates": true,
+    "h3_local_strength_intact_reference_original_24_gates": true,
+    "h3_normalized_candidate_original_24_gates": true,
+    "normalized_reading_writing_12_gates": true
+  },
+  "runs": {
+    "confirmation_v1": {
+      "audit_seconds": 12318.894388724002,
+      "audit_sha256": "4583f09677696f0e94ecb6391ca9fcd836a455d1a1b3a07eb2bb52a00b92ebe6",
+      "body_individual_observations": 18432,
+      "complete_sha256": "26a5d02569a8a48ffff282b16a6a474be3ad5193a30eab6882edd2a003b4e2a9",
+      "completed_utc": "2026-09-21T17:04:55.976237+00:00",
+      "figure_provenance_sha256": "29cd2d9292ddddb6a639e4e5e2904800c05bb612e71c48dc03df09aedb0599d4",
+      "individual_observations": 731136,
+      "original_outputs_verified": 315,
+      "simulation_seconds": 10552.601177300996,
+      "workflow_seconds": 22873.936013256985
+    },
+    "fixture": {
+      "audit_seconds": 11.524097552988678,
+      "audit_sha256": "960e58ff692f506eedaaae9988302dda4218337dc020438d5532035db5bdb735",
+      "body_individual_observations": 288,
+      "complete_sha256": "8563393cf2d1b4a75daa8fc00ee9867783b37b348b41af186cc67593f29598c3",
+      "figure_provenance_sha256": "eb0610e1b493f502d0b337dfc3ced323c499e27cabdb087fc51f1c8bd5fd9fec",
+      "individual_observations": 11424,
+      "original_outputs_verified": 35,
+      "simulation_seconds": 12.75162194101722
+    }
+  },
+  "scientific_figure_visually_inspected": true,
+  "scientific_status": "REWRITING_ADVANTAGE_CONFIRMED",
+  "serial_reliability_qualified": true,
+  "status": "PASS",
+  "subsequent_experiment_started": false,
+  "verification_code_sha256": "6a7e42d169619e5bc923a1d0648cf08aafdb3094f1db52e9dbd46ef3bc1a5d46",
+  "verified_utc": "2026-09-21T17:44:41.435456+00:00",
+  "workflow_and_figure_references_verified": true
+}

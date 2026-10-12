@@ -1,0 +1,758 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-12T11:10:58.330243+00:00",
+  "trigger": "User requested status; first completed-result inspection in this lane.",
+  "complete_sha256": "29d8dcbc4a2e5395784b17e561f36a27630e5719d8ce2ba77f78c42e76b950ca",
+  "manifest_sha256": "51a9e075c46b8400c34a395843ec7b9890fe323c53d2271de7805f03abba0cbd",
+  "report_sha256": "0c63a001d8957923d6971be579ef6995467f4aec615b8b88403518eec9282075",
+  "analysis_sha256": "3dee22c45c6b26b1a01b771e760a0475625a9664c8620dfe46d9704072d73eae",
+  "verification_sha256": "4db278582303a61d3195ac15e6920feaa9c286c2d16273760fca506a3f9785e5",
+  "frozen_inputs_checked": 91,
+  "output_hashes_checked": 677,
+  "verification_file_hashes_checked": 400,
+  "source_bindings_checked": 30,
+  "source_copies_checked": 11,
+  "qualified_code_hashes_checked": 26,
+  "qualification_precedes_freeze_precedes_test": true,
+  "elapsed_hours": 7.027284067767776,
+  "cpu_hours": 6.774742548373055,
+  "counts": {
+    "repairs_1": {
+      "first": 1879,
+      "uninterrupted": 1761,
+      "terminal": 1884,
+      "later_losses": 118,
+      "repair_calls": 2112
+    },
+    "repairs_6": {
+      "first": 1879,
+      "uninterrupted": 1833,
+      "terminal": 1911,
+      "later_losses": 46,
+      "repair_calls": 12672
+    },
+    "repairs_18": {
+      "first": 1879,
+      "uninterrupted": 1879,
+      "terminal": 1925,
+      "later_losses": 0,
+      "repair_calls": 38016
+    }
+  },
+  "paired_counts": {
+    "six_minus_one": {
+      "left_only": 92,
+      "right_only": 20,
+      "both": 1741,
+      "neither": 259
+    },
+    "eighteen_minus_six": {
+      "left_only": 46,
+      "right_only": 0,
+      "both": 1833,
+      "neither": 233
+    },
+    "eighteen_minus_one": {
+      "left_only": 118,
+      "right_only": 0,
+      "both": 1761,
+      "neither": 233
+    }
+  },
+  "primary": {
+    "continual_benefit": {
+      "mean": 0.05587121212121212,
+      "one_sided_95_lower": 0.047821969696969696,
+      "one_sided_95_upper": 0.06439393939393939,
+      "two_sided_95": [
+        0.045928030303030304,
+        0.06581439393939394
+      ],
+      "positive_blocks": 76,
+      "tied_blocks": 56,
+      "negative_blocks": 0
+    },
+    "double_call_efficiency": {
+      "mean": 0.0012254901960784314,
+      "one_sided_95_lower": -0.003954991087344028,
+      "one_sided_95_upper": 0.006211007130124777,
+      "two_sided_95": [
+        -0.00493050913547237,
+        0.007214377228163932
+      ],
+      "positive_blocks": 48,
+      "tied_blocks": 51,
+      "negative_blocks": 33
+    }
+  },
+  "primary_criterion_passed": false,
+  "primary_verdict": "UNRESOLVED",
+  "efficiency_point_ratio": 2.0745762711864417,
+  "retained_benefit_fraction": 0.610169491525424,
+  "uninterrupted_counts_by_block": {
+    "83000": [
+      14,
+      14,
+      14
+    ],
+    "83001": [
+      14,
+      14,
+      14
+    ],
+    "83002": [
+      13,
+      13,
+      15
+    ],
+    "83003": [
+      12,
+      14,
+      14
+    ],
+    "83004": [
+      16,
+      15,
+      16
+    ],
+    "83005": [
+      15,
+      15,
+      15
+    ],
+    "83006": [
+      10,
+      12,
+      12
+    ],
+    "83007": [
+      12,
+      12,
+      12
+    ],
+    "83008": [
+      14,
+      15,
+      16
+    ],
+    "83009": [
+      16,
+      16,
+      16
+    ],
+    "83010": [
+      14,
+      14,
+      14
+    ],
+    "83011": [
+      12,
+      13,
+      13
+    ],
+    "83012": [
+      16,
+      15,
+      16
+    ],
+    "83013": [
+      16,
+      16,
+      16
+    ],
+    "83014": [
+      13,
+      14,
+      15
+    ],
+    "83015": [
+      14,
+      14,
+      14
+    ],
+    "83016": [
+      15,
+      16,
+      16
+    ],
+    "83017": [
+      14,
+      14,
+      16
+    ],
+    "83018": [
+      15,
+      15,
+      16
+    ],
+    "83019": [
+      10,
+      11,
+      12
+    ],
+    "83020": [
+      15,
+      15,
+      15
+    ],
+    "83021": [
+      13,
+      14,
+      14
+    ],
+    "83022": [
+      16,
+      16,
+      16
+    ],
+    "83023": [
+      12,
+      12,
+      12
+    ],
+    "83024": [
+      11,
+      12,
+      14
+    ],
+    "83025": [
+      15,
+      16,
+      16
+    ],
+    "83026": [
+      13,
+      13,
+      13
+    ],
+    "83027": [
+      13,
+      14,
+      14
+    ],
+    "83028": [
+      12,
+      13,
+      14
+    ],
+    "83029": [
+      16,
+      16,
+      16
+    ],
+    "83030": [
+      8,
+      9,
+      9
+    ],
+    "83031": [
+      14,
+      14,
+      14
+    ],
+    "83032": [
+      15,
+      15,
+      15
+    ],
+    "83033": [
+      14,
+      15,
+      16
+    ],
+    "83034": [
+      11,
+      11,
+      11
+    ],
+    "83035": [
+      12,
+      12,
+      13
+    ],
+    "83036": [
+      14,
+      14,
+      14
+    ],
+    "83037": [
+      15,
+      16,
+      16
+    ],
+    "83038": [
+      13,
+      13,
+      13
+    ],
+    "83039": [
+      9,
+      8,
+      10
+    ],
+    "83040": [
+      15,
+      16,
+      16
+    ],
+    "83041": [
+      16,
+      16,
+      16
+    ],
+    "83042": [
+      13,
+      13,
+      13
+    ],
+    "83043": [
+      14,
+      14,
+      14
+    ],
+    "83044": [
+      13,
+      15,
+      15
+    ],
+    "83045": [
+      14,
+      15,
+      15
+    ],
+    "83046": [
+      13,
+      13,
+      14
+    ],
+    "83047": [
+      14,
+      15,
+      15
+    ],
+    "83048": [
+      15,
+      15,
+      15
+    ],
+    "83049": [
+      16,
+      16,
+      16
+    ],
+    "83050": [
+      13,
+      13,
+      13
+    ],
+    "83051": [
+      14,
+      14,
+      14
+    ],
+    "83052": [
+      12,
+      14,
+      14
+    ],
+    "83053": [
+      15,
+      15,
+      16
+    ],
+    "83054": [
+      10,
+      11,
+      12
+    ],
+    "83055": [
+      12,
+      11,
+      12
+    ],
+    "83056": [
+      15,
+      15,
+      16
+    ],
+    "83057": [
+      15,
+      15,
+      15
+    ],
+    "83058": [
+      15,
+      16,
+      16
+    ],
+    "83059": [
+      15,
+      15,
+      15
+    ],
+    "83060": [
+      14,
+      16,
+      16
+    ],
+    "83061": [
+      15,
+      16,
+      16
+    ],
+    "83062": [
+      12,
+      13,
+      13
+    ],
+    "83063": [
+      11,
+      13,
+      14
+    ],
+    "83064": [
+      16,
+      16,
+      16
+    ],
+    "83065": [
+      13,
+      13,
+      13
+    ],
+    "83066": [
+      12,
+      12,
+      12
+    ],
+    "83067": [
+      12,
+      13,
+      13
+    ],
+    "83068": [
+      16,
+      16,
+      16
+    ],
+    "83069": [
+      13,
+      13,
+      14
+    ],
+    "83070": [
+      14,
+      14,
+      14
+    ],
+    "83071": [
+      10,
+      13,
+      13
+    ],
+    "83072": [
+      13,
+      14,
+      15
+    ],
+    "83073": [
+      16,
+      16,
+      16
+    ],
+    "83074": [
+      12,
+      13,
+      13
+    ],
+    "83075": [
+      11,
+      11,
+      11
+    ],
+    "83076": [
+      13,
+      15,
+      15
+    ],
+    "83077": [
+      16,
+      14,
+      16
+    ],
+    "83078": [
+      11,
+      10,
+      12
+    ],
+    "83079": [
+      12,
+      12,
+      12
+    ],
+    "83080": [
+      16,
+      16,
+      16
+    ],
+    "83081": [
+      13,
+      14,
+      14
+    ],
+    "83082": [
+      12,
+      13,
+      13
+    ],
+    "83083": [
+      14,
+      13,
+      14
+    ],
+    "83084": [
+      14,
+      14,
+      14
+    ],
+    "83085": [
+      14,
+      15,
+      15
+    ],
+    "83086": [
+      11,
+      12,
+      12
+    ],
+    "83087": [
+      11,
+      12,
+      12
+    ],
+    "83088": [
+      12,
+      14,
+      16
+    ],
+    "83089": [
+      14,
+      16,
+      16
+    ],
+    "83090": [
+      13,
+      13,
+      13
+    ],
+    "83091": [
+      14,
+      15,
+      15
+    ],
+    "83092": [
+      15,
+      16,
+      16
+    ],
+    "83093": [
+      14,
+      13,
+      16
+    ],
+    "83094": [
+      14,
+      14,
+      15
+    ],
+    "83095": [
+      10,
+      10,
+      10
+    ],
+    "83096": [
+      12,
+      14,
+      14
+    ],
+    "83097": [
+      15,
+      16,
+      16
+    ],
+    "83098": [
+      11,
+      12,
+      12
+    ],
+    "83099": [
+      9,
+      9,
+      9
+    ],
+    "83100": [
+      13,
+      15,
+      15
+    ],
+    "83101": [
+      12,
+      15,
+      16
+    ],
+    "83102": [
+      13,
+      14,
+      16
+    ],
+    "83103": [
+      14,
+      14,
+      14
+    ],
+    "83104": [
+      14,
+      15,
+      16
+    ],
+    "83105": [
+      11,
+      12,
+      12
+    ],
+    "83106": [
+      14,
+      14,
+      14
+    ],
+    "83107": [
+      14,
+      14,
+      14
+    ],
+    "83108": [
+      14,
+      15,
+      16
+    ],
+    "83109": [
+      13,
+      15,
+      16
+    ],
+    "83110": [
+      14,
+      16,
+      16
+    ],
+    "83111": [
+      11,
+      11,
+      11
+    ],
+    "83112": [
+      16,
+      16,
+      16
+    ],
+    "83113": [
+      14,
+      16,
+      16
+    ],
+    "83114": [
+      14,
+      14,
+      14
+    ],
+    "83115": [
+      14,
+      14,
+      14
+    ],
+    "83116": [
+      11,
+      11,
+      12
+    ],
+    "83117": [
+      15,
+      16,
+      16
+    ],
+    "83118": [
+      13,
+      13,
+      13
+    ],
+    "83119": [
+      13,
+      14,
+      14
+    ],
+    "83120": [
+      15,
+      15,
+      16
+    ],
+    "83121": [
+      15,
+      16,
+      16
+    ],
+    "83122": [
+      11,
+      14,
+      14
+    ],
+    "83123": [
+      13,
+      13,
+      13
+    ],
+    "83124": [
+      14,
+      14,
+      15
+    ],
+    "83125": [
+      16,
+      16,
+      16
+    ],
+    "83126": [
+      13,
+      13,
+      13
+    ],
+    "83127": [
+      9,
+      10,
+      10
+    ],
+    "83128": [
+      14,
+      15,
+      15
+    ],
+    "83129": [
+      13,
+      15,
+      15
+    ],
+    "83130": [
+      15,
+      16,
+      16
+    ],
+    "83131": [
+      11,
+      11,
+      12
+    ]
+  },
+  "scientific_interpretation": "Continual repair improves uninterrupted success over one initial repair. Six repairs also improve success overall, but the prospective doubled incremental-call-efficiency prediction is unresolved: its estimate is positive and its lower confidence bound is negative. Six-versus-one includes 92 paired successes and 20 paired losses; eighteen-versus-six has 46 additional uninterrupted successes and no opposite discordance in this cohort. No equivalence, optimal budget, general monotonicity or distinct RDT law is established.",
+  "exposure": "All 132 fresh blocks, raw histories and aggregate results are now exposed. Keep the original prediction and fixed sample; no outcome-driven extension or automatic successor.",
+  "verification_scope": "Closeout verifies frozen, qualified, source and output hashes; all raw port-window endpoints; all scheduled calls; paired outcome counts; chronology; and both primary bootstrap contrasts. Existing same-lane audit verifies all optimizer results and captures and selected flat dynamics. No dynamics replay or new test cohort at closeout.",
+  "automatic_successor": false
+}

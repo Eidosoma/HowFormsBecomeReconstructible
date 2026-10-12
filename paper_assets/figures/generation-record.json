@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-13",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "requested_model": "Image 2.5",
+  "verified_backend_model": null,
+  "model_note": "The tool exposes no model-selection parameter or verified backend version.",
+  "original_prompt_file": "infographic-prompts.json",
+  "edit_prompt_file": "infographic-edits.json",
+  "scientific_status": "Explanatory schematics; not measured data, microscopy, or new experimental results.",
+  "new_model_runs_performed": false,
+  "figures": [
+    {
+      "id": "fig-form-framework",
+      "file": "figure-01-four-questions-v1.png",
+      "sha256": "71980ecc820c4178cb0a5c18c4935d7b86c0b7a741fc716fff62aaa048b3724b",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "original_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-2283c779-e80b-44d8-b34f-00ee24426bcf.png",
+      "selected_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-7fce382f-c14d-4def-845b-735fb9d8c963.png",
+      "targeted_edit_count": 2,
+      "artwork_visual_review": {
+        "status": "passed",
+        "notes": "Opaque light background confirmed; theoretical proposals remain distinct; four questions present; write goes body to record and read goes record to body."
+      }
+    },
+    {
+      "id": "fig-continuity-tests",
+      "file": "figure-02-continuity-tests-v1.png",
+      "sha256": "afe77655273a2a6b8339f1b90eeee4fee4678a46521b2daddb6d08249c7fe0e7",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "original_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-15233977-28e4-43ad-8090-f69aea6659bd.png",
+      "selected_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-1d0f50b4-e835-43e7-bdda-a67c5b6861c3.png",
+      "targeted_edit_count": 1,
+      "artwork_visual_review": {
+        "status": "passed",
+        "notes": "Exactly eight numbered daughters in a single chain; all-pair and old-anchor labels correct; read/write arrows corrected; only rewritten record crosses the replacement boundary; L17 limit retained."
+      }
+    },
+    {
+      "id": "fig-collective-capacity",
+      "file": "figure-03-collective-capacity-v1.png",
+      "sha256": "b9960e774beaba3a0b3d86ddd4c5bc521f16d894807a821850992bd13f140fba",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "original_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-63ae9f49-3d72-41ad-8937-9f3561e6a065.png",
+      "selected_generation": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-63ae9f49-3d72-41ad-8937-9f3561e6a065.png",
+      "targeted_edit_count": 0,
+      "artwork_visual_review": {
+        "status": "passed",
+        "notes": "Three donors and three recipients at each snapshot; no post-removal contact arrow; twelve replacements labeled as a model result; supplied schedule and open collective-capacity hypothesis explicit."
+      }
+    }
+  ]
+}

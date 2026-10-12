@@ -1,0 +1,18 @@
+{
+  "support.py": {
+    "source": "TT010/support.py",
+    "source_sha256": "51cb0639eaf7fc71c5d3a4300ce4aab6cd97a2e56bfccad6446d7b3133ed182c",
+    "purpose": "Previously independently implemented evidence utilities, flat reader or scalar arithmetic; no P05 source scientific functions imported."
+  },
+  "native.py": {
+    "source": "TT010/native.py",
+    "source_sha256": "d7f991b47d8bd7f7dd8e0bd5c06a974849348356e981d87727816d2056867f31",
+    "purpose": "Previously independently implemented evidence utilities, flat reader or scalar arithmetic; no P05 source scientific functions imported."
+  },
+  "arithmetic.py": {
+    "source": "TT010/arithmetic.py",
+    "source_sha256": "2eae95fb902a451542024e5c275b03edd20f6abaf40f105548d009ac12e01fbc",
+    "purpose": "Previously independently implemented evidence utilities, flat reader or scalar arithmetic; no P05 source scientific functions imported.",
+    "modifications": "Nullable numeric table fields must be empty strings; all prior scalar arithmetic and bootstrap calculations are unchanged."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-08T22:58:40.375396+00:00",
+  "study": "TT004",
+  "run": "TT004/runs/development_v1",
+  "complete_sha256": "76d60e23c833d6a74800fe67d6a61bfff71a17a9da369b2e87609e49b6783793",
+  "verified_output_files": 29,
+  "verified_frozen_input_files": 17,
+  "mathematical_checks_passed": 12,
+  "calculation_audit": {
+    "status": "PASS",
+    "utc": "2026-10-08T22:54:30.056400+00:00",
+    "seconds": 5.679805260151625,
+    "native_intervals_checked": 48,
+    "coverage_scenarios_checked": 480,
+    "forecast_transformations_checked": 11242,
+    "interval_tail_or_reference_checks": 224,
+    "observation_pattern_probabilities_checked": 1512,
+    "scope": "Separate scalar binomial recurrence, native counts/components, finite hidden-path enumeration and interval checks. Shared floating-point libraries; not an external replication."
+  },
+  "benchmark_development_exact_panel_equal": true,
+  "native_figure_inspected": true,
+  "calibration_figure_matches_inspected_benchmark": true,
+  "interpretation_sha256": "6872c0e992f66e6888e134a7283a133272eedf471fe183665e206a5a63a35914",
+  "methods_sha256": "9e31f82b71d968a500e80947ea47419214235d59be6e1277a3bb9cb17cf2d47c",
+  "native_forecast_status": "ABSTAIN",
+  "native_trajectories_generated": 0,
+  "successor_job_launched": false,
+  "scope": "Development; complete native-model uncertainty remains unvalidated."
+}

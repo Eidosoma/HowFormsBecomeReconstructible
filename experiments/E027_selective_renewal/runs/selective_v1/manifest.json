@@ -1,0 +1,291 @@
+{
+  "contract": {
+    "blocks": [
+      24000,
+      24001,
+      24002,
+      24003,
+      24004,
+      24005,
+      24006,
+      24007,
+      24008,
+      24009,
+      24010,
+      24011,
+      24012,
+      24013,
+      24014,
+      24015,
+      24016,
+      24017,
+      24018,
+      24019,
+      24020,
+      24021,
+      24022,
+      24023,
+      24024,
+      24025,
+      24026,
+      24027,
+      24028,
+      24029,
+      24030,
+      24031
+    ],
+    "conditions": [
+      "selective",
+      "selective_read_blocked",
+      "strength_compensated",
+      "intact_renewed",
+      "protected_copy",
+      "masked_copy",
+      "read_blocked",
+      "write_blocked"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 3,
+      "read_steps": 2048,
+      "settling_steps": 256,
+      "write_steps": 128
+    },
+    "experiment": "E027",
+    "gain": 2.0,
+    "mode": "prospective_selective_renewal",
+    "panels": [
+      [
+        0,
+        "initial",
+        "fixed_four"
+      ],
+      [
+        0,
+        "initial",
+        "local_strength"
+      ],
+      [
+        1,
+        "selective",
+        "fixed_four"
+      ],
+      [
+        1,
+        "selective_read_blocked",
+        "fixed_four"
+      ],
+      [
+        1,
+        "strength_compensated",
+        "fixed_four"
+      ],
+      [
+        1,
+        "intact_renewed",
+        "fixed_four"
+      ],
+      [
+        1,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        1,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        1,
+        "read_blocked",
+        "fixed_four"
+      ],
+      [
+        1,
+        "write_blocked",
+        "fixed_four"
+      ],
+      [
+        1,
+        "selective",
+        "local_strength"
+      ],
+      [
+        1,
+        "selective_read_blocked",
+        "local_strength"
+      ],
+      [
+        1,
+        "strength_compensated",
+        "local_strength"
+      ],
+      [
+        1,
+        "intact_renewed",
+        "local_strength"
+      ],
+      [
+        1,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        1,
+        "masked_copy",
+        "local_strength"
+      ],
+      [
+        1,
+        "read_blocked",
+        "local_strength"
+      ],
+      [
+        1,
+        "write_blocked",
+        "local_strength"
+      ],
+      [
+        3,
+        "selective",
+        "fixed_four"
+      ],
+      [
+        3,
+        "selective_read_blocked",
+        "fixed_four"
+      ],
+      [
+        3,
+        "strength_compensated",
+        "fixed_four"
+      ],
+      [
+        3,
+        "intact_renewed",
+        "fixed_four"
+      ],
+      [
+        3,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        3,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        3,
+        "read_blocked",
+        "fixed_four"
+      ],
+      [
+        3,
+        "write_blocked",
+        "fixed_four"
+      ],
+      [
+        3,
+        "selective",
+        "local_strength"
+      ],
+      [
+        3,
+        "selective_read_blocked",
+        "local_strength"
+      ],
+      [
+        3,
+        "strength_compensated",
+        "local_strength"
+      ],
+      [
+        3,
+        "intact_renewed",
+        "local_strength"
+      ],
+      [
+        3,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        3,
+        "masked_copy",
+        "local_strength"
+      ],
+      [
+        3,
+        "read_blocked",
+        "local_strength"
+      ],
+      [
+        3,
+        "write_blocked",
+        "local_strength"
+      ]
+    ],
+    "receivers": [
+      "fixed_four",
+      "local_strength"
+    ],
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E024_serial_compensation/audit.py": "c1cfaf8f229494567ee5485ffaed66ab6a30789bcd0d159294ffb1267b4bcdfc",
+    "E024_serial_compensation/model.py": "b0cae09a039bfd40ee3dd20820985032a15ad02d9a78bb4a6428405d59f82250",
+    "E027_selective_renewal/PROTOCOL.md": "207a9637afdd846b22f88c986d206c24d1ca450fed1473bdf5d09e1fb8ce1251",
+    "E027_selective_renewal/audit.py": "37db152dc5bac4e83d4695c3b92493adbd6485d7f368e7939c211aa42853e71a",
+    "E027_selective_renewal/model.py": "77056e426573ba9a45a7d497d80005c0fa83b3ae95b3785df5be6206bf206270",
+    "E027_selective_renewal/plot.py": "230b18bcf8cd9ebcd32912ef071905cd25ffd899df134898360560555646f452",
+    "E027_selective_renewal/run.py": "fb139bb473619c24cccb7c3bd82b54ef62e7a1d6c425d9034bf73d8973108b75",
+    "E027_selective_renewal/tests.py": "4bad93cec8c76b9550f472d6ec66a3543e2a0a689d3d39fb1e09d6701ed59ef5",
+    "E027_selective_renewal/workflow.py": "557fc6121b1b3ad230ab6243043681d5a240d18bd4bfe9373a46996dd51bfdee",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-22T11:56:40.887087+00:00",
+  "status": "RUNNING"
+}

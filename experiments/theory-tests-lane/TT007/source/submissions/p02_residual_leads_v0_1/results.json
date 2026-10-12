@@ -1,0 +1,1464 @@
+{
+  "status": "EXPLORATORY_AUDIT_COMPLETE",
+  "created_at_utc": "2026-10-09T16:30:46.506371+00:00",
+  "source_files_sha256": {
+    "p02_common_future_v0_1/config.json": "86d4a7445ea5f92af0566bc1e24046e84fdb94496a2e9719db68c69b36510cee",
+    "p02_common_future_v0_1/results/records.csv": "673deaa82dd6954869bbcb01b20ea4bc30ae307dd92607fc49fde624ae9b838b",
+    "p02_common_future_v0_1/results/predictions.csv": "aad5786a33b6da5795e87548530c27ab9f12945d31e92f19b749d8512c0d28fb",
+    "p02_common_future_v0_1/results/pairs.csv": "ab949756e4c98047e61de5a2d7a8eb6dbe38058a3f618566deee3219497e8202",
+    "p02_common_future_v0_1/results/analysis.json": "8176140b472d925db596773380bafa67f5ba5c5802af82b7e53009c9f5ee4979",
+    "p02_common_future_v0_1/COMPLETE.json": "725a2b50fa855a3dffc59a667c31231cfc594705fb210e52b3b9b88db45c9cb3",
+    "p02_common_future_v0_1/FINAL_SNAPSHOT.json": "0864fb170ee30fc4368608ab3b876c7e490a7813cab43660ebf7162fe996d05f"
+  },
+  "native_simulations": false,
+  "refits": 0,
+  "rows": 512,
+  "predictions": 3072,
+  "strata": {
+    "all": {
+      "n": 512,
+      "terminal_successes": 443,
+      "terminal_failures": 69,
+      "scores": {
+        "history_rate": {
+          "record_weighted_brier": 0.11448503210901402,
+          "equal_block_brier": 0.11448503210901402,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.09961136345837576
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.15469349596679458
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.04618852298535516
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.08288139243480304
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.07828530033675307
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.1779358211292975
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.18245359855901008
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.09383076200172293
+            }
+          }
+        },
+        "expression_history": {
+          "record_weighted_brier": 0.08525982544655593,
+          "equal_block_brier": 0.08525982544655593,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.06935322049485755
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.10171101124059524
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.028617821256468997
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.06965470893885507
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.054002074190545084
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.17750134813960083
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.11489586736677666
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.066342551944748
+            }
+          }
+        },
+        "expression_unsigned": {
+          "record_weighted_brier": 0.08757709006288585,
+          "equal_block_brier": 0.08757709006288585,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.0669414057248919
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.12000176800227753
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.028494686124720715
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.06792478864421352
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.05502835100429116
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.17871088119572978
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.11551909283813913
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.06799574696882303
+            }
+          }
+        },
+        "expression_unsigned_signed": {
+          "record_weighted_brier": 0.08006452485139025,
+          "equal_block_brier": 0.08006452485139025,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.07229220233979983
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.10855840142102995
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.018103882681921864
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.06986444825447123
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.03464604362200145
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.17478260374921495
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.09610040636221795
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.06616821038046479
+            }
+          }
+        },
+        "quadratic_unsigned": {
+          "record_weighted_brier": 0.09218587795359924,
+          "equal_block_brier": 0.09218587795359924,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.0675829128135519
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.10483505516513367
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.02889609860089914
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.06313945686678353
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.04504477415860122
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.18062778209426705
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.17232096724933574
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.07503997668022168
+            }
+          }
+        },
+        "quadratic_unsigned_signed": {
+          "record_weighted_brier": 0.08762576770832115,
+          "equal_block_brier": 0.08762576770832113,
+          "by_block": {
+            "34000": {
+              "n": 64,
+              "brier": 0.07269360162714661
+            },
+            "34001": {
+              "n": 64,
+              "brier": 0.10143863270965836
+            },
+            "34002": {
+              "n": 64,
+              "brier": 0.020837379444921558
+            },
+            "34003": {
+              "n": 64,
+              "brier": 0.06389247766265671
+            },
+            "34004": {
+              "n": 64,
+              "brier": 0.03434361137533603
+            },
+            "34005": {
+              "n": 64,
+              "brier": 0.17678084967574037
+            },
+            "34006": {
+              "n": 64,
+              "brier": 0.16399536729819217
+            },
+            "34007": {
+              "n": 64,
+              "brier": 0.06702422187291729
+            }
+          }
+        }
+      },
+      "contrasts": [
+        {
+          "baseline": "quadratic_unsigned",
+          "candidate": "quadratic_unsigned_signed",
+          "record_weighted_improvement": 0.004560110245278103,
+          "equal_block_improvement": 0.004560110245278103,
+          "contribution_to_overall_brier_improvement": 0.004560110245278103,
+          "positive_blocks": 6,
+          "negative_blocks": 2,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.005110688813594714,
+            "34001": 0.0033964224554753064,
+            "34002": 0.008058719155977584,
+            "34003": -0.0007530207958731853,
+            "34004": 0.010701162783265187,
+            "34005": 0.0038469324185267015,
+            "34006": 0.00832559995114356,
+            "34007": 0.008015754807304388
+          }
+        },
+        {
+          "baseline": "expression_unsigned",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": 0.007512565211495596,
+          "equal_block_improvement": 0.007512565211495596,
+          "contribution_to_overall_brier_improvement": 0.007512565211495596,
+          "positive_blocks": 6,
+          "negative_blocks": 2,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.005350796614907921,
+            "34001": 0.011443366581247581,
+            "34002": 0.010390803442798848,
+            "34003": -0.0019396596102577062,
+            "34004": 0.020382307382289713,
+            "34005": 0.003928277446514822,
+            "34006": 0.01941868647592119,
+            "34007": 0.0018275365883582441
+          }
+        },
+        {
+          "baseline": "expression_history",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": 0.005195300595165681,
+          "equal_block_improvement": 0.005195300595165681,
+          "contribution_to_overall_brier_improvement": 0.005195300595165681,
+          "positive_blocks": 5,
+          "negative_blocks": 3,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.0029389818449422674,
+            "34001": -0.006847390180434713,
+            "34002": 0.010513938574547129,
+            "34003": -0.00020973931561615178,
+            "34004": 0.019356030568543632,
+            "34005": 0.0027187443903858963,
+            "34006": 0.01879546100455872,
+            "34007": 0.00017434156428320266
+          }
+        }
+      ],
+      "by_history": {
+        "exact_rewrite": {
+          "n": 128,
+          "terminal_successes": 120
+        },
+        "single_tolerance_rewrite": {
+          "n": 128,
+          "terminal_successes": 116
+        },
+        "spaced_tolerance_rewrite": {
+          "n": 128,
+          "terminal_successes": 109
+        },
+        "clustered_tolerance_rewrite": {
+          "n": 128,
+          "terminal_successes": 98
+        }
+      }
+    },
+    "currently_pass": {
+      "n": 448,
+      "terminal_successes": 414,
+      "terminal_failures": 34,
+      "scores": {
+        "history_rate": {
+          "record_weighted_brier": 0.07485378931116655,
+          "equal_block_brier": 0.07476101899591084,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.0630642606202247
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.08947857207239822
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.024197452637424448
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.06498681703082988
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.03455373691492416
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.16595530842926878
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.09071449082413136
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.06513751343808515
+            }
+          }
+        },
+        "expression_history": {
+          "record_weighted_brier": 0.0707716664122806,
+          "equal_block_brier": 0.07068154360728077,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.06240761597212142
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.08716960621165588
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.007608561783488086
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.060676158483582
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.020561775057291388
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.1801383807798371
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.09307574651804536
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.05381450405222489
+            }
+          }
+        },
+        "expression_unsigned": {
+          "record_weighted_brier": 0.07159697292738465,
+          "equal_block_brier": 0.07155665470736496,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.06140766087827033
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.09690235194419919
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.00772641621951991
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.06068967065956274
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.019375087159424605
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.1807678032537031
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.09180823185769292
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.053776015686546816
+            }
+          }
+        },
+        "expression_unsigned_signed": {
+          "record_weighted_brier": 0.07203257052284744,
+          "equal_block_brier": 0.0720745545787441,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.06106554521132988
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.10363070696810991
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.007616338260529048
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.060713571106564924
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.01815609891583593
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.1784717843870385
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.09196990984934139
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.0549724819312032
+            }
+          }
+        },
+        "quadratic_unsigned": {
+          "record_weighted_brier": 0.07175962604358567,
+          "equal_block_brier": 0.07170243981728006,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.05354432755157442
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.10289616366809767
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.007435661356014568
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.060247516977479605
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.018943335362519072
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.18614345108815206
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.0898184138549364
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.054590648679466676
+            }
+          }
+        },
+        "quadratic_unsigned_signed": {
+          "record_weighted_brier": 0.07204420626220234,
+          "equal_block_brier": 0.07203182940203458,
+          "by_block": {
+            "34000": {
+              "n": 57,
+              "brier": 0.05492854120920916
+            },
+            "34001": {
+              "n": 53,
+              "brier": 0.10655739965520682
+            },
+            "34002": {
+              "n": 55,
+              "brier": 0.0074227282669232795
+            },
+            "34003": {
+              "n": 60,
+              "brier": 0.060458814045266894
+            },
+            "34004": {
+              "n": 60,
+              "brier": 0.018287272277715205
+            },
+            "34005": {
+              "n": 60,
+              "brier": 0.18396102204950893
+            },
+            "34006": {
+              "n": 48,
+              "brier": 0.08978262234271739
+            },
+            "34007": {
+              "n": 55,
+              "brier": 0.054856235369728945
+            }
+          }
+        }
+      },
+      "contrasts": [
+        {
+          "baseline": "quadratic_unsigned",
+          "candidate": "quadratic_unsigned_signed",
+          "record_weighted_improvement": -0.0002845802186166797,
+          "equal_block_improvement": -0.0003293895847545156,
+          "contribution_to_overall_brier_improvement": -0.0002490076912895947,
+          "positive_blocks": 4,
+          "negative_blocks": 4,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.0013842136576347349,
+            "34001": -0.003661235987109144,
+            "34002": 1.2933089091289206e-05,
+            "34003": -0.0002112970677872927,
+            "34004": 0.000656063084803866,
+            "34005": 0.0021824290386431478,
+            "34006": 3.579151221901175e-05,
+            "34007": -0.00026558669026226776
+          }
+        },
+        {
+          "baseline": "expression_unsigned",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": -0.00043559759546279043,
+          "equal_block_improvement": -0.0005178998713791524,
+          "contribution_to_overall_brier_improvement": -0.0003811478960299416,
+          "positive_blocks": 4,
+          "negative_blocks": 4,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": 0.0003421156669404428,
+            "34001": -0.006728355023910731,
+            "34002": 0.00011007795899086168,
+            "34003": -2.390044700219175e-05,
+            "34004": 0.0012189882435886755,
+            "34005": 0.0022960188666645725,
+            "34006": -0.00016167799164846423,
+            "34007": -0.001196466244656384
+          }
+        },
+        {
+          "baseline": "expression_history",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": -0.0012609041105668462,
+          "equal_block_improvement": -0.0013930109714633322,
+          "contribution_to_overall_brier_improvement": -0.0011032910967459905,
+          "positive_blocks": 4,
+          "negative_blocks": 4,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": 0.0013420707607915336,
+            "34001": -0.01646110075645403,
+            "34002": -7.776477040962039e-06,
+            "34003": -3.74126229829198e-05,
+            "34004": 0.002405676141455456,
+            "34005": 0.0016665963927986035,
+            "34006": 0.0011058366687039744,
+            "34007": -0.0011579778789783126
+          }
+        }
+      ],
+      "by_history": {
+        "exact_rewrite": {
+          "n": 123,
+          "terminal_successes": 118
+        },
+        "single_tolerance_rewrite": {
+          "n": 118,
+          "terminal_successes": 111
+        },
+        "spaced_tolerance_rewrite": {
+          "n": 112,
+          "terminal_successes": 102
+        },
+        "clustered_tolerance_rewrite": {
+          "n": 95,
+          "terminal_successes": 83
+        }
+      }
+    },
+    "currently_fail": {
+      "n": 64,
+      "terminal_successes": 29,
+      "terminal_failures": 35,
+      "scores": {
+        "history_rate": {
+          "record_weighted_brier": 0.39190373169394627,
+          "equal_block_brier": 0.4020937569252825,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.39720920085474865
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.46891085654888615
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.1805783973338206
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.3513000234944005
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.7342587516641867
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.35764351162972824
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.45767092176364627
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.2691783921128427
+            }
+          }
+        },
+        "expression_history": {
+          "record_weighted_brier": 0.1866769386864833,
+          "equal_block_brier": 0.20947957884271934,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.1259102858942804
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.17177414456184845
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.157007740258019
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.20433296576795112
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.5556065611893505
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.13794585853605662
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.18035622991297057
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.14290284462127809
+            }
+          }
+        },
+        "expression_unsigned": {
+          "record_weighted_brier": 0.19943791001139424,
+          "equal_block_brier": 0.2192993053803321,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.11200189947595332
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.2312989544639277
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.15541189110094786
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.17645155841397533
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.5898273086772895
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.1478570503261299
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.18665167577947775
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.15489410480495547
+            }
+          }
+        },
+        "expression_unsigned_signed": {
+          "record_weighted_brier": 0.13628820515118995,
+          "equal_block_brier": 0.15373134867077123,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.16370926752876933
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.13230092923964462
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.08219443192376687
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.20712760547306577
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.28199521421448426
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.11944489418186133
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.10849189590084761
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.13458655090373006
+            }
+          }
+        },
+        "quadratic_unsigned": {
+          "record_weighted_brier": 0.23516964132369428,
+          "equal_block_brier": 0.21461646090946787,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.18189710708965418
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.11417698692357985
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.16004321509741595
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.10651855520634247
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.4365663560998334
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.09789274718599209
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.4198286274325338
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.20000809224039115
+            }
+          }
+        },
+        "quadratic_unsigned_signed": {
+          "record_weighted_brier": 0.19669669783115268,
+          "equal_block_brier": 0.17307817154069915,
+          "by_block": {
+            "34000": {
+              "n": 7,
+              "brier": 0.21735195074463728
+            },
+            "34001": {
+              "n": 11,
+              "brier": 0.07677548288110674
+            },
+            "34002": {
+              "n": 9,
+              "brier": 0.1028158033104666
+            },
+            "34003": {
+              "n": 4,
+              "brier": 0.11539743192350405
+            },
+            "34004": {
+              "n": 4,
+              "brier": 0.2751886978396484
+            },
+            "34005": {
+              "n": 4,
+              "brier": 0.06907826406921208
+            },
+            "34006": {
+              "n": 16,
+              "brier": 0.38663360216461656
+            },
+            "34007": {
+              "n": 9,
+              "brier": 0.14138413939240166
+            }
+          }
+        }
+      },
+      "contrasts": [
+        {
+          "baseline": "quadratic_unsigned",
+          "candidate": "quadratic_unsigned_signed",
+          "record_weighted_improvement": 0.038472943492541586,
+          "equal_block_improvement": 0.04153828936876869,
+          "contribution_to_overall_brier_improvement": 0.004809117936567698,
+          "positive_blocks": 6,
+          "negative_blocks": 2,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.035454843654983116,
+            "34001": 0.03740150404247311,
+            "34002": 0.05722741178694938,
+            "34003": -0.008878876717161574,
+            "34004": 0.161377658260185,
+            "34005": 0.02881448311678001,
+            "34006": 0.033195025267917205,
+            "34007": 0.058623952847989505
+          }
+        },
+        {
+          "baseline": "expression_unsigned",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": 0.0631497048602043,
+          "equal_block_improvement": 0.06556795670956087,
+          "contribution_to_overall_brier_improvement": 0.007893713107525537,
+          "positive_blocks": 6,
+          "negative_blocks": 2,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.051707368052816026,
+            "34001": 0.09899802522428308,
+            "34002": 0.07321745917718098,
+            "34003": -0.03067604705909042,
+            "34004": 0.30783209446280524,
+            "34005": 0.028412156144268556,
+            "34006": 0.07815977987863015,
+            "34007": 0.020307553901225416
+          }
+        },
+        {
+          "baseline": "expression_history",
+          "candidate": "expression_unsigned_signed",
+          "record_weighted_improvement": 0.05038873353529338,
+          "equal_block_improvement": 0.05574823017194812,
+          "contribution_to_overall_brier_improvement": 0.006298591691911672,
+          "positive_blocks": 6,
+          "negative_blocks": 2,
+          "tied_blocks": 0,
+          "by_block": {
+            "34000": -0.037798981634488936,
+            "34001": 0.03947321532220382,
+            "34002": 0.07481330833425213,
+            "34003": -0.0027946397051146314,
+            "34004": 0.2736113469748663,
+            "34005": 0.018500964354195286,
+            "34006": 0.07186433401212296,
+            "34007": 0.008316293717548018
+          }
+        }
+      ],
+      "by_history": {
+        "exact_rewrite": {
+          "n": 5,
+          "terminal_successes": 2
+        },
+        "single_tolerance_rewrite": {
+          "n": 10,
+          "terminal_successes": 5
+        },
+        "spaced_tolerance_rewrite": {
+          "n": 16,
+          "terminal_successes": 7
+        },
+        "clustered_tolerance_rewrite": {
+          "n": 33,
+          "terminal_successes": 15
+        }
+      }
+    }
+  },
+  "matched_decisions": {
+    "constant": {
+      "n": 84,
+      "successes": 75.0,
+      "oracle": 79,
+      "regret": 4.0,
+      "discordant": 9,
+      "discordant_correct": 5.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 8.0,
+          "oracle": 8,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 9.0,
+          "oracle": 10,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 8.0,
+          "oracle": 10,
+          "regret": 2.0,
+          "discordant": 2,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        }
+      }
+    },
+    "margin": {
+      "n": 84,
+      "successes": 77.0,
+      "oracle": 79,
+      "regret": 2.0,
+      "discordant": 9,
+      "discordant_correct": 7.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 7.0,
+          "oracle": 8,
+          "regret": 1.0,
+          "discordant": 2,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 10,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 2,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 10.0,
+          "oracle": 10,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        }
+      }
+    },
+    "signed": {
+      "n": 84,
+      "successes": 76.0,
+      "oracle": 79,
+      "regret": 3.0,
+      "discordant": 9,
+      "discordant_correct": 6.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 8.0,
+          "oracle": 8,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 10,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 8.0,
+          "oracle": 10,
+          "regret": 2.0,
+          "discordant": 2,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        }
+      }
+    },
+    "expression_history": {
+      "n": 84,
+      "successes": 75.0,
+      "oracle": 79,
+      "regret": 4.0,
+      "discordant": 9,
+      "discordant_correct": 5.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 8.0,
+          "oracle": 8,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 9.0,
+          "oracle": 10,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 8.0,
+          "oracle": 10,
+          "regret": 2.0,
+          "discordant": 2,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        }
+      }
+    },
+    "expression_unsigned_signed": {
+      "n": 84,
+      "successes": 75.0,
+      "oracle": 79,
+      "regret": 4.0,
+      "discordant": 9,
+      "discordant_correct": 5.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 8.0,
+          "oracle": 8,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 9.0,
+          "oracle": 10,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 8.0,
+          "oracle": 10,
+          "regret": 2.0,
+          "discordant": 2,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        }
+      }
+    },
+    "quadratic_unsigned_signed": {
+      "n": 84,
+      "successes": 76.0,
+      "oracle": 79,
+      "regret": 3.0,
+      "discordant": 9,
+      "discordant_correct": 6.0,
+      "discordant_ties": 0,
+      "by_block": {
+        "34000": {
+          "n": 8,
+          "successes": 8.0,
+          "oracle": 8,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34001": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 10,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34002": {
+          "n": 9,
+          "successes": 9.0,
+          "oracle": 9,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34003": {
+          "n": 11,
+          "successes": 11.0,
+          "oracle": 11,
+          "regret": 0.0,
+          "discordant": 2,
+          "discordant_correct": 2.0,
+          "discordant_ties": 0
+        },
+        "34004": {
+          "n": 14,
+          "successes": 14.0,
+          "oracle": 14,
+          "regret": 0.0,
+          "discordant": 1,
+          "discordant_correct": 1.0,
+          "discordant_ties": 0
+        },
+        "34005": {
+          "n": 13,
+          "successes": 8.0,
+          "oracle": 10,
+          "regret": 2.0,
+          "discordant": 2,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        },
+        "34006": {
+          "n": 7,
+          "successes": 6.0,
+          "oracle": 6,
+          "regret": 0.0,
+          "discordant": 0,
+          "discordant_correct": 0,
+          "discordant_ties": 0
+        },
+        "34007": {
+          "n": 11,
+          "successes": 10.0,
+          "oracle": 11,
+          "regret": 1.0,
+          "discordant": 1,
+          "discordant_correct": 0.0,
+          "discordant_ties": 0
+        }
+      }
+    }
+  }
+}

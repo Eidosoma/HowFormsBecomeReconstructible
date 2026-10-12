@@ -1,0 +1,228 @@
+{
+  "package_version": "RDT-P01-v0.2",
+  "status": "DRAFT_NOT_REGISTERED",
+  "created_at_utc": "2026-10-08T18:22:08.582841+00:00",
+  "meaning": "Versioned development snapshot binding equations, code, illustrative parameters, complete toy counts/forecasts/results, controls, proposed decision rules and exposure record. Does not constitute external preregistration or native prediction validation.",
+  "scope": "P01 only; original materials preserved; other prediction cards remain draft index.",
+  "environment": {
+    "python": "3.13.5",
+    "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.1",
+    "pytest": "9.1.1",
+    "numerical_threads_per_process": 1
+  },
+  "validation": {
+    "unit_checks": "18 passed in 1.24s",
+    "staged_pipelines": "Both toy calibrations and evaluations completed; first observable unsupported-row failure retained.",
+    "figures": "Both PNG exports visually inspected; SVG and CSV exports retained.",
+    "native_runs": 0
+  },
+  "files": [
+    {
+      "path": "PRIOR_ART.md",
+      "bytes": 7396,
+      "sha256": "0fcbeb091a88cd29fd2b147608f645ba926efe7f0cc11a234e34480d74f78a53"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 11651,
+      "sha256": "ac4cd58b7bdc1b1b9b98b8c8627a351896f2d754cdb97ed9c3caf92dc04919f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20081,
+      "sha256": "17e7f79c05c780205b0417e59edd7aee3c9dc343cca787a0f06aa3d8bbb988f2"
+    },
+    {
+      "path": "develop.py",
+      "bytes": 15272,
+      "sha256": "21d9dff866694a0107c11386ef3a36dd82e61d495455997ee4307012cef5c9bc"
+    },
+    {
+      "path": "development_config.json",
+      "bytes": 981,
+      "sha256": "667f6bdeb01d3e27de6ba66b31e53a7984d484ebb02368156699eea2cbdd9ba1"
+    },
+    {
+      "path": "joint_kernel.py",
+      "bytes": 8802,
+      "sha256": "e2c326423d620df346add9532762939885ffcb892f63fff2baa2f13d4b3d998f"
+    },
+    {
+      "path": "plot_observable.py",
+      "bytes": 2985,
+      "sha256": "9951287e02b270cdcec7b40b51f1a399f79010e1b3c7a83934b2b92588468af5"
+    },
+    {
+      "path": "prediction_manifest.json",
+      "bytes": 9323,
+      "sha256": "2641c2887d54cc813bb3c89d2560352591b74481d85fceb1aec561ee9aa86a7a"
+    },
+    {
+      "path": "registers.json",
+      "bytes": 10660,
+      "sha256": "30b722a1bf8310df8ba46a6ed0ae74370799fbe428beb2b3c257d23133b7f677"
+    },
+    {
+      "path": "results/development_v1.json",
+      "bytes": 24943,
+      "sha256": "7f24e89de10dd147247ceac54a2c6c160890afa1640663b2b819c9c8ae4505ee"
+    },
+    {
+      "path": "results/forecast_curves.csv",
+      "bytes": 7137,
+      "sha256": "42560b838fa1ade617af2cd2793f704f7131668f6f3ed7ac80bfbbd4425b5b6e"
+    },
+    {
+      "path": "results/forecast_curves.png",
+      "bytes": 173689,
+      "sha256": "14fb5eb30311d501799c9bb2bff30a2b19ad1cfa7bbbbb4cd78c69704de65630"
+    },
+    {
+      "path": "results/forecast_curves.svg",
+      "bytes": 73039,
+      "sha256": "a07afe5f7ff1885ea265de05dfbbe60ab9c2c1352d28b133ed55f723939c74fe"
+    },
+    {
+      "path": "results/observable_attempt_1_failure.json",
+      "bytes": 882,
+      "sha256": "d8cc509441308cd54a5a672a61ddccd447263c417f8dff6beec95576b28e647e"
+    },
+    {
+      "path": "results/observable_development_v1.json",
+      "bytes": 4260,
+      "sha256": "0b76b1b621f1e14a986a4054ac41e2e04c12160da399e41391c1eb704141faa3"
+    },
+    {
+      "path": "results/observable_forecasts.csv",
+      "bytes": 1767,
+      "sha256": "09755c9b7e6e3938aa350ff9836607891f744e233a101e9c8bbc75adde6ff181"
+    },
+    {
+      "path": "results/observable_forecasts.png",
+      "bytes": 145023,
+      "sha256": "09c43bf579394217930dd7156dd3faa6ced1a9beca83570612ed701bf2ea521e"
+    },
+    {
+      "path": "results/observable_forecasts.svg",
+      "bytes": 86386,
+      "sha256": "fc56e6134e19f55566d68d04bd1e8a68b96d779d97ae3bc9864fb949f9fe07df"
+    },
+    {
+      "path": "results/observable_forecasts_v1.json",
+      "bytes": 19513,
+      "sha256": "59d63cd2eff4e61b69e2deb927c749184e5a330851a369a0daeab108a8486482"
+    },
+    {
+      "path": "results/toy_forecasts_v1.json",
+      "bytes": 21042,
+      "sha256": "831a584f87ddcccb919ac0d0362358ba1ed087594a0f49f111de281adec6287b"
+    },
+    {
+      "path": "test_joint_kernel.py",
+      "bytes": 5066,
+      "sha256": "067a09a00d797de20e0c1eb8f86fe8ff74ed85dd73ebc433604f9460d95f5f9e"
+    },
+    {
+      "path": "test_two_mode.py",
+      "bytes": 2150,
+      "sha256": "1c245d2dcf024ce15637a093b7a373d9b228a09ede35fe7221b46cb336fe67d0"
+    },
+    {
+      "path": "two_mode.py",
+      "bytes": 5756,
+      "sha256": "bf039d94e0469ab0f4d271c6d25900bf2e52a3158b2177046c9966543ac3c281"
+    },
+    {
+      "path": "two_mode_develop.py",
+      "bytes": 5192,
+      "sha256": "6b314ed056722612bdac7d1f9251a4f4c41a267a1a89976df1d828395d659638"
+    },
+    {
+      "path": "verify_snapshot.py",
+      "bytes": 1474,
+      "sha256": "fd6017f900251500604e5d21b46bba13989d6e4db8cd8ec318bca912dd1dda4f"
+    }
+  ],
+  "local_reference_sources_at_snapshot": [
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/theory_lane_start.txt",
+      "bytes": 15583,
+      "sha256": "7039bcbaa472dc32a68d1a1db4430c7ca26fd55b01143e3a89db92e026828e1d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/adviser_verbal_response.md",
+      "bytes": 26736,
+      "sha256": "c87f9eb354dfd41975bbecdd016e1091d9e5b1feb6b1bfe3c1d52e908bfe8032"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/reconstructive_dynamics_theory_v0_1.pdf",
+      "bytes": 124050,
+      "sha256": "b6c9456b699eb3f639f625c32c2b7d602d2167137c7b02aceddb3cfc9185a7e8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/review_provenance_v0_1.json",
+      "bytes": 8908,
+      "sha256": "b8dc1454c0e90f0987fc8f25287d6276122ee9eba1e6a0db45241f5eabc05449"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/PRE_PRINT_PAPER_DRAFT_V5.0.md",
+      "bytes": 250482,
+      "sha256": "6d82f93bc0ff5f6ff0ff50c14200c70db61c2834f96d462446885035e4178f08"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/MANUSCRIPT.md",
+      "bytes": 65887,
+      "sha256": "fa3ea8fc46b9176e26c0df88b7135c2b6e283f22a6202bb4d85ff05b8f76d267"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/PRE_PRINT_PAPER_DRAFT_V0.16.md",
+      "bytes": 429803,
+      "sha256": "9276d1aad81f56194b3dccfe2b3ced7fbdc3303c60abc0e5a914f349c47f4119"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/METHODS_AND_PROVENANCE.md",
+      "bytes": 136414,
+      "sha256": "5016b14403225b169fb3546510d11ccce94cde1d529a4e0e8d8d8fe865817e93"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/paper_assets/zenodo_source_v0.16.json",
+      "bytes": 17020,
+      "sha256": "a23c88853de0c6257998be802fd3c30e0199c56f47f179570fe5c2dc72e6477e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/RUN_POLICY.md",
+      "bytes": 1423,
+      "sha256": "a53765a80aa71e852545302ae1e781f387828bf364a72252d747d0faf0820f83"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E041_full_rewrite_confirmation/model.py",
+      "bytes": 5897,
+      "sha256": "d8ded1e0a692a5de363b067be7e4b151a81ba2a79328024fec7df154b6dbbe7e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E041_full_rewrite_confirmation/PROTOCOL.md",
+      "bytes": 8577,
+      "sha256": "da9961bbfe48574ededc66c0d744be663b2c8b1b7b67b9ff8d713ff890847d17"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E022_reader_compensation/model.py",
+      "bytes": 8198,
+      "sha256": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E015_functional_inheritance/model.py",
+      "bytes": 7603,
+      "sha256": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672"
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E016_teaching_consistency/model.py",
+      "bytes": 4879,
+      "sha256": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582"
+    }
+  ],
+  "source_caveat": "Reference hashes are current file identities; manuscript review cutoffs and originally inspected versions are recorded separately in review_provenance_v0_1.json. Hashing a source does not imply a raw-data audit.",
+  "verification_command": "python -B verify_snapshot.py"
+}

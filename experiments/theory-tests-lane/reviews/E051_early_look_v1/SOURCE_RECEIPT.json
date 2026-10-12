@@ -1,0 +1,130 @@
+{
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "calculations": "Arithmetic differences from the saved snapshot; no new inference, trajectories, confidence intervals or primary gates.",
+  "comparisons": [
+    {
+      "arm": "paired",
+      "exact_minus_ordinary_pp": 69.53125,
+      "exact_minus_preserve_pp": 16.40625,
+      "successes_out_of_128": {
+        "contrast_rewrite": 0,
+        "exact_preserve": 99,
+        "exact_rewrite": 120,
+        "ordinary_rewrite": 31,
+        "tolerance_rewrite": 3
+      }
+    },
+    {
+      "arm": "noise_0999",
+      "exact_minus_ordinary_pp": 4.6875,
+      "exact_minus_preserve_pp": 3.125,
+      "successes_out_of_128": {
+        "contrast_rewrite": 126,
+        "exact_preserve": 122,
+        "exact_rewrite": 126,
+        "ordinary_rewrite": 120,
+        "tolerance_rewrite": 80
+      }
+    },
+    {
+      "arm": "noise_099",
+      "exact_minus_ordinary_pp": 1.5625,
+      "exact_minus_preserve_pp": 0.0,
+      "successes_out_of_128": {
+        "contrast_rewrite": 126,
+        "exact_preserve": 126,
+        "exact_rewrite": 126,
+        "ordinary_rewrite": 124,
+        "tolerance_rewrite": 99
+      }
+    },
+    {
+      "arm": "noise_09",
+      "exact_minus_ordinary_pp": 0.78125,
+      "exact_minus_preserve_pp": -0.78125,
+      "successes_out_of_128": {
+        "contrast_rewrite": 125,
+        "exact_preserve": 126,
+        "exact_rewrite": 125,
+        "ordinary_rewrite": 124,
+        "tolerance_rewrite": 108
+      }
+    },
+    {
+      "arm": "noise_0",
+      "exact_minus_ordinary_pp": -0.78125,
+      "exact_minus_preserve_pp": -1.5625,
+      "successes_out_of_128": {
+        "contrast_rewrite": 126,
+        "exact_preserve": 128,
+        "exact_rewrite": 126,
+        "ordinary_rewrite": 127,
+        "tolerance_rewrite": 122
+      }
+    },
+    {
+      "arm": "reset_099",
+      "exact_minus_ordinary_pp": 69.53125,
+      "exact_minus_preserve_pp": 15.625,
+      "successes_out_of_128": {
+        "contrast_rewrite": 0,
+        "exact_preserve": 99,
+        "exact_rewrite": 119,
+        "ordinary_rewrite": 30,
+        "tolerance_rewrite": 3
+      }
+    },
+    {
+      "arm": "reset_0",
+      "exact_minus_ordinary_pp": 72.65625,
+      "exact_minus_preserve_pp": 14.84375,
+      "successes_out_of_128": {
+        "contrast_rewrite": 0,
+        "exact_preserve": 99,
+        "exact_rewrite": 118,
+        "ordinary_rewrite": 25,
+        "tolerance_rewrite": 4
+      }
+    }
+  ],
+  "independent_blocks": 8,
+  "native_dynamics_audited_by_this_lane": false,
+  "ongoing_job_polled": false,
+  "planned_blocks": 32,
+  "recorded_utc": "2026-10-08T18:12:54.936106+00:00",
+  "scope": "Snapshot review only. All snapshot summaries are now conservatively development exposure for new theory claims.",
+  "source_status": "DESCRIPTIVE_INTERIM_UNAUDITED",
+  "sources": [
+    {
+      "original_path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/analysis/early_look_v1/REPORT.md",
+      "sha256": "a794af78602288429987d3479fbf1a40fddfff45fc0a27ad252e2545cbb9a027",
+      "snapshot_path": "reviews/E051_early_look_v1/source/REPORT.md"
+    },
+    {
+      "original_path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/analysis/early_look_v1/snapshot.json",
+      "sha256": "9413a3c31a02284a5f642c68ffbfc35a11879d9e2509963adc9ed9b152b0cbbb",
+      "snapshot_path": "reviews/E051_early_look_v1/source/snapshot.json"
+    },
+    {
+      "original_path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/analysis/early_look_v1/summarize.py",
+      "sha256": "e539882cd0d54a7daa01e5a894aa641fd6773511bdb05e49c3f6a32f982d2a00",
+      "snapshot_path": "reviews/E051_early_look_v1/source/summarize.py"
+    },
+    {
+      "original_path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/PROTOCOL.md",
+      "sha256": "768c6a802389e262b149fd4b475de58ad95e294647eaab2c32dc43913040a022",
+      "snapshot_path": "reviews/E051_early_look_v1/source/PROTOCOL.md"
+    }
+  ],
+  "sources_used_for_TT001": false,
+  "status": "DESCRIPTIVE_INTERIM_REVIEW"
+}

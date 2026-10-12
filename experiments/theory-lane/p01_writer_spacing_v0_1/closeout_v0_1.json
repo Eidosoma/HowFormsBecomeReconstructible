@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-09T14:31:48.320157+00:00",
+  "completed_at_utc": "2026-10-09T14:20:44.752738+00:00",
+  "runtime_seconds": 2063.384509738069,
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "independent_verifier_rerun": "PASS: 2304 terminal rows, 19200 body rows, all paired tables and schedule labels, 42 explicit native graph contexts, completed output hashes.",
+  "original_replay_passed": true,
+  "current_sources_match_frozen_inputs": true,
+  "figure_visually_inspected": true,
+  "primary_result": {
+    "candidate": "spaced_tolerance_rewrite",
+    "baseline": "clustered_tolerance_rewrite",
+    "injury": "scattered",
+    "mean_block_success_difference": 0.0859375,
+    "paired_counts": {
+      "both_pass": 90,
+      "rescued": 19,
+      "harmed": 8,
+      "both_fail": 11
+    },
+    "blocks_positive": 6,
+    "blocks_zero": 1,
+    "blocks_negative": 1,
+    "folds": [
+      {
+        "block": 34000,
+        "n": 16,
+        "success_difference": 0.1875,
+        "both_pass": 10,
+        "rescued": 4,
+        "harmed": 1,
+        "both_fail": 1
+      },
+      {
+        "block": 34001,
+        "n": 16,
+        "success_difference": 0.0625,
+        "both_pass": 10,
+        "rescued": 3,
+        "harmed": 2,
+        "both_fail": 1
+      },
+      {
+        "block": 34002,
+        "n": 16,
+        "success_difference": 0.0,
+        "both_pass": 15,
+        "rescued": 0,
+        "harmed": 0,
+        "both_fail": 1
+      },
+      {
+        "block": 34003,
+        "n": 16,
+        "success_difference": 0.0625,
+        "both_pass": 12,
+        "rescued": 2,
+        "harmed": 1,
+        "both_fail": 1
+      },
+      {
+        "block": 34004,
+        "n": 16,
+        "success_difference": 0.0625,
+        "both_pass": 14,
+        "rescued": 1,
+        "harmed": 0,
+        "both_fail": 1
+      },
+      {
+        "block": 34005,
+        "n": 16,
+        "success_difference": -0.125,
+        "both_pass": 9,
+        "rescued": 1,
+        "harmed": 3,
+        "both_fail": 3
+      },
+      {
+        "block": 34006,
+        "n": 16,
+        "success_difference": 0.25,
+        "both_pass": 9,
+        "rescued": 4,
+        "harmed": 0,
+        "both_fail": 3
+      },
+      {
+        "block": 34007,
+        "n": 16,
+        "success_difference": 0.1875,
+        "both_pass": 11,
+        "rescued": 4,
+        "harmed": 1,
+        "both_fail": 0
+      }
+    ]
+  },
+  "evidence_sha256": {
+    "COMPLETE.json": "a94dc112e267b4950e8fa486b47b4fae7f3915268305e2c2690cd30555cf5b01",
+    "REPORT.md": "b32363076862a12a9d7d3d87a3431fbd0ac2b1ab45f0bb86e36e5af302f47afa",
+    "analysis.json": "b9cc65e29af3a8d7ca2fdacbb5e636da503a9599ca2909943d78a47c757d81df",
+    "verification.json": "f0fe2f54f151b924e6d601cf1e445ab8212bf3e1792d605fdf46e7f662e77755",
+    "figure_provenance.json": "6abc4b3bfd93aa7425712d62e09b51679f25c6dc0feb34d5ee443c30300563d1",
+    "trajectories.png": "878bf1bd0f04b069748bac4f67ff3d6ef81a08c9b0eba9f68bec886a192e5106"
+  },
+  "exposure": "Full new pilot results are now exposed development evidence for this lane. No confirmation of P01 or full independent new-arm dynamics replay is claimed.",
+  "automatic_successor_started": false,
+  "prior_artifacts_modified": false
+}

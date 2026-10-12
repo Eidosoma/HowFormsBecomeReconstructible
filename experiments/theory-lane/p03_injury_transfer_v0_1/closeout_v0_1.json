@@ -1,0 +1,78 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "reviewed_at_utc": "2026-10-10T11:53:48.462762+00:00",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p03_injury_transfer_v0_1/runs/pilot_v1",
+  "scientific_status": "DEVELOPMENT_INJURY_TRANSFER_NOT_CONFIRMATORY",
+  "frozen_run_modified": false,
+  "anchors_sha256": {
+    "COMPLETE.json": "a40528fe927e0b8e1fa844794d581e7df8a50cad92ce181b46375f8762871c41",
+    "REPORT.md": "fdc3aa017dd6edbc29272a033e0db63a6ae4a8552861947e8ba9dd2d757ef922",
+    "VERIFICATION.json": "40d11633869071b4d4ef07abcff784edbfa469118508218e067af89e9ecc4039",
+    "analysis.json": "989dcfeed1ed6044f4fb0f62c071a50b872face7af6eae05bc4cf00cad8e6972",
+    "injury_transfer.png": "bb8fa09b1481fb5735ea0e788c83b9ebcfca366dfdeea4bed34fbaa302401ffb"
+  },
+  "checks_completed_during_status_review": {
+    "completed_output_hashes_verified": 31,
+    "frozen_and_current_input_files_verified": 35,
+    "verification_file_hashes_verified": 12,
+    "bound_source_hashes_verified": 12,
+    "figure_visually_reviewed": true,
+    "figure_review": "Both panels are readable; all eight block effects and rate labels are visible without clipping."
+  },
+  "figure_review_note": "This separate receipt resolves the visual-review flag in the frozen completion record; that record remains unchanged.",
+  "primary_prediction_observed_status": "FAILED_DIRECTIONAL_PREDICTION_IN_DEVELOPMENT_PANEL",
+  "fresh_rewrite_effect": {
+    "mean": -0.061336016414141416,
+    "by_block": {
+      "34000": -0.125,
+      "34001": 0.028409090909090908,
+      "34002": -0.0763888888888889,
+      "34003": -0.296875,
+      "34004": 0.0,
+      "34005": 0.15625,
+      "34006": -0.09375,
+      "34007": -0.08333333333333333
+    },
+    "descriptive_block_bootstrap_95": [
+      -0.14683948863636365,
+      0.022372159090909092
+    ],
+    "positive_blocks": 2,
+    "tied_blocks": 1,
+    "negative_blocks": 5,
+    "paired_reads": 1024,
+    "first_only": 64,
+    "second_only": 129,
+    "both_pass": 180,
+    "both_fail": 651
+  },
+  "fresh_minus_original_rewrite_effect": {
+    "mean": -0.1315893308080808,
+    "by_block": {
+      "34000": -0.0625,
+      "34001": -0.028409090909090908,
+      "34002": -0.2847222222222222,
+      "34003": -0.3125,
+      "34004": 0.0,
+      "34005": -0.0625,
+      "34006": -0.15625,
+      "34007": -0.14583333333333331
+    },
+    "descriptive_block_bootstrap_95": [
+      -0.2109375,
+      -0.060842803030303025
+    ],
+    "positive_blocks": 0,
+    "tied_blocks": 1,
+    "negative_blocks": 7
+  },
+  "interpretation": [
+    "Original-mask rewrite advantage is reproduced on new read streams: +7.03 percentage points with equal block weights.",
+    "Fresh-mask rewrite effect is -6.13 points, with two positive blocks, one tie and five negative blocks. The descriptive interval [-14.68,+2.24] crosses zero, so this does not establish a negative population effect.",
+    "The rewrite effect is lower under fresh than original injury in seven blocks, with one tie; its equal-block change is -13.16 points.",
+    "Under fresh injury, erasure-only lowers success by 19.96 points relative to incoming, while outgoing improves by 13.83 points relative to erasure-only. These causal record contrasts are additive in rates and do not isolate independent nonlinear mechanisms.",
+    "The signed choice yields 33.39 percent and unsigned access 33.31 percent; both exceed always incoming at 28.42 percent, but the signed increment over unsigned is only 0.074 points.",
+    "This selected, exposed development cohort does not establish a general damage/resource boundary, long-horizon advantage or uniquely signed predictor."
+  ],
+  "automatic_successor_launched": false
+}

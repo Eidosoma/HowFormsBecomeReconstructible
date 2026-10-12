@@ -1,0 +1,446 @@
+{
+  "added_inputs": [
+    "check_known.py"
+  ],
+  "all_registered_scientific_choices_unchanged": true,
+  "changed_inputs": [
+    "engine.py",
+    "run.py"
+  ],
+  "deliberately_damaged_fixtures_rejected": [
+    "3/mean_ports",
+    "3/end",
+    "3/masks",
+    "3/outgoing",
+    "3/missing_native_birth",
+    "4/outgoing",
+    "4/mean_ports",
+    "4/end",
+    "4/masks",
+    "4/birth",
+    "4/missing_native_birth",
+    "None/mean_ports",
+    "None/end",
+    "None/masks",
+    "None/birth",
+    "None/missing_native_birth",
+    "3/missing_saved_masks",
+    "4/missing_saved_birth",
+    "None/missing_saved_birth",
+    "independent_birth"
+  ],
+  "full_known_replay_pass_claimed": false,
+  "historical_boundaries_and_assays": 31,
+  "historical_native_arrays": 153,
+  "new_test_blocks_generated": 0,
+  "recorded_utc": "2026-10-10T00:04:49.051541+00:00",
+  "registration_sha256": "c69bb9ba643ecc4cd16ba3eddc623b0a336b1eb1a347ef1e4fa73041502a4e61",
+  "retained_failed_run_g3": {
+    "arrays": 4,
+    "historically_unretained_fields": [
+      "birth"
+    ],
+    "independent_replay_fields": [
+      "birth",
+      "end",
+      "masks",
+      "mean_ports",
+      "outgoing"
+    ],
+    "label": "saved_generation_3",
+    "sha256": {
+      "end": "254267a7f05987b6bb21bbcfe61fa8ad4ef7597d56a04a0b50d4979cc89a2c7c",
+      "masks": "eae0e47282a956f37507b4c3fd968ee5da3542f743afe58f97ae9f4bad4d86d1",
+      "mean_ports": "3df953a0851690fd54b6ba5da7cd9cf2a5a0f47dbdacb2180bb6983d4c77983e",
+      "outgoing": "fb9cb709de5464b2663845d527903a1f3688c9d726512ad18c629ffe84ee0ca2"
+    },
+    "status": "PASS"
+  },
+  "retained_g3_full_independent_replay": {
+    "arrays": 5,
+    "label": "recovery_g3_including_birth",
+    "sha256": {
+      "birth": "0ee97a66c3e5686f9557546241ddd469f54cd179c86378aacb1d5eeb2972791c",
+      "end": "254267a7f05987b6bb21bbcfe61fa8ad4ef7597d56a04a0b50d4979cc89a2c7c",
+      "masks": "eae0e47282a956f37507b4c3fd968ee5da3542f743afe58f97ae9f4bad4d86d1",
+      "mean_ports": "3df953a0851690fd54b6ba5da7cd9cf2a5a0f47dbdacb2180bb6983d4c77983e",
+      "outgoing": "fb9cb709de5464b2663845d527903a1f3688c9d726512ad18c629ffe84ee0ca2"
+    },
+    "status": "PASS"
+  },
+  "schema_checks": [
+    {
+      "arrays": 4,
+      "fields": [
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 3,
+      "historically_unretained_fields": [
+        "birth"
+      ]
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 4,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 5,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 6,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 7,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 8,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 9,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 10,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 11,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 12,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 13,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 14,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 15,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 16,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 17,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 18,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 19,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 20,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 21,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 22,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 23,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 24,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 25,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 26,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 27,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 28,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 29,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 30,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 31,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 5,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing"
+      ],
+      "generation": 32,
+      "historically_unretained_fields": []
+    },
+    {
+      "arrays": 4,
+      "fields": [
+        "birth",
+        "end",
+        "masks",
+        "mean_ports"
+      ],
+      "generation": null,
+      "historically_unretained_fields": []
+    }
+  ],
+  "status": "PASS"
+}

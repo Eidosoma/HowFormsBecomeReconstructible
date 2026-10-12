@@ -1,0 +1,63 @@
+{
+  "version": "0.19",
+  "date": "2026-10-12",
+  "figure_id": "fig-simulator-overview",
+  "main_figure_number": 2,
+  "placement": "MANUSCRIPT.md section 1.1, immediately before model-origin table",
+  "generation_method": "Built-in image_gen.imagegen, new generation and targeted record-boundary edit",
+  "backend_model": "Not exposed by the tool",
+  "selected_asset": {
+    "path": "paper_assets/figures/figure-simulator-overview-v2.png",
+    "sha256": "2c184346017c8ed0d8ce9ed3f68db9c2b6c7ef7d7d38ac5d7a3bab585accbdf8"
+  },
+  "unused_initial_asset": {
+    "path": "paper_assets/figures/figure-simulator-overview-v1.png",
+    "sha256": "05f51e1311ba2f89a4b3e32726bd5d67b09139e7dffef25b0f6b08ab393c3128"
+  },
+  "prompts": [
+    {
+      "path": "paper_assets/figures/figure-simulator-overview-v1-prompt.txt",
+      "sha256": "c10c49cbb16d91eabf3f5e77cb1d01e1bc4d89424196af346f2b9082993e6e0f"
+    },
+    {
+      "path": "paper_assets/figures/figure-simulator-overview-v2-boundary-prompt.txt",
+      "sha256": "3466e8a0975c156b0e0938cc0efb0059b3e64e1630a8b31c395f0a919160f71a"
+    }
+  ],
+  "original_outputs": {
+    "initial": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-b74275a9-2e43-4f69-9d71-e25266a8c503.png",
+    "corrected": "/home/robert/.codex/generated_images/01a0867e-a9cd-7a22-9f7c-154b8faf3ebb/exec-6175e225-ad7a-420d-b5e4-acf5bc0584eb.png"
+  },
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "postprocessing": "None; copied unchanged",
+  "sources": [
+    {
+      "path": "METHODS_AND_PROVENANCE.md",
+      "sha256": "33c898d9e1da7ab4138b27e8ee29c2705f2213b69442b5d1c9487ad6ed15bcec"
+    }
+  ],
+  "source_sections": [
+    "C.1",
+    "C.7",
+    "C.16",
+    "C.17",
+    "C.23"
+  ],
+  "scientific_status": "Explanatory simulator overview; no measured fields or new outcomes",
+  "visual_review": {
+    "native_resolution_inspected": true,
+    "text_checked": true,
+    "model_dimensions_checked": true,
+    "both_cue_writer_route_checked": true,
+    "separate_spatial_record_checked": true,
+    "cellular_live_state_and_donor_removal_checked": true,
+    "light_opaque_background_checked": true,
+    "no_blurred_cells_or_grids_observed": true
+  },
+  "review": "reviews/V0.19_SIMULATOR_OVERVIEW.md",
+  "pdf_review": "reviews/V0.19_PDF_REVIEW.md"
+}

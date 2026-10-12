@@ -1,0 +1,37 @@
+{
+  "contract": {
+    "analysis": "post_hoc_transmission_diagnosis",
+    "experiment": "E022",
+    "new_simulation": false,
+    "source": "E022_reader_compensation/runs/benchmark_v1",
+    "units": {
+      "blocks": 1,
+      "founders": 4,
+      "lineages": 4
+    }
+  },
+  "cpu_affinity": [
+    0
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E021_damaged_renewal/analysis/diagnose_boundaries.py": "bd1b87db5cfd7f0cc2492ab8edc9b23ae90ebe8c700b190aa4ad70436929920b",
+    "E021_damaged_renewal/analysis/verify_boundary_diagnosis.py": "ba94d22da38307084ce349a9f750d1ebbd725936b7ebb25efbeb77ab9bf12bba",
+    "E022_reader_compensation/analysis/TRANSMISSION_DIAGNOSIS.md": "6f23f713431eee7ade13158558e07a08e48b296afd3326c3ac2fc94c9d09854e",
+    "E022_reader_compensation/analysis/diagnose_transmission_v2.py": "d4af6ccf3687f65bbbc3470e3bb91ade980ee1989185c491177552437f222937",
+    "E022_reader_compensation/analysis/verify_transmission_v2.py": "d16663d3028398be058687577fcdd28102e0d12ea2ef2b02eb6ec52467ea71ee",
+    "E022_reader_compensation/runs/benchmark_v1/COMPLETE.json": "e9be537fd4d0801f42ca14bbca93bb80ddc3bf12c7183cbc857b402cbec8fa7e",
+    "E022_reader_compensation/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "ca07ff7d50aa550dbe3f4341aed4d32ad3ac3fcbdb4e8d53edbef6bc4c5f317b",
+    "E022_reader_compensation/runs/benchmark_v1/manifest.json": "d6be84e519e3b4f436b287b2e2f672207d5bd7c164bda39d9e3e367a6870c73f",
+    "E022_reader_compensation/runs/benchmark_v1/summary.json": "cb2f95711ef642f46b5c8d4cee41b16a9f8997311d6fc332aa6093ef6673aac1",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-20T14:19:17.275081+00:00",
+  "status": "RUNNING"
+}

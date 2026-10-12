@@ -1,0 +1,1469 @@
+{
+  "experiment": "H008",
+  "classification": "PROSPECTIVE_DURABILITY_ON_FIXED_H007_DEVELOPMENT_COHORT",
+  "dose": 8,
+  "current": {
+    "passed": false,
+    "gates": {
+      "at_least_64_matches": true,
+      "at_least_16_networks": true,
+      "unchanged_success_at_least_95pct": true,
+      "hidden_swap_success_at_least_95pct": true,
+      "success_equivalent_within_1pp": false,
+      "output_0_equivalent_within_1pp": false,
+      "output_1_equivalent_within_1pp": false,
+      "output_2_equivalent_within_1pp": true,
+      "output_3_equivalent_within_1pp": true
+    },
+    "current_success": {
+      "unchanged": {
+        "mean": 0.9702100868604774,
+        "low": 0.9670713603074442,
+        "high": 0.9731099208589442,
+        "equivalence_low": 0.9666029866762289,
+        "equivalence_high": 0.9734529228773612,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      },
+      "hidden_swap": {
+        "mean": 0.9766916424142987,
+        "low": 0.9739821343117241,
+        "high": 0.9791208312900208,
+        "equivalence_low": 0.9735675660150759,
+        "equivalence_high": 0.979425101491752,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      }
+    },
+    "differences": {
+      "success": {
+        "mean": 0.006481555553821183,
+        "low": 0.003208327452712214,
+        "high": 0.009891803707721681,
+        "equivalence_low": 0.0027701116519475875,
+        "equivalence_high": 0.010370408829271139,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      },
+      "output_0": {
+        "mean": 0.010319042936230432,
+        "low": 0.005353147467405282,
+        "high": 0.015514468803043018,
+        "equivalence_low": 0.004707774051035772,
+        "equivalence_high": 0.016227491041944167,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      },
+      "output_1": {
+        "mean": 0.010319042936230432,
+        "low": 0.005353147467405282,
+        "high": 0.015514468803043018,
+        "equivalence_low": 0.004707774051035772,
+        "equivalence_high": 0.016227491041944167,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      },
+      "output_2": {
+        "mean": 0.0025272145389333006,
+        "low": -0.0021975146706591916,
+        "high": 0.0074167004147473,
+        "equivalence_low": -0.0028901240180536944,
+        "equivalence_high": 0.008116277123845496,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      },
+      "output_3": {
+        "mean": 0.0025272145389333006,
+        "low": -0.0021975146706591916,
+        "high": 0.0074167004147473,
+        "equivalence_low": -0.0028901240180536944,
+        "equivalence_high": 0.008116277123845496,
+        "primary_low": null,
+        "primary_high": null,
+        "directional_lower": null
+      }
+    },
+    "matches": 244,
+    "nonempty_blocks": 24,
+    "dose": 8,
+    "blocks": [
+      {
+        "seed": 13000,
+        "matched": 4,
+        "eligible": [
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.95703125,
+          0.95703125
+        ],
+        "current_outputs": [
+          [
+            0.9609375,
+            0.9609375,
+            0.953125,
+            0.953125
+          ],
+          [
+            0.953125,
+            0.953125,
+            0.953125,
+            0.953125
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0658480626498403,
+          2.01879946541701
+        ]
+      },
+      {
+        "seed": 13001,
+        "matched": 9,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9722222222222222,
+          0.96875
+        ],
+        "current_outputs": [
+          [
+            0.9618055555555556,
+            0.9618055555555556,
+            0.9826388888888888,
+            0.9826388888888888
+          ],
+          [
+            0.9756944444444444,
+            0.9756944444444444,
+            0.9618055555555556,
+            0.9618055555555556
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492214,
+          0.9921567416492214
+        ],
+        "effective_total_norm": [
+          2.126462240112839,
+          2.030293292053128
+        ]
+      },
+      {
+        "seed": 13002,
+        "matched": 7,
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            false
+          ]
+        ],
+        "current_success": [
+          0.9732142857142857,
+          0.9754464285714286
+        ],
+        "current_outputs": [
+          [
+            0.9642857142857143,
+            0.9642857142857143,
+            0.9821428571428571,
+            0.9821428571428571
+          ],
+          [
+            0.96875,
+            0.96875,
+            0.9821428571428571,
+            0.9821428571428571
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.051737296006958,
+          1.997365790207534
+        ]
+      },
+      {
+        "seed": 13003,
+        "matched": 9,
+        "eligible": [
+          [
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9809027777777778,
+          0.9722222222222222
+        ],
+        "current_outputs": [
+          [
+            0.9861111111111112,
+            0.9861111111111112,
+            0.9756944444444444,
+            0.9756944444444444
+          ],
+          [
+            0.9861111111111112,
+            0.9861111111111112,
+            0.9583333333333334,
+            0.9583333333333334
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492214,
+          0.9921567416492214
+        ],
+        "effective_total_norm": [
+          2.113952414285286,
+          2.024655473369283
+        ]
+      },
+      {
+        "seed": 13004,
+        "matched": 13,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.9747596153846154,
+          0.9711538461538461
+        ],
+        "current_outputs": [
+          [
+            0.9759615384615384,
+            0.9759615384615384,
+            0.9735576923076923,
+            0.9735576923076923
+          ],
+          [
+            0.9783653846153846,
+            0.9783653846153846,
+            0.9639423076923077,
+            0.9639423076923077
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.105774779512145,
+          1.9952328325495723
+        ]
+      },
+      {
+        "seed": 13005,
+        "matched": 11,
+        "eligible": [
+          [
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            false,
+            false,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9602272727272727,
+          0.9772727272727273
+        ],
+        "current_outputs": [
+          [
+            0.9545454545454546,
+            0.9545454545454546,
+            0.9659090909090909,
+            0.9659090909090909
+          ],
+          [
+            0.9857954545454546,
+            0.9857954545454546,
+            0.96875,
+            0.96875
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0661047721117414,
+          1.9994404725944448
+        ]
+      },
+      {
+        "seed": 13006,
+        "matched": 7,
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9732142857142857,
+          0.9866071428571429
+        ],
+        "current_outputs": [
+          [
+            0.96875,
+            0.96875,
+            0.9776785714285714,
+            0.9776785714285714
+          ],
+          [
+            0.9955357142857143,
+            0.9955357142857143,
+            0.9776785714285714,
+            0.9776785714285714
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.1015706803656924,
+          2.0175179950518225
+        ]
+      },
+      {
+        "seed": 13007,
+        "matched": 9,
+        "eligible": [
+          [
+            false,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9565972222222222,
+          0.9791666666666666
+        ],
+        "current_outputs": [
+          [
+            0.9652777777777778,
+            0.9652777777777778,
+            0.9479166666666666,
+            0.9479166666666666
+          ],
+          [
+            0.9826388888888888,
+            0.9826388888888888,
+            0.9756944444444444,
+            0.9756944444444444
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492214,
+          0.9921567416492214
+        ],
+        "effective_total_norm": [
+          2.1293545436162917,
+          2.0446077663925366
+        ]
+      },
+      {
+        "seed": 13008,
+        "matched": 12,
+        "eligible": [
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9778645833333334,
+          0.9752604166666666
+        ],
+        "current_outputs": [
+          [
+            0.9791666666666666,
+            0.9791666666666666,
+            0.9765625,
+            0.9765625
+          ],
+          [
+            0.9765625,
+            0.9765625,
+            0.9739583333333334,
+            0.9739583333333334
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.1054496693646305,
+          2.00807554729403
+        ]
+      },
+      {
+        "seed": 13009,
+        "matched": 15,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.978125,
+          0.984375
+        ],
+        "current_outputs": [
+          [
+            0.9770833333333333,
+            0.9770833333333333,
+            0.9791666666666666,
+            0.9791666666666666
+          ],
+          [
+            0.9833333333333333,
+            0.9833333333333333,
+            0.9854166666666667,
+            0.9854166666666667
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.1795196849942227,
+          2.071616398552553
+        ]
+      },
+      {
+        "seed": 13010,
+        "matched": 7,
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            false,
+            false,
+            true,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9665178571428571,
+          0.9732142857142857
+        ],
+        "current_outputs": [
+          [
+            0.9598214285714286,
+            0.9598214285714286,
+            0.9732142857142857,
+            0.9732142857142857
+          ],
+          [
+            0.9642857142857143,
+            0.9642857142857143,
+            0.9821428571428571,
+            0.9821428571428571
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.084650676096834,
+          2.0309471276212863
+        ]
+      },
+      {
+        "seed": 13011,
+        "matched": 12,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.96484375,
+          0.9713541666666666
+        ],
+        "current_outputs": [
+          [
+            0.9713541666666666,
+            0.9713541666666666,
+            0.9557291666666666,
+            0.9557291666666666
+          ],
+          [
+            0.9609375,
+            0.9609375,
+            0.9817708333333334,
+            0.9817708333333334
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0895043891921707,
+          2.01029644150222
+        ]
+      },
+      {
+        "seed": 13012,
+        "matched": 8,
+        "eligible": [
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            false
+          ]
+        ],
+        "current_success": [
+          0.98046875,
+          0.978515625
+        ],
+        "current_outputs": [
+          [
+            0.9765625,
+            0.9765625,
+            0.984375,
+            0.984375
+          ],
+          [
+            0.98046875,
+            0.98046875,
+            0.9765625,
+            0.9765625
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.13605518417015,
+          2.056555597514891
+        ]
+      },
+      {
+        "seed": 13013,
+        "matched": 10,
+        "eligible": [
+          [
+            false,
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9515625,
+          0.978125
+        ],
+        "current_outputs": [
+          [
+            0.946875,
+            0.946875,
+            0.95625,
+            0.95625
+          ],
+          [
+            0.9875,
+            0.9875,
+            0.96875,
+            0.96875
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492214,
+          0.9921567416492214
+        ],
+        "effective_total_norm": [
+          2.095567143180613,
+          2.0110601001402006
+        ]
+      },
+      {
+        "seed": 13014,
+        "matched": 11,
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            false,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9772727272727273,
+          0.9815340909090909
+        ],
+        "current_outputs": [
+          [
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273,
+            0.9772727272727273
+          ],
+          [
+            0.9744318181818182,
+            0.9744318181818182,
+            0.9886363636363636,
+            0.9886363636363636
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.1493914093536977,
+          2.0421465032327126
+        ]
+      },
+      {
+        "seed": 13015,
+        "matched": 8,
+        "eligible": [
+          [
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.974609375,
+          0.982421875
+        ],
+        "current_outputs": [
+          [
+            0.96875,
+            0.96875,
+            0.98046875,
+            0.98046875
+          ],
+          [
+            0.99609375,
+            0.99609375,
+            0.96875,
+            0.96875
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0530191876219845,
+          1.977222717316308
+        ]
+      },
+      {
+        "seed": 13016,
+        "matched": 12,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ]
+        ],
+        "current_success": [
+          0.97265625,
+          0.9856770833333334
+        ],
+        "current_outputs": [
+          [
+            0.96875,
+            0.96875,
+            0.9765625,
+            0.9765625
+          ],
+          [
+            0.9895833333333334,
+            0.9895833333333334,
+            0.9817708333333334,
+            0.9817708333333334
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.081610973122301,
+          2.03253037699618
+        ]
+      },
+      {
+        "seed": 13017,
+        "matched": 5,
+        "eligible": [
+          [
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            true,
+            false,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.96875,
+          0.978125
+        ],
+        "current_outputs": [
+          [
+            0.95625,
+            0.95625,
+            0.98125,
+            0.98125
+          ],
+          [
+            0.975,
+            0.975,
+            0.98125,
+            0.98125
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492214,
+          0.9921567416492214
+        ],
+        "effective_total_norm": [
+          2.1064371243156073,
+          2.0341114056037255
+        ]
+      },
+      {
+        "seed": 13018,
+        "matched": 15,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9770833333333333,
+          0.9791666666666666
+        ],
+        "current_outputs": [
+          [
+            0.9791666666666666,
+            0.9791666666666666,
+            0.975,
+            0.975
+          ],
+          [
+            0.9875,
+            0.9875,
+            0.9708333333333333,
+            0.9708333333333333
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.110807895577105,
+          2.035401584114185
+        ]
+      },
+      {
+        "seed": 13019,
+        "matched": 11,
+        "eligible": [
+          [
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9659090909090909,
+          0.9801136363636364
+        ],
+        "current_outputs": [
+          [
+            0.9744318181818182,
+            0.9744318181818182,
+            0.9573863636363636,
+            0.9573863636363636
+          ],
+          [
+            0.9801136363636364,
+            0.9801136363636364,
+            0.9801136363636364,
+            0.9801136363636364
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0673186974419795,
+          1.968444824683048
+        ]
+      },
+      {
+        "seed": 13020,
+        "matched": 11,
+        "eligible": [
+          [
+            false,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            false,
+            false,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.96875,
+          0.9701704545454546
+        ],
+        "current_outputs": [
+          [
+            0.9744318181818182,
+            0.9744318181818182,
+            0.9630681818181818,
+            0.9630681818181818
+          ],
+          [
+            0.96875,
+            0.96875,
+            0.9715909090909091,
+            0.9715909090909091
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.08103541603821,
+          2.0300834600484556
+        ]
+      },
+      {
+        "seed": 13021,
+        "matched": 13,
+        "eligible": [
+          [
+            true,
+            false,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.96875,
+          0.9711538461538461
+        ],
+        "current_outputs": [
+          [
+            0.9591346153846154,
+            0.9591346153846154,
+            0.9759615384615384,
+            0.9759615384615384
+          ],
+          [
+            0.9735576923076923,
+            0.9735576923076923,
+            0.96875,
+            0.96875
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.0871433485914177,
+          2.016055832400851
+        ]
+      },
+      {
+        "seed": 13022,
+        "matched": 12,
+        "eligible": [
+          [
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            true
+          ]
+        ],
+        "current_success": [
+          0.9713541666666666,
+          0.9817708333333334
+        ],
+        "current_outputs": [
+          [
+            0.9661458333333334,
+            0.9661458333333334,
+            0.9765625,
+            0.9765625
+          ],
+          [
+            0.984375,
+            0.984375,
+            0.9791666666666666,
+            0.9791666666666666
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.1403154743411372,
+          2.0254661923545423
+        ]
+      },
+      {
+        "seed": 13023,
+        "matched": 13,
+        "eligible": [
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            false,
+            true,
+            false,
+            true
+          ],
+          [
+            true,
+            true,
+            true,
+            false
+          ]
+        ],
+        "current_success": [
+          0.9723557692307693,
+          0.9819711538461539
+        ],
+        "current_outputs": [
+          [
+            0.9735576923076923,
+            0.9735576923076923,
+            0.9711538461538461,
+            0.9711538461538461
+          ],
+          [
+            0.9855769230769231,
+            0.9855769230769231,
+            0.9783653846153846,
+            0.9783653846153846
+          ]
+        ],
+        "record_norm": [
+          0.9921567416492215,
+          0.9921567416492215
+        ],
+        "effective_total_norm": [
+          2.083313584155571,
+          2.0271702583243147
+        ]
+      }
+    ]
+  },
+  "audit_passed": true,
+  "futures_generated": false,
+  "variants": [
+    "unchanged",
+    "hidden_swap"
+  ],
+  "arms": [
+    "renewal",
+    "restored",
+    "foreign",
+    "protected_copy",
+    "damaged_copy",
+    "read_off",
+    "write_off"
+  ],
+  "checkpoints": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "decision": {
+    "qualified": false,
+    "gates": {}
+  },
+  "block_rows": [],
+  "verdict": "PRESENT_GATE_FAILED"
+}

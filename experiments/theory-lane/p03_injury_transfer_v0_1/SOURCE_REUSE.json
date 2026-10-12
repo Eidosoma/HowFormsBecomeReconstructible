@@ -1,0 +1,27 @@
+{
+  "status": "DEVELOPMENT_CODE_REUSE",
+  "copied_from": {
+    "common.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p03_fixed_injury_recovery_v0_1/runs/pilot_v1_resume1/inputs/common.py",
+      "source_sha256": "4c906320f64f50591b90a71143432324416ac892ce817198d67cb8671cb5ca14"
+    },
+    "reader.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p03_fixed_injury_recovery_v0_1/runs/pilot_v1_resume1/inputs/reader.py",
+      "source_sha256": "c233fdb568b576e4e11534e61ec0b2dfbe3f85ebf6c47e854c37aacedcd3bb4a"
+    },
+    "audit_reader.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p03_fixed_injury_recovery_v0_1/runs/pilot_v1_resume1/inputs/audit_reader.py",
+      "source_sha256": "08d81df8f90712eb9bd024fe790fe982e743b24a9a89fdef3e331c6168d480f2"
+    },
+    "diagnostics_core.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p01_writer_diagnostic_v0_1/core.py",
+      "source_sha256": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+    }
+  },
+  "planned_changes": {
+    "common.py": "New experiment validation only.",
+    "reader.py": "Support distinct fixed injury masks per replicate; retain native arithmetic and RNG coupling.",
+    "audit_reader.py": "Unchanged independent implementation.",
+    "diagnostics_core.py": "Unchanged signed and unsigned transfer calculations."
+  }
+}

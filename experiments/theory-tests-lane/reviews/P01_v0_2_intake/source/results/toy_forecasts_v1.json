@@ -1,0 +1,871 @@
+{
+  "status": "DEVELOPMENT_TOY_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T17:57:27.636763+00:00",
+  "config": {
+    "status": "DEVELOPMENT_TOY_NOT_CONFIRMATORY",
+    "purpose": "Check a restricted short-probe forecasting model, its reductions to established models, and explicit failure cases.",
+    "seed": 1729,
+    "one_step_samples_per_state": 512,
+    "horizons": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "cases": [
+      {
+        "name": "slower_identity_loss",
+        "identity_flip": 0.005,
+        "readiness_loss": 0.15,
+        "readiness_recovery": 0.6
+      },
+      {
+        "name": "faster_identity_loss",
+        "identity_flip": 0.04,
+        "readiness_loss": 0.15,
+        "readiness_recovery": 0.6
+      }
+    ],
+    "statistical_radius_delta": 0.05,
+    "sample_complexity_illustration": {
+      "absolute_error": 0.1,
+      "readout_error": 0.0,
+      "rows": 4,
+      "joint_categories": 8,
+      "delta": 0.05
+    },
+    "interpretation": "Parameters construct analytical examples. Counts and error tolerance are development choices, not native empirical forecasts, power calculations, or registered success requirements. Full source states can be reset in this example; this is a strong coverage assumption."
+  },
+  "config_sha256": "667f6bdeb01d3e27de6ba66b31e53a7984d484ebb02368156699eea2cbdd9ba1",
+  "code_sha256": {
+    "joint_kernel.py": "e2c326423d620df346add9532762939885ffcb892f63fff2baa2f13d4b3d998f",
+    "develop.py": "21d9dff866694a0107c11386ef3a36dd82e61d495455997ee4307012cef5c9bc"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.2"
+  },
+  "interpretation": "Known toy source states and fixed generative law. No native-system claim.",
+  "cases": [
+    {
+      "name": "slower_identity_loss",
+      "counts": [
+        [
+          [
+            201,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            309,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            86,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            421,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            199,
+            313
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            75,
+            432
+          ],
+          [
+            0,
+            5,
+            0,
+            0
+          ]
+        ]
+      ],
+      "one_step_observations": 2048,
+      "known_readout": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "joint": [
+        [
+          [
+            0.392578125,
+            0.0,
+            0.001953125,
+            0.001953125
+          ],
+          [
+            0.0,
+            0.603515625,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.16796875,
+            0.0,
+            0.0,
+            0.009765625
+          ],
+          [
+            0.0,
+            0.822265625,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            0.388671875,
+            0.611328125
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            0.146484375,
+            0.84375
+          ],
+          [
+            0.0,
+            0.009765625,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "p": [
+        [
+          0.392578125,
+          0.603515625,
+          0.001953125,
+          0.001953125
+        ],
+        [
+          0.16796875,
+          0.822265625,
+          0.0,
+          0.009765625
+        ],
+        [
+          0.0,
+          0.0,
+          0.388671875,
+          0.611328125
+        ],
+        [
+          0.0,
+          0.009765625,
+          0.146484375,
+          0.84375
+        ]
+      ],
+      "pass_matrix": [
+        [
+          0.0,
+          0.603515625,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.822265625,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.009765625,
+          0.0,
+          0.0
+        ]
+      ],
+      "factor_matrix": [
+        [
+          0.38930702209472656,
+          0.6048336029052734,
+          0.0022945404052734375,
+          0.0035648345947265625
+        ],
+        [
+          0.15630531311035156,
+          0.8378353118896484,
+          0.0009212493896484375,
+          0.0049381256103515625
+        ],
+        [
+          0.0022945404052734375,
+          0.0035648345947265625,
+          0.38930702209472656,
+          0.6048336029052734
+        ],
+        [
+          0.0009212493896484375,
+          0.0049381256103515625,
+          0.15630531311035156,
+          0.8378353118896484
+        ]
+      ],
+      "output_matrix": [
+        [
+          0.7955729166666666,
+          0.20442708333333334
+        ],
+        [
+          0.177734375,
+          0.822265625
+        ]
+      ],
+      "forecasts": [
+        {
+          "horizon": 0,
+          "joint_model": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "generic_four_state": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "independent_two_factor": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "output_only": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "all_cycle_probability": 1.0
+        },
+        {
+          "horizon": 1,
+          "joint_model": {
+            "own": 0.822265625,
+            "foreign": 0.009765625,
+            "specificity": 0.8125
+          },
+          "generic_four_state": {
+            "own": 0.822265625,
+            "foreign": 0.009765625,
+            "specificity": 0.8125
+          },
+          "independent_two_factor": {
+            "own": 0.8378353118896484,
+            "foreign": 0.0049381256103515625,
+            "specificity": 0.8328971862792969
+          },
+          "output_only": {
+            "own": 0.822265625,
+            "foreign": 0.20442708333333334,
+            "specificity": 0.6178385416666666
+          },
+          "all_cycle_probability": 0.822265625
+        },
+        {
+          "horizon": 2,
+          "joint_model": {
+            "own": 0.777587890625,
+            "foreign": 0.016269683837890625,
+            "specificity": 0.7613182067871094
+          },
+          "generic_four_state": {
+            "own": 0.777587890625,
+            "foreign": 0.016269683837890625,
+            "specificity": 0.7613182067871094
+          },
+          "independent_two_factor": {
+            "own": 0.7965343847172335,
+            "foreign": 0.009389077196829021,
+            "specificity": 0.7871453075204045
+          },
+          "output_only": {
+            "own": 0.7124544779459635,
+            "foreign": 0.33073001437717015,
+            "specificity": 0.38172446356879336
+          },
+          "all_cycle_probability": 0.6761207580566406
+        },
+        {
+          "horizon": 4,
+          "joint_model": {
+            "own": 0.7545364053803496,
+            "foreign": 0.027972671887255274,
+            "specificity": 0.7265637334930943
+          },
+          "generic_four_state": {
+            "own": 0.7545364053803496,
+            "foreign": 0.027972671887255274,
+            "specificity": 0.7265637334930943
+          },
+          "independent_two_factor": {
+            "own": 0.7769486398633019,
+            "foreign": 0.01831387940687973,
+            "specificity": 0.7586347604564221
+          },
+          "output_only": {
+            "own": 0.6026913177882778,
+            "foreign": 0.4569777517013947,
+            "specificity": 0.14571356608688307
+          },
+          "all_cycle_probability": 0.45713927947508637
+        },
+        {
+          "horizon": 8,
+          "joint_model": {
+            "own": 0.7299739117170583,
+            "foreign": 0.050170777364479384,
+            "specificity": 0.6798031343525789
+          },
+          "generic_four_state": {
+            "own": 0.7299739117170583,
+            "foreign": 0.050170777364479384,
+            "specificity": 0.6798031343525789
+          },
+          "independent_two_factor": {
+            "own": 0.7588882572991994,
+            "foreign": 0.03575646966491981,
+            "specificity": 0.7231317876342795
+          },
+          "output_only": {
+            "own": 0.5447980528659276,
+            "foreign": 0.5235656095241712,
+            "specificity": 0.021232443341756446
+          },
+          "all_cycle_probability": 0.20897632083900114
+        },
+        {
+          "horizon": 16,
+          "joint_model": {
+            "own": 0.6864303862534109,
+            "foreign": 0.09043313602910051,
+            "specificity": 0.5959972502243104
+          },
+          "generic_four_state": {
+            "own": 0.6864303862534109,
+            "foreign": 0.09043313602910051,
+            "specificity": 0.5959972502243104
+          },
+          "independent_two_factor": {
+            "own": 0.7263479319405836,
+            "foreign": 0.06829492521929845,
+            "specificity": 0.6580530067212851
+          },
+          "output_only": {
+            "own": 0.5351330033143462,
+            "foreign": 0.5346821866640853,
+            "specificity": 0.0004508166502609212
+          },
+          "all_cycle_probability": 0.04367110267140513
+        },
+        {
+          "horizon": 32,
+          "joint_model": {
+            "own": 0.6147877062828648,
+            "foreign": 0.15667949468736292,
+            "specificity": 0.4581082115955019
+          },
+          "generic_four_state": {
+            "own": 0.6147877062828648,
+            "foreign": 0.15667949468736292,
+            "specificity": 0.4581082115955019
+          },
+          "independent_two_factor": {
+            "own": 0.6697921087920647,
+            "foreign": 0.12485074835079209,
+            "specificity": 0.5449413604412726
+          },
+          "output_only": {
+            "own": 0.5349234335320835,
+            "foreign": 0.5349232302964314,
+            "specificity": 2.03235652085354e-07
+          },
+          "all_cycle_probability": 0.0019071652085364084
+        },
+        {
+          "horizon": 64,
+          "joint_model": {
+            "own": 0.5173929777458779,
+            "foreign": 0.2467381876576141,
+            "specificity": 0.27065479008826376
+          },
+          "generic_four_state": {
+            "own": 0.5173929777458779,
+            "foreign": 0.2467381876576141,
+            "specificity": 0.27065479008826376
+          },
+          "independent_two_factor": {
+            "own": 0.5841733480534147,
+            "foreign": 0.21046950908944223,
+            "specificity": 0.37370383896397247
+          },
+          "output_only": {
+            "own": 0.5349233390119441,
+            "foreign": 0.5349233390119027,
+            "specificity": 4.141131881851834e-14
+          },
+          "all_cycle_probability": 3.637279132651724e-06
+        }
+      ]
+    },
+    {
+      "name": "faster_identity_loss",
+      "counts": [
+        [
+          [
+            202,
+            0,
+            10,
+            12
+          ],
+          [
+            0,
+            288,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            94,
+            0,
+            1,
+            25
+          ],
+          [
+            0,
+            392,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            0,
+            196,
+            297
+          ],
+          [
+            0,
+            11,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            79,
+            417
+          ],
+          [
+            0,
+            14,
+            0,
+            0
+          ]
+        ]
+      ],
+      "one_step_observations": 2048,
+      "known_readout": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "joint": [
+        [
+          [
+            0.39453125,
+            0.0,
+            0.01953125,
+            0.0234375
+          ],
+          [
+            0.0,
+            0.5625,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.18359375,
+            0.0,
+            0.001953125,
+            0.048828125
+          ],
+          [
+            0.0,
+            0.765625,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.015625,
+            0.0,
+            0.3828125,
+            0.580078125
+          ],
+          [
+            0.0,
+            0.021484375,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.00390625,
+            0.0,
+            0.154296875,
+            0.814453125
+          ],
+          [
+            0.0,
+            0.02734375,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "p": [
+        [
+          0.39453125,
+          0.5625,
+          0.01953125,
+          0.0234375
+        ],
+        [
+          0.18359375,
+          0.765625,
+          0.001953125,
+          0.048828125
+        ],
+        [
+          0.015625,
+          0.021484375,
+          0.3828125,
+          0.580078125
+        ],
+        [
+          0.00390625,
+          0.02734375,
+          0.154296875,
+          0.814453125
+        ]
+      ],
+      "pass_matrix": [
+        [
+          0.0,
+          0.5625,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.765625,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.021484375,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.02734375,
+          0.0,
+          0.0
+        ]
+      ],
+      "factor_matrix": [
+        [
+          0.3897857666015625,
+          0.5696868896484375,
+          0.0164642333984375,
+          0.0240631103515625
+        ],
+        [
+          0.16490936279296875,
+          0.7945632934570312,
+          0.00696563720703125,
+          0.03356170654296875
+        ],
+        [
+          0.0164642333984375,
+          0.0240631103515625,
+          0.3897857666015625,
+          0.5696868896484375
+        ],
+        [
+          0.00696563720703125,
+          0.03356170654296875,
+          0.16490936279296875,
+          0.7945632934570312
+        ]
+      ],
+      "output_matrix": [
+        [
+          0.7962239583333334,
+          0.20377604166666666
+        ],
+        [
+          0.234375,
+          0.765625
+        ]
+      ],
+      "forecasts": [
+        {
+          "horizon": 0,
+          "joint_model": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "generic_four_state": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "independent_two_factor": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "output_only": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "all_cycle_probability": 1.0
+        },
+        {
+          "horizon": 1,
+          "joint_model": {
+            "own": 0.765625,
+            "foreign": 0.02734375,
+            "specificity": 0.73828125
+          },
+          "generic_four_state": {
+            "own": 0.765625,
+            "foreign": 0.02734375,
+            "specificity": 0.73828125
+          },
+          "independent_two_factor": {
+            "own": 0.7945632934570312,
+            "foreign": 0.03356170654296875,
+            "specificity": 0.7610015869140625
+          },
+          "output_only": {
+            "own": 0.765625,
+            "foreign": 0.20377604166666666,
+            "specificity": 0.5618489583333334
+          },
+          "all_cycle_probability": 0.765625
+        },
+        {
+          "horizon": 2,
+          "joint_model": {
+            "own": 0.6908302307128906,
+            "foreign": 0.048717498779296875,
+            "specificity": 0.6421127319335938
+          },
+          "generic_four_state": {
+            "own": 0.6908302307128906,
+            "foreign": 0.048717498779296875,
+            "specificity": 0.6421127319335938
+          },
+          "independent_two_factor": {
+            "own": 0.7265715323155746,
+            "foreign": 0.061270264559425414,
+            "specificity": 0.6653012677561492
+          },
+          "output_only": {
+            "own": 0.633941650390625,
+            "foreign": 0.31826739841037327,
+            "specificity": 0.31567425198025173
+          },
+          "all_cycle_probability": 0.586181640625
+        },
+        {
+          "horizon": 4,
+          "joint_model": {
+            "own": 0.6212990592612186,
+            "foreign": 0.08746385520498734,
+            "specificity": 0.5338352040562313
+          },
+          "generic_four_state": {
+            "own": 0.6212990592612186,
+            "foreign": 0.08746385520498734,
+            "specificity": 0.5338352040562313
+          },
+          "independent_two_factor": {
+            "own": 0.6648487326508079,
+            "foreign": 0.11133886605448384,
+            "specificity": 0.5535098665963241
+          },
+          "output_only": {
+            "own": 0.5183864546965601,
+            "foreign": 0.4187362213332686,
+            "specificity": 0.09965023336329148
+          },
+          "all_cycle_probability": 0.34360891580581665
+        },
+        {
+          "horizon": 8,
+          "joint_model": {
+            "own": 0.5289042142360224,
+            "foreign": 0.14896090549985785,
+            "specificity": 0.37994330873616455
+          },
+          "generic_four_state": {
+            "own": 0.5289042142360224,
+            "foreign": 0.14896090549985785,
+            "specificity": 0.37994330873616455
+          },
+          "independent_two_factor": {
+            "own": 0.5849420889378614,
+            "foreign": 0.19057015917198328,
+            "specificity": 0.3943719297658781
+          },
+          "output_only": {
+            "own": 0.4703935525161501,
+            "foreign": 0.4604633835067917,
+            "specificity": 0.009930169009358392
+          },
+          "all_cycle_probability": 0.1180670870212488
+        },
+        {
+          "horizon": 16,
+          "joint_model": {
+            "own": 0.4168181329281292,
+            "foreign": 0.2240706161723395,
+            "specificity": 0.1927475167557897
+          },
+          "generic_four_state": {
+            "own": 0.4168181329281292,
+            "foreign": 0.2240706161723395,
+            "specificity": 0.1927475167557897
+          },
+          "independent_two_factor": {
+            "own": 0.48802999096359895,
+            "foreign": 0.287480213136645,
+            "specificity": 0.20054977782695393
+          },
+          "output_only": {
+            "own": 0.4651344709841897,
+            "foreign": 0.4650358627276353,
+            "specificity": 9.860825655438887e-05
+          },
+          "all_cycle_probability": 0.013939837037683138
+        },
+        {
+          "horizon": 32,
+          "joint_model": {
+            "own": 0.33111040814862364,
+            "foreign": 0.2815048712073019,
+            "specificity": 0.04960553694132175
+          },
+          "generic_four_state": {
+            "own": 0.33111040814862364,
+            "foreign": 0.2815048712073019,
+            "specificity": 0.04960553694132175
+          },
+          "independent_two_factor": {
+            "own": 0.41368655540714516,
+            "foreign": 0.3618236486744874,
+            "specificity": 0.051862906732657754
+          },
+          "output_only": {
+            "own": 0.4650817288268826,
+            "foreign": 0.4650817191032943,
+            "specificity": 9.723588267895877e-09
+          },
+          "all_cycle_probability": 0.00019431905663716252
+        },
+        {
+          "horizon": 64,
+          "joint_model": {
+            "own": 0.3033758638552192,
+            "foreign": 0.3000902775356081,
+            "specificity": 0.0032855863196111224
+          },
+          "generic_four_state": {
+            "own": 0.3033758638552192,
+            "foreign": 0.3000902775356081,
+            "specificity": 0.0032855863196111224
+          },
+          "independent_two_factor": {
+            "own": 0.38948929011506966,
+            "foreign": 0.38602091396656296,
+            "specificity": 0.003468376148506702
+          },
+          "output_only": {
+            "own": 0.4650817236255578,
+            "foreign": 0.4650817236255577,
+            "specificity": 5.551115123125783e-17
+          },
+          "all_cycle_probability": 3.775989577235679e-08
+        }
+      ]
+    }
+  ]
+}

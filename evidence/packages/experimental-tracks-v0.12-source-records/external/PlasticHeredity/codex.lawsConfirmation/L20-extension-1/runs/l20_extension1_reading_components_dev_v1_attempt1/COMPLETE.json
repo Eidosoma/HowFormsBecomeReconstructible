@@ -1,0 +1,62 @@
+{
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_successor": false,
+  "completed_utc": "2026-09-20T17:42:28.856161+00:00",
+  "elapsed_seconds": 56.17712254356593,
+  "hash_index_sha256": "7c086900482ff750c54a86240b2270f077f78508afaf5f81d2135b9891482e22",
+  "manifest_sha256": "502654686fceefc3c1fc0f90cc8414c9d7a09091139fb8202e99e3ecc8aee96b",
+  "new_dynamics": 0,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "output_bytes": 211134293,
+  "output_sha256": {
+    "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L20-extension-1/outputs/l20_extension1_reading_components_dev_v1_attempt1/accounting.npz": "4a21e43c33282936b2dac75c93d4ed7ca928ddb4888ec7090f65698b4b6a4282",
+    "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L20-extension-1/outputs/l20_extension1_reading_components_dev_v1_attempt1/input_hashes.sha256": "80b7870fb26e68c1150e26907bf9cea6c797b5e9908357b4a4a29ce798fc846e",
+    "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L20-extension-1/outputs/l20_extension1_reading_components_dev_v1_attempt1/parts.npz": "2c908656fae6efafaac959a2863d56b2a02708b222f2b58fb9ae916952a45d99",
+    "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L20-extension-1/outputs/l20_extension1_reading_components_dev_v1_attempt1/summary.json": "428119e798eeebe2b34598fa6f4be702d0967985c26f16f669789b65fbc52039",
+    "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L20-extension-1/outputs/l20_extension1_reading_components_dev_v1_attempt1/verification.json": "9ce40f0179a6cb8dac71efc8ccce8c05bf5aa584096080ff4a128f99060ba152"
+  },
+  "status": "COMPLETE",
+  "verification": {
+    "accounting": {
+      "case_arrays": 248,
+      "mean_future_identity": true,
+      "mean_losses_not_ensembles": true,
+      "passes": true
+    },
+    "causal_attribution": false,
+    "new_dynamics": 0,
+    "new_fits": 0,
+    "new_predictions": 0,
+    "prospective_evidence": false,
+    "replay": {
+      "max_abs_reconstruction_residual": 5.551115123125783e-16,
+      "new_fits": 0,
+      "part_arrays": 24,
+      "passes": true,
+      "saved_forecasts_replayed": 147456,
+      "saved_models_replayed": 9216
+    },
+    "source": {
+      "blocks": 16,
+      "cases": 256,
+      "direct_source_files": 8,
+      "passes": true,
+      "source_primary_unchanged": true
+    },
+    "source_bridge": {
+      "absolute_model_score_records": 1188,
+      "observer_comparison_records": 5445,
+      "passes": true,
+      "source_primary_unchanged": true,
+      "training_effect_records": 672
+    },
+    "summary": {
+      "absolute_model_score_records": 1188,
+      "observer_comparison_records": 5445,
+      "passes": true,
+      "training_effect_records": 672
+    }
+  }
+}

@@ -1,0 +1,1156 @@
+{
+  "experiment": "H005",
+  "classification": "ENGINEERING_BENCHMARK",
+  "blocks": 1,
+  "matched_blocks": 1,
+  "candidate_pairs": 16,
+  "eligible_pairs": 2,
+  "histories": [
+    "gain1_history",
+    "gain4_history"
+  ],
+  "arms": [
+    "renewal",
+    "equalized",
+    "foreign",
+    "protected_copy",
+    "damaged_copy",
+    "read_off",
+    "write_off"
+  ],
+  "checkpoints": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "forks": 8,
+  "decision": {
+    "qualified": null,
+    "gates": {
+      "at_least_64_matched_pairs": false,
+      "at_least_16_nonempty_blocks": false,
+      "integrity_passed": true,
+      "gain1_history_validation_success_at_least_90pct": true,
+      "gain4_history_validation_success_at_least_90pct": true,
+      "current_success_equivalent_within_5pp": false,
+      "current_output_0_equivalent_within_5pp": false,
+      "current_output_1_equivalent_within_5pp": false,
+      "current_output_2_equivalent_within_5pp": false,
+      "current_output_3_equivalent_within_5pp": false,
+      "history_gain4_minus_gain1_minimum_effect": false,
+      "history_gain4_minus_gain1_positive_adjusted_lower": false,
+      "gain4_own_minus_foreign_minimum_effect": true,
+      "gain4_own_minus_foreign_positive_adjusted_lower": false,
+      "gain4_own_minus_read_off_minimum_effect": true,
+      "gain4_own_minus_read_off_positive_adjusted_lower": false,
+      "gain4_own_minus_write_off_minimum_effect": true,
+      "gain4_own_minus_write_off_positive_adjusted_lower": false,
+      "gain4_own_minus_damaged_copy_minimum_effect": true,
+      "gain4_own_minus_damaged_copy_positive_adjusted_lower": false
+    },
+    "primary_contrasts": {
+      "history_gain4_minus_gain1": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "gain4_own_minus_foreign": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "gain4_own_minus_read_off": {
+        "mean": 0.75,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "gain4_own_minus_write_off": {
+        "mean": 0.75,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "gain4_own_minus_damaged_copy": {
+        "mean": 0.75,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    },
+    "directional_family_size": 5,
+    "current_validation": {
+      "success": {
+        "gain1_history": {
+          "mean": 0.9375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "gain4_history": {
+          "mean": 0.9375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      },
+      "differences": {
+        "success": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "output_0": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "output_1": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "output_2": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "output_3": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      }
+    },
+    "terminal": {
+      "gain1_history": {
+        "renewal": {
+          "mean": 0.75,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "equalized": {
+          "mean": 0.75,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "foreign": {
+          "mean": 0.6875,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "protected_copy": {
+          "mean": 1.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "damaged_copy": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "read_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "write_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      },
+      "gain4_history": {
+        "renewal": {
+          "mean": 0.75,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "equalized": {
+          "mean": 0.75,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "foreign": {
+          "mean": 0.125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "protected_copy": {
+          "mean": 1.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "damaged_copy": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "read_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "write_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      }
+    }
+  },
+  "block_rows": [
+    {
+      "seed": 12900,
+      "eligible_pairs": 2,
+      "candidate_pairs": 16,
+      "all_candidate_success": [
+        [
+          [
+            0.3203125,
+            0.96875,
+            0.5,
+            0.25,
+            0.2890625,
+            0.0,
+            0.0
+          ],
+          [
+            0.96875,
+            0.96875,
+            0.0078125,
+            0.984375,
+            0.9921875,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.4140625,
+            0.9453125,
+            0.484375,
+            0.265625,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9453125,
+            0.9453125,
+            0.03125,
+            0.9765625,
+            0.015625,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.4453125,
+            0.859375,
+            0.4921875,
+            0.1875,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.859375,
+            0.859375,
+            0.046875,
+            0.96875,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.5234375,
+            0.796875,
+            0.4375,
+            0.2265625,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.796875,
+            0.796875,
+            0.0625,
+            0.96875,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "matched_current_success": [
+        0.9375,
+        0.9375
+      ],
+      "matched_current_signals": [
+        [
+          0.9375,
+          0.9375,
+          0.9375,
+          0.9375
+        ],
+        [
+          0.9375,
+          0.9375,
+          0.9375,
+          0.9375
+        ]
+      ],
+      "matched_future_success": [
+        [
+          [
+            0.9375,
+            0.9375,
+            0.875,
+            0.9375,
+            0.9375,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.9375,
+            0.0,
+            0.9375,
+            0.9375,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.9375,
+            0.9375,
+            0.9375,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.9375,
+            0.0625,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.8125,
+            0.8125,
+            0.6875,
+            0.9375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8125,
+            0.8125,
+            0.125,
+            0.9375,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.75,
+            0.75,
+            0.6875,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.125,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "matched_uninterrupted": [
+        [
+          0.625,
+          0.625,
+          0.625,
+          0.75,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.625,
+          0.625,
+          0.0,
+          0.75,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "audit_passed": true,
+  "matched_mean_success": [
+    [
+      [
+        0.9375,
+        0.9375,
+        0.875,
+        0.9375,
+        0.9375,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0,
+        0.9375,
+        0.9375,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.9375,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.6875,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.75,
+        0.75,
+        0.6875,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.75,
+        0.75,
+        0.125,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "all_candidate_mean_success": [
+    [
+      [
+        0.3203125,
+        0.96875,
+        0.5,
+        0.25,
+        0.2890625,
+        0.0,
+        0.0
+      ],
+      [
+        0.96875,
+        0.96875,
+        0.0078125,
+        0.984375,
+        0.9921875,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.4140625,
+        0.9453125,
+        0.484375,
+        0.265625,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9453125,
+        0.9453125,
+        0.03125,
+        0.9765625,
+        0.015625,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.4453125,
+        0.859375,
+        0.4921875,
+        0.1875,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.859375,
+        0.859375,
+        0.046875,
+        0.96875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.5234375,
+        0.796875,
+        0.4375,
+        0.2265625,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.796875,
+        0.796875,
+        0.0625,
+        0.96875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "matched_body_success": [
+    [
+      [
+        1.0,
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        1.0,
+        1.0,
+        0.8125,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.8125,
+        1.0,
+        0.625,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0,
+        1.0,
+        0.625,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.875,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0625,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.0625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.75,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.125,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.875,
+        0.875,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.875,
+        0.875,
+        0.125,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.875,
+        0.875,
+        0.75,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.875,
+        0.875,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.6875,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.6875,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.125,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.6875,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.0625,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8125,
+        0.8125,
+        0.6875,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8125,
+        0.8125,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.75,
+        0.75,
+        0.6875,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.75,
+        0.75,
+        0.125,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "matched_mean_source_norm": [
+    0.9921567416492215,
+    0.9921567416492215
+  ],
+  "matched_mean_source_cue_link": [
+    1.0,
+    1.0
+  ],
+  "uninterrupted": {
+    "gain1_history": {
+      "renewal": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "equalized": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "foreign": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "protected_copy": {
+        "mean": 0.75,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "damaged_copy": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "read_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "write_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    },
+    "gain4_history": {
+      "renewal": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "equalized": {
+        "mean": 0.625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "foreign": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "protected_copy": {
+        "mean": 0.75,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "damaged_copy": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "read_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "write_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    }
+  },
+  "descriptive_history_differences": {
+    "renewal": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "equalized": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "foreign": {
+      "mean": -0.5625,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "protected_copy": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "damaged_copy": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "read_off": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    },
+    "write_off": {
+      "mean": 0.0,
+      "low": null,
+      "high": null,
+      "equivalence_low": null,
+      "equivalence_high": null,
+      "directional_lower": null
+    }
+  }
+}

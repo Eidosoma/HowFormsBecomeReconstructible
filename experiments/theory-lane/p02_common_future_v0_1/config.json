@@ -1,0 +1,105 @@
+{
+  "version": "0.1",
+  "status": "DEVELOPMENT_P02_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-09T15:47:58.187940+00:00",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "generation": 14,
+  "terminal_generation": 32,
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "spacing_run": "../p01_writer_spacing_v0_1/runs/pilot_v1",
+  "pulse_run": "../p01_writer_factorial_pulse_v0_1/runs/pilot_v1",
+  "spacing_complete_sha256": "a94dc112e267b4950e8fa486b47b4fae7f3915268305e2c2690cd30555cf5b01",
+  "pulse_complete_sha256": "c967ea3b1cced1575f5ba201fc575a0170bf6cfad28d470f3a655a26729b3a65",
+  "core_source": "../p01_writer_diagnostic_v0_1/core.py",
+  "core_sha256": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac",
+  "transfer_steps": 64,
+  "margin": 0.25,
+  "match_caliper": 0.02,
+  "matched_pair": [
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "expression_features": [
+    "aligned_plus_a",
+    "aligned_plus_b",
+    "aligned_minus_a",
+    "aligned_minus_b",
+    "current_margin",
+    "current_pass"
+  ],
+  "conventional_features": [
+    "unsigned_access"
+  ],
+  "candidate_features": [
+    "signed_transfer"
+  ],
+  "history_indicators": true,
+  "logistic_ridge": 0.01,
+  "condition_rate_half_count": 0.5,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "maxiter": 500,
+    "ftol": 1e-12,
+    "gtol": 1e-07
+  },
+  "models": [
+    {
+      "id": "history_rate",
+      "estimator": "rate"
+    },
+    {
+      "id": "expression_history",
+      "unsigned": false,
+      "quadratic": false,
+      "signed": false
+    },
+    {
+      "id": "expression_unsigned",
+      "unsigned": true,
+      "quadratic": false,
+      "signed": false
+    },
+    {
+      "id": "expression_unsigned_signed",
+      "unsigned": true,
+      "quadratic": false,
+      "signed": true
+    },
+    {
+      "id": "quadratic_unsigned",
+      "unsigned": true,
+      "quadratic": true,
+      "signed": false
+    },
+    {
+      "id": "quadratic_unsigned_signed",
+      "unsigned": true,
+      "quadratic": true,
+      "signed": true
+    }
+  ],
+  "primary_comparison": [
+    "quadratic_unsigned",
+    "quadratic_unsigned_signed"
+  ],
+  "secondary_comparison": [
+    "expression_unsigned",
+    "expression_unsigned_signed"
+  ],
+  "native_simulations": false,
+  "numerical_threads": 1
+}

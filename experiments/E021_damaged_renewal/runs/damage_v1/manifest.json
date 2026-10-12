@@ -1,0 +1,162 @@
+{
+  "contract": {
+    "blocks": [
+      19000,
+      19001,
+      19002,
+      19003,
+      19004,
+      19005,
+      19006,
+      19007,
+      19008,
+      19009,
+      19010,
+      19011,
+      19012,
+      19013,
+      19014,
+      19015,
+      19016,
+      19017,
+      19018,
+      19019,
+      19020,
+      19021,
+      19022,
+      19023,
+      19024,
+      19025,
+      19026,
+      19027,
+      19028,
+      19029,
+      19030,
+      19031
+    ],
+    "conditions": [
+      "renewed",
+      "intact_renewed",
+      "protected_copy",
+      "masked_copy",
+      "read_blocked",
+      "write_blocked"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 3,
+      "read_steps": 2048,
+      "settling_steps": 256,
+      "write_steps": 128
+    },
+    "experiment": "E021",
+    "gain": 2.0,
+    "mode": "prospective_damaged_renewal_test",
+    "panels": [
+      [
+        0,
+        "initial"
+      ],
+      [
+        1,
+        "renewed"
+      ],
+      [
+        1,
+        "intact_renewed"
+      ],
+      [
+        1,
+        "protected_copy"
+      ],
+      [
+        1,
+        "masked_copy"
+      ],
+      [
+        1,
+        "read_blocked"
+      ],
+      [
+        1,
+        "write_blocked"
+      ],
+      [
+        3,
+        "renewed"
+      ],
+      [
+        3,
+        "intact_renewed"
+      ],
+      [
+        3,
+        "protected_copy"
+      ],
+      [
+        3,
+        "masked_copy"
+      ],
+      [
+        3,
+        "read_blocked"
+      ],
+      [
+        3,
+        "write_blocked"
+      ]
+    ],
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E020_serial_capture/model.py": "e905ff820259d6e0e9f3a92e150f30053b6ce35f7c632b073def2b4a940ebc06",
+    "E021_damaged_renewal/PROTOCOL.md": "169251e61e260ce0a29b4c176203d48942acdf478c3a7e524df44ff15e2c6457",
+    "E021_damaged_renewal/audit.py": "61ba9e4f383d3d2eb18d9d6f931db9853c81a6f373c8db6d6e4968cc5470bcb9",
+    "E021_damaged_renewal/model.py": "15ca9992c08aa9be86f04b5ed9aebf784501b915264d8a9751bb44e81cf31bc3",
+    "E021_damaged_renewal/plot.py": "5f54baceee208d4bf642eb997443c802c1d74c29a53565ddcf948b77c68ff877",
+    "E021_damaged_renewal/run.py": "7bedd4d22a5e086d6549ef0c77e16a867780b4108e9c59f95f568567007528e7",
+    "E021_damaged_renewal/tests.py": "2114503c838b9a8e95bb01cd9ee4017a1f31583c2ab785b4bb7a20d84076afa7",
+    "E021_damaged_renewal/workflow.py": "156749a720e2226d4eb11b301c7c66830cb242337341e49e18508be4890f2674",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-19T20:27:32.888870+00:00",
+  "status": "RUNNING"
+}

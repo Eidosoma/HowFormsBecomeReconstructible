@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "module_imports": {
+    "arithmetic.py": [
+      "math",
+      "numpy",
+      "support"
+    ],
+    "checks.py": [
+      "arithmetic",
+      "graph",
+      "intake",
+      "native",
+      "numpy",
+      "scoring",
+      "support",
+      "symmetry"
+    ],
+    "graph.py": [
+      "collections",
+      "itertools",
+      "numpy",
+      "support"
+    ],
+    "intake.py": [
+      "arithmetic",
+      "datetime",
+      "native",
+      "numpy",
+      "pathlib",
+      "support"
+    ],
+    "native.py": [
+      "hashlib",
+      "json",
+      "numpy",
+      "scipy.sparse",
+      "support"
+    ],
+    "prepare.py": [
+      "json",
+      "pathlib",
+      "shutil",
+      "support"
+    ],
+    "report.py": [
+      "support"
+    ],
+    "run.py": [
+      "argparse",
+      "checks",
+      "graph",
+      "intake",
+      "json",
+      "os",
+      "pathlib",
+      "report",
+      "scoring",
+      "shutil",
+      "subprocess",
+      "support",
+      "sys",
+      "time",
+      "traceback"
+    ],
+    "scoring.py": [
+      "arithmetic",
+      "math",
+      "numpy",
+      "support"
+    ],
+    "support.py": [
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ],
+    "symmetry.py": [
+      "native",
+      "numpy",
+      "support"
+    ]
+  },
+  "source_scientific_functions_imported": false,
+  "manual_review": "Independent graph equations/solvers, dual-task arithmetic and record reconstruction; TT010 flat reader and arithmetic explicitly reused.",
+  "P05_core_reader_AST_identical_to_TT010_audited_P04": {
+    "stream": true,
+    "decode": true,
+    "available": true,
+    "incident": true,
+    "step": true,
+    "draw": true,
+    "read_fixed": true
+  },
+  "P04_reader_sha256": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+  "P05_reader_sha256": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532"
+}

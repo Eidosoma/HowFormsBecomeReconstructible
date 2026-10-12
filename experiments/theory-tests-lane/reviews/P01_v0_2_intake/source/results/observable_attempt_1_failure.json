@@ -1,0 +1,15 @@
+{
+  "status": "DEVELOPMENT_IMPLEMENTATION_FAILURE_RETAINED",
+  "created_at_utc": "2026-10-08T18:09:11.778625+00:00",
+  "phase": "observable calibration, first attempt",
+  "seed": 1730,
+  "paths_per_case": 512,
+  "error": "ValueError: Output baseline has an unobserved source category",
+  "forecast_file_written": false,
+  "interpretation": "An unrestricted output Markov row was unsupported by the sampled two-cycle paths. No seed or case is to be changed. Constrained-model forecasts do not establish identification of this missing row.",
+  "code_sha256": {
+    "two_mode.py": "bf039d94e0469ab0f4d271c6d25900bf2e52a3158b2177046c9966543ac3c281",
+    "two_mode_develop.py": "4d459df1cfcadc49e922f06a4b943737650d52f33590176fc1dd05a0f97d1712"
+  },
+  "revision": "Retain unsupported ordinary-baseline status and continue recording all constructed cases. No smoothing or imputed row."
+}

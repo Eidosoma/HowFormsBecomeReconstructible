@@ -1,0 +1,521 @@
+{
+  "anchors_sha256": {
+    "COMPLETE.json": "a8163e3772499bd614d9a7529cc9cb5d425c6152145ec33b9ad3db2cb0e557a4",
+    "REPORT.md": "31ee1c226e214cd0f0c58110a0c78d769424ead5d17fb4205b96629feedc46fa",
+    "VERIFICATION.json": "2309f93b22cb3b4389e2c6c805393f92337c6e0f0a6e3916caefb877d8e1087c",
+    "analysis.json": "92721ef6b3b887c73e4b5fc9e2322d5976561f6657e7e1ca050a4c4031eeaf90",
+    "manifest.json": "18a8d246f69a12bfb5cd2c9717f719fc6158d6d93d7065d18a4166d84962a61f"
+  },
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "blocks": 16,
+  "checked_at_utc": "2026-10-11T01:31:47.320285+00:00",
+  "completed_at_utc": "2026-10-11T00:41:10.507548+00:00",
+  "contrasts": {
+    "one_time_minus_baseline": {
+      "terminal": {
+        "by_block": {
+          "81000": -0.0625,
+          "81001": -0.125,
+          "81002": 0.125,
+          "81003": -0.125,
+          "81004": -0.0625,
+          "81005": 0.125,
+          "81006": -0.0625,
+          "81007": 0.0,
+          "81008": 0.0,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.125,
+          "81012": 0.3125,
+          "81013": 0.0625,
+          "81014": 0.0625,
+          "81015": 0.0625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          -0.0234375,
+          0.08203125
+        ],
+        "mean": 0.02734375,
+        "negative_blocks": 5,
+        "positive_blocks": 7,
+        "tied_blocks": 4
+      },
+      "uninterrupted": {
+        "by_block": {
+          "81000": 0.0625,
+          "81001": 0.0,
+          "81002": -0.125,
+          "81003": 0.125,
+          "81004": 0.0,
+          "81005": 0.125,
+          "81006": 0.0625,
+          "81007": -0.0625,
+          "81008": 0.0,
+          "81009": 0.125,
+          "81010": 0.0,
+          "81011": 0.125,
+          "81012": 0.25,
+          "81013": 0.125,
+          "81014": 0.0,
+          "81015": 0.125
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.01953125,
+          0.09765625
+        ],
+        "mean": 0.05859375,
+        "negative_blocks": 2,
+        "positive_blocks": 9,
+        "tied_blocks": 5
+      }
+    },
+    "repeated_minus_baseline": {
+      "terminal": {
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.3125,
+          "81003": 0.125,
+          "81004": 0.0625,
+          "81005": 0.3125,
+          "81006": 0.0,
+          "81007": 0.1875,
+          "81008": 0.1875,
+          "81009": 0.125,
+          "81010": 0.0625,
+          "81011": 0.125,
+          "81012": 0.5,
+          "81013": 0.125,
+          "81014": 0.0625,
+          "81015": 0.1875
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.08984375,
+          0.21484375
+        ],
+        "mean": 0.1484375,
+        "negative_blocks": 0,
+        "positive_blocks": 13,
+        "tied_blocks": 3
+      },
+      "uninterrupted": {
+        "by_block": {
+          "81000": 0.4375,
+          "81001": 0.1875,
+          "81002": 0.3125,
+          "81003": 0.5,
+          "81004": 0.5625,
+          "81005": 0.375,
+          "81006": 0.5,
+          "81007": 0.625,
+          "81008": 0.375,
+          "81009": 0.5,
+          "81010": 0.375,
+          "81011": 0.25,
+          "81012": 0.75,
+          "81013": 0.4375,
+          "81014": 0.375,
+          "81015": 0.4375
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.37890625,
+          0.49609375
+        ],
+        "mean": 0.4375,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "tied_blocks": 0
+      }
+    },
+    "repeated_minus_one_time": {
+      "terminal": {
+        "by_block": {
+          "81000": 0.0625,
+          "81001": 0.125,
+          "81002": 0.1875,
+          "81003": 0.25,
+          "81004": 0.125,
+          "81005": 0.1875,
+          "81006": 0.0625,
+          "81007": 0.1875,
+          "81008": 0.1875,
+          "81009": 0.125,
+          "81010": 0.0625,
+          "81011": 0.0,
+          "81012": 0.1875,
+          "81013": 0.0625,
+          "81014": 0.0,
+          "81015": 0.125
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.08984375,
+          0.15234375
+        ],
+        "mean": 0.12109375,
+        "negative_blocks": 0,
+        "positive_blocks": 14,
+        "tied_blocks": 2
+      },
+      "uninterrupted": {
+        "by_block": {
+          "81000": 0.375,
+          "81001": 0.1875,
+          "81002": 0.4375,
+          "81003": 0.375,
+          "81004": 0.5625,
+          "81005": 0.25,
+          "81006": 0.4375,
+          "81007": 0.6875,
+          "81008": 0.375,
+          "81009": 0.375,
+          "81010": 0.375,
+          "81011": 0.125,
+          "81012": 0.5,
+          "81013": 0.3125,
+          "81014": 0.375,
+          "81015": 0.3125
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.32421875,
+          0.4375
+        ],
+        "mean": 0.37890625,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "tied_blocks": 0
+      }
+    },
+    "repeated_minus_shuffled": {
+      "terminal": {
+        "by_block": {
+          "81000": 0.9375,
+          "81001": 1.0,
+          "81002": 0.9375,
+          "81003": 0.875,
+          "81004": 0.875,
+          "81005": 0.9375,
+          "81006": 0.9375,
+          "81007": 0.9375,
+          "81008": 0.875,
+          "81009": 1.0,
+          "81010": 0.9375,
+          "81011": 0.875,
+          "81012": 0.875,
+          "81013": 0.9375,
+          "81014": 0.8125,
+          "81015": 0.75
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.8828125,
+          0.9296875
+        ],
+        "mean": 0.90625,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "tied_blocks": 0
+      },
+      "uninterrupted": {
+        "by_block": {
+          "81000": 0.9375,
+          "81001": 1.0,
+          "81002": 0.8125,
+          "81003": 0.875,
+          "81004": 1.0,
+          "81005": 0.9375,
+          "81006": 0.9375,
+          "81007": 0.9375,
+          "81008": 0.875,
+          "81009": 1.0,
+          "81010": 1.0,
+          "81011": 0.6875,
+          "81012": 1.0,
+          "81013": 0.9375,
+          "81014": 1.0,
+          "81015": 0.625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.87109375,
+          0.94921875
+        ],
+        "mean": 0.91015625,
+        "negative_blocks": 0,
+        "positive_blocks": 16,
+        "tied_blocks": 0
+      }
+    }
+  },
+  "cpu_seconds": 3627.757267755,
+  "descriptive_first_rebuild_observation": "All 233 lineages that passed the first rebuild under repeated repair passed every subsequent rebuild through generation 32. This is a descriptive consequence of the verified trajectory counts, not a new confirmatory endpoint.",
+  "hash_and_receipt_checks": {
+    "admission_test_code": 5,
+    "benchmark_code": 10,
+    "benchmark_config": 1,
+    "benchmark_source_binding": 1,
+    "capacity_admission_checks": 2,
+    "completed_outputs": 48,
+    "current_inputs": 62,
+    "execution_validation_binding": 1,
+    "frozen_inputs": 62,
+    "historical_test_snapshot": 20,
+    "manifest_source_binding": 1,
+    "preserved_busy_capacity": 1,
+    "reuse_source": 9,
+    "source_bindings": 41,
+    "source_code": 2,
+    "source_config": 1,
+    "source_snapshots": 2,
+    "start_manifest_binding": 1,
+    "unchanged_reuse": 7,
+    "unchanged_scientific_test_sources": 17,
+    "validation_bindings": 6,
+    "validation_code": 22,
+    "validation_config": 1,
+    "validation_source_binding": 1,
+    "verification_files": 19,
+    "worker_output": 16,
+    "worker_receipts": 16
+  },
+  "history_summaries": {
+    "clustered_tolerance_rewrite": {
+      "baseline": {
+        "terminal": 0.75,
+        "uninterrupted": 0.328125
+      },
+      "one_time": {
+        "terminal": 0.765625,
+        "uninterrupted": 0.40625
+      },
+      "repeated": {
+        "terminal": 0.90625,
+        "uninterrupted": 0.78125
+      },
+      "shuffled": {
+        "terminal": 0.046875,
+        "uninterrupted": 0.0
+      }
+    },
+    "exact_rewrite": {
+      "baseline": {
+        "terminal": 0.796875,
+        "uninterrupted": 0.421875
+      },
+      "one_time": {
+        "terminal": 0.84375,
+        "uninterrupted": 0.5
+      },
+      "repeated": {
+        "terminal": 0.984375,
+        "uninterrupted": 0.953125
+      },
+      "shuffled": {
+        "terminal": 0.09375,
+        "uninterrupted": 0.0
+      }
+    },
+    "single_tolerance_rewrite": {
+      "baseline": {
+        "terminal": 0.828125,
+        "uninterrupted": 0.59375
+      },
+      "one_time": {
+        "terminal": 0.84375,
+        "uninterrupted": 0.6875
+      },
+      "repeated": {
+        "terminal": 0.96875,
+        "uninterrupted": 0.96875
+      },
+      "shuffled": {
+        "terminal": 0.0,
+        "uninterrupted": 0.0
+      }
+    },
+    "spaced_tolerance_rewrite": {
+      "baseline": {
+        "terminal": 0.890625,
+        "uninterrupted": 0.546875
+      },
+      "one_time": {
+        "terminal": 0.921875,
+        "uninterrupted": 0.53125
+      },
+      "repeated": {
+        "terminal": 1.0,
+        "uninterrupted": 0.9375
+      },
+      "shuffled": {
+        "terminal": 0.09375,
+        "uninterrupted": 0.0
+      }
+    }
+  },
+  "interpretation": "The large uninterrupted-success advantage is supported across all 16 exposed blocks and is much larger with recurring repair than with one-time repair. It supports finite conventional correction with supplied apparatus, not unique RDT confirmation or autonomous maintenance.",
+  "limitations": [
+    "The initial cohort and earlier outcomes were exposed before design; future continuation outcomes were generated after freeze.",
+    "16 blocks, four per starting history; bootstrap intervals are descriptive.",
+    "Only generations 15-32 within the same simulator and native matched cue randomness were tested.",
+    "Reader, writer, input ports, repair algorithm and edge resources remain supplied.",
+    "The shuffled policy matches coherent repair for its own incoming record; longitudinal branch magnitudes can differ."
+  ],
+  "new_scientific_runs_started_during_status": 0,
+  "paired_counts": {
+    "terminal": {
+      "baseline_only": 0,
+      "both": 209,
+      "lineages": 256,
+      "neither": 9,
+      "repeated_only": 38
+    },
+    "uninterrupted": {
+      "baseline_only": 1,
+      "both": 120,
+      "lineages": 256,
+      "neither": 22,
+      "repeated_only": 113
+    }
+  },
+  "primary": {
+    "by_block": {
+      "81000": 0.4375,
+      "81001": 0.1875,
+      "81002": 0.3125,
+      "81003": 0.5,
+      "81004": 0.5625,
+      "81005": 0.375,
+      "81006": 0.5,
+      "81007": 0.625,
+      "81008": 0.375,
+      "81009": 0.5,
+      "81010": 0.375,
+      "81011": 0.25,
+      "81012": 0.75,
+      "81013": 0.4375,
+      "81014": 0.375,
+      "81015": 0.4375
+    },
+    "descriptive_stratified_block_bootstrap_95": [
+      0.37890625,
+      0.49609375
+    ],
+    "mean": 0.4375,
+    "negative_blocks": 0,
+    "positive_blocks": 16,
+    "tied_blocks": 0
+  },
+  "rates": {
+    "baseline": {
+      "terminal": {
+        "lineages": 256,
+        "rate": 0.81640625,
+        "successes": 209
+      },
+      "uninterrupted": {
+        "lineages": 256,
+        "rate": 0.47265625,
+        "successes": 121
+      }
+    },
+    "one_time": {
+      "terminal": {
+        "lineages": 256,
+        "rate": 0.84375,
+        "successes": 216
+      },
+      "uninterrupted": {
+        "lineages": 256,
+        "rate": 0.53125,
+        "successes": 136
+      }
+    },
+    "repeated": {
+      "terminal": {
+        "lineages": 256,
+        "rate": 0.96484375,
+        "successes": 247
+      },
+      "uninterrupted": {
+        "lineages": 256,
+        "rate": 0.91015625,
+        "successes": 233
+      }
+    },
+    "shuffled": {
+      "terminal": {
+        "lineages": 256,
+        "rate": 0.05859375,
+        "successes": 15
+      },
+      "uninterrupted": {
+        "lineages": 256,
+        "rate": 0.0,
+        "successes": 0
+      }
+    }
+  },
+  "reason": "User requested status after detached completion; immutable evidence reviewed without rerunning scientific dynamics.",
+  "records": 256,
+  "resources": {
+    "baseline": {
+      "added_abs_weight": 0.0,
+      "added_edges": 0.0,
+      "added_edges_per_lineage": 0.0,
+      "audit_cpu_seconds": 0.0,
+      "maximum_sweeps_per_call": 64,
+      "optimizer_starts_per_call": 16,
+      "read_updates_per_lineage": 36864,
+      "record_bytes_per_boundary": 4096,
+      "repair_calls": 0,
+      "repair_cpu_seconds": 0.0
+    },
+    "one_time": {
+      "added_abs_weight": 21344.3494934884,
+      "added_edges": 23586.0,
+      "added_edges_per_lineage": 92.1328125,
+      "audit_cpu_seconds": 16.154790815002187,
+      "maximum_sweeps_per_call": 64,
+      "optimizer_starts_per_call": 16,
+      "read_updates_per_lineage": 36864,
+      "record_bytes_per_boundary": 4096,
+      "repair_calls": 256,
+      "repair_cpu_seconds": 3.4568252450011148
+    },
+    "repeated": {
+      "added_abs_weight": 415250.62098079076,
+      "added_edges": 422120.0,
+      "added_edges_per_lineage": 1648.90625,
+      "audit_cpu_seconds": 294.70760963999595,
+      "maximum_sweeps_per_call": 64,
+      "optimizer_starts_per_call": 16,
+      "read_updates_per_lineage": 36864,
+      "record_bytes_per_boundary": 4096,
+      "repair_calls": 4608,
+      "repair_cpu_seconds": 63.56364805600637
+    },
+    "shuffled": {
+      "added_abs_weight": 385916.6178718674,
+      "added_edges": 422120.0,
+      "added_edges_per_lineage": 1648.90625,
+      "audit_cpu_seconds": 296.10911922400305,
+      "maximum_sweeps_per_call": 64,
+      "optimizer_starts_per_call": 16,
+      "read_updates_per_lineage": 36864,
+      "record_bytes_per_boundary": 4096,
+      "repair_calls": 4608,
+      "repair_cpu_seconds": 65.21051831699666
+    }
+  },
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/runs/pilot_v1",
+  "runtime_seconds": 3718.4598285111133,
+  "scientific_read_contexts": 18432,
+  "status": "COMPLETE_VERIFIED",
+  "verification_scope": {
+    "external_replication": false,
+    "independent_captures": 18432,
+    "independent_damage_masks": true,
+    "independent_optimizer_checks": 9472,
+    "independent_repair_constructions": 9472,
+    "native_audit_contexts": 32,
+    "same_lane_internal": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETE",
+  "at_utc": "2026-10-11T15:12:27.022899+00:00",
+  "new_scientific_outcomes": 0,
+  "rows": 7547,
+  "events": 33,
+  "independent_blocks": 16,
+  "feature_audit": "all rows flat implementation agrees",
+  "metrics": {
+    "intercept": {
+      "log_loss": 0.02851256045007414,
+      "brier": 0.004356760907369137,
+      "AUROC": 0.20683209524039972,
+      "average_precision": 0.002794415383926792
+    },
+    "generation": {
+      "log_loss": 0.028760903936115124,
+      "brier": 0.004358712266735514,
+      "AUROC": 0.15615094248312242,
+      "average_precision": 0.0025578319641064023
+    },
+    "missing_edge": {
+      "log_loss": 0.028676309500284086,
+      "brier": 0.00435797082793312,
+      "AUROC": 0.25767657947588746,
+      "average_precision": 0.0028723950763953924
+    },
+    "six_record_features": {
+      "log_loss": 0.02613169790015762,
+      "brier": 0.004344372598641798,
+      "AUROC": 0.7550794073285423,
+      "average_precision": 0.018244594106249123
+    }
+  },
+  "events_by_block": {
+    "81000": 0,
+    "81001": 0,
+    "81002": 2,
+    "81003": 0,
+    "81004": 6,
+    "81005": 3,
+    "81006": 0,
+    "81007": 0,
+    "81008": 3,
+    "81009": 4,
+    "81010": 2,
+    "81011": 0,
+    "81012": 8,
+    "81013": 2,
+    "81014": 3,
+    "81015": 0
+  },
+  "events_by_arm": {
+    "baseline": 16,
+    "one_time": 17
+  },
+  "cpu_seconds": 19.072687972,
+  "sources_sha256": {
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/COMPLETE.json": "5074ad63e51c1e3522a114bb4d0cd51dd551573f51d552f196130181016cbf61",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081000.npz": "b440514c4c9f14465ffb10f7d4aa4fcfd285f31c541112662949951fcd633136",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081001.npz": "a13567da2060941d28805f502d6ee31792cae761a4dba4fe7a1f35faab24f7a2",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081002.npz": "dfdd620c147e0ab16d244d6f2b6f9e004bce218507ae8ca1efed8ded02e9c045",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081003.npz": "90f1e202ff88c985cd999fbe3cfd694b0129d2a48772ed27bc2b44799d5d8047",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081004.npz": "2967783670575958f656ffafbd6821af1632dd860e07d1d28208d184cda047b1",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081005.npz": "46cd8d7da4791939b6cb3aab8e0501a64844d71057cd964a2a0d3917c751b339",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081006.npz": "3e57e70bf664e9b94550af40d723e4d93f488b3dc3a9862e33f2f422f097295f",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081007.npz": "7e2aa0c0ee7cb4b73b8f0d37c903e5c9893cc500d79a79ad0100b6392db62cb5",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081008.npz": "f4bad735cd3866d3f09d7129011525e4e0bba8918075fc97f503230a22485486",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081009.npz": "5a23a2cad9271b6a79a816158e87b5e6f5af4202b04fe9dc7de9a6f069aa6394",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081010.npz": "6da7dfbcfbd625f51ed54e86956d17566acdfc3f6f87a2d43409f16244bfaf61",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081011.npz": "f93e304f98c8b5c0e8606a5ad548e1223d58bb3e2d0574510a28ab6f27ae83a2",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081012.npz": "49cb49f49f0fd1707023482a5563875e1a4f62a94cd7a9988d5a11f5166ad8d7",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081013.npz": "80583a8530ae05c4e3c7d22d788fd509726c7bf7ee44f7029b535bd8ac56b3d5",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081014.npz": "868197bfe67e519abe28df6c5c333d7987b44a9103ac4e07998bf4c098078013",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/continuation_081015.npz": "7f1bd2c4f38ca44f04fef4a7c3b4004bcdcb189537232bbe203c84c2d492793b"
+  },
+  "design_freeze_sha256": "49b15621ae763ae3c760cb53bc2da2e332d61860ec418f987d1542c9abe211ff",
+  "outputs_sha256": {
+    "dataset.npz": "52116b1a669cd4ac5184c7363d85757f29e89f4d33ca8c81711caa012da56de4",
+    "MODEL.json": "7c69bd95587719ebde6209886776ab2dc4c128ce1e9d0a5701bc818645968b85",
+    "FIT_DETAILS.json": "85fd2d823bf93916e223e39244e18f81aac175402f6e506cc5b890adae7830ea"
+  }
+}

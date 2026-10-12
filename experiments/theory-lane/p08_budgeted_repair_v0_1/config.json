@@ -1,0 +1,228 @@
+{
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "development_config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  },
+  "completion": {
+    "support": "every exactly zero outgoing edge on the fixed toroidal lattice",
+    "magnitude": "median absolute nonzero outgoing weight; zero if none",
+    "preserve": "all nonzero outgoing edges byte for byte",
+    "shuffle": "fixed permutation of inferred signs over zero edges; same signs counts, magnitude and support"
+  },
+  "tolerance": 0.0001,
+  "numpy_version": "2.5.2",
+  "injury_cells": 24,
+  "cycle": {
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "write_steps": 128
+  },
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "budgets": [
+    2048
+  ],
+  "settling_steps": 1024,
+  "version": "0.1",
+  "status": "AUTHORIZED_FRESH_BUDGETED_REPAIR",
+  "blocks": [
+    82000,
+    82001,
+    82002,
+    82003,
+    82004,
+    82005,
+    82006,
+    82007,
+    82008,
+    82009,
+    82010,
+    82011,
+    82012,
+    82013,
+    82014,
+    82015
+  ],
+  "cases_per_block": 16,
+  "cohort_size": 256,
+  "history_by_block": {
+    "82000": 0,
+    "82001": 1,
+    "82002": 2,
+    "82003": 3,
+    "82004": 0,
+    "82005": 1,
+    "82006": 2,
+    "82007": 3,
+    "82008": 0,
+    "82009": 1,
+    "82010": 2,
+    "82011": 3,
+    "82012": 0,
+    "82013": 1,
+    "82014": 2,
+    "82015": 3
+  },
+  "tolerance_generations": [
+    [],
+    [
+      3
+    ],
+    [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    [
+      3,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  ],
+  "start_generation": 15,
+  "terminal_generation": 32,
+  "generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "variants": [
+    "warning",
+    "periodic",
+    "random",
+    "repeated"
+  ],
+  "repair_budgets": [
+    9,
+    9,
+    9,
+    18
+  ],
+  "lineage_namespace": "P08_budgeted_repair_v0_1_acquisition",
+  "continuation_namespace": "P08_budgeted_repair_v0_1_continuation",
+  "innovation_namespace": "P08_budgeted_repair_v0_1_innovation",
+  "policy_namespace": "P08_budgeted_repair_v0_1_policy",
+  "correlations": [
+    0.0
+  ],
+  "noise_regimes": [
+    "independent"
+  ],
+  "bootstrap_seed": 2026101108,
+  "bootstrap_replicates": 20000,
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 10800,
+  "scientific_read_contexts": 18432,
+  "acquisition_lineage_read_contexts": 3584,
+  "scheduled_optimizer_calls": 11520,
+  "native_audit_generations": [
+    15,
+    32
+  ],
+  "native_audit_cases": [
+    0,
+    14
+  ],
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "primary_contrast": "warning_minus_periodic",
+  "contrasts": {
+    "warning_minus_periodic": [
+      1,
+      -1,
+      0,
+      0
+    ],
+    "warning_minus_random": [
+      1,
+      0,
+      -1,
+      0
+    ],
+    "warning_minus_repeated": [
+      1,
+      0,
+      0,
+      -1
+    ],
+    "periodic_minus_random": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  "comparison_pairs": {
+    "warning_minus_periodic": [
+      0,
+      1
+    ],
+    "warning_minus_random": [
+      0,
+      2
+    ],
+    "warning_minus_repeated": [
+      0,
+      3
+    ],
+    "periodic_minus_random": [
+      1,
+      2
+    ]
+  },
+  "development_run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1",
+  "development_complete_sha256": "5074ad63e51c1e3522a114bb4d0cd51dd551573f51d552f196130181016cbf61"
+}

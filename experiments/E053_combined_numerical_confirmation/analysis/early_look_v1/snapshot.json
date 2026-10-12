@@ -1,0 +1,9158 @@
+{
+  "analysis_sha256": "dc23fbc0ebda0c6b8a9cc0357e0b318130e6163d43bf213756076c4c7ffdad5e",
+  "assay_score_arrays_recomputed": 40,
+  "blocks": [
+    36000,
+    36001,
+    36002,
+    36003,
+    36004,
+    36005,
+    36006,
+    36007
+  ],
+  "cohort_selected_at_utc": "2026-10-10T15:55:38.495496+00:00",
+  "confidence_intervals": null,
+  "dynamics_independently_replayed": false,
+  "frozen_inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E051_cue_pairing_robustness/audit.py": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a",
+    "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "E053_combined_numerical_confirmation/PLAN.json": "fbff0bad125f898a80e0a69c5b8e9f12ddcbde9148a1c5f05521a5e3c6c4a68b",
+    "E053_combined_numerical_confirmation/PROTOCOL.md": "abe260c6b774a71d9ecce54d4893af8cdf326fd8969e2d17aea8a745d0bb59de",
+    "E053_combined_numerical_confirmation/SOURCE_DATA.json": "1d6608fe06e0ba3b7bfac0492bd4fb5e0a14df256b980566c88976de3cbbc62a",
+    "E053_combined_numerical_confirmation/audit.py": "9133ebc045f6f5f68e800371a8c788e252f10232322937770d887ed45e5fe085",
+    "E053_combined_numerical_confirmation/audit_dynamics.py": "7a17b0f5453909b1300aa3e417ae53c17782e74e584794b581e677a0714105cb",
+    "E053_combined_numerical_confirmation/design.py": "64d3eb9748bcedf0f6fc5bffb3846453461b673bd2eabd08d7591348d8a95d0c",
+    "E053_combined_numerical_confirmation/evidence.py": "b0144941a8f6e43de0eb0d7770eb0cefd0d61cb6c3cb66c69494573501f1c491",
+    "E053_combined_numerical_confirmation/model.py": "d513797439ada1ae9f46c5d69db3444b43a8c33c22ed3ef4fe8438e1acf4dac6",
+    "E053_combined_numerical_confirmation/plot.py": "587a5fba6d0404c35d925cdf4457380aa48ad37d36d60fb0fb6757946d562d12",
+    "E053_combined_numerical_confirmation/run.py": "790fe739da3e759cb144e9c997b7e685c795bd2a4cdbba67e30a8439c6c5e1c5",
+    "E053_combined_numerical_confirmation/tests.py": "6cc25986323a9301e035af016f7af23bca6fbfe2512516062c286d6c5bac57d9",
+    "E053_combined_numerical_confirmation/workflow.py": "4b01b36a321bbc9fdcb389600886c26ec6d61125ff05e3cc679ecdbc3c2f7f2c",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "input_hashes_checked": true,
+  "lineages_per_condition": 128,
+  "outcomes": {
+    "0": {
+      "noise_0/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/noise_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/record_noise_1e4/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/combined32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/grid_noise_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/noise_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/record_noise_1e4/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      }
+    },
+    "16": {
+      "noise_0/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/combined32/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/combined32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/combined32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/combined32/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/combined32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/record_noise_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          16
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/reference/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "paired/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          15,
+          15,
+          15,
+          10,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/arithmetic32/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          15,
+          14,
+          10,
+          15
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          13,
+          14,
+          15,
+          15,
+          11,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          15,
+          15,
+          15,
+          10,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/arithmetic32/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          15,
+          14,
+          10,
+          15
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          13,
+          14,
+          15,
+          15,
+          11,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/combined32/common/intact": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/combined32/common/scattered": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          13
+        ],
+        "count": 97,
+        "denominator": 128,
+        "percent": 75.78125
+      },
+      "paired/combined32/common/square": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/combined32/native/intact": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/combined32/native/scattered": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          13
+        ],
+        "count": 97,
+        "denominator": 128,
+        "percent": 75.78125
+      },
+      "paired/combined32/native/square": {
+        "block_counts": [
+          14,
+          14,
+          12,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/floor_1e4/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          13,
+          14,
+          11,
+          16
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/floor_1e4/common/scattered": {
+        "block_counts": [
+          14,
+          15,
+          13,
+          14,
+          12,
+          14,
+          9,
+          15
+        ],
+        "count": 106,
+        "denominator": 128,
+        "percent": 82.8125
+      },
+      "paired/floor_1e4/common/square": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          12,
+          14,
+          11,
+          15
+        ],
+        "count": 109,
+        "denominator": 128,
+        "percent": 85.15625
+      },
+      "paired/floor_1e4/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          12,
+          14,
+          11,
+          16
+        ],
+        "count": 110,
+        "denominator": 128,
+        "percent": 85.9375
+      },
+      "paired/floor_1e4/native/scattered": {
+        "block_counts": [
+          14,
+          15,
+          13,
+          14,
+          12,
+          14,
+          10,
+          15
+        ],
+        "count": 107,
+        "denominator": 128,
+        "percent": 83.59375
+      },
+      "paired/floor_1e4/native/square": {
+        "block_counts": [
+          15,
+          15,
+          13,
+          14,
+          11,
+          14,
+          11,
+          15
+        ],
+        "count": 108,
+        "denominator": 128,
+        "percent": 84.375
+      },
+      "paired/grid_2m16/common/intact": {
+        "block_counts": [
+          9,
+          10,
+          5,
+          9,
+          7,
+          10,
+          5,
+          8
+        ],
+        "count": 63,
+        "denominator": 128,
+        "percent": 49.21875
+      },
+      "paired/grid_2m16/common/scattered": {
+        "block_counts": [
+          8,
+          9,
+          4,
+          8,
+          6,
+          10,
+          5,
+          9
+        ],
+        "count": 59,
+        "denominator": 128,
+        "percent": 46.09375
+      },
+      "paired/grid_2m16/common/square": {
+        "block_counts": [
+          8,
+          10,
+          5,
+          10,
+          7,
+          10,
+          5,
+          9
+        ],
+        "count": 64,
+        "denominator": 128,
+        "percent": 50.0
+      },
+      "paired/grid_2m16/native/intact": {
+        "block_counts": [
+          9,
+          10,
+          5,
+          9,
+          7,
+          10,
+          5,
+          8
+        ],
+        "count": 63,
+        "denominator": 128,
+        "percent": 49.21875
+      },
+      "paired/grid_2m16/native/scattered": {
+        "block_counts": [
+          8,
+          9,
+          4,
+          8,
+          6,
+          10,
+          5,
+          9
+        ],
+        "count": 59,
+        "denominator": 128,
+        "percent": 46.09375
+      },
+      "paired/grid_2m16/native/square": {
+        "block_counts": [
+          8,
+          10,
+          5,
+          10,
+          7,
+          10,
+          5,
+          9
+        ],
+        "count": 64,
+        "denominator": 128,
+        "percent": 50.0
+      },
+      "paired/grid_floor/common/intact": {
+        "block_counts": [
+          11,
+          9,
+          5,
+          8,
+          9,
+          11,
+          8,
+          9
+        ],
+        "count": 70,
+        "denominator": 128,
+        "percent": 54.6875
+      },
+      "paired/grid_floor/common/scattered": {
+        "block_counts": [
+          8,
+          8,
+          4,
+          8,
+          8,
+          11,
+          7,
+          8
+        ],
+        "count": 62,
+        "denominator": 128,
+        "percent": 48.4375
+      },
+      "paired/grid_floor/common/square": {
+        "block_counts": [
+          10,
+          9,
+          5,
+          9,
+          8,
+          11,
+          8,
+          9
+        ],
+        "count": 69,
+        "denominator": 128,
+        "percent": 53.90625
+      },
+      "paired/grid_floor/native/intact": {
+        "block_counts": [
+          11,
+          9,
+          5,
+          8,
+          9,
+          11,
+          8,
+          9
+        ],
+        "count": 70,
+        "denominator": 128,
+        "percent": 54.6875
+      },
+      "paired/grid_floor/native/scattered": {
+        "block_counts": [
+          8,
+          8,
+          4,
+          8,
+          8,
+          12,
+          7,
+          8
+        ],
+        "count": 63,
+        "denominator": 128,
+        "percent": 49.21875
+      },
+      "paired/grid_floor/native/square": {
+        "block_counts": [
+          10,
+          9,
+          5,
+          9,
+          8,
+          11,
+          8,
+          9
+        ],
+        "count": 69,
+        "denominator": 128,
+        "percent": 53.90625
+      },
+      "paired/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          9,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          8,
+          13
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          9,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          9,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          8,
+          13
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          15,
+          13,
+          14,
+          7,
+          13,
+          9,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_noise_floor/common/intact": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          13
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/grid_noise_floor/common/square": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/grid_noise_floor/native/intact": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          13
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/grid_noise_floor/native/square": {
+        "block_counts": [
+          14,
+          14,
+          13,
+          14,
+          8,
+          13,
+          9,
+          14
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/noise_floor/common/intact": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/noise_floor/common/scattered": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          12
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/noise_floor/common/square": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/noise_floor/native/intact": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/noise_floor/native/scattered": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          12
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/noise_floor/native/square": {
+        "block_counts": [
+          14,
+          15,
+          14,
+          14,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/record_noise_1e4/common/intact": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          9,
+          14,
+          10,
+          12
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          8,
+          14,
+          10,
+          12
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/record_noise_1e4/common/square": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/record_noise_1e4/native/intact": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          9,
+          14,
+          10,
+          12
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          8,
+          14,
+          10,
+          12
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/record_noise_1e4/native/square": {
+        "block_counts": [
+          14,
+          14,
+          14,
+          15,
+          9,
+          14,
+          10,
+          13
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          16,
+          16,
+          10,
+          16
+        ],
+        "count": 120,
+        "denominator": 128,
+        "percent": 93.75
+      },
+      "paired/reference/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          14,
+          15,
+          16,
+          15,
+          10,
+          15
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          15,
+          16,
+          15,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          16,
+          16,
+          10,
+          16
+        ],
+        "count": 120,
+        "denominator": 128,
+        "percent": 93.75
+      },
+      "paired/reference/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          14,
+          15,
+          16,
+          15,
+          10,
+          15
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          15,
+          16,
+          15,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      }
+    },
+    "24": {
+      "noise_0/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/combined32/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/combined32/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/combined32/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/combined32/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/combined32/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/combined32/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_noise_floor/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/noise_floor/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/record_noise_1e4/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/reference/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "paired/arithmetic32/common/intact": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          16
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/arithmetic32/common/scattered": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          15
+        ],
+        "count": 114,
+        "denominator": 128,
+        "percent": 89.0625
+      },
+      "paired/arithmetic32/common/square": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          16
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/arithmetic32/native/intact": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          16
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/arithmetic32/native/scattered": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          15
+        ],
+        "count": 114,
+        "denominator": 128,
+        "percent": 89.0625
+      },
+      "paired/arithmetic32/native/square": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          15,
+          14,
+          11,
+          16
+        ],
+        "count": 115,
+        "denominator": 128,
+        "percent": 89.84375
+      },
+      "paired/combined32/common/intact": {
+        "block_counts": [
+          9,
+          14,
+          10,
+          12,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/combined32/common/scattered": {
+        "block_counts": [
+          8,
+          14,
+          10,
+          11,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 86,
+        "denominator": 128,
+        "percent": 67.1875
+      },
+      "paired/combined32/common/square": {
+        "block_counts": [
+          9,
+          14,
+          10,
+          12,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/combined32/native/intact": {
+        "block_counts": [
+          9,
+          14,
+          10,
+          12,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/combined32/native/scattered": {
+        "block_counts": [
+          8,
+          14,
+          10,
+          11,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 86,
+        "denominator": 128,
+        "percent": 67.1875
+      },
+      "paired/combined32/native/square": {
+        "block_counts": [
+          9,
+          14,
+          10,
+          12,
+          8,
+          11,
+          9,
+          15
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/floor_1e4/common/intact": {
+        "block_counts": [
+          10,
+          13,
+          13,
+          13,
+          11,
+          14,
+          11,
+          14
+        ],
+        "count": 99,
+        "denominator": 128,
+        "percent": 77.34375
+      },
+      "paired/floor_1e4/common/scattered": {
+        "block_counts": [
+          11,
+          13,
+          13,
+          12,
+          11,
+          14,
+          11,
+          13
+        ],
+        "count": 98,
+        "denominator": 128,
+        "percent": 76.5625
+      },
+      "paired/floor_1e4/common/square": {
+        "block_counts": [
+          11,
+          13,
+          14,
+          13,
+          10,
+          14,
+          11,
+          15
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/floor_1e4/native/intact": {
+        "block_counts": [
+          10,
+          13,
+          13,
+          13,
+          9,
+          14,
+          11,
+          14
+        ],
+        "count": 97,
+        "denominator": 128,
+        "percent": 75.78125
+      },
+      "paired/floor_1e4/native/scattered": {
+        "block_counts": [
+          10,
+          13,
+          13,
+          12,
+          10,
+          14,
+          11,
+          13
+        ],
+        "count": 96,
+        "denominator": 128,
+        "percent": 75.0
+      },
+      "paired/floor_1e4/native/square": {
+        "block_counts": [
+          11,
+          13,
+          14,
+          13,
+          9,
+          14,
+          11,
+          15
+        ],
+        "count": 100,
+        "denominator": 128,
+        "percent": 78.125
+      },
+      "paired/grid_2m16/common/intact": {
+        "block_counts": [
+          0,
+          7,
+          3,
+          2,
+          3,
+          2,
+          5,
+          3
+        ],
+        "count": 25,
+        "denominator": 128,
+        "percent": 19.53125
+      },
+      "paired/grid_2m16/common/scattered": {
+        "block_counts": [
+          0,
+          5,
+          3,
+          1,
+          2,
+          2,
+          5,
+          3
+        ],
+        "count": 21,
+        "denominator": 128,
+        "percent": 16.40625
+      },
+      "paired/grid_2m16/common/square": {
+        "block_counts": [
+          0,
+          7,
+          3,
+          2,
+          2,
+          2,
+          5,
+          3
+        ],
+        "count": 24,
+        "denominator": 128,
+        "percent": 18.75
+      },
+      "paired/grid_2m16/native/intact": {
+        "block_counts": [
+          0,
+          7,
+          3,
+          2,
+          3,
+          2,
+          5,
+          3
+        ],
+        "count": 25,
+        "denominator": 128,
+        "percent": 19.53125
+      },
+      "paired/grid_2m16/native/scattered": {
+        "block_counts": [
+          0,
+          5,
+          3,
+          1,
+          2,
+          2,
+          5,
+          3
+        ],
+        "count": 21,
+        "denominator": 128,
+        "percent": 16.40625
+      },
+      "paired/grid_2m16/native/square": {
+        "block_counts": [
+          0,
+          7,
+          3,
+          2,
+          2,
+          2,
+          5,
+          3
+        ],
+        "count": 24,
+        "denominator": 128,
+        "percent": 18.75
+      },
+      "paired/grid_floor/common/intact": {
+        "block_counts": [
+          1,
+          7,
+          4,
+          1,
+          5,
+          6,
+          6,
+          6
+        ],
+        "count": 36,
+        "denominator": 128,
+        "percent": 28.125
+      },
+      "paired/grid_floor/common/scattered": {
+        "block_counts": [
+          1,
+          8,
+          4,
+          1,
+          5,
+          6,
+          5,
+          5
+        ],
+        "count": 35,
+        "denominator": 128,
+        "percent": 27.34375
+      },
+      "paired/grid_floor/common/square": {
+        "block_counts": [
+          1,
+          7,
+          4,
+          2,
+          5,
+          6,
+          6,
+          6
+        ],
+        "count": 37,
+        "denominator": 128,
+        "percent": 28.90625
+      },
+      "paired/grid_floor/native/intact": {
+        "block_counts": [
+          1,
+          7,
+          4,
+          1,
+          5,
+          6,
+          6,
+          6
+        ],
+        "count": 36,
+        "denominator": 128,
+        "percent": 28.125
+      },
+      "paired/grid_floor/native/scattered": {
+        "block_counts": [
+          1,
+          8,
+          4,
+          1,
+          5,
+          6,
+          5,
+          5
+        ],
+        "count": 35,
+        "denominator": 128,
+        "percent": 27.34375
+      },
+      "paired/grid_floor/native/square": {
+        "block_counts": [
+          1,
+          7,
+          4,
+          2,
+          5,
+          6,
+          6,
+          6
+        ],
+        "count": 37,
+        "denominator": 128,
+        "percent": 28.90625
+      },
+      "paired/grid_noise/common/intact": {
+        "block_counts": [
+          10,
+          13,
+          11,
+          11,
+          7,
+          12,
+          9,
+          11
+        ],
+        "count": 84,
+        "denominator": 128,
+        "percent": 65.625
+      },
+      "paired/grid_noise/common/scattered": {
+        "block_counts": [
+          10,
+          14,
+          11,
+          11,
+          7,
+          12,
+          9,
+          12
+        ],
+        "count": 86,
+        "denominator": 128,
+        "percent": 67.1875
+      },
+      "paired/grid_noise/common/square": {
+        "block_counts": [
+          10,
+          14,
+          11,
+          11,
+          7,
+          12,
+          9,
+          11
+        ],
+        "count": 85,
+        "denominator": 128,
+        "percent": 66.40625
+      },
+      "paired/grid_noise/native/intact": {
+        "block_counts": [
+          10,
+          13,
+          11,
+          11,
+          7,
+          12,
+          9,
+          11
+        ],
+        "count": 84,
+        "denominator": 128,
+        "percent": 65.625
+      },
+      "paired/grid_noise/native/scattered": {
+        "block_counts": [
+          10,
+          14,
+          11,
+          11,
+          7,
+          12,
+          9,
+          12
+        ],
+        "count": 86,
+        "denominator": 128,
+        "percent": 67.1875
+      },
+      "paired/grid_noise/native/square": {
+        "block_counts": [
+          10,
+          14,
+          11,
+          11,
+          7,
+          12,
+          9,
+          11
+        ],
+        "count": 85,
+        "denominator": 128,
+        "percent": 66.40625
+      },
+      "paired/grid_noise_floor/common/intact": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          12,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 89,
+        "denominator": 128,
+        "percent": 69.53125
+      },
+      "paired/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          11,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/grid_noise_floor/common/square": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          11,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/grid_noise_floor/native/intact": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          12,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 89,
+        "denominator": 128,
+        "percent": 69.53125
+      },
+      "paired/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          11,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/grid_noise_floor/native/square": {
+        "block_counts": [
+          9,
+          14,
+          11,
+          11,
+          8,
+          12,
+          9,
+          14
+        ],
+        "count": 88,
+        "denominator": 128,
+        "percent": 68.75
+      },
+      "paired/noise_floor/common/intact": {
+        "block_counts": [
+          12,
+          15,
+          12,
+          11,
+          9,
+          13,
+          10,
+          12
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/noise_floor/common/scattered": {
+        "block_counts": [
+          12,
+          14,
+          12,
+          10,
+          8,
+          13,
+          9,
+          12
+        ],
+        "count": 90,
+        "denominator": 128,
+        "percent": 70.3125
+      },
+      "paired/noise_floor/common/square": {
+        "block_counts": [
+          12,
+          15,
+          12,
+          11,
+          9,
+          13,
+          10,
+          12
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/noise_floor/native/intact": {
+        "block_counts": [
+          12,
+          15,
+          12,
+          11,
+          9,
+          13,
+          10,
+          12
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/noise_floor/native/scattered": {
+        "block_counts": [
+          12,
+          14,
+          12,
+          10,
+          8,
+          13,
+          9,
+          12
+        ],
+        "count": 90,
+        "denominator": 128,
+        "percent": 70.3125
+      },
+      "paired/noise_floor/native/square": {
+        "block_counts": [
+          12,
+          15,
+          12,
+          11,
+          9,
+          13,
+          10,
+          12
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/record_noise_1e4/common/intact": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/record_noise_1e4/common/square": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/record_noise_1e4/native/intact": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/record_noise_1e4/native/square": {
+        "block_counts": [
+          10,
+          14,
+          13,
+          13,
+          8,
+          11,
+          10,
+          12
+        ],
+        "count": 91,
+        "denominator": 128,
+        "percent": 71.09375
+      },
+      "paired/reference/common/intact": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/reference/common/scattered": {
+        "block_counts": [
+          14,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          15
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/reference/common/square": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/reference/native/intact": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/reference/native/scattered": {
+        "block_counts": [
+          14,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          15
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/reference/native/square": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          16,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      }
+    },
+    "32": {
+      "noise_0/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/combined32/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/combined32/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/combined32/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/combined32/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/combined32/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/combined32/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          14
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          14
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15
+        ],
+        "count": 126,
+        "denominator": 128,
+        "percent": 98.4375
+      },
+      "noise_0/grid_noise/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/grid_noise/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/grid_noise/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise_floor/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/grid_noise_floor/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise_floor/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/grid_noise_floor/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/noise_floor/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/noise_floor/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/noise_floor/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/noise_floor/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/noise_floor/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/noise_floor/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/record_noise_1e4/common/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/record_noise_1e4/common/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/record_noise_1e4/native/intact": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          14
+        ],
+        "count": 122,
+        "denominator": 128,
+        "percent": 95.3125
+      },
+      "noise_0/record_noise_1e4/native/square": {
+        "block_counts": [
+          15,
+          15,
+          16,
+          16,
+          15,
+          16,
+          15,
+          15
+        ],
+        "count": 123,
+        "denominator": 128,
+        "percent": 96.09375
+      },
+      "noise_0/reference/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/reference/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "noise_0/reference/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          14
+        ],
+        "count": 124,
+        "denominator": 128,
+        "percent": 96.875
+      },
+      "noise_0/reference/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          15,
+          16,
+          16,
+          15
+        ],
+        "count": 125,
+        "denominator": 128,
+        "percent": 97.65625
+      },
+      "paired/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          13,
+          15,
+          13,
+          10,
+          16
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/arithmetic32/common/scattered": {
+        "block_counts": [
+          15,
+          15,
+          11,
+          10,
+          15,
+          12,
+          9,
+          15
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          13,
+          15,
+          12,
+          10,
+          16
+        ],
+        "count": 112,
+        "denominator": 128,
+        "percent": 87.5
+      },
+      "paired/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          13,
+          15,
+          13,
+          10,
+          16
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/arithmetic32/native/scattered": {
+        "block_counts": [
+          15,
+          15,
+          11,
+          10,
+          15,
+          12,
+          9,
+          15
+        ],
+        "count": 102,
+        "denominator": 128,
+        "percent": 79.6875
+      },
+      "paired/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          13,
+          15,
+          12,
+          10,
+          16
+        ],
+        "count": 112,
+        "denominator": 128,
+        "percent": 87.5
+      },
+      "paired/combined32/common/intact": {
+        "block_counts": [
+          9,
+          10,
+          8,
+          11,
+          8,
+          10,
+          10,
+          15
+        ],
+        "count": 81,
+        "denominator": 128,
+        "percent": 63.28125
+      },
+      "paired/combined32/common/scattered": {
+        "block_counts": [
+          9,
+          10,
+          6,
+          11,
+          8,
+          10,
+          10,
+          13
+        ],
+        "count": 77,
+        "denominator": 128,
+        "percent": 60.15625
+      },
+      "paired/combined32/common/square": {
+        "block_counts": [
+          9,
+          10,
+          7,
+          12,
+          8,
+          9,
+          10,
+          15
+        ],
+        "count": 80,
+        "denominator": 128,
+        "percent": 62.5
+      },
+      "paired/combined32/native/intact": {
+        "block_counts": [
+          9,
+          10,
+          8,
+          11,
+          8,
+          10,
+          10,
+          15
+        ],
+        "count": 81,
+        "denominator": 128,
+        "percent": 63.28125
+      },
+      "paired/combined32/native/scattered": {
+        "block_counts": [
+          9,
+          10,
+          6,
+          11,
+          8,
+          10,
+          10,
+          13
+        ],
+        "count": 77,
+        "denominator": 128,
+        "percent": 60.15625
+      },
+      "paired/combined32/native/square": {
+        "block_counts": [
+          9,
+          10,
+          7,
+          12,
+          8,
+          9,
+          10,
+          15
+        ],
+        "count": 80,
+        "denominator": 128,
+        "percent": 62.5
+      },
+      "paired/floor_1e4/common/intact": {
+        "block_counts": [
+          14,
+          11,
+          13,
+          12,
+          12,
+          9,
+          10,
+          14
+        ],
+        "count": 95,
+        "denominator": 128,
+        "percent": 74.21875
+      },
+      "paired/floor_1e4/common/scattered": {
+        "block_counts": [
+          14,
+          11,
+          11,
+          10,
+          12,
+          8,
+          8,
+          11
+        ],
+        "count": 85,
+        "denominator": 128,
+        "percent": 66.40625
+      },
+      "paired/floor_1e4/common/square": {
+        "block_counts": [
+          14,
+          11,
+          13,
+          12,
+          12,
+          8,
+          10,
+          14
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/floor_1e4/native/intact": {
+        "block_counts": [
+          14,
+          11,
+          13,
+          11,
+          12,
+          8,
+          10,
+          14
+        ],
+        "count": 93,
+        "denominator": 128,
+        "percent": 72.65625
+      },
+      "paired/floor_1e4/native/scattered": {
+        "block_counts": [
+          14,
+          11,
+          10,
+          10,
+          12,
+          8,
+          8,
+          11
+        ],
+        "count": 84,
+        "denominator": 128,
+        "percent": 65.625
+      },
+      "paired/floor_1e4/native/square": {
+        "block_counts": [
+          14,
+          11,
+          13,
+          11,
+          12,
+          7,
+          10,
+          14
+        ],
+        "count": 92,
+        "denominator": 128,
+        "percent": 71.875
+      },
+      "paired/grid_2m16/common/intact": {
+        "block_counts": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          3,
+          0,
+          1
+        ],
+        "count": 5,
+        "denominator": 128,
+        "percent": 3.90625
+      },
+      "paired/grid_2m16/common/scattered": {
+        "block_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "count": 3,
+        "denominator": 128,
+        "percent": 2.34375
+      },
+      "paired/grid_2m16/common/square": {
+        "block_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "count": 4,
+        "denominator": 128,
+        "percent": 3.125
+      },
+      "paired/grid_2m16/native/intact": {
+        "block_counts": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          3,
+          0,
+          1
+        ],
+        "count": 5,
+        "denominator": 128,
+        "percent": 3.90625
+      },
+      "paired/grid_2m16/native/scattered": {
+        "block_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "count": 3,
+        "denominator": 128,
+        "percent": 2.34375
+      },
+      "paired/grid_2m16/native/square": {
+        "block_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "count": 4,
+        "denominator": 128,
+        "percent": 3.125
+      },
+      "paired/grid_floor/common/intact": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          2,
+          3
+        ],
+        "count": 16,
+        "denominator": 128,
+        "percent": 12.5
+      },
+      "paired/grid_floor/common/scattered": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          2,
+          2
+        ],
+        "count": 16,
+        "denominator": 128,
+        "percent": 12.5
+      },
+      "paired/grid_floor/common/square": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "count": 13,
+        "denominator": 128,
+        "percent": 10.15625
+      },
+      "paired/grid_floor/native/intact": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          2,
+          3
+        ],
+        "count": 15,
+        "denominator": 128,
+        "percent": 11.71875
+      },
+      "paired/grid_floor/native/scattered": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          2,
+          2
+        ],
+        "count": 15,
+        "denominator": 128,
+        "percent": 11.71875
+      },
+      "paired/grid_floor/native/square": {
+        "block_counts": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "count": 13,
+        "denominator": 128,
+        "percent": 10.15625
+      },
+      "paired/grid_noise/common/intact": {
+        "block_counts": [
+          10,
+          9,
+          10,
+          9,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 74,
+        "denominator": 128,
+        "percent": 57.8125
+      },
+      "paired/grid_noise/common/scattered": {
+        "block_counts": [
+          10,
+          9,
+          9,
+          7,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 71,
+        "denominator": 128,
+        "percent": 55.46875
+      },
+      "paired/grid_noise/common/square": {
+        "block_counts": [
+          10,
+          9,
+          10,
+          9,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 74,
+        "denominator": 128,
+        "percent": 57.8125
+      },
+      "paired/grid_noise/native/intact": {
+        "block_counts": [
+          10,
+          9,
+          10,
+          9,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 74,
+        "denominator": 128,
+        "percent": 57.8125
+      },
+      "paired/grid_noise/native/scattered": {
+        "block_counts": [
+          10,
+          9,
+          9,
+          7,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 71,
+        "denominator": 128,
+        "percent": 55.46875
+      },
+      "paired/grid_noise/native/square": {
+        "block_counts": [
+          10,
+          9,
+          10,
+          9,
+          6,
+          10,
+          9,
+          11
+        ],
+        "count": 74,
+        "denominator": 128,
+        "percent": 57.8125
+      },
+      "paired/grid_noise_floor/common/intact": {
+        "block_counts": [
+          9,
+          11,
+          8,
+          12,
+          8,
+          9,
+          10,
+          14
+        ],
+        "count": 81,
+        "denominator": 128,
+        "percent": 63.28125
+      },
+      "paired/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          8,
+          11,
+          7,
+          11,
+          8,
+          9,
+          10,
+          13
+        ],
+        "count": 77,
+        "denominator": 128,
+        "percent": 60.15625
+      },
+      "paired/grid_noise_floor/common/square": {
+        "block_counts": [
+          9,
+          11,
+          8,
+          12,
+          8,
+          8,
+          10,
+          12
+        ],
+        "count": 78,
+        "denominator": 128,
+        "percent": 60.9375
+      },
+      "paired/grid_noise_floor/native/intact": {
+        "block_counts": [
+          9,
+          11,
+          8,
+          12,
+          8,
+          9,
+          10,
+          14
+        ],
+        "count": 81,
+        "denominator": 128,
+        "percent": 63.28125
+      },
+      "paired/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          8,
+          11,
+          7,
+          11,
+          8,
+          9,
+          10,
+          13
+        ],
+        "count": 77,
+        "denominator": 128,
+        "percent": 60.15625
+      },
+      "paired/grid_noise_floor/native/square": {
+        "block_counts": [
+          9,
+          11,
+          8,
+          12,
+          8,
+          8,
+          10,
+          12
+        ],
+        "count": 78,
+        "denominator": 128,
+        "percent": 60.9375
+      },
+      "paired/noise_floor/common/intact": {
+        "block_counts": [
+          11,
+          9,
+          9,
+          9,
+          9,
+          12,
+          10,
+          10
+        ],
+        "count": 79,
+        "denominator": 128,
+        "percent": 61.71875
+      },
+      "paired/noise_floor/common/scattered": {
+        "block_counts": [
+          11,
+          8,
+          8,
+          9,
+          9,
+          11,
+          10,
+          10
+        ],
+        "count": 76,
+        "denominator": 128,
+        "percent": 59.375
+      },
+      "paired/noise_floor/common/square": {
+        "block_counts": [
+          11,
+          9,
+          9,
+          9,
+          9,
+          11,
+          10,
+          10
+        ],
+        "count": 78,
+        "denominator": 128,
+        "percent": 60.9375
+      },
+      "paired/noise_floor/native/intact": {
+        "block_counts": [
+          11,
+          9,
+          9,
+          9,
+          9,
+          12,
+          10,
+          10
+        ],
+        "count": 79,
+        "denominator": 128,
+        "percent": 61.71875
+      },
+      "paired/noise_floor/native/scattered": {
+        "block_counts": [
+          11,
+          8,
+          8,
+          9,
+          9,
+          11,
+          10,
+          10
+        ],
+        "count": 76,
+        "denominator": 128,
+        "percent": 59.375
+      },
+      "paired/noise_floor/native/square": {
+        "block_counts": [
+          11,
+          9,
+          9,
+          9,
+          9,
+          11,
+          10,
+          10
+        ],
+        "count": 78,
+        "denominator": 128,
+        "percent": 60.9375
+      },
+      "paired/record_noise_1e4/common/intact": {
+        "block_counts": [
+          11,
+          11,
+          11,
+          13,
+          8,
+          9,
+          9,
+          10
+        ],
+        "count": 82,
+        "denominator": 128,
+        "percent": 64.0625
+      },
+      "paired/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          11,
+          11,
+          10,
+          13,
+          8,
+          8,
+          9,
+          9
+        ],
+        "count": 79,
+        "denominator": 128,
+        "percent": 61.71875
+      },
+      "paired/record_noise_1e4/common/square": {
+        "block_counts": [
+          11,
+          11,
+          11,
+          13,
+          8,
+          9,
+          9,
+          10
+        ],
+        "count": 82,
+        "denominator": 128,
+        "percent": 64.0625
+      },
+      "paired/record_noise_1e4/native/intact": {
+        "block_counts": [
+          11,
+          11,
+          11,
+          13,
+          8,
+          9,
+          9,
+          10
+        ],
+        "count": 82,
+        "denominator": 128,
+        "percent": 64.0625
+      },
+      "paired/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          11,
+          11,
+          10,
+          13,
+          8,
+          8,
+          9,
+          9
+        ],
+        "count": 79,
+        "denominator": 128,
+        "percent": 61.71875
+      },
+      "paired/record_noise_1e4/native/square": {
+        "block_counts": [
+          11,
+          11,
+          11,
+          13,
+          8,
+          9,
+          9,
+          10
+        ],
+        "count": 82,
+        "denominator": 128,
+        "percent": 64.0625
+      },
+      "paired/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          14,
+          15,
+          10,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/reference/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          12,
+          14,
+          14,
+          15,
+          9,
+          15
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          14,
+          14,
+          10,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          14,
+          15,
+          10,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/reference/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          12,
+          14,
+          14,
+          15,
+          9,
+          15
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          14,
+          16,
+          14,
+          14,
+          10,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      }
+    },
+    "8": {
+      "noise_0/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/combined32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/combined32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/floor_1e4/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_2m16/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_floor/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/grid_noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/record_noise_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 127,
+        "denominator": 128,
+        "percent": 99.21875
+      },
+      "noise_0/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/common/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/scattered": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "noise_0/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "count": 128,
+        "denominator": 128,
+        "percent": 100.0
+      },
+      "paired/arithmetic32/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/arithmetic32/common/scattered": {
+        "block_counts": [
+          16,
+          13,
+          15,
+          15,
+          14,
+          16,
+          10,
+          14
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/arithmetic32/common/square": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/arithmetic32/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/arithmetic32/native/scattered": {
+        "block_counts": [
+          16,
+          13,
+          15,
+          15,
+          14,
+          16,
+          10,
+          14
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/arithmetic32/native/square": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/combined32/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/combined32/common/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          15
+        ],
+        "count": 112,
+        "denominator": 128,
+        "percent": 87.5
+      },
+      "paired/combined32/common/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/combined32/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/combined32/native/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          15
+        ],
+        "count": 112,
+        "denominator": 128,
+        "percent": 87.5
+      },
+      "paired/combined32/native/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/floor_1e4/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          14,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/floor_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          12,
+          13,
+          14,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/floor_1e4/common/square": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          14,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/floor_1e4/native/intact": {
+        "block_counts": [
+          15,
+          16,
+          14,
+          14,
+          11,
+          16,
+          12,
+          16
+        ],
+        "count": 114,
+        "denominator": 128,
+        "percent": 89.0625
+      },
+      "paired/floor_1e4/native/scattered": {
+        "block_counts": [
+          15,
+          12,
+          12,
+          14,
+          11,
+          16,
+          12,
+          16
+        ],
+        "count": 108,
+        "denominator": 128,
+        "percent": 84.375
+      },
+      "paired/floor_1e4/native/square": {
+        "block_counts": [
+          15,
+          16,
+          15,
+          14,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/grid_2m16/common/intact": {
+        "block_counts": [
+          15,
+          14,
+          13,
+          13,
+          10,
+          14,
+          10,
+          14
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/grid_2m16/common/scattered": {
+        "block_counts": [
+          14,
+          10,
+          12,
+          13,
+          8,
+          14,
+          9,
+          14
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/grid_2m16/common/square": {
+        "block_counts": [
+          14,
+          13,
+          13,
+          13,
+          10,
+          14,
+          10,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_2m16/native/intact": {
+        "block_counts": [
+          15,
+          14,
+          13,
+          13,
+          10,
+          14,
+          10,
+          14
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/grid_2m16/native/scattered": {
+        "block_counts": [
+          14,
+          10,
+          12,
+          13,
+          8,
+          14,
+          9,
+          14
+        ],
+        "count": 94,
+        "denominator": 128,
+        "percent": 73.4375
+      },
+      "paired/grid_2m16/native/square": {
+        "block_counts": [
+          14,
+          13,
+          13,
+          13,
+          10,
+          14,
+          10,
+          14
+        ],
+        "count": 101,
+        "denominator": 128,
+        "percent": 78.90625
+      },
+      "paired/grid_floor/common/intact": {
+        "block_counts": [
+          15,
+          13,
+          13,
+          13,
+          11,
+          14,
+          11,
+          14
+        ],
+        "count": 104,
+        "denominator": 128,
+        "percent": 81.25
+      },
+      "paired/grid_floor/common/scattered": {
+        "block_counts": [
+          14,
+          10,
+          12,
+          13,
+          9,
+          14,
+          10,
+          14
+        ],
+        "count": 96,
+        "denominator": 128,
+        "percent": 75.0
+      },
+      "paired/grid_floor/common/square": {
+        "block_counts": [
+          15,
+          12,
+          13,
+          13,
+          11,
+          14,
+          11,
+          14
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/grid_floor/native/intact": {
+        "block_counts": [
+          15,
+          13,
+          13,
+          13,
+          11,
+          14,
+          11,
+          14
+        ],
+        "count": 104,
+        "denominator": 128,
+        "percent": 81.25
+      },
+      "paired/grid_floor/native/scattered": {
+        "block_counts": [
+          14,
+          10,
+          12,
+          13,
+          9,
+          14,
+          10,
+          14
+        ],
+        "count": 96,
+        "denominator": 128,
+        "percent": 75.0
+      },
+      "paired/grid_floor/native/square": {
+        "block_counts": [
+          15,
+          12,
+          13,
+          13,
+          11,
+          14,
+          11,
+          14
+        ],
+        "count": 103,
+        "denominator": 128,
+        "percent": 80.46875
+      },
+      "paired/grid_noise/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/grid_noise/common/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/grid_noise/common/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/grid_noise/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/grid_noise/native/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/grid_noise/native/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/grid_noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/grid_noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/grid_noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/grid_noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          12,
+          16,
+          12,
+          16
+        ],
+        "count": 116,
+        "denominator": 128,
+        "percent": 90.625
+      },
+      "paired/grid_noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          12,
+          14,
+          15,
+          12,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/grid_noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          13,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/noise_floor/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/noise_floor/common/scattered": {
+        "block_counts": [
+          16,
+          11,
+          14,
+          15,
+          13,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/noise_floor/common/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          14,
+          16,
+          12,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/noise_floor/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/noise_floor/native/scattered": {
+        "block_counts": [
+          16,
+          11,
+          14,
+          15,
+          13,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/noise_floor/native/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          14,
+          16,
+          12,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/record_noise_1e4/common/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/record_noise_1e4/common/scattered": {
+        "block_counts": [
+          16,
+          11,
+          14,
+          15,
+          13,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/record_noise_1e4/common/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          14,
+          16,
+          12,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/record_noise_1e4/native/intact": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          13,
+          16,
+          12,
+          16
+        ],
+        "count": 117,
+        "denominator": 128,
+        "percent": 91.40625
+      },
+      "paired/record_noise_1e4/native/scattered": {
+        "block_counts": [
+          16,
+          11,
+          14,
+          15,
+          13,
+          16,
+          12,
+          14
+        ],
+        "count": 111,
+        "denominator": 128,
+        "percent": 86.71875
+      },
+      "paired/record_noise_1e4/native/square": {
+        "block_counts": [
+          16,
+          15,
+          14,
+          15,
+          14,
+          16,
+          12,
+          16
+        ],
+        "count": 118,
+        "denominator": 128,
+        "percent": 92.1875
+      },
+      "paired/reference/common/intact": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/reference/common/scattered": {
+        "block_counts": [
+          16,
+          13,
+          15,
+          15,
+          14,
+          16,
+          10,
+          14
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/reference/common/square": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/reference/native/intact": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      },
+      "paired/reference/native/scattered": {
+        "block_counts": [
+          16,
+          13,
+          15,
+          15,
+          14,
+          16,
+          10,
+          14
+        ],
+        "count": 113,
+        "denominator": 128,
+        "percent": 88.28125
+      },
+      "paired/reference/native/square": {
+        "block_counts": [
+          16,
+          16,
+          15,
+          15,
+          14,
+          16,
+          11,
+          16
+        ],
+        "count": 119,
+        "denominator": 128,
+        "percent": 92.96875
+      }
+    }
+  },
+  "planned_blocks": [
+    36000,
+    36001,
+    36002,
+    36003,
+    36004,
+    36005,
+    36006,
+    36007,
+    36008,
+    36009,
+    36010,
+    36011,
+    36012,
+    36013,
+    36014,
+    36015,
+    36016,
+    36017,
+    36018,
+    36019,
+    36020,
+    36021,
+    36022,
+    36023,
+    36024,
+    36025,
+    36026,
+    36027,
+    36028,
+    36029,
+    36030,
+    36031
+  ],
+  "planned_lineages_per_condition": 512,
+  "primary_decision": null,
+  "scientific_run_changed": false,
+  "selection": "All eight blocks with completed worker receipts at requested status check, before outcomes were read",
+  "source_run_manifest_sha256": "4fbedb284960cfffaf0debfbf93becc147722c6c103340a0022a7647ed96355a",
+  "source_sha256": {
+    "assay_036000_h0.npz": "e8a668c0bfcb23cb574bc2bd8ac963c515b47432a88555e4fc5953f27f74604e",
+    "assay_036000_h16.npz": "2606997ca9a8935314833a95fb7b5350313133d615ccfb4b1cbb064b4a0b9c5c",
+    "assay_036000_h24.npz": "349b0f444a097660838d2efa92eec3d42c62e5c820fedb69a95827e52475e3c5",
+    "assay_036000_h32.npz": "68b121e09964b7c918dc6aa7d6c4571148856e7f90e618fd1a81a3e33374f0d7",
+    "assay_036000_h8.npz": "d123890c87499b57f7673120b7cccef29bffb57835ba7918759716bb8559e6b5",
+    "assay_036001_h0.npz": "bfc13aeed78ff372e9047966aa0b5e6bbef568d11e570c78dde25dfd0bf2aea8",
+    "assay_036001_h16.npz": "60672907c9d46c6bccbd02db609c237127284e743ad52d143ba52cb31c5f9022",
+    "assay_036001_h24.npz": "39e2ad41bd9355c9a4146e2e467a376493b1a4de1123dafe802d9bc68c065dd3",
+    "assay_036001_h32.npz": "9c2f2c9f306990fb52be1f1ecedb9b2fd4299f8da8ed2905d669329efea5eb55",
+    "assay_036001_h8.npz": "67600453a78774e84ee16e8b99d858562fbb0404d6eefc6d1f787d98515265a5",
+    "assay_036002_h0.npz": "a14e62211f875b791dc2312dd0eb375a4929361a206be000578baf1900ec4df4",
+    "assay_036002_h16.npz": "748e1e1ed2d4d00739b9efa2404c1b4a898f00c397f173cdb4fa3c9c2a3fc5c5",
+    "assay_036002_h24.npz": "4670087ee87ce709cdde8a65abcfa2cd9ecb3c8e160345bc8e256dc71b938ea7",
+    "assay_036002_h32.npz": "9995740134e81e3288969a4e1bd494dfcb15ce6538410e3faadc515f3dd0c297",
+    "assay_036002_h8.npz": "d5cf86645bed9206f40ce75775fd07a55a2150d3a46fe156501ca71499936da8",
+    "assay_036003_h0.npz": "0feaf2e67d14ab75472505769ea3c43fbd0d55070baa4c60f84ec27aca8de4c5",
+    "assay_036003_h16.npz": "81b2b08d8fb4728665b112fd3991649172fa04ca83b12432834bbc033697f228",
+    "assay_036003_h24.npz": "be2390be42d0e6008f8e9844adb7ae71dd84e324d891a88a448df6abe5367462",
+    "assay_036003_h32.npz": "8a159512b7bdc8ff4940b8a42e72f686469a38c99f83c3777e127bf022905d8f",
+    "assay_036003_h8.npz": "e8a78b6e38b743b066b8d78fe27aea41d870ec1bac6bed83ffc9fdcf942f22dd",
+    "assay_036004_h0.npz": "1a95d840baf23665b52c88016cfb611468e6824bb6a15c819439a1f05bc97509",
+    "assay_036004_h16.npz": "7c3944ce0b0362a34cba282c85eda1bb178ac6b21c371b9ba06368b5f4b649c2",
+    "assay_036004_h24.npz": "2fdc2abc98b7af710fa0359c3b83f059eefebc7f40cda9bd3bb6e2d13a68ca6d",
+    "assay_036004_h32.npz": "dbeb9391a7c8e24a0d464a82382b25d07b9c4ca8bf61e5d4271ab480e76a2937",
+    "assay_036004_h8.npz": "e5aca97aaf3550383cf26581a40f2ade380baa2bf7f8c6b7248c24f1a5613c84",
+    "assay_036005_h0.npz": "91dfc33d390dc0e91adaa2a5ee45c2aed0cc902efd18bd7dacf09834338b7012",
+    "assay_036005_h16.npz": "38b8e2409f0058a7204a7e2a8928baa408d8def654585a1859c5bb6337731ebc",
+    "assay_036005_h24.npz": "0dc04b04c4f9ebca2653ac6bd882b4a45eb1590ecc6eb7c809b022a6e01d6f3f",
+    "assay_036005_h32.npz": "49631d6c4879d4b5d90614244860ac8c6ff5ddb2b1a810e93f5b86c5b2db1bc1",
+    "assay_036005_h8.npz": "f7ec8cc1db4aea87d4a6861c6d5bf8f119cca6c0724f468c53fa698709d55a9b",
+    "assay_036006_h0.npz": "57155a7192ac6fac10aa4db9f7d5de8047b4e11400242ee3481e7a339598f8c5",
+    "assay_036006_h16.npz": "b79c497baf2f7e4171232a515611adc5ab1cf7d340c0cf78397cf88c45a23197",
+    "assay_036006_h24.npz": "6b56a9300d36dded232c404ac4cf51b95f1f16f14ad769acff8f0fc552744f8b",
+    "assay_036006_h32.npz": "767d1c52796cb89c09b20ae36b9b66e9a17d2521c2212475dafbfd778f516ba2",
+    "assay_036006_h8.npz": "bcd178f2d24d639e74af13faf2959bd1c41105419162ba203c664a765c6cd04b",
+    "assay_036007_h0.npz": "946b3cdbd0555a1dd6da610d89e13f0d7448c851d3326c3beb7ad9d017130bf5",
+    "assay_036007_h16.npz": "9f42675bee9b0f7aa149dd32aaf2da2e4ecb854597ee700084ff730d0a4b6157",
+    "assay_036007_h24.npz": "c1c8f37c0ad64d7a419e8aab9653e3812d355efd1a89b8122081a938626f4212",
+    "assay_036007_h32.npz": "92aac5f95398953b68e53ab687f7eae4e070d3779a20ca819ddc2fe9317a0ef8",
+    "assay_036007_h8.npz": "33c2508743e9d61c685215d42f992b1fc323dff248ee7b18dba5f3a2775b993d",
+    "cases_036000.npz": "12d1e819996fdccc43dd5ef7b3d48661410545a7d710f7c255429153627e6ab7",
+    "cases_036001.npz": "3c5f784e37f740da68c34315e6454eab69b68207ba6e70f8d2b73288b1555633",
+    "cases_036002.npz": "4bd6f9bad511f57c84c0b9bdeff4b9d72b9b954701ea341d428ef0f7252395fc",
+    "cases_036003.npz": "d0f154e5a4576f2c068cc076ea869b7e28148176b99e7d246c1f94e7b9dc2636",
+    "cases_036004.npz": "e8f94207e0b3aa93ef4c67a3fcd061d338b28c109178faf63ba01de36f84712c",
+    "cases_036005.npz": "19cb7b976d82cfc7232a80bc7ede2d1ddad54fab0f5fe480b5f92463fa235ebb",
+    "cases_036006.npz": "9ab4006349b66330e22dc6b0046111f0168049e0a1076d601520f1f0dc5c1e14",
+    "cases_036007.npz": "83fed42a22f6df3b1adc560270053709c3577cc96a8907e60e4ec78cc188fd84",
+    "worker_36000.json": "6d0db28588367584694114cceedd6a5986ee0d905e34eb77539455cc86b97431",
+    "worker_36001.json": "cb7125421dc8695f0b4fd5f19e99f598f861c284ebe91a0d9d8ab4d180c8dfe4",
+    "worker_36002.json": "37e6c23ef712f1d09bc3b9c11ee6d524d9db81e3a8175f3c3828e55f24b7d4d4",
+    "worker_36003.json": "6074052042f78a2ba5a5a4e7fb104bd9a19267d7587ef5d08cae8c932497cdc1",
+    "worker_36004.json": "9502edf6117f93fbfddb8be7e89092a691379558a1e633a0cb22f97f7e04bbc2",
+    "worker_36005.json": "981e3b59003cab2eac19cee539d6ecafc8bfb57c936eae5385f884a7f587774c",
+    "worker_36006.json": "5fe59a8f5072cecb03912ac49042ab7e9ac9dba90041fdb5c0c090de057bc428",
+    "worker_36007.json": "73d5256a2ab986adffc0b667ca26387142f8122bc93054ab7560aa5a53f59c7a"
+  },
+  "status": "DESCRIPTIVE_PARTIAL_NOT_INDEPENDENTLY_REPLAYED",
+  "stopping_or_tuning_decision": null,
+  "utc": "2026-10-10T15:56:54.104161+00:00"
+}

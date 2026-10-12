@@ -1,0 +1,96 @@
+{
+  "version": "0.1",
+  "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T20:45:02.621854+00:00",
+  "source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+  "native_manifest_sha256": "023ff8a4de1f538bf2735749d5b367c0bc1ffad5b2acc9481d6b981fd8e507e7",
+  "reference_sources_sha256": {
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82"
+  },
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "pairing": "paired",
+  "source_condition_indices": [
+    0,
+    1
+  ],
+  "writers": [
+    "exact_rewrite",
+    "tolerance_rewrite",
+    "sign_restored"
+  ],
+  "branch_generation": 3,
+  "terminal_generation": 32,
+  "config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "cycle": {
+    "generations": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "write_steps": 128
+  },
+  "tolerance": 0.0001,
+  "primary_endpoint": "h32 scattered strict both-cue success",
+  "primary_contrast": [
+    "sign_restored",
+    "tolerance_rewrite"
+  ],
+  "secondary_contrasts": [
+    [
+      "exact_rewrite",
+      "tolerance_rewrite"
+    ],
+    [
+      "sign_restored",
+      "exact_rewrite"
+    ]
+  ],
+  "injuries": [
+    "intact",
+    "scattered",
+    "square"
+  ],
+  "block_inference": true,
+  "confirmatory": false,
+  "numerical_threads": 1,
+  "workers": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "long_run_policy": "detached and unpolled; analyze automatically at completion",
+  "benchmark": {
+    "block": 34000,
+    "generation": 4,
+    "writers": [
+      "exact_rewrite",
+      "tolerance_rewrite",
+      "exact_rewrite"
+    ],
+    "new_sign_restored_dynamics": false
+  },
+  "native_numpy_version": "2.5.2"
+}

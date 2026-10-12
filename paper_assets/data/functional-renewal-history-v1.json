@@ -1,0 +1,23 @@
+{
+  "version": "v0.14",
+  "extracted_utc": "2026-10-08T13:33:18.910941+00:00",
+  "source_report": "experiments/E046_failure_chronology/runs/chronology_v1/REPORT.md",
+  "source_report_sha256": "3d37cbc91a91816eac5588313462a6a08203822cddc215ceca8099d9c413da10",
+  "source_archive": "paper_assets/data/forms-cellular-v0.14-source-records.zip",
+  "source_archive_member": "forms/E046_failure_chronology/runs/chronology_v1/REPORT.md",
+  "policy": "bridge_rewrite",
+  "body_readouts_per_lineage": 32,
+  "independent_blocks": 32,
+  "lineages": 512,
+  "ever_body_failure": 307,
+  "all_body_readouts_passed": 205,
+  "ever_body_failure_percent": 59.96,
+  "all_body_readouts_passed_percent": 40.04,
+  "terminal_success_lineages": 428,
+  "endpoint": "All 32 saved rebuilding-body both-cue readouts pass; distinct from fresh-recipient terminal success and from success at every instant.",
+  "arithmetic": "all_body_readouts_passed = lineages - ever_body_failure; percentages = 100 * count / lineages.",
+  "scope": "Descriptive context from existing E041 full-rewrite histories analyzed in E046, not a new cohort, qualification gate, or inference.",
+  "intervals": "No new interval estimated for the complementary count.",
+  "model_runs": false,
+  "bootstrap_recomputed": false
+}

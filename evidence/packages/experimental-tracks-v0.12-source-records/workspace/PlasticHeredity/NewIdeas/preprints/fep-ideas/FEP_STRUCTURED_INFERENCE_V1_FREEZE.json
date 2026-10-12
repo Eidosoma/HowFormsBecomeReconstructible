@@ -1,0 +1,323 @@
+{
+  "status": "qualified_frozen",
+  "created_utc": "2026-09-20T14:13:53.143151+00:00",
+  "purpose": "Main core and design-gated scale execution; not launched by this freeze",
+  "qualification": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01",
+  "source_digest": "b19556ad41d2b3d2a54ac45756c1737be1d54b3163ef06d833a9db765030fdfe",
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "1.21.5",
+    "numeric_threads": 1,
+    "max_workers": 4
+  },
+  "inputs": [
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STRUCTURED_INFERENCE_TEST_DESIGN_V1.md",
+      "bytes": 18790,
+      "sha256": "537b4ea01488dbd0457d08673fb92f8c4f53a527a2d148fb23dd45d404a96b8b"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STRUCTURED_INFERENCE_V1.md",
+      "bytes": 9057,
+      "sha256": "43051fb5213bd0e01cc1624a72ecca1bbe0b249523ebb92ec1272233dd35ed61"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/fep_structured_inference.py",
+      "bytes": 19518,
+      "sha256": "22f22c8951f6698fd0d9c90f7b6e08a20d198e0c5804052d818341d346bc0a83"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/run_fep_structured_inference.py",
+      "bytes": 16637,
+      "sha256": "560b515726b998c9ccc5deedc3902115e6eca47f678cf235100406872056b5e3"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/check_fep_structured_inference.py",
+      "bytes": 14583,
+      "sha256": "482ae6a1df173d684ee914a0312e7b0320b1b85c8f7efc1eae405ffa7f253569"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_USABLE_INFORMATION_MANUSCRIPT_V1.md",
+      "bytes": 17717,
+      "sha256": "402480808b61ad9718d38fa0f6f494f2c01819b807491cb386fdde89eb5b76f0"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_USABLE_INFORMATION_MANUSCRIPT_V2.md",
+      "bytes": 20549,
+      "sha256": "fdabe647e938aa4c6b3e828447b4c0162e3ee32644581505776d819889c11d9c"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/MANIFEST.json",
+      "bytes": 14789,
+      "sha256": "d031eff23ecbcd5704e81177cafc24ecb562e11d41fb322a94a0d40a8705ff12"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h0.01_alternating.json",
+      "bytes": 210512,
+      "sha256": "29fe0822a1dbb056d11faedb7c0f6b55a380f44903cbec1d6c01c05c1ea2df7e"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h0.01_fail.json",
+      "bytes": 210501,
+      "sha256": "d13ed6acd70d1dd2d2e96ef7ef8ad9e10467b71f24acc38f5b9014fade6eaad4"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h0.01_success.json",
+      "bytes": 212070,
+      "sha256": "f004cadf0fef14453b463acb7897f2fffa70c631f32382e8ec5d9c3a687dfca0"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h1e-06_alternating.json",
+      "bytes": 209917,
+      "sha256": "e1e556b2604281f15c9cbc29d36d4df26fce4e12bda648261c7142df9e3feb90"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h1e-06_fail.json",
+      "bytes": 209899,
+      "sha256": "6d4806d03c427e49e2ce8e0b7b9eaff091c94de795d9fd7e4473e541c3afd1f0"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x2_h1e-06_success.json",
+      "bytes": 212360,
+      "sha256": "073f8cc19d4f7c565af4f349c2e54afeebea44f63099233f09c0ffeaae858b9a"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h0.01_alternating.json",
+      "bytes": 421231,
+      "sha256": "1d43d442662d4f645de5509f61ec82e42488db0f0e650b8223600d46115ecb8e"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h0.01_fail.json",
+      "bytes": 422564,
+      "sha256": "20fa9b243ae918f2d6aca0d7cf7dbfedcd25201e104f6cf0d68ea6c6e67b4d1a"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h0.01_success.json",
+      "bytes": 426552,
+      "sha256": "55314a5e840f1899e033aec70eb6cbce0bdfaa9b3804d3887850bffbf27cd4f7"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h1e-06_alternating.json",
+      "bytes": 421827,
+      "sha256": "3d1395f7ae73335a765c6b1e500f5e746c3d717e734163ddb05c04a640078131"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h1e-06_fail.json",
+      "bytes": 423749,
+      "sha256": "1fd2270d57ea7e5866b0c578b5e62e850b19fe9f8112dbf0eb6eaf294e3a0cb5"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/1x6_h1e-06_success.json",
+      "bytes": 427337,
+      "sha256": "a05c767e8cb989c7946279e0e5a72b60706a34c401c8413c5d11b20b0f02f60b"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h0.01_alternating.json",
+      "bytes": 335971,
+      "sha256": "9455bd63e4ea5d32e42cd6d68e5672519168163d01ffb039e5e7c87fb48ad734"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h0.01_fail.json",
+      "bytes": 334654,
+      "sha256": "c9509bf3bb61bfa848c0a8c28eb5bfc55eff6d468bb03b5338542151e92d8723"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h0.01_success.json",
+      "bytes": 340070,
+      "sha256": "318c15e44ce73a442c91900e95a895439ec4e46ccfe056a8a811425f748f07e4"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h1e-06_alternating.json",
+      "bytes": 336338,
+      "sha256": "6b6ca16f3f365822f76fb9564241c617a7af55d1bf75303b3c11a16e729ef846"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h1e-06_fail.json",
+      "bytes": 335551,
+      "sha256": "0b92cb09d691b525f96e2559c3367a8de822d8ee6e18b426d2925b387854594b"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x2_h1e-06_success.json",
+      "bytes": 339089,
+      "sha256": "9435c837a52a6138983dbf62e3d30205fcdd5ef0f4b24a5268a35c8b812392d0"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h0.01_alternating.json",
+      "bytes": 491592,
+      "sha256": "3827d4b86b2595a49027db15bf55432c20fbfe10b1bce293c3605a0e21020d43"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h0.01_fail.json",
+      "bytes": 491244,
+      "sha256": "5b04e5e67c372932b6b19ec64f2b85b1a3f2f09d764980737e091832944c07bf"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h0.01_success.json",
+      "bytes": 496967,
+      "sha256": "97843112711c3fd1ab69fdad95ed74f4fc747be1f116ecf189ce8e4ceb4cc247"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h1e-06_alternating.json",
+      "bytes": 493709,
+      "sha256": "38157883a8066e078a31dc0382cfff6ef3ab90f130372d6b02328b7852527884"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h1e-06_fail.json",
+      "bytes": 493171,
+      "sha256": "c2954e223995446c98648aefb4bb4bd48894a15bf325967f164935166ff49beb"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/2x3_h1e-06_success.json",
+      "bytes": 497771,
+      "sha256": "3a1c80897791f9e1e7e9a35227b9395f51488668ebc7183163da3181a708c155"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/FREEZE_PROBE.txt",
+      "bytes": 9,
+      "sha256": "25718360e05d3c2d0963d1381e9dd4dae5fca789244ee4b9f861adcc0cc96218"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/MECHANICAL.json",
+      "bytes": 101610,
+      "sha256": "a0d03cb1fde2f8fcfb317dbd11d6f686048cec5f6e7cd059d642e78626f91ad0"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/RESULTS.json",
+      "bytes": 4883,
+      "sha256": "7d5cfaa97d94a6f7cf05321909f01d14dc754dd861c75c9a7be72fc8c1dd6739"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/RUN_LOG.txt",
+      "bytes": 1182,
+      "sha256": "e1e350787af47e52721dc1b2c7fe9ec42c4b36738c500bf0457c776f87d36c33"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/probe_cpu/PROCESS_LOG.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/probe_cpu/SUPERVISION.json",
+      "bytes": 266,
+      "sha256": "55efc526025886158429e0c12d7c93d98add13b06c038a6bc439d6c53161f1eb"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/probe_memory/PROCESS_LOG.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/probe_memory/SUPERVISION.json",
+      "bytes": 271,
+      "sha256": "73b54da63592e844fa3ff931508d7dc49e70a3e6cebed523f21ba3917413ac9c"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/00-FEP_STRUCTURED_INFERENCE_TEST_DESIGN_V1.md",
+      "bytes": 18790,
+      "sha256": "537b4ea01488dbd0457d08673fb92f8c4f53a527a2d148fb23dd45d404a96b8b"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/01-FEP_STRUCTURED_INFERENCE_V1.md",
+      "bytes": 9057,
+      "sha256": "43051fb5213bd0e01cc1624a72ecca1bbe0b249523ebb92ec1272233dd35ed61"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/02-fep_structured_inference.py",
+      "bytes": 19518,
+      "sha256": "22f22c8951f6698fd0d9c90f7b6e08a20d198e0c5804052d818341d346bc0a83"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/03-run_fep_structured_inference.py",
+      "bytes": 16637,
+      "sha256": "560b515726b998c9ccc5deedc3902115e6eca47f678cf235100406872056b5e3"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/04-check_fep_structured_inference.py",
+      "bytes": 14583,
+      "sha256": "482ae6a1df173d684ee914a0312e7b0320b1b85c8f7efc1eae405ffa7f253569"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/05-FEP_USABLE_INFORMATION_MANUSCRIPT_V1.md",
+      "bytes": 17717,
+      "sha256": "402480808b61ad9718d38fa0f6f494f2c01819b807491cb386fdde89eb5b76f0"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/sources/06-FEP_USABLE_INFORMATION_MANUSCRIPT_V2.md",
+      "bytes": 20549,
+      "sha256": "fdabe647e938aa4c6b3e828447b4c0162e3ee32644581505776d819889c11d9c"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/CHECKPOINT_1024.json",
+      "bytes": 17647,
+      "sha256": "4f506757fd8dd5992b699b94126b9f0f2ffb6ec18113530ca22b7459e9ff7348"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/CHECKPOINT_256.json",
+      "bytes": 17620,
+      "sha256": "e96509802fefa45ce16d9bfe5a9b37685aba2ffdeca10fecd833140a5c91784a"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/CHECKPOINT_4096.json",
+      "bytes": 17679,
+      "sha256": "6c52f72cb65df6d20004f827df5085bc30e348ad3f18c4a6773bebd03bfc7d3f"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/INITIAL.json",
+      "bytes": 17631,
+      "sha256": "478e70dfa30d5d94555b80e59d69cd65c3a8dfe1246002711e6bb3c2768e09be"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/PROCESS_LOG.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/RESULTS.json",
+      "bytes": 74408,
+      "sha256": "721fb685393c9ee4f1f5ff33bec36a2d51e23a2ee3d722d1b6f23a9537483bac"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block/SUPERVISION.json",
+      "bytes": 262,
+      "sha256": "148a288a4169c4c665c3acffa6ecbf241bcb6942e1c82f387086218f56e5fef3"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_block_job.json",
+      "bytes": 127,
+      "sha256": "ba0a154f2f8fbec648810f01c907ab9ef5f66393dab24258e6967480c7f3843c"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_exact/PROCESS_LOG.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_exact/RESULTS.json",
+      "bytes": 10822,
+      "sha256": "067160c09ca16d03c8f9a000e88dfd93f1ab1bbb8e209d55a7cf46fb0d7af8ce"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_exact/SUPERVISION.json",
+      "bytes": 262,
+      "sha256": "e5e21c76dc26032ed6eda2e41f6e9f907ff6aef6361a11a6989c5f24f3e0841b"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/qualification-attempt-01/worker_exact_job.json",
+      "bytes": 127,
+      "sha256": "d3a396881ade2b76dcebef2854452ac58741c548b01ce46027e706d776fa0952"
+    }
+  ],
+  "planned_output": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/main-attempt-01",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/run_fep_structured_inference.py",
+    "--output",
+    "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/main-attempt-01",
+    "--freeze",
+    "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STRUCTURED_INFERENCE_V1_FREEZE.json",
+    "--workers",
+    "4"
+  ],
+  "execution": "detached, durable external launcher log, no automatic progress polling"
+}

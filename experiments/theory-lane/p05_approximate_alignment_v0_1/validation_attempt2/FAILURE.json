@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-10T18:00:04.798411+00:00",
+  "tests_passed": 8,
+  "tests_failed": 1,
+  "failed_test": "test_artificial_failed_forecast_and_full_reporting",
+  "failure": "Synthetic mean_ports retained negative zero while averaging its raw windows produces positive zero. The strict native window check correctly rejected this internally inconsistent fixture.",
+  "fix": "Construct synthetic mean_ports by averaging its saved windows, as the reader does. Do not relax the native verifier or change prepared records."
+}

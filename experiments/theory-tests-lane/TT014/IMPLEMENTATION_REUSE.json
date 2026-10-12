@@ -1,0 +1,63 @@
+{
+  "independent_full_replays": true,
+  "new_test_outcomes_generated": false,
+  "production_source_functions_execute": true,
+  "recorded_utc": "2026-10-10T23:49:39.417046+00:00",
+  "reused": {
+    "lineage.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/native.py",
+      "source_sha256": "a56d0dc642ddf2c2903e7a17c4b47c22bf0be878f283e2e6ae42554db0095e1d",
+      "use": "unchanged code, renamed module"
+    },
+    "lineage_audit.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/auditor.py",
+      "source_sha256": "9190704f4900b7512df5492379e3ea99ef2d57b732d5ca22f4986c63784a7600",
+      "use": "unchanged code, renamed module"
+    },
+    "native.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT013/jobs/audit_v1/inputs/TT013/native.py",
+      "source_sha256": "d7f991b47d8bd7f7dd8e0bd5c06a974849348356e981d87727816d2056867f31",
+      "use": "unchanged independent TT013 implementation"
+    },
+    "optimizer.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT013/jobs/audit_v1/inputs/TT013/optimizer.py",
+      "source_sha256": "eb65162d1e67ab5755a41740b0ac021c9c94a8d78dda0cdb6168037bf3174b03",
+      "use": "unchanged independent TT013 implementation"
+    },
+    "optimizer_audit.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT013/jobs/audit_v1/inputs/TT013/source/recipient/inputs/audit_optimizer.py",
+      "source_sha256": "587f7e8632585b064b8abba31ab0d48e0df48156dbe2489abc0b8301a714b45e",
+      "use": "unchanged production reader / independent Prim solver"
+    },
+    "reader.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT013/jobs/audit_v1/inputs/TT013/source/recipient/inputs/reader.py",
+      "source_sha256": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+      "use": "unchanged production reader / independent Prim solver"
+    },
+    "repair.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT013/jobs/audit_v1/inputs/TT013/repair.py",
+      "source_sha256": "12a29a06c525f7d536314ac2f11dc4a17725f7ba860e696ef884bbb85398949f",
+      "use": "unchanged independent TT013 implementation"
+    },
+    "source/native/E015_functional_inheritance/model.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/source/native/E015_functional_inheritance/model.py",
+      "source_sha256": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+      "use": "unchanged published production source"
+    },
+    "source/native/E016_teaching_consistency/model.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/source/native/E016_teaching_consistency/model.py",
+      "source_sha256": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+      "use": "unchanged published production source"
+    },
+    "source/native/common.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/source/native/common.py",
+      "source_sha256": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+      "use": "unchanged published production source"
+    },
+    "source/spacing_dynamics.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/inputs/TT008/source/spacing_dynamics.py",
+      "source_sha256": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+      "use": "unchanged published production source"
+    }
+  }
+}

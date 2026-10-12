@@ -1,0 +1,153 @@
+{
+  "record_type": "theory_lane_initial_review",
+  "version": "0.1",
+  "reviewed_at_utc": "2026-10-08 17:41:55 UTC",
+  "status": "DEVELOPMENT_REVIEW_NOT_A_PREDICTION_FREEZE",
+  "task": "Review the theory-lane materials, Plastic Heredity V5.0, and Where Do Forms Come From? v0.16, then report back.",
+  "review_scope": "Manuscript and theory review, selected methods and provenance checks, and targeted primary-literature checks. No raw-data replication or new simulator experiments.",
+  "sources": [
+    {
+      "path": "theory_lane_start.txt",
+      "sha256": "7039bcbaa472dc32a68d1a1db4430c7ca26fd55b01143e3a89db92e026828e1d",
+      "inspected": "Full charter"
+    },
+    {
+      "path": "adviser_verbal_response.md",
+      "sha256": "c87f9eb354dfd41975bbecdd016e1091d9e5b1feb6b1bfe3c1d52e908bfe8032",
+      "inspected": "Adviser's discussion and eight draft prediction descriptions"
+    },
+    {
+      "path": "reconstructive_dynamics_theory_v0_1.pdf",
+      "sha256": "b6c9456b699eb3f639f625c32c2b7d602d2167137c7b02aceddb3cfc9185a7e8",
+      "inspected": "18-page brief via layout-preserving text extraction"
+    },
+    {
+      "path": "../../../PlasticHeredity/PRE_PRINT_PAPER_DRAFT_V5.0.md",
+      "sha256": "6d82f93bc0ff5f6ff0ff50c14200c70db61c2834f96d462446885035e4178f08",
+      "inspected": "Main arguments, reported results, endpoint definitions and predictor/carrier contracts",
+      "evidence_cutoff": "Core campaigns through 24 August 2026; separately identified released-code reproduction and post-hoc small-assembly update on 7 September 2026. V5.0 retains V4.0 endpoints, analyses and results."
+    },
+    {
+      "path": "../../MANUSCRIPT.md",
+      "sha256": "fa3ea8fc46b9176e26c0df88b7135c2b6e283f22a6202bb4d85ff05b8f76d267",
+      "inspected": "Canonical v0.16 main text",
+      "evidence_cutoff": "8 October 2026 editorial version preserving final v0.14 selection: forms results through E047, selected cellular findings through P30, and P31 launch status only."
+    },
+    {
+      "path": "../../PRE_PRINT_PAPER_DRAFT_V0.16.md",
+      "sha256": "9276d1aad81f56194b3dccfe2b3ced7fbdc3303c60abc0e5a914f349c47f4119",
+      "inspected": "Assembled-source identity check; its canonical main text and selected supporting methods were read separately",
+      "manifest_match": true
+    }
+  ],
+  "additional_local_materials_inspected": [
+    "../../README.md",
+    "../README.md (first 200 lines requested; output partly truncated)",
+    "../START.md (opening section)",
+    "../../METHODS_AND_PROVENANCE.md (selected sections, especially C.21 and C.23)",
+    "../../SUPPLEMENTARY_EVIDENCE.md (targeted search excerpts)",
+    "../../paper_assets/zenodo_source_v0.16.json",
+    "../../reviews/V0.16_REVISION_RECORD.md (targeted excerpts)"
+  ],
+  "artifact_gaps": [
+    "The referenced reconstructive_dynamics_predictions_v0_1.json was not found in the theory lane or the searched experiment tree. Readable draft cards are present in the brief and adviser text.",
+    "The expected output/pdf/where-do-forms-come-from-zenodo-v0.16.pdf is absent from this checkout. The assembled Markdown SHA-256 matches the v0.16 source manifest.",
+    "No byte-for-byte comparison to the original conversation attachments was possible; this review used the local versioned manuscript sources.",
+    "No authoritative programme-wide exposure register was located in the searched forms experiment tree."
+  ],
+  "exposure_record": {
+    "scope": "Lane-local record; does not establish exposure or concealment across the whole programme.",
+    "exposed_as_development_evidence": [
+      "Claims, aggregate results and protocols described in the inspected Plastic Heredity V5.0 text.",
+      "Claims, aggregate results and methods in the inspected Forms v0.16 main text and supporting excerpts, including E041/E046, D162, and selected cellular preparation/timing findings.",
+      "Treat the experiment README overview conservatively as exposed, including summaries beyond the manuscript cutoff in the portion requested. This does not incorporate later results into the v0.16 evidence selection.",
+      "RDT v0.1 equations, candidate mechanisms, counterexamples and all eight readable draft prediction descriptions."
+    ],
+    "directory_searches": "Repository-wide filename searches also revealed other lane, protocol and exposure-ledger names. Their contents were not thereby reviewed.",
+    "inspected_raw_simulation_arrays": false,
+    "inspected_new_E041_robustness_outcomes": false,
+    "qualification": "No dedicated robustness results were opened. The ordinary E041 confirmation and later summaries appearing in the general experiment overview are development exposure.",
+    "prospective_predictions_registered": false,
+    "experiments_started_or_modified": false
+  },
+  "findings": [
+    {
+      "id": "REVIEW-01",
+      "status": "SOURCE_SUPPORTED_DISTINCTION",
+      "finding": "PH F12 counts an ordered break followed by renewed local inheritance; it does not require recovery of ancestral identity. It cannot serve as a monotone hereditary-quality score."
+    },
+    {
+      "id": "REVIEW-02",
+      "status": "REVIEW_ASSESSMENT",
+      "finding": "The strongest RDT target is predictive compression of complete renewal dynamics using declared short probes, with restoration and identity retention measured separately."
+    },
+    {
+      "id": "REVIEW-03",
+      "status": "REVIEW_ASSESSMENT",
+      "finding": "The current operator and stability framework supplies useful conditional mathematics but no fitted, frozen quantitative empirical law. Finite probes require explicit identifiability and extrapolation assumptions."
+    },
+    {
+      "id": "REVIEW-04",
+      "status": "SOURCE_SUPPORTED_BASELINE_REQUIREMENT",
+      "finding": "Existing PH state/network predictors, the Wagner basin-and-sensitivity comparator, and Forms passive reconstruction forecasts are serious baselines. Comparisons must match observations, tuning and resources."
+    },
+    {
+      "id": "REVIEW-05",
+      "status": "ALGEBRAIC_OBSERVATION",
+      "finding": "Under the stated normalized E041 reader and exact arithmetic, a common positive rescaling of weights leaves normalized input unchanged. This observation alone is not a robustness or long-horizon forecast; preservation thresholds and finite precision require separate treatment."
+    },
+    {
+      "id": "REVIEW-06",
+      "status": "ASSUMPTION_CLARIFICATION",
+      "finding": "For the population extension in RDT equation 15, specify whether K is the expected-offspring-normalized transition kernel or impose the factorization assumptions needed to multiply expected offspring number by an ordinary lineage transition."
+    },
+    {
+      "id": "REVIEW-07",
+      "status": "LONGER_TERM_CONJECTURE",
+      "finding": "Inherited adaptability and autonomous maintenance of task-specific reader/writer machinery remain beyond the reported evidence."
+    }
+  ],
+  "primary_literature_checked": [
+    {
+      "url": "https://www.richardawatson.com/_files/ugd/395d71_73b2fb6f638842949320c0dd26ccfd89.pdf",
+      "topic": "Developmental memory, recall and generalization"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11431681/",
+      "topic": "Natural induction; primary-source indexed passages inspected, direct page opening challenged by CAPTCHA"
+    },
+    {
+      "url": "https://doi.org/10.1098/rsfs.2025.0025",
+      "topic": "Natural induction and selection; indexed primary-source passages"
+    },
+    {
+      "url": "https://doi.org/10.1103/7kcl-jshm",
+      "topic": "Error-correction-enhanced evolvability; publication record and primary preprint inspected"
+    },
+    {
+      "url": "https://arxiv.org/html/2303.14448v2",
+      "topic": "Mechanism connecting error correction, neutral mutations and evolvability"
+    },
+    {
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/117175/1/01_06_2017_Semantic_c.pdf",
+      "topic": "Evolving descriptions, copiers and constructors"
+    },
+    {
+      "url": "https://montevil.org/assets/pdf/2015-MM-Organisation-Closure-Constraints.pdf",
+      "topic": "Closure of constraints; indexed primary-source text"
+    },
+    {
+      "url": "https://csc.ucdavis.edu/~cmg/compmech/pubs/cmppss.htm",
+      "topic": "Minimal predictive causal states"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s12064-020-00313-7",
+      "topic": "Information-theoretic individuality; indexed primary-source text"
+    },
+    {
+      "url": "https://doi.org/10.1098/rsfs.2018.0041",
+      "topic": "Semantic information and viability; indexed primary-source text"
+    }
+  ],
+  "recommendation": "Develop one restricted P01/P02 predictor and an untouched P04 intervention-combination test with explicit endpoints and strong baselines. Use P08 when forecasts support decisions; retain P05-P07 as mechanistic and architectural extensions. All proposed tests remain drafts."
+}

@@ -1,0 +1,35 @@
+{
+  "contract": {
+    "analysis": "post_hoc_saved_boundary_diagnosis",
+    "experiment": "E021",
+    "new_simulation": false,
+    "numerical_threads": 1,
+    "source": "E021_damaged_renewal/runs/damage_v1",
+    "units": {
+      "blocks": 32,
+      "founders": 128,
+      "lineages": 512
+    }
+  },
+  "cpu_affinity": [
+    0
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E021_damaged_renewal/analysis/BOUNDARY_DIAGNOSIS.md": "9cd0f374db37382fcadf55890cfdbe5339a8328cb344bbc19fd42d7870e8c307",
+    "E021_damaged_renewal/analysis/diagnose_boundaries.py": "bd1b87db5cfd7f0cc2492ab8edc9b23ae90ebe8c700b190aa4ad70436929920b",
+    "E021_damaged_renewal/runs/damage_v1/COMPLETE.json": "eb4fbe543c2a0a2c5688ca5a529c9ea0315d909546a55f2d98c035a473a0f67e",
+    "E021_damaged_renewal/runs/damage_v1/INDEPENDENT_AUDIT.json": "39d89ce85d2827e98588d95041f974839e82feac06fbe07aaa4fe3a2a5fb43a1",
+    "E021_damaged_renewal/runs/damage_v1/manifest.json": "f9e9e02bd1ea0b51fd8bf4466b425e141218dda96e0267eabe683b75b4440877",
+    "E021_damaged_renewal/runs/damage_v1/summary.json": "08d96c1215fb3d6ed9667eb04ef4621d6ceb166bac62927626e468c0ef6f57e1",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-20T11:07:40.731046+00:00",
+  "status": "RUNNING"
+}

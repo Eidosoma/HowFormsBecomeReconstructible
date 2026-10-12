@@ -1,0 +1,107 @@
+{
+  "version": "0.1",
+  "status": "AUTHORIZED_DEVELOPMENT_APPROXIMATE_ALIGNMENT",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "cases_per_block": [
+    7,
+    11,
+    9,
+    4,
+    4,
+    4,
+    16,
+    9
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "variants": [
+    "incoming",
+    "outgoing",
+    "common_own",
+    "same_unaligned",
+    "opposite_unaligned",
+    "same_aligned",
+    "opposite_aligned",
+    "completion",
+    "erased"
+  ],
+  "enrollment_generation": 14,
+  "enrollment_count": 64,
+  "injury_cells": 24,
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "budgets": [
+    2048
+  ],
+  "primary_budget": 2048,
+  "settling_steps": 1024,
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "transfer_steps": 64,
+  "random_namespace": "P05_approximate_alignment_v0_1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101004,
+  "numpy_version": "2.5.2",
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "benchmark": {
+    "block": 34006,
+    "replicates": 2,
+    "variants": 9,
+    "budget": 2048
+  },
+  "source_run": "../p05_backup_task_swap_v0_1/runs/pilot_v1",
+  "source_complete_sha256": "550734dd4ce1e2528fe73594f4be79932d55ef9651d4284b72fbeeced531bee5",
+  "regimes": [
+    "original",
+    "fresh"
+  ],
+  "original_replicates": [
+    0
+  ],
+  "alignment_audit_complete_sha256": "3aab59b7f27f58eee01048ded3dfc0ba65567b0432d8eb8791ccb0e06322eb33",
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  }
+}

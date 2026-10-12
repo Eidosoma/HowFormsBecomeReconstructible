@@ -1,0 +1,72 @@
+{
+  "antecedents_bound_to_TT012": 11,
+  "bindings": 110,
+  "chronology": [
+    "2026-10-10T18:59:39.840370+00:00",
+    "2026-10-10T19:00:31.199352+00:00",
+    "2026-10-10T19:03:22.738712+00:00",
+    "2026-10-10T19:03:23.178544+00:00",
+    "2026-10-10T19:31:02.788712+00:00"
+  ],
+  "information_boundary": {
+    "boundary": "Algorithmic dependency inspection and exact independent O-only reproduction; not filesystem blinding or source black-box perturbation.",
+    "previously_audited_unchanged_dependencies": [
+      "optimizer.py",
+      "reader.py",
+      "sign_graph.py"
+    ],
+    "primary_preparation_path": "old.packets[:,1] -> checked_repair(O, fixed optimizer options) -> recipient_repair(O, options)",
+    "source_dependency_inspection": {
+      "edge_signs": {
+        "external_names": [
+          "np"
+        ],
+        "numpy_operations": [
+          "roll",
+          "stack"
+        ],
+        "parameters": [
+          "nodes"
+        ]
+      },
+      "imputed_magnitude": {
+        "external_names": [
+          "float",
+          "np"
+        ],
+        "numpy_operations": [
+          "abs",
+          "median"
+        ],
+        "parameters": [
+          "outgoing"
+        ]
+      },
+      "recipient_repair": {
+        "external_names": [
+          "complete",
+          "edge_signs",
+          "imputed_magnitude",
+          "np"
+        ],
+        "numpy_operations": [
+          "isfinite"
+        ],
+        "parameters": [
+          "outgoing",
+          "options"
+        ]
+      }
+    },
+    "source_functions_executed": false,
+    "status": "PASS"
+  },
+  "prior_inputs_verified": 138,
+  "prior_outputs_verified": 28,
+  "reused_optimizer_exhaustive_fixtures": 324,
+  "source_declared_failed_validations": [],
+  "source_functions_executed": false,
+  "source_reuse_bindings": 14,
+  "sources": 100,
+  "status": "PASS"
+}

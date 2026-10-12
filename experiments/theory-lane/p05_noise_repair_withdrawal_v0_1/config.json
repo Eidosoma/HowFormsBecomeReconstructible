@@ -1,0 +1,197 @@
+{
+  "blocks": [
+    81000,
+    81001,
+    81002,
+    81003,
+    81004,
+    81005,
+    81006,
+    81007,
+    81008,
+    81009,
+    81010,
+    81011,
+    81012,
+    81013,
+    81014,
+    81015
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "history_by_block": {
+    "81000": 0,
+    "81001": 1,
+    "81002": 2,
+    "81003": 3,
+    "81004": 0,
+    "81005": 1,
+    "81006": 2,
+    "81007": 3,
+    "81008": 0,
+    "81009": 1,
+    "81010": 2,
+    "81011": 3,
+    "81012": 0,
+    "81013": 1,
+    "81014": 2,
+    "81015": 3
+  },
+  "cases_per_block": 16,
+  "cohort_size": 256,
+  "development_config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  },
+  "completion": {
+    "support": "every exactly zero outgoing edge on the fixed toroidal lattice",
+    "magnitude": "median absolute nonzero outgoing weight; zero if none",
+    "preserve": "all nonzero outgoing edges byte for byte",
+    "shuffle": "fixed permutation of inferred signs over zero edges; same signs counts, magnitude and support"
+  },
+  "tolerance": 0.0001,
+  "numpy_version": "2.5.2",
+  "injury_cells": 24,
+  "version": "0.1",
+  "status": "AUTHORIZED_ONE_TIME_REPAIR_UNDER_INDEPENDENT_NOISE",
+  "start_generation": 15,
+  "terminal_generation": 32,
+  "generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "variants": [
+    "baseline",
+    "one_time",
+    "repeated"
+  ],
+  "cycle": {
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "write_steps": 128
+  },
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "budgets": [
+    2048
+  ],
+  "settling_steps": 1024,
+  "continuation_namespace": "P05_serial_repair_v0_1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101103,
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "scientific_read_contexts": 13824,
+  "scheduled_optimizer_calls": 256,
+  "native_audit_generations": [
+    15,
+    32
+  ],
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "correlations": [
+    0.0
+  ],
+  "innovation_namespace": "P05_cue_noise_repair_v0_1",
+  "prior_run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_cue_noise_repair_v0_1/runs/pilot_v1",
+  "prior_complete_sha256": "0faf6b1d9b884dce790c7982f368ba22e6001a77466b88a5aba64304edb717a3",
+  "prior_manifest_sha256": "3ba0c4311c37bafd3c0728fef5bf141f03b57881503d5f02dc161fce57a30e8c",
+  "primary_contrast": "repeated_minus_one_time",
+  "contrasts": {
+    "repeated_minus_one_time": [
+      0,
+      -1,
+      1
+    ],
+    "one_time_minus_baseline": [
+      -1,
+      1,
+      0
+    ],
+    "repeated_minus_baseline": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "simulated_read_contexts": 4608,
+  "new_continuation_contexts": 4352,
+  "first_step_replay_contexts": 256,
+  "reused_control_contexts": 9216,
+  "stored_control_optimizer_calls": 4608,
+  "native_audit_cases": [
+    0,
+    14
+  ],
+  "comparison_pairs": {
+    "repeated_minus_one_time": [
+      2,
+      1
+    ],
+    "one_time_minus_baseline": [
+      1,
+      0
+    ],
+    "repeated_minus_baseline": [
+      2,
+      0
+    ]
+  },
+  "control_source_indices": [
+    4,
+    5
+  ],
+  "control_variants": [
+    "noise_0_baseline",
+    "noise_0_repeated"
+  ],
+  "noise_regimes": [
+    "independent"
+  ]
+}

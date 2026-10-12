@@ -1,0 +1,134 @@
+{
+  "status": "READY_TO_LAUNCH",
+  "created_at_utc": "2026-10-08T21:00:23.478820+00:00",
+  "config": {
+    "version": "0.1",
+    "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+    "created_at_utc": "2026-10-08T20:45:02.621854+00:00",
+    "source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+    "native_manifest_sha256": "023ff8a4de1f538bf2735749d5b367c0bc1ffad5b2acc9481d6b981fd8e507e7",
+    "reference_sources_sha256": {
+      "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+      "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+      "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+      "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+      "E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+      "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82"
+    },
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "pairing": "paired",
+    "source_condition_indices": [
+      0,
+      1
+    ],
+    "writers": [
+      "exact_rewrite",
+      "tolerance_rewrite",
+      "sign_restored"
+    ],
+    "branch_generation": 3,
+    "terminal_generation": 32,
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 32,
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "write_steps": 128
+    },
+    "tolerance": 0.0001,
+    "primary_endpoint": "h32 scattered strict both-cue success",
+    "primary_contrast": [
+      "sign_restored",
+      "tolerance_rewrite"
+    ],
+    "secondary_contrasts": [
+      [
+        "exact_rewrite",
+        "tolerance_rewrite"
+      ],
+      [
+        "sign_restored",
+        "exact_rewrite"
+      ]
+    ],
+    "injuries": [
+      "intact",
+      "scattered",
+      "square"
+    ],
+    "block_inference": true,
+    "confirmatory": false,
+    "numerical_threads": 1,
+    "workers": 1,
+    "forecast_ceiling_cpu_seconds": 3600,
+    "long_run_policy": "detached and unpolled; analyze automatically at completion",
+    "benchmark": {
+      "block": 34000,
+      "generation": 4,
+      "writers": [
+        "exact_rewrite",
+        "tolerance_rewrite",
+        "exact_rewrite"
+      ],
+      "new_sign_restored_dynamics": false
+    },
+    "native_numpy_version": "2.5.2"
+  },
+  "protocol_sha256": "c26d21bd6aa51dda85f31c056f90723be85618f145d93eb25a1fa075f07ca39a",
+  "code_sha256": {
+    "EXPOSURE_AND_DECISIONS.json": "9f189544e9005534a5d01b77883f0549d2a016f20a9aa8773f7ea92bfb950dd8",
+    "PROTOCOL.md": "c26d21bd6aa51dda85f31c056f90723be85618f145d93eb25a1fa075f07ca39a",
+    "README.md": "3c9a9e398ad61f98b5a717a7d8fd13328af232137baceabea699ce14c326ef16",
+    "analyze.py": "edb7c1d09ad8af3a1fd1e4c7307ee3315ee67820bf0dfef0d708fbf574d8739e",
+    "benchmark/COMPLETE.json": "e93fa8eda174c7e343ba637b08f36a4952a01da9b57b390f700b332c5668196f",
+    "benchmark/START.json": "a3c0b80852787b78818fcefd51ff8f3b56208b26e8309557846a844e6a596fdb",
+    "benchmark.log": "e93fa8eda174c7e343ba637b08f36a4952a01da9b57b390f700b332c5668196f",
+    "benchmark.py": "0e961dbd97f3431bfe21c2fcdc856d116f027e37318a4d0ef3580cbae2af4b82",
+    "config.json": "ca19c4d8730f0379669112bc641eedefadd3b04f7b9491e68c3198dede75d8eb",
+    "dynamics.py": "609824307891622fdf73d563aef692ffd47ed26b7b374637d0b7ee7514af85e6",
+    "evidence.py": "76f2059ce2bd5f6a3cbcdf5f82ef5feb719a6a6d9b5a76b7d00e8f0ddb6be53a",
+    "launch.py": "6b589c77ba9bc28b98d6283bfa2f16919bccf2f8b872764fd054617274dd61d6",
+    "reference_sources/E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "reference_sources/E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "reference_sources/E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+    "reference_sources/E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "reference_sources/SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "reference_sources/common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run.py": "d714b5afd56c52a5ba2ee66c79779610b7fd1cf3e5c6ed86661b82aae6c6b838",
+    "test_analysis.py": "0a89dbd82db838b7824ca988979deb051015b93f86a8c7eb1c1a7469bf0bcc21",
+    "test_dynamics.py": "2ccdda500159c87af22cbd9e39fcc23ead3481884639a85cdf07d5b44a109d6a",
+    "tests.log": "1b2656f5fc4bff75b8cd52aba0844fe99ec5f4f66ebf1c6f920dd4c165b9649e",
+    "verify.py": "11d604dea60160b4363a76ed39c9a16242a5fe1df3386c468973b6617573a5b6"
+  },
+  "raw_inputs_sha256": "40ad95d31fd66bd1f78d431864940aa0e8503dca4343e3695a2f9105425e4828",
+  "forecast_seconds": 3227.979341559112,
+  "process_count": 1,
+  "numerical_threads": 1,
+  "polling": "NONE_AUTOMATIC",
+  "endpoint_analysis": "Automatic after all eight blocks pass replay; failures stop the worker and retain evidence.",
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1"
+}

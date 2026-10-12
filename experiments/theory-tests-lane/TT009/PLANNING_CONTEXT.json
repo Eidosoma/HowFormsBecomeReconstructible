@@ -1,0 +1,66 @@
+{
+  "TT008_closeout_sha256": "eb03fa4b6a516e1be250984ceb8e6e543180b4e7235935c8d421646d57995ef7",
+  "additional_metadata": [
+    {
+      "path": "theory-lane/p03_fixed_injury_recovery_v0_1/benchmark/COMPLETE.json",
+      "read_scope": "Status and key names only.",
+      "sha256": "8268ee7f4294991c800a1ab0fd5971417b9f4570534a2045330183690f9579f2"
+    },
+    {
+      "path": "theory-lane/p03_fixed_injury_recovery_v0_1/prepared/COMPLETE.json",
+      "read_scope": "Status and key names only.",
+      "sha256": "e6436654710da48157e12743e2635297794877f88eaf9879da5700f863b9c563"
+    },
+    {
+      "path": "theory-lane/p03_injury_transfer_v0_1/benchmark/COMPLETE.json",
+      "read_scope": "Status and key names only.",
+      "sha256": "efba42c8c134bd6e5e24ae774842668b74766014064f62f62b14ca8ee186b7db"
+    },
+    {
+      "path": "theory-lane/p03_injury_transfer_v0_1/prepared/COMPLETE.json",
+      "read_scope": "Status and key names only.",
+      "sha256": "1dc87dd4083d978da6b8b7290dca71e4899683ea5a7637d7fca699898331a1aa"
+    }
+  ],
+  "aggregate_exposure": {
+    "fixed_injury_rewrite_gain_percentage_points": 8.02,
+    "source": "Introduction of P03 injury-transfer protocol; not independently verified here."
+  },
+  "audit_implementation_created": false,
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "classification": "PROPOSED_INDEPENDENT_IMPLEMENTATION_AUDIT_OF_EXPOSED_P03_DEVELOPMENT",
+  "completion_metadata_inspected": true,
+  "injury_transfer_result_reviewed": false,
+  "job_launched": false,
+  "planned_new_native_outcomes": false,
+  "raw_P03_outcomes_read": false,
+  "recommended_action": "Independent full-trajectory, provenance and scoring audit of the two completed P03 development studies before designing a fresh causal confirmation.",
+  "recorded_utc": "2026-10-10T12:41:19.622653+00:00",
+  "source_reports_read": false,
+  "sources_read": {
+    "../theory-lane/p03_fixed_injury_recovery_v0_1/PROTOCOL.md": {
+      "read_scope": "Protocol read, including enrollment, endpoints, audit scope and execution rules.",
+      "sha256": "6b373ac44601f536022a9d3a6004da31d9831d413651cf01635b89d6dc79dd8b"
+    },
+    "../theory-lane/p03_fixed_injury_recovery_v0_1/runs/pilot_v1_resume1/COMPLETE.json": {
+      "read_scope": "Completion metadata parsed for status, runtime and key names; scientific verdict and outcomes not displayed.",
+      "sha256": "abbce4c35c397fa96ce18fe830c15549ce794f25e7a5129edd5badf96286f416"
+    },
+    "../theory-lane/p03_injury_transfer_v0_1/PROTOCOL.md": {
+      "read_scope": "Protocol read; its introduction exposes the earlier fixed-injury aggregate rewrite gain of 8.02 percentage points.",
+      "sha256": "3479a4c8f84d22f0e273898c565a8102a391099b0bfdee662b9d00150459884e"
+    },
+    "../theory-lane/p03_injury_transfer_v0_1/prediction_manifest.json": {
+      "read_scope": "Prediction/scope manifest read; status field is DRAFT_NOT_REGISTERED_DEVELOPMENT.",
+      "sha256": "03a2c50a3d259fbfeb9e117c3ff8d1adad46a4e01c74944203dbebbcaa7de1b1"
+    },
+    "../theory-lane/p03_injury_transfer_v0_1/runs/pilot_v1/COMPLETE.json": {
+      "read_scope": "Completion metadata parsed for status, runtime and key names; scientific verdict and outcomes not displayed.",
+      "sha256": "a40528fe927e0b8e1fa844794d581e7df8a50cad92ce181b46375f8762871c41"
+    }
+  },
+  "status": "PROPOSED_NOT_REGISTERED_NOT_LAUNCHED",
+  "study": "TT009",
+  "trigger": "User asked what is next after completed TT008."
+}

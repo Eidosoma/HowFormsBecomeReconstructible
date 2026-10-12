@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_AUDIT",
+  "claims": [
+    {
+      "id": "sign_conjugacy",
+      "type": "EXACT_OR_KNOWN",
+      "claim": "Port-preserving node sign switching, with corresponding record, birth and noise transformations, conjugates the native reader.",
+      "limitations": [
+        "Per-read marginal equivalence under centered sign-invariant noise; untransformed shared RNG coupling is not pathwise equivalence.",
+        "No convergence or repair guarantee."
+      ],
+      "derivation": "THEORY.md",
+      "check": "results_v1/SYMMETRY.json"
+    },
+    {
+      "id": "alignment_condition",
+      "type": "EXACT_OR_KNOWN",
+      "claim": "Exact surviving-overlap alignment exists iff all ratio cycles are positive and all pinned-node path constraints agree.",
+      "derivation": "THEORY.md",
+      "check": "results_v1/VERIFICATION.json"
+    },
+    {
+      "id": "hybrid_ambiguity",
+      "type": "EXACT_OR_KNOWN",
+      "claim": "Free alignment bits are identifiable for task marginals up to whole-hybrid port-preserving switching; remaining ambiguity dimension is rank([M,T])-rank(M).",
+      "derivation": "THEORY.md",
+      "check": "test_alignment.py",
+      "saved_case_application_count": 0
+    },
+    {
+      "id": "panel_failure",
+      "type": "VERIFIED_DEVELOPMENT_OBSERVATION",
+      "claim": "All 128 fixed donor pairs fail exact cycle consistency before pin constraints.",
+      "population_generalization": false,
+      "check": "results_v1/VERIFICATION.json"
+    },
+    {
+      "id": "fallback_location",
+      "type": "POST_RESULT_DEVELOPMENT_DIAGNOSTIC",
+      "claim": "Every retained contradictory cycle touches a fallback edge; all joint-contrast overlaps are cycle-consistent, but only 32 retain port-preserving feasibility.",
+      "causal_performance_claim": false,
+      "check": "results_v1/FALLBACK_DIAGNOSTIC.json"
+    },
+    {
+      "id": "approximate_repair",
+      "type": "UNTESTED_NEXT_QUESTION",
+      "claim": "A conventional approximate repair rule might make donor grafts useful despite exact obstructions.",
+      "predicted_effect": null,
+      "new_performance_test_started": false
+    }
+  ],
+  "rdt_confirmation": false
+}

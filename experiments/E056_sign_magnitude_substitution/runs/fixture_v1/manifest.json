@@ -1,0 +1,92 @@
+{
+  "contract": {
+    "arms": [
+      "sham",
+      "pulse",
+      "restore_signs",
+      "restore_magnitudes",
+      "erased"
+    ],
+    "birth_sd": 0.05,
+    "blocks": [
+      900041
+    ],
+    "bootstrap_samples": 10000,
+    "cohort_reused": true,
+    "cue_birth_correlation": 1.0,
+    "cue_noise_correlation": 1.0,
+    "dt": 0.2,
+    "dtype": "float64",
+    "experiment": "E056",
+    "histories": [
+      "acquired",
+      "paired_rewrite",
+      "independent_rewrite"
+    ],
+    "injuries": [
+      "intact",
+      "scattered",
+      "square"
+    ],
+    "margin": 0.25,
+    "mode": "fixture",
+    "noise": 0.02,
+    "normalization_floor": 0.0,
+    "observe_steps": 4,
+    "predecessor_evidence": {
+      "E055_stress_capture_recovery/analysis/closeout_v1.json": "37070b9eb2a592336791636268c67f0e1f151df6ea6d99687eb69ee6c633e915"
+    },
+    "primary_confidence": 0.99,
+    "primary_family_size": 5,
+    "primary_history": "paired_rewrite",
+    "primary_injury": "scattered",
+    "primary_time": "early",
+    "read_steps": 24,
+    "recipients": 2,
+    "settling_steps": 12,
+    "times": [
+      "early",
+      "late"
+    ],
+    "workers": 1
+  },
+  "cpu_affinity": [
+    0
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E054_record_interventions/audit_model.py": "a4b50c8acf4f29d4fff1e395ef7cc4f3de6f6bb5951128cd77374639b0d07018",
+    "E054_record_interventions/model.py": "e9811fa68ccf132450a375d6ead7f274f5072bb229eaf1b83b8be5d81e20caed",
+    "E054_record_interventions/plan.py": "882f44110c13f0a0c734990c6584b06869a23068e507008fe649e43f36895480",
+    "E056_sign_magnitude_substitution/PROTOCOL.md": "7c16743db1b059a18d0a707794d0dbd40c85439192e79bcd1a44f52ddcbfa02e",
+    "E056_sign_magnitude_substitution/SOURCE_DATA.json": "3a3570227ae711c43b3f6eac93ac68e341cbe45016594c39266396f3969df1f6",
+    "E056_sign_magnitude_substitution/analysis/prepare.py": "59d2c092b4b8c8b62c9c3a13e41d2a94341b084573b35c3ec96e386fa224ec59",
+    "E056_sign_magnitude_substitution/audit.py": "f7dc0c9e432a8c86267132f8589552fac7a22245331f38fc5db3daf14d2750da",
+    "E056_sign_magnitude_substitution/audit_model.py": "83a3ec4bcb9b32384ef54336230db9b8df31ef02d55a9ed03f74e4322dd625d2",
+    "E056_sign_magnitude_substitution/data.py": "10bdaf544faa043f6c29feb995893976cab55503e4a072623117f2fcac533c5c",
+    "E056_sign_magnitude_substitution/inference.py": "18467fb98d58a83ffea7a6526bfbe4d0ada222c10f5324d4f85b95ef34694569",
+    "E056_sign_magnitude_substitution/model.py": "225b2ca3d093d8a21711559fbafc5d3fb2ab7d34f11c5805379b516ab8a89f78",
+    "E056_sign_magnitude_substitution/plan.py": "dc74e43d613da3e97a472cbf92a3eb4ec91046c30d192e2feac893d05da09129",
+    "E056_sign_magnitude_substitution/plot.py": "1f4b06ba5d3e7eb18f18a872a78794962ac0805d82138c12348e22015e1d7875",
+    "E056_sign_magnitude_substitution/run.py": "89ab8bab46ead55febe390268d8f830d4f4d53b27a2fb0475a65694daba7bf73",
+    "E056_sign_magnitude_substitution/tests.py": "d077da23aaffbf59528d6e12ba37bda663070df9606f7f7862193db82c8d4fc0",
+    "E056_sign_magnitude_substitution/workflow.py": "af499702ba49d93288b4d427bfdd0a4ce4a1eced579dc1e938af9e0ca6890918",
+    "RUN_POLICY.md": "a53765a80aa71e852545302ae1e781f387828bf364a72252d747d0faf0820f83",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-10-11T21:50:23.242425+00:00",
+  "status": "RUNNING"
+}

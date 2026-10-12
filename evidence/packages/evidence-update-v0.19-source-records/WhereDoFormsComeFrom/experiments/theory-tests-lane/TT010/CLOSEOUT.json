@@ -1,0 +1,91 @@
+{
+  "automatic_polling": false,
+  "classification": "INDEPENDENT_IMPLEMENTATION_AUDIT_OF_EXPOSED_P04_DEVELOPMENT",
+  "closeout_code_sha256": "520f5d96972bf570470d54b52678f58bf8058d76881c193896e484d9480b8345",
+  "completion_sha256": "5a9bfbf26da7733a9fcf04b527f583b82153ce1ba76bab4216b72206f1c92445",
+  "completion_utc": "2026-10-10T16:09:28.054066+00:00",
+  "counts": {
+    "endpoint_scores": 12288,
+    "experimental": 12288,
+    "known": 64
+  },
+  "frozen_inputs_verified": 109,
+  "independent_forecast_brier_losses": {
+    "additive": 0.19281450991586876,
+    "incoming_reference": 0.1746384639624854,
+    "outgoing_reference": 0.18786574143684798
+  },
+  "independent_fresh_effects": {
+    "hybrid_minus_incoming": {
+      "by_block": {
+        "34000": -0.0625,
+        "34001": -0.011363636363636381,
+        "34002": -0.02777777777777779,
+        "34003": 0.15625,
+        "34004": 0.0,
+        "34005": 0.234375,
+        "34006": -0.07421875,
+        "34007": -0.048611111111111105
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        -0.043412642045454544,
+        0.10070122612847161
+      ],
+      "mean": 0.02076921559343434
+    },
+    "hybrid_minus_outgoing": {
+      "by_block": {
+        "34000": 0.0357142857142857,
+        "34001": 0.039772727272727265,
+        "34002": 0.027777777777777735,
+        "34003": 0.390625,
+        "34004": 0.0,
+        "34005": 0.078125,
+        "34006": -0.01171875,
+        "34007": 0.0069444444444444475
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        0.011046922912157288,
+        0.16769325509559885
+      ],
+      "mean": 0.0709050606511544
+    },
+    "hybrid_minus_scrambled": {
+      "by_block": {
+        "34000": 0.19642857142857142,
+        "34001": 0.06818181818181818,
+        "34002": 0.3472222222222222,
+        "34003": 0.71875,
+        "34004": 0.0,
+        "34005": 0.1875,
+        "34006": 0.25,
+        "34007": 0.1388888888888889
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        0.11529356060606061,
+        0.3991585779671708
+      ],
+      "mean": 0.23837143759018758
+    }
+  },
+  "independent_fresh_rates": {
+    "erased": 0.0,
+    "erasure_only": 0.0892476663961039,
+    "hybrid": 0.29634232954545453,
+    "incoming": 0.2755731139520202,
+    "outgoing": 0.22543726889430016,
+    "scrambled_hybrid": 0.05797089195526695
+  },
+  "job_sha256": "c2c63b3bddeff163ae01fea05750745a5a129d40e350673b013a17c6cac2c446",
+  "maximum_scalar_margin_error": 0.0,
+  "native_array_receipts_verified": 80,
+  "new_scientific_cohort": false,
+  "outputs_verified": 25,
+  "recorded_utc": "2026-10-10T16:14:37.926710+00:00",
+  "requested_status_check": true,
+  "scalar_endpoint_scores_checked": 12288,
+  "scientific_verdict": "Hybrid joint-benefit point prediction passes; backup-sign secondary point prediction passes; forecast accuracy remains continuous.",
+  "seconds": 3370.2451925971545,
+  "status": "PASS",
+  "successor_launched": false
+}

@@ -1,0 +1,57 @@
+{
+  "automatic_successor_started": false,
+  "code_sha256": "59d2c092b4b8c8b62c9c3a13e41d2a94341b084573b35c3ec96e386fa224ec59",
+  "controls_pass": true,
+  "evidence_sha256": {
+    "E056_sign_magnitude_substitution/analysis/tests_v1.log": "df0b55110cab13d2b10d5b87f0c282f0dedbab23e5129ae44b3f598c8b7b4d2d",
+    "E056_sign_magnitude_substitution/figures/benchmark_v1/provenance.json": "5d1d5c1dc21ed89e18f7399ce4897fd9f10c0a0e04c9846622aa682ff34ba7bb",
+    "E056_sign_magnitude_substitution/figures/fixture_v1/provenance.json": "fafac4395487b924ad784c55860de4e75e5151baf5c9fb742f05a798dd888200",
+    "E056_sign_magnitude_substitution/figures/substitution_v1/provenance.json": "4e21339ed9800a566acb3e5eddc346960cd3135fa51c43508f4e66e3d22f8dce",
+    "E056_sign_magnitude_substitution/jobs/benchmark_v1/status.json": "60b4bbe835d33628ee4467434c727e6e44eded89624f8a4b14abcbbafb4b03bf",
+    "E056_sign_magnitude_substitution/jobs/fixture_v1/status.json": "8decafa5fecd486f7293f5a836ceede085c548cfd0dc2d9fb465f2d0bac052f2",
+    "E056_sign_magnitude_substitution/jobs/substitution_v1/status.json": "6be70b7690ae88bf962dacb361f8c1c07eba94df5f0f9aa4c4f61a6c2acd3811",
+    "E056_sign_magnitude_substitution/runs/benchmark_v1/COMPLETE.json": "685a9a023ef94c9ea81ecacf80b7123c5a75cef50ad4dfbf5477b32edc6b5d7e",
+    "E056_sign_magnitude_substitution/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "fcddafaf300b3f923f32298322e886efdb191ee43ca7087c14c0850d078d168f",
+    "E056_sign_magnitude_substitution/runs/benchmark_v1/summary.json": "2cd131062cc2accf4a5306b0c5d35609990f73a783e95c736aaa11998af28d3c",
+    "E056_sign_magnitude_substitution/runs/fixture_v1/COMPLETE.json": "d59d28007bafcf24a793f774f784f57929629bdfb752b82ab3c266dcc3db35e1",
+    "E056_sign_magnitude_substitution/runs/fixture_v1/INDEPENDENT_AUDIT.json": "5a33332ef0e2bf16f94828e5612bcc80b86a029e8f57b5244a0b57fe07b9f796",
+    "E056_sign_magnitude_substitution/runs/fixture_v1/summary.json": "b0d246bd6985d25c348c058aba5038ec8b61ff24bcea260a1df76a6816422855",
+    "E056_sign_magnitude_substitution/runs/substitution_v1/COMPLETE.json": "c806956cbca585d8f33cfe289c8e29021fa1916ee08b8b87b09d61aaab91e771",
+    "E056_sign_magnitude_substitution/runs/substitution_v1/INDEPENDENT_AUDIT.json": "6fa096458bf35d4a18e65373165ae4aed56021c6fd361aad30662e13abd9d4a1",
+    "E056_sign_magnitude_substitution/runs/substitution_v1/summary.json": "c28159e3f41320fb8584d39055ab04fa857b16d400c0bc242f515e3efacdd651"
+  },
+  "figure_inspected": true,
+  "predecessor_evidence": {
+    "E055_stress_capture_recovery/analysis/closeout_v1.json": "37070b9eb2a592336791636268c67f0e1f151df6ea6d99687eb69ee6c633e915"
+  },
+  "primary_effects": {
+    "interaction": "UNRESOLVED",
+    "magnitude_on_pulse_signs": "POSITIVE_EFFECT",
+    "magnitude_on_sham_signs": "POSITIVE_EFFECT",
+    "sign_on_pulse_magnitudes": "UNRESOLVED",
+    "sign_on_sham_magnitudes": "UNRESOLVED"
+  },
+  "runs": {
+    "benchmark_v1": {
+      "outputs_verified": 35,
+      "status": "TECHNICAL_ONLY",
+      "summaries_checked": 1506,
+      "terminal_cue_observations": 720
+    },
+    "fixture_v1": {
+      "outputs_verified": 35,
+      "status": "TECHNICAL_ONLY",
+      "summaries_checked": 1506,
+      "terminal_cue_observations": 1440
+    },
+    "substitution_v1": {
+      "outputs_verified": 221,
+      "status": "MECHANISTIC_FOLLOWUP",
+      "summaries_checked": 1506,
+      "terminal_cue_observations": 92160
+    }
+  },
+  "scientific_retained_bytes": 502032503,
+  "status": "PASS",
+  "utc": "2026-10-12T11:11:24.421658+00:00"
+}

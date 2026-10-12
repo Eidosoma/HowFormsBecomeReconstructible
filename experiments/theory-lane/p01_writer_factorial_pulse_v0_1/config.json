@@ -1,0 +1,153 @@
+{
+  "version": "0.1",
+  "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T22:06:45.400037+00:00",
+  "source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+  "native_manifest_sha256": "023ff8a4de1f538bf2735749d5b367c0bc1ffad5b2acc9481d6b981fd8e507e7",
+  "reference_sources_sha256": {
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82"
+  },
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "pairing": "paired",
+  "source_condition_indices": [
+    0,
+    1
+  ],
+  "writers": [
+    "exact_rewrite",
+    "tolerance_rewrite",
+    "sign_restored",
+    "magnitude_restored",
+    "single_tolerance_rewrite"
+  ],
+  "branch_generation": 3,
+  "terminal_generation": 32,
+  "config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "cycle": {
+    "generations": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "write_steps": 128
+  },
+  "tolerance": 0.0001,
+  "primary_endpoint": "h32 scattered strict both-cue success",
+  "injuries": [
+    "intact",
+    "scattered",
+    "square"
+  ],
+  "block_inference": true,
+  "confirmatory": false,
+  "numerical_threads": 1,
+  "workers": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "long_run_policy": "detached and unpolled; analyze automatically at completion",
+  "native_numpy_version": "2.5.2",
+  "prior_run": "../p01_native_writer_continuation_v0_1/runs/pilot_v1",
+  "prior_complete_sha256": "951e555afd2b1beafa56d9943b665a18d7af1f479eb35769cc8f9e10ad000483",
+  "simulated_writers": [
+    "exact_rewrite",
+    "magnitude_restored",
+    "single_tolerance_rewrite"
+  ],
+  "schedules": {
+    "exact_rewrite": {
+      "initial": "exact_rewrite",
+      "later": "exact_rewrite"
+    },
+    "magnitude_restored": {
+      "initial": "magnitude_restored",
+      "later": "magnitude_restored"
+    },
+    "single_tolerance_rewrite": {
+      "initial": "tolerance_rewrite",
+      "later": "exact_rewrite"
+    }
+  },
+  "zero_tolerance_sign": "Use the original edge sign when T==0; magnitude-restored policy retains original support.",
+  "primary_contrasts": [
+    [
+      "magnitude_restored",
+      "tolerance_rewrite"
+    ],
+    [
+      "single_tolerance_rewrite",
+      "tolerance_rewrite"
+    ]
+  ],
+  "secondary_contrasts": [
+    [
+      "magnitude_restored",
+      "sign_restored"
+    ],
+    [
+      "exact_rewrite",
+      "magnitude_restored"
+    ],
+    [
+      "single_tolerance_rewrite",
+      "exact_rewrite"
+    ],
+    [
+      "exact_rewrite",
+      "tolerance_rewrite"
+    ],
+    [
+      "sign_restored",
+      "tolerance_rewrite"
+    ]
+  ],
+  "factorial_coefficients": {
+    "exact_rewrite": 1,
+    "magnitude_restored": -1,
+    "sign_restored": -1,
+    "tolerance_rewrite": 1
+  },
+  "provenance": {
+    "exact_rewrite": "new exact replay",
+    "tolerance_rewrite": "reused matched prior pilot",
+    "sign_restored": "reused matched prior pilot",
+    "magnitude_restored": "new intervention",
+    "single_tolerance_rewrite": "new intervention",
+    "erased": "new replay; matches prior erased"
+  },
+  "benchmark": {
+    "block": 34000,
+    "generation": 4,
+    "writers": [
+      "exact_rewrite",
+      "tolerance_rewrite",
+      "sign_restored"
+    ],
+    "new_intervention_dynamics": false
+  },
+  "derived_dynamics_sha256": "609824307891622fdf73d563aef692ffd47ed26b7b374637d0b7ee7514af85e6"
+}

@@ -1,0 +1,6293 @@
+{
+  "arms": [
+    "own",
+    "foreign",
+    "shuffled",
+    "erased",
+    "untrained",
+    "communication_off",
+    "source_cut"
+  ],
+  "blocks": [
+    900017
+  ],
+  "cfg": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "conditions": [
+    "baseline",
+    "extended",
+    "staged"
+  ],
+  "contrasts": {
+    "consistent": {
+      "extended_minus_baseline": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "scattered": {
+            "block_means": [
+              0.03125
+            ],
+            "ci95": [
+              0.03125,
+              0.03125
+            ],
+            "mean": 0.03125
+          },
+          "square": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "scattered": {
+            "block_means": [
+              0.0625
+            ],
+            "ci95": [
+              0.0625,
+              0.0625
+            ],
+            "mean": 0.0625
+          },
+          "square": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              -0.000686660571153519
+            ],
+            "ci95": [
+              -0.000686660571153519,
+              -0.000686660571153519
+            ],
+            "mean": -0.000686660571153519
+          },
+          "scattered": {
+            "block_means": [
+              0.046367975972319245
+            ],
+            "ci95": [
+              0.046367975972319245,
+              0.046367975972319245
+            ],
+            "mean": 0.046367975972319245
+          },
+          "square": {
+            "block_means": [
+              0.0038829699995743816
+            ],
+            "ci95": [
+              0.0038829699995743816,
+              0.0038829699995743816
+            ],
+            "mean": 0.0038829699995743816
+          }
+        }
+      },
+      "staged_minus_baseline": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          },
+          "scattered": {
+            "block_means": [
+              0.3125
+            ],
+            "ci95": [
+              0.3125,
+              0.3125
+            ],
+            "mean": 0.3125
+          },
+          "square": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          },
+          "scattered": {
+            "block_means": [
+              0.5625
+            ],
+            "ci95": [
+              0.5625,
+              0.5625
+            ],
+            "mean": 0.5625
+          },
+          "square": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              0.6562345612292368
+            ],
+            "ci95": [
+              0.6562345612292368,
+              0.6562345612292368
+            ],
+            "mean": 0.6562345612292368
+          },
+          "scattered": {
+            "block_means": [
+              0.4708740788612105
+            ],
+            "ci95": [
+              0.4708740788612105,
+              0.4708740788612105
+            ],
+            "mean": 0.4708740788612105
+          },
+          "square": {
+            "block_means": [
+              0.6436524142596475
+            ],
+            "ci95": [
+              0.6436524142596475,
+              0.6436524142596475
+            ],
+            "mean": 0.6436524142596475
+          }
+        }
+      },
+      "staged_minus_extended": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          },
+          "scattered": {
+            "block_means": [
+              0.28125
+            ],
+            "ci95": [
+              0.28125,
+              0.28125
+            ],
+            "mean": 0.28125
+          },
+          "square": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          },
+          "scattered": {
+            "block_means": [
+              0.5
+            ],
+            "ci95": [
+              0.5,
+              0.5
+            ],
+            "mean": 0.5
+          },
+          "square": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              0.6569212218003904
+            ],
+            "ci95": [
+              0.6569212218003904,
+              0.6569212218003904
+            ],
+            "mean": 0.6569212218003904
+          },
+          "scattered": {
+            "block_means": [
+              0.42450610288889123
+            ],
+            "ci95": [
+              0.42450610288889123,
+              0.42450610288889123
+            ],
+            "mean": 0.42450610288889123
+          },
+          "square": {
+            "block_means": [
+              0.6397694442600731
+            ],
+            "ci95": [
+              0.6397694442600731,
+              0.6397694442600731
+            ],
+            "mean": 0.6397694442600731
+          }
+        }
+      }
+    },
+    "engineered": {
+      "extended_minus_baseline": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "scattered": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "square": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "scattered": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "square": {
+            "block_means": [
+              0.0
+            ],
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              -0.0016504379204578257
+            ],
+            "ci95": [
+              -0.0016504379204578257,
+              -0.0016504379204578257
+            ],
+            "mean": -0.0016504379204578257
+          },
+          "scattered": {
+            "block_means": [
+              0.04040383808194614
+            ],
+            "ci95": [
+              0.04040383808194614,
+              0.04040383808194614
+            ],
+            "mean": 0.04040383808194614
+          },
+          "square": {
+            "block_means": [
+              -0.0019217545689761417
+            ],
+            "ci95": [
+              -0.0019217545689761417,
+              -0.0019217545689761417
+            ],
+            "mean": -0.0019217545689761417
+          }
+        }
+      },
+      "staged_minus_baseline": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.3125
+            ],
+            "ci95": [
+              0.3125,
+              0.3125
+            ],
+            "mean": 0.3125
+          },
+          "scattered": {
+            "block_means": [
+              0.375
+            ],
+            "ci95": [
+              0.375,
+              0.375
+            ],
+            "mean": 0.375
+          },
+          "square": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.625
+            ],
+            "ci95": [
+              0.625,
+              0.625
+            ],
+            "mean": 0.625
+          },
+          "scattered": {
+            "block_means": [
+              0.75
+            ],
+            "ci95": [
+              0.75,
+              0.75
+            ],
+            "mean": 0.75
+          },
+          "square": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              0.6264147265054554
+            ],
+            "ci95": [
+              0.6264147265054554,
+              0.6264147265054554
+            ],
+            "mean": 0.6264147265054554
+          },
+          "scattered": {
+            "block_means": [
+              0.643703136081663
+            ],
+            "ci95": [
+              0.643703136081663,
+              0.643703136081663
+            ],
+            "mean": 0.643703136081663
+          },
+          "square": {
+            "block_means": [
+              0.6693989859683787
+            ],
+            "ci95": [
+              0.6693989859683787,
+              0.6693989859683787
+            ],
+            "mean": 0.6693989859683787
+          }
+        }
+      },
+      "staged_minus_extended": {
+        "accuracy": {
+          "intact": {
+            "block_means": [
+              0.3125
+            ],
+            "ci95": [
+              0.3125,
+              0.3125
+            ],
+            "mean": 0.3125
+          },
+          "scattered": {
+            "block_means": [
+              0.375
+            ],
+            "ci95": [
+              0.375,
+              0.375
+            ],
+            "mean": 0.375
+          },
+          "square": {
+            "block_means": [
+              0.34375
+            ],
+            "ci95": [
+              0.34375,
+              0.34375
+            ],
+            "mean": 0.34375
+          }
+        },
+        "both_cues": {
+          "intact": {
+            "block_means": [
+              0.625
+            ],
+            "ci95": [
+              0.625,
+              0.625
+            ],
+            "mean": 0.625
+          },
+          "scattered": {
+            "block_means": [
+              0.75
+            ],
+            "ci95": [
+              0.75,
+              0.75
+            ],
+            "mean": 0.75
+          },
+          "square": {
+            "block_means": [
+              0.6875
+            ],
+            "ci95": [
+              0.6875,
+              0.6875
+            ],
+            "mean": 0.6875
+          }
+        },
+        "margin": {
+          "intact": {
+            "block_means": [
+              0.6280651644259132
+            ],
+            "ci95": [
+              0.6280651644259132,
+              0.6280651644259132
+            ],
+            "mean": 0.6280651644259132
+          },
+          "scattered": {
+            "block_means": [
+              0.6032992979997168
+            ],
+            "ci95": [
+              0.6032992979997168,
+              0.6032992979997168
+            ],
+            "mean": 0.6032992979997168
+          },
+          "square": {
+            "block_means": [
+              0.6713207405373548
+            ],
+            "ci95": [
+              0.6713207405373548,
+              0.6713207405373548
+            ],
+            "mean": 0.6713207405373548
+          }
+        }
+      }
+    }
+  },
+  "damage": [
+    "intact",
+    "scattered",
+    "square"
+  ],
+  "evidence_status": "technical",
+  "experiment": "E017",
+  "founders": 4,
+  "gain": 2.0,
+  "groups": {
+    "consistent": {
+      "baseline": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "own": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "shuffled": {
+              "block_means": [
+                0.09375
+              ],
+              "ci95": [
+                0.09375,
+                0.09375
+              ],
+              "mean": 0.09375
+            },
+            "source_cut": {
+              "block_means": [
+                0.375
+              ],
+              "ci95": [
+                0.375,
+                0.375
+              ],
+              "mean": 0.375
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.25
+              ],
+              "ci95": [
+                0.25,
+                0.25
+              ],
+              "mean": 0.25
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": false,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": false,
+          "accuracy_rule_-1_scattered": false,
+          "accuracy_rule_-1_square": false,
+          "accuracy_rule_1_intact": false,
+          "accuracy_rule_1_scattered": false,
+          "accuracy_rule_1_square": false,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": true,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.002738705515654318
+              ],
+              "ci95": [
+                -0.002738705515654318,
+                -0.002738705515654318
+              ],
+              "mean": -0.002738705515654318
+            },
+            "erased": {
+              "block_means": [
+                -0.002738705515654318
+              ],
+              "ci95": [
+                -0.002738705515654318,
+                -0.002738705515654318
+              ],
+              "mean": -0.002738705515654318
+            },
+            "foreign": {
+              "block_means": [
+                -0.5500226108813889
+              ],
+              "ci95": [
+                -0.5500226108813889,
+                -0.5500226108813889
+              ],
+              "mean": -0.5500226108813889
+            },
+            "own": {
+              "block_means": [
+                0.28571825552412683
+              ],
+              "ci95": [
+                0.28571825552412683,
+                0.28571825552412683
+              ],
+              "mean": 0.28571825552412683
+            },
+            "shuffled": {
+              "block_means": [
+                -0.8949304536051488
+              ],
+              "ci95": [
+                -0.8949304536051488,
+                -0.8949304536051488
+              ],
+              "mean": -0.8949304536051488
+            },
+            "source_cut": {
+              "block_means": [
+                -0.13822355678380907
+              ],
+              "ci95": [
+                -0.13822355678380907,
+                -0.13822355678380907
+              ],
+              "mean": -0.13822355678380907
+            },
+            "untrained": {
+              "block_means": [
+                -0.8631217682887682
+              ],
+              "ci95": [
+                -0.8631217682887682,
+                -0.8631217682887682
+              ],
+              "mean": -0.8631217682887682
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.003585668025509291
+              ],
+              "ci95": [
+                -0.003585668025509291,
+                -0.003585668025509291
+              ],
+              "mean": -0.003585668025509291
+            },
+            "erased": {
+              "block_means": [
+                -0.003585668025509291
+              ],
+              "ci95": [
+                -0.003585668025509291,
+                -0.003585668025509291
+              ],
+              "mean": -0.003585668025509291
+            },
+            "foreign": {
+              "block_means": [
+                -0.5585079024685915
+              ],
+              "ci95": [
+                -0.5585079024685915,
+                -0.5585079024685915
+              ],
+              "mean": -0.5585079024685915
+            },
+            "own": {
+              "block_means": [
+                0.03172962886803894
+              ],
+              "ci95": [
+                0.03172962886803894,
+                0.03172962886803894
+              ],
+              "mean": 0.03172962886803894
+            },
+            "shuffled": {
+              "block_means": [
+                -0.666428596495904
+              ],
+              "ci95": [
+                -0.666428596495904,
+                -0.666428596495904
+              ],
+              "mean": -0.666428596495904
+            },
+            "source_cut": {
+              "block_means": [
+                -0.22449958591571476
+              ],
+              "ci95": [
+                -0.22449958591571476,
+                -0.22449958591571476
+              ],
+              "mean": -0.22449958591571476
+            },
+            "untrained": {
+              "block_means": [
+                -0.776632293401182
+              ],
+              "ci95": [
+                -0.776632293401182,
+                -0.776632293401182
+              ],
+              "mean": -0.776632293401182
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.004603435352272319
+              ],
+              "ci95": [
+                -0.004603435352272319,
+                -0.004603435352272319
+              ],
+              "mean": -0.004603435352272319
+            },
+            "erased": {
+              "block_means": [
+                -0.004603435352272319
+              ],
+              "ci95": [
+                -0.004603435352272319,
+                -0.004603435352272319
+              ],
+              "mean": -0.004603435352272319
+            },
+            "foreign": {
+              "block_means": [
+                -0.5204978949409856
+              ],
+              "ci95": [
+                -0.5204978949409856,
+                -0.5204978949409856
+              ],
+              "mean": -0.5204978949409856
+            },
+            "own": {
+              "block_means": [
+                0.28496474398946214
+              ],
+              "ci95": [
+                0.28496474398946214,
+                0.28496474398946214
+              ],
+              "mean": 0.28496474398946214
+            },
+            "shuffled": {
+              "block_means": [
+                -0.8155356375573778
+              ],
+              "ci95": [
+                -0.8155356375573778,
+                -0.8155356375573778
+              ],
+              "mean": -0.8155356375573778
+            },
+            "source_cut": {
+              "block_means": [
+                -0.08423096397277408
+              ],
+              "ci95": [
+                -0.08423096397277408,
+                -0.08423096397277408
+              ],
+              "mean": -0.08423096397277408
+            },
+            "untrained": {
+              "block_means": [
+                -0.9046995829394069
+              ],
+              "ci95": [
+                -0.9046995829394069,
+                -0.9046995829394069
+              ],
+              "mean": -0.9046995829394069
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "scattered": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "square": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "scattered": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "square": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "shuffled": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "source_cut": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "untrained": {
+              "block_means": [
+                0.59375
+              ],
+              "ci95": [
+                0.59375,
+                0.59375
+              ],
+              "mean": 0.59375
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "erased": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "foreign": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "source_cut": {
+              "block_means": [
+                0.125
+              ],
+              "ci95": [
+                0.125,
+                0.125
+              ],
+              "mean": 0.125
+            },
+            "untrained": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "shuffled": {
+              "block_means": [
+                0.59375
+              ],
+              "ci95": [
+                0.59375,
+                0.59375
+              ],
+              "mean": 0.59375
+            },
+            "source_cut": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        }
+      },
+      "extended": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "own": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "shuffled": {
+              "block_means": [
+                0.09375
+              ],
+              "ci95": [
+                0.09375,
+                0.09375
+              ],
+              "mean": 0.09375
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.25
+              ],
+              "ci95": [
+                0.25,
+                0.25
+              ],
+              "mean": 0.25
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": false,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.125
+              ],
+              "ci95": [
+                0.125,
+                0.125
+              ],
+              "mean": 0.125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": false,
+          "accuracy_rule_-1_scattered": false,
+          "accuracy_rule_-1_square": false,
+          "accuracy_rule_1_intact": false,
+          "accuracy_rule_1_scattered": false,
+          "accuracy_rule_1_square": false,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": false,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "erased": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "foreign": {
+              "block_means": [
+                -0.5505293830603047
+              ],
+              "ci95": [
+                -0.5505293830603047,
+                -0.5505293830603047
+              ],
+              "mean": -0.5505293830603047
+            },
+            "own": {
+              "block_means": [
+                0.2850315949529733
+              ],
+              "ci95": [
+                0.2850315949529733,
+                0.2850315949529733
+              ],
+              "mean": 0.2850315949529733
+            },
+            "shuffled": {
+              "block_means": [
+                -0.8936236459422493
+              ],
+              "ci95": [
+                -0.8936236459422493,
+                -0.8936236459422493
+              ],
+              "mean": -0.8936236459422493
+            },
+            "source_cut": {
+              "block_means": [
+                -0.1389512233169526
+              ],
+              "ci95": [
+                -0.1389512233169526,
+                -0.1389512233169526
+              ],
+              "mean": -0.1389512233169526
+            },
+            "untrained": {
+              "block_means": [
+                -0.863364128411652
+              ],
+              "ci95": [
+                -0.863364128411652,
+                -0.863364128411652
+              ],
+              "mean": -0.863364128411652
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "erased": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "foreign": {
+              "block_means": [
+                -0.568274822281821
+              ],
+              "ci95": [
+                -0.568274822281821,
+                -0.568274822281821
+              ],
+              "mean": -0.568274822281821
+            },
+            "own": {
+              "block_means": [
+                0.07809760484035819
+              ],
+              "ci95": [
+                0.07809760484035819,
+                0.07809760484035819
+              ],
+              "mean": 0.07809760484035819
+            },
+            "shuffled": {
+              "block_means": [
+                -0.6757622093954372
+              ],
+              "ci95": [
+                -0.6757622093954372,
+                -0.6757622093954372
+              ],
+              "mean": -0.6757622093954372
+            },
+            "source_cut": {
+              "block_means": [
+                -0.1576071325355446
+              ],
+              "ci95": [
+                -0.1576071325355446,
+                -0.1576071325355446
+              ],
+              "mean": -0.1576071325355446
+            },
+            "untrained": {
+              "block_means": [
+                -0.7795234937263921
+              ],
+              "ci95": [
+                -0.7795234937263921,
+                -0.7795234937263921
+              ],
+              "mean": -0.7795234937263921
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "erased": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "foreign": {
+              "block_means": [
+                -0.5110771700479817
+              ],
+              "ci95": [
+                -0.5110771700479817,
+                -0.5110771700479817
+              ],
+              "mean": -0.5110771700479817
+            },
+            "own": {
+              "block_means": [
+                0.2888477139890365
+              ],
+              "ci95": [
+                0.2888477139890365,
+                0.2888477139890365
+              ],
+              "mean": 0.2888477139890365
+            },
+            "shuffled": {
+              "block_means": [
+                -0.8751944345691824
+              ],
+              "ci95": [
+                -0.8751944345691824,
+                -0.8751944345691824
+              ],
+              "mean": -0.8751944345691824
+            },
+            "source_cut": {
+              "block_means": [
+                -0.08232104483656488
+              ],
+              "ci95": [
+                -0.08232104483656488,
+                -0.08232104483656488
+              ],
+              "mean": -0.08232104483656488
+            },
+            "untrained": {
+              "block_means": [
+                -0.903078215986767
+              ],
+              "ci95": [
+                -0.903078215986767,
+                -0.903078215986767
+              ],
+              "mean": -0.903078215986767
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "scattered": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "square": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "scattered": {
+              "block_means": [
+                0.5625
+              ],
+              "ci95": [
+                0.5625,
+                0.5625
+              ],
+              "mean": 0.5625
+            },
+            "square": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "shuffled": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "source_cut": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "untrained": {
+              "block_means": [
+                0.59375
+              ],
+              "ci95": [
+                0.59375,
+                0.59375
+              ],
+              "mean": 0.59375
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "erased": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "foreign": {
+              "block_means": [
+                0.34375
+              ],
+              "ci95": [
+                0.34375,
+                0.34375
+              ],
+              "mean": 0.34375
+            },
+            "shuffled": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "source_cut": {
+              "block_means": [
+                0.09375
+              ],
+              "ci95": [
+                0.09375,
+                0.09375
+              ],
+              "mean": 0.09375
+            },
+            "untrained": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "shuffled": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "source_cut": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        }
+      },
+      "staged": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "shuffled": {
+              "block_means": [
+                0.125
+              ],
+              "ci95": [
+                0.125,
+                0.125
+              ],
+              "mean": 0.125
+            },
+            "source_cut": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": true,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": true,
+          "accuracy_rule_-1_scattered": true,
+          "accuracy_rule_-1_square": true,
+          "accuracy_rule_1_intact": true,
+          "accuracy_rule_1_scattered": true,
+          "accuracy_rule_1_square": true,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": true,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "erased": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "foreign": {
+              "block_means": [
+                -0.9885557649633532
+              ],
+              "ci95": [
+                -0.9885557649633532,
+                -0.9885557649633532
+              ],
+              "mean": -0.9885557649633532
+            },
+            "own": {
+              "block_means": [
+                0.9419528167533637
+              ],
+              "ci95": [
+                0.9419528167533637,
+                0.9419528167533637
+              ],
+              "mean": 0.9419528167533637
+            },
+            "shuffled": {
+              "block_means": [
+                -0.953811842025489
+              ],
+              "ci95": [
+                -0.953811842025489,
+                -0.953811842025489
+              ],
+              "mean": -0.953811842025489
+            },
+            "source_cut": {
+              "block_means": [
+                -0.02254421747593435
+              ],
+              "ci95": [
+                -0.02254421747593435,
+                -0.02254421747593435
+              ],
+              "mean": -0.02254421747593435
+            },
+            "untrained": {
+              "block_means": [
+                -0.9993215520688834
+              ],
+              "ci95": [
+                -0.9993215520688834,
+                -0.9993215520688834
+              ],
+              "mean": -0.9993215520688834
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "erased": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "foreign": {
+              "block_means": [
+                -0.9070239218651571
+              ],
+              "ci95": [
+                -0.9070239218651571,
+                -0.9070239218651571
+              ],
+              "mean": -0.9070239218651571
+            },
+            "own": {
+              "block_means": [
+                0.5026037077292494
+              ],
+              "ci95": [
+                0.5026037077292494,
+                0.5026037077292494
+              ],
+              "mean": 0.5026037077292494
+            },
+            "shuffled": {
+              "block_means": [
+                -0.6518432252152492
+              ],
+              "ci95": [
+                -0.6518432252152492,
+                -0.6518432252152492
+              ],
+              "mean": -0.6518432252152492
+            },
+            "source_cut": {
+              "block_means": [
+                -0.2024826618672606
+              ],
+              "ci95": [
+                -0.2024826618672606,
+                -0.2024826618672606
+              ],
+              "mean": -0.2024826618672606
+            },
+            "untrained": {
+              "block_means": [
+                -0.8407995539393969
+              ],
+              "ci95": [
+                -0.8407995539393969,
+                -0.8407995539393969
+              ],
+              "mean": -0.8407995539393969
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "erased": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "foreign": {
+              "block_means": [
+                -0.9829850609605412
+              ],
+              "ci95": [
+                -0.9829850609605412,
+                -0.9829850609605412
+              ],
+              "mean": -0.9829850609605412
+            },
+            "own": {
+              "block_means": [
+                0.9286171582491096
+              ],
+              "ci95": [
+                0.9286171582491096,
+                0.9286171582491096
+              ],
+              "mean": 0.9286171582491096
+            },
+            "shuffled": {
+              "block_means": [
+                -0.9412074637067461
+              ],
+              "ci95": [
+                -0.9412074637067461,
+                -0.9412074637067461
+              ],
+              "mean": -0.9412074637067461
+            },
+            "source_cut": {
+              "block_means": [
+                -0.08688765393234486
+              ],
+              "ci95": [
+                -0.08688765393234486,
+                -0.08688765393234486
+              ],
+              "mean": -0.08688765393234486
+            },
+            "untrained": {
+              "block_means": [
+                -0.9896764032827708
+              ],
+              "ci95": [
+                -0.9896764032827708,
+                -0.9896764032827708
+              ],
+              "mean": -0.9896764032827708
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "scattered": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "square": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "scattered": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "square": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "erased": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "foreign": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "untrained": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "erased": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "foreign": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "shuffled": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "source_cut": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "untrained": {
+              "block_means": [
+                0.78125
+              ],
+              "ci95": [
+                0.78125,
+                0.78125
+              ],
+              "mean": 0.78125
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "erased": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "foreign": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "untrained": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          }
+        }
+      }
+    },
+    "engineered": {
+      "baseline": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "own": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "shuffled": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            },
+            "source_cut": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "own": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": false,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.375
+              ],
+              "ci95": [
+                0.375,
+                0.375
+              ],
+              "mean": 0.375
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": false,
+          "accuracy_rule_-1_scattered": false,
+          "accuracy_rule_-1_square": false,
+          "accuracy_rule_1_intact": false,
+          "accuracy_rule_1_scattered": false,
+          "accuracy_rule_1_square": false,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": false,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.002738705515654318
+              ],
+              "ci95": [
+                -0.002738705515654318,
+                -0.002738705515654318
+              ],
+              "mean": -0.002738705515654318
+            },
+            "erased": {
+              "block_means": [
+                -0.002738705515654318
+              ],
+              "ci95": [
+                -0.002738705515654318,
+                -0.002738705515654318
+              ],
+              "mean": -0.002738705515654318
+            },
+            "foreign": {
+              "block_means": [
+                -0.545122510947317
+              ],
+              "ci95": [
+                -0.545122510947317,
+                -0.545122510947317
+              ],
+              "mean": -0.545122510947317
+            },
+            "own": {
+              "block_means": [
+                0.3700420079145367
+              ],
+              "ci95": [
+                0.3700420079145367,
+                0.3700420079145367
+              ],
+              "mean": 0.3700420079145367
+            },
+            "shuffled": {
+              "block_means": [
+                -0.8934620100480452
+              ],
+              "ci95": [
+                -0.8934620100480452,
+                -0.8934620100480452
+              ],
+              "mean": -0.8934620100480452
+            },
+            "source_cut": {
+              "block_means": [
+                -0.11255389976434624
+              ],
+              "ci95": [
+                -0.11255389976434624,
+                -0.11255389976434624
+              ],
+              "mean": -0.11255389976434624
+            },
+            "untrained": {
+              "block_means": [
+                -0.8631217682887682
+              ],
+              "ci95": [
+                -0.8631217682887682,
+                -0.8631217682887682
+              ],
+              "mean": -0.8631217682887682
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.003585668025509291
+              ],
+              "ci95": [
+                -0.003585668025509291,
+                -0.003585668025509291
+              ],
+              "mean": -0.003585668025509291
+            },
+            "erased": {
+              "block_means": [
+                -0.003585668025509291
+              ],
+              "ci95": [
+                -0.003585668025509291,
+                -0.003585668025509291
+              ],
+              "mean": -0.003585668025509291
+            },
+            "foreign": {
+              "block_means": [
+                -0.4296620606242172
+              ],
+              "ci95": [
+                -0.4296620606242172,
+                -0.4296620606242172
+              ],
+              "mean": -0.4296620606242172
+            },
+            "own": {
+              "block_means": [
+                0.05433821450083014
+              ],
+              "ci95": [
+                0.05433821450083014,
+                0.05433821450083014
+              ],
+              "mean": 0.05433821450083014
+            },
+            "shuffled": {
+              "block_means": [
+                -0.7529783217490144
+              ],
+              "ci95": [
+                -0.7529783217490144,
+                -0.7529783217490144
+              ],
+              "mean": -0.7529783217490144
+            },
+            "source_cut": {
+              "block_means": [
+                -0.1200527675314767
+              ],
+              "ci95": [
+                -0.1200527675314767,
+                -0.1200527675314767
+              ],
+              "mean": -0.1200527675314767
+            },
+            "untrained": {
+              "block_means": [
+                -0.776632293401182
+              ],
+              "ci95": [
+                -0.776632293401182,
+                -0.776632293401182
+              ],
+              "mean": -0.776632293401182
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.004603435352272319
+              ],
+              "ci95": [
+                -0.004603435352272319,
+                -0.004603435352272319
+              ],
+              "mean": -0.004603435352272319
+            },
+            "erased": {
+              "block_means": [
+                -0.004603435352272319
+              ],
+              "ci95": [
+                -0.004603435352272319,
+                -0.004603435352272319
+              ],
+              "mean": -0.004603435352272319
+            },
+            "foreign": {
+              "block_means": [
+                -0.45854118436027463
+              ],
+              "ci95": [
+                -0.45854118436027463,
+                -0.45854118436027463
+              ],
+              "mean": -0.45854118436027463
+            },
+            "own": {
+              "block_means": [
+                0.3098572669602361
+              ],
+              "ci95": [
+                0.3098572669602361,
+                0.3098572669602361
+              ],
+              "mean": 0.3098572669602361
+            },
+            "shuffled": {
+              "block_means": [
+                -0.896989068449545
+              ],
+              "ci95": [
+                -0.896989068449545,
+                -0.896989068449545
+              ],
+              "mean": -0.896989068449545
+            },
+            "source_cut": {
+              "block_means": [
+                -0.07210550858393697
+              ],
+              "ci95": [
+                -0.07210550858393697,
+                -0.07210550858393697
+              ],
+              "mean": -0.07210550858393697
+            },
+            "untrained": {
+              "block_means": [
+                -0.9046995829394069
+              ],
+              "ci95": [
+                -0.9046995829394069,
+                -0.9046995829394069
+              ],
+              "mean": -0.9046995829394069
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                0.75
+              ],
+              "ci95": [
+                0.75,
+                0.75
+              ],
+              "mean": 0.75
+            },
+            "scattered": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "square": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "scattered": {
+              "block_means": [
+                0.5625
+              ],
+              "ci95": [
+                0.5625,
+                0.5625
+              ],
+              "mean": 0.5625
+            },
+            "square": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "erased": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "foreign": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "shuffled": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "source_cut": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "erased": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "foreign": {
+              "block_means": [
+                0.25
+              ],
+              "ci95": [
+                0.25,
+                0.25
+              ],
+              "mean": 0.25
+            },
+            "shuffled": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "source_cut": {
+              "block_means": [
+                0.09375
+              ],
+              "ci95": [
+                0.09375,
+                0.09375
+              ],
+              "mean": 0.09375
+            },
+            "untrained": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.375
+              ],
+              "ci95": [
+                0.375,
+                0.375
+              ],
+              "mean": 0.375
+            },
+            "shuffled": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "source_cut": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        }
+      },
+      "extended": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.21875
+              ],
+              "ci95": [
+                0.21875,
+                0.21875
+              ],
+              "mean": 0.21875
+            },
+            "own": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "shuffled": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            },
+            "source_cut": {
+              "block_means": [
+                0.40625
+              ],
+              "ci95": [
+                0.40625,
+                0.40625
+              ],
+              "mean": 0.40625
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "own": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "own": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "shuffled": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": false,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.375
+              ],
+              "ci95": [
+                0.375,
+                0.375
+              ],
+              "mean": 0.375
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.3125
+              ],
+              "ci95": [
+                0.3125,
+                0.3125
+              ],
+              "mean": 0.3125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": false,
+          "accuracy_rule_-1_scattered": false,
+          "accuracy_rule_-1_square": false,
+          "accuracy_rule_1_intact": false,
+          "accuracy_rule_1_scattered": false,
+          "accuracy_rule_1_square": false,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": false,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "erased": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "foreign": {
+              "block_means": [
+                -0.5476840386147188
+              ],
+              "ci95": [
+                -0.5476840386147188,
+                -0.5476840386147188
+              ],
+              "mean": -0.5476840386147188
+            },
+            "own": {
+              "block_means": [
+                0.36839156999407885
+              ],
+              "ci95": [
+                0.36839156999407885,
+                0.36839156999407885
+              ],
+              "mean": 0.36839156999407885
+            },
+            "shuffled": {
+              "block_means": [
+                -0.894131447425493
+              ],
+              "ci95": [
+                -0.894131447425493,
+                -0.894131447425493
+              ],
+              "mean": -0.894131447425493
+            },
+            "source_cut": {
+              "block_means": [
+                -0.11891749003269536
+              ],
+              "ci95": [
+                -0.11891749003269536,
+                -0.11891749003269536
+              ],
+              "mean": -0.11891749003269536
+            },
+            "untrained": {
+              "block_means": [
+                -0.863364128411652
+              ],
+              "ci95": [
+                -0.863364128411652,
+                -0.863364128411652
+              ],
+              "mean": -0.863364128411652
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "erased": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "foreign": {
+              "block_means": [
+                -0.44991644870957903
+              ],
+              "ci95": [
+                -0.44991644870957903,
+                -0.44991644870957903
+              ],
+              "mean": -0.44991644870957903
+            },
+            "own": {
+              "block_means": [
+                0.09474205258277628
+              ],
+              "ci95": [
+                0.09474205258277628,
+                0.09474205258277628
+              ],
+              "mean": 0.09474205258277628
+            },
+            "shuffled": {
+              "block_means": [
+                -0.761818758599405
+              ],
+              "ci95": [
+                -0.761818758599405,
+                -0.761818758599405
+              ],
+              "mean": -0.761818758599405
+            },
+            "source_cut": {
+              "block_means": [
+                -0.11603418730933726
+              ],
+              "ci95": [
+                -0.11603418730933726,
+                -0.11603418730933726
+              ],
+              "mean": -0.11603418730933726
+            },
+            "untrained": {
+              "block_means": [
+                -0.7795234937263921
+              ],
+              "ci95": [
+                -0.7795234937263921,
+                -0.7795234937263921
+              ],
+              "mean": -0.7795234937263921
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "erased": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "foreign": {
+              "block_means": [
+                -0.4566412655156832
+              ],
+              "ci95": [
+                -0.4566412655156832,
+                -0.4566412655156832
+              ],
+              "mean": -0.4566412655156832
+            },
+            "own": {
+              "block_means": [
+                0.30793551239125994
+              ],
+              "ci95": [
+                0.30793551239125994,
+                0.30793551239125994
+              ],
+              "mean": 0.30793551239125994
+            },
+            "shuffled": {
+              "block_means": [
+                -0.897078737234271
+              ],
+              "ci95": [
+                -0.897078737234271,
+                -0.897078737234271
+              ],
+              "mean": -0.897078737234271
+            },
+            "source_cut": {
+              "block_means": [
+                -0.07232880089337716
+              ],
+              "ci95": [
+                -0.07232880089337716,
+                -0.07232880089337716
+              ],
+              "mean": -0.07232880089337716
+            },
+            "untrained": {
+              "block_means": [
+                -0.903078215986767
+              ],
+              "ci95": [
+                -0.903078215986767,
+                -0.903078215986767
+              ],
+              "mean": -0.903078215986767
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                0.75
+              ],
+              "ci95": [
+                0.75,
+                0.75
+              ],
+              "mean": 0.75
+            },
+            "scattered": {
+              "block_means": [
+                0.5
+              ],
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "mean": 0.5
+            },
+            "square": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "scattered": {
+              "block_means": [
+                0.5625
+              ],
+              "ci95": [
+                0.5625,
+                0.5625
+              ],
+              "mean": 0.5625
+            },
+            "square": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "erased": {
+              "block_means": [
+                0.6875
+              ],
+              "ci95": [
+                0.6875,
+                0.6875
+              ],
+              "mean": 0.6875
+            },
+            "foreign": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "shuffled": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "source_cut": {
+              "block_means": [
+                0.28125
+              ],
+              "ci95": [
+                0.28125,
+                0.28125
+              ],
+              "mean": 0.28125
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "erased": {
+              "block_means": [
+                0.53125
+              ],
+              "ci95": [
+                0.53125,
+                0.53125
+              ],
+              "mean": 0.53125
+            },
+            "foreign": {
+              "block_means": [
+                0.25
+              ],
+              "ci95": [
+                0.25,
+                0.25
+              ],
+              "mean": 0.25
+            },
+            "shuffled": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "source_cut": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "untrained": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "erased": {
+              "block_means": [
+                0.65625
+              ],
+              "ci95": [
+                0.65625,
+                0.65625
+              ],
+              "mean": 0.65625
+            },
+            "foreign": {
+              "block_means": [
+                0.375
+              ],
+              "ci95": [
+                0.375,
+                0.375
+              ],
+              "mean": 0.375
+            },
+            "shuffled": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            },
+            "source_cut": {
+              "block_means": [
+                0.1875
+              ],
+              "ci95": [
+                0.1875,
+                0.1875
+              ],
+              "mean": 0.1875
+            },
+            "untrained": {
+              "block_means": [
+                0.625
+              ],
+              "ci95": [
+                0.625,
+                0.625
+              ],
+              "mean": 0.625
+            }
+          }
+        }
+      },
+      "staged": {
+        "accuracy": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0625
+              ],
+              "ci95": [
+                0.0625,
+                0.0625
+              ],
+              "mean": 0.0625
+            },
+            "own": {
+              "block_means": [
+                0.90625
+              ],
+              "ci95": [
+                0.90625,
+                0.90625
+              ],
+              "mean": 0.90625
+            },
+            "shuffled": {
+              "block_means": [
+                0.125
+              ],
+              "ci95": [
+                0.125,
+                0.125
+              ],
+              "mean": 0.125
+            },
+            "source_cut": {
+              "block_means": [
+                0.46875
+              ],
+              "ci95": [
+                0.46875,
+                0.46875
+              ],
+              "mean": 0.46875
+            },
+            "untrained": {
+              "block_means": [
+                0.03125
+              ],
+              "ci95": [
+                0.03125,
+                0.03125
+              ],
+              "mean": 0.03125
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "all_original_feasibility_gates_pass": true,
+        "both_cues": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                0.8125
+              ],
+              "ci95": [
+                0.8125,
+                0.8125
+              ],
+              "mean": 0.8125
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "erased": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "foreign": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "own": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            },
+            "untrained": {
+              "block_means": [
+                0.0
+              ],
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0
+            }
+          }
+        },
+        "gates": {
+          "accuracy_rule_-1_intact": true,
+          "accuracy_rule_-1_scattered": true,
+          "accuracy_rule_-1_square": true,
+          "accuracy_rule_1_intact": true,
+          "accuracy_rule_1_scattered": true,
+          "accuracy_rule_1_square": true,
+          "advantage_intact_communication_off": true,
+          "advantage_intact_erased": true,
+          "advantage_intact_foreign": true,
+          "advantage_intact_shuffled": true,
+          "advantage_intact_source_cut": true,
+          "advantage_intact_untrained": true,
+          "advantage_scattered_communication_off": true,
+          "advantage_scattered_erased": true,
+          "advantage_scattered_foreign": true,
+          "advantage_scattered_shuffled": true,
+          "advantage_scattered_source_cut": true,
+          "advantage_scattered_untrained": true,
+          "advantage_square_communication_off": true,
+          "advantage_square_erased": true,
+          "advantage_square_foreign": true,
+          "advantage_square_shuffled": true,
+          "advantage_square_source_cut": true,
+          "advantage_square_untrained": true
+        },
+        "margin": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "erased": {
+              "block_means": [
+                -0.00789595308603376
+              ],
+              "ci95": [
+                -0.00789595308603376,
+                -0.00789595308603376
+              ],
+              "mean": -0.00789595308603376
+            },
+            "foreign": {
+              "block_means": [
+                -1.0021782654011815
+              ],
+              "ci95": [
+                -1.0021782654011815,
+                -1.0021782654011815
+              ],
+              "mean": -1.0021782654011815
+            },
+            "own": {
+              "block_means": [
+                0.996456734419992
+              ],
+              "ci95": [
+                0.996456734419992,
+                0.996456734419992
+              ],
+              "mean": 0.996456734419992
+            },
+            "shuffled": {
+              "block_means": [
+                -0.9878670769348502
+              ],
+              "ci95": [
+                -0.9878670769348502,
+                -0.9878670769348502
+              ],
+              "mean": -0.9878670769348502
+            },
+            "source_cut": {
+              "block_means": [
+                -0.08665609989686954
+              ],
+              "ci95": [
+                -0.08665609989686954,
+                -0.08665609989686954
+              ],
+              "mean": -0.08665609989686954
+            },
+            "untrained": {
+              "block_means": [
+                -0.9993215520688834
+              ],
+              "ci95": [
+                -0.9993215520688834,
+                -0.9993215520688834
+              ],
+              "mean": -0.9993215520688834
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "erased": {
+              "block_means": [
+                -0.006512116393331293
+              ],
+              "ci95": [
+                -0.006512116393331293,
+                -0.006512116393331293
+              ],
+              "mean": -0.006512116393331293
+            },
+            "foreign": {
+              "block_means": [
+                -0.8586251007506533
+              ],
+              "ci95": [
+                -0.8586251007506533,
+                -0.8586251007506533
+              ],
+              "mean": -0.8586251007506533
+            },
+            "own": {
+              "block_means": [
+                0.6980413505824931
+              ],
+              "ci95": [
+                0.6980413505824931,
+                0.6980413505824931
+              ],
+              "mean": 0.6980413505824931
+            },
+            "shuffled": {
+              "block_means": [
+                -0.6793300896851623
+              ],
+              "ci95": [
+                -0.6793300896851623,
+                -0.6793300896851623
+              ],
+              "mean": -0.6793300896851623
+            },
+            "source_cut": {
+              "block_means": [
+                -0.10714633944033525
+              ],
+              "ci95": [
+                -0.10714633944033525,
+                -0.10714633944033525
+              ],
+              "mean": -0.10714633944033525
+            },
+            "untrained": {
+              "block_means": [
+                -0.8407995539393969
+              ],
+              "ci95": [
+                -0.8407995539393969,
+                -0.8407995539393969
+              ],
+              "mean": -0.8407995539393969
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "erased": {
+              "block_means": [
+                -0.005756258956435687
+              ],
+              "ci95": [
+                -0.005756258956435687,
+                -0.005756258956435687
+              ],
+              "mean": -0.005756258956435687
+            },
+            "foreign": {
+              "block_means": [
+                -1.0001029239092063
+              ],
+              "ci95": [
+                -1.0001029239092063,
+                -1.0001029239092063
+              ],
+              "mean": -1.0001029239092063
+            },
+            "own": {
+              "block_means": [
+                0.9792562529286147
+              ],
+              "ci95": [
+                0.9792562529286147,
+                0.9792562529286147
+              ],
+              "mean": 0.9792562529286147
+            },
+            "shuffled": {
+              "block_means": [
+                -0.9780816343995254
+              ],
+              "ci95": [
+                -0.9780816343995254,
+                -0.9780816343995254
+              ],
+              "mean": -0.9780816343995254
+            },
+            "source_cut": {
+              "block_means": [
+                -0.1342941612398895
+              ],
+              "ci95": [
+                -0.1342941612398895,
+                -0.1342941612398895
+              ],
+              "mean": -0.1342941612398895
+            },
+            "untrained": {
+              "block_means": [
+                -0.9896764032827708
+              ],
+              "ci95": [
+                -0.9896764032827708,
+                -0.9896764032827708
+              ],
+              "mean": -0.9896764032827708
+            }
+          }
+        },
+        "own_accuracy_by_rule": {
+          "-1": {
+            "intact": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "scattered": {
+              "block_means": [
+                0.875
+              ],
+              "ci95": [
+                0.875,
+                0.875
+              ],
+              "mean": 0.875
+            },
+            "square": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          },
+          "1": {
+            "intact": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "scattered": {
+              "block_means": [
+                0.9375
+              ],
+              "ci95": [
+                0.9375,
+                0.9375
+              ],
+              "mean": 0.9375
+            },
+            "square": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          }
+        },
+        "own_minus_control": {
+          "intact": {
+            "communication_off": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "erased": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "foreign": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.5625
+              ],
+              "ci95": [
+                0.5625,
+                0.5625
+              ],
+              "mean": 0.5625
+            },
+            "untrained": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          },
+          "scattered": {
+            "communication_off": {
+              "block_means": [
+                0.90625
+              ],
+              "ci95": [
+                0.90625,
+                0.90625
+              ],
+              "mean": 0.90625
+            },
+            "erased": {
+              "block_means": [
+                0.90625
+              ],
+              "ci95": [
+                0.90625,
+                0.90625
+              ],
+              "mean": 0.90625
+            },
+            "foreign": {
+              "block_means": [
+                0.84375
+              ],
+              "ci95": [
+                0.84375,
+                0.84375
+              ],
+              "mean": 0.84375
+            },
+            "shuffled": {
+              "block_means": [
+                0.78125
+              ],
+              "ci95": [
+                0.78125,
+                0.78125
+              ],
+              "mean": 0.78125
+            },
+            "source_cut": {
+              "block_means": [
+                0.4375
+              ],
+              "ci95": [
+                0.4375,
+                0.4375
+              ],
+              "mean": 0.4375
+            },
+            "untrained": {
+              "block_means": [
+                0.875
+              ],
+              "ci95": [
+                0.875,
+                0.875
+              ],
+              "mean": 0.875
+            }
+          },
+          "square": {
+            "communication_off": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "erased": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "foreign": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "shuffled": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            },
+            "source_cut": {
+              "block_means": [
+                0.5625
+              ],
+              "ci95": [
+                0.5625,
+                0.5625
+              ],
+              "mean": 0.5625
+            },
+            "untrained": {
+              "block_means": [
+                1.0
+              ],
+              "ci95": [
+                1.0,
+                1.0
+              ],
+              "mean": 1.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "interval_scope": "Single prespecified primary; secondary intervals and readiness gates pointwise",
+  "packet_bytes": 4096,
+  "primary": {
+    "endpoint": "consistent learned record; staged minus extended intact both-cue strict success",
+    "lower_bound_above_zero": null,
+    "statistics": {
+      "block_means": [
+        0.6875
+      ],
+      "ci95": [
+        0.6875,
+        0.6875
+      ],
+      "mean": 0.6875
+    }
+  },
+  "regimes": [
+    "consistent",
+    "engineered"
+  ],
+  "renewal_started": false,
+  "setting_selected": null,
+  "status": "TECHNICAL_ONLY",
+  "timing": {
+    "baseline_steps": 512,
+    "settling_steps": 256,
+    "total_steps": 2048
+  }
+}

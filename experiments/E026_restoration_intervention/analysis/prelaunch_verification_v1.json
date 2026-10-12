@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-21T18:19:21.468952+00:00",
+  "tests": 5,
+  "scientific_inputs": 21,
+  "evidence": {
+    "fixture": {
+      "original_outputs_verified": 28,
+      "individual_observations": 2688,
+      "complete_sha256": "45231c603a6c58afd01625208aee4a7c1abe91e6de156fa4c414df1164f74873",
+      "audit_sha256": "5b718526b9920a1e1de5a3e5cd83ec69cd0e010aa8b6bc0e0f170d1790d857e2",
+      "simulation_seconds": 2.867291792004835,
+      "audit_seconds": 2.68745769400266
+    },
+    "benchmark": {
+      "original_outputs_verified": 29,
+      "individual_observations": 1344,
+      "complete_sha256": "63c48d0f597bcdabbad32ddf2ddeb4164c641580d4dcbcc678326d7abfface17",
+      "audit_sha256": "30934745736921b255f3374f0352fb53c3d0eb21ccf9637adb8a073ee5fbc5b8",
+      "simulation_seconds": 86.17457250700681,
+      "audit_seconds": 90.93179394397885
+    }
+  },
+  "benchmark_completed_utc": "2026-09-21T18:17:23.670830+00:00",
+  "benchmark_workflow_seconds": 178.9022075989924,
+  "benchmark_minus_forecast_seconds": -331.8786616316048,
+  "fixture_receipt_sha256": "aee47445508da8f0657efe754f45b58d20f5f0db29c5218671b3a4c86cb0fb6a",
+  "benchmark_forecast_sha256": "b130eec9dce3d09b4696dfade294c47f2c29857561ebebed26ecd8b71191adf1",
+  "benchmark_figure_visually_inspected": true,
+  "figure_provenance_sha256": "de1d295575a745199e2cd73fe19acf824242ac8db476d34cba411f3af77d6b1d",
+  "forecast_sha256": "2307e562046db06c2c183834445f19fbd75f69cddac09b65bc9e2349f973873a",
+  "forecast_seconds": 7151.996602679137,
+  "workers": 8,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "numerical_threads": 1,
+  "storage_with_reserve_bytes": 1696620416,
+  "available_bytes": 11911352320,
+  "source_data_index_sha256": "c6674fb054ba98224c83d77e88c08175f1b31caeaf590b6c90236a4882271b22",
+  "source_evidence": {
+    "benchmark": {
+      "path": "E024_serial_compensation/runs/benchmark_v1",
+      "blocks": [
+        900024
+      ],
+      "raw_files_verified": 4,
+      "complete_sha256": "a3ebd09944bc7aaf26e770e3eb96530c7d5cd9797feae4d9cb87b66fa6056c24",
+      "audit_sha256": "fd0ce88f0667b9636d869ce43bb0ddb1a891ff58888b8fb64d2211da6b8c4bc0"
+    },
+    "cohort": {
+      "path": "E025_rewriting_confirmation/runs/confirmation_v1",
+      "blocks": [
+        23000,
+        23001,
+        23002,
+        23003,
+        23004,
+        23005,
+        23006,
+        23007,
+        23008,
+        23009,
+        23010,
+        23011,
+        23012,
+        23013,
+        23014,
+        23015,
+        23016,
+        23017,
+        23018,
+        23019,
+        23020,
+        23021,
+        23022,
+        23023,
+        23024,
+        23025,
+        23026,
+        23027,
+        23028,
+        23029,
+        23030,
+        23031
+      ],
+      "raw_files_verified": 128,
+      "complete_sha256": "26a5d02569a8a48ffff282b16a6a474be3ad5193a30eab6882edd2a003b4e2a9",
+      "audit_sha256": "4583f09677696f0e94ecb6391ca9fcd836a455d1a1b3a07eb2bb52a00b92ebe6"
+    },
+    "fixture": {
+      "path": "E025_rewriting_confirmation/analysis/fixture_attempt1",
+      "blocks": [
+        900025
+      ],
+      "raw_files_verified": 4,
+      "complete_sha256": "8563393cf2d1b4a75daa8fc00ee9867783b37b348b41af186cc67593f29598c3",
+      "audit_sha256": "960e58ff692f506eedaaae9988302dda4218337dc020438d5532035db5bdb735"
+    }
+  },
+  "predecessor_closeout_sha256": "e92812c3d922d4dd6687985496b2c7700478d3a219e064d7683b013153cddbd1",
+  "predecessor_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1",
+    "E022_reader_compensation/runs/compensation_v1",
+    "E023_receiver_compensation/runs/receiver_v1",
+    "E024_serial_compensation/runs/serial_v1",
+    "E025_rewriting_confirmation/runs/confirmation_v1"
+  ],
+  "predecessor_diagnoses_inputs_unchanged": true,
+  "prior_active_jobs": [],
+  "diagnostic_design": "Four final-packet interventions on all existing E025 blocks; post hoc pointwise intervals",
+  "new_intervention_cohort_outcomes_inspected": false,
+  "operational_launcher_sha256": "c6594bab6ace30df386ccaa9e031e7079f96ab05790b8b8bb2b63192b0fc68d6",
+  "verification_code_sha256": "1b6a7b04c4efbefb71ae221e71d9de29fe3323c50d132ca95af1cd2baae491aa"
+}

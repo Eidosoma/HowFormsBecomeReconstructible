@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-19T20:26:40.455591+00:00",
+  "evidence": {
+    "fixture": {
+      "original_outputs_verified": 29,
+      "complete_sha256": "e232165d73b16f5562ff513d3dfc2f877411735ae7f95e16a1dabe556b9555b0",
+      "audit_sha256": "d6d25423b46d8c85568dbdbfc9c3d46facf3d3e40a13c3f27753bf26fd66c816"
+    },
+    "benchmark": {
+      "original_outputs_verified": 30,
+      "complete_sha256": "aebc2b09e14b714dc6a3e70204804c5653c1e0789cda0b1bcca6952bba8280a2",
+      "audit_sha256": "e589bbb87f0b549e86367704b8d673dc21b8a071ea111a503b5d0e31670cfbeb"
+    }
+  },
+  "benchmark_figure_visually_inspected": true,
+  "figure_provenance_sha256": "d2bbaa5f00a2ff1faeff8609845bf00d0805398f7ed4d65854aba787d65f9857",
+  "forecast_sha256": "d2f1def7cf2e5c35f3217e3ef5224d69dd08aec843094dd58ab3590a9f6a13cb",
+  "forecast_seconds": 11073.704927840008,
+  "workers": 8,
+  "numerical_threads": 1,
+  "storage_with_reserve_bytes": 4559042688,
+  "available_bytes": 25975451648,
+  "cohort_ids_previously_unused": [
+    19000,
+    19001,
+    19002,
+    19003,
+    19004,
+    19005,
+    19006,
+    19007,
+    19008,
+    19009,
+    19010,
+    19011,
+    19012,
+    19013,
+    19014,
+    19015,
+    19016,
+    19017,
+    19018,
+    19019,
+    19020,
+    19021,
+    19022,
+    19023,
+    19024,
+    19025,
+    19026,
+    19027,
+    19028,
+    19029,
+    19030,
+    19031
+  ],
+  "predecessor_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1"
+  ],
+  "prior_active_jobs": [],
+  "launch_command": "bash run_python.sh E021_damaged_renewal/analysis/launch_verified.py",
+  "operational_launcher_sha256": "7553dae71a35a4080941aacb8cfb04ef0697d3eadb75a75d60b9d41d7552b86a"
+}

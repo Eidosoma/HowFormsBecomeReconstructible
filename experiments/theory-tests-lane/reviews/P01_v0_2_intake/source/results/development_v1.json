@@ -1,0 +1,815 @@
+{
+  "status": "DEVELOPMENT_TOY_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T17:57:36.945137+00:00",
+  "calibration_sha256": "831a584f87ddcccb919ac0d0362358ba1ed087594a0f49f111de281adec6287b",
+  "interpretation": "Exact matrix expectations evaluate known constructed toys. Neither native confirmation nor a blinded theory test.",
+  "cases": [
+    {
+      "name": "slower_identity_loss",
+      "rows": [
+        {
+          "horizon": 0,
+          "joint_model": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "generic_four_state": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "independent_two_factor": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "output_only": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "all_cycle_probability": 1.0,
+          "truth": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "oracle_error_bound": 0.0,
+          "sampling_only_conditional_bound": 0.0
+        },
+        {
+          "horizon": 1,
+          "joint_model": {
+            "own": 0.822265625,
+            "foreign": 0.009765625,
+            "specificity": 0.8125
+          },
+          "generic_four_state": {
+            "own": 0.822265625,
+            "foreign": 0.009765625,
+            "specificity": 0.8125
+          },
+          "independent_two_factor": {
+            "own": 0.8378353118896484,
+            "foreign": 0.0049381256103515625,
+            "specificity": 0.8328971862792969
+          },
+          "output_only": {
+            "own": 0.822265625,
+            "foreign": 0.20442708333333334,
+            "specificity": 0.6178385416666666
+          },
+          "all_cycle_probability": 0.822265625,
+          "truth": {
+            "own": 0.84575,
+            "foreign": 0.00425,
+            "specificity": 0.8415
+          },
+          "oracle_error_bound": 0.024234375000000002,
+          "sampling_only_conditional_bound": 0.09842192784414966
+        },
+        {
+          "horizon": 2,
+          "joint_model": {
+            "own": 0.777587890625,
+            "foreign": 0.016269683837890625,
+            "specificity": 0.7613182067871094
+          },
+          "generic_four_state": {
+            "own": 0.777587890625,
+            "foreign": 0.016269683837890625,
+            "specificity": 0.7613182067871094
+          },
+          "independent_two_factor": {
+            "own": 0.7965343847172335,
+            "foreign": 0.009389077196829021,
+            "specificity": 0.7871453075204045
+          },
+          "output_only": {
+            "own": 0.7124544779459635,
+            "foreign": 0.33073001437717015,
+            "specificity": 0.38172446356879336
+          },
+          "all_cycle_probability": 0.6761207580566406,
+          "truth": {
+            "own": 0.8044156250000001,
+            "foreign": 0.008084375000000001,
+            "specificity": 0.79633125
+          },
+          "oracle_error_bound": 0.04416146850585938,
+          "sampling_only_conditional_bound": 0.17935089585662428
+        },
+        {
+          "horizon": 4,
+          "joint_model": {
+            "own": 0.7545364053803496,
+            "foreign": 0.027972671887255274,
+            "specificity": 0.7265637334930943
+          },
+          "generic_four_state": {
+            "own": 0.7545364053803496,
+            "foreign": 0.027972671887255274,
+            "specificity": 0.7265637334930943
+          },
+          "independent_two_factor": {
+            "own": 0.7769486398633019,
+            "foreign": 0.01831387940687973,
+            "specificity": 0.7586347604564221
+          },
+          "output_only": {
+            "own": 0.6026913177882778,
+            "foreign": 0.4569777517013947,
+            "specificity": 0.14571356608688307
+          },
+          "all_cycle_probability": 0.45713927947508637,
+          "truth": {
+            "own": 0.7850042618164064,
+            "foreign": 0.015776988183593754,
+            "specificity": 0.7692272736328126
+          },
+          "oracle_error_bound": 0.08104735385219101,
+          "sampling_only_conditional_bound": 0.32915380787825593
+        },
+        {
+          "horizon": 8,
+          "joint_model": {
+            "own": 0.7299739117170583,
+            "foreign": 0.050170777364479384,
+            "specificity": 0.6798031343525789
+          },
+          "generic_four_state": {
+            "own": 0.7299739117170583,
+            "foreign": 0.050170777364479384,
+            "specificity": 0.6798031343525789
+          },
+          "independent_two_factor": {
+            "own": 0.7588882572991994,
+            "foreign": 0.03575646966491981,
+            "specificity": 0.7231317876342795
+          },
+          "output_only": {
+            "own": 0.5447980528659276,
+            "foreign": 0.5235656095241712,
+            "specificity": 0.021232443341756446
+          },
+          "all_cycle_probability": 0.20897632083900114,
+          "truth": {
+            "own": 0.7691008116467396,
+            "foreign": 0.030902240111073134,
+            "specificity": 0.7381985715356665
+          },
+          "oracle_error_bound": 0.15109673732771461,
+          "sampling_only_conditional_bound": 0.6136420757190875
+        },
+        {
+          "horizon": 16,
+          "joint_model": {
+            "own": 0.6864303862534109,
+            "foreign": 0.09043313602910051,
+            "specificity": 0.5959972502243104
+          },
+          "generic_four_state": {
+            "own": 0.6864303862534109,
+            "foreign": 0.09043313602910051,
+            "specificity": 0.5959972502243104
+          },
+          "independent_two_factor": {
+            "own": 0.7263479319405836,
+            "foreign": 0.06829492521929845,
+            "specificity": 0.6580530067212851
+          },
+          "output_only": {
+            "own": 0.5351330033143462,
+            "foreign": 0.5346821866640853,
+            "specificity": 0.0004508166502609212
+          },
+          "all_cycle_probability": 0.04367110267140513,
+          "truth": {
+            "own": 0.740583108481058,
+            "foreign": 0.05941689156550827,
+            "specificity": 0.6811662169155498
+          },
+          "oracle_error_bound": 0.2782062979811905,
+          "sampling_only_conditional_bound": 1.0
+        },
+        {
+          "horizon": 32,
+          "joint_model": {
+            "own": 0.6147877062828648,
+            "foreign": 0.15667949468736292,
+            "specificity": 0.4581082115955019
+          },
+          "generic_four_state": {
+            "own": 0.6147877062828648,
+            "foreign": 0.15667949468736292,
+            "specificity": 0.4581082115955019
+          },
+          "independent_two_factor": {
+            "own": 0.6697921087920647,
+            "foreign": 0.12485074835079209,
+            "specificity": 0.5449413604412726
+          },
+          "output_only": {
+            "own": 0.5349234335320835,
+            "foreign": 0.5349232302964314,
+            "specificity": 2.03235652085354e-07
+          },
+          "all_cycle_probability": 0.0019071652085364084,
+          "truth": {
+            "own": 0.6899921343831416,
+            "foreign": 0.11000786561685855,
+            "specificity": 0.5799842687662831
+          },
+          "oracle_error_bound": 0.487347956129727,
+          "sampling_only_conditional_bound": 1.0
+        },
+        {
+          "horizon": 64,
+          "joint_model": {
+            "own": 0.5173929777458779,
+            "foreign": 0.2467381876576141,
+            "specificity": 0.27065479008826376
+          },
+          "generic_four_state": {
+            "own": 0.5173929777458779,
+            "foreign": 0.2467381876576141,
+            "specificity": 0.27065479008826376
+          },
+          "independent_two_factor": {
+            "own": 0.5841733480534147,
+            "foreign": 0.21046950908944223,
+            "specificity": 0.37370383896397247
+          },
+          "output_only": {
+            "own": 0.5349233390119441,
+            "foreign": 0.5349233390119027,
+            "specificity": 4.141131881851834e-14
+          },
+          "all_cycle_probability": 3.637279132651724e-06,
+          "truth": {
+            "own": 0.6102385950102254,
+            "foreign": 0.18976140498977512,
+            "specificity": 0.42047719002045025
+          },
+          "oracle_error_bound": 0.7716658380408057,
+          "sampling_only_conditional_bound": 1.0
+        }
+      ],
+      "rmse_over_declared_positive_horizons": {
+        "joint_model": {
+          "own": 0.054692621271068505,
+          "foreign": 0.03163188891134153,
+          "specificity": 0.0860659179734381
+        },
+        "generic_four_state": {
+          "own": 0.054692621271068505,
+          "foreign": 0.03163188891134153,
+          "specificity": 0.0860659179734381
+        },
+        "independent_two_factor": {
+          "own": 0.015042909727888442,
+          "foreign": 0.0104206618320941,
+          "specificity": 0.02520649444116257
+        },
+        "output_only": {
+          "own": 0.1532908258722876,
+          "foreign": 0.3976921478363649,
+          "specificity": 0.5478906365753863
+        }
+      },
+      "analytic_formula_max_error": 6.661338147750939e-16,
+      "actual_transition_tv_for_toy_audit": 0.024234375000000002,
+      "simultaneous_sampling_radius": 0.09842192784414966,
+      "representation_defect": 0,
+      "representation_defect_basis": "Identity/readiness is the supplied complete toy state, not an empirically validated native reduction."
+    },
+    {
+      "name": "faster_identity_loss",
+      "rows": [
+        {
+          "horizon": 0,
+          "joint_model": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "generic_four_state": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "independent_two_factor": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "output_only": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "all_cycle_probability": 1.0,
+          "truth": {
+            "own": 1.0,
+            "foreign": 0.0,
+            "specificity": 1.0
+          },
+          "oracle_error_bound": 0.0,
+          "sampling_only_conditional_bound": 0.0
+        },
+        {
+          "horizon": 1,
+          "joint_model": {
+            "own": 0.765625,
+            "foreign": 0.02734375,
+            "specificity": 0.73828125
+          },
+          "generic_four_state": {
+            "own": 0.765625,
+            "foreign": 0.02734375,
+            "specificity": 0.73828125
+          },
+          "independent_two_factor": {
+            "own": 0.7945632934570312,
+            "foreign": 0.03356170654296875,
+            "specificity": 0.7610015869140625
+          },
+          "output_only": {
+            "own": 0.765625,
+            "foreign": 0.20377604166666666,
+            "specificity": 0.5618489583333334
+          },
+          "all_cycle_probability": 0.765625,
+          "truth": {
+            "own": 0.816,
+            "foreign": 0.034,
+            "specificity": 0.7819999999999999
+          },
+          "oracle_error_bound": 0.05442187499999998,
+          "sampling_only_conditional_bound": 0.09842192784414966
+        },
+        {
+          "horizon": 2,
+          "joint_model": {
+            "own": 0.6908302307128906,
+            "foreign": 0.048717498779296875,
+            "specificity": 0.6421127319335938
+          },
+          "generic_four_state": {
+            "own": 0.6908302307128906,
+            "foreign": 0.048717498779296875,
+            "specificity": 0.6421127319335938
+          },
+          "independent_two_factor": {
+            "own": 0.7265715323155746,
+            "foreign": 0.061270264559425414,
+            "specificity": 0.6653012677561492
+          },
+          "output_only": {
+            "own": 0.633941650390625,
+            "foreign": 0.31826739841037327,
+            "specificity": 0.31567425198025173
+          },
+          "all_cycle_probability": 0.586181640625,
+          "truth": {
+            "own": 0.7501,
+            "foreign": 0.062400000000000004,
+            "specificity": 0.6877
+          },
+          "oracle_error_bound": 0.09491940307617185,
+          "sampling_only_conditional_bound": 0.1716616827438001
+        },
+        {
+          "horizon": 4,
+          "joint_model": {
+            "own": 0.6212990592612186,
+            "foreign": 0.08746385520498734,
+            "specificity": 0.5338352040562313
+          },
+          "generic_four_state": {
+            "own": 0.6212990592612186,
+            "foreign": 0.08746385520498734,
+            "specificity": 0.5338352040562313
+          },
+          "independent_two_factor": {
+            "own": 0.6648487326508079,
+            "foreign": 0.11133886605448384,
+            "specificity": 0.5535098665963241
+          },
+          "output_only": {
+            "own": 0.5183864546965601,
+            "foreign": 0.4187362213332686,
+            "specificity": 0.09965023336329148
+          },
+          "all_cycle_probability": 0.34360891580581665,
+          "truth": {
+            "own": 0.6872276499999999,
+            "foreign": 0.1135536,
+            "specificity": 0.5736740499999998
+          },
+          "oracle_error_bound": 0.16157415297743857,
+          "sampling_only_conditional_bound": 0.2922067574082125
+        },
+        {
+          "horizon": 8,
+          "joint_model": {
+            "own": 0.5289042142360224,
+            "foreign": 0.14896090549985785,
+            "specificity": 0.37994330873616455
+          },
+          "generic_four_state": {
+            "own": 0.5289042142360224,
+            "foreign": 0.14896090549985785,
+            "specificity": 0.37994330873616455
+          },
+          "independent_two_factor": {
+            "own": 0.5849420889378614,
+            "foreign": 0.19057015917198328,
+            "specificity": 0.3943719297658781
+          },
+          "output_only": {
+            "own": 0.4703935525161501,
+            "foreign": 0.4604633835067917,
+            "specificity": 0.009930169009358392
+          },
+          "all_cycle_probability": 0.1180670870212488,
+          "truth": {
+            "own": 0.6052898582437833,
+            "foreign": 0.19471319351402872,
+            "specificity": 0.4105766647297546
+          },
+          "oracle_error_bound": 0.26532838882973125,
+          "sampling_only_conditional_bound": 0.47984622985526143
+        },
+        {
+          "horizon": 16,
+          "joint_model": {
+            "own": 0.4168181329281292,
+            "foreign": 0.2240706161723395,
+            "specificity": 0.1927475167557897
+          },
+          "generic_four_state": {
+            "own": 0.4168181329281292,
+            "foreign": 0.2240706161723395,
+            "specificity": 0.1927475167557897
+          },
+          "independent_two_factor": {
+            "own": 0.48802999096359895,
+            "foreign": 0.287480213136645,
+            "specificity": 0.20054977782695393
+          },
+          "output_only": {
+            "own": 0.4651344709841897,
+            "foreign": 0.4650358627276353,
+            "specificity": 9.860825655438887e-05
+          },
+          "all_cycle_probability": 0.013939837037683138,
+          "truth": {
+            "own": 0.5053574447272506,
+            "foreign": 0.2946425553193147,
+            "specificity": 0.21071488940793592
+          },
+          "oracle_error_bound": 0.3919970151867836,
+          "sampling_only_conditional_bound": 0.7089263635961764
+        },
+        {
+          "horizon": 32,
+          "joint_model": {
+            "own": 0.33111040814862364,
+            "foreign": 0.2815048712073019,
+            "specificity": 0.04960553694132175
+          },
+          "generic_four_state": {
+            "own": 0.33111040814862364,
+            "foreign": 0.2815048712073019,
+            "specificity": 0.04960553694132175
+          },
+          "independent_two_factor": {
+            "own": 0.41368655540714516,
+            "foreign": 0.3618236486744874,
+            "specificity": 0.051862906732657754
+          },
+          "output_only": {
+            "own": 0.4650817288268826,
+            "foreign": 0.4650817191032943,
+            "specificity": 9.723588267895877e-09
+          },
+          "all_cycle_probability": 0.00019431905663716252,
+          "truth": {
+            "own": 0.42775047788314274,
+            "foreign": 0.37224952211685564,
+            "specificity": 0.05550095576628711
+          },
+          "oracle_error_bound": 0.48885652807012425,
+          "sampling_only_conditional_bound": 0.8840967337464818
+        },
+        {
+          "horizon": 64,
+          "joint_model": {
+            "own": 0.3033758638552192,
+            "foreign": 0.3000902775356081,
+            "specificity": 0.0032855863196111224
+          },
+          "generic_four_state": {
+            "own": 0.3033758638552192,
+            "foreign": 0.3000902775356081,
+            "specificity": 0.0032855863196111224
+          },
+          "independent_two_factor": {
+            "own": 0.38948929011506966,
+            "foreign": 0.38602091396656296,
+            "specificity": 0.003468376148506702
+          },
+          "output_only": {
+            "own": 0.4650817236255578,
+            "foreign": 0.4650817236255577,
+            "specificity": 5.551115123125783e-17
+          },
+          "all_cycle_probability": 3.775989577235679e-08,
+          "truth": {
+            "own": 0.40192522255685564,
+            "foreign": 0.39807477744314157,
+            "specificity": 0.003850445113714074
+          },
+          "oracle_error_bound": 0.5201997291347137,
+          "sampling_only_conditional_bound": 0.9407808938123319
+        }
+      ],
+      "rmse_over_declared_positive_horizons": {
+        "joint_model": {
+          "own": 0.07848783415853862,
+          "foreign": 0.06073527526605953,
+          "specificity": 0.03133452173261565
+        },
+        "generic_four_state": {
+          "own": 0.07848783415853862,
+          "foreign": 0.06073527526605953,
+          "specificity": 0.03133452173261565
+        },
+        "independent_two_factor": {
+          "own": 0.01920065408660569,
+          "foreign": 0.0068539018149089016,
+          "specificity": 0.015714120841573514
+        },
+        "output_only": {
+          "own": 0.09981054831202646,
+          "foreign": 0.20708633554351807,
+          "specificity": 0.29749915496487017
+        }
+      },
+      "analytic_formula_max_error": 1.3877787807814457e-15,
+      "actual_transition_tv_for_toy_audit": 0.05442187499999998,
+      "simultaneous_sampling_radius": 0.09842192784414966,
+      "representation_defect": 0,
+      "representation_defect_basis": "Identity/readiness is the supplied complete toy state, not an empirically validated native reduction."
+    }
+  ],
+  "counterexamples": [
+    {
+      "id": "CE01",
+      "name": "One attracting prototype erases identity",
+      "status": "EXACT_CONSTRUCTED",
+      "kernel": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "terminal_q": [
+        1.0,
+        0.0
+      ],
+      "own_and_foreign_terminal": [
+        1.0,
+        1.0
+      ],
+      "specificity_after_one": 0.0
+    },
+    {
+      "id": "CE02",
+      "name": "Perfect record with unusable reader",
+      "status": "EXACT_CONSTRUCTED",
+      "retained_identity_bits": 1,
+      "terminal_q": [
+        0.0,
+        0.0
+      ],
+      "terminal_success": 0.0
+    },
+    {
+      "id": "CE03",
+      "name": "Current success leaves a failing successor",
+      "status": "EXACT_CONSTRUCTED",
+      "kernel": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "q": [
+        1.0,
+        0.0
+      ],
+      "current": 1.0,
+      "next": 0.0
+    },
+    {
+      "id": "CE04",
+      "name": "Failed expression precedes recovery",
+      "status": "EXACT_CONSTRUCTED",
+      "kernel": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "q": [
+        0.0,
+        1.0
+      ],
+      "current": 0.0,
+      "next": 1.0
+    },
+    {
+      "id": "CE05",
+      "name": "Nonnormal transient escapes a safe region",
+      "status": "EXACT_CONSTRUCTED",
+      "matrix": [
+        [
+          0.5,
+          8.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "spectral_radius": 0.5,
+      "initial": [
+        0.0,
+        0.1
+      ],
+      "after_one": [
+        0.8,
+        0.05
+      ],
+      "safe_infinity_radius": 0.2
+    },
+    {
+      "id": "CE06",
+      "name": "External guide supplies erased founder identity",
+      "status": "EXACT_CONSTRUCTED",
+      "information_F_record_bits": 0,
+      "information_F_record_and_guide_bits": 1,
+      "decoder_accuracy_using_guide": 1.0,
+      "independent_guide_accuracy": 0.5
+    },
+    {
+      "id": "CE07",
+      "name": "Mutual copying preserves a defect",
+      "status": "EXACT_CONSTRUCTED",
+      "trajectory": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "declared_goal": [
+        1,
+        1
+      ],
+      "goal_reached": false
+    },
+    {
+      "id": "CE08",
+      "name": "Large nuisance memory misses task value",
+      "status": "EXACT_CONSTRUCTED",
+      "nuisance_storage": {
+        "total_temporal_information_bits": 20,
+        "task_accuracy": 0.5
+      },
+      "useful_storage": {
+        "total_temporal_information_bits": 1,
+        "task_accuracy": 1.0
+      }
+    },
+    {
+      "id": "CE09",
+      "name": "Current-output aggregation aliases different successors",
+      "status": "EXACT_CONSTRUCTED",
+      "transition_defect": 0.3955833333333333,
+      "readout_defect": 0.0,
+      "horizon": 32,
+      "maximum_terminal_error": 0.4562990971641962,
+      "conditional_bound": 1.0
+    },
+    {
+      "id": "CE10",
+      "name": "Success and successor noise cannot be factorized",
+      "status": "EXACT_CONSTRUCTED",
+      "joint": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.5
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "horizon": 2,
+      "true_all_cycle": 0.0,
+      "marginal_factorization": 0.125
+    },
+    {
+      "id": "CE11",
+      "name": "Identical bounded probe transcripts hide an unvisited failure",
+      "status": "EXACT_CONSTRUCTED",
+      "maximum_probe_depth": 4,
+      "short_endpoint_good": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "short_endpoint_bad": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "first_divergent_horizon": 5,
+      "later_good": 1.0,
+      "later_bad": 0.0,
+      "minimax_absolute_error_at_least": 0.5
+    }
+  ],
+  "sample_complexity": [
+    {
+      "horizon": 1,
+      "sufficient_one_step_samples_per_row": 496,
+      "sufficient_total_one_step_samples": 1984,
+      "assumptions": "Zero representation defect, known readout, independent fixed-row samples; illustrative worst-case union bound, not a lower bound or native sample-size recommendation."
+    },
+    {
+      "horizon": 8,
+      "sufficient_one_step_samples_per_row": 31742,
+      "sufficient_total_one_step_samples": 126968,
+      "assumptions": "Zero representation defect, known readout, independent fixed-row samples; illustrative worst-case union bound, not a lower bound or native sample-size recommendation."
+    },
+    {
+      "horizon": 16,
+      "sufficient_one_step_samples_per_row": 126968,
+      "sufficient_total_one_step_samples": 507872,
+      "assumptions": "Zero representation defect, known readout, independent fixed-row samples; illustrative worst-case union bound, not a lower bound or native sample-size recommendation."
+    },
+    {
+      "horizon": 32,
+      "sufficient_one_step_samples_per_row": 507872,
+      "sufficient_total_one_step_samples": 2031488,
+      "assumptions": "Zero representation defect, known readout, independent fixed-row samples; illustrative worst-case union bound, not a lower bound or native sample-size recommendation."
+    },
+    {
+      "horizon": 64,
+      "sufficient_one_step_samples_per_row": 2031486,
+      "sufficient_total_one_step_samples": 8125944,
+      "assumptions": "Zero representation defect, known readout, independent fixed-row samples; illustrative worst-case union bound, not a lower bound or native sample-size recommendation."
+    }
+  ],
+  "elapsed_seconds": 0.02845042711123824
+}

@@ -1,0 +1,1166 @@
+{
+  "analysis_seconds": 0.6339844081085175,
+  "cases": [
+    {
+      "block": 900003,
+      "category_counts": {
+        "a0": [
+          0,
+          0,
+          2
+        ],
+        "a0_repeat": [
+          0,
+          0,
+          2
+        ],
+        "a1": [
+          0,
+          0,
+          2
+        ],
+        "a1_repeat": [
+          0,
+          0,
+          2
+        ],
+        "a2": [
+          0,
+          0,
+          2
+        ],
+        "a2_repeat": [
+          0,
+          0,
+          2
+        ],
+        "copy1": [
+          0,
+          0,
+          2
+        ],
+        "copy2": [
+          0,
+          0,
+          2
+        ],
+        "erased": [
+          0,
+          0,
+          2
+        ],
+        "foreign": [
+          0,
+          0,
+          2
+        ],
+        "random": [
+          0,
+          0,
+          2
+        ],
+        "reader_disabled": [
+          0,
+          0,
+          2
+        ]
+      },
+      "clone_disagreements": [
+        0,
+        0,
+        0
+      ],
+      "fixed_packet_assays": 8,
+      "fixed_packet_counts": [
+        0,
+        0,
+        8
+      ],
+      "founder": 0,
+      "full_rewrite": {
+        "boundary_parameters": [
+          0,
+          1,
+          3
+        ],
+        "conventional_same_structure_hmm": "IDENTICAL_BY_CONSTRUCTION",
+        "empirical_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit": {
+          "attempts": [
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8000000497720129,
+                0.0,
+                1.2443003265147369e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000023487867,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                -1.2767564496148707e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000025535128,
+                0.0,
+                -1.2767564088621963e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.99,
+                0.0,
+                -7.993605750677072e-09
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.9899999833466547,
+                0.0,
+                0.0
+              ],
+              "success": true
+            }
+          ],
+          "average_negative_log_likelihood": -0.0,
+          "params": [
+            0.0,
+            1.0,
+            0.8000000497720129,
+            0.0,
+            1.2443003265147369e-08
+          ],
+          "uncertainty": "Point estimate only. Convergence does not establish parameter identifiability or calibrated long-horizon uncertainty."
+        },
+        "fit_status": "FITTED",
+        "fitted_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "h32_probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "h32_status": "UNVALIDATED_POINT_EXTRAPOLATION_NO_LONG_OUTCOME",
+        "joint_likelihood_gap": 0.0,
+        "maximum_marginal_residual": 0.0,
+        "missing_A_or_B": true,
+        "output_markov": {
+          "reason": "Output baseline has an unobserved source category",
+          "status": "UNSUPPORTED"
+        },
+        "pattern_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "saturated_average_negative_log_likelihood": -0.0,
+        "single_observed_category": true,
+        "successful_start_h32_A_range": [
+          0.0,
+          0.0
+        ],
+        "uncertainty": "NOT_VALIDATED; optimizer spread is not a confidence interval."
+      },
+      "id": "technical_f0",
+      "margins": {
+        "a0": {
+          "maximum_A": -0.08427241577459695,
+          "maximum_B": -0.08649061493948373,
+          "mean_A": -0.13276848348204826,
+          "minimum_A": -0.18126455118949958,
+          "minimum_B": -0.18187136232210568
+        },
+        "a0_repeat": {
+          "maximum_A": -0.08214756620612232,
+          "maximum_B": -0.0847986776659492,
+          "mean_A": -0.15409941309761577,
+          "minimum_A": -0.22605125998910924,
+          "minimum_B": -0.22661779924621947
+        },
+        "a1": {
+          "maximum_A": -0.029013486425601857,
+          "maximum_B": -0.08437958366255388,
+          "mean_A": -0.14981240087313918,
+          "minimum_A": -0.2706113153206765,
+          "minimum_B": -0.30520082693807143
+        },
+        "a1_repeat": {
+          "maximum_A": -0.002570924584360924,
+          "maximum_B": -0.07778482289466619,
+          "mean_A": -0.008897585015526331,
+          "minimum_A": -0.01522424544669174,
+          "minimum_B": -0.08942349912071046
+        },
+        "a2": {
+          "maximum_A": -0.12106806107704166,
+          "maximum_B": -0.12376522983570247,
+          "mean_A": -0.16929461936198406,
+          "minimum_A": -0.21752117764692647,
+          "minimum_B": -0.22768031042401232
+        },
+        "a2_repeat": {
+          "maximum_A": -0.09175841973590172,
+          "maximum_B": -0.10654171245890295,
+          "mean_A": -0.12068519910301209,
+          "minimum_A": -0.14961197847012248,
+          "minimum_B": -0.1572367021381732
+        },
+        "copy1": {
+          "maximum_A": -0.07478950141541604,
+          "maximum_B": -0.07595873515574932,
+          "mean_A": -0.07493053399035632,
+          "minimum_A": -0.07507156656529658,
+          "minimum_B": -0.07746778413339325
+        },
+        "copy2": {
+          "maximum_A": -0.024725921572365785,
+          "maximum_B": -0.026760307717619048,
+          "mean_A": -0.05527169593363876,
+          "minimum_A": -0.08581747029491173,
+          "minimum_B": -0.08665277333974342
+        },
+        "erased": {
+          "maximum_A": -0.015298710983926187,
+          "maximum_B": -0.015298710983926187,
+          "mean_A": -0.020419107702307492,
+          "minimum_A": -0.025539504420688797,
+          "minimum_B": -0.025539504420688797
+        },
+        "foreign": {
+          "maximum_A": -0.08011231926427041,
+          "maximum_B": -0.07846804801132241,
+          "mean_A": -0.16908452600639956,
+          "minimum_A": -0.2580567327485287,
+          "minimum_B": -0.25746184247149456
+        },
+        "random": {
+          "maximum_A": -0.004869638882943157,
+          "maximum_B": -0.004994733917921016,
+          "mean_A": -0.02924393429309802,
+          "minimum_A": -0.05361822970325288,
+          "minimum_B": -0.0537095437402642
+        },
+        "reader_disabled": {
+          "maximum_A": -0.015298710983926187,
+          "maximum_B": -0.015298710983926187,
+          "mean_A": -0.020419107702307492,
+          "minimum_A": -0.025539504420688797,
+          "minimum_B": -0.025539504420688797
+        }
+      },
+      "paths": 2,
+      "protected_copy": {
+        "boundary_parameters": [
+          0,
+          1,
+          3
+        ],
+        "conventional_same_structure_hmm": "IDENTICAL_BY_CONSTRUCTION",
+        "empirical_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit": {
+          "attempts": [
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8000000497720129,
+                0.0,
+                1.2443003265147369e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000023487867,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                -1.2767564496148707e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000025535128,
+                0.0,
+                -1.2767564088621963e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.99,
+                0.0,
+                -7.993605750677072e-09
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.9899999833466547,
+                0.0,
+                0.0
+              ],
+              "success": true
+            }
+          ],
+          "average_negative_log_likelihood": -0.0,
+          "params": [
+            0.0,
+            1.0,
+            0.8000000497720129,
+            0.0,
+            1.2443003265147369e-08
+          ],
+          "uncertainty": "Point estimate only. Convergence does not establish parameter identifiability or calibrated long-horizon uncertainty."
+        },
+        "fit_status": "FITTED",
+        "fitted_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "h32_probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "h32_status": "UNVALIDATED_POINT_EXTRAPOLATION_NO_LONG_OUTCOME",
+        "joint_likelihood_gap": 0.0,
+        "maximum_marginal_residual": 0.0,
+        "missing_A_or_B": true,
+        "output_markov": {
+          "reason": "Output baseline has an unobserved source category",
+          "status": "UNSUPPORTED"
+        },
+        "pattern_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "saturated_average_negative_log_likelihood": -0.0,
+        "single_observed_category": true,
+        "successful_start_h32_A_range": [
+          0.0,
+          0.0
+        ],
+        "uncertainty": "NOT_VALIDATED; optimizer spread is not a confidence interval."
+      },
+      "rule": 1,
+      "scientific_exclusion": true,
+      "source_depth": 0
+    },
+    {
+      "block": 900003,
+      "category_counts": {
+        "a0": [
+          0,
+          0,
+          2
+        ],
+        "a0_repeat": [
+          0,
+          0,
+          2
+        ],
+        "a1": [
+          0,
+          0,
+          2
+        ],
+        "a1_repeat": [
+          0,
+          0,
+          2
+        ],
+        "a2": [
+          0,
+          0,
+          2
+        ],
+        "a2_repeat": [
+          0,
+          0,
+          2
+        ],
+        "copy1": [
+          0,
+          0,
+          2
+        ],
+        "copy2": [
+          0,
+          0,
+          2
+        ],
+        "erased": [
+          0,
+          0,
+          2
+        ],
+        "foreign": [
+          0,
+          0,
+          2
+        ],
+        "random": [
+          0,
+          0,
+          2
+        ],
+        "reader_disabled": [
+          0,
+          0,
+          2
+        ]
+      },
+      "clone_disagreements": [
+        0,
+        0,
+        0
+      ],
+      "fixed_packet_assays": 8,
+      "fixed_packet_counts": [
+        0,
+        0,
+        8
+      ],
+      "founder": 1,
+      "full_rewrite": {
+        "boundary_parameters": [
+          0,
+          1,
+          3
+        ],
+        "conventional_same_structure_hmm": "IDENTICAL_BY_CONSTRUCTION",
+        "empirical_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit": {
+          "attempts": [
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8000000497720129,
+                0.0,
+                1.2443003265147369e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000023487867,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                -1.2767564496148707e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000025535128,
+                0.0,
+                -1.2767564088621963e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.99,
+                0.0,
+                -7.993605750677072e-09
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.9899999833466547,
+                0.0,
+                0.0
+              ],
+              "success": true
+            }
+          ],
+          "average_negative_log_likelihood": -0.0,
+          "params": [
+            0.0,
+            1.0,
+            0.8000000497720129,
+            0.0,
+            1.2443003265147369e-08
+          ],
+          "uncertainty": "Point estimate only. Convergence does not establish parameter identifiability or calibrated long-horizon uncertainty."
+        },
+        "fit_status": "FITTED",
+        "fitted_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "h32_probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "h32_status": "UNVALIDATED_POINT_EXTRAPOLATION_NO_LONG_OUTCOME",
+        "joint_likelihood_gap": 0.0,
+        "maximum_marginal_residual": 0.0,
+        "missing_A_or_B": true,
+        "output_markov": {
+          "reason": "Output baseline has an unobserved source category",
+          "status": "UNSUPPORTED"
+        },
+        "pattern_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "saturated_average_negative_log_likelihood": -0.0,
+        "single_observed_category": true,
+        "successful_start_h32_A_range": [
+          0.0,
+          0.0
+        ],
+        "uncertainty": "NOT_VALIDATED; optimizer spread is not a confidence interval."
+      },
+      "id": "technical_f1",
+      "margins": {
+        "a0": {
+          "maximum_A": -0.07846804801132241,
+          "maximum_B": -0.08011231926427041,
+          "mean_A": -0.16796494524140848,
+          "minimum_A": -0.25746184247149456,
+          "minimum_B": -0.2580567327485287
+        },
+        "a0_repeat": {
+          "maximum_A": -0.19829476506457605,
+          "maximum_B": -0.20032773124155345,
+          "mean_A": -0.21723355682353884,
+          "minimum_A": -0.23617234858250163,
+          "minimum_B": -0.2367172126586473
+        },
+        "a1": {
+          "maximum_A": -0.018011441114133553,
+          "maximum_B": -0.09781707232016933,
+          "mean_A": -0.039760382129446825,
+          "minimum_A": -0.0615093231447601,
+          "minimum_B": -0.1102526415561963
+        },
+        "a1_repeat": {
+          "maximum_A": 0.00558279286790212,
+          "maximum_B": -0.07448614785739119,
+          "mean_A": -0.006710408203635168,
+          "minimum_A": -0.019003609275172455,
+          "minimum_B": -0.08179580406959258
+        },
+        "a2": {
+          "maximum_A": -0.15217349404089828,
+          "maximum_B": -0.1604787420724687,
+          "mean_A": -0.17254923003053407,
+          "minimum_A": -0.19292496602016984,
+          "minimum_B": -0.205610203125674
+        },
+        "a2_repeat": {
+          "maximum_A": -0.12889903142954112,
+          "maximum_B": -0.14237987536262312,
+          "mean_A": -0.13753155302356213,
+          "minimum_A": -0.14616407461758313,
+          "minimum_B": -0.15594485342171754
+        },
+        "copy1": {
+          "maximum_A": -0.06504747040186043,
+          "maximum_B": -0.06623573870300764,
+          "mean_A": -0.07979628862397954,
+          "minimum_A": -0.09454510684609865,
+          "minimum_B": -0.09667309940324981
+        },
+        "copy2": {
+          "maximum_A": -0.04460198298555897,
+          "maximum_B": -0.04598651817986266,
+          "mean_A": -0.1035586714971521,
+          "minimum_A": -0.16251536000874522,
+          "minimum_B": -0.1633345628682993
+        },
+        "erased": {
+          "maximum_A": -0.015298710983926187,
+          "maximum_B": -0.015298710983926187,
+          "mean_A": -0.020419107702307492,
+          "minimum_A": -0.025539504420688797,
+          "minimum_B": -0.025539504420688797
+        },
+        "foreign": {
+          "maximum_A": -0.08649061493948373,
+          "maximum_B": -0.08427241577459695,
+          "mean_A": -0.1341809886307947,
+          "minimum_A": -0.18187136232210568,
+          "minimum_B": -0.18126455118949958
+        },
+        "random": {
+          "maximum_A": -0.004994733917921016,
+          "maximum_B": -0.004869638882943157,
+          "mean_A": -0.02935213882909261,
+          "minimum_A": -0.0537095437402642,
+          "minimum_B": -0.05361822970325288
+        },
+        "reader_disabled": {
+          "maximum_A": -0.015298710983926187,
+          "maximum_B": -0.015298710983926187,
+          "mean_A": -0.020419107702307492,
+          "minimum_A": -0.025539504420688797,
+          "minimum_B": -0.025539504420688797
+        }
+      },
+      "paths": 2,
+      "protected_copy": {
+        "boundary_parameters": [
+          0,
+          1,
+          3
+        ],
+        "conventional_same_structure_hmm": "IDENTICAL_BY_CONSTRUCTION",
+        "empirical_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit": {
+          "attempts": [
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8000000497720129,
+                0.0,
+                1.2443003265147369e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000023487867,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                -1.2767564496148707e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.990000025535128,
+                0.0,
+                -1.2767564088621963e-08
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.0,
+                1.0,
+                0.99,
+                0.0,
+                -7.993605750677072e-09
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "success": true
+            },
+            {
+              "loss": -0.0,
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "params": [
+                0.32380952090179743,
+                1.0,
+                0.9899999833466547,
+                0.0,
+                0.0
+              ],
+              "success": true
+            }
+          ],
+          "average_negative_log_likelihood": -0.0,
+          "params": [
+            0.0,
+            1.0,
+            0.8000000497720129,
+            0.0,
+            1.2443003265147369e-08
+          ],
+          "uncertainty": "Point estimate only. Convergence does not establish parameter identifiability or calibrated long-horizon uncertainty."
+        },
+        "fit_status": "FITTED",
+        "fitted_marginals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "h32_probabilities": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "h32_status": "UNVALIDATED_POINT_EXTRAPOLATION_NO_LONG_OUTCOME",
+        "joint_likelihood_gap": 0.0,
+        "maximum_marginal_residual": 0.0,
+        "missing_A_or_B": true,
+        "output_markov": {
+          "reason": "Output baseline has an unobserved source category",
+          "status": "UNSUPPORTED"
+        },
+        "pattern_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "saturated_average_negative_log_likelihood": -0.0,
+        "single_observed_category": true,
+        "successful_start_h32_A_range": [
+          0.0,
+          0.0
+        ],
+        "uncertainty": "NOT_VALIDATED; optimizer spread is not a confidence interval."
+      },
+      "rule": -1,
+      "scientific_exclusion": true,
+      "source_depth": 0
+    }
+  ],
+  "cfg": {
+    "birth_sd": 0.05,
+    "damage_cells": 24,
+    "dt": 0.2,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 4,
+    "paths": 2,
+    "read_steps": 24,
+    "settling_steps": 12,
+    "write_steps": 8,
+    "writer_beta": 3.0
+  },
+  "long_continuations_generated": 0,
+  "mode": "fixture",
+  "paired_cue_assays": 48,
+  "rdt_verdict": "NOT_A_CONFIRMATORY_TEST",
+  "renewal_bodies": 8,
+  "source_blocks": 1,
+  "source_packets": 2,
+  "status": "EXCLUDED_TECHNICAL"
+}

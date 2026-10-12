@@ -1,0 +1,82 @@
+{
+  "contract": {
+    "config": {
+      "capture": 1000,
+      "challenge_time": 150,
+      "dt": 0.2,
+      "formation": 1000,
+      "founders": 4,
+      "gain": 0.2,
+      "generations": 3,
+      "lam": 0.001,
+      "norm": 0.3,
+      "observation_window": 100,
+      "read": 300,
+      "recipients": 2,
+      "rho": 0.002,
+      "side": 16,
+      "sigma": 0.3,
+      "write": 1000
+    },
+    "experiment": "E006",
+    "factors": [
+      1,
+      2,
+      4
+    ],
+    "mode": "development",
+    "source_blocks": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015
+    ],
+    "source_complete_sha256": "93c8e520e861a5df682de9b120d93d0c2c30e773c73f062281d10cf53d98a299",
+    "workers": 12
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E001_unprescribed_capture/analyze.py": "11143ff6c590f53c0e8909c70583ed34c4ffa22b7d10d05ad8703895f8fe00c6",
+    "E001_unprescribed_capture/model.py": "fcab9e9964316dca097b0ff2d1fe9d32b5931109e8bae492cdd745af1388b7bd",
+    "E006_compact_renewal/PROTOCOL.md": "ee67c38c380357af16059cb21e4b418a6f9139aa7b4f5446768b291f453b17ed",
+    "E006_compact_renewal/audit.py": "6cc2bf8f0fbf4bb5c2b37927e7951faa3fe49cd0dd3d475b0a04ca1b02dd355f",
+    "E006_compact_renewal/run.py": "ad915120125588d17a1b6ac53f2dd970baa26d458e9f3848ca13b0a7b20d2797",
+    "E006_compact_renewal/tests.py": "fbe229950d6ffafb2794627535fa2d0156a4c3420cb3bb538c59c19337f088d5",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-17T18:24:16.638324+00:00",
+  "status": "RUNNING"
+}

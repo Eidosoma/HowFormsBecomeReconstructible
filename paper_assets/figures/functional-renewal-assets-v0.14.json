@@ -1,0 +1,30 @@
+{
+  "figure_id": "fig-functional-renewal",
+  "kind": "reported-estimates",
+  "png": "data-functional-renewal-v2.png",
+  "data": "paper_assets/data/forms-cellular-v0.14.json",
+  "data_sha256": "0e9d90d082e77bb2c1ba4a0150730f3bc0c036d72b6bd94def0588b66b77f7e8",
+  "plot_script": "paper_assets/plot_functional_renewal.py",
+  "plot_script_sha256": "0a35c6b0455754a1e52ddec796d2531d5ffcf437ea9e6c20067f4a745c9d9d07",
+  "source_report": "experiments/E041_full_rewrite_confirmation/runs/serial_v1/REPORT.md",
+  "source_report_sha256": "cea45a5b429d2ba7c5caff80168222fae168985d1fa2bb440287b58e6a53f1f8",
+  "history_context": "paper_assets/data/functional-renewal-history-v1.json",
+  "history_context_sha256": "9b3e3a5104282a9e6ce1c69bcb3609bb621acee7b935ce5c6b1f0f03f6c64e2f",
+  "history_source_report": "experiments/E046_failure_chronology/runs/chronology_v1/REPORT.md",
+  "history_source_report_sha256": "3d37cbc91a91816eac5588313462a6a08203822cddc215ceca8099d9c413da10",
+  "history_scope": "Descriptive context from existing E041 full-rewrite histories analyzed in E046, not a new cohort, qualification gate, or inference.",
+  "selection": "All six post-acquisition assay horizons for five named E041 policies, same cohort; terminal scattered injury.",
+  "outputs": [
+    {
+      "path": "paper_assets/figures/data-functional-renewal-v2.png",
+      "sha256": "f0ee02f00ec246ddb8211f3618092cd094181b3d60dd73302d784d1fe7bb0ea1"
+    },
+    {
+      "path": "paper_assets/figures/data-functional-renewal-v2.svg",
+      "sha256": "899f0235a85ce85fdb4b0ba2fccf221ca60a29f304441f771e33da9310f8bcae"
+    }
+  ],
+  "statistics_recomputed": false,
+  "new_trajectories": false,
+  "intervals": "Rounded original pointwise 95% whole-block bootstrap intervals, transcribed from REPORT.md"
+}

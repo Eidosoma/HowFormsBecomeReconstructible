@@ -1,0 +1,2736 @@
+{
+  "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T22:50:01.014729+00:00",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "inference_unit": "block",
+  "endpoint": "h32 scattered strict both-cue success",
+  "rates": [
+    {
+      "writer": "exact_rewrite",
+      "provenance": "new exact replay",
+      "injury": "intact",
+      "successes": 122,
+      "n": 128,
+      "mean_block_success": 0.953125,
+      "block_success": [
+        16,
+        15,
+        16,
+        16,
+        15,
+        14,
+        15,
+        15
+      ],
+      "block_rates": [
+        1.0,
+        0.9375,
+        1.0,
+        1.0,
+        0.9375,
+        0.875,
+        0.9375,
+        0.9375
+      ],
+      "mean_margin": 0.8694030545384382
+    },
+    {
+      "writer": "tolerance_rewrite",
+      "provenance": "reused matched prior pilot",
+      "injury": "intact",
+      "successes": 9,
+      "n": 128,
+      "mean_block_success": 0.0703125,
+      "block_success": [
+        0,
+        1,
+        1,
+        0,
+        3,
+        1,
+        2,
+        1
+      ],
+      "block_rates": [
+        0.0,
+        0.0625,
+        0.0625,
+        0.0,
+        0.1875,
+        0.0625,
+        0.125,
+        0.0625
+      ],
+      "mean_margin": -0.7916555984466244
+    },
+    {
+      "writer": "sign_restored",
+      "provenance": "reused matched prior pilot",
+      "injury": "intact",
+      "successes": 23,
+      "n": 128,
+      "mean_block_success": 0.1796875,
+      "block_success": [
+        0,
+        3,
+        2,
+        3,
+        3,
+        3,
+        5,
+        4
+      ],
+      "block_rates": [
+        0.0,
+        0.1875,
+        0.125,
+        0.1875,
+        0.1875,
+        0.1875,
+        0.3125,
+        0.25
+      ],
+      "mean_margin": -0.48566425158146787
+    },
+    {
+      "writer": "magnitude_restored",
+      "provenance": "new intervention",
+      "injury": "intact",
+      "successes": 111,
+      "n": 128,
+      "mean_block_success": 0.8671875,
+      "block_success": [
+        13,
+        14,
+        16,
+        14,
+        13,
+        13,
+        13,
+        15
+      ],
+      "block_rates": [
+        0.8125,
+        0.875,
+        1.0,
+        0.875,
+        0.8125,
+        0.8125,
+        0.8125,
+        0.9375
+      ],
+      "mean_margin": 0.7514454353010072
+    },
+    {
+      "writer": "single_tolerance_rewrite",
+      "provenance": "new intervention",
+      "injury": "intact",
+      "successes": 118,
+      "n": 128,
+      "mean_block_success": 0.921875,
+      "block_success": [
+        15,
+        14,
+        16,
+        15,
+        15,
+        14,
+        14,
+        15
+      ],
+      "block_rates": [
+        0.9375,
+        0.875,
+        1.0,
+        0.9375,
+        0.9375,
+        0.875,
+        0.875,
+        0.9375
+      ],
+      "mean_margin": 0.8149378691862232
+    },
+    {
+      "writer": "erased",
+      "provenance": "new replay; matches prior erased",
+      "injury": "intact",
+      "successes": 0,
+      "n": 128,
+      "mean_block_success": 0.0,
+      "block_success": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_rates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_margin": -0.009932302516397169
+    },
+    {
+      "writer": "exact_rewrite",
+      "provenance": "new exact replay",
+      "injury": "scattered",
+      "successes": 120,
+      "n": 128,
+      "mean_block_success": 0.9375,
+      "block_success": [
+        16,
+        14,
+        16,
+        16,
+        15,
+        14,
+        14,
+        15
+      ],
+      "block_rates": [
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.9375,
+        0.875,
+        0.875,
+        0.9375
+      ],
+      "mean_margin": 0.8398603267459097
+    },
+    {
+      "writer": "tolerance_rewrite",
+      "provenance": "reused matched prior pilot",
+      "injury": "scattered",
+      "successes": 3,
+      "n": 128,
+      "mean_block_success": 0.0234375,
+      "block_success": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "block_rates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0625,
+        0.0,
+        0.0625,
+        0.0625
+      ],
+      "mean_margin": -0.888073004239595
+    },
+    {
+      "writer": "sign_restored",
+      "provenance": "reused matched prior pilot",
+      "injury": "scattered",
+      "successes": 19,
+      "n": 128,
+      "mean_block_success": 0.1484375,
+      "block_success": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        2,
+        4,
+        4
+      ],
+      "block_rates": [
+        0.0,
+        0.125,
+        0.125,
+        0.125,
+        0.1875,
+        0.125,
+        0.25,
+        0.25
+      ],
+      "mean_margin": -0.5578948004231443
+    },
+    {
+      "writer": "magnitude_restored",
+      "provenance": "new intervention",
+      "injury": "scattered",
+      "successes": 106,
+      "n": 128,
+      "mean_block_success": 0.828125,
+      "block_success": [
+        12,
+        14,
+        16,
+        13,
+        13,
+        12,
+        11,
+        15
+      ],
+      "block_rates": [
+        0.75,
+        0.875,
+        1.0,
+        0.8125,
+        0.8125,
+        0.75,
+        0.6875,
+        0.9375
+      ],
+      "mean_margin": 0.6808056254377783
+    },
+    {
+      "writer": "single_tolerance_rewrite",
+      "provenance": "new intervention",
+      "injury": "scattered",
+      "successes": 116,
+      "n": 128,
+      "mean_block_success": 0.90625,
+      "block_success": [
+        15,
+        13,
+        16,
+        15,
+        15,
+        14,
+        13,
+        15
+      ],
+      "block_rates": [
+        0.9375,
+        0.8125,
+        1.0,
+        0.9375,
+        0.9375,
+        0.875,
+        0.8125,
+        0.9375
+      ],
+      "mean_margin": 0.785564125971322
+    },
+    {
+      "writer": "erased",
+      "provenance": "new replay; matches prior erased",
+      "injury": "scattered",
+      "successes": 0,
+      "n": 128,
+      "mean_block_success": 0.0,
+      "block_success": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_rates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_margin": -0.008999002582509075
+    },
+    {
+      "writer": "exact_rewrite",
+      "provenance": "new exact replay",
+      "injury": "square",
+      "successes": 121,
+      "n": 128,
+      "mean_block_success": 0.9453125,
+      "block_success": [
+        16,
+        15,
+        15,
+        16,
+        15,
+        14,
+        15,
+        15
+      ],
+      "block_rates": [
+        1.0,
+        0.9375,
+        0.9375,
+        1.0,
+        0.9375,
+        0.875,
+        0.9375,
+        0.9375
+      ],
+      "mean_margin": 0.8573687195065136
+    },
+    {
+      "writer": "tolerance_rewrite",
+      "provenance": "reused matched prior pilot",
+      "injury": "square",
+      "successes": 8,
+      "n": 128,
+      "mean_block_success": 0.0625,
+      "block_success": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "block_rates": [
+        0.0,
+        0.0625,
+        0.0625,
+        0.0,
+        0.125,
+        0.0625,
+        0.125,
+        0.0625
+      ],
+      "mean_margin": -0.817333706424301
+    },
+    {
+      "writer": "sign_restored",
+      "provenance": "reused matched prior pilot",
+      "injury": "square",
+      "successes": 23,
+      "n": 128,
+      "mean_block_success": 0.1796875,
+      "block_success": [
+        0,
+        4,
+        3,
+        3,
+        4,
+        2,
+        4,
+        3
+      ],
+      "block_rates": [
+        0.0,
+        0.25,
+        0.1875,
+        0.1875,
+        0.25,
+        0.125,
+        0.25,
+        0.1875
+      ],
+      "mean_margin": -0.4861181563339696
+    },
+    {
+      "writer": "magnitude_restored",
+      "provenance": "new intervention",
+      "injury": "square",
+      "successes": 111,
+      "n": 128,
+      "mean_block_success": 0.8671875,
+      "block_success": [
+        13,
+        14,
+        16,
+        14,
+        13,
+        13,
+        13,
+        15
+      ],
+      "block_rates": [
+        0.8125,
+        0.875,
+        1.0,
+        0.875,
+        0.8125,
+        0.8125,
+        0.8125,
+        0.9375
+      ],
+      "mean_margin": 0.7532803049654735
+    },
+    {
+      "writer": "single_tolerance_rewrite",
+      "provenance": "new intervention",
+      "injury": "square",
+      "successes": 117,
+      "n": 128,
+      "mean_block_success": 0.9140625,
+      "block_success": [
+        15,
+        14,
+        15,
+        15,
+        15,
+        14,
+        14,
+        15
+      ],
+      "block_rates": [
+        0.9375,
+        0.875,
+        0.9375,
+        0.9375,
+        0.9375,
+        0.875,
+        0.875,
+        0.9375
+      ],
+      "mean_margin": 0.8028672298771357
+    },
+    {
+      "writer": "erased",
+      "provenance": "new replay; matches prior erased",
+      "injury": "square",
+      "successes": 0,
+      "n": 128,
+      "mean_block_success": 0.0,
+      "block_success": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_rates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_margin": -0.010323737377346279
+    }
+  ],
+  "comparisons": [
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "intact",
+      "mean_block_success_difference": 0.796875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 8,
+        "rescued": 103,
+        "harmed": 1,
+        "both_fail": 16
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 1,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "intact",
+      "mean_block_success_difference": 0.8515625,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 8,
+        "rescued": 110,
+        "harmed": 1,
+        "both_fail": 9
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 1,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 2,
+          "rescued": 13,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 2,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "sign_restored",
+      "injury": "intact",
+      "mean_block_success_difference": 0.6875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 19,
+        "rescued": 92,
+        "harmed": 4,
+        "both_fail": 13
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 12,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 2,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 12,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 3,
+          "rescued": 10,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.5,
+          "both_pass": 4,
+          "rescued": 9,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 4,
+          "rescued": 11,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "magnitude_restored",
+      "injury": "intact",
+      "mean_block_success_difference": 0.0859375,
+      "blocks_positive": 6,
+      "blocks_zero": 2,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 109,
+        "rescued": 13,
+        "harmed": 2,
+        "both_fail": 4
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 13,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 14,
+          "rescued": 1,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 16,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 14,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 13,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 12,
+          "rescued": 2,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 13,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 1,
+          "harmed": 1,
+          "both_fail": 0
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "exact_rewrite",
+      "injury": "intact",
+      "mean_block_success_difference": -0.03125,
+      "blocks_positive": 0,
+      "blocks_zero": 4,
+      "blocks_negative": 4,
+      "paired_counts": {
+        "both_pass": 118,
+        "rescued": 0,
+        "harmed": 4,
+        "both_fail": 6
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 16,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "intact",
+      "mean_block_success_difference": 0.8828125,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 8,
+        "rescued": 114,
+        "harmed": 1,
+        "both_fail": 5
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 1,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 2,
+          "rescued": 13,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 2,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "sign_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "intact",
+      "mean_block_success_difference": 0.109375,
+      "blocks_positive": 6,
+      "blocks_zero": 2,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 4,
+        "rescued": 19,
+        "harmed": 5,
+        "both_fail": 100
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 0,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 16
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 3,
+          "harmed": 1,
+          "both_fail": 12
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 1,
+          "rescued": 1,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 13
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 1,
+          "rescued": 2,
+          "harmed": 2,
+          "both_fail": 11
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 1,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 13
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 1,
+          "rescued": 4,
+          "harmed": 1,
+          "both_fail": 10
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 4,
+          "harmed": 1,
+          "both_fail": 11
+        }
+      ]
+    },
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.8046875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 2,
+        "rescued": 104,
+        "harmed": 1,
+        "both_fail": 21
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 1,
+          "rescued": 10,
+          "harmed": 0,
+          "both_fail": 5
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.8828125,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 2,
+        "rescued": 114,
+        "harmed": 1,
+        "both_fail": 11
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "sign_restored",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.6796875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 15,
+        "rescued": 91,
+        "harmed": 4,
+        "both_fail": 18
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 2,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 2,
+          "rescued": 10,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.4375,
+          "both_pass": 3,
+          "rescued": 8,
+          "harmed": 1,
+          "both_fail": 4
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 4,
+          "rescued": 11,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "magnitude_restored",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.109375,
+      "blocks_positive": 5,
+      "blocks_zero": 3,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 103,
+        "rescued": 17,
+        "harmed": 3,
+        "both_fail": 5
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.25,
+          "both_pass": 12,
+          "rescued": 4,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 13,
+          "rescued": 1,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 16,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 13,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 13,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 11,
+          "rescued": 3,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 11,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 1,
+          "harmed": 1,
+          "both_fail": 0
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "exact_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": -0.03125,
+      "blocks_positive": 0,
+      "blocks_zero": 4,
+      "blocks_negative": 4,
+      "paired_counts": {
+        "both_pass": 116,
+        "rescued": 0,
+        "harmed": 4,
+        "both_fail": 8
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 13,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 16,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 13,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.9140625,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 2,
+        "rescued": 118,
+        "harmed": 1,
+        "both_fail": 7
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "sign_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.125,
+      "blocks_positive": 7,
+      "blocks_zero": 1,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 0,
+        "rescued": 19,
+        "harmed": 3,
+        "both_fail": 106
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 0,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 16
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 3,
+          "harmed": 1,
+          "both_fail": 12
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 4,
+          "harmed": 1,
+          "both_fail": 11
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 4,
+          "harmed": 1,
+          "both_fail": 11
+        }
+      ]
+    },
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "square",
+      "mean_block_success_difference": 0.8046875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 7,
+        "rescued": 104,
+        "harmed": 1,
+        "both_fail": 16
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 1,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "square",
+      "mean_block_success_difference": 0.8515625,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 7,
+        "rescued": 110,
+        "harmed": 1,
+        "both_fail": 10
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 2,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "sign_restored",
+      "injury": "square",
+      "mean_block_success_difference": 0.6875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 19,
+        "rescued": 92,
+        "harmed": 4,
+        "both_fail": 13
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 3,
+          "rescued": 11,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 3,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 12,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.5625,
+          "both_pass": 3,
+          "rescued": 10,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.6875,
+          "both_pass": 2,
+          "rescued": 11,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.5625,
+          "both_pass": 3,
+          "rescued": 10,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 3,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "magnitude_restored",
+      "injury": "square",
+      "mean_block_success_difference": 0.078125,
+      "blocks_positive": 6,
+      "blocks_zero": 1,
+      "blocks_negative": 1,
+      "paired_counts": {
+        "both_pass": 108,
+        "rescued": 13,
+        "harmed": 3,
+        "both_fail": 4
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 13,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 14,
+          "rescued": 1,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 14,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 13,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 12,
+          "rescued": 2,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 13,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 1,
+          "harmed": 1,
+          "both_fail": 0
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "exact_rewrite",
+      "injury": "square",
+      "mean_block_success_difference": -0.03125,
+      "blocks_positive": 0,
+      "blocks_zero": 4,
+      "blocks_negative": 4,
+      "paired_counts": {
+        "both_pass": 117,
+        "rescued": 0,
+        "harmed": 4,
+        "both_fail": 7
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": -0.0625,
+          "both_pass": 14,
+          "rescued": 0,
+          "harmed": 1,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 15,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "exact_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "square",
+      "mean_block_success_difference": 0.8828125,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 7,
+        "rescued": 114,
+        "harmed": 1,
+        "both_fail": 6
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 1,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 2,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "sign_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "square",
+      "mean_block_success_difference": 0.1171875,
+      "blocks_positive": 7,
+      "blocks_zero": 1,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 3,
+        "rescued": 20,
+        "harmed": 5,
+        "both_fail": 100
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.0,
+          "both_pass": 0,
+          "rescued": 0,
+          "harmed": 0,
+          "both_fail": 16
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 4,
+          "harmed": 1,
+          "both_fail": 11
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 1,
+          "rescued": 2,
+          "harmed": 0,
+          "both_fail": 13
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.1875,
+          "both_pass": 0,
+          "rescued": 3,
+          "harmed": 0,
+          "both_fail": 13
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 4,
+          "harmed": 2,
+          "both_fail": 10
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.0625,
+          "both_pass": 1,
+          "rescued": 1,
+          "harmed": 0,
+          "both_fail": 14
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 1,
+          "rescued": 3,
+          "harmed": 1,
+          "both_fail": 11
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.125,
+          "both_pass": 0,
+          "rescued": 3,
+          "harmed": 1,
+          "both_fail": 12
+        }
+      ]
+    }
+  ],
+  "primaries": [
+    {
+      "candidate": "magnitude_restored",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.8046875,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 2,
+        "rescued": 104,
+        "harmed": 1,
+        "both_fail": 21
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 1,
+          "both_fail": 2
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 0,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 4
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.625,
+          "both_pass": 1,
+          "rescued": 10,
+          "harmed": 0,
+          "both_fail": 5
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    },
+    {
+      "candidate": "single_tolerance_rewrite",
+      "baseline": "tolerance_rewrite",
+      "injury": "scattered",
+      "mean_block_success_difference": 0.8828125,
+      "blocks_positive": 8,
+      "blocks_zero": 0,
+      "blocks_negative": 0,
+      "paired_counts": {
+        "both_pass": 2,
+        "rescued": 114,
+        "harmed": 1,
+        "both_fail": 11
+      },
+      "folds": [
+        {
+          "block": 34000,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34001,
+          "n": 16,
+          "success_difference": 0.8125,
+          "both_pass": 0,
+          "rescued": 13,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34002,
+          "n": 16,
+          "success_difference": 1.0,
+          "both_pass": 0,
+          "rescued": 16,
+          "harmed": 0,
+          "both_fail": 0
+        },
+        {
+          "block": 34003,
+          "n": 16,
+          "success_difference": 0.9375,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 0,
+          "both_fail": 1
+        },
+        {
+          "block": 34004,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 15,
+          "harmed": 1,
+          "both_fail": 0
+        },
+        {
+          "block": 34005,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 0,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 2
+        },
+        {
+          "block": 34006,
+          "n": 16,
+          "success_difference": 0.75,
+          "both_pass": 1,
+          "rescued": 12,
+          "harmed": 0,
+          "both_fail": 3
+        },
+        {
+          "block": 34007,
+          "n": 16,
+          "success_difference": 0.875,
+          "both_pass": 1,
+          "rescued": 14,
+          "harmed": 0,
+          "both_fail": 1
+        }
+      ]
+    }
+  ],
+  "factorial": [
+    {
+      "injury": "intact",
+      "mean_block_interaction": -0.0234375,
+      "folds": [
+        {
+          "block": 34000,
+          "interaction": 0.1875
+        },
+        {
+          "block": 34001,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34002,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34003,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34004,
+          "interaction": 0.125
+        },
+        {
+          "block": 34005,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34006,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34007,
+          "interaction": -0.1875
+        }
+      ],
+      "blocks_positive": 2,
+      "blocks_zero": 0,
+      "blocks_negative": 6
+    },
+    {
+      "injury": "scattered",
+      "mean_block_interaction": -0.015625,
+      "folds": [
+        {
+          "block": 34000,
+          "interaction": 0.25
+        },
+        {
+          "block": 34001,
+          "interaction": -0.125
+        },
+        {
+          "block": 34002,
+          "interaction": -0.125
+        },
+        {
+          "block": 34003,
+          "interaction": 0.0625
+        },
+        {
+          "block": 34004,
+          "interaction": 0.0
+        },
+        {
+          "block": 34005,
+          "interaction": 0.0
+        },
+        {
+          "block": 34006,
+          "interaction": 0.0
+        },
+        {
+          "block": 34007,
+          "interaction": -0.1875
+        }
+      ],
+      "blocks_positive": 2,
+      "blocks_zero": 3,
+      "blocks_negative": 3
+    },
+    {
+      "injury": "square",
+      "mean_block_interaction": -0.0390625,
+      "folds": [
+        {
+          "block": 34000,
+          "interaction": 0.1875
+        },
+        {
+          "block": 34001,
+          "interaction": -0.125
+        },
+        {
+          "block": 34002,
+          "interaction": -0.1875
+        },
+        {
+          "block": 34003,
+          "interaction": -0.0625
+        },
+        {
+          "block": 34004,
+          "interaction": 0.0
+        },
+        {
+          "block": 34005,
+          "interaction": 0.0
+        },
+        {
+          "block": 34006,
+          "interaction": 0.0
+        },
+        {
+          "block": 34007,
+          "interaction": -0.125
+        }
+      ],
+      "blocks_positive": 1,
+      "blocks_zero": 3,
+      "blocks_negative": 4
+    }
+  ],
+  "factorial_definition": "(p_original-p_magnitude_restored)-(p_sign_restored-p_tolerance)",
+  "factorial_coefficients": {
+    "exact_rewrite": 1,
+    "magnitude_restored": -1,
+    "sign_restored": -1,
+    "tolerance_rewrite": 1
+  },
+  "provenance": {
+    "exact_rewrite": "new exact replay",
+    "tolerance_rewrite": "reused matched prior pilot",
+    "sign_restored": "reused matched prior pilot",
+    "magnitude_restored": "new intervention",
+    "single_tolerance_rewrite": "new intervention",
+    "erased": "new replay; matches prior erased"
+  },
+  "reused_controls_are_new_replicates": false,
+  "uncertainty": "Eight exposed blocks; no confirmatory inference or unseen-condition test.",
+  "terminal_csv_sha256": "052bebc9a740c1384bed29fa71b5e98a40800ee2b39edaac0008f2fd0d62c774",
+  "history_csv_sha256": "a04353437fb11cc7786c29d7ab4f9a90bdd39d98a8b70ee9a4749e5fcdabadbf",
+  "sign_completion_csv_sha256": "ca79cc4aeab1a5bb27b52ff8fa5dd69b29082fc747023c2d240cb5ba24bbf383"
+}

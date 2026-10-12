@@ -1,0 +1,78 @@
+{
+  "automatic_polling": false,
+  "classification": "INDEPENDENT_IMPLEMENTATION_AUDIT_OF_EXPOSED_P03_DEVELOPMENT",
+  "completion_sha256": "37d3aaea901ed924351631233c4c62f4a5acb077a9c728c41094f577e828e3f2",
+  "completion_utc": "2026-10-10T14:09:06.648359+00:00",
+  "counts": {
+    "endpoint_scores": 17408,
+    "fixed": 3072,
+    "known": 64,
+    "transfer": 8192
+  },
+  "frozen_inputs_verified": 223,
+  "independent_effects": {
+    "fixed": {
+      "by_block": {
+        "34000": -0.008928571428571428,
+        "34001": 0.017045454545454544,
+        "34002": 0.1875,
+        "34003": 0.046875,
+        "34004": 0.0,
+        "34005": 0.203125,
+        "34006": 0.04296875,
+        "34007": 0.1527777777777778
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        0.026094510957792208,
+        0.13901219223484848
+      ],
+      "mean": 0.08017042636183261
+    },
+    "fresh": {
+      "by_block": {
+        "34000": -0.125,
+        "34001": 0.028409090909090908,
+        "34002": -0.0763888888888889,
+        "34003": -0.296875,
+        "34004": 0.0,
+        "34005": 0.15625,
+        "34006": -0.09375,
+        "34007": -0.08333333333333333
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        -0.14683948863636365,
+        0.02237215909090909
+      ],
+      "mean": -0.061336016414141416
+    },
+    "original": {
+      "by_block": {
+        "34000": -0.0625,
+        "34001": 0.056818181818181816,
+        "34002": 0.20833333333333334,
+        "34003": 0.015625,
+        "34004": 0.0,
+        "34005": 0.21875,
+        "34006": 0.0625,
+        "34007": 0.0625
+      },
+      "descriptive_source_interval_verified_by_worker": [
+        0.010298295454545456,
+        0.134765625
+      ],
+      "mean": 0.07025331439393939
+    }
+  },
+  "job_sha256": "72056ec0b3ac3769977763a2faf06f634bb67eb680f928c10f51360457b687ed",
+  "maximum_scalar_margin_error": 0.0,
+  "native_array_receipts_verified": 136,
+  "new_scientific_cohort": false,
+  "outputs_verified": 27,
+  "recorded_utc": "2026-10-10T14:37:09.437228+00:00",
+  "requested_status_check": true,
+  "scalar_endpoint_scores_checked": 17408,
+  "scientific_verdict": "Original-injury benefit reproduces; the positive fresh-injury development prediction fails.",
+  "seconds": 3782.558608581079,
+  "status": "PASS",
+  "successor_launched": false
+}

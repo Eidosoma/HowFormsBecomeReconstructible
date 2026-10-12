@@ -1,0 +1,72 @@
+{
+  "status": "DIRECTION_FIXED_BEFORE_NEW_READS_ON_EXPOSED_DEVELOPMENT_STATES",
+  "at_utc": "2026-10-10T18:01:21.881298+00:00",
+  "primary": {
+    "name": "mean_alignment_effect",
+    "endpoint": "Strict native recipient-task success after 2048 steps under fresh 24-cell injury.",
+    "contrast": {
+      "same_aligned": 0.5,
+      "opposite_aligned": 0.5,
+      "same_unaligned": -0.5,
+      "opposite_unaligned": -0.5
+    },
+    "weighting": "Equal donor types within case; equal cases within block; equal eight blocks.",
+    "direction": "positive",
+    "failure": "Zero or negative equal-block point difference. Positive estimate with an interval spanning zero remains unresolved evidence of benefit.",
+    "effect_size_target": null
+  },
+  "secondary": [
+    "same aligned minus same unaligned",
+    "opposite aligned minus opposite unaligned",
+    "mean aligned minus completion",
+    "own minus mean aligned",
+    "completion minus outgoing",
+    "mean aligned minus outgoing",
+    "own minus completion",
+    "mean alignment effect on opposite-task success"
+  ],
+  "estimation": {
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "replicates": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "bootstrap": 20000,
+    "bootstrap_seed": 2026101004
+  },
+  "conditions": {
+    "cohort_cases": 64,
+    "record_options": 9,
+    "future_noise_namespace": "P05_approximate_alignment_v0_1",
+    "solver_starts": 16,
+    "solver_maximum_sweeps": 64,
+    "new_outcomes_seen_when_written": 0
+  },
+  "rdt_confirmation_claim": false,
+  "external_preregistration": false,
+  "protocol_sha256": "61604620afff627ada08718bd37969c9c335c8c2a029a1057e108525e69a822e",
+  "config_sha256": "a683187148584c60bdbb50705dc49995df3a9a97e2e8c9258a4f3045e5f85d37"
+}

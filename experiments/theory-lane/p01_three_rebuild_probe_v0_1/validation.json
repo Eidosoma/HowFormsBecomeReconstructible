@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-10-08T19:27:07.607532+00:00",
+  "unit_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -m pytest -q -p no:cacheprovider p01_three_rebuild_probe_v0_1/test_analysis.py",
+    "result": "8 passed in 0.74s",
+    "test_code_sha256": "480aa35903df579fd1d423ff13d8e50cb9a309390aeb333feda31404959a9eec"
+  },
+  "independent_verification": {
+    "command": "python3 -B p01_three_rebuild_probe_v0_1/verify.py",
+    "exit_code": 0,
+    "stdout": "Verified 1024 lineage forecasts, 9 models, 72 whole-block folds, training-only scaling,\ncondition rates, prediction reconstruction, independent Brier/log-loss scores, and all calculation hashes.\nRetrospective development; eight exposed blocks; no native dynamics replay.\n",
+    "stderr": ""
+  },
+  "figure_inspected": true,
+  "earlier_snapshots_verified_at_start": true
+}

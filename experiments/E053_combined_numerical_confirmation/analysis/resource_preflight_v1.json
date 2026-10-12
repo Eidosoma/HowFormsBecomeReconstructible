@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-10T12:50:54.076944+00:00",
+  "scientific_workers": 8,
+  "numerical_threads_per_worker": 1,
+  "other_numerical_processes": [
+    {
+      "pid": 2842827,
+      "threads": 1,
+      "cpu_percent": 99.6,
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "capacity": 1,
+      "command": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/.venv/bin/python -B /home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/run_p32.py --worker /mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/renewal__ordinary__pause_0_20__legacy__5__source_fine__q64/spec.json"
+    },
+    {
+      "pid": 2842835,
+      "threads": 1,
+      "cpu_percent": 99.6,
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "capacity": 1,
+      "command": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/.venv/bin/python -B /home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/run_p32.py --worker /mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/renewal__ordinary__pause_0_20__heldout_17021__5__source_fine__q64/spec.json"
+    },
+    {
+      "pid": 2849660,
+      "threads": 12,
+      "cpu_percent": 115.0,
+      "affinity": [
+        4,
+        5
+      ],
+      "capacity": 2,
+      "command": "/mnt/workspaces/Cells/venv-cpu/bin/python -B -m pytest -x -q -p no:cacheprovider tests/unit/test_surface_reference.py tests/unit/test_surface_calcium.py tests/unit/test_specs.py tests/unit/test_batch_identity.py --basetemp=/mnt/workspaces/Cells/surface-calcium-20261010-02/cpu-tmp --junitxml=/mnt/workspaces/Cells/surface-calcium-20261010-02/cpu.xml"
+    }
+  ],
+  "other_capacity": 4,
+  "total_capacity": 12,
+  "ceiling": 12,
+  "method": "Other active numerical workers capped by min(thread count, allowed logical CPUs); scientific8single-threadworkers"
+}

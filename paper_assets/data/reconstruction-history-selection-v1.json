@@ -1,0 +1,31 @@
+{
+  "schema": "forms_retained_history_selection_v1",
+  "date": "2026-09-17",
+  "status": "Editorial selection fixed before inspecting the selected raw field values; aggregate campaign results were already known.",
+  "purpose": "Illustrate retained reconstruction histories, not estimate treatment effects or select successful examples.",
+  "D140": {
+    "campaign": "l20_fresh_founders_v1_attempt1",
+    "block": 78000,
+    "life": 0,
+    "roles": [0, 1],
+    "arms": ["aligned", "translated"],
+    "generations": [1, 2, 3],
+    "terminal_generation": 4,
+    "rule": "Use the smallest registered block and life identifiers in the completed fresh-founder campaign; show both supplied pattern roles and both writer arms, without selection by outcome.",
+    "fields": "Shared F0 packet, saved read-end and writer-end body voltage, outgoing record, and fresh terminal body where retained.",
+    "display": "Original stored coordinates; no extra alignment, per-panel rescaling, smoothing, or favorable-outcome filtering. Use one symmetric scale per field quantity, declared in the figure."
+  },
+  "P11": {
+    "run": "paper-editable-lineage-20260915T125104Z-teji03a9",
+    "history": "written",
+    "route": "open",
+    "initial_writing": "M_open",
+    "rewriting": "E_open",
+    "fine": true,
+    "rule": "Use the registered written-founder chain with open communication and E-open rewriting at the finer numerical resolution; show all three cells and all retained phases of that chain, if the raw archive is available.",
+    "display": "Preserve actual cell identities, saved sample times, phase boundaries and handovers. Do not connect trajectories across replacement as though one cell persists. Cue periods, teacher removal, isolated retention and classification thresholds must be identified."
+  },
+  "new_simulations": false,
+  "new_statistical_tests": false,
+  "new_experimental_preregistration": false
+}

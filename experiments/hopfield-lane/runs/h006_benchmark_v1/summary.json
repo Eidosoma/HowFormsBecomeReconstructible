@@ -1,0 +1,2505 @@
+{
+  "experiment": "H006",
+  "classification": "ENGINEERING_BENCHMARK",
+  "selection": {
+    "decisions": [
+      {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "enough_nonempty_blocks": false,
+          "unchanged_current_success_at_least_95pct": true,
+          "output_flips_current_success_at_least_95pct": true,
+          "hidden_flips_current_success_at_least_95pct": true,
+          "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.96875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_flips": {
+            "mean": 0.9661458333333334,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_flips": {
+            "mean": 0.96875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "unchanged_minus_output_flips": {
+            "success": {
+              "mean": 0.0026041666666666297,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.00520833333333337,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.00520833333333337,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "unchanged_minus_hidden_flips": {
+            "success": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_flips_minus_output_flips": {
+            "success": {
+              "mean": 0.0026041666666666297,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.00520833333333337,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.00520833333333337,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.0,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "matches": 12,
+        "nonempty_blocks": 1,
+        "dose": 4,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 12,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ]
+            ],
+            "current_success": [
+              0.96875,
+              0.9661458333333334,
+              0.96875
+            ],
+            "current_outputs": [
+              [
+                0.9739583333333334,
+                0.9739583333333334,
+                0.9635416666666666,
+                0.9635416666666666
+              ],
+              [
+                0.96875,
+                0.96875,
+                0.9635416666666666,
+                0.9635416666666666
+              ],
+              [
+                0.9739583333333334,
+                0.9739583333333334,
+                0.9635416666666666,
+                0.9635416666666666
+              ]
+            ],
+            "cue_link": [
+              1.0,
+              0.875,
+              1.0
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.0972611281976263,
+              2.0980161123676795,
+              2.0918616421112586
+            ]
+          }
+        ]
+      },
+      {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "enough_nonempty_blocks": false,
+          "unchanged_current_success_at_least_95pct": true,
+          "output_flips_current_success_at_least_95pct": true,
+          "hidden_flips_current_success_at_least_95pct": true,
+          "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9673295454545454,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_flips": {
+            "mean": 0.9588068181818182,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_flips": {
+            "mean": 0.9602272727272727,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "unchanged_minus_output_flips": {
+            "success": {
+              "mean": 0.008522727272727182,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.011363636363636465,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.011363636363636465,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.005681818181818121,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.005681818181818121,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "unchanged_minus_hidden_flips": {
+            "success": {
+              "mean": 0.007102272727272707,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.005681818181818232,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.005681818181818232,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.008522727272727293,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.008522727272727293,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_flips_minus_output_flips": {
+            "success": {
+              "mean": 0.0014204545454544748,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.005681818181818232,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.005681818181818232,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": -0.0028409090909091717,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": -0.0028409090909091717,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "matches": 11,
+        "nonempty_blocks": 1,
+        "dose": 8,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 11,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                false,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9673295454545454,
+              0.9588068181818182,
+              0.9602272727272727
+            ],
+            "current_outputs": [
+              [
+                0.9744318181818182,
+                0.9744318181818182,
+                0.9602272727272727,
+                0.9602272727272727
+              ],
+              [
+                0.9630681818181818,
+                0.9630681818181818,
+                0.9545454545454546,
+                0.9545454545454546
+              ],
+              [
+                0.96875,
+                0.96875,
+                0.9517045454545454,
+                0.9517045454545454
+              ]
+            ],
+            "cue_link": [
+              1.0,
+              0.75,
+              1.0
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.10062291599762,
+              2.101082171543336,
+              2.0878222533818622
+            ]
+          }
+        ]
+      },
+      {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "enough_nonempty_blocks": false,
+          "unchanged_current_success_at_least_95pct": true,
+          "output_flips_current_success_at_least_95pct": true,
+          "hidden_flips_current_success_at_least_95pct": true,
+          "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9703125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_flips": {
+            "mean": 0.9546875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_flips": {
+            "mean": 0.95,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "unchanged_minus_output_flips": {
+            "success": {
+              "mean": 0.015625,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.018749999999999933,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.018749999999999933,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.012499999999999956,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.012499999999999956,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "unchanged_minus_hidden_flips": {
+            "success": {
+              "mean": 0.020312500000000067,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.025000000000000022,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.025000000000000022,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.015625,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.015625,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_flips_minus_output_flips": {
+            "success": {
+              "mean": -0.004687500000000067,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": -0.006250000000000089,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": -0.006250000000000089,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": -0.0031250000000000444,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": -0.0031250000000000444,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "matches": 10,
+        "nonempty_blocks": 1,
+        "dose": 16,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 10,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                true,
+                true
+              ],
+              [
+                true,
+                false,
+                false,
+                true
+              ],
+              [
+                true,
+                false,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9703125,
+              0.9546875,
+              0.95
+            ],
+            "current_outputs": [
+              [
+                0.975,
+                0.975,
+                0.965625,
+                0.965625
+              ],
+              [
+                0.95625,
+                0.95625,
+                0.953125,
+                0.953125
+              ],
+              [
+                0.95,
+                0.95,
+                0.95,
+                0.95
+              ]
+            ],
+            "cue_link": [
+              1.0,
+              0.5,
+              1.0
+            ],
+            "record_norm": [
+              0.9921567416492214,
+              0.9921567416492214,
+              0.9921567416492214
+            ],
+            "effective_total_norm": [
+              2.0998905228179288,
+              2.098176309167011,
+              2.08233858304891
+            ]
+          }
+        ]
+      },
+      {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "enough_nonempty_blocks": false,
+          "unchanged_current_success_at_least_95pct": true,
+          "output_flips_current_success_at_least_95pct": true,
+          "hidden_flips_current_success_at_least_95pct": false,
+          "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9776785714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_flips": {
+            "mean": 0.953125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_flips": {
+            "mean": 0.9441964285714286,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "unchanged_minus_output_flips": {
+            "success": {
+              "mean": 0.024553571428571397,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.017857142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.017857142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "unchanged_minus_hidden_flips": {
+            "success": {
+              "mean": 0.033482142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.0357142857142857,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.0357142857142857,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_flips_minus_output_flips": {
+            "success": {
+              "mean": -0.008928571428571397,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": -0.004464285714285698,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": -0.004464285714285698,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": -0.013392857142857206,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": -0.013392857142857206,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "matches": 7,
+        "nonempty_blocks": 1,
+        "dose": 24,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 7,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                false,
+                false
+              ],
+              [
+                true,
+                false,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9776785714285714,
+              0.953125,
+              0.9441964285714286
+            ],
+            "current_outputs": [
+              [
+                0.9821428571428571,
+                0.9821428571428571,
+                0.9732142857142857,
+                0.9732142857142857
+              ],
+              [
+                0.9508928571428571,
+                0.9508928571428571,
+                0.9553571428571429,
+                0.9553571428571429
+              ],
+              [
+                0.9464285714285714,
+                0.9464285714285714,
+                0.9419642857142857,
+                0.9419642857142857
+              ]
+            ],
+            "cue_link": [
+              1.0,
+              0.25,
+              1.0
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.097705424776849,
+              2.098696431248784,
+              2.078205297424487
+            ]
+          }
+        ]
+      },
+      {
+        "passed": false,
+        "gates": {
+          "at_least_64_matches": false,
+          "enough_nonempty_blocks": false,
+          "unchanged_current_success_at_least_95pct": true,
+          "output_flips_current_success_at_least_95pct": true,
+          "hidden_flips_current_success_at_least_95pct": false,
+          "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+          "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+          "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+        },
+        "current_success": {
+          "unchanged": {
+            "mean": 0.9776785714285714,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_flips": {
+            "mean": 0.953125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "hidden_flips": {
+            "mean": 0.921875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "differences": {
+          "unchanged_minus_output_flips": {
+            "success": {
+              "mean": 0.024553571428571397,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.017857142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.017857142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "unchanged_minus_hidden_flips": {
+            "success": {
+              "mean": 0.0558035714285714,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": 0.0625,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": 0.0625,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": 0.049107142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": 0.049107142857142794,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          },
+          "hidden_flips_minus_output_flips": {
+            "success": {
+              "mean": -0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_0": {
+              "mean": -0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_1": {
+              "mean": -0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_2": {
+              "mean": -0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            },
+            "output_3": {
+              "mean": -0.03125,
+              "low": null,
+              "high": null,
+              "equivalence_low": null,
+              "equivalence_high": null,
+              "directional_lower": null
+            }
+          }
+        },
+        "matches": 7,
+        "nonempty_blocks": 1,
+        "dose": 32,
+        "blocks": [
+          {
+            "seed": 12900,
+            "matched": 7,
+            "feasible": 16,
+            "eligible": [
+              [
+                false,
+                true,
+                false,
+                false
+              ],
+              [
+                true,
+                false,
+                false,
+                true
+              ],
+              [
+                false,
+                false,
+                false,
+                true
+              ],
+              [
+                true,
+                true,
+                false,
+                true
+              ]
+            ],
+            "current_success": [
+              0.9776785714285714,
+              0.953125,
+              0.921875
+            ],
+            "current_outputs": [
+              [
+                0.9821428571428571,
+                0.9821428571428571,
+                0.9732142857142857,
+                0.9732142857142857
+              ],
+              [
+                0.9508928571428571,
+                0.9508928571428571,
+                0.9553571428571429,
+                0.9553571428571429
+              ],
+              [
+                0.9196428571428571,
+                0.9196428571428571,
+                0.9241071428571429,
+                0.9241071428571429
+              ]
+            ],
+            "cue_link": [
+              1.0,
+              0.0,
+              1.0
+            ],
+            "record_norm": [
+              0.9921567416492215,
+              0.9921567416492215,
+              0.9921567416492215
+            ],
+            "effective_total_norm": [
+              2.097705424776849,
+              2.087402446055011,
+              2.082647749434518
+            ]
+          }
+        ]
+      }
+    ],
+    "selected_dose": 32,
+    "method": "engineering-only forced largest dose",
+    "assay_files_at_freeze": 0,
+    "future_files_at_freeze": 0,
+    "frozen_utc": "2026-10-11T23:50:01.679605+00:00"
+  },
+  "enrollment": {
+    "dose": 32,
+    "decision": {
+      "passed": false,
+      "gates": {
+        "at_least_64_matches": false,
+        "enough_nonempty_blocks": false,
+        "unchanged_current_success_at_least_95pct": true,
+        "output_flips_current_success_at_least_95pct": true,
+        "hidden_flips_current_success_at_least_95pct": false,
+        "unchanged_minus_output_flips_success_equivalent_within_1pp": false,
+        "unchanged_minus_output_flips_output_0_equivalent_within_1pp": false,
+        "unchanged_minus_output_flips_output_1_equivalent_within_1pp": false,
+        "unchanged_minus_output_flips_output_2_equivalent_within_1pp": false,
+        "unchanged_minus_output_flips_output_3_equivalent_within_1pp": false,
+        "unchanged_minus_hidden_flips_success_equivalent_within_1pp": false,
+        "unchanged_minus_hidden_flips_output_0_equivalent_within_1pp": false,
+        "unchanged_minus_hidden_flips_output_1_equivalent_within_1pp": false,
+        "unchanged_minus_hidden_flips_output_2_equivalent_within_1pp": false,
+        "unchanged_minus_hidden_flips_output_3_equivalent_within_1pp": false,
+        "hidden_flips_minus_output_flips_success_equivalent_within_1pp": false,
+        "hidden_flips_minus_output_flips_output_0_equivalent_within_1pp": false,
+        "hidden_flips_minus_output_flips_output_1_equivalent_within_1pp": false,
+        "hidden_flips_minus_output_flips_output_2_equivalent_within_1pp": false,
+        "hidden_flips_minus_output_flips_output_3_equivalent_within_1pp": false
+      },
+      "current_success": {
+        "unchanged": {
+          "mean": 0.98046875,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "output_flips": {
+          "mean": 0.951171875,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "hidden_flips": {
+          "mean": 0.943359375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      },
+      "differences": {
+        "unchanged_minus_output_flips": {
+          "success": {
+            "mean": 0.029296875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": 0.03125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": 0.03125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.03125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.03125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "unchanged_minus_hidden_flips": {
+          "success": {
+            "mean": 0.037109375,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": 0.03515625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": 0.03515625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": 0.04296875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": 0.04296875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        },
+        "hidden_flips_minus_output_flips": {
+          "success": {
+            "mean": -0.0078125,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_0": {
+            "mean": -0.00390625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_1": {
+            "mean": -0.00390625,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_2": {
+            "mean": -0.01171875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          },
+          "output_3": {
+            "mean": -0.01171875,
+            "low": null,
+            "high": null,
+            "equivalence_low": null,
+            "equivalence_high": null,
+            "directional_lower": null
+          }
+        }
+      },
+      "matches": 8,
+      "nonempty_blocks": 1,
+      "dose": 32,
+      "blocks": [
+        {
+          "seed": 12900,
+          "matched": 8,
+          "feasible": 16,
+          "eligible": [
+            [
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              true,
+              true
+            ],
+            [
+              true,
+              true,
+              true,
+              true
+            ]
+          ],
+          "current_success": [
+            0.98046875,
+            0.951171875,
+            0.943359375
+          ],
+          "current_outputs": [
+            [
+              0.98828125,
+              0.98828125,
+              0.97265625,
+              0.97265625
+            ],
+            [
+              0.95703125,
+              0.95703125,
+              0.94140625,
+              0.94140625
+            ],
+            [
+              0.953125,
+              0.953125,
+              0.9296875,
+              0.9296875
+            ]
+          ],
+          "cue_link": [
+            1.0,
+            0.0,
+            1.0
+          ],
+          "record_norm": [
+            0.9921567416492215,
+            0.9921567416492215,
+            0.9921567416492215
+          ],
+          "effective_total_norm": [
+            2.107036402355056,
+            2.093663988984194,
+            2.095689594389828
+          ]
+        }
+      ]
+    },
+    "candidate_packets": 16,
+    "future_files_at_freeze": 0,
+    "engineering_override": true,
+    "allow_futures": true,
+    "frozen_utc": "2026-10-11T23:50:04.498250+00:00"
+  },
+  "audit_passed": true,
+  "futures_generated": true,
+  "variants": [
+    "unchanged",
+    "output_flips",
+    "hidden_flips"
+  ],
+  "arms": [
+    "renewal",
+    "restored",
+    "foreign",
+    "protected_copy",
+    "damaged_copy",
+    "read_off",
+    "write_off"
+  ],
+  "checkpoints": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "selected_dose": 32,
+  "decision": {
+    "qualified": null,
+    "gates": {
+      "current_passed": false,
+      "integrity_passed": true,
+      "unchanged_minus_output_flips_minimum_effect": false,
+      "unchanged_minus_output_flips_positive_adjusted_lower": false,
+      "hidden_flips_minus_output_flips_minimum_effect": false,
+      "hidden_flips_minus_output_flips_positive_adjusted_lower": false,
+      "unchanged_minus_foreign_minimum_effect": true,
+      "unchanged_minus_foreign_positive_adjusted_lower": false,
+      "unchanged_minus_read_off_minimum_effect": true,
+      "unchanged_minus_read_off_positive_adjusted_lower": false,
+      "unchanged_minus_write_off_minimum_effect": true,
+      "unchanged_minus_write_off_positive_adjusted_lower": false,
+      "unchanged_minus_damaged_copy_minimum_effect": true,
+      "unchanged_minus_damaged_copy_positive_adjusted_lower": false
+    },
+    "primary_contrasts": {
+      "unchanged_minus_output_flips": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "hidden_flips_minus_output_flips": {
+        "mean": -0.015625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "unchanged_minus_foreign": {
+        "mean": 0.890625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "unchanged_minus_read_off": {
+        "mean": 0.953125,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "unchanged_minus_write_off": {
+        "mean": 0.953125,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "unchanged_minus_damaged_copy": {
+        "mean": 0.953125,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    },
+    "directional_family_size": 6,
+    "terminal": {
+      "unchanged": {
+        "renewal": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "restored": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "foreign": {
+          "mean": 0.0625,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "protected_copy": {
+          "mean": 0.984375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "damaged_copy": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "read_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "write_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      },
+      "output_flips": {
+        "renewal": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "restored": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "foreign": {
+          "mean": 0.09375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "protected_copy": {
+          "mean": 0.96875,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "damaged_copy": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "read_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "write_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      },
+      "hidden_flips": {
+        "renewal": {
+          "mean": 0.9375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "restored": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "foreign": {
+          "mean": 0.109375,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "protected_copy": {
+          "mean": 0.953125,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "damaged_copy": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "read_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        },
+        "write_off": {
+          "mean": 0.0,
+          "low": null,
+          "high": null,
+          "equivalence_low": null,
+          "equivalence_high": null,
+          "directional_lower": null
+        }
+      }
+    }
+  },
+  "block_rows": [
+    {
+      "seed": 12900,
+      "matched": 8,
+      "feasible": 16,
+      "matched_success": [
+        [
+          [
+            0.96875,
+            0.96875,
+            0.0,
+            0.96875,
+            0.96875,
+            0.0,
+            0.0
+          ],
+          [
+            0.96875,
+            0.96875,
+            0.0,
+            0.953125,
+            0.96875,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.96875,
+            0.0,
+            0.953125,
+            0.9375,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.9375,
+            0.9375,
+            0.015625,
+            0.9375,
+            0.015625,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.9375,
+            0.046875,
+            0.90625,
+            0.015625,
+            0.0,
+            0.0
+          ],
+          [
+            0.921875,
+            0.9375,
+            0.0625,
+            0.90625,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.953125,
+            0.953125,
+            0.078125,
+            0.953125,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.953125,
+            0.953125,
+            0.109375,
+            0.9375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.953125,
+            0.125,
+            0.921875,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.953125,
+            0.953125,
+            0.0625,
+            0.984375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.953125,
+            0.953125,
+            0.09375,
+            0.96875,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.953125,
+            0.109375,
+            0.953125,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "matched_uninterrupted": [
+        [
+          0.9375,
+          0.9375,
+          0.0,
+          0.703125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9375,
+          0.9375,
+          0.0,
+          0.453125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.90625,
+          0.9375,
+          0.0,
+          0.34375,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "all_feasible_success": [
+        [
+          [
+            0.9765625,
+            0.9765625,
+            0.0,
+            0.9765625,
+            0.984375,
+            0.0,
+            0.0
+          ],
+          [
+            0.9765625,
+            0.9765625,
+            0.0,
+            0.96875,
+            0.9765625,
+            0.0,
+            0.0
+          ],
+          [
+            0.953125,
+            0.9765625,
+            0.0078125,
+            0.953125,
+            0.953125,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.953125,
+            0.953125,
+            0.0234375,
+            0.9609375,
+            0.0078125,
+            0.0,
+            0.0
+          ],
+          [
+            0.953125,
+            0.953125,
+            0.046875,
+            0.90625,
+            0.0078125,
+            0.0,
+            0.0
+          ],
+          [
+            0.9375,
+            0.953125,
+            0.0546875,
+            0.8984375,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.9140625,
+            0.9140625,
+            0.0625,
+            0.953125,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9140625,
+            0.9140625,
+            0.0859375,
+            0.9140625,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.90625,
+            0.9140625,
+            0.09375,
+            0.921875,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.8671875,
+            0.8671875,
+            0.0703125,
+            0.9609375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8671875,
+            0.8671875,
+            0.09375,
+            0.9453125,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8515625,
+            0.8671875,
+            0.1015625,
+            0.921875,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ]
+    }
+  ],
+  "matched_mean_success": [
+    [
+      [
+        0.96875,
+        0.96875,
+        0.0,
+        0.96875,
+        0.96875,
+        0.0,
+        0.0
+      ],
+      [
+        0.96875,
+        0.96875,
+        0.0,
+        0.953125,
+        0.96875,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.96875,
+        0.0,
+        0.953125,
+        0.9375,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9375,
+        0.9375,
+        0.015625,
+        0.9375,
+        0.015625,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.9375,
+        0.046875,
+        0.90625,
+        0.015625,
+        0.0,
+        0.0
+      ],
+      [
+        0.921875,
+        0.9375,
+        0.0625,
+        0.90625,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.953125,
+        0.953125,
+        0.078125,
+        0.953125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.953125,
+        0.953125,
+        0.109375,
+        0.9375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.953125,
+        0.125,
+        0.921875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.953125,
+        0.953125,
+        0.0625,
+        0.984375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.953125,
+        0.953125,
+        0.09375,
+        0.96875,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.953125,
+        0.109375,
+        0.953125,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "all_feasible_mean_success": [
+    [
+      [
+        0.9765625,
+        0.9765625,
+        0.0,
+        0.9765625,
+        0.984375,
+        0.0,
+        0.0
+      ],
+      [
+        0.9765625,
+        0.9765625,
+        0.0,
+        0.96875,
+        0.9765625,
+        0.0,
+        0.0
+      ],
+      [
+        0.953125,
+        0.9765625,
+        0.0078125,
+        0.953125,
+        0.953125,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.953125,
+        0.953125,
+        0.0234375,
+        0.9609375,
+        0.0078125,
+        0.0,
+        0.0
+      ],
+      [
+        0.953125,
+        0.953125,
+        0.046875,
+        0.90625,
+        0.0078125,
+        0.0,
+        0.0
+      ],
+      [
+        0.9375,
+        0.953125,
+        0.0546875,
+        0.8984375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.9140625,
+        0.9140625,
+        0.0625,
+        0.953125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9140625,
+        0.9140625,
+        0.0859375,
+        0.9140625,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.90625,
+        0.9140625,
+        0.09375,
+        0.921875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.8671875,
+        0.8671875,
+        0.0703125,
+        0.9609375,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8671875,
+        0.8671875,
+        0.09375,
+        0.9453125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8515625,
+        0.8671875,
+        0.1015625,
+        0.921875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "uninterrupted": {
+    "unchanged": {
+      "renewal": {
+        "mean": 0.9375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "restored": {
+        "mean": 0.9375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "foreign": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "protected_copy": {
+        "mean": 0.703125,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "damaged_copy": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "read_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "write_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    },
+    "output_flips": {
+      "renewal": {
+        "mean": 0.9375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "restored": {
+        "mean": 0.9375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "foreign": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "protected_copy": {
+        "mean": 0.453125,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "damaged_copy": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "read_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "write_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    },
+    "hidden_flips": {
+      "renewal": {
+        "mean": 0.90625,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "restored": {
+        "mean": 0.9375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "foreign": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "protected_copy": {
+        "mean": 0.34375,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "damaged_copy": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "read_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      },
+      "write_off": {
+        "mean": 0.0,
+        "low": null,
+        "high": null,
+        "equivalence_low": null,
+        "equivalence_high": null,
+        "directional_lower": null
+      }
+    }
+  },
+  "verdict": "ENGINEERING_ONLY"
+}

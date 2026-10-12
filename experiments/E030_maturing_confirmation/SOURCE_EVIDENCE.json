@@ -1,0 +1,344 @@
+{
+  "created_utc": "2026-09-24T11:15:50.767347+00:00",
+  "source_experiment": "E029",
+  "source_run": "E029_maturing_renewal/runs/maturing_v1",
+  "source_job": "E029_maturing_renewal/jobs/maturing_v1",
+  "source_figure": "E029_maturing_renewal/figures/maturing_v1",
+  "source_blocks": [
+    25000,
+    25001,
+    25002,
+    25003,
+    25004,
+    25005,
+    25006,
+    25007,
+    25008,
+    25009,
+    25010,
+    25011,
+    25012,
+    25013,
+    25014,
+    25015,
+    25016,
+    25017,
+    25018,
+    25019,
+    25020,
+    25021,
+    25022,
+    25023,
+    25024,
+    25025,
+    25026,
+    25027,
+    25028,
+    25029,
+    25030,
+    25031
+  ],
+  "config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "cycle": {
+    "generations": 3,
+    "read_steps": 2048,
+    "settling_steps": 256,
+    "write_steps": 128
+  },
+  "conditions": [
+    "maturing",
+    "maturing_read_blocked",
+    "strength_compensated",
+    "intact_renewed",
+    "protected_copy",
+    "masked_copy",
+    "read_blocked",
+    "write_blocked",
+    "selective",
+    "maturing_refresh_blocked"
+  ],
+  "panels": [
+    [
+      0,
+      "initial",
+      "fixed_four"
+    ],
+    [
+      0,
+      "initial",
+      "local_strength"
+    ],
+    [
+      1,
+      "maturing",
+      "fixed_four"
+    ],
+    [
+      1,
+      "maturing_read_blocked",
+      "fixed_four"
+    ],
+    [
+      1,
+      "strength_compensated",
+      "fixed_four"
+    ],
+    [
+      1,
+      "intact_renewed",
+      "fixed_four"
+    ],
+    [
+      1,
+      "protected_copy",
+      "fixed_four"
+    ],
+    [
+      1,
+      "masked_copy",
+      "fixed_four"
+    ],
+    [
+      1,
+      "read_blocked",
+      "fixed_four"
+    ],
+    [
+      1,
+      "write_blocked",
+      "fixed_four"
+    ],
+    [
+      1,
+      "selective",
+      "fixed_four"
+    ],
+    [
+      1,
+      "maturing_refresh_blocked",
+      "fixed_four"
+    ],
+    [
+      1,
+      "maturing",
+      "local_strength"
+    ],
+    [
+      1,
+      "maturing_read_blocked",
+      "local_strength"
+    ],
+    [
+      1,
+      "strength_compensated",
+      "local_strength"
+    ],
+    [
+      1,
+      "intact_renewed",
+      "local_strength"
+    ],
+    [
+      1,
+      "protected_copy",
+      "local_strength"
+    ],
+    [
+      1,
+      "masked_copy",
+      "local_strength"
+    ],
+    [
+      1,
+      "read_blocked",
+      "local_strength"
+    ],
+    [
+      1,
+      "write_blocked",
+      "local_strength"
+    ],
+    [
+      1,
+      "selective",
+      "local_strength"
+    ],
+    [
+      1,
+      "maturing_refresh_blocked",
+      "local_strength"
+    ],
+    [
+      3,
+      "maturing",
+      "fixed_four"
+    ],
+    [
+      3,
+      "maturing_read_blocked",
+      "fixed_four"
+    ],
+    [
+      3,
+      "strength_compensated",
+      "fixed_four"
+    ],
+    [
+      3,
+      "intact_renewed",
+      "fixed_four"
+    ],
+    [
+      3,
+      "protected_copy",
+      "fixed_four"
+    ],
+    [
+      3,
+      "masked_copy",
+      "fixed_four"
+    ],
+    [
+      3,
+      "read_blocked",
+      "fixed_four"
+    ],
+    [
+      3,
+      "write_blocked",
+      "fixed_four"
+    ],
+    [
+      3,
+      "selective",
+      "fixed_four"
+    ],
+    [
+      3,
+      "maturing_refresh_blocked",
+      "fixed_four"
+    ],
+    [
+      3,
+      "maturing",
+      "local_strength"
+    ],
+    [
+      3,
+      "maturing_read_blocked",
+      "local_strength"
+    ],
+    [
+      3,
+      "strength_compensated",
+      "local_strength"
+    ],
+    [
+      3,
+      "intact_renewed",
+      "local_strength"
+    ],
+    [
+      3,
+      "protected_copy",
+      "local_strength"
+    ],
+    [
+      3,
+      "masked_copy",
+      "local_strength"
+    ],
+    [
+      3,
+      "read_blocked",
+      "local_strength"
+    ],
+    [
+      3,
+      "write_blocked",
+      "local_strength"
+    ],
+    [
+      3,
+      "selective",
+      "local_strength"
+    ],
+    [
+      3,
+      "maturing_refresh_blocked",
+      "local_strength"
+    ]
+  ],
+  "receivers": [
+    "fixed_four",
+    "local_strength"
+  ],
+  "source_workers": 8,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "numerical_threads": 1,
+  "original_outputs_verified": 316,
+  "workflow_seconds": 27181.82098504802,
+  "cohort_bytes": 3081986973,
+  "source_model_sha256": "f80ce7191831b05cd4d4c5345f1883d90c01ec18ad4cf8a925db9fb6608e6d1e",
+  "source_protocol_sha256": "c1883cf606f29e13528e7f55f9702f1fcea7067f91fca59755a16ab181a6e933",
+  "provenance_sha256": {
+    "E029_maturing_renewal/analysis/closeout_v1.json": "74c72ecbe35a5993c3810ff480ddc0f415a8c25ff7b6621029fcbb4508e8b763",
+    "E029_maturing_renewal/analysis/verify_closeout.py": "0c79492fdc12e1d88ea44741564fdf1f704bd3d6996c6cb5b41c268e8a31d419",
+    "E029_maturing_renewal/jobs/maturing_v1/status.json": "1204b1c538508f0b6a79ce06112a3f42504e3f20f725a514d9096e380627c26d",
+    "E029_maturing_renewal/jobs/maturing_v1/manifest.json": "60b3720e5d3482b0a130625c53a2fa959096d5f4f35e8331560584e231228902",
+    "E029_maturing_renewal/figures/maturing_v1/provenance.json": "08c158f6421a60ab8a8924f3280a3cebeaad29d4c507a2378a5ec8b73b05506b",
+    "E029_maturing_renewal/runs/maturing_v1/manifest.json": "dd441a93e6d4920800a4402297f3685504f9a365b079287349e4f01e455ef9e9",
+    "E029_maturing_renewal/runs/maturing_v1/COMPLETE.json": "9be86e565bc511f0849729cc8636f133c21b29059b21af417ae6623f09ebc39f",
+    "E029_maturing_renewal/runs/maturing_v1/INDEPENDENT_AUDIT.json": "094523c5bc05c6b574da2c512afa25bd6282d233fd4002765b245351a9abb28e",
+    "E029_maturing_renewal/runs/maturing_v1/summary.json": "7ebda5804fbd155c9b35932d254aea8bddb92248dfc405c6992f1f8a01772f92"
+  },
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1",
+    "E022_reader_compensation/runs/compensation_v1",
+    "E023_receiver_compensation/runs/receiver_v1",
+    "E024_serial_compensation/runs/serial_v1",
+    "E025_rewriting_confirmation/runs/confirmation_v1",
+    "E026_restoration_intervention/runs/restoration_v1",
+    "E027_selective_renewal/runs/selective_v1",
+    "E028_precursor_rewriting/runs/precursor_v1",
+    "E029_maturing_renewal/runs/maturing_v1"
+  ],
+  "predecessor_diagnosis_inputs_unchanged": [
+    "E022_reader_compensation/analysis/transmission_diagnosis_v1",
+    "E025_rewriting_confirmation/analysis/rebuilding_leads_v1",
+    "E025_rewriting_confirmation/analysis/rebuilding_link_scale_v1"
+  ],
+  "prior_measurements_reused_for_forecast_only": true,
+  "prior_cases_pooled": false,
+  "new_trajectories_run": false
+}

@@ -1,0 +1,102 @@
+{
+  "version": "0.1",
+  "status": "AUTHORIZED_DEVELOPMENT_BACKUP_TASK_SWAP",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "cases_per_block": [
+    7,
+    11,
+    9,
+    4,
+    4,
+    4,
+    16,
+    9
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "variants": [
+    "incoming",
+    "outgoing",
+    "full_own",
+    "common_own",
+    "same_task",
+    "opposite_task",
+    "scrambled",
+    "erased",
+    "donor_same_full",
+    "donor_opposite_full"
+  ],
+  "enrollment_generation": 14,
+  "enrollment_count": 64,
+  "injury_cells": 24,
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "budgets": [
+    2048
+  ],
+  "primary_budget": 2048,
+  "settling_steps": 1024,
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "transfer_steps": 64,
+  "random_namespace": "P05_backup_task_swap_v0_1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101003,
+  "numpy_version": "2.5.2",
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "benchmark": {
+    "block": 34006,
+    "replicates": 2,
+    "variants": 10,
+    "budget": 2048
+  },
+  "source_run": "../p04_hybrid_composition_v0_1/runs/pilot_v1",
+  "source_complete_sha256": "fa562bf684ee240c6b8e2e3285c55f072a1c3b0008a20f1b44aee9420afbae01",
+  "regimes": [
+    "original",
+    "fresh"
+  ],
+  "original_replicates": [
+    0
+  ],
+  "spacing_run": "../p01_writer_spacing_v0_1/runs/pilot_v1",
+  "spacing_complete_sha256": "a94dc112e267b4950e8fa486b47b4fae7f3915268305e2c2690cd30555cf5b01",
+  "pulse_run": "../p01_writer_factorial_pulse_v0_1/runs/pilot_v1",
+  "pulse_complete_sha256": "c967ea3b1cced1575f5ba201fc575a0170bf6cfad28d470f3a655a26729b3a65"
+}

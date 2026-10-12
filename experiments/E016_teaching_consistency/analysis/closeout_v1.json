@@ -1,0 +1,83 @@
+{
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "corrected_fixture_receipt_verified": true,
+  "figure_provenance_sha256": "830d85c4f1b236762c01b01afe83316fc2f8e5594411501444ccc870c671da28",
+  "figure_provenance_verified": true,
+  "figure_visually_inspected": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1"
+  ],
+  "primary": {
+    "endpoint": "consistent minus ordinary; intact both-cue strict success",
+    "lower_bound_above_zero": true,
+    "statistics": {
+      "block_means": [
+        0.0625,
+        0.1875,
+        0.125,
+        0.0625,
+        0.125,
+        0.125,
+        0.25,
+        0.0625,
+        0.0,
+        0.125,
+        0.0,
+        0.1875,
+        0.0,
+        0.125,
+        0.1875,
+        0.4375,
+        0.0,
+        0.0,
+        0.25,
+        0.125,
+        0.1875,
+        0.0,
+        0.625,
+        0.375,
+        0.4375,
+        0.0625,
+        0.375,
+        0.375,
+        0.0625,
+        0.3125,
+        0.125,
+        0.25
+      ],
+      "ci95": [
+        0.125,
+        0.23046875
+      ],
+      "mean": 0.17578125
+    }
+  },
+  "renewal_started": false,
+  "runs": {
+    "benchmark_v1": {
+      "audit_seconds": 30.306773361749947,
+      "audit_sha256": "ebcc0584947ab4d447b2bdb7a06f1522d9b775664b88d67a185d31725ba26d67",
+      "complete_sha256": "94db0ec1e6cbab7e569afcce72102800efdd286361ee2c28a66aeaf473ed44dd",
+      "individual_observations": 2016,
+      "simulation_seconds": 34.21041610650718
+    },
+    "comparison_v1": {
+      "audit_seconds": 109.67203271295875,
+      "audit_sha256": "5e7aa930b14e90ead74130f59826db5ee7c51f1774cbf0b089fb7c894ba05322",
+      "complete_sha256": "3eebb9746dbd6b162dd03cbcce890f8414441f774c87a5e0c5af67ff8db3cb83",
+      "individual_observations": 64512,
+      "simulation_seconds": 122.61807109043002
+    }
+  },
+  "status": "PASS",
+  "utc": "2026-09-18T15:48:16.224948+00:00",
+  "workflow_status": {
+    "audit_sha256": "5e7aa930b14e90ead74130f59826db5ee7c51f1774cbf0b089fb7c894ba05322",
+    "figure_provenance_sha256": "830d85c4f1b236762c01b01afe83316fc2f8e5594411501444ccc870c671da28",
+    "scientific_complete_sha256": "3eebb9746dbd6b162dd03cbcce890f8414441f774c87a5e0c5af67ff8db3cb83",
+    "seconds": 233.69267026521266,
+    "status": "COMPLETE",
+    "utc": "2026-09-18T15:47:12.709560+00:00"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "checks": 3364,
+  "expensive_initial_rejection": "nonnegative future losses; pair cost 11 exceeds always-ask loss 10",
+  "expensive_pair_cost": 11,
+  "groups": {
+    "Bellman": 239,
+    "VFE": 1190,
+    "deployment": 443,
+    "integer likelihood": 140,
+    "integrity": 33,
+    "myopic": 5,
+    "no use": 4,
+    "physical": 443,
+    "predictive": 35,
+    "price boundary": 1,
+    "qualification": 554,
+    "scope": 2,
+    "stopping": 275
+  },
+  "max_residual": 8.881784197001252e-16,
+  "myopic_initial_buys": false,
+  "myopic_initial_value": {
+    "exact": "10",
+    "value": 10.0
+  },
+  "myopic_one_pair_value": {
+    "exact": "10001/1000",
+    "value": 10.001
+  },
+  "ordered_check_cap": 3,
+  "wall_seconds": 0.1598393376916647
+}

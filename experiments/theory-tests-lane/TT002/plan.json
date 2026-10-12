@@ -1,0 +1,22 @@
+{
+  "study_id": "TT002",
+  "status": "RETROSPECTIVE_DEVELOPMENT",
+  "version": 1,
+  "prior_run": "TT001/runs/development_v1",
+  "prior_complete_sha256": "3d5bd706c9cf3605142ee87c34899fced308379020ca63c2ab5378e6a49bd2b5",
+  "prefixes": [3, 8],
+  "endpoints": ["terminal", "future_path_and_terminal"],
+  "models": ["prevalence", "current6_logistic", "current24_logistic", "history24_logistic", "current24_boosted", "history24_boosted"],
+  "new_models": ["current24_logistic", "current24_boosted"],
+  "logistic_C": [0.01, 0.1, 1.0, 10.0],
+  "boost_leaves": [3, 7],
+  "boost_l2": [1.0, 10.0],
+  "outer_folds": 4,
+  "inner_folds": 3,
+  "bootstrap_draws": 4096,
+  "random_seed": 2026100801,
+  "synthetic_seed": 2026100802,
+  "foreground_limit_seconds": 600,
+  "storage_reserve_bytes": 536870912,
+  "rdt_verdict": "NOT_TESTED"
+}

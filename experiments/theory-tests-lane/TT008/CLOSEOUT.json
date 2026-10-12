@@ -1,0 +1,218 @@
+{
+  "all_64_test_blocks_now_exposed": true,
+  "automatic_polling": false,
+  "closeout_block_contrasts_recomputed": 320,
+  "closeout_brier": {
+    "candidate": 0.12913124667443174,
+    "expression_history": 0.13777824927650914,
+    "expression_unsigned": 0.1382120907793881,
+    "expression_unsigned_rbf_b2_r0.001": 0.13793188672276874,
+    "packet_plus_expression_rbf_b2_r0.001": 0.13825129683759904,
+    "quadratic_unsigned": 0.1400936694295658
+  },
+  "closeout_contrasts": {
+    "expression_history": {
+      "lower_one_sided95": 0.006697646539956891,
+      "mean": 0.008647002602077397,
+      "positive_blocks": 53,
+      "sd": 0.009341576460237205,
+      "upper_one_sided95": 0.010596358664197903
+    },
+    "expression_unsigned": {
+      "lower_one_sided95": 0.007230652672795746,
+      "mean": 0.009080844104956342,
+      "positive_blocks": 55,
+      "sd": 0.00886636621469902,
+      "upper_one_sided95": 0.010931035537116938
+    },
+    "expression_unsigned_rbf_b2_r0.001": {
+      "lower_one_sided95": 0.006807072963721007,
+      "mean": 0.008800640048336987,
+      "positive_blocks": 52,
+      "sd": 0.009553441626920747,
+      "upper_one_sided95": 0.010794207132952968
+    },
+    "packet_plus_expression_rbf_b2_r0.001": {
+      "lower_one_sided95": 0.0068910186720862595,
+      "mean": 0.009120050163167292,
+      "positive_blocks": 52,
+      "sd": 0.01068181873534132,
+      "upper_one_sided95": 0.011349081654248323
+    },
+    "quadratic_unsigned": {
+      "lower_one_sided95": 0.007924770634752144,
+      "mean": 0.010962422755134057,
+      "positive_blocks": 51,
+      "sd": 0.014556837559620294,
+      "upper_one_sided95": 0.01400007487551597
+    }
+  },
+  "closeout_raw_scattered_targets_recomputed": 4096,
+  "complete_sha256": "f2c242005863d939e15e8b67129cea4aecd6c2c656beb49516b0075c79dfff25",
+  "completed_utc": "2026-10-10T11:42:22.447093+00:00",
+  "earliest_future_started_utc": "2026-10-10T05:13:36.211232+00:00",
+  "erased_scattered_assays": 1024,
+  "erased_scattered_successes": 0,
+  "history_counts": {
+    "clustered_tolerance_rewrite": {
+      "n": 1024,
+      "terminal_successes": 728
+    },
+    "exact_rewrite": {
+      "n": 1024,
+      "terminal_successes": 852
+    },
+    "single_tolerance_rewrite": {
+      "n": 1024,
+      "terminal_successes": 854
+    },
+    "spaced_tolerance_rewrite": {
+      "n": 1024,
+      "terminal_successes": 802
+    }
+  },
+  "initial_failed_attempt_preserved": true,
+  "integrity_verification": {
+    "committed_outputs_verified": 2549,
+    "frozen_inputs_verified": 125,
+    "method": "Every frozen input and every committed output SHA-256 verified on initial completion inspection.",
+    "verified_utc": "2026-10-10T11:53:06.476709+00:00"
+  },
+  "job_sha256": "4bf84e47129cecbde7b3cd6037f10551377eca571b001ccbf7b220fa87a84ece",
+  "known_historical_arrays": 153,
+  "known_historical_snapshots": 31,
+  "known_qualification_status": "PASS",
+  "latest_prefix_completion_utc": "2026-10-10T05:13:33.914642+00:00",
+  "limitations": [
+    "In-domain forecast validation in the same apparatus; no cross-apparatus validation.",
+    "Approximate Student-t block inference, conditional on frozen development training.",
+    "Gain concentrated in initially failing cases; slight negative contributions from initially passing cases.",
+    "Matched-pair candidate decisions tie constant-spaced and expression controls; no state-capacity or causal sufficiency inference.",
+    "Shared filesystem gives procedural prediction separation, not independent custody or external replication.",
+    "TT007 original primary and P01 qualification status remain unchanged."
+  ],
+  "matched_decisions": {
+    "candidate": {
+      "discordant": 81,
+      "discordant_correct": 50.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 528.0
+    },
+    "constant": {
+      "discordant": 81,
+      "discordant_correct": 50.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 528.0
+    },
+    "expression_history": {
+      "discordant": 81,
+      "discordant_correct": 50.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 528.0
+    },
+    "expression_unsigned": {
+      "discordant": 81,
+      "discordant_correct": 50.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 528.0
+    },
+    "expression_unsigned_rbf_b2_r0.001": {
+      "discordant": 81,
+      "discordant_correct": 48.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 526.0
+    },
+    "margin": {
+      "discordant": 81,
+      "discordant_correct": 42.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 520.0
+    },
+    "packet_plus_expression_rbf_b2_r0.001": {
+      "discordant": 81,
+      "discordant_correct": 47.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 525.0
+    },
+    "quadratic_unsigned": {
+      "discordant": 81,
+      "discordant_correct": 50.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 528.0
+    },
+    "signed": {
+      "discordant": 81,
+      "discordant_correct": 47.0,
+      "discordant_ties": 0,
+      "pairs": 602,
+      "successes": 525.0
+    }
+  },
+  "native_receipt_and_index_verification": {
+    "arrays": 10985,
+    "rebuild": 2080,
+    "teaching": 65,
+    "terminal": 65
+  },
+  "new_models_refitted": 0,
+  "practical_brier_margin": 0.002,
+  "prediction_seal_sha256": "3dde44ec532357dfe738edaa1d4035b9a541278abd21b957954922e8f247c9de",
+  "predictions_sealed_utc": "2026-10-10T05:13:36.139249+00:00",
+  "primary_passed": true,
+  "recorded_utc": "2026-10-10T11:55:19.176736+00:00",
+  "registration_sha256": "c69bb9ba643ecc4cd16ba3eddc623b0a336b1eb1a347ef1e4fa73041502a4e61",
+  "review_trigger": "User-requested status; first result inspection after startup check.",
+  "run": "TT008/runs/prospective_v2",
+  "scientific_verdict": "PROSPECTIVE_IN_DOMAIN_PREDICTIVE_SUPERIORITY",
+  "scoring_audit": {
+    "block_contrasts_independently_checked": 320,
+    "model_and_data_hashes": "PASS",
+    "new_test_models_refitted": 0,
+    "prediction_reconstruction_error": 0.0,
+    "raw_terminal_rows_checked": 15360,
+    "seal_chronology": "PASS",
+    "status": "PASS"
+  },
+  "seconds": 41683.70082392893,
+  "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+  "strata": {
+    "0": {
+      "contrasts": {
+        "expression_history": {
+          "conditional_record_mean": 0.05363185509083238,
+          "contribution_to_overall": 0.008798976225839687
+        },
+        "expression_unsigned": {
+          "conditional_record_mean": 0.05713819760451446,
+          "contribution_to_overall": 0.009374235544490654
+        }
+      },
+      "n": 672,
+      "terminal_successes": 292
+    },
+    "1": {
+      "contrasts": {
+        "expression_history": {
+          "conditional_record_mean": -0.00018180022281844065,
+          "contribution_to_overall": -0.00015197362376229024
+        },
+        "expression_unsigned": {
+          "conditional_record_mean": -0.0003509729370130105,
+          "contribution_to_overall": -0.00029339143953431346
+        }
+      },
+      "n": 3424,
+      "terminal_successes": 2944
+    }
+  },
+  "study": "TT008",
+  "successor_launched": false
+}

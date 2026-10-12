@@ -1,0 +1,216 @@
+{
+  "status": "CLOSED_OUT",
+  "at_utc": "2026-10-11T12:39:19.894442+00:00",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_cue_noise_repair_v0_1/runs/pilot_v1",
+  "completed_utc": "2026-10-11T05:59:44.836883+00:00",
+  "elapsed_minutes": 66.33047423255242,
+  "cpu_minutes": 66.29748989325,
+  "inspected_on_user_status_request": true,
+  "automatic_scientific_polling": false,
+  "automatic_successor": false,
+  "files_sha256": {
+    "COMPLETE.json": "0faf6b1d9b884dce790c7982f368ba22e6001a77466b88a5aba64304edb717a3",
+    "REPORT.md": "42ac05c8a0614b8758f5d0106f019b6abfff2c058575f7cc39a2c4f4ec115451",
+    "analysis.json": "32ce440866b37886317b8cf2dadbc5b84fe8549840a40ddd0adcbb1fa5ef6d74",
+    "VERIFICATION.json": "4867e7971883e1a509fb5c8f02487b3c1016869d8aa7ce1b8302365ca15ee630",
+    "manifest.json": "3ba0c4311c37bafd3c0728fef5bf141f03b57881503d5f02dc161fce57a30e8c"
+  },
+  "saved_hash_audit": {
+    "status": "PASS",
+    "frozen_inputs": 77,
+    "completed_outputs": 48,
+    "verification_files": 19,
+    "source_copies": 18,
+    "source_bindings": 83
+  },
+  "internal_verification": {
+    "status": "PASS",
+    "at_utc": "2026-10-11T05:59:42.143318+00:00",
+    "scientific": true,
+    "records": 256,
+    "read_contexts": 27648,
+    "independent_captures": 27648,
+    "independent_repair_constructions": 13824,
+    "native_audit_contexts": 32,
+    "matched_replay_contexts": 9216,
+    "independent_noise_checks": 288,
+    "independent_optimizer_checks_during_preparation": 13824,
+    "analysis_module_imported": false,
+    "primary_renewal_module_imported": false,
+    "independent_damage_masks": true,
+    "same_lane_internal_verification": true
+  },
+  "counts": {
+    "matched_baseline": {
+      "uninterrupted": 121,
+      "terminal": 209,
+      "ever_recovered": 103,
+      "terminal_after_failure": 88,
+      "ever_opposite": 2,
+      "terminal_opposite": 2
+    },
+    "matched_repeated": {
+      "uninterrupted": 233,
+      "terminal": 247,
+      "ever_recovered": 14,
+      "terminal_after_failure": 14,
+      "ever_opposite": 0,
+      "terminal_opposite": 0
+    },
+    "noise_0999_baseline": {
+      "uninterrupted": 180,
+      "terminal": 232,
+      "ever_recovered": 53,
+      "terminal_after_failure": 52,
+      "ever_opposite": 1,
+      "terminal_opposite": 1
+    },
+    "noise_0999_repeated": {
+      "uninterrupted": 233,
+      "terminal": 242,
+      "ever_recovered": 9,
+      "terminal_after_failure": 9,
+      "ever_opposite": 0,
+      "terminal_opposite": 0
+    },
+    "noise_0_baseline": {
+      "uninterrupted": 210,
+      "terminal": 231,
+      "ever_recovered": 22,
+      "terminal_after_failure": 21,
+      "ever_opposite": 3,
+      "terminal_opposite": 3
+    },
+    "noise_0_repeated": {
+      "uninterrupted": 234,
+      "terminal": 241,
+      "ever_recovered": 7,
+      "terminal_after_failure": 7,
+      "ever_opposite": 2,
+      "terminal_opposite": 2
+    }
+  },
+  "denominator": 256,
+  "primary_contrast": {
+    "mean": 0.09375,
+    "by_block": {
+      "81000": 0.0625,
+      "81001": 0.0,
+      "81002": 0.125,
+      "81003": 0.125,
+      "81004": 0.1875,
+      "81005": 0.125,
+      "81006": 0.0625,
+      "81007": 0.0625,
+      "81008": 0.125,
+      "81009": 0.125,
+      "81010": 0.0625,
+      "81011": 0.0625,
+      "81012": 0.3125,
+      "81013": 0.0625,
+      "81014": 0.0625,
+      "81015": -0.0625
+    },
+    "descriptive_stratified_block_bootstrap_95": [
+      0.0625,
+      0.125
+    ],
+    "positive_blocks": 14,
+    "tied_blocks": 1,
+    "negative_blocks": 1
+  },
+  "primary_direction_observed": true,
+  "paired_primary": {
+    "repeated_only": 25,
+    "baseline_only": 1,
+    "both": 209,
+    "neither": 21,
+    "lineages": 256
+  },
+  "interpretation": [
+    "The frozen independent-noise primary is positive: +9.375 percentage points, descriptive 95% stratified block-bootstrap interval [6.25,12.5]; 14 positive blocks, one tie and one negative block.",
+    "The smaller repair advantage under mismatch accompanies substantial baseline improvement; repaired uninterrupted success stays at 233/256 for matched and .999 noise and 234/256 for independent noise.",
+    "Terminal repaired success is 247/256 matched, 242/256 at .999, and 241/256 independent; stable uninterrupted rates do not establish absence of every noise sensitivity.",
+    "Writer fallback disappears under ongoing noise mismatch while repair retains a positive primary benefit; fallback counts alone do not identify a causal contribution.",
+    "All matched histories replayed byte for byte. The cohort was exposed, teaching and resets stayed matched, and this remains a same-lane mechanism follow-up within one simulator."
+  ],
+  "mechanism": {
+    "matched_baseline": {
+      "available_edges": 1937342,
+      "fallback_edges": 346030,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 342830,
+      "fallback_fraction": 0.1786106944463084,
+      "returning_fallback_fraction": 1.0
+    },
+    "matched_repeated": {
+      "available_edges": 1937342,
+      "fallback_edges": 252,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 38,
+      "fallback_fraction": 0.00013007512354555882,
+      "returning_fallback_fraction": 0.00011084210833357641
+    },
+    "noise_0999_baseline": {
+      "available_edges": 1937342,
+      "fallback_edges": 0,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 0,
+      "fallback_fraction": 0.0,
+      "returning_fallback_fraction": 0.0
+    },
+    "noise_0999_repeated": {
+      "available_edges": 1937342,
+      "fallback_edges": 0,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 0,
+      "fallback_fraction": 0.0,
+      "returning_fallback_fraction": 0.0
+    },
+    "noise_0_baseline": {
+      "available_edges": 1937342,
+      "fallback_edges": 0,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 0,
+      "fallback_fraction": 0.0,
+      "returning_fallback_fraction": 0.0
+    },
+    "noise_0_repeated": {
+      "available_edges": 1937342,
+      "fallback_edges": 0,
+      "returning_edges": 342830,
+      "returning_fallback_edges": 0,
+      "fallback_fraction": 0.0,
+      "returning_fallback_fraction": 0.0
+    }
+  },
+  "noise_diagnostics": {
+    "matched": {
+      "draws": 1207959552,
+      "mean_plus": 1.7143191861174864e-05,
+      "mean_minus": 1.7143191861174864e-05,
+      "variance_plus": 1.0000028106383556,
+      "variance_minus": 1.0000028106383556,
+      "correlation": 1.0,
+      "target_correlation": 1.0
+    },
+    "noise_0999": {
+      "draws": 1207959552,
+      "mean_plus": 1.7143191861174864e-05,
+      "mean_minus": 1.3729622996114083e-05,
+      "variance_plus": 1.0000028106383556,
+      "variance_minus": 1.0000031434691232,
+      "correlation": 0.999000016820809,
+      "target_correlation": 0.999
+    },
+    "noise_0": {
+      "draws": 1207959552,
+      "mean_plus": 1.7143191861174864e-05,
+      "mean_minus": -7.596538057765485e-05,
+      "variance_plus": 1.0000028106383556,
+      "variance_minus": 0.9999863310386209,
+      "correlation": 4.094611483267924e-06,
+      "target_correlation": 0.0
+    }
+  }
+}

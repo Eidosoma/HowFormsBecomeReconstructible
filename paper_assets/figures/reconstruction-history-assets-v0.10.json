@@ -1,0 +1,35 @@
+{
+  "schema": "forms_retained_history_assets_v1",
+  "figure_id": "fig-reconstruction-history",
+  "kind": "illustrative retained pattern fields",
+  "png": "data-reconstruction-history-v1.png",
+  "input": "paper_assets/data/retained-reconstruction-history-v1.npz",
+  "input_sha256": "ac451cc31edca28653e8fc790b817a8408c05501fc35110ffa7673b75e0b9814",
+  "metadata": "paper_assets/data/retained-reconstruction-history-v1.json",
+  "metadata_sha256": "89c52386f6b57bfd1e083b2438588ba1f3d3c7a762205bc5e8efb31e5ba89b77",
+  "renderer": "paper_assets/plot_reconstruction_history.py",
+  "renderer_sha256": "f4ec450ad352d0eb40573c1d95e4b81181233eed59c3080b4ef08cf401da7156",
+  "outputs": [
+    {
+      "path": "paper_assets/figures/data-reconstruction-history-v1.png",
+      "sha256": "810b9c375a05508c015966f198518f66a89e9ae0a8ae34efa48921350712b827"
+    },
+    {
+      "path": "paper_assets/figures/data-reconstruction-history-v1.svg",
+      "sha256": "411444b80c165a2f1a9bbfac689457dfaf3ce413fb3b669f3f17a3f23ec22df7"
+    }
+  ],
+  "body_scale": [
+    -2.0,
+    2.0
+  ],
+  "record_scale": [
+    -0.4409847495957719,
+    0.4409847495957719
+  ],
+  "scales": "One symmetric limit per quantity over every displayed field; no clipping or per-panel normalization",
+  "spatial_interpolation": "nearest; no smoothing",
+  "extra_spatial_alignment": false,
+  "new_simulations": 0,
+  "new_statistical_tests": 0
+}

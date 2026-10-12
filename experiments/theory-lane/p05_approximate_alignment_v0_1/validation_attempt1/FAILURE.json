@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-10T17:53:49.243047+00:00",
+  "status": "FAILED",
+  "tests_passed": 7,
+  "tests_failed": 1,
+  "failed_test": "test_independent_preparation_with_missing_donor_edges",
+  "failure": "Independent coupling bytes differ only in the sign bit of zero at absent edges.",
+  "numerically_equal": true,
+  "signed_zero_differences": 42,
+  "fix": "Use exact numerical equality for coupling values. Retain byte equality for states, packet records and native dynamics. No tolerance is introduced."
+}

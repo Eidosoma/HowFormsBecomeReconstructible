@@ -1,0 +1,82 @@
+{
+  "blocks": 32,
+  "eta_is_estimate": true,
+  "frozen_inputs_verified": 25,
+  "intervals_from_unaudited_run_summary": true,
+  "job_status_at_request": {
+    "pid": 2854358,
+    "stage": "audit",
+    "status": "RUNNING",
+    "utc": "2026-10-10T19:55:24.181283+00:00"
+  },
+  "lineages_per_condition": 512,
+  "primary_classification": {
+    "combined32": "UNRESOLVED"
+  },
+  "primary_decision": false,
+  "primary_gates": {
+    "combined32_difference_lower_above_minus_005": false,
+    "combined32_lower_above_075": true,
+    "reference_lower_above_075": true
+  },
+  "requested_by_user": true,
+  "simulation_finished_utc": "2026-10-10T19:55:24.143209+00:00",
+  "simulation_seconds": 25459.749898929847,
+  "source_complete_sha256": "139625e18e504bf0c9ad111bfc13ab85add1606e64ac8c8bc26f88fa1eec46d1",
+  "source_summary_sha256": "8f80552e06e22e5cbbe1247f12e63de05be4ffd8db3785040ddebcd033f4fed0",
+  "status": "SIMULATION_COMPLETE_AUDIT_PENDING",
+  "trajectory_audit_pending": true,
+  "utc": "2026-10-10T20:18:29.216453+00:00",
+  "values": {
+    "noise_0/combined32": {
+      "ci95": [
+        0.890625,
+        0.94921875
+      ],
+      "mean": 0.921875,
+      "successes": 472
+    },
+    "noise_0/combined_minus_reference": {
+      "ci95": [
+        -0.05078125,
+        -0.01171875
+      ],
+      "mean": -0.029296875
+    },
+    "noise_0/reference": {
+      "ci95": [
+        0.92578125,
+        0.97265625
+      ],
+      "mean": 0.951171875,
+      "successes": 487
+    },
+    "paired/combined32": {
+      "ci95": [
+        0.58984375,
+        0.6816894531249993
+      ],
+      "mean": 0.63671875,
+      "successes": 326
+    },
+    "paired/combined_minus_reference": {
+      "ci95": [
+        -0.236328125,
+        -0.1328125
+      ],
+      "mean": -0.185546875
+    },
+    "paired/reference": {
+      "ci95": [
+        0.783203125,
+        0.859375
+      ],
+      "mean": 0.822265625,
+      "successes": 421
+    }
+  },
+  "working_completion_utc": [
+    "2026-10-11T02:30:00+00:00",
+    "2026-10-11T04:30:00+00:00"
+  ]
+}

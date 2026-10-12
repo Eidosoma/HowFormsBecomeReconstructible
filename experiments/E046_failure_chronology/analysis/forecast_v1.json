@@ -1,0 +1,27 @@
+{
+  "available_bytes": 69104181248,
+  "benchmark_audit_sha256": "8ccfd0768e16daa644bae8df477087a9a11fbf88d18e2a031354afc788fef05e",
+  "benchmark_complete_sha256": "ca5000eb7c5e4360d3361332ad3e6b1921c24018f6502f6d4bbc1e7648788648",
+  "benchmark_measurement_seconds": 0.07929976098239422,
+  "benchmark_run_bytes": 1993357,
+  "benchmark_workflow_seconds": 7.257360354997218,
+  "capacity_pass": true,
+  "detached_required": false,
+  "forecast_seconds": 181.14191655814648,
+  "formula": "1.8*(benchmark extraction+audit worker seconds)*32*2/workers+180",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E046_failure_chronology/PROTOCOL.md": "70d11a85791e09048c0b6fe6dbf04c8d37187166f011c44d21ae0962cff0ee5a",
+    "E046_failure_chronology/SOURCE_DATA.json": "564b5c7f8499796bcbbe4933cfb48e82b91b66392f013dddce89147c2308d6ee",
+    "E046_failure_chronology/audit.py": "fb12defdd343546011cb8caf4d03fb0705b922ec0673a96bd9c768c285936bba",
+    "E046_failure_chronology/metrics.py": "aee5378304a363ce8d1483ca628c41e75d03ee25211fa7bb5079eac17c635aa0",
+    "E046_failure_chronology/plot.py": "723e04089cc18272092e26e959fc69bff99be4849474f82e4f2dbd352f7a0d4d",
+    "E046_failure_chronology/run.py": "85218f4751658f95fd87e8d4399ca33cb002496024f1787621584759332a1e67",
+    "E046_failure_chronology/tests.py": "ce19ca45ccc83bae2287fd6183312de9f5b6d6c15520f399ed5ae58a645d9cc1",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "storage_with_reserve_bytes": 325580000,
+  "utc": "2026-10-07T17:11:46.648890+00:00",
+  "workers": 8
+}

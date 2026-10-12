@@ -1,0 +1,61 @@
+{
+  "figure_id": "fig-rebuilding-regimes",
+  "kind": "reported-estimates",
+  "png": "data-rebuilding-regimes-v0.20.png",
+  "data": "paper_assets/data/rebuilding-regimes-v0.20.json",
+  "data_sha256": "a41c1a817d471c88ed43460bc98beab2318eb574868ce1fa8fa418a1caecec35",
+  "csv": "paper_assets/data/rebuilding-regimes-v0.20.csv",
+  "csv_sha256": "07eeba52d75d37acce311d831cebcecdba20bce9086f721895f0909a1106c37a",
+  "plot_script": "paper_assets/plot_rebuilding_regimes_v020.py",
+  "plot_script_sha256": "b4c1f2b7d681d9c9a6d920324a3738657a1b1557c264662d00cf962bbd3a39ce",
+  "sources": [
+    {
+      "experiment": "E051",
+      "extract": "paper_assets/data/cue-pairing-v0.17.json",
+      "extract_sha256": "360f8a48c7cd5f47139e1e9255964cb6f46bb6268cba8446aada60d22351e556",
+      "archive": "paper_assets/data/cue-pairing-v0.17-source-records.zip",
+      "archive_sha256": "d80bd01f468ab7e00d218c318b7cea53fa7a1124191aaf471f5fc2d23914d276",
+      "summary_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "summary_sha256": "9eb34a04f5295d8e8926ac502b59689b1bf074433f51b0bf644e89d413443521"
+    },
+    {
+      "experiment": "E052",
+      "extract": "paper_assets/data/evidence-update-v0.17.json",
+      "extract_sha256": "ab8bed849b14c147167acae2d2faf5a0e362da33dc8f9f6f6cf91edfe711bfa8",
+      "archive": "paper_assets/data/evidence-update-v0.17-source-records.zip",
+      "archive_sha256": "aa9061631df06c7d76c3c34e651e71e665d5458fb4600810a8b04603e63d7257",
+      "summary_member": "experiments/E052_precision_normalization/runs/robustness_v1/summary.json",
+      "summary_sha256": "f611aab5959ccc5c0511db7c2a78941ba112f974554cd03b1dfb0050333c0395"
+    },
+    {
+      "experiment": "E053",
+      "extract": "reviews/V0.20_E053_SOURCES.json",
+      "extract_sha256": "54a846ddb6257fab456282d45114cc5db61193f5be2d4a02a9769f10bba5d720",
+      "archive": "paper_assets/data/e053-channel-order-v0.20-source-records.zip",
+      "archive_sha256": "0638217e58d1a96135fde2438187926389bea175303583cfda64bcd843fd1077",
+      "summary_member": "experiments/E053_combined_numerical_confirmation/runs/robustness_v1/summary.json",
+      "summary_sha256": "8f80552e06e22e5cbbe1247f12e63de05be4ffd8db3785040ddebcd033f4fed0"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper_assets/figures/data-rebuilding-regimes-v0.20.png",
+      "sha256": "5af3b0634f11bec9b17718904f04cddc4b5a35c24a311133198915c350ed1a64"
+    },
+    {
+      "path": "paper_assets/figures/data-rebuilding-regimes-v0.20.svg",
+      "sha256": "9756118fd3de328f142c048b37b9d394b482f30728762b385e62415865fcc39a"
+    }
+  ],
+  "native_statistics_verified": 28,
+  "statistics_recomputed": false,
+  "new_trajectories": false,
+  "cohorts_pooled": false,
+  "intervals": "Native pointwise 95% whole-block bootstrap intervals, unchanged; no multiplicity adjustment or cross-study inference.",
+  "selection": {
+    "A": "E052 reference, storage-only control and all four primary stress levels; matched and independent rebuilding noise.",
+    "B": "E051 original-writer ordinary fallback on available returning edges, boundaries 2\u201332; matched and independent rebuilding noise.",
+    "C": "E051 original, tolerance, contrast-only and strong-preserving writers; matched and independent rebuilding noise. Ordinary-only and intermediate correlations remain in Appendix D.8.3.",
+    "D": "E053 reference and combined32 means, and original paired differences/intervals. Independent-noise primary and matched-noise secondary; separate fresh cohort."
+  }
+}

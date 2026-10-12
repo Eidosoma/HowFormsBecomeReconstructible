@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gre-sim"
+version = "0.1.0"
+description = "Auditable gene-regulatory rehoming simulation and evolution"
+requires-python = ">=3.11"
+dependencies = [
+  "matplotlib>=3.8",
+  "numba>=0.61; python_version < '3.14'",
+  "numpy>=2.1",
+  "scipy>=1.14",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+gre-sim = "gre_sim.cli:main"
+plastic-heredity-v2-campaign = "gre_sim.plastic_heredity_v2_cli:campaign_main"
+plastic-heredity-v2-status = "gre_sim.plastic_heredity_v2_cli:status_main"
+plastic-heredity-v2-verify = "gre_sim.plastic_heredity_v2_cli:verify_main"
+plastic-heredity-v2-replay = "gre_sim.plastic_heredity_v2_cli:replay_main"
+lineage-carrier-campaign = "gre_sim.lineage_carrier_cli:campaign_main"
+lineage-carrier-status = "gre_sim.lineage_carrier_cli:status_main"
+lineage-carrier-verify = "gre_sim.lineage_carrier_cli:verify_main"
+lineage-carrier-replay = "gre_sim.lineage_carrier_cli:replay_main"
+lineage-carrier-initial-replication = "gre_sim.lineage_carrier_cli:initial_replication_main"
+lineage-carrier-initial-status = "gre_sim.lineage_carrier_cli:initial_status_main"
+lineage-carrier-initial-verify = "gre_sim.lineage_carrier_cli:initial_verify_main"
+lineage-carrier-initial-audit = "gre_sim.lineage_carrier_cli:initial_audit_main"
+wagner-local-ph-campaign = "gre_sim.local_ph_cli:campaign_main"
+wagner-local-ph-status = "gre_sim.local_ph_cli:status_main"
+wagner-local-ph-verify = "gre_sim.local_ph_cli:verify_main"
+wagner-local-ph-replay = "gre_sim.local_ph_cli:replay_main"
+wagner-ph-bridge-campaign = "gre_sim.wagner_ph_bridge_cli:campaign_main"
+wagner-ph-bridge-status = "gre_sim.wagner_ph_bridge_cli:status_main"
+wagner-ph-bridge-verify = "gre_sim.wagner_ph_bridge_cli:verify_main"
+wagner-ph-bridge-replay = "gre_sim.wagner_ph_bridge_cli:replay_main"
+wagner-ph-renewal-campaign = "gre_sim.wagner_ph_renewal_cli:campaign_main"
+wagner-ph-renewal-status = "gre_sim.wagner_ph_renewal_cli:status_main"
+wagner-ph-renewal-verify = "gre_sim.wagner_ph_renewal_cli:verify_main"
+wagner-ph-renewal-replay = "gre_sim.wagner_ph_renewal_cli:replay_main"
+wagner-ph-renewal-complete = "gre_sim.wagner_ph_renewal_cli:completion_main"
+wagner-ph-origin-campaign = "gre_sim.wagner_ph_origin_cli:campaign_main"
+wagner-ph-origin-complete = "gre_sim.wagner_ph_origin_cli:completion_main"
+wagner-ph-origin-status = "gre_sim.wagner_ph_origin_cli:status_main"
+wagner-ph-origin-verify = "gre_sim.wagner_ph_origin_cli:verify_main"
+wagner-ph-origin-replay = "gre_sim.wagner_ph_origin_cli:replay_main"
+wagner-ph-ladder-campaign = "gre_sim.wagner_ph_ladder_cli:campaign_main"
+wagner-ph-ladder-status = "gre_sim.wagner_ph_ladder_cli:status_main"
+wagner-ph-ladder-verify = "gre_sim.wagner_ph_ladder_cli:verify_main"
+wagner-ph-ladder-replay = "gre_sim.wagner_ph_ladder_cli:replay_main"
+wagner-ph-cooption-campaign = "gre_sim.wagner_ph_cooption_cli:campaign_main"
+wagner-ph-cooption-status = "gre_sim.wagner_ph_cooption_cli:status_main"
+wagner-ph-cooption-verify = "gre_sim.wagner_ph_cooption_cli:verify_main"
+wagner-ph-cooption-replay = "gre_sim.wagner_ph_cooption_cli:replay_main"
+wagner-ph-cooption-confirm = "gre_sim.wagner_ph_cooption_cli:confirmation_main"
+wagner-ph-direct-prediction-campaign = "gre_sim.wagner_ph_direct_cli:campaign_main"
+wagner-ph-direct-prediction-status = "gre_sim.wagner_ph_direct_cli:status_main"
+wagner-ph-direct-prediction-verify = "gre_sim.wagner_ph_direct_cli:verify_main"
+wagner-ph-robustness-campaign = "gre_sim.wagner_ph_robustness_cli:campaign_main"
+wagner-ph-robustness-status = "gre_sim.wagner_ph_robustness_cli:status_main"
+wagner-ph-robustness-verify = "gre_sim.wagner_ph_robustness_cli:verify_main"
+wagner-ph-robustness-replay = "gre_sim.wagner_ph_robustness_cli:replay_main"
+wagner-ph-interpreter-depth-campaign = "gre_sim.wagner_ph_depth_cli:campaign_main"
+wagner-ph-interpreter-depth-status = "gre_sim.wagner_ph_depth_cli:status_main"
+wagner-ph-interpreter-depth-verify = "gre_sim.wagner_ph_depth_cli:verify_main"
+wagner-ph-interpreter-depth-replay = "gre_sim.wagner_ph_depth_cli:replay_main"
+wagner-ph-interpreter-resilience-campaign = "gre_sim.wagner_ph_resilience_cli:campaign_main"
+wagner-ph-interpreter-resilience-status = "gre_sim.wagner_ph_resilience_cli:status_main"
+wagner-ph-interpreter-resilience-verify = "gre_sim.wagner_ph_resilience_cli:verify_main"
+wagner-ph-interpreter-resilience-replay = "gre_sim.wagner_ph_resilience_cli:replay_main"
+wagner-ph-interpreter-architecture-campaign = "gre_sim.wagner_ph_architecture_cli:campaign_main"
+wagner-ph-interpreter-architecture-status = "gre_sim.wagner_ph_architecture_cli:status_main"
+wagner-ph-interpreter-architecture-verify = "gre_sim.wagner_ph_architecture_cli:verify_main"
+wagner-ph-interpreter-architecture-replay = "gre_sim.wagner_ph_architecture_cli:replay_main"
+wagner-ph-adaptive-maintenance-campaign = "gre_sim.wagner_ph_maintenance_cli:campaign_main"
+wagner-ph-adaptive-maintenance-confirm = "gre_sim.wagner_ph_maintenance_cli:confirmation_main"
+wagner-ph-adaptive-maintenance-status = "gre_sim.wagner_ph_maintenance_cli:status_main"
+wagner-ph-adaptive-maintenance-inspect = "gre_sim.wagner_ph_maintenance_cli:inspect_main"
+wagner-ph-adaptive-maintenance-verify = "gre_sim.wagner_ph_maintenance_cli:verify_main"
+wagner-ph-adaptive-maintenance-replay = "gre_sim.wagner_ph_maintenance_cli:replay_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-10-09T13:45:19.383002+00:00",
+  "tests_passed": 8,
+  "test_seconds": 3.68,
+  "syntax_checked": 10,
+  "new_schedule_native_trajectories_tested": false,
+  "checks": [
+    "Actual captures follow six-event schedules",
+    "Count/start/end/late-writing violations rejected",
+    "Correct old pulse control column selected",
+    "Common-prefix verification respects read-before-write timing",
+    "Synthetic positive and negative primary outcomes preserved in automatic reporting and independent verification"
+  ],
+  "files_sha256": {
+    "analyze.py": "826f7e2a7caa9aff3dee611d448de0f9c98a61517e066cf86b82165cd91d99ea",
+    "benchmark.py": "41a5f58c06a5125de8d10a47828705a3b76f5fbe44197800dc7efec39a62eb49",
+    "diagnostic_core.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac",
+    "dynamics.py": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+    "evidence.py": "581d61280aef838d0a50ae7a69722956179349e630774642612b9f43b2ba3c0f",
+    "launch.py": "ae2909970ddffe85ade62862118c5dd54bc7db06d3130c8f4f35fb3fc1fdbec6",
+    "run.py": "615b2e5438eae6131e6bb90920c8f27bc7dfd1199314f46ceb672fb356947dbb",
+    "schedules.py": "ec8b6f60db8d46d39e978b49dabf2c859dff89e452c65384f397e84d03a24ec0",
+    "test_spacing.py": "300779a7c3c1cb6f01bf33c4e6bdf7d7cfccadf875f71ee0817f0abe57fb486c",
+    "verify.py": "4afcc921619400c360effd90a6dc8001e0f2ee280165473eac237389f9e6ddc9"
+  }
+}

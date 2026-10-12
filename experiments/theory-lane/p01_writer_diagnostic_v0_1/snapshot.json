@@ -1,0 +1,148 @@
+{
+  "version": "P01-writer-diagnostic-v0.1",
+  "created_at_utc": "2026-10-08T19:02:47.113186+00:00",
+  "status": "RETROSPECTIVE_DEVELOPMENT_NOT_CONFIRMATORY",
+  "meaning": "Binds the declared cohort, protocol, code, raw input identities, per-body features, held-out predictions, negative results and report. No external preregistration or native dynamics replay.",
+  "files": [
+    {
+      "path": "EXPOSURE_AND_DECISIONS.json",
+      "bytes": 5946,
+      "sha256": "06f510b12af0e4f158f96c8570fb1acdb455a63e5d7e4973c4b4c3d3772fab88"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 6166,
+      "sha256": "69f4c0b6d5258d92cf34b95b2a42d205bab4179999d9e6f6a4e2973028fddf36"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 11679,
+      "sha256": "72b3a4069b06af0cacb4a927480ec76ffe86dd6aa21504005614249e87f9cdf1"
+    },
+    {
+      "path": "analyze.py",
+      "bytes": 9611,
+      "sha256": "374c8c562fde6083fa1ef3596a51df07c0661996f83e09a21e17ac32581c41c3"
+    },
+    {
+      "path": "benchmark/COMPLETE.json",
+      "bytes": 4753,
+      "sha256": "9099ff6ee27119611754be1904dbf05fa90aea158f6b2840d1ae6f09b490d2a3"
+    },
+    {
+      "path": "benchmark/START.json",
+      "bytes": 2613,
+      "sha256": "1c3cae72a13faf40d5c81254c7ac4da1803e75f282af340d325be933d326a133"
+    },
+    {
+      "path": "benchmark/features.csv",
+      "bytes": 50780,
+      "sha256": "5b87ac489d129415c026a18dd24c409eba483a5f85d9d0dff13d8da408b65ec2"
+    },
+    {
+      "path": "check_divergence.py",
+      "bytes": 2027,
+      "sha256": "aa64638c67129ebd90a6faf0cb7c4ec819be4945c73ca6625b3fe9a37dc58979"
+    },
+    {
+      "path": "config.json",
+      "bytes": 1201,
+      "sha256": "089176e7555b320a6ce00c5b7e894aba0e410dd5db0ab0b42798af9eaf571c8b"
+    },
+    {
+      "path": "core.py",
+      "bytes": 6276,
+      "sha256": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+    },
+    {
+      "path": "extract.py",
+      "bytes": 10850,
+      "sha256": "e33ba5b02548ccb1c2e2ad151f0182cd1ee29f8a483acc67b0bb46da8ac978c7"
+    },
+    {
+      "path": "plot.py",
+      "bytes": 5450,
+      "sha256": "1c589eef18b62d36e92af02ba76b87fd09c9a6b1db260263559212b47100cb05"
+    },
+    {
+      "path": "results/COMPLETE.json",
+      "bytes": 108256,
+      "sha256": "69994742267e1a3ac77bf7494102c7e03c57404c1ae4a0edd7a1017006247efc"
+    },
+    {
+      "path": "results/START.json",
+      "bytes": 2931,
+      "sha256": "203c74d62e4bd336d88eb5df7f184dbfb5e33e3dd939d8bf31d6b26742c14ea4"
+    },
+    {
+      "path": "results/analysis.json",
+      "bytes": 221281,
+      "sha256": "404b1a82d34c8c3a53df8f9f2a89a34313050511dae6390902321aa29d131162"
+    },
+    {
+      "path": "results/features.csv",
+      "bytes": 17073838,
+      "sha256": "0d1ab463b7e8d350f0d0c71a65ff83454d29ce438c9385534b99637726763468"
+    },
+    {
+      "path": "results/figure_layout_draft_v1/generation_summaries.csv",
+      "bytes": 24983,
+      "sha256": "f0004bff69455457cc09932f8755f2c0780b2a5ad493bef5d31089a5d2666ac3"
+    },
+    {
+      "path": "results/figure_layout_draft_v1/writer_diagnostic.png",
+      "bytes": 255980,
+      "sha256": "6c7e4ddd1a9b73a36dc2d3758c00dfb8b3512046a383a16f0ebf31ea752a624e"
+    },
+    {
+      "path": "results/figure_layout_draft_v1/writer_diagnostic.svg",
+      "bytes": 137938,
+      "sha256": "75b57aa6509d522d336b69257146bca058a9dd97531f57fe564daf132acfcec9"
+    },
+    {
+      "path": "results/first_divergence_checks.json",
+      "bytes": 907,
+      "sha256": "bb7786906b943ca6eadc5c992c03f180c98863439c791e93f913a0bc888a7a12"
+    },
+    {
+      "path": "results/generation_summaries.csv",
+      "bytes": 24983,
+      "sha256": "f0004bff69455457cc09932f8755f2c0780b2a5ad493bef5d31089a5d2666ac3"
+    },
+    {
+      "path": "results/held_out_predictions.csv",
+      "bytes": 3259019,
+      "sha256": "5aafcd66786444b2cc577b168004ab7051056331f469682c46f581f68a6d07eb"
+    },
+    {
+      "path": "results/writer_diagnostic.png",
+      "bytes": 255674,
+      "sha256": "452597d4319d56b641b35ce6a049aa11f8d8e0382f0b671a2939537849a5a3a0"
+    },
+    {
+      "path": "results/writer_diagnostic.svg",
+      "bytes": 138132,
+      "sha256": "804781d2430a0b3c83273026a608de5ae9ef2445674b57e8cdd49ad0edbf0760"
+    },
+    {
+      "path": "runtime_forecast.json",
+      "bytes": 328,
+      "sha256": "b2989e5cd9da8d64eb55741f1d2d83e95dc251f8b863433a9191389fc82d33e9"
+    },
+    {
+      "path": "test_core.py",
+      "bytes": 2673,
+      "sha256": "175fed222c6646f26171082f45d1b17612cb85539a4291e027e5fc5365bf8e63"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 2243,
+      "sha256": "f15690ea201f08bdb05fcde8918af09d1a84218638f1acb9bcac2477316d51fc"
+    }
+  ],
+  "selected_native_inputs": "results/COMPLETE.json:raw_data",
+  "source_boundary": "E051 selected first eight blocks only; native run read-only",
+  "verification_command": "python -B verify.py",
+  "independent_Brier_verification": "verify.py recalculates fold and mean-block scores from exported predictions",
+  "original_P01_snapshot_preserved": "../p01_v0_2/snapshot.json"
+}

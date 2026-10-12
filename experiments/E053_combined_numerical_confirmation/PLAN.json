@@ -1,0 +1,320 @@
+{
+  "authorization": "User: lets go, 10 October 2026; continuation of E052 combined-stress lead",
+  "blocks": [
+    36000,
+    36001,
+    36002,
+    36003,
+    36004,
+    36005,
+    36006,
+    36007,
+    36008,
+    36009,
+    36010,
+    36011,
+    36012,
+    36013,
+    36014,
+    36015,
+    36016,
+    36017,
+    36018,
+    36019,
+    36020,
+    36021,
+    36022,
+    36023,
+    36024,
+    36025,
+    36026,
+    36027,
+    36028,
+    36029,
+    36030,
+    36031
+  ],
+  "designed_utc": "2026-10-10T12:41:43.096916+00:00",
+  "evaluation": {
+    "birth_rho": 1.0,
+    "cue_noise_rho": 1.0,
+    "damage": [
+      "intact",
+      "scattered",
+      "square"
+    ],
+    "horizons": [
+      0,
+      8,
+      16,
+      24,
+      32
+    ],
+    "native_and_common_readers": true,
+    "offline_scoring": "float64"
+  },
+  "excluded_blocks": [
+    900041
+  ],
+  "excluded_claims": [
+    "Independent initial activity, teaching or terminal-assay cue noise",
+    "All four stress factors fully factorial: arithmetic only at baseline and triple stress",
+    "Longer than 32 generations or indefinite heredity",
+    "Writer optimization or E041 full 17-gate qualification",
+    "Causal mediation by tiny edges alone",
+    "Physical biological calibration or smaller payload"
+  ],
+  "execution": {
+    "detached_above_seconds": 600,
+    "maximum_workers": 8,
+    "no_automatic_polling": true,
+    "no_automatic_successor": true,
+    "numerical_threads_per_worker": 1,
+    "shared_cpu_ceiling": 12
+  },
+  "experiment": "E053",
+  "founders_per_block": 4,
+  "generations": 32,
+  "inference": {
+    "bootstrap_namespace": [
+      "E053",
+      "bootstrap",
+      "combined_numerical_confirmation"
+    ],
+    "independent_unit": "block",
+    "interval_quantiles": [
+      0.025,
+      0.975
+    ],
+    "no_optional_stopping": true,
+    "resamples": 10000,
+    "secondary_intervals": "pointwise"
+  },
+  "model": {
+    "absent_nonport_cells": 24,
+    "activity_noise_sd": 0.02,
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "gain": 2.0,
+    "holding_steps": 128,
+    "margin": 0.25,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "side": 16,
+    "teach_steps": 512,
+    "writer_beta": 3.0
+  },
+  "pairings": [
+    {
+      "birth_rho": 1.0,
+      "id": "paired",
+      "noise_rho": 1.0
+    },
+    {
+      "birth_rho": 1.0,
+      "id": "noise_0",
+      "noise_rho": 0.0
+    }
+  ],
+  "primary": {
+    "absolute_lower95_must_exceed": 0.75,
+    "assay": "native",
+    "challenges": [
+      "combined32"
+    ],
+    "damage": "scattered",
+    "demonstrated_loss_if_difference_upper95_below": -0.05,
+    "difference_lower95_must_exceed": -0.05,
+    "horizon": 32,
+    "joint_requirements": 3,
+    "outcome": "both_cues_correct",
+    "pairing": "noise_0",
+    "reference": "reference"
+  },
+  "prior_outcomes_seen": [
+    "E051 full scientific result",
+    "E052 full scientific result"
+  ],
+  "question": "Fresh confirmation of independent rebuilding cue noise under combined numerical stresses",
+  "recipients_per_founder": 4,
+  "record_channel": {
+    "applications": 33,
+    "apply_after_each_write": true,
+    "apply_at_acquisition": true,
+    "namespace_reason": "Keep all single-stress regimes exactly compatible with E052; new blocks provide fresh streams",
+    "no_extra_assay_application": true,
+    "noise_namespace": [
+      "E052",
+      "block",
+      "record_noise",
+      "generation"
+    ],
+    "order": [
+      "noise_on_prechannel_nonzero_available_values_and_clip",
+      "grid_rounding_nearest_ties_to_even",
+      "float32_record_rounding"
+    ],
+    "payload_container_bytes": 4096,
+    "protect_exact_zeros": true,
+    "protect_physical_erasures": true
+  },
+  "regimes": [
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 0,
+        "grid": 0,
+        "noise": 0
+      },
+      "grid_step": 0.0,
+      "id": "reference",
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 0,
+        "grid": 1,
+        "noise": 0
+      },
+      "grid_step": 1.52587890625e-05,
+      "id": "grid_2m16",
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 0,
+        "grid": 0,
+        "noise": 1
+      },
+      "grid_step": 0.0,
+      "id": "record_noise_1e4",
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0001,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 1,
+        "grid": 0,
+        "noise": 0
+      },
+      "grid_step": 0.0,
+      "id": "floor_1e4",
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 0,
+        "grid": 1,
+        "noise": 1
+      },
+      "grid_step": 1.52587890625e-05,
+      "id": "grid_noise",
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0001,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 1,
+        "grid": 1,
+        "noise": 0
+      },
+      "grid_step": 1.52587890625e-05,
+      "id": "grid_floor",
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0001,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 1,
+        "grid": 0,
+        "noise": 1
+      },
+      "grid_step": 0.0,
+      "id": "noise_floor",
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float64",
+      "denominator_floor": 0.0001,
+      "factors": {
+        "arithmetic32": 0,
+        "floor": 1,
+        "grid": 1,
+        "noise": 1
+      },
+      "grid_step": 1.52587890625e-05,
+      "id": "grid_noise_floor",
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float64"
+    },
+    {
+      "arithmetic": "float32",
+      "denominator_floor": 0.0,
+      "factors": {
+        "arithmetic32": 1,
+        "floor": 0,
+        "grid": 0,
+        "noise": 0
+      },
+      "grid_step": 0.0,
+      "id": "arithmetic32",
+      "record_noise_sd": 0.0,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float32"
+    },
+    {
+      "arithmetic": "float32",
+      "denominator_floor": 0.0001,
+      "factors": {
+        "arithmetic32": 1,
+        "floor": 1,
+        "grid": 1,
+        "noise": 1
+      },
+      "grid_step": 1.52587890625e-05,
+      "id": "combined32",
+      "record_noise_sd": 0.0001,
+      "record_noise_support": "nonzero_available",
+      "record_precision": "float32"
+    }
+  ],
+  "selection": "Independent noise and numerical levels selected from E052; held-out confirmation, no pooled prior cases",
+  "writer": {
+    "policy": "original_exact_zero_full_bridge_rewrite",
+    "preserve_strong_incoming": false
+  }
+}

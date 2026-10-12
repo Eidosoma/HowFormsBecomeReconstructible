@@ -1,0 +1,47 @@
+{
+  "contract": {
+    "blocks": [
+      900041
+    ],
+    "experiment": "E044",
+    "mode": "benchmark",
+    "no_new_trajectories": true,
+    "sources": {
+      "diagnosis": "E042_late_failure_diagnosis/runs/benchmark_v1",
+      "timing": "E043_late_reader_timing/runs/fixture_v1"
+    },
+    "workers": 1
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E032_renewal_failure_diagnosis/audit.py": "41c078124744dd178f153cc2f4c4eeb543c0188609d713a41850be4b6905959c",
+    "E032_renewal_failure_diagnosis/metrics.py": "688ca25a88f4f2f64243ea51cf0ecc55e851a125f5b24682c334ca5050e9f4ab",
+    "E044_transition_diagnosis/PROTOCOL.md": "e7114c2d47469470a7bba909666c9916a01b0af801d301f991d3e1e3e43dc681",
+    "E044_transition_diagnosis/SOURCE_DATA.json": "eae6c5840169028bab9c8659249e89c0dbd32e469fb119e0aff6242b2060f751",
+    "E044_transition_diagnosis/audit.py": "3906dce7ec30216eeca1847655918de1b54d059f9e339cf3e60687126b66a423",
+    "E044_transition_diagnosis/metrics.py": "265755e83945dbcbd11c228f5ab25aa7fb92ec6e8f5b7f584718b78da4e6eb56",
+    "E044_transition_diagnosis/plot.py": "94b7ec06a11f4467047373aa69af07e0aaaf2844217a51d93f08c5f54fce12fa",
+    "E044_transition_diagnosis/run.py": "872bed93aacddd53d5fbacf993aa09824c72949e92253cd3ce188cfcf3db6615",
+    "E044_transition_diagnosis/tests.py": "76879e7e3d05c6f201c30c77f311efbf811126beb7cb31061adac3d5213ae383",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-10-06T14:01:14.787607+00:00",
+  "status": "RUNNING"
+}

@@ -1,0 +1,4 @@
+{
+  "time": "2026-09-17T18:20:07.624129+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E006_compact_renewal/run.py\", line 192, in main\n    analyze(output,ids,args.benchmark)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E006_compact_renewal/run.py\", line 139, in analyze\n    writer=csv.DictWriter(f,fieldnames=list(individual[0]));writer.writeheader();writer.writerows(individual)\n           ^^^\nNameError: name 'csv' is not defined. Did you forget to import 'csv'?\n"
+}

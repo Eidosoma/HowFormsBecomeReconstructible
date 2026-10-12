@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "completed_at_utc": "2026-10-08T20:50:16.758721+00:00",
+  "at_utc": "2026-10-08T20:49:39.447859+00:00",
+  "config_sha256": "ca19c4d8730f0379669112bc641eedefadd3b04f7b9491e68c3198dede75d8eb",
+  "code_sha256": {
+    "dynamics.py": "609824307891622fdf73d563aef692ffd47ed26b7b374637d0b7ee7514af85e6",
+    "evidence.py": "76f2059ce2bd5f6a3cbcdf5f82ef5feb719a6a6d9b5a76b7d00e8f0ddb6be53a",
+    "benchmark.py": "0e961dbd97f3431bfe21c2fcdc856d116f027e37318a4d0ef3580cbae2af4b82"
+  },
+  "intervention_dynamics": false,
+  "numerical_threads": 1,
+  "common_body_and_capture_checks": 2,
+  "boundary_array_checks": 11,
+  "terminal_array_checks": 10,
+  "byte_equal": true,
+  "rebuild_seconds": 7.933514560107142,
+  "assay_seconds": 28.92635622015223,
+  "forecast_cpu_seconds": 3227.979341559112,
+  "forecast_description": "1.5 times timed complete compute, plus 120 seconds for input checks, compression and analysis",
+  "within_development_cost_ceiling": true,
+  "raw_sha256": {
+    "boundary_034000_g3.npz": "2d46eb72c6811836ca5fc4ec37edad32e716f847ea9877189fc077d51485baa1",
+    "boundary_034000_g4.npz": "d3730d3f5390ad352b6fdda8173a39d434795344d5228fa318ed9260ffc5b09c",
+    "boundary_034000_g32.npz": "44757ed262c565d2c4e096cf434a7ea9dfaef83ca2a5296950d440d8f09601e5",
+    "assay_034000_h32.npz": "a90463d790b68a8d9441b85237612a56db2adbaa70582f38d358d86c4b82de0b"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "automatic_successor_started": false,
+  "code_sha256": "5882f14475535e06f35c45b01fabe9a8f478887d5f91d1d47ffac4280a99d772",
+  "cohort_reused": true,
+  "controls_pass": true,
+  "evidence_sha256": {
+    "E054_record_interventions/figures/benchmark_v1/provenance.json": "0faa65f128003e06f2b97e3d22beb817f80553067a7a5c9f1c32cfedbdb9d11c",
+    "E054_record_interventions/figures/fixture_v1/provenance.json": "c6e0d2a02cc2cbfd83267311a5deb671139ed62d7a19ff45d20a218f1411c239",
+    "E054_record_interventions/figures/interventions_v1/provenance.json": "5a367aa1d4e315b0065abafbd41f079efbd05aa319da1a7215dbbfc298128edf",
+    "E054_record_interventions/jobs/benchmark_v1/status.json": "4352520957ddab9f0cb12c9660bb1dd179c7f1d76c3a9167620f548a32fbc109",
+    "E054_record_interventions/jobs/fixture_v1/status.json": "7bb3111488ab71dc4adebf617ea6f6693dcf81cdb1584aa126a596e79b091f67",
+    "E054_record_interventions/jobs/interventions_v1/status.json": "90e749b7ad24730795ddbb9ea33ed0eba842a386ac40d92c3ce7816d24a49c7e",
+    "E054_record_interventions/runs/benchmark_v1/COMPLETE.json": "2a73f4810e3bb66ba50036f3f298c956a1507f7a1d3872f401b45b32454b6331",
+    "E054_record_interventions/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "d7c4b68be76b50885b959214cba82ec269daf2a9660bbc647e3f3a2db86ee807",
+    "E054_record_interventions/runs/benchmark_v1/summary.json": "5aa3cef72968be839aeded4e1fec414c86fff9b346b2aff8d390d3dad51301f2",
+    "E054_record_interventions/runs/fixture_v1/COMPLETE.json": "9d24e8426422982d2993447349790854903a14ef8abde4b8b357e499e0ab6c0f",
+    "E054_record_interventions/runs/fixture_v1/INDEPENDENT_AUDIT.json": "fef98114b10605f198e8f7652e07bcac695795fd936eaf95a0dc17d6c106918f",
+    "E054_record_interventions/runs/fixture_v1/summary.json": "5698ab8dcba6be72b6b0f6666e771ed932ddd57b2d28f27f23a8926f0eed3741",
+    "E054_record_interventions/runs/interventions_v1/COMPLETE.json": "812ab8fcafdd224abe2549e1fc4349ad1ad241ad366034a4fa0b3d0f0c4289ab",
+    "E054_record_interventions/runs/interventions_v1/INDEPENDENT_AUDIT.json": "5869648e8861cf2b9a95f5332116a79a07864c85be700653dbc89d370f51fe5e",
+    "E054_record_interventions/runs/interventions_v1/summary.json": "620fbb4f578186bb3c98f84f7c05102d0bf17f6017ec687bc40e19d34e87e3ae"
+  },
+  "experiment": "E054",
+  "figure_inspected": true,
+  "free_bytes": 36727857152,
+  "frozen_inputs_verified": 24,
+  "original_source_files_verified": 102,
+  "primary_classifications": {
+    "delete_isolated": "UNRESOLVED",
+    "magnitude_permute": "LOSS_EXCEEDS_FIVE_POINTS",
+    "sign_isolated": "LOSS_EXCEEDS_FIVE_POINTS"
+  },
+  "runs": {
+    "benchmark_v1": {
+      "original_outputs_verified": 33,
+      "status": "TECHNICAL_ONLY",
+      "summaries_verified": 1632,
+      "terminal_cue_observations": 1320
+    },
+    "fixture_v1": {
+      "original_outputs_verified": 33,
+      "status": "TECHNICAL_ONLY",
+      "summaries_verified": 1632,
+      "terminal_cue_observations": 2640
+    },
+    "interventions_v1": {
+      "original_outputs_verified": 219,
+      "status": "MECHANISTIC_FOLLOWUP",
+      "summaries_verified": 1632,
+      "terminal_cue_observations": 168960
+    }
+  },
+  "scientific_retained_bytes": 712454832,
+  "status": "PASS",
+  "utc": "2026-10-11T16:16:02.439425+00:00"
+}

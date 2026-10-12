@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-09-23T12:59:19.504842+00:00",
+  "launch_utc": "2026-09-23T12:59:18.958684+00:00",
+  "pid": 1701629,
+  "host_process": {
+    "Name": "python",
+    "State": "S (sleeping)",
+    "Pid": "1701629",
+    "PPid": "1",
+    "Threads": "1",
+    "Cpus_allowed_list": "0-7"
+  },
+  "process_command": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -B /home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E029_maturing_renewal/workflow.py --child --run-name maturing_v1 ",
+  "job_status": {
+    "pid": 1701629,
+    "stage": "simulation",
+    "status": "RUNNING",
+    "utc": "2026-09-23T12:59:19.104682+00:00"
+  },
+  "declared_blocks": 32,
+  "started_worker_logs": 8,
+  "workers": 8,
+  "numerical_threads": 1,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "frozen_job_and_run_inputs_verified": true,
+  "forecast_seconds": 38594.27815968171,
+  "estimated_completion_utc": "2026-09-23T23:42:33.236844+00:00",
+  "forecast_sha256": "9e137f37f1be420ee9dfb68e7e709bbf78dd2c67a3984df014ee9edcf93af4c7",
+  "preflight_sha256": "dbc2ea47fbe971dfd3fd167bbdcff4d04f63ac1c2e55b83df7f0f99768f6c593",
+  "operational_launcher_sha256": "09de1bb4d0414e54c864777bd3232076dab5dd18de1910b7dbd54b4d223fdc36",
+  "automatic_polling_started": false,
+  "automatic_successor_started": false,
+  "scientific_outcomes_inspected": false
+}

@@ -1,0 +1,85 @@
+{
+  "experiment": "P11_editable_lineage",
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 14400,
+  "total_budget_seconds": 64800,
+  "verification_timeout_seconds": 1800,
+  "algorithm": "depol",
+  "power": 60,
+  "kd": 1.25e-14,
+  "graph": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "preparation_horizon": 1000,
+  "writing_shape": [
+    3,
+    3
+  ],
+  "cue_cells": 6,
+  "carrier_cells": 3,
+  "writing_horizon": 20000,
+  "hold_horizons": [
+    10000,
+    10000
+  ],
+  "late_fraction": 0.95,
+  "schedule": "sequential",
+  "contact_window": 80000,
+  "round_horizon": 100000,
+  "before_rounds": 3,
+  "after_rounds": 3,
+  "clock": {
+    "method": "native_explicit_euler_bounded_clock_v1",
+    "sample_interval": 100,
+    "coarse_max_step": 100,
+    "fine_max_step": 50,
+    "initial_and_final_samples": true,
+    "integer_tick_clock": true
+  },
+  "stage_case_totals": [
+    2,
+    22,
+    34,
+    54,
+    74
+  ],
+  "maximum_cases": 74,
+  "maximum_integrations": 722,
+  "all_new_integrations_bounded": true,
+  "historical_endpoint_used_as_founder": false,
+  "independent_random_replicates": false,
+  "external_schedule": true,
+  "automatic_follow_on": false
+}

@@ -1,0 +1,53 @@
+{
+  "snapshot": "v0.20-review.1",
+  "checked_at_utc": "2026-10-12T16:58:35.786536+00:00",
+  "component_checks": {
+    "status": "PASS",
+    "python": "3.10.12",
+    "numpy": "1.21.5",
+    "scipy": "1.8.0",
+    "cases": [
+      {
+        "case": "tissue",
+        "status": "PASS",
+        "checks": 4,
+        "reference": "Vendored original cascade definitions; only reference lookup redirected"
+      },
+      {
+        "case": "wagner",
+        "status": "PASS",
+        "checks": 5,
+        "reference": "All 1024 states compared with vendored sequential update; public reference path only"
+      },
+      {
+        "case": "repair",
+        "status": "PASS",
+        "checks": 8,
+        "reference": "Manufactured record: preservation, deterministic filling, pin constraints and empty-record behavior",
+        "new_performance_estimate": false
+      }
+    ],
+    "scope": "Disposable component checks; no retained cohort replay, fitting or new result qualification"
+  },
+  "html_build": {
+    "passed": true,
+    "internal_navigation": "all fragment links resolve; no duplicate IDs",
+    "links_examined": 1028,
+    "browser_screenshot": "not obtained: local Chrome could not start under sandbox socket restrictions",
+    "latex_algorithm_blocks": "preserved as source text"
+  },
+  "compact_figures": {
+    "passed": true,
+    "sources": [
+      "historical-specificity-v0.18.csv",
+      "tt014-blocks-v0.20.csv"
+    ],
+    "checks": [
+      "TT014 64 blocks; 8192 assessments per condition; exact counts 6678/7164/2116/0",
+      "Generated both plots and visually inspected rendered previews"
+    ],
+    "new_intervals": false
+  },
+  "scientific_campaign_replay": false,
+  "scope": "Packaging, local review build, component checks and compact-data redraws; original campaign qualifications unchanged."
+}

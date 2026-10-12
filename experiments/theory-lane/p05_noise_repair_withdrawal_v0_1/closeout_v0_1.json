@@ -1,0 +1,343 @@
+{
+  "status": "CLOSED_OUT",
+  "at_utc": "2026-10-11T14:19:43.661616+00:00",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1",
+  "completed_utc": "2026-10-11T13:41:23.440737+00:00",
+  "elapsed_minutes": 20.098856165717976,
+  "cpu_minutes": 19.99991311345,
+  "inspected_on_user_status_request": true,
+  "automatic_scientific_polling": false,
+  "automatic_successor": false,
+  "files_sha256": {
+    "COMPLETE.json": "5074ad63e51c1e3522a114bb4d0cd51dd551573f51d552f196130181016cbf61",
+    "REPORT.md": "5fd334e0be3d93cabb01f727b189794eac30f526eebe8d8c083f82dec9a03d09",
+    "analysis.json": "02ff898dcc7dc8b91be4dc99a4f909a8f40f2843804c398a2af5a7791c870875",
+    "VERIFICATION.json": "652f55e75752e64f1850ee15fdbe863fc1143c1d1a3cf0e63f79eb7faf21d2e0",
+    "manifest.json": "a6dd9a6325bc6ab6d9cc7f3d258ea547994d068f2dbaceb67bbf3ca0064c58db"
+  },
+  "saved_hash_audit": {
+    "status": "PASS",
+    "frozen_inputs": 76,
+    "completed_outputs": 48,
+    "verification_files": 19,
+    "source_copies": 18,
+    "source_bindings": 125
+  },
+  "internal_verification": {
+    "status": "PASS",
+    "at_utc": "2026-10-11T13:41:20.754721+00:00",
+    "scientific": true,
+    "records": 256,
+    "read_contexts": 13824,
+    "independent_captures": 13824,
+    "independent_repair_constructions": 4864,
+    "new_independent_optimizer_checks": 256,
+    "reused_control_contexts": 9216,
+    "first_step_replay_contexts": 256,
+    "native_audit_contexts": 64,
+    "independent_noise_checks": 288,
+    "independent_optimizer_checks_during_preparation": 256,
+    "analysis_module_imported": false,
+    "primary_renewal_module_imported": false,
+    "independent_damage_masks": true,
+    "same_lane_internal_verification": true
+  },
+  "counts": {
+    "baseline": {
+      "uninterrupted": 210,
+      "terminal": 231,
+      "first_pass": 226,
+      "first_pass_then_later_failure": 16,
+      "ever_recovered": 22,
+      "terminal_after_failure": 21,
+      "ever_opposite": 3,
+      "terminal_opposite": 3
+    },
+    "one_time": {
+      "uninterrupted": 217,
+      "terminal": 237,
+      "first_pass": 234,
+      "first_pass_then_later_failure": 17,
+      "ever_recovered": 20,
+      "terminal_after_failure": 20,
+      "ever_opposite": 2,
+      "terminal_opposite": 2
+    },
+    "repeated": {
+      "uninterrupted": 234,
+      "terminal": 241,
+      "first_pass": 234,
+      "first_pass_then_later_failure": 0,
+      "ever_recovered": 7,
+      "terminal_after_failure": 7,
+      "ever_opposite": 2,
+      "terminal_opposite": 2
+    }
+  },
+  "denominator": 256,
+  "primary_contrast": {
+    "mean": 0.06640625,
+    "by_block": {
+      "81000": 0.0,
+      "81001": 0.0,
+      "81002": 0.0625,
+      "81003": 0.0,
+      "81004": 0.1875,
+      "81005": 0.125,
+      "81006": 0.0,
+      "81007": 0.0,
+      "81008": 0.0625,
+      "81009": 0.125,
+      "81010": 0.0625,
+      "81011": 0.0,
+      "81012": 0.25,
+      "81013": 0.0625,
+      "81014": 0.125,
+      "81015": 0.0
+    },
+    "descriptive_stratified_block_bootstrap_95": [
+      0.03896484375000009,
+      0.09765625
+    ],
+    "positive_blocks": 9,
+    "tied_blocks": 7,
+    "negative_blocks": 0
+  },
+  "primary_direction_observed": true,
+  "paired_primary": {
+    "left_only": 17,
+    "right_only": 0,
+    "both": 217,
+    "neither": 22,
+    "lineages": 256,
+    "left": "repeated",
+    "right": "one_time"
+  },
+  "secondary_contrasts": {
+    "repeated_minus_one_time": {
+      "uninterrupted": {
+        "mean": 0.06640625,
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0625,
+          "81003": 0.0,
+          "81004": 0.1875,
+          "81005": 0.125,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0625,
+          "81009": 0.125,
+          "81010": 0.0625,
+          "81011": 0.0,
+          "81012": 0.25,
+          "81013": 0.0625,
+          "81014": 0.125,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.03896484375000009,
+          0.09765625
+        ],
+        "positive_blocks": 9,
+        "tied_blocks": 7,
+        "negative_blocks": 0
+      },
+      "terminal": {
+        "mean": 0.015625,
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.0,
+          "81003": 0.0,
+          "81004": 0.0625,
+          "81005": 0.0,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0625,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0625,
+          "81013": 0.0625,
+          "81014": 0.0,
+          "81015": 0.0
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0078125,
+          0.0234375
+        ],
+        "positive_blocks": 4,
+        "tied_blocks": 12,
+        "negative_blocks": 0
+      }
+    },
+    "one_time_minus_baseline": {
+      "uninterrupted": {
+        "mean": 0.02734375,
+        "by_block": {
+          "81000": 0.0625,
+          "81001": 0.0,
+          "81002": 0.0625,
+          "81003": 0.125,
+          "81004": 0.0,
+          "81005": 0.0,
+          "81006": 0.0625,
+          "81007": 0.0625,
+          "81008": 0.0625,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0625,
+          "81012": 0.0625,
+          "81013": 0.0,
+          "81014": -0.0625,
+          "81015": -0.0625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.00390625,
+          0.046875
+        ],
+        "positive_blocks": 8,
+        "tied_blocks": 6,
+        "negative_blocks": 2
+      },
+      "terminal": {
+        "mean": 0.0234375,
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.125,
+          "81003": 0.125,
+          "81004": -0.0625,
+          "81005": 0.0625,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.0625,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.0625,
+          "81013": 0.0625,
+          "81014": 0.0,
+          "81015": -0.0625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0,
+          0.05078125
+        ],
+        "positive_blocks": 6,
+        "tied_blocks": 8,
+        "negative_blocks": 2
+      }
+    },
+    "repeated_minus_baseline": {
+      "uninterrupted": {
+        "mean": 0.09375,
+        "by_block": {
+          "81000": 0.0625,
+          "81001": 0.0,
+          "81002": 0.125,
+          "81003": 0.125,
+          "81004": 0.1875,
+          "81005": 0.125,
+          "81006": 0.0625,
+          "81007": 0.0625,
+          "81008": 0.125,
+          "81009": 0.125,
+          "81010": 0.0625,
+          "81011": 0.0625,
+          "81012": 0.3125,
+          "81013": 0.0625,
+          "81014": 0.0625,
+          "81015": -0.0625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.0625,
+          0.125
+        ],
+        "positive_blocks": 14,
+        "tied_blocks": 1,
+        "negative_blocks": 1
+      },
+      "terminal": {
+        "mean": 0.0390625,
+        "by_block": {
+          "81000": 0.0,
+          "81001": 0.0,
+          "81002": 0.125,
+          "81003": 0.125,
+          "81004": 0.0,
+          "81005": 0.0625,
+          "81006": 0.0,
+          "81007": 0.0,
+          "81008": 0.125,
+          "81009": 0.0,
+          "81010": 0.0,
+          "81011": 0.0,
+          "81012": 0.125,
+          "81013": 0.125,
+          "81014": 0.0,
+          "81015": -0.0625
+        },
+        "descriptive_stratified_block_bootstrap_95": [
+          0.01171875,
+          0.0703125
+        ],
+        "positive_blocks": 6,
+        "tied_blocks": 9,
+        "negative_blocks": 1
+      }
+    }
+  },
+  "resources": {
+    "baseline": {
+      "repair_calls": 0,
+      "added_edges": 0.0,
+      "added_abs_weight": 0.0,
+      "repair_cpu_seconds": 0.0,
+      "audit_cpu_seconds": 0.0,
+      "added_edges_per_lineage": 0.0,
+      "record_bytes_per_boundary": 4096,
+      "read_updates_per_lineage": 36864,
+      "optimizer_starts_per_call": 16,
+      "maximum_sweeps_per_call": 64,
+      "execution_origin": "reused_previous_run"
+    },
+    "one_time": {
+      "repair_calls": 256,
+      "added_edges": 23586.0,
+      "added_abs_weight": 21344.3494934884,
+      "repair_cpu_seconds": 3.5383352310003033,
+      "audit_cpu_seconds": 16.247573017999926,
+      "added_edges_per_lineage": 92.1328125,
+      "record_bytes_per_boundary": 4096,
+      "read_updates_per_lineage": 36864,
+      "optimizer_starts_per_call": 16,
+      "maximum_sweeps_per_call": 64,
+      "execution_origin": "current_run"
+    },
+    "repeated": {
+      "repair_calls": 4608,
+      "added_edges": 422120.0,
+      "added_abs_weight": 415762.4071975203,
+      "repair_cpu_seconds": 36.54883476200598,
+      "audit_cpu_seconds": 158.30516257497942,
+      "added_edges_per_lineage": 1648.90625,
+      "record_bytes_per_boundary": 4096,
+      "read_updates_per_lineage": 36864,
+      "optimizer_starts_per_call": 16,
+      "maximum_sweeps_per_call": 64,
+      "execution_origin": "reused_previous_run"
+    }
+  },
+  "interpretation": [
+    "The strictly positive primary forecast held: repeated minus one-time repair is +6.640625 percentage points, descriptive 95% stratified block-bootstrap interval [3.896484375000009,9.765625].",
+    "Both repaired policies share 234 first-reconstruction successes. After withdrawal 17 of these subsequently fail, leaving 217 uninterrupted; repeated repair retains all 234.",
+    "A nonnegative ordering was already implied by the exposed repeated controls and common first reconstruction. The new empirical finding is the 17 losses after withdrawal, spread across nine blocks.",
+    "One-time repair retains a smaller uninterrupted advantage over baseline: +2.734375 percentage points, descriptive interval [0.390625,4.6875]; paired outcomes include 11 one-time-only successes and four baseline-only successes.",
+    "Generation-32 success is 231 baseline, 237 one-time and 241 repeated; the primary concerns uninterrupted performance, not terminal recovery.",
+    "Policies require zero, one and 18 repairs per lineage. Resource magnitudes and timing provenance remain separately recorded; budgets are not equal.",
+    "All control copies and first-reconstruction identities passed internal verification. This is an exposed-cohort follow-up with matched teaching/resets and independent ongoing cue noise, not independent replication or autonomous maintenance."
+  ],
+  "new_scientific_runs_started_during_status": 0
+}

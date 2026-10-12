@@ -1,0 +1,33 @@
+{
+  "freeze_manifest_sha256": "639c90c3c19c994cdd247b6332f0129384964478d3cb308140ecea96e9b4f595",
+  "inputs_unchanged": true,
+  "runner_sha256": "b49ab807334bcbc65c7aa7a415a80c5a08c546b2617b9f85e3836fd5f0b56cc5",
+  "seconds": 14.280281048966572,
+  "stages": {
+    "benchmark": {
+      "command": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E046_failure_chronology/run.py",
+        "--mode",
+        "benchmark"
+      ],
+      "log_sha256": "b390317611e34f7aa35325841feab00b7e82ddcc3e2d6612e1c96d97a270fc58",
+      "returncode": 0,
+      "seconds": 7.567471930058673
+    },
+    "tests": {
+      "command": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E046_failure_chronology/tests.py"
+      ],
+      "log_sha256": "c01421d4042f8c2e12f55f7d0e84d92559bbc6c6ed3849f667899fb18544f755",
+      "returncode": 0,
+      "seconds": 6.710827596951276
+    }
+  },
+  "status": "PASS",
+  "tests": 10,
+  "utc": "2026-10-07T17:11:46.698756+00:00"
+}

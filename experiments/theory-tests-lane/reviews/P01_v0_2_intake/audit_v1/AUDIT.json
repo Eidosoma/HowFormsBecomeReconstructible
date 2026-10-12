@@ -1,0 +1,55 @@
+{
+  "audit_code_sha256": "9ec47f68897ff3f5e245e50eee31fb0d5deb7112aae261bd8f5c2b5ee051b117",
+  "cases": [
+    {
+      "counts_reproduced": true,
+      "fit_reproduced": true,
+      "forecast_h32_A": 0.7539956953459467,
+      "h32_A_error": 0.06400356096280335,
+      "identity_mode_at_boundary": false,
+      "improving_witness": null,
+      "independent_negative_log_likelihood": 0.8687711951986796,
+      "local_perturbation_issue": false,
+      "local_perturbation_loss_improvement": 0.0,
+      "name": "slow_loss_ready",
+      "true_h32_A": 0.6899921343831433
+    },
+    {
+      "counts_reproduced": true,
+      "fit_reproduced": true,
+      "forecast_h32_A": 0.44208167073785415,
+      "h32_A_error": 0.014331192854710573,
+      "identity_mode_at_boundary": false,
+      "improving_witness": null,
+      "independent_negative_log_likelihood": 1.1100487261317202,
+      "local_perturbation_issue": false,
+      "local_perturbation_loss_improvement": 0.0,
+      "name": "fast_loss_ready",
+      "true_h32_A": 0.4277504778831436
+    },
+    {
+      "counts_reproduced": true,
+      "fit_reproduced": true,
+      "forecast_h32_A": 0.8200617490983715,
+      "h32_A_error": 0.1300696147152286,
+      "identity_mode_at_boundary": true,
+      "improving_witness": null,
+      "independent_negative_log_likelihood": 1.6430352511326412,
+      "local_perturbation_issue": false,
+      "local_perturbation_loss_improvement": 0.0,
+      "name": "slow_loss_initially_poor_expression",
+      "true_h32_A": 0.6899921343831429
+    }
+  ],
+  "exact_inversion_cases": 100,
+  "marginal_vectors_checked": 3087,
+  "max_marginal_absolute_difference": 4.107825191113079e-15,
+  "max_pattern_absolute_difference": 3.3306690738754696e-16,
+  "package_files_verified": 25,
+  "parameter_cases": 343,
+  "scope": "Scalar probability/path-likelihood checks and deterministic toy-fit replay. No native validation or external replication.",
+  "seconds": 2.2204703660681844,
+  "source_snapshot_sha256": "952455958cca860c58958b2d31970a9b8d930e94c8d20c7bd88b11eec6096e41",
+  "status": "PASS",
+  "utc": "2026-10-08T18:31:54.370361+00:00"
+}

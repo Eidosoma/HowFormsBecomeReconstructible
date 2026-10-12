@@ -1,0 +1,63 @@
+{
+  "status": "FROZEN_FROM_EXPOSED_PRIOR_RESULTS",
+  "source_analysis_sha256": "989dcfeed1ed6044f4fb0f62c071a50b872face7af6eae05bc4cf00cad8e6972",
+  "formula": "prior outgoing + prior incoming - prior erasure_only",
+  "by_block": {
+    "34000": {
+      "additive": 0.4196428571428571,
+      "incoming_reference": 0.3482142857142857,
+      "outgoing_reference": 0.22321428571428573,
+      "erasure_reference": 0.15178571428571427
+    },
+    "34001": {
+      "additive": 0.2159090909090909,
+      "incoming_reference": 0.10795454545454546,
+      "outgoing_reference": 0.13636363636363635,
+      "erasure_reference": 0.028409090909090908
+    },
+    "34002": {
+      "additive": 0.6666666666666666,
+      "incoming_reference": 0.4444444444444444,
+      "outgoing_reference": 0.3680555555555556,
+      "erasure_reference": 0.14583333333333334
+    },
+    "34003": {
+      "additive": 0.859375,
+      "incoming_reference": 0.640625,
+      "outgoing_reference": 0.34375,
+      "erasure_reference": 0.125
+    },
+    "34004": {
+      "additive": 0.0,
+      "incoming_reference": 0.0,
+      "outgoing_reference": 0.0,
+      "erasure_reference": 0.0
+    },
+    "34005": {
+      "additive": 0.265625,
+      "incoming_reference": 0.078125,
+      "outgoing_reference": 0.234375,
+      "erasure_reference": 0.046875
+    },
+    "34006": {
+      "additive": 0.60546875,
+      "incoming_reference": 0.41796875,
+      "outgoing_reference": 0.32421875,
+      "erasure_reference": 0.13671875
+    },
+    "34007": {
+      "additive": 0.3472222222222222,
+      "incoming_reference": 0.2361111111111111,
+      "outgoing_reference": 0.1527777777777778,
+      "erasure_reference": 0.041666666666666664
+    }
+  },
+  "additive_equal_block_mean": 0.4224886983676046,
+  "clipped": false,
+  "fitted_parameters": 0,
+  "forecast_rules": [
+    "additive",
+    "incoming_reference",
+    "outgoing_reference"
+  ]
+}

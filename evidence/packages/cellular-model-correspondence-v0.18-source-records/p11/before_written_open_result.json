@@ -1,0 +1,2271 @@
+{
+  "case": {
+    "id": "before__written__open",
+    "kind": "before",
+    "condition": "",
+    "history": "written",
+    "fine": false,
+    "route": "open"
+  },
+  "ion_indices": {
+    "Na": 0,
+    "K": 1,
+    "Cl": 2,
+    "P": 3,
+    "snail": 4,
+    "miR200_total": 5,
+    "Zeb_mRNA_total": 6,
+    "ZEB_prot": 7,
+    "miR200_free": 8,
+    "bound0": 9,
+    "bound1": 10,
+    "bound2": 11,
+    "bound3": 12,
+    "bound4": 13,
+    "bound5": 14,
+    "bound6": 15,
+    "ST": 16
+  },
+  "phases": [
+    {
+      "phase": "r01_segment_01",
+      "requested_horizon": 20000,
+      "wall_seconds": 291.8880055528134,
+      "cpu_seconds": 291.833312084,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMEE",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:written:founder:00",
+          "p11:written:founder:01",
+          "p11:written:founder:02",
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          0
+        ],
+        "route": "open"
+      },
+      "sha256": "d4fbf94e7abd88b1ead0b3603f39294dad820be467b8c0ff62653e6b98075676",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 276270,
+        "sample_count": 201,
+        "capped_steps": 199,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        40000,
+        60000
+      ]
+    },
+    {
+      "phase": "r01_segment_02",
+      "requested_horizon": 20000,
+      "wall_seconds": 280.6434001214802,
+      "cpu_seconds": 280.59461480500005,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMME",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:written:founder:00",
+          "p11:written:founder:01",
+          "p11:written:founder:02",
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          1
+        ],
+        "route": "open"
+      },
+      "sha256": "62eb7d5070fc4ed0f34405a47d2e5b7c69e50fe0e6f86a3316550c17b5f5a5b8",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 267049,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        60000,
+        80000
+      ]
+    },
+    {
+      "phase": "r01_segment_03",
+      "requested_horizon": 20000,
+      "wall_seconds": 277.38770672958344,
+      "cpu_seconds": 277.3345915450001,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:written:founder:00",
+          "p11:written:founder:01",
+          "p11:written:founder:02",
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          2
+        ],
+        "route": "open"
+      },
+      "sha256": "b05b54792ac3ce1e39c70eaefd56622f9ba11f56784d3d1cba1770deca0b99b7",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 255647,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        80000,
+        100000
+      ]
+    },
+    {
+      "phase": "r01_segment_04",
+      "requested_horizon": 20000,
+      "wall_seconds": 231.5482859481126,
+      "cpu_seconds": 231.51256641399993,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:written:founder:00",
+          "p11:written:founder:01",
+          "p11:written:founder:02",
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [],
+        "route": "open"
+      },
+      "sha256": "a63347b77f239b35ed81b1349d7a13371ca6af405ed1b7a634e3485f4a775fd1",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 221505,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        100000,
+        120000
+      ]
+    },
+    {
+      "phase": "r01_isolated_1",
+      "requested_horizon": 10000,
+      "wall_seconds": 7.923871650360525,
+      "cpu_seconds": 7.923017049000009,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "418e7dda7ed2be7d1394757dd0f045be0fd42c2135124d1875fdd36cd92519a9",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 7686,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        120000,
+        130000
+      ]
+    },
+    {
+      "phase": "r01_isolated_2",
+      "requested_horizon": 10000,
+      "wall_seconds": 9.324999729171395,
+      "cpu_seconds": 9.323595410000053,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "fdd91e416cb218fdd81e97aaf06d71ed82d1869a7a921b5f8f111d7b55a3e07c",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 9110,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        130000,
+        140000
+      ]
+    },
+    {
+      "phase": "r02_segment_01",
+      "requested_horizon": 20000,
+      "wall_seconds": 286.5527335098013,
+      "cpu_seconds": 286.50643056700005,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMEE",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02",
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          0
+        ],
+        "route": "open"
+      },
+      "sha256": "156e0099577a7534390bbfcc8f42303f4e1dd314a3cbfb63abb41d6fded318e7",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 267004,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        140000,
+        160000
+      ]
+    },
+    {
+      "phase": "r02_segment_02",
+      "requested_horizon": 20000,
+      "wall_seconds": 288.8233179701492,
+      "cpu_seconds": 288.72772574400005,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMME",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02",
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          1
+        ],
+        "route": "open"
+      },
+      "sha256": "cff184643fa6c482dd7c9fabf43c05c90de0492961af2c866f7ba4ede4be8e78",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 265235,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        160000,
+        180000
+      ]
+    },
+    {
+      "phase": "r02_segment_03",
+      "requested_horizon": 20000,
+      "wall_seconds": 275.38696065638214,
+      "cpu_seconds": 275.343299398,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02",
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          2
+        ],
+        "route": "open"
+      },
+      "sha256": "a59d310bcf0576a0bfdad434becbf6c188231bfff30fcce74646251487a37121",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 262904,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        180000,
+        200000
+      ]
+    },
+    {
+      "phase": "r02_segment_04",
+      "requested_horizon": 20000,
+      "wall_seconds": 245.86538579780608,
+      "cpu_seconds": 245.7678411679999,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:01:00",
+          "p11:before:written:pupil:01:01",
+          "p11:before:written:pupil:01:02",
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [],
+        "route": "open"
+      },
+      "sha256": "7a3516d37ac28078ac900ff8e223ce3b7fbc5b5798884b616560cea449dc196d",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 222513,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        200000,
+        220000
+      ]
+    },
+    {
+      "phase": "r02_isolated_1",
+      "requested_horizon": 10000,
+      "wall_seconds": 8.19031545240432,
+      "cpu_seconds": 8.189466047999758,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "4772349f0edb96c6629eefa2f75a2eb861ed07a5d794bb3f04326ce4f6bfc227",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 8198,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        220000,
+        230000
+      ]
+    },
+    {
+      "phase": "r02_isolated_2",
+      "requested_horizon": 10000,
+      "wall_seconds": 8.950169742107391,
+      "cpu_seconds": 8.94896272799997,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "efa5f425a249f52f7ef7e9945f37e75e9ac9bafac824a8221e0fcbfef90ada7c",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 8870,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        230000,
+        240000
+      ]
+    },
+    {
+      "phase": "r03_segment_01",
+      "requested_horizon": 20000,
+      "wall_seconds": 282.46311349980533,
+      "cpu_seconds": 282.41814898500024,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMEE",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02",
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          0
+        ],
+        "route": "open"
+      },
+      "sha256": "4fd4d2ba2d6d6183ede012ad687bc2267928eccaac3b2beb8bfafe67da85a24d",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 269650,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        240000,
+        260000
+      ]
+    },
+    {
+      "phase": "r03_segment_02",
+      "requested_horizon": 20000,
+      "wall_seconds": 275.34796310961246,
+      "cpu_seconds": 275.299378961,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMME",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02",
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          1
+        ],
+        "route": "open"
+      },
+      "sha256": "ff96c9bbdee15ca1244890bba6ca67d7381e8e87b5464c1cca7c428e1b9e5a3e",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 261207,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        260000,
+        280000
+      ]
+    },
+    {
+      "phase": "r03_segment_03",
+      "requested_horizon": 20000,
+      "wall_seconds": 276.5543114701286,
+      "cpu_seconds": 276.5062232340001,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02",
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [
+          2
+        ],
+        "route": "open"
+      },
+      "sha256": "23817cb908db64d7b0bb94673c1da03f6d54bd93914c59df62928d733f0ff7ec",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 267565,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        280000,
+        300000
+      ]
+    },
+    {
+      "phase": "r03_segment_04",
+      "requested_horizon": 20000,
+      "wall_seconds": 230.78764876071364,
+      "cpu_seconds": 230.74540011399995,
+      "samples": 201,
+      "last_sample_time": 20000.0,
+      "final_labels": "MMMMMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 6,
+        "cell_ids": [
+          "p11:before:written:pupil:02:00",
+          "p11:before:written:pupil:02:01",
+          "p11:before:written:pupil:02:02",
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": false,
+        "algorithm": "depol",
+        "power": 60,
+        "mirna_kd": 1.25e-14,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": null,
+        "orthogonal_only": false,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 60,
+          "boundary": 60,
+          "helper": 60,
+          "boundary_cut": false
+        },
+        "storage_shape": [
+          1,
+          6
+        ],
+        "network_mode": "explicit_common_graph",
+        "explicit_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "scheduled_pupils": [],
+        "route": "open"
+      },
+      "sha256": "74ecb8307138f85c6ef50b8eb796a3667d5baac51d1baaea13ab800e9cbe71c6",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 20000,
+        "actual_final_time": 20000.0,
+        "total_ticks": 200000000,
+        "adaptive": true,
+        "iterations": 222618,
+        "sample_count": 201,
+        "capped_steps": 200,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        300000,
+        320000
+      ]
+    },
+    {
+      "phase": "r03_isolated_1",
+      "requested_horizon": 10000,
+      "wall_seconds": 8.410451450385153,
+      "cpu_seconds": 8.409390841000004,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "8e9573a34f81def3498e577487eb78115796614b799d7530816ab795bdf701d0",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 8447,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        320000,
+        330000
+      ]
+    },
+    {
+      "phase": "r03_isolated_2",
+      "requested_horizon": 10000,
+      "wall_seconds": 8.812053423374891,
+      "cpu_seconds": 8.810830132999854,
+      "samples": 101,
+      "last_sample_time": 10000.0,
+      "final_labels": "MMM",
+      "last_snapshot_live_difference": 0.0,
+      "setup": {
+        "cells": 3,
+        "cell_ids": [
+          "p11:before:written:pupil:03:00",
+          "p11:before:written:pupil:03:01",
+          "p11:before:written:pupil:03:02"
+        ],
+        "isolated": true,
+        "algorithm": "depol",
+        "power": 1,
+        "mirna_kd": 0,
+        "neighbor_voltage_reading": false,
+        "cell_voltage_gate_present": true,
+        "gate_classes": {
+          "ic": [
+            "set_Vmem_from_conc"
+          ],
+          "gj": [
+            "GJ_gate",
+            "tumor_overX_GJ_gate"
+          ],
+          "gd": [
+            "EMT_GRN_gate"
+          ],
+          "gj_add": [
+            "EMT_GJ_gate"
+          ]
+        },
+        "integrator": {
+          "time_step": 0.0001,
+          "sim_integ_max_delt_cc": 0.001,
+          "sim_integ_max_delt_Vm": 0.0001,
+          "use_implicit": false
+        },
+        "voltage_constants": {
+          "F": 96485,
+          "cell_vol": 5.235987755982989e-16,
+          "cell_sa": 3.1415926535897934e-10,
+          "cm": 0.05
+        },
+        "tumor_rule": {
+          "x0": 40.0,
+          "M_ZEB_miR200": 11.11111111111111,
+          "tness": 1,
+          "GJ_OiET": 0.5
+        },
+        "grid_shape": [
+          1,
+          3
+        ],
+        "orthogonal_only": true,
+        "periodic": false,
+        "mirna_transport": {
+          "valence": -1,
+          "medium_size": true
+        },
+        "compartment_expression": {
+          "internal": 1,
+          "boundary": 1,
+          "helper": 1,
+          "boundary_cut": false
+        }
+      },
+      "sha256": "8198ff3336cc22c521d39f71522f67ed2ba45ef3a4ebb5b9ba3428361181d9d0",
+      "clock": {
+        "method": "native_explicit_euler_bounded_clock_v1",
+        "base_step": 0.0001,
+        "sample_interval": 100,
+        "maximum_step": 100,
+        "requested_horizon": 10000,
+        "actual_final_time": 10000.0,
+        "total_ticks": 100000000,
+        "adaptive": true,
+        "iterations": 8860,
+        "sample_count": 101,
+        "capped_steps": 100,
+        "initial_and_final_samples": true,
+        "integer_tick_clock": true
+      },
+      "logical_interval": [
+        330000,
+        340000
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "desired": "M",
+      "retained": [
+        true,
+        true,
+        true
+      ],
+      "complete": true,
+      "presignal_labels": "EEE",
+      "logical_end": 140000
+    },
+    {
+      "round": 2,
+      "desired": "M",
+      "retained": [
+        true,
+        true,
+        true
+      ],
+      "complete": true,
+      "presignal_labels": "EEE",
+      "logical_end": 240000
+    },
+    {
+      "round": 3,
+      "desired": "M",
+      "retained": [
+        true,
+        true,
+        true
+      ],
+      "complete": true,
+      "presignal_labels": "EEE",
+      "logical_end": 340000
+    }
+  ],
+  "execution_pass": true,
+  "stop_reason": "complete_registered_rounds",
+  "clock_method": "native_explicit_euler_bounded_clock_v1",
+  "all_new_integrations_bounded": true,
+  "source_case": "write_M__M_open",
+  "source_phase": "writing_isolated_2",
+  "historical_endpoint_used_as_founder": false,
+  "external_schedule": true,
+  "all_cells_evolve": true,
+  "teachers_retained_between_rounds": false,
+  "cues_retained_after_writing": false,
+  "cell_division_simulated": false,
+  "parameter_retuning": false,
+  "outcome_dependent_cell_selection": false,
+  "cross_branch_pooling": false,
+  "extra_donor_supplementation": false,
+  "independent_random_replicates": false,
+  "automatic_follow_on": false
+}

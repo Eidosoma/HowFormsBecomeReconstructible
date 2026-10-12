@@ -1,0 +1,31 @@
+{
+  "status": "EXPLICIT_INDEPENDENT_AUDITOR_REUSE",
+  "files": {
+    "support.py": {
+      "source": "TT009/support.py",
+      "sha256": "5258410ba6eebdd227b5ceb0d941e7d802451c781ba30676880e904b43b2c789"
+    },
+    "native.py": {
+      "source": "TT009/native.py",
+      "sha256": "0ea90a0e4c97afd7cfa22983dbc09173bab44f9a281aa03fa8aee2f203160e0d"
+    },
+    "arithmetic.py": {
+      "source": "TT009/scoring.py",
+      "sha256": "acb2487f5f82c6a4f5a91c640349c5e4f38f61070442c7b2af027393e96bf3d7",
+      "functions": [
+        "average",
+        "wilson",
+        "summary",
+        "endpoint",
+        "compare_tree",
+        "compare_table"
+      ]
+    },
+    "run.py": {
+      "source": "TT009/run.py",
+      "sha256": "e5a13e4e4353574bdb5121546c73fdbf5948825476279fc61dd97eb3b498d37c",
+      "changes": "TT010 input inventory and single P04 scoring/report interface; persistent-host execution policy unchanged."
+    }
+  },
+  "changes": "Extend record-axis shapes to six/general variant count. All native update and RNG arithmetic unchanged. New P04 packet/forecast/statistics audits are independent of source code."
+}

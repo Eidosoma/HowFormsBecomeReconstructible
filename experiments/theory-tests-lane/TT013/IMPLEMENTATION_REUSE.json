@@ -1,0 +1,44 @@
+{
+  "recorded_utc": "2026-10-10T22:36:10.426061+00:00",
+  "prior_complete_sha256": "8dc434566d1d142b03c75d572f3cdb346383c5fbb505221821764bb7cc7198eb",
+  "reused": {
+    "support.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/support.py",
+      "source_sha256": "51cb0639eaf7fc71c5d3a4300ce4aab6cd97a2e56bfccad6446d7b3133ed182c",
+      "use": "unchanged"
+    },
+    "native.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/native.py",
+      "source_sha256": "d7f991b47d8bd7f7dd8e0bd5c06a974849348356e981d87727816d2056867f31",
+      "use": "unchanged"
+    },
+    "arithmetic.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/arithmetic.py",
+      "source_sha256": "7a7d4edbc0b30e2f307f3bb17cf8b96d337f6ddc2b1b5d6ca19c8f630effc928",
+      "use": "unchanged"
+    },
+    "optimizer.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/optimizer.py",
+      "source_sha256": "eb65162d1e67ab5755a41740b0ac021c9c94a8d78dda0cdb6168037bf3174b03",
+      "use": "unchanged"
+    },
+    "engine.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/engine.py",
+      "source_sha256": "f06c0b99e20c5f09ba32bf1e9f03fa0c7ccb756e9a6de9354b0da87dd4c25e7e",
+      "use": "adapted for TT013; final bytes bound at benchmark"
+    },
+    "run.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/run.py",
+      "source_sha256": "0961d59a9c42d7521e450f43d43a3f70b70f5da622dc0df45e76243053d0f98c",
+      "use": "adapted for TT013; final bytes bound at benchmark"
+    },
+    "scoring.py": {
+      "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT012/jobs/audit_v1/inputs/TT012/scoring.py",
+      "source_sha256": "6366ea0a2e2b25b5abbfb8f5e39750b1ae06c2b02f1400bb11cfa679b307de3b",
+      "use": "adapted for TT013; final bytes bound at benchmark"
+    }
+  },
+  "source_scientific_functions_executed": false,
+  "new_implementation": "Independent O-only repair, scalar median, separately constructed historical/shuffled controls, information-boundary inspection and resource audit.",
+  "qualification": "Retain unchanged optimizer qualification from completed TT012; test TT013-specific behavior and source cohorts."
+}

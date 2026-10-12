@@ -1,0 +1,75 @@
+{
+  "contract": {
+    "arms": [
+      "rewrite",
+      "foreign",
+      "shuffled",
+      "erased",
+      "held",
+      "read_off",
+      "write_off",
+      "copy",
+      "background",
+      "challenged"
+    ],
+    "backgrounds": [
+      "homogeneous"
+    ],
+    "blocks": [
+      900001
+    ],
+    "config": {
+      "capture": 1000,
+      "challenge_time": 150,
+      "dt": 0.2,
+      "formation": 1000,
+      "founders": 4,
+      "gain": 0.2,
+      "generations": 3,
+      "lam": 0.001,
+      "norm": 0.3,
+      "observation_window": 100,
+      "read": 300,
+      "recipients": 2,
+      "rho": 0.002,
+      "side": 16,
+      "sigma": 0.3,
+      "write": 1000
+    },
+    "experiment": "E001",
+    "mode": "technical",
+    "workers": 1
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E001_unprescribed_capture/PROTOCOL.md": "ae06baea8ac4c333f19f93bb5c5a636121e2c4fd0b08f87bedbedd8ffb3d06e8",
+    "E001_unprescribed_capture/analyze.py": "11143ff6c590f53c0e8909c70583ed34c4ffa22b7d10d05ad8703895f8fe00c6",
+    "E001_unprescribed_capture/model.py": "fcab9e9964316dca097b0ff2d1fe9d32b5931109e8bae492cdd745af1388b7bd",
+    "E001_unprescribed_capture/run.py": "4d7ce2f0726c785dfc0903fd67aab642335029bb56a8726d865e16538a8e23c8",
+    "E001_unprescribed_capture/tests.py": "93f47bd04f2dd79865d38ee5c6557f07f8c3535f1b8bb1099e51048f601e0fff",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-17T17:51:27.737442+00:00",
+  "status": "RUNNING"
+}

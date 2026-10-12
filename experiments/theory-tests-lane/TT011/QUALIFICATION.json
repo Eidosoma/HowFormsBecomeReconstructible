@@ -1,0 +1,107 @@
+{
+  "automatic_successor": false,
+  "benchmark": "TT011/runs/benchmark_v1",
+  "benchmark_complete_sha256": "0a17f124723eaec0d47c0078eeeabd827b9b611c84b91309c52975c2ec73b06b",
+  "benchmark_job_sha256": "b064a00d50895621d2fceaff4929ef6eb3e317ff4f7f496f6b4deba0357fca33",
+  "benchmark_outputs_verified": 6,
+  "benchmark_seconds": 24.65142160281539,
+  "checks_seconds": 8.096908038016409,
+  "closeout": "TT011/CLOSEOUT.json",
+  "closeout_sha256": "cae5ae1fd82f04f6f0573878aec6e9ded1671a4421d9c126043591ba97ea8193",
+  "completion_sha256": "aa3dc7157f8ad7cf2ab2870d4af0ad8cc03aceec1b5b402f8735b5f618c88175",
+  "completion_utc": "2026-10-10T18:46:56.663953+00:00",
+  "forecast_seconds": 293.4870254052803,
+  "frozen_inputs_verified": 145,
+  "full_audit_job_sha256": "6d76e0c18cd52b9a6acff607f57edfa1a748baf800cb33b9723fa8ae27862a3e",
+  "full_audit_outputs_verified": 16,
+  "full_audit_seconds": 80.27794267819263,
+  "full_audit_status": "COMPLETE_PASS",
+  "full_native_replay_in_scope": false,
+  "intake_seconds": 15.911651166155934,
+  "maximum_seconds": 1800,
+  "new_task_outcomes": false,
+  "qualification_checks": {
+    "checks": {
+      "construction": {
+        "case_order": "PASS",
+        "identity_permutation": "PASS",
+        "metadata_corruptions_rejected": 2,
+        "zero_common_support": "PASS"
+      },
+      "graph": {
+        "corruption_rejections": 4,
+        "exhaustive_quotient_systems": 512,
+        "parity_systems": 216
+      },
+      "scoring": {
+        "strict_threshold_cases": 24,
+        "synthetic_primary": -0.5,
+        "synthetic_replacement": 0.5,
+        "synthetic_signed_minus_label_reward": 1.0,
+        "synthetic_table_rows": {
+          "block_summaries": 160,
+          "reads": 360,
+          "rival_blocks": 24,
+          "rival_reads": 72,
+          "state_rates": 240
+        }
+      },
+      "symmetry": {
+        "exact_fallback_edges": 113,
+        "input_unpinned_error": 2.0,
+        "maximum_conjugacy_error": 1.1102230246251565e-16,
+        "new_saved_case_task_outcomes": 0,
+        "output_unpinned_error": 1.896260970542926,
+        "reader_trials": [
+          {
+            "errors": {
+              "birth": 0.0,
+              "end": 1.1102230246251565e-16,
+              "mean_ports": 0.0,
+              "port_windows": 8.326672684688674e-17
+            },
+            "seed": 41031,
+            "untransformed_noise_error": 2.020745681253988
+          },
+          {
+            "errors": {
+              "birth": 0.0,
+              "end": 1.1102230246251565e-16,
+              "mean_ports": 1.0408340855860843e-17,
+              "port_windows": 5.551115123125783e-17
+            },
+            "seed": 41032,
+            "untransformed_noise_error": 2.0327645969631014
+          },
+          {
+            "errors": {
+              "birth": 0.0,
+              "end": 1.1102230246251565e-16,
+              "mean_ports": 0.0,
+              "port_windows": 5.551115123125783e-17
+            },
+            "seed": 41033,
+            "untransformed_noise_error": 2.05848653846912
+          }
+        ],
+        "scope": "Coordinate symmetry with transformed birth and noise; marginal, not unchanged paired-noise equivalence.",
+        "status": "PASS",
+        "synthetic_native_trajectories": 11,
+        "tolerance_extra_fallback_edges": 69,
+        "writer_errors": {
+          "c": 0.0,
+          "exact": 0.0,
+          "q": 0.0,
+          "sign_restored": 0.0,
+          "tolerance": 0.0
+        }
+      }
+    },
+    "status": "PASS"
+  },
+  "recorded_utc": "2026-10-10T18:45:34.769225+00:00",
+  "source_bindings": 149,
+  "source_files": 128,
+  "source_receipt_sha256": "e6c8365204a6191ef660118bc68bb38cc2ce35c636853c06a25689fd8ff61c46",
+  "status": "PASS"
+}

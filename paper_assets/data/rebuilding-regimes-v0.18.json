@@ -1,0 +1,299 @@
+{
+  "scope": "Editorial display of retained estimates; no new inference or trajectories.",
+  "cohorts_pooled": false,
+  "blocks_per_study": 32,
+  "lineages_per_condition": 512,
+  "sources": [
+    {
+      "experiment": "E051",
+      "extract": "paper_assets/data/cue-pairing-v0.17.json",
+      "extract_sha256": "360f8a48c7cd5f47139e1e9255964cb6f46bb6268cba8446aada60d22351e556",
+      "archive": "paper_assets/data/cue-pairing-v0.17-source-records.zip",
+      "archive_sha256": "d80bd01f468ab7e00d218c318b7cea53fa7a1124191aaf471f5fc2d23914d276",
+      "summary_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "summary_sha256": "9eb34a04f5295d8e8926ac502b59689b1bf074433f51b0bf644e89d413443521"
+    },
+    {
+      "experiment": "E052",
+      "extract": "paper_assets/data/evidence-update-v0.17.json",
+      "extract_sha256": "ab8bed849b14c147167acae2d2faf5a0e362da33dc8f9f6f6cf91edfe711bfa8",
+      "archive": "paper_assets/data/evidence-update-v0.17-source-records.zip",
+      "archive_sha256": "aa9061631df06c7d76c3c34e651e71e665d5458fb4600810a8b04603e63d7257",
+      "summary_member": "experiments/E052_precision_normalization/runs/robustness_v1/summary.json",
+      "summary_sha256": "f611aab5959ccc5c0511db7c2a78941ba112f974554cd03b1dfb0050333c0395"
+    }
+  ],
+  "rows": [
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "reference",
+      "native_statistic_key": "assay/32/paired/reference/native/scattered",
+      "mean": 0.833984375,
+      "ci95": [
+        0.787109375,
+        0.876953125
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "record32",
+      "native_statistic_key": "assay/32/paired/record32/native/scattered",
+      "mean": 0.830078125,
+      "ci95": [
+        0.783203125,
+        0.875
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "arithmetic32",
+      "native_statistic_key": "assay/32/paired/arithmetic32/native/scattered",
+      "mean": 0.8125,
+      "ci95": [
+        0.769482421875,
+        0.85546875
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "grid_2m16",
+      "native_statistic_key": "assay/32/paired/grid_2m16/native/scattered",
+      "mean": 0.080078125,
+      "ci95": [
+        0.05078125,
+        0.111328125
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "record_noise_1e4",
+      "native_statistic_key": "assay/32/paired/record_noise_1e4/native/scattered",
+      "mean": 0.63671875,
+      "ci95": [
+        0.59765625,
+        0.67578125
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "paired",
+      "condition": "floor_1e4",
+      "native_statistic_key": "assay/32/paired/floor_1e4/native/scattered",
+      "mean": 0.6953125,
+      "ci95": [
+        0.640625,
+        0.748046875
+      ]
+    },
+    {
+      "panel": "B",
+      "experiment": "E051",
+      "pairing": "paired",
+      "condition": "ordinary fallback",
+      "native_statistic_key": "mechanism/paired/exact_rewrite/ordinary_selected_returning",
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "paired",
+      "condition": "exact_rewrite",
+      "native_statistic_key": "assay/32/paired/exact_rewrite/scattered",
+      "mean": 0.89453125,
+      "ci95": [
+        0.861328125,
+        0.923828125
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "paired",
+      "condition": "tolerance_rewrite",
+      "native_statistic_key": "assay/32/paired/tolerance_rewrite/scattered",
+      "mean": 0.025390625,
+      "ci95": [
+        0.01171875,
+        0.041015625
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "paired",
+      "condition": "contrast_rewrite",
+      "native_statistic_key": "assay/32/paired/contrast_rewrite/scattered",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "paired",
+      "condition": "exact_preserve",
+      "native_statistic_key": "assay/32/paired/exact_preserve/scattered",
+      "mean": 0.71875,
+      "ci95": [
+        0.673828125,
+        0.763671875
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "reference",
+      "native_statistic_key": "assay/32/noise_0/reference/native/scattered",
+      "mean": 0.96484375,
+      "ci95": [
+        0.951171875,
+        0.9765625
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "record32",
+      "native_statistic_key": "assay/32/noise_0/record32/native/scattered",
+      "mean": 0.96484375,
+      "ci95": [
+        0.951171875,
+        0.9765625
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "arithmetic32",
+      "native_statistic_key": "assay/32/noise_0/arithmetic32/native/scattered",
+      "mean": 0.96484375,
+      "ci95": [
+        0.951171875,
+        0.9765625
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "grid_2m16",
+      "native_statistic_key": "assay/32/noise_0/grid_2m16/native/scattered",
+      "mean": 0.955078125,
+      "ci95": [
+        0.939404296875,
+        0.970703125
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "record_noise_1e4",
+      "native_statistic_key": "assay/32/noise_0/record_noise_1e4/native/scattered",
+      "mean": 0.94140625,
+      "ci95": [
+        0.919921875,
+        0.9609375
+      ]
+    },
+    {
+      "panel": "A",
+      "experiment": "E052",
+      "pairing": "noise_0",
+      "condition": "floor_1e4",
+      "native_statistic_key": "assay/32/noise_0/floor_1e4/native/scattered",
+      "mean": 0.95703125,
+      "ci95": [
+        0.939453125,
+        0.97265625
+      ]
+    },
+    {
+      "panel": "B",
+      "experiment": "E051",
+      "pairing": "noise_0",
+      "condition": "ordinary fallback",
+      "native_statistic_key": "mechanism/noise_0/exact_rewrite/ordinary_selected_returning",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "noise_0",
+      "condition": "exact_rewrite",
+      "native_statistic_key": "assay/32/noise_0/exact_rewrite/scattered",
+      "mean": 0.966796875,
+      "ci95": [
+        0.951171875,
+        0.98046875
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "noise_0",
+      "condition": "tolerance_rewrite",
+      "native_statistic_key": "assay/32/noise_0/tolerance_rewrite/scattered",
+      "mean": 0.947265625,
+      "ci95": [
+        0.9296875,
+        0.962890625
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "noise_0",
+      "condition": "contrast_rewrite",
+      "native_statistic_key": "assay/32/noise_0/contrast_rewrite/scattered",
+      "mean": 0.966796875,
+      "ci95": [
+        0.951171875,
+        0.98046875
+      ]
+    },
+    {
+      "panel": "C",
+      "experiment": "E051",
+      "pairing": "noise_0",
+      "condition": "exact_preserve",
+      "native_statistic_key": "assay/32/noise_0/exact_preserve/scattered",
+      "mean": 0.998046875,
+      "ci95": [
+        0.994140625,
+        1.0
+      ]
+    }
+  ],
+  "selection": {
+    "A": "E052 reference, storage-only control and all four primary stress levels; matched and independent rebuilding noise.",
+    "B": "E051 original-writer ordinary fallback on available returning edges, boundaries 2\u201332; matched and independent rebuilding noise.",
+    "C": "E051 original, tolerance, contrast-only and strong-preserving writers; matched and independent rebuilding noise. Ordinary-only and intermediate correlations remain in Appendix D.8.3."
+  },
+  "intervals": "Native pointwise 95% whole-block bootstrap intervals, unchanged; no multiplicity adjustment or cross-study inference.",
+  "excluded": "E053 incomplete; no preliminary estimates enter this figure."
+}

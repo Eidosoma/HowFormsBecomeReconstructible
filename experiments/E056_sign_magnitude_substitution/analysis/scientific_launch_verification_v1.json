@@ -1,0 +1,81 @@
+{
+  "automatic_polling_started": false,
+  "forecast_finish_utc": "2026-10-12T02:24:56.941611+00:00",
+  "forecast_seconds": 15985.094965964556,
+  "frozen_inputs_verified": 26,
+  "initial_worker_logs_verified": 4,
+  "job_status": {
+    "pid": 3521444,
+    "stage": "simulation",
+    "status": "RUNNING",
+    "utc": "2026-10-11T21:58:32.082860+00:00",
+    "workers": 4
+  },
+  "launch": {
+    "detached": true,
+    "launch_controller_sha256": "73c4fe0fbbdfab3e738cbc991d7d62da05d11f592b92923cbf1ef655b7d371b3",
+    "pid": 3521444,
+    "scheduling_revision": "four_workers_v2",
+    "stdin": "/dev/null",
+    "utc": "2026-10-11T21:58:31.846645+00:00",
+    "workers": 4
+  },
+  "predecessor_readiness_controller_receipts_verified": 4,
+  "scientific_outcomes_inspected": false,
+  "startup": {
+    "automatic_polling_started": false,
+    "pid": 3521444,
+    "session_is_pid": true,
+    "status": "PASS",
+    "stdin": "/dev/null",
+    "utc": "2026-10-11T21:58:32.349465+00:00"
+  },
+  "status": "PASS",
+  "utc": "2026-10-11T21:59:01.896418+00:00",
+  "workers": [
+    {
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "block": 34000,
+      "pid": 3521449,
+      "threads": 1
+    },
+    {
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "block": 34001,
+      "pid": 3521450,
+      "threads": 1
+    },
+    {
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "block": 34002,
+      "pid": 3521452,
+      "threads": 1
+    },
+    {
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "block": 34003,
+      "pid": 3521454,
+      "threads": 1
+    }
+  ]
+}

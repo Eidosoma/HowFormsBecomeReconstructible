@@ -1,0 +1,165 @@
+{
+  "status": "COMPLETE",
+  "analysis": "RETROSPECTIVE_DEVELOPMENT",
+  "started_at_utc": "2026-10-08T18:44:21.862320+00:00",
+  "benchmark": true,
+  "blocks": [
+    34000
+  ],
+  "generations": [
+    1
+  ],
+  "conditions": [
+    "paired/exact_rewrite",
+    "paired/tolerance_rewrite",
+    "noise_0999/exact_rewrite",
+    "noise_0999/tolerance_rewrite",
+    "noise_0/exact_rewrite",
+    "noise_0/tolerance_rewrite",
+    "reset_099/exact_rewrite",
+    "reset_099/tolerance_rewrite"
+  ],
+  "config": {
+    "status": "RETROSPECTIVE_DEVELOPMENT_NOT_CONFIRMATORY",
+    "version": "0.1",
+    "created_at_utc": "2026-10-08T18:39:14.775Z",
+    "source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "generations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "pairings": [
+      "paired",
+      "noise_0999",
+      "noise_0",
+      "reset_099"
+    ],
+    "source_writers": [
+      "exact_rewrite",
+      "tolerance_rewrite"
+    ],
+    "counterfactual_writers": [
+      "exact",
+      "tolerance",
+      "sign_restored"
+    ],
+    "linear_transfer_steps": 64,
+    "tolerance": 0.0001,
+    "logistic_ridge": 0.01,
+    "block_resamples": 0,
+    "native_simulations": 0,
+    "prior_exposure": "User interim aggregates; E051 code/protocol/manifest; NPZ schema/commitments and one timed array load. Hypothesis and four-node calculation are development-informed.",
+    "note": "Do not expand the cohort when more blocks finish."
+  },
+  "config_sha256": "089176e7555b320a6ce00c5b7e894aba0e410dd5db0ab0b42798af9eaf571c8b",
+  "code_sha256": {
+    "core.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac",
+    "extract.py": "e33ba5b02548ccb1c2e2ad151f0182cd1ee29f8a483acc67b0bb46da8ac978c7"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.2",
+    "numerical_threads": 1
+  },
+  "raw_data": [
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1/source_034000.npz",
+      "sha256": "dd36286eae7b3da14b3dccd665cdf6948b84ad1ab95a95bd5ca4952878cfae21",
+      "read_fields": [
+        "ports",
+        "rules",
+        "cues"
+      ]
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1/cases_034000.npz",
+      "sha256": "2ff9103849068cc29bc8b616117e4021c21f0d1071b5f09f41252bb0cf21917a",
+      "read_fields": [
+        "body_correct",
+        "body_margin",
+        "body_ports",
+        "assay_h32_correct",
+        "assay_h32_margin",
+        "assay_h32_ports"
+      ]
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1/assay_034000_h32.npz",
+      "sha256": "a90463d790b68a8d9441b85237612a56db2adbaa70582f38d358d86c4b82de0b",
+      "read_fields": [
+        "mean_ports"
+      ]
+    },
+    {
+      "path": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1/boundary_034000_g1.npz",
+      "sha256": "ec0d5c27800937e0998f6f2b8f538a19e2259e6fe8ffad0dd7582f921d328769",
+      "read_fields": [
+        "end",
+        "masks",
+        "mean_ports",
+        "outgoing",
+        "__index__"
+      ]
+    }
+  ],
+  "checks": {
+    "retained_commitments": 5,
+    "actual_packets": 128,
+    "initial_common_bodies": 64,
+    "current_scores": 128,
+    "next_scores": 128,
+    "terminal_scores": 128
+  },
+  "native_simulator_steps": 0,
+  "interpretation": "Writer counterfactuals and linear transfer only. Future outcomes are observed-policy outcomes, not outcomes under counterfactual sign restoration.",
+  "verified_frozen_native_sources": {
+    "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "E051_cue_pairing_robustness/PROTOCOL.md": "768c6a802389e262b149fd4b475de58ad95e294647eaab2c32dc43913040a022",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672"
+  },
+  "completed_at_utc": "2026-10-08T18:44:22.372804+00:00",
+  "rows_written": 128,
+  "elapsed_seconds": 0.5113726651761681,
+  "features_sha256": "5b87ac489d129415c026a18dd24c409eba483a5f85d9d0dff13d8da408b65ec2"
+}

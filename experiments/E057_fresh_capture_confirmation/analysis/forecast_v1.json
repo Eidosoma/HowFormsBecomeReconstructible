@@ -1,0 +1,39 @@
+{
+  "basis": "3x separately scaled source/body/assay benchmark seconds including replay, times worker waves, plus180s",
+  "benchmark_audit_seconds": 23.54851668700576,
+  "benchmark_bytes": 16324425,
+  "benchmark_simulation_seconds": 22.605093977879733,
+  "benchmark_stage_seconds": {
+    "audit": {
+      "assay": 15.158828986110166,
+      "perturb": 0.3301717599388212,
+      "source": 8.059514455031604
+    },
+    "simulation": {
+      "assay": 13.847799437120557,
+      "perturb": 0.36974721192382276,
+      "source": 8.387546099023893
+    }
+  },
+  "detached_required": true,
+  "free_bytes": 27342200832,
+  "scaled_block_seconds_including_audit": 1559.9129296376236,
+  "seconds_by_workers": {
+    "1": 149931.64124521188,
+    "2": 75055.82062260594,
+    "3": 51657.12667804158,
+    "4": 37617.91031130297,
+    "5": 32938.1715223901,
+    "6": 28258.432733477228,
+    "7": 23578.69394456436,
+    "8": 18898.955155651485
+  },
+  "source_records_reused": false,
+  "stage_scaling": {
+    "assay": 16.0,
+    "perturb": 61.714285714285715,
+    "source": 64.0
+  },
+  "storage_with_reserve_bytes": 12805593856,
+  "utc": "2026-10-12T11:38:49.478317+00:00"
+}

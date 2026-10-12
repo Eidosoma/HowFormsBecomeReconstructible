@@ -1,0 +1,94 @@
+{
+  "version": "0.1",
+  "created_at_utc": "2026-10-08T22:16:14.193Z",
+  "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+  "authorization": "User said lets go after the recommendation to complete the magnitude control and then test a single tolerance pulse. Long runs must remain unpolled.",
+  "prior_exposure": "E051 blocks 34000–34007; prior sign-restoration pilot and outcome summaries; unsuccessful generation-1 and generation-3 P01 forecasts. Conservatively treat the whole prior pilot as exposed to this lane. Fleet-wide participant exposure is not known.",
+  "selection": {
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "pairing": "paired",
+    "branch_generation": 3,
+    "terminal_generation": 32,
+    "lineages_per_policy": 128,
+    "simulated": [
+      "exact_rewrite",
+      "magnitude_restored",
+      "single_tolerance_rewrite"
+    ],
+    "reused": [
+      "tolerance_rewrite",
+      "sign_restored"
+    ]
+  },
+  "decisions": [
+    {
+      "order": 1,
+      "decision": "Accept both recommended follow-ups. Freeze both comparisons before new outcomes and batch their simulations with one original replay reference."
+    },
+    {
+      "order": 2,
+      "decision": "Define tolerance signs at zero-weight edges by retaining the original sign; preserve original magnitudes/support in M and count completion use."
+    },
+    {
+      "order": 3,
+      "decision": "Define pulse as tolerance writing at generation 3 only, original at generations 4–32. Verify that generation-4 reading precedes its original rewrite."
+    },
+    {
+      "order": 4,
+      "decision": "Reuse prior T/S controls under completed-run hashes and match original/erased per-lineage outputs; no cohort expansion or treatment of reused controls as new replicates."
+    },
+    {
+      "order": 5,
+      "decision": "Predeclare M-T and P-T as primary descriptive comparisons, five secondary paired comparisons and the additive four-policy interaction."
+    },
+    {
+      "order": 6,
+      "decision": "Extend the previously replay-validated engine only for magnitude restoration and schedule selection. Preserve all earlier packages."
+    },
+    {
+      "order": 7,
+      "decision": "Benchmark known O/T/S trajectories only. New engine reproduces all selected boundary and assay arrays byte for byte; no new-arm continuation examined."
+    },
+    {
+      "order": 8,
+      "decision": "Pass twelve targeted checks, including synthetic report generation and independent verification. Add explicit per-generation writer-action labels to prevent mistaking hypothetical body diagnostics for actual pulse events."
+    },
+    {
+      "order": 9,
+      "decision": "Forecast 3093.08 seconds on one numerical thread, within the 3600-second ceiling. Launch detached with automatic analysis and no periodic queries."
+    }
+  ],
+  "validation": {
+    "tests_passed": 12,
+    "tests_seconds": 0.3,
+    "benchmark_renewal_seconds": 7.496893211035058,
+    "benchmark_assay_seconds": 30.346956793917343,
+    "benchmark_byte_equal": true,
+    "benchmark_new_arm_dynamics": false,
+    "forecast_seconds": 3093.0823189672083
+  },
+  "primary_interpretation": "Positive M-T supports magnitude/support restoration under the specified sign completion. Positive P-T supports ending tolerance writing after one event. O-M, M-S, P-O, paired discordances and the interaction qualify either interpretation. No equivalence or unique mediation claim.",
+  "status_rule": "Stop and save FAILED on any provenance, control replay, schedule or endpoint-verification error. No reinterpretation of partial intervention results.",
+  "outside_scope": [
+    "No later E051 outcomes",
+    "No new cue condition or full-cohort sweep",
+    "No predictor confirmation or model tuning",
+    "No external messages"
+  ],
+  "execution_preference": "Detached worker plus quiet blocking supervisor; one numerical process/thread; no automatic polling.",
+  "preserved": [
+    "../p01_v0_2/snapshot.json",
+    "../p01_writer_diagnostic_v0_1/snapshot.json",
+    "../p01_three_rebuild_probe_v0_1/snapshot.json",
+    "../p01_native_writer_continuation_v0_1/runs/pilot_v1/COMPLETE.json"
+  ]
+}

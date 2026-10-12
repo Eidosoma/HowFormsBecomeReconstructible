@@ -1,0 +1,20 @@
+2026-09-22T14:02:10.931106+00:00 phase prepare; one process; no optimizer
+PREPARED: 4849 checks; qualification 0.172s; main forecast 470.8s; detached=False
+2026-09-22T14:02:46.345222+00:00 phase execute; one process; no optimizer
+Loaded frozen policies and stopping-conditioned ordered path counts
+Prior completion through n=64; 47905 states
+Prior completion through n=48; 564485 states
+Prior completion through n=32; 762025 states
+Prior completion through n=16; 810509 states
+Prior completion through n=0; 814385 states
+Integrated a05_rho0; edit net 0.019691864995; stopping gap -0.000376301276
+Integrated a05_rho5; edit net 0.038433065388; stopping gap -0.000686699237
+Integrated a05_rho1; edit net 0.059342685356; stopping gap +0.000078788614
+Integrated a15_rho0; edit net 0.086276570760; stopping gap +0.000047680723
+Integrated a15_rho5; edit net 0.112582091838; stopping gap -0.001324033435
+Integrated a15_rho1; edit net 0.089110937083; stopping gap +0.000206547446
+Integrated a25_rho0; edit net 0.100754641338; stopping gap -0.000376307780
+Integrated a25_rho5; edit net 0.102403239687; stopping gap -0.000844423972
+Integrated a25_rho1; edit net 0.075647724492; stopping gap -0.000011953885
+Integrated old_shared_integrity_replay; edit net 0.097011123876; stopping gap +0.000516646652
+COMPLETE: 2040142 checks; 68.036s main wall; primary gates {'learning_pays_on_equal_panel': True, 'stopping_no_worse_on_equal_panel': True, 'stopping_no_worse_in_every_environment': False}

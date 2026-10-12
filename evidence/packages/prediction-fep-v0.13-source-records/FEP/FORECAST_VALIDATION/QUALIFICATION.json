@@ -1,0 +1,25 @@
+{
+  "benchmark_cap": 12,
+  "benchmark_prior_seconds": 0.020624494180083275,
+  "benchmark_truth_seconds": 0.012119538150727749,
+  "checks": 4849,
+  "direct_ordered_cap": 3,
+  "forecast_main_seconds": 470.75597624720206,
+  "forecast_rule": "90 seconds I/O plus six times cap-12 per-state cost for one prior and ten truth integrations",
+  "groups": {
+    "bounds": 86,
+    "integrity": 76,
+    "likelihood": 595,
+    "paths": 2742,
+    "population": 11,
+    "prior law": 14,
+    "qualification": 1215,
+    "true law": 110
+  },
+  "quantization_step": {
+    "exact": "1/1099511627776",
+    "value": 9.094947017729282e-13
+  },
+  "requires_detached": false,
+  "wall_seconds": 0.17152876034379005
+}

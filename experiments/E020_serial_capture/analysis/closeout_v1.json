@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-09-19T20:03:50.382030+00:00",
+  "scientific_status": "FUNCTIONAL_RENEWAL_QUALIFIED",
+  "full_renewal_qualified": true,
+  "primary": {
+    "endpoint": "intact both-cue strict success after three immediate-capture replacements",
+    "lower_bound_above_075": true,
+    "statistics": {
+      "block_means": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "mean": 1.0
+    }
+  },
+  "qualification_gates": {
+    "h1_intact_both_cue_lower_above_075": true,
+    "original_24_gates_at_both_horizons": true,
+    "reading_writing_12_gates": true
+  },
+  "original_gates_passed": {
+    "1": 24,
+    "3": 24
+  },
+  "boundary_gates_passed": 12,
+  "runs": {
+    "fixture": {
+      "original_outputs_verified": 29,
+      "complete_sha256": "91fd1cf303764fe8d6cfa6488e45dd955d4d7066fcbf8734a1e3b80a8a8b97e0",
+      "audit_sha256": "07554c86670ab8bb96c06e1b6cdf2782e601fcd567170a9f8c4e64e12c7edc7f",
+      "individual_observations": 3024,
+      "simulation_seconds": 3.3987941369996406,
+      "audit_seconds": 2.9002696269999433
+    },
+    "benchmark_v1": {
+      "original_outputs_verified": 30,
+      "complete_sha256": "8b72593e5c03c6d26a0684406f51c80ba845b96f46037c5878bf24d0552fa091",
+      "audit_sha256": "23ab30d0d6dc84f33c270e47bff8bc6f35ce5e0c727ec9df8cfb7e44e43b0c15",
+      "individual_observations": 1512,
+      "simulation_seconds": 95.24517392800044,
+      "audit_seconds": 97.3913093709998,
+      "workflow_seconds": 194.09937171599995,
+      "completed_utc": "2026-09-19T16:11:20.568409+00:00",
+      "figure_provenance_sha256": "b46f5cf38412665808772bbdcd5c8641565fff31b9949d8b07ccabb1b1562bff"
+    },
+    "renewal_v1": {
+      "original_outputs_verified": 309,
+      "complete_sha256": "5cbf56724bfa2b4de28eb6692dbc271581e7917439ed08e991210a9ad5ddc5cb",
+      "audit_sha256": "40d9fc8c0860628106ce28f08a7ee7d0990d9eb668a3b8230d6bef3cf888ccdd",
+      "individual_observations": 193536,
+      "simulation_seconds": 2959.248537933001,
+      "audit_seconds": 3783.8321295120004,
+      "workflow_seconds": 6745.165547736999,
+      "completed_utc": "2026-09-19T18:09:27.455006+00:00",
+      "figure_provenance_sha256": "b1d5a1d6758e2f09b62d2339d81e0f8fbb5b59e0d8efb99976dd8a4b134910cd"
+    }
+  },
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "fixture_receipt_and_evidence_verified": true,
+  "workflow_and_figure_references_verified": true,
+  "scientific_figure_visually_inspected": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1"
+  ],
+  "forecast_seconds": 6232.799467744015,
+  "actual_workflow_seconds": 6745.165547736999,
+  "forecast_overrun_seconds": 512.3660799929839,
+  "active_experiment_jobs": [],
+  "subsequent_experiment_started": false
+}

@@ -1,0 +1,417 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 3600,
+  "total_budget_seconds": 21600,
+  "benchmark_cases": 6,
+  "field_cells": 25,
+  "kd_field": 8.801117367933935e-16,
+  "tumorness": 1,
+  "gj_either_tumor": 0.5,
+  "preparation": 1000,
+  "exposure": 20000,
+  "retention_horizons": [
+    10000,
+    10000
+  ],
+  "onward_fresh_cells": 14,
+  "powers": [
+    1,
+    8,
+    60,
+    100
+  ],
+  "tumor_sizes": [
+    6,
+    11
+  ],
+  "algorithms": [
+    "depol",
+    "nbrDepol",
+    "hypol"
+  ],
+  "fine_powers": [
+    8,
+    60
+  ],
+  "cases": [
+    {
+      "id": "benchmark__depol__p1",
+      "kind": "benchmark",
+      "algorithm": "depol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "benchmark__depol__p100",
+      "kind": "benchmark",
+      "algorithm": "depol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "benchmark__nbrDepol__p1",
+      "kind": "benchmark",
+      "algorithm": "nbrDepol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "benchmark__nbrDepol__p100",
+      "kind": "benchmark",
+      "algorithm": "nbrDepol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "benchmark__hypol__p1",
+      "kind": "benchmark",
+      "algorithm": "hypol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "benchmark__hypol__p100",
+      "kind": "benchmark",
+      "algorithm": "hypol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s6__p1",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 1,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s6__p8",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 8,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s6__p60",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s6__p100",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 100,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s6__p1",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 1,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s6__p8",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 8,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s6__p60",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s6__p100",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 100,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s6__p1",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 1,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s6__p8",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 8,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s6__p60",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s6__p100",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 100,
+      "tumor_size": 6,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p1",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p8",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p60",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p100",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p1",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p8",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p60",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p100",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s11__p1",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 1,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s11__p8",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s11__p60",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s11__p100",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 100,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s6__p60__blocked",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s6__p60__blocked",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s6__p60__blocked",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 60,
+      "tumor_size": 6,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p60__blocked",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p60__blocked",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__hypol__s11__p60__blocked",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": true,
+      "fine": false
+    },
+    {
+      "id": "bridge__depol__s11__p8__fine",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    },
+    {
+      "id": "bridge__depol__s11__p60__fine",
+      "kind": "main",
+      "algorithm": "depol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p8__fine",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    },
+    {
+      "id": "bridge__nbrDepol__s11__p60__fine",
+      "kind": "main",
+      "algorithm": "nbrDepol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    },
+    {
+      "id": "bridge__hypol__s11__p8__fine",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 8,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    },
+    {
+      "id": "bridge__hypol__s11__p60__fine",
+      "kind": "main",
+      "algorithm": "hypol",
+      "power": 60,
+      "tumor_size": 11,
+      "mirna_blocked": false,
+      "fine": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "active_experiment_jobs": [],
+  "actual_minus_forecast_seconds": -1713.1166612835223,
+  "actual_workflow_seconds": 5988.20179519699,
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "boundary_gates_passed": 6,
+  "candidate_failed_original_gates": [
+    "accuracy_rule_-1_scattered",
+    "accuracy_rule_1_scattered"
+  ],
+  "fixture_receipt_and_evidence_verified": true,
+  "forecast_seconds": 7701.318456480512,
+  "full_compensation_qualified": false,
+  "intact_reference_original_gates_passed": 24,
+  "launch_receipts_and_operational_launcher_verified": true,
+  "original_gates_passed": 22,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1"
+  ],
+  "primary": {
+    "endpoint": "strength-compensated minus unchanged reading: intact-assay both-cue success after one damaged replacement",
+    "lower_bound_above_010": true,
+    "statistics": {
+      "block_means": [
+        0.25,
+        0.25,
+        0.0625,
+        0.1875,
+        0.1875,
+        0.25,
+        0.0625,
+        0.0625,
+        0.375,
+        0.125,
+        0.3125,
+        0.1875,
+        0.3125,
+        0.1875,
+        0.1875,
+        0.0,
+        0.4375,
+        0.4375,
+        0.125,
+        0.1875,
+        0.0,
+        0.1875,
+        0.25,
+        0.0,
+        0.25,
+        0.0625,
+        0.0625,
+        0.25,
+        0.1875,
+        0.1875,
+        0.25,
+        0.3125
+      ],
+      "ci95": [
+        0.154296875,
+        0.234375
+      ],
+      "mean": 0.193359375
+    }
+  },
+  "qualification_gates": {
+    "candidate_intact_both_cue_lower_above_075": true,
+    "candidate_original_24_gates": false,
+    "intact_reference_original_24_gates": true,
+    "reading_writing_6_gates": true
+  },
+  "runs": {
+    "benchmark_v1": {
+      "audit_seconds": 97.14383195700066,
+      "audit_sha256": "ca07ff7d50aa550dbe3f4341aed4d32ad3ac3fcbdb4e8d53edbef6bc4c5f317b",
+      "body_individual_observations": 48,
+      "complete_sha256": "e9be537fd4d0801f42ca14bbca93bb80ddc3bf12c7183cbc857b402cbec8fa7e",
+      "completed_utc": "2026-09-20T11:36:22.254753+00:00",
+      "figure_provenance_sha256": "0b886fc34daad3f8f799ee5a410376e0efe3bde4328844de8dfb730721e41c90",
+      "individual_observations": 1512,
+      "original_outputs_verified": 28,
+      "simulation_seconds": 93.76499331300147,
+      "workflow_seconds": 192.4849609820085
+    },
+    "compensation_v1": {
+      "audit_seconds": 2730.7341497619927,
+      "audit_sha256": "c1615095b6d5c2b10b944bbac41da574bfb7bbac7d744de3f0b3652cec1c8c8c",
+      "body_individual_observations": 6144,
+      "complete_sha256": "094e130db21653b94147dfb53ba565d37d3a5da7345bef36827d56a23e5cff15",
+      "completed_utc": "2026-09-20T13:20:37.021381+00:00",
+      "figure_provenance_sha256": "8b3dee03fae827ea3c81c227b634b7cebeb4d8f68e47a7ffdae254fa114eaa55",
+      "individual_observations": 193536,
+      "original_outputs_verified": 214,
+      "simulation_seconds": 3255.907038644,
+      "workflow_seconds": 5988.20179519699
+    },
+    "fixture": {
+      "audit_seconds": 2.863687306002248,
+      "audit_sha256": "6fa7217ca4080527a6af893dcdd62c9ede95720758dc0492c992c7c52ad14083",
+      "body_individual_observations": 96,
+      "complete_sha256": "53265b66f968581f4619aaf420440553ff32eac1b968599666ad315548849866",
+      "individual_observations": 3024,
+      "original_outputs_verified": 27,
+      "simulation_seconds": 3.2191574629978277
+    }
+  },
+  "scientific_figure_visually_inspected": true,
+  "scientific_status": "READER_COMPENSATION_NOT_ESTABLISHED",
+  "status": "PASS",
+  "subsequent_experiment_started": false,
+  "verified_utc": "2026-09-20T13:56:39.140307+00:00",
+  "workflow_and_figure_references_verified": true
+}

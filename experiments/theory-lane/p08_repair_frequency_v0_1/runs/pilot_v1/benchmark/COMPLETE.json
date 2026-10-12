@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "at_utc": "2026-10-11T17:59:41.145343+00:00",
+  "byte_equal": true,
+  "new_frequency_outcomes": 0,
+  "measured_cpu_seconds": {
+    "known_matched_three_arms": 7.883052544000002,
+    "forty_eight_checked_repairs": 3.6632129560000024,
+    "known_independent_first": 6.683612025000002,
+    "known_independent_terminal": 6.899183857000004,
+    "three_arm_flat_read": 1.2425475329999998,
+    "noise_audit": 0.2293397570000053
+  },
+  "forecast_cpu_seconds": 4156.895073680003,
+  "within_ceiling": true,
+  "formula": "1.5 * 16 * (18 * (max three-arm renewal + noise audit) + 160/48 * 48 checked repairs + 4 three-arm flat reads) + 240"
+}

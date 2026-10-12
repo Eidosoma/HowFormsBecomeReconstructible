@@ -1,0 +1,19 @@
+# TT008 execution record
+
+TT008 is registered and launched. Its current status was checked exactly once after launch: **RUNNING in known-trajectory qualification** at 2026-10-09T18:00:37.663748+00:00. No new test outcomes were opened. This document records that startup observation; it does not poll the job.
+
+The user authorized the new frozen comparison after TT007. Development selection evaluated 22 specified models on eight exposed blocks, retained the signed-transfer candidate, and found expression/history to be the strongest expression rival. The six final models, 64-block sample, 0.002 practical margin and two-comparison gate were sealed before new block generation. The [development report](DEVELOPMENT.md), [protocol](PROTOCOL.md), [registration](REGISTRATION.json) and [holdout reservation](HOLDOUT_RESERVATION.json) retain those decisions and their limits.
+
+The metadata reservation inspected 539 fleet metadata files and found no collisions for the reserved pool. Test IDs are 8800000–8800063; short/full-size technical block 8800999 is excluded. The known qualification uses previously exposed block 34000. Fresh seeds test this apparatus population, not new-family transfer; the shared filesystem provides procedural separation rather than independent custody.
+
+Forecast and score checks passed, including a constructed 4,096-record fixture with 15,360 raw terminal rows, strict margin equality, independently calculated target losses and deliberate prediction-seal corruption. The independent dynamics implementation matched 169 arrays across teaching, all 32 short rebuilds and the short terminal assay. The full-size benchmark matched teaching, two 2,048-step rebuilds and the three-injury terminal assay, all with separate replay.
+
+`benchmark_v1` completed in 147.799 seconds. Rebuild-plus-replay timings were 19.137 and 19.520 seconds; terminal assay-plus-replay took 72.914 seconds. The fixed 1.5-factor formula gives a conservative **18.98-hour** forecast, below the 24-hour ceiling. The storage requirement including reserve is 3,251,401,984 bytes. Qualification details are in [QUALIFICATION.json](QUALIFICATION.json).
+
+The persistent host launcher started PID **2516946** at **2026-10-09T17:59:52.020917+00:00**. It uses one thread, CPU 7, stdin `/dev/null`, and an immutable snapshot of **124 input files**. The detached process survived its launcher. The single [persistence check](jobs/prospective_v1/PERSISTENCE_CHECK.json) verified those inputs and the job identity. No monitor or automatic restart was created.
+
+The frozen job is [jobs/prospective_v1/job.json](jobs/prospective_v1/job.json), SHA-256 `4c89a576c6878e3991a7d8f6810bc57ae1def244e0648ebee83b52071ddf0cbe`. The registration SHA-256 is `c69bb9ba643ecc4cd16ba3eddc623b0a336b1eb1a347ef1e4fa73041502a4e61`. Its output directory is `runs/prospective_v1`; durable `STATUS.json`, `COMPLETE.json` or `FAILED.json` determine current state. The console log is `jobs/prospective_v1/console.log`.
+
+The job first reproduces the complete known trajectory, including every saved branch boundary at generations 3–32 and the terminal assay. That full qualification was still running at the startup check; it is not yet claimed to have passed. Only after it passes does the job generate all 64 new blocks through generation 14. It then seals all 24,576 predictions for 4,096 history records before any new generation-15-to-32 continuation. Every new teaching/read/capture/terminal event receives independent nonlinear replay. Scoring and a report run automatically at the end under the frozen contract.
+
+Any identity, replay, hash, nonfinite, storage or runtime failure stops the job and preserves artifacts. There is no block replacement, interim outcome review, sample resizing, prospective refit, restart or successor. Future status checks occur only when the user requests them.

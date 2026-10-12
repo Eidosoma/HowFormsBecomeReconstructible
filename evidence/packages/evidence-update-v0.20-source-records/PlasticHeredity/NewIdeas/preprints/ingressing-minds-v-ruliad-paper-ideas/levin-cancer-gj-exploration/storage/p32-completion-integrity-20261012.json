@@ -1,0 +1,1311 @@
+{
+  "checked_utc": "2026-10-12T11:15:01.562121+00:00",
+  "job": "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1",
+  "run": "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo",
+  "checks": {
+    "fresh_source_and_input_integrity": true,
+    "frozen_launch_and_predecessor_decisions_preserved": true,
+    "terminal_completion": true,
+    "complete_registration": true,
+    "completed_stages": true,
+    "all_result_hashes": true,
+    "all_raw_phase_hashes": true,
+    "all_assembly_hashes": true,
+    "embedded_results_agree": true,
+    "stage_reports_and_checks": true,
+    "final_report_consistent": true,
+    "reference_and_anchor_controls": true,
+    "all_576_shared_prefixes_pass": true,
+    "all_428_numerical_comparisons_pass": true,
+    "all_214_source_comparisons_pass": true,
+    "all_32_P31_replays_preserved": true,
+    "registered_scope_preserved": true,
+    "both_60_test_software_suites": true,
+    "no_registered_process_alive": true,
+    "exclusive_lock_released": true,
+    "no_automatic_followon": true,
+    "reported_timing_grid_matches_raw_results": true,
+    "all_parent_and_readout_variants_present": true,
+    "all_numerical_and_source_outcomes_match_raw_results": true,
+    "all_16_raw_classifier_neighborhoods_match": true,
+    "all_12_target_neighborhood_pairs_pass": true,
+    "terminal_interpretation_matches_audit": true
+  },
+  "fresh_integrity": {
+    "revision": true,
+    "manifest": true,
+    "original_input_digests": true,
+    "frozen": true,
+    "origins": true,
+    "source_bytes": true,
+    "archive_bytes": true,
+    "referenced_inputs": true,
+    "inherited_verification": true,
+    "draws": true
+  },
+  "status_snapshot": {
+    "job": "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1",
+    "phase": "complete",
+    "launched_utc": "2026-10-08T11:44:23.822684+00:00",
+    "heartbeat_utc": "2026-10-12T09:18:13.079873+00:00",
+    "heartbeat_epoch": 1791796693.079878,
+    "planned_cases": 856,
+    "planned_integrations": 7352,
+    "completed_cases": 856,
+    "completed_integrations": 7352,
+    "supervisor_pid": 1909204,
+    "supervisor_session": 1909204,
+    "external_free_gib": 487.2855339050293,
+    "child_pid": 3710893,
+    "verification_exit_code": 0,
+    "verification_log_sha256": "ca142d0f936907ab81149776386174371ac81224213efc6056d2be2f1ed788fc",
+    "verification_tests": 60,
+    "verification_seconds": 922.449,
+    "run": "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo",
+    "valid_cases": 856,
+    "stage_gates": {
+      "controls": true,
+      "renewal": true,
+      "onward": true
+    },
+    "predecessor_gate": true,
+    "runner_exit_code": 0,
+    "audit_exit_code": 0,
+    "quality_gate": true,
+    "ready_for_interpretation": true,
+    "independent_checks": 525505,
+    "all_numerical_agree": true,
+    "source_precision_agrees": true,
+    "qualified_pause_schedules": [
+      "pause_0_5",
+      "pause_0_10",
+      "pause_0_15",
+      "pause_0_20",
+      "pause_0_25",
+      "pause_0_100",
+      "pause_5_100",
+      "pause_10_100"
+    ],
+    "next_action": "Review the refined boundary and transmission results; P27 and P30 remain stopped; no downstream launch",
+    "finished_utc": "2026-10-12T09:18:13.079797+00:00",
+    "exit_code": 0
+  },
+  "elapsed_seconds_from_launch": 336829.257113,
+  "execution_sources": 301,
+  "input_paths": 46068,
+  "result_files": 856,
+  "raw_phases": 7352,
+  "assembly_files": 416,
+  "independent_checks": 525505,
+  "comparison_statistics": {
+    "numerical": {
+      "controls": {
+        "comparisons": 12,
+        "max_primary_scaled_error": 2.1694903045547102e-05
+      },
+      "renewal": {
+        "comparisons": 104,
+        "max_primary_scaled_error": 0.0008655716090628198
+      },
+      "onward": {
+        "comparisons": 312,
+        "max_primary_scaled_error": 4.0019148955322344e-05
+      }
+    },
+    "source": {
+      "controls": {
+        "comparisons": 6,
+        "max_primary_scaled_error": 2.6853521393619338e-05
+      },
+      "renewal": {
+        "comparisons": 52,
+        "max_primary_scaled_error": 0.001216275742235334
+      },
+      "onward": {
+        "comparisons": 156,
+        "max_primary_scaled_error": 2.589123008000921e-05
+      }
+    }
+  },
+  "retention_and_transmission_counts": {
+    "baseline": {
+      "parents": 16,
+      "retained_E": 0,
+      "transmitted_E": {
+        "open": 0,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "no_E_recovery_by_300"
+      ]
+    },
+    "pause_0_5": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_0_10": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_0_15": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_0_20": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_0_25": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_0_100": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_E_resistance"
+      ]
+    },
+    "pause_5_100": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_10_100": {
+      "parents": 16,
+      "retained_E": 16,
+      "transmitted_E": {
+        "open": 16,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_recovery_to_E"
+      ]
+    },
+    "pause_15_100": {
+      "parents": 16,
+      "retained_E": 0,
+      "transmitted_E": {
+        "open": 0,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "no_E_recovery_by_300"
+      ]
+    },
+    "pause_20_100": {
+      "parents": 16,
+      "retained_E": 0,
+      "transmitted_E": {
+        "open": 0,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "no_E_recovery_by_300"
+      ]
+    },
+    "pause_25_100": {
+      "parents": 16,
+      "retained_E": 0,
+      "transmitted_E": {
+        "open": 0,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "no_E_recovery_by_300"
+      ]
+    },
+    "full_block": {
+      "parents": 16,
+      "retained_E": 0,
+      "transmitted_E": {
+        "open": 0,
+        "rna": 0,
+        "cut": 0
+      },
+      "readout_cases": {
+        "open": 16,
+        "rna": 16,
+        "cut": 16
+      },
+      "all_original_carriers_replaced": true,
+      "every_renewal_window_E": 0,
+      "sampled_first_cell_behaviors": [
+        "sampled_E_resistance"
+      ]
+    }
+  },
+  "tested_boundaries": [
+    {
+      "founder": "written",
+      "draw": "legacy",
+      "duration_pattern": [
+        {
+          "duration": 5,
+          "qualified": true
+        },
+        {
+          "duration": 10,
+          "qualified": true
+        },
+        {
+          "duration": 15,
+          "qualified": true
+        },
+        {
+          "duration": 20,
+          "qualified": true
+        },
+        {
+          "duration": 25,
+          "qualified": true
+        }
+      ],
+      "delayed_start_pattern": [
+        {
+          "start": 0,
+          "qualified": true
+        },
+        {
+          "start": 5,
+          "qualified": true
+        },
+        {
+          "start": 10,
+          "qualified": true
+        },
+        {
+          "start": 15,
+          "qualified": false
+        },
+        {
+          "start": 20,
+          "qualified": false
+        },
+        {
+          "start": 25,
+          "qualified": false
+        }
+      ],
+      "smallest_tested_successful_duration": 5,
+      "latest_tested_successful_start_for_duration_100": 10,
+      "duration_monotone_on_tested_grid": true,
+      "delay_monotone_on_tested_grid": true
+    },
+    {
+      "founder": "written",
+      "draw": "heldout_17021",
+      "duration_pattern": [
+        {
+          "duration": 5,
+          "qualified": true
+        },
+        {
+          "duration": 10,
+          "qualified": true
+        },
+        {
+          "duration": 15,
+          "qualified": true
+        },
+        {
+          "duration": 20,
+          "qualified": true
+        },
+        {
+          "duration": 25,
+          "qualified": true
+        }
+      ],
+      "delayed_start_pattern": [
+        {
+          "start": 0,
+          "qualified": true
+        },
+        {
+          "start": 5,
+          "qualified": true
+        },
+        {
+          "start": 10,
+          "qualified": true
+        },
+        {
+          "start": 15,
+          "qualified": false
+        },
+        {
+          "start": 20,
+          "qualified": false
+        },
+        {
+          "start": 25,
+          "qualified": false
+        }
+      ],
+      "smallest_tested_successful_duration": 5,
+      "latest_tested_successful_start_for_duration_100": 10,
+      "duration_monotone_on_tested_grid": true,
+      "delay_monotone_on_tested_grid": true
+    },
+    {
+      "founder": "ordinary",
+      "draw": "legacy",
+      "duration_pattern": [
+        {
+          "duration": 5,
+          "qualified": true
+        },
+        {
+          "duration": 10,
+          "qualified": true
+        },
+        {
+          "duration": 15,
+          "qualified": true
+        },
+        {
+          "duration": 20,
+          "qualified": true
+        },
+        {
+          "duration": 25,
+          "qualified": true
+        }
+      ],
+      "delayed_start_pattern": [
+        {
+          "start": 0,
+          "qualified": true
+        },
+        {
+          "start": 5,
+          "qualified": true
+        },
+        {
+          "start": 10,
+          "qualified": true
+        },
+        {
+          "start": 15,
+          "qualified": false
+        },
+        {
+          "start": 20,
+          "qualified": false
+        },
+        {
+          "start": 25,
+          "qualified": false
+        }
+      ],
+      "smallest_tested_successful_duration": 5,
+      "latest_tested_successful_start_for_duration_100": 10,
+      "duration_monotone_on_tested_grid": true,
+      "delay_monotone_on_tested_grid": true
+    },
+    {
+      "founder": "ordinary",
+      "draw": "heldout_17021",
+      "duration_pattern": [
+        {
+          "duration": 5,
+          "qualified": true
+        },
+        {
+          "duration": 10,
+          "qualified": true
+        },
+        {
+          "duration": 15,
+          "qualified": true
+        },
+        {
+          "duration": 20,
+          "qualified": true
+        },
+        {
+          "duration": 25,
+          "qualified": true
+        }
+      ],
+      "delayed_start_pattern": [
+        {
+          "start": 0,
+          "qualified": true
+        },
+        {
+          "start": 5,
+          "qualified": true
+        },
+        {
+          "start": 10,
+          "qualified": true
+        },
+        {
+          "start": 15,
+          "qualified": false
+        },
+        {
+          "start": 20,
+          "qualified": false
+        },
+        {
+          "start": 25,
+          "qualified": false
+        }
+      ],
+      "smallest_tested_successful_duration": 5,
+      "latest_tested_successful_start_for_duration_100": 10,
+      "duration_monotone_on_tested_grid": true,
+      "delay_monotone_on_tested_grid": true
+    }
+  ],
+  "qualified_pause_schedules": [
+    "pause_0_5",
+    "pause_0_10",
+    "pause_0_15",
+    "pause_0_20",
+    "pause_0_25",
+    "pause_0_100",
+    "pause_5_100",
+    "pause_10_100"
+  ],
+  "raw_threshold_diagnostics": [
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__legacy__5__source_coarse__q32",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.401629957681564,
+        "E_margin": 12.401629957681564
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__heldout_17021__5__source_coarse__q32",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.025992167295044,
+        "E_margin": 0.025992167295044055
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__legacy__5__source_coarse__q32",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.421993208691624,
+        "E_margin": 12.421993208691624
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__heldout_17021__5__source_coarse__q32",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.044036878721961,
+        "E_margin": 0.04403687872196116
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__legacy__5__source_fine__q32",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.41423225253444,
+        "E_margin": 12.41423225253444
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__heldout_17021__5__source_fine__q32",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0371788880495387,
+        "E_margin": 0.03717888804953873
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__legacy__5__source_fine__q32",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.406836340822743,
+        "E_margin": 12.406836340822743
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__heldout_17021__5__source_fine__q32",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "prefix_resolution": 32,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0306247176909054,
+        "E_margin": 0.030624717690905356
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__legacy__5__source_coarse__q64",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.40952768385199,
+        "E_margin": 12.40952768385199
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__heldout_17021__5__source_coarse__q64",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.032252850931499,
+        "E_margin": 0.03225285093149921
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__legacy__5__source_coarse__q64",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.429895907104338,
+        "E_margin": 12.429895907104338
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__heldout_17021__5__source_coarse__q64",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0502960448597918,
+        "E_margin": 0.05029604485979178
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__legacy__5__source_fine__q64",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.42213259802653,
+        "E_margin": 12.42213259802653
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__written__pause_15_100__heldout_17021__5__source_fine__q64",
+        "stage": "renewal",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.043438186751864,
+        "E_margin": 0.04343818675186384
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__legacy__5__source_fine__q64",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "legacy",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 14.414734760322354,
+        "E_margin": 12.414734760322354
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            198.75,
+            200.0
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "renewal__ordinary__pause_15_100__heldout_17021__5__source_fine__q64",
+        "stage": "renewal",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "prefix_resolution": 64,
+        "kind": "renewal"
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0368845153102555,
+        "E_margin": 0.036884515310255495
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    }
+  ],
+  "all_results_valid": true,
+  "full_pause_panel_qualified": true,
+  "original_P27_quality_gate": false,
+  "original_P30_quality_gate": false,
+  "new_scientific_integrations": 0,
+  "review_scope": "Fresh hashes, saved-audit consistency, raw outcome tables and 16 sampled classifier neighborhoods; no simulation or full mathematical audit rerun.",
+  "review_script_sha256": "11c0a99c1229b7478ace48f83997fa736d17570cf2af5f0a2e754dce5c6bd812",
+  "report_sha256": {
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1/status.json": "f1f001c33fd24f634ac1e7869dbdb9654ebe2b2541ec9023b587ac8ff936decb",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1/launch.json": "a8bf2706eb19ef29ca2efd52f86365883dd08da72f18c491e89c010950bf508c",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1/input_manifest.json": "1ec653ed3d1095438c34343821510c365fd87655ee7525b69e9d8682b48ec53d",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1/verification.log": "ca142d0f936907ab81149776386174371ac81224213efc6056d2be2f1ed788fc",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/jobs/p32-20261008T114402Z-v1pxbdt1/audit.log": "025751ae2b1c7cfbce1c2b393470c90df51758bc6ef7da1e50d667eea5947bf8",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/summary.json": "c4b162cc9a3519888b216707150cabe5549848a9bf164cd4fe0115763276cdbc",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/independent_audit.json": "f22306d7e51c57713ae4d119218cbb29d3e9488d8c0fae9cdeb6b5a9b6322a28",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/predecessor_audit.json": "8fb3f4b779c36ad785f99d191542ce2486a9b3c43e1fb4a1a8ae3eed30a180d9",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/controls_audit.json": "0632a6a9fd5be96b455cc82569b709ccb9bbcd336550ff915271386f73e05273",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/renewal_audit.json": "7fffb1c4c4fadbb8694c52b70d75d296b0709f718ddf17e1c16c868864bfba07",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p32-converged-pause-boundary/runs/p32-20261008T115952Z-6hfxhzzo/onward_audit.json": "7db9c5adcf36dba6cdc2096687dc18e4f291e194622cc4d915e89cdc9ccb5a20"
+  },
+  "external_free_gib": 487.2854309082031,
+  "workspace_free_gib": 25.51242446899414
+}

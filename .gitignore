@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+build/
+generated/
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.sqlite
+*.db
+*.zip
+*.tar
+*.gz
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.log
+# New campaigns and job receipts are local; the initial selected small records
+# are explicitly supplied by the review export and verified by its manifest.
+experiments/**/jobs/
+# Retained small upstream run reports are part of this snapshot. Direct any new
+# upstream run outputs to generated/ instead of writing into frozen records.

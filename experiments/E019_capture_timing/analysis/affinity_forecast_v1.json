@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-19T12:40:20.194852+00:00",
+  "basis": "Startup CPU affinity; no new status poll or outcome access",
+  "original_forecast_seconds": 4867.984807776003,
+  "declared_worker_ceiling": 12,
+  "available_cpus": 8,
+  "effective_waves": 4,
+  "formula": "2*(benchmark_worker_seconds+benchmark_audit_seconds)*4*ceil(32/available_cpus)+90",
+  "updated_conservative_seconds": 6460.646410368005,
+  "updated_conservative_minutes": 107.67744017280008,
+  "conservative_completion_utc": "2026-09-19T14:25:52.008134+00:00",
+  "frozen_forecast_and_scientific_design_unchanged": true
+}

@@ -1,0 +1,55 @@
+Use case: infographic-diagram.
+Asset type: a NEW scientific overview figure for the introduction of a research preprint, immediately before a table comparing three simulation setups.
+
+Create ONE complete 16:9 landscape diagram, ideally 3840 x 2160 at the highest native resolution available. Clean, light opaque white background; navy sans-serif text; teal and amber accents; thin pale-blue panel boundaries. Match a crisp, flat scientific diagram style. All cells, grid squares, connection lines, arrows and text must be sharply outlined and easy to read when printed across a manuscript page. No glassy cells, transparency, blur, glow, gradients, soft shadows, glossy texture or tiny decorative details. Use three equal columns and a shared workflow across the bottom. Make the simulator internals visually prominent; avoid turning this into three paragraphs.
+
+Title, large: "Three simulators: how we run the experiments"
+Subtitle: "Different state variables, explicit updates, controlled replacement"
+
+COLUMN 1
+Heading: "TISSUE SHEETS"
+Origin line: "Program-built spatial model"
+Show three slightly offset but clearly separated small grid layers, labelled "Activity", "Reference" and "Writable bias". Use distinct flat teal, pale blue and amber squares to show spatially varying continuous states. The grids are schematic patches, not measured data.
+Size line: "16 × 16 sites"
+Show a magnified central site linked to its four nearest neighbours, with a small update-loop arrow. Nearby exact text: "Coupling + feedback + noise"
+Below, show a simple spatial-record card crossing a dashed replacement boundary into a fresh, lightly outlined sheet. The previous sheet remains on the left of the boundary; no old cell is drawn crossing it.
+Boundary text: "Reset body; pass record"
+Bottom test line: "Capture • repair • writer placement"
+
+COLUMN 2
+Heading: "LOCAL FUNCTIONAL NETWORKS"
+Origin line: "Program-built associative model"
+Draw a small patch of a two-dimensional grid of circular activity nodes joined ONLY to their nearest neighbours. Links vary in flat thickness or teal/amber color to represent weights. One input port on the left is marked "Input"; two separate output ports on the right are marked "A" and "B". A pair of small cue boxes marked "+" and "−" points sequentially toward the ONE input, with exact text "Run both cues". This is a local weighted dynamical network, not a layered neural-network cartoon.
+Size line: "16 × 16 sites; 512 weighted links"
+Update text: "Weighted neighbours + noise"
+In the lower half, two tiny activity snapshots, one marked "+" and one marked "−", feed into ONE small connection-weight record icon. Make the two-to-one writing route unmistakable. Label: "Write from both cue trials"
+Then a short arrow carries that weight record across a dashed replacement boundary to a fresh node-grid with one or two nodes shown as missing/damaged. Only the weight record crosses; old activity does not.
+Boundary text: "Reset activity; pass weights"
+Bottom test line: "Teach • damage • rebuild"
+
+COLUMN 3
+Heading: "CELLULAR REGULATION"
+Origin line: "BITSEY model + our assays"
+Show three crisp, flat model cells linked by two-way junction arrows. In one cell show a simple internal regulatory loop and small ion symbols, with two clear labels "RNAs" and "Ions". This is a numerical cell-state model, not microscopy or a cartoon of cancer. Neighbours exchange influence through junctions.
+Update text: "Regulatory + ionic equations"
+Label under the connections: "Junction transport"
+Below, show a small current-cell group contacting a separate fresh-recipient group. A later arrow leads to those recipient cells alone after donor removal; distinguish recipient outlines from donor outlines. Do not show a memory-card packet or cell division in this column.
+Sequence text: "Contact → remove donors → test recipients"
+Continuity line: "State continues in living model cells"
+Bottom test line: "Rewrite • replace • pause transport"
+
+SHARED BOTTOM WORKFLOW
+Across the full width, a slim, clearly separated row with five modest icons and right-pointing arrows:
+"Initialize" → "Step equations" → "Intervene" → "Continue" → "Measure"
+Directly below: "Matched controls; fresh assays; repeat across declared cases."
+Small readable footer: "Rules and schedules are supplied. Diagrams are schematic; no new results are shown."
+
+Scientific constraints:
+- The first two model families are numerical 16-by-16 periodic models constructed in the research program. The cellular family uses a published BITSEY source model with added assays.
+- The record in spatial studies varies by experiment; do not imply all three field layers are always inherited together.
+- The functional task is initially taught; renewal receives input cues, not target-output labels. Do not draw a teacher sending desired A/B values into the renewal writer.
+- The cellular case carries history in continuing cell state and through communication into replacements, not in a separate digital packet. No division, DNA inheritance, treatment claims or success percentages.
+- The bottom workflow describes controlled numerical experiments, not five biological stages.
+- Do not include any figure number, numerical results, equations beyond the simple labels, invented screenshots or extra explanatory text.
+- Keep every word inside generous margins. Use a small schematic patch for each large grid; no need to draw every one of the 256 sites.
+

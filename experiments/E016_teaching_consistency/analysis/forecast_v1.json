@@ -1,0 +1,28 @@
+{
+  "audit_seconds": 30.306773361749947,
+  "benchmark_audit_sha256": "ebcc0584947ab4d447b2bdb7a06f1522d9b775664b88d67a185d31725ba26d67",
+  "benchmark_complete_sha256": "94db0ec1e6cbab7e569afcce72102800efdd286361ee2c28a66aeaf473ed44dd",
+  "blocks": 32,
+  "created_utc": "2026-09-18T15:42:54.848601+00:00",
+  "detached_required": false,
+  "forecast_seconds": 474.46095886453986,
+  "formula": "2*(worker_seconds+audit_seconds)*ceil(32/12)+90",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/PROTOCOL.md": "db327f2791d728bba6bc9e483d6ad041cb1f629596d1a7ad6a11445733adc719",
+    "E016_teaching_consistency/audit.py": "18cea008f4cd720d446528301d8afd64f7c33c5b9d38ae631e8492dede341680",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E016_teaching_consistency/plot.py": "1c1eb2f29727e3722cf099c6418c466bfe292027c8482839232bfe364d8dd1ca",
+    "E016_teaching_consistency/run.py": "dd793aa261b88d79bacc788bcdfc24010fcb2dfa89a007d4e87859e20ae02f15",
+    "E016_teaching_consistency/tests.py": "e73419b25026a75b4efe7c8667188fc3a39759405e3866916faa6b8c52035a53",
+    "E016_teaching_consistency/workflow.py": "1eeebef2e69201d24fd2d969d34c34b54dc724d1482a8a51391fc5c2f050e167",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "worker_seconds": 33.77005311567336,
+  "workers": 12
+}

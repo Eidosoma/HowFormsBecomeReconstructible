@@ -1,0 +1,50 @@
+{
+  "experiment": "P12_lineage_robustness",
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 14400,
+  "total_budget_seconds": 86400,
+  "verification_timeout_seconds": 2700,
+  "maximum_cases": 158,
+  "maximum_integrations": 1746,
+  "screen_seeds": [
+    101,
+    102
+  ],
+  "test_seeds": [
+    201,
+    202,
+    203
+  ],
+  "levels": [
+    "mild",
+    "strong"
+  ],
+  "gap_maxima": {
+    "mild": 2000,
+    "strong": 5000
+  },
+  "protein_percent": {
+    "mild": 10,
+    "strong": 25
+  },
+  "protein_index": 7,
+  "clock": {
+    "method": "native_explicit_euler_bounded_clock_v1",
+    "sample_interval": 100,
+    "coarse_max_step": 100,
+    "fine_max_step": 50,
+    "initial_and_final_samples": true,
+    "integer_tick_clock": true
+  },
+  "contact_per_pupil": 20000,
+  "contact_window": 80000,
+  "hold_horizons": [
+    10000,
+    10000
+  ],
+  "before_rounds": 3,
+  "after_rounds": 3,
+  "external_schedule": true,
+  "automatic_follow_on": false
+}

@@ -1,0 +1,187 @@
+{
+  "contract": {
+    "blocks": [
+      27000,
+      27001,
+      27002,
+      27003,
+      27004,
+      27005,
+      27006,
+      27007,
+      27008,
+      27009,
+      27010,
+      27011,
+      27012,
+      27013,
+      27014,
+      27015,
+      27016,
+      27017,
+      27018,
+      27019,
+      27020,
+      27021,
+      27022,
+      27023,
+      27024,
+      27025,
+      27026,
+      27027,
+      27028,
+      27029,
+      27030,
+      27031
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 16,
+      "read_steps": 2048,
+      "settling_steps": 256,
+      "write_steps": 128
+    },
+    "experiment": "E033",
+    "factor": 4,
+    "mode": "scientific",
+    "panels": [
+      [
+        8,
+        "original",
+        "fixed_four"
+      ],
+      [
+        8,
+        "original",
+        "local_strength"
+      ],
+      [
+        8,
+        "delayed_same_duration",
+        "fixed_four"
+      ],
+      [
+        8,
+        "delayed_same_duration",
+        "local_strength"
+      ],
+      [
+        8,
+        "extra_time",
+        "fixed_four"
+      ],
+      [
+        8,
+        "extra_time",
+        "local_strength"
+      ],
+      [
+        8,
+        "delayed_extra_time",
+        "fixed_four"
+      ],
+      [
+        8,
+        "delayed_extra_time",
+        "local_strength"
+      ],
+      [
+        16,
+        "original",
+        "fixed_four"
+      ],
+      [
+        16,
+        "original",
+        "local_strength"
+      ],
+      [
+        16,
+        "delayed_same_duration",
+        "fixed_four"
+      ],
+      [
+        16,
+        "delayed_same_duration",
+        "local_strength"
+      ],
+      [
+        16,
+        "extra_time",
+        "fixed_four"
+      ],
+      [
+        16,
+        "extra_time",
+        "local_strength"
+      ],
+      [
+        16,
+        "delayed_extra_time",
+        "fixed_four"
+      ],
+      [
+        16,
+        "delayed_extra_time",
+        "local_strength"
+      ]
+    ],
+    "source": "E031_renewal_durability/runs/durability_v1",
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E031_renewal_durability/evidence.py": "5ab31fc8402f2102c1360c9a074b478b52f38d3873fb4173fe2c27a1baa8501b",
+    "E033_delayed_expression/PROTOCOL.md": "05033351f1d786439e3a44b1634a95df9c3852a60c42f2fc302ccc28cfebc2d5",
+    "E033_delayed_expression/SOURCE_DATA.json": "07505b607cda18e10ed36009dd4a5ce99f1e736f5da0bfec90d0c2b203ed3d43",
+    "E033_delayed_expression/audit.py": "8a5e3b29daf489534589afa88e5baacfaa1c57ea67fe643a55968d67ba1419a7",
+    "E033_delayed_expression/model.py": "08570ed7a6c710b8ba1e86181b4dc8de359f045150f186a2c6ab973b17f15b60",
+    "E033_delayed_expression/plot.py": "106144f8a026897d8af99df4540ad0f3a1794f039cce065a24b89b57d0a77e51",
+    "E033_delayed_expression/run.py": "cd31d29a8cec83305a29a73b12d5c9500e48c2fca6c91c7cf1ee21f7db15371e",
+    "E033_delayed_expression/tests.py": "f50c9dfd6dfc6628df85658d1f3289df9f2fdd3a50289b3f46e181b197de36ca",
+    "E033_delayed_expression/workflow.py": "37c4a4e152a5d4bcd9c18a005c015be551c68f41fc00f64b2c4db96ff80d758c",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-27T16:50:51.384975+00:00",
+  "status": "RUNNING"
+}

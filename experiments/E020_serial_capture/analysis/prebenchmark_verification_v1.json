@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-19T16:08:06.242853+00:00",
+  "fixture_run": "E020_serial_capture/analysis/fixture_attempt1",
+  "fixture_audit_sha256": "07554c86670ab8bb96c06e1b6cdf2782e601fcd567170a9f8c4e64e12c7edc7f",
+  "fixture_complete_sha256": "91fd1cf303764fe8d6cfa6488e45dd955d4d7066fcbf8734a1e3b80a8a8b97e0",
+  "fixture_original_outputs_verified": 29,
+  "fixture_receipt_sha256": "a49c81b1552166408c77fc5eb49a4769ea542e6d970b22f29617f6e8c949a43c",
+  "predecessor_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1"
+  ],
+  "prior_benchmark_seconds": {
+    "E018_functional_renewal": 184.44446874875575,
+    "E019_capture_timing": 201.41196973299998
+  },
+  "benchmark_forecast_seconds": 302.11795459949997,
+  "benchmark_forecast_basis": "1.5*max(E018,E019 completed benchmark workflow seconds)",
+  "prior_active_jobs": []
+}

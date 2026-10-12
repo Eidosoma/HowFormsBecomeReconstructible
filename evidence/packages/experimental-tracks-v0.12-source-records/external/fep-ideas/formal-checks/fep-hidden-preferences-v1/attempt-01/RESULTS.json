@@ -1,0 +1,5121 @@
+{
+ "created_utc": "2026-09-19T12:40:25.990883+00:00",
+ "distributions": 14,
+ "elapsed_seconds": 2.9294886020943522,
+ "fixtures": [
+  {
+   "K0": 22.17851273555154,
+   "comparisons": [
+    {
+     "family": "content",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "content",
+     "lambda_value": 1.216,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "content",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "literal",
+     "lambda_value": 1.216,
+     "maintenance_minus_frozen": 0.0
+    },
+    {
+     "family": "literal",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": -0.1960000000000015
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 1.216,
+     "maintenance_minus_frozen": 0.3039999999999985
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": 0.3039999999999985
+    }
+   ],
+   "fixed_set_minima": [
+    {
+     "family": "content",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "content",
+     "lambda_value": 1.216,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "content",
+     "lambda_value": 2.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 1.216,
+     "policies": [
+      "frozen",
+      "maintain"
+     ],
+     "utilities": {
+      "frozen": 0.638,
+      "maintain": 0.6
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 2.0,
+     "policies": [
+      "maintain"
+     ],
+     "utilities": {
+      "maintain": 0.6
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 1.216,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 2.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.638
+     }
+    }
+   ],
+   "lambdas": [
+    0.0,
+    1.216,
+    2.0
+   ],
+   "name": "continuation",
+   "parameters": {
+    "beta": 8.0,
+    "c": 0.15,
+    "d0": 0.02,
+    "d1": 0.02,
+    "d2": 0.3,
+    "k": 0.005,
+    "kappa0": 0.9,
+    "kappa1": 0.9,
+    "kappa2": 0.9,
+    "p": 0.5,
+    "tau": 0.75,
+    "v": 1.0
+   },
+   "physical_entropy": 6.389614328712771,
+   "policies": [
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 4.14938092879501,
+     "original_risk": 10.684898406838771,
+     "policy": "frozen",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 11.118679237321798,
+     "scores": [
+      {
+       "conditional_risk": 6.535517478043766,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.684898406838771,
+       "risk": 10.684898406838771
+      },
+      {
+       "conditional_risk": 6.405971866593761,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.555352795388766,
+       "risk": 10.555352795388766
+      },
+      {
+       "conditional_risk": 6.469298308526793,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.618679237321798,
+       "risk": 10.618679237321798
+      },
+      {
+       "conditional_risk": 6.535517478043766,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.684898406838771,
+       "risk": 10.684898406838771
+      },
+      {
+       "conditional_risk": 6.7099718665937615,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388764,
+       "risk": 10.859352795388764
+      },
+      {
+       "conditional_risk": 6.969298308526793,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.118679237321798,
+       "risk": 11.118679237321798
+      },
+      {
+       "conditional_risk": 6.535517478043766,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.684898406838771,
+       "risk": 10.684898406838771
+      },
+      {
+       "conditional_risk": 6.405971866593761,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.555352795388766,
+       "risk": 10.555352795388766
+      },
+      {
+       "conditional_risk": 6.469298308526793,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.618679237321798,
+       "risk": 10.618679237321798
+      }
+     ],
+     "utility": 0.638
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 4.747564026997852,
+     "original_risk": 10.788898406838769,
+     "policy": "old_anchor",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 11.222679237321797,
+     "scores": [
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 5.911788768390926,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.659352795388763,
+       "risk": 10.659352795388763
+      },
+      {
+       "conditional_risk": 5.975115210323958,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.722679237321795,
+       "risk": 10.722679237321795
+      },
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 6.215788768390926,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.963352795388763,
+       "risk": 10.963352795388763
+      },
+      {
+       "conditional_risk": 6.475115210323958,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.222679237321797,
+       "risk": 11.222679237321797
+      },
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 5.911788768390926,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.659352795388763,
+       "risk": 10.659352795388763
+      },
+      {
+       "conditional_risk": 5.975115210323958,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.722679237321795,
+       "risk": 10.722679237321795
+      }
+     ],
+     "utility": 0.625
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 4.747564026997852,
+     "original_risk": 10.788898406838769,
+     "policy": "recent_anchor",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 11.222679237321797,
+     "scores": [
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 5.911788768390926,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.659352795388763,
+       "risk": 10.659352795388763
+      },
+      {
+       "conditional_risk": 5.975115210323958,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.722679237321795,
+       "risk": 10.722679237321795
+      },
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 6.215788768390926,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.963352795388763,
+       "risk": 10.963352795388763
+      },
+      {
+       "conditional_risk": 6.475115210323958,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.222679237321797,
+       "risk": 11.222679237321797
+      },
+      {
+       "conditional_risk": 6.04133437984093,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.788898406838769,
+       "risk": 10.788898406838769
+      },
+      {
+       "conditional_risk": 5.911788768390926,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.659352795388763,
+       "risk": 10.659352795388763
+      },
+      {
+       "conditional_risk": 5.975115210323958,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.722679237321795,
+       "risk": 10.722679237321795
+      }
+     ],
+     "utility": 0.625
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.75,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 5.0326755214136725,
+     "original_risk": 10.98889840683877,
+     "policy": "maintain",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 11.922679237321796,
+     "scores": [
+      {
+       "conditional_risk": 5.956222885425106,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.98889840683877,
+       "risk": 10.98889840683877
+      },
+      {
+       "conditional_risk": 5.826677273975101,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388764,
+       "risk": 10.859352795388764
+      },
+      {
+       "conditional_risk": 5.890003715908134,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.922679237321796,
+       "risk": 10.922679237321796
+      },
+      {
+       "conditional_risk": 5.956222885425106,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.98889840683877,
+       "risk": 10.98889840683877
+      },
+      {
+       "conditional_risk": 5.826677273975101,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388764,
+       "risk": 10.859352795388764
+      },
+      {
+       "conditional_risk": 5.890003715908134,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.922679237321796,
+       "risk": 10.922679237321796
+      },
+      {
+       "conditional_risk": 5.956222885425106,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.98889840683877,
+       "risk": 10.98889840683877
+      },
+      {
+       "conditional_risk": 5.826677273975101,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388764,
+       "risk": 10.859352795388764
+      },
+      {
+       "conditional_risk": 5.890003715908134,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.922679237321796,
+       "risk": 10.922679237321796
+      }
+     ],
+     "utility": 0.6
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 5.269927692641008,
+     "original_risk": 10.988898406838771,
+     "policy": "reference",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 11.422679237321798,
+     "scores": [
+      {
+       "conditional_risk": 5.718970714197752,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.988898406838771,
+       "risk": 10.988898406838771
+      },
+      {
+       "conditional_risk": 5.589425102747747,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388766,
+       "risk": 10.859352795388766
+      },
+      {
+       "conditional_risk": 5.652751544680779,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.922679237321798,
+       "risk": 10.922679237321798
+      },
+      {
+       "conditional_risk": 5.718970714197752,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.988898406838771,
+       "risk": 10.988898406838771
+      },
+      {
+       "conditional_risk": 5.893425102747747,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 11.163352795388766,
+       "risk": 11.163352795388766
+      },
+      {
+       "conditional_risk": 6.152751544680778,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.422679237321798,
+       "risk": 11.422679237321798
+      },
+      {
+       "conditional_risk": 5.718970714197752,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 10.988898406838771,
+       "risk": 10.988898406838771
+      },
+      {
+       "conditional_risk": 5.589425102747747,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 10.859352795388766,
+       "risk": 10.859352795388766
+      },
+      {
+       "conditional_risk": 5.652751544680779,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.922679237321798,
+       "risk": 10.922679237321798
+      }
+     ],
+     "utility": 0.6000000000000001
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 6.3950106660323645,
+     "original_risk": 11.78889840683877,
+     "policy": "blind",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 12.222679237321797,
+     "scores": [
+      {
+       "conditional_risk": 5.393887740806314,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.78889840683877,
+       "risk": 11.78889840683877
+      },
+      {
+       "conditional_risk": 5.26434212935631,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 11.659352795388765,
+       "risk": 11.659352795388765
+      },
+      {
+       "conditional_risk": 5.327668571289342,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.722679237321797,
+       "risk": 11.722679237321797
+      },
+      {
+       "conditional_risk": 5.393887740806314,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.78889840683877,
+       "risk": 11.78889840683877
+      },
+      {
+       "conditional_risk": 5.56834212935631,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 11.963352795388765,
+       "risk": 11.963352795388765
+      },
+      {
+       "conditional_risk": 5.827668571289342,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.222679237321797,
+       "risk": 12.222679237321797
+      },
+      {
+       "conditional_risk": 5.393887740806314,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.78889840683877,
+       "risk": 11.78889840683877
+      },
+      {
+       "conditional_risk": 5.26434212935631,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 11.659352795388765,
+       "risk": 11.659352795388765
+      },
+      {
+       "conditional_risk": 5.327668571289342,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.722679237321797,
+       "risk": 11.722679237321797
+      }
+     ],
+     "utility": 0.5
+    },
+    {
+     "expectations": {
+      "content": 0.75,
+      "literal": 0.5,
+      "oracle_decoded": 0.75
+     },
+     "marginal_task_risk": 6.281393362636797,
+     "original_risk": 12.17289840683877,
+     "policy": "frozen_audit",
+     "predictive_support": 5760,
+     "reimposed_literal_risk": 12.606679237321798,
+     "scores": [
+      {
+       "conditional_risk": 5.891505044201975,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 12.17289840683877,
+       "risk": 12.17289840683877
+      },
+      {
+       "conditional_risk": 5.76195943275197,
+       "family": "content",
+       "lambda_value": 1.216,
+       "relabeled_risk": 12.043352795388765,
+       "risk": 12.043352795388765
+      },
+      {
+       "conditional_risk": 5.825285874685003,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.106679237321798,
+       "risk": 12.106679237321798
+      },
+      {
+       "conditional_risk": 5.891505044201975,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 12.17289840683877,
+       "risk": 12.17289840683877
+      },
+      {
+       "conditional_risk": 6.065959432751971,
+       "family": "literal",
+       "lambda_value": 1.216,
+       "relabeled_risk": 12.347352795388765,
+       "risk": 12.347352795388765
+      },
+      {
+       "conditional_risk": 6.325285874685003,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.606679237321798,
+       "risk": 12.606679237321798
+      },
+      {
+       "conditional_risk": 5.891505044201975,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 12.17289840683877,
+       "risk": 12.17289840683877
+      },
+      {
+       "conditional_risk": 5.76195943275197,
+       "family": "oracle_decoded",
+       "lambda_value": 1.216,
+       "relabeled_risk": 12.043352795388765,
+       "risk": 12.043352795388765
+      },
+      {
+       "conditional_risk": 5.825285874685003,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.106679237321798,
+       "risk": 12.106679237321798
+      }
+     ],
+     "utility": 0.452
+    }
+   ],
+   "preferred_task_cells": [
+    {
+     "probability": 0.04558585323851513,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.00413545530474962,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.01373019514051988,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0012455752014122027,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04208104628845547,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0038175063915657074,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.012674567573292229,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011498108290774285,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.030557111241415347,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0027720785902580983,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.009203625038671578,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0008349340263514767,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.5292350122570515e-05,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3872907041046956e-06,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.605967343453097e-06,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.17843930315938e-07,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.411661837281254e-05,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.2806307261492677e-06,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.251843745664574e-06,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.8571856231308e-07,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.0250768838154596e-05,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 9.29928768640272e-07,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.0874722417021243e-06,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 2.800891626050914e-07,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.5292350122570515e-05,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3872907041046956e-06,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.605967343453097e-06,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.17843930315938e-07,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.411661837281254e-05,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.2806307261492677e-06,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.251843745664574e-06,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.8571856231308e-07,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.0250768838154596e-05,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 9.29928768640272e-07,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.0874722417021243e-06,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 2.800891626050914e-07,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04558585323851513,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.00413545530474962,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.01373019514051988,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0012455752014122027,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04208104628845547,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0038175063915657074,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.012674567573292229,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011498108290774285,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.030557111241415347,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0027720785902580983,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.009203625038671578,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0008349340263514767,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      1
+     ]
+    }
+   ],
+   "reimposed_literal_maintenance_gap": 0.8039999999999985,
+   "source_frozen_policy": [
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      1,
+      10
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "K0": 22.17851273555154,
+   "comparisons": [
+    {
+     "family": "content",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.15000000000000036
+    },
+    {
+     "family": "content",
+     "lambda_value": 0.34285714285714286,
+     "maintenance_minus_frozen": 0.1499999999999968
+    },
+    {
+     "family": "content",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": 0.15000000000000036
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.15000000000000036
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.34285714285714286,
+     "maintenance_minus_frozen": -1.7763568394002505e-15
+    },
+    {
+     "family": "literal",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": -0.7249999999999996
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.0,
+     "maintenance_minus_frozen": 0.15000000000000036
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.34285714285714286,
+     "maintenance_minus_frozen": 0.1499999999999968
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 2.0,
+     "maintenance_minus_frozen": 0.15000000000000036
+    }
+   ],
+   "fixed_set_minima": [
+    {
+     "family": "content",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "content",
+     "lambda_value": 0.34285714285714286,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "content",
+     "lambda_value": 2.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 0.34285714285714286,
+     "policies": [
+      "frozen",
+      "maintain"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999,
+      "maintain": 0.85
+     }
+    },
+    {
+     "family": "literal",
+     "lambda_value": 2.0,
+     "policies": [
+      "maintain"
+     ],
+     "utilities": {
+      "maintain": 0.85
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 0.34285714285714286,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    },
+    {
+     "family": "oracle_decoded",
+     "lambda_value": 2.0,
+     "policies": [
+      "frozen"
+     ],
+     "utilities": {
+      "frozen": 0.8687499999999999
+     }
+    }
+   ],
+   "lambdas": [
+    0.0,
+    0.34285714285714286,
+    2.0
+   ],
+   "name": "transfer_isolated",
+   "parameters": {
+    "beta": 8.0,
+    "c": 0.15,
+    "d0": 0.02,
+    "d1": 0.02,
+    "d2": 0.3,
+    "k": 0.005,
+    "kappa0": 1.0,
+    "kappa1": 1.0,
+    "kappa2": 0.9,
+    "p": 1.0,
+    "tau": 0.75,
+    "v": 1.0
+   },
+   "physical_entropy": 4.00658043053001,
+   "policies": [
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5625,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 2.8430866943001796,
+     "original_risk": 11.221932305021529,
+     "policy": "frozen",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 11.780713135504556,
+     "scores": [
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.221932305021529,
+       "risk": 11.221932305021529
+      },
+      {
+       "conditional_risk": 8.222039505856973,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.065126200157152,
+       "risk": 11.065126200157152
+      },
+      {
+       "conditional_risk": 7.812626441204378,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.655713135504556,
+       "risk": 10.655713135504556
+      },
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.221932305021529,
+       "risk": 11.221932305021529
+      },
+      {
+       "conditional_risk": 8.372039505856971,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.215126200157153,
+       "risk": 11.215126200157151
+      },
+      {
+       "conditional_risk": 8.687626441204378,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.530713135504556,
+       "risk": 11.530713135504556
+      },
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.221932305021529,
+       "risk": 11.221932305021529
+      },
+      {
+       "conditional_risk": 8.222039505856973,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.065126200157152,
+       "risk": 11.065126200157152
+      },
+      {
+       "conditional_risk": 7.812626441204378,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.655713135504556,
+       "risk": 10.655713135504556
+      }
+     ],
+     "utility": 0.8687499999999999
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 3.2182405047760314,
+     "original_risk": 11.371932305021529,
+     "policy": "old_anchor",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 11.805713135504556,
+     "scores": [
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.99688569538112,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.215126200157151,
+       "risk": 11.215126200157151
+      },
+      {
+       "conditional_risk": 7.587472630728524,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      },
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 8.168314266809691,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.386554771585722,
+       "risk": 11.386554771585722
+      },
+      {
+       "conditional_risk": 8.587472630728524,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.805713135504556,
+       "risk": 11.805713135504556
+      },
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.99688569538112,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.215126200157151,
+       "risk": 11.215126200157151
+      },
+      {
+       "conditional_risk": 7.587472630728524,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      }
+     ],
+     "utility": 0.8500000000000001
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 3.2182405047760314,
+     "original_risk": 11.371932305021529,
+     "policy": "recent_anchor",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 11.805713135504556,
+     "scores": [
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.99688569538112,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.215126200157151,
+       "risk": 11.215126200157151
+      },
+      {
+       "conditional_risk": 7.587472630728524,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      },
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 8.168314266809691,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.386554771585722,
+       "risk": 11.386554771585722
+      },
+      {
+       "conditional_risk": 8.587472630728524,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 11.805713135504556,
+       "risk": 11.805713135504556
+      },
+      {
+       "conditional_risk": 8.153691800245497,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.99688569538112,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.215126200157151,
+       "risk": 11.215126200157151
+      },
+      {
+       "conditional_risk": 7.587472630728524,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      }
+     ],
+     "utility": 0.8500000000000001
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 1.0,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 3.5950106660324685,
+     "original_risk": 11.371932305021529,
+     "policy": "maintain",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 12.805713135504556,
+     "scores": [
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.620115534124682,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.21512620015715,
+       "risk": 11.21512620015715
+      },
+      {
+       "conditional_risk": 7.2107024694720865,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      },
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.620115534124682,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.21512620015715,
+       "risk": 11.21512620015715
+      },
+      {
+       "conditional_risk": 7.2107024694720865,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      },
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 11.371932305021529,
+       "risk": 11.371932305021529
+      },
+      {
+       "conditional_risk": 7.620115534124682,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 11.21512620015715,
+       "risk": 11.21512620015715
+      },
+      {
+       "conditional_risk": 7.2107024694720865,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 10.805713135504556,
+       "risk": 10.805713135504556
+      }
+     ],
+     "utility": 0.85
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 5.26992769264102,
+     "original_risk": 13.37193230502153,
+     "policy": "reference",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 13.805713135504558,
+     "scores": [
+      {
+       "conditional_risk": 8.102004612380508,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.37193230502153,
+       "risk": 13.37193230502153
+      },
+      {
+       "conditional_risk": 7.945198507516131,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.215126200157155,
+       "risk": 13.215126200157153
+      },
+      {
+       "conditional_risk": 7.535785442863536,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.805713135504558,
+       "risk": 12.805713135504558
+      },
+      {
+       "conditional_risk": 8.102004612380508,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.37193230502153,
+       "risk": 13.37193230502153
+      },
+      {
+       "conditional_risk": 8.116627078944703,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.386554771585725,
+       "risk": 13.386554771585725
+      },
+      {
+       "conditional_risk": 8.535785442863535,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.805713135504558,
+       "risk": 13.805713135504558
+      },
+      {
+       "conditional_risk": 8.102004612380508,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.37193230502153,
+       "risk": 13.37193230502153
+      },
+      {
+       "conditional_risk": 7.945198507516131,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.215126200157155,
+       "risk": 13.215126200157153
+      },
+      {
+       "conditional_risk": 7.535785442863536,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 12.805713135504558,
+       "risk": 12.805713135504558
+      }
+     ],
+     "utility": 0.6
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 6.395010666032469,
+     "original_risk": 14.17193230502153,
+     "policy": "blind",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 14.605713135504557,
+     "scores": [
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 14.17193230502153,
+       "risk": 14.17193230502153
+      },
+      {
+       "conditional_risk": 7.620115534124682,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 14.015126200157152,
+       "risk": 14.015126200157152
+      },
+      {
+       "conditional_risk": 7.2107024694720865,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.605713135504557,
+       "risk": 13.605713135504557
+      },
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 14.17193230502153,
+       "risk": 14.17193230502153
+      },
+      {
+       "conditional_risk": 7.791544105553253,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 14.186554771585723,
+       "risk": 14.186554771585723
+      },
+      {
+       "conditional_risk": 8.210702469472087,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 14.605713135504557,
+       "risk": 14.605713135504557
+      },
+      {
+       "conditional_risk": 7.77692163898906,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 14.17193230502153,
+       "risk": 14.17193230502153
+      },
+      {
+       "conditional_risk": 7.620115534124682,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 14.015126200157152,
+       "risk": 14.015126200157152
+      },
+      {
+       "conditional_risk": 7.2107024694720865,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.605713135504557,
+       "risk": 13.605713135504557
+      }
+     ],
+     "utility": 0.5
+    },
+    {
+     "expectations": {
+      "content": 1.0,
+      "literal": 0.5625,
+      "oracle_decoded": 1.0
+     },
+     "marginal_task_risk": 5.243086694300181,
+     "original_risk": 13.62193230502153,
+     "policy": "frozen_audit",
+     "predictive_support": 160,
+     "reimposed_literal_risk": 14.180713135504558,
+     "scores": [
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "content",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.62193230502153,
+       "risk": 13.62193230502153
+      },
+      {
+       "conditional_risk": 8.222039505856973,
+       "family": "content",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.465126200157155,
+       "risk": 13.465126200157153
+      },
+      {
+       "conditional_risk": 7.812626441204378,
+       "family": "content",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.055713135504558,
+       "risk": 13.055713135504558
+      },
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "literal",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.62193230502153,
+       "risk": 13.62193230502153
+      },
+      {
+       "conditional_risk": 8.372039505856971,
+       "family": "literal",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.615126200157153,
+       "risk": 13.615126200157151
+      },
+      {
+       "conditional_risk": 8.687626441204378,
+       "family": "literal",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.930713135504558,
+       "risk": 13.930713135504558
+      },
+      {
+       "conditional_risk": 8.37884561072135,
+       "family": "oracle_decoded",
+       "lambda_value": 0.0,
+       "relabeled_risk": 13.62193230502153,
+       "risk": 13.62193230502153
+      },
+      {
+       "conditional_risk": 8.222039505856973,
+       "family": "oracle_decoded",
+       "lambda_value": 0.34285714285714286,
+       "relabeled_risk": 13.465126200157155,
+       "risk": 13.465126200157153
+      },
+      {
+       "conditional_risk": 7.812626441204378,
+       "family": "oracle_decoded",
+       "lambda_value": 2.0,
+       "relabeled_risk": 13.055713135504558,
+       "risk": 13.055713135504558
+      }
+     ],
+     "utility": 0.56875
+    }
+   ],
+   "preferred_task_cells": [
+    {
+     "probability": 0.04558585323851513,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.00413545530474962,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.01373019514051988,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0012455752014122027,
+     "value": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      0,
+      0,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04208104628845547,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0038175063915657074,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.012674567573292229,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011498108290774285,
+     "value": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      0,
+      0,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.030557111241415347,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0027720785902580983,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.009203625038671578,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0008349340263514767,
+     "value": [
+      0,
+      0,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.5292350122570515e-05,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3872907041046956e-06,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.605967343453097e-06,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.17843930315938e-07,
+     "value": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.411661837281254e-05,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.2806307261492677e-06,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.251843745664574e-06,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.8571856231308e-07,
+     "value": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      0,
+      1,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      0,
+      1,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.0250768838154596e-05,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 9.29928768640272e-07,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.0874722417021243e-06,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 2.800891626050914e-07,
+     "value": [
+      0,
+      1,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.5292350122570515e-05,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3872907041046956e-06,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.605967343453097e-06,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.17843930315938e-07,
+     "value": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      1,
+      0,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.4692728497585499e-05,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.3328942575379784e-06,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.4253647806702205e-06,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 4.0146003546145144e-07,
+     "value": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.411661837281254e-05,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.2806307261492677e-06,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 4.251843745664574e-06,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.8571856231308e-07,
+     "value": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      1,
+      0,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2520317332184336e-05,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.1358175629097178e-06,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.7710471117579483e-06,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.4210167573663074e-07,
+     "value": [
+      1,
+      0,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.2029388667598508e-05,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 1.0912815192473874e-06,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.6231822395228975e-06,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 3.286876771640677e-07,
+     "value": [
+      1,
+      0,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 1.0250768838154596e-05,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 9.29928768640272e-07,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 3.0874722417021243e-06,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 2.800891626050914e-07,
+     "value": [
+      1,
+      0,
+      2,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04558585323851513,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.00413545530474962,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.01373019514051988,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0012455752014122027,
+     "value": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      1,
+      1,
+      0,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.0437984063663131,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.003973301782889891,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.013191826488512037,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011967354991868691,
+     "value": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.04208104628845547,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0038175063915657074,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.012674567573292229,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0011498108290774285,
+     "value": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      1,
+      1,
+      1,
+      2,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.037322539951671875,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0033858244359780063,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.011241333007305477,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0010197907226674689,
+     "value": [
+      1,
+      1,
+      2,
+      0,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.03585910222790697,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0032530643609115307,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.010800554035413518,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0009798041564844206,
+     "value": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "probability": 0.030557111241415347,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "probability": 0.0027720785902580983,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      0,
+      1
+     ]
+    },
+    {
+     "probability": 0.009203625038671578,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "probability": 0.0008349340263514767,
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      1
+     ]
+    }
+   ],
+   "reimposed_literal_maintenance_gap": 1.0250000000000004,
+   "source_frozen_policy": [
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      0
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      0,
+      1
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      1
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      0
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      0,
+      0
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      0,
+      1
+     ]
+    },
+    {
+     "choice": [
+      1,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      1,
+      0
+     ]
+    },
+    {
+     "choice": [
+      0,
+      0,
+      2
+     ],
+     "first_history": [
+      1,
+      1
+     ],
+     "second_history": [
+      1,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "max_abs_errors": {
+  "analytic_literal_agreement": 0.0,
+  "analytic_maintenance_gap": 3.191891195797325e-15,
+  "base_preference_normalization": 5.551115123125783e-16,
+  "base_utility_identity": 3.552713678800501e-15,
+  "bijective_relabel_risk": 1.7763568394002505e-15,
+  "coding_preference_change_gap": 1.5543122344752192e-15,
+  "conditional_tilt_identity": 1.7763568394002505e-15,
+  "constant_entropy": 0.0,
+  "declared_beta": 0.0,
+  "oracle_content_risk_equality": 0.0,
+  "physical_normalization": 0.0,
+  "policy_invariant_fidelity": 0.0,
+  "reimposed_literal_identity": 1.7763568394002505e-15,
+  "relabel_utility": 0.0,
+  "same_preferred_task_cost_cell": 6.938893903907228e-18,
+  "saved_physical_entropy": 8.881784197001252e-16,
+  "saved_policy_state_risk": 0.0,
+  "saved_policy_utility": 1.1102230246251565e-16,
+  "task_conditional_KL_chain": 9.059419880941277e-14,
+  "tilted_preference_normalization": 6.661338147750939e-16,
+  "trajectory_normalization": 0.0,
+  "zero_tilt": 0.0
+ },
+ "numeric_comparisons": 3240,
+ "passed": true,
+ "preference_score_cells": 126,
+ "relabel_score_checks": 126,
+ "structural_checks": 44190,
+ "tolerance": 1e-12
+}

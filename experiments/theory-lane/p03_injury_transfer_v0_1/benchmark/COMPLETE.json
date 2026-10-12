@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "at_utc": "2026-10-10T00:37:09.675823+00:00",
+  "config_sha256": "e5c0ff61282113800fb1a3ff461d83526c212a97bbcbe2d04089641a4e7a4444",
+  "code_sha256": {
+    "common.py": "6a2f491453a3ae945291a630903b9c30c06b4d77ffffc9e513584920c8d8163c",
+    "reader.py": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+    "benchmark.py": "b979fd233abf450b2efb8d707969b58a4bcda8fcef1afbdff3a50a3ac7f851f3"
+  },
+  "measured_seconds": 20.948793126968667,
+  "measured_trajectories": 128,
+  "forecast_cpu_seconds": 2222.507329879445,
+  "within_ceiling": true,
+  "formula": "1.5 * measured seconds * (scientific + known replay + independent audit cell-updates) / measured cell-updates + 180",
+  "byte_equal": true,
+  "new_scientific_outcomes": false
+}

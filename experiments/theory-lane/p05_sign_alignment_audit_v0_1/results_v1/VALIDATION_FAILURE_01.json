@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-10T16:16:49.932498+00:00",
+  "command": "python verify.py",
+  "exit_code": 1,
+  "traceback_tail": "verify.py line 45: assert row==0 and value==1; AssertionError",
+  "code_sha256": "e6c7cf6dfb66f98818217fa9ce10ffadf9d6c1012b2dd7e1f6529a3a519afab4",
+  "diagnosis": "The independent verifier listed port pins in input/output order, whereas certificate indices use ascending node order. Elimination feasibility is order invariant; decoding a numbered certificate requires matching the published order. Fix the verifier pin ordering and rerun all cases."
+}

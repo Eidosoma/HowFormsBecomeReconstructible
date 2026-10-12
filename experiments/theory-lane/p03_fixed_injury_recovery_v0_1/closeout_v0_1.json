@@ -1,0 +1,34 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "reviewed_at_utc": "2026-10-10T00:03:54.669715+00:00",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p03_fixed_injury_recovery_v0_1/runs/pilot_v1_resume1",
+  "scientific_status": "DEVELOPMENT_FIXED_INJURY_PROBE_NOT_CONFIRMATORY",
+  "frozen_run_modified": false,
+  "anchors_sha256": {
+    "COMPLETE.json": "abbce4c35c397fa96ce18fe830c15549ce794f25e7a5129edd5badf96286f416",
+    "REPORT.md": "ae6c077449f2fc5f82e467fae434a43190704270f679462ae8526e704d7a4657",
+    "VERIFICATION.json": "79bf260df03f91d8c37f62fcecd642c67aab8d76683a0e7da76228f2ca3dbc95",
+    "fixed_injury.png": "331d4defea6fd3a2db1540342ca2b4e6e07ed21d9b490e8b8df7bd84cf1346ca"
+  },
+  "checks_completed_during_status_review": {
+    "completed_output_hashes_verified": 31,
+    "frozen_source_and_input_files_verified": 35,
+    "verification_file_hashes_verified": 12,
+    "figure_visually_reviewed": true,
+    "figure_review": "Both panels are readable; labels and block effects are visible without clipping.",
+    "individual_pass_fail_changes_1536_to_2048": 0,
+    "individual_pass_fail_changes_2048_to_4096": 0,
+    "mean_port_values_changed_1536_to_4096": 12288,
+    "maximum_absolute_mean_port_change_1536_to_4096": 0.46651645503119543,
+    "maximum_absolute_body_state_change_1536_to_4096": 1.9934071707786696
+  },
+  "figure_review_note": "This separate receipt resolves the pending visual review recorded in frozen COMPLETE.json; the frozen completion marker is preserved.",
+  "interpretation": [
+    "Selected failed bodies can retain incoming records that succeed on fresh reads under the same injury: 27 of 64 cases succeeded at least once in 16 draws.",
+    "The complete original-writer rewrite raised equal-block success by 8.02 percentage points at 2048 updates; six blocks improved, one tied, and one worsened.",
+    "Success classifications were identical at 1536, 2048, and 4096 updates even though numerical states continued changing.",
+    "On separate evaluation draws, signed choice yielded 28.91 percent, always choosing the rewritten record 28.78 percent, and the four-read probe choice 31.88 percent. Measurement costs differ.",
+    "These development results do not confirm a general damage/resource boundary or isolate signed transfer as the cause of rewrite benefit."
+  ],
+  "automatic_successor_launched": false
+}

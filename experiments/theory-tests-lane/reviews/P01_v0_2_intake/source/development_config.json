@@ -1,0 +1,14 @@
+{
+  "status": "DEVELOPMENT_TOY_NOT_CONFIRMATORY",
+  "purpose": "Check a restricted short-probe forecasting model, its reductions to established models, and explicit failure cases.",
+  "seed": 1729,
+  "one_step_samples_per_state": 512,
+  "horizons": [0, 1, 2, 4, 8, 16, 32, 64],
+  "cases": [
+    {"name": "slower_identity_loss", "identity_flip": 0.005, "readiness_loss": 0.15, "readiness_recovery": 0.6},
+    {"name": "faster_identity_loss", "identity_flip": 0.04, "readiness_loss": 0.15, "readiness_recovery": 0.6}
+  ],
+  "statistical_radius_delta": 0.05,
+  "sample_complexity_illustration": {"absolute_error": 0.1, "readout_error": 0.0, "rows": 4, "joint_categories": 8, "delta": 0.05},
+  "interpretation": "Parameters construct analytical examples. Counts and error tolerance are development choices, not native empirical forecasts, power calculations, or registered success requirements. Full source states can be reset in this example; this is a strong coverage assumption."
+}

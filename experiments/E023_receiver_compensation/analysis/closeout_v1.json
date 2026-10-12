@@ -1,0 +1,141 @@
+{
+  "active_experiment_jobs": [],
+  "actual_minus_forecast_seconds": -5082.459982417175,
+  "actual_workflow_seconds": 11371.703950783005,
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "boundary_gates_passed": 6,
+  "csv_row_counts_verified": true,
+  "fixture_receipt_and_evidence_verified": true,
+  "forecast_seconds": 16454.16393320018,
+  "full_compensation_qualified": true,
+  "launch_receipts_and_operational_launcher_verified": true,
+  "original_gates_passed": {
+    "fixed_four": {
+      "baseline": 20,
+      "degree_compensated": 22,
+      "intact_renewed": 24,
+      "masked_copy": 22,
+      "protected_copy": 24,
+      "read_blocked": 0,
+      "strength_compensated": 22,
+      "write_blocked": 0
+    },
+    "local_strength": {
+      "baseline": 24,
+      "degree_compensated": 24,
+      "intact_renewed": 24,
+      "masked_copy": 24,
+      "protected_copy": 24,
+      "read_blocked": 0,
+      "strength_compensated": 24,
+      "write_blocked": 0
+    }
+  },
+  "predecessor_diagnosis_inputs_unchanged": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1",
+    "E022_reader_compensation/runs/compensation_v1"
+  ],
+  "primary": {
+    "endpoint": "normalized minus unchanged receiver: scattered-assay both-cue success for strength-compensated packets after one damaged replacement",
+    "lower_bound_above_010": true,
+    "statistics": {
+      "block_means": [
+        0.75,
+        0.75,
+        0.6875,
+        0.75,
+        0.75,
+        0.875,
+        0.5,
+        0.5625,
+        0.8125,
+        0.6875,
+        0.8125,
+        0.5625,
+        0.6875,
+        0.8125,
+        0.75,
+        0.625,
+        0.5625,
+        0.8125,
+        0.8125,
+        0.875,
+        0.6875,
+        0.625,
+        0.625,
+        0.5625,
+        0.9375,
+        1.0,
+        0.75,
+        0.75,
+        0.625,
+        0.625,
+        0.75,
+        0.6875
+      ],
+      "ci95": [
+        0.681640625,
+        0.759765625
+      ],
+      "mean": 0.720703125
+    }
+  },
+  "qualification_gates": {
+    "candidate_intact_both_cue_lower_above_075": true,
+    "candidate_scattered_both_cue_lower_above_075": true,
+    "fixed_intact_reference_original_24_gates": true,
+    "normalized_candidate_original_24_gates": true,
+    "normalized_intact_reference_original_24_gates": true,
+    "normalized_reading_writing_6_gates": true
+  },
+  "runs": {
+    "benchmark_v1": {
+      "audit_seconds": 207.89195423100318,
+      "audit_sha256": "a910b1896c37a6c5b06f5289c1703791133a85864d0d3ddcd068e7f3e513ebe5",
+      "body_individual_observations": 48,
+      "complete_sha256": "2b9b17f5424675e43692599ca6eb0f64b4f08c2af5c8030d4546bd45e2de174b",
+      "completed_utc": "2026-09-20T15:01:35.462020+00:00",
+      "figure_provenance_sha256": "7787806beeea0617a4fc1e6f675c03da6b8943c5a385cb9306c279deb582b38d",
+      "individual_observations": 3024,
+      "original_outputs_verified": 29,
+      "simulation_seconds": 202.33640066999942,
+      "workflow_seconds": 412.0018468509952
+    },
+    "fixture": {
+      "audit_seconds": 6.112210827006493,
+      "audit_sha256": "433dfdb31d69a60b96eb144a0e0c83e6913f620ecfeac3f8b0640ba31ed31b49",
+      "body_individual_observations": 96,
+      "complete_sha256": "66df309b681db65d4008bdbbfe75b1988d208bd470aaeabe72c378f9ac8d58fd",
+      "individual_observations": 6048,
+      "original_outputs_verified": 28,
+      "simulation_seconds": 6.548062285990454
+    },
+    "receiver_v1": {
+      "audit_seconds": 5740.926316929006,
+      "audit_sha256": "6f64015582635c3bd601d09634c7c83c4f5e7f7829a0dfd9acfe51b126712462",
+      "body_individual_observations": 6144,
+      "complete_sha256": "82ab5495c9989c380bee5445dae6d16d98608f1745bfadc7a46eb7538ae1a34d",
+      "completed_utc": "2026-09-20T18:13:34.604954+00:00",
+      "figure_provenance_sha256": "04f0b26698fd2b2ba91f6deff5dc8e20c9df4f542ba0c397ed5d29da8f303fce",
+      "individual_observations": 387072,
+      "original_outputs_verified": 215,
+      "simulation_seconds": 5628.809255413013,
+      "workflow_seconds": 11371.703950783005
+    }
+  },
+  "scientific_figure_visually_inspected": true,
+  "scientific_status": "RECEIVER_COMPENSATION_QUALIFIED",
+  "status": "PASS",
+  "subsequent_experiment_started": false,
+  "verification_code_sha256": "cde38e07581273ae9951dc1b1a01d075d1a516b461dcd5be185fad7cb0d8e248",
+  "verified_utc": "2026-09-20T21:11:46.531882+00:00",
+  "workflow_and_figure_references_verified": true
+}

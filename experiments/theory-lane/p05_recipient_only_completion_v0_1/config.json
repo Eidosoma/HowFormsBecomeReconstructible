@@ -1,0 +1,112 @@
+{
+  "version": "0.1",
+  "status": "AUTHORIZED_DEVELOPMENT_RECIPIENT_ONLY_COMPLETION",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "cases_per_block": [
+    7,
+    11,
+    9,
+    4,
+    4,
+    4,
+    16,
+    9
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "variants": [
+    "incoming",
+    "outgoing",
+    "common_completion",
+    "full_own",
+    "full_completion",
+    "support_imputed",
+    "recipient_completion",
+    "recipient_shuffled",
+    "erased"
+  ],
+  "enrollment_generation": 14,
+  "enrollment_count": 64,
+  "injury_cells": 24,
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "budgets": [
+    2048
+  ],
+  "primary_budget": 2048,
+  "settling_steps": 1024,
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "transfer_steps": 64,
+  "random_namespace": "P05_recipient_only_completion_v0_1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101005,
+  "numpy_version": "2.5.2",
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "benchmark": {
+    "block": 34006,
+    "replicates": 2,
+    "variants": 9,
+    "budget": 2048
+  },
+  "source_run": "../p05_approximate_alignment_v0_1/runs/pilot_v1",
+  "source_complete_sha256": "26d30123e97e6a21039bc41c966f58f246165e74dece6ce8b1a225abedad3cdd",
+  "regimes": [
+    "original",
+    "fresh"
+  ],
+  "original_replicates": [
+    0
+  ],
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  },
+  "completion": {
+    "support": "every exactly zero outgoing edge on the fixed toroidal lattice",
+    "magnitude": "median absolute nonzero outgoing weight; zero if none",
+    "preserve": "all nonzero outgoing edges byte for byte",
+    "shuffle": "fixed permutation of inferred signs over zero edges; same signs counts, magnitude and support"
+  }
+}

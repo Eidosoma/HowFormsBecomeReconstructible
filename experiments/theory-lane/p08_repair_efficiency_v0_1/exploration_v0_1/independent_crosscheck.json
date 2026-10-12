@@ -1,0 +1,74 @@
+{
+  "status": "PASS_POSTHOC_CROSSCHECK",
+  "fresh_first_failure_events": 46,
+  "fresh_recovery": {
+    "recovered_at_next_repair": 31,
+    "no_later_recovery": 6,
+    "end_of_horizon": 7,
+    "recovered_later": 2
+  },
+  "first_failures_reconstructed_from": "reads.csv; no raw-array analysis module imported",
+  "development_first_failures_since_repair": {
+    "repairs_1": {
+      "6": 2,
+      "11": 2,
+      "13": 1,
+      "12": 3,
+      "4": 5,
+      "10": 2,
+      "16": 1,
+      "7": 1,
+      "8": 1,
+      "14": 1
+    },
+    "repairs_3": {
+      "5": 5,
+      "4": 7,
+      "2": 2
+    },
+    "repairs_6": {
+      "2": 4
+    },
+    "repairs_9": {
+      "0": 1
+    }
+  },
+  "development_six_and_nine_events": [
+    {
+      "block": 82012,
+      "variant": "repairs_6",
+      "case": 0,
+      "generation": 20,
+      "since_last_repair": 2
+    },
+    {
+      "block": 82012,
+      "variant": "repairs_9",
+      "case": 7,
+      "generation": 19,
+      "since_last_repair": 0
+    },
+    {
+      "block": 82014,
+      "variant": "repairs_6",
+      "case": 5,
+      "generation": 32,
+      "since_last_repair": 2
+    },
+    {
+      "block": 82014,
+      "variant": "repairs_6",
+      "case": 9,
+      "generation": 29,
+      "since_last_repair": 2
+    },
+    {
+      "block": 82015,
+      "variant": "repairs_6",
+      "case": 1,
+      "generation": 26,
+      "since_last_repair": 2
+    }
+  ],
+  "new_dynamics_generated": 0
+}

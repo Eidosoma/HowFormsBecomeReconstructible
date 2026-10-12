@@ -1,0 +1,53 @@
+{
+  "status": "DEVELOPMENT_ONLY_PLANNING",
+  "contrast": "S6 - (10/17)*S18 - (7/17)*S1",
+  "development_mean": 0.014935661764705881,
+  "pooled_within_history_block_variance": 0.001782198403258362,
+  "development_blocks": 16,
+  "selected_sample_blocks": 132,
+  "records": 2112,
+  "blocks_per_history": 33,
+  "formula": "N >= (z_0.95 + z_0.80)^2 * (1.5 * within_history_variance) / (0.75 * development_mean)^2; round up to multiple of four",
+  "unrounded_required_blocks": 131.71765428917809,
+  "assumptions": {
+    "effect_multiplier": 0.75,
+    "variance_multiplier": 1.5,
+    "one_sided_alpha": 0.05,
+    "target_power": 0.8
+  },
+  "planning_power_at_development_effect": 0.992237448931811,
+  "planning_power_at_stress_assumptions": 0.800744852878861,
+  "sensitivity": [
+    {
+      "blocks": 32,
+      "pilot_power": 0.6392627857760914,
+      "stress_power": 0.3375033440668364
+    },
+    {
+      "blocks": 48,
+      "pilot_power": 0.7899594128687173,
+      "stress_power": 0.4428107637962015
+    },
+    {
+      "blocks": 64,
+      "pilot_power": 0.8820845967740156,
+      "stress_power": 0.5352046775327889
+    },
+    {
+      "blocks": 96,
+      "pilot_power": 0.9657401294889734,
+      "stress_power": 0.6836360105104569
+    },
+    {
+      "blocks": 128,
+      "pilot_power": 0.9908089831947136,
+      "stress_power": 0.7899594128687173
+    },
+    {
+      "blocks": 132,
+      "pilot_power": 0.992237448931811,
+      "stress_power": 0.800744852878861
+    }
+  ],
+  "limitations": "Normal approximation for planning the block mean. Four development blocks per history estimate variance imprecisely. Power is neither guaranteed nor an exact finite-sample property of percentile bootstrap inference. No extension or effect-based stopping."
+}

@@ -1,0 +1,432 @@
+{
+  "body_counts": {
+    "delayed": {
+      "both_correct": 345,
+      "both_reversed": 0,
+      "locked_output_failure": 156,
+      "other_failure": 11
+    },
+    "original": {
+      "both_correct": 266,
+      "both_reversed": 0,
+      "locked_output_failure": 238,
+      "other_failure": 8
+    }
+  },
+  "body_transition_rows_original_columns_delayed": [
+    [
+      244,
+      0,
+      22,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      97,
+      0,
+      133,
+      8
+    ],
+    [
+      4,
+      0,
+      1,
+      3
+    ]
+  ],
+  "causal_bottleneck_identified": false,
+  "focal_terminal_transition_rows_original_columns_delayed": [
+    [
+      303,
+      0,
+      20,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      45,
+      1,
+      108,
+      11
+    ],
+    [
+      8,
+      0,
+      3,
+      8
+    ]
+  ],
+  "labels": [
+    "both_correct",
+    "both_reversed",
+    "locked_output_failure",
+    "other_failure"
+  ],
+  "lineages": 512,
+  "new_trajectories": false,
+  "packet_statistics": {
+    "changed_by_delayed_renewal": {
+      "block_means": [
+        150.0625,
+        155.9375,
+        153.3125,
+        153.9375,
+        156.875,
+        149.4375,
+        159.0,
+        156.9375,
+        153.5625,
+        153.75,
+        133.5625,
+        152.3125,
+        156.0,
+        135.8125,
+        158.5,
+        155.5,
+        161.6875,
+        149.625,
+        156.4375,
+        155.4375,
+        139.6875,
+        152.9375,
+        156.0,
+        145.3125,
+        145.3125,
+        161.1875,
+        153.5625,
+        156.625,
+        157.1875,
+        161.0,
+        155.5,
+        159.625
+      ],
+      "mean_per_lineage": 153.17578125,
+      "total": 78426
+    },
+    "copied_strong": {
+      "block_means": [
+        264.625,
+        259.9375,
+        262.9375,
+        263.3125,
+        257.875,
+        265.25,
+        257.0,
+        259.5625,
+        261.25,
+        261.375,
+        263.375,
+        262.3125,
+        250.0625,
+        260.6875,
+        257.3125,
+        258.375,
+        255.125,
+        267.25,
+        259.0625,
+        261.4375,
+        268.25,
+        263.0625,
+        259.625,
+        258.0625,
+        263.625,
+        255.9375,
+        263.5625,
+        259.25,
+        259.0625,
+        254.3125,
+        260.4375,
+        255.625
+      ],
+      "mean_per_lineage": 260.279296875,
+      "total": 133263
+    },
+    "eligible_to_refresh": {
+      "block_means": [
+        156.0,
+        160.5625,
+        157.9375,
+        157.9375,
+        162.375,
+        155.125,
+        164.375,
+        161.1875,
+        158.5,
+        159.5,
+        156.75,
+        158.1875,
+        170.3125,
+        159.0625,
+        163.3125,
+        161.0,
+        165.875,
+        153.5,
+        160.6875,
+        159.0625,
+        153.0,
+        157.9375,
+        160.625,
+        162.1875,
+        156.125,
+        165.1875,
+        157.0625,
+        161.375,
+        162.1875,
+        166.5625,
+        160.3125,
+        163.5
+      ],
+      "mean_per_lineage": 160.228515625,
+      "total": 82037
+    },
+    "fraction_of_available_edges_copied": 0.6189642359498374
+  },
+  "sources_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E032_renewal_failure_diagnosis/audit.py": "41c078124744dd178f153cc2f4c4eeb543c0188609d713a41850be4b6905959c",
+    "E032_renewal_failure_diagnosis/metrics.py": "688ca25a88f4f2f64243ea51cf0ecc55e851a125f5b24682c334ca5050e9f4ab",
+    "E034_settled_rebuilding/analysis/lead_diagnostic_v1.py": "874177d3f2f762c7263b81b229b5a7b497233a5e18ca38fec4ce10821c2a36d7",
+    "E034_settled_rebuilding/runs/rebuilding_v1/COMPLETE.json": "d6017104ec81da1e9caa144811a07cb60dc4cc9063927d429a2f34a766568a0c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/INDEPENDENT_AUDIT.json": "d2160b9020974d3f67f44874fad9f8b42c20b6b1472d0b6fa3428bd9dde4ad3a",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027000.npz": "ddd5550fd9c714757c904684bd951ea109efd77ac9ce7159871c66c0d20174f7",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027001.npz": "3eaed89f3c6c62c06e44da6bde2f32990ce996a225e6544f9f374cf6f015c4da",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027002.npz": "d4d81a38b8f0b4ceef2fc07e766cd4c5101c0c5cf34ee0381acab3f55d7bbb44",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027003.npz": "c144159d6d6220374b09e8b7bd3ff1bcedfbcb7961ce8986b9ce61ccb83fada5",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027004.npz": "f917f931056c4df77256a6aa00ca215b89fbdb6cf691350a9acbfeff4da1c232",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027005.npz": "fe855b487afa5fea1199861d6621f22913fc8395d98d85368610b9401089942b",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027006.npz": "a69f6e560b5fe239c62dd9d32b3894f8137575b9aae6e9b4476f478266425560",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027007.npz": "4acb6231535526ded447aeaeafed50a8dadd44218ba410790afecbfb00a5fa84",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027008.npz": "be83feca0773def89e3b376a94941fc0710d477b77663867ee1a760ae1babef8",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027009.npz": "7440916dd025064e1fe92a190a913c8328115fc8ed162d6cb33c873883d94ef8",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027010.npz": "fb2c2f1e3d2f369dc2b9b2ff07e9e71a1a44493248bfe89aad862f6ead675bce",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027011.npz": "f917cbc346cabaa1cdb8d55dfc566a116a6433b7fe986987d6d2bfa8fbf06a0d",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027012.npz": "edd07b2aa7d017dcbb13da540640ccc3038d7aa34f59642a5c2e8463a2bbb33d",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027013.npz": "c771c730fa88ecc55d0434de2deb2961cb5cc90f6925313aa8ef011e472ec508",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027014.npz": "a161c764f8bdf29adbdab39a86e39292152e69522e1f67c8b9b5a51d30cfa2bb",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027015.npz": "f9ce5934e09dd561718018c4a132f1a6f5f8e0c329023568ae067b55aa379d03",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027016.npz": "f79ed34f11785ad5b220eedfd772d9b2c10b50561ee3a184ddba7eed66e189d2",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027017.npz": "7cbe9567d4d1b43284e88d0a65cc9aecdc864138ec9e068a732dc9ffe8b0fbad",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027018.npz": "d80d765061dbcbf3248c3ed9dbbc53cdd3cdb230dc27fd55103e4bc2fa907670",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027019.npz": "2c4e2d19afc6905fce229f7832789cc8adcb27dd4519fffd48254b66a51b4bc1",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027020.npz": "103f67c1e670fbda4c16432731a4f5462684ac6d5281d983829f2eba076426dd",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027021.npz": "4a24d0bcb259a9ab03c430abfb5a712d84db24ead510cbf533783a84a132a340",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027022.npz": "5d60dc9be41ad202e917ab148045708b188b1f1e48db8a0688013c23d31eb6fa",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027023.npz": "4f9bed9201d2bc960db2bd8ba8f3e0a529c411a7e69fef3162e489593142338f",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027024.npz": "5128e99ce58f4e1e2668b4ae0fe84a888ee1d9e02ffa54e4d0f953f7a46316ad",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027025.npz": "220f4509501e3f45b0264880217b3fb0f7a1e8ed0c642d63d06eacca3a4755f1",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027026.npz": "d1cad4043fa62946bcb47291933dfabc354eb0a5074f953505ace115ac349dcd",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027027.npz": "b8f1429a5ca42f4af1c03ad31b325875735e3bda3e36cd20d8f74a37089e29fb",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027028.npz": "5c93eda22d0f85e57b0ccbd19415691feb0f06fda39bda7995e0fb2a191770c5",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027029.npz": "716485523d3105e7bd6cc9b1f7e0ad403ae95b9088475832632e940be1e2fc2f",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027030.npz": "50d128b19a531df8431982059ce75e625b25e733211ccfa891b72fa159253fc6",
+    "E034_settled_rebuilding/runs/rebuilding_v1/boundary_027031.npz": "0c00a252b7ab40fa9312030ced94bcb01a858cd2fc4e56d09a5109cff8c4d91e",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027000.npz": "124c51d29238555e5c888402d2be5c684efeead91379028ae2bfe5630810c197",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027001.npz": "db10a02359b550f1ca06becaa6e053c7a5ef706fb08c27e4eb05c8401ead1772",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027002.npz": "94b9d60194588a6a4e2bb80f7733041be5322f2b51c96e490d2d48f1e0028058",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027003.npz": "7709fcc9dc24f4be0f144c02863103c6deafd8ce754a375a1524205ef6936f7c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027004.npz": "cddfd9f5529f3f2bc724b81f9ebf4d337618342feff3b7674a2be9a34247071d",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027005.npz": "3bc69fabf4288dad018a5f2e1714e3e82dc56f05374b6615bc5b51013068789c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027006.npz": "e78e474181b218ccaf5940534cba7adbd3fc1f43087a514a2595f071d2497d64",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027007.npz": "acc1b0b27c06f79fdf9aefeb5f7869bc3dd7e6f2fc25aafe09713beedd3a2cd0",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027008.npz": "8a7d7f739b160b445ffe74999f0030f9532e3a73781b25beabb5e00316e1e766",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027009.npz": "2b2acfff2f5ff9269d3b1956fcbca8a3b64bcb48a80085524e8dd31bcf41927e",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027010.npz": "1d43203d2de4d14a6472095c67cafe28fd6a853256f8a1c3b41322f17c08575c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027011.npz": "8f89e8a9a33de03db6ea3d5ba5246150d38d97d103be185f675fa408e6703e8e",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027012.npz": "7da951188ee7b8c95f02e9053d2c0e12c8ba03f0082d2266a313a4bdb8b43746",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027013.npz": "4eb1b7e2a89c334cd24f53aac3c5f1ab108aa529288ddac38c90f1a04b43a28c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027014.npz": "6f4c8f1c11c1a2363304fef5d6d8a95b54e1502794e43735ab26e32e8e0568da",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027015.npz": "ad36bc46a3a8d53796271780184fb17035fab33982c5311e30cc340aab4b751a",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027016.npz": "65840cf2be461e306de19cef5acff4277de39d60cea5f9135141eb3406f72d65",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027017.npz": "afa70435cae120a08df3aaaf1f39f003370a45a8e62f7bf0a4b0210b51f3570f",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027018.npz": "cae9c31059ca9b592757b3d42809c7fc210ac3080e694772375432fb88404232",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027019.npz": "4cacc39fdb5b2962a2a73aa22555caec40105802b38178a73be02ba627465573",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027020.npz": "fe1f3e4e9a63ea4f2358aede1f4c90ba39cdf64687c6b0f3d276d29e50c163bf",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027021.npz": "785525e9463e1b96021b0ee68b487edeb34662c16c9860934f1334d423dbfb96",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027022.npz": "09a5071a31b752f60ab2892442aff3055932e46efbde8be0991c5f338ca64635",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027023.npz": "db1e1cc203ada99f960a35f196ca072dafb5e02a31e15d2851b80fc23974513d",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027024.npz": "7929f4f15bf94913be5ad30e8a7dbae90dca1715d82c78362ee90ced2fd1f792",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027025.npz": "ffe02a3c1c6a76becbdbcb53143c9bb4cab4370b6c6466e628751868afd1f73c",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027026.npz": "8b905716ce27738ab805e637c0a320b278ad587ec30ef469dd964b146f70e162",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027027.npz": "9b24e5666c44c01ea53926ad5dfade15330553e919a7f507b378ee774ab6e398",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027028.npz": "1b299d032eabe27f72bb2312f65c5516ee9e86cd51d792e74781a67edd50f435",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027029.npz": "8704e80a8e405a2e24b6e9bc724d4a92ced04377d3bae349f96d4590acb6547d",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027030.npz": "5d3fc404f7488c49062f96a78670a71a34159eba14c251265c31ba8858fae7be",
+    "E034_settled_rebuilding/runs/rebuilding_v1/cases_027031.npz": "3a394bd4cd1fd6e0f0f31062c86bb7efa8d0f406fb69dac82654f3a7bc46fc74",
+    "E034_settled_rebuilding/runs/rebuilding_v1/summary.json": "2d32512fbc2e147cf2c57378c2517c590a23695716a2b3b0bdf0b152951711d4"
+  },
+  "status": "EXPLORATORY_ARITHMETIC_CROSSCHECK_PASS",
+  "terminal_counts": {
+    "delayed/fixed_four/delayed": {
+      "intact": {
+        "both_correct": 43,
+        "both_reversed": 0,
+        "locked_output_failure": 461,
+        "other_failure": 8
+      },
+      "scattered": {
+        "both_correct": 19,
+        "both_reversed": 0,
+        "locked_output_failure": 492,
+        "other_failure": 1
+      },
+      "square": {
+        "both_correct": 37,
+        "both_reversed": 0,
+        "locked_output_failure": 464,
+        "other_failure": 11
+      }
+    },
+    "delayed/fixed_four/original": {
+      "intact": {
+        "both_correct": 36,
+        "both_reversed": 0,
+        "locked_output_failure": 471,
+        "other_failure": 5
+      },
+      "scattered": {
+        "both_correct": 12,
+        "both_reversed": 0,
+        "locked_output_failure": 498,
+        "other_failure": 2
+      },
+      "square": {
+        "both_correct": 31,
+        "both_reversed": 0,
+        "locked_output_failure": 473,
+        "other_failure": 8
+      }
+    },
+    "delayed/local_strength/delayed": {
+      "intact": {
+        "both_correct": 397,
+        "both_reversed": 0,
+        "locked_output_failure": 92,
+        "other_failure": 23
+      },
+      "scattered": {
+        "both_correct": 356,
+        "both_reversed": 1,
+        "locked_output_failure": 132,
+        "other_failure": 23
+      },
+      "square": {
+        "both_correct": 401,
+        "both_reversed": 0,
+        "locked_output_failure": 91,
+        "other_failure": 20
+      }
+    },
+    "delayed/local_strength/original": {
+      "intact": {
+        "both_correct": 390,
+        "both_reversed": 4,
+        "locked_output_failure": 102,
+        "other_failure": 16
+      },
+      "scattered": {
+        "both_correct": 325,
+        "both_reversed": 3,
+        "locked_output_failure": 165,
+        "other_failure": 19
+      },
+      "square": {
+        "both_correct": 375,
+        "both_reversed": 2,
+        "locked_output_failure": 112,
+        "other_failure": 23
+      }
+    },
+    "original/fixed_four/delayed": {
+      "intact": {
+        "both_correct": 48,
+        "both_reversed": 0,
+        "locked_output_failure": 455,
+        "other_failure": 9
+      },
+      "scattered": {
+        "both_correct": 14,
+        "both_reversed": 0,
+        "locked_output_failure": 496,
+        "other_failure": 2
+      },
+      "square": {
+        "both_correct": 42,
+        "both_reversed": 0,
+        "locked_output_failure": 465,
+        "other_failure": 5
+      }
+    },
+    "original/fixed_four/original": {
+      "intact": {
+        "both_correct": 33,
+        "both_reversed": 0,
+        "locked_output_failure": 471,
+        "other_failure": 8
+      },
+      "scattered": {
+        "both_correct": 9,
+        "both_reversed": 0,
+        "locked_output_failure": 500,
+        "other_failure": 3
+      },
+      "square": {
+        "both_correct": 34,
+        "both_reversed": 0,
+        "locked_output_failure": 471,
+        "other_failure": 7
+      }
+    },
+    "original/local_strength/delayed": {
+      "intact": {
+        "both_correct": 370,
+        "both_reversed": 0,
+        "locked_output_failure": 123,
+        "other_failure": 19
+      },
+      "scattered": {
+        "both_correct": 287,
+        "both_reversed": 0,
+        "locked_output_failure": 209,
+        "other_failure": 16
+      },
+      "square": {
+        "both_correct": 347,
+        "both_reversed": 0,
+        "locked_output_failure": 144,
+        "other_failure": 21
+      }
+    },
+    "original/local_strength/original": {
+      "intact": {
+        "both_correct": 338,
+        "both_reversed": 2,
+        "locked_output_failure": 153,
+        "other_failure": 19
+      },
+      "scattered": {
+        "both_correct": 245,
+        "both_reversed": 2,
+        "locked_output_failure": 246,
+        "other_failure": 19
+      },
+      "square": {
+        "both_correct": 309,
+        "both_reversed": 0,
+        "locked_output_failure": 184,
+        "other_failure": 19
+      }
+    }
+  },
+  "utc": "2026-09-27T22:38:52.819594+00:00"
+}

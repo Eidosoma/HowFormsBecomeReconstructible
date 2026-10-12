@@ -1,0 +1,63 @@
+{
+  "active_jobs": [],
+  "actual_minus_forecast_seconds": -161.3483465926256,
+  "all_original_outputs_and_source_provenance_verified": true,
+  "available_bytes": 69250580480,
+  "figures_visually_inspected": true,
+  "forecast_seconds": 180.80056539550424,
+  "frozen_inputs_verified": 12,
+  "new_trajectories_run": false,
+  "operational_receipts_verified": true,
+  "runs": {
+    "benchmark_v1": {
+      "audit_sha256": "74f4a2884d892034d1e7293fb66530b834e05b82347bb0bd71abc9e061eba17f",
+      "blocks": 1,
+      "complete_sha256": "5b558ed9eb44b9f60f79a7e50e9dcd5a9a3edc7ebc7765fbde9ce181b7199638",
+      "figure_provenance_sha256": "2705f594eaf525efc6c12be036b8ec65c247e094f7d26ea239eea891c0f123d6",
+      "finished_utc": "2026-10-06T14:01:18.515870+00:00",
+      "original_outputs_verified": 17,
+      "retained_bytes": 1750828,
+      "summaries": 3480,
+      "summary_sha256": "ed410e22cb1ac3a29867262426a550695e57d39e972f9bc2e40329ee883948a6",
+      "workflow_seconds": 4.054843086982146
+    },
+    "diagnosis_v1": {
+      "audit_sha256": "3c408937bdc6e32838ad5997825059abbb663185f77820710c23d174ac2cae72",
+      "blocks": 32,
+      "complete_sha256": "805419195ea5db55b92a5fdc277148cf5a4ac3bee10be9685ae0769129b4d606",
+      "figure_provenance_sha256": "c633916662a75123cae7a9d41801fd01f9db2555247c2d70603ee49786d761bf",
+      "finished_utc": "2026-10-06T14:02:27.967932+00:00",
+      "original_outputs_verified": 79,
+      "retained_bytes": 5554129,
+      "summaries": 3480,
+      "summary_sha256": "b4970a4c9ebf2df670cc473407780956505081ecce316307c131df10ae481bbc",
+      "workflow_seconds": 19.452218802878633
+    }
+  },
+  "scientific_log_sha256": "2035e27846ee53fc3a868b098f342087124c1ec638ecfe2d9387dd1d14ac9054",
+  "source_sha256": {
+    "E041_full_rewrite_confirmation/analysis/closeout_v1.json": "93cfc36dac6f968ce915b36c705699e50c12c1b50929981363c932645b5c773c",
+    "E041_full_rewrite_confirmation/runs/serial_v1/COMPLETE.json": "e899af49ba28b49633e70bb01fbb418f46ace06b2684c68299ef07ac8296582d",
+    "E041_full_rewrite_confirmation/runs/serial_v1/INDEPENDENT_AUDIT.json": "e9081ff7160e03347669ade627e1c629404d28d5a605601a3c4f1cea396b0e1c",
+    "E041_full_rewrite_confirmation/runs/serial_v1/summary.json": "fa520a459e4f73cca635b294d7164a209f2f2d6c7c7bd50fc7f923978f67332a",
+    "E042_late_failure_diagnosis/analysis/closeout_v1.json": "4bd151e65beee9709a6d61a861bd95c2147d58fa5bb305cda206767f42bea25c",
+    "E042_late_failure_diagnosis/runs/benchmark_v1/COMPLETE.json": "6a2702676ac4407f0e7d034510c247e69156bdca7cbcec0eb92452b5dffe4cdd",
+    "E042_late_failure_diagnosis/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "0112cedcad38b10d426f1ca624a5bf5b644c7bd96348a9fcc0722c8f13c700da",
+    "E042_late_failure_diagnosis/runs/benchmark_v1/summary.json": "384640f83d1062e43a9e1989ea3872b3a71fc32acd4ec9c1ae2d71744f4f60ab",
+    "E042_late_failure_diagnosis/runs/diagnosis_v1/COMPLETE.json": "7ba822dc8395d24c5ba9d9b28cb9e3aaffc95c7ee6aae427722faab7e3fcae72",
+    "E042_late_failure_diagnosis/runs/diagnosis_v1/INDEPENDENT_AUDIT.json": "05b7fe3e01030ebbdacdd0842a7c94c5cf9bed6ec64e9e0bba33eba9b0f248d5",
+    "E042_late_failure_diagnosis/runs/diagnosis_v1/summary.json": "0587d4c4454bd89d26e58c282e999f09c286611fa320e0a324f5295515652096",
+    "E043_late_reader_timing/analysis/closeout_v1.json": "9a82ff9c395180e7593f688b25aa80e93ed667d1e370f95fff95931cc2740953",
+    "E043_late_reader_timing/runs/expression_v1/COMPLETE.json": "d2c0fe010adadab7f14316f63a90180b6d690211adb01b6ae16aa687c26fd163",
+    "E043_late_reader_timing/runs/expression_v1/INDEPENDENT_AUDIT.json": "1690c39c495ae91f4507411223a108362aa04b389a11b48db126c86784cd8608",
+    "E043_late_reader_timing/runs/expression_v1/summary.json": "d7a4024e390c538186f2b0967a3857b3a9257ef4d73a52f953b38d54d9216db8",
+    "E043_late_reader_timing/runs/fixture_v1/COMPLETE.json": "e8a676930147c6ced0f28699d0108a8d56f70edf20c346d8ea2fb143b760b1fc",
+    "E043_late_reader_timing/runs/fixture_v1/INDEPENDENT_AUDIT.json": "bb6e04c2ea001b97ea4187e4ecefee2a8e7629d3257da0836f74aad1133f1dbb",
+    "E043_late_reader_timing/runs/fixture_v1/summary.json": "3beb67af7ed4810b1d6d9b3f34dc69d6a66293d6e0eb00149e0324c56feb9ae5"
+  },
+  "status": "PASS",
+  "storage_forecast_including_reserve_bytes": 302297216,
+  "subsequent_experiment_started": false,
+  "utc": "2026-10-06T14:04:45.791363+00:00",
+  "verification_code_sha256": "e8bbeadf891770466d0c9d2e6842700c0ae9f7012b575d3228e63d8c7aa41d76"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETE_REVIEWED",
+  "reviewed_utc": "2026-10-09T14:14:35.970893+00:00",
+  "run": "TT005/runs/pilot_v1",
+  "complete_sha256": "5cc24796fcf5cbb2b717d335e04f49436cad1945d4f5fd5348582052675cb6c4",
+  "completed_utc": "2026-10-09T13:18:56.820411+00:00",
+  "seconds": 1226.7481811109465,
+  "paired_cue_assays": 2816,
+  "output_files_verified": 19,
+  "frozen_input_files_verified": 37,
+  "dynamics_audit": {
+    "all_state_and_noise_commitments_match": true,
+    "contexts_replayed": 8,
+    "first_cue_invariant": true,
+    "native_rebuilds": 0,
+    "paired_cue_assays": 2816,
+    "scope": "Separate seed construction, physical geometry and native auditor equations; shared NumPy runtime and declared sampling contract.",
+    "seconds": 603.3756726400461,
+    "status": "PASS",
+    "update_batches_replayed": 16384,
+    "utc": "2026-10-09T13:18:54.392775+00:00"
+  },
+  "analysis_audit": {
+    "categories": 2816,
+    "context_rows": 352,
+    "methods": "Scalar port scoring; independent count, margin and paired-block contrast reconstruction; no production scoring imports.",
+    "paired_contrasts": 33,
+    "pooled_rows": 44,
+    "scalar_cue_scores": 5632,
+    "seconds": 0.16258066799491644,
+    "status": "PASS",
+    "utc": "2026-10-09T13:18:56.729847+00:00"
+  },
+  "technical_checks_passed": 9,
+  "figure_inspected": true,
+  "interpretation": "TT005/INTERPRETATION.md",
+  "interpretation_sha256": "1133ecf224f73edebf639c953bf7d251a2e5f03dffeee5c95ff3f6d705c15719",
+  "native_forecast_status": "ABSTAIN",
+  "classification": "DEVELOPMENT",
+  "successor_job_launched": false,
+  "automatic_polling": false
+}

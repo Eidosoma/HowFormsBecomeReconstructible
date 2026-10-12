@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-07T20:21:06.426347+00:00",
+  "status": "TECHNICAL_TEST_AMENDMENT",
+  "failed_freeze": "analysis/freeze_v1",
+  "failed_receipt": "analysis/technical_v1.json",
+  "reason": "Cross-variant erased -0 and +0 have distinct IEEE bytes but equal effective values.",
+  "correction": "Compare decoded effective values across variants; independent model/audit packet byte comparisons remain exact.",
+  "scientific_trajectories_run": false,
+  "production_equations_changed": false,
+  "decision_rules_changed": false,
+  "new_version": 2
+}

@@ -1,0 +1,65 @@
+{
+  "end_to_end_fixture_passed": true,
+  "fixture_audit_sha256": "0981e08b6b869ea22a206b42dbd492c5a45ebc1133a987f689d323167662c770",
+  "fixture_complete_sha256": "aae5da4d735624a44f38060edde2ef47beccbcaf0a75aefc0b74a6335d9c712e",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E024_serial_compensation/model.py": "b0cae09a039bfd40ee3dd20820985032a15ad02d9a78bb4a6428405d59f82250",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E031_renewal_durability/evidence.py": "5ab31fc8402f2102c1360c9a074b478b52f38d3873fb4173fe2c27a1baa8501b",
+    "E031_renewal_durability/model.py": "f62e9c4f9665e96907bfe8127e066daa9e1e8d70dff093dffc578eaa96a3979d",
+    "E034_settled_rebuilding/model.py": "d319d3726c10074d9519494dc1178a33afc840d564664372c39b0612b15aa019",
+    "E035_cue_selective_capture/model.py": "cc75ba0846ae7d538b922c5724acaa748762176cc8e66e50b6ba8bf25c32775f",
+    "E036_serial_cue_capture_v2/model.py": "c38b805e3b705cfcab52d5fed6e008e82c177d4e4e02c82c2511b6c8588f41d9",
+    "E038_weak_bridge_capture/model.py": "6dc0e2271943bc093034bd758b6a51dbc04e4a66e18d3d27df0615de018ca948",
+    "E039_weak_bridge_confirmation/PROTOCOL.md": "43dc686c195328be3238e0bc4850bcd8a9e29db002d1d99f57fd3ec9cba5426f",
+    "E039_weak_bridge_confirmation/SOURCE_DATA.json": "8cc5f69a0f3336c9d48ed6b3b3e62274f70fada2e05ac2be25c033eb5aa47dbd",
+    "E039_weak_bridge_confirmation/audit.py": "a934fef35db58d60caf5be16d069d5969141f8a6a14ce6c217a3a2e17ef5c62a",
+    "E039_weak_bridge_confirmation/evidence.py": "d501155474fb109325525573911c00f7ac0ffbe0b9afd7f97faabb5c2dde5569",
+    "E039_weak_bridge_confirmation/model.py": "6dc0e2271943bc093034bd758b6a51dbc04e4a66e18d3d27df0615de018ca948",
+    "E039_weak_bridge_confirmation/plot.py": "aa5f62223fb2985498c7ce675b5fa7237fb30627535df890dff88aba2e6d43df",
+    "E039_weak_bridge_confirmation/run.py": "548d49f322f10189ed265b0ff5762329c6fa4e0c660c68ab68852ef38f288177",
+    "E039_weak_bridge_confirmation/tests.py": "1c33b5dec08e3ae7169fb1e95851f071d3a7080112af9c50132418efb8275701",
+    "E039_weak_bridge_confirmation/workflow.py": "aa6fc0f58a4c1bf20ae292276e584c012e852dac825d3334e459d794248c1682",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "inputs_unchanged": true,
+  "runner_sha256": "e77beddc6bec99029d7133c3213206d28b2319a790bdb82dedbccba4c007745e",
+  "seconds": 59.0455426950939,
+  "stages": {
+    "fixture": {
+      "log_sha256": "3c6e0cd3319a1156124c63423d5486135d90edace76bf77ceaf3fdce409fd2d7",
+      "returncode": 0,
+      "seconds": 22.99993067397736
+    },
+    "fixture_audit": {
+      "log_sha256": "3e1c14a7d70d7ab81753c38450d09c989d632821dbcd9eef22dae742504bbf03",
+      "returncode": 0,
+      "seconds": 27.941006125183776
+    },
+    "fixture_plot": {
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "seconds": 1.4824274759739637
+    },
+    "tests": {
+      "log_sha256": "3d9bd5159a61f981fff5234b867df4eaf9f12d0257e9207dcf3e4cf475d14742",
+      "returncode": 0,
+      "seconds": 6.592349686892703
+    }
+  },
+  "status": "PASS",
+  "tests": 11,
+  "utc": "2026-10-01T19:17:48.911031+00:00"
+}

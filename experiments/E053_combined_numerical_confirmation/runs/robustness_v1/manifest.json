@@ -1,0 +1,312 @@
+{
+  "contract": {
+    "blocks": [
+      36000,
+      36001,
+      36002,
+      36003,
+      36004,
+      36005,
+      36006,
+      36007,
+      36008,
+      36009,
+      36010,
+      36011,
+      36012,
+      36013,
+      36014,
+      36015,
+      36016,
+      36017,
+      36018,
+      36019,
+      36020,
+      36021,
+      36022,
+      36023,
+      36024,
+      36025,
+      36026,
+      36027,
+      36028,
+      36029,
+      36030,
+      36031
+    ],
+    "channel_applications": 33,
+    "conditions": [
+      "paired/reference",
+      "paired/grid_2m16",
+      "paired/record_noise_1e4",
+      "paired/floor_1e4",
+      "paired/grid_noise",
+      "paired/grid_floor",
+      "paired/noise_floor",
+      "paired/grid_noise_floor",
+      "paired/arithmetic32",
+      "paired/combined32",
+      "noise_0/reference",
+      "noise_0/grid_2m16",
+      "noise_0/record_noise_1e4",
+      "noise_0/floor_1e4",
+      "noise_0/grid_noise",
+      "noise_0/grid_floor",
+      "noise_0/noise_floor",
+      "noise_0/grid_noise_floor",
+      "noise_0/arithmetic32",
+      "noise_0/combined32"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 32,
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "write_steps": 128
+    },
+    "experiment": "E053",
+    "generations": 32,
+    "mode": "scientific",
+    "pairings": [
+      [
+        "paired",
+        1.0
+      ],
+      [
+        "noise_0",
+        0.0
+      ]
+    ],
+    "prior_cases_pooled": false,
+    "readers": [
+      [
+        "float64",
+        0.0
+      ],
+      [
+        "float32",
+        0.0
+      ],
+      [
+        "float64",
+        0.0001
+      ],
+      [
+        "float32",
+        0.0001
+      ]
+    ],
+    "regimes": [
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 0,
+          "grid": 0,
+          "noise": 0
+        },
+        "grid_step": 0.0,
+        "id": "reference",
+        "record_noise_sd": 0.0,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 0,
+          "grid": 1,
+          "noise": 0
+        },
+        "grid_step": 1.52587890625e-05,
+        "id": "grid_2m16",
+        "record_noise_sd": 0.0,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 0,
+          "grid": 0,
+          "noise": 1
+        },
+        "grid_step": 0.0,
+        "id": "record_noise_1e4",
+        "record_noise_sd": 0.0001,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0001,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 1,
+          "grid": 0,
+          "noise": 0
+        },
+        "grid_step": 0.0,
+        "id": "floor_1e4",
+        "record_noise_sd": 0.0,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 0,
+          "grid": 1,
+          "noise": 1
+        },
+        "grid_step": 1.52587890625e-05,
+        "id": "grid_noise",
+        "record_noise_sd": 0.0001,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0001,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 1,
+          "grid": 1,
+          "noise": 0
+        },
+        "grid_step": 1.52587890625e-05,
+        "id": "grid_floor",
+        "record_noise_sd": 0.0,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0001,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 1,
+          "grid": 0,
+          "noise": 1
+        },
+        "grid_step": 0.0,
+        "id": "noise_floor",
+        "record_noise_sd": 0.0001,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float64",
+        "denominator_floor": 0.0001,
+        "factors": {
+          "arithmetic32": 0,
+          "floor": 1,
+          "grid": 1,
+          "noise": 1
+        },
+        "grid_step": 1.52587890625e-05,
+        "id": "grid_noise_floor",
+        "record_noise_sd": 0.0001,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float64"
+      },
+      {
+        "arithmetic": "float32",
+        "denominator_floor": 0.0,
+        "factors": {
+          "arithmetic32": 1,
+          "floor": 0,
+          "grid": 0,
+          "noise": 0
+        },
+        "grid_step": 0.0,
+        "id": "arithmetic32",
+        "record_noise_sd": 0.0,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float32"
+      },
+      {
+        "arithmetic": "float32",
+        "denominator_floor": 0.0001,
+        "factors": {
+          "arithmetic32": 1,
+          "floor": 1,
+          "grid": 1,
+          "noise": 1
+        },
+        "grid_step": 1.52587890625e-05,
+        "id": "combined32",
+        "record_noise_sd": 0.0001,
+        "record_noise_support": "nonzero_available",
+        "record_precision": "float32"
+      }
+    ],
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E051_cue_pairing_robustness/audit.py": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a",
+    "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "E053_combined_numerical_confirmation/PLAN.json": "fbff0bad125f898a80e0a69c5b8e9f12ddcbde9148a1c5f05521a5e3c6c4a68b",
+    "E053_combined_numerical_confirmation/PROTOCOL.md": "abe260c6b774a71d9ecce54d4893af8cdf326fd8969e2d17aea8a745d0bb59de",
+    "E053_combined_numerical_confirmation/SOURCE_DATA.json": "1d6608fe06e0ba3b7bfac0492bd4fb5e0a14df256b980566c88976de3cbbc62a",
+    "E053_combined_numerical_confirmation/audit.py": "9133ebc045f6f5f68e800371a8c788e252f10232322937770d887ed45e5fe085",
+    "E053_combined_numerical_confirmation/audit_dynamics.py": "7a17b0f5453909b1300aa3e417ae53c17782e74e584794b581e677a0714105cb",
+    "E053_combined_numerical_confirmation/design.py": "64d3eb9748bcedf0f6fc5bffb3846453461b673bd2eabd08d7591348d8a95d0c",
+    "E053_combined_numerical_confirmation/evidence.py": "b0144941a8f6e43de0eb0d7770eb0cefd0d61cb6c3cb66c69494573501f1c491",
+    "E053_combined_numerical_confirmation/model.py": "d513797439ada1ae9f46c5d69db3444b43a8c33c22ed3ef4fe8438e1acf4dac6",
+    "E053_combined_numerical_confirmation/plot.py": "587a5fba6d0404c35d925cdf4457380aa48ad37d36d60fb0fb6757946d562d12",
+    "E053_combined_numerical_confirmation/run.py": "790fe739da3e759cb144e9c997b7e685c795bd2a4cdbba67e30a8439c6c5e1c5",
+    "E053_combined_numerical_confirmation/tests.py": "6cc25986323a9301e035af016f7af23bca6fbfe2512516062c286d6c5bac57d9",
+    "E053_combined_numerical_confirmation/workflow.py": "4b01b36a321bbc9fdcb389600886c26ec6d61125ff05e3cc679ecdbc3c2f7f2c",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-10-10T12:51:04.399831+00:00",
+  "status": "RUNNING"
+}

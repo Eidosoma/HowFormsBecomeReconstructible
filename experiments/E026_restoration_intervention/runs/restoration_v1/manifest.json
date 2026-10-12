@@ -1,0 +1,149 @@
+{
+  "contract": {
+    "blocks": [
+      23000,
+      23001,
+      23002,
+      23003,
+      23004,
+      23005,
+      23006,
+      23007,
+      23008,
+      23009,
+      23010,
+      23011,
+      23012,
+      23013,
+      23014,
+      23015,
+      23016,
+      23017,
+      23018,
+      23019,
+      23020,
+      23021,
+      23022,
+      23023,
+      23024,
+      23025,
+      23026,
+      23027,
+      23028,
+      23029,
+      23030,
+      23031
+    ],
+    "conditions": [
+      "copy",
+      "copy_plus_restored",
+      "rebuilt_without_restored",
+      "rebuilt"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 3,
+      "read_steps": 2048,
+      "settling_steps": 256,
+      "write_steps": 128
+    },
+    "experiment": "E026",
+    "gain": 2.0,
+    "mode": "post_hoc_intervention",
+    "panels": [
+      [
+        "copy",
+        "fixed_four"
+      ],
+      [
+        "copy_plus_restored",
+        "fixed_four"
+      ],
+      [
+        "rebuilt_without_restored",
+        "fixed_four"
+      ],
+      [
+        "rebuilt",
+        "fixed_four"
+      ],
+      [
+        "copy",
+        "local_strength"
+      ],
+      [
+        "copy_plus_restored",
+        "local_strength"
+      ],
+      [
+        "rebuilt_without_restored",
+        "local_strength"
+      ],
+      [
+        "rebuilt",
+        "local_strength"
+      ]
+    ],
+    "receivers": [
+      "fixed_four",
+      "local_strength"
+    ],
+    "source": "cohort",
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E026_restoration_intervention/PROTOCOL.md": "20b16a3c1f524cb5c9ac10fbe43cda833214b75ffb2c31d08de352d626044d87",
+    "E026_restoration_intervention/SOURCE_DATA.json": "c6674fb054ba98224c83d77e88c08175f1b31caeaf590b6c90236a4882271b22",
+    "E026_restoration_intervention/audit.py": "ac1666034be5d3ad81ad296b66cac502228d6d2e945248f1f1d825e77eefb1f7",
+    "E026_restoration_intervention/model.py": "3dcdff7f7c5899b137b1a288749a1334e6c7debfc62a7fb659412c67c80d110a",
+    "E026_restoration_intervention/plot.py": "29ed68301b55a1f0858e9bc3e13084a680fd30d7e156cdea87ba9fe643d7c7a4",
+    "E026_restoration_intervention/run.py": "29ba34da018771df7fc25432f4c4e3f9ea84c2956cd0f9bc71887d6daa21017a",
+    "E026_restoration_intervention/tests.py": "5e33b9c38439a0a105928a8a9c4cff6f098c64d9b12c928d04e91489bbe8a876",
+    "E026_restoration_intervention/workflow.py": "02f1e77e9644c28e04b7ae831d3d14f22b4c11515d2c9d75380a639a2500f2fb",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-21T18:21:58.010116+00:00",
+  "status": "RUNNING"
+}

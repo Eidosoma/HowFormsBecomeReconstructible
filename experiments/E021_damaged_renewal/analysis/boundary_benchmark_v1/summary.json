@@ -1,0 +1,2774 @@
+{
+  "all_existing_intact_terminal_rows_and_block_means_reproduced": true,
+  "all_immediate_capture_bytes_and_serial_boundaries_verified": true,
+  "graph_checks": {
+    "graph_zero_full_wraparound_and_threshold_checks": true,
+    "rule_cue_axes_checked": true
+  },
+  "groups": {
+    "1": {
+      "intact_renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "body_end_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_cues_correct": {
+          "maximum": 2.0,
+          "mean": 2.0,
+          "minimum": 2.0
+        },
+        "body_late_mean_margin": {
+          "maximum": 0.974081224381909,
+          "mean": 0.9413730827950303,
+          "minimum": 0.8955767441598383
+        },
+        "body_late_to_assay": {
+          "failure_failure": 0,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 4
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.9833004683753384,
+          "mean": 0.9456002510078654,
+          "minimum": 0.9155675322557955
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "correct": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9889466214495218,
+          "mean": 0.9784630990835058,
+          "minimum": 0.966550756651196
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9889442151780925,
+          "mean": 0.9790247546122154,
+          "minimum": 0.9664103781752331
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9865666011042719,
+          "mean": 0.9855960438424223,
+          "minimum": 0.9851079811481953
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.983749311152645,
+          "mean": 0.9817667223390543,
+          "minimum": 0.9799406147785825
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.04699749172398773,
+          "mean": 0.03147894496596204,
+          "minimum": 0.006000419609108342
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "masked_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 0.75,
+          "minimum": 0.0,
+          "successes": 3
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9842432245768361,
+          "mean": 0.9464114030610595,
+          "minimum": 0.9206148012044131
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.8035423200646826,
+          "mean": 0.7762742963143209,
+          "minimum": 0.7587879806802
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9354577926388328,
+          "minimum": 0.931563962884068
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.18046946295285668,
+          "mean": 0.1719173770767347,
+          "minimum": 0.161070938363071
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "protected_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9842432245768361,
+          "mean": 0.9464114030610595,
+          "minimum": 0.9206148012044131
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "read_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.017241379310344827,
+          "mean": 0.017241379310344827,
+          "minimum": 0.017241379310344827
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.001211230553550182,
+          "mean": -0.002325367328514569,
+          "minimum": -0.003439504103478956
+        },
+        "body_late_to_assay": {
+          "failure_failure": 4,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 0
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.043602721618913695,
+          "mean": 0.043537636540128336,
+          "minimum": 0.04347255146134298
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 4,
+        "effective_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "weak_output": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.015496496358535016,
+          "mean": 0.015380094116013808,
+          "minimum": 0.015263691873492602
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.012651436480210228,
+          "mean": 0.01261602875828273,
+          "minimum": 0.012580621036355233
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.19921875,
+          "mean": 0.1953125,
+          "minimum": 0.19140625
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.9764494606278229,
+          "mean": 0.9405989771737988,
+          "minimum": 0.9121023683140167
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.5,
+          "mean": 0.4939495699304819,
+          "minimum": 0.48792270531400966
+        }
+      },
+      "renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 0.5,
+          "minimum": 0.0,
+          "successes": 2
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 1.0,
+          "mean": 0.7435344827586207,
+          "minimum": 0.34913793103448276
+        },
+        "body_end_both": {
+          "maximum": 1.0,
+          "mean": 0.75,
+          "minimum": 0.0,
+          "successes": 3
+        },
+        "body_late_both": {
+          "maximum": 1.0,
+          "mean": 0.75,
+          "minimum": 0.0,
+          "successes": 3
+        },
+        "body_late_cues_correct": {
+          "maximum": 2.0,
+          "mean": 1.75,
+          "minimum": 1.0
+        },
+        "body_late_mean_margin": {
+          "maximum": 0.8516299951616517,
+          "mean": 0.5924048154894019,
+          "minimum": 0.002044186130157999
+        },
+        "body_late_to_assay": {
+          "failure_failure": 1,
+          "failure_success": 0,
+          "success_failure": 1,
+          "success_success": 2
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.8800276707070861,
+          "mean": 0.8216661849889902,
+          "minimum": 0.7796342638458368
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.8035423200646826,
+          "mean": 0.7762742963143209,
+          "minimum": 0.7587879806802
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9354577926388328,
+          "minimum": 0.931563962884068
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "correct": 7,
+          "same_positive": 1
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9774601202257573,
+          "mean": 0.9295465800945527,
+          "minimum": 0.8815580628342071
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.7980045512780596,
+          "mean": 0.7623509628723429,
+          "minimum": 0.7265966846016316
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.980361019470452,
+          "mean": 0.9051752082508867,
+          "minimum": 0.7215455513497098
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9717521259639343,
+          "mean": 0.7823753946401011,
+          "minimum": 0.4785002230481267
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.24280201358382875,
+          "mean": 0.2123646966944649,
+          "minimum": 0.19319726805583706
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "write_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "assay_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 1.0,
+          "mean": 0.7435344827586207,
+          "minimum": 0.34913793103448276
+        },
+        "body_end_both": {
+          "maximum": 1.0,
+          "mean": 0.75,
+          "minimum": 0.0,
+          "successes": 3
+        },
+        "body_late_both": {
+          "maximum": 1.0,
+          "mean": 0.75,
+          "minimum": 0.0,
+          "successes": 3
+        },
+        "body_late_cues_correct": {
+          "maximum": 2.0,
+          "mean": 1.75,
+          "minimum": 1.0
+        },
+        "body_late_mean_margin": {
+          "maximum": 0.8516299951616517,
+          "mean": 0.5924048154894019,
+          "minimum": 0.002044186130157999
+        },
+        "body_late_to_assay": {
+          "failure_failure": 1,
+          "failure_success": 0,
+          "success_failure": 3,
+          "success_success": 0
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.8800276707070861,
+          "mean": 0.8216661849889902,
+          "minimum": 0.7796342638458368
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.8035423200646826,
+          "mean": 0.7762742963143209,
+          "minimum": 0.7587879806802
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9354577926388328,
+          "minimum": 0.931563962884068
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "correct": 7,
+          "same_positive": 1
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        }
+      }
+    },
+    "2": {
+      "intact_renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "body_end_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_cues_correct": {
+          "maximum": 2.0,
+          "mean": 2.0,
+          "minimum": 2.0
+        },
+        "body_late_mean_margin": {
+          "maximum": 0.9851762912342206,
+          "mean": 0.9780098051826416,
+          "minimum": 0.9597160036820447
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.9884308939528077,
+          "mean": 0.978250573525979,
+          "minimum": 0.9652777357971347
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.9889442151780925,
+          "mean": 0.9790247546122154,
+          "minimum": 0.9664103781752331
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9865666011042719,
+          "mean": 0.9855960438424223,
+          "minimum": 0.9851079811481953
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.983749311152645,
+          "mean": 0.9817667223390543,
+          "minimum": 0.9799406147785825
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9889442151780925,
+          "mean": 0.9790247546122154,
+          "minimum": 0.9664103781752331
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9865666011042719,
+          "mean": 0.9855960438424223,
+          "minimum": 0.9851079811481953
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.983749311152645,
+          "mean": 0.9817667223390543,
+          "minimum": 0.9799406147785825
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "correct": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9893464674037169,
+          "mean": 0.9876332311472987,
+          "minimum": 0.9847779171775274
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9893401574988261,
+          "mean": 0.9877735490695804,
+          "minimum": 0.9849736507047068
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9892383165322031,
+          "mean": 0.9890737223603692,
+          "minimum": 0.9887694780105705
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9890129384532487,
+          "mean": 0.9885268215724896,
+          "minimum": 0.987247587353269
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.9893511791929211,
+          "mean": 0.9876201253692048,
+          "minimum": 0.983149766881365
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.018573138104651596,
+          "mean": 0.008784818635909474,
+          "minimum": 0.0004937463750451334
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "masked_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.8035423200646826,
+          "mean": 0.7762742963143209,
+          "minimum": 0.7587879806802
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9354577926388328,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9839215240530874,
+          "mean": 0.9457570853086612,
+          "minimum": 0.9198856867835815
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.6553071087931696,
+          "mean": 0.6326045893502183,
+          "minimum": 0.6180481958077189
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.945349490092531,
+          "mean": 0.9353768735477039,
+          "minimum": 0.9313151566180103
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 209.0,
+          "mean": 209.0,
+          "minimum": 209.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.14823521127151307,
+          "mean": 0.14366970696410247,
+          "minimum": 0.14055136186189393
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "protected_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9839215240530874,
+          "mean": 0.9457570853086612,
+          "minimum": 0.9198856867835815
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.9822364434032199,
+          "mean": 0.9561861589106694,
+          "minimum": 0.9192180211302586
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "read_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.017241379310344827,
+          "mean": 0.017241379310344827,
+          "minimum": 0.017241379310344827
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.003962409199825389,
+          "mean": -0.0056674283176451346,
+          "minimum": -0.00737244743546488
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.04479122630771424,
+          "mean": 0.04441223382656718,
+          "minimum": 0.04403324134542011
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 4,
+        "effective_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 4,
+        "incoming_mean_abs": {
+          "maximum": 0.012651436480210228,
+          "mean": 0.01261602875828273,
+          "minimum": 0.012580621036355233
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.19921875,
+          "mean": 0.1953125,
+          "minimum": 0.19140625
+        },
+        "individual_cue_error_counts": {
+          "weak_output": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.01838754682388024,
+          "mean": 0.01801021907928631,
+          "minimum": 0.01763289133469238
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.013476404384725686,
+          "mean": 0.013259525959835254,
+          "minimum": 0.013042647534944822
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.185546875,
+          "mean": 0.1845703125,
+          "minimum": 0.18359375
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.007748366060222417,
+          "mean": 0.007622787661280197,
+          "minimum": 0.007497209262337977
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.008597821482928526,
+          "mean": 0.008398596662446212,
+          "minimum": 0.0081993718419639
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.47633136094674555,
+          "mean": 0.46870460262906144,
+          "minimum": 0.46107784431137727
+        }
+      },
+      "renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.7586206896551724,
+          "mean": 0.5053879310344827,
+          "minimum": 0.2025862068965517
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.003107383780543538,
+          "mean": -0.04619921604924637,
+          "minimum": -0.08292486462940157
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.661657785061696,
+          "mean": 0.6228040753718488,
+          "minimum": 0.5781040518426642
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.6505627899379582,
+          "mean": 0.62077231072791,
+          "minimum": 0.5917873563179101
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9783081566024625,
+          "mean": 0.8998986736392667,
+          "minimum": 0.7055816491828345
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 209.0,
+          "mean": 209.0,
+          "minimum": 209.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.9717521259639343,
+          "mean": 0.7743934435566635,
+          "minimum": 0.44657241871437625
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.7980045512780596,
+          "mean": 0.7623509628723429,
+          "minimum": 0.7265966846016316
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.980361019470452,
+          "mean": 0.9051752082508867,
+          "minimum": 0.7215455513497098
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9717521259639343,
+          "mean": 0.7823753946401011,
+          "minimum": 0.4785002230481267
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1796875,
+          "minimum": 0.17578125
+        },
+        "individual_cue_error_counts": {
+          "correct": 4,
+          "reversed": 2,
+          "same_negative": 1,
+          "same_positive": 1
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9028492289090146,
+          "mean": 0.8590364234488113,
+          "minimum": 0.7988977951660334
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.6047595161328244,
+          "mean": 0.5810657848381584,
+          "minimum": 0.5418432209239343
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.6953834883117035,
+          "mean": 0.538495087381832,
+          "minimum": 0.3871184416897388
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.43572500177157836,
+          "mean": 0.40928561683821796,
+          "minimum": 0.38424544858008935
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.173828125,
+          "mean": 0.171875,
+          "minimum": 0.169921875
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.06353543118460027,
+          "mean": 0.041256633359180644,
+          "minimum": 0.02101530002419169
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.21110593290530572,
+          "mean": 0.20751063185529256,
+          "minimum": 0.19813749725069357
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.029069767441860465,
+          "mean": 0.010901162790697675,
+          "minimum": 0.0
+        }
+      },
+      "write_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.017241379310344827,
+          "mean": 0.017241379310344827,
+          "minimum": 0.017241379310344827
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.003962409199825389,
+          "mean": -0.0056674283176451346,
+          "minimum": -0.00737244743546488
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.04479122630771424,
+          "mean": 0.04441223382656718,
+          "minimum": 0.04403324134542011
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 4,
+        "effective_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 4,
+        "incoming_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "individual_cue_error_counts": {
+          "weak_output": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      }
+    },
+    "3": {
+      "intact_renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "body_end_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "body_late_cues_correct": {
+          "maximum": 2.0,
+          "mean": 2.0,
+          "minimum": 2.0
+        },
+        "body_late_mean_margin": {
+          "maximum": 0.9882178389039085,
+          "mean": 0.9873155262720343,
+          "minimum": 0.9857612120382251
+        },
+        "body_late_to_assay": {
+          "failure_failure": 0,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 4
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.9888023042655342,
+          "mean": 0.987217493246634,
+          "minimum": 0.9843704068373682
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.9893401574988261,
+          "mean": 0.9877735490695804,
+          "minimum": 0.9849736507047068
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.9892383165322031,
+          "mean": 0.9890737223603692,
+          "minimum": 0.9887694780105705
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.9890129384532487,
+          "mean": 0.9885268215724896,
+          "minimum": 0.987247587353269
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9893401574988261,
+          "mean": 0.9877735490695804,
+          "minimum": 0.9849736507047068
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9892383165322031,
+          "mean": 0.9890737223603692,
+          "minimum": 0.9887694780105705
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9890129384532487,
+          "mean": 0.9885268215724896,
+          "minimum": 0.987247587353269
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "individual_cue_error_counts": {
+          "correct": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9893926317793021,
+          "mean": 0.9892524947962027,
+          "minimum": 0.9889710434884944
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9893795270563043,
+          "mean": 0.9892575273678184,
+          "minimum": 0.989021148247428
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9893944509748287,
+          "mean": 0.9893734599949386,
+          "minimum": 0.9893330578484844
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9893652460313543,
+          "mean": 0.9893108218870696,
+          "minimum": 0.9891715045415398
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.9893616542597014,
+          "mean": 0.989264546749195,
+          "minimum": 0.9890295795358578
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.004060819123437398,
+          "mean": 0.001515018771194194,
+          "minimum": 0.00010858585873928846
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "masked_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 0.5,
+          "minimum": 0.0,
+          "successes": 2
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.6553071087931696,
+          "mean": 0.6326045893502183,
+          "minimum": 0.6180481958077189
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.945349490092531,
+          "mean": 0.9353768735477039,
+          "minimum": 0.9313151566180103
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 209.0,
+          "mean": 209.0,
+          "minimum": 209.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8810203934369848,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.333984375,
+          "mean": 0.3310546875,
+          "minimum": 0.328125
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9826957013957944,
+          "mean": 0.9467606659188166,
+          "minimum": 0.9223122150438632
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.542693202822972,
+          "mean": 0.5332913673428038,
+          "minimum": 0.5178115414866149
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.945349490092531,
+          "mean": 0.9353423706629969,
+          "minimum": 0.9312038046740432
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 192.0,
+          "mean": 190.5,
+          "minimum": 189.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8809647174650012,
+          "minimum": 0.873126959123325
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.11405674200876718,
+          "mean": 0.09931322200741462,
+          "minimum": 0.08481062748406595
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "protected_copy": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0,
+          "successes": 4
+        },
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.9826957013957944,
+          "mean": 0.9467606659188166,
+          "minimum": 0.9223122150438632
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.9840117830175393,
+          "mean": 0.9481916733910555,
+          "minimum": 0.919858919043271
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.9453968372289072,
+          "mean": 0.9357545284152824,
+          "minimum": 0.931563962884068
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 256.0,
+          "mean": 256.0,
+          "minimum": 256.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.9007393363155182,
+          "mean": 0.8815937731524481,
+          "minimum": 0.8733496630112594
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.9830201563193104,
+          "mean": 0.9545388982969144,
+          "minimum": 0.9214364414821398
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "read_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.017241379310344827,
+          "mean": 0.017241379310344827,
+          "minimum": 0.017241379310344827
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.0002232637528267402,
+          "mean": -0.0018895993034805398,
+          "minimum": -0.00355593485413434
+        },
+        "body_late_to_assay": {
+          "failure_failure": 4,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 0
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.041915673853909624,
+          "mean": 0.04154210668161422,
+          "minimum": 0.041168539509318806
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 4,
+        "effective_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 4,
+        "incoming_mean_abs": {
+          "maximum": 0.013476404384725686,
+          "mean": 0.013259525959835254,
+          "minimum": 0.013042647534944822
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.185546875,
+          "mean": 0.1845703125,
+          "minimum": 0.18359375
+        },
+        "individual_cue_error_counts": {
+          "weak_output": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.019159667263010105,
+          "mean": 0.018798268374075916,
+          "minimum": 0.018436869485141727
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.012146512248245875,
+          "mean": 0.01208070684362771,
+          "minimum": 0.012014901439009542
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.1953125,
+          "mean": 0.1923828125,
+          "minimum": 0.189453125
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.005828486449521699,
+          "mean": 0.005765255379385152,
+          "minimum": 0.005702024309248604
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.008586763395426359,
+          "mean": 0.008126677147646469,
+          "minimum": 0.007666590899866576
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.5454545454545454,
+          "mean": 0.5255681818181819,
+          "minimum": 0.5056818181818182
+        }
+      },
+      "renewed": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.5818965517241379,
+          "mean": 0.4084051724137931,
+          "minimum": 0.28448275862068967
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 1.0,
+          "mean": 0.5,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.015048497277427353,
+          "mean": -0.36002030851009315,
+          "minimum": -0.7866725428896388
+        },
+        "body_late_to_assay": {
+          "failure_failure": 4,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 0
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.4826488251930057,
+          "mean": 0.47205550509455335,
+          "minimum": 0.45418803220652443
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 0,
+        "effective_mean_abs": {
+          "maximum": 0.5022820919522656,
+          "mean": 0.4937520423549453,
+          "minimum": 0.474607854675667
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.6337563735276768,
+          "mean": 0.5119960339456718,
+          "minimum": 0.3871184416897388
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 212.0,
+          "mean": 212.0,
+          "minimum": 212.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.4300535753114653,
+          "mean": 0.3575386872545553,
+          "minimum": 0.2955072506588612
+        },
+        "effective_zero_fraction": {
+          "maximum": 0.30078125,
+          "mean": 0.30078125,
+          "minimum": 0.30078125
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 0,
+        "incoming_mean_abs": {
+          "maximum": 0.6047595161328244,
+          "mean": 0.5810657848381584,
+          "minimum": 0.5418432209239343
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.6953834883117035,
+          "mean": 0.538495087381832,
+          "minimum": 0.3871184416897388
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.43572500177157836,
+          "mean": 0.40928561683821796,
+          "minimum": 0.38424544858008935
+        },
+        "incoming_zero_fraction": {
+          "maximum": 0.173828125,
+          "mean": 0.171875,
+          "minimum": 0.169921875
+        },
+        "individual_cue_error_counts": {
+          "correct": 2,
+          "reversed": 1,
+          "same_negative": 2,
+          "same_positive": 3
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.8026964701472922,
+          "mean": 0.7763370480025772,
+          "minimum": 0.7395726916315563
+        },
+        "outgoing_any_output_disconnected": 0,
+        "outgoing_mean_abs": {
+          "maximum": 0.4636664085952461,
+          "mean": 0.44868473273178017,
+          "minimum": 0.43533661603421137
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.5398307214663656,
+          "mean": 0.43954246723552937,
+          "minimum": 0.36355249150593805
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.45642687538906046,
+          "mean": 0.32356151227393326,
+          "minimum": 0.17004770681252213
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 0.18359375,
+          "mean": 0.1806640625,
+          "minimum": 0.177734375
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.07534076891852343,
+          "mean": 0.045059747442029834,
+          "minimum": 0.02607077041515077
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.176619371558493,
+          "mean": 0.1568692126724191,
+          "minimum": 0.1372441648855896
+        },
+        "sign_change_fraction_common_nonzero": {
+          "maximum": 0.10893854748603352,
+          "mean": 0.08170391061452514,
+          "minimum": 0.04189944134078212
+        }
+      },
+      "write_blocked": {
+        "accumulated_erased_edge_fraction": {
+          "maximum": 0.44921875,
+          "mean": 0.4365234375,
+          "minimum": 0.423828125
+        },
+        "assay_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_cue_opposition_fraction_alive": {
+          "maximum": 0.017241379310344827,
+          "mean": 0.017241379310344827,
+          "minimum": 0.017241379310344827
+        },
+        "body_end_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_both": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "successes": 0
+        },
+        "body_late_cues_correct": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "body_late_mean_margin": {
+          "maximum": -0.0002232637528267402,
+          "mean": -0.0018895993034805398,
+          "minimum": -0.00355593485413434
+        },
+        "body_late_to_assay": {
+          "failure_failure": 4,
+          "failure_success": 0,
+          "success_failure": 0,
+          "success_success": 0
+        },
+        "body_mean_abs_alive": {
+          "maximum": 0.041915673853909624,
+          "mean": 0.04154210668161422,
+          "minimum": 0.041168539509318806
+        },
+        "current_physical_any_output_disconnected": 0,
+        "current_physical_reachable_output_cells": {
+          "maximum": 8.0,
+          "mean": 8.0,
+          "minimum": 8.0
+        },
+        "current_physical_source_component_cells": {
+          "maximum": 232.0,
+          "mean": 232.0,
+          "minimum": 232.0
+        },
+        "effective_any_output_disconnected": 4,
+        "effective_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "effective_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "effective_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "end_vs_late_disagreements": 0,
+        "incoming_any_output_disconnected": 4,
+        "incoming_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "incoming_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "incoming_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "individual_cue_error_counts": {
+          "weak_output": 8
+        },
+        "lineages": 4,
+        "never_erased_edge_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_any_output_disconnected": 4,
+        "outgoing_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_mean_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_reachable_output_cells": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_source_component_cells": {
+          "maximum": 4.0,
+          "mean": 4.0,
+          "minimum": 4.0
+        },
+        "outgoing_weakest_output_path_capacity": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "outgoing_zero_fraction": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "minimum": 1.0
+        },
+        "previously_erased_now_available_mean_abs": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        },
+        "rewritten_edge_mean_abs_change": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0
+        }
+      }
+    }
+  },
+  "initial_packet_mean_abs": 0.9481916733910555,
+  "initial_weakest_output_path_capacity": 0.8815937731524481,
+  "limits": [
+    "Post-hoc descriptive counts; no new confirmatory endpoint.",
+    "Read-end body outputs are not independent fresh-body function.",
+    "Absolute-weight path capacity ignores signs and is not sufficient for correct routing.",
+    "No generation-2 terminal assay exists; no value is imputed.",
+    "Associations do not separate causes or demonstrate a successful rescue."
+  ],
+  "new_simulation": false,
+  "serial_transitions": {
+    "intact_renewed": {
+      "assay_h1_to_h3": {
+        "failure_failure": 0,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 4
+      },
+      "body_g1_to_g2": {
+        "failure_failure": 0,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 4
+      },
+      "body_g2_to_g3": {
+        "failure_failure": 0,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 4
+      }
+    },
+    "masked_copy": {
+      "assay_h1_to_h3": {
+        "failure_failure": 0,
+        "failure_success": 1,
+        "success_failure": 2,
+        "success_success": 1
+      }
+    },
+    "protected_copy": {
+      "assay_h1_to_h3": {
+        "failure_failure": 0,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 4
+      }
+    },
+    "read_blocked": {
+      "assay_h1_to_h3": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      },
+      "body_g1_to_g2": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      },
+      "body_g2_to_g3": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      }
+    },
+    "renewed": {
+      "assay_h1_to_h3": {
+        "failure_failure": 2,
+        "failure_success": 0,
+        "success_failure": 2,
+        "success_success": 0
+      },
+      "body_g1_to_g2": {
+        "failure_failure": 1,
+        "failure_success": 0,
+        "success_failure": 3,
+        "success_success": 0
+      },
+      "body_g2_to_g3": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      }
+    },
+    "write_blocked": {
+      "assay_h1_to_h3": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      },
+      "body_g1_to_g2": {
+        "failure_failure": 1,
+        "failure_success": 0,
+        "success_failure": 3,
+        "success_success": 0
+      },
+      "body_g2_to_g3": {
+        "failure_failure": 4,
+        "failure_success": 0,
+        "success_failure": 0,
+        "success_success": 0
+      }
+    }
+  },
+  "source_full_qualification": null,
+  "source_outputs_verified": 8,
+  "source_scientific_status": "TECHNICAL_ONLY",
+  "status": "DESCRIPTIVE_SAVED_DATA_REVIEW",
+  "units": {
+    "blocks": 1,
+    "founders": 4,
+    "lineages": 4
+  },
+  "utc": "2026-09-20T11:07:11.095490+00:00",
+  "variable_seconds": 0.5119432420033263
+}

@@ -1,0 +1,52 @@
+{
+  "attempt": 2,
+  "authorization_context": "Existing authorization to execute TT008; reviewed technical correction after user-requested status, with no separate restart command.",
+  "automatic_polling": false,
+  "automatic_restart": false,
+  "automatic_successor": false,
+  "benchmark": "TT008/runs/benchmark_v2",
+  "benchmark_complete_sha256": "d13ca146ee67fe49930cef3780caeaa2e9c2b3adca29295dc9ffa3db3a9969c4",
+  "correction_checks_sha256": "850f66fe3a03e2e9bad5047ae3a6bb794e7b8720503c1bfbe925213896ea0d94",
+  "failure_review_sha256": "29eadc6bd5d5e59394d5c1064c030c675de732efecf8b2987270741dd7162eaa",
+  "forecast_hours": 18.74738429210362,
+  "forecast_seconds": 67490.58345157304,
+  "full_known_qualification": "PENDING_AT_STARTUP_CHECK",
+  "job": "TT008/jobs/prospective_v2",
+  "job_sha256": "4bf84e47129cecbde7b3cd6037f10551377eca571b001ccbf7b220fa87a84ece",
+  "new_test_results_reviewed": false,
+  "prior_failed_run": "TT008/runs/prospective_v1",
+  "recorded_utc": "2026-10-10T00:08:43.652302+00:00",
+  "registration_sha256": "c69bb9ba643ecc4cd16ba3eddc623b0a336b1eb1a347ef1e4fa73041502a4e61",
+  "requalification_sha256": "d77adea44f2118273ed24c89f08133c2426f3792c2824e5ace79b5cdd2de1bd9",
+  "run": "TT008/runs/prospective_v2",
+  "scientific_verdict": null,
+  "startup_check": {
+    "automatic_polling": false,
+    "checked_utc": "2026-10-10T00:08:06.118988+00:00",
+    "cpu_affinity": [
+      7
+    ],
+    "frozen_input_files_verified": 125,
+    "job_sha256": "4bf84e47129cecbde7b3cd6037f10551377eca571b001ccbf7b220fa87a84ece",
+    "launcher_survival_verified": true,
+    "new_test_results_reviewed": false,
+    "note": "Exactly one startup persistence check of corrected attempt; subsequent status only on user request.",
+    "phase_at_single_startup_check": "technical_checks",
+    "pid": 2627514,
+    "registration_sha256": "c69bb9ba643ecc4cd16ba3eddc623b0a336b1eb1a347ef1e4fa73041502a4e61",
+    "startup_utc": "2026-10-10T00:07:39.243419+00:00",
+    "status": "PASS",
+    "status_at_single_startup_check": {
+      "elapsed_seconds": 0.9332590398844332,
+      "phase": "technical_checks",
+      "pid": 2627514,
+      "status": "RUNNING",
+      "utc": "2026-10-10T00:07:39.679567+00:00"
+    },
+    "stdin": "/dev/null",
+    "stdout": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT008/jobs/prospective_v2/console.log",
+    "threads": 1
+  },
+  "status": "CORRECTED_ATTEMPT_LAUNCHED_STARTUP_VERIFIED",
+  "study": "TT008"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-10T23:37:20.394366+00:00",
+  "command": [
+    "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/.cache/p05_serial_admission_tests01",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/test_admission.py"
+  ],
+  "exit_code": 0,
+  "code_sha256": {
+    "cpu_preflight.py": "c4f9701a0397e3b7d79719439e63f28a62fcf109ab41b08271e42b59c797d4f3",
+    "admit.py": "98e6aa4aded07ec5a4d556075e248aafad15b1c343433b429cead23c92182abc",
+    "launch.py": "6d5c690dd221d52215651457c092d40f72c401fa1b38b4bf9e84a22e7cdbb505",
+    "freeze.py": "c05dc4fdb6f9cb42957801adbde1f3ea16da907c9aba7ff8b93fd484fdafe7c4",
+    "test_admission.py": "91f86ab5018e0665b7b402672d844b66cdd92d83a0e8fcd09ae1aac22bcd7204"
+  }
+}

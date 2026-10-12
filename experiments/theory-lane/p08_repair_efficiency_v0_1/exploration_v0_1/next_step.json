@@ -1,0 +1,51 @@
+{
+  "status": "EXPLORATORY_LEAD_AND_PROPOSED_BOUNDED_AUDIT",
+  "at_utc": "2026-10-12T11:26:39.283041+00:00",
+  "source_complete_sha256": "29d8dcbc4a2e5395784b17e561f36a27630e5719d8ce2ba77f78c42e76b950ca",
+  "findings_sha256": "38554fcb0b3e44af5372fcd57c9b8f4ba1109c0593c2f0167ae3f6c1f0e1f70f",
+  "independent_crosscheck_sha256": "693bb3076eff8775ebc704b04ae310479627f7d3c1d8dd0e9f818b916fef4957",
+  "lead": "Under the six-call schedule, every first later failure occurs at the second consecutive unrepaired reconstruction, two generations after the most recent repair.",
+  "evidence": {
+    "fresh_failures": 46,
+    "fresh_blocks_with_failures": 36,
+    "older_development_failures": 4,
+    "all_fifty_same_gap": true,
+    "at_risk_reads_by_gap": {
+      "repair_generation": 9282,
+      "one_generation_since_repair": 11161,
+      "two_generations_since_repair": 11161
+    },
+    "first_failures_by_gap": [
+      0,
+      0,
+      46
+    ],
+    "recovery_at_next_repair": 31,
+    "failed_cases_with_a_next_scheduled_repair": 39,
+    "later_recovery": 2,
+    "no_recovery_before_horizon": 6,
+    "no_next_repair_within_horizon": 7,
+    "twenty_once_better_cases": "All twenty first fail at the same two-generation gap; none fails immediately on a repair call. Incoming packets at failure differ from the once-repaired branch."
+  },
+  "mechanistic_hypotheses": [
+    "The effect of repair on successor competence lasts fewer unrepaired rebuilds than its effect on current expression.",
+    "Repair changes the written successor so that intermittent maintenance can create a vulnerable later state even when one initial repair would have continued successfully."
+  ],
+  "alternative_explanations": [
+    "The record/body dynamics may impose this timing through ordinary error correction and injury propagation, without distinct RDT content.",
+    "The pattern concerns first failures among initially successful records and is conditional on this fixed schedule and apparatus; it is not a general deterministic reliability law."
+  ],
+  "known_counterexamples_to_stronger_claims": [
+    "The older nine-call schedule had one later failure on a repair generation. A one-generation gap is not proven sufficient.",
+    "Three identical-incoming-state comparisons at generation 16 show immediate repair harms among records that had already failed the first reconstruction. Repair is not universally beneficial."
+  ],
+  "proposed_next_test": "Replay all 46 saved first-failing six-call states with and without repair at that current boundary, using identical saved injury, reset and ongoing cue noise and a separate flat dynamics implementation. Add declared passing-state controls if estimating harm beyond these selected failures. Freeze the exact selection and comparison before new counterfactual outputs.",
+  "interpretation_of_next_test": {
+    "rescue": "Evidence that current-boundary correction can avert this saved expression failure; it does not preserve the original six-call budget or prove a better population policy.",
+    "both_fail": "Current repair is insufficient for this saved state; investigate earlier maintenance or altered correction. It does not prove irreparability.",
+    "passing_controls_harmed": "Any state-selective schedule must account for harmful interventions as well as rescues."
+  },
+  "population_prediction_status": "Original prospective doubled-efficiency criterion remains UNRESOLVED; no post-hoc threshold changes or sample extension.",
+  "new_dynamics_generated": 0,
+  "new_job_launched": false
+}

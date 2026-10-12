@@ -1,0 +1,78 @@
+{
+  "analysis": {
+    "mode": "scientific",
+    "status": "EXPLORATORY_DIAGNOSIS_COMPLETE",
+    "seconds": 111.6809151310008,
+    "extraction_and_audit_seconds": 65.50058665289544,
+    "summarization_seconds": 45.3729183729738,
+    "storage_estimates": {
+      "summary_bytes": 5416567,
+      "measurement_bytes": 33124352
+    },
+    "summary_sha256": "272356ec2a8a6a14560020d5e2593e8d8f745717f1df8dcf1117a9598ebd8914",
+    "persisted": false,
+    "validation": {
+      "fixtures": {
+        "new_repair_fixture": true,
+        "nonzero_graph_fixture": true,
+        "prior_tests": 5
+      },
+      "source_hashes_verified": true,
+      "all_measurements_independently_checked": true,
+      "source_body_terminal_means_reproduced": true,
+      "all_bootstrap_intervals_recomputed": true
+    }
+  },
+  "support": {
+    "comparison": "contrast-preserve support equals cumulative-damage copy at every coordinate",
+    "exact_support_lineage_boundaries": 8192,
+    "new_nonzero_edges_from_available_exact_zeros": {
+      "2": 0,
+      "3": 0
+    },
+    "persisted": false,
+    "returning_edges": {
+      "0": {
+        "nonzero": 566862,
+        "opportunities": 572280,
+        "strong": 0
+      },
+      "1": {
+        "nonzero": 566862,
+        "opportunities": 572280,
+        "strong": 0
+      },
+      "2": {
+        "nonzero": 0,
+        "opportunities": 572280,
+        "strong": 0
+      },
+      "3": {
+        "nonzero": 0,
+        "opportunities": 572280,
+        "strong": 0
+      },
+      "4": {
+        "nonzero": 566862,
+        "opportunities": 572280,
+        "strong": 0
+      },
+      "8": {
+        "nonzero": 0,
+        "opportunities": 572280,
+        "strong": 0
+      }
+    },
+    "seconds": 2.5727543539833277,
+    "source_complete_sha256": "69c50247350a2c9b741a8087958d13a03e41248b29f47e7185ffca19b0af84b1",
+    "total_lineage_boundaries": 8192,
+    "utc": "2026-09-30T06:26:51.119346+00:00"
+  },
+  "benchmark": {
+    "chunk_id": "d89527",
+    "wall_time_seconds": 0.000003166,
+    "exit_code": 0,
+    "original_token_count": 169,
+    "output": "{\"mode\": \"benchmark\", \"status\": \"TECHNICAL_ONLY\", \"seconds\": 7.811278680106625, \"extraction_and_audit_seconds\": 1.0309476429829374, \"summarization_seconds\": 6.664033722016029, \"storage_estimates\": {\"summary_bytes\": 1520572, \"measurement_bytes\": 517568}, \"summary_sha256\": \"93362bf00061d51f132d6a6a9a12c00293aa59f5dd96e8dc54d012ea03bd5196\", \"persisted\": false, \"validation\": {\"fixtures\": {\"new_repair_fixture\": true, \"nonzero_graph_fixture\": true, \"prior_tests\": 5}, \"source_hashes_verified\": true, \"all_measurements_independently_checked\": true, \"source_body_terminal_means_reproduced\": true, \"all_bootstrap_intervals_recomputed\": true}, \"forecast_seconds\": 218.970973726362}\n"
+  }
+}

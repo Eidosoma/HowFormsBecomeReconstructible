@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-10T16:15:57.345439+00:00",
+  "reader_trials": [
+    {
+      "seed": 41031,
+      "errors": {
+        "birth": 0.0,
+        "end": 1.1102230246251565e-16,
+        "port_windows": 8.326672684688674e-17,
+        "mean_ports": 0.0
+      },
+      "untransformed_noise_endpoint_error": 2.020745681253988
+    },
+    {
+      "seed": 41032,
+      "errors": {
+        "birth": 0.0,
+        "end": 1.1102230246251565e-16,
+        "port_windows": 5.551115123125783e-17,
+        "mean_ports": 1.0408340855860843e-17
+      },
+      "untransformed_noise_endpoint_error": 2.0327645969631014
+    },
+    {
+      "seed": 41033,
+      "errors": {
+        "birth": 0.0,
+        "end": 1.1102230246251565e-16,
+        "port_windows": 5.551115123125783e-17,
+        "mean_ports": 0.0
+      },
+      "untransformed_noise_endpoint_error": 2.05848653846912
+    }
+  ],
+  "maximum_conjugacy_error": 1.1102230246251565e-16,
+  "output_unpinned_observable_error": 1.896260970542926,
+  "input_unpinned_conjugacy_failed": true,
+  "writer_errors": {
+    "q": 0.0,
+    "c": 0.0,
+    "exact": 0.0,
+    "tolerance": 0.0,
+    "sign_restored": 0.0
+  },
+  "exact_fallback_edges": 113,
+  "tolerance_additional_fallback_edges": 69,
+  "new_saved_case_task_outcomes": 0,
+  "scope": "Synthetic executable checks of an algebraic symmetry; no success-probability inference.",
+  "code_sha256": {
+    "symmetry.py": "b3f94dee9df36bc705482bb9e5dedf461cbf2deda1a05453e2d54051d69d3f9f",
+    "reader.py": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+    "alignment.py": "ccc467788e928c0d525e07b17b7846dcee34e16c82a8f2c6d8853c7e2f5ace98",
+    "diagnostics_core.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+  }
+}

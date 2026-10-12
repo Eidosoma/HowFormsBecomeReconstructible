@@ -1,0 +1,302 @@
+{
+  "status": "FROZEN_READY_TO_LAUNCH",
+  "at_utc": "2026-10-11T15:27:45.887923+00:00",
+  "config": {
+    "histories": [
+      "exact_rewrite",
+      "single_tolerance_rewrite",
+      "spaced_tolerance_rewrite",
+      "clustered_tolerance_rewrite"
+    ],
+    "development_config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "optimizer": {
+      "starts": 16,
+      "maximum_sweeps": 64,
+      "seed": 2026101004,
+      "update_order": "checkerboard 0 then 1; strict negative local field product",
+      "weight": "half the sum of recipient directed normalized absolute edge weights",
+      "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+      "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+    },
+    "completion": {
+      "support": "every exactly zero outgoing edge on the fixed toroidal lattice",
+      "magnitude": "median absolute nonzero outgoing weight; zero if none",
+      "preserve": "all nonzero outgoing edges byte for byte",
+      "shuffle": "fixed permutation of inferred signs over zero edges; same signs counts, magnitude and support"
+    },
+    "tolerance": 0.0001,
+    "numpy_version": "2.5.2",
+    "injury_cells": 24,
+    "cycle": {
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "write_steps": 128
+    },
+    "reader": {
+      "dt": 0.2,
+      "noise": 0.02,
+      "birth_sd": 0.05,
+      "observe_steps": 32,
+      "margin": 0.25
+    },
+    "budgets": [
+      2048
+    ],
+    "settling_steps": 1024,
+    "version": "0.1",
+    "status": "AUTHORIZED_FRESH_BUDGETED_REPAIR",
+    "blocks": [
+      82000,
+      82001,
+      82002,
+      82003,
+      82004,
+      82005,
+      82006,
+      82007,
+      82008,
+      82009,
+      82010,
+      82011,
+      82012,
+      82013,
+      82014,
+      82015
+    ],
+    "cases_per_block": 16,
+    "cohort_size": 256,
+    "history_by_block": {
+      "82000": 0,
+      "82001": 1,
+      "82002": 2,
+      "82003": 3,
+      "82004": 0,
+      "82005": 1,
+      "82006": 2,
+      "82007": 3,
+      "82008": 0,
+      "82009": 1,
+      "82010": 2,
+      "82011": 3,
+      "82012": 0,
+      "82013": 1,
+      "82014": 2,
+      "82015": 3
+    },
+    "tolerance_generations": [
+      [],
+      [
+        3
+      ],
+      [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      [
+        3,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    ],
+    "start_generation": 15,
+    "terminal_generation": 32,
+    "generations": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "variants": [
+      "warning",
+      "periodic",
+      "random",
+      "repeated"
+    ],
+    "repair_budgets": [
+      9,
+      9,
+      9,
+      18
+    ],
+    "lineage_namespace": "P08_budgeted_repair_v0_1_acquisition",
+    "continuation_namespace": "P08_budgeted_repair_v0_1_continuation",
+    "innovation_namespace": "P08_budgeted_repair_v0_1_innovation",
+    "policy_namespace": "P08_budgeted_repair_v0_1_policy",
+    "correlations": [
+      0.0
+    ],
+    "noise_regimes": [
+      "independent"
+    ],
+    "bootstrap_seed": 2026101108,
+    "bootstrap_replicates": 20000,
+    "workers": 1,
+    "numerical_threads": 1,
+    "forecast_ceiling_cpu_seconds": 10800,
+    "scientific_read_contexts": 18432,
+    "acquisition_lineage_read_contexts": 3584,
+    "scheduled_optimizer_calls": 11520,
+    "native_audit_generations": [
+      15,
+      32
+    ],
+    "native_audit_cases": [
+      0,
+      14
+    ],
+    "automatic_polling": false,
+    "automatic_successor": false,
+    "primary_contrast": "warning_minus_periodic",
+    "contrasts": {
+      "warning_minus_periodic": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "warning_minus_random": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "warning_minus_repeated": [
+        1,
+        0,
+        0,
+        -1
+      ],
+      "periodic_minus_random": [
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    "comparison_pairs": {
+      "warning_minus_periodic": [
+        0,
+        1
+      ],
+      "warning_minus_random": [
+        0,
+        2
+      ],
+      "warning_minus_repeated": [
+        0,
+        3
+      ],
+      "periodic_minus_random": [
+        1,
+        2
+      ]
+    },
+    "development_run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1",
+    "development_complete_sha256": "5074ad63e51c1e3522a114bb4d0cd51dd551573f51d552f196130181016cbf61"
+  },
+  "files_sha256": {
+    "DEVELOPMENT_FREEZE.json": "49b15621ae763ae3c760cb53bc2da2e332d61860ec418f987d1542c9abe211ff",
+    "DEVELOPMENT_PLAN.json": "ef2096f443e04e665ee99dbb3eda62183cadf200c5b48e2173356ef80c509ab8",
+    "EXPOSURE_AND_DECISIONS.json": "905ff61f376011d8cd075bb861042df48c85160f10f9318cb7b98f4532ef9fad",
+    "PREDICTION.json": "1390d93d09a2880483f4f765daf9ea17662fdd0db0b7f2c102dccf40561dd739",
+    "PROTOCOL.md": "433cebb40a9ba7c40a74901fd89b11ac022e19ef8cc77da32fded37e5ce7f58a",
+    "README.md": "876f498f9a1fd658d9d416c65a87b609990ae45999b6d03d506ed508cfa2bf04",
+    "SOURCE_REUSE.json": "d5d39be663091f8cfecf5115a8979f06227181bfc5e2df49ab94e195615859cf",
+    "VALIDATION.json": "ef686d7064ead446b39e79dfe717e827ffa8559853ef332465630478590e291c",
+    "acquire.py": "06b0d73f814c7ed7ec2e81a6139398f69278de3a689939642f18b8c6555fe4be",
+    "admit.py": "755766726fe3a186ac286a3afe51702ceb46bc8dcad220c72c046a23ddb593ea",
+    "analyze.py": "fd8fb5b797f1ae0b1fa2df1c1b5d5e349b1cb2a25db3177fdef62d5ceaa31ba6",
+    "audit_acquire.py": "e5f29691a334e470da9449fd4c93a07e0ccb1542c542fb7447af601cba95a089",
+    "audit_cohort.py": "098c50bccc2b567b0a9f21935ff3d8dd031b6dbf36c737854dcf51f11ad79620",
+    "audit_optimizer.py": "587f7e8632585b064b8abba31ab0d48e0df48156dbe2489abc0b8301a714b45e",
+    "audit_policy.py": "e501b0335005045906a29568889960e9a155ca0283edb6880fa30cf995c9b167",
+    "audit_reader.py": "76c792461013193e070c86b1464946bd10f55d9381bb2fd607df859bb980fc7d",
+    "audit_serial.py": "e8b959787d70662a7ac20a6f4baa9e0a321cb6b36f865264e7ba46ebec346732",
+    "audit_warning.py": "5d0ec45055977e4c7e07aecacc78fe33a1da46dd42c7c1b550c459b83d684c11",
+    "benchmark/COMPLETE.json": "cbfbae3f1f55b9413b209e224c71ddd7b7ad62bd9d9739a6327da39b2142955f",
+    "benchmark/START.json": "e35626e182fd3d7167fb5a346e83a0e42616eb40f7d834b05df0ce8caf95707a",
+    "benchmark.py": "cdb9b1110e0110f8a5f83b7a3856433a81cf971698aa847008cc559b4145fd20",
+    "benchmark_cpu_admission.json": "006243d31bdb547a838e69019b2495ac38cf3abca13d01cb57a8b10a40476bad",
+    "cohort.py": "b1e135296645860d54be9144c20078b2861cfee74eb0975232e2945cda4b98cd",
+    "common.py": "ecaf2093d1e629ef708828aceb5af2c654e8cc0b406e9c664361d7c3b516f78e",
+    "config.json": "f0d72008cfd69372eb37dcd19e4f056f89b0c0a3ad4216814966b3d40e2bf20e",
+    "cpu_preflight.py": "c4f9701a0397e3b7d79719439e63f28a62fcf109ab41b08271e42b59c797d4f3",
+    "develop_warning.py": "3b9eabb23c345e8d2bb091e8ef88ebead950a638f8939b23e57f531119a58380",
+    "development/COMPLETE.json": "053e2206e55847915f6b15992a69aed9e7b6e8ac83d6d6277f5585ca1e5f6aa6",
+    "development/FIT_DETAILS.json": "85fd2d823bf93916e223e39244e18f81aac175402f6e506cc5b890adae7830ea",
+    "development/MODEL.json": "7c69bd95587719ebde6209886776ab2dc4c128ce1e9d0a5701bc818645968b85",
+    "development/SUPPLEMENT.json": "6af2fa14a85240d6a29b52f5dc0db5aa9f730915d95084d1d65ad8973799e24d",
+    "development/dataset.npz": "52116b1a669cd4ac5184c7363d85757f29e89f4d33ca8c81711caa012da56de4",
+    "development_cpu_admission.json": "e0ec3d18685121fad2e7c3de706d57399c4fc039de12c8c7aa86e6f7687365af",
+    "development_smoke.json": "460f9d8bcfcc97951347f0b376993376ba6e2601040d802678ad96408d7c135a",
+    "freeze.py": "3cdbc83e59d35e403b37bc6def2b032cfc92bdf02d83dede3561cf8cd7abfd24",
+    "launch.py": "369d2b38879360a369762ae4be7a61328025958060da9c02f6b8080817f5f56b",
+    "lineage_dynamics.py": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+    "optimizer.py": "1f185c7d0d109cbd4835f0cb6f73a1e482ee59cbe1ec495cebda9727b7605a76",
+    "policy.py": "d7d8dc7fa5bf9e3adaef63cbc099c73f26aac5872c40bc35cabd5aaea31e5476",
+    "prepare_sources.py": "921aad7a5325550eeb0d540777df5e1b1de5b211928eb57bed43004fdd9c3cd2",
+    "reader.py": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+    "repair.py": "3abbfb547f7a3816596e63afa12c5fc8fb73adce0d3a5a654550cb2642d73551",
+    "run.py": "a07f843df3411000199c7092f3349dab1bf8169029f2f406119bf40ba6d207ff",
+    "serial.py": "28f47d9b42e97f75d26b109321fcb376ef2e1abc58abb46c9392cabe792ce99b",
+    "sign_graph.py": "ccc467788e928c0d525e07b17b7846dcee34e16c82a8f2c6d8853c7e2f5ace98",
+    "sources/COMPLETE.json": "601f1d6dcc0552cb715253ca30d739e853f14da1df2d3e8f3daf47cea197e66d",
+    "sources/TEACHING_COMPLETE.json": "15b605091d8e0959e16dcf3cda2b83ea176f74d9551300b5e233bcb5849dae0f",
+    "sources/exposed_continuation_081000.npz": "b440514c4c9f14465ffb10f7d4aa4fcfd285f31c541112662949951fcd633136",
+    "sources/native_controls.npz": "322c29b3675c05b4a2adfb09a8ca00ed25d870543b25f48fa69966a1263b8e89",
+    "sources/teaching_controls.npz": "d58cb32ac64827aeaa6bdb9f7090559c43b7b9b53bae26d223534537cf71b426",
+    "test_admission.py": "91f86ab5018e0665b7b402672d844b66cdd92d83a0e8fcd09ae1aac22bcd7204",
+    "test_integration.py": "d30c0a826d64730b622da418716ea9a519381296eb5f9ac2ca93cadcce259343",
+    "test_study.py": "375820224620cc33dc59cb6093d95cd18f4e6733abfb7e7dcba380ac8e0ddc63",
+    "verify.py": "429229f0d511fd9feb4f9a61ad747351c26f8b5e45c71eb1c11ae5fb30ecc94d",
+    "warning.py": "a6a081c1a117a8132edb03e015788337753994895b824742edd9b3687804702b",
+    "writer_audit.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+  },
+  "forecast_cpu_seconds": 5918.886364836,
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "workers": 1,
+  "numerical_threads": 1,
+  "automatic_polling": false,
+  "automatic_successor": false,
+  "executes_frozen_copy": true,
+  "capacity_admission": "detached wait with CPU-only checks every 60 seconds until one slot is available",
+  "fresh_cohort_outcomes_before_freeze": 0,
+  "development_complete_sha256": "053e2206e55847915f6b15992a69aed9e7b6e8ac83d6d6277f5585ca1e5f6aa6",
+  "model_sha256": "7c69bd95587719ebde6209886776ab2dc4c128ce1e9d0a5701bc818645968b85",
+  "prediction_sha256": "1390d93d09a2880483f4f765daf9ea17662fdd0db0b7f2c102dccf40561dd739"
+}

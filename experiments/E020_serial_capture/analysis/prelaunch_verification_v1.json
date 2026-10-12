@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-19T16:12:46.394853+00:00",
+  "evidence": {
+    "fixture": {
+      "original_outputs_verified": 29,
+      "complete_sha256": "91fd1cf303764fe8d6cfa6488e45dd955d4d7066fcbf8734a1e3b80a8a8b97e0",
+      "audit_sha256": "07554c86670ab8bb96c06e1b6cdf2782e601fcd567170a9f8c4e64e12c7edc7f"
+    },
+    "benchmark": {
+      "original_outputs_verified": 30,
+      "complete_sha256": "8b72593e5c03c6d26a0684406f51c80ba845b96f46037c5878bf24d0552fa091",
+      "audit_sha256": "23ab30d0d6dc84f33c270e47bff8bc6f35ce5e0c727ec9df8cfb7e44e43b0c15"
+    }
+  },
+  "benchmark_figure_visually_inspected": true,
+  "figure_provenance_sha256": "b46f5cf38412665808772bbdcd5c8641565fff31b9949d8b07ccabb1b1562bff",
+  "forecast_sha256": "3885c64a934ca8d5b2e66589c5f28ac8afd66ae2a604ffb1afd318cf02268f81",
+  "forecast_seconds": 6232.799467744015,
+  "workers": 8,
+  "numerical_threads": 1,
+  "storage_with_reserve_bytes": 3185255680,
+  "available_bytes": 28242767872,
+  "cohort_ids_previously_unused": [
+    18000,
+    18001,
+    18002,
+    18003,
+    18004,
+    18005,
+    18006,
+    18007,
+    18008,
+    18009,
+    18010,
+    18011,
+    18012,
+    18013,
+    18014,
+    18015,
+    18016,
+    18017,
+    18018,
+    18019,
+    18020,
+    18021,
+    18022,
+    18023,
+    18024,
+    18025,
+    18026,
+    18027,
+    18028,
+    18029,
+    18030,
+    18031
+  ],
+  "predecessor_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1"
+  ],
+  "prior_active_jobs": [],
+  "launch_command": "bash run_python.sh E020_serial_capture/workflow.py --detach --run-name renewal_v1"
+}

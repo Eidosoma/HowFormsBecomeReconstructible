@@ -1,0 +1,53 @@
+{
+  "at_utc": "2026-10-11T04:51:14.262222+00:00",
+  "status": "DESIGN_BEFORE_NEW_MISMATCH_CONTINUATION",
+  "sources_sha256": {
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/runs/pilot_v1/COMPLETE.json": "a8163e3772499bd614d9a7529cc9cb5d425c6152145ec33b9ad3db2cb0e557a4",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/runs/pilot_v1/REPORT.md": "31ee1c226e214cd0f0c58110a0c78d769424ead5d17fb4205b96629feedc46fa",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/runs/pilot_v1/manifest.json": "18a8d246f69a12bfb5cd2c9717f719fc6158d6d93d7065d18a4166d84962a61f",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/closeout_v0_1.json": "2f875435c7e6ba4d76e887b949700dcf68b420f73588fd8a20c1eef33f9b3082",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/e051_full_results_review_v0_1/REPORT.md": "2b45c7f5d7f3130a7849cb7345bf54ff240c937173b8e2be4347199aeb7ceb00",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/theory_lane_start.txt": "7039bcbaa472dc32a68d1a1db4430c7ca26fd55b01143e3a89db92e026828e1d",
+    "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/RUN_POLICY.md": "a53765a80aa71e852545302ae1e781f387828bf364a72252d747d0faf0820f83"
+  },
+  "authorization": "User lets go after proposal to cross repeated repair with cue-noise correlation; detached runs without scientific progress polling",
+  "exposed_results": {
+    "serial_uninterrupted_counts": {
+      "baseline": 121,
+      "one_time": 136,
+      "repeated": 233,
+      "shuffled": 0
+    },
+    "serial_terminal_counts": {
+      "baseline": 209,
+      "one_time": 216,
+      "repeated": 247,
+      "shuffled": 15
+    },
+    "denominator": 256,
+    "serial_primary_gain_percentage_points": 43.75,
+    "e051_original_terminal_counts": {
+      "matched": 458,
+      "noise_0999": 497,
+      "independent": 495
+    },
+    "e051_denominator": 512,
+    "e051_mechanism": "Ongoing mismatch removes returning-edge fallback without impairing original-writer terminal performance in the studied conditions"
+  },
+  "decisions": [
+    "Use all original generation-14 records and all 16 blocks rather than select failures or repair beneficiaries.",
+    "Keep prior injury/reset/base-noise identities so matched trajectories serve as exact exposed replay controls.",
+    "Change only ongoing cue-noise correlation; retain matched teaching and resets and fixed marginal noise variance.",
+    "Cross three correlations with unchanged baseline and repeated repair; no one-time or shuffled branches in this question.",
+    "Primary is repair minus baseline uninterrupted success under independent noise; no minimum-effect or equivalence margin selected.",
+    "Report changes in each absolute success rate and the repair advantage separately to distinguish baseline catch-up from reduced repair performance.",
+    "Record fallback and returning-edge counts as descriptive mechanism evidence, without mediation or causal attribution claims.",
+    "Benchmark exposed outcomes and synthetic Gaussian draws only; freeze before new mismatched cohort dynamics.",
+    "Allow 180 CPU minutes as a forecast admission ceiling for six branches and added noise audits; use one worker and no automatic scientific polling."
+  ],
+  "new_mismatched_cohort_outcomes_seen": 0,
+  "external_messages_sent": false,
+  "automatic_successor": false,
+  "setup_note": "Initial exposure-file write stopped at a missing uppercase CLOSEOUT.json path after PREDICTION.json had been written. Located the existing closeout_v0_1.json and retained the original prediction. No source preparation or dynamics had run. A separate attempted read used an incorrect VALIDATION.v0_2.json spelling; the existing file is VALIDATION_v0_2.json.",
+  "scope": "Existing cohort and apparatus; matched controls are exposed. No independent replication or general RDT validation."
+}

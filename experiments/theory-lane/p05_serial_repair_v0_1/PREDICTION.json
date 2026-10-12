@@ -1,0 +1,29 @@
+{
+  "status": "DECLARED_BEFORE_CONTINUATION_NOT_EXTERNALLY_REGISTERED",
+  "at_utc": "2026-10-10T23:30:55.491121+00:00",
+  "primary": {
+    "contrast": "repeated_minus_baseline",
+    "endpoint": "all 18 reconstruction endpoints pass at generations 15 through 32",
+    "population": "all 256 exposed generation-14 records",
+    "direction": "positive",
+    "failure": "nonpositive mean",
+    "unresolved": "positive estimate with descriptive interval including zero",
+    "unit": "block",
+    "uncertainty": "20000 paired whole-block bootstrap resamples, four blocks within each starting-history stratum"
+  },
+  "secondary": [
+    "one_time_minus_baseline uninterrupted and terminal",
+    "repeated_minus_one_time uninterrupted and terminal",
+    "repeated_minus_shuffled uninterrupted and terminal",
+    "generation curves, recovery, opposite mapping, starting-history means and resource costs"
+  ],
+  "frozen_rule_source": "p05_fresh_lineages_v0_1/runs/pilot_v1/inputs",
+  "primary_rule_changed": false,
+  "minimum_effect_margin": null,
+  "no_equivalence_test": true,
+  "no_secondary_rescue_of_failed_primary": true,
+  "cohort_exposed": true,
+  "future_outcomes_generated_before_freeze": 0,
+  "automatic_polling": false,
+  "automatic_successor": false
+}

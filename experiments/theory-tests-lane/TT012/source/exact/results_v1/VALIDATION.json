@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-10T16:24:23.348510+00:00",
+  "unit_tests": {
+    "command": "python -m pytest -q -p no:cacheprovider --basetemp=<lane>/.cache/p05_sign_alignment_v01 p05_sign_alignment_audit_v0_1/test_alignment.py",
+    "exit_code": 0,
+    "stdout": "....... [100%]\n7 passed in 0.47s",
+    "provenance": "Recorded from the tool result of the executed command; no test rerun or invented output.",
+    "exhaustive_small_graph_systems": 480,
+    "independent_small_graph_ambiguity_ranks": 180,
+    "test_file_sha256": "1c44fba17cd23350de1d311dbf65c8fe44143c5c8ce1a1cc01e1fe46e883b4e5"
+  },
+  "native_symmetry": {
+    "status": "PASS",
+    "sha256": "0ded27f86f4e3354039942e84e7ba5fad7124339838171a2754ab3aaaaf55c69"
+  },
+  "independent_saved_record_verification": {
+    "status": "PASS",
+    "sha256": "0944673924d0fe59bfbb46847fb704eecc50cac446d7f7f311770e2f24194215",
+    "pairs": 128,
+    "saved_case_ambiguity_ranks": 0,
+    "note": "No pair is admissible, so saved-case ambiguity and aligned-hybrid comparisons have empty denominators; synthetic cases validate those algorithms."
+  },
+  "writer_provenance_supplement": {
+    "status": "PASS",
+    "sha256": "56079a4a316e997f69e2656b6d04311084b9fdedfe2a819907cfcff4a4c8e2cc",
+    "writer_replays": 192
+  },
+  "preserved_failure": {
+    "path": "VALIDATION_FAILURE_01.json",
+    "sha256": "85b25f20f8e229ccd05af7491f204f3de2d9f459f5a23363468a99c0f0ab534b"
+  }
+}

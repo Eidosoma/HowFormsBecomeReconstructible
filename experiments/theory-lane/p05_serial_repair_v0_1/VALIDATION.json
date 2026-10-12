@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-10T23:33:02.990229+00:00",
+  "tests_passed": 4,
+  "commands": [
+    {
+      "argv": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/.cache/p05_serial_repair_tests01",
+        "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_serial_repair_v0_1/test_study.py"
+      ],
+      "exit_code": 0,
+      "result": "4 passed in 8.07s"
+    }
+  ],
+  "all_python_parsed": true,
+  "code_sha256": {
+    "analyze.py": "8ec23f048da711691cc31917240caf83fd13e8583dd04731011e9e400ef75d8a",
+    "audit_optimizer.py": "587f7e8632585b064b8abba31ab0d48e0df48156dbe2489abc0b8301a714b45e",
+    "audit_reader.py": "6f4009d295aa5f863485bc84a2bcae80c7ac05f3bd09330846ab4b0c6b3ad094",
+    "audit_serial.py": "d3c6a307ca63ee7fd4870e651a074b574ff52f6bb2d87b6127b65db3ff68e628",
+    "benchmark.py": "895d667c5baaac1c393b00de5104de80e7f2d6f689cb1c313e31d78bf3ca1aa8",
+    "common.py": "a5d7fc4506fe7f72cfa5be61456f7227c2979fe029e007c48666447ee144c46b",
+    "cpu_preflight.py": "0d25c5d987c425a23d8c8f6e4d4247da4fd92fef92bb65dd2ae4e4fa8449f300",
+    "freeze.py": "7247e6b01219cc375319ee50a4e8f355bdbe5493f76ec58ceea394551de82cca",
+    "launch.py": "c7b43a5c44c409ad78e9cfd2de30822a1e2b4f521d20fbb6e9c2662f8ecc2744",
+    "lineage_dynamics.py": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+    "optimizer.py": "1f185c7d0d109cbd4835f0cb6f73a1e482ee59cbe1ec495cebda9727b7605a76",
+    "prepare_sources.py": "6d55e384e3d7fa6e053edd9513fa86f5c01b0d4387a3e896f0eca1579389f3b5",
+    "reader.py": "0d9717638eb2b24c213d5b6f9f392d07f9bade259f6c4869da0d7312ded51532",
+    "repair.py": "3abbfb547f7a3816596e63afa12c5fc8fb73adce0d3a5a654550cb2642d73551",
+    "run.py": "72e6159ec759dcd72831eb87fc312c85dec1eb6e7eeed2aa37a84c6455569d42",
+    "serial.py": "fa7ae842fc16fde3c69085f961c431b262bc3d49028ed9a2d392b4088b1921f7",
+    "sign_graph.py": "ccc467788e928c0d525e07b17b7846dcee34e16c82a8f2c6d8853c7e2f5ace98",
+    "test_study.py": "14e37e3898646dfa495839403a2c1fa7bb4020e0d0827927f675d50e7af505a9",
+    "verify.py": "daf8637c1d5dbdba8fde4ec761cbca03255c53c939500bf2b2be20de1002739d",
+    "writer_audit.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+  },
+  "config_sha256": "da13ae91f9d15ea3043c2c3bda10cba06d6e80e411923ff55fed25062688044c",
+  "protocol_sha256": "f7b8ad370e3b85a8363e8a7c4d3e35f8958cf84de02b525b4f1f98121c34ee8b",
+  "prediction_sha256": "c698823d16a53a467f47c5e1a7c66ecbb86f96b254400ba4e015a50f5891863a",
+  "sources_complete_sha256": "698274270b727d1d0c8baad2dc06f92e417cba01847e50a671f6358bf1ffce6d",
+  "benchmark_complete_sha256": "fc09564f23a595a10d30c606d96ce943664bacd81b09cfc1fd67478f1b480cda",
+  "test_receipt_sha256": "c2c3bd6b49fd5d5c371224f97c4b5b9fef95db5dcf8f754a3a26aa8f8cf7593c",
+  "native_replay_byte_equal": true,
+  "unchanged_repair_rule_verified": true,
+  "new_scientific_continuation_outcomes": 0,
+  "verification_scope": "Separate algorithms within this lane; no external replication."
+}

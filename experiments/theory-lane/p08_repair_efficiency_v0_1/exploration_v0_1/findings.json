@@ -1,0 +1,344 @@
+{
+  "status": "EXPLORATORY_COMPLETE",
+  "at_utc": "2026-10-12T11:22:19.583151+00:00",
+  "source_complete_sha256": "29d8dcbc4a2e5395784b17e561f36a27630e5719d8ce2ba77f78c42e76b950ca",
+  "records": 2112,
+  "blocks": 132,
+  "census": {
+    "six_loss": 46,
+    "six_harm_vs_once": 20,
+    "six_rescue_vs_once": 92,
+    "once_loss": 118
+  },
+  "history_counts": {
+    "exact_rewrite": {
+      "six_loss": 15,
+      "six_harm_vs_once": 7,
+      "six_rescue_vs_once": 29,
+      "once_loss": 37
+    },
+    "single_tolerance_rewrite": {
+      "six_loss": 12,
+      "six_harm_vs_once": 5,
+      "six_rescue_vs_once": 25,
+      "once_loss": 32
+    },
+    "spaced_tolerance_rewrite": {
+      "six_loss": 11,
+      "six_harm_vs_once": 3,
+      "six_rescue_vs_once": 20,
+      "once_loss": 28
+    },
+    "clustered_tolerance_rewrite": {
+      "six_loss": 8,
+      "six_harm_vs_once": 5,
+      "six_rescue_vs_once": 18,
+      "once_loss": 21
+    }
+  },
+  "first_failures_by_generation": {
+    "repairs_1": {
+      "23": 7,
+      "18": 13,
+      "30": 11,
+      "24": 7,
+      "32": 8,
+      "26": 8,
+      "17": 7,
+      "31": 4,
+      "20": 6,
+      "22": 8,
+      "29": 10,
+      "27": 5,
+      "21": 8,
+      "25": 4,
+      "19": 5,
+      "28": 7
+    },
+    "repairs_6": {
+      "26": 6,
+      "23": 11,
+      "29": 9,
+      "32": 7,
+      "17": 7,
+      "20": 6
+    },
+    "repairs_18": {}
+  },
+  "phase_at_risk_counts": {
+    "repairs_1": {
+      "0": {
+        "at_risk_reads": 9135,
+        "first_failures": 44
+      },
+      "1": {
+        "at_risk_reads": 10970,
+        "first_failures": 28
+      },
+      "2": {
+        "at_risk_reads": 10942,
+        "first_failures": 46
+      }
+    },
+    "repairs_6": {
+      "0": {
+        "at_risk_reads": 9282,
+        "first_failures": 0
+      },
+      "1": {
+        "at_risk_reads": 11161,
+        "first_failures": 0
+      },
+      "2": {
+        "at_risk_reads": 11161,
+        "first_failures": 46
+      }
+    },
+    "repairs_18": {
+      "0": {
+        "at_risk_reads": 9395,
+        "first_failures": 0
+      },
+      "1": {
+        "at_risk_reads": 11274,
+        "first_failures": 0
+      },
+      "2": {
+        "at_risk_reads": 11274,
+        "first_failures": 0
+      }
+    }
+  },
+  "recovery": {
+    "repairs_1": {
+      "failures": 118,
+      "ever_recovered": 82,
+      "recovered_before_next_repair": 82,
+      "terminal_recovered": 79
+    },
+    "repairs_6": {
+      "failures": 46,
+      "ever_recovered": 33,
+      "recovered_before_next_repair": 0,
+      "terminal_recovered": 33
+    },
+    "repairs_18": {}
+  },
+  "details": {
+    "six_first_failures_by_phase": {
+      "2": 46
+    },
+    "six_first_failures_on_repair": 0,
+    "six_first_failures_opposite_task": 0,
+    "twenty_harm_first_failures_by_generation": {
+      "26": 2,
+      "29": 6,
+      "32": 3,
+      "23": 7,
+      "20": 2
+    },
+    "twenty_harm_first_failures_by_phase": {
+      "2": 20
+    },
+    "twenty_harm_identical_incoming_as_once": 0
+  },
+  "identical_incoming_states": {
+    "unique_contexts": 4224,
+    "outcomes": {
+      "both_pass": 3829,
+      "both_fail": 377,
+      "rescue": 15,
+      "harm": 3
+    },
+    "by_generation": {
+      "18": {
+        "both_pass": 1911,
+        "both_fail": 188,
+        "rescue": 13
+      },
+      "16": {
+        "both_pass": 1918,
+        "both_fail": 189,
+        "harm": 3,
+        "rescue": 2
+      }
+    },
+    "by_comparison": {
+      "repairs_6_versus_repairs_1": {
+        "all": {
+          "both_pass": 1911,
+          "both_fail": 188,
+          "rescue": 13
+        },
+        "both_previously_uninterrupted": {
+          "both_pass": 1859,
+          "rescue": 13
+        }
+      },
+      "repairs_18_versus_repairs_1": {
+        "all": {
+          "both_pass": 1918,
+          "both_fail": 189,
+          "harm": 3,
+          "rescue": 2
+        },
+        "both_previously_uninterrupted": {
+          "both_pass": 1879
+        }
+      },
+      "repairs_18_versus_repairs_6": {
+        "all": {
+          "both_pass": 1918,
+          "both_fail": 189,
+          "harm": 3,
+          "rescue": 2
+        },
+        "both_previously_uninterrupted": {
+          "both_pass": 1879
+        }
+      }
+    }
+  },
+  "limitations": [
+    "All questions and selections are post-hoc on an exposed cohort.",
+    "Phase hazards are descriptive and mix generation, survival selection and repair history.",
+    "Identical incoming packets plus shared injury/reset/noise isolate the effect of the current repair on that saved boundary, not the population effect of an alternative schedule.",
+    "Contexts and repeated generations are clustered within blocks, not independent observations. No new significance tests or multiplicity-adjusted claims are made.",
+    "The prospective doubled-efficiency verdict remains UNRESOLVED. No new dynamics or cohort are generated."
+  ],
+  "new_dynamics_generated": 0,
+  "inputs_sha256": {
+    "continuation_083000.npz": "2e87ad6a0fc632cd3a354050809e3ec2a04f9d0c221747fccdcbeb382928f98a",
+    "continuation_083001.npz": "73663258e5a1b8943ecb1525e667e63b48131a20c90c5754c99636ca53daab16",
+    "continuation_083002.npz": "6dd011eb01d6c653464113b554abb3b513d1bf8b221849888b8e67a638dadee3",
+    "continuation_083003.npz": "64fdd1f1dd329717138da4bec724543cf6e687fa7f704c9c3d85e44ec4013f6b",
+    "continuation_083004.npz": "13abeda677686f95864696f64a3e9f1d31a905789fbd4552034d4fcb097e3297",
+    "continuation_083005.npz": "527b16f70a258d73521fc2f6143f7c20687534fb08558e0cf10e1fea9fde011b",
+    "continuation_083006.npz": "d5d4cd657eb4a6ae776fc521bde375d0e2667b0f27ffd82e8ec8f9ef869c31c5",
+    "continuation_083007.npz": "4c91084ac1abf6cb262385dd92ff5172fbe756558b8dcb38ee69325a1f56efec",
+    "continuation_083008.npz": "12a0650557d95bd079a450eebbfece24b63c8e606de7899e50d723443050622f",
+    "continuation_083009.npz": "e455486ba3349d8585b8d0faaa49065558c108090503e60efaa967e0cc7b4620",
+    "continuation_083010.npz": "3e6c4d3e1db645c4629d8ded0ca553ea6620b2381c6de82dccf8b7a2e3a41070",
+    "continuation_083011.npz": "3fe8e73736431302ce088bd28f16f5c68ba9c72e75489f3939552adfb31124d0",
+    "continuation_083012.npz": "1c10d658568f38dd81750f219c56d1c5ada768d3267b43876d025edee4ee2c07",
+    "continuation_083013.npz": "9677b4ed91462fce3b142876d24140211c46abfa96335b09df5b92b3fe6c724f",
+    "continuation_083014.npz": "901bf0132f372941d9663bdd50f80a55c8e5d93fd13ec9a1573db63c40b832b8",
+    "continuation_083015.npz": "f12ee125b4f2a1516a604ce34b3b2649a362eab6148e95526c454933509b53f6",
+    "continuation_083016.npz": "d4b00d3910c8ab7fc4a5543ac0374daaace68b0545dc0d208490092e182ff66b",
+    "continuation_083017.npz": "451735858567a424b29db32af621f4cdb22c3f0baa44bf5f6d027b99a4947755",
+    "continuation_083018.npz": "f87de93fc4b26f2a1f11e653efd6e47bb7b58cce627bec8c0da1826617ad8d08",
+    "continuation_083019.npz": "b8e061b0a0550b2793998693667cf053507da9e30c822b5dc5e61e42eaa1268c",
+    "continuation_083020.npz": "a93d84419c34b7fca6b9ba50de5752f0248d1cbfa3a3288c9175b109d05b1597",
+    "continuation_083021.npz": "91d96b1f06c17eeb1dd0be7e8944bae4864268a5bac9809ad3194a79a9a06f04",
+    "continuation_083022.npz": "07f0a0017025daa12919baa82f02ffd0aeaa9cdb2f301d17c290a9396347f80c",
+    "continuation_083023.npz": "d407c182e7b85d2f2f930bb49488a1a02a9acc289b02c4fd96216da4f9b4cee4",
+    "continuation_083024.npz": "53bf23e575fda9a13a127617fe8ac466e39f2337d065c58c8d42adb8013739e8",
+    "continuation_083025.npz": "7f39f269ac43950e4707748176aa4064504dd9d1bf310f37274cc836fa53366a",
+    "continuation_083026.npz": "49f51f98341ec957f042ee67b3c705c06cce1d47791996a66e6cdecf876cfa33",
+    "continuation_083027.npz": "6697d84df60683233d07ad693a58007693af856a6f64f824d79e01f065d8a346",
+    "continuation_083028.npz": "c47ea478847d43c2b0b14ffc221b61e2bd08d969de7b2d6b1dd92715ad498db8",
+    "continuation_083029.npz": "35494851a8024e81d6f42a25297ed0337735cb9af99b307ce8c251976fcbb1f6",
+    "continuation_083030.npz": "60abba942832e91f07279f26441bb32e99d328450b0a548561e41916f7b8d900",
+    "continuation_083031.npz": "4bea5023beb7bd9ea4df16126de4f9bf60c1513455031d90cf8f2aea6ea822d4",
+    "continuation_083032.npz": "eec1536a70dcb80bd1b964c36bab48c76a0f91c8d2b9b5c357e04695326970d6",
+    "continuation_083033.npz": "269cd191f311e7bb6d2c72961e860b7321d6d38efbaf0e4269e7b9048d59aedd",
+    "continuation_083034.npz": "284ae9083954fa4a74d1068bfa74f21a71e3d883eda3b5eb0ca2daa0afe6938f",
+    "continuation_083035.npz": "ccd4f857183f643598128158ce69cf84deeba04ed7b38ec06bc467165c4693ed",
+    "continuation_083036.npz": "3557926418a7633d5970c2516fd6970eec9870c95d75118610e87ae9d8f634e4",
+    "continuation_083037.npz": "94c67a56675f1d2c0d6bee19f65890a609d06ee65ac3e98142e93830413e8cbe",
+    "continuation_083038.npz": "d356985f816458d2623408acce182e142a088187cdb87f785ee4fb28448dbdbc",
+    "continuation_083039.npz": "48734ff14a21a3d1b1da4e667aa1fcc4b170e8835e3aec2f8307c83dc4ff8f19",
+    "continuation_083040.npz": "1652bdedb63a27ba5c65017b3613f352a5aa920823f1e201de53521036f3756b",
+    "continuation_083041.npz": "f815edbadb4040f987da05436962ab8a385882d0231b20880bc9e226d276bdd1",
+    "continuation_083042.npz": "ef797652d5270b2417187cb698360a43b919b40814a3016e1de5679cb687b308",
+    "continuation_083043.npz": "9c5a8cdde95f129bcf4e0dfe6a68e2207b2759d18f915b9dd9ed75f4a422c125",
+    "continuation_083044.npz": "86388e33413cf54e1b4fdb0358d5f33596f2b7f98095b6f5ed15eaeed34c4426",
+    "continuation_083045.npz": "69615828011875ede8f461caf48328fc2afd11dd7224aa80642098729b6fc28f",
+    "continuation_083046.npz": "7f69f7408d272df2a986c913aa786f3678019bdce33ee17277407648703a4a54",
+    "continuation_083047.npz": "eeda974a9fe2228a5d5eb49bfe2c58760e0d784484d899e39e05d4370b83101b",
+    "continuation_083048.npz": "c50625f5a1faa9f47bf90ee9ca76d425a636756a1ad026c1bd02d7e425a2f499",
+    "continuation_083049.npz": "d52f3e4107b46f8c1639d0e54037f6b47812c1718f910e2f58d72873a1a5dea2",
+    "continuation_083050.npz": "364d4937ff9cb2d650c21950429f1ef6e80999a026238ccc1e8b71829ba3b85b",
+    "continuation_083051.npz": "ca35cffe2299890ff08ba1bdf597898f7d3986a1e040632f08f62d0f8c6ab040",
+    "continuation_083052.npz": "d2d5f2beabc54b7c6e89d7d7f46298669bcbd52bed6fa3442cac22d305205bdf",
+    "continuation_083053.npz": "c0e7d0001b39a9e92a6c0a3edb971ff6d29f7cc306965b2a7740c96e7dfd5a3e",
+    "continuation_083054.npz": "9b0ca646762513009339887d67da92da997757306c69116e32b00f745220806c",
+    "continuation_083055.npz": "66b1af72bd853677aa0de82ff490d34aec533d5569e5dbe49fc968c258052ba0",
+    "continuation_083056.npz": "cba8ce4c92968bc6508bef9ed5d6823e47f6c5cf8eeaf3b8293b6411cc3fd56a",
+    "continuation_083057.npz": "0c81e7f9c37f3670e164c4123709a3a527650c493753e830766e99f9ca4d7c81",
+    "continuation_083058.npz": "35f45afd74f7798790ff0b1dbae57cd539685c603e1624170ea1d8c94c7ae85f",
+    "continuation_083059.npz": "4366b285bf544af3537a4219d1a46ca3b6ba245388edf3cf8001ab5e6131c6c1",
+    "continuation_083060.npz": "b614f789c81122426e8119dc09c65f97074b14d1570cbe96d4e13ff1c82fe062",
+    "continuation_083061.npz": "8664be561acd90c2d5705f832de12aa5b76444abf46105fe573e558a6cb8b12c",
+    "continuation_083062.npz": "aa61723754dc45d64c0b3a5661f3633f366772cf5369f4955c4ceee0c16527bb",
+    "continuation_083063.npz": "56a1dc68b3d284d9bdf45af1861b9943ee87150c6cfb1ef8a074437990e901b1",
+    "continuation_083064.npz": "0e0b8315e68d80f007bd91c26a1c753e3b53af6b5d09e0d05d1ddf42440dd165",
+    "continuation_083065.npz": "ae5e91093a8e0d8d54fe6e560b898964ed06587d568c2efc4e3ec0e586bcf312",
+    "continuation_083066.npz": "f2213af89f82bf1b86a8443893d1aa0a491b240ca31eee7ddc61a6ae56005c39",
+    "continuation_083067.npz": "64e53306f2949dd46728379e783a753b7a63d3018f26f5691bf3c35ffd1a01ee",
+    "continuation_083068.npz": "56f9951a4eaa49a9c17d4a4712ee5e5fb940cfd7596ff0984b283f540eb4f6cc",
+    "continuation_083069.npz": "af2b29f80a23882cd70be1eee1144b41ed0f7be08ac62a3d9498c7adda0036f0",
+    "continuation_083070.npz": "24a4df51f56411bd4eefd97e1dc13a5ce917710841b4645db6d24b0f9dbd588c",
+    "continuation_083071.npz": "1a8d8974ea9cecd59c61694e6b6cde7fbe9ba853a471818a77813c265f0a2922",
+    "continuation_083072.npz": "91a2a7fe17ea1134fc5bdd3680ed8c9278ebfc47c69c36ae8d7c5871b7e193d2",
+    "continuation_083073.npz": "2865102b019ee42fc6b0643da42d93a0e51a2dc7592392b6f52a6bfc79d05b9e",
+    "continuation_083074.npz": "4392c7d0409ed90a0e761f44d628bf0dd4a86d1da8ab930e4eea54951a93a6c6",
+    "continuation_083075.npz": "75f35ff13b46b251e7bc491b82cd0e37bd248a3aceea7454e835464eaedc393d",
+    "continuation_083076.npz": "44a86297924f896afa2e4312772f07e0710085fcf1c78ae78282fd7d3fcfa6d3",
+    "continuation_083077.npz": "e5c6f0023d11ee3df17c8938bc96c02a1e9b63c67a8424d8557f1015b0faa4cd",
+    "continuation_083078.npz": "4c59ac38935b6186825da64c22bd07888f26eb47cea0b18ebbf3ede8b9d7ce17",
+    "continuation_083079.npz": "3c16641b33bc7e7aa93937b9e3f4ddccd8f7f839ff322a5be25cc26d6866a0d0",
+    "continuation_083080.npz": "1572a3fec4c55af273639e0f07bfd3ce34e3953f9757fc4989e5de9d670b6361",
+    "continuation_083081.npz": "013b7024197364f6b1b6c3e5a8bfc9300464166c3fae4a38eeac18372a80f1db",
+    "continuation_083082.npz": "e7b89d18b7e019060212bc56195c60a1b7d12aa2a9a500bdb8d782aabeaf484e",
+    "continuation_083083.npz": "d15b31906ec047e1ee2f2ddf31844be94782862abcb2b4a3d1fbcd489dfec049",
+    "continuation_083084.npz": "857a4b5eca5a61dff5dad023624fe264c2a42deb7bba72b342767e02fe323b56",
+    "continuation_083085.npz": "df450e4da595ceb6b66c1fcc478664e62cf602c7f15236cc73ab5837b1d30c6d",
+    "continuation_083086.npz": "b83cabeddfcf011c704a4ad78c875bf2180472c82ae0f2ada7aabd72b1473441",
+    "continuation_083087.npz": "3f1b94c221fc84c99399416fd2168173f5479ddd66659157eda3c8547bd6651c",
+    "continuation_083088.npz": "fbac1e6d999f9053b0dc03d4357c15df03b3e11b0152be7a01d14141c6ceafe6",
+    "continuation_083089.npz": "77b6a93c7cd83a41729360f0b6de6408531e548cd447b90bbd16b6186ccf843a",
+    "continuation_083090.npz": "1072c01c62b93c8cec9c6a1dc535c123bc09bed166aa2cc9c80161be0eb2d1a0",
+    "continuation_083091.npz": "5f6cb89a3b1b1e4fd030d03cf0d4210a6a5d54321bd92c821d201be4a83f8f73",
+    "continuation_083092.npz": "fb6d48fcaa87186202454ea506816506cbebb5e3e536debd5a155071b4b32f49",
+    "continuation_083093.npz": "07538c9664ca3754381aba324235338ee151ca32382cec72831b994386661d70",
+    "continuation_083094.npz": "3203d6cbc3020220b8026797ef7916288e1c34387be14970b7e2579cfca1f407",
+    "continuation_083095.npz": "e67e005049de00045b62a0de89943759e88415b15bdf9e405ea27dcd6feeb9e8",
+    "continuation_083096.npz": "01c435fa39c89d99b42902cd763f3ea0f93ca67a78ecc8c94365c5d4534851b0",
+    "continuation_083097.npz": "cbbcb1a0e89f1c1dd598fd0e78816b68b6c9e334cdc172f26638a995e42db021",
+    "continuation_083098.npz": "349cfe2c2442383cfbab4a0038229e2e2a8f86095a62d6d30b201f4e7e3f8c4b",
+    "continuation_083099.npz": "1e482bd81d9a7429232fbf3f833d763d3361e7afa1440c71cbb85259feb09609",
+    "continuation_083100.npz": "08d94b2bf9c21f45d9b4ecb6ec3dd0880bb3dbabacc0cb5d6b165bfffd233e59",
+    "continuation_083101.npz": "4c5bccaea72b6ed9050d459a70813044e7b89585b89b5e76ade42707331db0c0",
+    "continuation_083102.npz": "75598d9babf0dc93acb03cba6d4109291fbdec27ec9b24a5123b762915baf113",
+    "continuation_083103.npz": "5c600921b8506fc20a4ffc91b3756ec61310b92355edf97d885447c62b162da4",
+    "continuation_083104.npz": "2c0bce9120016fa895f3a37e6103842f22c0a2bd6d2b03db0fa8653ac7300c77",
+    "continuation_083105.npz": "69efd3abdace20d7949eb600850a2d689aca7662899f0daa2385790c518641ed",
+    "continuation_083106.npz": "313f6465205d75e6b7866a75a6ec3da4cbae27e6c99ab16d3d81eaa1a8da6357",
+    "continuation_083107.npz": "874171806bf88b816d2ec01f4df24b38e03c54286c3ddda3fd9a473b2c73628c",
+    "continuation_083108.npz": "905e4ffcc5bebb66244373b1f7f4e494207906af0b6dc759b2862b2ef68e8096",
+    "continuation_083109.npz": "50037d1c63a77a4cc28c7936789cf3fcecb5e395deb0def3af227504c12b7889",
+    "continuation_083110.npz": "0319f01b8c3481716ad5dfe1c24e07fa18f67138a24affac99d17d1010a1df3e",
+    "continuation_083111.npz": "212d3d1cfeb6902e42ecf229fb688f321d2658eae8acf5b3740228bb6476aed9",
+    "continuation_083112.npz": "7ce6cd673639e88c3e964b5bc8a0863ef368150318c8eb64f3050834d15ba4f5",
+    "continuation_083113.npz": "caada73c7ec7f30428c8efe5786ce7fd552ab54af270605400a35f987c94f551",
+    "continuation_083114.npz": "df731b08ddd44f24e616475010e19d08ae8c4fa01651fd20b72f9ec9c0f3cec1",
+    "continuation_083115.npz": "4ca96fc66f6c501a04d4ddb49ce06a9ee397468580d14fd20bbedb9b53585708",
+    "continuation_083116.npz": "0572df6f98c9ff249a17130c01dc7ed43089cab8ca766e0c626ba44582bb1e94",
+    "continuation_083117.npz": "d410f3ada61235f1866b5c3f0995cf97e74c0a283b913bec9ece8aa3cb44bb57",
+    "continuation_083118.npz": "016d64b7c271a7a2a7822d585a961bcfffd30cd416a0a0b14ecb0feb0c6a79e3",
+    "continuation_083119.npz": "6f5d8387c38918606fbdda6cf5442c9aa1fc91a85525187abab1a41d4c9181cc",
+    "continuation_083120.npz": "da0acfc8f3f02d79a50d5451927a43baebf216a99ec81a1d464283e0bb7df411",
+    "continuation_083121.npz": "00d6d57abea3eca1c6779788051082b2005a668645aa8bbc0c65c78b848be12c",
+    "continuation_083122.npz": "934cf92006fdfdf006457446d14484acca3bf2281b04fafb1e6742a73751ad09",
+    "continuation_083123.npz": "c0a6b9ba1c82ade288a83acdbeef26169f2eb59c495c309e591693260e806d0e",
+    "continuation_083124.npz": "cf7d631b60d18fb61a17f8a8ca8a8a15c681a7e5b9d2421270214e864aed0286",
+    "continuation_083125.npz": "76b4d7597a06510bd95b72938aedcbc6abcd04aab99e8188596fa0265338eaee",
+    "continuation_083126.npz": "7574d66b82b4edd930cf1c865986a4f01e16e318e9974f61d3a0b25175c3b582",
+    "continuation_083127.npz": "9997a99a798308dfdce3c7507cee53b693861898b3e48a7368de324ab3957d1e",
+    "continuation_083128.npz": "369a1041ec7e1e7d3450254853fbd109fd431e823667afec306ffd35c660de03",
+    "continuation_083129.npz": "9c7fd06f6af2821cead12b81d8881ad4fdad66ce0312a4ad8e004e0560338629",
+    "continuation_083130.npz": "f081bdc034e0be33530cb06077a2ea821fa5bdc4bfd3306c655e91095a2bca84",
+    "continuation_083131.npz": "e89f54b611b0322363c31b8064dd75695f174d753f628fc4d6ab130e1c8ee900"
+  }
+}

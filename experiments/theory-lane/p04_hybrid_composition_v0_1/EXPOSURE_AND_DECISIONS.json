@@ -1,0 +1,24 @@
+{
+  "version": "0.1",
+  "status": "OUTCOME_INFORMED_DEVELOPMENT_NOT_CONFIRMATION",
+  "known_evidence": [
+    "All prior P01/P02 theory-lane outcomes and full E051 reviewed results are exposed.",
+    "P03 fixed-injury rewrite benefit was 8.02 points; later new draws reproduced an original-mask benefit of 7.03 points.",
+    "P03 fresh-injury incoming, outgoing and erasure-only equal-block rates were 28.42, 22.28 and 8.45 percent. The rewrite transfer prediction failed in the panel.",
+    "P03 signed and unsigned choices yielded 33.39 and 33.31 percent under fresh injuries."
+  ],
+  "design_decisions": [
+    "Complete the four-way contrast by retaining incoming values only where the original injury prevented writing.",
+    "Treat 42.24886983676046 percent as a frozen conventional additive point forecast, with old incoming/outgoing block-rate forecast rivals.",
+    "Distinguish prior forecast error from the contemporaneous factorial interaction and from control sampling shifts.",
+    "Use one unselected sign permutation per case, preserving backup support, magnitudes and positive/negative sign counts; report identity permutations.",
+    "Keep all 64 cases, sixteen draws, 24-cell injuries, original reference regime, and 2048 updates.",
+    "Retain signed/unsigned descriptors for exact controls; fit no model and introduce no new diagnostic-choice policy.",
+    "Use the checked native reader and separate flattened audit unchanged; source provenance is recorded in SOURCE_REUSE.json.",
+    "One worker, one numerical thread, forecast ceiling 3600 seconds, detached unpolled execution and no automatic successor."
+  ],
+  "prior_art_scope": "This is a controlled preservation/rewrite combination and ordinary additivity test. It does not establish a new principle of error correction or source-specific body-record information complementarity.",
+  "unexposed_before_launch": ["hybrid and scrambled-hybrid native outcomes", "native outcomes under the P04 injury/read namespace"],
+  "declared_external_resource": "Access to the incoming record at writing time.",
+  "old_snapshots_unchanged": true
+}

@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-09-19T15:54:38.750782+00:00",
+  "scientific_status": "EARLY_CAPTURE_QUALIFIED",
+  "full_early_capture_qualified": true,
+  "primary": {
+    "endpoint": "immediate-minus-delayed intact both-cue success after one replacement",
+    "lower_bound_positive": true,
+    "statistics": {
+      "block_means": [
+        0.5,
+        0.75,
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.625,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.0,
+        0.75,
+        0.75,
+        0.5,
+        0.25,
+        1.0,
+        1.0,
+        0.75,
+        0.75,
+        0.0,
+        0.75,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "ci95": [
+        0.609375,
+        0.796875
+      ],
+      "mean": 0.70703125
+    }
+  },
+  "qualification_gates": {
+    "immediate_minus_averaged_lower_positive": true,
+    "immediate_original_24_gates": true,
+    "immediate_reading_writing_6_gates": true,
+    "intact_both_cue_lower_above_075": true
+  },
+  "immediate_original_gates_passed": 24,
+  "immediate_boundary_gates_passed": 6,
+  "all_boundary_gates_passed": 16,
+  "all_boundary_gates_total": 18,
+  "runs": {
+    "benchmark_v1": {
+      "original_outputs_verified": 27,
+      "complete_sha256": "f9e9c086c05ac8c6b4e18064712cdb88430ec40a09df1bba63838babd4d1bce8",
+      "audit_sha256": "f370f8321aff43f44014e7c23c8faa08bfe6ea4e7909490111a0e102945f745a",
+      "figure_provenance_sha256": "8bf2a5f60056d98f4548a25b94bdfcedadadc206214624898118a1f30db0c707",
+      "individual_observations": 1512,
+      "simulation_seconds": 99.1462595999999,
+      "audit_seconds": 100.5374089190002,
+      "workflow_seconds": 201.41196973299998
+    },
+    "timing_v1": {
+      "original_outputs_verified": 213,
+      "complete_sha256": "826d7fc40b79ce6b5f4c9f7889631ed75f0f93a8da8933e90d59d52c9fdaa09a",
+      "audit_sha256": "0e3c75d114131e3e36706c044391870c98a36538c65da63e448d7ffdcad60601",
+      "figure_provenance_sha256": "50e63c1d266a58f439d11cdadecf23f52242e0808bc17c56dc79f03b584311af",
+      "individual_observations": 193536,
+      "simulation_seconds": 2409.610738449,
+      "audit_seconds": 2568.0824150319995,
+      "workflow_seconds": 4979.25539036
+    }
+  },
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "fixture_receipt_and_evidence_verified": true,
+  "workflow_and_figure_references_verified": true,
+  "scientific_figure_visually_inspected": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1"
+  ],
+  "subsequent_experiment_started": false
+}

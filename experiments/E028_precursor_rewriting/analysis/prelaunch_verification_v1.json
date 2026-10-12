@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-22T21:38:36.444001+00:00",
+  "tests": 7,
+  "scientific_inputs": 21,
+  "evidence": {
+    "fixture": {
+      "original_outputs_verified": 30,
+      "individual_observations": 2688,
+      "complete_sha256": "75316016b7728fc606afd7030fcefc302675b3a3a0dcd9ce14021765b64d3050",
+      "audit_sha256": "f12e6ad2b398b3ef9f9fa6c6093c71793b560e416fd5829f6a920e4682080de9",
+      "simulation_seconds": 3.0792939550010487,
+      "audit_seconds": 2.8804162520100363,
+      "body_individual_observations": 32
+    },
+    "benchmark": {
+      "original_outputs_verified": 31,
+      "individual_observations": 1344,
+      "complete_sha256": "1872aee256c87d66c446cf178f2e17469a646a95e2e744e9a77617323e9dd2ef",
+      "audit_sha256": "b4179ffcb785323e39f7bd0b9e1def247c8071a6a22b3398f881edc7edc2b22c",
+      "simulation_seconds": 81.7449732060195,
+      "audit_seconds": 87.23029238398885,
+      "body_individual_observations": 16
+    }
+  },
+  "benchmark_completed_utc": "2026-09-22T21:37:22.569617+00:00",
+  "benchmark_workflow_seconds": 170.7866448009736,
+  "benchmark_minus_forecast_seconds": -242.31318533298327,
+  "fixture_receipt_sha256": "0d999b234ca39de423d6e748d9bf32e33287b337515d9374e77ee4ee5f372ad3",
+  "benchmark_forecast_sha256": "2309a479eedd0759a451e0c30f273044935db140be45b6ed7b0fb9ad0dcfb39d",
+  "benchmark_figure_visually_inspected": true,
+  "figure_provenance_sha256": "b699ad025dbbb6e547bb2ab2c795c4a2be5586d0768d8c2d2863bc6645dcf977",
+  "forecast_sha256": "606b99a3cbda51244212d077a8eb2266f6d7db70196fdb3140b85f34d47eea2e",
+  "forecast_seconds": 6825.283787078224,
+  "workers": 8,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "numerical_threads": 1,
+  "storage_with_reserve_bytes": 2128173184,
+  "available_bytes": 5503041536,
+  "source_data_index_sha256": "1b6d0abaa3bfd60b2adaef6db36fa8dae00a6587873871a8a0682c005f9b0756",
+  "source_evidence": {
+    "benchmark": {
+      "path": "E027_selective_renewal/runs/benchmark_v1",
+      "blocks": [
+        900027
+      ],
+      "raw_files_verified": 4,
+      "complete_sha256": "564be70398611637309650c440bcddf28d5814d03c021177981bae6bd2747bf3",
+      "audit_sha256": "8e7aceeeacc0f97c4492279c535f6a0ef902ffd52cebd89b524be207d1e82de7"
+    },
+    "cohort": {
+      "path": "E027_selective_renewal/runs/selective_v1",
+      "blocks": [
+        24000,
+        24001,
+        24002,
+        24003,
+        24004,
+        24005,
+        24006,
+        24007,
+        24008,
+        24009,
+        24010,
+        24011,
+        24012,
+        24013,
+        24014,
+        24015,
+        24016,
+        24017,
+        24018,
+        24019,
+        24020,
+        24021,
+        24022,
+        24023,
+        24024,
+        24025,
+        24026,
+        24027,
+        24028,
+        24029,
+        24030,
+        24031
+      ],
+      "raw_files_verified": 128,
+      "complete_sha256": "f922b121f2004813995ff9b3e84af5fe47b227922fd38edaf0c220a5fc9815f7",
+      "audit_sha256": "82f073ed9b31f058aeb230460b4b8729e9d59845f0fe265486893b3291c3d15a"
+    },
+    "fixture": {
+      "path": "E027_selective_renewal/analysis/fixture_attempt1",
+      "blocks": [
+        900027
+      ],
+      "raw_files_verified": 4,
+      "complete_sha256": "a8e0a90983f8c9cda255915de9d5dca5bc37ff4fe8f3b7754fd6cbcbae960669",
+      "audit_sha256": "0df213f336b87a84571cf11565819918f84c16b15e7a16cfbe9ab5de1d629948"
+    }
+  },
+  "predecessor_closeout_sha256": "98a186abc867f77a0615bd97d86ac71b3f666c52ae8f436979a68f426e17b82e",
+  "predecessor_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1",
+    "E017_reader_timing/runs/timing_v1",
+    "E018_functional_renewal/runs/renewal_v1",
+    "E019_capture_timing/runs/timing_v1",
+    "E020_serial_capture/runs/renewal_v1",
+    "E021_damaged_renewal/runs/damage_v1",
+    "E022_reader_compensation/runs/compensation_v1",
+    "E023_receiver_compensation/runs/receiver_v1",
+    "E024_serial_compensation/runs/serial_v1",
+    "E025_rewriting_confirmation/runs/confirmation_v1",
+    "E026_restoration_intervention/runs/restoration_v1",
+    "E027_selective_renewal/runs/selective_v1"
+  ],
+  "predecessor_diagnoses_inputs_unchanged": true,
+  "prior_active_jobs": [],
+  "diagnostic_design": "Two g3 reading variants crossed with target refresh/freeze on all 32 E027 full-rebuilding histories; post hoc pointwise intervals",
+  "new_intervention_cohort_outcomes_inspected": false,
+  "operational_launcher_sha256": "8374101f98e7e1e3f2b3acb8406baf48f42a9dfc32c9c3e41a0a29678ae073b7",
+  "verification_code_sha256": "6b8ba1a2d6756460479bd283e81cb92d640ea694a7814159eff36f8b04b32133"
+}

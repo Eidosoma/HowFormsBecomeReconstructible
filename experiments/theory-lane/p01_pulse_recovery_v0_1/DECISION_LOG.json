@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-09T13:29:20.175897+00:00",
+  "status": "COMPLETED_DEVELOPMENT_ANALYSIS",
+  "authorized_work_completed": "Extract recovery response from completed pulse histories and specify a discriminating next experiment.",
+  "definitions_frozen_before_new_measurements": true,
+  "prior_terminal_outcomes_known": true,
+  "newly_inspected": "All saved generation-3-to-32 packets and bodies across the two eight-block pilots; 19200 measurement rows.",
+  "tests_passed": 4,
+  "extraction_seconds": 29.27337735891342,
+  "independent_verification": "PASS",
+  "figure_visually_inspected": true,
+  "findings": [
+    "Pulse reader distance increases from generation 3 to 4 in all eight blocks; the mean generation-3-to-6 distance also increases.",
+    "Native task preservation does not require return to the paired original network over this finite horizon.",
+    "Repeated tolerance produces much greater drift and increasing susceptibility to further substitutions.",
+    "Three of four terminal pulse harms pass early bodies through generation 6; early normal expression is insufficient in these cases.",
+    "Terminal reconstruction differs strongly from uninterrupted body expression."
+  ],
+  "rejected_or_narrowed": [
+    "Rapid contraction toward the original normalized reader after returning to O is unsupported at both declared early comparisons.",
+    "An immediate improvement in the fixed 64-step signed-transfer score does not explain P superiority at generation 32.",
+    "No revival of the failed passive P01 predictor or confirmation of a new predictor."
+  ],
+  "next_design": "Six tolerance events, spaced 3/5/7/9/11/13 versus common initial event plus late cluster 3/9/10/11/12/13; identical final recovery period. DRAFT_NOT_FROZEN and unrun.",
+  "new_native_simulations": false,
+  "long_jobs_launched": false,
+  "previous_artifacts_modified": false,
+  "fleet_exposure": "All E051 blocks already exposed; future holdout must be separate and defined before evaluation."
+}

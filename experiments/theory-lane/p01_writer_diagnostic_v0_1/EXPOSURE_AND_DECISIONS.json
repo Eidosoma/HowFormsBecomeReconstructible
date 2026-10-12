@@ -1,0 +1,130 @@
+{
+  "version": "0.1",
+  "created_at_utc": "2026-10-08T19:02:25.619Z",
+  "status": "RETROSPECTIVE_DEVELOPMENT_NOT_CONFIRMATORY",
+  "scope": "Lane-local exposure and decisions; fleet-wide participant access remains unknown.",
+  "authorization": "User: lets go, following the proposal to compare original and tolerance writers on the same saved body and relate changes to failures.",
+  "cohort": {
+    "experiment": "E051",
+    "run": "../E051_cue_pairing_robustness/runs/robustness_v1",
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "condition_analysis": [
+      "paired",
+      "noise_0999",
+      "noise_0",
+      "reset_099"
+    ],
+    "writers": [
+      "exact_rewrite",
+      "tolerance_rewrite"
+    ],
+    "boundaries": 32,
+    "body_contexts": 32768,
+    "independent_blocks": 8
+  },
+  "access": [
+    "Initial overbroad filename search revealed unrelated source/lane/provenance paths; no unrelated result contents were opened by that search.",
+    "E051 live protocol/run/model/evidence source inspected; run manifest and frozen required model/protocol hashes checked.",
+    "E051 early-look snapshot parsed for cohort selection and timing; only metadata fields printed, not additional outcome fields.",
+    "Source geometry/rule/cue arrays, selected-block body/end/packet/mean-port arrays, saved case scores and terminal mean-port arrays opened for blocks34000–34007.",
+    "Conservatively regard all conditions represented in the loaded case/body arrays of these eight blocks as exposed, although calculations and reporting use only the declared subset.",
+    "No newer block outcomes or other running experiment result contents were analyzed. This cannot attest what other programme participants have seen."
+  ],
+  "evidence_status": [
+    {
+      "id": "WD01",
+      "status": "REPRODUCED_SELECTED_NATIVE_CALCULATION",
+      "claim": "32768 actual-policy outgoing packets match the independently recomputed writer on saved bodies."
+    },
+    {
+      "id": "WD02",
+      "status": "REPRODUCED_SELECTED_NATIVE_ENDPOINTS",
+      "claim": "Selected current/next-body and h32 scattered scores agree with strict scoring of saved mean ports; user interim aggregates reproduced.",
+      "limit": "Does not replay the dynamics that produced those means."
+    },
+    {
+      "id": "WD03",
+      "status": "DEVELOPMENT_MECHANISTIC_RESULT",
+      "claim": "The tolerance changes normalized influence and sometimes signs on identical bodies; sign restoration alone closes only part of the linear cue-transfer gap.",
+      "limit": "Linear surrogate, not a native rescue experiment."
+    },
+    {
+      "id": "WD04",
+      "status": "EXPLORATORY_GROUPED_PREDICTION",
+      "claim": "Four added mechanistic features reduce next-body mean block Brier error by15.93%, all8 folds improve.",
+      "limit": "Eight exposed blocks; fixed baseline and pooling across conditions; not a general law."
+    },
+    {
+      "id": "WD05",
+      "status": "RETAINED_NEGATIVE_RESULT",
+      "claim": "First-generation features do not improve h32 Brier error: .064385 baseline versus .064561 augmented."
+    },
+    {
+      "id": "WD06",
+      "status": "POST_HOC_DEVELOPMENT_CHECK",
+      "claim": "At first observed divergence, original/tolerance pre-write bodies are byte-identical; paired generation3 has98/128 different outgoing records.",
+      "limit": "Onset generation was selected after the main feature analysis."
+    },
+    {
+      "id": "WD07",
+      "status": "HYPOTHESIS",
+      "claim": "A feedback process between weakened cue contrast, extra threshold substitutions and altered effective connectivity may explain accumulated loss.",
+      "limit": "Specific causal mediation not established; a native continuation control would be required."
+    }
+  ],
+  "decisions": [
+    {
+      "order": 1,
+      "decision": "Restrict analysis to the same eight early-look blocks and four reported pairings; leave running experiment untouched."
+    },
+    {
+      "order": 2,
+      "decision": "Save protocol/configuration before features; benchmark one retained boundary; use one process and numerical thread."
+    },
+    {
+      "order": 3,
+      "decision": "Independently implement writer and normalized reader; include same-magnitude original-sign control and fixed64-step linear transfer."
+    },
+    {
+      "order": 4,
+      "decision": "Pass five dense-graph/algebra/scoring checks and native benchmark; extract all fixed32768 body contexts."
+    },
+    {
+      "order": 5,
+      "decision": "Run prespecified fixed-ridge whole-block exclusions; retain next-body improvement and long-horizon failure."
+    },
+    {
+      "order": 6,
+      "decision": "After observing onset in feature curves, verify first-divergence bodies/packets at generation3 for paired/reset and generation2 for noise conditions; label post-hoc."
+    },
+    {
+      "order": 7,
+      "decision": "Narrow sign-only explanation; identify weight rebalancing/feedback and repair-inclusive probe design as next hypotheses."
+    },
+    {
+      "order": 8,
+      "decision": "Preserve first figure-layout draft, move obstructing legends for readability; numerical results unchanged."
+    }
+  ],
+  "validation": {
+    "unit_tests_passed": 5,
+    "unit_test_seconds": 0.18,
+    "extraction_seconds": 95.99399737501517,
+    "model_analysis_seconds": 6.414788333931938,
+    "first_divergence_check_reproduced": true,
+    "native_simulator_steps": 0,
+    "external_messages_sent": 0
+  },
+  "prior_art": "Algebraic structural-balance lead and primary citation are in ../p01_leads_v0_1.md; the native application is a development hypothesis, not a novelty claim for signed networks.",
+  "prior_snapshot": "../p01_v0_2/snapshot.json is preserved.",
+  "pending": "Full E051 independent dynamics audit/scientific decision remains the responsibility of that ongoing programme; no claim here substitutes for it."
+}

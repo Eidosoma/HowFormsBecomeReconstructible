@@ -1,0 +1,128 @@
+{
+  "changed_modules": [
+    "continuation.py",
+    "interventions.py",
+    "analysis.py",
+    "statistics_block.py",
+    "engine.py",
+    "checks.py",
+    "report.py",
+    "register.py",
+    "run.py"
+  ],
+  "continuation_moment_adapter": "Unchanged audit computes rho 1,.999,0 moments; retain active rho 1,0 rows.",
+  "independent_full_replays": true,
+  "new_test_outcomes_generated": false,
+  "production_source_functions_execute": true,
+  "recorded_utc": "2026-10-11T16:32:02.765673+00:00",
+  "reused": {
+    "capacity.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/capacity.py",
+      "role": "Qualified independent/helper module",
+      "sha256": "be766a7f75f1ecdc45376f310110b6b418cfa9e1e287ffd77c02f8920d8113f8",
+      "unchanged": true
+    },
+    "core.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/lineage_audit.py",
+      "role": "Qualified independent/helper module",
+      "sha256": "9190704f4900b7512df5492379e3ea99ef2d57b732d5ca22f4986c63784a7600",
+      "unchanged": true
+    },
+    "dynamics_audit.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT015/dynamics.py",
+      "role": "Unchanged indexed-neighbor continuation replay and flat writer",
+      "sha256": "b4c62d02eafc39a1147873e2ec61580496a15a691add223f3c9aa2521de1316b",
+      "unchanged": true
+    },
+    "lineage.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/lineage.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "a56d0dc642ddf2c2903e7a17c4b47c22bf0be878f283e2e6ae42554db0095e1d",
+      "unchanged": true
+    },
+    "native.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/native.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "d7f991b47d8bd7f7dd8e0bd5c06a974849348356e981d87727816d2056867f31",
+      "unchanged": true
+    },
+    "optimizer.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/optimizer.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "eb65162d1e67ab5755a41740b0ac021c9c94a8d78dda0cdb6168037bf3174b03",
+      "unchanged": true
+    },
+    "optimizer_audit.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/optimizer_audit.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "587f7e8632585b064b8abba31ab0d48e0df48156dbe2489abc0b8301a714b45e",
+      "unchanged": true
+    },
+    "repair.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/repair.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "12a29a06c525f7d536314ac2f11dc4a17725f7ba860e696ef884bbb85398949f",
+      "unchanged": true
+    },
+    "roll_dynamics.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT015/source/noise/inputs/lineage_dynamics.py",
+      "role": "Qualified roll-based dynamics, now explicitly used as production implementation",
+      "sha256": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+      "unchanged": true
+    },
+    "source/known/g12.npz": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/known/g12.npz",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "0026a7c6a8d38740aee59159a050c2df0cb2b1f4cb7053be0d43082886737965",
+      "unchanged": true
+    },
+    "source/known/g13.npz": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/known/g13.npz",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "c355cb0c23d9213bb7ee920b16223d4c727f26beb568e6d9cc08e2a3a0f181ef",
+      "unchanged": true
+    },
+    "source/known/g14.npz": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/known/g14.npz",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "5fd862c8b364c5db445ef7825e78a98e16118793c6f62ef4001cd7a4926a0b17",
+      "unchanged": true
+    },
+    "source/known/teaching.npz": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/known/teaching.npz",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "03e91057dc9f86aab96064c563644c60e55df2ef4cd356262dabbc4d826ffd5d",
+      "unchanged": true
+    },
+    "source/native/E015_functional_inheritance/model.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/native/E015_functional_inheritance/model.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+      "unchanged": true
+    },
+    "source/native/E016_teaching_consistency/model.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/native/E016_teaching_consistency/model.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+      "unchanged": true
+    },
+    "source/native/common.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/native/common.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+      "unchanged": true
+    },
+    "source/spacing_dynamics.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/source/spacing_dynamics.py",
+      "role": "Qualified production acquisition/native adapter or independent repair and Prim solver",
+      "sha256": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+      "unchanged": true
+    },
+    "support.py": {
+      "original": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-tests-lane/TT014/support.py",
+      "role": "Qualified independent/helper module",
+      "sha256": "957ef856c74b725c135631cd4f2372e27aa05a5b02cdca0f315c482e448f571f",
+      "unchanged": true
+    }
+  }
+}

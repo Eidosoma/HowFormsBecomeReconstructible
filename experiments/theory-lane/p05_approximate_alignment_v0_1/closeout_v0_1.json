@@ -1,0 +1,217 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-10T18:37:06.058589+00:00",
+  "review_trigger": "User requested status; no automatic polling.",
+  "run": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_approximate_alignment_v0_1/runs/pilot_v1",
+  "run_completed_at_utc": "2026-10-10T18:30:24.650853+00:00",
+  "elapsed_seconds": 1621.6080135020893,
+  "anchors_sha256": {
+    "COMPLETE.json": "26d30123e97e6a21039bc41c966f58f246165e74dece6ce8b1a225abedad3cdd",
+    "REPORT.md": "eaeea4ab3647d72b0b19758ea432dc9de24cb3f6f2b793a564a1745d32684de0",
+    "VERIFICATION.json": "3564091eee86e1d7badc0870e6c4657fbba62ad80c9613a9ca65d9ebea7ae3f2",
+    "manifest.json": "1fbe799aac8b52e3337bcfe6283dfebed0e834cc7d0fc30bbbc29987fade7412",
+    "analysis.json": "d620ff461c7c623770dd24768ff17a690a366f444857dfa819bfdb2e68315a67"
+  },
+  "checks": {
+    "completed_output_hashes": 26,
+    "verification_output_hashes": 11,
+    "frozen_input_hashes": 48,
+    "current_input_hashes": 48,
+    "bound_source_hashes": 12,
+    "prepared_output_hashes": 10,
+    "prepared_code_hashes": 6,
+    "validation_code_hashes": 17,
+    "benchmark_code_hashes": 3,
+    "source_reuse_hashes": 10,
+    "unchanged_reused_files": 6,
+    "block_receipts": 8
+  },
+  "native_audit_contexts": 16,
+  "variants_per_native_audit": 9,
+  "independent_optimizer_checks": 192,
+  "verification_scope": "Separate implementations within the same lane; not external replication.",
+  "fresh_intended_equal_block_rates": {
+    "incoming": 0.2875539716360029,
+    "outgoing": 0.22606858202561328,
+    "common_own": 0.26938680893759015,
+    "same_unaligned": 0.09662332025613275,
+    "opposite_unaligned": 0.09193497474747475,
+    "same_aligned": 0.14467075892857142,
+    "opposite_aligned": 0.14265351618867245,
+    "completion": 0.2673744983315296,
+    "erased": 0.0
+  },
+  "intended_effects": {
+    "mean_alignment_effect": {
+      "mean": 0.049382990056818184,
+      "by_block": {
+        "34000": 0.15625,
+        "34001": -0.017045454545454544,
+        "34002": 0.13541666666666666,
+        "34003": 0.078125,
+        "34004": 0.0,
+        "34005": -0.015625,
+        "34006": 0.037109375,
+        "34007": 0.020833333333333332
+      },
+      "descriptive_block_bootstrap_95": [
+        0.008529015743371213,
+        0.09487452651515152
+      ],
+      "positive_blocks": 5,
+      "tied_blocks": 1,
+      "negative_blocks": 2
+    },
+    "same_alignment_effect": {
+      "mean": 0.04804743867243867,
+      "by_block": {
+        "34000": 0.17857142857142858,
+        "34001": 0.011363636363636364,
+        "34002": 0.19444444444444445,
+        "34003": 0.046875,
+        "34004": 0.0,
+        "34005": -0.0625,
+        "34006": 0.015625,
+        "34007": 0.0
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.006087662337662336,
+        0.10974702380952381
+      ],
+      "positive_blocks": 5,
+      "tied_blocks": 2,
+      "negative_blocks": 1
+    },
+    "opposite_alignment_effect": {
+      "mean": 0.050718541441197695,
+      "by_block": {
+        "34000": 0.13392857142857142,
+        "34001": -0.045454545454545456,
+        "34002": 0.0763888888888889,
+        "34003": 0.109375,
+        "34004": 0.0,
+        "34005": 0.03125,
+        "34006": 0.05859375,
+        "34007": 0.041666666666666664
+      },
+      "descriptive_block_bootstrap_95": [
+        0.012716450216450216,
+        0.08724733382936509
+      ],
+      "positive_blocks": 6,
+      "tied_blocks": 1,
+      "negative_blocks": 1
+    },
+    "aligned_minus_completion": {
+      "mean": -0.12371236077290765,
+      "by_block": {
+        "34000": -0.10714285714285714,
+        "34001": -0.08806818181818182,
+        "34002": -0.15625,
+        "34003": -0.359375,
+        "34004": 0.0,
+        "34005": -0.0546875,
+        "34006": -0.189453125,
+        "34007": -0.034722222222222224
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.20414736088564214,
+        -0.05759326665088396
+      ],
+      "positive_blocks": 0,
+      "tied_blocks": 1,
+      "negative_blocks": 7
+    },
+    "own_minus_aligned": {
+      "mean": 0.12572467137896826,
+      "by_block": {
+        "34000": 0.10714285714285714,
+        "34001": 0.09375,
+        "34002": 0.1284722222222222,
+        "34003": 0.375,
+        "34004": 0.0,
+        "34005": 0.1015625,
+        "34006": 0.158203125,
+        "34007": 0.041666666666666664
+      },
+      "descriptive_block_bootstrap_95": [
+        0.06348818824404762,
+        0.20626395089285715
+      ],
+      "positive_blocks": 7,
+      "tied_blocks": 1,
+      "negative_blocks": 0
+    },
+    "completion_minus_outgoing": {
+      "mean": 0.041305916305916304,
+      "by_block": {
+        "34000": 0.026785714285714284,
+        "34001": 0.03977272727272727,
+        "34002": 0.0763888888888889,
+        "34003": 0.25,
+        "34004": 0.0,
+        "34005": -0.125,
+        "34006": 0.0625,
+        "34007": 0.0
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.0234375,
+        0.11284722222222221
+      ],
+      "positive_blocks": 5,
+      "tied_blocks": 2,
+      "negative_blocks": 1
+    },
+    "aligned_minus_outgoing": {
+      "mean": -0.08240644446699134,
+      "by_block": {
+        "34000": -0.08035714285714286,
+        "34001": -0.048295454545454544,
+        "34002": -0.0798611111111111,
+        "34003": -0.109375,
+        "34004": 0.0,
+        "34005": -0.1796875,
+        "34006": -0.126953125,
+        "34007": -0.034722222222222224
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.12010002191276606,
+        -0.04660474548780225
+      ],
+      "positive_blocks": 0,
+      "tied_blocks": 1,
+      "negative_blocks": 7
+    },
+    "own_minus_completion": {
+      "mean": 0.002012310606060606,
+      "by_block": {
+        "34000": 0.0,
+        "34001": 0.005681818181818182,
+        "34002": -0.027777777777777776,
+        "34003": 0.015625,
+        "34004": 0.0,
+        "34005": 0.046875,
+        "34006": -0.03125,
+        "34007": 0.006944444444444444
+      },
+      "descriptive_block_bootstrap_95": [
+        -0.013336489898989898,
+        0.018288352272727272
+      ],
+      "positive_blocks": 4,
+      "tied_blocks": 2,
+      "negative_blocks": 2
+    }
+  },
+  "limits": [
+    "Development evidence from 64 previously exposed selected failures in eight blocks; not an independent hypothesis holdout.",
+    "Reported percentages weight blocks equally. Pooled counts use different weighting.",
+    "Alignment improves the average donor result but aligned donor grafts still reduce success relative to the outgoing recipient.",
+    "Completion outperforms mean aligned donors. Own-backup and completion point estimates are close; this does not establish equivalence or noninferiority.",
+    "Completion infers signs from the surviving recipient alone, while construction still receives protected incoming magnitudes and donor-conditioned common support.",
+    "The completion versus outgoing contrast remains unresolved.",
+    "This result supports an ordinary sign-repair explanation and does not uniquely confirm RDT."
+  ],
+  "automatic_successor": false,
+  "frozen_artifacts_modified": false
+}

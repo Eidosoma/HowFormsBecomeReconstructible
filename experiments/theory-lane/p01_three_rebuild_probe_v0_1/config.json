@@ -1,0 +1,226 @@
+{
+  "version": "0.1",
+  "status": "RETROSPECTIVE_DEVELOPMENT_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T19:17:33.637Z",
+  "source": "../p01_writer_diagnostic_v0_1",
+  "inputs": [
+    {
+      "path": "snapshot.json",
+      "sha256": "fa7425bc75149ff602dec7b30edafb459815efae61e775cb5ae2335099d223d0"
+    },
+    {
+      "path": "results/features.csv",
+      "sha256": "0d1ab463b7e8d350f0d0c71a65ff83454d29ce438c9385534b99637726763468"
+    },
+    {
+      "path": "results/held_out_predictions.csv",
+      "sha256": "5aafcd66786444b2cc577b168004ab7051056331f469682c46f581f68a6d07eb"
+    },
+    {
+      "path": "results/analysis.json",
+      "sha256": "404b1a82d34c8c3a53df8f9f2a89a34313050511dae6390902321aa29d131162"
+    },
+    {
+      "path": "analyze.py",
+      "sha256": "374c8c562fde6083fa1ef3596a51df07c0661996f83e09a21e17ac32581c41c3"
+    }
+  ],
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "pairings": [
+    "paired",
+    "noise_0999",
+    "noise_0",
+    "reset_099"
+  ],
+  "writers": [
+    "exact_rewrite",
+    "tolerance_rewrite"
+  ],
+  "founders": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "recipients": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "probe_generations": [
+    1,
+    2,
+    3
+  ],
+  "horizon": 32,
+  "target": "terminal_pass",
+  "expression_features": [
+    "current_margin",
+    "current_pass"
+  ],
+  "mechanistic_features": [
+    "actual_signed_transfer",
+    "actual_unsigned_access",
+    "actual_conflict_mass",
+    "body_contrast_alignment"
+  ],
+  "logistic_ridge": 0.01,
+  "condition_rate_half_count": 0.5,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "maxiter": 500,
+    "ftol": 1e-12,
+    "gtol": 1e-7
+  },
+  "models": [
+    {
+      "id": "g1_additive_expression",
+      "context": "additive",
+      "generations": [
+        1
+      ],
+      "mechanistic": false
+    },
+    {
+      "id": "g1_additive_mechanistic",
+      "context": "additive",
+      "generations": [
+        1
+      ],
+      "mechanistic": true
+    },
+    {
+      "id": "g3_additive_expression",
+      "context": "additive",
+      "generations": [
+        3
+      ],
+      "mechanistic": false
+    },
+    {
+      "id": "g3_additive_mechanistic",
+      "context": "additive",
+      "generations": [
+        3
+      ],
+      "mechanistic": true
+    },
+    {
+      "id": "g3_joint_expression",
+      "context": "joint",
+      "generations": [
+        3
+      ],
+      "mechanistic": false
+    },
+    {
+      "id": "g3_joint_mechanistic",
+      "context": "joint",
+      "generations": [
+        3
+      ],
+      "mechanistic": true
+    },
+    {
+      "id": "history_joint_expression",
+      "context": "joint",
+      "generations": [
+        1,
+        2,
+        3
+      ],
+      "mechanistic": false
+    },
+    {
+      "id": "history_joint_mechanistic",
+      "context": "joint",
+      "generations": [
+        1,
+        2,
+        3
+      ],
+      "mechanistic": true
+    },
+    {
+      "id": "condition_rate",
+      "context": "joint",
+      "generations": [],
+      "mechanistic": false,
+      "estimator": "smoothed_condition_rate"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "g1_feature_addition_reference",
+      "baseline": "g1_additive_expression",
+      "candidate": "g1_additive_mechanistic",
+      "role": "retained_reference"
+    },
+    {
+      "id": "g3_feature_addition",
+      "baseline": "g3_additive_expression",
+      "candidate": "g3_additive_mechanistic",
+      "role": "primary_extension"
+    },
+    {
+      "id": "g3_feature_addition_joint",
+      "baseline": "g3_joint_expression",
+      "candidate": "g3_joint_mechanistic",
+      "role": "stronger_control"
+    },
+    {
+      "id": "history_feature_addition",
+      "baseline": "history_joint_expression",
+      "candidate": "history_joint_mechanistic",
+      "role": "secondary_history"
+    },
+    {
+      "id": "g3_additive_vs_condition",
+      "baseline": "condition_rate",
+      "candidate": "g3_additive_mechanistic",
+      "role": "condition_control"
+    },
+    {
+      "id": "g3_joint_vs_condition",
+      "baseline": "condition_rate",
+      "candidate": "g3_joint_mechanistic",
+      "role": "condition_control"
+    },
+    {
+      "id": "history_vs_condition",
+      "baseline": "condition_rate",
+      "candidate": "history_joint_mechanistic",
+      "role": "condition_control"
+    },
+    {
+      "id": "g3_vs_g1_expression",
+      "baseline": "g1_additive_expression",
+      "candidate": "g3_additive_expression",
+      "role": "depth_comparison"
+    },
+    {
+      "id": "g3_vs_g1_mechanistic",
+      "baseline": "g1_additive_mechanistic",
+      "candidate": "g3_additive_mechanistic",
+      "role": "depth_comparison"
+    }
+  ],
+  "reference_probability_tolerance": 1e-7,
+  "runtime": {
+    "forecast_seconds": 30,
+    "basis": "Prior fixed-ridge analysis: 6.4148 seconds with a 31744-row next-body target as well as a 1024-row terminal target.",
+    "numerical_threads": 1,
+    "native_simulations": 0,
+    "long_runs": "detached and unpolled"
+  }
+}

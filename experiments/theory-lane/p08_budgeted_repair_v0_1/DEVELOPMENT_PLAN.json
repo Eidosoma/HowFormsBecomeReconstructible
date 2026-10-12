@@ -1,0 +1,60 @@
+{
+  "status": "FROZEN_DESIGN_BEFORE_FEATURE_EXTRACTION",
+  "development_source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1",
+  "source_complete_sha256": "5074ad63e51c1e3522a114bb4d0cd51dd551573f51d552f196130181016cbf61",
+  "training_arms": [
+    "baseline",
+    "one_time"
+  ],
+  "generations": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "risk_set": "All preceding generations 15 to g-1 passed; current g has no intervention in either training arm.",
+  "target": "First failure of intended both-cue both-port strict margin >0.25 at the current reconstruction.",
+  "features": [
+    "zero_edge_fraction",
+    "weak_observed_edge_fraction",
+    "weak_node_fraction",
+    "node_strength_cv",
+    "unsigned_output_reach",
+    "signed_output_separation"
+  ],
+  "weak_threshold_relative_to_median": 0.1,
+  "linear_transfer_iterations": 32,
+  "transfer_definition": "Input nodes clamped +1, all other initial states zero; x_next=(x+normalized_signed_neighbor_sum)/2, denominator=incident absolute weights; unsigned channel replaces weights by abs(weights). No new injury or body simulation. Read two port means after exactly 32 updates.",
+  "models": [
+    "intercept",
+    "generation",
+    "missing_edge",
+    "six_record_features"
+  ],
+  "fit": "Train-fold standardization, logistic binomial NLL sum plus 0.5 * sum(slopes^2), unpenalized intercept, no class reweighting, at most 100 damped Newton steps.",
+  "validation": "Leave all records, cases, policies and generations from one entire block out, repeat over 16 blocks. No hyperparameter sweep or feature search.",
+  "metrics": [
+    "log_loss",
+    "brier",
+    "AUROC",
+    "average_precision"
+  ],
+  "policy_model": "Six record features regardless of cross-validation outcome; all other models are disclosed rivals, no winner selection.",
+  "quota_rule": "First repair at generation 15. Subsequently repair if score randomized empirical CDF >= 1 - remaining_repairs / remaining_generations; mandatory if quotas equal; stop if remaining zero. Calibration scores from all training risk-set rows. Tie uniform is fixed by policy namespace, block, case, generation.",
+  "fresh_design": "256 records in 16 fresh blocks, four balanced history strata, no filtering on success. Nine calls warning/periodic/random; eighteen repeated. Native independent ongoing cue noise. All arms share current injury and forcing draws.",
+  "primary": "Warning minus periodic uninterrupted success over generations 15 through 32; paired stratified whole-block bootstrap, 20000 replicates. Strict positive directional forecast, no invented practical margin or equivalence claim.",
+  "interpretation": "Exploratory policy construction followed by a frozen prospective seed holdout within the same programme. Risk prediction is not evidence of repair benefit. Ordinary correction and simple warning explanations remain rivals. Equal calls do not imply equal CPU, edge additions or added weight."
+}

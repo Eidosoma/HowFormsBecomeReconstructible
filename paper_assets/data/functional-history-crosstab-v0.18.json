@@ -1,0 +1,36 @@
+{
+  "version": "v0.18",
+  "source_archive": "paper_assets/data/forms-cellular-v0.14-source-records.zip",
+  "source_archive_sha256": "e4ce5689ccf42974336c5d0696ce22d1f7cd829b36aee003b63472ce11eabf04",
+  "source_archive_member": "forms/E046_failure_chronology/runs/chronology_v1/REPORT.md",
+  "source_report_sha256": "3d37cbc91a91816eac5588313462a6a08203822cddc215ceca8099d9c413da10",
+  "source_completion_report_hash_verified": true,
+  "derivation": "Transpose the first report table; always-passing cells are group total minus ever-failed.",
+  "independent_blocks": 32,
+  "rows": [
+    {
+      "history": "All 32 recorded body readouts pass",
+      "terminal_success": 192,
+      "terminal_failure": 13,
+      "total": 205,
+      "terminal_success_percent": 93.65853658536585
+    },
+    {
+      "history": "At least one recorded body readout fails",
+      "terminal_success": 236,
+      "terminal_failure": 71,
+      "total": 307,
+      "terminal_success_percent": 76.8729641693811
+    }
+  ],
+  "totals": {
+    "terminal_success": 428,
+    "terminal_failure": 84,
+    "lineages": 512
+  },
+  "endpoint": "Fresh-recipient terminal assay after additional injury; separate from all 32 saved rebuilding-body readouts.",
+  "scope": "Descriptive same-cohort cross-tabulation; no individual-record repeated-future capacity estimate.",
+  "model_runs": false,
+  "raw_array_recount": false,
+  "new_intervals": false
+}

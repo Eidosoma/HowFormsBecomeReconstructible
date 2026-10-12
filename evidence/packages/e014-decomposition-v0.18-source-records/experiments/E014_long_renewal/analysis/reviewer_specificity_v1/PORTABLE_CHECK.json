@@ -1,0 +1,73 @@
+{
+  "checkpoint_csv_byte_identical": true,
+  "commands": [
+    {
+      "argv": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/derive.py",
+        "--data",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/data_v2",
+        "--output",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/products_rebuilt"
+      ],
+      "output_log_sha256": "1631d691f29c6077b7983fb0056c59ca958689ba5f793ddfd5bb9815285ad739",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/audit.py",
+        "--data",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/data_v2",
+        "--products",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/products_rebuilt"
+      ],
+      "output_log_sha256": "a0223f9ff0a9f3b6828885d7d37d6ce78d6ff2c41b2a14adca0ecc96a673ed47",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+        "-B",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/plot.py",
+        "--products",
+        "E014_long_renewal/analysis/reviewer_specificity_v1/products_rebuilt"
+      ],
+      "output_log_sha256": "a16a741146d5f184f941c2e361b70816a1ff024d2428609d1214445abdf92426",
+      "returncode": 0
+    }
+  ],
+  "figures_regenerated": 12,
+  "finished_utc": "2026-10-10T17:07:55.927999+00:00",
+  "npz_files_present": 0,
+  "original_summary_sha256": "ed8ab949a862180c30cf826c25a2781757fd68f3d09fd041483428d850b075c4",
+  "pilot_context_exact": true,
+  "portable_audit_sha256": "63251932c689c51e9e02451466d9c5a712e309188bf29d951335cf39b684529b",
+  "portable_summary_sha256": "912f03500aa09b8a6c7328cc9bbe905a5aa9aa259e24b692804ccd9904efbe29",
+  "scratch": ".cache/e014_reviewer_portable_v1",
+  "seconds": 44.3402116689831,
+  "source_files_sha256": {
+    "E001_unprescribed_capture/runs/pilot_v1/COMPLETE.json": "4559f720a21059313ca43bb01089ca7a5669eda3bba477ad753122af0c35e4e2",
+    "E001_unprescribed_capture/runs/pilot_v1/INDEPENDENT_AUDIT.json": "86ff76e92909af0302968fa37f9fdaddb174724546558cc5c10f41dc6e66293b",
+    "E001_unprescribed_capture/runs/pilot_v1/manifest.json": "01f174a85417bc16fc6c28e2beac89d33b11d9a3d9cb3250c9f6e044abc5fbb3",
+    "E001_unprescribed_capture/runs/pilot_v1/summary.json": "57c4142be9c8f70d0058e2ef281a5f32e8fd541a3d43ba2cea03ba91f1654acb",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/analysis.py": "df21ec267ea198b3f9864c19ca7980e2dab0d67d5a4c426027eac7e31226e030",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/audit.py": "42da744304530aa4633a7fdf29d4a97467e94352bef56f4e72294b95cb199293",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/SOURCE_INDEX.json": "98ed43039ab9ff6089597bc91fa347a75533bc899aa58fdcfdb0216dbfe2a357",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/cell_counts.csv.gz": "08b9a5939f99317752cda0c577fea1edf612e906a764e401476a83a856b131ad",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/endpoint_counts.csv.gz": "c3e8d38715ffcf2e8284b25031da67eebbddf6d39c846286e9c5f06d546fec9a",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/derive.py": "4abd75f01cd7688d6338d27665664e7f130a6ff66e6ca9d41fd0cc0740436661",
+    "E014_long_renewal/analysis/reviewer_specificity_v1/plot.py": "88ffafb69aaf55257ec45d43695747ae0a967e0331be14b42282d6398b3c01cb",
+    "E014_long_renewal/runs/confirmation_v2/COMPLETE.json": "80f52dfbeb0f851df36ef179cf6b7474fd37410cd24352fd87d22ba0bddfedcc",
+    "E014_long_renewal/runs/confirmation_v2/INDEPENDENT_AUDIT.json": "fddc810c7c8ae7a723ac565f238966d3d62c150bdf75b4e88c4747da72e94c96",
+    "E014_long_renewal/runs/confirmation_v2/manifest.json": "c28b5de3c007ca36314491ac00a07a6d36e68f4de6b236ffa037a017357dd5e6",
+    "E014_long_renewal/runs/confirmation_v2/summary.json": "3482f4acc8e58184127db6c33b41229d57b8911ccb5d28ad770b8ff8623d64b9",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691"
+  },
+  "started_utc": "2026-10-10T17:07:11.587690+00:00",
+  "statistics_exactly_reproduced": 3180,
+  "status": "PASS",
+  "tracked_dependencies": 9
+}

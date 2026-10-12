@@ -1,0 +1,28 @@
+{
+  "benchmark_seconds": 12.821520996280015,
+  "benchmark_body_seconds": {
+    "A_development": 2.5363294826820493,
+    "A_test": 3.0842912811785936,
+    "B_development": 2.911572436802089,
+    "B_test": 3.543721473775804
+  },
+  "workers": 12,
+  "phases": {
+    "development": {
+      "blocks": 16,
+      "forecast_seconds": 111.28608398512006,
+      "detach_required": false
+    },
+    "predict": {
+      "blocks": 32,
+      "forecast_seconds": 136.9291259776801,
+      "detach_required": false
+    },
+    "evaluate": {
+      "blocks": 32,
+      "forecast_seconds": 136.9291259776801,
+      "detach_required": false
+    }
+  },
+  "formula": "2 * complete benchmark block (all four bodies/domains) * ceil(blocks/12) + 60"
+}

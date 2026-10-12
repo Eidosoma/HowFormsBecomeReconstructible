@@ -1,0 +1,30 @@
+{
+  "status": "INTERRUPTED",
+  "detected_at_utc": "2026-10-09T17:34:06.201086+00:00",
+  "supervisor_exit_code": 143,
+  "signal": "SIGTERM",
+  "signal_source": "not established",
+  "host_check": "No matching launch.py or run.py processes were found.",
+  "completed_blocks": [
+    34000
+  ],
+  "remaining_blocks": [
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "validated_checkpoints": [
+    {
+      "block": 34000,
+      "cases": 7,
+      "data_sha256": "9ce4bb640b9fc76fc777b196666b3a877d90bf102e3295452e10c6025b69e6e3",
+      "worker_sha256": "e437ec0eb5bc351744b48a3d7b0baf7934d7e8cf6326b87a3f0d4eac3160b986"
+    }
+  ],
+  "protocol_and_frozen_code_unchanged": true,
+  "recovery_plan": "Copy the validated checkpoint to a new run, preserve the original interrupted directory, and resume unchanged remaining blocks in a persistent process outside the transient sandbox."
+}

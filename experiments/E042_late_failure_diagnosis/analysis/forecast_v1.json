@@ -1,0 +1,28 @@
+{
+  "available_bytes": 69357522944,
+  "benchmark_audit_sha256": "0112cedcad38b10d426f1ca624a5bf5b644c7bd96348a9fcc0722c8f13c700da",
+  "benchmark_complete_sha256": "6a2702676ac4407f0e7d034510c247e69156bdca7cbcec0eb92452b5dffe4cdd",
+  "benchmark_measurement_seconds": 2.345234760083258,
+  "benchmark_workflow_seconds": 16.67462593317032,
+  "capacity_pass": true,
+  "detached_required": false,
+  "forecast_seconds": 213.77138054519892,
+  "formula": "1.8*(benchmark extraction+audit worker seconds)*32*2/workers+180",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E032_renewal_failure_diagnosis/audit.py": "41c078124744dd178f153cc2f4c4eeb543c0188609d713a41850be4b6905959c",
+    "E032_renewal_failure_diagnosis/metrics.py": "688ca25a88f4f2f64243ea51cf0ecc55e851a125f5b24682c334ca5050e9f4ab",
+    "E042_late_failure_diagnosis/PROTOCOL.md": "87f379d3b247baadc38fccd33de846bf67584b809f79190a3aaf003ab042ffde",
+    "E042_late_failure_diagnosis/SOURCE_DATA.json": "42714e022601c72323e959e7e69741f6ca52fef6676da28f22e9e542d6e98159",
+    "E042_late_failure_diagnosis/audit.py": "97a8fe39902efb9e9083c8443de80ce3e866fc9176632aac0d6bcd391a00c758",
+    "E042_late_failure_diagnosis/metrics.py": "478569183f228b3701222580f8f07b211f65daffb18999b3b3189921899d2018",
+    "E042_late_failure_diagnosis/plot.py": "f90c8672c9004f528e450c8954ff62bcdf0f63bd1386c4b5bef1e6dc3c5e1575",
+    "E042_late_failure_diagnosis/run.py": "09958e7ba97054c8b0da86b29806bcfeab42834449bc024979fac513ba55d120",
+    "E042_late_failure_diagnosis/tests.py": "495ae4a911db103652b91b72881393095ace01d9e6dd975fb6c906827de12457",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "storage_with_reserve_bytes": 855770912,
+  "utc": "2026-10-05T12:56:13.921329+00:00",
+  "workers": 8
+}

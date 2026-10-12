@@ -1,0 +1,224 @@
+{
+  "contract": {
+    "blocks": [
+      7000,
+      7001,
+      7002,
+      7003,
+      7004,
+      7005,
+      7006,
+      7007,
+      7008,
+      7009,
+      7010,
+      7011,
+      7012,
+      7013,
+      7014,
+      7015,
+      7016,
+      7017,
+      7018,
+      7019,
+      7020,
+      7021,
+      7022,
+      7023,
+      7024,
+      7025,
+      7026,
+      7027,
+      7028,
+      7029,
+      7030,
+      7031,
+      7032,
+      7033,
+      7034,
+      7035,
+      7036,
+      7037,
+      7038,
+      7039,
+      7040,
+      7041,
+      7042,
+      7043,
+      7044,
+      7045,
+      7046,
+      7047,
+      7048,
+      7049,
+      7050,
+      7051,
+      7052,
+      7053,
+      7054,
+      7055,
+      7056,
+      7057,
+      7058,
+      7059,
+      7060,
+      7061,
+      7062,
+      7063
+    ],
+    "bootstrap_tag": "E009:utility",
+    "conditions": [
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 0.0,
+        "name": "intact"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.75,
+        "mixture": 0.0,
+        "name": "unrepaired"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 1.0,
+        "name": "foreign"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 1.0,
+        "mixture": 0.0,
+        "name": "erased"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_0"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_1"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_2"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_3"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_4"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_5"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_6"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.5,
+        "mixture": 0.0,
+        "name": "repair_7"
+      }
+    ],
+    "config": {
+      "capture": 1000,
+      "challenge_time": 150,
+      "dt": 0.2,
+      "formation": 1000,
+      "founders": 4,
+      "gain": 0.2,
+      "generations": 3,
+      "lam": 0.001,
+      "norm": 0.3,
+      "observation_window": 100,
+      "read": 300,
+      "recipients": 8,
+      "rho": 0.002,
+      "side": 16,
+      "sigma": 0.3,
+      "write": 1000
+    },
+    "dependencies": {
+      "model_development": {
+        "audit_sha256": "7f7e6430e503331da9bb795f657eaab97116870c03871cc41bc8038bd822f824",
+        "complete_sha256": "5cb4a0d942abf7933054c38b0873ed58990f8fa48aa9a96b22c8aa285f9337fb",
+        "path": "E008_rewired_transfer/runs/development_v1",
+        "phase": "development"
+      }
+    },
+    "experiment": "E009",
+    "injury_entries": 192,
+    "menu_options": 8,
+    "model_refitting": false,
+    "model_sha256": "c4dfd0030b5a22c48e0b78b3ad1781cf566f1f2be13549297dd6f8f8f7bca59f",
+    "phase": "predict",
+    "policies": [
+      "map",
+      "source",
+      "heuristic",
+      "random"
+    ],
+    "restored_entries": 64,
+    "workers": 12
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E001_unprescribed_capture/model.py": "fcab9e9964316dca097b0ff2d1fe9d32b5931109e8bae492cdd745af1388b7bd",
+    "E003_cross_embodiment/design.py": "800a92753aad1b93c664dedafa5364022363a494b2276893a8a808d97e6e322c",
+    "E008_rewired_transfer/audit.py": "486eac834f72d7cfda7a19a5b3d5b8620bce6adfd51eecbfa19285df650264e5",
+    "E008_rewired_transfer/design.py": "8f173883a1a9b9f42c3b29552f6d1e6d6260ae41bf7e74f2978f4c3e109b774b",
+    "E008_rewired_transfer/runs/development_v1/COMPLETE.json": "5cb4a0d942abf7933054c38b0873ed58990f8fa48aa9a96b22c8aa285f9337fb",
+    "E008_rewired_transfer/runs/development_v1/INDEPENDENT_AUDIT.json": "7f7e6430e503331da9bb795f657eaab97116870c03871cc41bc8038bd822f824",
+    "E008_rewired_transfer/runs/development_v1/models.json": "c4dfd0030b5a22c48e0b78b3ad1781cf566f1f2be13549297dd6f8f8f7bca59f",
+    "E009_repair_selection/PROTOCOL.md": "92f119431d2489cee1579b3fe443856b388c49b0a89bc6ac661e9fa552b9f19a",
+    "E009_repair_selection/audit.py": "02638dd265fa1b2d91e1edb6355a78297852ca585460a5bec7271c2cc6154fd1",
+    "E009_repair_selection/design.py": "ace05181c6b1e3713546166f3f149d7e8119d4216a26f9e494f99ba21169f2f1",
+    "E009_repair_selection/run.py": "f4941e7095acf459e87422ce886090c5948ba3f89baf378ee5b5b842f599fa61",
+    "E009_repair_selection/tests.py": "969e489310399daf6110c5bd9eef85b2774e5050101782b40966740c68e62b3e",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-17T21:48:12.419860+00:00",
+  "status": "RUNNING"
+}

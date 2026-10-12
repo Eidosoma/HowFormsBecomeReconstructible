@@ -1,0 +1,43 @@
+{
+  "automatic_successor_started": false,
+  "code_sha256": "027a6904701f7badb7b560e5a9a03166c11fd5093a4f36971b04994567d0d8d2",
+  "evidence_sha256": {
+    "E052_precision_normalization/figures/benchmark_v1/provenance.json": "c7edfcb51737ff2a74f85d610f4cae92aa276b76eb1216daf0a6fd5c4cf1e7a5",
+    "E052_precision_normalization/figures/fixture_v1/provenance.json": "b9e31c7eef6d13b8ead49e9ce56e338518e24e655a74be557fcb4300125fc30e",
+    "E052_precision_normalization/figures/robustness_v1/provenance.json": "32e6312451c8423837ada7983167b245f76b5352ca57f73cbe0742514cd82a6d",
+    "E052_precision_normalization/runs/benchmark_v1/COMPLETE.json": "050c094bc6ba1318d3f294b86d0a81a229f6ed8eeba51f640e2df23b3e69c4b1",
+    "E052_precision_normalization/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "08eb978175035a1d1ec7a29ce4f51d5bd22b82ff943adb53e6ca33df32bde757",
+    "E052_precision_normalization/runs/benchmark_v1/summary.json": "0c4e6b9b7c6cd1b453ff04a1d4aa34e1cd9fa0c03a5c8b67123c45338c2a0998",
+    "E052_precision_normalization/runs/fixture_v1/COMPLETE.json": "92bcc30e2bf785fe31e968e322c0730c0ecd76ffc175b5d50c04288ef1d8c470",
+    "E052_precision_normalization/runs/fixture_v1/INDEPENDENT_AUDIT.json": "c3b6646be94110aedbf2e8b7afcc7d0305117110a0068bef35005af092dc7914",
+    "E052_precision_normalization/runs/fixture_v1/summary.json": "1b30d604324a1380dc6b02c3699344ebbdf364a1b3fa430875c7d33896ed3fe1",
+    "E052_precision_normalization/runs/robustness_v1/COMPLETE.json": "6e874f839336c3cc2cf2a43c422a189e2321f31fb7bc93d7aab9c1c97783dfa2",
+    "E052_precision_normalization/runs/robustness_v1/INDEPENDENT_AUDIT.json": "bb9cb2b5d3cd4d5658b2ec752796f8bfe5083e73e331e0769236fcb42dfe8fbb",
+    "E052_precision_normalization/runs/robustness_v1/summary.json": "f611aab5959ccc5c0511db7c2a78941ba112f974554cd03b1dfb0050333c0395"
+  },
+  "figure_inspected": true,
+  "free_bytes": 48809553920,
+  "runs": {
+    "benchmark_v1": {
+      "body_cue_observations": 8448,
+      "original_outputs_verified": 70,
+      "status": "TECHNICAL_ONLY",
+      "terminal_cue_observations": 6024
+    },
+    "fixture_v1": {
+      "body_cue_observations": 16896,
+      "original_outputs_verified": 70,
+      "status": "TECHNICAL_ONLY",
+      "terminal_cue_observations": 12048
+    },
+    "robustness_v1": {
+      "body_cue_observations": 1081344,
+      "original_outputs_verified": 1372,
+      "status": "NUMERICAL_ROBUSTNESS_NOT_ESTABLISHED",
+      "terminal_cue_observations": 771072
+    }
+  },
+  "scientific_retained_bytes": 7947774601,
+  "status": "PASS",
+  "utc": "2026-10-10T11:53:48.768832+00:00"
+}

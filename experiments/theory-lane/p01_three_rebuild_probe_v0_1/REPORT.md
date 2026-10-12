@@ -1,0 +1,43 @@
+# Three rebuilds do not rescue the declared P01 forecast
+
+The proposed extension failed on the eight exposed E051 blocks. After three rebuilds, the four mechanistic features increased mean held-out terminal Brier error from **0.064775 to 0.065482**, a **1.09% worsening**, with worse error in all eight held-out blocks. Allowing the writer and cue condition to interact, or supplying the full first-three-generation history, did not recover a benefit. A forecast using only each condition's success rate in the training blocks beat every declared probe model on mean Brier error and log loss.
+
+This is a retained development negative for a specific feature set and estimator. It does not establish that early prediction is impossible. The earlier next-body forecasting improvement remains a separate result, and the original writer's observed robustness to cue mismatch is unchanged.
+
+The analysis used the frozen feature table from the [paired writer diagnostic](../p01_writer_diagnostic_v0_1/REPORT.md). It joined generations 1, 2 and 3 into one row per lineage-condition record: 1,024 records across eight blocks, four pairings and two writer policies. Whole blocks were excluded from fitting, so related founders, recipients and condition trajectories never appeared on opposite sides of a split. These are eight block units, not 1,024 independent experimental replicates; the eight fits also share training blocks.
+
+The target was strict both-cue success in the generation-32 scattered terminal assay. It was not success at every intervening rebuild. Generation-3 features describe the third body and its outgoing record, without using the fourth body or any later measurement. “Mechanistic features” means the same actual-writer signed cue transfer, unsigned cue access, normalized conflict mass and body cue-difference alignment used in the previous analysis. The transfer calculations are fixed 64-step linear diagnostics. They are not native reconstruction probabilities.
+
+The [protocol](PROTOCOL.md) and [configuration](config.json) were saved before these fits. Depth three was chosen after the previous analysis found the first matched-cue writer divergence there. The outcomes, hypotheses and data family were already exposed. Local timing and hashes therefore document this development calculation, not prospective confirmation.
+
+All nine declared models and both scores are reported below. Lower values are better. Additive context uses separate writer and pairing indicators; joint context uses an indicator for each of their eight combinations, with one reference category. Each logistic model retains the same fixed ridge penalty and training-only standardization. The condition-only model uses the corresponding training success fraction with fixed half-count smoothing, with no body or packet measurements.
+
+| Available probe / context | Features | Mean block Brier | Mean block log loss |
+|---|---|---:|---:|
+| Generation 1 / additive | Expression | 0.064385 | 0.243424 |
+| Generation 1 / additive | Expression + mechanistic | 0.064561 | 0.243398 |
+| Generation 3 / additive | Expression | 0.064775 | 0.244132 |
+| Generation 3 / additive | Expression + mechanistic | 0.065482 | 0.246214 |
+| Generation 3 / joint | Expression | 0.061902 | 0.227956 |
+| Generation 3 / joint | Expression + mechanistic | 0.062771 | 0.230231 |
+| Generations 1–3 / joint | Expression history | 0.062303 | 0.230150 |
+| Generations 1–3 / joint | Expression + mechanistic histories | 0.063595 | 0.232881 |
+| No probe / joint condition rates | Condition only | **0.060646** | **0.223120** |
+
+Adding the mechanistic features at generation three worsened Brier error by 1.09% under additive context and 1.40% under joint context. The corresponding numbers of blocks improved were 0/8 and 2/8. Adding all three generations of mechanistic features to the expression-history baseline worsened mean error by 2.07%, although 4/8 blocks improved. Its largest deterioration occurred in block 34007, so this history result is more uneven than the primary extension. All three new feature additions also worsened mean log loss.
+
+Against the condition-only reference, the augmented generation-3 joint-context model had 3.50% higher Brier error and lost in all eight blocks; the augmented history model had 4.86% higher error and lost in seven. Merely waiting until generation three also did not help the additive expression or augmented reference models on average. The generation-1 negative was reproduced rather than replaced.
+
+![All declared probe comparisons and their blockwise changes](results/three_rebuild_forecast.png)
+
+The condition breakdown helps locate the limitations. The primary generation-3 feature addition worsened mean Brier error in every one of the eight conditions. Under joint context, the largest increase was in the slightly mismatched-noise tolerance condition: 0.006465 Brier units. That condition has 80/128 terminal successes and accounts for roughly half the condition-only model's total mean error, because its endpoint is less nearly constant than the other conditions. The joint-context feature addition gave a small gain for the matched-cue original writer, but it did not survive aggregation across the declared condition set. Full block and condition results are retained in [analysis.json](results/analysis.json) and [condition_scores.csv](results/condition_scores.csv); no subgroup was selected as a replacement success criterion.
+
+The condition-only model benefits from having training outcomes for the same interventions. This is an appropriate strong comparator for these folds, but it cannot supply forecasts for entirely unseen writer/cue combinations. The result concerns generalization to excluded blocks within the known condition set. It does not test P01's stronger intervention-transfer ambition. With only eight exposed blocks, a fixed regularization choice and one terminal outcome per lineage-condition record, this calculation cannot establish conditional independence of the endpoint from all early state information.
+
+The scientific decision is to stop promoting this passive short-probe feature set as an established long-horizon predictor. Including damage, return and another rewrite was a reasonable proposed repair of the first-generation failure; this test did not support it. No later-depth search, penalty tuning or new-cohort result inspection was used to recover a positive finding. The broader P01 card remains unconfirmed.
+
+A more informative next experiment would test the proposed writer feedback causally. From a verified common pre-write boundary, branch native continuations into the original writer, the tolerance writer and the previously defined sign-restored control, using matched future damage and noise. Apply the assigned policy during the remaining renewals and measure native terminal outcomes, not only linear transfer. A native improvement under sign restoration would identify a contribution from those sign changes; lack of improvement would weaken that explanation, while other weight changes could still matter. A small controlled intervention probe could then be evaluated as a new predictor of continuation. This is a draft follow-up, not an experiment launched here or a frozen quantitative prediction; continuation-state and random-stream replay must first be checked. The linear sign-control result alone remains insufficient to claim native rescue.
+
+Eight targeted checks passed, including duplicate/missing history rejection, target consistency, exclusion of future fields, and held-out information isolation. The recreated generation-1 probabilities agree with the frozen reference to at most **2.22 × 10⁻¹⁶**. A separate standard-library verifier reconstructed all 9,216 model probabilities from their stored fits or training condition counts, checked preprocessing and block exclusions, and independently recomputed Brier errors, log losses and the reported comparisons. All 64 logistic fits converged; the other eight folds used condition rates. The analysis took 1.72 seconds with one numerical thread. It launched no native trajectories or long-running jobs and opened no newer E051 cohort outcomes. This does not replace E051's independent dynamics audit.
+
+The immutable inputs, executable analysis, predictions, fits, exposure record and figure are bound by [snapshot.json](snapshot.json). Run `python3 -B p01_three_rebuild_probe_v0_1/verify.py` from the theory-lane directory to verify the package. The plot is also available as [SVG](results/three_rebuild_forecast.svg) and [PDF](results/three_rebuild_forecast.pdf).

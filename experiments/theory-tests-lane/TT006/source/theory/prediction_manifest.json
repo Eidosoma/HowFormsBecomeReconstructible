@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "package_version": "RDT-P01-v0.2",
+  "status": "DRAFT_NOT_REGISTERED",
+  "created_at_utc": "2026-10-08T18:19:58.652Z",
+  "external_preregistration": false,
+  "prospective_native_predictions": false,
+  "native_confirmation_ready": false,
+  "scope": "P01 theory, exact counterexamples and constructed development; no native simulator execution.",
+  "predecessor": {
+    "theory": "../reconstructive_dynamics_theory_v0_1.pdf",
+    "readable_cards": "../adviser_verbal_response.md",
+    "original_prediction_json": "MISSING_NOT_RECONSTRUCTED",
+    "preservation": "Original files retained; this is a new version."
+  },
+  "card": {
+    "id": "RDT-P01",
+    "claim_status": "PROPOSED_EMPIRICAL_LAW",
+    "title": "Short observable response histories predict terminal reconstruction under a fixed apparatus",
+    "claim": "The declared native response process may admit the fixed two-mode law and its structured HMM realization, enabling calibrated, economical terminal forecasts from depths 0,1,2.",
+    "equations": {
+      "readability": "r_H = pi + (r_0 - pi) * mu^H",
+      "conditional_identity_bias": "chi_H = chi_0 * lambda^H",
+      "terminal_A": "p_A(H) = r_H * (1 + chi_H) / 2",
+      "terminal_B": "p_B(H) = r_H * (1 - chi_H) / 2",
+      "terminal_neither": "p_N(H) = 1 - r_H",
+      "exact_nondegenerate_identification": "mu=(r2-r1)/(r1-r0); pi=(r1-mu*r0)/(1-mu); lambda=chi1/chi0; chi2=chi0*lambda^2"
+    },
+    "parameter_domain": {
+      "pi": [
+        0,
+        1
+      ],
+      "mu": [
+        0,
+        1
+      ],
+      "lambda": [
+        0,
+        1
+      ],
+      "r0": [
+        0,
+        1
+      ],
+      "chi0": [
+        -1,
+        1
+      ]
+    },
+    "assumptions": [
+      "Fixed declared renewal, damage, resource and assay contract; persistent state and randomness correctly accounted for.",
+      "Independent stationary binary identity and readability modes with independent initial factors for the joint HMM realization.",
+      "Deterministic A/B/neither emissions conditional on the model's four hidden states; this is an additional native assumption, not guaranteed by the marginal law.",
+      "No unmodelled delayed failure, changing rates, identity-readability coupling or informative external identity refresh.",
+      "Short observations have the declared independent-path and block structure; no hidden-state labels supplied.",
+      "Sampling uncertainty, boundary fits, missing categories and structural error are assessed; optimizer success is not identification."
+    ],
+    "boundary": {
+      "native_candidate": "E041 full-rewrite packet weights; fresh bodies reset",
+      "external": "Reader/writer code, ports, dynamics, cues, noise/damage distributions and resources remain supplied",
+      "complete_state_status": "Code-informed candidate boundary; native statistical sufficiency not established"
+    },
+    "endpoint": {
+      "primary": "Three-category terminal assay A/B/neither at a single horizon to be justified and frozen",
+      "rule_definition": "Two opposed prescribed conditional functions; native both-cue strict output margins >0.25 over final 32 dynamics steps",
+      "present_vs_future": "Current expression is not terminal reconstruction",
+      "historical_specificity": "Fit own and foreign records separately under the same A assay; subtract their A probabilities",
+      "all_cycle": "Outside this terminal marginal claim; requires the joint cycle-success/successor kernel"
+    },
+    "inference_unit": "Independent founder/history block; short paths and long descendants nested within block; exact design pending",
+    "development_data": [
+      "../review_provenance_v0_1.json manuscript reports and exposure",
+      "results/toy_forecasts_v1.json and results/development_v1.json",
+      "results/observable_attempt_1_failure.json",
+      "results/observable_forecasts_v1.json and results/observable_development_v1.json",
+      "User-supplied E051 interim aggregates recorded in registers.json"
+    ],
+    "proposed_holdout": "Previously uninspected founder/history blocks with all short observations and forecasts frozen before later continuation outcomes; access audit and exact packet list pending. Remaining E051 blocks are not designated an untouched RDT holdout.",
+    "controls": [
+      "Repeated fresh assays without renewal",
+      "Erased/random record",
+      "Unusable reader",
+      "Protected-copy reference under explicit resource/loss contract",
+      "Opposed-rule and foreign-record assays",
+      "Apparatus/seed matching audit",
+      "Low-expression recoverable and matched-expression/different-history strata"
+    ],
+    "baselines": [
+      {
+        "name": "Current expression/cohort forecast",
+        "role": "Passive baseline"
+      },
+      {
+        "name": "Ordinary output Markov",
+        "role": "Equal short observations; unsupported rows explicit"
+      },
+      {
+        "name": "Same structured conventional HMM",
+        "role": "Exact mathematical tie; not a superiority target"
+      },
+      {
+        "name": "Strong initial-packet plus probe predictor",
+        "role": "Development-tuned with matched information and tuning access"
+      },
+      {
+        "name": "Native basin/sensitivity predictor where applicable",
+        "role": "Declare extra observations and cost; full-dynamics oracle separate"
+      }
+    ],
+    "direction": "For chi0>0, larger lambda preserves A bias longer; readability can rise or fall toward pi depending on r0. No direction is asserted for arbitrary mechanism changes such as fallback deactivation.",
+    "uncertainty": {
+      "current": "Toy point forecasts only; no native confidence claim",
+      "required": "Calibrate founder/block resampling or simulation-based method; propagate rare-loss and boundary uncertainty, retain unsupported/abstention rates; assess model misspecification separately",
+      "confidence_level": null
+    },
+    "candidate_scoring": {
+      "primary": "Categorical Brier score with block weighting",
+      "secondary": [
+        "Calibration",
+        "A probability error",
+        "Interval coverage and width",
+        "Abstention/unsupported rate",
+        "Probe and computation cost"
+      ],
+      "multiple_comparisons": "Select a primary rival using frozen development rule or correct the family; no treating horizons as independent replicates"
+    },
+    "numerical_native_requirements": {
+      "primary_horizon": null,
+      "independent_blocks": null,
+      "packets_per_block": null,
+      "paths_per_packet": null,
+      "acceptable_error": null,
+      "practical_improvement_margin": null,
+      "uncertainty_coverage_target": null,
+      "max_probe_cost": null,
+      "max_abstention_rate": null,
+      "reason": "Must be justified by native feasibility, variance and cost evidence before confirmation; toy numbers are illustrative only."
+    },
+    "failure_conditions": [
+      "Marginal depth restrictions or joint observation model systematically fail.",
+      "Frozen long-horizon distributions are inaccurate or uncertainty intervals miscalibrated.",
+      "Rare losses are unresolved at the permitted short-probe budget.",
+      "Simpler or cost-equivalent conventional models suffice.",
+      "Forecast only succeeds with future information, hidden oracle states, or outcome-informed changes.",
+      "Apparatus/assay invalidity prevents theory interpretation."
+    ],
+    "outcome_interpretations": {
+      "accurate_calibrated_economical": "Support only the declared empirical reduction and domain; no claim of novel HMM mathematics.",
+      "tied_simpler": "No demonstrated added predictive value for RDT.",
+      "inaccurate": "Reject or narrow this version; preserve failure and version any revision.",
+      "unidentifiable": "No informative forecast at that budget; retain abstention as a cost.",
+      "invalid_apparatus": "Measurement failure, not a theory verdict; fix before inference.",
+      "mechanism_changes_without_performance_loss": "Mechanistic change alone does not imply fragility."
+    },
+    "native_parameters_frozen": false,
+    "candidate_equations_and_toy_artifacts_versioned": true
+  },
+  "other_cards": [
+    {
+      "id": "RDT-P02",
+      "title": "Present expression versus continuation",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P03",
+      "title": "Damage, renewal and resource boundary",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P04",
+      "title": "Unseen intervention combinations and order",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P05",
+      "title": "Complementary body and record content",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P06",
+      "title": "Retained compositional competence",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P07",
+      "title": "Reader/writer turnover",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    },
+    {
+      "id": "RDT-P08",
+      "title": "Budgeted repair decisions",
+      "status": "DRAFT_NOT_REGISTERED_NOT_DEVELOPED_HERE"
+    }
+  ],
+  "handoff": "PROTOCOL.md",
+  "proofs_and_derivations": "README.md",
+  "artifact_snapshot": "snapshot.json"
+}

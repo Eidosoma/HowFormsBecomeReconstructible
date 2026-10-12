@@ -1,0 +1,23 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 7200,
+  "total_budget_seconds": 57600,
+  "field_shape": [13, 13],
+  "histories": ["depol", "nbrDepol", "hypol"],
+  "destinations": ["edge", "centre"],
+  "patch_sides": [2, 3],
+  "voltage_modes": ["depol", "hypol"],
+  "internal_powers": [1, 60],
+  "boundary_powers": [1, 60],
+  "helper_power": 60,
+  "kd": 1.25e-14,
+  "contact_horizon": 20000,
+  "hold_horizons": [10000, 10000],
+  "late_fraction": 0.95,
+  "gate_cases": 6,
+  "main_cases": 96,
+  "planned_cases": 146,
+  "planned_integrations": 858,
+  "serial_relay_rounds": 0
+}

@@ -1,0 +1,144 @@
+{
+  "status": "FROZEN_DEVELOPMENT_DESIGN_QUALIFICATION_PENDING",
+  "at_utc": "2026-10-11T17:56:17.447715+00:00",
+  "card": "RDT-P08 repair frequency follow-up",
+  "claim_status": "Development curve; no new confirmatory primary effect or minimum adequate frequency is claimed.",
+  "source_complete_sha256": "f6f7ac72c8d3d786d956a982ea304728384f6225beeb10a5fb7c374f8f3dfc1b",
+  "source_manifest_sha256": "0ef9bbdab48a6b1e1cb8a37150b829107a11510c2c0c9a26bd6dcb1956360e43",
+  "variants": [
+    "repairs_1",
+    "repairs_3",
+    "repairs_6",
+    "repairs_9",
+    "repairs_18"
+  ],
+  "repair_budgets": [
+    1,
+    3,
+    6,
+    9,
+    18
+  ],
+  "repair_generations": [
+    [
+      15
+    ],
+    [
+      15,
+      21,
+      27
+    ],
+    [
+      15,
+      18,
+      21,
+      24,
+      27,
+      30
+    ],
+    [
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31
+    ],
+    [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  ],
+  "principal_endpoint": "Uninterrupted strict both-cue both-port margin >0.25 through generations 15-32, denominator all 256 records.",
+  "secondary_endpoint": "Maintenance among common-first-pass lineages; pooled numerator and denominator in each stratified block resample.",
+  "inference_unit": "Whole block; sixteen blocks, four per history, all policies and cases paired.",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101109,
+  "contrasts": {
+    "repairs_3_minus_repairs_1": [
+      -1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "repairs_6_minus_repairs_3": [
+      0,
+      -1,
+      1,
+      0,
+      0
+    ],
+    "repairs_9_minus_repairs_6": [
+      0,
+      0,
+      -1,
+      1,
+      0
+    ],
+    "repairs_18_minus_repairs_9": [
+      0,
+      0,
+      0,
+      -1,
+      1
+    ],
+    "repairs_18_minus_repairs_1": [
+      -1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "practical_margin": null,
+  "equivalence_margin": null,
+  "minimum_budget_decision_rule": null,
+  "monotonicity": "Measured descriptively, not assumed or enforced; retain every reversal and paired harm.",
+  "exposed_ceiling": "The copied 18-call arm preserves all 222 common-first-pass records; this already bounds every schedule with the same first read.",
+  "selected_failure_audit": {
+    "source_policy_events": 10,
+    "unique_states": 7,
+    "arms": [
+      "no_repair",
+      "current_repair"
+    ],
+    "same_current_injury_and_noise": true,
+    "selection": "All first-later failures after common first success; all policies; deduplicate identical incoming packets in identical contexts.",
+    "effect_scope": "This operator on selected states under saved forcing; not an overall repair effect, budget-matched policy effect or general irreparability test."
+  },
+  "sample_rationale": "Reuse the sixteen-block cohort for bounded development and paired estimates; no power or equivalence claim. Exact 9/18 controls need no rerun.",
+  "runtime_gates": [
+    "CPU capacity admission",
+    "seven passing tests",
+    "all factual and independent causal replays agree",
+    "full-budget known-control benchmark byte equality",
+    "measured curve forecast <=7200 CPU seconds"
+  ],
+  "causal_effect_direction_does_not_gate_execution": true,
+  "no_adaptive_changes_after_audit": true,
+  "future_stage": "Review the development curve, justify one quantitative prediction, practical criterion and fresh-block sample, then freeze before new cohort outcomes.",
+  "new_causal_outcomes_before_freeze": 0,
+  "new_frequency_outcomes_before_freeze": 0,
+  "automatic_polling": false,
+  "automatic_successor": false
+}

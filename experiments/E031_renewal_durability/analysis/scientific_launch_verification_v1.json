@@ -1,0 +1,44 @@
+{
+  "automatic_polling_started": false,
+  "automatic_successor_started": false,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "declared_blocks": 32,
+  "estimated_completion_utc": "2026-09-26T02:48:38.893825+00:00",
+  "forecast_seconds": 52449.97053023055,
+  "frozen_inputs_verified": 27,
+  "host_process": {
+    "Cpus_allowed_list": "0-7",
+    "Name": "python",
+    "PPid": "1",
+    "Pid": "2687332",
+    "State": "S (sleeping)",
+    "Threads": "1"
+  },
+  "job_status": {
+    "pid": 2687332,
+    "stage": "simulation",
+    "status": "RUNNING",
+    "utc": "2026-09-25T12:14:29.107475+00:00"
+  },
+  "launch_utc": "2026-09-25T12:14:28.923295+00:00",
+  "launcher_sha256": "71e052e297089e142cec03e748ab7b0d494ff9a1d8d6f015b56c0c8aa8f03816",
+  "lineages": 512,
+  "numerical_threads": 1,
+  "pid": 2687332,
+  "preflight_sha256": "49193857a27c403cd8c959e13c42b8fd4e552c7e8ad20fb723cd78282df3d35d",
+  "process_command": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -B /home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E031_renewal_durability/workflow.py --child --mode scientific ",
+  "scientific_outcomes_inspected": false,
+  "started_worker_logs": 8,
+  "status": "PASS",
+  "verified_utc": "2026-09-25T12:14:29.475753+00:00",
+  "workers": 8
+}

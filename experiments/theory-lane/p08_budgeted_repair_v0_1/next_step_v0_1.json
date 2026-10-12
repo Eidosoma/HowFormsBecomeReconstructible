@@ -1,0 +1,47 @@
+{
+  "status": "PROPOSED_NOT_LAUNCHED",
+  "at_utc": "2026-10-11T17:35:13.837764+00:00",
+  "source_complete_sha256": "f6f7ac72c8d3d786d956a982ea304728384f6225beeb10a5fb7c374f8f3dfc1b",
+  "source_analysis_sha256": "8044c4caf8fe6024a4a78226d8d5c55e8abd18365644c9965ca576e54a333fe1",
+  "scientific_question": "How sparse can scheduled record repair become before uninterrupted maintenance deteriorates?",
+  "reason": "Nine evenly spaced repairs lost only one of 222 common-first-pass lineages versus eighteen repairs. The warning did not improve on that near-ceiling schedule.",
+  "posthoc_observations": {
+    "common_first_failures": 34,
+    "warning_later_failures": 3,
+    "periodic_later_failures": 1,
+    "random_later_failures": 6,
+    "repeated_later_failures": 0,
+    "warning_quota_forced_postfirst_calls": 801,
+    "postfirst_call_budget": 2048,
+    "late_calls_generations_30_to_32": 695,
+    "interpretation": "Warning expenditure is concentrated late. This is a diagnostic association, not a demonstrated cause of failure."
+  },
+  "proposed_next_work": [
+    "Brief paired repair/no-repair replays at saved failure boundaries, using identical injury/noise, to separate missed opportunities from failures already unrescuable at that boundary. Exposed-case mechanism audit only.",
+    "Frozen development budget curve on the existing exposed cohort: new evenly spaced arms with 1, 3 and 6 calls; reuse verified 9-call and 18-call trajectories.",
+    "Use the curve to specify one quantitative budget prediction and a separately frozen fresh-cohort comparison. Do not choose a practical margin or confirmatory sample size from convenience alone."
+  ],
+  "proposed_schedules": {
+    "1": [
+      15
+    ],
+    "3": [
+      15,
+      21,
+      27
+    ],
+    "6": [
+      15,
+      18,
+      21,
+      24,
+      27,
+      30
+    ]
+  },
+  "primary_population": "All 256 records; report maintenance among shared first-pass lineages separately, without changing enrollment.",
+  "current_warning_forecast_remains": "FAILED",
+  "new_dynamics_generated_this_turn": 0,
+  "new_job_launched": false,
+  "automatic_successor": false
+}

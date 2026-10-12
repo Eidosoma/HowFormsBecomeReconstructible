@@ -1,0 +1,1386 @@
+{
+  "rows": [
+    {
+      "fixture": "L4_h1e-06_fail",
+      "kind": "mf",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.06152940606987948,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.07887430250185605,
+        "F": 49.6682176762314,
+        "exact_KL": 0.762253179516371
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5648554270000018,
+        "exact_cpu": 0.144511869,
+        "approximation_peak_rss": 34689024,
+        "exact_peak_rss": 49422336,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_fail",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.06152937091910238,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.07887508957987739,
+        "F": 49.668217675880506,
+        "exact_KL": 0.7622531791654765
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5225075270000007,
+        "exact_cpu": 0.144511869,
+        "approximation_peak_rss": 34848768,
+        "exact_peak_rss": 49422336,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_fail",
+      "kind": "block",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.029593572276050157,
+        "max_risk_excess": 0.0006605503721539008,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.00322725042808864,
+        "internal_product_error": 0.00316106307203984,
+        "max_node_error": 0.03466826626035768,
+        "F": 49.15854402419653,
+        "exact_KL": 0.25257952748150103
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.1972086800000006,
+        "exact_cpu": 0.144511869,
+        "approximation_peak_rss": 35295232,
+        "exact_peak_rss": 49422336,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_fail",
+      "kind": "block",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.029593573272968493,
+        "max_risk_excess": 0.0006605463188195104,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0032272506319316096,
+        "internal_product_error": 0.003161063274973454,
+        "max_node_error": 0.03466804586269345,
+        "F": 49.15854402419652,
+        "exact_KL": 0.2525795274814939
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.175528046,
+        "exact_cpu": 0.144511869,
+        "approximation_peak_rss": 35037184,
+        "exact_peak_rss": 49422336,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_mixed",
+      "kind": "mf",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.07751883403157687,
+        "max_risk_excess": 0.0031004648633732868,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.16739915687227003,
+        "F": 39.562256245901665,
+        "exact_KL": 0.8524327477334239
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5022584279999941,
+        "exact_cpu": 0.13146476000000004,
+        "approximation_peak_rss": 35811328,
+        "exact_peak_rss": 49324032,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_mixed",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.07751883403153943,
+        "max_risk_excess": 0.003100464863375646,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.16739915687225315,
+        "F": 39.562256245901665,
+        "exact_KL": 0.8524327477334239
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5043176930000037,
+        "exact_cpu": 0.13146476000000004,
+        "approximation_peak_rss": 35811328,
+        "exact_peak_rss": 49324032,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_mixed",
+      "kind": "block",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.03874603108305588,
+        "max_risk_excess": 0.001412497574513491,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0040082098644944174,
+        "internal_product_error": 0.003998234075948588,
+        "max_node_error": 0.08629775768925466,
+        "F": 39.05991852440481,
+        "exact_KL": 0.3500950262365663
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.17024707199999975,
+        "exact_cpu": 0.13146476000000004,
+        "approximation_peak_rss": 36888576,
+        "exact_peak_rss": 49324032,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h1e-06_mixed",
+      "kind": "block",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.0387245005413971,
+        "max_risk_excess": 0.0014245555401677656,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.004007608336495652,
+        "internal_product_error": 0.00399766393853694,
+        "max_node_error": 0.08703962376335073,
+        "F": 39.059917885389076,
+        "exact_KL": 0.3500943872208353
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.18381816599999998,
+        "exact_cpu": 0.13146476000000004,
+        "approximation_peak_rss": 37965824,
+        "exact_peak_rss": 49324032,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_fail",
+      "kind": "mf",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.011818285860905114,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.012315426399120158,
+        "F": 48.48616476342809,
+        "exact_KL": 0.1303420232084278
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5307551129999989,
+        "exact_cpu": 0.127072863,
+        "approximation_peak_rss": 38506496,
+        "exact_peak_rss": 49360896,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_fail",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.011818285860905118,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.01231542639912045,
+        "F": 48.48616476342809,
+        "exact_KL": 0.1303420232084278
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5248974830000015,
+        "exact_cpu": 0.127072863,
+        "approximation_peak_rss": 39047168,
+        "exact_peak_rss": 49360896,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_fail",
+      "kind": "block",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.0036152009965608627,
+        "max_risk_excess": 2.7439639138454597e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.00041074697352158455,
+        "internal_product_error": 0.0003288977113247264,
+        "max_node_error": 0.004267771501645146,
+        "F": 48.38791146171911,
+        "exact_KL": 0.032088721499448525
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.19252686800000024,
+        "exact_cpu": 0.127072863,
+        "approximation_peak_rss": 39587840,
+        "exact_peak_rss": 49360896,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_fail",
+      "kind": "block",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.003615200996561065,
+        "max_risk_excess": 2.7439639141355054e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.00041074697352172507,
+        "internal_product_error": 0.00032889771132486346,
+        "max_node_error": 0.00426777150124924,
+        "F": 48.38791146171911,
+        "exact_KL": 0.032088721499448525
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.17748778499999962,
+        "exact_cpu": 0.127072863,
+        "approximation_peak_rss": 39587840,
+        "exact_peak_rss": 49360896,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_mixed",
+      "kind": "mf",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.014620362538444925,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.018677511532958338,
+        "F": 38.258105853894634,
+        "exact_KL": 0.16192678977940744
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.5147645489999989,
+        "exact_cpu": 0.152384241,
+        "approximation_peak_rss": 40669184,
+        "exact_peak_rss": 49377280,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_mixed",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.014620362538444958,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.018677511532958407,
+        "F": 38.258105853894634,
+        "exact_KL": 0.16192678977940744
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.4963754449999998,
+        "exact_cpu": 0.152384241,
+        "approximation_peak_rss": 41209856,
+        "exact_peak_rss": 49377280,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_mixed",
+      "kind": "block",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.005115489237657959,
+        "max_risk_excess": 9.72853489133868e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0005209474265092931,
+        "internal_product_error": 0.00047619021768374563,
+        "max_node_error": 0.009290580933223547,
+        "F": 38.14115290640778,
+        "exact_KL": 0.0449738422925563
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.17242332699999988,
+        "exact_cpu": 0.152384241,
+        "approximation_peak_rss": 41209856,
+        "exact_peak_rss": 49377280,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L4_h0.01_mixed",
+      "kind": "block",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 4,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.005115489237754139,
+        "max_risk_excess": 9.72853489579345e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0005209474265187933,
+        "internal_product_error": 0.00047619021769344187,
+        "max_node_error": 0.009290580933340786,
+        "F": 38.1411529064078,
+        "exact_KL": 0.04497384229257051
+      },
+      "query_count": 48,
+      "cost": {
+        "approximation_cpu": 0.19379528799999993,
+        "exact_cpu": 0.152384241,
+        "approximation_peak_rss": 41750528,
+        "exact_peak_rss": 49377280,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_fail",
+      "kind": "mf",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.04451887292458882,
+        "max_risk_excess": 0.0008071018701795579,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.08895131447214635,
+        "F": 226.19786956037805,
+        "exact_KL": 2.2198134893286863
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.9060074780000014,
+        "exact_cpu": 0.15486171999999998,
+        "approximation_peak_rss": 43372544,
+        "exact_peak_rss": 42291200,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_fail",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.04451880129885837,
+        "max_risk_excess": 0.0008072488009004675,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.08895171879052534,
+        "F": 226.1978695418661,
+        "exact_KL": 2.219813470816746
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.8410019159999642,
+        "exact_cpu": 0.15486171999999998,
+        "approximation_peak_rss": 43372544,
+        "exact_peak_rss": 42291200,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_fail",
+      "kind": "block",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.030069247439168337,
+        "max_risk_excess": 0.0008042941684072158,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.004181397001061472,
+        "internal_product_error": 0.00415121245005096,
+        "max_node_error": 0.041700582795216753,
+        "F": 225.19192568441034,
+        "exact_KL": 1.2138696133609699
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.33893398100000044,
+        "exact_cpu": 0.15486171999999998,
+        "approximation_peak_rss": 43642880,
+        "exact_peak_rss": 42291200,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_fail",
+      "kind": "block",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.03006925676671174,
+        "max_risk_excess": 0.000804252081619411,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.004181399123953411,
+        "internal_product_error": 0.0041512145626175015,
+        "max_node_error": 0.04169844370160962,
+        "F": 225.19192568443586,
+        "exact_KL": 1.2138696133864926
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.3092565760000002,
+        "exact_cpu": 0.15486171999999998,
+        "approximation_peak_rss": 44183552,
+        "exact_peak_rss": 42291200,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_mixed",
+      "kind": "mf",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.07037813405687147,
+        "max_risk_excess": 0.0032380356779269925,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.16774258350995241,
+        "F": 181.16311074992143,
+        "exact_KL": 3.32132302443884
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.829013043000004,
+        "exact_cpu": 0.16393704799999997,
+        "approximation_peak_rss": 49225728,
+        "exact_peak_rss": 46841856,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_mixed",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.070378134056873,
+        "max_risk_excess": 0.003238035677926465,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.1677425835099513,
+        "F": 181.16311074992143,
+        "exact_KL": 3.32132302443884
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.785713981000017,
+        "exact_cpu": 0.16393704799999997,
+        "approximation_peak_rss": 49491968,
+        "exact_peak_rss": 46841856,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_mixed",
+      "kind": "block",
+      "order": "forward",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.04218686574704901,
+        "max_risk_excess": 0.0013940548431019412,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.005032805366081893,
+        "internal_product_error": 0.004995191249679405,
+        "max_node_error": 0.11416595657939055,
+        "F": 179.68296209610503,
+        "exact_KL": 1.84117437062244
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.34232768200000063,
+        "exact_cpu": 0.16393704799999997,
+        "approximation_peak_rss": 52199424,
+        "exact_peak_rss": 46841856,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h1e-06_mixed",
+      "kind": "block",
+      "order": "reverse",
+      "h": 1e-06,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.04216901672189859,
+        "max_risk_excess": 0.0014043194730528619,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.005030139450040344,
+        "internal_product_error": 0.0049925821612104414,
+        "max_node_error": 0.11796411255851891,
+        "F": 179.6829385909298,
+        "exact_KL": 1.8411508654472186
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.3569309449999993,
+        "exact_cpu": 0.16393704799999997,
+        "approximation_peak_rss": 54673408,
+        "exact_peak_rss": 46841856,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_fail",
+      "kind": "mf",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.009464358716587918,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.012835425892946173,
+        "F": 222.4609258990185,
+        "exact_KL": 0.41124597201743995
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.793704706000004,
+        "exact_cpu": 0.17463309700000001,
+        "approximation_peak_rss": 59805696,
+        "exact_peak_rss": 57913344,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_fail",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.009464358716587918,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.012835425892946173,
+        "F": 222.4609258990185,
+        "exact_KL": 0.41124597201743995
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.9031526659999933,
+        "exact_cpu": 0.17463309700000001,
+        "approximation_peak_rss": 63049728,
+        "exact_peak_rss": 57913344,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_fail",
+      "kind": "block",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.003987250270350291,
+        "max_risk_excess": 2.81208054119797e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0005367531751583512,
+        "internal_product_error": 0.00048498357144614347,
+        "max_node_error": 0.00453622988622443,
+        "F": 222.2081038958134,
+        "exact_KL": 0.15842396881234322
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.34958347400000095,
+        "exact_cpu": 0.17463309700000001,
+        "approximation_peak_rss": 64942080,
+        "exact_peak_rss": 57913344,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_fail",
+      "kind": "block",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.003987250270350053,
+        "max_risk_excess": 2.8120805396200654e-05,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0005367531751586155,
+        "internal_product_error": 0.00048498357144641084,
+        "max_node_error": 0.0045362298839312365,
+        "F": 222.20810389581334,
+        "exact_KL": 0.15842396881228638
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.3207717950000001,
+        "exact_cpu": 0.17463309700000001,
+        "approximation_peak_rss": 65212416,
+        "exact_peak_rss": 57913344,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_mixed",
+      "kind": "mf",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.01355818637172263,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.017692181635001414,
+        "F": 176.08050066989176,
+        "exact_KL": 0.6033744235655831
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.8316022250000223,
+        "exact_cpu": 0.15690749600000004,
+        "approximation_peak_rss": 68456448,
+        "exact_peak_rss": 66834432,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_mixed",
+      "kind": "mf",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.013558186371722626,
+        "max_risk_excess": 0.0,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": null,
+        "internal_product_error": null,
+        "max_node_error": 0.017692181635001414,
+        "F": 176.08050066989176,
+        "exact_KL": 0.6033744235655831
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 1.7044609930000127,
+        "exact_cpu": 0.15690749600000004,
+        "approximation_peak_rss": 68726784,
+        "exact_peak_rss": 66834432,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_mixed",
+      "kind": "block",
+      "order": "forward",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.006033415164481227,
+        "max_risk_excess": 0.00012081118527354495,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.000704248774885833,
+        "internal_product_error": 0.0006426212083224618,
+        "max_node_error": 0.010165229280794885,
+        "F": 175.72190163524067,
+        "exact_KL": 0.24477538891449058
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.348023551000001,
+        "exact_cpu": 0.15690749600000004,
+        "approximation_peak_rss": 70619136,
+        "exact_peak_rss": 66834432,
+        "faster_and_no_more_memory": false
+      }
+    },
+    {
+      "fixture": "L8_h0.01_mixed",
+      "kind": "block",
+      "order": "reverse",
+      "h": 0.01,
+      "rows": 8,
+      "status": "completed",
+      "metrics": {
+        "mean_action_error": 0.006033415164604576,
+        "max_risk_excess": 0.00012081118517399958,
+        "nondegenerate_fraction": 1.0,
+        "internal_risk_error": 0.0007042487749011426,
+        "internal_product_error": 0.0006426212083380115,
+        "max_node_error": 0.010165229287179334,
+        "F": 175.7219016352407,
+        "exact_KL": 0.244775388914519
+      },
+      "query_count": 224,
+      "cost": {
+        "approximation_cpu": 0.3474310500000012,
+        "exact_cpu": 0.15690749600000004,
+        "approximation_peak_rss": 72511488,
+        "exact_peak_rss": 66834432,
+        "faster_and_no_more_memory": false
+      }
+    }
+  ],
+  "statuses": [
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h1e-06_fail",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h1e-06_fail",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h1e-06_fail",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h1e-06_fail",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h1e-06_fail",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h1e-06_mixed",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h1e-06_mixed",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h1e-06_mixed",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h1e-06_mixed",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h1e-06_mixed",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h0.01_fail",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h0.01_fail",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h0.01_fail",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h0.01_fail",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L4_h0.01_fail",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h0.01_mixed",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h0.01_mixed",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h0.01_mixed",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h0.01_mixed",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 4,
+        "cols": 4,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L4_h0.01_mixed",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h1e-06_fail",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h1e-06_fail",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h1e-06_fail",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h1e-06_fail",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h1e-06_fail",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h1e-06_mixed",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h1e-06_mixed",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h1e-06_mixed",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h1e-06_mixed",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 1e-06,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h1e-06_mixed",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h0.01_fail",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h0.01_fail",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h0.01_fail",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h0.01_fail",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "fail",
+        "main": true,
+        "fixture": "L8_h0.01_fail",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h0.01_mixed",
+        "kind": "exact",
+        "order": "none"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h0.01_mixed",
+        "kind": "mf",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h0.01_mixed",
+        "kind": "mf",
+        "order": "reverse"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h0.01_mixed",
+        "kind": "block",
+        "order": "forward"
+      },
+      "status": "completed"
+    },
+    {
+      "job": {
+        "rows": 8,
+        "cols": 8,
+        "h": 0.01,
+        "record": "mixed",
+        "main": true,
+        "fixture": "L8_h0.01_mixed",
+        "kind": "block",
+        "order": "reverse"
+      },
+      "status": "completed"
+    }
+  ],
+  "gate": {
+    "passed": false,
+    "complete": true,
+    "informative": true,
+    "decision_pass": true,
+    "correlation_pass": false,
+    "mean_action_errors": {
+      "mf": 0.03792579839778819,
+      "block": 0.01991592344916372
+    },
+    "max_risk_excesses": {
+      "mf": 0.0032380356779269925,
+      "block": 0.0014245555401677656
+    },
+    "strata": {
+      "1e-06": {
+        "mf": 0.06348629842366123,
+        "block": 0.03514400798103741,
+        "nondegenerate_fraction": 1.0
+      },
+      "0.01": {
+        "mf": 0.012365298371915152,
+        "block": 0.0046878389172900214,
+        "nondegenerate_fraction": 1.0
+      }
+    },
+    "correlation_gain": -4.799016873036507e-05
+  }
+}

@@ -1,0 +1,13 @@
+# TT007 execution record
+
+The user authorized the proposed P02 audit with “lets go.” The original draft and planning receipt are preserved. Submission access began at 17:03:06 UTC on 9 October 2026, with outcome-informed development status recorded in the exposure ledger. Both submitted snapshots and the native evidence used for extraction were copied and hash-verified; source experiments remained read-only.
+
+Implemented independent scalar O capture, reciprocal sparse transfer operators, explicit feature construction, damped Newton logistic fitting, coefficient-based prediction reconstruction and aggregate/matching/residual calculations. Source fitting code is executed only for synthetic implementation comparisons and leakage checks. Native nonlinear trajectories are not rerun. The bounded native provenance and theory review are in [SOURCE_REVIEW.md](SOURCE_REVIEW.md).
+
+Six synthetic check groups passed before freezing and in both frozen runs. `qualification_v1` used 64 disposable capture/transfer contexts and five synthetic logistic folds. It completed in 1.663 seconds. Its compute component was 0.287 seconds; the fixed conservative formula forecast the full audit at **68.509 seconds**. The forecast was below the 600-second detached-run threshold, so the audit ran in the foreground with one process, one numerical thread and one-CPU affinity. No long-job polling was needed.
+
+The immutable full job is [jobs/audit_v1/job.json](jobs/audit_v1/job.json), with 145 frozen inputs under its `inputs/TT007` directory. It started at 17:20:42 UTC and completed at **17:20:52 UTC**, taking **9.861 seconds**. All checks passed on the first qualification and audit attempts. No failed run or scientific simulation was produced.
+
+The completion receipt is [runs/audit_v1/COMPLETE.json](runs/audit_v1/COMPLETE.json), SHA-256 `ef4233401d8913b936b6fb2b9f30f2eb60e246640691fe7c7436e0d528acd74e`. Review verified its 19 output hashes, all 145 frozen input hashes and the job identity before interpreting the independent audit results. The final figure was opened and visually inspected; its labels, negative block results, exploratory contributions and decision counts agree with the retained tables.
+
+All 129 copied source files, 512 native captures, 48 fit/rate records, 3,072 predictions, 240 scores, 128 matched contexts and 504 decision rows passed. The largest refit probability difference was 7.06e-6, well within the fixed 1e-4 tolerance. Details are in the [report](runs/audit_v1/REPORT.md) and [interpretation](INTERPRETATION.md). The result is exposed development evidence with an explicitly bounded dynamics audit. No successor is running, and no automatic monitor or restart was installed.

@@ -1,0 +1,49 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 7200,
+  "total_budget_seconds": 28800,
+  "total_rounds": 12,
+  "historical_rounds": 1,
+  "new_rounds": 11,
+  "carriers": 3,
+  "recipients": 3,
+  "contact_shape": [
+    2,
+    3
+  ],
+  "hold_shape": [
+    1,
+    3
+  ],
+  "contact_horizon": 20000,
+  "hold_horizons": [
+    10000,
+    10000
+  ],
+  "contact_algorithm": "hypol",
+  "hold_algorithm": "depol",
+  "power": 1,
+  "kd": 1.25e-14,
+  "late_fraction": 0.95,
+  "ancestries": [
+    "ordinary_E",
+    "ordinary_M",
+    "restored_E",
+    "failed_M"
+  ],
+  "routes": [
+    "open",
+    "rna_blocked",
+    "border_cut"
+  ],
+  "gate_cases": 4,
+  "main_lineages": 4,
+  "coarse_controls": 8,
+  "fine_cases": 12,
+  "planned_cases": 28,
+  "planned_integrations": 804,
+  "planned_continuation_rounds": 264,
+  "midway_rewriting": false,
+  "stress_panel": false
+}

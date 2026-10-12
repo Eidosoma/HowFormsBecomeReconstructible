@@ -1,0 +1,38 @@
+{
+  "status": "FAILED",
+  "classification": "EXECUTION_INTERRUPTED_BEFORE_SCIENTIFIC_DATA",
+  "observed_utc": "2026-10-08T20:45:40.779061+00:00",
+  "observed_by": "User-requested status check",
+  "exit_code": null,
+  "termination_time": null,
+  "pilot_observations_saved": 0,
+  "evidence": {
+    "TT003/runs/pilot_v1/RUNNING.json": {
+      "sha256": "a4979357351db7f4e3e71fc8c8b0106c915db9a91d233ea3b2e628a5ff184d49",
+      "bytes": 192
+    },
+    "TT003/runs/pilot_v1/STATUS.json": {
+      "sha256": "4432f1c8cceeaa583bc20fd35d724a4784e1250e0f31167a692a9f9e738e54eb",
+      "bytes": 114
+    },
+    "TT003/runs/pilot_v1/manifest.json": {
+      "sha256": "6f7d447d9091cf3aaca77eb3f7a799d8fecbc9d0ef9d2c15d059fd2efd87d84d",
+      "bytes": 6276
+    },
+    "TT003/runs/pilot_v1/technical_checks.log": {
+      "sha256": "f0452b751a6f70b407e536180c9a2d5923ca202ec64fe44fae44a1160c6f278d",
+      "bytes": 494
+    }
+  },
+  "previous_status": {
+    "phase": "technical_checks",
+    "pid": 5,
+    "status": "RUNNING",
+    "utc": "2026-10-08T19:41:47.276112+00:00"
+  },
+  "process_check": "Read-only host namespace check found no process executing a TT003 path.",
+  "cause_assessment": "Inferred command PID-namespace teardown after the detached launcher returned; exact terminating signal was not recorded.",
+  "scientific_failure": false,
+  "frozen_inputs_unchanged": 43,
+  "recovery": "New run with identical frozen inputs and seeds, using a persistent host process."
+}

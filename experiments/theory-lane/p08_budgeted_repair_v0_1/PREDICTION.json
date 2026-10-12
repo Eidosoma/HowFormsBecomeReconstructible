@@ -1,0 +1,80 @@
+{
+  "status": "FROZEN_PROSPECTIVE_SEED_HOLDOUT_FOR_EXPOSED_HYPOTHESIS",
+  "at_utc": "2026-10-11T15:27:09.079800+00:00",
+  "prediction_id": "RDT-P08-operational-repair-timing",
+  "claim": "The frozen record warning gives strictly greater uninterrupted intended-task success than nine evenly spaced repair calls.",
+  "primary_contrast": "warning_minus_periodic",
+  "endpoint": "All eighteen assessments at generations 15-32 satisfy both ports under both cues, each strict aligned mean >0.25.",
+  "inference_unit": "Block; all policies and sixteen cases paired within block; four history strata.",
+  "blocks": [
+    82000,
+    82001,
+    82002,
+    82003,
+    82004,
+    82005,
+    82006,
+    82007,
+    82008,
+    82009,
+    82010,
+    82011,
+    82012,
+    82013,
+    82014,
+    82015
+  ],
+  "cohort_records": 256,
+  "repair_calls_per_lineage": {
+    "warning": 9,
+    "periodic": 9,
+    "random": 9,
+    "repeated": 18
+  },
+  "enrollment": "Every acquired record after generation 14, irrespective of success; retain every branch after failure.",
+  "model_sha256": "7c69bd95587719ebde6209886776ab2dc4c128ce1e9d0a5701bc818645968b85",
+  "development_plan_sha256": "ef2096f443e04e665ee99dbb3eda62183cadf200c5b48e2173356ef80c509ab8",
+  "development_results_sha256": "053e2206e55847915f6b15992a69aed9e7b6e8ac83d6d6277f5585ca1e5f6aa6",
+  "reject_direction_if": "Warning minus periodic point estimate <=0.",
+  "unresolved_if": "Positive point estimate with descriptive paired stratified block-bootstrap 95% interval including zero.",
+  "directional_support_if": "Positive primary estimate and positive lower descriptive interval; limited to this supplied apparatus and schedule. No practical effect threshold or general law established.",
+  "practical_margin": null,
+  "equivalence_margin": null,
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101108,
+  "sample_rationale": "One 16-block feasibility cohort as in the previous source programme, with four blocks per history; no power claim for small improvements and no optional stopping.",
+  "budget_rationale": "Nine is half the eighteen-call recurring correction budget, selected as a simple midpoint before feature extraction; no search over budgets.",
+  "secondary_contrasts": {
+    "warning_minus_random": [
+      1,
+      0,
+      -1,
+      0
+    ],
+    "warning_minus_repeated": [
+      1,
+      0,
+      0,
+      -1
+    ],
+    "periodic_minus_random": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  "secondary_cannot_rescue_primary": true,
+  "limitations": [
+    "Risk prediction need not rank causal repair benefit.",
+    "Small dependent development event set.",
+    "Nine-call periodic policy may already approach ceiling.",
+    "Equal calls do not match total CPU or added weights.",
+    "Ordinary graph correction remains a strong explanation.",
+    "Teaching/reset still matched; apparatus remains supplied."
+  ],
+  "fresh_cohort_outcomes_generated": 0,
+  "external_preregistration": false,
+  "external_replication": false,
+  "automatic_successor": false
+}

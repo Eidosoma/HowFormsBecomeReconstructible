@@ -1,0 +1,29 @@
+{
+  "study_id": "TT001",
+  "version": 1,
+  "status": "RETROSPECTIVE_DEVELOPMENT",
+  "rdt_prediction_id": "RDT-P01",
+  "rdt_verdict": "NOT_TESTED",
+  "rdt_candidate": null,
+  "prefixes": [3, 8],
+  "horizon": 32,
+  "endpoints": ["terminal", "future_path_and_terminal"],
+  "models": ["prevalence", "markov", "current_logistic", "prefix_logistic", "prefix_boosted"],
+  "logistic_C": [0.01, 0.1, 1.0, 10.0],
+  "boost_leaves": [3, 7],
+  "boost_l2": [1.0, 10.0],
+  "markov_shrinkage": 16.0,
+  "outer_folds": 4,
+  "inner_folds": 3,
+  "bootstrap_draws": 4096,
+  "random_seed": 2026100801,
+  "processes": 1,
+  "numerical_threads": 1,
+  "foreground_limit_seconds": 600,
+  "storage_reserve_bytes": 536870912,
+  "sources": {
+    "E041": {"run": "../E041_full_rewrite_confirmation/runs/serial_v1", "complete_sha256": "e899af49ba28b49633e70bb01fbb418f46ace06b2684c68299ef07ac8296582d"},
+    "E042": {"run": "../E042_late_failure_diagnosis/runs/diagnosis_v1", "complete_sha256": "7ba822dc8395d24c5ba9d9b28cb9e3aaffc95c7ee6aae427722faab7e3fcae72"},
+    "E046": {"run": "../E046_failure_chronology/runs/chronology_v1", "complete_sha256": "3a4187f45c1a573123ec5ac64dd3542cc2e25ac6345c34735a61a0877758e9ce"}
+  }
+}

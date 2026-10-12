@@ -1,0 +1,23 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "worker_timeout_seconds": 7200,
+  "total_budget_seconds": 28800,
+  "layouts": ["three_to_three", "three_to_one", "six_to_three"],
+  "algorithms": ["depol", "hypol"],
+  "kd_anchors": {"low": 8.801117367933935e-16, "high": 1.25e-14},
+  "conditions": ["M_open", "E_sham", "M_rna", "M_cut"],
+  "contact_power": 60,
+  "contact_horizon": 20000,
+  "hold_horizons": [10000, 10000],
+  "late_fraction": 0.95,
+  "replay_cases": 2,
+  "coarse_cases": 48,
+  "fine_cases": 48,
+  "planned_cases": 98,
+  "planned_integrations": 295,
+  "serial_relay": false,
+  "midway_rewriting": false,
+  "stress_panel": false,
+  "automatic_follow_on": false
+}

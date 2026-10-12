@@ -1,0 +1,26 @@
+{
+  "status": "DECLARED_BEFORE_NEW_LINEAGES_NOT_EXTERNALLY_REGISTERED",
+  "at_utc": "2026-10-10T20:51:42.510145+00:00",
+  "primary": {
+    "contrast": "completion_minus_outgoing",
+    "population": "all 256 generation-14 records; no outcome-based selection",
+    "direction": "positive",
+    "failure": "nonpositive mean",
+    "uncertainty": "20,000 stratified whole-block bootstrap resamples; four blocks per history",
+    "unit": "block",
+    "unresolved": "positive mean but descriptive interval spans zero"
+  },
+  "secondary": [
+    "completion_minus_shuffled",
+    "opposite-task primary effect",
+    "four history summaries",
+    "pre-repair body pass/fail summaries"
+  ],
+  "frozen_rule_source": "p05_recipient_only_completion_v0_1",
+  "primary_rule_changed": false,
+  "cohort_timing": "generate after executable input freeze",
+  "new_scientific_lineages_generated": 0,
+  "minimum_effect_margin": null,
+  "no_equivalence_test": true,
+  "automatic_successor": false
+}

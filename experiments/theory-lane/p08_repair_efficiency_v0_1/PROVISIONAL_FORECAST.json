@@ -1,0 +1,9 @@
+{
+  "status": "PROVISIONAL_ARCHIVED_BENCHMARK",
+  "total_provisional_cpu_seconds": 42940.76385052803,
+  "per_block_base_cpu_seconds": 213.84224166933348,
+  "formula": "1.5 * 132 * (teaching + flat teaching + 14 history reads + 18 * (max three-arm read + noise audit) + 400/48 * checked repair batch + 5 flat three-arm reads) + 600",
+  "exact_current_benchmark_required": true,
+  "scientific_ceiling_cpu_seconds": 54000,
+  "planned_threads": 1
+}

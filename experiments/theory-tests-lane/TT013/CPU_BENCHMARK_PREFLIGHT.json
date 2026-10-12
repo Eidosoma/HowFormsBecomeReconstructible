@@ -1,0 +1,320 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-10T22:44:10.310136+00:00",
+  "processes": [
+    {
+      "pid": 1909204,
+      "parent": 1,
+      "state": "S",
+      "script": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/supervise_p32.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 1913844,
+      "parent": 1909204,
+      "state": "S",
+      "script": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/run_p32.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 2854358,
+      "parent": 1,
+      "state": "S",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/workflow.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013502,
+      "parent": 2854358,
+      "state": "S",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013615,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013616,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013617,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013618,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013619,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013620,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013621,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3013622,
+      "parent": 3013502,
+      "state": "R",
+      "script": "WhereDoFormsComeFrom/experiments/E053_combined_numerical_confirmation/audit.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3068991,
+      "parent": 1913844,
+      "state": "R",
+      "script": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/run_p32.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "pid": 3069497,
+      "parent": 1913844,
+      "state": "R",
+      "script": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/p32_converged_pause_boundary/run_p32.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "numerical_threads": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "active_leaf_workers": 10,
+  "after_TT013_launch": 11,
+  "ceiling": 12,
+  "TT013_threads": 1,
+  "TT013_cpu": 7,
+  "note": "Sleeping coordinators with research children excluded; all remaining research leaf workers counted."
+}

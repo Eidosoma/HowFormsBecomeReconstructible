@@ -1,0 +1,6133 @@
+{
+ "cases": [
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.9,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": -0.4,
+    "exact_decomposition": -0.9068528194400547,
+    "full_state_extension": -1.6,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": -2.2931471805599455,
+    "state": -0.9068528194400547,
+    "task_extension": -2.2931471805599455
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "intact_useful",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.9,
+     "utility_range": [
+      0.9,
+      0.9
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437653,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.9,
+      "exact_decomposition": 2.317459541437653,
+      "full_state_extension": 2.317459541437653,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.317459541437653,
+      "state": 2.317459541437653,
+      "task_extension": 2.317459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.9
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 6.317459541437653,
+      "full_state_extension": 6.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 6.317459541437652,
+      "state": 6.317459541437653,
+      "task_extension": 6.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437652,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.6,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": -0.09999999999999998,
+    "exact_decomposition": 0.29314718055994593,
+    "full_state_extension": -0.3999999999999999,
+    "outcome_dropped": 1.6,
+    "record_extension": -1.0931471805599453,
+    "state": 0.2931471805599455,
+    "task_extension": -1.0931471805599453
+   },
+   "maintenance_price": 0.4,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "intact_state_disagreement",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6,
+     "utility_range": [
+      0.6,
+      0.6
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6,
+     "utility_range": [
+      0.6,
+      0.6
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6,
+     "utility_range": [
+      0.6,
+      0.6
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6,
+     "utility_range": [
+      0.6,
+      0.6
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.8951978493660935,
+      "full_state_extension": 3.588345029926039,
+      "outcome_dropped": 0.8770479214482841,
+      "record_extension": 4.281492210485984,
+      "state": 2.8951978493660935,
+      "task_extension": 4.281492210485984
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.8951978493660935,
+      "full_state_extension": 3.588345029926039,
+      "outcome_dropped": 0.8770479214482841,
+      "record_extension": 4.281492210485984,
+      "state": 2.8951978493660935,
+      "task_extension": 4.281492210485984
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.8951978493660935,
+      "full_state_extension": 3.588345029926039,
+      "outcome_dropped": 0.8770479214482841,
+      "record_extension": 4.281492210485984,
+      "state": 2.8951978493660935,
+      "task_extension": 4.281492210485984
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.8951978493660935,
+      "full_state_extension": 3.588345029926039,
+      "outcome_dropped": 0.8770479214482841,
+      "record_extension": 4.281492210485984,
+      "state": 2.8951978493660935,
+      "task_extension": 4.281492210485984
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.7112971084777553,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.09999999999999998,
+      "exact_decomposition": 5.188345029926039,
+      "full_state_extension": 5.188345029926039,
+      "outcome_dropped": 2.477047921448284,
+      "record_extension": 5.188345029926039,
+      "state": 5.188345029926039,
+      "task_extension": 5.188345029926039
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.09999999999999998
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777551,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.6,
+      "exact_decomposition": 3.1883450299260394,
+      "full_state_extension": 3.188345029926039,
+      "outcome_dropped": 2.477047921448284,
+      "record_extension": 3.188345029926039,
+      "state": 3.188345029926039,
+      "task_extension": 3.188345029926039
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.6
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477756,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.4,
+      "exact_decomposition": 7.18834502992604,
+      "full_state_extension": 7.188345029926039,
+      "outcome_dropped": 2.477047921448284,
+      "record_extension": 7.188345029926039,
+      "state": 7.188345029926039,
+      "task_extension": 7.188345029926039
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.7112971084777553,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.09999999999999998,
+      "exact_decomposition": 5.188345029926039,
+      "full_state_extension": 5.188345029926039,
+      "outcome_dropped": 2.477047921448284,
+      "record_extension": 5.188345029926039,
+      "state": 5.188345029926039,
+      "task_extension": 5.188345029926039
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.09999999999999998
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.4,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.09999999999999998,
+    "exact_decomposition": 1.0931471805599449,
+    "full_state_extension": 0.39999999999999947,
+    "outcome_dropped": 2.3999999999999995,
+    "record_extension": -0.29314718055994593,
+    "state": 1.0931471805599453,
+    "task_extension": -0.29314718055994593
+   },
+   "maintenance_price": 0.6,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "intact_information_overpayment",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.4,
+     "utility_range": [
+      0.4,
+      0.4
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.4,
+     "utility_range": [
+      0.4,
+      0.4
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7981332606317046,
+      "full_state_extension": 3.49128044119165,
+      "outcome_dropped": 0.779983332713895,
+      "record_extension": 4.184427621751595,
+      "state": 2.7981332606317046,
+      "task_extension": 4.184427621751595
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7981332606317046,
+      "full_state_extension": 3.49128044119165,
+      "outcome_dropped": 0.779983332713895,
+      "record_extension": 4.184427621751595,
+      "state": 2.7981332606317046,
+      "task_extension": 4.184427621751595
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7981332606317046,
+      "full_state_extension": 3.49128044119165,
+      "outcome_dropped": 0.779983332713895,
+      "record_extension": 4.184427621751595,
+      "state": 2.7981332606317046,
+      "task_extension": 4.184427621751595
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7981332606317046,
+      "full_state_extension": 3.49128044119165,
+      "outcome_dropped": 0.779983332713895,
+      "record_extension": 4.184427621751595,
+      "state": 2.7981332606317046,
+      "task_extension": 4.184427621751595
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.09999999999999998,
+      "exact_decomposition": 5.8912804411916495,
+      "full_state_extension": 5.89128044119165,
+      "outcome_dropped": 3.1799833327138947,
+      "record_extension": 5.89128044119165,
+      "state": 5.8912804411916495,
+      "task_extension": 5.89128044119165
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.09999999999999998
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777551,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.8912804411916495,
+      "full_state_extension": 3.8912804411916495,
+      "outcome_dropped": 3.1799833327138947,
+      "record_extension": 3.8912804411916495,
+      "state": 3.89128044119165,
+      "task_extension": 3.8912804411916495
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.6,
+      "exact_decomposition": 7.8912804411916495,
+      "full_state_extension": 7.89128044119165,
+      "outcome_dropped": 3.1799833327138947,
+      "record_extension": 7.89128044119165,
+      "state": 7.8912804411916495,
+      "task_extension": 7.89128044119165
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.6
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.09999999999999998,
+      "exact_decomposition": 5.8912804411916495,
+      "full_state_extension": 5.89128044119165,
+      "outcome_dropped": 3.1799833327138947,
+      "record_extension": 5.89128044119165,
+      "state": 5.8912804411916495,
+      "task_extension": 5.89128044119165
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.09999999999999998
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.4,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    0.5
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.5,
+   "maintenance_minus_skip": {
+    "bayes": 0.09999999999999998,
+    "exact_decomposition": 1.0931471805599453,
+    "full_state_extension": 0.39999999999999947,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": -0.29314718055994593,
+    "state": 1.0931471805599458,
+    "task_extension": 0.39999999999999947
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.0,
+    "exact_decomposition": -0.17328679513998632,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.17328679513998632,
+    "state": -0.17328679513998632,
+    "task_extension": 0.0
+   },
+   "name": "content_replaced",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      0
+     ],
+     "representative_utility": 0.4,
+     "utility_range": [
+      0.4,
+      0.4
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.3250027473578645,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.531165180317762,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.531165180317762,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 2.0794415416798357,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.3250027473578645,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.531165180317762,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.531165180317762,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 2.0794415416798357,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.3250027473578645,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.531165180317762,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.531165180317762,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 2.0794415416798357,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.3250027473578645,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.531165180317762,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.531165180317762,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 2.0794415416798357,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.0,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.624312360877707,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.317459541437652,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    0.5
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.65,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    0.75
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.25,
+   "maintenance_minus_skip": {
+    "bayes": -0.15000000000000002,
+    "exact_decomposition": 0.09314718055994575,
+    "full_state_extension": -0.6000000000000005,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": -1.293147180559946,
+    "state": 0.09314718055994575,
+    "task_extension": -0.7308120359411374
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.25,
+    "exact_decomposition": 0.07671320486001368,
+    "full_state_extension": 0.25,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.42328679513998635,
+    "state": 0.07671320486001368,
+    "task_extension": 0.2827030089852842
+   },
+   "name": "partial_state_disagreement",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.65,
+     "utility_range": [
+      0.65,
+      0.65
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.65,
+     "utility_range": [
+      0.65,
+      0.65
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.65,
+     "utility_range": [
+      0.65,
+      0.65
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.65,
+     "utility_range": [
+      0.65,
+      0.65
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.661977216258899,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.661977216258899,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.661977216258899,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.661977216258899,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.661977216258899,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.661977216258899,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.661977216258899,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 2.661977216258899,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 2.1489619638589463,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.7551243968188444,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 3.755124396818845,
+      "task_extension": 4.879794686056461
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 1.1489619638589468,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.65,
+      "exact_decomposition": 2.755124396818845,
+      "full_state_extension": 3.3174595414376524,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 3.3174595414376524,
+      "state": 2.755124396818845,
+      "task_extension": 3.879794686056461
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.75,
+     "utility": 0.65
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 3.1489619638589463,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.15,
+      "exact_decomposition": 4.755124396818845,
+      "full_state_extension": 5.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 5.317459541437652,
+      "state": 4.755124396818845,
+      "task_extension": 5.879794686056461
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.25,
+     "utility": 0.15
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 2.1489619638589468,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.755124396818845,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.317459541437652,
+      "state": 3.755124396818845,
+      "task_extension": 4.879794686056461
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    0.75
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.45,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    0.75
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.25,
+   "maintenance_minus_skip": {
+    "bayes": 0.0500000000000001,
+    "exact_decomposition": 0.8931471805599451,
+    "full_state_extension": 0.20000000000000018,
+    "outcome_dropped": 1.2,
+    "record_extension": -0.4931471805599452,
+    "state": 0.8931471805599447,
+    "task_extension": 0.0691879640588633
+   },
+   "maintenance_price": 0.3,
+   "maintenance_thresholds": {
+    "bayes": 0.25,
+    "exact_decomposition": 0.07671320486001368,
+    "full_state_extension": 0.25,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.42328679513998635,
+    "state": 0.07671320486001368,
+    "task_extension": 0.2827030089852842
+   },
+   "name": "partial_record_overpayment",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.4499999999999999,
+     "utility_range": [
+      0.4499999999999999,
+      0.4499999999999999
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.412244431196978,
+      "full_state_extension": 3.667726756375731,
+      "outcome_dropped": 0.9564296478979764,
+      "record_extension": 4.360873936935676,
+      "state": 2.412244431196978,
+      "task_extension": 4.360873936935676
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.412244431196978,
+      "full_state_extension": 3.667726756375731,
+      "outcome_dropped": 0.9564296478979765,
+      "record_extension": 4.360873936935676,
+      "state": 2.412244431196978,
+      "task_extension": 4.360873936935676
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.412244431196978,
+      "full_state_extension": 3.667726756375731,
+      "outcome_dropped": 0.9564296478979765,
+      "record_extension": 4.360873936935676,
+      "state": 2.412244431196978,
+      "task_extension": 4.360873936935676
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 1.4558147832990014,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.412244431196978,
+      "full_state_extension": 3.667726756375731,
+      "outcome_dropped": 0.9564296478979766,
+      "record_extension": 4.360873936935676,
+      "state": 2.412244431196978,
+      "task_extension": 4.360873936935676
+     },
+     "state_entropy": 1.9486295057386989,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 2.1489619638589463,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.19999999999999996,
+      "exact_decomposition": 4.305391611756923,
+      "full_state_extension": 4.867726756375731,
+      "outcome_dropped": 2.1564296478979763,
+      "record_extension": 4.867726756375731,
+      "state": 4.305391611756923,
+      "task_extension": 5.43006190099454
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.5,
+     "utility": 0.19999999999999996
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 1.1489619638589468,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.4499999999999999,
+      "exact_decomposition": 3.305391611756923,
+      "full_state_extension": 3.867726756375731,
+      "outcome_dropped": 2.1564296478979763,
+      "record_extension": 3.867726756375731,
+      "state": 3.3053916117569226,
+      "task_extension": 4.43006190099454
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.75,
+     "utility": 0.4499999999999999
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 3.1489619638589463,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": 0.04999999999999999,
+      "exact_decomposition": 5.305391611756923,
+      "full_state_extension": 5.867726756375731,
+      "outcome_dropped": 2.1564296478979763,
+      "record_extension": 5.867726756375731,
+      "state": 5.305391611756923,
+      "task_extension": 6.43006190099454
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.25,
+     "utility": -0.04999999999999999
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.13081203594113697,
+     "conditional_kl": 2.1489619638589463,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.13081203594113697,
+     "scores": {
+      "bayes": -0.19999999999999996,
+      "exact_decomposition": 4.305391611756923,
+      "full_state_extension": 4.867726756375731,
+      "outcome_dropped": 2.1564296478979763,
+      "record_extension": 4.867726756375731,
+      "state": 4.305391611756923,
+      "task_extension": 5.43006190099454
+     },
+     "state_entropy": 1.2554823251787535,
+     "success_probability": 0.5,
+     "utility": 0.19999999999999996
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    0.75
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.4,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    0.5
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.09999999999999998,
+    "exact_decomposition": 0.3999999999999999,
+    "full_state_extension": 0.39999999999999947,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": 0.39999999999999947,
+    "state": 0.40000000000000036,
+    "task_extension": 0.39999999999999947
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.0,
+    "exact_decomposition": 0.0,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.0,
+    "state": 0.0,
+    "task_extension": 0.0
+   },
+   "name": "maintenance_disabled",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.2243123608777076,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 4.610606721997598,
+      "state": 3.2243123608777076,
+      "task_extension": 4.610606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 5.010606721997598,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 5.010606721997598,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6243123608777075,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 5.010606721997598,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.624312360877707,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 5.010606721997598,
+      "state": 3.624312360877708,
+      "task_extension": 5.010606721997598
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    0.5
+   ],
+   "reader_alignment": [
+    0.5,
+    0.5
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.9,
+    "never_maintain_best_report": 1.0,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    1.0,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.09999999999999998,
+    "exact_decomposition": 0.3999999999999999,
+    "full_state_extension": 0.3999999999999999,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": 0.3999999999999999,
+    "state": 0.3999999999999999,
+    "task_extension": 0.3999999999999999
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.0,
+    "exact_decomposition": 0.0,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.0,
+    "state": 0.0,
+    "task_extension": 0.0
+   },
+   "name": "reader_intact",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.0,
+      1.0
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.917459541437653,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.917459541437653,
+      "state": 3.917459541437653,
+      "task_extension": 3.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777551,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -1.0,
+      "exact_decomposition": 1.917459541437653,
+      "full_state_extension": 1.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 1.917459541437653,
+      "state": 1.917459541437653,
+      "task_extension": 1.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 1.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 5.917459541437653,
+      "full_state_extension": 5.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 5.917459541437653,
+      "state": 5.917459541437653,
+      "task_extension": 5.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.917459541437653,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.917459541437653,
+      "state": 3.917459541437653,
+      "task_extension": 3.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437653,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.9,
+      "exact_decomposition": 2.317459541437653,
+      "full_state_extension": 2.317459541437653,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.317459541437653,
+      "state": 2.317459541437653,
+      "task_extension": 2.317459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.9
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 6.317459541437653,
+      "full_state_extension": 6.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 6.317459541437652,
+      "state": 6.317459541437653,
+      "task_extension": 6.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437652,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    1.0,
+    1.0
+   ],
+   "reader_alignment": [
+    1.0,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.9,
+    "never_maintain_best_report": 1.0,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    1.0,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.09999999999999998,
+    "exact_decomposition": 0.3999999999999999,
+    "full_state_extension": 0.3999999999999999,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": 0.3999999999999999,
+    "state": 0.3999999999999999,
+    "task_extension": 0.3999999999999999
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.0,
+    "exact_decomposition": 0.0,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.0,
+    "state": 0.0,
+    "task_extension": 0.0
+   },
+   "name": "known_reversal",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.0,
+      1.0
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "representative": [
+      0,
+      1,
+      0
+     ],
+     "representative_utility": 1.0,
+     "utility_range": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.917459541437653,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.917459541437653,
+      "state": 3.917459541437653,
+      "task_extension": 3.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 5.917459541437653,
+      "full_state_extension": 5.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 5.917459541437653,
+      "state": 5.917459541437653,
+      "task_extension": 5.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777551,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -1.0,
+      "exact_decomposition": 1.917459541437653,
+      "full_state_extension": 1.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 1.917459541437653,
+      "state": 1.917459541437653,
+      "task_extension": 1.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 1.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.917459541437653,
+      "full_state_extension": 3.917459541437653,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.917459541437653,
+      "state": 3.917459541437653,
+      "task_extension": 3.917459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437653,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.9,
+      "exact_decomposition": 2.317459541437653,
+      "full_state_extension": 2.317459541437653,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.317459541437653,
+      "state": 2.317459541437653,
+      "task_extension": 2.317459541437653
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.9
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 6.317459541437653,
+      "full_state_extension": 6.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 6.317459541437652,
+      "state": 6.317459541437653,
+      "task_extension": 6.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 4.317459541437652,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.317459541437652,
+      "state": 4.317459541437653,
+      "task_extension": 4.317459541437652
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.0,
+    1.0
+   ],
+   "reader_alignment": [
+    0.0,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": -0.1,
+    "never_maintain_best_report": 0.0,
+    "no_observation_no_maintenance": 0.0
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.1,
+    "exact_decomposition": 1.0931471805599453,
+    "full_state_extension": 0.3999999999999999,
+    "outcome_dropped": 0.40000000000000013,
+    "record_extension": -0.2931471805599455,
+    "state": 1.093147180559945,
+    "task_extension": -0.2931471805599455
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.0,
+    "exact_decomposition": -0.17328679513998632,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.17328679513998632,
+    "state": -0.17328679513998632,
+    "task_extension": 0.17328679513998632
+   },
+   "name": "no_task_value",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.0,
+     "utility_range": [
+      0.0,
+      0.0
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.0,
+     "utility_range": [
+      0.0,
+      0.0
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.0,
+     "utility_range": [
+      0.0,
+      0.0
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.0,
+     "utility_range": [
+      0.0,
+      0.0
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      0
+     ],
+     "representative_utility": -0.1,
+     "utility_range": [
+      -0.1,
+      -0.1
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.0,
+     "utility_range": [
+      0.0,
+      0.0
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      0
+     ],
+     "representative_utility": -0.1,
+     "utility_range": [
+      -0.1,
+      -0.1
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 0.6931471805599453,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 1.899309613519843,
+      "full_state_extension": 2.5924567940797885,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.285603974639734,
+      "state": 1.8993096135198433,
+      "task_extension": 3.285603974639734
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 0.6931471805599453,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 1.899309613519843,
+      "full_state_extension": 2.5924567940797885,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.285603974639734,
+      "state": 1.8993096135198433,
+      "task_extension": 3.285603974639734
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 0.6931471805599453,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 1.899309613519843,
+      "full_state_extension": 2.5924567940797885,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.285603974639734,
+      "state": 1.8993096135198433,
+      "task_extension": 3.285603974639734
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 0.6931471805599453,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 1.899309613519843,
+      "full_state_extension": 2.5924567940797885,
+      "outcome_dropped": 1.206162432959898,
+      "record_extension": 3.285603974639734,
+      "state": 1.8993096135198433,
+      "task_extension": 3.285603974639734
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 1.3862943611198906,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 2.9924567940797884,
+      "full_state_extension": 2.9924567940797884,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.9924567940797884,
+      "state": 2.9924567940797884,
+      "task_extension": 2.9924567940797884
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 1.3862943611198906,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 2.9924567940797884,
+      "full_state_extension": 2.9924567940797884,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.9924567940797884,
+      "state": 2.9924567940797884,
+      "task_extension": 2.9924567940797884
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 1.3862943611198906,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 2.9924567940797884,
+      "full_state_extension": 2.9924567940797884,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.9924567940797884,
+      "state": 2.9924567940797884,
+      "task_extension": 2.9924567940797884
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.1
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 1.3862943611198906,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.1,
+      "exact_decomposition": 2.9924567940797884,
+      "full_state_extension": 2.9924567940797884,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 2.9924567940797884,
+      "state": 2.9924567940797884,
+      "task_extension": 2.9924567940797884
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.1
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 0.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.7200000000000001,
+    "never_maintain_best_report": 0.6599999999999999,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.6599999999999999,
+    0.8200000000000001
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.1,
+   "maintenance_minus_skip": {
+    "bayes": -0.06000000000000005,
+    "exact_decomposition": 0.0457813286634452,
+    "full_state_extension": -0.24000000000000155,
+    "outcome_dropped": 0.3999999999999999,
+    "record_extension": -0.5257813286634465,
+    "state": 0.045781328663444754,
+    "task_extension": -0.40964199107106225
+   },
+   "maintenance_price": 0.1,
+   "maintenance_thresholds": {
+    "bayes": 0.16000000000000014,
+    "exact_decomposition": 0.08855466783413882,
+    "full_state_extension": 0.16000000000000014,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.23144533216586147,
+    "state": 0.08855466783413882,
+    "task_extension": 0.20241049776776557
+   },
+   "name": "interior",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.7200000000000001,
+     "utility_range": [
+      0.7200000000000001,
+      0.7200000000000001
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 0.66,
+     "utility_range": [
+      0.66,
+      0.66
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.7200000000000001,
+     "utility_range": [
+      0.7200000000000001,
+      0.7200000000000001
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.3400000000000001,
+      0.66
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.7200000000000001,
+     "utility_range": [
+      0.7200000000000001,
+      0.7200000000000001
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      1
+     ],
+     "representative_utility": 0.66,
+     "utility_range": [
+      0.66,
+      0.66
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.7200000000000001,
+     "utility_range": [
+      0.7200000000000001,
+      0.7200000000000001
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.08228287850505177,
+     "available_target_information": 0.0521117026787897,
+     "conditional_kl": 1.7753498330314135,
+     "full_state_information": 0.6931471805599452,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.3680642071684973,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9815122659913116,
+      "full_state_extension": 3.917459541437654,
+      "outcome_dropped": 1.2061624329598981,
+      "record_extension": 4.528323843492547,
+      "state": 2.9815122659913116,
+      "task_extension": 4.558495019318809
+     },
+     "state_entropy": 1.629094456006287,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.08228287850505177,
+     "available_target_information": 0.0521117026787897,
+     "conditional_kl": 1.1353498330314136,
+     "full_state_information": 0.6931471805599452,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.3680642071684973,
+     "scores": {
+      "bayes": -0.66,
+      "exact_decomposition": 2.3415122659913115,
+      "full_state_extension": 3.277459541437654,
+      "outcome_dropped": 1.2061624329598981,
+      "record_extension": 3.8883238434925476,
+      "state": 2.341512265991312,
+      "task_extension": 3.9184950193188093
+     },
+     "state_entropy": 1.629094456006287,
+     "success_probability": 0.66,
+     "utility": 0.66
+    },
+    {
+     "available_record_information": 0.08228287850505177,
+     "available_target_information": 0.0521117026787897,
+     "conditional_kl": 2.4153498330314136,
+     "full_state_information": 0.6931471805599452,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.3680642071684973,
+     "scores": {
+      "bayes": -0.3400000000000001,
+      "exact_decomposition": 3.6215122659913117,
+      "full_state_extension": 4.5574595414376535,
+      "outcome_dropped": 1.2061624329598981,
+      "record_extension": 5.168323843492547,
+      "state": 3.6215122659913117,
+      "task_extension": 5.198495019318809
+     },
+     "state_entropy": 1.629094456006287,
+     "success_probability": 0.3400000000000001,
+     "utility": 0.3400000000000001
+    },
+    {
+     "available_record_information": 0.08228287850505177,
+     "available_target_information": 0.0521117026787897,
+     "conditional_kl": 1.7753498330314135,
+     "full_state_information": 0.6931471805599452,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.3680642071684973,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9815122659913116,
+      "full_state_extension": 3.917459541437654,
+      "outcome_dropped": 1.2061624329598981,
+      "record_extension": 4.528323843492547,
+      "state": 2.9815122659913116,
+      "task_extension": 4.558495019318809
+     },
+     "state_entropy": 1.629094456006287,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.36806420716849714,
+     "available_target_information": 0.22175369374985118,
+     "conditional_kl": 2.0611311616948584,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.3680642071684971,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6672935946547565,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 4.642542514829101,
+      "state": 3.667293594654757,
+      "task_extension": 4.788853028247747
+     },
+     "state_entropy": 1.3433131273428418,
+     "success_probability": 0.5,
+     "utility": 0.4
+    },
+    {
+     "available_record_information": 0.36806420716849714,
+     "available_target_information": 0.22175369374985118,
+     "conditional_kl": 0.7811311616948586,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.3680642071684971,
+     "scores": {
+      "bayes": -0.7200000000000001,
+      "exact_decomposition": 2.3872935946547567,
+      "full_state_extension": 3.0374595414376526,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 3.362542514829101,
+      "state": 2.3872935946547567,
+      "task_extension": 3.508853028247747
+     },
+     "state_entropy": 1.3433131273428418,
+     "success_probability": 0.8200000000000001,
+     "utility": 0.7200000000000001
+    },
+    {
+     "available_record_information": 0.36806420716849714,
+     "available_target_information": 0.22175369374985118,
+     "conditional_kl": 3.3411311616948582,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.3680642071684971,
+     "scores": {
+      "bayes": -0.07999999999999999,
+      "exact_decomposition": 4.947293594654756,
+      "full_state_extension": 5.597459541437653,
+      "outcome_dropped": 1.606162432959898,
+      "record_extension": 5.922542514829101,
+      "state": 4.947293594654758,
+      "task_extension": 6.068853028247747
+     },
+     "state_entropy": 1.3433131273428418,
+     "success_probability": 0.18,
+     "utility": 0.07999999999999999
+    },
+    {
+     "available_record_information": 0.36806420716849714,
+     "available_target_information": 0.22175369374985118,
+     "conditional_kl": 2.0611311616948584,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.3680642071684971,
+     "scores": {
+      "bayes": -0.4,
+      "exact_decomposition": 3.6672935946547565,
+      "full_state_extension": 4.317459541437652,
+      "outcome_dropped": 1.6061624329598978,
+      "record_extension": 4.642542514829101,
+      "state": 3.667293594654757,
+      "task_extension": 4.788853028247747
+     },
+     "state_entropy": 1.3433131273428418,
+     "success_probability": 0.5,
+     "utility": 0.4
+    }
+   ],
+   "raw_target_match": [
+    0.6599999999999999,
+    0.8200000000000001
+   ],
+   "reader_alignment": [
+    0.7,
+    0.9
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.6732867951399863,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": -0.17328679513998635,
+    "exact_decomposition": 0.0,
+    "full_state_extension": -0.6931471805599454,
+    "outcome_dropped": 1.3068528194400546,
+    "record_extension": -1.3862943611198908,
+    "state": 0.0,
+    "task_extension": -1.3862943611198908
+   },
+   "maintenance_price": 0.32671320486001365,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "state_threshold",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6732867951399863,
+     "utility_range": [
+      0.6732867951399863,
+      0.6732867951399863
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.6732867951399863
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6732867951399863,
+     "utility_range": [
+      0.6732867951399863,
+      0.6732867951399863
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6732867951399863,
+     "utility_range": [
+      0.6732867951399863,
+      0.6732867951399863
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.6732867951399863
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.6732867951399863,
+     "utility_range": [
+      0.6732867951399863,
+      0.6732867951399863
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9508418746996394,
+      "full_state_extension": 3.643989055259585,
+      "outcome_dropped": 0.93269194678183,
+      "record_extension": 4.33713623581953,
+      "state": 2.9508418746996394,
+      "task_extension": 4.33713623581953
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9508418746996394,
+      "full_state_extension": 3.643989055259585,
+      "outcome_dropped": 0.93269194678183,
+      "record_extension": 4.33713623581953,
+      "state": 2.9508418746996394,
+      "task_extension": 4.33713623581953
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9508418746996394,
+      "full_state_extension": 3.643989055259585,
+      "outcome_dropped": 0.93269194678183,
+      "record_extension": 4.33713623581953,
+      "state": 2.9508418746996394,
+      "task_extension": 4.33713623581953
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.9508418746996394,
+      "full_state_extension": 3.643989055259585,
+      "outcome_dropped": 0.93269194678183,
+      "record_extension": 4.33713623581953,
+      "state": 2.9508418746996394,
+      "task_extension": 4.33713623581953
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.17328679513998635,
+      "exact_decomposition": 4.950841874699639,
+      "full_state_extension": 4.950841874699639,
+      "outcome_dropped": 2.2395447662218846,
+      "record_extension": 4.950841874699639,
+      "state": 4.950841874699639,
+      "task_extension": 4.950841874699639
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.17328679513998635
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.6732867951399863,
+      "exact_decomposition": 2.9508418746996394,
+      "full_state_extension": 2.9508418746996394,
+      "outcome_dropped": 2.2395447662218846,
+      "record_extension": 2.9508418746996394,
+      "state": 2.9508418746996394,
+      "task_extension": 2.9508418746996394
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.6732867951399863
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.32671320486001365,
+      "exact_decomposition": 6.950841874699639,
+      "full_state_extension": 6.950841874699639,
+      "outcome_dropped": 2.2395447662218846,
+      "record_extension": 6.950841874699639,
+      "state": 6.950841874699639,
+      "task_extension": 6.950841874699639
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.32671320486001365
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.17328679513998635,
+      "exact_decomposition": 4.950841874699639,
+      "full_state_extension": 4.950841874699639,
+      "outcome_dropped": 2.239544766221884,
+      "record_extension": 4.950841874699639,
+      "state": 4.950841874699639,
+      "task_extension": 4.950841874699639
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.17328679513998635
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.5,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.0,
+    "exact_decomposition": 0.6931471805599454,
+    "full_state_extension": 0.0,
+    "outcome_dropped": 1.9999999999999998,
+    "record_extension": -0.6931471805599454,
+    "state": 0.693147180559945,
+    "task_extension": -0.6931471805599454
+   },
+   "maintenance_price": 0.5,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "task_threshold",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      1,
+      0,
+      1
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.838225119520727,
+      "full_state_extension": 3.5313723000806725,
+      "outcome_dropped": 0.8200751916029179,
+      "record_extension": 4.224519480640618,
+      "state": 2.838225119520728,
+      "task_extension": 4.224519480640618
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.838225119520727,
+      "full_state_extension": 3.5313723000806725,
+      "outcome_dropped": 0.8200751916029179,
+      "record_extension": 4.224519480640618,
+      "state": 2.838225119520728,
+      "task_extension": 4.224519480640618
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.838225119520727,
+      "full_state_extension": 3.5313723000806725,
+      "outcome_dropped": 0.8200751916029179,
+      "record_extension": 4.224519480640618,
+      "state": 2.838225119520728,
+      "task_extension": 4.224519480640618
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.838225119520727,
+      "full_state_extension": 3.5313723000806725,
+      "outcome_dropped": 0.8200751916029179,
+      "record_extension": 4.224519480640618,
+      "state": 2.838225119520728,
+      "task_extension": 4.224519480640618
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 5.5313723000806725,
+      "full_state_extension": 5.5313723000806725,
+      "outcome_dropped": 2.8200751916029176,
+      "record_extension": 5.5313723000806725,
+      "state": 5.5313723000806725,
+      "task_extension": 5.5313723000806725
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.0
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777551,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 3.5313723000806725,
+      "full_state_extension": 3.5313723000806725,
+      "outcome_dropped": 2.8200751916029176,
+      "record_extension": 3.5313723000806725,
+      "state": 3.531372300080673,
+      "task_extension": 3.5313723000806725
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.5,
+      "exact_decomposition": 7.5313723000806725,
+      "full_state_extension": 7.5313723000806725,
+      "outcome_dropped": 2.8200751916029176,
+      "record_extension": 7.5313723000806725,
+      "state": 7.5313723000806725,
+      "task_extension": 7.5313723000806725
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.0,
+      "exact_decomposition": 5.5313723000806725,
+      "full_state_extension": 5.5313723000806725,
+      "outcome_dropped": 2.8200751916029176,
+      "record_extension": 5.5313723000806725,
+      "state": 5.5313723000806725,
+      "task_extension": 5.5313723000806725
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": 0.0
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  },
+  {
+   "baselines": {
+    "always_maintain_best_report": 0.32671320486001365,
+    "never_maintain_best_report": 0.5,
+    "no_observation_no_maintenance": 0.5
+   },
+   "best_success_by_action": [
+    0.5,
+    1.0
+   ],
+   "beta": 4.0,
+   "content_flip_probability": 0.0,
+   "maintenance_minus_skip": {
+    "bayes": 0.17328679513998635,
+    "exact_decomposition": 1.3862943611198908,
+    "full_state_extension": 0.6931471805599454,
+    "outcome_dropped": 2.6931471805599454,
+    "record_extension": 0.0,
+    "state": 1.3862943611198908,
+    "task_extension": 0.0
+   },
+   "maintenance_price": 0.6732867951399863,
+   "maintenance_thresholds": {
+    "bayes": 0.5,
+    "exact_decomposition": 0.32671320486001365,
+    "full_state_extension": 0.5,
+    "outcome_dropped": 0.0,
+    "record_extension": 0.6732867951399863,
+    "state": 0.32671320486001365,
+    "task_extension": 0.6732867951399863
+   },
+   "name": "information_threshold",
+   "optima": {
+    "bayes": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "exact_decomposition": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "full_state_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "outcome_dropped": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "record_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.32671320486001365,
+      0.5
+     ]
+    },
+    "state": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.5,
+      0.5
+     ]
+    },
+    "task_extension": {
+     "policies": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "representative": [
+      0,
+      0,
+      0
+     ],
+     "representative_utility": 0.5,
+     "utility_range": [
+      0.32671320486001365,
+      0.5
+     ]
+    }
+   },
+   "policy_scores": [
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7767736035973227,
+      "full_state_extension": 3.469920784157268,
+      "outcome_dropped": 0.7586236756795135,
+      "record_extension": 4.1630679647172135,
+      "state": 2.7767736035973236,
+      "task_extension": 4.1630679647172135
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7767736035973227,
+      "full_state_extension": 3.469920784157268,
+      "outcome_dropped": 0.7586236756795135,
+      "record_extension": 4.1630679647172135,
+      "state": 2.7767736035973236,
+      "task_extension": 4.1630679647172135
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7767736035973227,
+      "full_state_extension": 3.469920784157268,
+      "outcome_dropped": 0.7586236756795135,
+      "record_extension": 4.1630679647172135,
+      "state": 2.7767736035973236,
+      "task_extension": 4.1630679647172135
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.0,
+     "available_target_information": 0.0,
+     "conditional_kl": 2.0181499279178094,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      0,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.5,
+      "exact_decomposition": 2.7767736035973227,
+      "full_state_extension": 3.469920784157268,
+      "outcome_dropped": 0.7586236756795135,
+      "record_extension": 4.1630679647172135,
+      "state": 2.7767736035973236,
+      "task_extension": 4.1630679647172135
+     },
+     "state_entropy": 1.3862943611198906,
+     "success_probability": 0.5,
+     "utility": 0.5
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.17328679513998635,
+      "exact_decomposition": 6.1630679647172135,
+      "full_state_extension": 6.163067964717214,
+      "outcome_dropped": 3.4517708562394587,
+      "record_extension": 6.163067964717214,
+      "state": 6.163067964717214,
+      "task_extension": 6.163067964717214
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.17328679513998635
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 0.7112971084777552,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      0,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": -0.32671320486001365,
+      "exact_decomposition": 4.1630679647172135,
+      "full_state_extension": 4.1630679647172135,
+      "outcome_dropped": 3.4517708562394587,
+      "record_extension": 4.1630679647172135,
+      "state": 4.163067964717214,
+      "task_extension": 4.1630679647172135
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 1.0,
+     "utility": 0.32671320486001365
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 4.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      0
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.6732867951399863,
+      "exact_decomposition": 8.163067964717214,
+      "full_state_extension": 8.163067964717214,
+      "outcome_dropped": 3.4517708562394587,
+      "record_extension": 8.163067964717214,
+      "state": 8.163067964717214,
+      "task_extension": 8.163067964717214
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.0,
+     "utility": -0.6732867951399863
+    },
+    {
+     "available_record_information": 0.6931471805599453,
+     "available_target_information": 0.6931471805599453,
+     "conditional_kl": 2.711297108477755,
+     "full_state_information": 0.6931471805599453,
+     "policy": [
+      1,
+      1,
+      1
+     ],
+     "retained_target_information": 0.6931471805599453,
+     "scores": {
+      "bayes": 0.17328679513998635,
+      "exact_decomposition": 6.163067964717214,
+      "full_state_extension": 6.163067964717214,
+      "outcome_dropped": 3.451770856239459,
+      "record_extension": 6.163067964717214,
+      "state": 6.163067964717214,
+      "task_extension": 6.163067964717214
+     },
+     "state_entropy": 0.6931471805599453,
+     "success_probability": 0.5,
+     "utility": -0.17328679513998635
+    }
+   ],
+   "raw_target_match": [
+    0.5,
+    1.0
+   ],
+   "reader_alignment": [
+    0.5,
+    1.0
+   ],
+   "task_value": 1.0
+  }
+ ],
+ "created_utc": "2026-09-18T15:41:44.191015+00:00",
+ "elapsed_seconds": 0.015696879476308823,
+ "kind": "finite arithmetic verification, not sampled evidence",
+ "max_abs_errors": {
+  "available_record_information": 5.551115123125783e-17,
+  "available_target_information": 1.942890293094024e-16,
+  "conditional_kl_closed_form": 8.881784197001252e-16,
+  "cross_entropy": 1.7763568394002505e-15,
+  "erased_content_chance_bound": 0.0,
+  "erased_content_no_target_information": 0.0,
+  "exact_kl_decomposition": 1.7763568394002505e-15,
+  "fair_reader_output": 1.1102230246251565e-16,
+  "full_extension_closed_form": 1.7763568394002505e-15,
+  "full_state_information": 1.1102230246251565e-16,
+  "induced_outcome_preference": 5.551115123125783e-17,
+  "known_reversal_perfect_success": 0.0,
+  "maintenance_delta_bayes": 1.1102230246251565e-16,
+  "maintenance_delta_exact_decomposition": 4.440892098500626e-16,
+  "maintenance_delta_full_state_extension": 9.992007221626409e-16,
+  "maintenance_delta_outcome_dropped": 4.440892098500626e-16,
+  "maintenance_delta_record_extension": 6.661338147750939e-16,
+  "maintenance_delta_state": 5.551115123125783e-16,
+  "maintenance_delta_task_extension": 5.551115123125783e-16,
+  "maintenance_does_not_change_content": 5.551115123125783e-17,
+  "no_information_from_maintenance_itself": 0.0,
+  "observation_entropy": 1.1102230246251565e-16,
+  "observation_normalization": 0.0,
+  "outcome_closed_form": 4.440892098500626e-16,
+  "outcome_preference_normalization": 1.1102230246251565e-16,
+  "physical_normalization": 0.0,
+  "record_extension_closed_form": 1.7763568394002505e-15,
+  "retained_content_law": 5.551115123125783e-17,
+  "retained_target_information": 2.220446049250313e-16,
+  "state_closed_form": 1.7763568394002505e-15,
+  "state_entropy": 2.220446049250313e-16,
+  "state_preference_normalization": 1.1102230246251565e-16,
+  "success_probability": 1.1102230246251565e-16,
+  "target_posterior": 1.1102230246251565e-16,
+  "task_extension_closed_form": 1.7763568394002505e-15,
+  "utility": 1.1102230246251565e-16
+ },
+ "numeric_comparisons": 3567,
+ "objective_scores": 784,
+ "objectives": 7,
+ "optimum_sets": 98,
+ "passed": true,
+ "policies_per_setting": 8,
+ "policy_distributions": 112,
+ "settings": 14,
+ "structural_checks": 464
+}

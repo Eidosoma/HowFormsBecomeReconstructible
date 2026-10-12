@@ -1,0 +1,195 @@
+{
+  "status": "READY_TO_LAUNCH",
+  "created_at_utc": "2026-10-08T22:16:50.428753+00:00",
+  "config": {
+    "version": "0.1",
+    "status": "DEVELOPMENT_INTERVENTION_NOT_CONFIRMATORY",
+    "created_at_utc": "2026-10-08T22:06:45.400037+00:00",
+    "source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+    "native_manifest_sha256": "023ff8a4de1f538bf2735749d5b367c0bc1ffad5b2acc9481d6b981fd8e507e7",
+    "reference_sources_sha256": {
+      "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+      "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+      "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+      "E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+      "E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+      "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82"
+    },
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "pairing": "paired",
+    "source_condition_indices": [
+      0,
+      1
+    ],
+    "writers": [
+      "exact_rewrite",
+      "tolerance_rewrite",
+      "sign_restored",
+      "magnitude_restored",
+      "single_tolerance_rewrite"
+    ],
+    "branch_generation": 3,
+    "terminal_generation": 32,
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 32,
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "write_steps": 128
+    },
+    "tolerance": 0.0001,
+    "primary_endpoint": "h32 scattered strict both-cue success",
+    "injuries": [
+      "intact",
+      "scattered",
+      "square"
+    ],
+    "block_inference": true,
+    "confirmatory": false,
+    "numerical_threads": 1,
+    "workers": 1,
+    "forecast_ceiling_cpu_seconds": 3600,
+    "long_run_policy": "detached and unpolled; analyze automatically at completion",
+    "native_numpy_version": "2.5.2",
+    "prior_run": "../p01_native_writer_continuation_v0_1/runs/pilot_v1",
+    "prior_complete_sha256": "951e555afd2b1beafa56d9943b665a18d7af1f479eb35769cc8f9e10ad000483",
+    "simulated_writers": [
+      "exact_rewrite",
+      "magnitude_restored",
+      "single_tolerance_rewrite"
+    ],
+    "schedules": {
+      "exact_rewrite": {
+        "initial": "exact_rewrite",
+        "later": "exact_rewrite"
+      },
+      "magnitude_restored": {
+        "initial": "magnitude_restored",
+        "later": "magnitude_restored"
+      },
+      "single_tolerance_rewrite": {
+        "initial": "tolerance_rewrite",
+        "later": "exact_rewrite"
+      }
+    },
+    "zero_tolerance_sign": "Use the original edge sign when T==0; magnitude-restored policy retains original support.",
+    "primary_contrasts": [
+      [
+        "magnitude_restored",
+        "tolerance_rewrite"
+      ],
+      [
+        "single_tolerance_rewrite",
+        "tolerance_rewrite"
+      ]
+    ],
+    "secondary_contrasts": [
+      [
+        "magnitude_restored",
+        "sign_restored"
+      ],
+      [
+        "exact_rewrite",
+        "magnitude_restored"
+      ],
+      [
+        "single_tolerance_rewrite",
+        "exact_rewrite"
+      ],
+      [
+        "exact_rewrite",
+        "tolerance_rewrite"
+      ],
+      [
+        "sign_restored",
+        "tolerance_rewrite"
+      ]
+    ],
+    "factorial_coefficients": {
+      "exact_rewrite": 1,
+      "magnitude_restored": -1,
+      "sign_restored": -1,
+      "tolerance_rewrite": 1
+    },
+    "provenance": {
+      "exact_rewrite": "new exact replay",
+      "tolerance_rewrite": "reused matched prior pilot",
+      "sign_restored": "reused matched prior pilot",
+      "magnitude_restored": "new intervention",
+      "single_tolerance_rewrite": "new intervention",
+      "erased": "new replay; matches prior erased"
+    },
+    "benchmark": {
+      "block": 34000,
+      "generation": 4,
+      "writers": [
+        "exact_rewrite",
+        "tolerance_rewrite",
+        "sign_restored"
+      ],
+      "new_intervention_dynamics": false
+    },
+    "derived_dynamics_sha256": "609824307891622fdf73d563aef692ffd47ed26b7b374637d0b7ee7514af85e6"
+  },
+  "protocol_sha256": "73f570deba1511219ba1bcd1750e9e436afc5225daee6bd7a00d504892bad6d4",
+  "code_sha256": {
+    "EXPOSURE_AND_DECISIONS.json": "6166869958dae5f8c03915d0f473834b99e0f1ea762a3a6cae21a3e7cb30e653",
+    "PROTOCOL.md": "73f570deba1511219ba1bcd1750e9e436afc5225daee6bd7a00d504892bad6d4",
+    "README.md": "e147ad1af1f7ad86bf5722bbe05e997893aab149f1d5a3c9f87ffa2e289a7fae",
+    "analyze.py": "f8cea6c154fbc3b60bc998542cf38119d4255fc0d089201dc432e7f6c75d5469",
+    "benchmark/COMPLETE.json": "3ba7660461b5ea5a446b6875e530e04fa6fb208dcc395586578f0f36bb972771",
+    "benchmark/START.json": "faf7cc416249595fb7ca86012789659c36663804bd14f76dc508699b3ca7c582",
+    "benchmark.log": "3ba7660461b5ea5a446b6875e530e04fa6fb208dcc395586578f0f36bb972771",
+    "benchmark.py": "d654f7729e59a2d75bceb82f8d74a94cdf48d50ad7fb0baac926a3956a3995ff",
+    "config.json": "b5773d815061f9331a8351a1b076891cff28439076017d7337676b61bf4f56f7",
+    "dynamics.py": "2e6296de1c6d0a4a0ac7dd4c25c44c3ec09f5e78b4244eb9b01f95da02d5c88c",
+    "evidence.py": "9e40ba2483b4aaf645a8f3f4da11e9d27a62d462af7c3678cdcdd1e2e07d9616",
+    "launch.py": "e7535c58cf5356b0dd9a3769782e9376b091ea8528a342b6c7dbaac80c2d00c4",
+    "reference_sources/E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "reference_sources/E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "reference_sources/E051_cue_pairing_robustness/evidence.py": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+    "reference_sources/E051_cue_pairing_robustness/model.py": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+    "reference_sources/SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "reference_sources/common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run.py": "9948e634c2b3cb109311fce6239ebe2924ed17ab068b57fdfe2b460dc11bf1d9",
+    "test_analysis.py": "d66f56cd513b812358bdeaae84c61d07a5f747c96a928dfe15121743e7c9db65",
+    "test_dynamics.py": "176a71868d93334ae3f98332ab9d6f7790c06fca0a7f7e751ea318e23e4ac69b",
+    "tests.log": "31fb7a40ed4a752b17e74ef35880abf760460da79dc3c4dfdb7422f000b9097b",
+    "tests_final.log": "31fb7a40ed4a752b17e74ef35880abf760460da79dc3c4dfdb7422f000b9097b",
+    "verify.py": "3343faa470c19fa347c36896b5aa5d79495dfa73b2a7e43dd81f83c2f35aba1a"
+  },
+  "raw_inputs_sha256": "3377b4541622b3b706b1158731a725d6b47a9299ee4d5efd7140c1253e1f263a",
+  "forecast_seconds": 3093.0823189672083,
+  "process_count": 1,
+  "numerical_threads": 1,
+  "polling": "NONE_AUTOMATIC",
+  "endpoint_analysis": "Automatic after all eight blocks pass replay; failures stop the worker and retain evidence.",
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/E051_cue_pairing_robustness/runs/robustness_v1",
+  "prior_source": "/home/robert/Random-Replications/WhereDoFormsComeFrom/experiments/theory-lane/p01_native_writer_continuation_v0_1/runs/pilot_v1",
+  "simulated_policy_count": 3,
+  "analyzed_policy_count": 5
+}

@@ -1,0 +1,23 @@
+{
+  "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "workers": 2,
+  "case_timeout_seconds": 900,
+  "launch_budget_seconds": 3600,
+  "threshold_relative_tolerance": 0.02,
+  "cases": [
+    {"id": "isolation_none_low", "kind": "isolation", "strategy": "none", "kd": 6.25e-15, "expected_fixed": false},
+    {"id": "neighbour_thresholds", "kind": "neighbours"},
+    {"id": "isolation_none_high", "kind": "isolation", "strategy": "none", "kd": 1.25e-14, "expected_fixed": true},
+    {"id": "isolation_under_low", "kind": "isolation", "strategy": "under", "kd": 8e-15, "expected_fixed": false},
+    {"id": "isolation_under_high", "kind": "isolation", "strategy": "under", "kd": 1.25e-14, "expected_fixed": true},
+    {"id": "isolation_voltage_low", "kind": "isolation", "strategy": "voltage", "kd": 1e-13, "expected_fixed": false},
+    {"id": "isolation_voltage_high", "kind": "isolation", "strategy": "voltage", "kd": 2e-13, "expected_fixed": true},
+    {"id": "isolation_both_low", "kind": "isolation", "strategy": "both", "kd": 2e-13, "expected_fixed": false},
+    {"id": "isolation_both_high", "kind": "isolation", "strategy": "both", "kd": 4e-13, "expected_fixed": true},
+    {"id": "isolation_voltage_matched", "kind": "isolation", "strategy": "voltage", "kd": 1.25e-14, "expected_fixed": false},
+    {"id": "sensitivity_voltage_fine", "kind": "isolation", "strategy": "voltage", "kd": 2e-13, "fine": true, "expected_fixed": true},
+    {"id": "sensitivity_both_fine", "kind": "isolation", "strategy": "both", "kd": 2e-13, "fine": true, "expected_fixed": false},
+    {"id": "sensitivity_both_long", "kind": "isolation", "strategy": "both", "kd": 2e-13, "horizon": 40000, "expected_fixed": false},
+    {"id": "benchmark_625", "kind": "isolation", "strategy": "none", "kd": 1.25e-14, "dimensions": [1,25,25], "expected_fixed": true}
+  ]
+}

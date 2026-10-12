@@ -1,0 +1,68 @@
+{
+  "cfg": {
+    "birth_sd": 0.05,
+    "damage_cells": 24,
+    "dt": 0.2,
+    "margin": 0.25,
+    "masks_per_context": 2,
+    "noise": 0.02,
+    "observe_steps": 8,
+    "read_steps": 32,
+    "replicates_per_mask": 2,
+    "settling_steps": 16
+  },
+  "contexts": [
+    {
+      "block": 900101,
+      "founder": 0,
+      "id": "engineered_0",
+      "recipient": 0,
+      "rule": 1,
+      "scientific_exclusion": true
+    },
+    {
+      "block": 900101,
+      "founder": 1,
+      "id": "engineered_1",
+      "recipient": 0,
+      "rule": -1,
+      "scientific_exclusion": true
+    },
+    {
+      "block": 900102,
+      "founder": 0,
+      "id": "engineered_2",
+      "recipient": 0,
+      "rule": 1,
+      "scientific_exclusion": true
+    },
+    {
+      "block": 900102,
+      "founder": 1,
+      "id": "engineered_3",
+      "recipient": 0,
+      "rule": -1,
+      "scientific_exclusion": true
+    }
+  ],
+  "events": [
+    {
+      "context_id": "engineered_0",
+      "path": "events/engineered_0.npz"
+    },
+    {
+      "context_id": "engineered_1",
+      "path": "events/engineered_1.npz"
+    },
+    {
+      "context_id": "engineered_2",
+      "path": "events/engineered_2.npz"
+    },
+    {
+      "context_id": "engineered_3",
+      "path": "events/engineered_3.npz"
+    }
+  ],
+  "mode": "fixture",
+  "note": "Hand-constructed mean ports. Not a physical simulation; no dynamics audit is claimed."
+}

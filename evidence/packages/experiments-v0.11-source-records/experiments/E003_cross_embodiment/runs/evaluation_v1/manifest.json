@@ -1,0 +1,222 @@
+{
+  "contract": {
+    "blocks": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026,
+      4027,
+      4028,
+      4029,
+      4030,
+      4031
+    ],
+    "config": {
+      "capture": 1000,
+      "challenge_time": 150,
+      "dt": 0.2,
+      "formation": 1000,
+      "founders": 4,
+      "gain": 0.2,
+      "generations": 3,
+      "lam": 0.001,
+      "norm": 0.3,
+      "observation_window": 100,
+      "read": 300,
+      "recipients": 8,
+      "rho": 0.002,
+      "side": 16,
+      "sigma": 0.3,
+      "write": 1000
+    },
+    "dependencies": {
+      "predictions": {
+        "complete_sha256": "933688f6606ff8b7cc13f383372ae3d16aadd8ae0799a17600e163234362fd04",
+        "path": "E003_cross_embodiment/runs/prediction_v1"
+      }
+    },
+    "development_conditions": [
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 0.0,
+        "name": "intact"
+      },
+      {
+        "damage": 0.25,
+        "deletion": 0.0,
+        "mixture": 0.0,
+        "name": "damage25"
+      },
+      {
+        "damage": 0.5,
+        "deletion": 0.0,
+        "mixture": 0.0,
+        "name": "damage50"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 0.25,
+        "name": "mixture25"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 0.75,
+        "name": "mixture75"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.25,
+        "mixture": 0.0,
+        "name": "deletion25"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.75,
+        "mixture": 0.0,
+        "name": "deletion75"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 1.0,
+        "name": "foreign"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 1.0,
+        "mixture": 0.0,
+        "name": "erased"
+      }
+    ],
+    "experiment": "E003",
+    "phase": "evaluate",
+    "test_conditions": [
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 0.0,
+        "name": "intact"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 0.0,
+        "mixture": 1.0,
+        "name": "foreign"
+      },
+      {
+        "damage": 0.0,
+        "deletion": 1.0,
+        "mixture": 0.0,
+        "name": "erased"
+      },
+      {
+        "damage": 0.25,
+        "deletion": 0.0,
+        "mixture": 0.25,
+        "name": "damage25_mixture25"
+      },
+      {
+        "damage": 0.25,
+        "deletion": 0.0,
+        "mixture": 0.75,
+        "name": "damage25_mixture75"
+      },
+      {
+        "damage": 0.25,
+        "deletion": 0.25,
+        "mixture": 0.0,
+        "name": "damage25_deletion25"
+      },
+      {
+        "damage": 0.25,
+        "deletion": 0.75,
+        "mixture": 0.0,
+        "name": "damage25_deletion75"
+      },
+      {
+        "damage": 0.5,
+        "deletion": 0.0,
+        "mixture": 0.25,
+        "name": "damage50_mixture25"
+      },
+      {
+        "damage": 0.5,
+        "deletion": 0.0,
+        "mixture": 0.75,
+        "name": "damage50_mixture75"
+      },
+      {
+        "damage": 0.5,
+        "deletion": 0.25,
+        "mixture": 0.0,
+        "name": "damage50_deletion25"
+      },
+      {
+        "damage": 0.5,
+        "deletion": 0.75,
+        "mixture": 0.0,
+        "name": "damage50_deletion75"
+      }
+    ],
+    "workers": 12
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E001_unprescribed_capture/model.py": "fcab9e9964316dca097b0ff2d1fe9d32b5931109e8bae492cdd745af1388b7bd",
+    "E003_cross_embodiment/PROTOCOL.md": "5f869f5dbbea2244d5049f94f6ea07a17eb54550d74758532825f54b5595b299",
+    "E003_cross_embodiment/audit.py": "084ab475ff69af9e9d8e2d505564c481346039d487c2359bd020a6e4f440b00b",
+    "E003_cross_embodiment/design.py": "800a92753aad1b93c664dedafa5364022363a494b2276893a8a808d97e6e322c",
+    "E003_cross_embodiment/run.py": "98143e5e39ce6876624cb727f66ad35133b6f2501edce9c8f29acdb30e3ada04",
+    "E003_cross_embodiment/tests.py": "cb294a8f023156f76bb4695930b27e1d4e94babf10b300989c298cb56ae5e2e1",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-17T20:54:55.525449+00:00",
+  "status": "RUNNING"
+}

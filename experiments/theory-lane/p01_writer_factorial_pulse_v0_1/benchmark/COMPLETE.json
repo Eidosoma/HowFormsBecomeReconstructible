@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "completed_at_utc": "2026-10-08T22:09:03.800329+00:00",
+  "at_utc": "2026-10-08T22:08:25.897841+00:00",
+  "config_sha256": "b5773d815061f9331a8351a1b076891cff28439076017d7337676b61bf4f56f7",
+  "code_sha256": {
+    "dynamics.py": "2e6296de1c6d0a4a0ac7dd4c25c44c3ec09f5e78b4244eb9b01f95da02d5c88c",
+    "evidence.py": "9e40ba2483b4aaf645a8f3f4da11e9d27a62d462af7c3678cdcdd1e2e07d9616",
+    "benchmark.py": "d654f7729e59a2d75bceb82f8d74a94cdf48d50ad7fb0baac926a3956a3995ff"
+  },
+  "intervention_dynamics": false,
+  "numerical_threads": 1,
+  "prior_complete_sha256": "951e555afd2b1beafa56d9943b665a18d7af1f479eb35769cc8f9e10ad000483",
+  "common_body_and_capture_checks": 2,
+  "boundary_array_checks": 11,
+  "terminal_array_checks": 10,
+  "byte_equal": true,
+  "rebuild_seconds": 7.496893211035058,
+  "assay_seconds": 30.346956793917343,
+  "forecast_cpu_seconds": 3093.0823189672083,
+  "forecast_description": "1.5 times timed complete compute, plus 120 seconds for input checks, compression and analysis",
+  "within_development_cost_ceiling": true,
+  "raw_sha256": {
+    "boundary_034000_g3.npz": "8ad18a010a2407a24fe33c1db94bbc005f2f5ff44818750b0d76d0b0b53ac3a6",
+    "boundary_034000_g4.npz": "66b2442d5102bd67cee7f39edf0f416579860e4ad9c0c851cfd8af016c8fa46f",
+    "boundary_034000_g32.npz": "cf1e6df59161d773724136819d5424398d6292d743a139f9bff632e8544655c7",
+    "assay_034000_h32.npz": "db57415449df32e3d001ecab95a9351326b0381eb6c4ef0da18e168af990044a"
+  }
+}

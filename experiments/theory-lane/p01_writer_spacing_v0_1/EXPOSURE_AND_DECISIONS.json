@@ -1,0 +1,43 @@
+{
+  "version": "0.1",
+  "created_at_utc": "2026-10-09T13:45:19.383002+00:00",
+  "status": "DEVELOPMENT_SCHEDULE_INTERVENTION",
+  "authorization": "User said lets go after the completed recovery analysis and explicit equal-count schedule draft.",
+  "previous_outcomes": [
+    "Full 32-block E051 outcome review and independent audit receipt",
+    "Eight-block O/T/S and O/M/P native pilots",
+    "All-generation pulse recovery analysis, including failed early contraction comparisons",
+    "Negative passive generation-1 and generation-3 P01 predictors"
+  ],
+  "selected_blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "new_schedules_outcomes_seen": false,
+  "benchmark": "Known O/T/O control trajectories only; no new schedule is followed.",
+  "design_choices": [
+    "Six events as an outcome-informed intermediate dose",
+    "Same first event 3, last event 13, and 19 subsequent original writes",
+    "First pulse plus late cluster maintains the same first event, unlike a wholly consecutive six-event burst",
+    "Generation-14 body is the first read after the final pulse; no additional horizon-13 assay",
+    "Reuse O/T/P with lineage identity; new reference O replay verifies native execution",
+    "Freeze primary spaced-minus-cluster endpoint and all secondary contrasts before launch",
+    "Automatic source/control/capture checks and independent result verification; retain failures",
+    "One-hour conservative CPU ceiling and detached unpolled execution"
+  ],
+  "inference_unit": "block",
+  "confirmatory": false,
+  "new_predictor_fitted": false,
+  "fleet_wide_exposure": "Unknown beyond this lane. All E051 scientific blocks have already been marked exposed.",
+  "preserved": [
+    "p01_pulse_recovery_v0_1/snapshot.json",
+    "p01_writer_factorial_pulse_v0_1/runs/pilot_v1/COMPLETE.json",
+    "All earlier snapshots and raw E051 artifacts"
+  ]
+}

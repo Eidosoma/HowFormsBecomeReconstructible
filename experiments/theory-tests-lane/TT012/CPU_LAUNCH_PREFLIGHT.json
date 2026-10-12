@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-10T19:08:36.964303+00:00",
+  "processes": [
+    {
+      "pid": 2854358,
+      "parent": 1,
+      "state": "S",
+      "script": "E053_combined_numerical_confirmation/workflow.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2854359,
+      "parent": 2854358,
+      "state": "S",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2976023,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2976459,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2976487,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2976586,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2977004,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2977148,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2977314,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2977929,
+      "parent": 2854359,
+      "state": "R",
+      "script": "E053_combined_numerical_confirmation/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "pid": 2997858,
+      "parent": 1,
+      "state": "R",
+      "script": "theory-lane/p05_recipient_only_completion_v0_1/runs/pilot_v1/inputs/run.py",
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "active_leaf_workers": 9,
+  "after_TT012_launch": 10,
+  "ceiling": 12,
+  "TT012_cpu": 7,
+  "TT012_threads": 1,
+  "note": "Snapshot at launch preflight; sleeping coordinators with children are excluded from numerical-worker count."
+}

@@ -1,0 +1,91 @@
+{
+  "all_frozen_inputs_and_original_outputs_verified": true,
+  "figures_provenance_sha256": {
+    "timing_v1": "261142bf921cb8ecd56c1c4e537a8787c105a7cbbb372d1b972af57d0c36c3c0",
+    "timing_v1_readable": "15486e71685447b73813a50eee78d5a02689976076e021124becf344f51e1865"
+  },
+  "fixture_receipt_verified": true,
+  "predecessor_frozen_inputs_unchanged": [
+    "E014_long_renewal/runs/confirmation_v2",
+    "E015_functional_inheritance/runs/feasibility_v1",
+    "E016_teaching_consistency/runs/comparison_v1"
+  ],
+  "presentation_revision_unchanged_since_benchmark": true,
+  "primary": {
+    "endpoint": "consistent learned record; staged minus extended intact both-cue strict success",
+    "lower_bound_above_zero": true,
+    "statistics": {
+      "block_means": [
+        0.6875,
+        0.625,
+        0.4375,
+        0.5625,
+        0.9375,
+        0.875,
+        0.6875,
+        0.625,
+        0.5,
+        0.5625,
+        0.75,
+        0.5,
+        0.8125,
+        0.75,
+        0.4375,
+        0.75,
+        0.5625,
+        0.75,
+        0.5625,
+        0.75,
+        0.5625,
+        0.625,
+        0.75,
+        0.5625,
+        0.6875,
+        0.75,
+        0.5,
+        0.5625,
+        0.5625,
+        0.75,
+        0.875,
+        0.5
+      ],
+      "ci95": [
+        0.60546875,
+        0.6953125
+      ],
+      "mean": 0.650390625
+    }
+  },
+  "readable_scientific_figure_visually_inspected": true,
+  "renewal_started": false,
+  "runs": {
+    "benchmark_v1": {
+      "audit_seconds": 172.8912978321314,
+      "audit_sha256": "8196150c27f90f798bebc9f45d6ad5bf4c3c36cb45db0eb0fb019e7b52ead29e",
+      "complete_sha256": "034a282e00427890f323be0f9ef8c3b2cbc976a00a07d0ee7401a79280de10b2",
+      "individual_observations": 4032,
+      "simulation_seconds": 195.42387433443218
+    },
+    "timing_v1": {
+      "audit_seconds": 630.2929939022288,
+      "audit_sha256": "f3936385de806846df1860fc3162702ac882ddedef9108adc9d987e969612c6c",
+      "complete_sha256": "b3013fec3db96fe94121b250745661cc781e01f4ada771c41d9eb8a4eed118be",
+      "individual_observations": 129024,
+      "simulation_seconds": 730.4044462935999
+    }
+  },
+  "staged_original_gates_passed": {
+    "consistent": 24,
+    "engineered": 24
+  },
+  "status": "PASS",
+  "verified_utc": "2026-09-18T17:39:42.640297+00:00",
+  "workflow_status": {
+    "audit_sha256": "f3936385de806846df1860fc3162702ac882ddedef9108adc9d987e969612c6c",
+    "figure_provenance_sha256": "261142bf921cb8ecd56c1c4e537a8787c105a7cbbb372d1b972af57d0c36c3c0",
+    "scientific_complete_sha256": "b3013fec3db96fe94121b250745661cc781e01f4ada771c41d9eb8a4eed118be",
+    "seconds": 1362.1742020687088,
+    "status": "COMPLETE",
+    "utc": "2026-09-18T16:57:58.490964+00:00"
+  }
+}

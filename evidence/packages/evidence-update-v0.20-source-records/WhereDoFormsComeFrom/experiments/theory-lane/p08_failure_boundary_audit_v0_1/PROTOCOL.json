@@ -1,0 +1,16 @@
+{
+  "status": "AUTHORIZED_POST_HOC_SELECTED_STATE_CAUSAL_AUDIT",
+  "version": "0.1",
+  "selection": "All 46 first later failures in the six-call branch of the completed 132-block cohort; first generation must have passed. Census verified against all 132 raw continuation files before new counterfactual dynamics.",
+  "interventions": ["No repair of incoming packet", "The unchanged recipient-only repair applied once to the same incoming packet before current injury and read"],
+  "held_equal": ["Incoming packet", "Current saved injury mask", "Birth reset", "Positive cue forcing", "Independent negative cue forcing", "Reader and supplied apparatus", "Task and success threshold"],
+  "endpoint": "Current reconstruction passes only if all four rule-aligned cue/port means over the final 32 of 2048 updates exceed 0.25 strictly.",
+  "outcomes": ["rescue", "both_fail", "harm", "both_pass"],
+  "selection_constraint": "Factual no-repair failure is checked byte for byte, so harm and both_pass are impossible in the 46 selected cases. Their absence cannot estimate safety among other states.",
+  "analysis": "Exact counts and fractions within the selected 46; descriptive splits by acquisition history, generation, and whether the once-repaired branch passed uninterrupted. No inferential p-value, population confidence interval, or schedule-level effect estimate.",
+  "qualification": "Replay the first already exposed identical-incoming harm and rescue contexts from exploration_v0_1/identical_state_comparisons.json. Both interventions are already observed. Reproduce both saved native trajectories and independently replay both with flat dynamics. Qualification controls are excluded from the 46 outcomes.",
+  "audit": "Each case: independently audit optimizer diagnostics, nonzero preservation and zero-edge completion; reproduce saved factual packet/reset/end/window/means/margin/pass exactly; separately implement flat dynamics for both interventions and require byte equality.",
+  "runtime": "One process, one numerical thread. Forecast from two known controls with 1.5 safety factor plus 30 seconds. Under 600 seconds run bounded; over 600 seconds detach with durable receipts and await user-requested status, without polling.",
+  "interpretation": "Post-hoc selected-state causal effect of current repair under the realized injury/reset/forcing, within this model. A rescue averts that current failure only; successor writing and future persistence are untested. Both-fail means this intervention is insufficient here, not that the state is irreparable. Added repair calls change the budget. This is not a population policy test, an externally independent replication, or confirmation of RDT over ordinary error correction. The original prospective doubled-efficiency verdict remains UNRESOLVED.",
+  "automatic_successor": false
+}

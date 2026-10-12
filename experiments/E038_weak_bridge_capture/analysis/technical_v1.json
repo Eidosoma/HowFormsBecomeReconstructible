@@ -1,0 +1,64 @@
+{
+  "end_to_end_fixture_passed": true,
+  "fixture_audit_sha256": "bd34017d54a273e4e3bcda1639074a2be7b21fbb699bbd1708a798b9f8e582f1",
+  "fixture_complete_sha256": "924a178d632250646930e76ddea1b234cf8d2b950fa48a4e62d711828e84f56b",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E024_serial_compensation/model.py": "b0cae09a039bfd40ee3dd20820985032a15ad02d9a78bb4a6428405d59f82250",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E031_renewal_durability/evidence.py": "5ab31fc8402f2102c1360c9a074b478b52f38d3873fb4173fe2c27a1baa8501b",
+    "E031_renewal_durability/model.py": "f62e9c4f9665e96907bfe8127e066daa9e1e8d70dff093dffc578eaa96a3979d",
+    "E034_settled_rebuilding/model.py": "d319d3726c10074d9519494dc1178a33afc840d564664372c39b0612b15aa019",
+    "E035_cue_selective_capture/model.py": "cc75ba0846ae7d538b922c5724acaa748762176cc8e66e50b6ba8bf25c32775f",
+    "E036_serial_cue_capture_v2/model.py": "c38b805e3b705cfcab52d5fed6e008e82c177d4e4e02c82c2511b6c8588f41d9",
+    "E038_weak_bridge_capture/PROTOCOL.md": "94cf0d55a1225e8a0a1b57aba233edb47ab0da049c21ef5546b9364298d9da91",
+    "E038_weak_bridge_capture/SOURCE_DATA.json": "b7c82c1692fcdd8727bf82bb95ab5c4cacd924bf6353b71ab51b1d77bdcb0d1f",
+    "E038_weak_bridge_capture/audit.py": "c7956a27933ab72bdb2715cfc628eadc7d86238b7230ae523fcf337958c4b61f",
+    "E038_weak_bridge_capture/evidence.py": "e80ce5837c6d589da617ded9880241d404c852eb1ede509e19b6728ee458b505",
+    "E038_weak_bridge_capture/model.py": "6dc0e2271943bc093034bd758b6a51dbc04e4a66e18d3d27df0615de018ca948",
+    "E038_weak_bridge_capture/plot.py": "dcad6032c7f6fbf515cda40524c2ca82dfba8b5e82033a523a27668d87839576",
+    "E038_weak_bridge_capture/run.py": "5f67db71eee8cd4db4d1935dca1005fafe23a7e4b1026e3c304e4882f89d4af1",
+    "E038_weak_bridge_capture/tests.py": "7fc91a157f6ed57c5d002e827d5b6560dffcf3c6ea00bb4bc9e175bef8f7d85e",
+    "E038_weak_bridge_capture/workflow.py": "1f8e793b4cb3a8198fd34bd5b759197ea1cb04f605d1b340cb10d2f3839d713c",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "inputs_unchanged": true,
+  "runner_sha256": "60a0c513e29044238c544fd8e0c10f85de42e6cf13090c9b71deddb657c33bfb",
+  "seconds": 57.53336840693373,
+  "stages": {
+    "fixture": {
+      "log_sha256": "01395472ad25f534399b272df746f294bc4f9be87975d3799f327285a19ee743",
+      "returncode": 0,
+      "seconds": 23.56240458902903
+    },
+    "fixture_audit": {
+      "log_sha256": "79b563bbc84612aec90734513d676eccaeb3cdcccbac12585b5f2901313324de",
+      "returncode": 0,
+      "seconds": 27.73741035896819
+    },
+    "fixture_plot": {
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "seconds": 1.5436684299493209
+    },
+    "tests": {
+      "log_sha256": "5edd259f4e6a7caf8430d1ff0cb92e0798c2ebb02eb9f4183a176ef30a66b438",
+      "returncode": 0,
+      "seconds": 4.646112657035701
+    }
+  },
+  "status": "PASS",
+  "tests": 9,
+  "utc": "2026-09-30T17:46:41.351154+00:00"
+}

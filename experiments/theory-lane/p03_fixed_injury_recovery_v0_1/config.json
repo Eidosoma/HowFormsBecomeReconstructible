@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "status": "AUTHORIZED_DEVELOPMENT_FIXED_INJURY_PROBE",
+  "created_at_utc": "2026-10-09T17:04:22.743401+00:00",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "cases_per_block": [
+    7,
+    11,
+    9,
+    4,
+    4,
+    4,
+    16,
+    9
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "variants": [
+    "incoming",
+    "outgoing",
+    "erased"
+  ],
+  "enrollment_generation": 14,
+  "enrollment_count": 64,
+  "budgets": [
+    1536,
+    2048,
+    4096
+  ],
+  "primary_budget": 2048,
+  "settling_steps": 1024,
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "probe_replicates": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "evaluation_replicates": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "transfer_steps": 64,
+  "random_namespace": "P03_fixed_injury_recovery_v0_1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 202610091,
+  "numpy_version": "2.5.2",
+  "workers": 1,
+  "numerical_threads": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "benchmark": {
+    "block": 34006,
+    "replicates": 2,
+    "budget": 2048,
+    "variants": 3
+  },
+  "p02_source": "../p02_common_future_v0_1",
+  "p02_complete_sha256": "725a2b50fa855a3dffc59a667c31231cfc594705fb210e52b3b9b88db45c9cb3",
+  "records_sha256": "673deaa82dd6954869bbcb01b20ea4bc30ae307dd92607fc49fde624ae9b838b",
+  "spacing_run": "../p01_writer_spacing_v0_1/runs/pilot_v1",
+  "spacing_complete_sha256": "a94dc112e267b4950e8fa486b47b4fae7f3915268305e2c2690cd30555cf5b01",
+  "pulse_run": "../p01_writer_factorial_pulse_v0_1/runs/pilot_v1",
+  "pulse_complete_sha256": "c967ea3b1cced1575f5ba201fc575a0170bf6cfad28d470f3a655a26729b3a65",
+  "core_source": "../p01_writer_diagnostic_v0_1/core.py",
+  "core_sha256": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+}

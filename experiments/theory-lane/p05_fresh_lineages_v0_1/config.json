@@ -1,0 +1,153 @@
+{
+  "version": "0.1",
+  "status": "AUTHORIZED_NEW_LINEAGE_VALIDATION_OF_FROZEN_RULE",
+  "blocks": [
+    81000,
+    81001,
+    81002,
+    81003,
+    81004,
+    81005,
+    81006,
+    81007,
+    81008,
+    81009,
+    81010,
+    81011,
+    81012,
+    81013,
+    81014,
+    81015
+  ],
+  "histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "history_by_block": {
+    "81000": 0,
+    "81001": 1,
+    "81002": 2,
+    "81003": 3,
+    "81004": 0,
+    "81005": 1,
+    "81006": 2,
+    "81007": 3,
+    "81008": 0,
+    "81009": 1,
+    "81010": 2,
+    "81011": 3,
+    "81012": 0,
+    "81013": 1,
+    "81014": 2,
+    "81015": 3
+  },
+  "tolerance_generations": [
+    [],
+    [
+      3
+    ],
+    [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    [
+      3,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  ],
+  "cases_per_block": 16,
+  "cohort_size": 256,
+  "generations": 14,
+  "variants": [
+    "outgoing",
+    "recipient_completion",
+    "recipient_shuffled",
+    "erased"
+  ],
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "injury_cells": 24,
+  "budgets": [
+    2048
+  ],
+  "settling_steps": 1024,
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "margin": 0.25
+  },
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  },
+  "completion": {
+    "support": "every exactly zero outgoing edge on the fixed toroidal lattice",
+    "magnitude": "median absolute nonzero outgoing weight; zero if none",
+    "preserve": "all nonzero outgoing edges byte for byte",
+    "shuffle": "fixed permutation of inferred signs over zero edges; same signs counts, magnitude and support"
+  },
+  "lineage_namespace": "P05_fresh_lineages_v0_1",
+  "random_namespace": "P05_fresh_lineages_v0_1_assessment",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2026101006,
+  "bootstrap_method": "resample four whole blocks within each of four history strata",
+  "numerical_threads": 1,
+  "workers": 1,
+  "forecast_ceiling_cpu_seconds": 3600,
+  "numpy_version": "2.5.2",
+  "development_config": {
+    "birth_sd": 0.05,
+    "capture_steps": 128,
+    "dt": 0.2,
+    "founders": 4,
+    "margin": 0.25,
+    "noise": 0.02,
+    "observe_steps": 32,
+    "read_steps": 512,
+    "recipients": 4,
+    "side": 16,
+    "teach_steps": 512,
+    "teacher_gain": 2.0,
+    "writer_beta": 3.0
+  },
+  "cycle": {
+    "generations": 14,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "write_steps": 128
+  },
+  "tolerance": 0.0001,
+  "known_block": 34000,
+  "known_source_run": "../../E051_cue_pairing_robustness/runs/robustness_v1",
+  "known_source_complete_sha256": "aff3387d46e6f907d033d2c0046cf93d7b349c1f06243ee02600ca54567c9c62",
+  "repair_source_complete_sha256": "4448e840dfa6c7286a2fab954ccf2f402dc28e1dab1cb0ededea8798f55f1802",
+  "repair_source_run": "../p05_recipient_only_completion_v0_1/runs/pilot_v1",
+  "scientific_read_contexts": 8192,
+  "automatic_polling": false,
+  "automatic_successor": false
+}

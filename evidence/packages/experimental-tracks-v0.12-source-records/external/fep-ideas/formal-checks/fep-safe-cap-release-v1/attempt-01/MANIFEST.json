@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "started_utc": "2026-09-20T17:34:24.868099+00:00",
+  "inputs": [
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_SAFE_CAP_RELEASE_V1.md",
+      "bytes": 11406,
+      "sha256": "b5e65c9841ca774c1f5f6a238163b864da7862bbf25bf21db96dd766e0910f8b"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/check_fep_safe_cap_release.py",
+      "bytes": 26487,
+      "sha256": "5888e2db569798d840f1a8e67236e8762bdf718e52f6c28f6a170d19c6744f9d"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/check_fep_decision_regret.py",
+      "bytes": 25256,
+      "sha256": "961ebf6505e74b562c1baf6fd9da0d9ea2cadbb3af7fd391945511b14b1d1d70"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/check_fep_local_risk_bound.py",
+      "bytes": 21879,
+      "sha256": "f3f5351cedb7ee4bd1b702866651548d4458ebdd4250864174d7e45dc8c04bf6"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_DECISION_REGRET_V1.md",
+      "bytes": 11583,
+      "sha256": "30c596b62e28d003c0cf3c2536ce7274a1d241d805881697c72d38232c20969a"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_DECISION_REGRET_V1_REPORT.md",
+      "bytes": 16628,
+      "sha256": "6cff274b123e300c1a9e4c46add8681ab22db70f680044d5bf3d574e85bc2888"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-decision-regret-v1/attempt-01/MANIFEST.json",
+      "bytes": 5599,
+      "sha256": "03f7bb49003c16d5df36a6167ac95d30ddb0f1fb75e4c381dc6cd20f5b7385d3"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-decision-regret-v1/attempt-01/RESULTS.json",
+      "bytes": 2282838,
+      "sha256": "3d92b3e3332d3ee973de484629b8d9c82355e8d72adc35bf933872d883121758"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-decision-regret-v1/attempt-01/QUERIES.jsonl",
+      "bytes": 60273095,
+      "sha256": "e74a996b07fcec00a30569997b0dc63cf9d4edcb5c02af8ed6dc50d8ccd527e4"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/main-attempt-01/MANIFEST.json",
+      "bytes": 113637,
+      "sha256": "e06f4a6604d7c3edf6a773642565b98c63ab4c7f4c0a812419e6570e7e3f46e7"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/main-attempt-01/CORE.json",
+      "bytes": 36470,
+      "sha256": "976bcac5b227e283c62b9679058b02ce3d8d1e3e0a90dd4b7386b2970d4c34a3"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-structured-inference-v1/main-attempt-01/RESULTS.json",
+      "bytes": 773,
+      "sha256": "21ceccf2e69f196e786bcdc853bff65b002bdc7db235348df9f4e6a9b2ea7a06"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STRUCTURED_INFERENCE_V1_FREEZE.json",
+      "bytes": 16014,
+      "sha256": "421cfb53623e5655f08e9d13362b62c98f5943534229dfb2e2b0907cc8056800"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STRUCTURED_INFERENCE_V1_REPORT.md",
+      "bytes": 16828,
+      "sha256": "e92802d89143cac3abc295fe26d287699adbc75d0134a7faee408cf860fcc4a8"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_USABLE_INFORMATION_MANUSCRIPT_V1.md",
+      "bytes": 17717,
+      "sha256": "402480808b61ad9718d38fa0f6f494f2c01819b807491cb386fdde89eb5b76f0"
+    },
+    {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_USABLE_INFORMATION_MANUSCRIPT_V2.md",
+      "bytes": 20549,
+      "sha256": "fdabe647e938aa4c6b3e828447b4c0162e3ee32644581505776d819889c11d9c"
+    }
+  ],
+  "scope": "certified release of old action cap on fixed saved beliefs; no inference updates",
+  "cpu_processes": 1,
+  "python": "3.10.12",
+  "decimal_precision": 60,
+  "primary_rule": "combined risk-slope guard",
+  "control": "physical risk-slope guard",
+  "selected_stopping_tolerance": null,
+  "outputs": [
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/CHECKER_SOURCE.py",
+      "bytes": 26487,
+      "sha256": "5888e2db569798d840f1a8e67236e8762bdf718e52f6c28f6a170d19c6744f9d"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/QUERIES.jsonl",
+      "bytes": 67726645,
+      "sha256": "5e37618e9968fdabe8d430c0fc5786260746ce82d7097294c0f53ef1d21e2423"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/RESULTS.json",
+      "bytes": 2315518,
+      "sha256": "eb1dbd783a315a36a014bdff4bd5ebc3b1f4aefb5e98babc9150d5646d338b4a"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/REUSED_NUMERICAL_HELPER.py",
+      "bytes": 21879,
+      "sha256": "f3f5351cedb7ee4bd1b702866651548d4458ebdd4250864174d7e45dc8c04bf6"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/REUSED_REGRET_HELPER.py",
+      "bytes": 25256,
+      "sha256": "961ebf6505e74b562c1baf6fd9da0d9ea2cadbb3af7fd391945511b14b1d1d70"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/RUN_LOG.txt",
+      "bytes": 2249,
+      "sha256": "3f93d95bb6d43138b062895c58862a5cdbaf1822bfd26db916d4f7d541183f55"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-safe-cap-release-v1/attempt-01/SPECIFICATION.md",
+      "bytes": 11406,
+      "sha256": "b5e65c9841ca774c1f5f6a238163b864da7862bbf25bf21db96dd766e0910f8b"
+    }
+  ]
+}

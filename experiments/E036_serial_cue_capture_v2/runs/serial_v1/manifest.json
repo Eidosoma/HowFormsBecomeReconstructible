@@ -1,0 +1,483 @@
+{
+  "contract": {
+    "blocks": [
+      28000,
+      28001,
+      28002,
+      28003,
+      28004,
+      28005,
+      28006,
+      28007,
+      28008,
+      28009,
+      28010,
+      28011,
+      28012,
+      28013,
+      28014,
+      28015,
+      28016,
+      28017,
+      28018,
+      28019,
+      28020,
+      28021,
+      28022,
+      28023,
+      28024,
+      28025,
+      28026,
+      28027,
+      28028,
+      28029,
+      28030,
+      28031
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 16,
+      "read_steps": 2048,
+      "settling_steps": 256,
+      "write_steps": 128
+    },
+    "experiment": "E036",
+    "generations": 16,
+    "mode": "scientific",
+    "panels": [
+      [
+        0,
+        "initial",
+        "fixed_four"
+      ],
+      [
+        0,
+        "initial",
+        "local_strength"
+      ],
+      [
+        1,
+        "standard_preserve",
+        "fixed_four"
+      ],
+      [
+        1,
+        "standard_rewrite",
+        "fixed_four"
+      ],
+      [
+        1,
+        "contrast_preserve",
+        "fixed_four"
+      ],
+      [
+        1,
+        "contrast_rewrite",
+        "fixed_four"
+      ],
+      [
+        1,
+        "original_standard_preserve",
+        "fixed_four"
+      ],
+      [
+        1,
+        "contrast_read_blocked",
+        "fixed_four"
+      ],
+      [
+        1,
+        "contrast_write_blocked",
+        "fixed_four"
+      ],
+      [
+        1,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        1,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        1,
+        "standard_preserve",
+        "local_strength"
+      ],
+      [
+        1,
+        "standard_rewrite",
+        "local_strength"
+      ],
+      [
+        1,
+        "contrast_preserve",
+        "local_strength"
+      ],
+      [
+        1,
+        "contrast_rewrite",
+        "local_strength"
+      ],
+      [
+        1,
+        "original_standard_preserve",
+        "local_strength"
+      ],
+      [
+        1,
+        "contrast_read_blocked",
+        "local_strength"
+      ],
+      [
+        1,
+        "contrast_write_blocked",
+        "local_strength"
+      ],
+      [
+        1,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        1,
+        "masked_copy",
+        "local_strength"
+      ],
+      [
+        3,
+        "standard_preserve",
+        "fixed_four"
+      ],
+      [
+        3,
+        "standard_rewrite",
+        "fixed_four"
+      ],
+      [
+        3,
+        "contrast_preserve",
+        "fixed_four"
+      ],
+      [
+        3,
+        "contrast_rewrite",
+        "fixed_four"
+      ],
+      [
+        3,
+        "original_standard_preserve",
+        "fixed_four"
+      ],
+      [
+        3,
+        "contrast_read_blocked",
+        "fixed_four"
+      ],
+      [
+        3,
+        "contrast_write_blocked",
+        "fixed_four"
+      ],
+      [
+        3,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        3,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        3,
+        "standard_preserve",
+        "local_strength"
+      ],
+      [
+        3,
+        "standard_rewrite",
+        "local_strength"
+      ],
+      [
+        3,
+        "contrast_preserve",
+        "local_strength"
+      ],
+      [
+        3,
+        "contrast_rewrite",
+        "local_strength"
+      ],
+      [
+        3,
+        "original_standard_preserve",
+        "local_strength"
+      ],
+      [
+        3,
+        "contrast_read_blocked",
+        "local_strength"
+      ],
+      [
+        3,
+        "contrast_write_blocked",
+        "local_strength"
+      ],
+      [
+        3,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        3,
+        "masked_copy",
+        "local_strength"
+      ],
+      [
+        8,
+        "standard_preserve",
+        "fixed_four"
+      ],
+      [
+        8,
+        "standard_rewrite",
+        "fixed_four"
+      ],
+      [
+        8,
+        "contrast_preserve",
+        "fixed_four"
+      ],
+      [
+        8,
+        "contrast_rewrite",
+        "fixed_four"
+      ],
+      [
+        8,
+        "original_standard_preserve",
+        "fixed_four"
+      ],
+      [
+        8,
+        "contrast_read_blocked",
+        "fixed_four"
+      ],
+      [
+        8,
+        "contrast_write_blocked",
+        "fixed_four"
+      ],
+      [
+        8,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        8,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        8,
+        "standard_preserve",
+        "local_strength"
+      ],
+      [
+        8,
+        "standard_rewrite",
+        "local_strength"
+      ],
+      [
+        8,
+        "contrast_preserve",
+        "local_strength"
+      ],
+      [
+        8,
+        "contrast_rewrite",
+        "local_strength"
+      ],
+      [
+        8,
+        "original_standard_preserve",
+        "local_strength"
+      ],
+      [
+        8,
+        "contrast_read_blocked",
+        "local_strength"
+      ],
+      [
+        8,
+        "contrast_write_blocked",
+        "local_strength"
+      ],
+      [
+        8,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        8,
+        "masked_copy",
+        "local_strength"
+      ],
+      [
+        16,
+        "standard_preserve",
+        "fixed_four"
+      ],
+      [
+        16,
+        "standard_rewrite",
+        "fixed_four"
+      ],
+      [
+        16,
+        "contrast_preserve",
+        "fixed_four"
+      ],
+      [
+        16,
+        "contrast_rewrite",
+        "fixed_four"
+      ],
+      [
+        16,
+        "original_standard_preserve",
+        "fixed_four"
+      ],
+      [
+        16,
+        "contrast_read_blocked",
+        "fixed_four"
+      ],
+      [
+        16,
+        "contrast_write_blocked",
+        "fixed_four"
+      ],
+      [
+        16,
+        "protected_copy",
+        "fixed_four"
+      ],
+      [
+        16,
+        "masked_copy",
+        "fixed_four"
+      ],
+      [
+        16,
+        "standard_preserve",
+        "local_strength"
+      ],
+      [
+        16,
+        "standard_rewrite",
+        "local_strength"
+      ],
+      [
+        16,
+        "contrast_preserve",
+        "local_strength"
+      ],
+      [
+        16,
+        "contrast_rewrite",
+        "local_strength"
+      ],
+      [
+        16,
+        "original_standard_preserve",
+        "local_strength"
+      ],
+      [
+        16,
+        "contrast_read_blocked",
+        "local_strength"
+      ],
+      [
+        16,
+        "contrast_write_blocked",
+        "local_strength"
+      ],
+      [
+        16,
+        "protected_copy",
+        "local_strength"
+      ],
+      [
+        16,
+        "masked_copy",
+        "local_strength"
+      ]
+    ],
+    "workers": 8
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "executable": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E024_serial_compensation/model.py": "b0cae09a039bfd40ee3dd20820985032a15ad02d9a78bb4a6428405d59f82250",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E031_renewal_durability/evidence.py": "5ab31fc8402f2102c1360c9a074b478b52f38d3873fb4173fe2c27a1baa8501b",
+    "E031_renewal_durability/model.py": "f62e9c4f9665e96907bfe8127e066daa9e1e8d70dff093dffc578eaa96a3979d",
+    "E034_settled_rebuilding/model.py": "d319d3726c10074d9519494dc1178a33afc840d564664372c39b0612b15aa019",
+    "E035_cue_selective_capture/model.py": "cc75ba0846ae7d538b922c5724acaa748762176cc8e66e50b6ba8bf25c32775f",
+    "E036_serial_cue_capture_v2/PROTOCOL.md": "e5a39d965764a20ee9a032fbe26cffa03d372372b0308df924983ad0e1619808",
+    "E036_serial_cue_capture_v2/SOURCE_DATA.json": "9d3cab6e3022ac8bd5289a00f9c2b6563229d6b612e9017d12d0cc7407f4df0f",
+    "E036_serial_cue_capture_v2/audit.py": "79a3f8f95eec47429e2ff6c3832ae604477b698551571c3f188b90817f803424",
+    "E036_serial_cue_capture_v2/evidence.py": "5591139a72f97193012fb41866d64270f3b50efc9b729c6fa7f17b7e0dfa668b",
+    "E036_serial_cue_capture_v2/model.py": "c38b805e3b705cfcab52d5fed6e008e82c177d4e4e02c82c2511b6c8588f41d9",
+    "E036_serial_cue_capture_v2/plot.py": "d38f2ebfd3bc92128fd3071061dd3d9ec836cbbeb08c5b5043bc976ad4cdd47f",
+    "E036_serial_cue_capture_v2/run.py": "a74bd0a66e3c333d14e04c6b57570213f562b34802d8ab779e43e6210c3cc0dc",
+    "E036_serial_cue_capture_v2/tests.py": "5c3cea6f16406efb4e53696b43944fc49b96c1d621cb3794f29718f735279044",
+    "E036_serial_cue_capture_v2/workflow.py": "52b824df9f790caaa89410585e22970607a971e2c6b5248b56bee150d2baf47c",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "numerical_threads": 1,
+  "numpy": "2.5.2",
+  "platform": "Linux-6.12.107+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "random_generator": "NumPy PCG64, SHA256 semantic stream seeds",
+  "started_utc": "2026-09-28T19:20:59.305114+00:00",
+  "status": "RUNNING"
+}

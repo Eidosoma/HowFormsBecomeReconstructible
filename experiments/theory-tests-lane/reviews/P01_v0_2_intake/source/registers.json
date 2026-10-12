@@ -1,0 +1,257 @@
+{
+  "package_version": "RDT-P01-v0.2",
+  "status": "DEVELOPMENT_NOT_CONFIRMATORY",
+  "created_at_utc": "2026-10-08T18:19:58.675Z",
+  "prior_review": "../review_provenance_v0_1.json",
+  "claim_register": [
+    {
+      "id": "P01-M01",
+      "status": "EXACT_OR_KNOWN",
+      "claim": "K^H q terminal forecasts and A^H 1 uninterrupted performance under their specified kernels",
+      "verification": "Explicit path enumeration and absorbing-failure equivalence"
+    },
+    {
+      "id": "P01-M02",
+      "status": "EXACT_OR_KNOWN",
+      "claim": "Conditional finite-horizon reduction bound with uniform representation plus sampling error",
+      "verification": "Telescoping proof and finite randomized checks; no native uniform error certificate"
+    },
+    {
+      "id": "P01-M03",
+      "status": "EXACT_OR_KNOWN",
+      "claim": "Subset-Hoeffding categorical row radius",
+      "verification": "Union-bound derivation and exact binomial coverage checks"
+    },
+    {
+      "id": "P01-M04",
+      "status": "EXACT_OR_KNOWN",
+      "claim": "No unrestricted long-horizon guarantee from bounded-depth allowed-start probes",
+      "verification": "Two indistinguishable finite chains; CE11"
+    },
+    {
+      "id": "P01-M05",
+      "status": "EXACT_OR_KNOWN",
+      "claim": "Two-mode formulas and nondegenerate moment inversion within independent binary-chain model",
+      "verification": "Algebra, explicit matrix propagation, observable probability checks"
+    },
+    {
+      "id": "P01-E01",
+      "status": "PROPOSED_EMPIRICAL_LAW",
+      "claim": "Native short response histories admit a useful calibrated fixed two-mode forecast",
+      "verification": "UNTESTED_NATIVE"
+    },
+    {
+      "id": "P01-C01",
+      "status": "LONGER_TERM_CONJECTURE",
+      "claim": "Extension to inherited adaptability, machinery maintenance or collective individuality",
+      "verification": "Not tested or implied by this P01 package"
+    }
+  ],
+  "assumptions_register": [
+    {
+      "id": "A01",
+      "assumption": "Complete boundary and stationary apparatus",
+      "status": "Audited at source-code level for candidate E041 full rewrite; not proven statistically"
+    },
+    {
+      "id": "A02",
+      "assumption": "Uniform reduction error over reached microstates",
+      "status": "Known in finite toy; not bounded in native system"
+    },
+    {
+      "id": "A03",
+      "assumption": "Independent, stationary readability/identity modes with specified emissions",
+      "status": "True by construction in toy; native hypothesis"
+    },
+    {
+      "id": "A04",
+      "assumption": "Information budget and block dependence correctly specified",
+      "status": "Toy explicit; native pending"
+    },
+    {
+      "id": "A05",
+      "assumption": "Untouched outcomes after a complete numerical freeze",
+      "status": "Not satisfied for current development evidence"
+    },
+    {
+      "id": "A06",
+      "assumption": "Long-horizon uncertainty remains informative near rare losses",
+      "status": "Not established; point-forecast failure retained"
+    }
+  ],
+  "evidence_ledger": [
+    {
+      "id": "EV01",
+      "type": "INSPECTED_MANUSCRIPT_REPORTS",
+      "source": "Plastic Heredity V5.0 and Forms v0.16; hashes and cutoffs in prior_review",
+      "raw_audit": false,
+      "interpretation": "Motivating development evidence; endpoint distinctions and strong comparators retained"
+    },
+    {
+      "id": "EV02",
+      "type": "INSPECTED_SOURCE_CODE",
+      "source": [
+        "../../E041_full_rewrite_confirmation/model.py",
+        "../../E041_full_rewrite_confirmation/PROTOCOL.md",
+        "../../E022_reader_compensation/model.py",
+        "../../E015_functional_inheritance/model.py",
+        "../../E016_teaching_consistency/model.py"
+      ],
+      "raw_audit": false,
+      "interpretation": "Boundary, normalized reader, exact fallback, damage and assay contract; no new native runs"
+    },
+    {
+      "id": "EV03",
+      "type": "REPRODUCED_CONSTRUCTED_CALCULATION",
+      "source": [
+        "results/toy_forecasts_v1.json",
+        "results/development_v1.json"
+      ],
+      "interpretation": "Conventional four-state model ties the joint model; simpler independent factors lower RMSE in both designed cases"
+    },
+    {
+      "id": "EV04",
+      "type": "RETAINED_DEVELOPMENT_FAILURE",
+      "source": "results/observable_attempt_1_failure.json",
+      "interpretation": "Unobserved output source category interrupted first calibration; same seed and cases retained, no row imputation"
+    },
+    {
+      "id": "EV05",
+      "type": "REPRODUCED_CONSTRUCTED_CALCULATION",
+      "source": [
+        "results/observable_forecasts_v1.json",
+        "results/observable_development_v1.json"
+      ],
+      "interpretation": "Three output-only toy cases; one large rare-loss overprediction and one unsupported comparator; same structured HMM exactly ties"
+    },
+    {
+      "id": "EV06",
+      "type": "USER_REPORTED_INTERIM_AGGREGATES",
+      "experiment": "E051 (user identification: 51)",
+      "blocks_observed": 8,
+      "blocks_planned": 32,
+      "lineages_per_condition": 128,
+      "horizon": 32,
+      "results": [
+        {
+          "writer": "original",
+          "condition": "Perfectly matched cues",
+          "success": 120,
+          "total": 128
+        },
+        {
+          "writer": "original",
+          "condition": "Slight noise mismatch; correlation .999",
+          "success": 126,
+          "total": 128
+        },
+        {
+          "writer": "original",
+          "condition": "Independent cue noise",
+          "success": 126,
+          "total": 128
+        },
+        {
+          "writer": "original",
+          "condition": "Slight initial-state mismatch",
+          "success": 119,
+          "total": 128
+        },
+        {
+          "writer": "fixed tolerance 1e-4",
+          "condition": "Matched noise",
+          "success": 3,
+          "total": 128
+        },
+        {
+          "writer": "fixed tolerance 1e-4",
+          "condition": "Slight noise mismatch",
+          "success": 80,
+          "total": 128
+        }
+      ],
+      "user_reported_mechanism": "Noise mismatch switches off returning-edge fallback; original writer terminal performance remains high in reported partial cohort.",
+      "user_reported_qualifications": [
+        "Counts agree with saved assay outputs according to the user",
+        "Full cohort pending",
+        "Independent dynamics audit pending",
+        "Teaching and terminal-test cues still use matched randomness"
+      ],
+      "lane_access": "User message only; did not independently open E051 outputs, audit counts, or inspect raw histories",
+      "interpretation": "Weakens simple fallback-deactivation implies terminal-fragility inference; weighs against this fixed tolerance modification under these conditions. Does not establish equivalence, noise benefit or invariance to teaching/test randomness.",
+      "uncertainty": "Block/paired design not supplied in full; no binomial-independent-lineage or confirmatory interval inferred."
+    }
+  ],
+  "exposure_register": {
+    "scope": "LANE_LOCAL_INCOMPLETE_FOR_FLEET",
+    "authoritative_fleet_register_found": false,
+    "other_participants_exposure": "UNKNOWN_NOT_ATTESTED",
+    "known": [
+      "All prior_review exposures, conservatively including requested experiment overview excerpts",
+      "All generated toy cases, model families, seeds 1729 and 1730, forecasts and outcomes",
+      "E051 partial aggregates and mechanism report supplied by the user during P01 development"
+    ],
+    "directory_only_exposure": "Git status/filename searches revealed later experiment and lane names, including E048-E052 and theory-tests-lane; their contents were not thereby read.",
+    "code_only_exposure": [
+      "E041 full-rewrite model/protocol",
+      "E022 model",
+      "E015 model",
+      "E016 model"
+    ],
+    "direct_new_robustness_result_files_opened": false,
+    "E051_raw_histories_opened": false,
+    "remaining_E051_blocks_claimed_unexposed_holdout": false,
+    "fresh_seed_is_fresh_hypothesis": false,
+    "cross_lane_independence": "Theory and theory-tests are one programme, not independent laboratories.",
+    "update_required_before_confirmation": "Reconcile this local register with the programme's access record; verify packets, interventions, tasks, families and outcomes across participants."
+  },
+  "decisions": [
+    {
+      "order": 1,
+      "decision": "Interpret 'first one' as RDT-P01; retain P02-P08 as draft index."
+    },
+    {
+      "order": 2,
+      "decision": "Start with exact kernels, strong conventional comparators and adversarial counterexamples; no native robustness jobs."
+    },
+    {
+      "order": 3,
+      "decision": "Retain first toy result: independent factors beat unrestricted model; ordinary Markov model is identical to joint model."
+    },
+    {
+      "order": 4,
+      "decision": "Introduce observable two-mode HMM after seeing the first result; explicitly outcome-informed model-family choice."
+    },
+    {
+      "order": 5,
+      "decision": "Receive user E051 interim report after first toy evaluation and observable code construction, before observable calibration results; mark development exposure and narrow mechanism-to-performance inference."
+    },
+    {
+      "order": 6,
+      "decision": "First observable calibration fails on unsupported baseline row; preserve failure/source hashes, same seed/cases, and report unsupported forecasts without smoothing."
+    },
+    {
+      "order": 7,
+      "decision": "Retain observable rare-loss boundary fit and overprediction; do not select a favourable seed or add native-superiority claims."
+    },
+    {
+      "order": 8,
+      "decision": "Freeze this versioned development package, leaving native numbers and confirmation status explicitly unresolved."
+    }
+  ],
+  "missing_or_unfinished": [
+    "Original reconstructive_dynamics_predictions_v0_1.json absent from searched locations; not reconstructed under its old name.",
+    "Expected v0.16 PDF absent; authoritative assembled Markdown/source manifest used.",
+    "No original-attachment byte comparison.",
+    "No complete authoritative fleet-wide exposure account.",
+    "Native adapter, bounded native calibration, validated forecast uncertainty and justified empirical thresholds remain to be implemented before confirmation.",
+    "P02-P08 have not been developed into full revised cards in this P01 package."
+  ],
+  "validations": {
+    "unit_checks_passed": 18,
+    "unit_check_runtime_seconds": 1.24,
+    "native_simulator_runs": 0,
+    "external_messages_sent": 0,
+    "costly_or_confirmatory_sweeps_started": 0
+  }
+}

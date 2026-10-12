@@ -1,0 +1,63 @@
+{
+  "end_to_end_fixture_passed": true,
+  "fixture_audit_sha256": "fd1af75d82eb48d8836ae2da225d1edd519e993987119a91d61415b14d843c04",
+  "fixture_complete_sha256": "df9985429fd91748b6e38e3d3132056544d2eab379ec7ee3af5b1c705b0a8a8a",
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E023_receiver_compensation/audit.py": "8bf15f73c2dad2c3a075977f4994a017d6728a2571cba63c8b098397a1366e56",
+    "E023_receiver_compensation/model.py": "0c93165f68edb1c30804154aa5ac8bdcbc9ba1449c3919e51f81a5acde6f7405",
+    "E024_serial_compensation/model.py": "b0cae09a039bfd40ee3dd20820985032a15ad02d9a78bb4a6428405d59f82250",
+    "E031_renewal_durability/audit.py": "543e1feb18b67e74a12149df355018ec7853c24c34fb02fc6e9c632078a5387d",
+    "E031_renewal_durability/evidence.py": "5ab31fc8402f2102c1360c9a074b478b52f38d3873fb4173fe2c27a1baa8501b",
+    "E031_renewal_durability/model.py": "f62e9c4f9665e96907bfe8127e066daa9e1e8d70dff093dffc578eaa96a3979d",
+    "E034_settled_rebuilding/model.py": "d319d3726c10074d9519494dc1178a33afc840d564664372c39b0612b15aa019",
+    "E035_cue_selective_capture/model.py": "cc75ba0846ae7d538b922c5724acaa748762176cc8e66e50b6ba8bf25c32775f",
+    "E036_serial_cue_capture_v2/PROTOCOL.md": "e5a39d965764a20ee9a032fbe26cffa03d372372b0308df924983ad0e1619808",
+    "E036_serial_cue_capture_v2/SOURCE_DATA.json": "9d3cab6e3022ac8bd5289a00f9c2b6563229d6b612e9017d12d0cc7407f4df0f",
+    "E036_serial_cue_capture_v2/audit.py": "79a3f8f95eec47429e2ff6c3832ae604477b698551571c3f188b90817f803424",
+    "E036_serial_cue_capture_v2/evidence.py": "5591139a72f97193012fb41866d64270f3b50efc9b729c6fa7f17b7e0dfa668b",
+    "E036_serial_cue_capture_v2/model.py": "c38b805e3b705cfcab52d5fed6e008e82c177d4e4e02c82c2511b6c8588f41d9",
+    "E036_serial_cue_capture_v2/plot.py": "d38f2ebfd3bc92128fd3071061dd3d9ec836cbbeb08c5b5043bc976ad4cdd47f",
+    "E036_serial_cue_capture_v2/run.py": "a74bd0a66e3c333d14e04c6b57570213f562b34802d8ab779e43e6210c3cc0dc",
+    "E036_serial_cue_capture_v2/tests.py": "5c3cea6f16406efb4e53696b43944fc49b96c1d621cb3794f29718f735279044",
+    "E036_serial_cue_capture_v2/workflow.py": "52b824df9f790caaa89410585e22970607a971e2c6b5248b56bee150d2baf47c",
+    "SOURCE_LICENSE.txt": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+    "SOURCE_SNAPSHOT.json": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "inputs_unchanged": true,
+  "runner_sha256": "562953cb8f8e24638d7bea6079ade9c6d19f8f8400db317b14dde767b24d3811",
+  "seconds": 56.24140891095158,
+  "stages": {
+    "fixture": {
+      "log_sha256": "abd42633d6b22c7143ab964a3185f3ed3f1348d2912e333f060029466f9118e7",
+      "returncode": 0,
+      "seconds": 23.754259810084477
+    },
+    "fixture_audit": {
+      "log_sha256": "637ce8ad54174e221e7d071f8f11055a7899250e8f08e52a7ec2d49d2bfe70c2",
+      "returncode": 0,
+      "seconds": 26.06416792899836
+    },
+    "fixture_plot": {
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "seconds": 1.4364171780180186
+    },
+    "tests": {
+      "log_sha256": "924e2566b5d8d12cc973d83805909f960c8c1386f3bbe72e69bf547f4435ff3d",
+      "returncode": 0,
+      "seconds": 4.957093728007749
+    }
+  },
+  "status": "PASS",
+  "tests": 8,
+  "utc": "2026-09-28T19:16:17.698003+00:00"
+}

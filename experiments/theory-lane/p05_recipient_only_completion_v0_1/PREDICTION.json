@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_DIRECTION_BEFORE_NEW_NATIVE_OUTCOMES_DEVELOPMENT",
+  "at_utc": "2026-10-10T18:59:39.840370+00:00",
+  "question": "Does a fixed repair made from O alone improve recipient-task reconstruction?",
+  "primary": {
+    "contrast": "recipient_minus_outgoing",
+    "left": "recipient_completion",
+    "right": "outgoing",
+    "direction": "positive",
+    "failure": "point estimate <= 0",
+    "uncertainty": "20,000 whole-block paired bootstrap resamples; descriptive on 8 exposed blocks",
+    "unit": "block",
+    "weights": "equal draws per case, equal cases per block, equal blocks"
+  },
+  "secondary": [
+    "recipient_minus_shuffled",
+    "full_minus_common_completion",
+    "own_minus_full_completion",
+    "magnitude_removal",
+    "support_removal",
+    "recipient_minus_full_completion",
+    "recipient_minus_full_own",
+    "full_completion_minus_outgoing"
+  ],
+  "no_equivalence_margin": true,
+  "no_fitted_parameters": true,
+  "automatic_successor": false
+}

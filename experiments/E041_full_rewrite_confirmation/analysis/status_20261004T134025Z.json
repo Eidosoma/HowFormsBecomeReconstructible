@@ -1,0 +1,124 @@
+{
+  "active_audit_workers_observed": [
+    118721,
+    118722,
+    118723,
+    118724,
+    118725,
+    118726,
+    118727,
+    118728
+  ],
+  "audit_parent_pid": 118701,
+  "automatic_polling_started": false,
+  "automatic_successor_started": false,
+  "blocks_complete": 32,
+  "body_scores": 294912,
+  "communicated_eta": "Approximately 4 October 2026, 21:00\u201323:00 UTC; approximate runtime projection, not a deadline or audit progress measurement",
+  "complete_sha256": "e899af49ba28b49633e70bb01fbb418f46ace06b2684c68299ef07ac8296582d",
+  "durability_total": 17,
+  "independent_audit_complete": false,
+  "lineages": 512,
+  "new_simulation_started": false,
+  "operational_eta_projections": {
+    "E040_weak_bridge_durability/runs/serial_v1": {
+      "audit_to_simulation_ratio": 0.9696249068933805,
+      "projected_audit_finish_utc": "2026-10-04T20:34:53.437719+00:00"
+    },
+    "E041_full_rewrite_confirmation/runs/benchmark_v1": {
+      "audit_to_simulation_ratio": 1.122014865927308,
+      "projected_audit_finish_utc": "2026-10-04T22:19:21.169846+00:00"
+    }
+  },
+  "original_forecast_completion_utc": "2026-10-05T05:45:28.518473+00:00",
+  "process_observation_utc": "2026-10-04T13:37:22+00:00",
+  "provisional_durability_passed": 17,
+  "provisional_full_qualification": true,
+  "provisional_h32_scattered_both_cue": {
+    "bridge_preserve": {
+      "ci95": [
+        0.68359375,
+        0.767578125
+      ],
+      "mean": 0.7265625
+    },
+    "bridge_rewrite": {
+      "ci95": [
+        0.806640625,
+        0.86328125
+      ],
+      "mean": 0.8359375
+    },
+    "bridge_rewrite_read_blocked": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean": 0.0
+    },
+    "bridge_rewrite_write_blocked": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean": 0.0
+    }
+  },
+  "provisional_primary": {
+    "endpoint": "h32 normalized scattered own both-cue success: bridge_rewrite minus bridge_preserve",
+    "lower_above_005": true,
+    "margin": 0.05,
+    "statistics": {
+      "block_means": [
+        -0.125,
+        0.0,
+        0.0625,
+        -0.0625,
+        0.0625,
+        0.375,
+        0.125,
+        0.125,
+        0.25,
+        0.25,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.125,
+        0.0,
+        0.0,
+        0.1875,
+        -0.0625,
+        0.1875,
+        0.0625,
+        0.125,
+        0.25,
+        0.4375,
+        0.125,
+        0.125,
+        0.125,
+        0.0625,
+        0.0,
+        0.0625,
+        0.0,
+        0.1875,
+        0.25
+      ],
+      "ci95": [
+        0.068359375,
+        0.15234375
+      ],
+      "mean": 0.109375
+    }
+  },
+  "reported_errors": false,
+  "run_and_job_frozen_inputs_verified": 29,
+  "scientific_conclusions_verified": false,
+  "simulation_finished_utc": "2026-10-04T09:30:13.157814+00:00",
+  "simulation_seconds": 41129.56107473909,
+  "status": "SIMULATION_COMPLETE_AUDIT_RUNNING",
+  "summary_sha256": "fa520a459e4f73cca635b294d7164a209f2f2d6c7c7bd50fc7f923978f67332a",
+  "terminal_scores": 2881536,
+  "utc": "2026-10-04T13:40:25.031130+00:00",
+  "verified_simulation_outputs": 1408,
+  "workflow_pid": 4111721
+}

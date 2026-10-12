@@ -1,0 +1,94 @@
+{
+  "at_utc": "2026-10-10T19:00:17.499263+00:00",
+  "processes": [
+    {
+      "pid": 1909204,
+      "threads": 1,
+      "script": "supervise_p32.py",
+      "cpu_ticks_in_one_second": 0
+    },
+    {
+      "pid": 1913844,
+      "threads": 3,
+      "script": "run_p32.py",
+      "cpu_ticks_in_one_second": 0
+    },
+    {
+      "pid": 2854358,
+      "threads": 1,
+      "script": "workflow.py",
+      "cpu_ticks_in_one_second": 0
+    },
+    {
+      "pid": 2854359,
+      "threads": 9,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 0
+    },
+    {
+      "pid": 2976023,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 98
+    },
+    {
+      "pid": 2976459,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 74
+    },
+    {
+      "pid": 2976487,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 58
+    },
+    {
+      "pid": 2976586,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 47
+    },
+    {
+      "pid": 2977004,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 53
+    },
+    {
+      "pid": 2977148,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 87
+    },
+    {
+      "pid": 2977314,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 88
+    },
+    {
+      "pid": 2977929,
+      "threads": 1,
+      "script": "run.py",
+      "cpu_ticks_in_one_second": 61
+    },
+    {
+      "pid": 2989439,
+      "threads": 1,
+      "script": "run_p32.py",
+      "cpu_ticks_in_one_second": 98
+    },
+    {
+      "pid": 2990139,
+      "threads": 1,
+      "script": "run_p32.py",
+      "cpu_ticks_in_one_second": 97
+    }
+  ],
+  "active_project_threads": 10,
+  "planned_threads": 1,
+  "shared_limit": 12,
+  "note": "The earlier count included sleeping service threads. This receipt samples actual CPU activity before computation; launch receives a fresh check.",
+  "within_limit": true
+}

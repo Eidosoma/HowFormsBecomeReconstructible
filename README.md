@@ -2,7 +2,7 @@
 
 ## Acquired Records, Reciprocal Repair, and Functional Renewal
 
-Robert Bjarnason, Eidosoma.ai. **Working manuscript v0.20; first public-repository review snapshot, 12 October 2026.** This is an unpublished working preprint, with continuing experiments kept separate from the selected results.
+Robert Bjarnason, Eidosoma.ai. **Public working manuscript v0.20; first review snapshot, 12 October 2026.** The repository is public at [Eidosoma/HowFormsBecomeReconstructible](https://github.com/Eidosoma/HowFormsBecomeReconstructible), with the first review snapshot pinned to [commit 036bd902](https://github.com/Eidosoma/HowFormsBecomeReconstructible/tree/036bd902a065cf81f0d164fb400f086dee6b92ed). No Zenodo deposit or DOI is claimed. Continuing experiments remain separate from the selected results.
 
 The paper asks how acquired history becomes useful to a successor, how embodied reading and writing change that usefulness, and why present expression can differ from continued reconstructibility. The studies use supplied simulation models; biological generalization and a general predictive reconstruction law remain open.
 
@@ -13,7 +13,7 @@ The paper asks how acquired history becomes useful to a successor, how embodied 
 - [Experiment index](reproducibility/experiment_index.csv) and [reproduction guide](reproducibility/README.md).
 - [Included and omitted material](reproducibility/AVAILABILITY.md).
 
-The scientific prose is retained from v0.20. Links have been adapted for this repository. Small measured SVG figures are included; omitted raster illustrations retain their complete captions. No scientific finding was added by preparing this snapshot.
+The scientific findings are retained from v0.20. Links have been adapted for this repository, and the availability wording now reflects public access. Small measured SVG figures are included; omitted raster illustrations retain their complete captions. The [publication update](reproducibility/PUBLICATION_UPDATE_2026-10-12.json) records the documentation changes and hashes; no scientific finding was added.
 
 ### Build a reading copy
 

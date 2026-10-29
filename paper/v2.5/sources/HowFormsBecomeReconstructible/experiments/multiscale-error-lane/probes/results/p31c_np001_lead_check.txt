@@ -1,0 +1,319 @@
+tasks 576 files checked 1152 sha256 mismatches [] digest c2c1799845ba
+run: 2026-10-29T13:11:18Z to 2026-10-29T13:41:06Z, wall 1787 s, cpu 21230 s (5.90 CPU-h), peak worker RSS 197.4 MB, 12 workers, 1-min load at start 40.69
+stage-1 conditions ['alone', 'intact', 'body1', 'record1', 'body', 'body3'] | stage-2 branches ['intact', 'body1', 'record1', 'body', 'body3', 'none'] | blocks 910320 to 910335 (16)
+
+== aliases on these blocks (the registration's 'by construction'; Q5 checked them on the preflight blocks)
+2160 alias groups (records no body writes, their successors, the controls; alone's record = intact's): 2160 identical across the four stage-1 bodies
+
+== statements (t = 4,000 in stage 1, t = 2,000 in stage 2; block means over 16 blocks)
+N1 alone align, li2 and li4, S8 and F0 <= 0.7                 n= 4 +0.516449 to +0.578972; worst ('li2', 'F0') +0.578972 (SD 0.0066, 18.41 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le 0.7: ok
+N1 alone align, li2 and li4, S4x >= 0.95                      n= 8 +0.994522 to +0.998604; worst ('li2', 'S4s1') +0.994522 (SD 0.0013, 33.85 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N1 alone align, dw and li16, S8 and F0 >= 0.95                n= 4 +0.989494 to +0.999763; worst ('li16', 'F0') +0.989494 (SD 0.0078, 5.09 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N2 body r_align, li2 li4 dw, S4x >= 0.95                      n=12 +0.958351 to +0.973839; worst ('li2', 'S4s2') +0.958351 (SD 0.0033, 2.50 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N2 align body - alone, li2 and li4, S4x, |x| <= 0.02          n= 8 -0.010139 to -0.001472; worst ('li2', 'S4s2') -0.010139 (SD 0.0039, 2.53 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule abs 0.02: ok
+N3 r_align body and body3, li2 and li4, S8 and F0 <= 0.7      n= 8 +0.535126 to +0.645767; worst ('li2', 'body', 'S8') +0.645767 (SD 0.0077, 7.06 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le 0.7: ok
+N3 r_align body, dw and li16, S8 and F0 >= 0.95               n= 4 +0.976067 to +0.979874; worst ('li16', 'F0') +0.976067 (SD 0.0018, 14.62 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N4 r_align intact and record1, S8 and F0 >= 0.97 (every body) n=16 +0.983612 to +1.000000; worst ('dw', 'record1', 'S8') +0.983612 (SD 0.0015, 8.88 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.97: ok
+N4 align intact/record1 - alone, li2 and li4, S8 and F0 >= 0.2 n= 8 +0.258774 to +0.483543; worst ('li4', 'intact', 'F0') +0.258774 (SD 0.0062, 9.53 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.2: ok
+N5 successors of the intact S4x records >= 0.95               n=64 +0.999992 to +1.000000; worst ('dw', 'li2', 'S4') +0.999992 (SD 0.0000, 1638.15 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N5 no-record control align - 0.5, pooled over successors and S4x n= 1 +0.001603 to +0.001603; worst pooled +0.001603 (SD 0.0062, 15.99 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule abs 0.1: ok
+N5 successors of the body S4x records >= 0.85                 n=64 +0.892456 to +0.924759; worst ('li2', 'li2', 'S4s3') +0.892456 (SD 0.0097, 4.38 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.85: ok
+N6 successors of li2's and li4's body S8 and F0 records <= 0.7 n=16 +0.536507 to +0.683212; worst ('li2', 'dw', 'S8') +0.683212 (SD 0.0131, 1.28 SD from the bound, 14/16 blocks pass); halves ['ok', 'ok']; rule le 0.7: ok
+N6 dw successor of the intact and record1 S8 and F0 records >= 0.95 n=16 +0.998528 to +1.000000; worst ('dw', 'record1', 'S8') +0.998528 (SD 0.0006, 75.04 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N6 dw successor of dw's and li16's body S8 and F0 records >= 0.9 n= 4 +0.963860 to +0.981995; worst ('dw', 'S8') +0.963860 (SD 0.0034, 18.56 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.9: ok
+N7 dw - li4 successor, the intact F0 record >= 0.1            n= 4 +0.190735 to +0.190735; worst dw +0.190735 (SD 0.0032, 28.51 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.1: ok
+N7 dw - li4 successor, dw's and li16's body S8 and F0 >= 0.1  n= 4 +0.146820 to +0.284790; worst ('dw', 'S8') +0.146820 (SD 0.0053, 8.91 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.1: ok
+N7 dw - li2 successor, dw's and li16's body S8 and F0 >= 0.05 n= 4 +0.105492 to +0.175735; worst ('dw', 'S8') +0.105492 (SD 0.0065, 8.49 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.05: ok
+N8 q alone <= -0.5                                            n=12 -0.998128 to -0.828247; worst ('dw', 'C4s1') -0.828247 (SD 0.1425, 2.30 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le -0.5: ok
+N8 q intact and body >= 0.5                                   n=24 +0.939921 to +1.000000; worst ('dw', 'body', 'C4s3') +0.939921 (SD 0.0523, 8.41 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+N8 the record's q under body >= 0.5                           n=12 +0.886536 to +0.954102; worst ('li2', 'C4s1') +0.886536 (SD 0.0157, 22.73 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+N9 successors of the intact conflict records, align >= 0.95   n=48 +0.999992 to +1.000000; worst ('dw', 'li4', 'C4s3') +0.999992 (SD 0.0000, 1638.15 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+N9 successors of the body conflict records, q >= 0.5          n=48 +0.686768 to +0.869649; worst ('li2', 'li2', 'C4s1') +0.686768 (SD 0.0202, 8.09 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+
+verdicts: {'N1': 'HOLDS', 'N2': 'HOLDS', 'N3': 'HOLDS', 'N4': 'HOLDS', 'N5': 'HOLDS', 'N6': 'HOLDS', 'N7': 'HOLDS', 'N8': 'HOLDS', 'N9': 'HOLDS'}
+
+== reported, not registered
+rep q body3 (conflicts)                                        n=12 +0.743510 to +0.997050; worst ('dw', 'C4s3') +0.743510 (SD 0.1201, 2.03 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+rep the record's q under body3 (conflicts)                     n=12 +0.715759 to +0.951935; worst ('dw', 'C4s3') +0.715759 (SD 0.1152, 1.87 SD from the bound, 15/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+   li2 successor reading the intact F0 record (dw's run): 0.999977; dw successor 1.000000
+   li4 successor reading the intact F0 record (dw's run): 0.809265; dw successor 1.000000
+   stage 1, dw reading the intact F0 record: align 1.000000; alone 0.996902
+   stage 1, li2 reading the intact F0 record: align 0.999977; alone 0.578972
+   stage 1, li4 reading the intact F0 record: align 0.804459; alone 0.545685
+   stage 1, li16 reading the intact F0 record: align 1.000000; alone 0.989494
+
+== stage 1 at t = 4,000: align | r_align | shape | spacing, by unit and body (rows) and condition (columns)
+-- S4
+   dw    alone 0.9261|1.0000|0.9261| 9.10  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9973|0.9837|0.9973| 7.98  body 0.9940|0.9718|0.9940| 8.01  body3 0.9844|0.9648|0.9844| 8.13
+   li2   alone 0.9946|1.0000|0.9946| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9998|0.9989|0.9998| 7.98  record1 0.9951|0.9837|0.9951| 7.97  body 0.9862|0.9599|0.9862| 7.95  body3 0.9919|0.9670|0.9919| 7.95
+   li4   alone 0.9984|1.0000|0.9984| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9991|0.9999| 7.98  record1 0.9959|0.9837|0.9959| 7.97  body 0.9963|0.9705|0.9963| 7.97  body3 0.9985|0.9750|0.9985| 7.97
+   li16  alone 0.9249|1.0000|0.9249| 8.64  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9973|0.9837|0.9973| 7.98  body 0.9984|0.9759|0.9984| 7.98  body3 0.9981|0.9778|0.9981| 7.99
+-- S4s1
+   dw    alone 0.9098|1.0000|0.9098| 9.37  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9837|0.9974| 7.98  body 0.9961|0.9738|0.9961| 7.98  body3 0.9784|0.9591|0.9784| 8.32
+   li2   alone 0.9945|1.0000|0.9945| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9998|0.9988|0.9998| 7.98  record1 0.9953|0.9837|0.9953| 7.97  body 0.9861|0.9598|0.9861| 7.95  body3 0.9927|0.9676|0.9927| 7.96
+   li4   alone 0.9985|1.0000|0.9985| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9990|0.9999| 7.98  record1 0.9961|0.9837|0.9961| 7.97  body 0.9962|0.9705|0.9962| 7.97  body3 0.9985|0.9751|0.9985| 7.97
+   li16  alone 0.9038|1.0000|0.9038| 8.85  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9837|0.9974| 7.98  body 0.9987|0.9762|0.9987| 7.98  body3 0.9973|0.9769|0.9973| 8.00
+-- S4s2
+   dw    alone 0.9316|1.0000|0.9316| 9.13  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9993|1.0000| 7.99  record1 0.9974|0.9838|0.9974| 7.98  body 0.9942|0.9725|0.9942| 8.00  body3 0.9787|0.9591|0.9787| 8.22
+   li2   alone 0.9947|1.0000|0.9947| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9998|0.9990|0.9998| 7.98  record1 0.9951|0.9838|0.9951| 7.97  body 0.9846|0.9584|0.9846| 7.94  body3 0.9916|0.9661|0.9916| 7.95
+   li4   alone 0.9983|1.0000|0.9983| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9991|0.9999| 7.98  record1 0.9958|0.9838|0.9958| 7.97  body 0.9968|0.9715|0.9968| 7.97  body3 0.9981|0.9747|0.9981| 7.97
+   li16  alone 0.9372|1.0000|0.9372| 8.54  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9838|0.9974| 7.98  body 0.9989|0.9766|0.9989| 7.98  body3 0.9959|0.9756|0.9959| 8.01
+-- S4s3
+   dw    alone 0.9220|1.0000|0.9220| 9.25  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9972|0.9836|0.9972| 7.98  body 0.9940|0.9727|0.9940| 8.01  body3 0.9869|0.9667|0.9869| 8.10
+   li2   alone 0.9947|1.0000|0.9947| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9997|0.9989|0.9997| 7.98  record1 0.9951|0.9836|0.9951| 7.97  body 0.9855|0.9595|0.9855| 7.95  body3 0.9916|0.9662|0.9916| 7.95
+   li4   alone 0.9986|1.0000|0.9986| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9991|0.9999| 7.98  record1 0.9958|0.9836|0.9958| 7.97  body 0.9965|0.9716|0.9965| 7.97  body3 0.9984|0.9740|0.9984| 7.97
+   li16  alone 0.9194|1.0000|0.9194| 8.69  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9972|0.9836|0.9972| 7.98  body 0.9982|0.9765|0.9982| 7.99  body3 0.9979|0.9768|0.9979| 7.99
+-- S8
+   dw    alone 0.9938|1.0000|0.9938|13.77  intact 1.0000|1.0000|1.0000|13.64  body1 1.0000|0.9993|1.0000|13.65  record1 0.9987|0.9836|0.9987|13.64  body 0.9983|0.9782|0.9983|13.71  body3 0.9972|0.9786|0.9972|13.75
+   li2   alone 0.5424|1.0000|0.5482| 8.08  intact 1.0000|1.0000|1.0000|12.93  body1 0.9994|0.9984|0.9994|12.91  record1 0.9931|0.9836|0.9931|12.78  body 0.6519|0.6458|0.6522| 8.45  body3 0.5820|0.5784|0.5842| 8.03
+   li4   alone 0.5164|1.0000|0.5241| 7.83  intact 1.0000|1.0000|1.0000|12.58  body1 0.9973|0.9963|0.9973|12.41  record1 0.9902|0.9836|0.9902|12.32  body 0.5558|0.5540|0.5568| 7.62  body3 0.5376|0.5351|0.5394| 7.75
+   li16  alone 0.9998|1.0000|0.9998|13.73  intact 1.0000|1.0000|1.0000|13.59  body1 1.0000|0.9993|1.0000|13.60  record1 0.9986|0.9836|0.9986|13.59  body 0.9989|0.9784|0.9989|13.66  body3 0.9988|0.9796|0.9988|13.70
+-- F0
+   dw    alone 0.9969|1.0000|0.9969|23.26  intact 1.0000|1.0000|1.0000|22.97  body1 1.0000|0.9994|1.0000|22.99  record1 0.9994|0.9836|0.9994|22.98  body 0.9988|0.9799|0.9988|23.12  body3 0.9987|0.9804|0.9987|23.21
+   li2   alone 0.5790|1.0000|0.5824| 8.26  intact 1.0000|1.0000|1.0000|19.64  body1 0.9204|0.9226|0.9204|13.31  record1 0.9864|0.9836|0.9864|18.44  body 0.6228|0.6169|0.6232| 8.31  body3 0.6029|0.5980|0.6040| 8.25
+   li4   alone 0.5457|1.0000|0.5582| 8.07  intact 0.8045|1.0000|0.8045|10.32  body1 0.7055|0.7069|0.7055| 8.38  record1 0.8051|0.9836|0.8051|10.13  body 0.6091|0.6033|0.6091| 7.94  body3 0.5920|0.5884|0.5923| 8.02
+   li16  alone 0.9895|1.0000|0.9903|22.40  intact 1.0000|1.0000|1.0000|22.26  body1 1.0000|0.9993|1.0000|22.26  record1 0.9992|0.9836|0.9992|22.23  body 0.9965|0.9761|0.9965|22.30  body3 0.9952|0.9758|0.9952|22.34
+-- C4s1
+   dw    alone 0.7190|1.0000|0.9261| 9.10  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9837|0.9974| 7.98  body 0.9949|0.9727|0.9949| 8.02  body3 0.9792|0.9598|0.9792| 8.26
+   li2   alone 0.7497|1.0000|0.9946| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9998|0.9988|0.9998| 7.98  record1 0.9953|0.9837|0.9953| 7.97  body 0.9863|0.9601|0.9863| 7.95  body3 0.9924|0.9675|0.9924| 7.95
+   li4   alone 0.7498|1.0000|0.9984| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9990|0.9999| 7.98  record1 0.9961|0.9837|0.9961| 7.97  body 0.9963|0.9706|0.9963| 7.97  body3 0.9985|0.9751|0.9985| 7.97
+   li16  alone 0.7134|1.0000|0.9249| 8.64  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9837|0.9974| 7.98  body 0.9986|0.9760|0.9986| 7.99  body3 0.9989|0.9784|0.9989| 7.99
+-- C4s2
+   dw    alone 0.5000|1.0000|0.9261| 9.10  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9993|1.0000| 7.99  record1 0.9974|0.9838|0.9974| 7.98  body 0.9944|0.9726|0.9944| 8.00  body3 0.9710|0.9518|0.9710| 8.33
+   li2   alone 0.4997|1.0000|0.9946| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9998|0.9990|0.9998| 7.98  record1 0.9951|0.9838|0.9951| 7.97  body 0.9857|0.9596|0.9857| 7.94  body3 0.9932|0.9677|0.9932| 7.96
+   li4   alone 0.4998|1.0000|0.9984| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9991|0.9999| 7.98  record1 0.9958|0.9838|0.9958| 7.97  body 0.9968|0.9715|0.9968| 7.97  body3 0.9982|0.9747|0.9982| 7.97
+   li16  alone 0.5004|1.0000|0.9249| 8.64  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9974|0.9838|0.9974| 7.98  body 0.9982|0.9760|0.9982| 7.99  body3 0.9977|0.9773|0.9977| 7.99
+-- C4s3
+   dw    alone 0.2811|1.0000|0.9261| 9.10  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9972|0.9836|0.9972| 7.98  body 0.9697|0.9496|0.9697| 8.39  body3 0.8756|0.8610|0.8756|10.04
+   li2   alone 0.2497|1.0000|0.9946| 7.96  intact 1.0000|1.0000|1.0000| 7.98  body1 0.9997|0.9989|0.9997| 7.98  record1 0.9951|0.9836|0.9951| 7.97  body 0.9863|0.9604|0.9863| 7.95  body3 0.9922|0.9670|0.9922| 7.96
+   li4   alone 0.2498|1.0000|0.9984| 7.97  intact 1.0000|1.0000|1.0000| 7.99  body1 0.9999|0.9991|0.9999| 7.98  record1 0.9958|0.9836|0.9958| 7.97  body 0.9969|0.9721|0.9969| 7.97  body3 0.9982|0.9738|0.9982| 7.97
+   li16  alone 0.2861|1.0000|0.9249| 8.64  intact 1.0000|1.0000|1.0000| 7.99  body1 1.0000|0.9992|1.0000| 7.99  record1 0.9972|0.9836|0.9972| 7.98  body 0.9969|0.9753|0.9969| 8.00  body3 0.9639|0.9446|0.9639| 8.31
+
+== stage 2 at t = 2,000: successor align reading each record (columns), by unit, stage-1 body and successor
+-- S4
+   dw   > dw    intact 1.0000  body1 0.9997  record1 0.9974  body 0.9072  body3 0.8095  none 0.4988 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9990  record1 0.9952  body 0.9006  body3 0.8214  none 0.4979 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9993  record1 0.9961  body 0.9134  body3 0.8400  none 0.5019 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9996  record1 0.9973  body 0.9204  body3 0.8394  none 0.4994 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9995  record1 0.9974  body 0.8962  body3 0.8082  none 0.4988 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9987  record1 0.9952  body 0.8940  body3 0.8232  none 0.4979 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9991  record1 0.9961  body 0.9076  body3 0.8421  none 0.5019 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9994  record1 0.9973  body 0.9127  body3 0.8437  none 0.4994 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9996  record1 0.9974  body 0.9078  body3 0.8118  none 0.4988 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9989  record1 0.9952  body 0.9016  body3 0.8259  none 0.4979 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9993  record1 0.9961  body 0.9147  body3 0.8451  none 0.5019 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9996  record1 0.9973  body 0.9217  body3 0.8470  none 0.4994 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9996  record1 0.9974  body 0.9111  body3 0.8197  none 0.4988 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9989  record1 0.9952  body 0.9031  body3 0.8302  none 0.4979 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9993  record1 0.9961  body 0.9169  body3 0.8479  none 0.5019 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9996  record1 0.9973  body 0.9244  body3 0.8502  none 0.4994 | spacing none 13.96 intact 7.99
+-- S4s1
+   dw   > dw    intact 1.0000  body1 0.9997  record1 0.9972  body 0.9105  body3 0.8123  none 0.4984 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9991  record1 0.9950  body 0.9059  body3 0.8200  none 0.5010 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9994  record1 0.9957  body 0.9177  body3 0.8379  none 0.5067 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9234  body3 0.8372  none 0.4988 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9995  record1 0.9972  body 0.8959  body3 0.8138  none 0.4984 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9989  record1 0.9950  body 0.8941  body3 0.8248  none 0.5010 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9992  record1 0.9957  body 0.9079  body3 0.8437  none 0.5067 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9995  record1 0.9972  body 0.9142  body3 0.8455  none 0.4988 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9995  record1 0.9972  body 0.9049  body3 0.8219  none 0.4984 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9989  record1 0.9950  body 0.9025  body3 0.8278  none 0.5010 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9992  record1 0.9957  body 0.9149  body3 0.8475  none 0.5067 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9209  body3 0.8487  none 0.4988 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9997  record1 0.9972  body 0.9110  body3 0.8244  none 0.4984 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9991  record1 0.9950  body 0.9065  body3 0.8313  none 0.5010 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9994  record1 0.9957  body 0.9184  body3 0.8489  none 0.5067 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9239  body3 0.8531  none 0.4988 | spacing none 13.96 intact 7.99
+-- S4s2
+   dw   > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9110  body3 0.8085  none 0.4994 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9991  record1 0.9951  body 0.9032  body3 0.8174  none 0.5045 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9164  body3 0.8353  none 0.5084 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9207  body3 0.8346  none 0.4993 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9995  record1 0.9973  body 0.8976  body3 0.8103  none 0.4994 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9989  record1 0.9951  body 0.8935  body3 0.8230  none 0.5045 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9992  record1 0.9960  body 0.9058  body3 0.8402  none 0.5084 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9994  record1 0.9973  body 0.9092  body3 0.8440  none 0.4993 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9093  body3 0.8219  none 0.4994 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9990  record1 0.9951  body 0.9026  body3 0.8285  none 0.5045 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9148  body3 0.8461  none 0.5084 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9192  body3 0.8503  none 0.4993 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9137  body3 0.8190  none 0.4994 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9991  record1 0.9951  body 0.9058  body3 0.8275  none 0.5045 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9192  body3 0.8452  none 0.5084 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9231  body3 0.8493  none 0.4993 | spacing none 13.96 intact 7.99
+-- S4s3
+   dw   > dw    intact 1.0000  body1 0.9996  record1 0.9970  body 0.9081  body3 0.8103  none 0.5007 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9990  record1 0.9947  body 0.9018  body3 0.8230  none 0.5055 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9993  record1 0.9956  body 0.9139  body3 0.8421  none 0.5052 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9996  record1 0.9969  body 0.9205  body3 0.8404  none 0.4997 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9994  record1 0.9970  body 0.8962  body3 0.8132  none 0.5007 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9987  record1 0.9947  body 0.8925  body3 0.8239  none 0.5055 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9990  record1 0.9956  body 0.9052  body3 0.8449  none 0.5052 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9994  record1 0.9969  body 0.9115  body3 0.8455  none 0.4997 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9995  record1 0.9970  body 0.9077  body3 0.8176  none 0.5007 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9989  record1 0.9947  body 0.9017  body3 0.8304  none 0.5055 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9992  record1 0.9956  body 0.9145  body3 0.8506  none 0.5052 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9995  record1 0.9969  body 0.9218  body3 0.8531  none 0.4997 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9996  record1 0.9970  body 0.9117  body3 0.8189  none 0.5007 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9990  record1 0.9947  body 0.9056  body3 0.8289  none 0.5055 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9993  record1 0.9956  body 0.9176  body3 0.8489  none 0.5052 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9996  record1 0.9969  body 0.9248  body3 0.8484  none 0.4997 | spacing none 13.96 intact 7.99
+-- S8
+   dw   > dw    intact 1.0000  body1 0.9998  record1 0.9985  body 0.9639  body3 0.9377  none 0.5013 | spacing none 18.67 intact 13.64
+   dw   > li2   intact 1.0000  body1 0.9987  record1 0.9927  body 0.8584  body3 0.7629  none 0.5006 | spacing none 8.00 intact 12.93
+   dw   > li4   intact 1.0000  body1 0.9978  record1 0.9897  body 0.8170  body3 0.7223  none 0.5010 | spacing none 7.85 intact 12.58
+   dw   > li16  intact 1.0000  body1 0.9998  record1 0.9984  body 0.9624  body3 0.9345  none 0.5091 | spacing none 13.96 intact 13.58
+   li2  > dw    intact 1.0000  body1 0.9993  record1 0.9985  body 0.6832  body3 0.6147  none 0.5013 | spacing none 18.67 intact 13.64
+   li2  > li2   intact 1.0000  body1 0.9979  record1 0.9927  body 0.6076  body3 0.5434  none 0.5006 | spacing none 8.00 intact 12.93
+   li2  > li4   intact 1.0000  body1 0.9967  record1 0.9897  body 0.5957  body3 0.5381  none 0.5010 | spacing none 7.85 intact 12.58
+   li2  > li16  intact 1.0000  body1 0.9993  record1 0.9984  body 0.6700  body3 0.6025  none 0.5091 | spacing none 13.96 intact 13.58
+   li4  > dw    intact 1.0000  body1 0.9991  record1 0.9985  body 0.5693  body3 0.5459  none 0.5013 | spacing none 18.67 intact 13.64
+   li4  > li2   intact 1.0000  body1 0.9960  record1 0.9927  body 0.5382  body3 0.5176  none 0.5006 | spacing none 8.00 intact 12.93
+   li4  > li4   intact 1.0000  body1 0.9946  record1 0.9897  body 0.5365  body3 0.5172  none 0.5010 | spacing none 7.85 intact 12.58
+   li4  > li16  intact 1.0000  body1 0.9990  record1 0.9984  body 0.5630  body3 0.5422  none 0.5091 | spacing none 13.96 intact 13.58
+   li16 > dw    intact 1.0000  body1 0.9997  record1 0.9985  body 0.9642  body3 0.9387  none 0.5013 | spacing none 18.67 intact 13.64
+   li16 > li2   intact 1.0000  body1 0.9986  record1 0.9927  body 0.8581  body3 0.7633  none 0.5006 | spacing none 8.00 intact 12.93
+   li16 > li4   intact 1.0000  body1 0.9977  record1 0.9897  body 0.8172  body3 0.7241  none 0.5010 | spacing none 7.85 intact 12.58
+   li16 > li16  intact 1.0000  body1 0.9998  record1 0.9984  body 0.9620  body3 0.9352  none 0.5091 | spacing none 13.96 intact 13.58
+-- F0
+   dw   > dw    intact 1.0000  body1 1.0000  record1 0.9993  body 0.9820  body3 0.9695  none 0.5193 | spacing none 18.67 intact 22.97
+   dw   > li2   intact 1.0000  body1 0.9946  record1 0.9857  body 0.8082  body3 0.7151  none 0.5003 | spacing none 8.00 intact 19.62
+   dw   > li4   intact 0.8093  body1 0.8034  record1 0.8089  body 0.6972  body3 0.6385  none 0.4970 | spacing none 7.85 intact 10.39
+   dw   > li16  intact 1.0000  body1 0.9999  record1 0.9992  body 0.9625  body3 0.9272  none 0.4958 | spacing none 13.96 intact 22.26
+   li2  > dw    intact 1.0000  body1 0.9311  record1 0.9993  body 0.6346  body3 0.6137  none 0.5193 | spacing none 18.67 intact 22.97
+   li2  > li2   intact 1.0000  body1 0.9153  record1 0.9857  body 0.5921  body3 0.5623  none 0.5003 | spacing none 8.00 intact 19.62
+   li2  > li4   intact 0.8093  body1 0.8039  record1 0.8089  body 0.5905  body3 0.5632  none 0.4970 | spacing none 7.85 intact 10.39
+   li2  > li16  intact 1.0000  body1 0.9242  record1 0.9992  body 0.6180  body3 0.5929  none 0.4958 | spacing none 13.96 intact 22.26
+   li4  > dw    intact 1.0000  body1 0.7122  record1 0.9993  body 0.6109  body3 0.5858  none 0.5193 | spacing none 18.67 intact 22.97
+   li4  > li2   intact 1.0000  body1 0.7060  record1 0.9857  body 0.5865  body3 0.5594  none 0.5003 | spacing none 8.00 intact 19.62
+   li4  > li4   intact 0.8093  body1 0.7035  record1 0.8089  body 0.5865  body3 0.5596  none 0.4970 | spacing none 7.85 intact 10.39
+   li4  > li16  intact 1.0000  body1 0.7082  record1 0.9992  body 0.6041  body3 0.5812  none 0.4958 | spacing none 13.96 intact 22.26
+   li16 > dw    intact 1.0000  body1 0.9999  record1 0.9993  body 0.9799  body3 0.9665  none 0.5193 | spacing none 18.67 intact 22.97
+   li16 > li2   intact 1.0000  body1 0.9943  record1 0.9857  body 0.8042  body3 0.7146  none 0.5003 | spacing none 8.00 intact 19.62
+   li16 > li4   intact 0.8093  body1 0.8035  record1 0.8089  body 0.6952  body3 0.6367  none 0.4970 | spacing none 7.85 intact 10.39
+   li16 > li16  intact 1.0000  body1 0.9999  record1 0.9992  body 0.9595  body3 0.9250  none 0.4958 | spacing none 13.96 intact 22.26
+-- C4s1
+   dw   > dw    intact 1.0000  body1 0.9997  record1 0.9972  body 0.9095  body3 0.8128  none 0.4984 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9991  record1 0.9950  body 0.9047  body3 0.8199  none 0.5010 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9994  record1 0.9957  body 0.9166  body3 0.8379  none 0.5067 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9220  body3 0.8369  none 0.4988 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9995  record1 0.9972  body 0.8972  body3 0.8143  none 0.4984 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9989  record1 0.9950  body 0.8952  body3 0.8244  none 0.5010 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9992  record1 0.9957  body 0.9087  body3 0.8433  none 0.5067 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9995  record1 0.9972  body 0.9149  body3 0.8452  none 0.4988 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9995  record1 0.9972  body 0.9051  body3 0.8215  none 0.4984 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9989  record1 0.9950  body 0.9024  body3 0.8278  none 0.5010 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9992  record1 0.9957  body 0.9151  body3 0.8477  none 0.5067 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9209  body3 0.8488  none 0.4988 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9997  record1 0.9972  body 0.9112  body3 0.8258  none 0.4984 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9991  record1 0.9950  body 0.9063  body3 0.8320  none 0.5010 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9994  record1 0.9957  body 0.9182  body3 0.8502  none 0.5067 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9996  record1 0.9972  body 0.9241  body3 0.8543  none 0.4988 | spacing none 13.96 intact 7.99
+-- C4s2
+   dw   > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9107  body3 0.8025  none 0.4994 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9991  record1 0.9951  body 0.9030  body3 0.8122  none 0.5045 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9159  body3 0.8306  none 0.5084 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9206  body3 0.8279  none 0.4993 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9995  record1 0.9973  body 0.8986  body3 0.8122  none 0.4994 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9989  record1 0.9951  body 0.8944  body3 0.8236  none 0.5045 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9992  record1 0.9960  body 0.9065  body3 0.8412  none 0.5084 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9994  record1 0.9973  body 0.9104  body3 0.8446  none 0.4993 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9092  body3 0.8213  none 0.4994 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9990  record1 0.9951  body 0.9026  body3 0.8282  none 0.5045 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9147  body3 0.8458  none 0.5084 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9193  body3 0.8498  none 0.4993 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9996  record1 0.9973  body 0.9130  body3 0.8208  none 0.4994 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9991  record1 0.9951  body 0.9051  body3 0.8282  none 0.5045 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9993  record1 0.9960  body 0.9185  body3 0.8460  none 0.5084 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9995  record1 0.9973  body 0.9226  body3 0.8510  none 0.4993 | spacing none 13.96 intact 7.99
+-- C4s3
+   dw   > dw    intact 1.0000  body1 0.9996  record1 0.9970  body 0.8884  body3 0.7404  none 0.5007 | spacing none 18.67 intact 7.99
+   dw   > li2   intact 1.0000  body1 0.9990  record1 0.9947  body 0.8835  body3 0.7519  none 0.5055 | spacing none 8.00 intact 7.98
+   dw   > li4   intact 1.0000  body1 0.9993  record1 0.9956  body 0.8969  body3 0.7717  none 0.5052 | spacing none 7.85 intact 7.99
+   dw   > li16  intact 1.0000  body1 0.9996  record1 0.9969  body 0.8946  body3 0.7499  none 0.4997 | spacing none 13.96 intact 7.99
+   li2  > dw    intact 1.0000  body1 0.9994  record1 0.9970  body 0.8973  body3 0.8149  none 0.5007 | spacing none 18.67 intact 7.99
+   li2  > li2   intact 1.0000  body1 0.9987  record1 0.9947  body 0.8931  body3 0.8246  none 0.5055 | spacing none 8.00 intact 7.98
+   li2  > li4   intact 1.0000  body1 0.9990  record1 0.9956  body 0.9059  body3 0.8442  none 0.5052 | spacing none 7.85 intact 7.99
+   li2  > li16  intact 1.0000  body1 0.9994  record1 0.9969  body 0.9120  body3 0.8461  none 0.4997 | spacing none 13.96 intact 7.99
+   li4  > dw    intact 1.0000  body1 0.9995  record1 0.9970  body 0.9077  body3 0.8176  none 0.5007 | spacing none 18.67 intact 7.99
+   li4  > li2   intact 1.0000  body1 0.9989  record1 0.9947  body 0.9016  body3 0.8302  none 0.5055 | spacing none 8.00 intact 7.98
+   li4  > li4   intact 1.0000  body1 0.9992  record1 0.9956  body 0.9145  body3 0.8504  none 0.5052 | spacing none 7.85 intact 7.99
+   li4  > li16  intact 1.0000  body1 0.9995  record1 0.9969  body 0.9219  body3 0.8530  none 0.4997 | spacing none 13.96 intact 7.99
+   li16 > dw    intact 1.0000  body1 0.9996  record1 0.9970  body 0.9100  body3 0.7993  none 0.5007 | spacing none 18.67 intact 7.99
+   li16 > li2   intact 1.0000  body1 0.9990  record1 0.9947  body 0.9041  body3 0.8083  none 0.5055 | spacing none 8.00 intact 7.98
+   li16 > li4   intact 1.0000  body1 0.9993  record1 0.9956  body 0.9160  body3 0.8257  none 0.5052 | spacing none 7.85 intact 7.99
+   li16 > li16  intact 1.0000  body1 0.9996  record1 0.9969  body 0.9227  body3 0.8267  none 0.4997 | spacing none 13.96 intact 7.99
+
+== native preferences (alone at t = 4,000; newborns reading nothing at t = 2,000)
+   dw    S4x 0.9098 to 0.9316; S8 0.9938; F0 0.9969 | shape S8 0.9938 F0 0.9969; spacing S8 13.77 | newborn alone: align over S4x 0.4993, spacing 18.67
+   li2   S4x 0.9945 to 0.9947; S8 0.5424; F0 0.5790 | shape S8 0.5482 F0 0.5824; spacing S8 8.08 | newborn alone: align over S4x 0.5022, spacing 8.00
+   li4   S4x 0.9983 to 0.9986; S8 0.5164; F0 0.5457 | shape S8 0.5241 F0 0.5582; spacing S8 7.83 | newborn alone: align over S4x 0.5056, spacing 7.85
+   li16  S4x 0.9038 to 0.9372; S8 0.9998; F0 0.9895 | shape S8 0.9998 F0 0.9903; spacing S8 13.73 | newborn alone: align over S4x 0.4993, spacing 13.96
+   pooled no-record control (N5): +0.501603 [+0.498324, +0.504882]
+
+== the pull (N4) and the 0.97 (N2), with 95% intervals over blocks
+   li2 S8: alone 0.5424; reading intact +0.457550 [+0.454317, +0.460783]; record1 +0.450684 [+0.447507, +0.453860]; body +0.109482 [+0.104682, +0.114282]
+   li2 F0: alone 0.5790; reading intact +0.421005 [+0.417509, +0.424501]; record1 +0.407394 [+0.404146, +0.410643]; body +0.043823 [+0.039478, +0.048168]
+   li4 S8: alone 0.5164; reading intact +0.483543 [+0.480582, +0.486505]; record1 +0.473778 [+0.470596, +0.476959]; body +0.039314 [+0.034898, +0.043730]
+   li4 F0: alone 0.5457; reading intact +0.258774 [+0.255488, +0.262060]; record1 +0.259392 [+0.256205, +0.262578]; body +0.063377 [+0.058219, +0.068536]
+   dw S4 under body: r_align 0.9718, align 0.9940; S4x r_align 0.9718 to 0.9738
+   li2 S4 under body: r_align 0.9599, align 0.9862; S4x r_align 0.9584 to 0.9599
+   li4 S4 under body: r_align 0.9705, align 0.9963; S4x r_align 0.9705 to 0.9716
+   li16 S4 under body: r_align 0.9759, align 0.9984; S4x r_align 0.9759 to 0.9766
+
+== records by condition (r_align at t = 4,000; S8 and F0)
+   dw    intact S8 1.0000 F0 1.0000  body1 S8 0.9993 F0 0.9994  record1 S8 0.9836 F0 0.9836  body S8 0.9782 F0 0.9799  body3 S8 0.9786 F0 0.9804
+   li2   intact S8 1.0000 F0 1.0000  body1 S8 0.9984 F0 0.9226  record1 S8 0.9836 F0 0.9836  body S8 0.6458 F0 0.6169  body3 S8 0.5784 F0 0.5980
+   li4   intact S8 1.0000 F0 1.0000  body1 S8 0.9963 F0 0.7069  record1 S8 0.9836 F0 0.9836  body S8 0.5540 F0 0.6033  body3 S8 0.5351 F0 0.5884
+   li16  intact S8 1.0000 F0 1.0000  body1 S8 0.9993 F0 0.9993  record1 S8 0.9836 F0 0.9836  body S8 0.9784 F0 0.9761  body3 S8 0.9796 F0 0.9758
+
+== phase conflicts: q by condition at t = 1,000 / 2,000 / 4,000 (body | record)
+   C4s1 dw    alone -0.843/-0.835/-0.828 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.998  record1 +0.998/+0.995/+0.989 | +0.993/+0.984/+0.967  body +0.988/+0.987/+0.980 | +0.941/+0.936/+0.930  body3 +0.967/+0.958/+0.951 | +0.922/+0.911/+0.906
+   C4s1 li2   alone -0.974/-0.977/-0.979 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+0.999/+0.999 | +0.997/+0.997/+0.996  record1 +0.997/+0.991/+0.982 | +0.993/+0.984/+0.967  body +0.929/+0.940/+0.944 | +0.871/+0.882/+0.887  body3 +0.892/+0.941/+0.973 | +0.828/+0.880/+0.914
+   C4s1 li4   alone -0.992/-0.992/-0.994 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.997  record1 +0.997/+0.992/+0.984 | +0.993/+0.984/+0.967  body +0.971/+0.982/+0.985 | +0.917/+0.925/+0.927  body3 +0.965/+0.988/+0.994 | +0.903/+0.927/+0.938
+   C4s1 li16  alone -0.904/-0.859/-0.846 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.998  record1 +0.998/+0.995/+0.989 | +0.993/+0.984/+0.967  body +0.993/+0.995/+0.994 | +0.944/+0.944/+0.944  body3 +0.987/+0.994/+0.996 | +0.937/+0.942/+0.949
+   C4s2 dw    alone -0.871/-0.858/-0.852 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.999/+0.999/+0.999  record1 +0.999/+0.998/+0.996 | +0.993/+0.983/+0.968  body +0.992/+0.991/+0.988 | +0.950/+0.950/+0.945  body3 +0.958/+0.944/+0.938 | +0.921/+0.909/+0.898
+   C4s2 li2   alone -0.987/-0.988/-0.990 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.998  record1 +0.998/+0.995/+0.991 | +0.993/+0.983/+0.968  body +0.964/+0.969/+0.973 | +0.912/+0.917/+0.922  body3 +0.953/+0.975/+0.987 | +0.900/+0.924/+0.935
+   C4s2 li4   alone -0.996/-0.996/-0.997 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.998  record1 +0.999/+0.996/+0.992 | +0.993/+0.983/+0.968  body +0.986/+0.991/+0.995 | +0.937/+0.941/+0.945  body3 +0.985/+0.994/+0.996 | +0.935/+0.946/+0.948
+   C4s2 li16  alone -0.928/-0.880/-0.849 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.999/+0.999/+0.999  record1 +0.999/+0.998/+0.995 | +0.993/+0.983/+0.968  body +0.995/+0.996/+0.996 | +0.952/+0.953/+0.952  body3 +0.989/+0.993/+0.994 | +0.947/+0.953/+0.952
+   C4s3 dw    alone -0.880/-0.865/-0.860 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.999/+0.999/+0.999  record1 +0.999/+0.998/+0.996 | +0.992/+0.982/+0.967  body +0.971/+0.956/+0.940 | +0.933/+0.919/+0.902  body3 +0.822/+0.759/+0.744 | +0.825/+0.751/+0.716
+   C4s3 li2   alone -0.991/-0.992/-0.993 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.998/+0.998  record1 +0.999/+0.996/+0.993 | +0.992/+0.982/+0.967  body +0.975/+0.980/+0.983 | +0.925/+0.931/+0.933  body3 +0.960/+0.978/+0.989 | +0.909/+0.930/+0.942
+   C4s3 li4   alone -0.997/-0.997/-0.998 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.998/+0.999/+0.998  record1 +0.999/+0.997/+0.994 | +0.992/+0.982/+0.967  body +0.991/+0.994/+0.996 | +0.943/+0.948/+0.949  body3 +0.986/+0.995/+0.997 | +0.937/+0.949/+0.952
+   C4s3 li16  alone -0.936/-0.886/-0.852 | +1.000/+1.000/+1.000  intact +1.000/+1.000/+1.000 | +1.000/+1.000/+1.000  body1 +1.000/+1.000/+1.000 | +0.999/+0.999/+0.999  record1 +0.999/+0.998/+0.996 | +0.992/+0.982/+0.967  body +0.995/+0.995/+0.995 | +0.954/+0.954/+0.954  body3 +0.946/+0.942/+0.926 | +0.907/+0.904/+0.889
+   alone   body q -0.9981 to -0.8282; record q +1.0000 to +1.0000
+   intact  body q +1.0000 to +1.0000; record q +1.0000 to +1.0000
+   body1   body q +0.9993 to +1.0000; record q +0.9962 to +0.9987
+   record1 body q +0.9815 to +0.9961; record q +0.9668 to +0.9678
+   body    body q +0.9399 to +0.9962; record q +0.8865 to +0.9541
+   body3   body q +0.7435 to +0.9970; record q +0.7158 to +0.9519
+   successors at t = 2,000, q reading each record (min to max over stage-1 bodies, successors and conflicts):
+   intact  q +1.0000 to +1.0000 (mean +1.0000); align 1.0000 to 1.0000
+   body1   q +0.9956 to +0.9995 (mean +0.9984); align 0.9987 to 0.9997
+   record1 q +0.9797 to +0.9956 (mean +0.9906); align 0.9947 to 0.9973
+   body    q +0.6868 to +0.8696 (mean +0.7956); align 0.8835 to 0.9241
+   body3   q +0.5052 to +0.7473 (mean +0.6200); align 0.7404 to 0.8543
+   none    q -0.0026 to +0.0194 (mean +0.0060); align 0.4984 to 0.5084
+
+== further numbers quoted in the report
+   newborn dw    reading nothing, S4x: align 0.4988 0.4984 0.4994 0.5007 | shape 0.5178 0.5178 0.5178 0.5178 | spacing 18.67
+   newborn li2   reading nothing, S4x: align 0.4979 0.5010 0.5045 0.5055 | shape 0.6045 0.6045 0.6045 0.6045 | spacing 8.00
+   newborn li4   reading nothing, S4x: align 0.5019 0.5067 0.5084 0.5052 | shape 0.5993 0.5993 0.5993 0.5993 | spacing 7.85
+   newborn li16  reading nothing, S4x: align 0.4994 0.4988 0.4993 0.4997 | shape 0.5279 0.5279 0.5279 0.5279 | spacing 13.96
+   li2 S8 body1: r_align at 1,000/2,000/4,000 0.9988/0.9989/0.9984; body align 0.9997/0.9996/0.9994 | body: r_align 0.8432/0.7592/0.6458
+   li2 F0 body1: r_align at 1,000/2,000/4,000 0.9841/0.9622/0.9226; body align 0.9818/0.9596/0.9204 | body: r_align 0.6781/0.6386/0.6169
+   li4 S8 body1: r_align at 1,000/2,000/4,000 0.9983/0.9978/0.9963; body align 0.9992/0.9985/0.9973 | body: r_align 0.6647/0.5967/0.5540
+   li4 F0 body1: r_align at 1,000/2,000/4,000 0.9289/0.7522/0.7069; body align 0.7538/0.7287/0.7055 | body: r_align 0.6354/0.6117/0.6033
+   newborn dw   : reading dw's and li16's body S8/F0 records 0.963860 to 0.981995; reading body3 S4x records 0.808205 to 0.824432; reading the intact S8 record 1.000000, F0 1.000000
+   newborn li2  : reading dw's and li16's body S8/F0 records 0.804192 to 0.858368; reading body3 S4x records 0.817368 to 0.831322; reading the intact S8 record 0.999992, F0 0.999977
+   newborn li4  : reading dw's and li16's body S8/F0 records 0.695152 to 0.817238; reading body3 S4x records 0.835327 to 0.850571; reading the intact S8 record 1.000000, F0 0.809265
+   newborn li16 : reading dw's and li16's body S8/F0 records 0.959518 to 0.962494; reading body3 S4x records 0.834595 to 0.853149; reading the intact S8 record 1.000000, F0 1.000000
+   N7 intervals: dw - li4, intact F0 +0.190735 [+0.189039, +0.192431]
+   N7 dw body S8: dw - li4 +0.146820 [+0.144021, +0.149619]; dw - li2 +0.105492 [+0.102009, +0.108975]
+   N7 dw body F0: dw - li4 +0.284790 [+0.281998, +0.287582]; dw - li2 +0.173820 [+0.170447, +0.177194]
+   N7 li16 body S8: dw - li4 +0.147011 [+0.143930, +0.150092]; dw - li2 +0.106155 [+0.102534, +0.109777]
+   N7 li16 body F0: dw - li4 +0.284775 [+0.282909, +0.286641]; dw - li2 +0.175735 [+0.172601, +0.178870]
+   li2 record under body1 vs body, S8: 0.9984 / 0.6458; F0: 0.9226 / 0.6169
+   li4 record under body1 vs body, S8: 0.9963 / 0.5540; F0: 0.7069 / 0.6033
+   conflicts, the record's q under body at t = 1,000 (min to max): +0.871460 to +0.953532 | the body's q under intact and body at t = 1,000: +0.928772 to +1.000000
+   conflicts under alone, li2 and li4: align (record's phase) and shape (any translation) at t = 4,000: li2 C4s1 0.7497/0.9946; li2 C4s2 0.4997/0.9946; li2 C4s3 0.2497/0.9946; li4 C4s1 0.7498/0.9984; li4 C4s2 0.4998/0.9984; li4 C4s3 0.2498/0.9984
+done

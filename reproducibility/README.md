@@ -50,3 +50,7 @@ The earlier [v2.1 package](../paper/v2.1/README.md) includes both PDFs and 97 ev
 ## Version 2.4 update
 
 The [current package](../paper/v2.4/README.md) has both PDFs, 116 evidence notes, 70 methods and all main infographics. [New source availability](../paper/v2.4/SOURCE_AVAILABILITY.md) distinguishes frozen selections, implementation context and omitted large inputs. Eight named PDFs are registered; all other files stay at most 256 KiB. No scientific replay is claimed.
+
+## Version 2.5 source update
+
+The [v2.5 package](../paper/v2.5/README.md) contains 124 evidence notes, 79 methods and the current four-chapter source. Its PDF build follows the author’s source push. The eight earlier PDF exceptions and all earlier versioned packages are unchanged. See the [availability inventory](../paper/v2.5/SOURCE_AVAILABILITY.md) for omitted data, report-only claims and uninspected follow-ups. No scientific replay is performed.

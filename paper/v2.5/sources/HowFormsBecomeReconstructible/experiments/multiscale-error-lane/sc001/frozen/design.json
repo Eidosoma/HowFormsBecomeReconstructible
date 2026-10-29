@@ -1,0 +1,300 @@
+{
+ "study": "SC001",
+ "digest": "8edd5140b8d8b5240ae3e17767bc782954cfe7d8370cc0bd1b1c325e8beefaef",
+ "frozen_utc": "2026-10-28T00:42:33Z",
+ "sources": {
+  "br001/__init__.py": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+  "br001/analyze.py": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+  "br001/calibrate.py": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+  "br001/checks.py": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+  "br001/design.py": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+  "br001/predict.py": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+  "br001/run.py": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+  "br001/sim.py": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+  "br001/tables.py": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+  "br001/worker.py": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+  "cellpop/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cellpop/core.py": "36651ac972dce6e980363528770ef3af520639c10502b86411b3958fcfaeca86",
+  "cellpop/loop.py": "5a7dffb8dc1930d9dd50b8b32a7885b166e479c66e65fe2d02514bbb35401d8f",
+  "dl001/__init__.py": "b0bc5f4b0be1a3664fc17aed0ae197b0628ea0a3eab053d72ed7dda5013f5fa1",
+  "dl001/analyze.py": "b6e8e049ec64b1deefef51e1e1a70c6c9e3d482520a4dd55085bcc29962e61fd",
+  "dl001/checks.py": "33280565f3ac7a521d1d6e9fa1d753bbd084f96671c18d909688a683c351a024",
+  "dl001/design.py": "c006c321a97efaba172d388437ae36a43ecb3fff0f1f5b18a85a910e94d1a960",
+  "dl001/predict.py": "91449da942e5523b08b0ac6cdaac0f088f4651df3b7fbd65c7a5f6ca539da877",
+  "dl001/run.py": "9df13ada76f2a9569a220bdf3733a1e347de081c16236633a6532ad3889792d6",
+  "dl001/sim.py": "7ee0ad20d79112dff14fec65db5c78c9d206cabe8b3ea53beb4218a939194f21",
+  "dl001/tables.py": "d742799b569447877d90b9d8d0dd9a83af3173dda71a9b0bdde0d42a8d907faa",
+  "dl001/worker.py": "490e75ce95ad1f356e102cf0bb089df05a6eb56312b19c0d2adaea0e9f5bbb81",
+  "dl003/__init__.py": "fb08563b2d7be39344ca15a0a12f8a85cb2473415646010ff6597d022759c031",
+  "dl003/analyze.py": "f61ad429c14663315a678e0944f638ebf5b5c54fb49a42dc120916ca47599dc0",
+  "dl003/checks.py": "250f2e216ffbf32d3cc02bfae7fe15c34cb2b53997c8fdeece3739033f8c3660",
+  "dl003/design.py": "6b028d969ec9f10c851c94d19d5d1682d38c68ebf82448cd6d6abaff1d6adeb8",
+  "dl003/predict.py": "64b604e33f9f28f7f34922458698a537856b70f0af67f43ea7bf3442f0c1e2bf",
+  "dl003/run.py": "b2648f7ce9d94579f72360c0f8d83e1eea061f06439fd36a400fbfc39c39ffd1",
+  "dl003/sim.py": "420827a923caefc854d6d3a7046f167de2eaa3d2767ea5f79c4691cbf8dd7ba5",
+  "dl003/tables.py": "aead99e8fcd218d2a392fa03497c17f52f2f3268913a30b56c3bd26469346c7b",
+  "dl003/worker.py": "cd0e0accbc7d1d2df45fa2dc799b5f9c250dc4aba3a7dc50d33b35864af9d816",
+  "fn001/__init__.py": "d9929c179352769379caa14084975601605ee9e8bd74682ec18b7b25fc472467",
+  "fn001/analyze.py": "bbe73fd300585a9184cc1d4cdb8796ee85272e73403f4ace803209a73fffd055",
+  "fn001/checks.py": "d38859fc91ba98df00511b730006c96c070554c41e6d3e653bfa7045f35e0c31",
+  "fn001/design.py": "0454a2c2b10a112bd8a4274e1d2f1065f1f5768b8e08f52ca0074a6982d05ce5",
+  "fn001/predict.py": "b420ae4078fefb61a0e4f6e3dcff365bf0d4923c73b3edddaee5b7f12ff8fd18",
+  "fn001/run.py": "ea258d6f3e6bbb77fdd949c44cbd78f1c33e8f7c744accdb30d82e7be796b52d",
+  "fn001/sim.py": "96bb21020e67168c1fdfd138d336c0926b8af1c004df093a12ab2b2845738d62",
+  "fn001/tables.py": "47a703bfec05bdca7e5f96d86adc2f0b05cfe514c76fb6acc8a58ad5c2d7c877",
+  "fn001/worker.py": "3c87ccb136c6d2bdd72ed9b3c61be61891abf30023c61409ba9e90451b3e07f7",
+  "lr001/__init__.py": "6e22519496268ac8aed5f476a7a81cb624ddaf7f7b796ba582e2b0b2d00639e2",
+  "lr001/analyze.py": "671e6090af2df117568c63c9f827809bc18d8306f5897b607ea3628f5696cbd6",
+  "lr001/checks.py": "dab516a5c349d6ceb829362f92b4362fa5ae9173b802c2fadb52a82ed43629cd",
+  "lr001/design.py": "a88d4993e23a56114e9eb72553f73c1cc6129a9c8bdd0fc86e6ad3048aa55446",
+  "lr001/predict.py": "d286fe43f6b70068eaf4a0cef825a7ab2b75945f9b1352d93b51632bf779b3f4",
+  "lr001/run.py": "15f2939ad3c3c91c81e3f1a12366dbda8377290b4e7930d3c800062d9dab6d52",
+  "lr001/scoring.py": "a468e0dbcd6f48afc2150a38da288b2ebca6d337b6da0b720b28829d9483814f",
+  "lr001/sim.py": "0865a9644a9c97a54adda76c3e623a0e73b9ce987bd572ed16e8b5b062af56a6",
+  "lr001/tables.py": "621caf13c363e9a5daeaa9d10566a0cf572d9df255e5a658af6ca392c7f55b04",
+  "lr001/worker.py": "4209a3a57b5a473da0ab77e8c156c51f19b8d49766a0db83f8bb3cdf68b6167b",
+  "lr004/__init__.py": "a1762c4fc9ff73d286530b714e426982d4c4ec69dd4632812b1b5f46eff8a40d",
+  "lr004/analyze.py": "f60932ab2817f78fd22f5d2aed382edce43e505d61d2aef9780ffadda7fa9071",
+  "lr004/checks.py": "162a0386b3b70f51f0e7830542b15c7780a5783c6553c5ec1081f03f8144c7e7",
+  "lr004/design.py": "329c9dad0fd7e922799078a66bca47084c351bdc1ead80fd5fd58adab4a532cd",
+  "lr004/predict.py": "c822b0367deab69fe286446e2daf97949f0f05b32da0470f17f7a0638beadc74",
+  "lr004/run.py": "dfd5681cc6ff10abb9b90297fb83acb73659c8251d97b924f6f1b132369939e5",
+  "lr004/sim.py": "2384c06f9c12b22470cd67e86a7e0842c32c76cb5e70e80e835d1d32a9446666",
+  "lr004/tables.py": "480f4fc4c079e4e9d5e9cc8d2ca2fbfcadb35388386a362908c5ce06d3c713b4",
+  "lr004/worker.py": "915c6aeb7683a37ff3f94e89e06fd8a3862412f838eb5ccc620b3fb699824be9",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "msegrid/__init__.py": "d626f19334d6c7310ea4b2c1275ca93f3a1612c3bedf47e69e7cb7783e51e93f",
+  "msegrid/core.py": "1f277ab621c5b8edc239a61de9abadeb782a6bbd66a843d72cad5e0a22be724e",
+  "sc001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sc001/analyze.py": "4441ff6ee58bb6b320f7dba8026fa4e20625dde2e8c5526a290d4a82e4c15a09",
+  "sc001/checks.py": "8e23660799a885a2f2952756ab3b4ec47a0f0bfad8c466114e8837230167fe95",
+  "sc001/design.py": "11158122d85b007f19286e76996e16b29282b5f6e7488c9ebf9638bc924e9ca0",
+  "sc001/predict.py": "e7c72f172896ae6684c8c53e9c6e060724285ae0da6af768286852179da1dcdf",
+  "sc001/run.py": "c18ebc6ed31c40144ae66b3022eaaf98cd930acc1c9f58d4663855edfd2a8050",
+  "sc001/sim.py": "05e95c752a4d97127a13c86d2e2eac877ad3fb5b426928db8778581068774bef",
+  "sc001/tables.py": "a08373aaaa28da2ece6944b0ad037aff90468e597830b86bebebe7516ed85e75",
+  "sc001/worker.py": "fbbeea63ba295cd28053dd7d7358e85f8d09b4c31f976c1a5546aa6959400e36"
+ },
+ "design": {
+  "study": "SC001",
+  "tag": "mse-sc001",
+  "probe_tag": "mse-p22",
+  "identities": {
+   "preflight": [
+    900784,
+    900786
+   ],
+   "development": [
+    910080,
+    910096
+   ]
+  },
+  "purpose": {
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "debug_blocks": [
+   900786,
+   900788
+  ],
+  "probe_blocks": [
+   900780,
+   900784
+  ],
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "sigma_acq": 0.1,
+  "side": 32,
+  "sigma": 0.1,
+  "chunk": 250,
+  "kill_sd": 0.2,
+  "eps": 0.05,
+  "kr": 1.0,
+  "sigma_r": 0.02,
+  "kc": 0.0,
+  "gain": 0.2,
+  "strength0": 0.8,
+  "eta": 0.01,
+  "bodies": {
+   "dw": [
+    0.0,
+    0.0
+   ],
+   "li4": [
+    1.681101220843931,
+    4.0
+   ]
+  },
+  "window": 4000,
+  "snaps": [
+   1000,
+   2000,
+   4000
+  ],
+  "trace": 100,
+  "g_anchor": 1.0,
+  "geoms": [
+   "perp",
+   "par"
+  ],
+  "thetas_g": [
+   0.0
+  ],
+  "turn": 0.001,
+  "kappa": 0.2,
+  "g_sig": 0.25,
+  "dmax": 15,
+  "far": [
+   12,
+   16
+  ],
+  "near": [
+   0,
+   2
+  ],
+  "arms_g": [
+   {
+    "mode": "front",
+    "speed": 25,
+    "lam": 0.0
+   },
+   {
+    "mode": "front",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "front",
+    "speed": 200,
+    "lam": 0.0
+   },
+   {
+    "mode": "grow",
+    "speed": 25,
+    "lam": 0.0
+   },
+   {
+    "mode": "grow",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "grow",
+    "speed": 200,
+    "lam": 0.0
+   },
+   {
+    "mode": "nb",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "smooth",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "turn",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "none",
+    "speed": 100,
+    "lam": 0.0
+   },
+   {
+    "mode": "diff",
+    "speed": 100,
+    "lam": 1.5
+   },
+   {
+    "mode": "diff",
+    "speed": 100,
+    "lam": 6.0
+   }
+  ],
+  "patterns_r": [
+   "S4",
+   "F0"
+  ],
+  "modes": [
+   "none",
+   "reset",
+   "regrow",
+   "regrow-nb"
+  ],
+  "teachers": [
+   "record+parity",
+   "body"
+  ],
+  "rates": [
+   0.0,
+   0.001
+  ],
+  "patch": 8,
+  "regrow": [
+   0.04,
+   0.01
+  ],
+  "reads_r": [
+   250,
+   1000,
+   2000,
+   4000
+  ],
+  "conds_r": [
+   "0/record+parity/none",
+   "0/record+parity/reset",
+   "0/record+parity/regrow@0.04",
+   "0/record+parity/regrow-nb@0.04",
+   "0/record+parity/regrow@0.01",
+   "0/record+parity/regrow-nb@0.01",
+   "0/body/none",
+   "0/body/reset",
+   "0/body/regrow@0.04",
+   "0/body/regrow-nb@0.04",
+   "0/body/regrow@0.01",
+   "0/body/regrow-nb@0.01",
+   "0.001/record+parity/none",
+   "0.001/record+parity/reset",
+   "0.001/record+parity/regrow@0.04",
+   "0.001/record+parity/regrow-nb@0.04",
+   "0.001/record+parity/regrow@0.01",
+   "0.001/record+parity/regrow-nb@0.01",
+   "0.001/body/none",
+   "0.001/body/reset",
+   "0.001/body/regrow@0.04",
+   "0.001/body/regrow-nb@0.04",
+   "0.001/body/regrow@0.01",
+   "0.001/body/regrow-nb@0.01"
+  ],
+  "units": {
+   "G": [
+    "S4_t0"
+   ],
+   "R": [
+    "S4_t0",
+    "F0_t0"
+   ]
+  }
+ }
+}

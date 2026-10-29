@@ -1,0 +1,791 @@
+<a id="e61"></a>
+## E61 — Reader compensation and reconnection support short damaged renewal
+
+**Evidence status:** E023 receiving-reader intervention; E024/E025 prospective three-renewal studies with a fresh E025 confirmation; E026 terminal interventions on existing E025 packets. Each scientific cohort has 32 independent blocks and 512 lineages. Related packets and assay repetitions are not additional independent samples.
+
+**Result used:** E023 changes the recipient's normalization while retaining packet production and paired recipient conditions: scattered-terminal both-cue success rises from 27.5% to 99.6%, +72.07 points [68.16, 75.98], and full qualification passes. E025 confirms strength-compensated renewal through three damaged bodies at 80.08% scattered-terminal success against 62.11% cumulative matched-erasure copying, +17.97 points [13.48, 22.66]. E026 adds the reconstructed connections to the copied record, raising it to 83.01%, and removes them from the reconstructed record, lowering it to 60.94%. Protected perfect copying remains a distinct comparator.
+
+**Boundary:** Receiver normalization changes what the same record expresses; it is not itself evidence of more transmitted information. E026 recomputes the reader normalization after edits and establishes a terminal contribution from reconnection, not a prospectively tested serial policy or a unique decomposition into topology and weight effects. Three-renewal success does not establish longer durability; E031 later fails that extension.
+
+**Sources:** [E023 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E023_receiver_compensation/runs/receiver_v1/REPORT.md); [E024 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E024_serial_compensation/runs/serial_v1/REPORT.md); [E025 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E025_rewriting_confirmation/runs/confirmation_v1/REPORT.md); [E026 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E026_restoration_intervention/runs/restoration_v1/REPORT.md). C.23 and the v0.14 source package preserve protocols and selected metadata.
+
+<a id="e62"></a>
+## E62 — Repair precursors need continued activity, but reconnection alone does not ensure function
+
+**Evidence status:** E027–E036 contain prospective policy comparisons and finite-horizon extensions interleaved with E028's intervention on known histories. E032/E037 diagnose existing records. Fresh cohorts and reused histories remain separate; earlier unsuccessful policies are retained.
+
+**Result used:** Preserving every nonzero surviving weight in E027 fails where full rewriting succeeds. E028 shows that weak restored connections must participate in reading and be rewritten: next-record success is 79.49% when kept and refreshed, versus 55.47% with their previous weak values frozen and 55.66% when erased before reading. E029's selective preservation of strong weights qualifies over three damaged rebuilds and E030 confirms it, but E031 reaches only 22.27% after sixteen under terminal scattered injury, failing absolute durability. Later settling and capture experiments do not remove all limits. E036's pure cue-contrast writer reaches 0% at eight and sixteen renewals. E037 finds zero restored edges among 572,280 returning-connection opportunities, compared with 99.05% restoration under standard coactivity writing.
+
+**Mechanism and boundary:** A returning cell has no incident inherited weights. Its paired activity is identical across opposite cues, making its cue difference zero; the difference-product writer therefore cannot reconnect it. This follows from the implemented reader/writer and is checked in saved histories. It does not establish that graph connectivity is sufficient: standard policies can retain connected outputs while losing cue-sensitive function. Repeated edge opportunities and generations are not independent samples. The subsequent fallback-writer tests, rather than the diagnosis alone, supply intervention evidence for a remedy.
+
+**Sources:** [E027](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E027_selective_renewal/runs/selective_v1/REPORT.md); [E028](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E028_precursor_rewriting/runs/precursor_v1/REPORT.md); [E030](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E030_maturing_confirmation/runs/confirmation_v1/REPORT.md); [E031](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E031_renewal_durability/runs/durability_v1/REPORT.md); [E036 executed v2](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E036_serial_cue_capture_v2/runs/serial_v1/REPORT.md); [E037 diagnosis](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E037_repair_support_diagnosis/runs/diagnosis_v1/REPORT.md). Intermediate E029/E032–E035 reports and protocols are included in the v0.14 package.
+
+<a id="e63"></a>
+## E63 — Full activity-based rewriting qualifies through 32 damaged rebuilds
+
+**Evidence status:** E038 qualifies a sixteen-renewal fallback writer. E039 confirms its preserving component on fresh blocks but fails the additional full-rewrite superiority criterion. E040's preserving candidate fails three of seventeen 32-renewal durability requirements; a favorable secondary full-rewrite result motivates E041. E041 tests that frozen candidate and matched ablations on 32 new blocks (32000–32031), four founders and four recipient lineages per founder, without pooling earlier cases.
+
+**Result used:** After 32 damaged renewals in E041, full rewriting with cue-sensitive capture and ordinary-coactivity fallback gives 89.45% [86.52, 92.19] intact terminal both-cue success and 83.59% [80.66, 86.33] with scattered terminal injury. The primary comparison against the same writer preserving available incoming weights with absolute value >0.5 gives +10.94 points [6.84, 15.23], exceeding the five-point lower-bound requirement. All seventeen durability requirements pass. The matched full-rewrite reading-blocked and writing-blocked controls both score zero. Scattered-terminal success is 72.66% for fallback capture with strong preservation, 37.30% for ordinary coactivity with strong preservation, 20.12% for ordinary full rewriting, 0% for cumulative matched-erasure copying and 100% for protected exact copying. Figure 9 transcribes the original report and pointwise intervals.
+
+**Boundary:** Every renewing body loses 24 non-port cells; terminal injuries are additional and do not feed back into the lineage. Full rewriting uses only the current developed body to set available weights; preserving policies retain a separate direct copying route. Acquisition teaches a supplied two-cue response, and ports, normalization, capture, timing and the 4096-byte record format remain supplied. Qualified reliability at specified horizons does not imply correct performance at every intermediate boundary, general competence, spontaneous origin of the writer, or indefinite maintenance. Perfect preservation remains superior at the reported endpoint. E039/E040 failures are not retroactively relabeled successes.
+
+**Sources:** [E038 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E038_weak_bridge_capture/runs/serial_v1/REPORT.md); [E039 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E039_weak_bridge_confirmation/runs/serial_v1/REPORT.md); [E040 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E040_weak_bridge_durability/runs/serial_v1/REPORT.md); [E041 protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E041_full_rewrite_confirmation/PROTOCOL.md); [E041 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E041_full_rewrite_confirmation/runs/serial_v1/REPORT.md); [retained passing E041 audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E041_full_rewrite_confirmation/runs/serial_v1/INDEPENDENT_AUDIT.json). The native E041 summary and raw arrays are unavailable in this checkout. The report's completion binding and the audit's completion identity were verified; the audit was not rerun.
+
+<a id="e64"></a>
+## E64 — Functional failure can be transient; fresh rollback qualification still fails
+
+**Evidence status:** E042/E044/E046 analyze existing E041 histories; E043/E045/E047–E049 intervene on selected retained cases. E048 passes its one-body development criteria; E049 fails its complete third-body criterion. E050 is a separate 32-block fresh confirmation with a positive effect but failed joint qualification. These stages are not pooled or treated as repeated independent confirmations of E041.
+
+**History/terminal cross-tabulation:** Of the 205 histories passing all saved rebuilding-body readouts, 192 pass and 13 fail the terminal fresh-recipient assay. Of the 307 ever-failed histories, 236 pass and 71 fail that assay. These four cells come from the retained E046 report's outcome-group counts and their complements; they are not new trajectories or record-specific continuation probabilities. C.23 binds the portable report extract and distinguishes terminal injury from the rebuilding-body readouts.
+
+**Result used:** E046 finds at least one failed rebuilding body in 307/512 lineages, leaving 205/512 (40.04%) passing all 32 recorded rebuilding-body readouts. The complement and percentage are arithmetic from the reported counts. This same-cohort descriptive endpoint differs from E041's 428/512 (83.59%) successful injured terminal recipients. Of first-failure cases with three further bodies observed, 243/281 recover within that interval (86.48%). Groupings by final success and event timing are exploratory and outcome-conditioned. E047 branches 301 eligible first-failure cases into unchanged, targeted-rollback and equal-count random-rollback next-body tests. Both-cue success is 57.81%, 64.12% and 27.91%, respectively. Targeted minus unchanged is +6.31 points [0.68, 12.50], with 55 rescues and 36 losses; its lower bound fails the required +5 points. Targeted minus random is +36.21 [29.85, 42.96]. The joint useful-direction criterion remains failed.
+
+The fixed half-restoration follow-up E048 gives 208/301 next-body successes, versus 174/301 unchanged and 193/301 full rollback, passing its three development criteria. E049 follows one rollback through three later bodies; its +6.05-point [1.39, 10.95] third-body gain fails the required lower bound above five. E050 generates 512 new lineages and enrolls all 294 first failures with three later bodies available. Third-body success is 77.89% unchanged, 86.39% half rollback and 84.35% full rollback. Half-minus-unchanged is +8.50 points [4.38, 12.87]; half-minus-full is +2.04 [0.00, 4.32]; reduction in original-success losses is +1.02 [−0.38, 2.97]. The joint requirements are not met. Secondary all-three-body success is 52.04%, 66.67% and 60.20%, respectively. Intervals resample whole blocks and retain their original pointwise scope.
+
+**Boundary:** E046 explicitly censors cases without adequate remaining follow-up. The functional failures and recoveries are not strict-eight parent–daughter resemblance events. Connection weakening often follows the failed body response, so its association cannot establish the original cause of that response. E047 restores old sign and magnitude together; equal edit counts do not match weight mass or sign. E047 tests one successor; E049/E050 apply rollback once, then transmit each newly written record through three bodies. Rollback has access to incoming and outgoing weights; it is not the ordinary writer or an autonomous trigger. Positive effects and secondary sustained success do not replace failed declared margins.
+
+**Sources:** [E042](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E042_late_failure_diagnosis/runs/diagnosis_v1/REPORT.md); [E043](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E043_late_reader_timing/runs/expression_v1/REPORT.md); [E044](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E044_transition_diagnosis/runs/diagnosis_v1/REPORT.md); [E045](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E045_weakening_rollback/runs/rollback_v1/REPORT.md); [E046](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E046_failure_chronology/runs/chronology_v1/REPORT.md); [E047](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E047_onset_rollback/runs/onset_v2/REPORT.md). The executed E047 v2 retains the documented signed-zero assertion correction and exact original next-body replay.
+
+**Added sources:** [E048 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E048_partial_rollback/runs/partial_v1/REPORT.md); [E049 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E049_rollback_persistence/runs/persistence_v1/REPORT.md); [E050 protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E050_fresh_rollback_confirmation/PROTOCOL.md); [E050 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E050_fresh_rollback_confirmation/runs/confirmation_v1/REPORT.md); [E050 saved audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E050_fresh_rollback_confirmation/runs/confirmation_v1/INDEPENDENT_AUDIT.json). The completed report and passing audit supersede the source README's launch-only label.
+
+<a id="e65"></a>
+## E65 — Isolated retention, collective readiness and intracellular preparation separate
+
+**Evidence status:** Completed P17/P18 timing forks and P20/P21 saved-state substitutions in the corrected BITSEY lineage. Written and ordinary sources share ancestry with earlier campaigns; numerical settings and related forks are not independent biological replicates. P19 supplies preparation context via later reports; its own results link is unavailable locally and contributes no separately verified outcome.
+
+**Result used:** P17's 100-unit fork retains the corrected newcomer's E state through isolation yet loses E when replacement continues from the same trio. At 300-unit intervals, final renewal and selected onward transmission pass, while the stricter every-window criterion fails. P18 shows that lengthening only initial preparation or only subsequent intervals does not rescue the 100/100 schedule. P20 starts from the same EEE labels and substitutes complete before/after-preparation states: either a prepared newcomer or prepared surviving neighbour rescues the final chain. P21 isolates sufficient components. Prepared ZEB protein or the miR200/Zeb mRNA pair suffices in the newcomer; the RNA pair suffices in the neighbour and is necessary within its otherwise prepared background. Protein alone does not rescue the neighbour; prepared ionic concentrations alone rescue neither location.
+
+**Boundary:** Concentration substitutions preserve all unselected primary variables and refresh native derived RNA-binding quantities. They are not protein/RNA addition experiments or identification of a unique memory molecule. Normal subsequent ionic dynamics remain present. Successful newcomer component routes maintain sampled E during the first challenge; neighbour routes permit transient M followed by E recovery. No P21 parent meets the full every-replacement-window criterion. Written and ordinary histories have identical registered outcomes, leaving acquired-history advantage unestablished.
+
+**Sources:** [P17 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_RENEWAL_MATURATION_RESULTS.md); [P18 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PREPARATION_TURNOVER_RESULTS.md); [P20 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PREPARATION_LOCALIZATION_RESULTS.md); [P21 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PREPARATION_COMPONENTS_RESULTS.md). Claims retain report attribution; new raw archives are unavailable locally.
+
+<a id="e66"></a>
+## E66 — Prepared-state rescue depends on cell location and the incoming challenge
+
+**Evidence status:** P22 separates the two RNAs, extends selected renewal conditions and varies communication timing. P25 performs reciprocal substitutions of one incoming concentration after P22 exposes a fragile neighbour-based rescue. These are bounded deterministic interventions, not an independently sampled treatment population.
+
+**Result used:** Either prepared miR200 alone or prepared Zeb mRNA alone rescues the newcomer route in the tested background, with temporary loss and later E recovery. In the neighbour, miR200 alone suffices while Zeb mRNA alone fails. Newcomer protein/RNA-pair preparation retains benefit across the additional incoming sequences and tested four-cycle extensions, whereas neighbour RNA preparation fails on two additional sequences. P25 substitutes only the first post-fork incoming ZEB value: the legacy −12% draw rescues both failed sequence backgrounds, while the +13% and +9% values from those backgrounds induce failure in the legacy sequence. Newcomer protein preparation remains successful across the seven tested sequence variants.
+
+**Boundary:** Necessity and sufficiency depend on the specified cell location, remaining components and challenges. The native model permits free-miR200 transport but not direct Zeb mRNA or protein transport; intracellular rescue is not proof that the substituted component itself travels as memory. The reciprocal concentration intervention identifies a tested causal dependency, not an exact dose boundary, a unique biological mechanism or arbitrary robustness. Written and ordinary origins agree.
+
+**Sources:** [P22 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_RNA_TIMING_ROBUSTNESS_RESULTS.md); [P25 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_NEIGHBOUR_FIRST_DRAW_RESULTS.md). Protocols are retained in the v0.14 source package and summarized in C.24.
+
+<a id="e67"></a>
+## E67 — A brief early RNA-transport pause can enable later renewal and transmission
+
+**Evidence status:** P23 assays actual final donors from P22's pause comparison; P26 tests a frozen timing grid in two previously studied incoming sequences, two histories and two numerical resolutions. P24's external results link is unavailable and its separate longer-cycle outcome is not used to extend P26's shorter-pause claim.
+
+**Result used:** P23 closes the onward-transmission boundary for the immediate 100-unit pause. P26 finds final E retention and qualified onward transmission for immediate pauses of 25, 50, 75 or 100 model units during the first 300-unit post-fork challenge: each duration succeeds in all eight history/sequence/resolution combinations. Continuous communication, pauses of length 100 starting at 25/50/75/100/150/200, and blocking the full 300-unit challenge each fail in all eight. Every final parent, including failures, receives an onward assay. RNA-blocked and boundary-cut onward controls are negative. The final carriers have replaced all originals; recipients retain E during two isolated holds after donor removal.
+
+**Boundary:** Eight related deterministic combinations are not eight independent replicates or a population success estimate. The shortest successful tested pause allows sampled M followed by E recovery. Longer successful pauses preserve sampled E during the first challenge; full blockade also protects that early label but fails later. None of the P26 parents meets the stricter every-renewal-window criterion. The 25-unit result covers two turnover cycles, not the separate longer-cycle tests of other schedules. It identifies neither an exact minimum pause nor a universal prohibition on positive delays. Transport timing is supplied; autonomous control and disease-specific efficacy are not tested.
+
+**Sources:** [P23 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PAUSE_TRANSMISSION_RESULTS.md); [P26 protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PAUSE_WINDOW_PROTOCOL.md); [P26 report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_PAUSE_WINDOW_RESULTS.md).
+
+<a id="e68"></a>
+## E68 — Numerical stops and focused repairs bound the communication-timing claims
+
+**Evidence status:** P27 and P30 stopped at their registered parent-stage numerical gates. P28/P29 investigate the numerical dependencies in narrower panels. P31 completed on 7 October, with all 96 cases, 28 finest numerical comparisons and ten source-bundle comparisons passing its focused convergence criteria. It qualifies a targeted numerical repair, not the stopped full panels or their onward-transmission assays.
+
+**Result used:** P27 completed 116/428 cases before four intermediate label disagreements stopped the study; none of its 312 new onward assays ran. P28 separates downstream refinement from uncertainty in the saved source. P29 reintegrates the preparation prefix and qualifies 36 finest comparisons plus ten source comparisons for four targeted schedules; it does not add onward assays. P30's expanded refined panel completes 232/856 cases and 5,480 integrations before three intermediate classification disagreements stop it; none of its 624 onward assays runs. Its final retention outcomes agree across settings, but an intermediate third-cell miR200-minus-Zeb mRNA difference crosses the +2 E threshold between resolutions. The disputed pause begins at 15 and lasts 100 units, outside P29's four-schedule panel.
+
+P31 reproduces P30's disagreements, then refines preparation and downstream integration separately and together. At divisors 32 and 64, the disputed third-cell label is E at time 175 across both histories and source bundles; the 41-label neighborhood agrees. Final retention is unchanged: the 100-unit pause starting at 10 retains E, whereas starts at 15 or 20 and continuous communication fail. The 2,096 integrations and 164,462 checks are numerical verification, not independent biological samples.
+
+**Boundary:** Agreement in final outcomes does not waive a failed predeclared intermediate-label criterion. P31 resolves the targeted temporary disagreement without making the start-15 intervention successful. P29/P31's narrower repairs and P26's completed qualification retain their scope; P27/P30 remain stopped. P31 itself adds no onward assay. The subsequently completed P32 panel now supplies the full timing and onward-transmission result in E85/C.40, without retrospectively passing P27/P30. No accepted criterion was relaxed. Reported solver comparisons are finite numerical checks, not exact-solution proofs.
+
+**Sources:** [P27 stop](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P27_NUMERICAL_STOP_REVIEW_2026-10-03.md); [P28 results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_NUMERICAL_CONVERGENCE_RESULTS.md); [P29 results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_UPSTREAM_FORK_CONVERGENCE_RESULTS.md); [P30 stop](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P30_NUMERICAL_STOP_REVIEW_2026-10-06.md); [P31 retained launch](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/storage/p31-launch-integrity.json).
+
+**Added sources:** [P31 completed report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_DELAYED_PAUSE_CONVERGENCE_RESULTS.md); [P31 protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_DELAYED_PAUSE_CONVERGENCE_PROTOCOL.md); [saved completion review](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/storage/p31-completion-integrity-20261008.json).
+
+
+<a id="e69"></a>
+## E69 — Rebuilding tolerates cue mismatch while writing mechanisms and policy rankings change
+
+**Evidence status:** E051, PAIRING_ROBUSTNESS_ESTABLISHED. All five prespecified requirements pass on 32 fresh independent blocks, with 512 lineages per condition and 35 matched counterfactual histories per lineage. The completed saved replay audit and closeout pass. This is a focused robustness study, not a repeat of E041's full durability/control qualification.
+
+**Result used:** After 32 damaged rebuilds, the original exact-zero writer supports 458/512 (89.45%) injured fresh-recipient both-cue successes under paired rebuilding trials. Update-noise correlation 0.999 gives 497/512 (97.07%): +7.62 percentage points [5.08, 10.35]. Initial-state correlation 0.99, with noise still paired, gives 457/512 (89.26%): −0.20 points [−0.98, 0.59]. Both challenged-minus-paired lower 95% bounds exceed −5 points, and paired/challenged absolute lower bounds exceed 75%. Inference uses 10,000 whole-block resamples; the 35 histories do not become independent samples.
+
+Secondary results retain pointwise intervals. Independent rebuilding noise gives 495/512 (96.68%) under the original writer, while ordinary fallback on available returning connections changes from 100% with paired trials to 0% in every noise-mismatch arm. Those arms restore nonzero values on all available returning connections. Pure contrast scores 0/512 with paired trials and matches the original writer's terminal success in each noise-mismatch arm. The fixed tolerance $|d_i d_j|\le10^{-4}$ gives only 13/512 (2.54%) with paired trials, a −86.91-point difference [−90.23, −83.59] from exact writing; under independent noise it reaches 94.73%. Strong-weight preservation scores 71.88% with paired trials, below full rewriting's 89.45%, but 99.80% with independent noise, above full rewriting's 96.68% by 3.13 points [1.56, 4.69]. Preservation rewrites weak connections and differs from protected copying.
+
+**Boundary:** The intervention changes noise correlation, not marginal noise magnitude, and affects rebuilding before capture. Teaching and terminal-assay trials remain paired. Reset and update-noise mismatches are tested separately, not jointly. The mechanism of improved performance is not isolated by fallback counts, nonzero connectivity or a policy ranking. One unfavorable tolerance does not establish failure of all finite tolerances. Endpoint success does not establish uninterrupted expression, indefinite inheritance, arbitrary tasks or autonomous acquisition of the writer. The later numerical test has its own failed primary and secondary results in E70. Original E051 arrays are absent locally, so incorporation verifies saved records and attributes the original passing replay audit without rerunning it.
+
+**Sources:** [Protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E051_cue_pairing_robustness/PROTOCOL.md); [completed report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E051_cue_pairing_robustness/runs/robustness_v1/REPORT.md); native summary (see [source availability](SOURCE_AVAILABILITY.md)); [saved independent audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E051_cue_pairing_robustness/runs/robustness_v1/INDEPENDENT_AUDIT.json); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E051_cue_pairing_robustness/analysis/closeout_v1.json); [dated source selection](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.17_SOURCES.json); portable native extract (see [source availability](SOURCE_AVAILABILITY.md)); [E052 follow-up protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E052_precision_normalization/PROTOCOL.md).
+
+<a id="e70"></a>
+## E70 — Numerical robustness fails under matched noise; independent-noise comparisons are stronger
+
+**Evidence status:** E052 is complete with a passing saved independent audit and closeout. Its nine-part primary numerical-robustness criterion is not established; two requirements pass. Thirty-two fresh blocks supply 512 lineages per condition, crossed across eleven numerical regimes and three rebuilding-noise correlations. Conditions and horizons are not independent replications.
+
+**Result used:** Under matched rebuilding noise, horizon-32 native-reader scattered-injury success is 83.40% [78.71, 87.70] for the reference. Float32 computation gives 81.25%, with a difference of −2.15 points [−5.66, 1.37], unresolved against the five-point allowance. Uniform-grid rounding at $2^{-16}$ gives 8.01%, a −75.39-point difference [−79.88, −70.70]. Nonzero-weight noise of SD $10^{-4}$ gives 63.67% (−19.73 [−25.78, −13.48]); a reader normalization floor of $10^{-4}$ gives 69.53% (−13.87 [−18.75, −8.98]). Storing float32 values without float32 computation gives 83.01%, a separate precision control.
+
+Under independent rebuilding noise, the reference gives 96.48%; the four primary challenge types give 96.48%, 95.51%, 94.14% and 95.70%, respectively. Their secondary paired differences are 0.00 [0.00, 0.00], −0.98 [−2.15, 0.20], −2.34 [−3.71, −0.98] and −0.78 [−1.95, 0.20] points. Intervals retain the original whole-block, pointwise scope. These observations do not rescue the failed matched-noise primary.
+
+**Boundary:** Uniform quantization differs from floating-point precision; all arms retain the 4096-byte container. Teaching and terminal cue randomness remain paired. A common-reader assay does not remove the floor-history deficit, but its failure does not prove irretrievable information loss. Combined numerical stresses are not tested in E052; the separately completed E053 comparison is recorded in E75. Native outcomes are specific to the supplied writer, reader, task and noise conditions.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E052_precision_normalization/PROTOCOL.md); [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E052_precision_normalization/runs/robustness_v1/REPORT.md); native summary (see [source availability](SOURCE_AVAILABILITY.md)); [saved audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E052_precision_normalization/runs/robustness_v1/INDEPENDENT_AUDIT.json); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E052_precision_normalization/analysis/closeout_v1.json).
+
+<a id="e71"></a>
+## E71 — A frozen record diagnostic improves prospective continuation forecasts
+
+**Evidence status:** TT008 passes both registered practical-superiority criteria on 64 fresh independent blocks, with 4,096 related records. The candidate is selected from exposed development evidence, fitted once, then frozen before new test outcomes. All 24,576 predictions across six models are sealed before later continuation; saved dynamics, scoring and closeout audits pass.
+
+**Result used:** The candidate adds signed 64-step record transfer to expression/history and unsigned-access features. Its generation-32 fresh scattered-assay Brier error is 0.129131, versus 0.137778 for expression/history and 0.138212 with unsigned access. Gains are 0.008647 and 0.009081; their one-sided 95% lower limits, 0.006698 and 0.007231, exceed the required 0.002. Inference uses 64 block differences, conditional on the fixed development fit. The gain is concentrated in 672 generation-14 failures, 292 of which later succeed; currently passing records make a small unfavorable contribution. The 602 approximately matched spaced/clustered pairs give the candidate and both primary rivals the same 528 selected successes, also matched by always selecting spaced history.
+
+**Inputs and computational scope:** All primary models receive task-aligned current outputs, minimum/pass and writer history. The unsigned feature uses the known input/output ports and 64 iterations of an absolute, strength-normalized record operator. The candidate also uses 64 signed iterations and the taught orientation to score the output response. This is supplied task knowledge and additional model-informed computation. Representation, training and diagnostic budgets are not matched, and no extra body probing is performed by the linear diagnostic.
+
+**Descriptive presentation:** Figure 14 shows original subgroup contributions and post hoc reliability/AUC summaries from the sealed predictions. Failing records contribute +0.008799 to the overall gain against expression/history; passing records contribute −0.000152. Within current failures, candidate AUC is 0.867565 versus 0.753470 and 0.743782 for the primary rivals. Corresponding conditional Brier errors are 0.147961, 0.201593 and 0.205100. The ten-bin calibration summary is slightly worse for the candidate, both overall and within current failures; all three overpredict success on average. These checks support better discrimination in the observed failure subgroup, not a claim of improved calibration or a unique allocation of the Brier gain. D.7.6 retains the complete subgroup table; C.27 defines the descriptive statistics and portable checks. No new interval or qualification test is added.
+
+**Boundary:** The endpoint follows further rebuilding and a fresh injury, not a repeat of the original failed-body assay. Forecast superiority does not establish a unique mechanism, individual-state continuation probabilities, causal sufficiency, equal-budget superiority or a better matched-pair decision rule. The apparatus, task repertoire and common future writer remain supplied. Calibration depends on the stated binning; records within blocks are related and the new descriptive subgroup metrics are not independent hypothesis tests. This does not resolve D162's different diagnostic-challenge comparison, change TT007's original development verdict or validate P01's observation/transition model. Prediction separation is procedural within one program and shared filesystem, not external replication.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT008/PROTOCOL.md); [development selection](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT008/DEVELOPMENT.md); [interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT008/INTERPRETATION.md); [full report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT008/runs/prospective_v2/REPORT.md); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT008/CLOSEOUT.json); [reviewer-response source record](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.18_TT008_FORECAST_SOURCES.json); [portable forecast diagnostics](../v2.4/sources/HowFormsBecomeReconstructible/paper_assets/data/tt008-forecast-v0.18.json).
+
+<a id="e72"></a>
+## E72 — A record's original-injury benefit does not establish transfer to fresh injuries
+
+**Evidence status:** TT009 independently audits two P03 development studies on the same 64 selected generation-14 failures from eight exposed blocks. All retained experimental trajectories and score checks reproduce. The fresh-injury positive prediction fails; audit success does not change that scientific verdict.
+
+**Result used:** Outgoing-minus-incoming success is +8.02 points [2.61, 13.90] in the fixed-injury study. The separate transfer study gives +7.03 [1.03, 13.48] under its original-injury read stream but −6.13 [−14.68, 2.24] under fresh injuries. The within-study change in rewrite effect is −13.16 [−21.09, −6.08]. Under fresh injuries, erasure-only performance is 19.96 points below incoming, while outgoing is 13.83 points above erasure-only. Rewriting improves on that deletion control without recovering incoming-record performance on average. These are descriptive 95% block-bootstrap intervals. Fixed-injury signed choice gives 28.91% success, unsigned/always-outgoing 28.78% and direct probing 31.88%; fresh-injury signed and unsigned choices give 33.39% and 33.31%.
+
+**Boundary:** The negative fresh-injury point estimate fails the declared directional prediction; its interval does not establish a population-wide harmful effect. These are alternative-record interventions in fresh reads, not autonomous repair of the same body. Original-injury studies reuse the same cohort and are not independent replications. The intervention changes complete records; it does not isolate signs from magnitudes. Diagnostic and direct-probe costs differ. TT008's distinct prospective forecast result remains intact.
+
+**Sources:** [interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/INTERPRETATION.md); [audit protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/PROTOCOL.md); [full report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/runs/audit_v1/REPORT.md); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/CLOSEOUT.json); [fixed-injury source report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/source/fixed/run/REPORT.md); [injury-transfer source report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT009/source/transfer/run/REPORT.md).
+
+<a id="e73"></a>
+## E73 — Economical recovery confirms within supplied timing assumptions and fails outside them
+
+**Evidence status:** The CT3-flat weak-prior confirmation passes all three prospective criteria on fresh Monte Carlo blocks. The subsequent unexpected-change-time challenge passes two comparative criteria but fails its economical-recovery primary. Both completed studies have saved-result verification; neither changes the earlier calibrated CT3 failure.
+
+**Result used:** Confirmatory core recovery costs 0.098875402 [0.098674985, 0.099075818] per task, versus 0.1 for always purchasing the answer and 0.102961931 for matched C3: savings of 1.12% and 3.97%. The unchanged model represents changes only at tasks 26, 51 and 76. When physical changes instead occur at 13, 38, 63 or 88, recovery costs 0.155330691 [0.154927125, 0.155734258], 55.33% above always purchasing. It still beats C3 by 4.82%. The supported-time control costs 0.098786710 and passes all three corresponding descriptive criteria. The unexpected full-core mean 0.094202554 includes half-weight stable cases; changed-core episodes alone cost 0.108084842.
+
+**Boundary:** Each study uses 27,648 fresh blocks stratified over 27 fixed base laws; uncertainty is Monte Carlo uncertainty within that evaluator-defined population. Confirmation does not imply uniform benefit: transfer recovery and pooled A/B reliability-loss recovery still exceed 0.1. Paid labels, possible change kinds, time priors, prices and a three-decision task-cost objective remain supplied. Bayesian/VFE inference shares the result; this is not a uniquely FEP advantage, autonomous model discovery or validation of the broad principle. The separately completed change-at-any-task extension appears in E80.
+
+**Sources:** [confirmation design](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_WEAK_PRIOR_CONFIRMATION_V1.md); [confirmation report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_WEAK_PRIOR_CONFIRMATION_V1_REPORT.md); [timing challenge](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_UNEXPECTED_CHANGE_V1.md); [timing report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_UNEXPECTED_CHANGE_V1_REPORT.md).
+
+<a id="e74"></a>
+## E74 — Recipient coupling changes reconstruction without resolving the focal matching hypothesis
+
+**Evidence status:** D180 is a completed and audited development pilot on 32 F0 records from four reused donor blocks. Its 1,152 labelled lineages, paired futures and three recipient couplings do not create fresh independent founders or a prospective prediction test.
+
+**Result used:** For the focal ordinary-writer B group, common-reader terminal qualified preference is 19.3848, 15.8325 and 13.5010 points at coupling multipliers 0.75, 1 and 1.25. The low-minus-high difference is 5.8838 points with the same direction in all four donor blocks. The signed cross-replica interaction estimate is negative/noisy, and no ranking reversal meets the fixed replica-consistency rule. Aligned B supplies a small positive secondary interaction and higher pooled preference, 24.4548 versus 16.2394 ordinary, still below protected copying at 28.0762. B's own-shape correlation declines from 0.794609 to 0.650611 with aligned writing and 0.524722 with ordinary writing; copying preserves 0.794609.
+
+**Boundary:** These finite-panel means and signed component estimates have no population confidence intervals. A negative interaction estimate is not a negative physical variance or proof of no interaction. The manipulated coupling changes both reading and writing; a common terminal reader measures the resulting record's utility under one reference decoder. Family A behaves differently, so B's response does not define a general matching law. D141/D162 remain unresolved, and L20's stress-tested/mixed status is unchanged. The later fresh-futures result is reported separately in E79.
+
+**Sources:** [results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-variation/PILOT_RESULTS.md); [tables](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-variation/PILOT_TABLES.md); [design](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-variation/PROPOSAL_V1.md); [formal closeout](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-variation/PILOT_CLOSEOUT.md). The dated closeout supersedes the result report's historical pending-audit label.
+
+<a id="e75"></a>
+## E75 — High success under combined numerical stresses does not pass the full robustness criterion
+
+**Evidence status:** E053 completes all 32 fresh independent blocks, 512 lineages per condition and 32 damaged rebuilds; independent replay and closeout pass. The primary independent-noise robustness conjunction fails the declared five-point noninferiority gate while both absolute-success gates pass. The eight-block progress report is superseded.
+
+**Result used:** Float32 arithmetic, $2^{-16}$ grid rounding, nonzero-weight noise of SD $10^{-4}$ and a $10^{-4}$ normalization floor are applied together. Independent rebuilding noise gives 472/512 terminal successes (92.1875%), versus 487/512 (95.1172%) for the reference. The difference is −2.9297 points [−5.0781, −1.1719]. Both absolute lower bounds exceed 75%; the difference lower bound does not exceed −5 points, leaving the allowed-loss comparison unresolved. In the matched-noise secondary comparison, the combined arm gives 63.6719% versus 82.2266%, a −18.5547-point difference [−23.6328, −13.2813]. Native 95% intervals resample whole blocks.
+
+**Secondary mechanism evidence:** In E053's same matched-noise cohort, the float64/zero-floor reference, rounding-only, nonzero-noise-only and noise-then-rounding conditions give 82.2266%, 8.2031%, 63.2813% and 63.4766% success. The original prespecified $p_{QN}-p_Q-p_N+p_0$ interaction is 74.2188 points [68.3594, 79.8828]; the independent-noise counterpart is 0.1953 [−1.1719, 1.7578]. These pointwise whole-block intervals are transcribed from retained secondary summaries, not newly estimated. The interaction establishes nonadditivity of the tested histories, not the cause of the effect or a channel-order comparison.
+
+**Boundary:** High absolute success and failed noninferiority coexist; the primary interval also supports some loss. The failed gate does not establish loss greater than five points, and the independent-noise result does not repair E052's failed matched-noise qualification. Noise acts on pre-channel nonzero edges before grid rounding, so combined changes need not be uniformly more damaging than their components. Pre-channel exact zeros remain protected. Teaching, initial activity and terminal cue trials remain paired; only rebuilding cue noise is independent. The writer's exact-zero test is retained, with no finite-tolerance challenge. The native reader includes the assigned floor; all records retain their container allocation. This is a separate cohort from E041/E051/E052.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E053_combined_numerical_confirmation/PROTOCOL.md); [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E053_combined_numerical_confirmation/runs/robustness_v1/REPORT.md); summary (see [source availability](SOURCE_AVAILABILITY.md)); [audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E053_combined_numerical_confirmation/runs/robustness_v1/INDEPENDENT_AUDIT.json); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E053_combined_numerical_confirmation/analysis/closeout_v1.json); [channel-review sources](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.20_E053_SOURCES.json). C.31; D.8.6.
+
+<a id="e76"></a>
+## E76 — Relative magnitudes and sign compatibility have different dependencies on rebuilding history
+
+**Evidence status:** E054 completes the declared interventions on all 32 E051 blocks, without success filtering, using fresh common readers. Independent replay and numerical controls pass. It is mechanistic follow-up on exposed records, not a new source cohort; the retained launch-only README is superseded by its completion and audit receipts.
+
+**Result used:** For the primary matched-noise full-rewrite history under scattered injury, untreated success is 86.5234%. Magnitude permutation within sign classes gives 12.1094%, a −74.4141-point contrast with family-adjusted interval [−78.7109, −69.9219]. Isolated sign flips give 13.2813% versus 86.5234% for anchored coordinate switching, a −73.2422-point contrast [−77.5391, −68.4229]. Both exceed the declared five-point loss criterion. Deleting the same edges gives 81.25%, a −5.2734-point contrast [−7.6172, −3.3203], unresolved against that margin. Under independent-noise full-rewrite history, permutation retains 94.3359% versus 95.8984%; isolated flips give 16.0156% and deletion 94.9219%. These latter results are secondary.
+
+**Post hoc addition in v0.20:** A direct history-by-permutation contrast subtracts the independent-history loss (1.5625 points) from the matched-history loss (74.4141 points) within each of the 32 original blocks. The mean difference is **72.8516 points [68.5547, 76.9531]**, using a pointwise 95% percentile interval from 10,000 paired whole-block resamples. This reviewer-requested analysis reuses the original bootstrap stream and does not alter the three original sensitivity classifications. Original secondary policy interactions, reported separately in D.8.7, are −14.8438 points [−19.5313, −10.1563] for matched noise and −0.3906 [−1.7578, 0.9766] for independent noise, comparing the permutation effect under full rewriting minus strong preservation.
+
+**Boundary:** Coordinated switching also transforms initial activity and noise, with task ports fixed; it is a symmetry control, not tolerance of arbitrary sign corruption. Permutation preserves signs/support and each sign class's magnitude multiset, using history-specific permutation maps. Isolated flips match edit counts and magnitude bins, not every location or exact mass. Deletion alters normalized coupling as well as access. Perturbation doses therefore cannot rank feature importance by loss magnitude. No writing occurs in these assays, and sensitivity differences do not uniquely identify the cause of a writing-policy advantage. Acquisition and every tested history remain in the full report. The new interaction is outcome-informed, not a fresh confirmation; its pointwise interval does not correct for post hoc selection.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E054_record_interventions/PROTOCOL.md); [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E054_record_interventions/runs/interventions_v1/REPORT.md); native summary (see [source availability](SOURCE_AVAILABILITY.md)); [audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E054_record_interventions/runs/interventions_v1/INDEPENDENT_AUDIT.json); [post hoc specification](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.20_E054_ANALYSIS_SPEC.json); [portable source manifest](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.20_E054_SOURCES.json); [calculation](../v2.4/sources/HowFormsBecomeReconstructible/paper_assets/data/e054-history-interaction-v0.20.json). C.32; D.8.7.
+
+<a id="e77"></a>
+## E77 — Development separates protected restoration, imported signs and surviving-record repair
+
+**Evidence status:** TT010–TT013 independently check successive exposed development studies on the same 64 selected failures in eight blocks. Their descriptive comparisons are not fresh confirmations and are not pooled. TT011 checks mathematical certificates and retained scores rather than all nonlinear trajectories; TT010/TT012/TT013 include full native replay.
+
+**Result used:** Protected incoming/outgoing hybrid construction gives 29.63% equal-block success; its +2.08-point advantage over incoming is unresolved [−4.34, 10.07], and an additive forecast overpredicts it at 42.25% (TT010). All 128 donor/recipient pairs fail exact sign-alignment compatibility, with 256 independently checked contradiction certificates; same-task donor advantage is +0.298 points [−2.241, 3.295], while the opposite-task replacement direction fails (TT011). Approximate donor alignment improves success by +4.938 points [0.853, 9.487], but aligned donors reach only 14.366% versus 26.737% for recipient-based sign completion; that completion still uses protected support and magnitudes (TT012). Removing those protected resources gives a surviving-record-only repair: 33.548% versus 22.415% for outgoing alone, +11.133 points [1.933, 22.796]. A support/magnitude/sign-count matched shuffle gives 8.119% (TT013).
+
+**Subsequent development, with completed replay recorded in v0.20:** Three reported theory-lane studies reuse 256 exposed generation-14 records from sixteen blocks. Repeated repair raises uninterrupted success across the next eighteen bodies from 47.27% to 91.02% under matched cue noise and from 82.03% to 91.41% under independent cue noise. In the latter histories, withdrawing repair after its first application gives 84.77%, versus 91.41% for continued repair. The repeated arm was already known to preserve every first-pass lineage, constraining the direction of the withdrawal comparison. The original reports had internal and sampled dynamics checks. TT015 now completes full native replay and separate scoring of the serial/noise studies (C.38), without making these exposed records a fresh cohort. TT016 supplies the separate prospective serial confirmation in E83. The withdrawal comparison remains outcome-informed; none establishes autonomous maintenance.
+
+**Boundary:** Backup access, donor compatibility and ordinary computational repair are different resources. Removing access to a protected backup does not remove acquired history from the surviving record. Neither the development successes nor the sign algebra uniquely confirm the proposed reconstructive-dynamics theory. Serial protocols supply an optimizer and repeated interventions; terminal and uninterrupted success remain separate endpoints.
+
+**Sources:** [TT010](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT010/INTERPRETATION.md); [TT011](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT011/INTERPRETATION.md); [TT012](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT012/INTERPRETATION.md); [TT013](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT013/INTERPRETATION.md); [serial repair](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p05_serial_repair_v0_1/runs/pilot_v1/REPORT.md); [cue-noise repair](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p05_cue_noise_repair_v0_1/runs/pilot_v1/REPORT.md); [withdrawal](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p05_noise_repair_withdrawal_v0_1/runs/pilot_v1/REPORT.md); [completed full audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT015/INTERPRETATION.md). C.33/C.38; D.7.9/D.8.8.
+
+<a id="e78"></a>
+## E78 — A frozen surviving-record repair improves fresh-cohort reconstruction
+
+**Evidence status:** TT014 passes both registered practical-superiority criteria on 64 new independent blocks, four balanced history strata and all 1,024 generation-14 outgoing records. Registration, executable inputs, margins and enrollment policy precede new test outcomes. Native replay, optimizer/construction checks, independent scoring and closeout pass.
+
+**Result used:** Eight fresh injury/reset/noise assessments per record give 6,678/8,192 successes for unmodified outgoing records (81.5186%), 7,164 for repaired records (87.4512%), 2,116 for sign-shuffled repair (25.8301%) and zero for erased records. Repair-minus-outgoing is +5.9326 points, two-sided 95% interval [4.8795, 6.9857]; its one-sided lower limit +5.0558 exceeds the required +2 points. Repair-minus-shuffle is +61.6211 [59.0378, 64.2044], with lower limit +59.4686 above the required +5. The fixed approximate Welch–Satterthwaite analysis uses 64 independent blocks in four strata, not 32,768 independent assessments. Repair improves in 61 blocks, ties in two and worsens in one. Paired outcomes are 6,628 both successful, 536 repair-only, 50 unmodified-only and 978 neither.
+
+**Boundary:** The unchanged TT013 algorithm receives only the surviving outgoing record and supplied options, fills exactly zero connections with inferred signs and the median surviving absolute magnitude, and preserves every nonzero weight. It receives no incoming backup, donor, body, history label, target-output label or future assessment. Fixed input ports, lattice, optimizer and reader are supplied, and the record itself retains acquired history. This is conventional computational repair before one fresh reconstruction, without assessment writing. Selected-failure development and separately reported serial repair are different estimands. Shared-filesystem registration is procedural ordering, not external custody, and all tests belong to the same program.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/PROTOCOL.md); [registration](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/REGISTRATION.json); [interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/INTERPRETATION.md); [analysis](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/runs/validation_v1/analysis.json); [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/runs/validation_v1/REPORT.md); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT014/CLOSEOUT.json). C.34 (Algorithm 1); main section 4.5 and Figure 11; [portable implementation and figure sources](../v2.4/sources/HowFormsBecomeReconstructible/reviews/V0.20_TT014_SOURCES.json).
+
+<a id="e79"></a>
+## E79 — A secondary record–recipient interaction recurs across new futures of reused founders
+
+**Evidence status:** D181 completes and audits four fresh futures of the same 32 acquired records from four exposed founder blocks. This is a recurrence check motivated by D180, not fresh-founder confirmation or prospective forecast evaluation. The result report supersedes its preserved launch-only status document.
+
+**Result used:** With common-reader family B, ordinary writing has mean terminal qualified preference 15.5314 points and aligned writing 24.3591, versus protected copying 28.7903. The focal ordinary-writer interaction disagrees in sign between the two fixed future pairs (−0.0000737508 and +0.0006754796, squared native-score units); no record-pair rank reversal is consistent across all four futures. The secondary aligned interaction is positive in both fixed pairs (+0.0007249117 and +0.0003929403), all six pair products and donor/future omissions. Three rankings reverse between extreme coupling settings in all four futures. Its mean component +0.0004524213 is similar in size to ordinary writing's +0.0004304890, so recurrence does not establish a larger aligned interaction.
+
+**Boundary:** The 2,304 lineages and 4,608 terminal assays are nested in four reused blocks. Pair products and omissions share data; no population interval, variance percentage or prediction ceiling is estimated. Coupling alters both reading and writing. Family A differs substantially. Aligned B shape correlation falls from 0.794609 to 0.655117 (ordinary 0.515494), while protected copying retains 0.794609. These findings preserve L20's mixed status and earlier unresolved/negative forecasting results; D182's fresh-founder main cohort is not part of this selection.
+
+**Sources:** [protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-repeats/PROTOCOL_V1.md); [results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-repeats/POPULATION_RESULTS.md); [tables](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-repeats/POPULATION_TABLES.md); completion, native summaries and saved-audit receipt in the portable source package (see [source availability](SOURCE_AVAILABILITY.md)). C.35; D.7.7.
+
+<a id="e80"></a>
+## E80 — Broader temporal support improves unexpected-change recovery but not its economic qualification
+
+**Evidence status:** The change-at-any-task finite decision study completes 27,648 fresh paired blocks across 27 base laws. All source outputs and the independent saved-count reaggregation pass their retained identity checks. Two of three primary gates pass; the conjunctive economical-recovery claim fails.
+
+**Result used:** CT3-anytime reduces unexpected-core recovery cost to 0.123088754 [0.122802174, 0.123375334], versus 0.155553419 for CT3-flat on the same cohort: a 20.87% reduction, paired difference −0.032464665 [−0.032895167, −0.032034162]. Full-core cost also improves by −0.004401323 [−0.004519927, −0.004282720]. Recovery nevertheless remains above always purchasing the correct answer at 0.1, with difference +0.023088754 [0.022802174, 0.023375334]. At the old supported times, anytime recovery is worse: 0.119536766 versus 0.098768339. Whole changed episodes at unexpected times average 0.098927766, but include pre-change performance and cannot rescue the recovery criterion.
+
+**Boundary:** Half the prior mass remains on no change; half is distributed across all 100 times and three supplied change kinds. This changes both temporal support and probability allocation. Costs, kinds of change, free warnings, paid answer labels and three-decision planning remain supplied. Conditional Bayesian and VFE calculations share the result; no unique FEP advantage or autonomous preference formation follows. Nominal Monte Carlo intervals concern the fixed population, not arbitrary worlds. Earlier on-schedule confirmation and off-schedule failure retain their original verdicts.
+
+**Sources:** [frozen design](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_ANYTIME_CHANGE_V1.md); [result report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_ANYTIME_CHANGE_V1_REPORT.md); [saved-count verifier](sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/readback_fep_anytime_change.py); native results, manifest and readback in the portable package (see [source availability](SOURCE_AVAILABILITY.md)). C.36; D.7.8.
+
+<a id="e81"></a>
+
+## E81 — CA history is externally decodable without qualified live writeback
+
+**Evidence status:** Completed Stage 6F findings reported in the retained discovery log and the subsequent Stage 6G protocol. This manuscript addition checks those records, not the original raw trajectories or a new independent replication.
+
+**Result used:** Following destruction of the incoming carrier, a held-out-pair ridge observer decodes environmental history from the first local 4 × 4 patch with mean accuracy 0.849121, against 0.5 sham. The follow-up protocol reports a 97.5% interval of 0.8147–0.8853. None of twelve tested live writers passes the exposed screen; the best registered read effect is 0.047363. The retained verdict is `OBSERVABLE_NOT_WRITABLE`. Corrected Stage 6E supplies a one-generation carrier-to-body bridge, not continued renewal.
+
+**Boundary:** Decoder accuracy and the live-writer read effect are different endpoints and must not be subtracted or presented as a common accuracy comparison. The diagnostic decoder learns a cross-bit translation; the writer assumes alignment between visible pixels and the Walsh carrier code. Information, transformations and computational resources are not matched. This establishes a limitation of the tested routes, not an impossibility of writing, absence of historical information, or a new external confirmation. The protected 62-pair final reserve remains unopened for this result. The narrower Stage 4 engineered-renewal success in E21 is unchanged.
+
+**Sources:** [Retained CA discovery log, Stage 6G opening account of completed Stage 6F](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/DISCOVERY_LOG_EIDOSOMA_SCIENTIST.md); [Stage 6G registered premise](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/CA_MOTIF_LOCAL_TRANSDUCTION_PROTOCOL.md); [Stage 6F protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/CA_MOTIF_WRITEBACK_LADDER_PROTOCOL.md). The active-form source supplement preserves the consulted versions.
+
+<a id="e82"></a>
+
+## E82 — Wagner interpretation depends on supplied maintenance as well as retained content
+
+**Evidence status:** Completed Architecture v1 and Adaptive Maintenance v1 results reported in the retained 31 August/1 September discovery-log entries, with protocols and selected implementation inspected. Original run directories remain unavailable in this checkout; the reported independent checks are source-attributed, not rerun here.
+
+**Result used:** The Architecture campaign reports 80 fresh confirmation populations and 4,096 pedigree rows. Its strongest repair arm passes 17/22 core criteria; 50.0% of distance-four descendants retain at least 70% of positive-root information. Disabling repair reduces that retention fraction by 22.7 percentage points, with a reported wholly positive paired interval. Its information advantage over the ordinary comparator is only +0.0195, with an interval spanning zero, so the complete stronger claim fails. The topology-by-repair comparison attributes the main protection to continuing mutation attenuation rather than the evolved topology alone.
+
+The later development campaign starts one global repair trait at zero and reports evolution to mean strength 0.154 under performance-only selection. Its comparative information advantage misses the fixed criterion; switching repair off changes distance-four retention by only 0.031. No candidate qualifies for fresh confirmation. This is a limited evolutionary lead, not established self-maintenance.
+
+**Boundary:** The implemented repair operation reduces a sampled weight mutation by a factor of one minus the inherited repair strength. It does not detect damaged interpretation from body activity, infer a corrective target or reconstruct a reader after loss. The operation is supplied even where its strength evolves. A maintained interpreter, a renewed carrier and autonomous reconstruction of the maintenance apparatus are different claims. Population, task and pedigree counts are not interchangeable independent units; the reported aggregates are not new cross-model effect estimates.
+
+**Sources:** [Wagner discovery log, Architecture and Adaptive Maintenance closeouts](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/gre-ideas/DISCOVERY_LOG_EIDOSOMA_SCIENTIST.md); [Architecture protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_PH_INTERPRETER_ARCHITECTURE_V1_PROTOCOL.md); [Adaptive Maintenance protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_PH_ADAPTIVE_MAINTENANCE_V1_PROTOCOL.md); [architecture implementation](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/gre-ideas/src/gre_sim/wagner_ph_architecture_genome.py); [maintenance implementation](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/gre-ideas/src/gre_sim/wagner_ph_maintenance_genome.py). These records are separate from the full-latch and renewal-frontier cohorts in E22.
+
+<a id="e83"></a>
+
+## E83 — Repeated surviving-record repair improves uninterrupted reconstruction on a fresh cohort
+
+**Evidence status:** TT016 prospectively qualifies its five-point practical-superiority criterion. Registration precedes all 64 fresh blocks (sixteen per history), containing 1,024 generation-14 records. Initial failures are retained, and all policies continue through eighteen further bodies after failures. Full native replay, separate scoring and saved-output closeout pass within the same program.
+
+**Result used:** Under independent ongoing cue noise, repeated repair gives 920/1,024 uninterrupted successes (89.84%), versus 794/1,024 (77.54%) without repair. The +12.3047-point effect has the registered approximate stratified Welch–Satterthwaite two-sided 95% interval [9.7124, 14.8969]; the one-sided lower bound is 10.1400, above the five-point margin. Fifty-two block contrasts are positive and twelve tie. There are 127 repair-only successes, one baseline-only success, 793 both and 103 neither. One-time repair gives 856/1,024 (83.59%); shuffled added signs give no uninterrupted successes. Terminal rebuilding-body success is 91.21% for repeated repair versus 85.94% without it.
+
+**Boundary:** This is a new cohort, separate from TT014's eight one-read assessments per record and TT015's exposed serial development. The solver uses surviving weights and supplied input pins, not a protected backup or output labels; apparatus and repair schedule remain supplied. Only ongoing cue noise is independent; teaching and resets remain paired. Eighteen repairs require eighteen times the optimizer calls of one repair. Shuffled repair can cause harm and does not match cumulative added resources along diverging histories. The matched-noise secondary repeated arm reaches 92.29% terminal success: independent-minus-matched is −1.07 points [−1.86, −0.39], an unadjusted descriptive interval. Similar uninterrupted rates do not establish noise equivalence. No autonomous maintenance or uniquely RDT explanation follows.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT016/PROTOCOL.md); [interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT016/INTERPRETATION.md); [native analysis](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT016/runs/validation_v1/analysis.json); completion (see [source availability](SOURCE_AVAILABILITY.md)); [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT016/CLOSEOUT.json). C.38; D.8.9.
+
+<a id="e84"></a>
+
+## E84 — Capture timing and connection magnitudes affect a stressed body's outgoing record
+
+**Evidence status:** E057 confirms four directional contrasts on 32 new independent blocks, with 512 nested lineages per history. Fresh acquisition and 32 source renewals are independently replayed. Completion and audit receipts supersede the launch-only README. Development E055/E056 motivates the question but is not pooled.
+
+**Result used:** In the primary matched-noise renewal history with scattered recipient injury, early sham/pulse success is 87.70%/84.77%. Four Bonferroni-adjusted 98.75% block intervals are positive: early pulse loss +2.93 [1.17, 4.88] points; sham-adjusted benefit of delayed capture +2.34 [0.59, 4.30]; restoring unstressed magnitudes on pulse signs +2.73 [1.17, 4.49]; and the magnitude contrast on unstressed signs +2.93 [1.37, 4.69]. Late sham/pulse success is 87.30%/86.72%. Secondary independently renewed histories show a smaller early difference (96.48%/95.70%); both late values are 96.48%. Acquired-history comparisons are all 100%, and erased controls are zero.
+
+**Development and boundary:** E055's primary independent-noise damage/recovery criterion failed because the pulse did not cause the required loss. Its matched-noise secondary timing lead motivated E056's sign/magnitude substitutions and then E057's prospectively frozen fresh test. E057 confirms positive directions, not a five-point minimum or complete restoration; it does not revise E055's criterion. The pulse is rule-blind and shared across cue trials. Hybrids receive an unstressed reference, whereas delayed capture only continues the body. Unresolved sign effects do not establish that signs are irrelevant. Float64 arithmetic and the zero-floor reader remain; no numerical robustness, biological rejuvenation or autonomous repair claim is added.
+
+**Sources:** [E055 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E055_stress_capture_recovery/runs/capture_v1/REPORT.md); [E056 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E056_sign_magnitude_substitution/runs/substitution_v1/REPORT.md); [E057 protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E057_fresh_capture_confirmation/PROTOCOL.md); [E057 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E057_fresh_capture_confirmation/runs/confirmation_v1/REPORT.md); summary (see [source availability](SOURCE_AVAILABILITY.md)); [audit](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E057_fresh_capture_confirmation/runs/confirmation_v1/INDEPENDENT_AUDIT.json). C.39; D.8.10.
+
+<a id="e85"></a>
+
+## E85 — The complete cellular pause panel supports timing-dependent retention and transmission
+
+**Evidence status:** P32 completes its registered panel: 856 cases, 7,352 integrations and 525,505 recorded independent checks. All stage gates and the final audit pass. The locally retained completion-integrity document supplies counts and verification records; the full external raw archive is unavailable for this manuscript review.
+
+**Result used:** Immediate RNA-transport pauses of 5, 10, 15, 20, 25 and 100 model-time units support retention and open-route transmission in all sixteen declared variants per schedule. For duration 100, starts at 0, 5 and 10 pass; starts at 15, 20 and 25 fail. Continuous RNA transport and full 300-unit blockade fail. Across eight successful schedules, 128/128 parent trios retain E and 128/128 open readouts transmit E after complete original-carrier replacement. All 256 corresponding RNA-blocked/boundary-cut readouts fail. The other eighty parents and their 240 readouts fail. Written and ordinary origins agree. No parent passes the stricter every-renewal-window E criterion.
+
+**Boundary:** Sixteen variants cross two histories, two fixed incoming sequences, two source bundles and two numerical settings; they are related model panels, not independent biological replicates. Five is the shortest tested duration, and ten the latest tested successful start of a 100-unit pause, not estimated continuous boundaries. All 428 numerical pairs and 214 source-bundle pairs pass the registered 0.01 normalized-error limit, without establishing full-grid 16/32/64 contraction or reconstructing the complete ancestry. Original P27/P30 failures remain. Transmission uses live final parents, no added readout pause and no donor clamp. This identifies timing and route dependence without an acquired-history advantage, a unique memory molecule or a biological treatment.
+
+**Sources:** [results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_CONVERGED_PAUSE_BOUNDARY_RESULTS.md); [protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_CONVERGED_PAUSE_BOUNDARY_PROTOCOL.md); [saved completion checks](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/storage/p32-completion-integrity-20261012.json). C.40.
+
+<a id="e86"></a>
+
+## E86 — Sustained reader coupling improves functional renewal in a separate Hopfield model
+
+**Evidence status:** H004 confirms the development-selected gain-4 intervention on 72 fresh base networks, with four founders and four descendants nested per network. All primary point-estimate criteria, seventeen adjusted directional contrasts, the subsequent timing criterion and 3,334 retained-data checks pass. H002's earlier functional failure remains unchanged; the lane is continuing.
+
+**Result used:** After sixteen complete activity replacements and repeated 50% edge loss, sustained cue gain 4 supports 92.53% terminal function [90.89, 94.10], versus 30.90% [28.04, 33.77] at gain 1 and 43.14% [40.02, 46.27] for gain 4 applied only to the final read. Sustained-minus-late is +49.39 points [46.18, 52.60]. These displayed intervals are pointwise 95% whole-network bootstraps; primary directional bounds use Bonferroni adjustment. Gain-4 foreign records score 5.82%; reading-disabled 0.17%, writing-disabled zero and matched-loss copying zero. Protected copying reaches 98.87%, exceeding renewal by 6.34 points [4.86, 7.90]. Fourfold gain at unrelated unclamped sites does not reproduce the cue-site benefit.
+
+**Boundary:** The 64-node binary Hopfield network uses a dense symmetric base plus a coactivity-written record; it does not use the local functional model's cue-difference/fallback writer or normalized reader. The gain, addresses, base matrix, task and damage schedule are supplied. Matching the final read isolates consequences of different lineage histories, not arbitrary competence acquisition. No controlled cross-architecture superiority, autonomous reader maintenance or useful reciprocal repair follows. H005 finds a +4.03-point later difference but misses its ten-point requirement; H006 fails its long-durability contrast; H007's one-boundary distinction is developmental; H008 fails its fresh present-equivalence gate and does not run serial futures. These follow-ups do not enlarge H004's qualification.
+
+**Sources:** [H004 protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h004/PROTOCOL.md); [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/runs/h004_confirmation_v1/REPORT.md); summary (see [source availability](SOURCE_AVAILABILITY.md)); [checksums](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/runs/h004_confirmation_v1/checksums.json); [lane record](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/README.md); [H008 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/runs/h008_development_v1/REPORT.md). C.41; D.9.4.
+
+<a id="e87"></a>
+
+## E87 — A bounded recipient interaction recurs on fresh tissue-sheet founders
+
+**Evidence status:** D182 completes four fresh independent founder blocks (120000/120005/120010/120015), comprising 32 records, 2,304 nested lineages and 4,608 terminal assays. Generation-time replay and a separately frozen saved-only audit pass. The cohort is not pooled with D181's reused founders.
+
+**Result used:** Common-reader B with aligned writing has positive interaction products for both fixed future pairs, all six pair products and every founder/future omission; one extreme-recipient record ranking reverses consistently across four futures. The focal ordinary-writer comparison remains mixed: its fixed-pair products are +0.0006162 and −0.0000346. Ordinary/aligned/protected-copy mean B preferences are 21.1039/32.1940/33.8562 points, retaining a 1.6622-point aligned-copy deficit. Shape correlation declines from 0.8620 to 0.6095 with ordinary or 0.7741 with aligned writing. B labels remain recognized in 172/192 and 191/192 terminal records, respectively.
+
+**Boundary:** This supports recurrence of the named secondary lead beyond the old founders, not the focal claim, a new forecast contest or a population law. Family A does not show the same robust pattern. Signed interaction products are native score components, not probabilities or new significance tests. Coupling affects both reading and writing; the common terminal reader supplies the final comparison. L20 remains mixed, D141/D162 unresolved, and D174/D176's negative prediction results stand.
+
+**Sources:** [population results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-founders/POPULATION_RESULTS.md); [protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-founders/PROTOCOL_V1.md); [audit closeout](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/recipient-founders/POPULATION_AUDIT_CLOSEOUT.md). Native external summaries and receipt are included in the v0.20 package. C.42; D.7.7.
+
+<a id="e88"></a>
+
+## E88 — Effective repair does not yet supply a qualified economical policy
+
+**Evidence status:** The P08 budgeted-repair pilot fails its strict positive directional prediction on sixteen fresh blocks. A later, separate 132-block prospective efficiency test is unresolved. Both retain all enrolled records, including initial failures; same-lane checks include selected independent dynamics, not exhaustive continuation replay.
+
+**Result used:** With nine calls each, warning-triggered repair gives 219/256 uninterrupted successes (85.55%) and periodic repair 221/256 (86.33%): −0.78 points [−1.95, 0.00], a descriptive stratified block interval. Random timing gives 216/256 and eighteen-call repair 222/256. The warning's fixed six-feature risk model is trained on earlier exposed histories. A five-budget developmental curve subsequently motivates a frozen efficiency test on 2,112 records in 132 new blocks. One, six and eighteen calls yield 1,761/1,833/1,879 uninterrupted successes (83.38%/86.79%/88.97%). Eighteen-minus-one is +5.587 points, lower one-sided 95% bound +4.782. The doubled incremental benefit-per-extra-call contrast is +0.123 points, lower bound −0.395; the joint criterion remains unresolved.
+
+**Boundary:** The observed incremental efficiency ratio 2.075 does not pass the uncertainty criterion. Call counts are not total CPU, added weight or observation cost; the warning requires 60,528 numeric bytes of shared fitted state in addition to the transmitted 4,096-byte record. The six-call test concerns the frozen schedules, not an optimal or minimum budget. Ongoing cue noise is independent, while teaching/reset pairing and the externally supplied solver persist. Risk prediction need not identify repair responsiveness. These outcomes neither overturn TT008's forecast result nor establish an efficient RDT controller.
+
+**Sources:** [budget report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_budgeted_repair_v0_1/runs/pilot_v1/REPORT.md); [development curve](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_repair_frequency_v0_1/runs/pilot_v1/REPORT.md); [prospective report](../../experiments/theory-lane/p08_repair_efficiency_v0_1/runs/prospective_v1/REPORT.md); [analysis](../../experiments/theory-lane/p08_repair_efficiency_v0_1/runs/prospective_v1/analysis.json); [verification](../../experiments/theory-lane/p08_repair_efficiency_v0_1/runs/prospective_v1/VERIFICATION.json). C.43; D.7.11.
+
+<a id="e89"></a>
+
+## E89 — Exact-state intervention rescues selected immediate failures
+
+**Evidence status:** A frozen saved-boundary follow-up selects every first later failure in E88's six-repair branch: 46 cases from 36 blocks. It reruns the same incoming packet, injury, reset and noise with or without current repair. This is selected-case causal evidence, not a fresh population estimate.
+
+**Result used:** All 46 factual failures reproduce, and current-boundary repair rescues all 46 under the unchanged strict four-margin criterion. All occur at the second consecutive unrepaired reconstruction. Separate flat dynamics reproduce 92 factual/intervention reads byte for byte, and all repair optimizations match. Two excluded, already exposed qualification examples retain an immediate rescue and an immediate harm.
+
+**Boundary:** The paired intervention isolates a repair effect under the realized disturbance, without improvement in the random future. No successor writing or continuation after rescue was simulated. Selecting factual failures prevents an estimate of harm to passing states, safety, minimum repair frequency or superiority under the original call budget. The prospective doubled-efficiency criterion remains unresolved; further withdrawal work supplies no outcome in this selection.
+
+**Sources:** [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_failure_boundary_audit_v0_1/REPORT.md); [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_failure_boundary_audit_v0_1/PROTOCOL.json); [selection](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_failure_boundary_audit_v0_1/SELECTION.json); [verification](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/p08_failure_boundary_audit_v0_1/VERIFICATION.json). C.44; D.7.11.
+
+<a id="e90"></a>
+
+## E90 — Body differences do not necessarily restore a distinction erased from the record
+
+**Evidence status:** D184 is a complete, exposed development panel: four preselected D079 blocks (30056–30059), four messages and four replicates, retaining all 64 records. D185 is a retrospective analysis of those saved trajectories, not a new cohort. Original full dynamics replay and saved-score checks pass in the retained records.
+
+**Result used:** Giving paired histories byte-identical incoming records while resetting R and the activity average to zero leaves recognition at 50.00% after ordinary body-driven repair. Intended-message recognition is 0/100/100/0% before and after all listed common-record treatments in every block. The pooled body projection gap falls from +0.551679 at birth to +0.027457 at step 50, before appreciable record change. Body differences remain large, but their target alignment is lost. With individually informative damaged records, recognition instead rises from 83.984375% to 87.890625%; conventional averaging matches that pooled recognition.
+
+**Boundary:** The common packet retains pair-level information; 50% is not four-way chance or evidence of an empty record. The projection decrease is not a percentage of all information destroyed. Fixed-reader controls show similar early loss, and conventional averaging captures more early alignment without recovering the missing identities. Neither faster writing nor the absence of all useful body information follows. The failed pilot and its later capture modification are distinct interventions on the same exposed panel. No uncertainty interval, fresh-cohort qualification or serial-renewal outcome is supplied.
+
+**Sources:** [D184 complete panel](../v1.2/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/PANEL_RESULTS.md); [D185 diagnosis](../v1.2/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/TRACE_RESULTS.md); [v1.2 source manifest](../v1.2/provenance/V1.2_EVIDENCE_SOURCES.json) and portable records (see [source availability](SOURCE_AVAILABILITY.md)). C.45; D.5.4.
+
+<a id="e91"></a>
+
+## E91 — Early capture gives a body-derived corrective-content lead
+
+**Evidence status:** D186 completed on 12 October at 18:41 UTC. It retains D184's four exposed blocks, all 64 records and the original controls, adding one-time R0 = V0 capture before the unchanged dynamics. It is development following D185, not fresh confirmation. The disposable benchmark is excluded. Completion records full replay, 272 repair paths, 372 named reads (288 unique byte/reader conditions), and exact bridges to all original paths and reads.
+
+**Result used:** Common-record recognition rises from 50.000000% for unchanged input and ordinary zero-start live writing to 77.734375% after own-body capture and live writing: +27.734375 percentage points. Block rates are 75.00%, 62.50%, 87.50% and 85.9375%. Message rates are 56.25%, 98.4375%, 100% and 56.25%; both formerly missing directions partly recover. Partner-body capture gives 21.875% own recognition and 77.734375% partner recognition, reversing the preference sign. Own-body scrambling gives 48.046875%, history erasure 33.59375%, and writing-disabled capture 50.00%. Only theta crosses the fresh-body boundary.
+
+**Comparators:** Captured fixed-reader writing reaches 73.4375%, capture-matched averaging 64.0625%, and a held, protected reference 75.00%. Common-record live capture exceeds averaging by 13.671875 points, with positive differences in all four blocks. Its smaller +4.296875-point contrast against fixed-reader writing reverses sign in one block. With informative residual records, live capture reaches 84.765625% versus 87.890625% for zero-start live writing (−3.125 points) and 87.50% for matched averaging (−2.734375 points). Correlation with the original acquired record falls from 0.795862 to 0.744412 in the common-record comparison. Better message recognition does not establish complete shape preservation.
+
+**Boundary:** This supports a causal contribution of body-derived, message-specific information under the tested boundary. It does not qualify that contribution on new founders, isolate reference-to-body maintenance from reference-to-writer capture, establish a live-loop advantage across packet conditions, or demonstrate serial renewal. Capture uses the existing 256-value working reference and a supplied birth-time observation; it does not discover its own maintenance operation. All means are descriptive within four exposed blocks; no new confidence intervals or population p-values are added. D074's failed donor criterion and L22's mixed status remain unchanged.
+
+**Verification:** Manuscript intake verifies 1,392 frozen input hashes, all 1,157 output hashes, four block-receipt hashes and summary/completion links. The portable extractor independently recomputes the saved record-score aggregates and contrasts for D184/D186. Original nonlinear replay is attributed to native completion records, not rerun here. The native saved verifier stopped at its Python/NumPy identity guard in this environment; no guard was changed or bypassed. The separate arithmetic check and raw-file hashes passed.
+
+**Sources:** [capture protocol](../v1.2/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/CAPTURE_V1.md); [fixed panel contract](../v1.2/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/CAPTURE_PANEL_EXECUTION_V1.md); native COMPLETE, SUMMARY and per-record scores in the v1.2 package (see [source availability](SOURCE_AVAILABILITY.md)); [extracted native values](../v1.2/provenance/evidence-update-v1.2.json); [validation](../v1.2/provenance/V1.2_EVIDENCE_VALIDATION.json). C.45; D.5.4.
+
+<a id="e92"></a>
+
+## E92 — Fresh body-source confirmation identifies message-specific correction
+
+**Evidence status:** TT021 prospectively enrolls all 1,024 records from 64 new tissue blocks, with four receiving draws per record. The single practical primary and the own-versus-partner body-source and matched-writer claims pass their frozen criteria. Memory-refresh superiority and informative-record harm are not confirmed. The original run's storage halt after 62 verified blocks and an explicit amendment completing only two unstarted blocks remain disclosed.
+
+**Result used:** Common-record recognition is 50.000% after ordinary repair and 75.659% after early capture of the injured body: +25.659 points, one-sided 99% lower bound +22.157 against a five-point margin; the separate pointwise two-sided 95% interval is [22.727, 28.591]. Own-body capture gives 75.659% intended recognition, partner-body capture 24.243%, while partner recognition under the latter becomes 75.659%. The incoming common record stays fixed. Only the newly written theta field enters the fresh body.
+
+**Comparators:** A protected initial snapshot gives 75.146%; updating adds +0.513 points, lower bound −0.039 against the two-point margin. With the body-reading stream fixed, captured writing gives 68.604% versus 62.695% for matched averaging: +5.908 points, lower bound +4.331. The writer gain is concentrated in one message. Informative-record ordinary/captured recognition is 90.015%/89.917%; the predicted harm above two points is not confirmed. Primary record-mean changes include 290 improvements, twenty harms and 714 ties.
+
+**Boundary and inference:** This establishes a message-specific body contribution in the supplied one-reconstruction apparatus, not the necessity of continual memory updating, serial durability or autonomous repair. Scores include fractional tie credit. Average within records then blocks; independent population units are 64 tissues. Five one-sided alpha-.01 Student-t claims share the family budget, with approximate coverage. The primary fails the additional conservative bounded sensitivity calculation (lower −12.276 points); the body-source contrast passes it (+13.480). D074's old criterion remains failed, and D186 remains exposed development.
+
+**Sources:** [protocol](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT021/PROTOCOL.md), [interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT021/INTERPRETATION.md), [execution amendment](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT021/CONTINUATION_AMENDMENT.md), [closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT021/CLOSEOUT.json). SI C.46. The manuscript checks retained source identities and receipt consistency; it does not independently rerun the reported raw-array replay.
+
+<a id="e93"></a>
+
+## E93 — Repeated futures estimate record-conditioned serial capacity
+
+**Evidence status:** TT018 completes a prospectively frozen 64-block cohort, one preassigned record per block, with 64 independently sampled futures per record and paired untreated/one-time/repeated-repair policies. All records and unchanged forecasts are sealed before continuation. The original cohort is retained through an operational two-CPU amendment. The primary practical terminal-record benefit passes.
+
+**Result used:** After eighteen additional rewrites, a separately injured fresh recipient reconstructs successfully in 3,585/4,096 untreated futures (87.52%), 3,688 after one repair (90.04%) and 3,757 with repeated repair (91.72%). Repeated-minus-untreated is +4.1992 points, approximate stratified two-sided 95% interval [2.2882, 6.1102]; its one-sided lower bound +2.6104 exceeds the two-point margin. Paired terminal outcomes retain 213 repeated-only and 41 untreated-only successes. Uninterrupted body success is separately 77.91%/83.37%/90.14%. Terminal and last-body assays are not interchangeable.
+
+**Conditional estimates:** Nine enrolled bodies currently fail. One such outgoing record gives 62/64 untreated terminal successes, pointwise exact 95% interval [89.16%, 99.62%]. Another gives 34/64 untreated versus 14/64 after either repair policy. C.47 reports all nine, including near-zero capacities. Record-level repair effects are positive in 51 cases, negative in three and tied in ten. A 64/64 estimate still has pointwise lower bound 94.40% and simultaneous lower bound 86.02% across the registered 384 record/policy/endpoint combinations.
+
+**Boundary:** Repeated futures measure conditional capacity for a specified task, record, apparatus, policy and disturbance distribution. They do not create 4,096 independent population units: inference uses 64 acquisition blocks across four histories. One final read per descendant does not estimate that descendant packet's own repeated-read reliability. Repeated repair costs eighteen times the optimizer calls of one-time repair. The transported forecast comparison remains secondary, including an improvement interval spanning zero against the unsigned comparator; no new predictive-theory or efficiency qualification follows.
+
+**Sources:** [protocol](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT018/PROTOCOL.md), [interpretation](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT018/INTERPRETATION.md), [closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT018/CLOSEOUT.json). SI C.47. Selected count arithmetic matches the receipt; complete scientific replay is attributed to the lane, not this manuscript intake.
+
+<a id="e94"></a>
+
+## E94 — Sign and magnitude compatibility is confirmed on fresh histories
+
+**Evidence status:** E065 generates 32 new source blocks, with 512 cases per sham/pulse history and 1,024 pooled cases per arm. All three frozen primary contrasts and numerical controls pass. No precursor scientific cases are pooled. E064's failed preferential changed-edge claim remains failed.
+
+**Result used:** Final signs/magnitudes give 85.25% success. Combining final signs with earlier magnitudes gives 30.86%; matching earlier signs to those magnitudes gives 76.17%. Earlier signs with final magnitudes give 78.61%. The earlier-sign benefit is +45.31 points [39.26, 51.66], the sign-by-magnitude interaction +51.95 [45.12, 59.38], and excess joint magnitude-substitution loss +37.60 [31.74, 43.62]. These are the original family-adjusted 98.3333% whole-block intervals; percentile coverage is approximate. Native final support and later-only weights remain fixed.
+
+**Boundary:** Earlier means capture immediately after the h32 sham/pulse, before three further rewrites, not initial teaching. Matching archived signs and magnitudes does not restore the complete earlier packet and remains below final native success. Subsets differ in dose, and magnitudes affect normalization; no unique mediator, equal-dose localization or autonomous repair is identified. The paired-cue, exact-zero-fallback, binary64 and ideal-normalization apparatus remains supplied.
+
+**Sources:** [protocol](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E065_fresh_compatibility_confirmation/PROTOCOL.md), [interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E065_fresh_compatibility_confirmation/INTERPRETATION.md), [closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E065_fresh_compatibility_confirmation/analysis/closeout_v1.json). SI C.48. Raw source/reader replay is reported by the retained closeout and was not repeated here.
+
+<a id="e95"></a>
+
+## E95 — Ordinary rewriting partly recovers an incompatible record
+
+**Evidence status:** E068 regenerates acquisition and all source histories in 32 new blocks, separate from the E065–E067 scientific cases. All three frozen recovery contrasts pass. Whole-block inference preserves the two equally weighted source histories and nested founder/recipient cases.
+
+**Result used:** After an imposed final-sign/earlier-magnitude mixture, ordinary rewriting raises success from 311/1,024 (30.37%) to 520/1,024 (50.78%) after one rewrite and 609/1,024 (59.47%) after three. The absolute gain is +29.10 points [23.44, 34.83]; advantages over cumulative-erasure copying and erased-start rewriting are +55.08 [50.78, 59.77] and +59.47 [54.79, 64.26]. All intervals are the saved 98.3333% family-adjusted whole-block intervals. At h3 cumulative-erasure copying gives 45/1,024 (4.39%), erased-start rewriting 0/512, and native records 887/1,024 (86.62%). Protected copies alias the unchanged h0 read.
+
+**Boundary:** The earlier archive is used once for the initial mixture. Subsequent writers receive current packet/body activity and supplied cues, without a teacher, ancestral body or archived reference. Gains are absolute relative to the starting mixture, not merely prevention of imposed loss. Recovery is incomplete and heterogeneous: 367 gains and 69 losses accompany it. This preserves a taught binary response within the declared paired-cue, exact-zero, normalized-reader model; it does not establish fine founder specificity, full repair, general robustness or autonomous machinery acquisition.
+
+**Sources:** [protocol](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E068_fresh_recovery_confirmation/PROTOCOL.md), [interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E068_fresh_recovery_confirmation/INTERPRETATION.md), [closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E068_fresh_recovery_confirmation/analysis/closeout_v1.json). SI C.49. The reported independent replay and receipt checks are not a new manuscript-run replication.
+
+<a id="e96"></a>
+
+## E96 — An immediate pruning benefit reverses after one rewrite
+
+**Evidence status:** E073 repeats E072's predeclared directional comparison on all 32 previously exposed E068 source blocks with fresh matched writer/reader streams. It is saved-cohort replication, not fresh acquisition or a blind holdout. Both primary directions pass; persistence of the benefit fails and the registered reversal criterion passes.
+
+**Result used:** At the current boundary, selected-edge removal raises mixture success from 514/1,024 (50.20%) to 589/1,024 (57.52%): +7.3242 points [4.5898, 10.2539]. After one ordinary rewrite, intact and once-pruned routes give 588/1,024 (57.42%) and 530/1,024 (51.76%): −5.6641 points [−9.9609, −2.1472]. Two saved 97.5% whole-block intervals target approximate 95% family coverage. There are 84 immediate rescues versus nine losses; after rewriting, 35 gains versus 93 losses. E072's separate saved cohort has the same directional pair, without a tested paired comparison between effect sizes.
+
+**Boundary:** Selected edges were absent in the prior incoming record and restored by exact-zero fallback. Pruning is applied once; all physically available selected edges return during the next rewrite. Their branch counts differ sharply between routes, but those descriptive differences do not identify a unique mediator. Other weights, development and normalization can also change. This supports different intervention rankings for present expression and successor usefulness, not universal harm from pruning or a fully predictive continuation law.
+
+**Sources:** [protocol](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E073_saved_cohort_reversal_replication/PROTOCOL.md), [interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E073_saved_cohort_reversal_replication/INTERPRETATION.md), [closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/E073_saved_cohort_reversal_replication/analysis/closeout_v1.json). SI C.50. Blocks remain the population units; the lane's reported replay is not rerun for this source revision.
+
+<a id="e97"></a>
+
+## E97 — Correcting captured injury fill helps serial development but does not beat preservation
+
+**Evidence status:** TT022–TT024 are outcome-informed serial development on four exposed TT021 blocks, 64 records per family and four paired futures per record. They retain both common/informative record families and adverse controls. No fresh-population significance verdict or new uncertainty interval is supplied.
+
+**Result used:** In TT024's informative family, terminal fresh-recipient recognition after eight replacements is 48.438% with full capture, 75.391% with nominal-fill-subtracted capture, 74.219% with zero-initial-memory writing and 89.453% with writing off. All conditions begin with the same captured packet. The +26.953-point corrected-minus-full gain is positive in all four blocks. Corrected capture still trails preservation in every block; versus preservation, four record means improve and thirty worsen. Common-family corrected recognition is 67.188%, tied in aggregate with zero-memory writing and below 68.750% preservation.
+
+**Boundary:** The correction uses a supplied injury mask and resting fill value while preserving actual body and jitter. Zero-initial-memory arms subsequently update normally. Reused controls and exact prefixes remain reused evidence; new arms transmit their own evolving records. Terminal recognition has fractional tie credit, while uninterrupted development and repaired-body success require unique correctness at every boundary and yield different comparisons. No extra record corruption is imposed. This limits the inference from TT021's one-reconstruction success to a durable capture policy or superiority over protected storage.
+
+**Sources:** [TT022 interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT022/INTERPRETATION.md), [TT023 interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT023/INTERPRETATION.md), [TT024 protocol](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT024/PROTOCOL.md), [TT024 interpretation](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT024/INTERPRETATION.md), [TT024 closeout](../v2.1/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT024/CLOSEOUT.json). SI C.51. The selection preserves the native development classification and attributes raw replay to the retained lane receipt.
+
+<a id="e98"></a>
+
+## E98 — Fresh confirmation separates immediate benefit from successor usefulness
+
+**Evidence status:** E077 prospectively tests four directions on 32 new acquisition blocks, without loading earlier scientific records or outcomes. All four comparisons pass their family-adjusted intervals. E073 remains saved-cohort evidence; the later E081 primary remains unresolved.
+
+**Result used:** Immediate pruning improves success from 571/1,024 (55.76%) to 647/1,024 (63.18%): +7.4219 points [4.6875, 10.3516]. After one rewrite, the pruned route gives 572/1,024 (55.86%) versus 643/1,024 (62.79%): −6.9336 [−10.2539, −3.7109]. Substituting selected unpruned-successor magnitudes into the pruned successor gives 283/1,024 (27.64%); substituting their signs as well gives 653/1,024 (63.77%). Relative to the pruned successor, those changes are −28.2227 [−33.2526, −23.2422] and +7.9102 [4.5898, 11.7188]. All intervals are the saved nominal 98.75% whole-block intervals.
+
+**Boundary:** Matched sign/magnitude substitution isolates compatible placement in that contrast, not an exclusive mediator of pruning. Only eight of 87 immediate beneficiaries later become harmed cases; the average reversal is not a universal individual trajectory. Shared cues, exact-zero fallback and ideal normalization remain. E081's fresh filtered-pattern gain is +0.7813 [−0.5859, 2.2461] points and unresolved. E083 adds fresh readers of exposed records, not fresh acquisition or retroactive E081 confirmation.
+
+**Sources:** [E077 protocol](sources/HowFormsBecomeReconstructible/experiments/E077_fresh_reconstruction_tradeoff/PROTOCOL.md), [interpretation](sources/HowFormsBecomeReconstructible/experiments/E077_fresh_reconstruction_tradeoff/INTERPRETATION.md), [closeout](sources/HowFormsBecomeReconstructible/experiments/E077_fresh_reconstruction_tradeoff/analysis/closeout_v1.json), [E081 interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E081_fresh_strength_pattern/INTERPRETATION.md), [E083 interpretation](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E083_reader_repeatability/INTERPRETATION.md). SI C.52. Lane-reported replay is not rerun by manuscript intake.
+
+<a id="e99"></a>
+
+## E99 — Sustained guidance improves renewal of two independently taught rules
+
+**Evidence status:** H039 confirms the H035–H038 development lead on 88 fresh base networks with all enrolled outcomes retained. Its three frozen verdicts pass. Two independently assigned rule signs, rather than one global polarity choice, distinguish four acquisition histories.
+
+**Result used:** Joint success after sixteen damaged replacements is 19.5135% (reconstruction/assay gain 4/4), 29.3857% (4/8), 49.6094% (8/4) and 74.2543% (8/8). The primary 8/8−4/8 effect is +44.8686 points, marginal 95% interval [39.5064, 50.0710], adjusted directional lower 37.5888. The original-reader comparison also passes, +30.0959 [26.5803, 33.4872], lower 25.3196. Strong guidance gives uninterrupted success in 518/704 related paths versus 5/704. All inference uses 88 networks, not 704 independent lineages. Selective foreign records redirect the corresponding learned rule.
+
+**Boundary:** Protected copying reaches 99.4851%; strong renewal declines from 99.3786% initially. Six networks are harmed in the primary comparison. The writer combines four supplied cue trials, and geometry, gain, ports and base remain supplied. This is mitigation of loss for two binary relations, not arbitrary or autonomously acquired competence. Bootstrap coverage is approximate; gates require a ten-point mean gain and a positive adjusted lower bound, not a lower bound above ten.
+
+**Sources:** [H039 protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h039/PROTOCOL.md), [completed report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h039/README.md), [sample-size plan](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h039/SAMPLE_SIZE.json), [H035 task](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h035/PROTOCOL.md). SI C.53. The report records independent closeout of all saved rows; raw-run replay was not performed for this revision.
+
+<a id="e100"></a>
+
+## E100 — Body-based correction depends on damage; the primary partial-correction margin is not met
+
+**Evidence status:** TT028 enrolls all records from 64 fresh tissue blocks and tests three registered directional claims. The primary practical gain under half mixing is not confirmed. Own-versus-foreign correction under that condition and recovery after complete noise replacement pass their separate approximate family-adjusted requirements. The joint primary criterion remains failed.
+
+**Result used:** Informative half-mixed recognition rises from 80.847% to 83.600%, +2.753 points, adjusted lower 1.425 below the required two. Own-minus-foreign target recognition is +35.901 points, lower 34.034 above five. Full replacement rises from 25.000% to 77.606%, +52.606 points, lower 50.231 above five. Conservative Hoeffding sensitivity clears the margin only for full replacement. Unmodified informative records instead decline from 89.240% to 85.120%. Fractional tie credit, two corruptions and eight receiving draws are averaged within each of 64 blocks.
+
+**Boundary:** Known injury mask/fill subtraction and fixed writing duration are supplied. Only the new record reaches the receiver. Complete noise replacement removes packet information but not surviving body history; equal mixing does not specify an information percentage. This one-reconstruction result does not resolve serial capture losses, qualify a damage detector or establish writing's general superiority to preservation. TT029's post hoc diagnosis and duration effects are descriptive.
+
+**Sources:** [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT028/PROTOCOL.md), [report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT028/README.md), [evidence](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT028/EVIDENCE.json), [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT028/CLOSEOUT.json), [TT025](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT025/README.md), [TT026](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT026/README.md), [TT029](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT029/README.md). SI C.54. The original report-order failure is preserved; saved-evidence closeout passes with no numerical or inference changes. That correction is separate from the scientific non-confirmation.
+
+<a id="e101"></a>
+
+## E101 — Protected snapshots and continuing body activity support different routes
+
+**Evidence status:** D191 supplies four fresh founder blocks for a mixed direction-only diagnostic. D192 reuses those blocks to separate snapshot-to-body and snapshot-to-writer routes. The latter is an exposed, descriptive four-block panel, with new receiving draws but no new founders or confidence interval.
+
+**Result used:** D191's supplied target-direction substitution changes informative recognition 89.84375%→91.40625% and common recognition 69.140625%→59.765625%. In D192's new-only reads, common B0W0/B0W1/B1W0/B1W1 recognition is 50.0000/54.6875/55.4688/62.3047%; protected snapshot-only writing without a continuing body gives 69.5313%. Corresponding informative scores are 88.6719/91.7969/91.6016/91.0156%, with snapshot-only 87.1094%. Adding body access when writer access is enabled helps common recognition by 7.6172 points and lowers informative recognition by 0.7813.
+
+**Boundary:** Gates control direct snapshot access, not all historical content in the body. Theta reading remains enabled in the factorial. These comparisons establish contextual routes and a stored-history alternative, not continuing-body necessity, an autonomous writer or serial durability. Improved template correlation is not interchangeable with improved recognition.
+
+**Sources:** [D191 results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/FRESH_FOUNDERS_PANEL_RESULTS.md), [D192 protocol](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/SNAPSHOT_ROUTES_PANEL_V1.md), compact saved-panel extraction (see [source availability](SOURCE_AVAILABILITY.md)). SI C.55. The 18 October external completion supersedes the repository's earlier launched status. Manuscript intake checks all 725 saved output hashes and the complete scalar saved-panel validation, not the entire runtime/source-freeze provenance or new dynamics.
+
+<a id="e102"></a>
+
+## E102 — Ion and RNA intervention sufficiency varies across ordinary cellular histories
+
+**Evidence status:** P34G/R/S provide explicit ordinary-origin deterministic panels, including one prospectively declared new sequence in P34S. They are not a sampled population. The source-model correspondence inventory is complete as documentation; publication table/geometry and some source-checkout correspondences remain unresolved.
+
+**Result used:** Ordinary sequence 34001 fails untreated, after RNA alone or after ions alone, and succeeds after combined RNA/ion substitution. Sequence 34002 already succeeds untreated. New sequence 34003 fails untreated and with RNA alone but succeeds with ions alone or the combined intervention, retaining and transmitting after donor withdrawal. Combined-arm communication cuts fail. The binary factorial interaction in 34003 is zero; there is no demonstrated universal positive synergy.
+
+**Boundary:** Substitution changes initial ion rows; RNA subsequently evolves. Ion-only success does not make RNA dynamics dispensable. The corresponding ion-only cut is a separate continuing test and contributes no result. The selected 34001 decomposition reuses the P34G combined arm. q128/q256 resolutions are numerical checks, not independent histories. Source documentation distinguishes primary concentrations, fixed inputs, derived RNA states and added interventions.
+
+**Sources:** [P34G results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34G_RESULTS_2026-10-16.md), [P34R results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34R_RESULTS_2026-10-17.md), [P34S results](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34S_RESULTS_2026-10-18.md), [source-model correspondence](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/SOURCE_MODEL_CORRESPONDENCE_2026-10-16.md). SI C.56. Retained completion reviews are fingerprinted; missing full trajectories were not regenerated.
+
+<a id="e103"></a>
+
+## E103 — More detailed continuation diagnostics and repair-benefit forecasts remain unqualified
+
+**Evidence status:** The 304-block successor-outcome campaign was stopped before continuation outcomes. A completed 63-record pilot freezes predictions before new continuations, but uses selected records from sixteen exposed blocks. Separate benefit-prediction and repeatability studies remain development. No broad RDT claim is qualified.
+
+**Result used:** TT008/direct/successor Brier errors are .12937648/.12460181/.11852942 under matched noise and .09019968/.08331585/.08059387 under independent noise. All four diagnostic-improvement intervals include zero and fail their margin. Direct probing costs eight extra reads; successor diagnostics cost 64. The packet-benefit predictor improves one regime but worsens the other. Four additional futures yield mean repair effects +1.171875 [−4.8128, 7.1565] and +0.390625 [−4.2351, 5.0164] points, with between-record benefit variation unresolved.
+
+**Boundary:** Equal class/block weighting and selected records constrain generalization. Fewer nominal repair decisions do not imply savings when every record still needs a dry-run repair and diagnostic features. Unresolved benefit differences do not prove unlearnability. H033's extra-observation forecast also fails qualification; H034's mixed futures quantify selected-case uncertainty rather than a precise ceiling.
+
+**Sources:** [stopped campaign](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_successor_outcome_v0_2/OUTCOME_STOP.json), [audited pilot report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_cached_outcome_pilot_v0_1/closeout/v1/REPORT.md), [pilot verification](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_cached_outcome_pilot_v0_1/closeout/v1/VERIFICATION.json), [benefit predictor decision](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_packet_benefit_predictor_v0_1/DECISION.json), [repeatability decision](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_repair_repeatability_v0_1/DECISION.json), [H033](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h033/README.md), [H034](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h034/README.md). SI C.57. Manuscript checks do not refit models or rerun futures.
+
+<a id="e104"></a>
+
+## E104 — Paid checking improves response to change without qualifying economical recovery
+
+**Evidence status:** A fresh paired finite-decision-model cohort completes 864 blocks over 27 fixed laws. A separate 144-context analytic panel tests anticipation of compulsory checks. These are decision-model results, not embodied-record renewal or RDT confirmation. The earlier autonomous-reversal report has a saved-data interval correction with unchanged means/verdicts.
+
+**Result used:** Paid checking reduces post-change cost from .124026790 to .100231757, a 19.19% improvement; paired change interval [−.026485642, −.021104423]. The checking mean's interval [.099320111, .101143404] spans the always-buy benchmark .1, so the absolute/joint criterion remains unmet. Stable cost rises .081958333→.088285880. Anticipating checks lowers expected cost in 42 constructed contexts, ties in 102 and worsens none; purchases never decrease. Thirty-eight gains remain with feedback labels erased, separating schedule anticipation from information benefit.
+
+**Boundary:** The checking rule, costs, priors and planner are supplied. The analytic panel is not a new recovery cohort and does not reverse the failed economic qualification. No ongoing planned-recovery outcome is assumed. Numeric improvement under a particular rule does not establish autonomous value or learned repair scheduling.
+
+**Sources:** [corrected autonomous report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_AUTONOMOUS_REVERSAL_V1_REPORT.md), [correction record](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_AUTONOMOUS_REVERSAL_V1_CORRECTION.md), [paid-checking report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_PAID_CHECKING_V1_REPORT.md), [planned-checking report](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_PLANNED_CHECKING_V1_REPORT.md). SI C.58. External result/freeze/qualification hashes and readback bindings were checked; reported lane checks were not rerun during manuscript intake.
+
+<a id="e105"></a>
+
+## E105 — Spatial reset contributes strongly to the corruption apparatus
+
+**Evidence status:** Retained follow-up on exposed TT028 blocks; conditional mechanism result, not a fresh confirmation or a retrospective decomposition of TT021.
+
+**Result used:** TT032 varies the supplied spatial reset while retaining 64 earlier blocks and the declared body/corrupted-record conditions. Common-boundary recognition changes from 73.65% with corrected reset to 34.47% with uniform reset and 25.01% with reversed reset; the residual boundary changes from 77.79% to 31.45% and 25.00%. An own-versus-foreign body effect remains under uniform reset: +6.15 and +6.67 points, positive in 63/64 and 64/64 blocks. That residual effect is highly geometry-dependent. Neutral-body records follow the supplied reset almost perfectly.
+
+**Interpretation and boundary:** The strong restoration result depends substantially on supplied spatial structure. Surviving bodies still contribute historical specificity under the altered reset, but the intervention is not evidence that a body autonomously identifies and repairs any corrupted record. Cohort reuse, changed reader sampling and different boundaries prevent subtracting these means from TT021 to attribute its components. Original TT028 qualification and serial limits remain intact.
+
+**Sources:** [TT032 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT032/README.md), [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT032/PROTOCOL.md), [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT032/CLOSEOUT.json); SI C.59.
+
+<a id="e106"></a>
+
+## E106 — A fixed writing window helps both the body and a fresh recipient
+
+**Evidence status:** TT039 fresh confirmation under complete record corruption and uniform reset; separate TT036 and TT040 findings retain their own scopes.
+
+**Result used:** On 64 fresh TT039 blocks (1,024 paired record positions), late writing at steps 901–1000 improves body recognition at step 1900 by **+4.0527 points [3.2630, 4.8425]** and fresh-recipient recognition by **+14.4379 [13.6252, 15.2505]**, relative to preservation. Both prespecified approximate block-t criteria pass. The respective means are 43.21% versus 39.16%, and 39.44% versus 25.00%. Writing through the whole first thousand steps harms the body; the late window reduces later deterioration rather than making its body score increase after writing stops. The more conservative Hoeffding bounds do not establish positive effects.
+
+**Interpretation and boundary:** Timing can improve both present and successor endpoints in this supplied corruption condition. It does not establish autonomous scheduling, arbitrary-damage correction or serial benefit. Half-retention conditions reverse the favorable direction. TT036 supports stopping earlier relative to prolonged writing but not superiority to no writing for the body. TT040 is four exposed blocks: intact-record late writing harms both endpoints, while complete corruption helps both. These comparisons should not be pooled. TT042 has no outcome in this selection.
+
+**Sources:** [TT039](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT039/README.md), [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT039/PROTOCOL.md), [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT039/CLOSEOUT.json), [TT036](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT036/README.md), [TT040](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT040/README.md); SI C.60. The new figure transcribes retained report values; underlying full arrays are absent locally.
+
+<a id="e107"></a>
+
+## E107 — Immediate-successor probes improve fresh forecasts at equal read budgets
+
+**Evidence status:** Reported completed fresh test with frozen models and predictions; all four registered comparisons pass. Retained completion records are available; the named full report and evidence-audit files are not in this checkout.
+
+**Result used:** The equal-read study retains 80 eligible fresh blocks, 319 selected packets and 2,552 continuations. Successor32 uses 32 native reads to form successor probes and 32 reads to evaluate them. Direct64 uses 64 reads on the starting record; pooled32 spends 32 reads on writing probes and 32 on direct reads but does not use successor performance. Improvement in Brier error over direct64 is **0.010267 [0.006008, 0.014527]** under matched rebuilding noise and **0.002850 [0.000406, 0.005294]** under independent noise; improvements over pooled32 are **0.009842 [0.005831, 0.013853]** and **0.002810 [0.000527, 0.005092]**. These are individual 95% intervals over blocks; every lower bound exceeds the prespecified zero margin. All five forecasts were sealed before future outcomes, with no new fitting reported.
+
+**Interpretation and boundary:** Probing a record's immediate successor can add predictive information beyond the tested equal-read controls. Known ports, orientation, native writer and 18-renewal future distribution are supplied. Selection balances passing/failing starting records rather than estimating an unselected population. Read count is not total computation, and the result does not establish optimal diagnostic cost, beneficial scheduling or general RDT transfer. The independent-noise comparison against the cheaper direct8 control remains unresolved. Earlier unequal-budget positives and failed transfer pilots remain separately reported.
+
+**Sources:** [study description](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/README.md), [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/protocol.json), [retained completion log](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/DISCOVERY_LOG.json), [qualified probe](../v2.4/sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/qualified/ec_probe.py); SI C.61. The plotted intervals are directly extracted, not re-estimated.
+
+<a id="e108"></a>
+
+## E108 — Writer cue-noise pairing changes successor usefulness
+
+**Evidence status:** Native forms E098, fresh 32-block confirmation; not the manuscript's older evidence note E98.
+
+**Result used:** After pruning, independent rather than paired cue noise during one rewrite raises fresh reconstruction from **55.71% to 60.99%**. The paired gain is **+5.273 points [2.734, 7.812]**, with a pulse-by-pairing interaction of **+5.469 [2.539, 8.398]**; these are the report's adjusted 97.5% intervals. The 2,048 dependent paired assessments contain 161 gains and 53 harms. Inference is over 32 fresh blocks, not assessments.
+
+**Interpretation and boundary:** Changing the joint noise structure in the writer can change what a later body reconstructs while retaining each cue's marginal noise amplitude. Births remain matched and terminal cue noise remains paired. This identifies a writing-route intervention, not a unique attribution to the fallback branch, a general noise benefit or a serial-renewal result.
+
+**Sources:** [E098 report](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E098_writer_pairing_tradeoff/README.md), [protocol](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E098_writer_pairing_tradeoff/PROTOCOL.md), [closeout](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E098_writer_pairing_tradeoff/analysis/closeout_v1.json); SI C.62.
+
+<a id="e109"></a>
+
+## E109 — Compatible sign placement helps, but the tighter loop contrast is null
+
+**Evidence status:** E102/E106 interventions on known source records with fresh reader draws; not fresh acquisition cohorts.
+
+**Result used:** E102's selected sign placement gives **56.934%** success versus **49.658%** with matched shuffled placement and **53.125%** untreated. The respective adjusted contrasts are **+7.275 points [5.762, 8.887]** and **+3.809 [2.539, 5.127]**. There are 86 gains and eight harms relative to untreated across 2,048 paired assessments. Shuffling respects the two injury-survival strata and preserves sign counts, magnitudes and receiving normalization totals. The tighter E106 comparison gives **56.89% in both primary arms**, a **0.00-point** effect **[−1.03, 1.02]**, with two gains and two harms. Its named secondary native-reader lead does not change the primary null.
+
+**Interpretation and boundary:** These results support selected spatial sign compatibility. They do not identify cycle balance as the sufficient explanation or establish an advantage once the stronger local-weight control is imposed. Existing matched/independent history differences and pure-contrast failures remain consequential.
+
+**Sources:** [E102](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E102_selected_sign_arrangement/README.md), [E106](../v2.4/sources/HowFormsBecomeReconstructible/experiments/E106_fresh_reader_sign_control/README.md), their protocols and compact analyses in the source archive; SI C.63.
+
+<a id="e110"></a>
+
+## E110 — Retrieval timing and coordinated moves help a bounded Hopfield task
+
+**Evidence status:** Fresh H079 and H084 cohorts with different registered endpoints; H081 and H089 are separate mechanism/capability limits.
+
+**Result used:** On 192 fresh networks, H079 delayed iterative feedback completes **428/768 tasks (55.73%)**, against zero for the tested constant or single delayed schedules. Its three timing contrasts pass; its separate 75% capability criterion fails. Of 476 failing queries, 472 already occupy fixed states. H084 uses another 192 networks: a target-free two-bit search improves completion from **368/768 (47.92%) to 436/768 (56.77%)**, with 17 improving networks, none worsening and 175 ties. The directional test passes (p = 7.63 × 10⁻⁶); the conservative lower bound does not qualify a positive population-mean improvement. The search evaluates 1,128 candidate pairs. Quadratic and nearest-history controls solve all tasks.
+
+**Interpretation and boundary:** Supplied retrieval schedules and coordinated action can overcome some stalling, without demonstrating autonomous multiscale error sensing or general superiority to simple memory. H081 reduces newly wrong bits yet reduces complete-task success. H089 fails every complete trained task at acquisition and every held-out task after renewal, while a supplied parity learner passes; the initial failure precedes the inheritance test. A richer task family has therefore not been established.
+
+**Sources:** [H079](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h079/README.md), [H081](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h081/README.md), [H084](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h084/README.md), [H089](../v2.4/sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h089/README.md); SI C.64.
+
+<a id="e111"></a>
+
+## E111 — Cellular readiness depends jointly on state components and communication context
+
+**Evidence status:** Completed P34L/N/F/V model panels, including one prospectively selected new recipient sequence; not a population-level biological result.
+
+**Result used:** The ion-only route localized to the newcomer in P34L is sensitive to cutting communication in the completed P34N panel, and fails in the next recipient-history context. In that known failure, P34F's joint RNA/ion intervention succeeds where the single-component interventions fail; cutting communication removes the joint effect. P34V selects one fresh recipient sequence before its outcomes: joint intervention succeeds, untreated transmission fails and communication cuts again remove success. Sixteen cases span 124 recorded phases and eight numerical comparison pairs, including declared reused cases.
+
+**Interpretation and boundary:** A shared EEE classification hides state- and context-dependent transmission readiness. These interventions advance the causal comparison without demonstrating invariant single-component sufficiency. P34V omits RNA-only and ion-only arms, so joint necessity in its fresh recipient is unresolved. It adds one recipient sequence on the existing model background, not broad founder generalization. Source-paper geometry correspondence and biological validation remain open; E/M labels are not clinical diagnoses. P34W has no retained result here.
+
+**Sources:** [P34N](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34N_RESULTS_2026-10-19.md), [P34F](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34F_RESULTS_2026-10-19.md), [P34V](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34V_RESULTS_2026-10-20.md); SI C.65.
+
+<a id="e112"></a>
+
+## E112 — A recovery objective helps in one exact decision model, not across horizons
+
+**Evidence status:** Completed finite decision-model comparisons; exact expectations are distinct from the larger sampled planned-recovery test.
+
+**Result used:** The 864-block planned-recovery test remains unresolved, with full-run contrast **−0.000344 [−0.000995, +0.000308]** and failed joint qualification. In the exact 100-task recovery-objective model, the recovery policy gives stable-world loss **0.05**, equal to the hybrid comparator, and recovery loss **0.017348** versus **0.073965** (76.55% lower). It passes the declared conjunction. Relative to ordinary full-run optimization, it raises full-run loss from **0.024735 to 0.038210** and purchases from 18 to 50. The shorter ten-task test fails the conjunction both without noise and with 5% observation error. In the noisy case, recovery loss improves against hybrid (**0.072509 versus 0.096675**) but stable loss increases (**0.109781 versus 0.095550**), with slightly worse full-run loss.
+
+**Interpretation and boundary:** An explicit recovery objective changes evidence purchases and the error tradeoff. It is not free information, a generic FEP advantage or validated biological error sensing. The short noiseless failure means the later adverse verdict cannot be uniquely attributed to noise. The exact frontier is conditional on its finite policy class and supplied model. External manifest and receipt hashes were inspected; the original exact computations were not rerun for this revision. The subsequent stable-constraint design has no included outcome.
+
+**Sources:** [planned recovery](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_PLANNED_RECOVERY_V1_REPORT.md), [exact checking frontier](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_CHECKING_TRADEOFF_V1_REPORT.md), [recovery objective](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_RECOVERY_OBJECTIVE_V1_REPORT.md), [noisy recovery](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_NOISY_RECOVERY_V1_REPORT.md); SI C.66.
+
+<a id="e113"></a>
+
+## E113 — Live feedback has not beaten a supplied prerecorded body trajectory
+
+**Evidence status:** D193 exposed four-block comparison, D194 descriptive mechanism analysis and D195 single-history perturbation pilot. No fresh qualification.
+
+**Result used:** D193 common-boundary recognition is identical (**63.18%**) with live or prerecorded donor feedback; residual-boundary recognition is **91.80% versus 92.19%**, with no gains and two harms. D194 shows large delivered body differences followed by much smaller writer-field and fresh-reader differences, compatible with buffering but not a causal mediation estimate. D195 pulses only the recipient's central 8 × 8 activity at step 501 while the prerecorded donor remains unaffected. On one excluded history, neither boundary shows a favorable primary live-feedback interaction: **−3.125 and −0.78125 preference points**, each with zero gains, two harms and fourteen ties.
+
+**Interpretation and boundary:** These controls distinguish body information from the value of continuously refreshed feedback. They do not undermine every body contribution, nor establish that live feedback never matters. Prerecorded trajectories contain 1,001 frames and are not storage-matched to compact records. D195 is exposed development, with zero fresh founder blocks and no population interval. A new recipient-pulse panel is prospective only.
+
+**Sources:** [D193](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/YOKED_REFERENCE_PANEL_RESULTS.md), [D194](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/YOKED_SEPARATION_RESULTS.md), [D195](../v2.4/sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/RECIPIENT_PULSE_RESULTS.md); SI C.67.
+
+<a id="e114"></a>
+
+## E114 — Multiscale correction is implemented, but signal and dose matter
+
+**Evidence status:** Completed development, not a fresh confirmation. The fourteen report set includes repurposed development studies, deterministic checks and failed statements; statement counts are not independent replications.
+
+**Result used:** ME001/ME002 implement local, regional and coarse discrepancy signals with separately controlled body and reference actions. Broad ME002 screening finds that retaining reference appearance need not preserve a successor: in the illustrated no-injury branch, fresh-body qualified agreement falls from about **0.765 to 0.582** over eight generations while reference agreement remains about **0.840 to 0.836**. Under recurring injury and high noise, live variants cluster around **0.44–0.46** versus about **0.63** for protected copying. A multiscale voting advantage disappears under a matched-dose control. Other development variants show coarse correction protecting against some fine noise while losing details, and correction windows learning damage.
+
+**Interpretation and boundary:** The lane now supplies implemented signals and causal interventions, not only a proposed experiment. It does not establish a universal trust rule or a multiscale advantage at equal information and action budgets. External controller search uses a supplied objective; dimensionless resource controls are not biological metabolism. The original v2.3 proposal is historical, and confirmation requires a frozen policy, unseen histories and declared successor boundaries.
+
+**Sources:** [lane report](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT.md), [ME002](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_ME002.md), [development review](../v2.4/sources/HowFormsBecomeReconstructible/reviews/MULTISCALE_LANE_REVIEW_2026-10-27.md); SI C.68.
+
+<a id="e115"></a>
+
+## E115 — A body can maintain its relational record and can teach it distortions
+
+**Evidence status:** LR001–LR003 development under specified dynamics and pattern families; not fresh-recipient inheritance or completed apparatus renewal.
+
+**Result used:** In LR002's clean stripe condition, a body with compatible local pattern dynamics maintains record sign agreement at **97.02%** after 4,000 steps, versus **50.01%** without relearning, **49.70%** with record-only relearning and **50.13%** with record relearning plus local loop checks. The selected condition uses sixteen development blocks and a 0.01 bond-flip rate. Adding the environmental field reduces body-taught stripe agreement to approximately **61%**. LR003's site-consistency gate restores approximately **96%** in the clean case, versus about **70%** with a connection-only gate; noise can open either route to a distorted teacher.
+
+**Interpretation and boundary:** Embodied dynamics can causally help maintain information that also supports the body. Internal consistency alone does not identify historical correctness, and the same feedback can transmit distortion. These percentages measure site sign agreement, not successful lineages. Coupling scaffold, dynamics and update schedule are supplied. Two mutually correcting stores are not proved incapable of error assignment; these particular gates fail to resolve it generally. LR004's third-source voting design contributes no assumed result.
+
+**Sources:** [LR001](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR001.md), [LR002](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR002.md), [LR003](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR003.md), selected frozen implementation and registration records in the source archive; SI C.69.
+
+<a id="e116"></a>
+
+## E116 — Pattern kind, historical placement and developmental order are separable
+
+**Evidence status:** DL001–DL003 and EN002 development; supplied boundary cues and activation schedules, not biological growth or spontaneous target acquisition.
+
+**Result used:** Stripe-forming dynamics can restore characteristic spacing after resource restoration while agreement with the previous placement stays near chance; an acquired reference can retain that placement. In DL003's quiet stripe case, the same 64 instructed cells in a 32 × 32 sheet support **99.82%** sign agreement with a suitably oriented activation front versus **68.71%** during simultaneous development; far-side agreement is **99.77% versus 48.82%**. Scattered cues reach about **89.1%**, and the front without anchors about **47.6%**. At the two stronger disorder levels, scattered cues instead outperform the front, by about **7.3 and 6.1 points** in the reported development comparisons.
+
+**Interpretation and boundary:** Local dynamics can recover a pattern family without its historical coordinates, while the relation between cues and developmental sequence changes access to a particular placement. Activation proceeds at a supplied rate and different cells receive different time budgets; these are not equal-compute comparisons. Spatial instructions, reference acquisition and environmental fields must remain explicit. The result motivates matched-budget and new-family tests rather than establishing a general morphogenetic principle.
+
+**Sources:** [DL001](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL001.md), [DL002](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL002.md), [DL003](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL003.md), [EN002](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_EN002.md); SI C.70.
+
+<a id="e117"></a>
+
+## E117 — Native body preference and acquired history make different contributions
+
+**Evidence status:** NP001, sixteen fresh development blocks; protected-record successor reads, not serial successor rewriting.
+
+**Result used:** The imposing stripe bodies preserve their preferred period-8 patterns at 99.5–99.9% sign agreement without reading a record. Thus LR002's approximately 97% record maintenance alone does not distinguish native organization from memory. With the tested 0.01/0.03 bond noise, records relearned from these bodies retain only 53.5–64.6% agreement with nonpreferred period-16 stripes or two-domain patterns; newborns inherit the loss. Intact or record-only maintained nonpreferred records retain 98.4–100% and redirect the body. Newborns reading intact stripe records recover their historical phase at 100%, versus approximately 50% without a record.
+
+**Interpretation and boundary:** Body feedback can preserve a compatible history or overwrite an incompatible one. A protected record can oppose native preference, and the record transmits phase to a fresh body. Patterns, noise levels, body types and successor protections are supplied; the verdict is development. A disclosed inversion-invariant reanalysis preserves the phase-conflict finding. No general insulation requirement or biological law is established.
+
+**Sources:** [NP001 report](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_NP001.md), [protocol](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REGISTRATION_NP001.md), [independent report reducer](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/probes/p31c_np001_lead_check.py); SI C.72. E115 remains the earlier selection.
+
+<a id="e118"></a>
+
+## E118 — A current-success guard improves average later performance
+
+**Evidence status:** Separate fresh 48-block test after an unresolved 16-block study; selected pass/fail boundary cohort and native numerical formulation.
+
+**Result used:** Promote the candidate record when the current body passes the supplied original-rule assay; otherwise retain the incoming record. Under independent cue noise, average success over generations 16–33 is **79.6586%**, versus **70.2836%** for always promoting and **61.8634%** for protected retention. Guard-minus-always is **+9.3750 points**, descriptive two-sided 95% block-t interval **[4.7344, 14.0156]**; the prespecified one-sided lower bound is **5.5045**. All three primary lower bounds, including the protected-retention and noise-interaction comparisons, exceed zero. Uninterrupted success is **61.9792% versus 64.5833%** for always promoting.
+
+**Interpretation and boundary:** A simple supplied rule improves average downstream task performance without improving the observed uninterrupted-success proportion. All arms pay for reading and candidate construction; protected storage and the correct task orientation are available. This is not an RDT-specific result, economical scheduling, unselected-population inference or a finite-tolerance writer test. The earlier six-test qualification remains unresolved. The matched-random-allocation follow-up uses exposed sources; its fresh-founder successor has no retained completion here.
+
+**Sources:** [48-block report](sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_noise_precision_v0_1/SCIENTIFIC_REPORT.txt), [protocol](sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_noise_precision_v0_1/protocol.json), [policy](sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_noise_precision_v0_1/sr_policy.py), [earlier replication](sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_replication_v0_1/SCIENTIFIC_REPORT.txt), [allocation development](sources/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_v0_1/SCIENTIFIC_REPORT.txt); SI C.73.
+
+<a id="e119"></a>
+
+## E119 — Protected context supports unseen combinations through two handoffs
+
+**Evidence status:** H095 fresh finite-cohort confirmation on 32 independent networks, four related births each; no population confidence qualification.
+
+**Result used:** Holding the actual internal context during the first query sweep, then releasing it, raises complete unseen-task performance at acquisition from **109/128 to 128/128**, and after two handoffs from **77/128 to 128/128**. The latter gains 51 tasks across thirteen networks without losses. Taught-task completion also reaches 128/128. Both copying controls and stronger native learners reach 128/128. Four capability/context screens pass; parent-policy benefit and strict comparative superiority do not.
+
+**Interpretation and boundary:** The H089 acquisition bottleneck has been overcome within an explicit supplied completion family, higher-order energy and retrieval schedule. Every child fits its actual parent's eight responses; holding context does not resupply its true value. This is bounded generalization and transmission, not autonomous competence or superiority to copying. The harder H097 connection-loss run fails numerical acceptance; no scientific result is admitted from its passing subset.
+
+**Sources:** [H095](sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h095/README.md), [protocol](sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h095/PROTOCOL.md), [interaction apparatus](sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h093/PROTOCOL.md), [H097 failure](sources/HowFormsBecomeReconstructible/experiments/hopfield-lane/h097/README.md); SI C.74. E110 records the earlier bottleneck.
+
+<a id="e120"></a>
+
+## E120 — Repeated fresh forcing preserves a damage-dependent writing effect
+
+**Evidence status:** TT042–TT045 completed follow-ups on four exposed source blocks; fresh forcing does not make a fresh acquisition cohort.
+
+**Result used:** TT045 crosses fixed preserved/late-written packets, continuing/fresh receiving states and sixteen new forcing futures. At 1000 updates after complete packet replacement, fresh-reader recognition is **25.0000% versus 38.5986%**, a **+13.5986-point** effect with conditional Monte Carlo SE **0.4415**. All four block effects are positive. With half-retained packets the fresh-state effect is **−0.1221 points**, SE **0.5223**, and the state-by-packet interaction changes sign between 900 and 1000 updates. Intact-packet means show no improvement; individual harms remain in all relevant comparisons.
+
+**Interpretation and boundary:** Record usefulness depends on damage, receiving state and read time. These are one-read estimates with the packet held fixed, feedback/writing off and only four exposed population blocks. There is no prespecified significance gate or serial-renewal result. TT042 is no longer pending; TT046 is mentioned by TT045 but lacks its own retained package and is not selected here.
+
+**Sources:** [TT042](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT042/README.md), [TT043](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT043/README.md), [TT044](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT044/README.md), [TT045](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT045/README.md), [protocol](sources/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT045/PROTOCOL.md); SI C.75.
+
+<a id="e121"></a>
+
+## E121 — Fresh pruning recurrence does not confirm the proposed component mechanism
+
+**Evidence status:** Native forms E112, 32 fresh sources and 4,096 retained comparisons. Retained README/protocol review; linked full interpretation and closeout are unavailable locally.
+
+**Result used:** The mixture pruning contrast again improves immediate success (**+7.227 points**) while reducing success after paired writing (**−4.199 points**). The sole primary prediction, gross shared-minus-cue component sensitivity, is **+0.551 points [0.000, 1.460]**. Its lower bound equals zero and fails the frozen strict-positive requirement. The excess arises from three comparisons in two histories. After independent writing, pruning's mean effect remains unresolved, with 109 gains and 108 harms.
+
+**Interpretation and boundary:** This is supporting recurrence of the present/successor reversal, not a passed mechanism prediction. Secondary native-reader and continuous-score leads do not rescue the primary. The native exact-zero writer and numerical channel remain; finite-resolution robustness is untested here. E113's reported follow-up is uninspected because its directory is absent.
+
+**Sources:** [native E112 report](sources/HowFormsBecomeReconstructible/experiments/E112_fresh_component_prediction/README.md), [protocol](sources/HowFormsBecomeReconstructible/experiments/E112_fresh_component_prediction/PROTOCOL.md), [analysis rules](sources/HowFormsBecomeReconstructible/experiments/E112_fresh_component_prediction/inference.py); SI C.76. This is distinct from manuscript evidence note E112, which concerns decision costs.
+
+<a id="e122"></a>
+
+## E122 — A live-feedback secondary response recurs on fresh histories
+
+**Evidence status:** D195 exposed-history panel, D196 saved diagnosis and D197 four fresh histories; no powered population confirmation.
+
+**Result used:** After a fixed recipient pulse, D197's residual-family margin interaction is **+0.002706640640**, positive across all four new histories, both roles/futures and each history omission, with 42 record gains and 22 harms. The primary preference interaction is only **+0.1953125 points**; own feedback remains **0.09765625 points behind** recorded feedback after the pulse. Common records have a +0.78125-point primary interaction but a negative mean margin interaction. These endpoints do not jointly establish a practical win.
+
+**Interpretation and boundary:** A particular continuous response transfers to fresh histories, but an interaction that narrows a deficit is not absolute superiority. Both arms retain bodies and own-reference writers; the comparison changes the source of feedback driving the body. The prior negative pilot and exposed panel remain separate. Four fresh histories are a real advance beyond reused cases without establishing general live-feedback benefit, autonomous repair or useful recipient matching.
+
+**Sources:** [D195 panel](sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/RECIPIENT_PULSE_PANEL_RESULTS.md), [D196](sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/PULSE_MECHANISM_RESULTS.md), [D197](sources/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/PULSE_FOUNDERS_RESULTS.md); SI C.77.
+
+<a id="e123"></a>
+
+## E123 — Cost-constrained recovery succeeds, with a limit under changing reliability
+
+**Evidence status:** Exact finite decision-model studies, distinct from the larger sampled study whose qualification remains failed.
+
+**Result used:** At assumed/true 5% sensor noise, a constrained mixture reduces recovery cost by **7.940%** versus hybrid while meeting its expected stable-world budget. A later deterministic candidate also passes, reducing recovery cost **7.636%** with a small stable-cost reserve. Frozen mixtures designed for noise uncertainty subsequently satisfy all primary inequalities for every fixed noise rate in **[4%, 6%]**, using polynomial/Bernstein certificates. Both fail one of eighteen within-episode switch schedules: a 6%-to-4% change at the final task exceeds the stable-cost budget by **0.000009864444** or **0.000016577738 per task**. Recovery still improves against the matched hybrid in all eighteen schedules.
+
+**Interpretation and boundary:** Explicit functional constraints can reconcile recovery and average stable cost in this supplied model. Fixed-condition guarantees do not imply robustness to changing conditions, per-episode protection or a unique FEP advantage: a simpler fixed-policy pool also passes the fixed interval. Labels purchased for accurate current answers inform ordinary Bayesian/VFE beliefs; action selection uses constrained task cost. No tissue renewal or biological validation follows.
+
+**Sources:** [stable constraint](sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_STABLE_CONSTRAINT_V1_REPORT.md), [deterministic policy](sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_DETERMINISTIC_RECOVERY_V1_REPORT.md), [fixed interval](sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_NOISE_INTERVAL_V1_REPORT.md), [reliability switch](sources/PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_NOISE_SWITCH_V1_REPORT.md); SI C.78.
+
+<a id="e124"></a>
+
+## E124 — Correction can erase the evidence needed for a later corrective signal
+
+**Evidence status:** BE001–BE005 and related multiscale mechanism development; not a calibrated biological model or fresh population confirmation.
+
+**Result used:** The extended lane implements cable coupling, voltage-dependent slow commitment, growth-related junction isolation, positional uncertainty and finite membrane relaxation. In BE005, the detector's own relearning rate sets a derived clock, $T^*(\eta)=\ln(1+s_0)/[-\ln(1-\eta)]$ with $s_0=0.8$. Across rates 0.005–0.02, signals arriving within this clock retain prompt-repair performance; at twice the clock or later, the repair score loses **0.099–0.186**. Faster correction can erase more of the sensors' disagreement before the signal arrives. Slow membrane relaxation attenuates short signals but also weakens legitimate steady changes.
+
+**Interpretation and boundary:** Detection and action interact: correction can remove information required to interpret a later input. The clock predicts onset, not collapse of all loss curves; the stronger collapse proposal failed in development. Signals, sensors, wiring and arbitration remain supplied, and coherent misleading cues can pass the same gates. Qualification Q8 was amended before development after a case-versus-population mismatch; the failed receipt is preserved.
+
+**Sources:** [BE005 report](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_BE005.md), [protocol](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REGISTRATION_BE005.md), [BE004](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_BE004.md), [BE001](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_BE001.md), [SC003](sources/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_SC003.md); SI C.79.
+
+## External framing sources
+
+- [Wolfram 2022](https://arxiv.org/abs/2204.05123): arXiv v1, 4 April 2022; ruliad and bounded-observer framing. The abstract and bibliographic record were rechecked for this draft.
+- [Levin 2026](https://www.mdpi.com/2409-9287/11/5/161): published version of *Ingressing Minds*, 9 September 2026. Publisher metadata and indexed abstract were checked; the [version notes](https://www.mdpi.com/2409-9287/11/5/161/notes) list the September 9 version of record. Direct publisher opening returned a rate limit; the search-index publisher text supplied the checked abstract and metadata. The draft uses the published title, not the earlier preprint title.
+- [Levin 2022](https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2022.768201/full): TAME and testing competence in unconventional embodiments. Publisher text and metadata checked.
+- [Levin 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10770221/): cognitive scaling and bioelectric networks. Primary text and metadata checked during the preceding collective-goal discussion.
+
+The external sources frame the questions. They do not validate the local experiments. The draft contains no proof that the ruliad and Platonic space are identical, that computational realization settles their ontology, or that these simulations establish biological treatment efficacy.

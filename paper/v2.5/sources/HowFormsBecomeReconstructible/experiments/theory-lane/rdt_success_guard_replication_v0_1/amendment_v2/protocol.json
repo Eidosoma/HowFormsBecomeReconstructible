@@ -1,0 +1,212 @@
+{
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "kind": "byte-identical exact native writer",
+    "beta": 3.0
+  },
+  "generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "decision_generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "primary_generations": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "policies": [
+    "always_promote",
+    "history_guard",
+    "writer_success_guard",
+    "protected_retain"
+  ],
+  "injury_levels": [
+    18,
+    24
+  ],
+  "regimes": [
+    "matched",
+    "independent"
+  ],
+  "forcing": "PCG64 seed from first16 SHA256 bytes, little-endian, of compact JSON [namespace,stage,*key,0,generation,purpose,channel]. Channel injury gives a uniform permutation of the244 non-port cells; take first18 or24. Channel forcing gives2049x2x16x16 normal draws. Exclude injury count, policy and noise regime from seed. Matched copies cue0 birth/noise to cue1; independent keeps both. All policies share forcing and evolve their own packets.",
+  "storage": "Protected incoming packet and candidate successor, supplied task/reader/writer/cue apparatus. Charge current native read and candidate construction even when promotion is declined; report logical promotion and unavoidable-read costs separately.",
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "version": "0.1",
+  "status": "FIXED_BUDGET_AMENDMENT_PENDING_SOFTWARE_QUALIFICATION",
+  "namespace": "RDT_success_guard_replication_v0_1",
+  "stages": [
+    "qualification",
+    "scientific"
+  ],
+  "repeat": 0,
+  "qualification_blocks": [
+    -2,
+    -1
+  ],
+  "qualification_acquisition_blocks": [
+    -3,
+    -2,
+    -1
+  ],
+  "legacy_block": 34000,
+  "cohort": {
+    "eligible_blocks": 16,
+    "maximum_attempts": 24,
+    "wave_size": 8,
+    "attempt_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "packets_per_class": 2,
+    "selection": "First16 eligible acquisition blocks in ascending ID, acquired in complete8-block waves. Use original key-hash/rule-balanced boundary selector; require exactly2 original failures and2 successes. Retain all attempts and surplus blocks. No futures until entire cohort is committed."
+  },
+  "primary": {
+    "endpoint": "Fraction of original-rule successes over g16..33, averaged within4 packets and then across16 acquisition blocks.",
+    "components": [
+      "18_independent_minus_always_promote",
+      "18_independent_minus_protected_retain",
+      "18_noise_interaction",
+      "24_independent_minus_always_promote",
+      "24_independent_minus_protected_retain",
+      "24_noise_interaction"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "All six one-sided95% paired acquisition-block t lower limits must exceed zero: guard beats always-promote and protected-retain under independent noise at both injuries; guard-minus-always benefit is larger under independent than matched noise at both injuries. One conjunctive claim; individual intervals are not simultaneous.",
+    "decision": "SUPPORTED only if all six lower limits>0 with nonzero block variance; CONTRADICTED if any nondegenerate upper95% one-sided limit<=0; otherwise UNRESOLVED. All strict point directions also reported separately, without rescuing inference.",
+    "assumptions": "Independent acquisition blocks, fixed conditional boundary-selection estimand, and approximate t inference across16 block contrasts. The paired policies, injuries and noise regimes are not independent founders."
+  },
+  "secondary": "All four policies, both historical classes, terminal and uninterrupted success, opposite-rule occupancy, promotion counts, and all ordered policy contrasts. The previous history-guard primary and injury-crossover failures remain closed.",
+  "resource": {
+    "workers": 8,
+    "parent_reserve": 1,
+    "numerical_threads": 1,
+    "shared_limit": 12,
+    "qualification_seconds": 400,
+    "target_seconds": 3200,
+    "combined_seconds": 3600,
+    "historical_acquisition_floor": 266.46817758504767,
+    "historical_continuation_floor": 171.41073736001272,
+    "acquisition_waves_cap": 3,
+    "continuation_waves": 4,
+    "multiplier": 1.5,
+    "overhead": 180,
+    "completion_reserve": 120,
+    "max_saved_bytes": 3000000000,
+    "min_free_bytes": 4000000000,
+    "max_worker_resident_bytes": 1500000000
+  },
+  "counts": {
+    "target_continuation_units": 32,
+    "qualification_continuation_units": 4,
+    "qualification_acquisition_units": 4,
+    "target_terminal_outcomes": 1024,
+    "target_primary_continuation_reads": 19456,
+    "target_flat_continuation_reads": 4864,
+    "qualification_primary_reads": 6016,
+    "qualification_flat_reads": 656,
+    "target_acquisition_primary_reads_cap": 21504,
+    "target_acquisition_flat_reads_cap": 288,
+    "total_reads_cap": 52784
+  },
+  "qualification": "Reuse the completed, hash-verified eight-worker native qualification from replication_v1. All dynamics, legacy replay, policy, forcing and lineage audits passed; only the old3000-second target gate failed. Charge284.293seconds already spent against the3600-second total and cap this target-only job at3200seconds. Never rerun qualification or change scientific comparisons to obtain a favorable result.",
+  "exposure": "Hypothesis, sample size and endpoint motivated by exposed guard continuation. Acquisition, selection and future namespaces are fresh and the frozen design predates them. Same programme; not external preregistration, RDT-specific validation, or a general biological law.",
+  "source_pricing_sha256": "8415e28468e9dcde550fafe5e102ee924df4bd42489272f1bcfc85601eada16b",
+  "software_test_count": 23,
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_extension": false,
+  "automatic_successor": false,
+  "benchmark_can_release_this_fixed_target": true,
+  "budget_amendment": {
+    "version": 2,
+    "prior_qualification_sha256": "f6bd39cb0ee7123d9af7a42dd20735a6c701be0f47f71fbdec324839485c4716",
+    "old_target_seconds": 3000,
+    "new_target_seconds": 3200,
+    "scientific_outcomes_before_amendment": 0
+  }
+}

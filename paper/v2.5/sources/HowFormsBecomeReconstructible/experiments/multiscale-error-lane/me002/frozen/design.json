@@ -1,0 +1,4327 @@
+{
+ "study": "ME002",
+ "digest": "168df67657725e42127c40c106ff298408d071ae2e09307c4c552f71464d766e",
+ "frozen_utc": "2026-10-25T11:52:43Z",
+ "sources": {
+  "me001/__init__.py": "53d584150e889e4144fc2227cb97d6d22e771d31bb38c0b2507e84c9511c3a6c",
+  "me001/analyze.py": "9249acfeab06d2a51b95bdb9caa93e531a8cb28a1a315855eb865613f60a38a2",
+  "me001/calibrate.py": "80dba4f75d815882b7fb7b9d1725b5cb022fe7d0d298116aee7777ebd151862b",
+  "me001/checks.py": "6336ed510cbfdef52068bfc28c954a10c9118d9f37543a0c6777411a76d405b7",
+  "me001/design.py": "3455d49fdc68786966d51a85a4a8497023bf043c2da55ae3d2bb86f4d8375abf",
+  "me001/policies.py": "9375a38890a219ab916a1084101227440739a652ed39d292d27c3d215f1eddf2",
+  "me001/postcheck.py": "047c5df9bf811294059e8eaacb56a8d8eabd327b5731ee74f643ac508430fa70",
+  "me001/predict.py": "9038587c2095a5466b742bf9c3817e0a9b8ccc08720d984f52cd7a66b814617d",
+  "me001/run.py": "299822eb8b5c6fc2f15e16e9e4a19d2194856939128156c1f6bd829f6c2e8a64",
+  "me001/tables.py": "81bb1bd4393f9d970baeec6230c5264ac058f15b13af3c8ac2ba0422cc9ccd89",
+  "me001/worker.py": "9db541cc5361e6cf8b26f471c8771861367a2fc183e77f71e8e5ad706324dc58",
+  "me002/__init__.py": "f8f3b317e0ca8fedde22d5080fea2ee2239232f5dff27e36593dd1cb92b40330",
+  "me002/analyze.py": "4966e109d3af89b45872ac4f3f447ce2d1087165ab71b361dbd544944cfdb67f",
+  "me002/calibrate.py": "4f419157e1db2781846bf07da7c377d5c8c47aca24798a33764ce656e6f7f25f",
+  "me002/checks.py": "45fc38deb77dd87747de8bfd16b24750ba15017f2ba3de42840fb5845ba40534",
+  "me002/design.py": "ecd4c8eb569829a3accffa29dfcbed5a3603df1a52ea8ab2bd193f3a9c95fba3",
+  "me002/families.py": "425b0378e564a2cd3319dd269f9d7c002c99a2f3103aa1b92df325b7801f69b3",
+  "me002/policies.py": "b1b17da392900f68c0d1ce4af1a9374b49e7a52e9b0916db317fa20214efabfa",
+  "me002/predict.py": "6f4cccaabc9708346aa687e99ad35fc04f0bc47e3b4d67b46c7fc337e3cd61ff",
+  "me002/run.py": "7e8920c5a92eda3cef25aa9595083c9ff0bff06f67ed55bcc011c1a93ad8ffdf",
+  "me002/sim.py": "bd7357c5b8f5aebfc7f3d17de9f2eb48828eb111f096ea28659e7956cda43b1b",
+  "me002/tables.py": "51dcf05ae28d8a1cf509aeec0d04050700580ed77e719ca08c7910e2a3243201",
+  "me002/worker.py": "9f8bdf9d9bc022fdc9f7c36f051e1df73bfb5da45128a4faa9289d7a21494e35",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "operators.py": "8e58b52b1e8140f485fb55569a96f01b17cae24772adc1e842f4966c873aa082"
+ },
+ "design": {
+  "study": "ME002",
+  "tag": "mse-me002",
+  "identities": {
+   "calibration": [
+    900930,
+    900946
+   ],
+   "preflight": [
+    900950,
+    900952
+   ],
+   "development": [
+    910100,
+    910116
+   ]
+  },
+  "purpose": {
+   "calibration": "engineering",
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "debug_blocks": [
+   900993,
+   900995
+  ],
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "foreign": {
+   "0": 1,
+   "1": 0,
+   "2": 3,
+   "3": 2
+  },
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "read_updates": 1000,
+  "recipients": 4,
+  "per_tissue_theta": true,
+  "arbiter": {
+   "burst_updates": 20,
+   "burst_rate": 0.1,
+   "latch": 1000,
+   "refractory": 200,
+   "quantile": 0.995
+  },
+  "period": 450,
+  "onset": [
+   100,
+   501
+  ],
+  "early": [
+   20,
+   100
+  ],
+  "life": 2500,
+  "generation_onset": [
+   1300,
+   1701
+  ],
+  "generations": 8,
+  "mix": [
+   [
+    "body",
+    0.4
+   ],
+   [
+    "reference",
+    0.4
+   ],
+   [
+    "both",
+    0.2
+   ]
+  ],
+  "bands": [
+   "fine",
+   "regional",
+   "collective"
+  ],
+  "families": [
+   "F0",
+   "F2",
+   "F4",
+   "S4",
+   "BL",
+   "IS"
+  ],
+  "calibration_families": [
+   "F0",
+   "F2",
+   "F4"
+  ],
+  "template_sha256": "feb455d34a36351a69fb1343da3ccedf365ca2c6b58bc4ee3075c9c6e340c6fd",
+  "blob_index": 4,
+  "band_content": {
+   "F0": {
+    "fine": 0.0,
+    "regional": 0.0,
+    "collective": 1.0,
+    "constant": 0.0
+   },
+   "F2": {
+    "fine": 0.5,
+    "regional": 0.25,
+    "collective": 0.25,
+    "constant": 0.0
+   },
+   "F4": {
+    "fine": 0.0,
+    "regional": 1.0,
+    "collective": 0.0,
+    "constant": 0.0
+   },
+   "S4": {
+    "fine": 0.0,
+    "regional": 1.0,
+    "collective": 0.0,
+    "constant": 0.0
+   },
+   "BL": {
+    "fine": 0.4922,
+    "regional": 0.2446,
+    "collective": 0.2632,
+    "constant": 0.0
+   },
+   "IS": {
+    "fine": 0.375,
+    "regional": 0.0625,
+    "collective": 0.5625,
+    "constant": 0.0
+   }
+  },
+  "panels": {
+   "A": {
+    "title": "time: random onset, repeated injuries, sustained change",
+    "window": 1800,
+    "onset": "random",
+    "regimes": [
+     "F0_s0.3_g1",
+     "F0_s0.1_g1",
+     "F4_s0.3_g1",
+     "BL_s0.3_g1"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "events": []
+     },
+     {
+      "name": "body-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "ref-then-body-10",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       },
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 10,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "ref-then-body-300",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       },
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 300,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-then-ref-10",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       },
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 10,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-then-ref-300",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       },
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 300,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "impose-50",
+      "events": [
+       {
+        "kind": "impose",
+        "target": "",
+        "band": "",
+        "rms": 0.0,
+        "delay": 0,
+        "duration": 50
+       }
+      ]
+     },
+     {
+      "name": "impose-300",
+      "events": [
+       {
+        "kind": "impose",
+        "target": "",
+        "band": "",
+        "rms": 0.0,
+        "delay": 0,
+        "duration": 300
+       }
+      ]
+     },
+     {
+      "name": "impose-inf",
+      "events": [
+       {
+        "kind": "impose",
+        "target": "",
+        "band": "",
+        "rms": 0.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     }
+    ],
+    "arms": [
+     {
+      "name": "inactive",
+      "body": null,
+      "reference": null,
+      "control": "inactive",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "reciprocal",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "native",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "write20_t0",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "burst0",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "periodic20",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "periodic",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "changepoint",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 0,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_me001",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "update",
+      "mismatch_window": 1000,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_W300",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 300,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_W100",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 100,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_abort",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": true,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_pooled",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "pooled",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "site",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "oracle",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "oracle",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     }
+    ],
+    "packets": [
+     "protected",
+     "target",
+     "foreign_target",
+     "zero"
+    ]
+   },
+   "B": {
+    "title": "coupling: does the useful trigger scale follow the body's correction scale?",
+    "window": 1000,
+    "onset": "start",
+    "regimes": [
+     "F0_s0.3_g0.25",
+     "F0_s0.3_g1",
+     "F0_s0.3_g2.5",
+     "F0_s0.1_g0.25",
+     "F0_s0.1_g1",
+     "F0_s0.1_g2.5",
+     "F4_s0.3_g0.25",
+     "F4_s0.3_g1",
+     "F4_s0.3_g2.5",
+     "F4_s0.1_g0.25",
+     "F4_s0.1_g1",
+     "F4_s0.1_g2.5"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "events": []
+     },
+     {
+      "name": "reference-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     }
+    ],
+    "arms": [
+     {
+      "name": "inactive",
+      "body": null,
+      "reference": null,
+      "control": "inactive",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_region",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_sheet",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "site",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_sheet",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "sheet",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "changepoint",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 0,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "oracle",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "oracle",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     }
+    ],
+    "packets": [
+     "protected",
+     "target",
+     "zero"
+    ]
+   },
+   "C": {
+    "title": "breadth: noise x pattern families, pooled thresholds on untouched families",
+    "window": 1000,
+    "onset": "start",
+    "regimes": [
+     "F0_s0.05_g1",
+     "F0_s0.1_g1",
+     "F0_s0.2_g1",
+     "F0_s0.3_g1",
+     "F0_s0.4_g1",
+     "F4_s0.05_g1",
+     "F4_s0.1_g1",
+     "F4_s0.2_g1",
+     "F4_s0.3_g1",
+     "F4_s0.4_g1",
+     "S4_s0.05_g1",
+     "S4_s0.1_g1",
+     "S4_s0.2_g1",
+     "S4_s0.3_g1",
+     "S4_s0.4_g1",
+     "BL_s0.05_g1",
+     "BL_s0.1_g1",
+     "BL_s0.2_g1",
+     "BL_s0.3_g1",
+     "BL_s0.4_g1",
+     "IS_s0.05_g1",
+     "IS_s0.1_g1",
+     "IS_s0.2_g1",
+     "IS_s0.3_g1",
+     "IS_s0.4_g1"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "events": []
+     },
+     {
+      "name": "reference-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     }
+    ],
+    "arms": [
+     {
+      "name": "inactive",
+      "body": null,
+      "reference": null,
+      "control": "inactive",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_region",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_sheet",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "reciprocal",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "native",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "write20_t0",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "burst0",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_me001",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "update",
+      "mismatch_window": 1000,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_pooled",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "pooled",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "oracle",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "oracle",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     }
+    ],
+    "packets": [
+     "copy_post",
+     "protected",
+     "target",
+     "zero"
+    ]
+   },
+   "D": {
+    "title": "storage: protected backups at three resolutions",
+    "window": 1000,
+    "onset": "start",
+    "regimes": [
+     "F0_s0.3_g1",
+     "F4_s0.3_g1",
+     "BL_s0.3_g1",
+     "IS_s0.3_g1",
+     "F0_s0.1_g1"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "events": []
+     },
+     {
+      "name": "reference-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "both-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "both",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference2-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference2",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference2-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference2",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     }
+    ],
+    "arms": [
+     {
+      "name": "hold_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "clamp_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": "site",
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     },
+     {
+      "name": "clamp_region",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": "region",
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     },
+     {
+      "name": "clamp_sheet",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": "sheet",
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": true
+     },
+     {
+      "name": "arbiter",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "dual_vote",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 2,
+      "packets": [
+       "Q",
+       "R"
+      ],
+      "privileged": false
+     }
+    ],
+    "packets": [
+     "protected",
+     "backup_region",
+     "backup_sheet",
+     "target",
+     "zero"
+    ]
+   },
+   "E": {
+    "title": "equal-dose majority voting",
+    "window": 1000,
+    "onset": "start",
+    "regimes": [
+     "F0_s0.3_g1",
+     "F0_s0.1_g1",
+     "F4_s0.3_g1",
+     "F4_s0.1_g1"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "events": []
+     },
+     {
+      "name": "body-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "body-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "body",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-fine-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "fine",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-regional-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "regional",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-1",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 1.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     },
+     {
+      "name": "reference-collective-2",
+      "events": [
+       {
+        "kind": "damage",
+        "target": "reference",
+        "band": "collective",
+        "rms": 2.0,
+        "delay": 0,
+        "duration": 0
+       }
+      ]
+     }
+    ],
+    "arms": [
+     {
+      "name": "hold_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_region",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_sheet",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_region",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_sheet",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_site",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_region",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_sheet",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_site",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_region",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_sheet",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_site_eq",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_region_eq",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_site_sheet_eq",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_site_eq",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_region_eq",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_region_sheet_eq",
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_site_eq",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_region_eq",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "sign_sheet_sheet_eq",
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "control": "matched",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     }
+    ],
+    "packets": [
+     "target",
+     "zero"
+    ]
+   },
+   "F": {
+    "title": "heredity over generations",
+    "window": 2500,
+    "onset": "generation",
+    "regimes": [
+     "F0_s0.3_g1",
+     "F4_s0.3_g1",
+     "BL_s0.3_g1",
+     "F0_s0.1_g1"
+    ],
+    "environments": [
+     "none",
+     "reference",
+     "mixed"
+    ],
+    "arms": [
+     {
+      "name": "inactive_Q",
+      "body": null,
+      "reference": null,
+      "control": "inactive",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_Q",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "hold_R",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "reciprocal_Q",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "native",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "reciprocal_R",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "native",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_Q",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "Q"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiter_R",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "arbiterW300_R",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "control": "arbiter",
+      "trigger": "region",
+      "latch": 300,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": null,
+      "copies": 1,
+      "packets": [
+       "R"
+      ],
+      "privileged": false
+     },
+     {
+      "name": "germline_region",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": "region",
+      "copies": 1,
+      "packets": [
+       "germline"
+      ],
+      "privileged": true
+     },
+     {
+      "name": "germline_site",
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "control": "hold",
+      "trigger": "region",
+      "latch": 1000,
+      "surprise": "trajectory",
+      "mismatch_window": 0,
+      "thresholds": "regime",
+      "abort": false,
+      "clamp": null,
+      "germline": "site",
+      "copies": 1,
+      "packets": [
+       "germline"
+      ],
+      "privileged": true
+     }
+    ],
+    "generations": 8
+   }
+  },
+  "packet_once": [
+   "protected",
+   "backup_region",
+   "backup_sheet",
+   "target",
+   "foreign_target",
+   "zero"
+  ],
+  "margin": 0.02,
+  "primary": "F0_s0.3_g1",
+  "primary_endpoints": {
+   "A": [
+    "v_qual",
+    "fQ_qual",
+    "fR_qual"
+   ],
+   "B": [
+    "v_qual",
+    "fQ_qual"
+   ],
+   "C": [
+    "v_qual",
+    "fQ_qual"
+   ],
+   "D": [
+    "v_qual",
+    "fQ_qual",
+    "fR_qual"
+   ],
+   "E": [
+    "v_qual",
+    "fQ_qual"
+   ],
+   "F": [
+    "v_qual",
+    "p_sign"
+   ]
+  },
+  "secondary_endpoints": {
+   "A": [
+    "e20_qual",
+    "e100_qual",
+    "vg_qual",
+    "gQ_qual",
+    "gR_qual",
+    "r_sign",
+    "rg_sign"
+   ],
+   "B": [
+    "fR_qual",
+    "v_sign",
+    "e20_qual"
+   ],
+   "C": [
+    "fR_qual",
+    "v_sign",
+    "e20_qual"
+   ],
+   "D": [
+    "v_sign"
+   ],
+   "E": [
+    "v_sign",
+    "d_body_l1"
+   ],
+   "F": [
+    "v_sign"
+   ]
+  },
+  "contrasts": [
+   [
+    "A",
+    "A1 fixed routes and schedules",
+    "hold_site",
+    "inactive"
+   ],
+   [
+    "A",
+    "A1 fixed routes and schedules",
+    "reciprocal",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A1 fixed routes and schedules",
+    "write20_t0",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A1 fixed routes and schedules",
+    "periodic20",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "arbiter",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "arbiter_me001",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "arbiter",
+    "arbiter_me001"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "arbiter",
+    "oracle"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "arbiter",
+    "changepoint"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "changepoint",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A2 arbitration under random onset",
+    "oracle",
+    "hold_site"
+   ],
+   [
+    "A",
+    "A3 arbiter variants",
+    "arbiter_W300",
+    "arbiter"
+   ],
+   [
+    "A",
+    "A3 arbiter variants",
+    "arbiter_W100",
+    "arbiter"
+   ],
+   [
+    "A",
+    "A3 arbiter variants",
+    "arbiter_abort",
+    "arbiter"
+   ],
+   [
+    "A",
+    "A3 arbiter variants",
+    "arbiter_pooled",
+    "arbiter"
+   ],
+   [
+    "A",
+    "A3 arbiter variants",
+    "arbiter_site",
+    "arbiter"
+   ],
+   [
+    "A",
+    "A4 storage",
+    "protected",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B1 trigger scale vs hold",
+    "arbiter_site",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B1 trigger scale vs hold",
+    "arbiter",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B1 trigger scale vs hold",
+    "arbiter_sheet",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B1 trigger scale vs hold",
+    "changepoint",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B1 trigger scale vs hold",
+    "oracle",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B2 trigger scale vs trigger scale",
+    "arbiter_site",
+    "arbiter"
+   ],
+   [
+    "B",
+    "B2 trigger scale vs trigger scale",
+    "arbiter_sheet",
+    "arbiter"
+   ],
+   [
+    "B",
+    "B2 trigger scale vs trigger scale",
+    "arbiter",
+    "oracle"
+   ],
+   [
+    "B",
+    "B2 trigger scale vs trigger scale",
+    "arbiter_site",
+    "oracle"
+   ],
+   [
+    "B",
+    "B2 trigger scale vs trigger scale",
+    "arbiter_sheet",
+    "oracle"
+   ],
+   [
+    "B",
+    "B3 resolution and setpoint value",
+    "hold_region",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B3 resolution and setpoint value",
+    "hold_sheet",
+    "hold_site"
+   ],
+   [
+    "B",
+    "B3 resolution and setpoint value",
+    "hold_site",
+    "inactive"
+   ],
+   [
+    "C",
+    "C1 setpoint value and resolution",
+    "hold_site",
+    "inactive"
+   ],
+   [
+    "C",
+    "C1 setpoint value and resolution",
+    "hold_region",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C1 setpoint value and resolution",
+    "hold_sheet",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "arbiter",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "arbiter_me001",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "arbiter_pooled",
+    "arbiter"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "arbiter",
+    "oracle"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "oracle",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "reciprocal",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C2 arbitration across noise and families",
+    "write20_t0",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C3 copy and storage",
+    "copy_post",
+    "hold_site"
+   ],
+   [
+    "C",
+    "C3 copy and storage",
+    "protected",
+    "copy_post"
+   ],
+   [
+    "D",
+    "D1 protected backup vs hold",
+    "clamp_site",
+    "hold_site"
+   ],
+   [
+    "D",
+    "D1 protected backup vs hold",
+    "clamp_region",
+    "hold_site"
+   ],
+   [
+    "D",
+    "D1 protected backup vs hold",
+    "clamp_sheet",
+    "hold_site"
+   ],
+   [
+    "D",
+    "D2 coarse backup vs full backup",
+    "clamp_region",
+    "clamp_site"
+   ],
+   [
+    "D",
+    "D2 coarse backup vs full backup",
+    "clamp_sheet",
+    "clamp_site"
+   ],
+   [
+    "D",
+    "D3 live arbitration vs storage",
+    "arbiter",
+    "hold_site"
+   ],
+   [
+    "D",
+    "D3 live arbitration vs storage",
+    "arbiter",
+    "clamp_region"
+   ],
+   [
+    "D",
+    "D4 coarse packets",
+    "backup_region",
+    "protected"
+   ],
+   [
+    "D",
+    "D4 coarse packets",
+    "backup_sheet",
+    "protected"
+   ],
+   [
+    "D",
+    "D5 redundant records",
+    "dual_vote",
+    "hold_site"
+   ],
+   [
+    "D",
+    "D5 redundant records",
+    "dual_vote",
+    "clamp_site"
+   ],
+   [
+    "D",
+    "D5 redundant records",
+    "dual_vote",
+    "arbiter"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_site_site_eq",
+    "hold_site"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_site_site_eq",
+    "sign_site_site"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_site_region_eq",
+    "hold_region"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_site_region_eq",
+    "sign_site_region"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_site_sheet_eq",
+    "hold_sheet"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_site_sheet_eq",
+    "sign_site_sheet"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_region_site_eq",
+    "hold_region"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_region_site_eq",
+    "sign_region_site"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_region_region_eq",
+    "hold_region"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_region_region_eq",
+    "sign_region_region"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_region_sheet_eq",
+    "hold_sheet"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_region_sheet_eq",
+    "sign_region_sheet"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_sheet_site_eq",
+    "hold_sheet"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_sheet_site_eq",
+    "sign_sheet_site"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_sheet_region_eq",
+    "hold_sheet"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_sheet_region_eq",
+    "sign_sheet_region"
+   ],
+   [
+    "E",
+    "E1 equal-dose vote vs linear",
+    "sign_sheet_sheet_eq",
+    "hold_sheet"
+   ],
+   [
+    "E",
+    "E2 equal-dose vote vs full-dose vote",
+    "sign_sheet_sheet_eq",
+    "sign_sheet_sheet"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_region_site_eq",
+    "sign_site_site_eq"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_sheet_site_eq",
+    "sign_site_site_eq"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_region_region_eq",
+    "sign_site_region_eq"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_sheet_region_eq",
+    "sign_site_region_eq"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_region_sheet_eq",
+    "sign_site_sheet_eq"
+   ],
+   [
+    "E",
+    "E3 sensing at fixed actuator, equal dose",
+    "sign_sheet_sheet_eq",
+    "sign_site_sheet_eq"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "hold_R",
+    "hold_Q"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "arbiter_R",
+    "hold_R"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "arbiter_R",
+    "hold_Q"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "arbiter_Q",
+    "hold_Q"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "arbiterW300_R",
+    "arbiter_R"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "reciprocal_R",
+    "hold_R"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "reciprocal_Q",
+    "hold_Q"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "hold_Q",
+    "inactive_Q"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "germline_region",
+    "germline_site"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "arbiter_R",
+    "germline_site"
+   ],
+   [
+    "F",
+    "F1 heredity",
+    "hold_R",
+    "germline_site"
+   ]
+  ],
+  "calibration_regimes": [
+   "BL_s0.05_g1",
+   "BL_s0.1_g1",
+   "BL_s0.2_g1",
+   "BL_s0.3_g1",
+   "BL_s0.4_g1",
+   "F0_s0.05_g1",
+   "F0_s0.1_g0.25",
+   "F0_s0.1_g1",
+   "F0_s0.1_g2.5",
+   "F0_s0.2_g1",
+   "F0_s0.3_g0.25",
+   "F0_s0.3_g1",
+   "F0_s0.3_g2.5",
+   "F0_s0.4_g1",
+   "F2_s0.05_g1",
+   "F2_s0.1_g1",
+   "F2_s0.2_g1",
+   "F2_s0.3_g1",
+   "F2_s0.4_g1",
+   "F4_s0.05_g1",
+   "F4_s0.1_g0.25",
+   "F4_s0.1_g1",
+   "F4_s0.1_g2.5",
+   "F4_s0.2_g1",
+   "F4_s0.3_g0.25",
+   "F4_s0.3_g1",
+   "F4_s0.3_g2.5",
+   "F4_s0.4_g1",
+   "IS_s0.05_g1",
+   "IS_s0.1_g1",
+   "IS_s0.2_g1",
+   "IS_s0.3_g1",
+   "IS_s0.4_g1",
+   "S4_s0.05_g1",
+   "S4_s0.1_g1",
+   "S4_s0.2_g1",
+   "S4_s0.3_g1",
+   "S4_s0.4_g1"
+  ]
+ }
+}

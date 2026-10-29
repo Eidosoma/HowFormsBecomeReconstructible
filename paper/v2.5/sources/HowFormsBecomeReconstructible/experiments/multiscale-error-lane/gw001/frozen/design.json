@@ -1,0 +1,866 @@
+{
+ "study": "GW001",
+ "digest": "aada308c3f76dda01fc089df489f5d6d59d2bf547cdd3484be6ef894c446d702",
+ "frozen_utc": "2026-10-25T21:53:54Z",
+ "sources": {
+  "br001/__init__.py": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+  "br001/analyze.py": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+  "br001/calibrate.py": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+  "br001/checks.py": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+  "br001/design.py": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+  "br001/predict.py": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+  "br001/run.py": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+  "br001/sim.py": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+  "br001/tables.py": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+  "br001/worker.py": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+  "br002/__init__.py": "79096cda2b6fee450de08c5daea73e4c0f91596b8537fc5dafcb517264e90014",
+  "br002/analyze.py": "59de656fb798d6d8160ff47808f7ce4b3c46923c1866f2b66c3ed7517ed67e36",
+  "br002/calibrate.py": "7e6557a4f128c663b7bb6b0085af9c658b98c732af48282c7274a2f5d9b20c12",
+  "br002/checks.py": "9c3c678934ce46c76b93a504ffe5b6dcc7f23df33446f8a18449a5fdcd0192c3",
+  "br002/design.py": "af9f68bb0867ac8d8e01d492c22de9b581ea6355dcd9596675779c52ebd95218",
+  "br002/predict.py": "a0bba24d568d20699bff5e9c1cf77ebf4ee7e596cb12fe93a798169b8de46579",
+  "br002/run.py": "d479eae6480dac09c2c0c7a7e7fba8bcaf737f3ef792b844dcab59a117135331",
+  "br002/sim.py": "f7122ccb850986c5063ca195d20fe2e7763411237974b3f26900ff51eb3af2c1",
+  "br002/tables.py": "d632952954b1f221940791c3ac86de578428e093c5856153419c419612e9cbd9",
+  "br002/worker.py": "ff62ae6917681649bd04764a22b8f9e3ed9357ff7cada401dbc6dddf2859806e",
+  "gw001/__init__.py": "b686f339e89402a615f596e6d6d331d88a4e16c25bc8fc5b4af1d6c2febe08ce",
+  "gw001/analyze.py": "88bb10b0f6481f095c8796c0901d2d4df901c0ffbf5a2930d2243b9e21af5664",
+  "gw001/checks.py": "df38d3dddf829713d6b0cdb22d90ca0fda8a6f27f87291579618fbba36642f85",
+  "gw001/design.py": "851dc6df4b5a843cd392f3c75f1823105a19998e5a9f01aa9e674c18ce1f04cf",
+  "gw001/predict.py": "acefff6bf7b61d4aa5c7ac165fe8b44d82a9ad4ed21bc99efb47b631204aae6e",
+  "gw001/run.py": "9f0167eae03b91b5a5f11aa092fa530d6be16dbcc941536c428e0cd69865797a",
+  "gw001/scoring.py": "8ccd13ec3ddb14aafa9f106f2d66a12286eb44117ee928094c5498dfaf7b0007",
+  "gw001/sim.py": "8786ed25c51b0a4af08eaf76f7275879487a60200b303224378c4a050db83c73",
+  "gw001/tables.py": "2b10147d00b73b40a5571bd2f9008a5e3944618b6c0c3384ab11ee7ea41c1d35",
+  "gw001/worker.py": "4dd610d836915daae391efbbb0d25abde389cfa484f50660ed3410d271de00c1",
+  "me002/__init__.py": "f8f3b317e0ca8fedde22d5080fea2ee2239232f5dff27e36593dd1cb92b40330",
+  "me002/analyze.py": "4966e109d3af89b45872ac4f3f447ce2d1087165ab71b361dbd544944cfdb67f",
+  "me002/calibrate.py": "4f419157e1db2781846bf07da7c377d5c8c47aca24798a33764ce656e6f7f25f",
+  "me002/checks.py": "45fc38deb77dd87747de8bfd16b24750ba15017f2ba3de42840fb5845ba40534",
+  "me002/design.py": "ecd4c8eb569829a3accffa29dfcbed5a3603df1a52ea8ab2bd193f3a9c95fba3",
+  "me002/families.py": "425b0378e564a2cd3319dd269f9d7c002c99a2f3103aa1b92df325b7801f69b3",
+  "me002/policies.py": "b1b17da392900f68c0d1ce4af1a9374b49e7a52e9b0916db317fa20214efabfa",
+  "me002/predict.py": "6f4cccaabc9708346aa687e99ad35fc04f0bc47e3b4d67b46c7fc337e3cd61ff",
+  "me002/run.py": "7e8920c5a92eda3cef25aa9595083c9ff0bff06f67ed55bcc011c1a93ad8ffdf",
+  "me002/sim.py": "bd7357c5b8f5aebfc7f3d17de9f2eb48828eb111f096ea28659e7956cda43b1b",
+  "me002/tables.py": "51dcf05ae28d8a1cf509aeec0d04050700580ed77e719ca08c7910e2a3243201",
+  "me002/worker.py": "9f8bdf9d9bc022fdc9f7c36f051e1df73bfb5da45128a4faa9289d7a21494e35",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "msegrid/__init__.py": "d626f19334d6c7310ea4b2c1275ca93f3a1612c3bedf47e69e7cb7783e51e93f",
+  "msegrid/core.py": "1f277ab621c5b8edc239a61de9abadeb782a6bbd66a843d72cad5e0a22be724e"
+ },
+ "design": {
+  "study": "GW001",
+  "tag": "mse-gw001",
+  "identities": {
+   "preflight": [
+    900860,
+    900862
+   ],
+   "development": [
+    910500,
+    910516
+   ]
+  },
+  "purpose": {
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "debug_blocks": [
+   900862,
+   900864
+  ],
+  "probe_blocks": [
+   900852,
+   900860
+  ],
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "eps": 0.05,
+  "sigma_r": 0.02,
+  "kc": 0.02,
+  "kill_sd": 0.2,
+  "sigma_acq": 0.1,
+  "window_r": 8000,
+  "every_r": 250,
+  "reads_r": [
+   2000,
+   4000,
+   8000
+  ],
+  "window_b": 4000,
+  "every_b": 500,
+  "commit": 0.2,
+  "fixed_template_sha256": "e3486bef4a241691e625375c6a8e15021fe4f5452e90a4bdf17f4f33ac4bb6a9",
+  "geometries": {
+   "F0_16": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-d0",
+     "wound": "flip",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "f4-d1",
+     "wound": "flip",
+     "size": 4,
+     "place": "d1"
+    },
+    {
+     "name": "f4-mid",
+     "wound": "flip",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "f4-cross",
+     "wound": "flip",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "f8-d0",
+     "wound": "flip",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "f8-cross",
+     "wound": "flip",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "r4-d0",
+     "wound": "reset",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "r4-d1",
+     "wound": "reset",
+     "size": 4,
+     "place": "d1"
+    },
+    {
+     "name": "r4-mid",
+     "wound": "reset",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "r4-cross",
+     "wound": "reset",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "r8-d0",
+     "wound": "reset",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "r8-cross",
+     "wound": "reset",
+     "size": 8,
+     "place": "cross"
+    }
+   ],
+   "F0_32": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-d0",
+     "wound": "flip",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "f4-d2",
+     "wound": "flip",
+     "size": 4,
+     "place": "d2"
+    },
+    {
+     "name": "f4-mid",
+     "wound": "flip",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "f4-cross",
+     "wound": "flip",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "f8-d0",
+     "wound": "flip",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "f8-d2",
+     "wound": "flip",
+     "size": 8,
+     "place": "d2"
+    },
+    {
+     "name": "f8-mid",
+     "wound": "flip",
+     "size": 8,
+     "place": "mid"
+    },
+    {
+     "name": "f8-cross",
+     "wound": "flip",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "f12-d0",
+     "wound": "flip",
+     "size": 12,
+     "place": "d0"
+    },
+    {
+     "name": "f12-mid",
+     "wound": "flip",
+     "size": 12,
+     "place": "mid"
+    },
+    {
+     "name": "f12-cross",
+     "wound": "flip",
+     "size": 12,
+     "place": "cross"
+    },
+    {
+     "name": "f6-mid",
+     "wound": "flip",
+     "size": 6,
+     "place": "mid"
+    },
+    {
+     "name": "f10-mid",
+     "wound": "flip",
+     "size": 10,
+     "place": "mid"
+    },
+    {
+     "name": "r4-d0",
+     "wound": "reset",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "r4-d2",
+     "wound": "reset",
+     "size": 4,
+     "place": "d2"
+    },
+    {
+     "name": "r4-mid",
+     "wound": "reset",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "r4-cross",
+     "wound": "reset",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "r8-d0",
+     "wound": "reset",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "r8-d2",
+     "wound": "reset",
+     "size": 8,
+     "place": "d2"
+    },
+    {
+     "name": "r8-mid",
+     "wound": "reset",
+     "size": 8,
+     "place": "mid"
+    },
+    {
+     "name": "r8-cross",
+     "wound": "reset",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "r12-d0",
+     "wound": "reset",
+     "size": 12,
+     "place": "d0"
+    },
+    {
+     "name": "r12-mid",
+     "wound": "reset",
+     "size": 12,
+     "place": "mid"
+    },
+    {
+     "name": "r12-cross",
+     "wound": "reset",
+     "size": 12,
+     "place": "cross"
+    },
+    {
+     "name": "r6-mid",
+     "wound": "reset",
+     "size": 6,
+     "place": "mid"
+    },
+    {
+     "name": "r10-mid",
+     "wound": "reset",
+     "size": 10,
+     "place": "mid"
+    },
+    {
+     "name": "k8-mid",
+     "wound": "kill",
+     "size": 8,
+     "place": "mid"
+    },
+    {
+     "name": "k12-mid",
+     "wound": "kill",
+     "size": 12,
+     "place": "mid"
+    }
+   ],
+   "F0_64": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-mid",
+     "wound": "flip",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "f8-mid",
+     "wound": "flip",
+     "size": 8,
+     "place": "mid"
+    },
+    {
+     "name": "f12-mid",
+     "wound": "flip",
+     "size": 12,
+     "place": "mid"
+    },
+    {
+     "name": "f16-mid",
+     "wound": "flip",
+     "size": 16,
+     "place": "mid"
+    },
+    {
+     "name": "f8-d0",
+     "wound": "flip",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "f8-cross",
+     "wound": "flip",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "f16-d0",
+     "wound": "flip",
+     "size": 16,
+     "place": "d0"
+    },
+    {
+     "name": "f16-cross",
+     "wound": "flip",
+     "size": 16,
+     "place": "cross"
+    },
+    {
+     "name": "r4-mid",
+     "wound": "reset",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "r8-mid",
+     "wound": "reset",
+     "size": 8,
+     "place": "mid"
+    },
+    {
+     "name": "r12-mid",
+     "wound": "reset",
+     "size": 12,
+     "place": "mid"
+    },
+    {
+     "name": "r16-mid",
+     "wound": "reset",
+     "size": 16,
+     "place": "mid"
+    },
+    {
+     "name": "r8-d0",
+     "wound": "reset",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "r8-cross",
+     "wound": "reset",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "r16-d0",
+     "wound": "reset",
+     "size": 16,
+     "place": "d0"
+    },
+    {
+     "name": "r16-cross",
+     "wound": "reset",
+     "size": 16,
+     "place": "cross"
+    }
+   ],
+   "S8_32": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-d0",
+     "wound": "flip",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "f4-d1",
+     "wound": "flip",
+     "size": 4,
+     "place": "d1"
+    },
+    {
+     "name": "f4-mid",
+     "wound": "flip",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "f4-cross",
+     "wound": "flip",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "f8-d0",
+     "wound": "flip",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "f8-cross",
+     "wound": "flip",
+     "size": 8,
+     "place": "cross"
+    },
+    {
+     "name": "r4-d0",
+     "wound": "reset",
+     "size": 4,
+     "place": "d0"
+    },
+    {
+     "name": "r4-d1",
+     "wound": "reset",
+     "size": 4,
+     "place": "d1"
+    },
+    {
+     "name": "r4-mid",
+     "wound": "reset",
+     "size": 4,
+     "place": "mid"
+    },
+    {
+     "name": "r4-cross",
+     "wound": "reset",
+     "size": 4,
+     "place": "cross"
+    },
+    {
+     "name": "r8-d0",
+     "wound": "reset",
+     "size": 8,
+     "place": "d0"
+    },
+    {
+     "name": "r8-cross",
+     "wound": "reset",
+     "size": 8,
+     "place": "cross"
+    }
+   ],
+   "BL_16": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-random",
+     "wound": "flip",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "f8-random",
+     "wound": "flip",
+     "size": 8,
+     "place": "random"
+    },
+    {
+     "name": "r4-random",
+     "wound": "reset",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "r8-random",
+     "wound": "reset",
+     "size": 8,
+     "place": "random"
+    }
+   ],
+   "BL_32": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-random",
+     "wound": "flip",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "f8-random",
+     "wound": "flip",
+     "size": 8,
+     "place": "random"
+    },
+    {
+     "name": "r4-random",
+     "wound": "reset",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "r8-random",
+     "wound": "reset",
+     "size": 8,
+     "place": "random"
+    }
+   ],
+   "BLx2_32": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-random",
+     "wound": "flip",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "f8-random",
+     "wound": "flip",
+     "size": 8,
+     "place": "random"
+    },
+    {
+     "name": "r4-random",
+     "wound": "reset",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "r8-random",
+     "wound": "reset",
+     "size": 8,
+     "place": "random"
+    }
+   ],
+   "BLx4_64": [
+    {
+     "name": "sham",
+     "wound": "sham",
+     "size": 0,
+     "place": "random"
+    },
+    {
+     "name": "f4-random",
+     "wound": "flip",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "f8-random",
+     "wound": "flip",
+     "size": 8,
+     "place": "random"
+    },
+    {
+     "name": "r4-random",
+     "wound": "reset",
+     "size": 4,
+     "place": "random"
+    },
+    {
+     "name": "r8-random",
+     "wound": "reset",
+     "size": 8,
+     "place": "random"
+    }
+   ]
+  },
+  "arms_r": [
+   {
+    "name": "self",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.0,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "self_kr2",
+    "eps": 0.05,
+    "kr": 2.0,
+    "kc": 0.0,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "code",
+    "eps": 0.0,
+    "kr": 1.0,
+    "kc": 0.02,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "multi",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.02,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "rel",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.0,
+    "rel": true,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "rel+code",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.02,
+    "rel": true,
+    "clamp": false,
+    "privileged": false
+   }
+  ],
+  "regimes_b": [
+   "F0_16_s0.1_c",
+   "F0_16_s0.1_o",
+   "F0_32_s0.1_c",
+   "F0_32_s0.1_o"
+  ],
+  "conditions_b": [
+   {
+    "name": "sham",
+    "wound": "sham",
+    "size": 0,
+    "place": "random"
+   },
+   {
+    "name": "f4-mid",
+    "wound": "flip",
+    "size": 4,
+    "place": "mid"
+   },
+   {
+    "name": "f8-d0",
+    "wound": "flip",
+    "size": 8,
+    "place": "d0"
+   },
+   {
+    "name": "f8-cross",
+    "wound": "flip",
+    "size": 8,
+    "place": "cross"
+   },
+   {
+    "name": "r4-mid",
+    "wound": "reset",
+    "size": 4,
+    "place": "mid"
+   },
+   {
+    "name": "r8-d0",
+    "wound": "reset",
+    "size": 8,
+    "place": "d0"
+   },
+   {
+    "name": "r8-cross",
+    "wound": "reset",
+    "size": 8,
+    "place": "cross"
+   }
+  ],
+  "arms_b": [
+   {
+    "name": "static",
+    "eps": 0.0,
+    "kr": 1.0,
+    "kc": 0.0,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "multi",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.02,
+    "rel": false,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "rel+code",
+    "eps": 0.05,
+    "kr": 1.0,
+    "kc": 0.02,
+    "rel": true,
+    "clamp": false,
+    "privileged": false
+   },
+   {
+    "name": "protected",
+    "eps": 0.0,
+    "kr": 1.0,
+    "kc": 0.0,
+    "rel": false,
+    "clamp": true,
+    "privileged": true
+   }
+  ],
+  "margin": 0.02,
+  "contrasts": [
+   [
+    "R",
+    "self_kr2",
+    "self"
+   ],
+   [
+    "R",
+    "multi",
+    "self"
+   ],
+   [
+    "R",
+    "rel",
+    "self"
+   ],
+   [
+    "R",
+    "rel+code",
+    "multi"
+   ],
+   [
+    "B",
+    "multi",
+    "static"
+   ],
+   [
+    "B",
+    "rel+code",
+    "multi"
+   ],
+   [
+    "B",
+    "rel+code",
+    "protected"
+   ]
+  ]
+ }
+}

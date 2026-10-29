@@ -1,0 +1,780 @@
+{
+  "current_body_subgroups": [
+    {
+      "current_pass": false,
+      "records": 9,
+      "terminal": [
+        0.3923611111111111,
+        0.421875,
+        0.4305555555555556
+      ],
+      "uninterrupted": [
+        0.2916666666666667,
+        0.3298611111111111,
+        0.3524305555555556
+      ]
+    },
+    {
+      "current_pass": true,
+      "records": 55,
+      "terminal": [
+        0.9542613636363636,
+        0.9786931818181818,
+        0.996875
+      ],
+      "uninterrupted": [
+        0.8588068181818181,
+        0.9161931818181818,
+        0.9911931818181818
+      ]
+    }
+  ],
+  "failed_body_then_terminal_success": [
+    406,
+    284,
+    65
+  ],
+  "forecast_target": "untreated_terminal_fresh_recipient",
+  "forecast_transport": {
+    "candidate": {
+      "auc": 0.8792448967894603,
+      "auc_scope": "descriptive pooled future labels; correlated within records",
+      "bias": -0.02258476847605203,
+      "bins": [
+        {
+          "bin": 0,
+          "observed": 0.0,
+          "prediction": 0.03416766371607901,
+          "records": 2
+        },
+        {
+          "bin": 1,
+          "observed": 0.0,
+          "prediction": 0.15834790869834492,
+          "records": 1
+        },
+        {
+          "bin": 2,
+          "observed": 0.015625,
+          "prediction": 0.2047848837497751,
+          "records": 1
+        },
+        {
+          "bin": 3,
+          "observed": 0.53125,
+          "prediction": 0.39370238643175054,
+          "records": 1
+        },
+        {
+          "bin": 4,
+          "observed": 0.6328125,
+          "prediction": 0.4461601002616993,
+          "records": 2
+        },
+        {
+          "bin": 7,
+          "observed": 0.8046875,
+          "prediction": 0.7870615504019369,
+          "records": 2
+        },
+        {
+          "bin": 8,
+          "observed": 0.9015625,
+          "prediction": 0.8672708408850717,
+          "records": 10
+        },
+        {
+          "bin": 9,
+          "observed": 0.9684027777777777,
+          "prediction": 0.9467972800231702,
+          "records": 45
+        }
+      ],
+      "empty_bins_excluded": true,
+      "fixed_bin_absolute_error": 0.03557986597231058,
+      "mean_brier": 0.05480959210798325,
+      "mean_observed": 0.875244140625,
+      "mean_prediction": 0.8526593721489479,
+      "probability_correlation": 0.9587464701857751
+    },
+    "expression_history": {
+      "auc": 0.8737250502883563,
+      "auc_scope": "descriptive pooled future labels; correlated within records",
+      "bias": -0.022796022303378054,
+      "bins": [
+        {
+          "bin": 1,
+          "observed": 0.015625,
+          "prediction": 0.18564461830541243,
+          "records": 1
+        },
+        {
+          "bin": 2,
+          "observed": 0.0,
+          "prediction": 0.2080663404143192,
+          "records": 1
+        },
+        {
+          "bin": 3,
+          "observed": 0.44921875,
+          "prediction": 0.35579420123728145,
+          "records": 4
+        },
+        {
+          "bin": 5,
+          "observed": 0.484375,
+          "prediction": 0.5523859815123573,
+          "records": 2
+        },
+        {
+          "bin": 7,
+          "observed": 0.75,
+          "prediction": 0.7457375556643958,
+          "records": 1
+        },
+        {
+          "bin": 8,
+          "observed": 0.8991477272727273,
+          "prediction": 0.8883977900142338,
+          "records": 11
+        },
+        {
+          "bin": 9,
+          "observed": 0.9680397727272727,
+          "prediction": 0.9344751500015742,
+          "records": 44
+        }
+      ],
+      "empty_bins_excluded": true,
+      "fixed_bin_absolute_error": 0.03886189485789198,
+      "mean_brier": 0.0651003475895202,
+      "mean_observed": 0.875244140625,
+      "mean_prediction": 0.8524481183216219,
+      "probability_correlation": 0.8673865599438793
+    },
+    "expression_history_minus_candidate_brier": {
+      "df": 25.067883233408192,
+      "independent_units": 64,
+      "lower_one_sided95": 0.0018055765123821486,
+      "margin": 0.0,
+      "mean": 0.010290755481536948,
+      "method": "approximate stratified Welch-Satterthwaite",
+      "se": 0.0049680113013506,
+      "two_sided95": [
+        6.034941936684107e-05,
+        0.020521161543707055
+      ],
+      "upper_one_sided95": 0.01877593445069175,
+      "verdict": "PASS"
+    },
+    "expression_unsigned": {
+      "auc": 0.8700218621293878,
+      "auc_scope": "descriptive pooled future labels; correlated within records",
+      "bias": -0.020706737872590617,
+      "bins": [
+        {
+          "bin": 2,
+          "observed": 0.16145833333333334,
+          "prediction": 0.23236126567081014,
+          "records": 3
+        },
+        {
+          "bin": 3,
+          "observed": 0.4427083333333333,
+          "prediction": 0.3358165960066743,
+          "records": 3
+        },
+        {
+          "bin": 6,
+          "observed": 0.484375,
+          "prediction": 0.6221127945320257,
+          "records": 2
+        },
+        {
+          "bin": 7,
+          "observed": 0.75,
+          "prediction": 0.701659667216101,
+          "records": 1
+        },
+        {
+          "bin": 8,
+          "observed": 0.8871527777777778,
+          "prediction": 0.8815436822718448,
+          "records": 9
+        },
+        {
+          "bin": 9,
+          "observed": 0.967391304347826,
+          "prediction": 0.9370887346607606,
+          "records": 46
+        }
+      ],
+      "empty_bins_excluded": true,
+      "fixed_bin_absolute_error": 0.03596249993748073,
+      "mean_brier": 0.06771101507980264,
+      "mean_observed": 0.875244140625,
+      "mean_prediction": 0.8545374027524094,
+      "probability_correlation": 0.8378845397303458
+    },
+    "expression_unsigned_minus_candidate_brier": {
+      "df": 19.762881903720295,
+      "independent_units": 64,
+      "lower_one_sided95": 0.002014688746817069,
+      "margin": 0.0,
+      "mean": 0.012901422971819392,
+      "method": "approximate stratified Welch-Satterthwaite",
+      "se": 0.006308507334322286,
+      "two_sided95": [
+        -0.0002680218107829913,
+        0.026070867754421773
+      ],
+      "upper_one_sided95": 0.023788157196821716,
+      "verdict": "PASS"
+    }
+  },
+  "generation_opposite": [
+    [
+      0.000244140625,
+      0.001220703125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.001953125,
+      0.002197265625,
+      0.00244140625,
+      0.00244140625,
+      0.00244140625,
+      0.00244140625,
+      0.002685546875
+    ],
+    [
+      0.000244140625,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.000732421875
+    ],
+    [
+      0.000244140625,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125,
+      0.00048828125
+    ]
+  ],
+  "generation_success": [
+    [
+      0.85888671875,
+      0.878662109375,
+      0.890380859375,
+      0.8896484375,
+      0.888427734375,
+      0.887939453125,
+      0.88720703125,
+      0.885498046875,
+      0.8837890625,
+      0.883544921875,
+      0.88330078125,
+      0.883056640625,
+      0.880859375,
+      0.87939453125,
+      0.87646484375,
+      0.877197265625,
+      0.87744140625,
+      0.875732421875
+    ],
+    [
+      0.9013671875,
+      0.91650390625,
+      0.9140625,
+      0.912841796875,
+      0.913330078125,
+      0.912109375,
+      0.909912109375,
+      0.90869140625,
+      0.906982421875,
+      0.9072265625,
+      0.908935546875,
+      0.906982421875,
+      0.90478515625,
+      0.903564453125,
+      0.9013671875,
+      0.90234375,
+      0.902099609375,
+      0.900390625
+    ],
+    [
+      0.9013671875,
+      0.916748046875,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125,
+      0.917236328125
+    ]
+  ],
+  "independent_population_units": 64,
+  "last_body_terminal_disagreement": [
+    22,
+    26,
+    0
+  ],
+  "limitations": [
+    "Conditional on the declared task, channel, dynamics, policy and disturbance law.",
+    "Population confidence bounds have approximate coverage; individual binomial intervals remain coarse.",
+    "One terminal read per descendant does not estimate each descendant packet's conditional read reliability.",
+    "Forecasting is a secondary transport test; calibration, ranking and subgroup results are descriptive.",
+    "This experiment does not isolate message-specific information supplied by a surviving body."
+  ],
+  "models_refit": false,
+  "population": {
+    "last_body": {
+      "one_time": {
+        "by_history": [
+          0.9189453125,
+          0.970703125,
+          0.92578125,
+          0.7861328125
+        ],
+        "fraction": 0.900390625,
+        "successes": 3688,
+        "trials": 4096
+      },
+      "one_time_minus_untreated": {
+        "df": 32.25888071775632,
+        "independent_units": 64,
+        "lower_one_sided95": 0.00890190359962173,
+        "margin": 0.0,
+        "mean": 0.024658203125,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.009304075044236923,
+        "two_sided95": [
+          0.005712385443790935,
+          0.043604020806209065
+        ],
+        "upper_one_sided95": 0.04041450265037827,
+        "verdict": "PASS"
+      },
+      "repeated": {
+        "by_history": [
+          0.9375,
+          0.990234375,
+          0.9375,
+          0.8037109375
+        ],
+        "fraction": 0.917236328125,
+        "successes": 3757,
+        "trials": 4096
+      },
+      "repeated_minus_one_time": {
+        "df": 54.81798877597452,
+        "independent_units": 64,
+        "lower_one_sided95": 0.012417270509004198,
+        "margin": 0.0,
+        "mean": 0.016845703125,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.002646796664385255,
+        "two_sided95": [
+          0.011541008187199765,
+          0.022150398062800235
+        ],
+        "upper_one_sided95": 0.021274135740995802,
+        "verdict": "PASS"
+      },
+      "repeated_minus_untreated": {
+        "df": 32.353673290608064,
+        "independent_units": 64,
+        "lower_one_sided95": 0.02559030421846471,
+        "margin": 0.0,
+        "mean": 0.04150390625,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.009397775746696067,
+        "two_sided95": [
+          0.022369466955298796,
+          0.060638345544701204
+        ],
+        "upper_one_sided95": 0.05741750828153529,
+        "verdict": "PASS"
+      },
+      "untreated": {
+        "by_history": [
+          0.9140625,
+          0.9384765625,
+          0.900390625,
+          0.75
+        ],
+        "fraction": 0.875732421875,
+        "successes": 3587,
+        "trials": 4096
+      }
+    },
+    "terminal_record": {
+      "one_time": {
+        "by_history": [
+          0.923828125,
+          0.9658203125,
+          0.9267578125,
+          0.78515625
+        ],
+        "fraction": 0.900390625,
+        "successes": 3688,
+        "trials": 4096
+      },
+      "one_time_minus_untreated": {
+        "df": 31.339634626960237,
+        "independent_units": 64,
+        "lower_one_sided95": 0.009793187996765188,
+        "margin": 0.0,
+        "mean": 0.025146484375,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.009058242323861883,
+        "two_sided95": [
+          0.0066801886938807516,
+          0.04361278005611925
+        ],
+        "upper_one_sided95": 0.040499780753234814,
+        "verdict": "PASS"
+      },
+      "repeated": {
+        "by_history": [
+          0.9375,
+          0.990234375,
+          0.9375,
+          0.8037109375
+        ],
+        "fraction": 0.917236328125,
+        "successes": 3757,
+        "trials": 4096
+      },
+      "repeated_minus_one_time": {
+        "df": 59.650349564547355,
+        "independent_units": 64,
+        "lower_one_sided95": 0.013087902560383152,
+        "margin": 0.0,
+        "mean": 0.016845703125,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.002249099268582459,
+        "two_sided95": [
+          0.012346292300175272,
+          0.021345113949824728
+        ],
+        "upper_one_sided95": 0.02060350368961685,
+        "verdict": "PASS"
+      },
+      "repeated_minus_untreated": {
+        "df": 31.34355026054111,
+        "independent_units": 64,
+        "lower_one_sided95": 0.02610364273079005,
+        "margin": 0.02,
+        "mean": 0.0419921875,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.00937406747206707,
+        "two_sided95": [
+          0.02288214066717302,
+          0.06110223433282698
+        ],
+        "upper_one_sided95": 0.05788073226920995,
+        "verdict": "PASS"
+      },
+      "untreated": {
+        "by_history": [
+          0.9169921875,
+          0.93359375,
+          0.90234375,
+          0.748046875
+        ],
+        "fraction": 0.875244140625,
+        "successes": 3585,
+        "trials": 4096
+      }
+    },
+    "uninterrupted": {
+      "one_time": {
+        "by_history": [
+          0.8701171875,
+          0.900390625,
+          0.8701171875,
+          0.6943359375
+        ],
+        "fraction": 0.833740234375,
+        "successes": 3415,
+        "trials": 4096
+      },
+      "one_time_minus_untreated": {
+        "df": 37.890802163861416,
+        "independent_units": 64,
+        "lower_one_sided95": 0.03734839771444502,
+        "margin": 0.0,
+        "mean": 0.0546875,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.010283702368480092,
+        "two_sided95": [
+          0.033867262506348986,
+          0.07550773749365101
+        ],
+        "upper_one_sided95": 0.07202660228555498,
+        "verdict": "PASS"
+      },
+      "repeated": {
+        "by_history": [
+          0.9365234375,
+          0.9716796875,
+          0.935546875,
+          0.76171875
+        ],
+        "fraction": 0.9013671875,
+        "successes": 3692,
+        "trials": 4096
+      },
+      "repeated_minus_one_time": {
+        "df": 57.53892745827601,
+        "independent_units": 64,
+        "lower_one_sided95": 0.05948785608681609,
+        "margin": 0.0,
+        "mean": 0.067626953125,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.0048685501338365965,
+        "two_sided95": [
+          0.05787982823212909,
+          0.07737407801787091
+        ],
+        "upper_one_sided95": 0.07576605016318391,
+        "verdict": "PASS"
+      },
+      "repeated_minus_untreated": {
+        "df": 31.55156038204862,
+        "independent_units": 64,
+        "lower_one_sided95": 0.10252802798486024,
+        "margin": 0.0,
+        "mean": 0.122314453125,
+        "method": "approximate stratified Welch-Satterthwaite",
+        "se": 0.011676117384355917,
+        "two_sided95": [
+          0.09851771595444052,
+          0.14611119029555947
+        ],
+        "upper_one_sided95": 0.14210087826513976,
+        "verdict": "PASS"
+      },
+      "untreated": {
+        "by_history": [
+          0.849609375,
+          0.84765625,
+          0.8056640625,
+          0.61328125
+        ],
+        "fraction": 0.779052734375,
+        "successes": 3191,
+        "trials": 4096
+      }
+    }
+  },
+  "primary": {
+    "contrast": "repeated_minus_untreated",
+    "df": 31.34355026054111,
+    "endpoint": "terminal_fresh_recipient_record_success",
+    "future_environments": 4096,
+    "independent_units": 64,
+    "lower_one_sided95": 0.02610364273079005,
+    "margin": 0.02,
+    "mean": 0.0419921875,
+    "method": "approximate stratified Welch-Satterthwaite",
+    "only_confirmatory_gate": true,
+    "policy_chains": 12288,
+    "se": 0.00937406747206707,
+    "two_sided95": [
+      0.02288214066717302,
+      0.06110223433282698
+    ],
+    "upper_one_sided95": 0.05788073226920995,
+    "verdict": "PASS"
+  },
+  "resources": {
+    "added_abs_weight": [
+      0.0,
+      355923.12257148523,
+      6669316.914393673
+    ],
+    "added_edges": [
+      0,
+      378048,
+      6754955
+    ],
+    "audit_cpu_seconds": [
+      0.0,
+      222.32787829906968,
+      4089.442589462947
+    ],
+    "repair_calls": [
+      0,
+      4096,
+      73728
+    ],
+    "repair_cpu_seconds": [
+      0.0,
+      118.46104045196866,
+      2177.6300284850995
+    ]
+  },
+  "simultaneous_interval_family": 384,
+  "split_halves": {
+    "terminal_record/one_time": {
+      "by_history": [
+        0.05872395833333333,
+        0.0016031901041666666,
+        0.059122721354166664,
+        0.11743570963541666
+      ],
+      "by_history_correlation": [
+        0.9950696073321954,
+        0.671011908557073,
+        0.9945559827633985,
+        0.9873992238680477
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.05922139485677083,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.9867680862554142
+    },
+    "terminal_record/repeated": {
+      "by_history": [
+        0.0625,
+        0.00146484375,
+        0.0625,
+        0.12152506510416666
+      ],
+      "by_history_correlation": [
+        1.0,
+        1.0,
+        1.0,
+        0.9919131327523089
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.061997477213541666,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.995350848473286
+    },
+    "terminal_record/untreated": {
+      "by_history": [
+        0.059733072916666664,
+        0.01502685546875,
+        0.05627034505208333,
+        0.09755859375
+      ],
+      "by_history_correlation": [
+        0.9895448496196544,
+        0.947937963684823,
+        0.9832594309862872,
+        0.9701831428702807
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.057147216796875,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.9730328786263672
+    },
+    "uninterrupted/one_time": {
+      "by_history": [
+        0.0534912109375,
+        0.010135904947916666,
+        0.053295898437499996,
+        0.1134033203125
+      ],
+      "by_history_correlation": [
+        0.9486814107607899,
+        0.890477787539306,
+        0.9518838136718506,
+        0.9539953039476137
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.057581583658854164,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.9515628751968052
+    },
+    "uninterrupted/repeated": {
+      "by_history": [
+        0.06236979166666667,
+        0.0126953125,
+        0.062300618489583334,
+        0.13566080729166666
+      ],
+      "by_history_correlation": [
+        0.9995122142134506,
+        1.0,
+        0.9999999999999999,
+        0.983538778238827
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.06825663248697916,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.9910494501602916
+    },
+    "uninterrupted/untreated": {
+      "by_history": [
+        0.05091145833333333,
+        0.0310546875,
+        0.048779296875,
+        0.0791015625
+      ],
+      "by_history_correlation": [
+        0.9527256084744774,
+        0.9173348327929951,
+        0.9549466279743876,
+        0.9268621702557629
+      ],
+      "confirmatory_gate": false,
+      "mean_within_history_covariance": 0.05246175130208333,
+      "negative_estimates_retained": true,
+      "overall_correlation": 0.9424949852702286
+    }
+  },
+  "state_probability_trials": 64,
+  "status": "PASS",
+  "terminal_opposite": [
+    0.002685546875,
+    0.000732421875,
+    0.00048828125
+  ]
+}

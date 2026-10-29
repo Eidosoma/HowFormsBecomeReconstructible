@@ -1,0 +1,2966 @@
+{
+  "version": "2.5",
+  "date": "2026-10-29",
+  "scope": "Editorial display of retained outcomes; no new simulation, fitted model, bootstrap or confidence interval.",
+  "pruning": {
+    "rows": [
+      {
+        "code": "I0",
+        "label": "Unpruned now",
+        "successes": 571,
+        "trials": 1024,
+        "percent": 55.76171875
+      },
+      {
+        "code": "P0",
+        "label": "Pruned now",
+        "successes": 647,
+        "trials": 1024,
+        "percent": 63.18359375
+      },
+      {
+        "code": "I1",
+        "label": "Unpruned successor",
+        "successes": 643,
+        "trials": 1024,
+        "percent": 62.79296875
+      },
+      {
+        "code": "P1",
+        "label": "Pruned successor",
+        "successes": 572,
+        "trials": 1024,
+        "percent": 55.859375
+      },
+      {
+        "code": "M1",
+        "label": "Magnitudes only",
+        "successes": 283,
+        "trials": 1024,
+        "percent": 27.63671875
+      },
+      {
+        "code": "J1",
+        "label": "Signs + magnitudes",
+        "successes": 653,
+        "trials": 1024,
+        "percent": 63.76953125
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast": "P0 \u2212 I0",
+        "mean": 7.4219,
+        "low": 4.6875,
+        "high": 10.3516,
+        "coverage": 0.9875
+      },
+      {
+        "contrast": "P1 \u2212 I1",
+        "mean": -6.9336,
+        "low": -10.2539,
+        "high": -3.7109,
+        "coverage": 0.9875
+      },
+      {
+        "contrast": "M1 \u2212 P1",
+        "mean": -28.2227,
+        "low": -33.2526,
+        "high": -23.2422,
+        "coverage": 0.9875
+      },
+      {
+        "contrast": "J1 \u2212 P1",
+        "mean": 7.9102,
+        "low": 4.5898,
+        "high": 11.7188,
+        "coverage": 0.9875
+      }
+    ],
+    "independent_blocks": 32,
+    "interval": "Original 98.75% whole-block bootstrap intervals; four primary contrasts.",
+    "immediate_beneficiaries": 87,
+    "later_harmed_among_immediate_beneficiaries": 8,
+    "audit_scope": "Counts and intervals transcribed from retained interpretation; raw E077 runs absent here."
+  },
+  "futures": {
+    "records": [
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000000",
+        "block": 18000000,
+        "index": 0,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000000",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000001",
+        "block": 18000001,
+        "index": 1,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000001",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000002",
+        "block": 18000002,
+        "index": 2,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000002",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000003",
+        "block": 18000003,
+        "index": 3,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 60,
+          "conservative_interval": [
+            -0.05219168108095118,
+            0.1664468309709648
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000003",
+          "treated_only": 4
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000004",
+        "block": 18000004,
+        "index": 4,
+        "current_pass": false,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000004",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000005",
+        "block": 18000005,
+        "index": 5,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000005",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000006",
+        "block": 18000006,
+        "index": 6,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000006",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000007",
+        "block": 18000007,
+        "index": 7,
+        "current_pass": false,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 48,
+            "trials": 64,
+            "probability": 0.75,
+            "pointwise95_low": 0.6260095431181809,
+            "pointwise95_high": 0.8498444259147272
+          },
+          "one_time": {
+            "successes": 43,
+            "trials": 64,
+            "probability": 0.671875,
+            "pointwise95_low": 0.5431232132214403,
+            "pointwise95_high": 0.7841280011062752
+          },
+          "repeated": {
+            "successes": 46,
+            "trials": 64,
+            "probability": 0.71875,
+            "pointwise95_low": 0.5923997036779675,
+            "pointwise95_high": 0.8240336768839289
+          }
+        },
+        "paired": {
+          "both": 31,
+          "conservative_interval": [
+            -0.28185162994344504,
+            0.22321850498111775
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 17,
+          "endpoint": "terminal_record",
+          "mean": -0.03125,
+          "neither": 1,
+          "record_id": "TT018_serial_futures_v1_record:18000007",
+          "treated_only": 15
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000008",
+        "block": 18000008,
+        "index": 8,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000008",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000009",
+        "block": 18000009,
+        "index": 9,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000009",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000010",
+        "block": 18000010,
+        "index": 10,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000010",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000011",
+        "block": 18000011,
+        "index": 11,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000011",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000012",
+        "block": 18000012,
+        "index": 12,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000012",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000013",
+        "block": 18000013,
+        "index": 13,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000013",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000014",
+        "block": 18000014,
+        "index": 14,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000014",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000015",
+        "block": 18000015,
+        "index": 15,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 60,
+          "conservative_interval": [
+            -0.05219168108095118,
+            0.1664468309709648
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000015",
+          "treated_only": 4
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000016",
+        "block": 18000016,
+        "index": 16,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000016",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000017",
+        "block": 18000017,
+        "index": 17,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000017",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000018",
+        "block": 18000018,
+        "index": 18,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 59,
+            "trials": 64,
+            "probability": 0.921875,
+            "pointwise95_low": 0.8270216709957924,
+            "pointwise95_high": 0.9741461598320319
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 59,
+          "conservative_interval": [
+            -0.04457517160874287,
+            0.1876229653799097
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.078125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000018",
+          "treated_only": 5
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000019",
+        "block": 18000019,
+        "index": 19,
+        "current_pass": false,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 34,
+            "trials": 64,
+            "probability": 0.53125,
+            "pointwise95_low": 0.4023098445983511,
+            "pointwise95_high": 0.6572034710603795
+          },
+          "one_time": {
+            "successes": 14,
+            "trials": 64,
+            "probability": 0.21875,
+            "pointwise95_low": 0.12506827371524631,
+            "pointwise95_high": 0.3396963118152601
+          },
+          "repeated": {
+            "successes": 14,
+            "trials": 64,
+            "probability": 0.21875,
+            "pointwise95_low": 0.12506827371524631,
+            "pointwise95_high": 0.3396963118152601
+          }
+        },
+        "paired": {
+          "both": 12,
+          "conservative_interval": [
+            -0.4880610623855341,
+            -0.09461859704892323
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 22,
+          "endpoint": "terminal_record",
+          "mean": -0.3125,
+          "neither": 28,
+          "record_id": "TT018_serial_futures_v1_record:18000019",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000020",
+        "block": 18000020,
+        "index": 20,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000020",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000021",
+        "block": 18000021,
+        "index": 21,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000021",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000022",
+        "block": 18000022,
+        "index": 22,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 58,
+            "trials": 64,
+            "probability": 0.90625,
+            "pointwise95_low": 0.8070308955516561,
+            "pointwise95_high": 0.9648126671291817
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 58,
+          "conservative_interval": [
+            -0.0361159776695084,
+            0.2080960442141455
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.09375,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000022",
+          "treated_only": 6
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000023",
+        "block": 18000023,
+        "index": 23,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 52,
+            "trials": 64,
+            "probability": 0.8125,
+            "pointwise95_low": 0.6953771263048517,
+            "pointwise95_high": 0.8991848406462224
+          },
+          "one_time": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 52,
+          "conservative_interval": [
+            0.02534004800615404,
+            0.3215746051876738
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.1875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000023",
+          "treated_only": 12
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000024",
+        "block": 18000024,
+        "index": 24,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000024",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000025",
+        "block": 18000025,
+        "index": 25,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000025",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000026",
+        "block": 18000026,
+        "index": 26,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000026",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000027",
+        "block": 18000027,
+        "index": 27,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000027",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000028",
+        "block": 18000028,
+        "index": 28,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000028",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000029",
+        "block": 18000029,
+        "index": 29,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000029",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000030",
+        "block": 18000030,
+        "index": 30,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000030",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000031",
+        "block": 18000031,
+        "index": 31,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 55,
+            "trials": 64,
+            "probability": 0.859375,
+            "pointwise95_low": 0.7497631643759881,
+            "pointwise95_high": 0.9336259283315737
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          }
+        },
+        "paired": {
+          "both": 55,
+          "conservative_interval": [
+            -0.026993652718511812,
+            0.22800222926594005
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.109375,
+          "neither": 2,
+          "record_id": "TT018_serial_futures_v1_record:18000031",
+          "treated_only": 7
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000032",
+        "block": 18000032,
+        "index": 32,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000032",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000033",
+        "block": 18000033,
+        "index": 33,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000033",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000034",
+        "block": 18000034,
+        "index": 34,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 59,
+            "trials": 64,
+            "probability": 0.921875,
+            "pointwise95_low": 0.8270216709957924,
+            "pointwise95_high": 0.9741461598320319
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 59,
+          "conservative_interval": [
+            -0.04457517160874287,
+            0.1876229653799097
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.078125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000034",
+          "treated_only": 5
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000035",
+        "block": 18000035,
+        "index": 35,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 57,
+            "trials": 64,
+            "probability": 0.890625,
+            "pointwise95_low": 0.7875427740445976,
+            "pointwise95_high": 0.9548789798128852
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          }
+        },
+        "paired": {
+          "both": 57,
+          "conservative_interval": [
+            -0.0361159776695084,
+            0.2080960442141455
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.09375,
+          "neither": 1,
+          "record_id": "TT018_serial_futures_v1_record:18000035",
+          "treated_only": 6
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000036",
+        "block": 18000036,
+        "index": 36,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000036",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000037",
+        "block": 18000037,
+        "index": 37,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000037",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000038",
+        "block": 18000038,
+        "index": 38,
+        "current_pass": false,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 1,
+            "trials": 64,
+            "probability": 0.015625,
+            "pointwise95_low": 0.00039551251405066395,
+            "pointwise95_high": 0.08401032643435369
+          },
+          "one_time": {
+            "successes": 1,
+            "trials": 64,
+            "probability": 0.015625,
+            "pointwise95_low": 0.00039551251405066395,
+            "pointwise95_high": 0.08401032643435369
+          },
+          "repeated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          }
+        },
+        "paired": {
+          "both": 0,
+          "conservative_interval": [
+            -0.095611957618952,
+            0.0659812228621915
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 1,
+          "endpoint": "terminal_record",
+          "mean": -0.015625,
+          "neither": 63,
+          "record_id": "TT018_serial_futures_v1_record:18000038",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000039",
+        "block": 18000039,
+        "index": 39,
+        "current_pass": false,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          },
+          "one_time": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          },
+          "repeated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          }
+        },
+        "paired": {
+          "both": 0,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 64,
+          "record_id": "TT018_serial_futures_v1_record:18000039",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000040",
+        "block": 18000040,
+        "index": 40,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000040",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000041",
+        "block": 18000041,
+        "index": 41,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000041",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000042",
+        "block": 18000042,
+        "index": 42,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 59,
+            "trials": 64,
+            "probability": 0.921875,
+            "pointwise95_low": 0.8270216709957924,
+            "pointwise95_high": 0.9741461598320319
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 59,
+          "conservative_interval": [
+            -0.04457517160874287,
+            0.1876229653799097
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.078125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000042",
+          "treated_only": 5
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000043",
+        "block": 18000043,
+        "index": 43,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000043",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000044",
+        "block": 18000044,
+        "index": 44,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000044",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000045",
+        "block": 18000045,
+        "index": 45,
+        "current_pass": false,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 30,
+            "trials": 64,
+            "probability": 0.46875,
+            "pointwise95_low": 0.3427965289396206,
+            "pointwise95_high": 0.5976901554016487
+          },
+          "one_time": {
+            "successes": 52,
+            "trials": 64,
+            "probability": 0.8125,
+            "pointwise95_low": 0.6953771263048517,
+            "pointwise95_high": 0.8991848406462224
+          },
+          "repeated": {
+            "successes": 54,
+            "trials": 64,
+            "probability": 0.84375,
+            "pointwise95_low": 0.731365755733743,
+            "pointwise95_high": 0.9224426681998767
+          }
+        },
+        "paired": {
+          "both": 30,
+          "conservative_interval": [
+            0.17634591410301653,
+            0.5224957344593882
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.375,
+          "neither": 10,
+          "record_id": "TT018_serial_futures_v1_record:18000045",
+          "treated_only": 24
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000046",
+        "block": 18000046,
+        "index": 46,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000046",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000047",
+        "block": 18000047,
+        "index": 47,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 58,
+            "trials": 64,
+            "probability": 0.90625,
+            "pointwise95_low": 0.8070308955516561,
+            "pointwise95_high": 0.9648126671291817
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 58,
+          "conservative_interval": [
+            -0.0361159776695084,
+            0.2080960442141455
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.09375,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000047",
+          "treated_only": 6
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000048",
+        "block": 18000048,
+        "index": 48,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000048",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000049",
+        "block": 18000049,
+        "index": 49,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000049",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000050",
+        "block": 18000050,
+        "index": 50,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000050",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000051",
+        "block": 18000051,
+        "index": 51,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000051",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000052",
+        "block": 18000052,
+        "index": 52,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000052",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000053",
+        "block": 18000053,
+        "index": 53,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000053",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000054",
+        "block": 18000054,
+        "index": 54,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 62,
+            "trials": 64,
+            "probability": 0.96875,
+            "pointwise95_low": 0.8916294777754828,
+            "pointwise95_high": 0.9961928186181276
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 62,
+          "conservative_interval": [
+            -0.06354953427253386,
+            0.1209887515415175
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.03125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000054",
+          "treated_only": 2
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000055",
+        "block": 18000055,
+        "index": 55,
+        "current_pass": true,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 45,
+            "trials": 64,
+            "probability": 0.703125,
+            "pointwise95_low": 0.5758292008645438,
+            "pointwise95_high": 0.8108826297632739
+          },
+          "one_time": {
+            "successes": 56,
+            "trials": 64,
+            "probability": 0.875,
+            "pointwise95_low": 0.7684736940339959,
+            "pointwise95_high": 0.944457208820398
+          },
+          "repeated": {
+            "successes": 56,
+            "trials": 64,
+            "probability": 0.875,
+            "pointwise95_low": 0.7684736940339959,
+            "pointwise95_high": 0.944457208820398
+          }
+        },
+        "paired": {
+          "both": 45,
+          "conservative_interval": [
+            0.014170040332331532,
+            0.30349773417275083
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.171875,
+          "neither": 8,
+          "record_id": "TT018_serial_futures_v1_record:18000055",
+          "treated_only": 11
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000056",
+        "block": 18000056,
+        "index": 56,
+        "current_pass": true,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 64,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000056",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000057",
+        "block": 18000057,
+        "index": 57,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 59,
+            "trials": 64,
+            "probability": 0.921875,
+            "pointwise95_low": 0.8270216709957924,
+            "pointwise95_high": 0.9741461598320319
+          },
+          "one_time": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 59,
+          "conservative_interval": [
+            -0.04457517160874287,
+            0.1876229653799097
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.078125,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000057",
+          "treated_only": 5
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000058",
+        "block": 18000058,
+        "index": 58,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 61,
+          "conservative_interval": [
+            -0.05867991231904583,
+            0.14435628574313653
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.046875,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000058",
+          "treated_only": 3
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000059",
+        "block": 18000059,
+        "index": 59,
+        "current_pass": false,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          },
+          "one_time": {
+            "successes": 8,
+            "trials": 64,
+            "probability": 0.125,
+            "pointwise95_low": 0.05554279117960204,
+            "pointwise95_high": 0.23152630596600407
+          },
+          "repeated": {
+            "successes": 9,
+            "trials": 64,
+            "probability": 0.140625,
+            "pointwise95_low": 0.06637407166842632,
+            "pointwise95_high": 0.2502368356240119
+          }
+        },
+        "paired": {
+          "both": 0,
+          "conservative_interval": [
+            -0.007207175636707329,
+            0.2664635671643921
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.140625,
+          "neither": 55,
+          "record_id": "TT018_serial_futures_v1_record:18000059",
+          "treated_only": 9
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000060",
+        "block": 18000060,
+        "index": 60,
+        "current_pass": false,
+        "history": "exact_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          },
+          "one_time": {
+            "successes": 1,
+            "trials": 64,
+            "probability": 0.015625,
+            "pointwise95_low": 0.00039551251405066395,
+            "pointwise95_high": 0.08401032643435369
+          },
+          "repeated": {
+            "successes": 0,
+            "trials": 64,
+            "probability": 0.0,
+            "pointwise95_low": 0.0,
+            "pointwise95_high": 0.05600908938663656
+          }
+        },
+        "paired": {
+          "both": 0,
+          "conservative_interval": [
+            -0.06617774702077084,
+            0.06617774702077084
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0,
+          "neither": 64,
+          "record_id": "TT018_serial_futures_v1_record:18000060",
+          "treated_only": 0
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000061",
+        "block": 18000061,
+        "index": 61,
+        "current_pass": true,
+        "history": "single_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "one_time": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 60,
+          "conservative_interval": [
+            -0.05219168108095118,
+            0.1664468309709648
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.0625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000061",
+          "treated_only": 4
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000062",
+        "block": 18000062,
+        "index": 62,
+        "current_pass": true,
+        "history": "spaced_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 63,
+            "trials": 64,
+            "probability": 0.984375,
+            "pointwise95_low": 0.9159896735656463,
+            "pointwise95_high": 0.9996044874859493
+          },
+          "one_time": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          },
+          "repeated": {
+            "successes": 64,
+            "trials": 64,
+            "probability": 1.0,
+            "pointwise95_low": 0.9439909106133634,
+            "pointwise95_high": 1.0
+          }
+        },
+        "paired": {
+          "both": 63,
+          "conservative_interval": [
+            -0.0659812228621915,
+            0.095611957618952
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 0,
+          "endpoint": "terminal_record",
+          "mean": 0.015625,
+          "neither": 0,
+          "record_id": "TT018_serial_futures_v1_record:18000062",
+          "treated_only": 1
+        }
+      },
+      {
+        "record_id": "TT018_serial_futures_v1_record:18000063",
+        "block": 18000063,
+        "index": 63,
+        "current_pass": false,
+        "history": "clustered_tolerance_rewrite",
+        "policies": {
+          "untreated": {
+            "successes": 51,
+            "trials": 64,
+            "probability": 0.796875,
+            "pointwise95_low": 0.6777356932919598,
+            "pointwise95_high": 0.88717114052916
+          },
+          "one_time": {
+            "successes": 60,
+            "trials": 64,
+            "probability": 0.9375,
+            "pointwise95_low": 0.8476365265773032,
+            "pointwise95_high": 0.9827099726189448
+          },
+          "repeated": {
+            "successes": 61,
+            "trials": 64,
+            "probability": 0.953125,
+            "pointwise95_low": 0.8690642627585942,
+            "pointwise95_high": 0.9902269250455434
+          }
+        },
+        "paired": {
+          "both": 50,
+          "conservative_interval": [
+            -0.015264170265849628,
+            0.3033012100141715
+          ],
+          "contrast": "repeated_minus_untreated",
+          "control_only": 1,
+          "endpoint": "terminal_record",
+          "mean": 0.15625,
+          "neither": 2,
+          "record_id": "TT018_serial_futures_v1_record:18000063",
+          "treated_only": 11
+        }
+      }
+    ],
+    "primary": {
+      "contrast": "repeated_minus_untreated",
+      "df": 31.34355026054111,
+      "endpoint": "terminal_fresh_recipient_record_success",
+      "future_environments": 4096,
+      "independent_units": 64,
+      "lower_one_sided95": 0.02610364273079005,
+      "margin": 0.02,
+      "mean": 0.0419921875,
+      "method": "approximate stratified Welch-Satterthwaite",
+      "only_confirmatory_gate": true,
+      "policy_chains": 12288,
+      "se": 0.00937406747206707,
+      "two_sided95": [
+        0.02288214066717302,
+        0.06110223433282698
+      ],
+      "upper_one_sided95": 0.05788073226920995,
+      "verdict": "PASS"
+    },
+    "audit_scope": "All retained per-record terminal counts, status classes and paired effects checked; trajectories not replayed."
+  },
+  "source_archive": "paper_assets/data/review-figures-v2.5-sources.zip",
+  "sources": [
+    {
+      "path": "experiments/E077_fresh_reconstruction_tradeoff/INTERPRETATION.md",
+      "sha256": "daf24fad19564d6241a06b93247206f15ebad6a99d55eadab3f0ea591a627606"
+    },
+    {
+      "path": "experiments/E077_fresh_reconstruction_tradeoff/analysis/closeout_v1.json",
+      "sha256": "d6a88ff4316980a8bd1fddf0e245c8ad040be30959a6d5dc0202d931851ebd3c"
+    },
+    {
+      "path": "experiments/E077_fresh_reconstruction_tradeoff/PROTOCOL.md",
+      "sha256": "deaabf2e6f18872038f4336a68fd770972b3095d0309cf6fd3d2402105b4791e"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/closeout_checks/v1/recomputed/record_probabilities.csv",
+      "sha256": "af4e1fd93ff4657ae20e3b704da781d0abf2d7d97d831d9900e1022e3985f937"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/closeout_checks/v1/recomputed/sealed_forecasts.csv",
+      "sha256": "9d130c3709434b931fac39d51b14c803ced1dcbdcd2d678a9847a131683d92e8"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/closeout_checks/v1/recomputed/paired_state_effects.json",
+      "sha256": "798df467f8ef6be252998d3635f22dec1046f743a79e25d021d7f58ec96867ae"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/closeout_checks/v1/recomputed/analysis.json",
+      "sha256": "3f768fb8d5a08b5eaa0f081d270888304abb391fe1ce253c783835d90ab43d68"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/INTERPRETATION.md",
+      "sha256": "f0986ff0ec4399fa66a3935c672d2d848ab6d7de6a9cf87661853e1a30fb1f7c"
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PROTOCOL.md",
+      "sha256": "7fd87ae0f945a1e86bf14d609b464274b6ce33224909358d65c81a1806145247"
+    }
+  ]
+}

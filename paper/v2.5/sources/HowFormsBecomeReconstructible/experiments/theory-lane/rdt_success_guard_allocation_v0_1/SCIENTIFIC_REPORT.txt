@@ -1,0 +1,89 @@
+Current-success guard versus matched random allocation: scientific closeout
+
+Status: COMPLETE_AUDITED_CLOSED
+Fixed decision: DEVELOPMENT_ALLOCATION_ADVANTAGE_SUPPORTED
+Run completed 2026-10-27 17:36:35 UTC. Independently closed 2026-10-28.
+Total detached runtime including native qualification: 2139.474 seconds (35m39s), below the one-hour cap.
+Native qualification: 580.708 seconds. Target continuation and analysis: 1558.733 seconds.
+
+The single frozen primary contrast was supported. Under independent cue noise,
+current-success selection achieved 1198/1512 downstream successful reads (79.2328%),
+versus 1067/1512 (70.5688%) for matched random allocation. The paired block difference
+was +8.6640 percentage points, with a two-sided 95% t interval [+0.5927, +16.7354]
+and one-sided 95% lower limit +1.9905. Inference uses 21 acquisition blocks (df20),
+not 1512 independent reads. The endpoint averages g16..33 success across four
+original g14 packets per block. g15 was a shared pre-action measurement.
+
+noise        policy                  downstream %   terminal %   uninterrupted %   rewrite %
+matched      always promote              68.3201       69.0476         36.9048        100.0000
+matched      matched random              64.5503       60.7143         22.6190         66.0053
+matched      current-success guard       66.6667       69.0476         32.1429         66.0053
+matched      protected retain            57.1429       54.7619         29.7619          0.0000
+independent  always promote              73.2804       72.6190         65.4762        100.0000
+independent  matched random              70.5688       70.2381         59.5238         77.9762
+independent  current-success guard       79.2328       83.3333         55.9524         77.9762
+independent  protected retain            61.7063       61.9048         29.7619          0.0000
+
+The guard and random allocation used exactly the same number of rewrites at every
+decision generation within each block and noise regime: 1179 each under independent
+noise and 998 each under matched noise. Thus this development result supports a
+contribution from success-based allocation beyond aggregate rewrite frequency and
+timing. Counts were not matched within each individual packet or historical class.
+The comparator receives the guard's current group total K; it is a coupled diagnostic,
+not an independently deployable scheduler. The guard-donor computation is counted.
+All arms pay for native reads and candidate construction, including rejected candidates.
+
+Limits and ordinary controls
+The 21 source blocks and 84 founders' packets were previously exposed. The block subset
+was selected by a frozen hash of IDs, with fresh continuation and subset streams.
+This is development evidence conditional on an exposed panel, not fresh-founder
+confirmation. The confidence interval remains broad. There is no RDT-specific inference.
+Protected records, the known task, recurring cues, reader and writer remain supplied.
+
+Average occupancy, terminal success, uninterrupted performance and recovery remain
+separate. Under independent noise uninterrupted success was 47/84 for the guard,
+50/84 for random allocation, and 55/84 for always promoting. Those point estimates
+do not support a claim of more reliable uninterrupted continuation. Terminal success
+was 70/84, 59/84 and 61/84 respectively; these are descriptive endpoints.
+The guard-minus-always-promote average difference was +5.9524 points, with descriptive
+two-sided 95% interval [-1.3391,+13.2438]. Under matched noise the guard-minus-random
+difference was +2.1164 points, interval [-3.4694,+7.7022]. These secondary comparisons
+cannot substitute for the one fixed primary contrast.
+
+Among 33 packets that failed the shared g15 read under independent noise, the guard
+had 289/594 successful later reads versus random allocation's 205/594, with at least
+one subsequent success in 20 versus 14 packets. Among the 51 initially successful
+packets, those counts were 909/918 versus 862/918. The two strata contribute 84 and
+47 of the 131 additional successful reads. These are descriptive decompositions.
+The guard and protected-retain first-recovery times are identical by construction
+because both retain the original packet until the guard's first successful read.
+That identity supplies no additional evidence for a recovery mechanism.
+
+Audit and cost
+Verified all 70 frozen inputs and 360 manifested output files. Independently rescored
+17024 saved native readouts, checked 896 complete saved flat-reader policy chains,
+regenerated allocation subsets and checked all 1008 actual block-generation decision
+quotas across qualification and target. Verified every target outcome (672 records),
+337 exact-rational block reductions, all 16 recovery cells, five CPU admissions and
+four seven-worker waves. The recorded parent process 699130 was absent on the host
+at closeout. No new native dynamics were run for this audit.
+
+The sealed run used 12768 target primary reads plus 12768 full independent flat reads,
+and 4256 qualification primary reads plus 4256 flat reads: 34048 full reader evaluations.
+Both software qualification attempts together add 64 full and 1216 short 32-step reads.
+The first software attempt's fixture failure remains preserved; the repaired fixture
+passed all 24 checks before inputs were frozen. No new acquisitions, teaching episodes,
+model fitting or estimation probes were used. Historical source-acquisition cost remains
+in the frozen provenance; reuse is not claimed to erase that cost.
+
+The earlier three-test noise-precision result remains supported. The earlier six-test
+replication remains unresolved; the historical-guard and conditional-benefit failures
+remain closed. This result does not retroactively qualify any of them.
+
+Next scientific decision: freeze a fresh-founder replication of the same single
+independent-noise guard-versus-matched-random contrast, retaining ordinary controls
+and separate uninterrupted/recovery outcomes. Price it before launch, aiming for one
+hour if feasible within the user's six-hour ceiling. No successor has been launched.
+
+Evidence: runs/allocation_v1/REPORT.txt and COMPLETE.json;
+checks/INDEPENDENT_CLOSEOUT_AUDIT.json; checks/SCIENTIFIC_CLOSEOUT.json.

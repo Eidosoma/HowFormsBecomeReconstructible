@@ -1,0 +1,36 @@
+Current-success guard: injury24 noise precision v0.1
+
+Decision: ALL_THREE_PREDICTIONS_SUPPORTED
+48 independent acquisition blocks;192 boundary-selected packets;injury24 only;one paired future per noise/policy,1536 terminal policy outcomes.
+The original-task success fraction over g16..33 is primary. Shared g15 reads precede any policy action. All four arms use their own current outcome and packet. Noise and policy arms share base disturbances and are paired within each acquisition block.
+
+Three frozen primary comparisons, percentage points:
+comparison | mean | two-sided descriptive95% interval | one-sided95% lower | verdict
+24_independent_minus_always_promote | +9.3750 | [+4.7344, +14.0156] | +5.5045 | SUPPORTED
+24_independent_minus_protected_retain | +17.7951 | [+14.1701, +21.4201] | +14.7716 | SUPPORTED
+24_noise_interaction | +7.3495 | [+2.0939, +12.6052] | +2.9660 | SUPPORTED
+
+All-policy performance:
+injury | noise | policy | downstream success % | terminal % | uninterrupted % | promotion fraction %
+24 | matched | always_promote | 67.0718 | 66.1458 | 39.0625 | 100.0000
+24 | matched | history_guard | 70.6887 | 71.8750 | 39.0625 | 98.0324
+24 | matched | writer_success_guard | 69.0972 | 72.3958 | 35.9375 | 68.3160
+24 | matched | protected_retain | 57.7257 | 58.8542 | 29.1667 | 0.0000
+24 | independent | always_promote | 70.2836 | 70.8333 | 64.5833 | 100.0000
+24 | independent | history_guard | 71.7014 | 72.3958 | 64.5833 | 99.4792
+24 | independent | writer_success_guard | 79.6586 | 83.3333 | 61.9792 | 78.3565
+24 | independent | protected_retain | 61.8634 | 61.9792 | 30.7292 | 0.0000
+
+Support requires all three one-sided95% paired-block t lower limits above zero. The conjunctive claim uses an intersection-union rule; component intervals are not simultaneous. Degenerate block contrasts are unresolved. Approximate t inference assumes independent acquisition blocks and an adequate block-mean approximation. No endpoint replacement or sample extension is allowed.
+Fresh acquisition and selection namespaces, a complete-cohort barrier and fixed future namespaces preceded new outcomes. The narrowed injury24 hypothesis and sample were chosen after the16-block study. The old six-test result remains REPLICATION_UNRESOLVED; it is not pooled or retroactively rescued. This is a separate within-programme fresh test, not external preregistration or RDT-specific confirmation. The estimand conditions on having enough original pass/fail packets for the fixed boundary selection; it is not the full unselected64-record population.
+Every historical stratum, terminal and uninterrupted endpoint, opposite-rule occupancy, action count, ordered policy contrast and block contribution remains in ANALYSIS.json. These cannot rescue a failed or unresolved joint primary claim.
+Acquisition attempts:49; primary reads:43904; flat audit reads:588; teaching episodes:98.
+Scientific continuation primary reads:29184; flat audit reads:7296. Qualification costs are separate in COMPLETE.json; software preparation is separately recorded.
+All four arms pay for the full native reader and candidate writer construction at each opportunity, even when a rewrite is declined. Promotion counts do not establish compute savings. Protected incoming storage, task knowledge and recurrent cue/read-write machinery are supplied. Protected-retain and the failed historical guard remain visible ordinary controls.
+The prior six-test replication remains unresolved. The history-guard screen and predicted injury-crossover failures remain unchanged. No automatic successor, retry or extension follows.
+
+Independent closeout: all70 frozen input files and1903 output files passed SHA256 verification. All1536 endpoint records and the three primary contrasts were independently reconstructed using exact rational block means. Every CPU admission passed. The process has exited; no successor was launched.
+
+Interpretation boundary: the benefit concerns average original-rule success over g16..33. Under independent noise, uninterrupted success was61.98% with the current-success guard versus64.58% with ordinary rewriting; that descriptive point estimate does not show improved uninterrupted lineages. This is support for the frozen ordinary policy and noise interaction in the selected injury24 model, not evidence specific to RDT. The prior six-test result stays unresolved.
+
+Wall time:69m25.55s including native qualification. Scientific and native-qualification reader evaluations:87644, including audits. Software preparation is separately charged:32 full reader calls and760 short calls across both resource versions. All49 acquisition attempts and the surplus block are retained.

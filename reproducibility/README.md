@@ -54,3 +54,7 @@ The [current package](../paper/v2.4/README.md) has both PDFs, 116 evidence notes
 ## Version 2.5 source update
 
 The [v2.5 package](../paper/v2.5/README.md) contains 124 evidence notes, 79 methods and the current four-chapter source. Its PDF build follows the author’s source push. The eight earlier PDF exceptions and all earlier versioned packages are unchanged. See the [availability inventory](../paper/v2.5/SOURCE_AVAILABILITY.md) for omitted data, report-only claims and uninspected follow-ups. No scientific replay is performed.
+
+## Rendered v2.5 package
+
+Both main/SI PDFs are prepared, with all 25 figures and 79 SI page entries. The ten named publication PDF exceptions are hash-checked. The [current package](../paper/v2.5/README.md) includes layout and annotation checks; they do not rerun experimental outcomes. New PDF availability follows the author’s push.

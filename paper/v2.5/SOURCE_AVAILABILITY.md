@@ -7,3 +7,7 @@ Code is grouped under `sources/HowFormsBecomeReconstructible/experiments/` and `
 TT039's full run and the equal-read forecast's named full report/audit are absent in the working checkout. Their retained reports, completion records and protocols support the manuscript transcriptions; that availability limit remains. The multiscale material is development and does not become confirmation through export. Pending studies supply no outcome.
 
 The evidence ledger and SI Markdown are split into small files with complete indexed anchors. The v2.5 PDF build is deferred until the author pushes this source package; no v2.5 PDF path is yet advertised. All main/SI figures remain in the working sources, with small vector counterparts available here. Historical v2.4 PDFs remain accessible. Local checks do not assert live web availability.
+
+## Rendered v2.5 release
+
+The matching main and supporting PDFs are now built and checked. Evidence and implementation files retain the already published source selection; this rendering pass adds no experimental outcome or replay. All twenty main figures and five supporting figures are retained. The methods index gives all 79 SI page numbers. New PDF destinations become available after the author commits and pushes the rendered files.

@@ -35,9 +35,11 @@ def main():
                      'paper/v2.1/how-forms-become-reconstructible-v2.1.pdf',
                      'paper/v2.1/how-forms-become-reconstructible-supporting-v2.1.pdf',
                      'paper/v2.4/how-forms-become-reconstructible-v2.4.pdf',
-                     'paper/v2.4/how-forms-become-reconstructible-supporting-v2.4.pdf'}
+                     'paper/v2.4/how-forms-become-reconstructible-supporting-v2.4.pdf',
+                     'paper/v2.5/how-forms-become-reconstructible-v2.5.pdf',
+                     'paper/v2.5/how-forms-become-reconstructible-supporting-v2.5.pdf'}
     if set(publications) != allowed_paths:
-        errors.append('Publication exception does not match the eight authorized versioned PDFs')
+        errors.append('Publication exception does not match the ten authorized versioned PDFs')
     for name, item in publications.items():
         p = ROOT/name
         if not p.is_file() or p.stat().st_size != item['bytes'] or hashlib.sha256(p.read_bytes()).hexdigest() != item['sha256']:

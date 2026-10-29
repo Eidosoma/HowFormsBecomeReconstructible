@@ -1,0 +1,41 @@
+{
+  "active_or_cpu_consuming_threads": 3,
+  "active_threads": [
+    {
+      "pid": 392632,
+      "script": "supervise_generalization.py",
+      "state": "S",
+      "ticks": 92,
+      "tid": 392632
+    },
+    {
+      "pid": 392706,
+      "script": "test_generalization.py",
+      "state": "R",
+      "ticks": 13104,
+      "tid": 392706
+    },
+    {
+      "pid": 393390,
+      "script": "workflow.py",
+      "state": "R",
+      "ticks": 260,
+      "tid": 393390
+    }
+  ],
+  "admission_pass": true,
+  "automatic_polling": false,
+  "ceiling": 12,
+  "cpus": [
+    6,
+    7
+  ],
+  "free_bytes": 175208144896,
+  "numerical_threads": 1,
+  "observed_project_threads_including_sleeping": 4,
+  "planned_workers": 2,
+  "recorded_utc": "2026-10-16T12:26:39.253187+00:00",
+  "resource_script_sha256": "083534d0b758652eb2a38cabc35800175deb7d2c6bf783556cff74edd24e1a32",
+  "sample_seconds": 1.009507434006082,
+  "scientific_outputs_inspected": false
+}

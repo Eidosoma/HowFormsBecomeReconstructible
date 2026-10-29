@@ -1,0 +1,289 @@
+{
+  "version": "matched_recovery_0.2",
+  "status": "AMENDMENT2_PENDING_QUALIFICATION",
+  "namespace": "RDT_matched_recovery_v0_1",
+  "injury_levels": [
+    18
+  ],
+  "regimes": [
+    "matched",
+    "independent"
+  ],
+  "repeats": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "blocks": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "qualification_blocks": [
+    -4,
+    -3,
+    -2,
+    -1
+  ],
+  "models": [
+    "successor32",
+    "direct64",
+    "pooled32",
+    "direct8",
+    "tt008"
+  ],
+  "models_sha256": "7650b66727cd3779ba8e9d95b2aac8f6b3c3bcdbfd5e940ee3a6e3782e2488ca",
+  "source_input_manifest_sha256": "5b6f74510e7fcb26e81a86d62c886d532607fba24d07b7d67868ce3e617f3dea",
+  "source_complete_sha256": "b0dadb85c01468b5fed339c19c3b30e517a17b43e447749ee0851c92813a4f29",
+  "cohort": "Next contiguous archived founders24..31, two original pass and two fail packets each. Injury24 outcomes already exposed.",
+  "formula": "p_S=expit(theta_S standardized-dot [B11,d,n,d*n,q_S,d*q_S,n*q_S,d*d,n*d*d]), d=(injury-24)/12,n=1 for independent; same frozen quadratic feature map for q_D.",
+  "injury_contract": "Exactly18 distinct uniformly sampled non-port cells without replacement at each writer, probe and terminal read; three2x2 ports protected.",
+  "forcing_contract": "Separate namespaces for qualification, benchmark and development and for each injury count. Probe and future namespaces are disjoint; future replicate is in stage. Regime is omitted from seeds to pair injuries and cue0 draws within each injury count. Injury levels have independent streams; masks are not assumed nested.",
+  "endpoint": "18 full exact rewrites g15..32 followed by fresh g33 read; every aligned final32-frame cue/port mean strictly greater than .25. Earlier failure does not stop a continuation.",
+  "forecast_barrier": "All27 fixed forecasts for the entire two-injury panel sealed before any target continuation; coefficient hashes bound throughout; zero fitting.",
+  "analysis": "Original-fail injury18 is primary: equal founder, packet and individual future-repeat weights. Five matched direct-versus-successor contrasts and one paired noise-interaction direction. All27 fixed forecasts, both noise regimes, both original classes and their balanced total retained.",
+  "resources": {
+    "workers": 4,
+    "parent_reserve": 1,
+    "shared_threads": 12,
+    "hard_wall_seconds": 2700,
+    "qualification_hard_seconds": 900,
+    "qualification_forecast_seconds": 870,
+    "qualification_may_launch_development": false,
+    "minimum_free_bytes": 2000000000,
+    "maximum_saved_bytes": 12000000000,
+    "maximum_worker_resident_bytes": 1500000000,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_resume": false,
+    "automatic_extension": false,
+    "automatic_successor": false,
+    "preferred_wall_seconds": 2700,
+    "combined_wall_seconds": 3600
+  },
+  "timing": {
+    "historical_full_unit_floors": {
+      "18": {
+        "measurement": 396.16056601004675,
+        "future": 104.41963887191378
+      }
+    },
+    "measurement_waves_per_injury": 2,
+    "future_waves_per_injury": 8,
+    "maximum_cases_per_block": 8,
+    "multiplier": 1.5,
+    "fixed_overhead_seconds": 120,
+    "completion_reserve_seconds": 120,
+    "rule": "120+1.5*(2*max(historical18 full measurement unit,current full four-worker unit/wave)+8*max(historical18 full future unit,current full four-worker unit/wave)) <=2580seconds. Reserve120 more seconds within2700 target cap; qualification plus target active runtime <=3600.",
+    "reason": "Retain the slower v1 full-unit maxima396.160566s measurement and104.419639s future as floors. Qualification repetitions reduce to two only; target still requires two measurement and eight future waves,50percent safety multiplier and120second completion reserve.",
+    "historical_projection_seconds": 2561.5173644931056
+  },
+  "claim_boundary": "A pass supports the restricted forecasting lead on this panel. A failure rejects or narrows this particular forecast. Neither establishes or refutes broader RDT, causal correction, or repair benefit.",
+  "next_prediction": {
+    "utc": "2026-10-23T13:06:06.762831+00:00",
+    "status": "DRAFT_NOT_REGISTERED_NOT_QUALIFIED",
+    "purpose": "Challenge the exposed matched-noise recovery lead with a fully specified, equal-read conventional forecasting comparison.",
+    "scientific_claim": "The fixed quadratic successor64 predictor beats every fixed direct64 head for originally failing injury18 packets under matched cue noise; its advantage over quadratic_direct64 is larger under matched than independent noise.",
+    "rationale": "The quadratic matched-noise gain was +0.1278930424924807 in founders8..15 and +0.06009112844462225 in16..23; independent-noise gains were near zero. All five within-head matched contrasts were positive in both panels. These exposed findings selected this hypothesis.",
+    "source_bindings": {
+      "leads_complete_sha256": "d76d261bc5b6cef4e55b965c317271962d322624701a472271858faf72397eaf",
+      "probe_batch_complete_sha256": "b9e58f70551685f0bec81e52dd3da8e05955839dba7f86879b7a70edc7458f5d",
+      "probe_batch_audit_sha256": "c133d6ccf7d0639b9f7f158c1a5f83fb337880948d51798baba79b25d330f159",
+      "native_protocol_sha256": "c532366bf85dc7c1dc3a00b196d9604e1334393dbe99173aaed09f5b263664fd"
+    },
+    "measured_properties": {
+      "boundary": "Same archived B11 for every non-condition model, including present expression and signed/unsigned transfer; no extra successor-only task knowledge.",
+      "original_expression_class": "Fixed before new probes and outcomes; current_pass=0 is primary, current_pass=1 and the class-balanced total are required secondary strata.",
+      "direct_fraction": "q_D:64 fresh evaluations of the unchanged packet; all64 are used by direct64. The first8 form only the fixed direct8 secondary comparator.",
+      "successor_fraction": "q_S:32 original-packet writer reads, each followed by a fresh evaluation of its own outgoing packet; successful evaluations/32. Total64 native reads.",
+      "condition": "Injury18; matched and independent cue birth/noise conditions declared before outcomes.",
+      "fixed_equation": "p_S=expit(theta_S standardized-dot [B11,d,n,d*n,q_S,d*q_S,n*q_S,d*d,n*d*d]), d=(injury-24)/12,n=1 for independent; same frozen quadratic feature map for q_D.",
+      "coefficient_bundle": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_scaled_probe_transfer_v0_1/jobs/qualification_v1/inputs/FROZEN_CALIBRATION.json",
+      "coefficient_bundle_sha256": "f9b5fde2cc6dd6ea71213543f31fc75ecf8446870116494c3b20935364b8aa8b",
+      "implementation": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_scaled_probe_transfer_v0_1/jobs/qualification_v1/inputs/ec_models.py",
+      "implementation_sha256": "df9c1208e32d1028650d57ea73d0cd11a0134efc4f1902168a0abcf66d030f35",
+      "new_fits": 0
+    },
+    "predicted_outcome": {
+      "horizon": "18 exact original-writer rewrites g15..32 from the archived g14 packet, then a fresh terminal g33 read; early failure does not stop a path.",
+      "success": "All four task-aligned final32-frame cue/port means strictly greater than0.25 in the terminal read; no uninterrupted-success claim.",
+      "injuries": "Exactly18 distinct uniformly sampled non-port cells without replacement at each writer, probe and terminal read; three2x2 ports protected.",
+      "reset_and_noise": "Fresh body each read; read2048,settle1024,dt0.2,birth_sd0.05,ongoing noise0.02,clipped state[-2,2]. Matched copies cue0 birth and ongoing noise to cue1; independent retains the two draws. Each condition propagates its own packets; acquisition stays matched.",
+      "repeats": 4,
+      "analysis_unit": "Founder block; equal block, packet and future-repeat weights within the primary original-fail stratum. Balanced secondary analyses give equal original-expression-class weights."
+    },
+    "held_out_change": {
+      "proposed_blocks": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "packets": 32,
+      "packets_per_block": 4,
+      "original_fail_packets_per_block": 2,
+      "original_pass_packets_per_block": 2,
+      "injuries": [
+        18
+      ],
+      "regimes": [
+        "matched",
+        "independent"
+      ],
+      "future_outcomes": 256,
+      "scope": "Next contiguous archived founder cohort, previously exposed at injury24, with new disjoint injury18 continuation streams. No fresh-founder, new-reader/writer, or independent-hypothesis claim.",
+      "selection": "Use original boundary-only selection, before new probe outcomes; no selection on future labels or predicted benefit.",
+      "proposed_namespace": "RDT_matched_recovery_v0_1",
+      "availability_and_exposure_review": "Pending; local and available fleet exposure evidence must be checked without consulting protected TT018 or packet-continuation status/outcomes. Do not silently substitute blocks if exposure is found.",
+      "forecast_barrier": "Bind and seal all27 fixed model probabilities for the full proposed panel before any new target continuation."
+    },
+    "strongest_comparators": {
+      "primary_candidate": "quadratic_successor64",
+      "primary_equal_read_rivals": [
+        "linear_direct64",
+        "quadratic_direct64",
+        "mean_direct64",
+        "scale_direct64",
+        "expression_direct64"
+      ],
+      "reason": "All five fixed direct heads are required rivals, including corrected heads that outperformed the plain quadratic rival on exposed recovery data; no future-data selection of an easy comparator.",
+      "second_primary": "Matched minus independent paired Brier advantage of quadratic_successor64 over quadratic_direct64 within original-fail injury18.",
+      "required_secondary": "All27 existing fixed forecasts, including signed-transfer/B11 boundary-only and8-read predictors, allfive successor heads, both original classes and their balanced total. Report every cost and score; no winner promotion after outcomes.",
+      "native_reads_per_prediction": {
+        "successor64": 64,
+        "direct64": 64,
+        "direct8": 8,
+        "boundary0": 0
+      },
+      "previous_standalone_probe_cpu_seconds": {
+        "direct64": 10.59947376525,
+        "successor64": 10.89497972675,
+        "direct8_historical_injury24": 1.62949431175
+      },
+      "timing_caveat": "Probe timings exclude flat audits and shared boundary acquisition. Direct8 timing is historical injury24. Remeasure the actual intended runner and report training cost, current inference and total experiment cost separately; equal reads do not guarantee equal CPU."
+    },
+    "rejection_criterion": {
+      "primary_directions": 6,
+      "rule": "Each of the five matched-noise direct-rival-minus-candidate Brier gains must be strictly positive, and the matched-minus-independent quadratic-pair gain must be strictly positive. Any nonpositive value contradicts this fixed-panel joint directional prediction.",
+      "uncertainty": "Show all eight founder gains, nominal paired founder-block95% intervals and leave-one-founder-out sensitivity. Do not treat256 futures as256 independent founders. A directionally positive pilot with an interval spanning zero leaves population advantage unresolved.",
+      "limitation": "Eight founders is a bounded development screen chosen for comparability and runtime, not a power-qualified population confirmation. No unsupported practical-effect or equivalence margin.",
+      "interpretations": "A pass supports the restricted forecasting lead on this panel. A failure rejects or narrows this particular forecast. Neither establishes or refutes broader RDT, causal correction, or repair benefit."
+    },
+    "proposed_budget": {
+      "workers": 4,
+      "parent_reserve": 1,
+      "numerical_threads_per_worker": 1,
+      "shared_thread_limit": 12,
+      "expected_measurement_primary_reads": 8192,
+      "expected_future_primary_reads": 4864,
+      "expected_target_primary_reads": 13056,
+      "expected_measurement_flat_audit_reads": 256,
+      "expected_future_flat_audit_reads": 1216,
+      "expected_target_flat_audit_reads": 1472,
+      "count_derivation": "64 packet/noise measurements each cost64 direct+64 successor reads;256 futures each cost19 reads. Four measurement audit reads per packet/noise and one audited packet per founder/noise/repeat through19 reads. Reused8-read and pooled heads add no native measurements; costs of qualification and original acquisition are additional.",
+      "historical_projection_seconds": 1905.3587091271766,
+      "historical_projection_formula": "240+1.5*(2*historical18_measurement_full_unit_max+8*historical18_future_full_unit_max); a planning estimate only, subject to full-unit qualification.",
+      "preferred_combined_wall_seconds": 3600,
+      "proposed_qualification_hard_seconds": 900,
+      "proposed_target_hard_seconds": 2700,
+      "launch_gate": "After qualification, require conservative target projection plus completion reserve to fit both the2700-second target cap and the remaining3600-second combined cap. Otherwise stop for a revised bounded design, without automatically extending.",
+      "automatic_polling": false,
+      "automatic_retry": false,
+      "automatic_resume": false,
+      "automatic_extension": false,
+      "automatic_successor": false
+    },
+    "before_launch": [
+      "Review exposure and bind exact proposed packets, namespace and all source hashes.",
+      "Adapt and qualify the one-injury runner and freeze the six primary directions and all secondary reporting.",
+      "Check standalone64-read probe cost and full task-unit runtime at the intended worker count; qualify exact native dynamics and scalar scores.",
+      "Obtain fresh host-visible CPU/disk admission and satisfy the combined runtime gate."
+    ],
+    "repair_scheduling": "Deferred: scheduling must predict paired repair-minus-no-repair benefit with matched stochastic forcing and action costs, rather than use failure risk or this forecasting gain as a surrogate.",
+    "native_run_launched": false,
+    "active_run": null,
+    "automatic_successor": false,
+    "prior_verdicts_unchanged": true
+  },
+  "user_authorization": {
+    "utc": "2026-10-24T09:28:58.744697+00:00",
+    "instruction": "lets go",
+    "scope": "Revise disposable qualification to fit the observed runtime, freeze and qualify amendment2, then run the unchanged scientific test only after full qualification and admission. Preserve failed v1. No automatic successor or retry."
+  },
+  "training_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "training_injuries": [
+    12,
+    24,
+    36
+  ],
+  "candidate_models": [
+    "linear_condition0",
+    "linear_boundary0",
+    "linear_direct8",
+    "linear_direct64",
+    "linear_successor64",
+    "quadratic_condition0",
+    "quadratic_boundary0",
+    "quadratic_direct8",
+    "quadratic_direct64",
+    "quadratic_successor64",
+    "mean_boundary0",
+    "scale_boundary0",
+    "expression_boundary0",
+    "mean_direct8",
+    "scale_direct8",
+    "expression_direct8",
+    "mean_direct64",
+    "scale_direct64",
+    "expression_direct64",
+    "mean_successor64",
+    "scale_successor64",
+    "expression_successor64"
+  ],
+  "candidate_training": {
+    "source": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_intermediate_injury_v0_1/runs/development_repair_v1",
+    "source_complete_sha256": "299803dcef63a8ba929575ce0842f40acab5e9424ede52b7f38497c29ffad1a8",
+    "coefficient_fits": 10,
+    "hyperparameter_search": false,
+    "weights": "Equal training founder, injury, noise, original expression class, selected packet within class, future replicate. Each row raw weight1/(2*class_packets*4), normalized globally.",
+    "features": "All non-condition models receive the same archived B11, including signed and unsigned transfer; linear condition terms d,n,d*n. Probe families add q,d*q,n*q. Quadratic adds d^2,n*d^2. The signed-transfer information is present in the ordinary boundary comparator."
+  },
+  "candidate_models_sha256": "207b977e28fc6d123bbef1e5251b60b2d9c436371eb5b092b1bcc597251e4337",
+  "calibration_models_sha256": "f9b5fde2cc6dd6ea71213543f31fc75ecf8446870116494c3b20935364b8aa8b",
+  "calibration_implementation_sha256": "df9c1208e32d1028650d57ea73d0cd11a0134efc4f1902168a0abcf66d030f35",
+  "qualification_panel": "Four disposable blocks, four structures each, both task rules in each expression class, both noises and injury18; future repeats0and3. Four-worker full-sized units and every audit retained. Development still uses all four repeats.",
+  "qualification_repeats": [
+    0,
+    3
+  ],
+  "execution_scopes": {
+    "qualification": "qualification_v2",
+    "benchmark": "benchmark_v2",
+    "development": "development"
+  },
+  "qualification_amendment_sha256": "e6d10a67b502aaab5e0a67cac6b45ba92fbd3f9b6c754b2c8e32c639a5f49ca4",
+  "prior_user_authorization": {
+    "utc": "2026-10-23T13:49:31.795736+00:00",
+    "instruction": "lets go",
+    "scope": "Prepare, freeze, qualify and run the proposed bounded matched-recovery development test after successful checks and CPU admission. No subsequent study or automatic retry."
+  }
+}

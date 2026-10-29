@@ -1,0 +1,1554 @@
+{
+  "checks": {
+    "constant_control": 4,
+    "exact_cost_order": 32,
+    "flip_clock": 2,
+    "flip_information": 2,
+    "flip_symmetry_answer": 6,
+    "flip_symmetry_purchase": 6,
+    "flip_symmetry_purchases": 6,
+    "flip_symmetry_value": 6,
+    "full_support_clock": 2,
+    "full_support_information": 2,
+    "full_support_rational_answer": 6,
+    "full_support_rational_purchase": 6,
+    "full_support_rational_purchases": 6,
+    "full_support_rational_value": 6,
+    "independent_rational_answer": 96,
+    "independent_rational_choice": 96,
+    "independent_rational_purchase": 96,
+    "independent_rational_purchases": 96,
+    "independent_rational_value": 96,
+    "known_law_equal_counts": 8,
+    "known_law_exact_example": 2,
+    "known_law_order": 8,
+    "known_law_zero_learning": 8,
+    "qualification_state_purity": 2,
+    "rational_clock_benefit": 32,
+    "rational_clock_nonnegative": 32,
+    "rational_erasure_zero_information": 16,
+    "rational_information_nonnegative": 32,
+    "rational_information_value": 32,
+    "serial_four_worker_identity": 4
+  },
+  "exact_records": [
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": true,
+      "y": 0
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        20,
+        4,
+        8,
+        32
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          null
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": false,
+      "y": 0
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/10",
+        "free": "1/10",
+        "hybrid": "1/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1",
+        "free": "1",
+        "hybrid": "1"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 1,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "1/5",
+        "free": "1/5",
+        "hybrid": "1/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "2",
+        "free": "2",
+        "hybrid": "2"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 2,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2641085789/9320612000",
+        "free": "2641085789/9320612000",
+        "hybrid": "2641085789/9320612000"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1206554617/466030600",
+        "free": "1206554617/466030600",
+        "hybrid": "1206554617/466030600"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2641085789/9320612000",
+        "free": "2641085789/9320612000",
+        "hybrid": "2641085789/9320612000"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "1206554617/466030600",
+        "free": "1206554617/466030600",
+        "hybrid": "1206554617/466030600"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "3/10",
+        "free": "3/10",
+        "hybrid": "3/10"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "3",
+        "free": "3",
+        "hybrid": "3"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 3,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "348093818487/926468832800",
+        "free": "336738298503/926468832800",
+        "hybrid": "3573146989/9320612000"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "136163887777/37058753312",
+        "free": "60205418793/18529376656",
+        "hybrid": "1672585217/466030600"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 0,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "348093818487/926468832800",
+        "free": "336738298503/926468832800",
+        "hybrid": "3573146989/9320612000"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "136163887777/37058753312",
+        "free": "60205418793/18529376656",
+        "hybrid": "1672585217/466030600"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": true,
+      "y": 1
+    },
+    {
+      "clock": 1,
+      "clock_benefit": "0",
+      "costs": {
+        "clock": "2/5",
+        "free": "2/5",
+        "hybrid": "2/5"
+      },
+      "counts": [
+        58,
+        3,
+        3,
+        0
+      ],
+      "counts_expected": {
+        "clock": "4",
+        "free": "4",
+        "hybrid": "4"
+      },
+      "history": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          null
+        ]
+      ],
+      "horizon": 4,
+      "information_value": "0",
+      "retained": false,
+      "y": 1
+    }
+  ],
+  "known_law_controls": [
+    {
+      "clock": "1/9",
+      "clock_benefit": "41/500",
+      "clock_purchases": "1",
+      "free": "131/4500",
+      "future_risk": "9/500",
+      "hybrid": "1/9",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "varying",
+      "risk": "1/90",
+      "warning": 0
+    },
+    {
+      "clock": "59/500",
+      "clock_benefit": "41/500",
+      "clock_purchases": "1",
+      "free": "49/500",
+      "future_risk": "9/500",
+      "hybrid": "9/50",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "varying",
+      "risk": "2/25",
+      "warning": 1
+    },
+    {
+      "clock": "59/500",
+      "clock_benefit": "41/500",
+      "clock_purchases": "1",
+      "free": "49/500",
+      "future_risk": "9/500",
+      "hybrid": "9/50",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "varying",
+      "risk": "2/25",
+      "warning": 2
+    },
+    {
+      "clock": "1/9",
+      "clock_benefit": "41/500",
+      "clock_purchases": "1",
+      "free": "131/4500",
+      "future_risk": "9/500",
+      "hybrid": "1/9",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "varying",
+      "risk": "1/90",
+      "warning": 3
+    },
+    {
+      "clock": "11/100",
+      "clock_benefit": "9/100",
+      "clock_purchases": "1",
+      "free": "1/50",
+      "future_risk": "1/100",
+      "hybrid": "11/100",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "constant",
+      "risk": "1/100",
+      "warning": 0
+    },
+    {
+      "clock": "11/100",
+      "clock_benefit": "9/100",
+      "clock_purchases": "1",
+      "free": "1/50",
+      "future_risk": "1/100",
+      "hybrid": "11/100",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "constant",
+      "risk": "1/100",
+      "warning": 1
+    },
+    {
+      "clock": "11/100",
+      "clock_benefit": "9/100",
+      "clock_purchases": "1",
+      "free": "1/50",
+      "future_risk": "1/100",
+      "hybrid": "11/100",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "constant",
+      "risk": "1/100",
+      "warning": 2
+    },
+    {
+      "clock": "11/100",
+      "clock_benefit": "9/100",
+      "clock_purchases": "1",
+      "free": "1/50",
+      "future_risk": "1/100",
+      "hybrid": "11/100",
+      "hybrid_purchases": "1",
+      "information": "0",
+      "law": "constant",
+      "risk": "1/100",
+      "warning": 3
+    }
+  ],
+  "parallel_records": [
+    {
+      "checks": {
+        "action_identity": 72,
+        "always_buying_upper_bound": 24,
+        "benefit_decomposition": 2,
+        "benefit_signs": 24,
+        "coherent_dominates_hybrid": 24,
+        "complete_contexts": 1,
+        "complete_modes": 24,
+        "cost_nonnegative": 72,
+        "count_bounds": 72,
+        "error_cost_bounds": 72,
+        "executed_score": 72,
+        "feasible_prefix": 12,
+        "finite_values": 72,
+        "forced_current_purchase": 48,
+        "free_lower_bound": 24,
+        "inference_not_mutated": 2,
+        "lesion_zero_information": 1,
+        "minimum_checking_cost": 48,
+        "near_count_valid": 72,
+        "near_root_label": 72,
+        "nonnegative_clock_benefit": 2,
+        "nonnegative_information_value": 2,
+        "one_horizon_clock": 1,
+        "prefix_clock": 12,
+        "row_identity": 12,
+        "saved_benefit_sum": 24,
+        "saved_lesion_zero_information": 12,
+        "saved_risk": 12,
+        "saved_score_decomposition": 24,
+        "specified_choice": 72,
+        "unchanged_free_answer_score": 2,
+        "unchanged_free_purchase_score": 2
+      },
+      "cpu_seconds": 0.120213854,
+      "cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "benchmark-0-0",
+        "benchmark-0-1",
+        "benchmark-0-2",
+        "benchmark-0-3",
+        "benchmark-0-4",
+        "benchmark-0-5",
+        "benchmark-0-6",
+        "benchmark-0-7",
+        "benchmark-0-8",
+        "benchmark-0-9",
+        "benchmark-0-10",
+        "benchmark-0-11"
+      ],
+      "name": "parallel-0",
+      "nice": 10,
+      "result_fingerprint": "6b3a251732e69d22caba3bd5b37d9fdfa5975b89c4f3a4498ccf0224f6ab05a1",
+      "row_count": 12,
+      "state_fingerprint": "c41bc9e252c0a838dd552e18235df640a46f56869741f3a9514f7375a9bc4793",
+      "threads": 1,
+      "wall_seconds": 0.12143486400600523
+    },
+    {
+      "checks": {
+        "action_identity": 72,
+        "always_buying_upper_bound": 24,
+        "benefit_decomposition": 2,
+        "benefit_signs": 24,
+        "coherent_dominates_hybrid": 24,
+        "complete_contexts": 1,
+        "complete_modes": 24,
+        "cost_nonnegative": 72,
+        "count_bounds": 72,
+        "error_cost_bounds": 72,
+        "executed_score": 72,
+        "feasible_prefix": 12,
+        "finite_values": 72,
+        "forced_current_purchase": 48,
+        "free_lower_bound": 24,
+        "inference_not_mutated": 2,
+        "lesion_zero_information": 1,
+        "minimum_checking_cost": 48,
+        "near_count_valid": 72,
+        "near_root_label": 72,
+        "nonnegative_clock_benefit": 2,
+        "nonnegative_information_value": 2,
+        "one_horizon_clock": 1,
+        "prefix_clock": 12,
+        "row_identity": 12,
+        "saved_benefit_sum": 24,
+        "saved_lesion_zero_information": 12,
+        "saved_risk": 12,
+        "saved_score_decomposition": 24,
+        "specified_choice": 72,
+        "unchanged_free_answer_score": 2,
+        "unchanged_free_purchase_score": 2
+      },
+      "cpu_seconds": 0.127400293,
+      "cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "benchmark-1-0",
+        "benchmark-1-1",
+        "benchmark-1-2",
+        "benchmark-1-3",
+        "benchmark-1-4",
+        "benchmark-1-5",
+        "benchmark-1-6",
+        "benchmark-1-7",
+        "benchmark-1-8",
+        "benchmark-1-9",
+        "benchmark-1-10",
+        "benchmark-1-11"
+      ],
+      "name": "parallel-1",
+      "nice": 10,
+      "result_fingerprint": "153743565c96d9cc61e8be8ab4012fc20722a2978a33186c32becd01086d9834",
+      "row_count": 12,
+      "state_fingerprint": "c5090e8d3cb5646b3a18f4941fad1f321434e929e99e709e1ab2da17037cb237",
+      "threads": 1,
+      "wall_seconds": 0.12751013692468405
+    },
+    {
+      "checks": {
+        "action_identity": 72,
+        "always_buying_upper_bound": 24,
+        "benefit_decomposition": 2,
+        "benefit_signs": 24,
+        "coherent_dominates_hybrid": 24,
+        "complete_contexts": 1,
+        "complete_modes": 24,
+        "cost_nonnegative": 72,
+        "count_bounds": 72,
+        "error_cost_bounds": 72,
+        "executed_score": 72,
+        "feasible_prefix": 12,
+        "finite_values": 72,
+        "forced_current_purchase": 48,
+        "free_lower_bound": 24,
+        "inference_not_mutated": 2,
+        "lesion_zero_information": 1,
+        "minimum_checking_cost": 48,
+        "near_count_valid": 72,
+        "near_root_label": 72,
+        "nonnegative_clock_benefit": 2,
+        "nonnegative_information_value": 2,
+        "one_horizon_clock": 1,
+        "prefix_clock": 12,
+        "row_identity": 12,
+        "saved_benefit_sum": 24,
+        "saved_lesion_zero_information": 12,
+        "saved_risk": 12,
+        "saved_score_decomposition": 24,
+        "specified_choice": 72,
+        "unchanged_free_answer_score": 2,
+        "unchanged_free_purchase_score": 2
+      },
+      "cpu_seconds": 0.127276779,
+      "cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "benchmark-2-0",
+        "benchmark-2-1",
+        "benchmark-2-2",
+        "benchmark-2-3",
+        "benchmark-2-4",
+        "benchmark-2-5",
+        "benchmark-2-6",
+        "benchmark-2-7",
+        "benchmark-2-8",
+        "benchmark-2-9",
+        "benchmark-2-10",
+        "benchmark-2-11"
+      ],
+      "name": "parallel-2",
+      "nice": 10,
+      "result_fingerprint": "519febb59989de3582e19c2c06f7db718722600f887edace059830412d64f114",
+      "row_count": 12,
+      "state_fingerprint": "41225ad1b72592e0fba6860781dd3ec704ffb6c1333dc7a9fc2a30a6e6597092",
+      "threads": 1,
+      "wall_seconds": 0.12748133391141891
+    },
+    {
+      "checks": {
+        "action_identity": 72,
+        "always_buying_upper_bound": 24,
+        "benefit_decomposition": 2,
+        "benefit_signs": 24,
+        "coherent_dominates_hybrid": 24,
+        "complete_contexts": 1,
+        "complete_modes": 24,
+        "cost_nonnegative": 72,
+        "count_bounds": 72,
+        "error_cost_bounds": 72,
+        "executed_score": 72,
+        "feasible_prefix": 12,
+        "finite_values": 72,
+        "forced_current_purchase": 48,
+        "free_lower_bound": 24,
+        "inference_not_mutated": 2,
+        "lesion_zero_information": 1,
+        "minimum_checking_cost": 48,
+        "near_count_valid": 72,
+        "near_root_label": 72,
+        "nonnegative_clock_benefit": 2,
+        "nonnegative_information_value": 2,
+        "one_horizon_clock": 1,
+        "prefix_clock": 12,
+        "row_identity": 12,
+        "saved_benefit_sum": 24,
+        "saved_lesion_zero_information": 12,
+        "saved_risk": 12,
+        "saved_score_decomposition": 24,
+        "specified_choice": 72,
+        "unchanged_free_answer_score": 2,
+        "unchanged_free_purchase_score": 2
+      },
+      "cpu_seconds": 0.118481482,
+      "cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ids": [
+        "benchmark-3-0",
+        "benchmark-3-1",
+        "benchmark-3-2",
+        "benchmark-3-3",
+        "benchmark-3-4",
+        "benchmark-3-5",
+        "benchmark-3-6",
+        "benchmark-3-7",
+        "benchmark-3-8",
+        "benchmark-3-9",
+        "benchmark-3-10",
+        "benchmark-3-11"
+      ],
+      "name": "parallel-3",
+      "nice": 10,
+      "result_fingerprint": "8cab7ff391c57bd6e46e73df287bd970abbb3ae52b8ddd0d7c2f2f3d0054b16a",
+      "row_count": 12,
+      "state_fingerprint": "f3a32d105267a134ae01eec43549eb0220c3f7aeff68a45d39bb6b4bfcebfa49",
+      "threads": 1,
+      "wall_seconds": 0.12734074098989367
+    }
+  ],
+  "passed": true,
+  "seconds": 10.441177748027258
+}

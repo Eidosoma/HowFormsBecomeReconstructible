@@ -1,0 +1,86 @@
+{
+  "E067_diagnosis_known": true,
+  "E068_outcomes_known": true,
+  "E069_outcomes_known": true,
+  "E070_outcomes_known": true,
+  "E071_outcomes_known": true,
+  "E072_outcomes_known": true,
+  "no_success_selection": true,
+  "predecessors": {
+    "E068_fresh_recovery_confirmation/analysis/closeout_v1.json": "44c6fbd37a60dcd19dffbfe5f90add14d2498235ef0aef4abd7b2713ce13a844",
+    "E072_single_pruning_persistence/analysis/closeout_v1.json": "ee224734c11be71ff25620117ba148a0845b61302d4957253f560f8b90acbb4a",
+    "E072_single_pruning_persistence/runs/persistence_v1/COMPLETE.json": "586badb041f4d32e8bfbd996d21bd56bd763b36d3b5e12c2cdce36cc6a579ca2",
+    "E072_single_pruning_persistence/runs/persistence_v1/INDEPENDENT_AUDIT.json": "dbef42f131a3ac30d17c21b9526588dd703d1f05e2ddd98c51fc59f58eed0574"
+  },
+  "scientific_intervention_outcomes_seen": false,
+  "sources": {
+    "benchmark": {
+      "bytes": 564839,
+      "files": {
+        "boundary_900041_g1.npz": "ed138f1a353f13291f7d858d67cb6ae2497c569b409e5a4d669a91c906d3ae80"
+      },
+      "path": "E068_fresh_recovery_confirmation/runs/benchmark_v1",
+      "receipts": {
+        "E068_fresh_recovery_confirmation/runs/benchmark_v1/COMPLETE.json": "0050ca5fbc4f7721119befebf57ea5bef94de5604ec4b9fb963c68b5ee695a37",
+        "E068_fresh_recovery_confirmation/runs/benchmark_v1/INDEPENDENT_AUDIT.json": "c21d1698247c4ac385521d764f16fc2f5db20d357a30894a3372f595f3f49fe2",
+        "E068_fresh_recovery_confirmation/runs/benchmark_v1/manifest.json": "4a18a82698b338774000b9cec5214fd174ec32cd84b3e3da059f3f252c2b8923"
+      }
+    },
+    "fixture": {
+      "bytes": 1113254,
+      "files": {
+        "boundary_900041_g1.npz": "122700d5d47ff1a39a955038c7e9a7bb619ad8aa4cd1a1dc6c751dde7e6a8974"
+      },
+      "path": "E068_fresh_recovery_confirmation/runs/fixture_v1",
+      "receipts": {
+        "E068_fresh_recovery_confirmation/runs/fixture_v1/COMPLETE.json": "69eb64110e7d290eb207b5c6e2ce171cbcd08e39eb1d80e1b1ec2143339bbec5",
+        "E068_fresh_recovery_confirmation/runs/fixture_v1/INDEPENDENT_AUDIT.json": "487744b61c46a3b7c3796f5cc9ed5214b10579b030e85be0a18ee469ce33b389",
+        "E068_fresh_recovery_confirmation/runs/fixture_v1/manifest.json": "bc599abe12c009528b5fa502c70430e8af35b58116bd8dd1e8d219e94c66b9d5"
+      }
+    },
+    "scientific": {
+      "bytes": 70847253,
+      "files": {
+        "boundary_040000_g1.npz": "cb2d3b9d9d4ea301f5a2e9b5670dedece00692877f72a42a923ec45752ac5f06",
+        "boundary_040001_g1.npz": "c1612446d0f43c5fdba8e0d410923719da20ff50b68621a5af38fe6f977ff659",
+        "boundary_040002_g1.npz": "73dae51d52c6dd355827560954af75c1ec34be814395ffcbd76608f39ecfbf01",
+        "boundary_040003_g1.npz": "025aa57c97a36d1591337ab7400679fee71dae483a57fcb93f11698ea66081ed",
+        "boundary_040004_g1.npz": "ba8eaf752f1e2ce216a136f6a4f46f30ae5ea02fe7db8c141a47cf91b7ba099f",
+        "boundary_040005_g1.npz": "e2744f0cde65f79afcfd1601c2e0d395b50af35089776a34027845d11073f061",
+        "boundary_040006_g1.npz": "06f4de0bbb1e8d3e47fdf7457a1339b0cd701121e186d568401939d4da05525e",
+        "boundary_040007_g1.npz": "51962225e193c42ebbbaf5f5337c86680503e469fd8d508724b22e4553c26942",
+        "boundary_040008_g1.npz": "3647ea217e289920ebb932a023ee095f44806b83518ba6f68495a15c63652138",
+        "boundary_040009_g1.npz": "8a52b1f75731ecc7a62ec466148536c2013bd605c3608431439fd2a7e1d4f702",
+        "boundary_040010_g1.npz": "4cbd3b79ffff3c06985a366ee8be9e6dc4b9867689715148f243749643fb1ef4",
+        "boundary_040011_g1.npz": "98b5f7f13c74e7dcea96568181875c25b466e2ab5d78b5d1b22634532defbea2",
+        "boundary_040012_g1.npz": "7375c9687d33b8af72f6e54d260225adaf93a510b2cc31119ab7092d3e74df79",
+        "boundary_040013_g1.npz": "c3135ab6876a69fe4d7adf2995b45871308d208f5c3e8288fae607e3b23b04db",
+        "boundary_040014_g1.npz": "b959e3a3209dbc20faaa2c3f0742886484fc5be36ae8c48e5c215a3fce695cc5",
+        "boundary_040015_g1.npz": "9a1beb64fce3560f62235fd885fd2c6c05b72b4bdc7c1ba679537ae30c33499a",
+        "boundary_040016_g1.npz": "946608a53e20d4896acfbf71ab5381fa6a4279fc730fbb21ef8b28a97b1c4b6e",
+        "boundary_040017_g1.npz": "c46899a4a71279f86456c10e2021960563aae2f6f4d08614156b719f828d6d20",
+        "boundary_040018_g1.npz": "c7f3a558408f157bac81fe6cc801872467793e03860154a341ae334916e49e72",
+        "boundary_040019_g1.npz": "98768628dda58338121ab4a9203c886b0e454c0157e27437438a1e3e4fdbdd76",
+        "boundary_040020_g1.npz": "be1ac06ea782cfbbc7b92ddcf7ff442a3b884bfa0a6d596a38a855f369ba329e",
+        "boundary_040021_g1.npz": "1b2373ab8153321a8c8f6aa40e1701bb24d1c7ffbbd3b19cbadbf41ac0c8612f",
+        "boundary_040022_g1.npz": "a470f65a0dbcb02369d7a435068edfae51bec76b85385533a322385a6257814c",
+        "boundary_040023_g1.npz": "aaf14f46f5b461bdd238a3325ea6a5cfdb1cbd607c22f6112d5305d5989026ee",
+        "boundary_040024_g1.npz": "0db98cf8af7c8dfc1df7d762b874cf0155ce9dc035d23994fa8f7515f2a1c47f",
+        "boundary_040025_g1.npz": "57a2ab3d87375acaf7d3f8dde9e97aee78d1f8a1763607cf6ea8ddcfc9e97ee1",
+        "boundary_040026_g1.npz": "2d22211614df834c153d43a0a6bcf85e9ae551d396d47337e7adca148c8d9a37",
+        "boundary_040027_g1.npz": "dcd10627449441bec975017e52623a2dc054fe1d39814ef9637026173e64a625",
+        "boundary_040028_g1.npz": "b6a5c37e207ceb8b608d69308653a57185d8a9be427fe4df7672d89a26cf885f",
+        "boundary_040029_g1.npz": "67efce216d1e2fb1f13bd25d1a69757b4c29d38eebc05bf5c22a0befc8c545f5",
+        "boundary_040030_g1.npz": "fac462e48fe3a2e4a44e22282d9103deb8924efabe929219120729104639163b",
+        "boundary_040031_g1.npz": "07a3bcd74f818b0e2bc6e9a11dd8cc40563ca9df6dae32232ecadf00b43ecbc4"
+      },
+      "path": "E068_fresh_recovery_confirmation/runs/confirmation_v1",
+      "receipts": {
+        "E068_fresh_recovery_confirmation/runs/confirmation_v1/COMPLETE.json": "d1e55f1d3e0e9ea423dd12e3172da3f9903e608c55b5afee94fe40ff12b95aee",
+        "E068_fresh_recovery_confirmation/runs/confirmation_v1/INDEPENDENT_AUDIT.json": "20ac996558a63cf6c7f9865e12f74b897f62a5d4d41398e3cfc86f3f9763a056",
+        "E068_fresh_recovery_confirmation/runs/confirmation_v1/manifest.json": "d374050a2fdfb4bb76006457ab371b9fe0c68c0b0678ec2bbc6f58d4b732487b"
+      }
+    }
+  },
+  "utc": "2026-10-15T17:45:51.200512+00:00"
+}

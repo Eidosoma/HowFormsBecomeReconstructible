@@ -1,0 +1,82 @@
+{
+  "status": "PROPOSAL_REQUIRES_FULL_RUNNER_QUALIFICATION",
+  "scientific_launch": false,
+  "all_four_pass_criterion_unchanged": true,
+  "science": {
+    "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce",
+    "extra_native_reads": {
+      "candidate": 64,
+      "direct_rival": 8,
+      "tt008": 0
+    },
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "margins": {
+      "tt008": 0.002,
+      "direct_rival": 0.0
+    },
+    "alpha": 0.025,
+    "endpoint": "18 exact rewrites from g14, then task-aligned fresh-terminal success; every aligned port mean strictly>.25.",
+    "inference": "Equal-block, equal current-expression class, equal packet and future-repeat Brier contrasts. Support full claim only when all four block-t lower limits exceed their original margins. Components keep alpha .025; no alpha redistribution or fitted calibration.",
+    "domain": "First B fresh acquisition blocks with both current-pass/fail classes, boundary-only hash/rule-balanced selection of up to two packets per class. Conditional selected-panel estimand, not all64-record population."
+  },
+  "execution": {
+    "acquisition_order": "Ascending fixed namespace block IDs in complete8-block acquisition waves. Retain first B eligible blocks in block-ID order, recording all rejected and surplus attempts. Never select by forecast or future outcome.",
+    "attempt_cap": "2B fixed before acquisition; stop at cap if cohort incomplete, with no inferential verdict and no replacement/extension.",
+    "forecast_barrier": "Freeze all three predictors for every selected record in both regimes before any scientific future read. Models, features, noise, injury and endpoint unchanged.",
+    "runtime": "Eight one-thread workers require fresh shared12-thread admission; six-hour hard stop; no automatic extension, retries or polling.",
+    "namespace": "RDT_fresh_joint_power_v0_1; prospective and not used by this audit.",
+    "scientific_status": "Proposal only; full runner and study protocol not qualified or launched by this audit."
+  },
+  "planning_only": true,
+  "blocks": 108,
+  "future_repeats_per_record_regime": 4,
+  "maximum_acquisition_attempts": 216,
+  "maximum_selected_records": 432,
+  "workers": 8,
+  "forecast_cap_cost": {
+    "estimated_attempts": 216,
+    "charged_full_wave_attempts": 216,
+    "wall_seconds": 20487.976942837442,
+    "cpu_seconds": 66570.21089937449,
+    "primary_native_reads": 321408,
+    "flat_audit_reads": 21600,
+    "fits_one_hour": false,
+    "fits_six_hours": true
+  },
+  "forecast_all_eligible": {
+    "estimated_attempts": 108,
+    "charged_full_wave_attempts": 112,
+    "wall_seconds": 16128.7141846366,
+    "cpu_seconds": 51795.050737833495,
+    "primary_native_reads": 228224,
+    "flat_audit_reads": 20352,
+    "fits_one_hour": false,
+    "fits_six_hours": true
+  },
+  "component_and_joint_powers": {
+    "blocks": 108,
+    "component_powers": {
+      "legacy": [
+        0.9560908825749084,
+        0.9965471725475977,
+        0.9993193836143268,
+        0.8590964502414711
+      ],
+      "noncentral_t": [
+        0.9550691657747646,
+        0.9963338519053536,
+        0.9992588820869918,
+        0.8579430598508399
+      ]
+    },
+    "joint_bounds": {
+      "legacy": 0.811053888978304,
+      "noncentral_t": 0.8086049596179499
+    },
+    "required_both_bound": 0.8086049596179499
+  },
+  "hard_wall_seconds": 21600
+}

@@ -1,0 +1,120 @@
+{
+  "utc": "2026-10-17T14:29:43.417335+00:00",
+  "status": "EXPOSED_DATA_DEVELOPMENT_SCREEN_NO_CONFIRMATORY_CLAIM",
+  "source": "rdt_paired_repair_benefit_v0_1/runs/pilot_v1",
+  "records": 63,
+  "record_regimes": 126,
+  "blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "target": "D=Y_terminal(repair_once)-Y_terminal(no_repair), including harms; one paired realization per record/regime.",
+  "features": {
+    "candidate": [
+      "independent_noise_indicator",
+      "signed_transfer_64_original",
+      "signed_transfer_64_repaired_minus_original"
+    ],
+    "definition": "T64 is the minimum intended-task-aligned response of the two output ports after64 normalized signed graph-transfer iterations with the input port clamped at1. R(w) is the already specified packet-only graph completion. Task rule and port geometry are shared externally supplied apparatus.",
+    "excluded": [
+      "current expression/body",
+      "history label",
+      "future margins/outcomes",
+      "repair benefit labels as features"
+    ],
+    "counterfactual_cost": "Candidate must compute a dry-run repair for every evaluated packet, even if a policy later declines to apply it; charge solver CPU and both transfer calculations. No new full native read."
+  },
+  "formula": "clip(mean_train(D) + beta_noise*z_noise + beta_T*z_T + beta_change*z_(T(R(w))-T(w)), -1, 1)",
+  "fit": {
+    "method": "Weighted ridge regression on paired difference; weighted training-fold centering/scaling; intercept unpenalized.",
+    "objective": "weighted mean squared error + 1.0*sum(beta_j**2)",
+    "ridge_penalty": 1.0,
+    "justification": "One fixed strong shrinkage level, three standardized features and an intercept for only16 independent blocks and13 discordant record/regimes. No tuning search; candidate failure ends this version.",
+    "scale_floor": 1e-12
+  },
+  "comparators": {
+    "zero": "Predict0; known no-benefit baseline.",
+    "regime_mean": "Training-fold weighted mean observed benefit separately in each noise regime.",
+    "packet_blind": [
+      "independent_noise_indicator",
+      "signed_transfer_64_original"
+    ],
+    "ordinary_risk": [
+      "independent_noise_indicator",
+      "one_minus_fixed_tt008_probability"
+    ],
+    "direct_risk": [
+      "independent_noise_indicator",
+      "one_minus_fixed_direct_probability"
+    ],
+    "successor_risk": [
+      "independent_noise_indicator",
+      "one_minus_fixed_successor_probability"
+    ]
+  },
+  "costs": {
+    "extra_native_probes": {
+      "candidate": 0,
+      "packet_blind": 0,
+      "ordinary_risk": 0,
+      "direct_risk": 8,
+      "successor_risk": 64,
+      "zero": 0,
+      "regime_mean": 0
+    },
+    "shared": "Current boundary and existing forecasting apparatus/transfer calculations are not free. Reused probe costs stay in the report; no measured full-cost policy superiority follows from squared-error ranking.",
+    "dry_run_optimizer_calls_per_packet": {
+      "candidate": 1,
+      "packet_blind": 0,
+      "ordinary_risk": 0,
+      "direct_risk": 0,
+      "successor_risk": 0,
+      "zero": 0,
+      "regime_mean": 0
+    }
+  },
+  "validation": {
+    "split": "Leave one whole acquisition block out; keep all related founders, histories, recipients and both noise regimes together. Training-fold standardization only.",
+    "weighting": "Each acquisition block equal, within block current-fail and current-pass classes each half, noise regimes each half. Regression training weights normalized within the training fold.",
+    "interpretation": "Family and plan chosen after inspecting earlier outcomes. Whole-block exclusion prevents training leakage for this fixed recipe; the resulting scores remain exposed-data development diagnostics, not untouched validation.",
+    "metrics": "Paired-difference mean squared prediction error separately in both noise regimes; all block losses, all comparator gains and all out-of-block predictions retained. No bin/stratum rescue or confidence-based confirmation from overlapping folds."
+  },
+  "gate": {
+    "rule": "Proceed to measuring feasibility of a new-founder test only if the candidate has strictly lower out-of-block paired-difference MSE than every declared comparator in each noise regime. Equality fails. No claim of significance or useful effect size from passing this screen.",
+    "if_fail": "Preserve candidate, coefficients and all results. Do not tune this version or launch fresh scientific futures merely to rescue it.",
+    "if_pass": "Freeze final all-development-data coefficients before new founder acquisition; separately specify and qualify endpoint/comparators/resource contract and benchmark runtime. No automatic launch from this script."
+  },
+  "policy_diagnostics": {
+    "always_repair": "Show the observed weighted repair-once-all effect and full applied-repair count as a baseline.",
+    "candidate_positive": "Apply only when out-of-block predicted benefit is strictly positive; threshold0 fixed as the sign of expected terminal benefit, without a selected penalty. Compute offline expected outcome from the existing two branches.",
+    "comparators": "Same sign rule for all benefit models; include no-repair. Report applied repairs, physical dry-run solver requirements, probe costs and value. Different resource vectors are not a matched-budget policy competition or sequential scheduler validation.",
+    "risk_rank": "No new outcome-selected risk threshold or top-k policy is constructed."
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "development_cap_seconds": 300,
+    "new_native_reads": 0,
+    "new_scientific_futures": 0,
+    "preferred_future_ceiling_seconds": 3600,
+    "general_ceiling_seconds": 21600,
+    "automatic_successor": false,
+    "automatic_polling": false
+  },
+  "rdt_scope": "A conventional action-aware regression is a possible useful reduction. No RDT-specific law or autonomous repair follows from a positive screen."
+}

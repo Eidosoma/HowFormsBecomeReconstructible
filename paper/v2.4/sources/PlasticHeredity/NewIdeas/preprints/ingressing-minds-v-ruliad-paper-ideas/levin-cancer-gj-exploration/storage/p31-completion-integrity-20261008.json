@@ -1,0 +1,5518 @@
+{
+  "checked_utc": "2026-10-08T11:04:46.608194+00:00",
+  "job": "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw",
+  "run": "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk",
+  "checks": {
+    "fresh_source_and_input_integrity": true,
+    "frozen_launch_and_P27_P30_decisions_preserved": true,
+    "terminal_completion": true,
+    "complete_registration": true,
+    "completed_stages": true,
+    "all_result_hashes": true,
+    "all_raw_phase_hashes": true,
+    "all_assembly_hashes": true,
+    "embedded_results_agree": true,
+    "stage_reports_and_checks": true,
+    "final_report_consistent": true,
+    "controls_and_shared_prefixes": true,
+    "all_28_finest_comparisons_pass": true,
+    "all_10_source_comparisons_pass": true,
+    "registered_scope_and_decision": true,
+    "both_successful_software_suites": true,
+    "no_registered_process_alive": true,
+    "exclusive_lock_released": true,
+    "no_automatic_followon": true,
+    "all_finest_source_outcomes_agree": true,
+    "all_40_exact_replays_preserved": true,
+    "original_three_P30_failures_preserved": true,
+    "all_80_raw_classifier_neighborhoods_match": true,
+    "target_finest_E_label_and_sampled_brackets_agree": true,
+    "registered_target_finest_neighborhood_comparisons_pass": true,
+    "failed_software_attempt_and_correction_preserved": true
+  },
+  "fresh_integrity": {
+    "revision": true,
+    "manifest": true,
+    "frozen": true,
+    "origins": true,
+    "source_bytes": true,
+    "archive_bytes": true,
+    "referenced_inputs": true,
+    "inherited_verification": true,
+    "draws": true
+  },
+  "status_snapshot": {
+    "job": "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw",
+    "phase": "complete",
+    "launched_utc": "2026-10-07T16:42:56.358077+00:00",
+    "heartbeat_utc": "2026-10-07T23:39:12.865507+00:00",
+    "heartbeat_epoch": 1791416352.865512,
+    "planned_cases": 96,
+    "planned_integrations": 2096,
+    "completed_cases": 96,
+    "completed_integrations": 2096,
+    "supervisor_pid": 1561271,
+    "supervisor_session": 1561271,
+    "external_free_gib": 493.39627838134766,
+    "child_pid": 1688796,
+    "verification_exit_code": 0,
+    "verification_log_sha256": "b5066896b88dea438ee4c24da762f549cac6a37d4e5760cc63d18d93e2c13126",
+    "verification_tests": 42,
+    "verification_seconds": 347.279,
+    "run": "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk",
+    "valid_cases": 96,
+    "stage_gates": {
+      "prefix_replay": true,
+      "prefix_refine": true,
+      "replay": true,
+      "refinement": true
+    },
+    "predecessor_gate": true,
+    "runner_exit_code": 0,
+    "audit_exit_code": 0,
+    "quality_gate": true,
+    "ready_for_interpretation": true,
+    "independent_checks": 164462,
+    "all_finest_converged": true,
+    "source_precision_agrees": true,
+    "focused_repair_qualified": true,
+    "next_action": "Review the focused delayed-pause diagnosis; P30 and P27 remain stopped; no downstream launch",
+    "finished_utc": "2026-10-07T23:39:12.865479+00:00",
+    "exit_code": 0
+  },
+  "execution_sources": 292,
+  "input_paths": 43411,
+  "result_files": 96,
+  "raw_phases": 2096,
+  "assembly_files": 160,
+  "independent_checks": 164462,
+  "comparison_statistics": {
+    "prefix_finest_comparisons": {
+      "comparisons": 4,
+      "max_finest_scaled_error": 1.6588958787358163e-05,
+      "max_finest_to_previous_error_ratio": 0.5004622203301665
+    },
+    "upstream_finest_comparisons": {
+      "comparisons": 4,
+      "max_finest_scaled_error": 0.0006047061123848748,
+      "max_finest_to_previous_error_ratio": 0.5007162216264078
+    },
+    "downstream_finest_comparisons": {
+      "comparisons": 4,
+      "max_finest_scaled_error": 0.0002541086787275049,
+      "max_finest_to_previous_error_ratio": 0.5001970957424867
+    },
+    "joint_finest_comparisons": {
+      "comparisons": 16,
+      "max_finest_scaled_error": 0.0008655716090628198,
+      "max_finest_to_previous_error_ratio": 0.500909724336953
+    }
+  },
+  "source_comparisons": [
+    {
+      "left": "prefix_refine__written__source_coarse__r64",
+      "right": "prefix_refine__written__source_fine__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 1.120198853410755e-05,
+      "founder": "written",
+      "source_robust": true
+    },
+    {
+      "left": "prefix_refine__ordinary__source_coarse__r64",
+      "right": "prefix_refine__ordinary__source_fine__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 6.369259197768672e-05,
+      "founder": "ordinary",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__written__baseline__source_coarse__p64__r64",
+      "right": "refinement__written__baseline__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.00024984173941141734,
+      "founder": "written",
+      "condition": "baseline",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__written__pause_10_100__source_coarse__p64__r64",
+      "right": "refinement__written__pause_10_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.0008961604853168789,
+      "founder": "written",
+      "condition": "pause_10_100",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__written__pause_15_100__source_coarse__p64__r64",
+      "right": "refinement__written__pause_15_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.0007072925885932407,
+      "target_neighborhood_labels_agree": true,
+      "target_neighborhood_switches_agree": true,
+      "founder": "written",
+      "condition": "pause_15_100",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__written__pause_20_100__source_coarse__p64__r64",
+      "right": "refinement__written__pause_20_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 9.732592942576224e-05,
+      "founder": "written",
+      "condition": "pause_20_100",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__ordinary__baseline__source_coarse__p64__r64",
+      "right": "refinement__ordinary__baseline__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.0001999286655892162,
+      "founder": "ordinary",
+      "condition": "baseline",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__ordinary__pause_10_100__source_coarse__p64__r64",
+      "right": "refinement__ordinary__pause_10_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.001094936684189705,
+      "founder": "ordinary",
+      "condition": "pause_10_100",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__ordinary__pause_15_100__source_coarse__p64__r64",
+      "right": "refinement__ordinary__pause_15_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.0008345819671687161,
+      "target_neighborhood_labels_agree": true,
+      "target_neighborhood_switches_agree": true,
+      "founder": "ordinary",
+      "condition": "pause_15_100",
+      "source_robust": true
+    },
+    {
+      "left": "refinement__ordinary__pause_20_100__source_coarse__p64__r64",
+      "right": "refinement__ordinary__pause_20_100__source_fine__p64__r64",
+      "phase_inventory_agrees": true,
+      "outcomes_agree": true,
+      "all_phase_labels_agree": true,
+      "common_grid_diagnostics_agree": true,
+      "max_primary_scaled_error": 0.00011450774519814735,
+      "founder": "ordinary",
+      "condition": "pause_20_100",
+      "source_robust": true
+    }
+  ],
+  "retention_counts_by_stage": {
+    "replay": {
+      "baseline": {
+        "cases": 8,
+        "retained_E": 0
+      },
+      "pause_10_100": {
+        "cases": 8,
+        "retained_E": 8
+      },
+      "pause_15_100": {
+        "cases": 8,
+        "retained_E": 0
+      },
+      "pause_20_100": {
+        "cases": 8,
+        "retained_E": 0
+      }
+    },
+    "refinement": {
+      "baseline": {
+        "cases": 8,
+        "retained_E": 0
+      },
+      "pause_10_100": {
+        "cases": 8,
+        "retained_E": 8
+      },
+      "pause_15_100": {
+        "cases": 24,
+        "retained_E": 0
+      },
+      "pause_20_100": {
+        "cases": 8,
+        "retained_E": 0
+      }
+    }
+  },
+  "finest_cases": {
+    "refinement__written__baseline__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__written__baseline__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "baseline",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "open",
+        "pause_start": null,
+        "pause_duration": 0,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MME",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              true,
+              true,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:baseline:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:baseline:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__written__baseline__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__written__baseline__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "baseline",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "open",
+        "pause_start": null,
+        "pause_duration": 0,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MME",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              true,
+              true,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:baseline:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:baseline:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:baseline:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__written__pause_10_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_10_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_10_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_10_100",
+        "pause_start": 10,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_10_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_10_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": true,
+        "first_cell_label_after_second": "E",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "sampled_recovery_to_E",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "X",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E"
+        ],
+        "sampled_behavior": "sampled_recovery_to_E",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": [
+          225.0,
+          240.0
+        ]
+      }
+    },
+    "refinement__written__pause_10_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_10_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_10_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_10_100",
+        "pause_start": 10,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_10_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_10_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_10_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": true,
+        "first_cell_label_after_second": "E",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "sampled_recovery_to_E",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "X",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E"
+        ],
+        "sampled_behavior": "sampled_recovery_to_E",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": [
+          225.0,
+          240.0
+        ]
+      }
+    },
+    "refinement__written__pause_15_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_15_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_15_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__written__pause_15_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_15_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_15_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_15_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__written__pause_20_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_20_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_20_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_20_100",
+        "pause_start": 20,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_20_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_20_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__written__pause_20_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__written__pause_20_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_20_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_20_100",
+        "pause_start": 20,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:written:100:open:replacement:0:0",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:written:actual:patch:pupil:00",
+          "p15:written:actual:patch:pupil:01",
+          "p15:written:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:written:actual:patch:pupil:01",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:written:actual:patch:pupil:02",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:written:100:open:replacement:0:0",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:written:pause_20_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:written:pause_20_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:written:pause_20_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__baseline__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__baseline__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "baseline",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "open",
+        "pause_start": null,
+        "pause_duration": 0,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MME",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              true,
+              true,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:baseline:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:baseline:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__baseline__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__baseline__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "baseline",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "open",
+        "pause_start": null,
+        "pause_duration": 0,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MME",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              true,
+              true,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:baseline:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:baseline:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:baseline:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__pause_10_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_10_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_10_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_10_100",
+        "pause_start": 10,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": true,
+        "first_cell_label_after_second": "E",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "sampled_recovery_to_E",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "X",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E"
+        ],
+        "sampled_behavior": "sampled_recovery_to_E",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": [
+          225.0,
+          240.0
+        ]
+      }
+    },
+    "refinement__ordinary__pause_10_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_10_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_10_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_10_100",
+        "pause_start": 10,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              false,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              false,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              false
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "EEE",
+            "stable_E": [
+              true,
+              true,
+              true
+            ],
+            "stable_M": [
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_10_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": true,
+        "first_cell_label_after_second": "E",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "sampled_recovery_to_E",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "X",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E"
+        ],
+        "sampled_behavior": "sampled_recovery_to_E",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": [
+          225.0,
+          240.0
+        ]
+      }
+    },
+    "refinement__ordinary__pause_15_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__pause_15_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_15_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__pause_20_100__source_coarse__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_20_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_20_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_20_100",
+        "pause_start": 20,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "kind": "renewal",
+        "source_fine": false,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    },
+    "refinement__ordinary__pause_20_100__source_fine__p64__r64": {
+      "case": {
+        "id": "refinement__ordinary__pause_20_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_20_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_20_100",
+        "pause_start": 20,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "kind": "renewal",
+        "source_fine": true,
+        "prefix_resolution": 64,
+        "resolution": 64
+      },
+      "outcome": {
+        "available": true,
+        "fork_ids": [
+          "p17:ordinary:100:open:replacement:0:0",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "original_ids": [
+          "p15:ordinary:actual:patch:pupil:00",
+          "p15:ordinary:actual:patch:pupil:01",
+          "p15:ordinary:actual:patch:pupil:02"
+        ],
+        "assembly_labels": "EEE",
+        "observations": {
+          "replacement_02": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_03": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_04": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_05": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "replacement_06": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_1": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          },
+          "isolated_2": {
+            "patch_labels": "MMM",
+            "stable_E": [
+              false,
+              false,
+              false
+            ],
+            "stable_M": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        "replacements": [
+          {
+            "event": 2,
+            "cycle": 0,
+            "position": 1,
+            "removed": "p15:ordinary:actual:patch:pupil:01",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 3,
+            "cycle": 0,
+            "position": 2,
+            "removed": "p15:ordinary:actual:patch:pupil:02",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:2",
+            "initial_label": "M"
+          },
+          {
+            "event": 4,
+            "cycle": 1,
+            "position": 0,
+            "removed": "p17:ordinary:100:open:replacement:0:0",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:0",
+            "initial_label": "M"
+          },
+          {
+            "event": 5,
+            "cycle": 1,
+            "position": 1,
+            "removed": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:1",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:1",
+            "initial_label": "M"
+          },
+          {
+            "event": 6,
+            "cycle": 1,
+            "position": 2,
+            "removed": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:0:2",
+            "inserted": "p27:ordinary:pause_20_100:heldout_17021:5:replacement:1:2",
+            "initial_label": "M"
+          }
+        ],
+        "retained_E": false,
+        "first_cell_label_after_second": "M",
+        "first_cell_stable_E_after_second": false,
+        "later_windows_E": false,
+        "complete_carrier_replacement": true,
+        "logical_end": 1201800,
+        "first_cell_sampled_behavior": "no_E_recovery_by_300",
+        "first_cell_M_observed": true
+      },
+      "trajectory_diagnostics": {
+        "sample_times": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0,
+          150.0,
+          165.0,
+          180.0,
+          195.0,
+          210.0,
+          225.0,
+          240.0,
+          255.0,
+          270.0,
+          285.0,
+          300.0
+        ],
+        "newcomer_labels": [
+          "E",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M",
+          "M"
+        ],
+        "sampled_behavior": "no_E_recovery_by_300",
+        "M_observed": true,
+        "first_non_E_bracket": [
+          0.0,
+          15.0
+        ],
+        "first_return_E_bracket": null
+      }
+    }
+  },
+  "raw_target_classifier_diagnostics": [
+    {
+      "case": {
+        "id": "replay__written__pause_15_100__source_coarse__p8__r8",
+        "stage": "replay",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 8,
+        "kind": "renewal",
+        "prefix_resolution": 8
+      },
+      "at_175": {
+        "label": "X",
+        "miR200_minus_Zeb": 1.9884715025780082,
+        "E_margin": -0.011528497421991801
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            173.75,
+            175.0
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            180.0,
+            181.25
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__written__pause_15_100__source_fine__p8__r8",
+        "stage": "replay",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 8,
+        "kind": "renewal",
+        "prefix_resolution": 8
+      },
+      "at_175": {
+        "label": "X",
+        "miR200_minus_Zeb": 1.999666840286281,
+        "E_margin": -0.0003331597137190556
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            173.75,
+            175.0
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEXXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__ordinary__pause_15_100__source_coarse__p8__r8",
+        "stage": "replay",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 8,
+        "kind": "renewal",
+        "prefix_resolution": 8
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.006528616446573,
+        "E_margin": 0.00652861644657321
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__ordinary__pause_15_100__source_fine__p8__r8",
+        "stage": "replay",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 8,
+        "kind": "renewal",
+        "prefix_resolution": 8
+      },
+      "at_175": {
+        "label": "X",
+        "miR200_minus_Zeb": 1.993108478116838,
+        "E_margin": -0.0068915218831619995
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            173.75,
+            175.0
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEXXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__written__pause_15_100__source_coarse__p16__r16",
+        "stage": "replay",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0134856195097868,
+        "E_margin": 0.013485619509786773
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__written__pause_15_100__source_fine__p16__r16",
+        "stage": "replay",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.024674294910021,
+        "E_margin": 0.024674294910020933
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__ordinary__pause_15_100__source_coarse__p16__r16",
+        "stage": "replay",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.031533911672817,
+        "E_margin": 0.03153391167281683
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "replay__ordinary__pause_15_100__source_fine__p16__r16",
+        "stage": "replay",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0181192837936663,
+        "E_margin": 0.01811928379366634
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p32__r32",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.025992167295044,
+        "E_margin": 0.025992167295044055
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p32__r32",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0371788880495387,
+        "E_margin": 0.03717888804953873
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p32__r32",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.044036878721961,
+        "E_margin": 0.04403687872196116
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p32__r32",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0306247176909054,
+        "E_margin": 0.030624717690905356
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.032252850931499,
+        "E_margin": 0.03225285093149921
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.043438186751864,
+        "E_margin": 0.04343818675186384
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0502960448597918,
+        "E_margin": 0.05029604485979178
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p64__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0368845153102555,
+        "E_margin": 0.036884515310255495
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p16__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.003276389055742,
+        "E_margin": 0.0032763890557419018
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p16__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0144691708814406,
+        "E_margin": 0.014469170881440618
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p16__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.02133117677878,
+        "E_margin": 0.021331176778780048
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p16__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 16
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0079117262442736,
+        "E_margin": 0.00791172624427361
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p32__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.022590411576914,
+        "E_margin": 0.022590411576913993
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p32__r64",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0337784779994905,
+        "E_margin": 0.03377847799949052
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p32__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.040637261195684,
+        "E_margin": 0.040637261195684005
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p32__r64",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 64,
+        "kind": "renewal",
+        "prefix_resolution": 32
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0272235183328178,
+        "E_margin": 0.027223518332817775
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p64__r16",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0424517575061643,
+        "E_margin": 0.042451757506164256
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p64__r16",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0536330791963024,
+        "E_margin": 0.05363307919630245
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p64__r16",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0604885508863973,
+        "E_margin": 0.06048855088639726
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p64__r16",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 16,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.047081704677595,
+        "E_margin": 0.04708170467759487
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_coarse__p64__r32",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.035653503843932,
+        "E_margin": 0.035653503843931844
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__written__pause_15_100__source_fine__p64__r32",
+        "stage": "refinement",
+        "founder": "written",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.046837506948762,
+        "E_margin": 0.0468375069487621
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_coarse__p64__r32",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": false,
+        "source_fine": false,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.053694482320296,
+        "E_margin": 0.05369448232029583
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    },
+    {
+      "case": {
+        "id": "refinement__ordinary__pause_15_100__source_fine__p64__r32",
+        "stage": "refinement",
+        "founder": "ordinary",
+        "condition": "pause_15_100",
+        "panel": "timing_grid",
+        "route": "none",
+        "window": "pause_15_100",
+        "pause_start": 15,
+        "pause_duration": 100,
+        "draw": "heldout_17021",
+        "replacements": 5,
+        "readout": "",
+        "fine": true,
+        "source_fine": true,
+        "resolution": 32,
+        "kind": "renewal",
+        "prefix_resolution": 64
+      },
+      "at_175": {
+        "label": "E",
+        "miR200_minus_Zeb": 2.0402844907309117,
+        "E_margin": 0.04028449073091167
+      },
+      "sampled_label_switches": [
+        {
+          "from_label": "E",
+          "to_label": "X",
+          "bracket": [
+            175.0,
+            176.25
+          ]
+        },
+        {
+          "from_label": "X",
+          "to_label": "M",
+          "bracket": [
+            181.25,
+            182.5
+          ]
+        }
+      ],
+      "labels": "EEEEEEEEEEEEEEEEEEEEEXXXXXMMMMMMMMMMMMMMM",
+      "raw_diagnostic_matches": true
+    }
+  ],
+  "all_results_valid": true,
+  "all_finest_converged": true,
+  "source_precision_agrees": true,
+  "targeted_repair_qualified": true,
+  "focused_repair_qualified": true,
+  "original_P27_quality_gate": false,
+  "original_P30_quality_gate": false,
+  "full_pause_panel_qualified": false,
+  "qualified_onward_transmission_established": false,
+  "full_historical_lineage_refined": false,
+  "historical_mathematical_audit_repeated": false,
+  "new_scientific_integrations": 0,
+  "review_scope": "Fresh artifact hashes and recorded audit consistency; no simulation or full mathematical audit rerun.",
+  "review_script_sha256": "ca4ac3462118dcc899c35e259506b33669e7c2e71a1b57fb62fb12aecbab4659",
+  "report_sha256": {
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw/status.json": "99a71fdbdbdedcb475534e49d931bcb353ec2972c6413384252b7d7e226dd2b4",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw/launch.json": "1456a64d41e00860c6373a1f292dbb1fdc6fc7671de0dbd1ca57e49586dad766",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw/input_manifest.json": "1c4cf58590b2504b1ada4d91dc88e5a858d0d0f14f90a79885af2dcbf3166cb3",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/jobs/p31-20261007T164236Z-6sdqdblw/verification.log": "b5066896b88dea438ee4c24da762f549cac6a37d4e5760cc63d18d93e2c13126",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/summary.json": "aecae6e6660469cc60ac24efe4152fba69a5375b972fc6ef1c94e240b16bd222",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/independent_audit.json": "1084d7f106240906b16f46050ed295621134cbd69ec13e4856acc9cd24f075aa",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/predecessor_audit.json": "6dfbfdceb259aad6839f2a54d9e7ea391678a59df02501377e9c25db757169fd",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/prefix_replay_audit.json": "b506e671fdbf2624884184dfee0ecda9fa84a4954ec16dc3baac3350f03f83db",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/prefix_refine_audit.json": "c17116154454c34a39524e81c5e6b31c7dcd31caf8a4e3246b0728376828be3a",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/replay_audit.json": "7261a10604abea706e619f74b494c17052853902417202e4594215224331b319",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p31-delayed-pause-convergence/runs/p31-20261007T164849Z-xa2dojrk/refinement_audit.json": "f1665cc6dddbff4fb868edcc90de40fe26a2b7cb84b84ca2e82690b64443de5d"
+  },
+  "external_free_gib": 493.3960266113281,
+  "workspace_free_gib": 60.87136459350586
+}

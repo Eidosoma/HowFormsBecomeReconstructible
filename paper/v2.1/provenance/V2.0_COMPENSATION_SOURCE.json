@@ -1,0 +1,45 @@
+{
+  "manuscript_version": "2.0",
+  "inspected_on": "2026-10-13",
+  "key": "hazan2026compensation",
+  "authors": [
+    "Hananel Hazan",
+    "Michael Levin"
+  ],
+  "title": "Computational Framework for Identifying Ion Channel Mutation-Compensating Interventions",
+  "year": 2026,
+  "publication": "bioRxiv preprint",
+  "consulted_version": 1,
+  "version_posted": "2026-09-25",
+  "doi": "10.64898/2026.09.20.753002",
+  "doi_url": "https://doi.org/10.64898/2026.09.20.753002",
+  "local_pdf": "/home/robert/Downloads/2026.09.20.753002v1.full.pdf",
+  "pdf_bytes": 1270287,
+  "pdf_sha256": "d429fa551bc7eb14423e23964aa19debce33afda3f08365829b9012c365b0d97",
+  "pdf_pages": 36,
+  "license_on_pdf": "CC-BY-NC-ND 4.0",
+  "inspection_scope": "Primary PDF read directly; metadata checked on page 1, model/method discussion on page 6 and Kv7.2 results/figures on pages 13–15. Page 15 (Figure 7) inspected visually. No simulation or implementation audit.",
+  "main_text_placement": "8.1 Biological relevance of the reconstruction boundary",
+  "supported_comparison": "In the Kv7.2 D212G model, changing sodium, delayed-rectifier potassium and leak conductances reduces a reference spike-count discrepancy while the mutated M-current remains unchanged. This is compensation of a measured function in the treated model, complementary to record-based reconstruction across replacement.",
+  "supporting_detail": {
+    "source_section": "3.2",
+    "pdf_page": 13,
+    "stimulus_levels": 12,
+    "reference_total_spikes": 97,
+    "untreated_total_spikes": 133,
+    "compensated_total_spikes": 99,
+    "sum_per_stimulus_absolute_discrepancies_before": 36,
+    "sum_per_stimulus_absolute_discrepancies_after": 4,
+    "reported_restoration_percent": 88.9,
+    "main_paragraph_uses_numerical_result": false
+  },
+  "interpretive_limits": [
+    "No validation of a treatment in living systems is inferred.",
+    "A spike-count comparison does not establish equivalence under every challenge.",
+    "Persistence after withdrawal and autonomous maintenance are not established by this compensation result.",
+    "This study supplies no evidence here for acquired-record renewal or transmission across fresh-body replacement.",
+    "The new paragraph uses the explicit Kv7.2 case and makes no all-other-channels-only claim for R859C."
+  ],
+  "online_access_note": "The attempted bioRxiv web-tool fetch was unavailable; DOI and version metadata were verified from the local PDF. Successful online link resolution is not claimed.",
+  "full_pdf_copied_into_repository": false
+}

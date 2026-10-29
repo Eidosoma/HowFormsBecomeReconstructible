@@ -1,0 +1,131 @@
+{
+  "version": "2.4",
+  "kind": "retained-report transcription; no re-estimation or new simulation",
+  "writing_timing": {
+    "source": "HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT039/README.md",
+    "source_sha256": "53a91689e8d53f4901e341077138dd84c9ee3174791cc9de3b1d55d4ef56d55d",
+    "blocks": 64,
+    "record_positions": 1024,
+    "condition": "complete record corruption; uniform reset",
+    "means_percent": [
+      {
+        "schedule": "Preservation",
+        "body_1000": 43.48,
+        "body_1900": 39.16,
+        "recipient": 25.0
+      },
+      {
+        "schedule": "Early",
+        "body_1000": 39.7,
+        "body_1900": 40.47,
+        "recipient": 40.19
+      },
+      {
+        "schedule": "Late",
+        "body_1000": 43.43,
+        "body_1900": 43.21,
+        "recipient": 39.44
+      },
+      {
+        "schedule": "Full, then hold",
+        "body_1000": 31.62,
+        "body_1900": 32.47,
+        "recipient": 31.6
+      }
+    ],
+    "late_minus_preservation_pp": [
+      {
+        "endpoint": "Body at step 1900",
+        "mean": 4.0527,
+        "lower": 3.263,
+        "upper": 4.8425
+      },
+      {
+        "endpoint": "Fresh recipient",
+        "mean": 14.4379,
+        "lower": 13.6252,
+        "upper": 15.2505
+      }
+    ],
+    "interval": "reported pointwise two-sided 95% approximate block-t; co-primary one-sided alpha .025 each",
+    "qualification": "registered approximate bounds pass; conservative Hoeffding sensitivities do not"
+  },
+  "equal_read_forecast": {
+    "source": "HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/DISCOVERY_LOG.json",
+    "source_sha256": "d829f0149381b59eb29b26d9520c0b48e411052b5f9d0a03c1492f1215a85cb9",
+    "source_key": "scientific_completion",
+    "completion": {
+      "run": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/runs/scientific_v1",
+      "status": "COMPLETE_VERIFIED",
+      "completed_utc": "2026-10-20T14:07:58.042910+00:00",
+      "decision": "ALL_FOUR_EQUAL_READ_ADVANTAGES_SUPPORTED",
+      "acquisition_attempts": 80,
+      "selected_blocks": 80,
+      "selected_packets": 319,
+      "scientific_future_outcomes": 2552,
+      "fixed_forecast_cases": 638,
+      "fixed_probabilities": 3190,
+      "actual_wall_seconds": 10674.725086338003,
+      "primary_native_reads": 201832,
+      "flat_audit_reads": 15672,
+      "worker_cpu_seconds": 47235.450491388976,
+      "new_model_fits": 0,
+      "forecast_seal_precedes_every_future_start": true,
+      "output_files_verified": 11102,
+      "verified_unit_commits": 480,
+      "evidence_audit": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/checks/SCIENTIFIC_V1_EVIDENCE_AUDIT.json",
+      "evidence_audit_sha256": "003380438eff12f7b7af2cbabe978bea82444de6e400a5ca86ec3c1f8302c129",
+      "report": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_fresh_equal_read_v0_1/runs/scientific_v1/REPORT.md",
+      "complete_sha256": "b0dadb85c01468b5fed339c19c3b30e517a17b43e447749ee0851c92813a4f29",
+      "output_manifest_sha256": "2dca823612314def1c4c46542c7533b694e18cb94d73f8a7f8b1634a5f704446",
+      "primary_contrasts": {
+        "matched": {
+          "direct64": {
+            "mean_gain": 0.010267406578976911,
+            "sample_sd": 0.019139985743198744,
+            "lower": 0.006008011400733143,
+            "upper": 0.014526801757220681,
+            "margin": 0.0,
+            "decision": "SUPPORTED",
+            "blocks": 80
+          },
+          "pooled32": {
+            "mean_gain": 0.009841906832588586,
+            "sample_sd": 0.01802510995366714,
+            "lower": 0.005830615107815729,
+            "upper": 0.013853198557361442,
+            "margin": 0.0,
+            "decision": "SUPPORTED",
+            "blocks": 80
+          }
+        },
+        "independent": {
+          "direct64": {
+            "mean_gain": 0.0028498891493064222,
+            "sample_sd": 0.010981323527597774,
+            "lower": 0.0004061153078966633,
+            "upper": 0.005293662990716181,
+            "margin": 0.0,
+            "decision": "SUPPORTED",
+            "blocks": 80
+          },
+          "pooled32": {
+            "mean_gain": 0.00280962166052013,
+            "sample_sd": 0.010257820240069972,
+            "lower": 0.0005268555886921477,
+            "upper": 0.005092387732348112,
+            "margin": 0.0,
+            "decision": "SUPPORTED",
+            "blocks": 80
+          }
+        }
+      },
+      "secondary_caveat": "The independent-noise direct8 contrast is unresolved; no fresh all-eight superiority claim.",
+      "costs_caveat": "Primary models each use64 native probes per packet/regime; direct8 uses8 and TT008 zero additional probes. Shared acquisition and training are separate.",
+      "claim_boundary": "Ordinary forecasting in a selected fresh-founder panel; no RDT-specific law, endogenous maintenance or repair-benefit scheduler. Historical failed selectors/reductions remain failed."
+    },
+    "interval": "individual reported 95% block-t intervals; not simultaneous 95% coverage",
+    "unit": "Brier error advantage: comparator minus successor32; positive favors successor probes",
+    "qualification": "all four lower bounds above zero; no new fit or raw-output audit here"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-17T14:41:32.088269+00:00",
+  "status": "CLOSED",
+  "run": "development_v2",
+  "decision": "DEVELOPMENT_SCREEN_FAILED",
+  "advance_gate_pass": false,
+  "basis": "The fixed candidate has lower whole-block development MSE than every comparator under independent noise but higher MSE than every comparator under matched noise. The frozen gate requires improvement against all comparators in both regimes.",
+  "paired_benefit_mse": {
+    "matched": {
+      "zero": 0.046875,
+      "regime_mean": 0.04821180555555555,
+      "candidate": 0.04831599673323497,
+      "packet_blind": 0.04827977121696061,
+      "ordinary_risk": 0.047966717709677864,
+      "direct_risk": 0.0480235887080623,
+      "successor_risk": 0.048102826968038956
+    },
+    "independent": {
+      "zero": 0.15625,
+      "regime_mean": 0.15270833333333333,
+      "candidate": 0.15215071578198341,
+      "packet_blind": 0.1522207619458344,
+      "ordinary_risk": 0.15284337207210003,
+      "direct_risk": 0.1527419591439178,
+      "successor_risk": 0.1529589099523543
+    }
+  },
+  "practical_finding": "In both regimes the candidate and repairing every case once have weighted observed terminal success 0.796875. The candidate applies 61 repairs, but requires 63 dry-run repair computations plus transfer features; repairing every case uses 63 repair computations without those features.",
+  "interpretation_limits": [
+    "All paired outcomes were exposed before this candidate was specified; leaving acquisition blocks out of fitted models does not make this a prospective validation.",
+    "Only 13 discordant record/regime pairs across 16 acquisition blocks; a failed candidate does not establish that repair benefit is unlearnable.",
+    "Offline policy diagnostics have different resource vectors and are not an equal-total-budget scheduling experiment.",
+    "The earlier paired pilot remains unresolved; this comparison does not qualify the benefit of repairing every case.",
+    "No RDT-specific predictive law is established."
+  ],
+  "qualification": {
+    "tests_passed": 6,
+    "independent_scalar_audit": true,
+    "verified_file_counts": {
+      "inputs": 26,
+      "outputs": 11
+    }
+  },
+  "failed_attempt_preserved": "development_v1",
+  "new_native_reads": 0,
+  "new_future_outcomes": 0,
+  "new_founder_run_launched": false,
+  "automatic_successor": false,
+  "model_retuned_after_result": false,
+  "continuation": "This version ends at the failed gate. Any revised hypothesis requires a new version and must be identified as outcome-informed development.",
+  "bound_sha256": {
+    "protocol.json": "22914d423114af977ffd1a3a2fc40144ab4fc85c783f3768399ba5a2d46d24b0",
+    "PROTOCOL.md": "beae2bc228bbb4a0eba95661ca0fbaecb6cea1d79b8c9e55c856e5a33e8571a5",
+    "SOURCE_BINDINGS.json": "4b0bdbf70da858f7ab5ed950c43433b0a2fba130121fa753f339ead5f96145a2",
+    "RECOVERY_v1.json": "c9ae044e876516b4c5eed3bdb8562dfacedc86e7f8ff3cdeb06920d42e91b78d",
+    "jobs/development_v2/QUALIFICATION.json": "e6418a43e96e3c5d1a262a2ace78e762d1d43d43f7a18cfba9fb6770d195975e",
+    "jobs/development_v2/pytest.log": "0f18846f02505ee432787dbe3891961c1d8a1fbe2c82d1b7deb7e21dde073c5c",
+    "jobs/development_v2/inputs/INPUTS.json": "d2ef89cb50744f7d1cc717eb4575c18305f2be039820800668ecfa82da9b32de",
+    "runs/development_v2/COMPLETE.json": "c67320bb744692d5c2dde29411a04171907731f2b8121d90ff70dae9cd835923",
+    "runs/development_v2/OUTPUTS.json": "0e67be1edc7107f8c442a16bb002a5ae40f85c46aa0ca23c3689841368df9aea",
+    "runs/development_v2/VERIFICATION.json": "3f041927ce10d13846b5e0ac87ff55de044d10f00cc076d3451f2720f39eb799",
+    "runs/development_v2/ANALYSIS.json": "53614dc5f98632257305dc5fb8e8b80037729144b2b85fd55e374f137092f045",
+    "runs/development_v2/REPORT.md": "e8130376c0693a41765317ac8d2faf45eb6c71124a6dcca9afbff7de849f4524"
+  }
+}

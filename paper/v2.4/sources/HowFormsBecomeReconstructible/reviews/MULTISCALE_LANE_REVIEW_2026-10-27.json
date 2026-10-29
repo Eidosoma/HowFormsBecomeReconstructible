@@ -1,0 +1,344 @@
+{
+  "reviewed_utc": "2026-10-27T13:25:12.460405+00:00",
+  "git_head": "fd889cb62f2b3f2d43e1c8c68f886c4fa8b00334",
+  "scope": "Review of committed multiscale development reports and compact results. No manuscript edits, simulations, reruns, or full raw-array audit.",
+  "completed_report_count": 14,
+  "development_result_directories": [
+    "br001",
+    "br002",
+    "dl001",
+    "dl002",
+    "dl003",
+    "en001",
+    "en002",
+    "gw001",
+    "lr001",
+    "lr002",
+    "lr003",
+    "me001_v2",
+    "me002",
+    "or001"
+  ],
+  "statement_verdict_counts": {
+    "br001": {
+      "HOLDS": 5,
+      "FAILS": 5
+    },
+    "br002": {
+      "HOLDS": 12,
+      "FAILS": 1
+    },
+    "dl001": {
+      "HOLDS": 8
+    },
+    "dl002": {
+      "HOLDS": 7
+    },
+    "dl003": {
+      "HOLDS": 10
+    },
+    "en001": {
+      "HOLDS": 10,
+      "FAILS": 1
+    },
+    "en002": {
+      "HOLDS": 8
+    },
+    "gw001": {
+      "HOLDS": 10
+    },
+    "lr001": {
+      "HOLDS": 10
+    },
+    "lr002": {
+      "HOLDS": 8
+    },
+    "lr003": {
+      "HOLDS": 8
+    },
+    "me001_v2": {
+      "HOLDS": 5,
+      "FAILS": 4
+    },
+    "me002": {
+      "HOLDS": 10,
+      "FAILS": 6
+    },
+    "or001": {
+      "FAILS": 1,
+      "HOLDS": 5
+    }
+  },
+  "statement_count_warning": "Statements include predicted failures and deterministic identities; these counts are not success rates or independent confirmations.",
+  "selected_frozen_source_checks": [
+    {
+      "study": "lr001",
+      "design_digest": "17d735b5c3aaab5c6d4594aaae07cd8d80dc1e969a4accc371651a0ad8a24c55",
+      "frozen_source_count": 41,
+      "frozen_source_mismatches": [],
+      "qualification_status": "PASS",
+      "qualification_digest_matches": true,
+      "qualification_utc": "2026-10-26T10:16:00Z",
+      "development_summary_available": true,
+      "stage": "development",
+      "block_range_half_open": [
+        910800,
+        910816
+      ],
+      "result_digest_matches": true
+    },
+    {
+      "study": "lr002",
+      "design_digest": "89e05906c019bbbd364d57bec13fb41c2e98b0eea4df81bcf47de50a27fdcd2e",
+      "frozen_source_count": 56,
+      "frozen_source_mismatches": [],
+      "qualification_status": "PASS",
+      "qualification_digest_matches": true,
+      "qualification_utc": "2026-10-26T18:26:11Z",
+      "development_summary_available": true,
+      "stage": "development",
+      "block_range_half_open": [
+        910960,
+        910976
+      ],
+      "result_digest_matches": true
+    },
+    {
+      "study": "lr003",
+      "design_digest": "1c37c118febd78a1cd3784bb64ab063fdc6e3f95e2a2299eccb77deb2556625c",
+      "frozen_source_count": 65,
+      "frozen_source_mismatches": [],
+      "qualification_status": "PASS",
+      "qualification_digest_matches": true,
+      "qualification_utc": "2026-10-26T20:29:10Z",
+      "development_summary_available": true,
+      "stage": "development",
+      "block_range_half_open": [
+        910980,
+        910996
+      ],
+      "result_digest_matches": true
+    },
+    {
+      "study": "lr004",
+      "design_digest": "effa4cb70b094c6193d619fff3cecf7deb6e241f32b8ea268070157df7762299",
+      "frozen_source_count": 74,
+      "frozen_source_mismatches": [],
+      "qualification_status": "PASS",
+      "qualification_digest_matches": true,
+      "qualification_utc": "2026-10-27T09:45:47Z",
+      "development_summary_available": false
+    },
+    {
+      "study": "dl003",
+      "design_digest": "b7f261f36681d0240e0de88c73671c8d3a4dea6055bc7e623f5ac453e0073645",
+      "frozen_source_count": 37,
+      "frozen_source_mismatches": [],
+      "qualification_status": "PASS",
+      "qualification_digest_matches": true,
+      "qualification_utc": "2026-10-26T18:22:51Z",
+      "development_summary_available": true,
+      "stage": "development",
+      "block_range_half_open": [
+        910940,
+        910956
+      ],
+      "result_digest_matches": true
+    }
+  ],
+  "lr004_development_result_present": false,
+  "lr004_report_present": false,
+  "external_run_storage_available": false,
+  "sources": [
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/MODEL_LIMITS_AND_EXPANSION.md",
+      "bytes": 62817,
+      "sha256": "577f645212287c2013ec8087ccffad36547cb6f1dd233c4de2a051d4dea8c27b"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/README.md",
+      "bytes": 10129,
+      "sha256": "4f56590004e8951a1aefa8958d7d195ebc0f92fdd09e96bc8dd7f8f760483a42"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REGISTRATION_LR004.md",
+      "bytes": 10907,
+      "sha256": "de2043e1af4a1f8ae932ee233e0f27af7e1240ad18a67cf28f89a55441444c60"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT.md",
+      "bytes": 18456,
+      "sha256": "7328bf2fd1d64662c4bded6a215982afac2a55b6653e30eb993ca815a7b6f753"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_BR001.md",
+      "bytes": 22888,
+      "sha256": "1eff0b7002cccd5b684289ebf51a3454283aa6364201e43f6db7248523d2da90"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_BR002.md",
+      "bytes": 16414,
+      "sha256": "4f643165b873558b45e34affadb81eee721ee5f36d365d39b03aa50f9eb3ddcc"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL001.md",
+      "bytes": 10979,
+      "sha256": "2368ced1356af0e7aa51b415b5595688c1a1899be1ba2b110d87f1acfeb1c331"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL002.md",
+      "bytes": 10378,
+      "sha256": "7ee1e926335ecaf3137ba9683c12fae1a3476e5ebe9231d58baaabbe8433b927"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_DL003.md",
+      "bytes": 13005,
+      "sha256": "4c700a3a7da9c8f16a6d1671e5781eed785f77fba9e8cab8fa9ac0b2b3615c73"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_EN001.md",
+      "bytes": 10414,
+      "sha256": "dd9c9bd8c12cea169921ee6ff4e55f08ac4dbd04832bb0e8a1df6e73bdd582e3"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_EN002.md",
+      "bytes": 14335,
+      "sha256": "b9807ef7f6227e4e77d6cc9da65d77ad1cf30d019f4b03935e7904f1fd6f8f7c"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_GW001.md",
+      "bytes": 13102,
+      "sha256": "d266b65cd8e25c069937e9fc309e7d9b777c3e40cd5a3007e5fbfcf721f70b9b"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR001.md",
+      "bytes": 13667,
+      "sha256": "5f4b37257c061fd2067147b04929d90214e251716d78a1c374cf06ac8a00018a"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR002.md",
+      "bytes": 12134,
+      "sha256": "c1f065c288cfc88449acc555f1d4d49ba416fb012a02ebb5a3aa091e383a1a0e"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_LR003.md",
+      "bytes": 10690,
+      "sha256": "edefca3a62a7f26b20f48bc6a3b11eea28ca3ddec9c3567036dd9e9a50478b15"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_ME002.md",
+      "bytes": 20418,
+      "sha256": "c90c50ce5efce9423a999d77e916b71d56df074315842beff98e60e2841b15bf"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/REPORT_OR001.md",
+      "bytes": 12593,
+      "sha256": "a64a58c7535cbcae613aa8b12a495091b892082eca050ead6bdb40109ab64a5c"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/THEORY.md",
+      "bytes": 40273,
+      "sha256": "3b1709b819aa05814991ef6d9461e09fbee7a83aaf9f80b12f2dea10eaa07231"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/dl003/frozen/design.json",
+      "bytes": 6696,
+      "sha256": "ff3a2ce946a1d6c98f325bcee27bc1d0b3411d82c201ba953bb872ee947587c8"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/dl003/frozen/qualification_receipt.json",
+      "bytes": 1684,
+      "sha256": "f41aa4d8f99b0f939b4b78989dc8403d8b601a516ef49f583a280742b9da031c"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr001/frozen/design.json",
+      "bytes": 7440,
+      "sha256": "3e052e499364d6d2337a1b8541d6a02c92673013624ad601b9e95d92e47cee12"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr001/frozen/qualification_receipt.json",
+      "bytes": 2389,
+      "sha256": "e63144a157b49a84f17fc31c788d6fe0912ade08ffd911b1815ecca53514365e"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr002/frozen/design.json",
+      "bytes": 6810,
+      "sha256": "24403af1fd36cca8e856d8fd91b7af29327d0d22b5f0a3c56501218a48ad1939"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr002/frozen/qualification_receipt.json",
+      "bytes": 3132,
+      "sha256": "0b2512f21c28233fdc02fdcf17f4f6e93ff9028e4d33bdc51d05e54235cd3b06"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr003/frozen/design.json",
+      "bytes": 8077,
+      "sha256": "33707c98464363bf7dd0b57f6ef0ab4a8d4777771191a73582f3bd0894d872e9"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr003/frozen/qualification_receipt.json",
+      "bytes": 3916,
+      "sha256": "f1411d97802d122af8676f791a1f9c927322e280adcc2903239a310ac2b7af81"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr003/sim.py",
+      "bytes": 6481,
+      "sha256": "df47bbf76e1a73b455df3a3878fa48cecfb5c9077a3c680122da82eda50b1623"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr004/frozen/design.json",
+      "bytes": 8759,
+      "sha256": "3280e60ce43435654ba9fd900ce05dc8468537c129566ed2b0992b47ad5628fe"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/lr004/frozen/qualification_receipt.json",
+      "bytes": 3679,
+      "sha256": "3b527a5afc232a550d1cfb72216804e2b9bfe9a4774c1fa4fb82fb098048ee7a"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/dl003/predictions_scored.json",
+      "bytes": 1413,
+      "sha256": "6c1254fddf3613d04e33b39343a6cf69d1156bceb1a7e29778df1f3033c21510"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/dl003/summary.json",
+      "bytes": 103511,
+      "sha256": "8df08ec90f6e2f1084e9816b12a7dd75ae1a4696cb350e83d47ae84b943106a9"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr001/predictions_scored.json",
+      "bytes": 3885,
+      "sha256": "6692acd6982c58cbcb6195b65eb243ebf79ab92fc83a4c04011119c07334c930"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr001/summary.json",
+      "bytes": 130598,
+      "sha256": "26ff683e95fc70fd3048790fb4b82a1003a7a7a85cec26cacf01cab00eb59acc"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr002/predictions_scored.json",
+      "bytes": 3994,
+      "sha256": "74d53f9fef28298ac26b9eeb284a2bd88894e9db49b03c05cf05fe529883c02a"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr002/summary.json",
+      "bytes": 120913,
+      "sha256": "c577f202a9a4cae32555056a1820a9cb6bb10ea3a88864ec288955e4e281e44a"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr003/predictions_scored.json",
+      "bytes": 4527,
+      "sha256": "986a4804e7fc65d6fdcd3ef9ee0c0934323a1aa080caff5768146ec4c6dfc4d0"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/results/lr003/summary.json",
+      "bytes": 203559,
+      "sha256": "d08d413a85049663cfce16c696b03640ffd5d7be56b2c79faac1673b63a1c402"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/reviews/MULTISCALE_LANE_REVIEW_2026-10-27.md",
+      "bytes": 11823,
+      "sha256": "51b87cb3833803af6f874004e5e51e57d0a4e584e05719b9ff39f56f5ee6ed93"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+ "T1": {
+  "verdict": "HOLDS",
+  "gates@0": {
+   "S4_t0/dw/agree": 1.0,
+   "S4_t0/dw/syndrome": 1.0,
+   "S4_t0/dw/site": 1.0,
+   "S4_t0/li4/agree": 1.0,
+   "S4_t0/li4/syndrome": 1.0,
+   "S4_t0/li4/site": 1.0,
+   "S4_t1/dw/agree": 1.0,
+   "S4_t1/dw/syndrome": 1.0,
+   "S4_t1/dw/site": 1.0,
+   "S4_t1/li4/agree": 1.0,
+   "S4_t1/li4/syndrome": 1.0,
+   "S4_t1/li4/site": 1.0,
+   "LB_t0/dw/agree": 1.0,
+   "LB_t0/dw/syndrome": 1.0,
+   "LB_t0/dw/site": 1.0,
+   "LB_t0/li4/agree": 1.0,
+   "LB_t0/li4/syndrome": 1.0,
+   "LB_t0/li4/site": 1.0,
+   "LB_t1/dw/agree": 1.0,
+   "LB_t1/dw/syndrome": 1.0,
+   "LB_t1/dw/site": 1.0,
+   "LB_t1/li4/agree": 1.0,
+   "LB_t1/li4/syndrome": 1.0,
+   "LB_t1/li4/site": 1.0,
+   "F0_t0/dw/agree": 1.0,
+   "F0_t0/dw/syndrome": 1.0,
+   "F0_t0/dw/site": 1.0,
+   "F0_t0/li4/agree": 1.0,
+   "F0_t0/li4/syndrome": 1.0,
+   "F0_t0/li4/site": 1.0,
+   "F0_t1/dw/agree": 1.0,
+   "F0_t1/dw/syndrome": 1.0,
+   "F0_t1/dw/site": 1.0,
+   "F0_t1/li4/agree": 1.0,
+   "F0_t1/li4/syndrome": 1.0,
+   "F0_t1/li4/site": 1.0
+  },
+  "body@0": {
+   "F0_t0/li4": 0.7767,
+   "S4_t1/dw": 0.963,
+   "S4_t1/li4": 0.9586,
+   "LB_t1/dw": 0.9096,
+   "LB_t1/li4": 0.925
+  }
+ },
+ "T2": {
+  "verdict": "HOLDS",
+  "t0@1e-2": {
+   "S4/dw": {
+    "syndrome": 0.5944,
+    "body": 0.9737
+   },
+   "S4/li4": {
+    "syndrome": 0.7004,
+    "body": 0.9721
+   },
+   "LB/li4": {
+    "syndrome": 0.6153,
+    "body": 0.8698
+   }
+  }
+ },
+ "T3": {
+  "verdict": "HOLDS",
+  "site_minus_body@1e-2": {
+   "S4/dw": -0.0081,
+   "S4/li4": -0.012,
+   "F0/dw": -0.002,
+   "LB/li4": -0.0232
+  },
+  "site_minus_syndrome@1e-2": {
+   "S4/dw": 0.3712,
+   "S4/li4": 0.2597,
+   "LB/li4": 0.2313
+  }
+ },
+ "T4": {
+  "verdict": "HOLDS",
+  "opened@1e-3": {
+   "S4_t0/dw": 0.381478,
+   "S4_t0/li4": 0.404706,
+   "S4_t1/dw": 0.397189,
+   "S4_t1/li4": 0.424742,
+   "LB_t0/dw": 0.399475,
+   "LB_t0/li4": 0.422071,
+   "LB_t1/dw": 0.401861,
+   "LB_t1/li4": 0.431046,
+   "F0_t0/dw": 0.355766,
+   "F0_t0/li4": 0.494455,
+   "F0_t1/dw": 0.363277,
+   "F0_t1/li4": 0.468959
+  },
+  "F0_t0/li4@1e-3": 0.6951,
+  "field@1e-3": {
+   "S4_t1/dw": 0.8829,
+   "S4_t1/li4": 0.8641,
+   "LB_t1/dw": 0.8165,
+   "LB_t1/li4": 0.8193
+  }
+ },
+ "T5": {
+  "verdict": "HOLDS",
+  "agree_minus_record@1e-3": {
+   "S4_t0/dw": 0.1494,
+   "S4_t0/li4": 0.145,
+   "S4_t1/dw": 0.14,
+   "S4_t1/li4": 0.1335,
+   "LB_t0/dw": 0.1425,
+   "LB_t0/li4": 0.1398,
+   "LB_t1/dw": 0.131,
+   "LB_t1/li4": 0.1271,
+   "F0_t0/dw": 0.1546,
+   "F0_t0/li4": 0.0988,
+   "F0_t1/dw": 0.1517,
+   "F0_t1/li4": 0.088
+  },
+  "agree@3e-3": {
+   "S4_t0/dw": 0.6838,
+   "S4_t0/li4": 0.6824,
+   "S4_t1/dw": 0.6264,
+   "S4_t1/li4": 0.619,
+   "LB_t0/dw": 0.6528,
+   "LB_t0/li4": 0.6621,
+   "LB_t1/dw": 0.6186,
+   "LB_t1/li4": 0.6066,
+   "F0_t0/dw": 0.7501,
+   "F0_t0/li4": 0.5712,
+   "F0_t1/dw": 0.7269,
+   "F0_t1/li4": 0.5518
+  }
+ },
+ "T6": {
+  "verdict": "HOLDS",
+  "at1e-3": {
+   "F0_t0/li4": {
+    "site+parity": 0.9843,
+    "record+parity": 0.9824
+   },
+   "S4_t1/dw": {
+    "site+parity": 0.9886,
+    "record+parity": 0.9827
+   },
+   "S4_t1/li4": {
+    "site+parity": 0.9866,
+    "record+parity": 0.9827
+   },
+   "LB_t1/dw": {
+    "site+parity": 0.9859,
+    "record+parity": 0.9828
+   },
+   "LB_t1/li4": {
+    "site+parity": 0.9845,
+    "record+parity": 0.9828
+   }
+  }
+ },
+ "T7": {
+  "verdict": "HOLDS",
+  "t1@1e-2": {
+   "S4_t1/dw/record": 0.4999,
+   "S4_t1/dw/record+parity": 0.4982,
+   "S4_t1/dw/body": 0.6074,
+   "S4_t1/dw/body+parity": 0.5572,
+   "S4_t1/dw/agree": 0.5067,
+   "S4_t1/dw/syndrome": 0.5333,
+   "S4_t1/dw/site": 0.5915,
+   "S4_t1/dw/site+parity": 0.5174,
+   "S4_t1/li4/record": 0.4999,
+   "S4_t1/li4/record+parity": 0.4982,
+   "S4_t1/li4/body": 0.6141,
+   "S4_t1/li4/body+parity": 0.5607,
+   "S4_t1/li4/agree": 0.5038,
+   "S4_t1/li4/syndrome": 0.5143,
+   "S4_t1/li4/site": 0.5949,
+   "S4_t1/li4/site+parity": 0.5144,
+   "LB_t1/dw/record": 0.5005,
+   "LB_t1/dw/record+parity": 0.5016,
+   "LB_t1/dw/body": 0.5951,
+   "LB_t1/dw/body+parity": 0.5568,
+   "LB_t1/dw/agree": 0.5117,
+   "LB_t1/dw/syndrome": 0.5358,
+   "LB_t1/dw/site": 0.5811,
+   "LB_t1/dw/site+parity": 0.5238,
+   "LB_t1/li4/record": 0.5005,
+   "LB_t1/li4/record+parity": 0.5016,
+   "LB_t1/li4/body": 0.5892,
+   "LB_t1/li4/body+parity": 0.5413,
+   "LB_t1/li4/agree": 0.5033,
+   "LB_t1/li4/syndrome": 0.51,
+   "LB_t1/li4/site": 0.5686,
+   "LB_t1/li4/site+parity": 0.5032
+  }
+ },
+ "T8": {
+  "verdict": "HOLDS",
+  "S4_t0@1e-2": {
+   "dw": {
+    "site": 0.9656,
+    "site+parity": 0.5302
+   },
+   "li4": {
+    "site": 0.9601,
+    "site+parity": 0.6371
+   }
+  }
+ }
+}

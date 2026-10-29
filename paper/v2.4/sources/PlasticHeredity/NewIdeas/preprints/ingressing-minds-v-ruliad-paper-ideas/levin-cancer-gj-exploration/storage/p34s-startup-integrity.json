@@ -1,0 +1,80 @@
+{
+  "reviewed_utc": "2026-10-17T18:24:23.083301+00:00",
+  "job": "/mnt/workspaces/levin-cancer-gj-exploration/p34-pause-state-components/prospective-split/jobs/20261017T182211Z-03ty0ulm",
+  "review_pass": false,
+  "checks": {
+    "frozen_sources_and_dependencies_verified": true,
+    "software_tests": true,
+    "registered_inventory": true,
+    "fixed_new_sequence": true,
+    "all_parent_readouts": true,
+    "archive_gate": true,
+    "sources_started": true,
+    "expected_workers": false,
+    "worker_thread_limits": true,
+    "worker_cache_scope": true,
+    "worker_ownership": true,
+    "live_heartbeat": true,
+    "hard_budget": true,
+    "runtime_gate": true,
+    "dispatch_order": true,
+    "disk_reserve": true
+  },
+  "workers": [
+    {
+      "pid": 894979,
+      "case": "p34s__source__new_34003__q256__pause_0_5",
+      "session": 894843,
+      "thread_count": 1,
+      "numerical_threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "task_cache_and_temp": true
+    },
+    {
+      "pid": 894981,
+      "case": "p34s__source__new_34003__q256__baseline",
+      "session": 894843,
+      "thread_count": 1,
+      "numerical_threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "task_cache_and_temp": true
+    },
+    {
+      "pid": 894982,
+      "case": "p34s__source__new_34003__q128__baseline",
+      "session": 894843,
+      "thread_count": 1,
+      "numerical_threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "task_cache_and_temp": true
+    }
+  ],
+  "registration_sha256": "1dfe9d796c39ae8ec1699ac0e347314c307f1ced1308f99a7ef3362a1a6b1833",
+  "registered_sources": 380,
+  "dependency_entries": 370,
+  "verification_tests": 25,
+  "verification_seconds": 420.97,
+  "archive_maximum_primary_scaled_error": 4.148041197660712e-06,
+  "started_utc": "2026-10-17T18:22:11.271300+00:00",
+  "simulation_deadline_utc": "2026-10-18T09:37:11.271300+00:00",
+  "hard_deadline_utc": "2026-10-18T10:22:11.271300+00:00",
+  "initial_planning_hours": [
+    8.534656358013612,
+    12.801984537020417
+  ],
+  "shared_host_contention_observed": true,
+  "other_benchmark_advertised_deadline_utc": "2026-10-17T18:28:11.856926+00:00",
+  "original_P34A_remains_unqualified": true
+}

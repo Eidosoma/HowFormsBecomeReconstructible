@@ -1,0 +1,429 @@
+{
+  "reviewed_utc": "2026-10-28T15:14:31.915352+00:00",
+  "git_head": "fd889cb62f2b3f2d43e1c8c68f886c4fa8b00334",
+  "scope": "Read-only lane review plus review-note files; no scientific run, verifier rerun, manuscript edit, commit or public export. Existing saved verification is attributed to owning lanes.",
+  "comparison_24_oct": {
+    "count": 56,
+    "changed": [
+      "HowFormsBecomeReconstructible/experiments/multiscale-error-lane/README.md"
+    ]
+  },
+  "comparison_27_oct_multiscale": {
+    "count": 38,
+    "changed": []
+  },
+  "lane_roots": {
+    "forms": "HowFormsBecomeReconstructible/experiments",
+    "theory": "HowFormsBecomeReconstructible/experiments/theory-lane",
+    "theory_tests": "HowFormsBecomeReconstructible/experiments/theory-tests-lane",
+    "hopfield": "HowFormsBecomeReconstructible/experiments/hopfield-lane",
+    "multiscale": "HowFormsBecomeReconstructible/experiments/multiscale-error-lane",
+    "cellular": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration",
+    "laws": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation",
+    "fep": "PlasticHeredity/NewIdeas/preprints/fep-ideas"
+  },
+  "fep": {
+    "recovery-objective": {
+      "report_receipt_hashes": {
+        "FREEZE.json": true,
+        "QUALIFICATION.json": true,
+        "BENCHMARK.json": true,
+        "RESULTS.json": true,
+        "MANIFEST.json": true,
+        "READBACK.json": true
+      },
+      "manifest_output_hashes": {
+        "BENCHMARK.json": true,
+        "FREEZE.json": true,
+        "QUALIFICATION.json": true,
+        "RESULTS.json": true,
+        "RUN_LOG.txt": true,
+        "STARTED.json": true,
+        "inputs/FEP_RECOVERY_OBJECTIVE_V1.md": true,
+        "inputs/check_fep_recovery_objective.py": true,
+        "inputs/readback_fep_recovery_objective.py": true
+      },
+      "saved_readback_passed": true,
+      "saved_readback_checks": 63252,
+      "rerun_by_this_review": false,
+      "gate": {
+        "below_always": true,
+        "below_hybrid": true,
+        "joint": true,
+        "stable_not_higher": true
+      }
+    },
+    "noisy-recovery": {
+      "report_receipt_hashes": {
+        "FREEZE.json": true,
+        "QUALIFICATION.json": true,
+        "BENCHMARK.json": true,
+        "RESULTS.json": true,
+        "MANIFEST.json": true,
+        "READBACK.json": true
+      },
+      "manifest_output_hashes": {
+        "BENCHMARK.json": true,
+        "FREEZE.json": true,
+        "QUALIFICATION.json": true,
+        "RESULTS.json": true,
+        "RUN_LOG.txt": true,
+        "SHORT_FIXTURES.json": true,
+        "STARTED.json": true,
+        "inputs/FEP_NOISY_RECOVERY_V1.md": true,
+        "inputs/check_fep_noisy_recovery.py": true,
+        "inputs/readback_fep_noisy_recovery.py": true
+      },
+      "saved_readback_passed": true,
+      "saved_readback_checks": 58712,
+      "rerun_by_this_review": false,
+      "gate": {
+        "0": {
+          "gate": {
+            "below_always": true,
+            "below_hybrid": true,
+            "joint": false,
+            "stable_not_higher": false
+          },
+          "nodes": {
+            "erased": 10,
+            "hybrid": 31,
+            "ordinary": 31,
+            "recovery": 55
+          }
+        },
+        "1": {
+          "gate": {
+            "below_always": true,
+            "below_hybrid": true,
+            "joint": false,
+            "stable_not_higher": false
+          },
+          "nodes": {
+            "erased": 10,
+            "hybrid": 355,
+            "ordinary": 325,
+            "recovery": 414
+          }
+        }
+      }
+    }
+  },
+  "d194": {
+    "completed_utc": "2026-10-24T19:07:21.783590+00:00",
+    "output_hash_checks": {
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/CHECK.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/SUMMARY.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/tissue_319100.npz": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/tissue_319101.npz": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/tissue_319102.npz": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/tissue_319103.npz": true
+    },
+    "saved_check_complete_hash_matches": true,
+    "saved_check_passed": true,
+    "fresh_study": false
+  },
+  "d195": {
+    "completed_utc": "2026-10-27T13:25:46.589412+00:00",
+    "seconds": 149.04946745489724,
+    "main_cohort_started": false,
+    "role": "reused_excluded_disposable",
+    "fresh_founders": 0,
+    "history": 603191,
+    "records": 16,
+    "saved_verification_passed": true,
+    "summary_hash_matches": true,
+    "selected_output_hash_checks": {
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/CHECK.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/COST.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/DONOR_SEAL.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/SUMMARY.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_1/COST.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_1/SUMMARY.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_2/COST.json": true,
+      "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_2/SUMMARY.json": true
+    },
+    "raw_replays_rerun_by_this_review": false,
+    "arms_native_endpoints": {
+      "common__LL": {
+        "accuracy": 0.734375,
+        "partner_accuracy": 0.265625,
+        "preference": 0.46875,
+        "projection_gap": 0.3090664760456102,
+        "sign_fidelity": 0.787322998046875,
+        "theta_corr_parent": 0.8014161961044325,
+        "theta_corr_partner": 0.5160038171545529
+      },
+      "common__LL_pulse": {
+        "accuracy": 0.703125,
+        "partner_accuracy": 0.296875,
+        "preference": 0.40625,
+        "projection_gap": 0.30158873206438164,
+        "sign_fidelity": 0.7862091064453125,
+        "theta_corr_parent": 0.8050659897418322,
+        "theta_corr_partner": 0.5205645144294084
+      },
+      "common__YL": {
+        "accuracy": 0.72265625,
+        "partner_accuracy": 0.27734375,
+        "preference": 0.4453125,
+        "projection_gap": 0.30934621881619373,
+        "sign_fidelity": 0.7873992919921875,
+        "theta_corr_parent": 0.8015104350860407,
+        "theta_corr_partner": 0.5154984724343133
+      },
+      "common__YL_pulse": {
+        "accuracy": 0.70703125,
+        "partner_accuracy": 0.29296875,
+        "preference": 0.4140625,
+        "projection_gap": 0.30180431654830125,
+        "sign_fidelity": 0.7863922119140625,
+        "theta_corr_parent": 0.8050081583432399,
+        "theta_corr_partner": 0.5199065757227788
+      },
+      "residual__LL": {
+        "accuracy": 0.87890625,
+        "partner_accuracy": 0.08203125,
+        "preference": 0.796875,
+        "projection_gap": 0.583154425031597,
+        "sign_fidelity": 0.8140869140625,
+        "theta_corr_parent": 0.5653924223775391,
+        "theta_corr_partner": 0.09035275622304617
+      },
+      "residual__LL_pulse": {
+        "accuracy": 0.8828125,
+        "partner_accuracy": 0.08203125,
+        "preference": 0.80078125,
+        "projection_gap": 0.5933727511592487,
+        "sign_fidelity": 0.8193359375,
+        "theta_corr_parent": 0.5816124515201665,
+        "theta_corr_partner": 0.09302780519029603
+      },
+      "residual__YL": {
+        "accuracy": 0.8671875,
+        "partner_accuracy": 0.0859375,
+        "preference": 0.78125,
+        "projection_gap": 0.5833784053807225,
+        "sign_fidelity": 0.8144073486328125,
+        "theta_corr_parent": 0.5654914509333313,
+        "theta_corr_partner": 0.09030378683213566
+      },
+      "residual__YL_pulse": {
+        "accuracy": 0.87890625,
+        "partner_accuracy": 0.0859375,
+        "preference": 0.79296875,
+        "projection_gap": 0.5928153615248866,
+        "sign_fidelity": 0.819122314453125,
+        "theta_corr_parent": 0.5799380319518392,
+        "theta_corr_partner": 0.09268358179886636
+      }
+    },
+    "interactions_native_endpoints": {
+      "common__disturbance_interaction": {
+        "accuracy": -0.015625,
+        "partner_accuracy": 0.015625,
+        "preference": -0.03125,
+        "projection_gap": 6.415828666386965e-05,
+        "sign_fidelity": -0.0001068115234375,
+        "theta_corr_parent": 0.00015207038020038227,
+        "theta_corr_partner": 0.00015259398639012618
+      },
+      "residual__disturbance_interaction": {
+        "accuracy": -0.0078125,
+        "partner_accuracy": 0.0,
+        "preference": -0.0078125,
+        "projection_gap": 0.0007813699834876755,
+        "sign_fidelity": 0.0005340576171875,
+        "theta_corr_parent": 0.0017734481241196663,
+        "theta_corr_partner": 0.0002952540005191021
+      }
+    },
+    "interaction_arithmetic_rechecked": true
+  },
+  "unavailable_archives": [
+    "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane",
+    "/mnt/workspaces/levin-cancer-gj-exploration/p34-pause-state-components/transfer-factorial/jobs/20261020T112304Z-xq6_mmgc"
+  ],
+  "sources": [
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_RECOVERY_OBJECTIVE_V1_REPORT.md",
+      "bytes": 14030,
+      "sha256": "312e455765896328716675ea3b31aa3d8ae0c29b7387cbd943a88f593c8350f5"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/FREEZE.json",
+      "bytes": 1987,
+      "sha256": "493c55f0dbf3da2de6d50a157480dc47925eaaf0e5793451e58e805a3e07f690"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/QUALIFICATION.json",
+      "bytes": 641,
+      "sha256": "49f7e0b5e674f1710d48e952d7dfec9acfcf3cb6e49e3c59d7a879f7fa232311"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/BENCHMARK.json",
+      "bytes": 118,
+      "sha256": "62e4fd64dfbbbcd1d981e680bb83f682c151bf5728eeabda80f81d0ad8d8fa7b"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/RESULTS.json",
+      "bytes": 126897,
+      "sha256": "0b13b694c749810ab6434e4446e7fb8275db987306ccd68581e63ebf52179f26"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/MANIFEST.json",
+      "bytes": 1007,
+      "sha256": "72e413c63852e178ba9c17809f742d2897748bc26fe431c28b1105bef96655c6"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-recovery-objective-v1/attempt-01/READBACK.json",
+      "bytes": 1901,
+      "sha256": "0ba9dffb2c6feb75fe721b80960ac4d9c33979142a37eb875e7555e7efb781b2"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/fep-ideas/FEP_NOISY_RECOVERY_V1_REPORT.md",
+      "bytes": 15379,
+      "sha256": "f251bf045b37074c73bc146b61f640725e74655d7f05c832f07f6966ba5f0113"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/FREEZE.json",
+      "bytes": 2152,
+      "sha256": "1a4b20f48603a55d48e65b459d0a758d0350002a4c77898c7da7bfe0e0889db8"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/QUALIFICATION.json",
+      "bytes": 502,
+      "sha256": "bc114ebf5be3a9cc0cc7c37aa9ee484c33386658bb3c04a3320de62d32b66ea8"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/BENCHMARK.json",
+      "bytes": 216,
+      "sha256": "11e681b58ae42a3758da3bfda41a3fe7c0dbd82c0fa2404467d4d5f9a9b5a1e5"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/RESULTS.json",
+      "bytes": 786581,
+      "sha256": "abb3bf931a11540766de9b0f438d6d84f1d397d63aa330797dc2ac340e930ac8"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/MANIFEST.json",
+      "bytes": 1093,
+      "sha256": "042c47b376dd68e2b2459803897a69fc3a4dc77fd71922ad72251cd3355acecc"
+    },
+    {
+      "path": "/mnt/bioIce1/fep-ideas/formal-checks/fep-noisy-recovery-v1/attempt-01/READBACK.json",
+      "bytes": 3089,
+      "sha256": "e78c755a1482d74a994dceb80d99d4894d5adceb68c603b497e4aac7a7fcbc6a"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/YOKED_SEPARATION_RESULTS.md",
+      "bytes": 8270,
+      "sha256": "177a7b70b61b61dc16df903eaa43208ce1187bc2b7b3ff2a3ce6c296cfce6103"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/YOKED_SEPARATION_TABLES.md",
+      "bytes": 71661,
+      "sha256": "2d218ae15f0b4d06dc9e7fae5d3020c29357ea9fe7ed88c27756ca8fa60eea65"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/RECIPIENT_PULSE_STATUS.md",
+      "bytes": 4905,
+      "sha256": "af93558aec7951343c1de410030c4c5e5e5d3e24e096b4d3d8c35a5f363ba4c1"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/RECIPIENT_PULSE_V1.md",
+      "bytes": 7475,
+      "sha256": "5af93ff7dcb7ebcb634b1197a86be627a60d03ca58ebd7244d513441178a0f5f"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L22-active-form/RECIPIENT_PULSE_QUALIFICATION.md",
+      "bytes": 3792,
+      "sha256": "4ce5971bc11b8ebbdc4bd913da127ed3b715b15d662449f3cc5be8dc3ccae173"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/COMPLETE.json",
+      "bytes": 1948,
+      "sha256": "9669b6f9477ffe884de2c5791b188825aeff5acf4e621a7460d3581edf07552f"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/SAVED_CHECK.json",
+      "bytes": 356,
+      "sha256": "83566fe23d4f4851f5943bcd985c1f213b9f6362de5d2f5a78f4777eafa9a2d5"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-yoked-separation-v1/outputs/SUMMARY.json",
+      "bytes": 2785509,
+      "sha256": "e00c88817fd966c77490e22834bd530f666c8123b3d7b8d02bea3d14d970a8a1"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/runs/l22_recipient_pulse_v1_benchmark_attempt1/COMPLETE.json",
+      "bytes": 164127,
+      "sha256": "f42e86525f0bd041400692a74f25c879cdc73610359d46dd2aba2703c72beea1"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/SUMMARY.json",
+      "bytes": 8052144,
+      "sha256": "5713a26931d98975783c5266996699c76cbe98b33b91a6f946bbc4989df80d77"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/CHECK.json",
+      "bytes": 101290,
+      "sha256": "4b9cdbfdcc430fecba48980180f482e37910b17d7cf0820e6d4729d635bea41a"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/COST.json",
+      "bytes": 13355,
+      "sha256": "72b59dc2a14e2d923601091a66f1a753796c5d2872a88ffaa4e514f2442a033e"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/DONOR_SEAL.json",
+      "bytes": 2553,
+      "sha256": "1b7ccc908d01a69a2727f0c0e75a975df53b71b9b98124903573c825102b4e1b"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_1/COST.json",
+      "bytes": 4066,
+      "sha256": "77ec70974feba6d171b2e0e43cc39b53f4a8850c6cf1d03be69bfc599b903e82"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_1/SUMMARY.json",
+      "bytes": 2179750,
+      "sha256": "9768a5a533b8c10420a5e1545a2fecbbc3fdad6cf2a93b601f7f0e6454f23a20"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_2/COST.json",
+      "bytes": 4065,
+      "sha256": "6e8ce1f0e4cb2ba01da1b858b1ada866061f1e4ebb4c56b0d54d088db11e54b4"
+    },
+    {
+      "path": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/L22-recipient-pulse-benchmark-v1/outputs/l22_recipient_pulse_v1_benchmark_attempt1/future_2/SUMMARY.json",
+      "bytes": 2175506,
+      "sha256": "d9ebe350b8362b521f43de290dfa0bb704dc5f7b7a2a4089840b4b0b2957c9e0"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/EVIDENCE_LEDGER.md",
+      "bytes": 240456,
+      "sha256": "d50a1f4e2f3e649a5af0659db7698cab4a26c3719a6a639c6812c39f1b17487c"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/MANUSCRIPT.md",
+      "bytes": 101348,
+      "sha256": "1edc0a55e26e8901c031eff896b7c8bc1edfe94177bd9d6d74d28800aeaf5a47"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/SUPPORTING_INFORMATION.md",
+      "bytes": 297619,
+      "sha256": "d1c431b4432d5d840259169b38205377db48f766a8bd63063be8540f6fdaef02"
+    },
+    {
+      "path": "HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT042/CURRENT_EXECUTION.json",
+      "bytes": 586,
+      "sha256": "31b70c0f70426ae18d199a835a246485f1eda488b1d15fd65bebf3b8024e164d"
+    },
+    {
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/P34W_FACTORIAL_2026-10-20.md",
+      "bytes": 3988,
+      "sha256": "b84126935eb00cbf2fdfb625ae81aa7da2624638f547c5e2bf8a329dff44aafb"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "version": "cached_outcome_pilot_0.1",
+  "status": "BOUNDED_SELECTED_PANEL_PILOT_NOT_304_BLOCK_COMPARISON",
+  "utc": "2026-10-16T17:45:59.359694+00:00",
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "beta": 3.0,
+    "kind": "native exact full rewrite from final body"
+  },
+  "acquisition": {
+    "histories": [
+      "exact_rewrite",
+      "single_tolerance_rewrite",
+      "spaced_tolerance_rewrite",
+      "clustered_tolerance_rewrite"
+    ]
+  },
+  "forcing": {
+    "namespace": "RDT_successor_precision_v0_1_probe",
+    "future_namespace": "RDT_cached_outcome_pilot_v0_1_future",
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "measurement_source": {
+      "namespace": "RDT_successor_precision_v0_1_probe",
+      "regimes": [
+        "matched",
+        "independent"
+      ],
+      "stage": "pilot",
+      "seed": "First16 SHA256 bytes of compact JSON [namespace,stage,*record_key,probe,purpose,channel], little endian, PCG64.",
+      "coupling": "Regimes share base draws and injuries. Matched copies first cue birth/noise to second; independent retains both. Writer/evaluation use distinct purpose keys; unchanged and rewritten evaluations share B.",
+      "injury": "24 distinct uniformly selected non-port cells/read; all three2x2 ports protected.",
+      "repeats": 2,
+      "probes_per_repeat": 32,
+      "offsets": [
+        0,
+        32
+      ],
+      "direct_probes_per_repeat": 8
+    },
+    "future_stage": "pilot",
+    "future_seed_contract": "First 16 SHA256 bytes of compact JSON [future_namespace,stage,*record_key,generation,purpose,channel], little endian, PCG64. Generations 15..32 use writer purpose, generation 33 evaluation. Injury and forcing channels are disjoint.",
+    "future_noise_and_injury": "Same base injury masks and random draws across matched/independent regimes. Each read has 24 distinct non-port injuries. Matched copies cue0 birth and ongoing noise to cue1; independent keeps both. Fresh body each read; each regime propagates its own outgoing packets."
+  },
+  "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce",
+  "cohort": {
+    "source": "rdt_successor_precision_v0_1/runs/pilot_v1",
+    "blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "records": 63,
+    "case_regimes": 126,
+    "selection": "All 63 previously selected records, unchanged; 31 currently failing and 32 currently passing. Both classes present in every block. The original selection preceded all measurement probes.",
+    "repeat": "First pre-existing measurement repeat only: successor probe indices 0..31 and direct indices 0..7. No averaging, repeat selection, recalibration or refitting.",
+    "cost_accounting": "No new acquisition or measurement reads. Reuse is not free measurement: source acquisition 14336 native reads, source measurement 18144 native reads; first-repeat forecasts use 9072 of those measurement reads."
+  },
+  "outcome": {
+    "horizon_rebuilds": 18,
+    "generations": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "terminal_fresh_reads": 1,
+    "futures_per_record_per_regime": 1,
+    "endpoint": "Native task success in a fresh terminal body reading the g32 outgoing packet, after18 full original-writer rebuilds from g14. All four task-aligned cue/port means strictly>.25. Terminal read outgoing packet discarded; failure earlier in lineage does not stop a path.",
+    "continuation_audit": "One key-only SHA256-ranked record per block, both regimes, every one of18 rewrites and terminal read. Flat path propagates its own packets; bodies,windows,outgoing must be bitwise equal.",
+    "claims": "Terminal reconstruction, not uninterrupted function, autonomous apparatus maintenance, a universal probability law or RDT-specific novelty."
+  },
+  "analysis": {
+    "estimand": "Equal acquisition-block and current-expression-class weight over the selected precision panel. Each record weight within block is 1/(2*n_block_class). This differs from the cancelled all-64-record block estimand.",
+    "formula": "For each block, mean Brier in current_fail and current_pass strata, then their unweighted mean. Equal mean across 16 blocks. Rival-minus-candidate paired block contrasts.",
+    "margins": {
+      "tt008": 0.002,
+      "direct_rival": 0.0
+    },
+    "alpha": 0.025,
+    "interval": "Mean +/- t.ppf(.975,15)*sample block SD/sqrt(16). Lower>margin supports, upper<=margin rejects the selected-panel advantage; otherwise unresolved.",
+    "joint": "All four advantages must be supported for joint pilot support. Intersection-union claim; component intervals not simultaneous.",
+    "diagnostics": "Weighted ten-bin calibration with probability one included in last bin; both current-expression strata and history counts. No subgroup rescue.",
+    "limits": "Prospective outcomes for an already inspected and selected precision panel. Sixteen blocks have limited power. No claim of representative all-record performance, independent laboratory replication, externally registered confirmation, or RDT-specific novelty.",
+    "completion": "All 63 records in both regimes required. No partial inferential verdict, extension or replacement."
+  },
+  "barrier": "Validate all source hashes, exact first-repeat extraction, all scalar fixed predictions and selected packet identities; seal all 126 forecasts before any future read.",
+  "audit": "One key-only SHA256 ranked record per block, both regimes and all 19 native reads, with flat path propagating its own outputs; independent final scoring.",
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "qualification_wall_ceiling_seconds": 180,
+    "pilot_wall_ceiling_seconds": 3600,
+    "maximum_resident_bytes": 2000000000,
+    "maximum_saved_bytes": 1000000000,
+    "minimum_free_disk_bytes": 2000000000,
+    "forecast_seconds": 1863.8413954261123,
+    "forecast_factor": 1.5,
+    "fixed_overhead_seconds": 300,
+    "user_general_ceiling_seconds": 21600,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_extension": false,
+    "automatic_successor": false
+  },
+  "exposure": {
+    "original_family_and_budget_selection": "Previously exposed eight-block development outcomes",
+    "precision_panel": "All 63 selections, repeated predictions and precision results already inspected; zero future outcomes in verified source completion",
+    "cancelled_304_job": "Stopped by user before any continuation; one complete block of measurements preserved and excluded from this pilot",
+    "new_future_namespace": true,
+    "external_preregistration": false
+  }
+}

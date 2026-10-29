@@ -1,0 +1,44 @@
+{
+  "admission_pass": true,
+  "checked_utc": "2026-10-15T15:36:31.294565+00:00",
+  "cpus": [
+    6,
+    7
+  ],
+  "free_bytes": 179147317248,
+  "numerical_threads": 1,
+  "observed_project_threads": 8,
+  "planned_workers": 2,
+  "project_python_processes": [
+    {
+      "pid": 45422,
+      "script": "supervise_transmission.py",
+      "state": "S",
+      "threads": 1
+    },
+    {
+      "pid": 45423,
+      "script": "run_transmission.py",
+      "state": "S",
+      "threads": 4
+    },
+    {
+      "pid": 45461,
+      "script": "run_transmission.py",
+      "state": "R",
+      "threads": 1
+    },
+    {
+      "pid": 45465,
+      "script": "run_transmission.py",
+      "state": "R",
+      "threads": 1
+    },
+    {
+      "pid": 59500,
+      "script": "run_transmission.py",
+      "state": "R",
+      "threads": 1
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "1c37c118febd78a1cd3784bb64ab063fdc6e3f95e2a2299eccb77deb2556625c",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/lr003/preflight",
+ "checked_utc": "2026-10-26T20:29:10Z",
+ "wall_s": 245.7,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/E/S4_t0": true,
+    "raw/E/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "S4_t1/dw/record_and_body_teachers=lr002.sim.run": true,
+    "S4_t1/li4/record_and_body_teachers=lr002.sim.run": true,
+    "LB_t0/dw/record_and_body_teachers=lr002.sim.run": true,
+    "LB_t0/li4/record_and_body_teachers=lr002.sim.run": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 1.0119682869458302e-13,
+   "items": {
+    "S4_t1/li4/0.003/syndrome/case0": 7.510658761589184e-14,
+    "LB_t0/li4/0.01/site+parity/case1": 1.0119682869458302e-13,
+    "F0_t0/li4/0.001/site/case2": 2.6256774532384952e-14,
+    "S4_t1/dw/0.001/agree/case3": 2.8449465006019636e-16
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "frustration_gates_closed_without_noise": true,
+    "syndrome_and_site=record_relearning_without_noise": true,
+    "parity_inert_on_site_without_noise": true,
+    "record_never_reads_the_body": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "flip_rate/0/record": true,
+    "flip_rate/0/record+parity": true,
+    "flip_rate/0/body": true,
+    "flip_rate/0/body+parity": true,
+    "flip_rate/0/agree": true,
+    "flip_rate/0/syndrome": true,
+    "flip_rate/0/site": true,
+    "flip_rate/0/site+parity": true,
+    "flip_rate/0.001/record": true,
+    "flip_rate/0.001/record+parity": true,
+    "flip_rate/0.001/body": true,
+    "flip_rate/0.001/body+parity": true,
+    "flip_rate/0.001/agree": true,
+    "flip_rate/0.001/syndrome": true,
+    "flip_rate/0.001/site": true,
+    "flip_rate/0.001/site+parity": true,
+    "flip_rate/0.003/record": true,
+    "flip_rate/0.003/record+parity": true,
+    "flip_rate/0.003/body": true,
+    "flip_rate/0.003/body+parity": true,
+    "flip_rate/0.003/agree": true,
+    "flip_rate/0.003/syndrome": true,
+    "flip_rate/0.003/site": true,
+    "flip_rate/0.003/site+parity": true,
+    "flip_rate/0.01/record": true,
+    "flip_rate/0.01/record+parity": true,
+    "flip_rate/0.01/body": true,
+    "flip_rate/0.01/body+parity": true,
+    "flip_rate/0.01/agree": true,
+    "flip_rate/0.01/syndrome": true,
+    "flip_rate/0.01/site": true,
+    "flip_rate/0.01/site+parity": true,
+    "flip_rate/0.03/record": true,
+    "flip_rate/0.03/record+parity": true,
+    "flip_rate/0.03/body": true,
+    "flip_rate/0.03/body+parity": true,
+    "flip_rate/0.03/agree": true,
+    "flip_rate/0.03/syndrome": true,
+    "flip_rate/0.03/site": true,
+    "flip_rate/0.03/site+parity": true,
+    "syndrome_gate_opens_on_the_flipped_bond_only": true,
+    "site_gate_opens_the_seven_bonds_around_a_flipped_bond": true,
+    "agreement_gate_closes_the_four_bonds_of_a_disagreeing_site": true
+   }
+  },
+  "Q8_labyrinths": {
+   "pass": true,
+   "items": {
+    "900744/0": {
+     "mean": 0.0117,
+     "spacing": 7.957
+    },
+    "900744/1": {
+     "mean": -0.0156,
+     "spacing": 7.754
+    },
+    "900745/0": {
+     "mean": -0.0098,
+     "spacing": 7.761
+    },
+    "900745/1": {
+     "mean": 0.002,
+     "spacing": 7.866
+    }
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 0.67,
+   "forecast_cpu_h": 8.08,
+   "worker_rss_mb": 240.0,
+   "bytes_per_task": 12074008
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_sources.csv": 80513,
+    "contrasts_bodies.csv": 31226,
+    "summary.json": 203144,
+    "predictions_scored.json": 4524,
+    "TABLES.md": 33598
+   }
+  }
+ }
+}

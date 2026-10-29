@@ -1,0 +1,76 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "b7f261f36681d0240e0de88c73671c8d3a4dea6055bc7e623f5ac453e0073645",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/dl003/preflight",
+ "checked_utc": "2026-10-26T18:22:51Z",
+ "wall_s": 45.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/H/S4_t0": true,
+    "raw/H/S4_t0": true,
+    "shards/B/S4_t0": true,
+    "raw/B/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "dw_body=br001.body_step": true,
+    "B/S4_t0.5/li4/par=plain_loop": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 1.1276535261117715e-12,
+   "items": {
+    "H/S4_t1/li4/par/case0": 4.438671652451376e-13,
+    "B/S4_t0/li4/perp/f100/case1": 2.3264029591629765e-13,
+    "B/S4_t0.5/dw/scatter/case2": 2.220446049250313e-16,
+    "B/S4_t0.25/li4/none/perp-f100/case3": 1.1276535261117715e-12
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "no_information_ignores_the_record": true,
+    "S4_kinds": true,
+    "profiles_average_to_sign": true
+   },
+   "profile_worst": 0.0
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_geometry": {
+   "pass": true,
+   "failed": []
+  },
+  "Q8_efficacy": {
+   "pass": true,
+   "failed": []
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 0.08,
+   "forecast_cpu_h": 1.02
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts.csv": 55466,
+    "summary.json": 102660,
+    "predictions_scored.json": 1414,
+    "TABLES.md": 10916
+   }
+  }
+ }
+}

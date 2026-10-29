@@ -1,0 +1,121 @@
+{
+  "all_sources_retained": true,
+  "no_scientific_fresh_reader_outcomes_seen": true,
+  "packet_inventory_sha256": "c56e39f28edf04051205b60441064cdaf5783002fcf7f8347d3155622ab359de",
+  "qualification_sha256": "adb1bfee597efde92ae5082476fa3d41bea6160cd46d5b59833a633f758b5b9e",
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 6273220608,
+    "other_busy_capacity": 1,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 3650835,
+        "sampled_cpu_percent": 93.89780316886373,
+        "threads": 1,
+        "ticks": 1875
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-24T15:43:09.822551+00:00"
+  },
+  "settings": {
+    "automatic_extension": false,
+    "automatic_successor": false,
+    "blocks": [
+      980000,
+      980001,
+      980002,
+      980003,
+      980004,
+      980005,
+      980006,
+      980007,
+      980008,
+      980009,
+      980010,
+      980011,
+      980012,
+      980013,
+      980014,
+      980015,
+      980016,
+      980017,
+      980018,
+      980019,
+      980020,
+      980021,
+      980022,
+      980023,
+      980024,
+      980025,
+      980026,
+      980027,
+      980028,
+      980029,
+      980030,
+      980031
+    ],
+    "bootstrap_samples": 10000,
+    "confidence": 0.95,
+    "config": {
+      "birth_sd": 0.05,
+      "dt": 0.2,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "recipients": 4
+    },
+    "draws": [
+      0,
+      1
+    ],
+    "fresh_stream": "E106/task/terminal/draw",
+    "identical_packet_variants_derived": true,
+    "max_workers": 4,
+    "mode": "scientific",
+    "new_D_for_every_case": true,
+    "new_injuries": false,
+    "new_reader_nuisances": true,
+    "new_source_blocks": 0,
+    "old_outcomes_cached": false,
+    "original_stream": "E077/task/E102_terminal_DRAW/0",
+    "parent_run": "comparison_v1",
+    "primary": "matched_arrangement_both",
+    "primary_group": "mixture/pooled/pooled/eligible",
+    "reader": {
+      "read_steps": 2048,
+      "settling_steps": 1024
+    },
+    "reader_stream": "E106_fresh",
+    "recipients": 4,
+    "source_selection": false,
+    "variants": [
+      "D",
+      "W",
+      "C",
+      "F"
+    ],
+    "witness_reselection": false,
+    "writer_dynamics_repeated": false
+  },
+  "utc": "2026-10-24T15:43:10.016800+00:00"
+}

@@ -1,0 +1,825 @@
+{
+  "complete": {
+    "utc": "2026-10-16T18:12:42.617198+00:00",
+    "status": "COMPLETE",
+    "decision": "PILOT_UNRESOLVED",
+    "records": 63,
+    "acquisition_blocks": 16,
+    "case_regimes": 126,
+    "primary_native_reads": 2394,
+    "flat_native_reads": 608,
+    "new_measurement_reads": 0,
+    "new_acquisition_reads": 0,
+    "new_model_fits": 0,
+    "first_repeat_only": true,
+    "forecast_seal_sha256": "f0894a0133b832f92c5ceb5322902cef8a189cb0d539d7ee7c592b1d3d3f758e",
+    "independent_final_analysis": true,
+    "wall_seconds": 1103.1757640080032,
+    "cpu_seconds": 865.21116421,
+    "peak_resident_bytes": 215179264,
+    "output_manifest_sha256": "5cd671eb8e86529013b41dd9e349820a17ca3fd1eeb7ab95ce1861e204eab5c9",
+    "input_files_verified": 566,
+    "automatic_successor": false
+  },
+  "analysis": {
+    "scope": "SELECTED_PRECISION_PANEL_PILOT",
+    "records": 63,
+    "blocks": 16,
+    "case_regimes": 126,
+    "weighting": "Equal acquisition block, then equal current-fail/current-pass class within block.",
+    "regimes": {
+      "matched": {
+        "scores": {
+          "candidate": 0.11852942477296036,
+          "direct_rival": 0.124601806573587,
+          "tt008": 0.12937647973481384
+        },
+        "score_blocks": {
+          "candidate": [
+            0.04728455512226546,
+            0.002203289237228039,
+            0.10234375808619399,
+            0.1265113303444327,
+            0.07916059981203899,
+            0.009582338275319943,
+            0.2653590824937051,
+            0.2758101281839197,
+            0.04631378760158828,
+            0.028761919268418375,
+            0.18190248681644275,
+            0.10584008000503983,
+            0.42240358300680336,
+            0.004944596464449562,
+            0.08238594566323054,
+            0.11566331598628882
+          ],
+          "direct_rival": [
+            0.07009472516523052,
+            0.002185162812947738,
+            0.12038847555547226,
+            0.11292207301379666,
+            0.16662464677538458,
+            0.005899033713107481,
+            0.2972160305566824,
+            0.23050986599975687,
+            0.044763673028991216,
+            0.03634779282629742,
+            0.10431222471786568,
+            0.11531252080770564,
+            0.43216987702620907,
+            0.005727611362212057,
+            0.08987918824364267,
+            0.15927600357208976
+          ],
+          "tt008": [
+            0.06428730145287098,
+            0.00245126131348857,
+            0.14076928667873068,
+            0.0905477038934177,
+            0.12057347075688112,
+            0.014345501444622662,
+            0.2959417579814493,
+            0.28360756858065594,
+            0.03979394797602591,
+            0.0796548086987667,
+            0.1770222455642172,
+            0.08691624541113238,
+            0.40872064738043024,
+            0.006510563120172343,
+            0.1141236647592164,
+            0.14475770074494318
+          ]
+        },
+        "primary": {
+          "tt008": {
+            "blocks": 16,
+            "block_values": [
+              0.01700274633060552,
+              0.0002479720762605308,
+              0.03842552859253669,
+              -0.035963626451015016,
+              0.041412870944842126,
+              0.0047631631693027185,
+              0.030582675487744182,
+              0.007797440396736244,
+              -0.006519839625562372,
+              0.05089288943034833,
+              -0.004880241252225553,
+              -0.01892383459390745,
+              -0.013682935626373127,
+              0.001565966655722781,
+              0.031737719095985856,
+              0.029094384758654362
+            ],
+            "mean_gain": 0.010847054961853488,
+            "sample_sd": 0.024451719008532866,
+            "lower": -0.0021823463803696905,
+            "upper": 0.023876456304076664,
+            "margin": 0.002,
+            "decision": "UNRESOLVED"
+          },
+          "direct_rival": {
+            "blocks": 16,
+            "block_values": [
+              0.02281017004296506,
+              -1.812642428030125e-05,
+              0.01804471746927827,
+              -0.013589257330636054,
+              0.08746404696334559,
+              -0.0036833045622124624,
+              0.031856948062977286,
+              -0.04530026218416283,
+              -0.0015501145725970653,
+              0.0075858735578790484,
+              -0.07759026209857707,
+              0.009472440802665807,
+              0.009766294019405708,
+              0.0007830148977624948,
+              0.007493242580412132,
+              0.04361268758580095
+            ],
+            "mean_gain": 0.00607238180062666,
+            "sample_sd": 0.035958532588955004,
+            "lower": -0.013088567685804475,
+            "upper": 0.025233331287057795,
+            "margin": 0.0,
+            "decision": "UNRESOLVED"
+          }
+        },
+        "calibration": {
+          "candidate": [
+            {
+              "bin": 0,
+              "records": 4,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.02964181263227072,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.13022349694695762,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 2,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.284890882461301,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 3,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.3008740006271684,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 4,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.4382119891076282,
+              "observed_fraction": 0.6666666666666666
+            },
+            {
+              "bin": 5,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.5531478160088139,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 6,
+              "records": 6,
+              "panel_mass": 0.09375,
+              "mean_prediction": 0.6305038902728425,
+              "observed_fraction": 0.6666666666666666
+            },
+            {
+              "bin": 7,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.7306391964476114,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 8,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.8439477185352215,
+              "observed_fraction": 0.8
+            },
+            {
+              "bin": 9,
+              "records": 34,
+              "panel_mass": 0.53125,
+              "mean_prediction": 0.9442401396960136,
+              "observed_fraction": 0.9117647058823529
+            }
+          ],
+          "direct_rival": [
+            {
+              "bin": 0,
+              "records": 3,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.020613957573110468,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.13924607231155836,
+              "observed_fraction": 0.3333333333333333
+            },
+            {
+              "bin": 2,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.258648083862146,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 3,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.3256425518865121,
+              "observed_fraction": 0.6666666666666666
+            },
+            {
+              "bin": 4,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.40568184026769694,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 5,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.5332773024619948,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 6,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.6713428091593037,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 7,
+              "records": 4,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.7312206271433584,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 8,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.8367500047720661,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 9,
+              "records": 35,
+              "panel_mass": 0.546875,
+              "mean_prediction": 0.9462001405657913,
+              "observed_fraction": 0.9142857142857143
+            }
+          ],
+          "tt008": [
+            {
+              "bin": 0,
+              "records": 3,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.019161143391578445,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.12794004090248404,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 2,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.26340808561020995,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 3,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.34990032411333927,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 4,
+              "records": 4,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.436513275742128,
+              "observed_fraction": 0.75
+            },
+            {
+              "bin": 5,
+              "records": 4,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.5568903058201776,
+              "observed_fraction": 0.75
+            },
+            {
+              "bin": 6,
+              "records": 6,
+              "panel_mass": 0.09375,
+              "mean_prediction": 0.6555376721273535,
+              "observed_fraction": 0.8333333333333334
+            },
+            {
+              "bin": 7,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.7439135613241032,
+              "observed_fraction": 0.3333333333333333
+            },
+            {
+              "bin": 8,
+              "records": 9,
+              "panel_mass": 0.140625,
+              "mean_prediction": 0.8669045088583388,
+              "observed_fraction": 0.8888888888888888
+            },
+            {
+              "bin": 9,
+              "records": 29,
+              "panel_mass": 0.453125,
+              "mean_prediction": 0.9463468439387404,
+              "observed_fraction": 0.9310344827586207
+            }
+          ]
+        },
+        "current_expression": {
+          "0": {
+            "records": 31,
+            "blocks": 16,
+            "scores": {
+              "candidate": 0.1784194022438307,
+              "direct_rival": 0.19026236633889232,
+              "tt008": 0.20158040658867757
+            }
+          },
+          "1": {
+            "records": 32,
+            "blocks": 16,
+            "scores": {
+              "candidate": 0.058639447302089955,
+              "direct_rival": 0.05894124680828169,
+              "tt008": 0.057172552880950106
+            }
+          }
+        }
+      },
+      "independent": {
+        "scores": {
+          "candidate": 0.0805938659370865,
+          "direct_rival": 0.08331584606877097,
+          "tt008": 0.09019968039975036
+        },
+        "score_blocks": {
+          "candidate": [
+            0.050460838185628784,
+            0.0021371212547208387,
+            0.09396895060459835,
+            0.07333766993729124,
+            0.14104990874475154,
+            0.18748727215894098,
+            0.31218243480483465,
+            0.046500950836574594,
+            0.02979613841724804,
+            0.027587341398514098,
+            0.13856065728218744,
+            0.07817920977860993,
+            0.0033619978135218083,
+            0.005308352753209809,
+            0.0702135728305601,
+            0.02936943819219207
+          ],
+          "direct_rival": [
+            0.0638255923718332,
+            0.0028307474521264073,
+            0.13906569624341278,
+            0.040566847699215695,
+            0.13557151242962115,
+            0.20808371164320702,
+            0.2990878911248617,
+            0.02225335686412312,
+            0.045189414419766746,
+            0.03380263182926821,
+            0.12232714102941049,
+            0.09241399679476363,
+            0.002900403266866236,
+            0.005617928228235683,
+            0.0854270010929394,
+            0.034089664610684196
+          ],
+          "tt008": [
+            0.06428730145287098,
+            0.00245126131348857,
+            0.14076928667873068,
+            0.04569200721753941,
+            0.12057347075688112,
+            0.20464945125103765,
+            0.2959417579814493,
+            0.08012978910753618,
+            0.03979394797602591,
+            0.0796548086987667,
+            0.13142584133673008,
+            0.05937886638336418,
+            0.005244683773728921,
+            0.006510563120172343,
+            0.1141236647592164,
+            0.052568184588467196
+          ]
+        },
+        "primary": {
+          "tt008": {
+            "blocks": 16,
+            "block_values": [
+              0.013826463267242198,
+              0.0003141400587677312,
+              0.04680033607413232,
+              -0.02764566271975183,
+              -0.020476437987870424,
+              0.017162179092096663,
+              -0.01624067682338537,
+              0.03362883827096159,
+              0.009997809558777868,
+              0.05206746730025261,
+              -0.007134815945457368,
+              -0.018800343395245743,
+              0.0018826859602071129,
+              0.0012022103669625337,
+              0.0439100919286563,
+              0.023198746396275127
+            ],
+            "mean_gain": 0.009605814462663832,
+            "sample_sd": 0.025119134914224957,
+            "lower": -0.00377922771178104,
+            "upper": 0.022990856637108703,
+            "margin": 0.002,
+            "decision": "UNRESOLVED"
+          },
+          "direct_rival": {
+            "blocks": 16,
+            "block_values": [
+              0.01336475418620442,
+              0.0006936261974055686,
+              0.045096745638814426,
+              -0.03277082223807554,
+              -0.0054783963151303905,
+              0.020596439484266038,
+              -0.013094543679972925,
+              -0.024247593972451475,
+              0.015393276002518705,
+              0.006215290430754111,
+              -0.016233516252776956,
+              0.014234787016153702,
+              -0.00046159454665557244,
+              0.00030957547502587397,
+              0.0152134282623793,
+              0.004720226418492127
+            ],
+            "mean_gain": 0.002721980131684463,
+            "sample_sd": 0.01893429003154148,
+            "lower": -0.007367390839122058,
+            "upper": 0.012811351102490983,
+            "margin": 0.0,
+            "decision": "UNRESOLVED"
+          }
+        },
+        "calibration": {
+          "candidate": [
+            {
+              "bin": 0,
+              "records": 3,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.015175528409368965,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.14727502045366325,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 2,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.28672908356235627,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 3,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.3190512696832712,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 4,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.4663994507285914,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.5520461326973656,
+              "observed_fraction": 0.2
+            },
+            {
+              "bin": 6,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.6645928401873051,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 7,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.7202606866655455,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 8,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.8436939111130288,
+              "observed_fraction": 0.6
+            },
+            {
+              "bin": 9,
+              "records": 35,
+              "panel_mass": 0.546875,
+              "mean_prediction": 0.945475840975571,
+              "observed_fraction": 1.0
+            }
+          ],
+          "direct_rival": [
+            {
+              "bin": 0,
+              "records": 3,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.020613957573110468,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.1503617852436709,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 2,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.23913080603319614,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 3,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.3642094561191603,
+              "observed_fraction": 0.3333333333333333
+            },
+            {
+              "bin": 4,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.4734798419174543,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "records": 5,
+              "panel_mass": 0.078125,
+              "mean_prediction": 0.5503162275161175,
+              "observed_fraction": 0.6
+            },
+            {
+              "bin": 6,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.6218789866115522,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 7,
+              "records": 6,
+              "panel_mass": 0.09375,
+              "mean_prediction": 0.7570849643639349,
+              "observed_fraction": 0.6666666666666666
+            },
+            {
+              "bin": 8,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.8330772358976439,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 9,
+              "records": 36,
+              "panel_mass": 0.5625,
+              "mean_prediction": 0.9447466520404694,
+              "observed_fraction": 0.9722222222222222
+            }
+          ],
+          "tt008": [
+            {
+              "bin": 0,
+              "records": 3,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.019161143391578445,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 1,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.12794004090248404,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 2,
+              "records": 1,
+              "panel_mass": 0.015625,
+              "mean_prediction": 0.26340808561020995,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 3,
+              "records": 2,
+              "panel_mass": 0.03125,
+              "mean_prediction": 0.34990032411333927,
+              "observed_fraction": 0.5
+            },
+            {
+              "bin": 4,
+              "records": 4,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.436513275742128,
+              "observed_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "records": 4,
+              "panel_mass": 0.0625,
+              "mean_prediction": 0.5568903058201776,
+              "observed_fraction": 0.75
+            },
+            {
+              "bin": 6,
+              "records": 6,
+              "panel_mass": 0.09375,
+              "mean_prediction": 0.6555376721273535,
+              "observed_fraction": 1.0
+            },
+            {
+              "bin": 7,
+              "records": 3,
+              "panel_mass": 0.046875,
+              "mean_prediction": 0.7439135613241032,
+              "observed_fraction": 0.3333333333333333
+            },
+            {
+              "bin": 8,
+              "records": 9,
+              "panel_mass": 0.140625,
+              "mean_prediction": 0.8669045088583388,
+              "observed_fraction": 0.8888888888888888
+            },
+            {
+              "bin": 9,
+              "records": 29,
+              "panel_mass": 0.453125,
+              "mean_prediction": 0.9463468439387404,
+              "observed_fraction": 1.0
+            }
+          ]
+        },
+        "current_expression": {
+          "0": {
+            "records": 31,
+            "blocks": 16,
+            "scores": {
+              "candidate": 0.13221383413483054,
+              "direct_rival": 0.13524009569188095,
+              "tt008": 0.1514046734551361
+            }
+          },
+          "1": {
+            "records": 32,
+            "blocks": 16,
+            "scores": {
+              "candidate": 0.0289738977393425,
+              "direct_rival": 0.03139159644566103,
+              "tt008": 0.028994687344364587
+            }
+          }
+        }
+      }
+    },
+    "new_model_fits": 0,
+    "decision": "PILOT_UNRESOLVED",
+    "interpretation": "Selected-panel outcome pilot with limited power; no inference to all 64 records per acquisition block, no completed 304-block test, and no RDT-specific law established."
+  },
+  "costs": {
+    "utc": "2026-10-16T18:32:32.520462+00:00",
+    "scope": "Additional full native probe reads per record and noise regime, beyond common boundary features; outcome evaluation and audits accounted separately.",
+    "models": [
+      {
+        "model": "tt008",
+        "display": "TT008 ordinary boundary predictor",
+        "features": "Shared B11: current response, historical schedule and signed/unsigned transfer features",
+        "extra_native_probe_reads": 0,
+        "retained_panel_reads": 0,
+        "standardized_features": 11,
+        "coefficients_including_intercept": 12
+      },
+      {
+        "model": "direct_rival",
+        "display": "Direct-probe / retained-eight predictor",
+        "features": "Shared B11 plus success fraction of eight direct reads of the protected original packet",
+        "extra_native_probe_reads": 8,
+        "retained_panel_reads": 1008,
+        "standardized_features": 12,
+        "coefficients_including_intercept": 13
+      },
+      {
+        "model": "candidate",
+        "display": "Fixed32 successor predictor",
+        "features": "Shared B11 plus success fraction after 32 writer reads and 32 fresh successor reads",
+        "extra_native_probe_reads": 64,
+        "retained_panel_reads": 8064,
+        "standardized_features": 12,
+        "coefficients_including_intercept": 13
+      }
+    ],
+    "records": 63,
+    "record_regimes": 126,
+    "combined_retained_first_repeat_native_reads": 9072,
+    "separate_retained_first_repeat_flat_audit_reads": 378,
+    "new_probe_reads_in_current_pilot": 0,
+    "new_future_native_reads": 2394,
+    "new_future_flat_audit_reads": 608,
+    "shared_costs": "All models receive the same B11, task knowledge and historical information. Boundary acquisition, transfer computation, model fitting/scaling and prediction arithmetic are not free; these are excluded from the additional-native-probe column and must be described separately.",
+    "historical_source_costs": {
+      "acquisition_native_reads": 14336,
+      "measurement_native_reads_both_repeats": 18144,
+      "flat_audit_reads_acquisition_and_both_repeats": 948
+    },
+    "limitations": [
+      "64/8 is an eightfold ratio of native probe-read counts, not a measured eightfold wall-time or total-cost ratio.",
+      "Marginal model-specific wall times were not separately measured; batching and shared inputs prevent assigning the joint runtime by simple division.",
+      "Cached reuse saves new compute but does not remove the original measurement cost."
+    ],
+    "source_protocol_sha256": "17a8e5570010f0d4c7879a64122f4db93eb32100a5a4d7114f7adb3b685e8f6f",
+    "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce"
+  },
+  "cohort": {
+    "utc": "2026-10-16T18:32:32.520462+00:00",
+    "source_rows_sha256": "5e0bd7fd9cb125594576a2b867ed86ccf83d73c2e081d5a43229bd5ca208a868",
+    "records": 63,
+    "acquisition_blocks": 16,
+    "history_counts": {
+      "spaced_tolerance_rewrite": 12,
+      "exact_rewrite": 10,
+      "single_tolerance_rewrite": 13,
+      "clustered_tolerance_rewrite": 28
+    },
+    "current_expression_counts": {
+      "0": 31,
+      "1": 32
+    },
+    "rule_counts": {
+      "-1": 32,
+      "1": 31
+    },
+    "scope": "Boundary metadata only; no future outcomes or status inspected.",
+    "analysis_weighting": "Each of 16 blocks has equal weight; its current-fail and current-pass strata each have half the block weight."
+  }
+}

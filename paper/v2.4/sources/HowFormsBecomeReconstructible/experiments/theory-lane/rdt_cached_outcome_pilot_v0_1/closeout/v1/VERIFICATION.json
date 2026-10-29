@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-17T10:53:01.476498+00:00",
+  "status": "PASS",
+  "implementation_qualification": "PASS",
+  "selected_panel_predictive_verdict": "PILOT_UNRESOLVED",
+  "rdt_specific_support": false,
+  "frozen_input_files": 566,
+  "output_files": 167,
+  "historical_source_files": 272,
+  "cached_forecasts_checked": 126,
+  "continuation_batches": 32,
+  "terminal_outcomes": 126,
+  "native_future_reads": 2394,
+  "existing_flat_audit_checks": 608,
+  "retained_forcing_receipts_checked": 2394,
+  "scalar_primary_audit": {
+    "status": "PASS",
+    "independent_weighted_scores": 6,
+    "independent_primary_comparisons": 4,
+    "complete_cases": 126,
+    "block_class_weighting_checked": true
+  },
+  "scalar_calibration_bins": 60,
+  "scalar_class_scores": 12,
+  "maximum_additional_arithmetic_discrepancy": 1.1102230246251565e-16,
+  "minimum_inferred_future_start_after_seal_seconds": 0.037354,
+  "current_run_wall_seconds": 1103.1757640080032,
+  "closeout_wall_seconds": 5.891983679000987,
+  "new_native_reads": 0,
+  "new_model_fits": 0,
+  "new_scientific_runs": 0,
+  "input_manifest_sha256": "ee32b1a6254a7a276496e202ca2911d11f6d43dffef01327c22707f1dbc88c24",
+  "output_manifest_sha256": "5cd671eb8e86529013b41dd9e349820a17ca3fd1eeb7ab95ce1861e204eab5c9",
+  "source_complete_sha256": "a1fa8a000137d6412f60b939258422a8c04e92760746e2ef816ea2b13bd4203a",
+  "audit_script_sha256": "b40aa1a3e987122ae7c4bc833f1905c9113431bc4cdd407099384bc157dc5e0a",
+  "limitations": [
+    "Flat dynamics were checked during the original run; this closeout checks their bound receipts and retained evidence without replaying dynamics.",
+    "Ongoing noise is represented by hashes and frozen generator code; the complete noise streams were not regenerated in closeout.",
+    "An independently coded arithmetic check in the same research programme is not an independent laboratory replication.",
+    "The sample is an inspected selected precision panel. No inference to all acquisition records, no completed 304-block study, no external preregistration."
+  ]
+}

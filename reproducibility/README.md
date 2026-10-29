@@ -42,3 +42,11 @@ The [v1.1 publication package](../paper/v1.1/README.md) contains both complete P
 ## Version 1.2 update
 
 The current [v1.2 main/SI package](../paper/v1.2/README.md) preserves the previous selection and adds D184–D186 exposed development. Its [source inventory and omissions](../paper/v1.2/SOURCE_AVAILABILITY.md) are explicit. The preceding v1.1 package remains historical; four exact PDF paths are now registered in `publication-files.json`. No large arrays or archives are added.
+
+## Version 2.1 update
+
+The earlier [v2.1 package](../paper/v2.1/README.md) includes both PDFs and 97 evidence notes, with 51 methods in the SI. All earlier packages are preserved. [New sources and omissions](../paper/v2.1/SOURCE_AVAILABILITY.md) are explicit. Six named publication PDFs are registered; every other supplied file remains at most 256 KiB. This packaging update runs no scientific workflow.
+
+## Version 2.4 update
+
+The [current package](../paper/v2.4/README.md) has both PDFs, 116 evidence notes, 70 methods and all main infographics. [New source availability](../paper/v2.4/SOURCE_AVAILABILITY.md) distinguishes frozen selections, implementation context and omitted large inputs. Eight named PDFs are registered; all other files stay at most 256 KiB. No scientific replay is claimed.

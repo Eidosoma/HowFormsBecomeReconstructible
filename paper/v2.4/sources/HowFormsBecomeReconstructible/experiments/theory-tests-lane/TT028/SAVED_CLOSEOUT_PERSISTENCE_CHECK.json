@@ -1,0 +1,47 @@
+{
+  "automatic_followup_polling": false,
+  "checked_after_host_launcher_returned": true,
+  "first_startup_attempt_saw_coordinator_before_worker_receipts": true,
+  "launch_sha256": "8347cb1f1901eb7560c0afee91c0abda334cfaeb5d14c5b6571002294c0c8e0c",
+  "main": {
+    "allowed_cpus": "6-7",
+    "argv": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/../../../PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -B /home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT028/saved_closeout.py ",
+    "cpu_affinity": [
+      6,
+      7
+    ],
+    "parent_pid": 1,
+    "pid": 1135976,
+    "state": "S (sleeping)",
+    "threads": 3
+  },
+  "no_scientific_effects_inspected": true,
+  "plan_sha256": "aa9423bc3e577a34c092ced68611acf3cd8f8a2ff9ad61a32103e2555a2fcd88",
+  "recorded_utc": "2026-10-18T10:18:40.259799+00:00",
+  "startup_check_only": true,
+  "status": "PASS",
+  "workers": [
+    {
+      "allowed_cpus": "6",
+      "argv": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14) --multiprocessing-fork ",
+      "cpu_affinity": [
+        6
+      ],
+      "parent_pid": 1135976,
+      "pid": 1136505,
+      "state": "R (running)",
+      "threads": 1
+    },
+    {
+      "allowed_cpus": "7",
+      "argv": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python -B -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12) --multiprocessing-fork ",
+      "cpu_affinity": [
+        7
+      ],
+      "parent_pid": 1135976,
+      "pid": 1136502,
+      "state": "R (running)",
+      "threads": 1
+    }
+  ]
+}

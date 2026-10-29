@@ -1,0 +1,98 @@
+{
+  "claim_boundary": "Exploratory in-silico mechanism hypotheses only; no confirmed erasure, plastic-heredity, biological-safety, agency, or clinical claim.",
+  "cluster_stable": true,
+  "cohort_size": 24,
+  "completed_combined_memory_count": 21,
+  "completed_combined_model_count": 13,
+  "equivalence_sensitivity": {
+    "0.25": {
+      "memory_rate": 0.08333333333333333,
+      "pass_count": 2
+    },
+    "0.5": {
+      "memory_rate": 0.08333333333333333,
+      "pass_count": 2
+    },
+    "0.75": {
+      "memory_rate": 0.125,
+      "pass_count": 3
+    }
+  },
+  "history_decoder": {
+    "accuracy": 0.6904761904761905,
+    "auc": 0.6961451247165533,
+    "method": "leave-one-biomodel-out-nearest-centroid-with-heldout-group-label-swaps",
+    "null_accuracy_95": 0.6428571428571429,
+    "permutation_p": 0.008099190080991902,
+    "permutation_replicates": 10000,
+    "reference_memory_count": 21,
+    "reference_row_count": 42,
+    "score_direction": "positive-is-trained-like"
+  },
+  "mechanism_label_counts": {
+    "extinction-with-savings": 1,
+    "invalid-or-dysfunctional": 3,
+    "no-durable-reset": 2,
+    "persistent-operational-reset-indeterminate": 4,
+    "rehoming": 8,
+    "temporary-suppression": 6
+  },
+  "minimum_completion_gate": true,
+  "observer_ladder": {
+    "o_counterfactual": {
+      "memory_rate": 0.08333333333333333,
+      "model_count": 2,
+      "n": 24,
+      "pass_count": 2
+    },
+    "o_information": {
+      "memory_rate": 0.08333333333333333,
+      "model_count": 2,
+      "n": 24,
+      "pass_count": 2
+    },
+    "o_r": {
+      "memory_rate": 0.5833333333333334,
+      "model_count": 10,
+      "n": 24,
+      "pass_count": 14
+    },
+    "o_relearning": {
+      "memory_rate": 0.08333333333333333,
+      "model_count": 2,
+      "n": 24,
+      "pass_count": 2
+    },
+    "o_state": {
+      "memory_rate": 0.08333333333333333,
+      "model_count": 2,
+      "n": 24,
+      "pass_count": 2
+    },
+    "o_trajectory": {
+      "memory_rate": 0.2916666666666667,
+      "model_count": 7,
+      "n": 24,
+      "pass_count": 7
+    }
+  },
+  "record_counts": {
+    "calibration": 24,
+    "histories": 144,
+    "probes": 2004,
+    "reinstatement": 144,
+    "relearning": 144
+  },
+  "run_status": "completed",
+  "scope": "exploratory-hypothesis-generation",
+  "top_hypothesis": {
+    "cross_model_rank_score": 0.34615384615384615,
+    "falsifiable_next_prediction": "Control-only and combined histories remain counterfactually interchangeable.",
+    "hypothesis": "generic-perturbation",
+    "memory_prevalence": 0.5,
+    "rank": 1,
+    "supporting_memory_count": 12,
+    "supporting_model_count": 9
+  },
+  "valid_mechanism_count": 21
+}

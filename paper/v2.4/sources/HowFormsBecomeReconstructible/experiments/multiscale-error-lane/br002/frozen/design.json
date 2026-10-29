@@ -1,0 +1,899 @@
+{
+ "study": "BR002",
+ "digest": "fd44dd885e1a85b00732f6459169b460f97d64c941ba1298d08381effbeb8d43",
+ "frozen_utc": "2026-10-25T20:55:39Z",
+ "sources": {
+  "br001/__init__.py": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+  "br001/analyze.py": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+  "br001/calibrate.py": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+  "br001/checks.py": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+  "br001/design.py": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+  "br001/predict.py": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+  "br001/run.py": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+  "br001/sim.py": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+  "br001/tables.py": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+  "br001/worker.py": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+  "br002/__init__.py": "79096cda2b6fee450de08c5daea73e4c0f91596b8537fc5dafcb517264e90014",
+  "br002/analyze.py": "59de656fb798d6d8160ff47808f7ce4b3c46923c1866f2b66c3ed7517ed67e36",
+  "br002/calibrate.py": "7e6557a4f128c663b7bb6b0085af9c658b98c732af48282c7274a2f5d9b20c12",
+  "br002/checks.py": "9c3c678934ce46c76b93a504ffe5b6dcc7f23df33446f8a18449a5fdcd0192c3",
+  "br002/design.py": "af9f68bb0867ac8d8e01d492c22de9b581ea6355dcd9596675779c52ebd95218",
+  "br002/predict.py": "a0bba24d568d20699bff5e9c1cf77ebf4ee7e596cb12fe93a798169b8de46579",
+  "br002/run.py": "d479eae6480dac09c2c0c7a7e7fba8bcaf737f3ef792b844dcab59a117135331",
+  "br002/sim.py": "f7122ccb850986c5063ca195d20fe2e7763411237974b3f26900ff51eb3af2c1",
+  "br002/tables.py": "d632952954b1f221940791c3ac86de578428e093c5856153419c419612e9cbd9",
+  "br002/worker.py": "ff62ae6917681649bd04764a22b8f9e3ed9357ff7cada401dbc6dddf2859806e",
+  "me002/__init__.py": "f8f3b317e0ca8fedde22d5080fea2ee2239232f5dff27e36593dd1cb92b40330",
+  "me002/analyze.py": "4966e109d3af89b45872ac4f3f447ce2d1087165ab71b361dbd544944cfdb67f",
+  "me002/calibrate.py": "4f419157e1db2781846bf07da7c377d5c8c47aca24798a33764ce656e6f7f25f",
+  "me002/checks.py": "45fc38deb77dd87747de8bfd16b24750ba15017f2ba3de42840fb5845ba40534",
+  "me002/design.py": "ecd4c8eb569829a3accffa29dfcbed5a3603df1a52ea8ab2bd193f3a9c95fba3",
+  "me002/families.py": "425b0378e564a2cd3319dd269f9d7c002c99a2f3103aa1b92df325b7801f69b3",
+  "me002/policies.py": "b1b17da392900f68c0d1ce4af1a9374b49e7a52e9b0916db317fa20214efabfa",
+  "me002/predict.py": "6f4cccaabc9708346aa687e99ad35fc04f0bc47e3b4d67b46c7fc337e3cd61ff",
+  "me002/run.py": "7e8920c5a92eda3cef25aa9595083c9ff0bff06f67ed55bcc011c1a93ad8ffdf",
+  "me002/sim.py": "bd7357c5b8f5aebfc7f3d17de9f2eb48828eb111f096ea28659e7956cda43b1b",
+  "me002/tables.py": "51dcf05ae28d8a1cf509aeec0d04050700580ed77e719ca08c7910e2a3243201",
+  "me002/worker.py": "9f8bdf9d9bc022fdc9f7c36f051e1df73bfb5da45128a4faa9289d7a21494e35",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9"
+ },
+ "design": {
+  "study": "BR002",
+  "tag": "mse-br002",
+  "identities": {
+   "preflight": [
+    900828,
+    900830
+   ],
+   "development": [
+    910400,
+    910416
+   ]
+  },
+  "purpose": {
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "debug_blocks": [
+   900830,
+   900832
+  ],
+  "probe_blocks": [
+   900824,
+   900828
+  ],
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "foreign": {
+   "0": 1,
+   "1": 0,
+   "2": 3,
+   "3": 2
+  },
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "window": 2000,
+  "read_updates": 1000,
+  "recipients": 4,
+  "per_tissue_theta": true,
+  "families": [
+   "F0",
+   "BL",
+   "S4",
+   "IS"
+  ],
+  "template_sha256": "f5f5425de71bd0b419a45a6c6dffd6d6cad32b27ab10447bda34f5817cbac1be",
+  "record": {
+   "r_star": 1.2,
+   "eps": 0.05,
+   "kr": 1.0,
+   "sigma_r": 0.02,
+   "kc": 0.02
+  },
+  "writing": {
+   "rho_w": 0.05,
+   "tag_decay": 0.0033333333333333335,
+   "tag_gate": 0.05,
+   "latch_w": 500,
+   "window_p": 500,
+   "off": 0.05,
+   "window_delay": 100
+  },
+  "geometry": {
+   "domain": 8,
+   "places": {
+    "2": [
+     "d0",
+     "d1",
+     "d2",
+     "d3",
+     "cross"
+    ],
+    "4": [
+     "d0",
+     "d1",
+     "d2",
+     "cross"
+    ],
+    "6": [
+     "d0",
+     "d1",
+     "cross"
+    ],
+    "8": [
+     "d0",
+     "cross"
+    ]
+   }
+  },
+  "kill_sd": 0.2,
+  "onset": [
+   100,
+   501
+  ],
+  "panels": {
+   "C": {
+    "title": "committed writing, damage inside an open window, and a window that respects damage tags",
+    "onset": "random",
+    "regimes": [
+     "F0_s0.1_c",
+     "F0_s0.3_c",
+     "F0_s0.1_o",
+     "F0_s0.3_o"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "kind": "sham",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "wound-6x6",
+      "kind": "wound",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "scar-6x6",
+      "kind": "scar",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "record-6x6",
+      "kind": "record",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "impose-inf-cued",
+      "kind": "impose",
+      "size": 0,
+      "duration": 0,
+      "cue": true,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "impose-inf",
+      "kind": "impose",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "impose-300",
+      "kind": "impose",
+      "size": 0,
+      "duration": 300,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "window-scar-6x6",
+      "kind": "window",
+      "size": 6,
+      "duration": 0,
+      "cue": true,
+      "rate": 0.0,
+      "place": "random",
+      "damage": "scar"
+     },
+     {
+      "name": "window-wound-6x6",
+      "kind": "window",
+      "size": 6,
+      "duration": 0,
+      "cue": true,
+      "rate": 0.0,
+      "place": "random",
+      "damage": "wound"
+     }
+    ],
+    "arms": [
+     {
+      "name": "none",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "always",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "always",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "always+h",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "always",
+      "hyst": true,
+      "privileged": false
+     },
+     {
+      "name": "duration",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "duration",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "duration+h",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "duration",
+      "hyst": true,
+      "privileged": false
+     },
+     {
+      "name": "tags",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "tags",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "tags+h",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "tags",
+      "hyst": true,
+      "privileged": false
+     },
+     {
+      "name": "phase",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "phase",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "phase+tags",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "phase_tags",
+      "hyst": false,
+      "privileged": false
+     }
+    ]
+   },
+   "R": {
+    "title": "a record held in the relations between neighbours",
+    "onset": "start",
+    "regimes": [
+     "F0_s0.1_c",
+     "F0_s0.1_o",
+     "BL_s0.1_c",
+     "BL_s0.1_o",
+     "BL_s0.3_c",
+     "S4_s0.1_c",
+     "IS_s0.1_c"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "kind": "sham",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "both-2x2",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "both-4x4",
+      "kind": "lesion",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "both-6x6",
+      "kind": "lesion",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "both-8x8",
+      "kind": "lesion",
+      "size": 8,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "kill-4x4",
+      "kind": "kill",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "kill-8x8",
+      "kind": "kill",
+      "size": 8,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "turnover-0.001",
+      "kind": "turnover",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.001,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "turnover-0.003",
+      "kind": "turnover",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.003,
+      "place": "random",
+      "damage": ""
+     }
+    ],
+    "arms": [
+     {
+      "name": "static",
+      "reads": true,
+      "eps": 0.0,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "self",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "multi",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.02,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "rel",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": true,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "rel+code",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.02,
+      "rel": true,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "rel+code+relink",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.02,
+      "rel": true,
+      "relink": true,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "protected",
+      "reads": true,
+      "eps": 0.0,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": true,
+      "write": "none",
+      "hyst": false,
+      "privileged": true
+     }
+    ]
+   },
+   "G": {
+    "title": "what consensus cannot repair: wounds at declared distances from the pattern's walls",
+    "onset": "start",
+    "regimes": [
+     "F0_s0.1_c",
+     "F0_s0.3_c"
+    ],
+    "conditions": [
+     {
+      "name": "sham",
+      "kind": "sham",
+      "size": 0,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "random",
+      "damage": ""
+     },
+     {
+      "name": "w2-d0",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d0",
+      "damage": ""
+     },
+     {
+      "name": "w2-d1",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d1",
+      "damage": ""
+     },
+     {
+      "name": "w2-d2",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d2",
+      "damage": ""
+     },
+     {
+      "name": "w2-d3",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d3",
+      "damage": ""
+     },
+     {
+      "name": "w2-cross",
+      "kind": "lesion",
+      "size": 2,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "cross",
+      "damage": ""
+     },
+     {
+      "name": "w4-d0",
+      "kind": "lesion",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d0",
+      "damage": ""
+     },
+     {
+      "name": "w4-d1",
+      "kind": "lesion",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d1",
+      "damage": ""
+     },
+     {
+      "name": "w4-d2",
+      "kind": "lesion",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d2",
+      "damage": ""
+     },
+     {
+      "name": "w4-cross",
+      "kind": "lesion",
+      "size": 4,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "cross",
+      "damage": ""
+     },
+     {
+      "name": "w6-d0",
+      "kind": "lesion",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d0",
+      "damage": ""
+     },
+     {
+      "name": "w6-d1",
+      "kind": "lesion",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d1",
+      "damage": ""
+     },
+     {
+      "name": "w6-cross",
+      "kind": "lesion",
+      "size": 6,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "cross",
+      "damage": ""
+     },
+     {
+      "name": "w8-d0",
+      "kind": "lesion",
+      "size": 8,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "d0",
+      "damage": ""
+     },
+     {
+      "name": "w8-cross",
+      "kind": "lesion",
+      "size": 8,
+      "duration": 0,
+      "cue": false,
+      "rate": 0.0,
+      "place": "cross",
+      "damage": ""
+     }
+    ],
+    "arms": [
+     {
+      "name": "static",
+      "reads": true,
+      "eps": 0.0,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "self",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "multi",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.02,
+      "rel": false,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "rel",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.0,
+      "rel": true,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     },
+     {
+      "name": "rel+code",
+      "reads": true,
+      "eps": 0.05,
+      "kc": 0.02,
+      "rel": true,
+      "relink": false,
+      "clamp": false,
+      "write": "none",
+      "hyst": false,
+      "privileged": false
+     }
+    ]
+   }
+  },
+  "margin": 0.02,
+  "primary_endpoints": {
+   "C": [
+    "les_r",
+    "adopt_flip",
+    "rg_sign",
+    "v_qual"
+   ],
+   "R": [
+    "les_r",
+    "r_sign",
+    "v_qual"
+   ],
+   "G": [
+    "les_r"
+   ]
+  },
+  "contrasts": [
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "always+h",
+    "always"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "duration+h",
+    "duration"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "tags+h",
+    "tags"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "phase+tags",
+    "phase"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "tags+h",
+    "duration+h"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "phase",
+    "duration+h"
+   ],
+   [
+    "C",
+    "C1 committed and windowed writing",
+    "phase+tags",
+    "tags+h"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel",
+    "self"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel",
+    "multi"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel+code",
+    "rel"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel+code",
+    "multi"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel+code+relink",
+    "rel+code"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel",
+    "protected"
+   ],
+   [
+    "R",
+    "R1 relational record",
+    "rel+code",
+    "protected"
+   ],
+   [
+    "G",
+    "G1 walls",
+    "rel",
+    "self"
+   ],
+   [
+    "G",
+    "G1 walls",
+    "multi",
+    "self"
+   ],
+   [
+    "G",
+    "G1 walls",
+    "rel+code",
+    "multi"
+   ]
+  ]
+ }
+}

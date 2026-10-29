@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-19T14:07:32.009628+00:00",
+  "status": "COMPLETE_VERIFIED",
+  "scope": "scientific",
+  "run": "runs/scientific_v1",
+  "completed_utc": "2026-10-19T13:44:26.778566+00:00",
+  "decision": "ALL_FOUR_ADVANTAGES_SUPPORTED",
+  "eligible_blocks": 108,
+  "selected_packets": 432,
+  "terminal_outcomes": 3456,
+  "acquisition_attempts": 112,
+  "study_wall_seconds": 12361.147168595984,
+  "worker_cpu_seconds": 53036.73642105182,
+  "input_manifest_sha256": "7245c5041241c3a7e43e4bf65d4d4ff462695239e5f78146dbbfc8698a960fa6",
+  "output_manifest_sha256": "5a3d1fff7aaf104962ab3422ed21e8a47d5b3a8626307c23148bc176ce4de320",
+  "complete_sha256": "7236b48882f41cae4547a518a150682e027c06befb51b7db3ae8554368b82615",
+  "verification_report": "checks/SCIENTIFIC_V1_COMPLETED_EVIDENCE_AUDIT.json",
+  "verification_report_sha256": "f3f53a4099adf5d3d56162b9a2ba987ac8e849fd45b93a63d5eae37d63139867",
+  "report": "runs/scientific_v1/REPORT.md",
+  "report_sha256": "f6fc4ac9f48075fa39a3e8c3a86193bd786ed40389d26e1204b93e8aca5844c8",
+  "contrasts": {
+    "matched": {
+      "tt008": {
+        "mean_gain": 0.013931294006555513,
+        "sample_sd": 0.024909991593466303,
+        "lower": 0.009179590335362817,
+        "upper": 0.01868299767774821,
+        "margin": 0.002,
+        "decision": "SUPPORTED",
+        "blocks": 108
+      },
+      "direct_rival": {
+        "mean_gain": 0.006905705345423464,
+        "sample_sd": 0.016050501274814808,
+        "lower": 0.0038439931185905623,
+        "upper": 0.009967417572256367,
+        "margin": 0.0,
+        "decision": "SUPPORTED",
+        "blocks": 108
+      }
+    },
+    "independent": {
+      "tt008": {
+        "mean_gain": 0.012518935589716139,
+        "sample_sd": 0.021306010209047443,
+        "lower": 0.00845470913066931,
+        "upper": 0.016583162048762968,
+        "margin": 0.002,
+        "decision": "SUPPORTED",
+        "blocks": 108
+      },
+      "direct_rival": {
+        "mean_gain": 0.0041622997802097765,
+        "sample_sd": 0.012429902752083262,
+        "lower": 0.0017912345665573536,
+        "upper": 0.006533364993862199,
+        "margin": 0.0,
+        "decision": "SUPPORTED",
+        "blocks": 108
+      }
+    }
+  },
+  "brier": {
+    "matched": {
+      "candidate": 0.12870180490458533,
+      "direct_rival": 0.1356075102500088,
+      "tt008": 0.14263309891114084
+    },
+    "independent": {
+      "candidate": 0.08515794485516945,
+      "direct_rival": 0.08932024463537924,
+      "tt008": 0.0976768804448856
+    }
+  },
+  "predictor_native_reads_per_packet_regime": {
+    "candidate": 64,
+    "direct_rival": 8,
+    "tt008": 0
+  },
+  "inference_unit": "Acquisition block; four individual future losses per packet/regime, balanced expression classes.",
+  "inference_contract": "All four individual block-t lower limits exceed frozen margins: .002 against TT008 and0 against direct probes. Intersection-union one-sided .025 under the declared block-t assumptions; intervals are not simultaneous95%.",
+  "verification": {
+    "input_files": 65,
+    "output_files": 12506,
+    "boundary_records": 7168,
+    "forecasts": 864,
+    "terminal_outcomes": 3456,
+    "full_chains_checked": true,
+    "forecast_barrier_verified": true,
+    "independent_scalar_reduction": "PASS",
+    "forcing_separation": "PASS",
+    "resource_accounting": "PASS"
+  },
+  "interpretation": "A positive prospective test of the frozen successor forecast on this conditional fresh-founder panel. It improves Brier loss over both declared rivals in both regimes at64 measurement reads, versus8 for direct probes and0 additional for TT008. Equal-compute superiority is not tested.",
+  "limits": [
+    "No RDT-specific law established.",
+    "No qualified repair-benefit scheduler established.",
+    "No external scientific replication.",
+    "Historical failed reductions and selectors retain their verdicts."
+  ],
+  "automatic_successor": false
+}

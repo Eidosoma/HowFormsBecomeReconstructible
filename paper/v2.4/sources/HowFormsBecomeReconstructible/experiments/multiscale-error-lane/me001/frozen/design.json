@@ -1,0 +1,2352 @@
+{
+ "study": "ME001 v2",
+ "digest": "84686773c639d257d711ea42b370c932cfe9d22f34e23564ba3d469554f410b2",
+ "frozen_utc": "2026-10-24T23:01:51Z",
+ "sources": {
+  "me001/__init__.py": "53d584150e889e4144fc2227cb97d6d22e771d31bb38c0b2507e84c9511c3a6c",
+  "me001/analyze.py": "9249acfeab06d2a51b95bdb9caa93e531a8cb28a1a315855eb865613f60a38a2",
+  "me001/calibrate.py": "80dba4f75d815882b7fb7b9d1725b5cb022fe7d0d298116aee7777ebd151862b",
+  "me001/checks.py": "6336ed510cbfdef52068bfc28c954a10c9118d9f37543a0c6777411a76d405b7",
+  "me001/design.py": "3455d49fdc68786966d51a85a4a8497023bf043c2da55ae3d2bb86f4d8375abf",
+  "me001/policies.py": "9375a38890a219ab916a1084101227440739a652ed39d292d27c3d215f1eddf2",
+  "me001/predict.py": "9038587c2095a5466b742bf9c3817e0a9b8ccc08720d984f52cd7a66b814617d",
+  "me001/run.py": "299822eb8b5c6fc2f15e16e9e4a19d2194856939128156c1f6bd829f6c2e8a64",
+  "me001/tables.py": "81bb1bd4393f9d970baeec6230c5264ac058f15b13af3c8ac2ba0422cc9ccd89",
+  "me001/worker.py": "9db541cc5361e6cf8b26f471c8771861367a2fc183e77f71e8e5ad706324dc58",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "operators.py": "8e58b52b1e8140f485fb55569a96f01b17cae24772adc1e842f4966c873aa082"
+ },
+ "design": {
+  "study": "ME001 v2",
+  "tag": "mse-me001-v2",
+  "identities": {
+   "calibration": [
+    900900,
+    900916
+   ],
+   "preflight": [
+    900920,
+    900922
+   ],
+   "development": [
+    910000,
+    910016
+   ]
+  },
+  "purpose": {
+   "calibration": "engineering",
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "debug_blocks": [
+   900990,
+   900992
+  ],
+  "families": {
+   "F0": [
+    0,
+    0
+   ],
+   "F2": [
+    2,
+    2
+   ],
+   "F4": [
+    4,
+    4
+   ]
+  },
+  "sigmas": [
+   0.3,
+   0.1
+  ],
+  "regimes": {
+   "F0_s0.3": [
+    "F0",
+    0.3
+   ],
+   "F2_s0.3": [
+    "F2",
+    0.3
+   ],
+   "F4_s0.3": [
+    "F4",
+    0.3
+   ],
+   "F0_s0.1": [
+    "F0",
+    0.1
+   ],
+   "F2_s0.1": [
+    "F2",
+    0.1
+   ],
+   "F4_s0.1": [
+    "F4",
+    0.1
+   ]
+  },
+  "primary": "F0_s0.3",
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "foreign": {
+   "0": 1,
+   "1": 0,
+   "2": 3,
+   "3": 2
+  },
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "window": 1000,
+  "read_updates": 1000,
+  "recipients": 4,
+  "early": [
+   20,
+   100
+  ],
+  "trace_times": [
+   1,
+   2,
+   3,
+   5,
+   10,
+   20,
+   50,
+   100,
+   200,
+   500,
+   1000
+  ],
+  "per_tissue_theta": true,
+  "arbiter": {
+   "burst_updates": 20,
+   "burst_rate": 0.1,
+   "latch": 1000,
+   "refractory": 200,
+   "quantile": 0.995
+  },
+  "conditions": [
+   [
+    "sham",
+    "none",
+    0.0
+   ],
+   [
+    "body",
+    "fine",
+    0.5
+   ],
+   [
+    "body",
+    "fine",
+    1.0
+   ],
+   [
+    "body",
+    "fine",
+    2.0
+   ],
+   [
+    "body",
+    "regional",
+    0.5
+   ],
+   [
+    "body",
+    "regional",
+    1.0
+   ],
+   [
+    "body",
+    "regional",
+    2.0
+   ],
+   [
+    "body",
+    "collective",
+    0.5
+   ],
+   [
+    "body",
+    "collective",
+    1.0
+   ],
+   [
+    "body",
+    "collective",
+    2.0
+   ],
+   [
+    "reference",
+    "fine",
+    0.5
+   ],
+   [
+    "reference",
+    "fine",
+    1.0
+   ],
+   [
+    "reference",
+    "fine",
+    2.0
+   ],
+   [
+    "reference",
+    "regional",
+    0.5
+   ],
+   [
+    "reference",
+    "regional",
+    1.0
+   ],
+   [
+    "reference",
+    "regional",
+    2.0
+   ],
+   [
+    "reference",
+    "collective",
+    0.5
+   ],
+   [
+    "reference",
+    "collective",
+    1.0
+   ],
+   [
+    "reference",
+    "collective",
+    2.0
+   ],
+   [
+    "both",
+    "fine",
+    0.5
+   ],
+   [
+    "both",
+    "fine",
+    1.0
+   ],
+   [
+    "both",
+    "fine",
+    2.0
+   ],
+   [
+    "both",
+    "regional",
+    0.5
+   ],
+   [
+    "both",
+    "regional",
+    1.0
+   ],
+   [
+    "both",
+    "regional",
+    2.0
+   ],
+   [
+    "both",
+    "collective",
+    0.5
+   ],
+   [
+    "both",
+    "collective",
+    1.0
+   ],
+   [
+    "both",
+    "collective",
+    2.0
+   ]
+  ],
+  "single": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18
+  ],
+  "arms": [
+   {
+    "name": "inactive",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": null,
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": true,
+    "foreign": true
+   },
+   {
+    "name": "body_site",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": true,
+    "foreign": true
+   },
+   {
+    "name": "body_region",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "body_sheet",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reference_site",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": null,
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reference_region",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": null,
+      "reference": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reference_sheet",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": null,
+      "reference": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reciprocal_site",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": true,
+    "foreign": true
+   },
+   {
+    "name": "reciprocal_region",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reciprocal_sheet",
+    "panel": "routes",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_site_site",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_site_region",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_site_sheet",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_region_site",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_region_region",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_region_sheet",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_sheet_site",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_sheet_region",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "sign_sheet_sheet",
+    "panel": "factorial",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sign"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "place_region_act",
+    "panel": "placement",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        1,
+        1
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "place_region_sense",
+    "panel": "placement",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        1,
+        1
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "place_sheet_act",
+    "panel": "placement",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        1,
+        1
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "place_sheet_sense",
+    "panel": "placement",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        1,
+        1
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "write500_site",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 500,
+      "body": null,
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     },
+     {
+      "updates": 500,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "wait500_site",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 500,
+      "body": null,
+      "reference": null,
+      "policy": null
+     },
+     {
+      "updates": 500,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "write20_site",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 20,
+      "body": null,
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": "burst"
+     },
+     {
+      "updates": 980,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "wait20_site",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 20,
+      "body": null,
+      "reference": null,
+      "policy": null
+     },
+     {
+      "updates": 980,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "write500_region",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 500,
+      "body": null,
+      "reference": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": null
+     },
+     {
+      "updates": 500,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "wait500_region",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 500,
+      "body": null,
+      "reference": null,
+      "policy": null
+     },
+     {
+      "updates": 500,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "write20_region",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 20,
+      "body": null,
+      "reference": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": "burst"
+     },
+     {
+      "updates": 980,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "wait20_region",
+    "panel": "timing",
+    "segments": [
+     {
+      "updates": 20,
+      "body": null,
+      "reference": null,
+      "policy": null
+     },
+     {
+      "updates": 980,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "permute_site",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "permute"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reverse_site",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "reverse"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "permute_region",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "permute"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reverse_region",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "region",
+       [
+        0,
+        0
+       ],
+       "region",
+       [
+        0,
+        0
+       ],
+       "reverse"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "permute_sheet",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "permute"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "reverse_sheet",
+    "panel": "lesions",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "sheet",
+       [
+        0,
+        0
+       ],
+       "reverse"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "single",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "snapshot",
+    "panel": "capture",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": null,
+      "policy": null
+     }
+    ],
+    "conditions": "full",
+    "capture": "snapshot",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "arbiter_region",
+    "panel": "arbitration",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": "arbiter"
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": true,
+    "foreign": true
+   },
+   {
+    "name": "changepoint_region",
+    "panel": "arbitration",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": "changepoint"
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": false,
+    "traced": false,
+    "foreign": false
+   },
+   {
+    "name": "oracle_location",
+    "panel": "arbitration",
+    "segments": [
+     {
+      "updates": 1000,
+      "body": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "reference": [
+       "site",
+       [
+        0,
+        0
+       ],
+       "site",
+       [
+        0,
+        0
+       ],
+       "linear"
+      ],
+      "policy": "oracle"
+     }
+    ],
+    "conditions": "full",
+    "capture": "body",
+    "privileged": true,
+    "traced": false,
+    "foreign": false
+   }
+  ],
+  "packets": [
+   "copy_post",
+   "protected",
+   "target",
+   "zero",
+   "off_reader"
+  ],
+  "packet_conditions": {
+   "copy_post": "full",
+   "protected": "once",
+   "target": "once",
+   "zero": "once",
+   "off_reader": "once"
+  },
+  "privileged_packets": [
+   "protected",
+   "target"
+  ],
+  "foreign_packets": [
+   "copy_post",
+   "protected"
+  ],
+  "permutations": {
+   "site": [
+    105,
+    3,
+    254,
+    251,
+    171,
+    70,
+    226,
+    184,
+    210,
+    218,
+    207,
+    153,
+    211,
+    144,
+    87,
+    158,
+    74,
+    83,
+    203,
+    127,
+    193,
+    186,
+    140,
+    137,
+    228,
+    214,
+    11,
+    45,
+    18,
+    136,
+    37,
+    192,
+    202,
+    109,
+    32,
+    47,
+    110,
+    103,
+    40,
+    175,
+    60,
+    197,
+    181,
+    238,
+    222,
+    59,
+    152,
+    164,
+    92,
+    41,
+    134,
+    154,
+    151,
+    190,
+    187,
+    199,
+    227,
+    225,
+    148,
+    173,
+    5,
+    241,
+    166,
+    150,
+    111,
+    55,
+    21,
+    212,
+    78,
+    12,
+    248,
+    130,
+    4,
+    142,
+    126,
+    95,
+    73,
+    232,
+    49,
+    170,
+    72,
+    183,
+    51,
+    69,
+    252,
+    1,
+    160,
+    235,
+    242,
+    178,
+    29,
+    159,
+    56,
+    143,
+    48,
+    58,
+    9,
+    81,
+    28,
+    191,
+    216,
+    239,
+    15,
+    114,
+    94,
+    113,
+    220,
+    36,
+    63,
+    129,
+    123,
+    147,
+    77,
+    249,
+    86,
+    112,
+    53,
+    196,
+    167,
+    67,
+    208,
+    42,
+    33,
+    107,
+    219,
+    93,
+    23,
+    46,
+    176,
+    245,
+    233,
+    90,
+    91,
+    174,
+    119,
+    200,
+    237,
+    234,
+    89,
+    253,
+    66,
+    61,
+    201,
+    76,
+    223,
+    102,
+    57,
+    229,
+    34,
+    2,
+    65,
+    30,
+    31,
+    8,
+    75,
+    125,
+    39,
+    68,
+    27,
+    141,
+    189,
+    172,
+    163,
+    96,
+    50,
+    85,
+    217,
+    209,
+    230,
+    145,
+    195,
+    157,
+    117,
+    19,
+    17,
+    88,
+    128,
+    243,
+    44,
+    64,
+    155,
+    224,
+    146,
+    101,
+    177,
+    108,
+    20,
+    22,
+    121,
+    97,
+    240,
+    250,
+    99,
+    38,
+    204,
+    162,
+    10,
+    165,
+    35,
+    52,
+    139,
+    168,
+    138,
+    198,
+    182,
+    82,
+    180,
+    133,
+    188,
+    84,
+    54,
+    71,
+    6,
+    100,
+    231,
+    161,
+    16,
+    25,
+    221,
+    131,
+    104,
+    124,
+    120,
+    255,
+    185,
+    24,
+    106,
+    215,
+    169,
+    244,
+    43,
+    62,
+    236,
+    116,
+    135,
+    179,
+    7,
+    14,
+    149,
+    26,
+    246,
+    213,
+    206,
+    122,
+    13,
+    0,
+    118,
+    115,
+    156,
+    132,
+    98,
+    79,
+    194,
+    247,
+    205,
+    80
+   ],
+   "region": [
+    8,
+    13,
+    1,
+    15,
+    3,
+    14,
+    2,
+    0,
+    9,
+    6,
+    12,
+    5,
+    7,
+    10,
+    4,
+    11
+   ],
+   "sheet": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "margin": 0.02,
+  "primary_endpoints": [
+   "v1000_qual",
+   "f_qual"
+  ],
+  "secondary_endpoints": [
+   "v1000_sign",
+   "f_sign",
+   "f_rec",
+   "v20_qual",
+   "v100_qual",
+   "v1000_margin",
+   "f_margin"
+  ],
+  "contrasts": [
+   [
+    "C1 route vs inactive",
+    "body_site",
+    "inactive"
+   ],
+   [
+    "C1 route vs inactive",
+    "reciprocal_site",
+    "inactive"
+   ],
+   [
+    "C3 reciprocal vs hold",
+    "reciprocal_site",
+    "body_site"
+   ],
+   [
+    "C12 reference alias",
+    "reference_site",
+    "inactive"
+   ],
+   [
+    "C1 route vs inactive",
+    "body_region",
+    "inactive"
+   ],
+   [
+    "C1 route vs inactive",
+    "reciprocal_region",
+    "inactive"
+   ],
+   [
+    "C3 reciprocal vs hold",
+    "reciprocal_region",
+    "body_region"
+   ],
+   [
+    "C12 reference alias",
+    "reference_region",
+    "inactive"
+   ],
+   [
+    "C1 route vs inactive",
+    "body_sheet",
+    "inactive"
+   ],
+   [
+    "C1 route vs inactive",
+    "reciprocal_sheet",
+    "inactive"
+   ],
+   [
+    "C3 reciprocal vs hold",
+    "reciprocal_sheet",
+    "body_sheet"
+   ],
+   [
+    "C12 reference alias",
+    "reference_sheet",
+    "inactive"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "body_site",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "body_region",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "body_sheet",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "reciprocal_site",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "arbiter_region",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "changepoint_region",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "write20_site",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "write20_region",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "snapshot",
+    "copy_post"
+   ],
+   [
+    "C2 vs post-damage copy",
+    "oracle_location",
+    "copy_post"
+   ],
+   [
+    "C4 resolution",
+    "body_region",
+    "body_site"
+   ],
+   [
+    "C4 resolution",
+    "body_sheet",
+    "body_site"
+   ],
+   [
+    "C4 resolution",
+    "body_sheet",
+    "body_region"
+   ],
+   [
+    "C5 arbitration",
+    "arbiter_region",
+    "body_site"
+   ],
+   [
+    "C5 arbitration",
+    "arbiter_region",
+    "changepoint_region"
+   ],
+   [
+    "C5 arbitration",
+    "arbiter_region",
+    "oracle_location"
+   ],
+   [
+    "C5 arbitration",
+    "changepoint_region",
+    "body_site"
+   ],
+   [
+    "C5 arbitration",
+    "oracle_location",
+    "body_site"
+   ],
+   [
+    "C6 timing",
+    "write500_site",
+    "wait500_site"
+   ],
+   [
+    "C6 timing",
+    "write20_site",
+    "wait20_site"
+   ],
+   [
+    "C6 timing",
+    "write20_site",
+    "body_site"
+   ],
+   [
+    "C6 timing",
+    "wait500_site",
+    "body_site"
+   ],
+   [
+    "C6 timing",
+    "write500_region",
+    "wait500_region"
+   ],
+   [
+    "C6 timing",
+    "write20_region",
+    "wait20_region"
+   ],
+   [
+    "C6 timing",
+    "write20_region",
+    "body_region"
+   ],
+   [
+    "C6 timing",
+    "wait500_region",
+    "body_region"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_site_site",
+    "body_site"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_site_region",
+    "body_region"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_site_sheet",
+    "body_sheet"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_region_site",
+    "body_region"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_region_region",
+    "body_region"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_region_sheet",
+    "body_sheet"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_sheet_site",
+    "body_sheet"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_sheet_region",
+    "body_sheet"
+   ],
+   [
+    "C7 sign vs linear",
+    "sign_sheet_sheet",
+    "body_sheet"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_region_site",
+    "sign_site_site"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_sheet_site",
+    "sign_site_site"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_region_region",
+    "sign_site_region"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_sheet_region",
+    "sign_site_region"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_region_sheet",
+    "sign_site_sheet"
+   ],
+   [
+    "C7 sensing at fixed actuator",
+    "sign_sheet_sheet",
+    "sign_site_sheet"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_site_region",
+    "sign_site_site"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_site_sheet",
+    "sign_site_site"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_region_region",
+    "sign_region_site"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_region_sheet",
+    "sign_region_site"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_sheet_region",
+    "sign_sheet_site"
+   ],
+   [
+    "C7 actuation at fixed sensor",
+    "sign_sheet_sheet",
+    "sign_sheet_site"
+   ],
+   [
+    "C8 placement",
+    "place_region_act",
+    "body_region"
+   ],
+   [
+    "C8 placement",
+    "place_region_sense",
+    "body_region"
+   ],
+   [
+    "C8 placement",
+    "place_sheet_act",
+    "body_sheet"
+   ],
+   [
+    "C8 placement",
+    "place_sheet_sense",
+    "body_sheet"
+   ],
+   [
+    "C9 lesions",
+    "permute_site",
+    "body_site"
+   ],
+   [
+    "C9 lesions",
+    "reverse_site",
+    "body_site"
+   ],
+   [
+    "C9 lesions",
+    "permute_region",
+    "body_region"
+   ],
+   [
+    "C9 lesions",
+    "reverse_region",
+    "body_region"
+   ],
+   [
+    "C9 lesions",
+    "permute_sheet",
+    "body_sheet"
+   ],
+   [
+    "C9 lesions",
+    "reverse_sheet",
+    "body_sheet"
+   ],
+   [
+    "C10 capture",
+    "snapshot",
+    "body_site"
+   ],
+   [
+    "C10 capture",
+    "zero",
+    "body_site"
+   ],
+   [
+    "C11 storage",
+    "protected",
+    "copy_post"
+   ],
+   [
+    "C11 storage",
+    "target",
+    "protected"
+   ],
+   [
+    "C11 storage",
+    "copy_post",
+    "zero"
+   ],
+   [
+    "C11 storage",
+    "body_site",
+    "protected"
+   ]
+  ]
+ }
+}

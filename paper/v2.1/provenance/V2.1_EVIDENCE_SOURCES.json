@@ -1,0 +1,1867 @@
+{
+  "version": "2.1",
+  "selected_utc": "2026-10-16T16:23:32.111137+00:00",
+  "review_basis": "reviews/V2.0_LANE_REVIEW_2026-10-16.md",
+  "review_checks": "reviews/V2.0_LANE_CHECKS_2026-10-16.json",
+  "selection": {
+    "E92": {
+      "campaigns": [
+        "TT021"
+      ],
+      "methods": "C.46",
+      "status": "fresh-cohort one-reconstruction confirmation; refresh/harm claims not confirmed"
+    },
+    "E93": {
+      "campaigns": [
+        "TT018"
+      ],
+      "methods": "C.47",
+      "status": "fresh-cohort serial-futures primary passes; individual harms and secondary forecast limits"
+    },
+    "E94": {
+      "campaigns": [
+        "E065"
+      ],
+      "methods": "C.48",
+      "status": "fresh compatibility conjunction passes"
+    },
+    "E95": {
+      "campaigns": [
+        "E068"
+      ],
+      "methods": "C.49",
+      "status": "fresh partial-recovery conjunction passes"
+    },
+    "E96": {
+      "campaigns": [
+        "E073"
+      ],
+      "methods": "C.50",
+      "status": "reversal replicated on already exposed source cohort"
+    },
+    "E97": {
+      "campaigns": [
+        "TT022",
+        "TT023",
+        "TT024"
+      ],
+      "methods": "C.51",
+      "status": "serial development only; corrected capture remains below preservation"
+    }
+  },
+  "package": "paper_assets/data/evidence-update-v2.1-source-records.zip",
+  "package_bytes": 847466,
+  "package_sha256": "f7d59b146b88fdab0d5b736db90be99440bc71efefa6c8f330250c5130c9dbeb",
+  "sources": [
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/DATA_DICTIONARY.md",
+      "bytes": 3651,
+      "sha256": "7437f34c91fb22225584a44d490b2d4f112a6bd19853e05e48fdc92828c401d7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/DECISIONS.md",
+      "bytes": 4367,
+      "sha256": "ebfd9dd3ff6ab0ad951a679e69a0d5aee24ab474a4ef5df24f420b7db766b8cc",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/INTERPRETATION.md",
+      "bytes": 8270,
+      "sha256": "487f1fa741ef4e045a2c996c8a0a45b982dcfdc9213c22cc04b9b65152780676",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/PROTOCOL.md",
+      "bytes": 7756,
+      "sha256": "a44ce15610ec00d94cd2c48aa296f48ceff4831a9db1bfb55c3b381eacc06b64",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/README.md",
+      "bytes": 4133,
+      "sha256": "48be5b3cd37b8ecfa76ac0fd9adfb13ec72ffddde4d18f15a4ee33b4209a9b26",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/SOURCE_DATA.json",
+      "bytes": 50475,
+      "sha256": "af5127e98df3e531a306cd7c1e701c1d562fe51e0957933a9a6441b94586a396",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/analysis/closeout_v1.json",
+      "bytes": 769,
+      "sha256": "3f452fe0180e718c8d8c0bd25c47a03105dc61ed960f21f584956e4d36ef2966",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/analysis/freeze_v1/manifest.json",
+      "bytes": 5563,
+      "sha256": "c91dabcea886786f709f9fa62e7804fbfa660255470a498598b5fd9426e6a357",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/audit_model.py",
+      "bytes": 9360,
+      "sha256": "1d8298bb0795ec3dfd3654bd3fa229da03a0f504b458156f3970d73c59dd0e26",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/data.py",
+      "bytes": 5870,
+      "sha256": "38e483d40a385c57961ac1ff8ddb9f0f2e5640f391cd09f31bb857743ae0e3f0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/inference.py",
+      "bytes": 7750,
+      "sha256": "3186d4800eedf19608f6f4d8754eb6dc8bcc496fd2254aa9668f6a8afa99a9bb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/model.py",
+      "bytes": 7963,
+      "sha256": "5ddc501bc6b617583d8f4317318e616036cedbb4c99563e2fc227477ef82a233",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/plan.py",
+      "bytes": 1712,
+      "sha256": "ef062c869041d8ddba959a3b6d989048fd2426d9378bfb1a46e2b704d8c212fb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/plot.py",
+      "bytes": 1787,
+      "sha256": "947997d4ea6dc31ff749037101591f9654b2827bebb3091fe42f1145d1cafa5a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/prepare.py",
+      "bytes": 7068,
+      "sha256": "226828f8bb9de52a3f48d47ff0cec58d3be1ff5d36b6eae7d776b265d704e123",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/run.py",
+      "bytes": 11870,
+      "sha256": "0376e54f89f1bc1620b06a3067a6d0306f61872b2745c41842bc571a5724af6e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/source_audit.py",
+      "bytes": 3744,
+      "sha256": "db91427ef8652eae228e44864fac0be91e75cc2ef42a64ca9cb443a26cdf48c6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/source_model.py",
+      "bytes": 3184,
+      "sha256": "c30ae4d7806ba66964d17a9de797f059832c734f4f8237f57be769e507ad0b52",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/tests.py",
+      "bytes": 6021,
+      "sha256": "eeb49f475445ef2267bd185e790f324f402c416f2e0506ba60318f87d73f7e55",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E065_fresh_compatibility_confirmation/workflow.py",
+      "bytes": 7533,
+      "sha256": "9672e3b6822cdc9e95c8f5eccb8d61613a944b2965a896b696bb6e4095b416f8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/DATA_DICTIONARY.md",
+      "bytes": 3101,
+      "sha256": "3ffb6202e188ddb9e82dd887512ff33b50de6c594ba4fb3a0d49d3f4604e8f74",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/DECISIONS.md",
+      "bytes": 4199,
+      "sha256": "dd6e1acf8e429ca4218c1b9918e1aa40dbdfedd9bf67789c70456903dcdb3db7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/INTERPRETATION.md",
+      "bytes": 6419,
+      "sha256": "3d9af5b4da98331456b259c373167c5f800a0265759be40f1361e87e6d17def3",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/PROTOCOL.md",
+      "bytes": 6822,
+      "sha256": "13bd41a8fa84b72973a90219e4d8573e6e12567c0ff1d6b52531a12793a96466",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/README.md",
+      "bytes": 3273,
+      "sha256": "9c4fc581175aa968ffa3166a290489030d850f95bf19bdbf2cbc6c3b54be6300",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/SOURCE_DATA.json",
+      "bytes": 52925,
+      "sha256": "b8afcf998f3a7e64d0152a4161775ba9a20f31c6e655f10447fdd5490ba8efad",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/analysis/closeout_v1.json",
+      "bytes": 768,
+      "sha256": "44c6fbd37a60dcd19dffbfe5f90add14d2498235ef0aef4abd7b2713ce13a844",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/analysis/freeze_v1/manifest.json",
+      "bytes": 5487,
+      "sha256": "a0abb7e00b6a6d2bd963ace761380321dfd4d71127e6ea28a39e31ab8e8ff707",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/audit_model.py",
+      "bytes": 8312,
+      "sha256": "1d794442009e89d104c44bd24fc594fb1a3977373d9e8b5c147a072c2e15b7a2",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/data.py",
+      "bytes": 4634,
+      "sha256": "b9e4f8c63ecdfd94fbf1e4d3eb34deb8906853a9a9f3e05db903440fead21de5",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/inference.py",
+      "bytes": 8985,
+      "sha256": "bee9acc834c90250c656f6ff689ce5d115328dbc8e683432174b5e345cf97e8a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/model.py",
+      "bytes": 6839,
+      "sha256": "9cd4b7e7e655e0751ea5e3585cd7d5a4568789735ee2614fcc60d219f474c286",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/plan.py",
+      "bytes": 1140,
+      "sha256": "fab13c1f6289214f59484cd06c21c3d937308f921fd736759601e9758e772eaa",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/plot.py",
+      "bytes": 3167,
+      "sha256": "594c2a892a93547e690955eb9144420b3f9d2cb6dce10b0446fee0a08a627a73",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/prepare.py",
+      "bytes": 7681,
+      "sha256": "1dc2919a0ac3f206b59b1c5a2be2a593910a2ff9017ec26b9da953ffb827207c",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/run.py",
+      "bytes": 12491,
+      "sha256": "7c522568240cf40f10a9a85b4971e591d6ad26c5af3d4e314dd6b575a259c00a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/sources.py",
+      "bytes": 5157,
+      "sha256": "0eaafacd20280c4fc79c428678f5252210316cf0786a332129b722df550f3cbb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/tests.py",
+      "bytes": 9329,
+      "sha256": "e6714b0f827121b310a48f10e2312399ea6ed7ab6241005b154650f83f55be50",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E068_fresh_recovery_confirmation/workflow.py",
+      "bytes": 7532,
+      "sha256": "f9c6b21eac891802d14ddad61b33a6d6d98baff75536a040b578e7a9893c01d3",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/DATA_DICTIONARY.md",
+      "bytes": 5726,
+      "sha256": "43345a9f814defb881c1f794ebf58b2a1a9fba62a3eb3f3d1f35696384f582eb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/DECISIONS.md",
+      "bytes": 4104,
+      "sha256": "717897f54f2de40e3e003556a7103b87c5a451d77982c2825f77639b123841c4",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/INTERPRETATION.md",
+      "bytes": 8527,
+      "sha256": "16bf3e7c5d6384b270bab6f8dab21352f6fb39114866d44c1685262386a7f9ee",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/PROTOCOL.md",
+      "bytes": 6389,
+      "sha256": "2864215e31b5f694401b58f301e252d8c469720f1f6e36dc7cf2a890d2751b74",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/README.md",
+      "bytes": 1909,
+      "sha256": "0559fdf76bb825f4a4bfb5caed8df7747a6176b5e43ff95193558a6dacb811c0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/SOURCE_DATA.json",
+      "bytes": 6222,
+      "sha256": "19d1c68cab83b816577c5e37052da378c92272fb62f4ee6cc9d98bed18731096",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/analysis/closeout_v1.json",
+      "bytes": 734,
+      "sha256": "3d542729eeb5b3daec65927d40a490b8d704b1c475fb73e791e002551b3024c5",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/analysis/freeze_v1/manifest.json",
+      "bytes": 3900,
+      "sha256": "4442032a95be029d09ff7757674b736711d3f9334bc840f88863d1a8112442f6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/analysis/transition_counts_v1.json",
+      "bytes": 22771,
+      "sha256": "3484698552182f6c6fe9fd678c79ea79d4eed581fc4647301233cc6424221bc0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/audit_model.py",
+      "bytes": 10165,
+      "sha256": "0823099056267d718be8d8b1c011cfdc85a31f46bcd1fc364659afa2ce57112e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/data.py",
+      "bytes": 4143,
+      "sha256": "ccbbec4c0a82a37c6cb5852b984f23d4537873674486032da3ccd16ea8d9fe0f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/inference.py",
+      "bytes": 10937,
+      "sha256": "6291c10b642a21f6d35c0bd70cfda62a79d4be1791f55ab2140e83aecbc30f9b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/model.py",
+      "bytes": 8232,
+      "sha256": "ca5065783da0ec9ffa3f470441a2f967b96649cf5cdce377fbde26aa166f163f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/plan.py",
+      "bytes": 2469,
+      "sha256": "08abce13a91545351daaf64227d6b7ffc8bbd0375ec8fd507db2af92a051da50",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/plot.py",
+      "bytes": 1855,
+      "sha256": "036104e07e31f7f8674334792b833d1d7335e6a6c2edf3049123ad1dddbb3b07",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/prepare.py",
+      "bytes": 5419,
+      "sha256": "f035e7d10d977fa9527d8ad640d985b911691710489572c4e3765fa11cbe2ed1",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/run.py",
+      "bytes": 12874,
+      "sha256": "008727f9bed60dfb81f265d651f73aecd2529924bdaee31c150defc1e1c272ae",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/tests.py",
+      "bytes": 11831,
+      "sha256": "4602246d3ebc524b7d2f843b99681ad2526189ed36bc8a2b0fa0e796effdc596",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/E073_saved_cohort_reversal_replication/workflow.py",
+      "bytes": 7544,
+      "sha256": "09b722971dec8fb9d66e8bc34df76482291bc340180ee2052e5882de0b18e23d",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/CLOSEOUT.json",
+      "bytes": 2761,
+      "sha256": "30bdf4ffcdd97ccb49ae01bf6f28193a0ef6861943cc0f7b695bba59fde4b231",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/CLOSEOUT_INPUTS.json",
+      "bytes": 966,
+      "sha256": "df4c7da5972dc4367d835f45b9ef99d600e574dd193c81e76cede4ed43a6e0ac",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/CLOSEOUT_MANIFEST.json",
+      "bytes": 2456,
+      "sha256": "5892c238fe7c15b1740b2aaca26575444e03c0828d2cce7c14f5abd41dfa356f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/COMPLETED_PROCESS_CHECK.json",
+      "bytes": 251,
+      "sha256": "8d46a07e087abece59e42de7dbb8247e127eb07598e0429e099349d8e4161f28",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/COMPLETION_INTAKE.json",
+      "bytes": 1513,
+      "sha256": "dfbe203622360c39d4bd0c62e517eb74251f06e703adab95eca8364809299a2c",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/CURRENT_EXECUTION.json",
+      "bytes": 4082,
+      "sha256": "916584b2a1fddf333dacce19d785298a8c0140052ac49372d68a9bf0a4116606",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/DESIGN_CHECK_CAPACITY.json",
+      "bytes": 210,
+      "sha256": "413fb78464f38090d759e73aa551b02dc206f8f7a2e9debb33d77ff0a5ac94ab",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/EVIDENCE_REVIEW.md",
+      "bytes": 3574,
+      "sha256": "395f51fd36ec7ef86a1e1cbf98d76acc2eb99f8af6f21db8ab4f85be2fecc179",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/EXECUTION.md",
+      "bytes": 10001,
+      "sha256": "c91669d8a59ab7b4c990ba14a7575a60bc25b9a7ba25ca3d9d4411cb0f35d75e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/EXECUTION_TWO_CPU_AMENDMENT.json",
+      "bytes": 2807,
+      "sha256": "2006793fdc0645a3df57815db43b20dc4ffca4965e093ff72ee0ebbe48acff8a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/IMPLEMENTATION_MANIFEST.json",
+      "bytes": 16634,
+      "sha256": "e683604e020fa544fdaacee010cfa5b17fcf73482c473ed91806b5e93c7844e7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/IMPLEMENTATION_STATUS.json",
+      "bytes": 1872,
+      "sha256": "ee4edaf54dc2fbcfa82c719f680d90a745c45c59201e6ba88d67115d35a14ff7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/INTERPRETATION.md",
+      "bytes": 8538,
+      "sha256": "f0986ff0ec4399fa66a3935c672d2d848ab6d7de6a9cf87661853e1a30fb1f7c",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/LAUNCH_MANIFEST.json",
+      "bytes": 7612,
+      "sha256": "6917860f023619e2546cc9e0e78ab9dd0ad511688a10d8f6a4d0503bba0767dc",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/LAUNCH_REVIEW.json",
+      "bytes": 5584,
+      "sha256": "f48ce8f6a6770bcb30ed52a2918b5220cd585bc175f823f48c93abf84303a368",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/LAUNCH_REVIEW_v2.json",
+      "bytes": 6114,
+      "sha256": "a963cca4bf695cec9c4bbb293c847477758ad5aa7bf3e6ff0e4286d3f748c3f4",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/LAUNCH_STATUS.json",
+      "bytes": 2685,
+      "sha256": "040ac8771278fa56ea6bef19f79676a2f9e325dd509d0cf99107bc8c108a2e79",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/NATIVE_V1_REVIEW.json",
+      "bytes": 791,
+      "sha256": "d80b0deaaf7892e2addb92590a6567c61fdcc62aaa91ee6fb109a1c38d2f85ea",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PRELAUNCH_MANIFEST.json",
+      "bytes": 5628,
+      "sha256": "c88ae721bacc60a5857f3c59258f28533d0fdb757d555bee92b96679bc2db846",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PRELAUNCH_REVIEW.json",
+      "bytes": 1802,
+      "sha256": "f01dc913303dfbdcda4cf8ac1d450ce8660417568ec6b097827d106da492e263",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PRELAUNCH_STATUS.json",
+      "bytes": 1606,
+      "sha256": "a6ccd6e77168d6f7d6e90450f4befc275a6534779ffd818f4d899f55d330c9ac",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PREPARATION_INPUTS.json",
+      "bytes": 6225,
+      "sha256": "e3309c2696054c76c1cd2d57468d86dafe6de70e5f73a9322dd47466aaa51363",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PREPARATION_MANIFEST.json",
+      "bytes": 7290,
+      "sha256": "b6ae38c3a9ed9c5614d19d521c5aa5ac494744933236da89a81eb8ae6fd157bf",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PREPARATION_STATUS.json",
+      "bytes": 1532,
+      "sha256": "f583d8f86c37ffc19546eabda5e06c97cdd06d897e4e4db145cb7bd460e6845a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/PROTOCOL.md",
+      "bytes": 17855,
+      "sha256": "7fd87ae0f945a1e86bf14d609b464274b6ce33224909358d65c81a1806145247",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/README.md",
+      "bytes": 3397,
+      "sha256": "1b1759a0d4d2dbf8c739dd5cc3392d187fffd0e4af512c541708ef29bb57edd7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/REGISTRATION.json",
+      "bytes": 6368,
+      "sha256": "fa58e9891390ed6bf18310ab1392e55077301d12028328d403d3842f37c89000",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/REGISTRATION_SEARCH_CHECK.json",
+      "bytes": 31629,
+      "sha256": "d794ac86403751015d7a72cc0e792551b5ac8abd5564b181f75025853b57a69a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/REGISTRATION_SEARCH_REVIEW.json",
+      "bytes": 1643,
+      "sha256": "d4f49a0632db945c1165351ff89c3a93b5dd8ccfab4b329059cb8cba2075f8f6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/RESERVATION.json",
+      "bytes": 4459433,
+      "sha256": "a5b6b5d8ac73a32cc5ecd061878311575d433fe81ca233402a56a0c035751f9a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/SOURCE_RECEIPT.json",
+      "bytes": 15199,
+      "sha256": "fb7c93ab915eba26e6ad5698b9ab7eb4ca7a1e7ce99602ceee67c585f56d700b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/SOURCE_REVIEW.json",
+      "bytes": 13440,
+      "sha256": "87643abb45ebe0ffd8194b7230421e1693a1891695d4270ccd58971a7a10f341",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/TWO_CPU_HANDOFF_MANIFEST.json",
+      "bytes": 7971,
+      "sha256": "79ac8f6ebe1fe26a23b4885965ea5c23e278567e0fe40b13dfcd3567f9b33599",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/TWO_CPU_PREPARATION.json",
+      "bytes": 850,
+      "sha256": "a533d776795161c73f90626cf9a465458c5b6f17868b15e57ed2ef3c6887974a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/analysis.py",
+      "bytes": 16470,
+      "sha256": "4fd6f4900583be90ce4d13326bd3834d971f0c0f491cc894ca84f91e9633d26e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/capacity.py",
+      "bytes": 1590,
+      "sha256": "be766a7f75f1ecdc45376f310110b6b418cfa9e1e287ffd77c02f8920d8113f8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/check_design.py",
+      "bytes": 13227,
+      "sha256": "5ff48fbebc587edb7f36e1db8574ccf5d0805395a7ba59dcbe862b7dd5f14df4",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/closeout.py",
+      "bytes": 19236,
+      "sha256": "7a76b2eb948452fc2662fbec2efce26ac92306b74d93f8952ac8e83a32aa6c95",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/core.py",
+      "bytes": 7198,
+      "sha256": "9190704f4900b7512df5492379e3ea99ef2d57b732d5ca22f4986c63784a7600",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/current_repair.py",
+      "bytes": 3716,
+      "sha256": "eac24922d085e3f21c9b90d558f8de3395d1e003dd944c08cd6f61e0864c924e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/design.json",
+      "bytes": 2402,
+      "sha256": "f5e2ab1f02da8bcd1383849a97c3be37c935639c81a7331a77a0bd41e0a0c91e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/engine.py",
+      "bytes": 9499,
+      "sha256": "b0517035d3e5bddfa2118a1b8d1c747c7c1b510507fa171bb25befe154eab410",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/forecast_adapter.py",
+      "bytes": 1168,
+      "sha256": "8d48847dc2afa414ca5dbf78833a6f8596d171d2ca55bae8eb322ae804302d93",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/future_statistics.py",
+      "bytes": 5253,
+      "sha256": "23a0314d3e76c6ec5c6b7984c88bca6253708e1cf9449d6c23227ddb0a11b315",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/lineage.py",
+      "bytes": 1468,
+      "sha256": "a56d0dc642ddf2c2903e7a17c4b47c22bf0be878f283e2e6ae42554db0095e1d",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/native.py",
+      "bytes": 8473,
+      "sha256": "d7f991b47d8bd7f7dd8e0bd5c06a974849348356e981d87727816d2056867f31",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/optimizer.py",
+      "bytes": 6435,
+      "sha256": "eb65162d1e67ab5755a41740b0ac021c9c94a8d78dda0cdb6168037bf3174b03",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/optimizer_audit.py",
+      "bytes": 4256,
+      "sha256": "587f7e8632585b064b8abba31ab0d48e0df48156dbe2489abc0b8301a714b45e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/plan.json",
+      "bytes": 3592,
+      "sha256": "4036c8bf2abc4e2cce21cb82a49828c7707087ac838cc98019f2d1092b1ba312",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/prepare_design.py",
+      "bytes": 2984,
+      "sha256": "9b7a5e18e45b163926d08037feeb6282113c7ab5ffcdbe3e797e82c69b6c7f9f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/prepare_native.py",
+      "bytes": 3987,
+      "sha256": "07c250c77ada6b3828cd3f60df998f6e9818f11641626957217ad81dbfb9dc7a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/qualify.py",
+      "bytes": 15060,
+      "sha256": "6075164d08c3e6394b653368e25c9440b84955c65be88d67455ae31089f139d7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/record_closeout.py",
+      "bytes": 17569,
+      "sha256": "cebcc5b283b147abbb7e7f934f09a783a8717416847acfb8a3edc87fe0e7db72",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/record_features.py",
+      "bytes": 3285,
+      "sha256": "bb3754c4ccc83298023657e27d1e44c7db07b671f07257898a9c64aa5346b5ce",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/record_implementation.py",
+      "bytes": 10663,
+      "sha256": "956a13e6ff776f333e5d91f0db2d7182aebabe3c9c0ce48f654dca751c4723ec",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/register.py",
+      "bytes": 4581,
+      "sha256": "90eb96e7a47daa24d1013513784d7e0da69e42faa250f2b35826f19068086f91",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/repair.py",
+      "bytes": 3737,
+      "sha256": "12a29a06c525f7d536314ac2f11dc4a17725f7ba860e696ef884bbb85398949f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/report.py",
+      "bytes": 3213,
+      "sha256": "aad5c8836da2fb811707fd373d59e395bd2f2724ebe71c3d49710acbd2ee44d1",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/roll_dynamics.py",
+      "bytes": 9209,
+      "sha256": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/run.py",
+      "bytes": 12371,
+      "sha256": "24968a546afd42093c833b844ea47ceed22fdbc86830157b376fae41f859ffb2",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/serial.py",
+      "bytes": 4996,
+      "sha256": "4ab10f67b2d70312c0be975c29fd1e60c18aec589212e9434df54e1d18addaf6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/serial_audit.py",
+      "bytes": 6492,
+      "sha256": "6b17b5bf6b26d5a4c7c6df07f11c80e97800d4c362f10c68462dc86cc4b5c84a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/source_review.py",
+      "bytes": 8809,
+      "sha256": "2b3ce7920042b3475af97bb1787228ecc0b0b4efd5d751c4ab91556f677e7549",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT018/support.py",
+      "bytes": 2377,
+      "sha256": "957ef856c74b725c135631cd4f2372e27aa05a5b02cdca0f315c482e448f571f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CLOSEOUT.json",
+      "bytes": 16209,
+      "sha256": "b46ea433350df36e31843d5373153958d75b4b26a5254e58a7c6b683d7d05160",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CLOSEOUT_HANDOFF.json",
+      "bytes": 2045,
+      "sha256": "c17a4eca2ba4198751a503482fc0168bdfc3d78390d8b8784fddc340eca86505",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CONTINUATION_AMENDMENT.md",
+      "bytes": 2921,
+      "sha256": "b696476f32f7970e0375ca836662b8f5577c92c2af02cd23bb79b86d2d5b1ff0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CONTINUATION_CARRY.json",
+      "bytes": 1820121,
+      "sha256": "18837a6dc2347cacfe18908ff398b1e8571388153d8717137895dc6561248eb5",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CONTINUATION_LAUNCH.json",
+      "bytes": 652,
+      "sha256": "08e46e326b3b2230240dd8d989a3fca3466a31b0b9e502a1f578009f9b9ecb90",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CONTINUATION_REGISTRATION.json",
+      "bytes": 76658,
+      "sha256": "08468a29fde891c75b1127f461e977c8cce33a8f9545cee6b09b329f588d91de",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CONTINUATION_RESOURCE_CHECK.json",
+      "bytes": 376,
+      "sha256": "88a1fb6fb1de342f4bb3362777c67a4401dad44827d39cb1741a6d912560fb19",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/CURRENT_EXECUTION.json",
+      "bytes": 6604,
+      "sha256": "3fcbf5e0debe918c82764d28ac97c269f773f375cadba25ca17e7fb75a146abf",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/EXECUTION.md",
+      "bytes": 10977,
+      "sha256": "66d35f8991a4e79e96226130c2a0a18756b98a14c8d15dbc1920ed5bbe18f693",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/HOST_RESOURCE_CHECK.json",
+      "bytes": 3070,
+      "sha256": "3e480acccd940a3fdc09dec930baf1b705770c4eb95ca25fa0a067a5024942c1",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/INTERPRETATION.md",
+      "bytes": 6123,
+      "sha256": "aeefe763ff44658742b610aa90b1bebc24a47af65e14336d6bafeb8a704cdd01",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/LAUNCH.json",
+      "bytes": 567,
+      "sha256": "349fca8cb308afc9f9adfc2ebafe905e1662fa0630281bcbee77bfebcbb55b3c",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/LAUNCH_HANDOFF_MANIFEST.json",
+      "bytes": 1184,
+      "sha256": "91a6c14bc58aec0dc237a4c6d7981fb5fa6120175515a6d46921210841c54a71",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/PRELAUNCH_RESOURCE_CHECK.json",
+      "bytes": 3271,
+      "sha256": "e121afde1382eae76eb94ab6ca7f71be60c9faa2d74fa0343e9c139a94cff558",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/PROTOCOL.md",
+      "bytes": 8053,
+      "sha256": "923843b606a194481bbd28c9607559e5ce8e7a96482e970e64ebb5c56818834f",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/README.md",
+      "bytes": 1071,
+      "sha256": "4e24ff23e0c707f4bc7075cb7272b62094ad63943b6f4e0a8acda6e40636859b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/REGISTRATION.json",
+      "bytes": 81129,
+      "sha256": "00bea4dd9388316e4606d34053d961bd930493b518f08cf2b54f022cb7d40a39",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/RESERVATION.json",
+      "bytes": 7711170,
+      "sha256": "8e88b4cd1686770eb4095641328409e5f01e2846c2cf9074acad97acb90030f1",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/SOURCE_MANIFEST.json",
+      "bytes": 169190,
+      "sha256": "e34986b155acd93ec20bf34315b782c1ae1f3b134c633d31ff8c52beb7221632",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/STORAGE_FAILURE_REVIEW.json",
+      "bytes": 2109,
+      "sha256": "2453f40d61bbcc7885ea52daa7b6ebbfeff54481ca13b6d3134ab6355eaeba0a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/analysis.py",
+      "bytes": 5821,
+      "sha256": "89e270be737ebdbd0b27a0b0cd4baa651155266974f4560cca4ee43ede107cba",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/closeout.py",
+      "bytes": 14607,
+      "sha256": "3c2a2a14846923baede9bc2cc3cef5a8b74d5238ae71a8699f12ec77673f099e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/common.py",
+      "bytes": 3534,
+      "sha256": "722b0b5d7f32f0241225071abc5ce63b6be1c18ad59c809983e861596526a277",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/continue_after_storage.py",
+      "bytes": 16262,
+      "sha256": "18414cfc364213a9824dc89ffde8577f423bb566da2d675ad267827210c57620",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/design.py",
+      "bytes": 3074,
+      "sha256": "1bb8f7202e881c119aaacd5354393ad99b0173c715951b05c6cdbd928bae828f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/execute.py",
+      "bytes": 8466,
+      "sha256": "1c97d2576a2f9f9109121144622c3edc221e4ca5f9be0d1b24ae0e53a5970ed3",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/qualify.py",
+      "bytes": 9817,
+      "sha256": "a4cecb9859fbf306e0ad4997fb2e4383dc4858b867ff7a95ef17658c343557da",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/record_closeout.py",
+      "bytes": 16627,
+      "sha256": "51dbb7bf76e770c661b6bc575df3fe9eaa70396f46d4793a22c25b1f33e9443f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/reference.py",
+      "bytes": 3083,
+      "sha256": "7f9ce32c737ab8eb844c112c29b8e7ddcdc09272a4937b7684c3e27888168c15",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/register.py",
+      "bytes": 4735,
+      "sha256": "6180d81a47f0e7cfccc91924b77c8fb6f7f60d72cf7498350f528bc7482668bc",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/run.py",
+      "bytes": 10565,
+      "sha256": "1d68445f633697f77185cc1524de4ad00a358576aa522da954389b3ccc146a96",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT021/tt019_reference.py",
+      "bytes": 13627,
+      "sha256": "8da3aa6de7a2473816bb1b1dd6f6922dbd632116a7633a7239e410d599aa6953",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/BASELINE_MANIFEST.json",
+      "bytes": 13922,
+      "sha256": "26601bb097640db429f34029c0193640c58b0f64600312bd6047807f05f2efeb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/CLOSEOUT.json",
+      "bytes": 492,
+      "sha256": "9afd1951f6227c2f1e483f096e12ea5d8c4c88e21e38bdd8f5be0c05d766752a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/CLOSEOUT_HANDOFF.json",
+      "bytes": 3520,
+      "sha256": "77032dac1deef62610df2137d92bf1ae7e8205d3983b7ffc83c83347ca4fca83",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/CURRENT_EXECUTION.json",
+      "bytes": 7850,
+      "sha256": "bc765fd0b0b63629572d9d838eea4e92981ae0be603a051f8773ed35fcab0cae",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/EXECUTION.md",
+      "bytes": 9854,
+      "sha256": "4ee1d717d79c02eaebd9b6c015d5eb070e6fce42622668d9d0e9b1c09dcfc99d",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_CLOSEOUT.json",
+      "bytes": 1453,
+      "sha256": "1faf18eae70dad273c61dc888297c431eb5df436f5a0072fb5ea183adab08afb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_DIAGNOSTIC.json",
+      "bytes": 355,
+      "sha256": "96863ea928a75ad9f41db5733e1d0f41e2b91fc0ed161610ed60c3aec2bfd93f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_HANDOFF.json",
+      "bytes": 2976,
+      "sha256": "968326599c07ebb99540531ab1d6feddd2a14fb459dd5e53a045ea9df813ac7d",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_INTERPRETATION.md",
+      "bytes": 7327,
+      "sha256": "1c5437fb68e1ff26ad306b53f0d9e546300dfdf9750ac7bcf3d549c7f2ca9e50",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_NEXT_STEP.md",
+      "bytes": 4108,
+      "sha256": "db991e66ab00053d250440a7e61ac96407929c6b3d15bf7968490452750bfcef",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_PLAN.md",
+      "bytes": 3110,
+      "sha256": "cd855d2ea320ca031a16e03d4897463c4fefb53b152375ccf50c708fe844f2bd",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FIRST_REWRITE_RESOURCE_CHECK.json",
+      "bytes": 1962,
+      "sha256": "8bec52cc50a927c3831b1f540d226078fbe7147c667531b15f6e16c070a51226",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/FREEZE.json",
+      "bytes": 87470,
+      "sha256": "3db84ee7ea5ca8ee5b6ff8cf863ea0fa248ec3b8ec64efafbeabb749f373dc56",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/INTERPRETATION.md",
+      "bytes": 7405,
+      "sha256": "2920cc4fe068bb4d16afd2e3bb1d968b5beb5b6a06a0d7fc036c2239c8b4cf28",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/LAUNCH.json",
+      "bytes": 553,
+      "sha256": "f13c7c674fa58f733d09bfad5dc20f66bd5d9fde5e41e6ab2eefca96f5aedeee",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/PRELAUNCH_RESOURCE_CHECK.json",
+      "bytes": 1381,
+      "sha256": "fb0a4ea74af4d088c47ab67f45bd33211137d4d83a72623fbd954d6ffd0acae8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/PREQUALIFICATION_RESOURCE_CHECK.json",
+      "bytes": 822,
+      "sha256": "028587ed786a178d4ed8462c5c825356c395e315db8e8e41a678fd31abf8052a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/PROTOCOL.md",
+      "bytes": 9974,
+      "sha256": "0d79cedc706cbaa88deff390c91400f33889d27deb37d2d46d1261845e07e913",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/QUALIFICATION.json",
+      "bytes": 253,
+      "sha256": "5612465dee808b8f5b5db9a3ead34f98559a6a5c684f980d0a37a547e567f790",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/README.md",
+      "bytes": 4215,
+      "sha256": "09970cc87b4e601347818c8fadce909286b8f4edd622ae5befa981fdb7ba6725",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/REPORT_RECOVERY.md",
+      "bytes": 2143,
+      "sha256": "fb711a86e340ee691be1b59997e6692384490f0c03931516c652b4e5c262c6c6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/RESERVATION.json",
+      "bytes": 9371481,
+      "sha256": "4adf19903a8a06fc637653f1541bd892d9f2ad564cf3885bfb310f28118379c7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/RESULT_INSPECTION.json",
+      "bytes": 420,
+      "sha256": "012e517a456124d229276c9ec09e79769e8c34a3913c89dd007ec328e0aca832",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/SOURCE_MANIFEST.json",
+      "bytes": 114991,
+      "sha256": "3d60e0d589d60efc35b94e4547f169c2b9189e2750a253da85e41fb6e7ed6ff9",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/STARTUP_HANDOFF.json",
+      "bytes": 1816,
+      "sha256": "fccf4a13c218732b26021be561f61178ff1f85b5067f0a6049391df0a77d1ff5",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/analysis.py",
+      "bytes": 5808,
+      "sha256": "81205d827a4cfda1f2b95eb1e61c9158c6aeedda92fc84b3d854c9b9b4d0e4ed",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/audit.py",
+      "bytes": 4080,
+      "sha256": "1d101bd93cf907d5b001f9c0dd1737523befd11e8977d0bfa6c98e364ce6f090",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/common.py",
+      "bytes": 3425,
+      "sha256": "b8bec743c919be424da4761a93b7963fe1b6d0a704720e1dad22c785b5603867",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/design.py",
+      "bytes": 1967,
+      "sha256": "cffce3081fabf5dce72c4ff6c88750e0aa113abbbe9e0723f141b6087586c6b6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/diagnose_fill_decomposition.py",
+      "bytes": 6406,
+      "sha256": "161dd20879eec274d38f76b6de1457384ce374303324b814ac1f36e618acd08a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/diagnose_first_rewrite.py",
+      "bytes": 21238,
+      "sha256": "a3efd4d8d9e7b703341f2ea4f4e399596852f91162f9eb22db9e67b2a9568602",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/execute.py",
+      "bytes": 7949,
+      "sha256": "2759b4a48314e84fb5bf1ecf554321645284e38c9d4947d71233388d076378bf",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/freeze.py",
+      "bytes": 4933,
+      "sha256": "d4b092562249440c1bbf977e3323361f690ed728f0fa2b36059e045a6173d855",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/kernel.py",
+      "bytes": 2215,
+      "sha256": "0da737519ce896eb02ac83924650001c5f54eac0b53ffe1dfb3bf4fd4176c5f7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/qualify.py",
+      "bytes": 9649,
+      "sha256": "702c504f6689beffe73de418395e3ae712379ff10dd511d4058d9ec343861a3b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/recover_report.py",
+      "bytes": 13332,
+      "sha256": "2b14c08dacbc7218f9fb65680b8022de7125f5282d8c6c0f03582a8be6ac12cd",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/reference.py",
+      "bytes": 3083,
+      "sha256": "7f9ce32c737ab8eb844c112c29b8e7ddcdc09272a4937b7684c3e27888168c15",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/run.py",
+      "bytes": 12738,
+      "sha256": "7d54da99b8096727b25b9719f8d52c38e10b1daf3acfbd89d52deb20e2e9c230",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT022/tt019_reference.py",
+      "bytes": 13627,
+      "sha256": "8da3aa6de7a2473816bb1b1dd6f6922dbd632116a7633a7239e410d599aa6953",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/BASELINE_MANIFEST.json",
+      "bytes": 343870,
+      "sha256": "fd8affdb1937a13a7b36161c4fa64cc8081d8e23300b92165b444d3cbb1f30f8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/CLOSEOUT.json",
+      "bytes": 2284,
+      "sha256": "590d47af49f9e14419176c8a388751138c59f19119dee91ba38070edb40f4446",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/COMPLETION_HANDOFF.json",
+      "bytes": 3500,
+      "sha256": "4976017e9d5253216bf9f700ad6e97014f7c4e9a78424b53aa57c7f41185d2a9",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/CURRENT_EXECUTION.json",
+      "bytes": 7407,
+      "sha256": "c2946c184961dc86d1208e0ee2ff46e5994f1ad0a3d1f2a5e22b41939a9af59d",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/EXECUTION.md",
+      "bytes": 5872,
+      "sha256": "ddab2b02a1b53540071adf932b696b377878c2da41ab92651438b89e185d25d0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/FREEZE.json",
+      "bytes": 475580,
+      "sha256": "e881abfd313437c232577523bb3d51a281b807fad4e8a17e7f7ee914e2ffe675",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/INTERPRETATION.md",
+      "bytes": 7044,
+      "sha256": "7bd0145edeb00413b70d9e716bcb2a31ca098b2b44c14df20d070bac1c092749",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/LAUNCH.json",
+      "bytes": 560,
+      "sha256": "f4a2ba5f99358da7815a700bf6d093c5180674a7951b804a9e45433e29033619",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/LAUNCH_HANDOFF.json",
+      "bytes": 2949,
+      "sha256": "92c9f3526a97f23d105817e7cef908f5ec99e003f2062054979ad0be680e8165",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/PRELAUNCH_RESOURCE_CHECK.json",
+      "bytes": 1558,
+      "sha256": "ff45bc81bf14096736dd9434d180e73698c33cb7251deb0b563a8ffc7dfdaa8b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/PREQUALIFICATION_RESOURCE_CHECK.json",
+      "bytes": 1070,
+      "sha256": "fe8c27ac9b51fa5fb60c85d9782ba38a2397aae05ea28f323475dc8b2ceaf01f",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/PROTOCOL.md",
+      "bytes": 6749,
+      "sha256": "407de18fc2198ca9224a46708283c7f37af5ce5033c01896b02e7c939462b827",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/QUALIFICATION.json",
+      "bytes": 253,
+      "sha256": "4f231b19534fbca55c7e51a926c48e04deb54f1aeb698f8ab0691a6876376847",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/README.md",
+      "bytes": 3487,
+      "sha256": "efef6ab135af96749bfe0178560b4efed1fa8bf05ee9ee3a562c58c46aaaecbc",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/RESULT_INSPECTION.json",
+      "bytes": 564,
+      "sha256": "8b310d91013e529b84a0953dec936bd4db9600e1a9983e685071e61f2abf1146",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/SOURCE_MANIFEST.json",
+      "bytes": 114991,
+      "sha256": "c50ac04b498396ae25ff57d59cb9940a9f5e5dc6cda30c4cc62a2eea0895bac8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/analysis.py",
+      "bytes": 5538,
+      "sha256": "cae52c19ba64871e27c3a61841282885c786d5ff6e769208e63605fb2c5107be",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/audit.py",
+      "bytes": 4048,
+      "sha256": "4cfbffc29f6eb9eb33ccde5a5047d482c697f5b2a1f62e651376b67728a055de",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/closeout.py",
+      "bytes": 5718,
+      "sha256": "12878d61078270a3874c7c13a9939ca7570a140d2a3b89f2739c95c9d20f0337",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/common.py",
+      "bytes": 3310,
+      "sha256": "eba4276d8a6677340a44e8bdf80f688f9209573e6e34597990fb052c794ac8fa",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/design.py",
+      "bytes": 1365,
+      "sha256": "0c612c790a448ac1ed2df33ba3f4adfab08543530b4d91a3e374a26ff482f4e9",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/execute.py",
+      "bytes": 7508,
+      "sha256": "5a3807b58ed4ff9a080b1431e49302866eec830b3620d902ceb88a728dbb394b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/freeze.py",
+      "bytes": 3479,
+      "sha256": "3bca2536aa5c1cca361fcf1d7903b41724482be4225b701f0b41b05baf91106e",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/kernel.py",
+      "bytes": 2859,
+      "sha256": "5ff6e3f8cfb29c40a3fbe2b8541af620e83e58226df92b80968a3b3bd1e59857",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/qualify.py",
+      "bytes": 9272,
+      "sha256": "9e2028024dcd944caf454d49da3bcaba8bff9c2e50bffacef41f5a6cdfc67f62",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/reference.py",
+      "bytes": 3083,
+      "sha256": "7f9ce32c737ab8eb844c112c29b8e7ddcdc09272a4937b7684c3e27888168c15",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/resources.py",
+      "bytes": 2243,
+      "sha256": "7d59b4f62528b8231ffd1610fe3779aae4c19d05d21ec501dd7b335fe725d57a",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/run.py",
+      "bytes": 11258,
+      "sha256": "f4a1cc8c31398eb4f35a7a06d35b46e23cf1b67400c37bfd9c78e4ddd882a468",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT023/tt019_reference.py",
+      "bytes": 13627,
+      "sha256": "8da3aa6de7a2473816bb1b1dd6f6922dbd632116a7633a7239e410d599aa6953",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/BASELINE_MANIFEST.json",
+      "bytes": 2564515,
+      "sha256": "31bb1e7a50cec4d50d22c995ba87f496d6f9b4699e301451a7695a9c13ac0cd1",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/CLOSEOUT.json",
+      "bytes": 2346,
+      "sha256": "50990b67f66340e69f9d4d649edccb65519201fbee5b3b71fb4a72454c1e67de",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/COMPLETION_HANDOFF.json",
+      "bytes": 3918,
+      "sha256": "82ab37a138162e3e0205baf31a4b7712161c362323018f2dd1697cc8a7d2c21b",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/CURRENT_EXECUTION.json",
+      "bytes": 7095,
+      "sha256": "2c2c8b5a476e30b30db69411e14237415fef29aa33d8411e84db665236f6a6b7",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/EXECUTION.md",
+      "bytes": 6041,
+      "sha256": "7d49974a88ccefb6f9046a9a72c85b1dd56cec965db36e7fc6db13c5fbd523a5",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/FREEZE.json",
+      "bytes": 1967054,
+      "sha256": "e463034ec8cb14c35da658f578a78d84a1a36bca506732936da74f460cfc1694",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": false,
+      "package_omission": "Large inventory/receipt; SHA-256 retained, original remains in experiment tree."
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/INTERPRETATION.md",
+      "bytes": 7442,
+      "sha256": "8669aa69f41ba769fd48699da700ecacbe6e85eebf9ac4ed104303aa4c5ed958",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/LAUNCH.json",
+      "bytes": 554,
+      "sha256": "86e979cd2b94bfab7b46d56f6619cd09b948211f923dab76886f19ad20b016a8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/LAUNCH_HANDOFF.json",
+      "bytes": 3375,
+      "sha256": "fc3e03a27ddc02bb4bcab8e728784891b7df2e7134dd32577e79b686959ad5db",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/PAIRED_RECEIVING_PROPOSAL.md",
+      "bytes": 5831,
+      "sha256": "8feac5085d9ac92abe9d4e7c77571a0d55675f14ea7f28959c4572942ef8eaba",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/PRELAUNCH_RESOURCE_CHECK.json",
+      "bytes": 1476,
+      "sha256": "aa007395e88b11e9127f5c01e6ee5a5176f1c1b0b0d37e3fcebc19ad4c631b33",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/PREQUALIFICATION_RESOURCE_CHECK.json",
+      "bytes": 937,
+      "sha256": "61e0e66f21245b760b3dfe77526c075f3f74ffbb532f91a8fb6235a01ac0e9e0",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/PROTOCOL.md",
+      "bytes": 7052,
+      "sha256": "7ea295e54cec9e66333fb69610534283fa6263acbf3fe2fd325851d7d221d7b3",
+      "role": "retained interpretation/protocol",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/QUALIFICATION.json",
+      "bytes": 253,
+      "sha256": "d46b0adfe5dab3984cdcd51d386a27fb3f02d02672f8de65402f5dc49f1d92f6",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/README.md",
+      "bytes": 3438,
+      "sha256": "6f1838f37e1ae0f266ddecb3140e84561784de92da4184533e7317fc0e478f30",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/RESULT_INSPECTION.json",
+      "bytes": 564,
+      "sha256": "9ef8f6fb6c541556a2850bb87070e5b65f014024dc8f97d0026d288ef50027a8",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/SOURCE_MANIFEST.json",
+      "bytes": 115392,
+      "sha256": "a586eae556d4c379a5ab8b0b5c96634a1c879ce7caa5192058175eb4f4677b04",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/STATUS_CHECK.json",
+      "bytes": 322,
+      "sha256": "f1b7a456735f6333605a32f59bd12b76c2b866320fc33179a07c10f2538bf636",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/analysis.py",
+      "bytes": 7061,
+      "sha256": "59276eae016fe3955ab02aefec5c006ea69cd6d9b02a56333d81b96043f51daf",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/audit.py",
+      "bytes": 2908,
+      "sha256": "6cd63ea9f06a885aeae1a858c364ea59b6b76a8709209c72de42db8b39ed3bea",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/baseline.py",
+      "bytes": 4455,
+      "sha256": "3b08e66e67236d3b423584b33c904b4c07ead64055e12226ea219813da74be73",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/closeout.py",
+      "bytes": 5775,
+      "sha256": "ce479caecbc501d7c290ecd86b76a1e4b6f5ff23d4a48a919ea9e7f3331e3205",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/common.py",
+      "bytes": 3186,
+      "sha256": "779ec3422cf50d8f5c771767c9dbb5e10ca46a5d85bd6ad9eef4ac6271620a92",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/design.py",
+      "bytes": 1678,
+      "sha256": "2c57feec29d6d43089818fc366c33e9ac82d9ac98c1a791c95504c32ce210c98",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/execute.py",
+      "bytes": 7573,
+      "sha256": "72cfe556ccb091665a8f3ee52f8d81e3a0b471899c388b9f7d8598b233e8e5eb",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/freeze.py",
+      "bytes": 3582,
+      "sha256": "4cb9a850e6ad8c9414f93554cfce150641613562e90e9152e9a8f22416a51685",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/inherited22_audit.py",
+      "bytes": 4080,
+      "sha256": "1d101bd93cf907d5b001f9c0dd1737523befd11e8977d0bfa6c98e364ce6f090",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/inherited23_kernel.py",
+      "bytes": 2859,
+      "sha256": "5ff6e3f8cfb29c40a3fbe2b8541af620e83e58226df92b80968a3b3bd1e59857",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/kernel.py",
+      "bytes": 1431,
+      "sha256": "aa593796704b9beeeaea4e196a64be3ef21c45648bee1c6ad50eae6c6731d169",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/prepare.py",
+      "bytes": 5448,
+      "sha256": "6f2b2b339030a89fb12fe0e760dfdfd78ccee7a37e5c79647c839ef3d5f30d20",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/qualify.py",
+      "bytes": 11979,
+      "sha256": "dde0683533f60f31e4845b0aa89a3e81b610b33d0b34ae8b25309540a6dc818c",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/reference.py",
+      "bytes": 3083,
+      "sha256": "7f9ce32c737ab8eb844c112c29b8e7ddcdc09272a4937b7684c3e27888168c15",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/resources.py",
+      "bytes": 2243,
+      "sha256": "083534d0b758652eb2a38cabc35800175deb7d2c6bf783556cff74edd24e1a32",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/run.py",
+      "bytes": 14274,
+      "sha256": "3f6ff39f737e023ea846e7109e5857eaa7e2b7413574e1987555d2a8a1809b47",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    },
+    {
+      "path": "experiments/theory-tests-lane/TT024/tt019_reference.py",
+      "bytes": 13627,
+      "sha256": "8da3aa6de7a2473816bb1b1dd6f6922dbd632116a7633a7239e410d599aa6953",
+      "role": "supporting source or provenance; archived, not independently audited in full",
+      "included_in_package": true
+    }
+  ],
+  "verification": "Selected reports/protocols and receipt consistency, source archive byte identities, and arithmetic of reported counts; no raw field replay, new bootstrap, fit or simulation. Implementation snapshots are provenance, not a claim of full independent implementation audit.",
+  "raw_archives_available_in_checkout": false,
+  "raw_run_receipts_report_same_program_verification": true,
+  "not_selected": "Other completed Hopfield, cellular, FEP, L22 and theory results remain in the dated lane review. Unfinished experiments supply no outcomes. No public export or URL availability is claimed.",
+  "package_member_count": 251
+}

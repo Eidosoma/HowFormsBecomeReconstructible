@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-17T16:50:35.510581+00:00",
+  "status": "CLOSED",
+  "decision": "UNRESOLVED",
+  "run": "pilot_v1",
+  "wall_seconds": 1723.8356898619968,
+  "verified_files": {
+    "inputs": 618,
+    "outputs": 745
+  },
+  "all_four_new_replicates_complete": true,
+  "independent_scalar_audit": true,
+  "findings": {
+    "matched": {
+      "repeatability": {
+        "estimate": 0.023681640625,
+        "standard_error": 0.01773132117567573,
+        "lower": -0.014111775837068463,
+        "upper": 0.06147505708706846,
+        "zero_variance_caution": false
+      },
+      "mean_benefit": {
+        "estimate": 0.01171875,
+        "standard_error": 0.028077940954228938,
+        "lower": -0.04812796448714549,
+        "upper": 0.07156546448714549,
+        "zero_variance_caution": false,
+        "block_values": [
+          0.0,
+          0.0625,
+          -0.0625,
+          0.125,
+          -0.25,
+          0.0625,
+          -0.0625,
+          0.0625,
+          0.0625,
+          0.0,
+          -0.0625,
+          0.1875,
+          -0.0625,
+          -0.125,
+          0.125,
+          0.125
+        ]
+      },
+      "events": {
+        "rescue": {
+          "count": 21,
+          "fraction": 0.08203125
+        },
+        "harm": {
+          "count": 18,
+          "fraction": 0.0703125
+        },
+        "both_pass": {
+          "count": 173,
+          "fraction": 0.67578125
+        },
+        "neither_pass": {
+          "count": 40,
+          "fraction": 0.171875
+        }
+      }
+    },
+    "independent": {
+      "repeatability": {
+        "estimate": 0.010986328125,
+        "standard_error": 0.006097639757807765,
+        "lower": -0.0020104833657665824,
+        "upper": 0.023983139615766584,
+        "zero_variance_caution": false
+      },
+      "mean_benefit": {
+        "estimate": 0.00390625,
+        "standard_error": 0.021702256927084027,
+        "lower": -0.042351015664854746,
+        "upper": 0.050163515664854746,
+        "zero_variance_caution": false,
+        "block_values": [
+          -0.1875,
+          0.125,
+          0.0,
+          -0.0625,
+          0.0,
+          0.0625,
+          0.125,
+          -0.0625,
+          -0.0625,
+          0.0,
+          0.0625,
+          0.0625,
+          -0.0625,
+          0.0,
+          0.125,
+          -0.0625
+        ]
+      },
+      "events": {
+        "rescue": {
+          "count": 12,
+          "fraction": 0.05078125
+        },
+        "harm": {
+          "count": 12,
+          "fraction": 0.046875
+        },
+        "both_pass": {
+          "count": 188,
+          "fraction": 0.734375
+        },
+        "neither_pass": {
+          "count": 40,
+          "fraction": 0.16796875
+        }
+      }
+    }
+  },
+  "interpretation": "Neither noise regime has a resolved positive between-packet conditional-benefit variance under the fixed descriptive criterion. Mean net repair benefit is also unresolved in both regimes. The earlier favorable independent-noise point estimate was not reproduced in these four new futures; this is not a significance test of the difference between studies.",
+  "scope": "Development measurement on exposed founders; no new-founder validation, qualified benefit scheduler, repair efficacy claim or RDT-specific evidence.",
+  "automatic_successor": false,
+  "new_models_fitted": 0,
+  "bound_sha256": {
+    "protocol.json": "96a9a408dd74ca943094515c5d807977c0b091909b5c7e7728fe82b5eb572e2f",
+    "jobs/pilot_v1/inputs/INPUTS.json": "fe596c4be15fb322bd55669665bb67b3358d67987c672a005836820b8a2aecb8",
+    "runs/pilot_v1/OUTPUTS.json": "1cca49d8a25f6454b0c1a17dd0b8cd5021585160e10c0597025b0d111510c9ad",
+    "runs/pilot_v1/COMPLETE.json": "ded24ce6426066fedbdaf5ac137da8ed6b12617a5a916134294571742ad2cc4a",
+    "runs/pilot_v1/VERIFICATION.json": "b54b4537824e135477cae45ab42d15519fa97bb839ee48b105d58e74960b6a95",
+    "runs/pilot_v1/ANALYSIS.json": "dcbcd2bdf40bd46027364931b473544978c680640e70e07137d7006cad75447f",
+    "runs/pilot_v1/REPORT.md": "b41e361726ee69f504db0170a442386e73f36a4294da71edcb99aa86dd9cfde9"
+  }
+}

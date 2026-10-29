@@ -21,8 +21,7 @@ def main():
             elif hashlib.sha256(p.read_bytes()).hexdigest() != row['sha256']:
                 errors.append('Changed source: '+row['path'])
             checked += 1
-    generated = ROOT/'reproducibility/public-files.json'
-    if generated.exists():
+    for generated in sorted((ROOT/'reproducibility').glob('public-files*.json')):
         for row in json.loads(generated.read_text()):
             p = ROOT/row['path']
             if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:
@@ -32,9 +31,13 @@ def main():
     allowed_paths = {'paper/v1.1/how-forms-become-reconstructible-v1.1.pdf',
                      'paper/v1.1/how-forms-become-reconstructible-supporting-v1.1.pdf',
                      'paper/v1.2/how-forms-become-reconstructible-v1.2.pdf',
-                     'paper/v1.2/how-forms-become-reconstructible-supporting-v1.2.pdf'}
+                     'paper/v1.2/how-forms-become-reconstructible-supporting-v1.2.pdf',
+                     'paper/v2.1/how-forms-become-reconstructible-v2.1.pdf',
+                     'paper/v2.1/how-forms-become-reconstructible-supporting-v2.1.pdf',
+                     'paper/v2.4/how-forms-become-reconstructible-v2.4.pdf',
+                     'paper/v2.4/how-forms-become-reconstructible-supporting-v2.4.pdf'}
     if set(publications) != allowed_paths:
-        errors.append('Publication exception does not match the four authorized versioned PDFs')
+        errors.append('Publication exception does not match the eight authorized versioned PDFs')
     for name, item in publications.items():
         p = ROOT/name
         if not p.is_file() or p.stat().st_size != item['bytes'] or hashlib.sha256(p.read_bytes()).hexdigest() != item['sha256']:

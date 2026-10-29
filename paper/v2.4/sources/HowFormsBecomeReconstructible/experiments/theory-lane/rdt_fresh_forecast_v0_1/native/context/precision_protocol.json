@@ -1,0 +1,197 @@
+{
+  "version": "0.1",
+  "status": "FROZEN_FRESH_BLOCK_PRECISION_PILOT_NOT_FORECAST_CONFIRMATION",
+  "question": "Does the fixed32 ordinary successor-success predictor meet the unchanged repeat-forecast precision requirement on freshly generated acquisition blocks?",
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "beta": 3.0,
+    "kind": "native exact full rewrite from final body"
+  },
+  "acquisition": {
+    "namespace": "RDT_successor_precision_v0_1_acquisition",
+    "blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "stage": "pilot",
+    "histories": [
+      "exact_rewrite",
+      "single_tolerance_rewrite",
+      "spaced_tolerance_rewrite",
+      "clustered_tolerance_rewrite"
+    ],
+    "config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "cycle": {
+      "generations": 32,
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "write_steps": 128
+    },
+    "generations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "tolerance_generations": {
+      "exact_rewrite": [],
+      "single_tolerance_rewrite": [
+        3
+      ],
+      "spaced_tolerance_rewrite": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "clustered_tolerance_rewrite": [
+        3,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "teaching": "E016 consistent regime: positive cue and coordinated negative cue use the same base draws with opposite polarity; four paired opposite-rule founders, four recipients. Fresh namespace in every teaching, injury and renewal stream.",
+    "boundary": "g14 outgoing packet and eleven TT008 features. Matched acquisition noise; original writer except four declared historical schedules. Causally discarded holding steps remain omitted as in prior verified replay.",
+    "audit": "Separate flat teaching replay for every block; four-history flat-reader and writer checks at g1,g3,g14 for founder0/recipient0; sparse independent transfer for every g14 record. Benchmark reconstructs exposed block34000 and requires exact archived four-history g14 packets and expression."
+  },
+  "selection": {
+    "namespace": "RDT_successor_precision_v0_1_selection",
+    "maximum_records": 64,
+    "per_block_per_stratum": 2,
+    "rule": "Generate all16 blocks and all64 g14 records/block before probing. Within each block/current-expression stratum select the first SHA256-ranked record of each task rule if both exist; otherwise first two available. If fewer than two exist retain available records. No replacement blocks or outcome-based extension.",
+    "inputs": "Only key,current-expression class,task rule; no forecasts,probe results or future outcomes.",
+    "minimum_records_per_stratum": 24,
+    "minimum_blocks_per_stratum": 12,
+    "rationale": "Bounded feasibility replication with twice the previous number of acquisition blocks and up to32 records/class. Coverage minima prevent advancement from a depleted failure class; operational coverage, not a power calculation."
+  },
+  "forcing": {
+    "namespace": "RDT_successor_precision_v0_1_probe",
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "stage": "pilot",
+    "seed": "First16 SHA256 bytes of compact JSON [namespace,stage,*record_key,probe,purpose,channel], little endian, PCG64.",
+    "coupling": "Regimes share base draws and injuries. Matched copies first cue birth/noise to second; independent retains both. Writer/evaluation use distinct purpose keys; unchanged and rewritten evaluations share B.",
+    "injury": "24 distinct uniformly selected non-port cells/read; all three2x2 ports protected.",
+    "repeats": 2,
+    "probes_per_repeat": 32,
+    "offsets": [
+      0,
+      32
+    ],
+    "direct_probes_per_repeat": 8
+  },
+  "models": {
+    "file": "FROZEN_MODELS.json",
+    "sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce",
+    "candidate": "Frozen all512 rewrite_32 ridge-logistic model: eleven TT008 features plus qRewrite32.",
+    "comparator": "Frozen all512 retained_8 model chosen by previous full-development rule.",
+    "boundary_reference": "Frozen all512 TT008. Repeat difference is structurally zero because B is fixed; this is not forecast accuracy evidence.",
+    "fitting": "No coefficient,scaling,feature,budget,threshold or rival selection on fresh data. No fitting.",
+    "source_limit": "Original PORTABLE_MODELS development_gate_pass=false retained byte-for-byte. New fixed-budget attempt cannot reverse failed nested selector."
+  },
+  "measurement": {
+    "candidate_native_reads_per_repeat": 64,
+    "comparator_native_reads_per_repeat": 8,
+    "combined_native_reads_per_repeat": 72,
+    "combined_native_reads_per_record": 288,
+    "maximum_native_reads": 18432,
+    "maximum_flat_probe_audit_reads": 768,
+    "audit": "Each record/regime/repeat: first writer independently evolved with flat reader, then its own successor and original evaluated under B; bodies,windows,outgoing must agree byte-for-byte.",
+    "evidence": "Retain original packet,writer/successor arrays for64 probes/regime,direct arrays for16 probes,masks,births,windows,ends,outgoing,forcing hashes,predictions. Evaluation writes discarded causally."
+  },
+  "endpoint": {
+    "name": "Absolute difference between two forecasts from independent32-probe repeats with fixed B.",
+    "primary": "Empirical linear-interpolated p90 separately by current-expression stratum and noise regime; also maximum and exceedance counts.",
+    "limit": 0.1,
+    "uncertainty": "Descriptive95% acquisition-block percentile bootstrap,5000 resamples preserving relatives,repeats,regimes. Not a population assurance bound.",
+    "bootstrap_seed": 2026101501,
+    "bootstrap_replicates": 5000,
+    "coverage": "Both strata require >=24 selected records across >=12 of16 fixed blocks.",
+    "pass_rule": "FRESH_PRECISION_SCREEN_PASS only if coverage,all four candidate p90<=.10,frozen inputs and independent evidence audit pass.",
+    "fail_rule": "Any p90>.10: FRESH_PRECISION_SCREEN_FAILED. Coverage shortfall: FRESH_PRECISION_COVERAGE_INSUFFICIENT. Numerical/evidence failure: execution FAILED, no scientific verdict.",
+    "comparator": "Report both comparators; candidate need not be more repeatable, since precision does not establish useful prediction.",
+    "continuation": "A pass permits pricing a separately frozen fresh-outcome test. No g15..32 futures,Brier,calibration,automatic successor,budget increase or replacement seeds."
+  },
+  "candidate_test_box": {
+    "properties": "Fixed B11+qRewrite32.",
+    "prediction": "p90 absolute repeat-forecast difference<=.10 in both strata and regimes.",
+    "held_out_change": "16 new acquisition blocks,disjoint namespace,fixed coefficients; matched/independent measurement noise; acquisition remains matched.",
+    "comparator": "Frozen retained8 at8 reads/repeat and TT008; candidate64 reads/repeat.",
+    "rejection": "Any precision group>.10; inadequate coverage yields insufficient evidence; no long-horizon claim."
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "maximum_resident_bytes": 2000000000,
+    "maximum_saved_bytes": 2000000000,
+    "minimum_free_disk_bytes": 4000000000,
+    "qualification_wall_ceiling_seconds": 300,
+    "benchmark_wall_ceiling_seconds": 600,
+    "pilot_wall_ceiling_seconds": 36000,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_successor": false,
+    "benchmark": "Full native acquisition/legacy alignment and two-regime64-probe synthetic measurement. Forecast1.5*(16*acquisition_seconds+64*two_regime_measurement_seconds)+300 including audit,persistence; must fit10h."
+  },
+  "limits": [
+    "Fixed32 was chosen from exposed development; this tests fresh repeatability of an outcome-informed choice.",
+    "No RDT novelty,calibration,long-horizon advantage or population failure frequency.",
+    "Balanced selected strata are not population proportions.",
+    "Previous failed RDT models and nested selector retain their verdicts.",
+    "TT018 and paired-continuation status/outcomes excluded."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "changed_files": [
+    "qualify.py"
+  ],
+  "failed_attempt": "native_v1",
+  "failed_body_fixture_readouts": 54,
+  "failed_inputs_verified": 43,
+  "failed_sha256": "d39369ef46af25f7bb2026d6b58fa1b4fa44611919c8cd00fb15cc0de546a0a5",
+  "failure": "Final qualification bookkeeping indexed the one-future zero-noise fixture instead of the two-future native fixture.",
+  "full_requalification_required": true,
+  "new_scientific_cohort": false,
+  "remedy": "Use a separate zero_panel variable; native dynamics, study design, models, analysis and criteria unchanged.",
+  "retained_full_native_chain_scope": {
+    "continuation_contexts": 108,
+    "native_arrays": 225,
+    "optimizer_checks": 38,
+    "terminal_contexts": 6
+  },
+  "status": "PASS",
+  "utc": "2026-10-12T15:53:41.254695+00:00"
+}

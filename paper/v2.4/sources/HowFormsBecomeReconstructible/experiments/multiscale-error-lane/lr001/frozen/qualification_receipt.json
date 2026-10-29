@@ -1,0 +1,102 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "17d735b5c3aaab5c6d4594aaae07cd8d80dc1e969a4accc371651a0ad8a24c55",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/lr001/preflight",
+ "checked_utc": "2026-10-26T10:16:00Z",
+ "wall_s": 73.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "A/IS": true,
+    "E/IS": true,
+    "C/IS": true,
+    "T/IS": true,
+    "L/IS": true
+   }
+  },
+  "Q3_engine_equivalence": {
+   "pass": true,
+   "items": {
+    "F0/C_none=gw001_rel": true,
+    "F0/C_plain=gw001_rel+code": true,
+    "F0/L_none_noscar=gw001_simulate_B_rel": true,
+    "IS/C_none=gw001_rel": true,
+    "IS/C_plain=gw001_rel+code": true,
+    "IS/L_none_noscar=gw001_simulate_B_rel": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 4.440892098500626e-16,
+   "bonds_exact": true,
+   "items": {
+    "E/IS/0.001/both/case0": 0.0,
+    "C/IS/hybrid+trust/relink8/case1": 4.440892098500626e-16,
+    "T/BL/0.003/default/case2": 4.440892098500626e-16,
+    "L/F0/body/case3": 0.0
+   }
+  },
+  "Q5_units_aliases": {
+   "pass": true,
+   "items": 48,
+   "failed": []
+  },
+  "Q6_bond_noise_rate": {
+   "pass": true,
+   "shared_across_families": true,
+   "rates": {
+    "0.0001/none": 9.93e-05,
+    "0.0001/hebb": 9.93e-05,
+    "0.0001/parity": 9.93e-05,
+    "0.0001/both": 9.93e-05,
+    "0.0003/none": 0.0002979,
+    "0.0003/hebb": 0.0002979,
+    "0.0003/parity": 0.0002979,
+    "0.0003/both": 0.0002979,
+    "0.001/none": 0.0009966,
+    "0.001/hebb": 0.0009966,
+    "0.001/parity": 0.0009966,
+    "0.001/both": 0.0009966,
+    "0.002/none": 0.0019929,
+    "0.002/hebb": 0.0019929,
+    "0.002/parity": 0.0019929,
+    "0.002/both": 0.0019929,
+    "0.003/none": 0.002996,
+    "0.003/hebb": 0.002996,
+    "0.003/parity": 0.002996,
+    "0.003/both": 0.002996
+   }
+  },
+  "Q7_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q8_efficacy": {
+   "pass": true,
+   "failed": []
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 0.1,
+   "forecast_cpu_h": 0.961
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_C.csv": 25363,
+    "contrasts_E.csv": 5723,
+    "contrasts_T.csv": 631,
+    "summary.json": 130134,
+    "predictions_scored.json": 3877,
+    "TABLES.md": 21128
+   }
+  }
+ }
+}

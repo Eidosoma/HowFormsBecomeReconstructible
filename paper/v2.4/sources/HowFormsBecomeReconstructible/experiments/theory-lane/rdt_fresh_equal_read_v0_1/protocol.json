@@ -1,0 +1,123 @@
+{
+  "version": "fresh_equal_read_0.1_amendment_1",
+  "status": "PENDING_RUNNER_QUALIFICATION",
+  "namespace": "RDT_fresh_equal_read_v0_1",
+  "qualification_namespace": "RDT_fresh_equal_read_runner_qualification_v0_1",
+  "stage": "equal_read_fresh_v1",
+  "models_sha256": "7650b66727cd3779ba8e9d95b2aac8f6b3c3bcdbfd5e940ee3a6e3782e2488ca",
+  "regimes": [
+    "matched",
+    "independent"
+  ],
+  "repeats": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cohort": {
+    "first_block": 0,
+    "eligible_blocks": 80,
+    "maximum_attempts": 136,
+    "wave_size": 8,
+    "selection": "Both expression classes required; unchanged boundary-only hash/rule-balanced up to two per class; first 80 eligible IDs in complete ascending eight-attempt waves. Retain every rejected and surplus attempt."
+  },
+  "resources": {
+    "workers": 8,
+    "shared_threads": 12,
+    "hard_wall_seconds": 21600,
+    "minimum_free_bytes": 2000000000,
+    "maximum_saved_bytes": 60000000000,
+    "maximum_worker_resident_bytes": 1500000000,
+    "automatic_retry": false,
+    "automatic_resume": false,
+    "automatic_extension": false,
+    "automatic_polling": false
+  },
+  "qualification": {
+    "eligible_blocks": 2,
+    "maximum_attempts": 8,
+    "first_block": -8,
+    "wave_size": 8,
+    "hard_wall_seconds": 1800,
+    "legacy_block": 34000,
+    "fixture": "-8,-7 are ineligible; -6 has4 rows, -5 has3 with a singleton pass class; remaining4 are eligible surplus. Synthetic packets use existing fixed fixture.",
+    "workers": 4
+  },
+  "analysis": {
+    "margins": {
+      "direct64": 0.0,
+      "pooled32": 0.0,
+      "direct8": 0.0,
+      "tt008": 0.002
+    },
+    "alpha": 0.025,
+    "weights": "Equal acquisition block, equal current_pass class, equal packet within class, equal individual squared losses across four futures.",
+    "interval": "mean +/- t.ppf(.975,B-1)*sample_sd/sqrt(B)",
+    "joint": "All four equal-read primary lower limits strictly exceed zero. Direct8 and TT008 remain mandatory descriptive secondary contrasts; no all-eight claim. Individual intervals are not simultaneous.",
+    "complete_only": true,
+    "diagnostics": "Weighted calibration in ten fixed bins and additive loss mass by history and current expression; no subgroup gate.",
+    "primary_rivals": [
+      "direct64",
+      "pooled32"
+    ],
+    "secondary_rivals": [
+      "direct8",
+      "tt008"
+    ]
+  },
+  "seed_contract": {
+    "adapter": "acquisition.namespace, selection.namespace, forcing.namespace, forcing.future_namespace := scope namespace + /acquisition, /selection, /probe, /future",
+    "probe_stage": "equal_read_fresh_v1",
+    "future_stage": "equal_read_fresh_v1/replicate_<r>",
+    "scientific_ids": "0..135",
+    "qualification_ids": "-8..-1",
+    "pairing": "Regime omitted from seed; same base forcing and injuries, matched copies cue0 into cue1. Independent futures distinguished by replicate stage; distinct probe/future namespaces. Each regime propagates its own packets."
+  },
+  "endpoint": "18 exact rewrites g15..32 from g14, followed by fresh g33 test. All4 task-aligned last32 port means strictly>.25. Earlier failures do not stop the path.",
+  "forecast_barrier": "Independently verify all five fixed forecasts and their measurement evidence over the complete selected cohort, then seal them before any continuation. No fit or recalibration.",
+  "native_read_costs": {
+    "successor32_per_packet_regime": 64,
+    "direct64_per_packet_regime": 64,
+    "pooled32_per_packet_regime": 64,
+    "direct8_per_packet_regime": 8,
+    "tt008_extra": 0,
+    "shared_measurement_per_packet_regime": 128,
+    "measurement_flat_per_packet_regime": 4,
+    "acquisition_per_attempt": 896,
+    "acquisition_flat_per_attempt": 12,
+    "future_per_packet_regime_repeat": 19,
+    "future_flat_per_block_regime_repeat": 19
+  },
+  "claim_boundary": "Ordinary forecasting in a selected fresh-founder panel; no RDT-specific law, endogenous maintenance or repair-benefit scheduler. Historical failed selectors/reductions remain failed.",
+  "planning_limits": "Development-selected model/domain, effect-size uncertainty, projected repeat variance and non-Gaussian block gains limit power predictions. The SD inflation is a sensitivity, not an exact confidence bound for the variance-component model. Full-cap runtime forecast 21259.318152130087 seconds; fixed 136-attempt cap can prevent complete acquisition. No inference for an incomplete cohort.",
+  "launch": "Qualification cannot launch science. A later explicit scientific invocation requires a matching successful frozen qualification and fresh CPU admission; no automatic successor.",
+  "resource_basis": {
+    "budget_review_results_sha256": "8c9774d6a39c42889c2795896e184efb6b5c6b3b66876f61472a3d187447fcd2",
+    "benchmark_results_sha256": "1bf9f6cc71e687b69952243fd97dedbbde647618662d4bc12e19d11f796238c0",
+    "conditional_power": 0.8264364651958653,
+    "full_cap_forecast_seconds": 21259.318152130087,
+    "qualification_forecast_seconds": 1575.7144587781804,
+    "claim_boundary": "Fresh conditional forecast superiority at equal native-read budgets would be useful forecasting evidence. It would not uniquely establish RDT, endogenous maintenance or a repair-benefit scheduler."
+  },
+  "amendment": {
+    "number": 1,
+    "parent_protocol_sha256": "45bd347aa822f9bde0d740509a6c0ebe7d661785329677c1c81cc429b4e801a7",
+    "changed": [
+      "Maximum acquisition attempts: 160 to 136",
+      "Scientific acquisition ID ceiling: 159 to 135"
+    ],
+    "unchanged": [
+      "Eligible founder-block target",
+      "All four futures",
+      "All five fixed predictors and coefficients",
+      "Both noise regimes and native endpoint",
+      "Four equal-read primary contrasts, alpha and margins",
+      "Full-cohort forecast barrier and complete-only inference",
+      "Six-hour hard deadline"
+    ],
+    "reason": "Retain the shortest original complete-cohort design. Select the largest complete eight-attempt cap no greater than its original cap that leaves at least 300 seconds inside six hours, retaining every measured phase maximum and the 1.5 multiplier.",
+    "scientific_outcomes_available_when_amended": 0,
+    "automatic_scientific_launch": false
+  }
+}

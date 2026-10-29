@@ -1,0 +1,86 @@
+{
+  "active_or_cpu_consuming_threads": 9,
+  "active_threads": [
+    {
+      "cpu_seconds": 0.01,
+      "pid": 45422,
+      "script": "supervise_transmission.py",
+      "state": "S",
+      "ticks": 2040,
+      "tid": 45422
+    },
+    {
+      "cpu_seconds": 0.93,
+      "pid": 120190,
+      "script": "run_transmission.py",
+      "state": "R",
+      "ticks": 27534,
+      "tid": 120190
+    },
+    {
+      "cpu_seconds": 0.91,
+      "pid": 120191,
+      "script": "run_transmission.py",
+      "state": "R",
+      "ticks": 27261,
+      "tid": 120191
+    },
+    {
+      "cpu_seconds": 0.94,
+      "pid": 120192,
+      "script": "run_transmission.py",
+      "state": "R",
+      "ticks": 26623,
+      "tid": 120192
+    },
+    {
+      "cpu_seconds": 0.53,
+      "pid": 121651,
+      "script": "run.py",
+      "state": "R",
+      "ticks": 13707,
+      "tid": 121651
+    },
+    {
+      "cpu_seconds": 0.95,
+      "pid": 121672,
+      "script": "run.py",
+      "state": "R",
+      "ticks": 13622,
+      "tid": 121672
+    },
+    {
+      "cpu_seconds": 0.52,
+      "pid": 121679,
+      "script": "run.py",
+      "state": "R",
+      "ticks": 12519,
+      "tid": 121679
+    },
+    {
+      "cpu_seconds": 0.98,
+      "pid": 121688,
+      "script": "run.py",
+      "state": "R",
+      "ticks": 12833,
+      "tid": 121688
+    },
+    {
+      "cpu_seconds": 0.95,
+      "pid": 121715,
+      "script": "run.py",
+      "state": "R",
+      "ticks": 13306,
+      "tid": 121715
+    }
+  ],
+  "ceiling": 12,
+  "count_including_sleeping_control_threads": 20,
+  "initial_all_thread_count_check": "FAILED_OVERCONSERVATIVE_20_INCLUDING_SLEEPING_CONTROLLERS",
+  "planned_numerical_threads": 1,
+  "purpose": "Admission for one short saved-array diagnostic; no scientific progress polling",
+  "recorded_utc": "2026-10-15T18:01:13.096677+00:00",
+  "sample_seconds": 1.0399014200011152,
+  "scope": "Read-only scheduler state and CPU ticks; no other run outputs inspected",
+  "within_limit": true
+}

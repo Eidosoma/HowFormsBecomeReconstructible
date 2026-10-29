@@ -1,0 +1,522 @@
+{
+  "version": "2.1",
+  "status": "PASS",
+  "checked_utc": "2026-10-16T17:07:21.876778+00:00",
+  "baseline_archive_verified": true,
+  "protected_files_unchanged": 37,
+  "old_evidence_entries_unchanged": 91,
+  "old_methods_unchanged": 45,
+  "evidence_notes": 97,
+  "methods_sections": 51,
+  "figures": {
+    "MANUSCRIPT.md": [
+      "paper_assets/figures/figure-01-four-questions-v6.png",
+      "paper_assets/figures/figure-simulator-overview-v2.png",
+      "paper_assets/figures/figure-chapter-acquisition-v1.png",
+      "paper_assets/figures/data-historical-specificity-v0.18.png",
+      "paper_assets/figures/data-editable-lineage-history-v1.png",
+      "paper_assets/figures/figure-chapter-reconstruction-v1.png",
+      "paper_assets/figures/data-reciprocal-repair-v1.png",
+      "paper_assets/figures/data-serial-alignment-v2.png",
+      "paper_assets/figures/data-reconstruction-history-v1.png",
+      "paper_assets/figures/figure-active-forms-v4.png",
+      "paper_assets/figures/data-functional-renewal-v2.png",
+      "paper_assets/figures/data-rebuilding-regimes-v0.20.png",
+      "paper_assets/figures/data-tt008-forecast-v0.20.png",
+      "paper_assets/figures/data-tt014-repair-v0.20.png",
+      "paper_assets/figures/figure-chapter-continuation-v1.png",
+      "paper_assets/figures/figure-discussion-forms-v1.png"
+    ],
+    "SUPPORTING_INFORMATION.md": [
+      "paper_assets/figures/data-reference-acquisition-v1.png",
+      "paper_assets/figures/data-replacement-loss-v1.png",
+      "paper_assets/figures/figure-02-continuity-tests-v1.png",
+      "paper_assets/figures/figure-03-collective-capacity-v2.png",
+      "paper_assets/figures/data-e014-sign-amplitude-v0.18.png"
+    ]
+  },
+  "main_supporting_mirrors_match": true,
+  "abstract_words": 295,
+  "main_pre_reference_words": {
+    "v2.0": 9076,
+    "v2.1": 9879
+  },
+  "source_files_fingerprinted": 257,
+  "source_package_members_verified": 251,
+  "source_package_bytes": 847466,
+  "selected_count_arithmetic": {
+    "E065_final_percent": 85.25390625,
+    "E065_mixture_percent": 30.859375,
+    "E065_matched_earlier_percent": 76.171875,
+    "E065_sign_benefit_pp": 45.3125,
+    "E068_recovery_pp": 29.1015625,
+    "E073_immediate_pp": 7.32421875,
+    "E073_next_pp": -5.6640625,
+    "TT018_terminal_pp": 4.19921875
+  },
+  "TT021_claim_verdicts": {
+    "body_source": "PRACTICAL_SUPERIORITY_PASS",
+    "informative_record_harm": "NOT_CONFIRMED",
+    "matched_writer": "PRACTICAL_SUPERIORITY_PASS",
+    "memory_refresh": "NOT_CONFIRMED",
+    "primary_capture_gain": "PRACTICAL_SUPERIORITY_PASS"
+  },
+  "new_local_links_checked": [
+    {
+      "source": "MANUSCRIPT.md",
+      "target": "reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "MANUSCRIPT.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "MANUSCRIPT.md",
+      "target": "EXTENDED_EVIDENCE_V2.1.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "EXTENDED_EVIDENCE_V2.1.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT021/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT021/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT021/CONTINUATION_AMENDMENT.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT021/CLOSEOUT.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT018/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT018/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT018/CLOSEOUT.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/analysis/closeout_v1.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/analysis/closeout_v1.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/analysis/closeout_v1.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT022/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT023/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT024/PROTOCOL.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT024/INTERPRETATION.md"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "experiments/theory-tests-lane/TT024/CLOSEOUT.json"
+    },
+    {
+      "source": "SUPPORTING_INFORMATION.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT021/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT021/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT021/CONTINUATION_AMENDMENT.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT021/CLOSEOUT.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT018/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT018/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT018/CLOSEOUT.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E065_fresh_compatibility_confirmation/analysis/closeout_v1.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E068_fresh_recovery_confirmation/analysis/closeout_v1.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/E073_saved_cohort_reversal_replication/analysis/closeout_v1.json"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT022/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT023/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT024/PROTOCOL.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT024/INTERPRETATION.md"
+    },
+    {
+      "source": "EVIDENCE_LEDGER.md",
+      "target": "experiments/theory-tests-lane/TT024/CLOSEOUT.json"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "README.md",
+      "target": "HOW_FORMS_BECOME_RECONSTRUCTIBLE_MAIN_V2.1.md"
+    },
+    {
+      "source": "README.md",
+      "target": "HOW_FORMS_BECOME_RECONSTRUCTIBLE_SUPPORTING_V2.1.md"
+    },
+    {
+      "source": "README.md",
+      "target": "output/pdf/how-forms-become-reconstructible-v2.1.pdf"
+    },
+    {
+      "source": "README.md",
+      "target": "output/pdf/how-forms-become-reconstructible-supporting-v2.1.pdf"
+    },
+    {
+      "source": "README.md",
+      "target": "EXTENDED_EVIDENCE_V2.1.md"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_BASELINE.json"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_RELEASE_PREPARATION.json"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_BASELINE.json"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_PDF_VALIDATION.json"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_PDF_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "reviews/V2.1_PDF_LINK_AUDIT.json"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e92"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c46"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e93"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c47"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e94"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c48"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e95"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c49"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e96"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c50"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "EVIDENCE_LEDGER.md#e97"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "SUPPORTING_INFORMATION.md#c51"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "EXTENDED_EVIDENCE_V2.1.md",
+      "target": "reviews/V2.0_LANE_REVIEW_2026-10-16.md"
+    },
+    {
+      "source": "SOURCE_AND_RELEASE_HISTORY.md",
+      "target": "reviews/V2.1_BASELINE.json"
+    },
+    {
+      "source": "SOURCE_AND_RELEASE_HISTORY.md",
+      "target": "reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "SOURCE_AND_RELEASE_HISTORY.md",
+      "target": "reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "SOURCE_AND_RELEASE_HISTORY.md",
+      "target": "reviews/V2.1_PDF_REVIEW.md"
+    },
+    {
+      "source": "SOURCE_AND_RELEASE_HISTORY.md",
+      "target": "reviews/V2.1_RELEASE_PREPARATION.json"
+    },
+    {
+      "source": "paper_assets/PDF_BUILD_README.md",
+      "target": "../reviews/V2.1_PDF_REVIEW.md"
+    },
+    {
+      "source": "paper_assets/PDF_BUILD_README.md",
+      "target": "../reviews/V2.1_PDF_VALIDATION.json"
+    },
+    {
+      "source": "paper_assets/PDF_BUILD_README.md",
+      "target": "../reviews/V2.1_RELEASE_PREPARATION.json"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../EVIDENCE_LEDGER.md#e92"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../EVIDENCE_LEDGER.md#e97"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../EVIDENCE_LEDGER.md#e93"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../reviews/V2.0_LANE_REVIEW_2026-10-16.md"
+    },
+    {
+      "source": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "target": "../reviews/V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "research-planning/LANE_WORKPLAN.md",
+      "target": "../reviews/V2.1_REVISION_RECORD.md"
+    },
+    {
+      "source": "research-planning/LANE_WORKPLAN.md",
+      "target": "../reviews/V2.0_LANE_REVIEW_2026-10-16.md"
+    },
+    {
+      "source": "reviews/V2.1_REVISION_RECORD.md",
+      "target": "V2.1_BASELINE.json"
+    },
+    {
+      "source": "reviews/V2.1_REVISION_RECORD.md",
+      "target": "V2.1_EVIDENCE_SOURCES.json"
+    },
+    {
+      "source": "reviews/V2.1_REVISION_RECORD.md",
+      "target": "V2.0_LANE_REVIEW_2026-10-16.md"
+    },
+    {
+      "source": "reviews/V2.1_REVISION_RECORD.md",
+      "target": "V2.1_RELEASE_PREPARATION.json"
+    }
+  ],
+  "preexisting_missing_links_retained": [],
+  "malformed_commit_path_urls": [],
+  "scientific_replay_performed": false,
+  "new_inference_performed": false,
+  "pdf_layout_checked": false,
+  "new_pdf_built": false,
+  "online_url_resolution_checked": false,
+  "public_export": false,
+  "changed_sources": [
+    {
+      "path": "MANUSCRIPT.md",
+      "bytes": 90071,
+      "sha256": "5903bde6a61b1d21ad1004c1ecbf4a7398e63e77970fd1ae431cde4b0248f798"
+    },
+    {
+      "path": "SUPPORTING_INFORMATION.md",
+      "bytes": 271821,
+      "sha256": "ab31fccb1ebfd235903b50a4b02a83b7003cefd8dd492e1f4c59dc53cc1c9263"
+    },
+    {
+      "path": "EVIDENCE_LEDGER.md",
+      "bytes": 225597,
+      "sha256": "3d9e06599a68bc75d09939c4dcc52ed8de1abee6c33340aafbeb13cddf48cb0e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7684,
+      "sha256": "61bf88889f40822e3f42ac1ce21f5f0e5b1cdf683b4af3bf8e19831fa16d6734"
+    },
+    {
+      "path": "EXTENDED_EVIDENCE_V2.1.md",
+      "bytes": 137639,
+      "sha256": "209d2fc05f807b10d91adfef07e2ea0a2e2358f25da8cf006d62faf2e680ad15"
+    },
+    {
+      "path": "SOURCE_AND_RELEASE_HISTORY.md",
+      "bytes": 47371,
+      "sha256": "ba48751c02267b0cb775b74761ae4ea69c6930a74e7625c997313f362bd1cf7c"
+    },
+    {
+      "path": "paper_assets/PDF_BUILD_README.md",
+      "bytes": 26183,
+      "sha256": "bfec8c3e2f73e4232d692e14073806f74d1f813e0b4eb504b778e8e66f0f7bbb"
+    },
+    {
+      "path": "research-planning/OPEN_CLAIMS_TRACKER.md",
+      "bytes": 41417,
+      "sha256": "e0dc2d9132d832c6fb639091316f089bc8bb31ec8249aad79590ae828ed107ca"
+    },
+    {
+      "path": "research-planning/LANE_WORKPLAN.md",
+      "bytes": 21307,
+      "sha256": "df35710e91538f58ca50d2b6cee4604d84d43b6fe9bebd694035af615c0e4c51"
+    },
+    {
+      "path": "reviews/V2.1_REVISION_RECORD.md",
+      "bytes": 4237,
+      "sha256": "1a8503bf619687b221fcb97e627f4cc680216469ffbcdfebe8ea45acd478cf3e"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-24T11:36:39.733593+00:00",
+  "status": "FROZEN_DEVELOPMENT_ANALYSIS_NOT_PREREGISTERED",
+  "user_authorization": "lets finish the exciting study then go on this",
+  "source": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_matched_recovery_v0_1/runs/development_v1",
+  "source_complete_sha256": "fa0a400bf4bd6c3a6c8fe12410ade4b13d090e95b9cc67a7a6133a2ca0b28358",
+  "source_output_manifest_sha256": "f4840d94d8b1a9bf2db7abd8f7d81d684e796760b17b8d6a239513198e5fbd83",
+  "source_audit": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_matched_recovery_v0_1/checks/DEVELOPMENT_V1_AUDIT.json",
+  "source_audit_sha256": "70db364bf81f009aa172b4176723821a154acf442880358f1a09bd10a7f0812c",
+  "source_closeout_sha256": "dbe7f6329c34f5104e6c33304abc44f2821e69b0523c5ce790075b8a16dede30",
+  "source_input_manifest_sha256": "5d2ef2457c655c207ed36bcb0d752449da89f7174af5a6f421a7c4cf19cf0bfe",
+  "literature_review": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/clawson_closed_loop_review_v0_1/REVIEW.txt",
+  "exposure": "All source terminal outcomes and the fixed-model aggregate scores are exposed. One sealed packet forecast was inspected. The recovery rationale follows earlier exposed panels and the paper. New calculations are development diagnostics, not independent confirmation.",
+  "scope": {
+    "blocks": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "injuries": [
+      18
+    ],
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "original_classes": [
+      0,
+      1
+    ],
+    "repeats": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "packets": 32,
+    "future_outcomes": 256,
+    "probe_pairs_per_packet_noise": 32
+  },
+  "paired_estimand": {
+    "W": "Success of the incoming-packet writer read",
+    "S": "Success of the rewritten successor under evaluation forcing",
+    "D": "Success of the preserved incoming packet under identical evaluation forcing",
+    "comparison": "One complete writer renewal versus retaining the protected incoming packet; does not isolate writing from writer-stage damage and is not a long-horizon policy benefit.",
+    "metrics": [
+      "raw_recovery_P(S=1|W=0)",
+      "retest_recovery_P(D=1|W=0)",
+      "paired_benefit_E(S-D|W=0)",
+      "paired_benefit_E(S-D|W=1)",
+      "unconditional_E(S-D)",
+      "joint_W_S_D_counts",
+      "target_opposite_neither_counts"
+    ],
+    "weighting": "Uniform frozen founders, packets within each original class and probes. Conditional rates are ratios of pooled counts, equivalent to ratios of founder-average masses with this balanced panel. Report all denominators, founder values and leave-one-founder-out values. Absent strata yield null, never zero.",
+    "noise_comparison": "Report both regimes separately. Conditioning on a noisy W outcome changes the mixture; do not interpret their conditional difference as an unconfounded causal noise effect."
+  },
+  "transition_model": {
+    "name": "transition64_jeffreys",
+    "prior_alpha": 0.5,
+    "state": "Native task-correct versus task-incorrect",
+    "initial_probability": "(sum(W)+0.5)/(32+1)",
+    "recovery": "(count(W=0,S=1)+0.5)/(count(W=0)+1)",
+    "error_entry": "(count(W=1,S=0)+0.5)/(count(W=1)+1)",
+    "propagation": "p[t+1]=p[t]*(1-e)+(1-p[t])*r",
+    "time_zero": "First native read at g15, estimated from probes; target g15 is never an input.",
+    "horizon_transitions": 18,
+    "terminal_generation": 33,
+    "trajectory_generations": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "uninterrupted_probability": "p0*(1-e)^18",
+    "assumptions": [
+      "Time-homogeneous Markov reduction in the binary state",
+      "Probe transitions transport to descendant packets"
+    ],
+    "empty_rows": "Use the declared symmetric prior and flag every prior-only row. Empirical rates remain null for absent conditioning states. No prior tuning or selected subsets.",
+    "fixed_raw_controls": [
+      "raw_successor64_jeffreys=(sum(S)+0.5)/33",
+      "raw_direct64_jeffreys=(sum(D64)+0.5)/65"
+    ]
+  },
+  "forecast_comparators": "All 27 frozen forecasts are retained; highlight fixed quadratic_successor64, all five fixed direct64 heads, direct8, and boundary/signed-transfer comparators. The raw transition reduction does not use B11; learned comparators do.",
+  "scoring": "Individual-repeat Brier loss, then equal packet and founder averages; both original classes and balanced totals. Report all 30 models. Keep trajectory agreement and uninterrupted success separate from terminal success.",
+  "historical_specificity": "Native success requires the original taught rule at all four cue/port entries. Classify the opposite rule separately from neither. This is a narrow task distinction, not arbitrary inherited memory.",
+  "uncertainty": "Eight founder blocks; report founder-level gains and leave-one-out ranges. No new significance gate, power claim, equivalence claim, winner selection or model fitting.",
+  "decision": "Descriptive diagnosis only. A new prospective advantage study would need a separate frozen horizon, shift, uncertainty rule and justified practical margin.",
+  "resources": {
+    "threads": 1,
+    "shared_thread_limit": 12,
+    "hard_wall_seconds": 600,
+    "new_native_reads": 0,
+    "new_native_simulations": 0,
+    "new_outcomes": 0,
+    "new_model_fits": 0,
+    "sunk_source_primary_reads": 13056,
+    "sunk_source_flat_audit_reads": 1472,
+    "standalone_transition_reads": 64,
+    "standalone_W_S_D_triples_reads": 96,
+    "existing_measurement_total_reads": 128,
+    "audits_and_boundary_costs_additional": true
+  },
+  "forbidden_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "automatic_retry": false,
+  "automatic_successor": false
+}

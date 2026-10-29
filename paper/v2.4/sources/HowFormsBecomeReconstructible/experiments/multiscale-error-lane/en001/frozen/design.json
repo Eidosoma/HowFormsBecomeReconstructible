@@ -1,0 +1,457 @@
+{
+ "study": "EN001",
+ "digest": "ab1c3cef8507b0ec648cc98cc41ac26c0d8e83e465a8f1f0afb98fceaecb52df",
+ "frozen_utc": "2026-10-25T21:50:10Z",
+ "sources": {
+  "br001/__init__.py": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+  "br001/analyze.py": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+  "br001/calibrate.py": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+  "br001/checks.py": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+  "br001/design.py": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+  "br001/predict.py": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+  "br001/run.py": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+  "br001/sim.py": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+  "br001/tables.py": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+  "br001/worker.py": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+  "br002/__init__.py": "79096cda2b6fee450de08c5daea73e4c0f91596b8537fc5dafcb517264e90014",
+  "br002/analyze.py": "59de656fb798d6d8160ff47808f7ce4b3c46923c1866f2b66c3ed7517ed67e36",
+  "br002/calibrate.py": "7e6557a4f128c663b7bb6b0085af9c658b98c732af48282c7274a2f5d9b20c12",
+  "br002/checks.py": "9c3c678934ce46c76b93a504ffe5b6dcc7f23df33446f8a18449a5fdcd0192c3",
+  "br002/design.py": "af9f68bb0867ac8d8e01d492c22de9b581ea6355dcd9596675779c52ebd95218",
+  "br002/predict.py": "a0bba24d568d20699bff5e9c1cf77ebf4ee7e596cb12fe93a798169b8de46579",
+  "br002/run.py": "d479eae6480dac09c2c0c7a7e7fba8bcaf737f3ef792b844dcab59a117135331",
+  "br002/sim.py": "f7122ccb850986c5063ca195d20fe2e7763411237974b3f26900ff51eb3af2c1",
+  "br002/tables.py": "d632952954b1f221940791c3ac86de578428e093c5856153419c419612e9cbd9",
+  "br002/worker.py": "ff62ae6917681649bd04764a22b8f9e3ed9357ff7cada401dbc6dddf2859806e",
+  "en001/__init__.py": "20a5ee28948de1d7f35e7f6e18ffa1b53861b7324fad752ddd09645adb740522",
+  "en001/analyze.py": "2cf12e1aa09e19f96ba7dca80a92562d0c1e4abac0c2eb68170085a10f72022f",
+  "en001/calibrate.py": "98385c0a1faa7f297d220d5cefa46ff71a4fbad7f7d0fa1f7680a3047fbe3ae6",
+  "en001/checks.py": "a82d70dd6b5868e0371bf882e49806674892a492773851b4fd88422e9f2549af",
+  "en001/design.py": "8c9aa75c487b37d3d404b9a6c64c95011a577d75e692d0ea766b1e896ccd729e",
+  "en001/predict.py": "78bdfa5dcc57acb932ba690acfc3c07af0302f5ca389b531b28f02a0e1e2a218",
+  "en001/run.py": "7f42444d46b4cdd172195df3544bfb44fb068f792621243a4a941172a465b2c3",
+  "en001/sim.py": "6e1318970839003d25966645ebab2cd93863fbc4249e4255530de1f34ed4d9a1",
+  "en001/tables.py": "c8df450d98292f98dd1277e19ea089a995970206749266a61c6bb91ad8561d41",
+  "en001/worker.py": "01dddec605fcaf21700fafca4ada802c31894c638779b7b860fa5e37d455b542",
+  "me002/__init__.py": "f8f3b317e0ca8fedde22d5080fea2ee2239232f5dff27e36593dd1cb92b40330",
+  "me002/analyze.py": "4966e109d3af89b45872ac4f3f447ce2d1087165ab71b361dbd544944cfdb67f",
+  "me002/calibrate.py": "4f419157e1db2781846bf07da7c377d5c8c47aca24798a33764ce656e6f7f25f",
+  "me002/checks.py": "45fc38deb77dd87747de8bfd16b24750ba15017f2ba3de42840fb5845ba40534",
+  "me002/design.py": "ecd4c8eb569829a3accffa29dfcbed5a3603df1a52ea8ab2bd193f3a9c95fba3",
+  "me002/families.py": "425b0378e564a2cd3319dd269f9d7c002c99a2f3103aa1b92df325b7801f69b3",
+  "me002/policies.py": "b1b17da392900f68c0d1ce4af1a9374b49e7a52e9b0916db317fa20214efabfa",
+  "me002/predict.py": "6f4cccaabc9708346aa687e99ad35fc04f0bc47e3b4d67b46c7fc337e3cd61ff",
+  "me002/run.py": "7e8920c5a92eda3cef25aa9595083c9ff0bff06f67ed55bcc011c1a93ad8ffdf",
+  "me002/sim.py": "bd7357c5b8f5aebfc7f3d17de9f2eb48828eb111f096ea28659e7956cda43b1b",
+  "me002/tables.py": "51dcf05ae28d8a1cf509aeec0d04050700580ed77e719ca08c7910e2a3243201",
+  "me002/worker.py": "9f8bdf9d9bc022fdc9f7c36f051e1df73bfb5da45128a4faa9289d7a21494e35",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9"
+ },
+ "design": {
+  "study": "EN001",
+  "tag": "mse-en001",
+  "identities": {
+   "calibration": [
+    900876,
+    900880
+   ],
+   "preflight": [
+    900888,
+    900890
+   ],
+   "development": [
+    910600,
+    910616
+   ]
+  },
+  "purpose": {
+   "calibration": "engineering",
+   "preflight": "engineering",
+   "development": "development"
+  },
+  "probe_blocks": [
+   900880,
+   900884
+  ],
+  "debug_blocks": [
+   900890,
+   900892
+  ],
+  "messages": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "parents": [
+   0,
+   1
+  ],
+  "foreign": {
+   "0": 1,
+   "1": 0,
+   "2": 3,
+   "3": 2
+  },
+  "settle": 120,
+  "teach": 1000,
+  "amplitude": 1.2,
+  "release": 200,
+  "per_tissue_theta": true,
+  "families": [
+   "F0",
+   "BL"
+  ],
+  "template_sha256": "1194401ecfd07a9ac6062b9f003d52ce1c434a93e98e819fb45e2cdbbbc2babe",
+  "record": {
+   "r_star": 1.2,
+   "eps": 0.05,
+   "kr": 1.0,
+   "sigma_r": 0.02,
+   "kc": 0.02,
+   "kill_sd": 0.2
+  },
+  "phases": {
+   "starve": 2000,
+   "recover": 1000,
+   "snap": 100,
+   "repair": 500
+  },
+  "phis": [
+   0.5,
+   0.25,
+   0.1
+  ],
+  "store": {
+   "cap": 100.0,
+   "headroom": 1.25,
+   "k": 0.25
+  },
+  "conditions": [
+   {
+    "name": "sham",
+    "kind": "sham",
+    "size": 0,
+    "rate": 0.0
+   },
+   {
+    "name": "flip-6x6",
+    "kind": "lesion",
+    "size": 6,
+    "rate": 0.0
+   },
+   {
+    "name": "reset-6x6",
+    "kind": "kill",
+    "size": 6,
+    "rate": 0.0
+   },
+   {
+    "name": "turnover-0.001",
+    "kind": "turnover",
+    "size": 0,
+    "rate": 0.001
+   }
+  ],
+  "arms": {
+   "hold": {
+    "name": "hold",
+    "eps": 0.0,
+    "kc": 0.0,
+    "rel": false,
+    "relink": false
+   },
+   "self": {
+    "name": "self",
+    "eps": 0.05,
+    "kc": 0.0,
+    "rel": false,
+    "relink": false
+   },
+   "multi": {
+    "name": "multi",
+    "eps": 0.05,
+    "kc": 0.02,
+    "rel": false,
+    "relink": false
+   },
+   "relcode": {
+    "name": "relcode",
+    "eps": 0.05,
+    "kc": 0.02,
+    "rel": true,
+    "relink": true
+   }
+  },
+  "panels": {
+   "G": {
+    "title": "a global budget under three accountings: correction only, every drift with thermal noise, every drift with activity-driven noise",
+    "regimes": [
+     "F0_s0.3_c",
+     "F0_s0.1_c",
+     "BL_s0.1_c"
+    ],
+    "arms": [
+     "hold",
+     "self",
+     "multi",
+     "relcode"
+    ],
+    "budgets": [
+     {
+      "name": "base",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 1.0,
+      "alloc": "uniform"
+     },
+     {
+      "name": "A0.5",
+      "scheme": "global",
+      "paid": "corr",
+      "noise": "thermal",
+      "phi": 0.5,
+      "alloc": "uniform"
+     },
+     {
+      "name": "A0.25",
+      "scheme": "global",
+      "paid": "corr",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "A0.1",
+      "scheme": "global",
+      "paid": "corr",
+      "noise": "thermal",
+      "phi": 0.1,
+      "alloc": "uniform"
+     },
+     {
+      "name": "B0.5",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.5,
+      "alloc": "uniform"
+     },
+     {
+      "name": "B0.25",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "B0.1",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.1,
+      "alloc": "uniform"
+     },
+     {
+      "name": "C0.5",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.5,
+      "alloc": "uniform"
+     },
+     {
+      "name": "C0.25",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "C0.1",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.1,
+      "alloc": "uniform"
+     }
+    ]
+   },
+   "P": {
+    "title": "what to protect when the budget is a quarter: everything cut, the record protected, the body protected",
+    "regimes": [
+     "F0_s0.3_c",
+     "BL_s0.1_c"
+    ],
+    "arms": [
+     "multi",
+     "relcode"
+    ],
+    "budgets": [
+     {
+      "name": "base",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 1.0,
+      "alloc": "uniform"
+     },
+     {
+      "name": "thermal-uniform",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "thermal-record",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "record"
+     },
+     {
+      "name": "thermal-body",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "body"
+     },
+     {
+      "name": "activity-uniform",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "activity-record",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.25,
+      "alloc": "record"
+     },
+     {
+      "name": "activity-body",
+      "scheme": "global",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.25,
+      "alloc": "body"
+     }
+    ]
+   },
+   "E": {
+    "title": "a per-cell energy store: wounds draw on local energy",
+    "regimes": [
+     "F0_s0.3_c",
+     "BL_s0.1_c"
+    ],
+    "arms": [
+     "multi",
+     "relcode"
+    ],
+    "budgets": [
+     {
+      "name": "store-thermal1",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 1.0,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-thermal0.5",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.5,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-thermal0.25",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-thermal0.1",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "thermal",
+      "phi": 0.1,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-activity1",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 1.0,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-activity0.5",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.5,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-activity0.25",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.25,
+      "alloc": "uniform"
+     },
+     {
+      "name": "store-activity0.1",
+      "scheme": "store",
+      "paid": "all",
+      "noise": "activity",
+      "phi": 0.1,
+      "alloc": "uniform"
+     }
+    ]
+   }
+  },
+  "margin": 0.02,
+  "endpoints": [
+   "v_qual",
+   "v_sign",
+   "r_sign",
+   "les_r",
+   "les_v",
+   "v_qual_rec",
+   "r_sign_rec",
+   "les_r_rec",
+   "les_v_rec",
+   "t95",
+   "healed",
+   "w_drift",
+   "w_corr",
+   "w_rec",
+   "a_mean",
+   "a_patch",
+   "a_rest"
+  ]
+ }
+}

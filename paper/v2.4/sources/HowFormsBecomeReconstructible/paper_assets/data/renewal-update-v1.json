@@ -1,0 +1,181 @@
+{
+  "schema": "forms_renewal_update_v1",
+  "selection_date": "2026-09-17",
+  "source_type": "Rounded estimates and intervals from completed report tables; no raw-array reanalysis",
+  "unit": "Qualified own-minus-alternative preference differences multiplied by 100",
+  "interval": "Reported pointwise 95% whole-block percentile bootstrap; no multiplicity adjustment",
+  "sources": [
+    {
+      "id": "D135",
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L20_SERIAL_ADDRESS_2026-09-16.md",
+      "sha256": "ae26d21413189c01c11a2bba8fe19202a22b8b0249c6296499c9349bd822193b",
+      "bytes": 12063
+    },
+    {
+      "id": "D140",
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/reviews/L20_FRESH_FOUNDERS_2026-09-16.md",
+      "sha256": "f4c522e7dd03ba3bf25fb7e6487718d88e950171d34436bb3b8c4bd47946e2b7",
+      "bytes": 10018
+    },
+    {
+      "id": "P11_result",
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_EDITABLE_LINEAGE_RESULTS.md",
+      "sha256": "d606b869f47605e3c1164af6fe17b2d90a1c110eb347cae2a2c246d825241ba5",
+      "bytes": 3367
+    },
+    {
+      "id": "P11_protocol",
+      "path": "PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/levin-cancer-gj-exploration/PAPER_EDITABLE_LINEAGE_PROTOCOL.md",
+      "sha256": "bcbb5648ba04bce1054c0a7d3c5b101fc3195c1c506c9e4a200da69f7022a3d5",
+      "bytes": 7632
+    }
+  ],
+  "cohorts": {
+    "D135": {
+      "blocks": 8,
+      "lives_per_block": 4,
+      "roles": 2,
+      "status": "Known founders; 75000-75007 maps to D132 73000-73007"
+    },
+    "D140": {
+      "blocks": 8,
+      "lives_per_block": 4,
+      "roles": 2,
+      "status": "New founders 78000-78007; same guide and analysis"
+    }
+  },
+  "estimates": [
+    {
+      "campaign": "D135",
+      "contrast": "alignment",
+      "role": "A",
+      "primary": false,
+      "mean": 0.32,
+      "low": -0.26,
+      "high": 0.98
+    },
+    {
+      "campaign": "D135",
+      "contrast": "alignment",
+      "role": "B",
+      "primary": false,
+      "mean": 8.94,
+      "low": 3.64,
+      "high": 14.11
+    },
+    {
+      "campaign": "D135",
+      "contrast": "alignment",
+      "role": "Pooled",
+      "primary": true,
+      "mean": 4.63,
+      "low": 1.93,
+      "high": 7.27
+    },
+    {
+      "campaign": "D135",
+      "contrast": "copy",
+      "role": "A",
+      "primary": false,
+      "mean": 0.82,
+      "low": 0.2,
+      "high": 1.44
+    },
+    {
+      "campaign": "D135",
+      "contrast": "copy",
+      "role": "B",
+      "primary": false,
+      "mean": -5.65,
+      "low": -9.39,
+      "high": -2.2
+    },
+    {
+      "campaign": "D135",
+      "contrast": "copy",
+      "role": "Pooled",
+      "primary": false,
+      "mean": -2.42,
+      "low": -4.3,
+      "high": -0.72
+    },
+    {
+      "campaign": "D140",
+      "contrast": "alignment",
+      "role": "Pooled",
+      "primary": true,
+      "mean": 2.89,
+      "low": 1.72,
+      "high": 4.17
+    },
+    {
+      "campaign": "D140",
+      "contrast": "alignment",
+      "role": "A",
+      "primary": false,
+      "mean": 1.39,
+      "low": 0.18,
+      "high": 2.58
+    },
+    {
+      "campaign": "D140",
+      "contrast": "alignment",
+      "role": "B",
+      "primary": false,
+      "mean": 4.39,
+      "low": 2.11,
+      "high": 7.35
+    },
+    {
+      "campaign": "D140",
+      "contrast": "copy",
+      "role": "Pooled",
+      "primary": false,
+      "mean": -1.65,
+      "low": -3.44,
+      "high": 0.22
+    },
+    {
+      "campaign": "D140",
+      "contrast": "copy",
+      "role": "A",
+      "primary": false,
+      "mean": 1.26,
+      "low": 0.78,
+      "high": 1.81
+    },
+    {
+      "campaign": "D140",
+      "contrast": "copy",
+      "role": "B",
+      "primary": false,
+      "mean": -4.57,
+      "low": -7.91,
+      "high": -1.12
+    }
+  ],
+  "P11": {
+    "type": "Protocol schematic with report-attributed outcomes",
+    "stages": [
+      [
+        "Before rewriting",
+        "Three complete M handovers",
+        "Three complete M handovers"
+      ],
+      [
+        "Rewrite actual current carriers",
+        "All three become retained E",
+        "All three become retained E"
+      ],
+      [
+        "After rewriting",
+        "Three complete E handovers",
+        "Three complete E handovers"
+      ]
+    ],
+    "all_five_gates_pass": true,
+    "conditions": "Externally supplied cells, cues, contacts and schedules; deterministic shared preparations"
+  },
+  "new_simulations": 0,
+  "new_statistical_tests": 0
+}

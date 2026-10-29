@@ -1,0 +1,187 @@
+{
+  "selection_date": "2026-09-18",
+  "campaign": "P12_lineage_robustness",
+  "run_id": "paper-lineage-robustness-20260916T094348Z-quf8m72y",
+  "native_revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+  "config": {
+    "experiment": "P12_lineage_robustness",
+    "revision": "b2cb370aaecbc8299f259bc4251d5396c81f19a6",
+    "workers": 2,
+    "worker_timeout_seconds": 14400,
+    "total_budget_seconds": 86400,
+    "verification_timeout_seconds": 2700,
+    "maximum_cases": 158,
+    "maximum_integrations": 1746,
+    "screen_seeds": [
+      101,
+      102
+    ],
+    "test_seeds": [
+      201,
+      202,
+      203
+    ],
+    "levels": [
+      "mild",
+      "strong"
+    ],
+    "gap_maxima": {
+      "mild": 2000,
+      "strong": 5000
+    },
+    "protein_percent": {
+      "mild": 10,
+      "strong": 25
+    },
+    "protein_index": 7,
+    "clock": {
+      "method": "native_explicit_euler_bounded_clock_v1",
+      "sample_interval": 100,
+      "coarse_max_step": 100,
+      "fine_max_step": 50,
+      "initial_and_final_samples": true,
+      "integer_tick_clock": true
+    },
+    "contact_per_pupil": 20000,
+    "contact_window": 80000,
+    "hold_horizons": [
+      10000,
+      10000
+    ],
+    "before_rounds": 3,
+    "after_rounds": 3,
+    "external_schedule": true,
+    "automatic_follow_on": false
+  },
+  "reported_completion_utc": "2026-09-17T03:54:27Z",
+  "results": {
+    "quality_gate": true,
+    "ready_for_interpretation": true,
+    "independent_check_count": 110444,
+    "integrity": {
+      "revision": true,
+      "complete_manifest": true,
+      "input_origins": true,
+      "execution": true,
+      "frozen": true,
+      "sources": true,
+      "inputs": true
+    },
+    "completed_cases": 158,
+    "integration_calls": 1746,
+    "completion_reason": "combined_and_controls_completed",
+    "selection": {
+      "timing": "strong",
+      "cells": "strong"
+    },
+    "all_fine_agree": true,
+    "trials": [
+      {
+        "history": "written",
+        "seed": 201,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      },
+      {
+        "history": "written",
+        "seed": 202,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      },
+      {
+        "history": "written",
+        "seed": 203,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      },
+      {
+        "history": "ordinary",
+        "seed": 201,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      },
+      {
+        "history": "ordinary",
+        "seed": 202,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      },
+      {
+        "history": "ordinary",
+        "seed": 203,
+        "raw_success_both": true,
+        "controls_available_both": true,
+        "controls_negative_both": true,
+        "control_qualified": true,
+        "stop_reasons": [
+          "six_handover_chain_complete",
+          "six_handover_chain_complete"
+        ]
+      }
+    ],
+    "trial_counts": [
+      {
+        "history": "written",
+        "challenge_trials": 3,
+        "raw_successes": 3,
+        "control_qualified_successes": 3
+      },
+      {
+        "history": "ordinary",
+        "challenge_trials": 3,
+        "raw_successes": 3,
+        "control_qualified_successes": 3
+      }
+    ],
+    "external_schedule": true,
+    "autonomous_reproduction": false,
+    "shared_stock": true,
+    "independent_biological_replicates": false,
+    "unique_PH_demonstrated": false,
+    "probability_estimate_precision_claim": false
+  },
+  "fine_comparison_count": 79,
+  "source_hashes": {
+    "summary.json": "eee5af475b0c1a3cd90f09af5a155bb19890260e9dae4640538743f6ca3f9acc",
+    "independent_audit.json": "96e0160a777e849424226983addbc1149d827e8ad1f904420869b157aa47889d"
+  },
+  "scope": "Verbatim selected fields from retained summary and audit; no numerical rescoring, simulation or new inference.",
+  "unit": "Three challenge seeds per origin history, paired across histories and numerical resolutions; shared prepared stock.",
+  "limits": [
+    "No acquired-history advantage",
+    "Externally supplied cues, contacts and replacements",
+    "Narrow spacing and single-protein initial variation",
+    "No precise population success probability",
+    "No inherited flexible competence or therapeutic outcome"
+  ]
+}

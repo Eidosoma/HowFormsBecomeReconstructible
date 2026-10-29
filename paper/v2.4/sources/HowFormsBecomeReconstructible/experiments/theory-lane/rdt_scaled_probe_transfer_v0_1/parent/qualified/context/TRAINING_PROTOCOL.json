@@ -1,0 +1,121 @@
+{
+  "version": "successor_forecast_0.1",
+  "status": "EXPOSED_DEVELOPMENT_ORDINARY_PREDICTOR_NOT_RDT_CONFIRMATION",
+  "question": "Can the selected ordinary successor-success predictor retain useful forecasting performance at a smaller probe budget, after selecting the budget and direct-read rival entirely inside each training fold?",
+  "source": "All 512 previously exposed generation-14 records, eight acquisition blocks, and the already exposed balanced 32-record two-repeat panel. No new dynamics or future labels.",
+  "candidate": "Unrestricted ridge logistic regression on the same eleven TT008 boundary features and q_rewrite(N), the success fraction of the first N writer-then-successor-evaluation probes. Fixed ridge 0.01; same solver and training-only standardization as the prior ordinary rewritten_count comparator.",
+  "endpoint": "Generation-32 fresh-recipient native task success after eighteen original-writer rebuilds from generation 14. Uninterrupted success is a separate endpoint and is not predicted by this formula.",
+  "native_contract": {
+    "reader": {
+      "dt": 0.2,
+      "noise": 0.02,
+      "birth_sd": 0.05,
+      "read_steps": 2048,
+      "settling_steps": 1024,
+      "observe_steps": 32,
+      "margin": 0.25
+    },
+    "writer": {
+      "kind": "native exact original full rewrite from the final body",
+      "beta": 3.0
+    },
+    "injury": "Twenty-four distinct uniformly sampled non-port cells per read; all three 2x2 ports protected. Writer and evaluation injuries are independent. Evaluation branches share the exact injury.",
+    "success": "All four task-aligned cue/port means over the last 32 observations must be strictly greater than 0.25.",
+    "protected_retained_copy": "The unchanged packet is a protected diagnostic copy. Its storage is explicit; this is not a demonstration of a free copying policy or autonomous record protection."
+  },
+  "budget_grid": [
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "probe_selection": "First N probes; development indices 0..N-1, repeat offsets 0 and 128. No choice of prefix, regime or record using the new results.",
+  "models": {
+    "families": [
+      "rewrite",
+      "direct_pooled",
+      "retained"
+    ],
+    "boundary_model": "tt008",
+    "ridge": 0.01,
+    "solver": {
+      "method": "L-BFGS-B",
+      "maxiter": 2000,
+      "maxls": 100,
+      "ftol": 1e-14,
+      "gtol": 1e-09,
+      "maximum_projected_gradient": 1e-06,
+      "require_success": true
+    },
+    "count": 16,
+    "fit_count": 592,
+    "omitted_block_sets": "empty, every singleton and every unordered pair of eight blocks: 37 training sets times 16 fixed specifications; reuse identical training sets without refitting."
+  },
+  "observation_costs": {
+    "rewrite": "2N native reads: N original reads that write successors and N fresh successor evaluations.",
+    "direct_pooled": "2N native reads of unchanged P: N writer-stage original reads plus N retained evaluations.",
+    "retained": "N native reads of unchanged P in evaluation environments.",
+    "tt008": "No additional native read; retains body response, history, unsigned access and signed T64 transfer among all eleven boundary features."
+  },
+  "candidate_budget_selection": {
+    "outer_split": "Leave one entire acquisition block (64 related records) out.",
+    "inner_split": "Seven leave-one-block-out folds within the other seven blocks; fitting and scaling exclude both outer and inner blocks.",
+    "score_rule": "Choose the smallest N whose inner equal-block Brier is at most 0.001 worse than rewrite128 and whose inner forecast repeat p90 is <=0.10 in each current-expression stratum and each regime.",
+    "precision_rule": "Use only repeat records from the seven outer-training blocks. Each repeat is forecast by the model excluding its own block and the outer block, at that N. No outer repeat record enters selection.",
+    "noninferiority_allowance": 0.001,
+    "allowance_rationale": "An explicit operational compression tolerance equal to half the inherited 0.002 practical Brier benefit. This is a development budget-screening choice, not a biological constant or evidence of noninferiority.",
+    "none_qualifies": "Record selection failure. Use rewrite128 only to retain diagnostic outer predictions; no advancement is possible. No changed threshold or alternate fit.",
+    "full_fit_choice": "After outer evaluation, apply the same rule to eight-block out-of-fold curves and own-block-excluded repeats, then retain the already fitted all-512 model at the selected N. It never supplies held-out scores."
+  },
+  "rival_selection": "Inside each outer training fold, choose the lowest inner Brier among TT008 and all direct_pooled/retained grid models whose native read budget is <=2 times the selected candidate N. Tie-break by model name. The rival may choose its own probe count within this cost allowance. It cannot use the outer labels or repeat records.",
+  "primary_comparisons": [
+    "nested_selected_rewrite versus tt008",
+    "nested_selected_rewrite versus nested_selected_direct_rival",
+    "nested_selected_rewrite versus fixed rewrite128 for compression cost"
+  ],
+  "evaluation": {
+    "score": "Equal-block Brier across eight outer held-out blocks. Descriptive two-sided 95% paired block t intervals. All fixed-budget curves also reported, with no retrospective selection from their outer scores.",
+    "precision": "Apply each outer fold selected model and budget to both repeats of its own omitted-block pilot records; report p90 separately in the two current-expression strata and both regimes.",
+    "strata": "Both current-expression strata and four histories, with conditional scores and additive contributions; no subgroup rescue.",
+    "anchor": "At N=128, singleton-fold tt008, rewrite, direct_pooled and retained predictions must match their archived counterparts within absolute 1e-8.",
+    "decision_label": "READY_TO_PRICE_FRESH_ORDINARY_PREDICTOR_COHORT only if every development screen passes; otherwise ORDINARY_LEAD_SCREEN_FAILED.",
+    "screens": {
+      "every_outer_and_full_budget_selection_succeeds": true,
+      "nested_gain_vs_tt008_strictly_greater_than": 0.002,
+      "nested_gain_vs_budget_matched_direct_rival_strictly_greater_than": 0.0,
+      "nested_brier_loss_vs_rewrite128_at_most": 0.001,
+      "no_current_expression_stratum_loss_vs_tt008_greater_than": 0.002,
+      "both_strata_both_regimes_repeat_p90_at_most": 0.1,
+      "plugin_sample_planning_within_blocks": 256
+    },
+    "planning": "Use eight outer block differences; inherited plugin t/normal formula, n=64..256 step16. Margin .002 versus TT008, margin zero versus the equal-or-lower-cost direct-read rival. Report upper-SD sensitivity from the 95% normal-theory variance bound. Approximate planning, not a power guarantee.",
+    "different_scope": "The new screen concerns a useful ordinary predictor and an equal-cost rewrite-versus-direct-read contrast. The zero incremental margin for the cost-matched control is a directional mechanism screen, not the prior RDT-specific >.002 advantage requirement. It cannot overturn the failed paired reduction or establish RDT novelty."
+  },
+  "candidate_test_box": {
+    "properties": "Eleven TT008 boundary features plus a fixed-budget probability of successful expression after one native rewrite.",
+    "outcome": "Fresh-recipient task success after eighteen original-writer rebuilds from generation 14; terminal, not uninterrupted success.",
+    "held_out_change": "Any subsequent prospective cohort must use new acquisition blocks and bind both matched and independent birth/ongoing cue-noise conditions. Independent-noise repeat precision alone does not establish shift calibration.",
+    "strongest_comparators": "TT008 including signed transfer, and the strongest training-selected direct-read count comparator at equal or lower native-read budget. Preserve the failed paired predictor as historical context.",
+    "future_rejection": "Before fresh outcomes, freeze chosen budgets, coefficients, cohort and computational budget. A prospective advantage would require paired one-sided 97.5% lower block limits above .002 versus TT008 and zero versus the direct-read rival; an upper limit at or below its margin rejects the respective advantage. Otherwise unresolved. No such prospective test starts automatically here."
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "benchmark_wall_ceiling_seconds": 180,
+    "development_wall_ceiling_seconds": 600,
+    "fit_cpu_ceiling_seconds": 180,
+    "maximum_resident_bytes": 1000000000,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_successor_experiment": false
+  },
+  "exposure_limits": [
+    "The rewrite family was selected after 21 models were compared on these same eight blocks.",
+    "Nested selection protects against new budget/rival leakage; it does not erase previous exposure or family selection.",
+    "The repeat panel is balanced and previously selected for precision, not a population sample.",
+    "Earlier failed cycle, recovery and paired reductions retain their verdicts.",
+    "No paired-continuation or TT018 status/outcomes are inspected."
+  ]
+}

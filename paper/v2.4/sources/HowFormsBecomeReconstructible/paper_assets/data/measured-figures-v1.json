@@ -1,0 +1,1341 @@
+{
+  "schema": "forms_measured_figures_v1",
+  "source_root": "/mnt/bioIce1/PlasticHeredity/codex.lawsConfirmation/outputs",
+  "sources": [
+    {
+      "campaign": "D073",
+      "path": "l22_fresh_writing_replication_v1_attempt1_independent_rescore_v1/rescore.json",
+      "bytes": 2713949,
+      "sha256": "97accd75b5268c9b4a834051a1ba5f33d13efcfa576bedadea9ec13dffa90eb2"
+    },
+    {
+      "campaign": "D074",
+      "path": "l22_body_source_v1_attempt1_independent_rescore_v1/rescore.json",
+      "bytes": 4296821,
+      "sha256": "5e0796851cf3579523e943a5f0ce8df1f72f625884901ba117de7cd0d18fcd81"
+    },
+    {
+      "campaign": "D099",
+      "path": "l15_reversal_defense_v1_attempt1/summary.json",
+      "bytes": 882615,
+      "sha256": "d0e3956845b7e47bdb0edd6dd26adac92f3b31051c675b85870556b8fcaf7b2c"
+    },
+    {
+      "campaign": "L17",
+      "path": "l17_replacement_chain_v1_attempt1/replacement_chain.json",
+      "bytes": 10503685,
+      "sha256": "38b213587b3c60a9dfa4c2d24fa8ce6a5b37da8fee344f5b733431b4527bfb18"
+    }
+  ],
+  "new_simulations": 0,
+  "new_statistical_tests": 0,
+  "scope": "Saved summaries and existing audit results; not a new raw-array audit.",
+  "interval_policy": "Copy original intervals; no rebootstrap or pooled endpoints.",
+  "D073": {
+    "tissues": [
+      30024,
+      30025,
+      30026,
+      30027,
+      30028,
+      30029,
+      30030,
+      30031,
+      30032,
+      30033,
+      30034,
+      30035,
+      30036,
+      30037,
+      30038,
+      30039
+    ],
+    "means": {
+      "damaged": 0.8369140625,
+      "fixed": 0.886474609375,
+      "loop": 0.90673828125
+    },
+    "tissue_accuracy": {
+      "damaged": [
+        0.7421875,
+        0.78125,
+        0.92578125,
+        0.796875,
+        0.91015625,
+        0.85546875,
+        0.84375,
+        0.7265625,
+        0.890625,
+        0.9296875,
+        0.8125,
+        0.80078125,
+        0.87109375,
+        0.7734375,
+        0.890625,
+        0.83984375
+      ],
+      "fixed": [
+        0.8515625,
+        0.89453125,
+        0.9921875,
+        0.80859375,
+        0.90625,
+        0.8984375,
+        0.8828125,
+        0.75390625,
+        0.921875,
+        0.99609375,
+        0.83984375,
+        0.83984375,
+        0.890625,
+        0.9140625,
+        0.92578125,
+        0.8671875
+      ],
+      "loop": [
+        0.94140625,
+        0.921875,
+        1.0,
+        0.828125,
+        0.91015625,
+        0.9375,
+        0.89453125,
+        0.77734375,
+        0.921875,
+        1.0,
+        0.84765625,
+        0.859375,
+        0.8828125,
+        0.91796875,
+        0.94921875,
+        0.91796875
+      ]
+    },
+    "contrasts": {
+      "fixed_vs_damaged": {
+        "interval": [
+          0.0283203125,
+          0.07462768554687527
+        ],
+        "mean": 0.049560546875,
+        "positive_tissues": 15,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097302,
+        "supported": true,
+        "tissue_differences": [
+          0.109375,
+          0.11328125,
+          0.06640625,
+          0.01171875,
+          -0.00390625,
+          0.04296875,
+          0.0390625,
+          0.02734375,
+          0.03125,
+          0.06640625,
+          0.02734375,
+          0.0390625,
+          0.01953125,
+          0.140625,
+          0.03515625,
+          0.02734375
+        ]
+      },
+      "loop_vs_damaged": {
+        "interval": [
+          0.04296875,
+          0.10294799804687527
+        ],
+        "mean": 0.06982421875,
+        "positive_tissues": 15,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097301,
+        "supported": true,
+        "tissue_differences": [
+          0.19921875,
+          0.140625,
+          0.07421875,
+          0.03125,
+          0.0,
+          0.08203125,
+          0.05078125,
+          0.05078125,
+          0.03125,
+          0.0703125,
+          0.03515625,
+          0.05859375,
+          0.01171875,
+          0.14453125,
+          0.05859375,
+          0.078125
+        ]
+      },
+      "loop_vs_fixed": {
+        "interval": [
+          0.008544921875,
+          0.035888671875
+        ],
+        "mean": 0.020263671875,
+        "positive_tissues": 14,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097303,
+        "supported": true,
+        "tissue_differences": [
+          0.08984375,
+          0.02734375,
+          0.0078125,
+          0.01953125,
+          0.00390625,
+          0.0390625,
+          0.01171875,
+          0.0234375,
+          0.0,
+          0.00390625,
+          0.0078125,
+          0.01953125,
+          -0.0078125,
+          0.00390625,
+          0.0234375,
+          0.05078125
+        ]
+      }
+    },
+    "verdict": "FRESH_FEEDBACK_RELIABILITY_REPLICATED",
+    "unit": "four-message recognition probability"
+  },
+  "D074": {
+    "tissues": [
+      30040,
+      30041,
+      30042,
+      30043,
+      30044,
+      30045,
+      30046,
+      30047,
+      30048,
+      30049,
+      30050,
+      30051,
+      30052,
+      30053,
+      30054,
+      30055
+    ],
+    "means": {
+      "damaged": 0.86962890625,
+      "kept_loop": 0.9091796875,
+      "scrambled_loop": 0.891357421875,
+      "donor_loop": 0.882080078125
+    },
+    "tissue_accuracy": {
+      "damaged": [
+        0.921875,
+        0.89453125,
+        0.9140625,
+        0.87890625,
+        0.87890625,
+        0.7890625,
+        0.75390625,
+        0.81640625,
+        0.92578125,
+        0.86328125,
+        0.94140625,
+        0.953125,
+        0.8828125,
+        0.796875,
+        0.84765625,
+        0.85546875
+      ],
+      "kept_loop": [
+        0.953125,
+        0.90625,
+        0.921875,
+        0.91796875,
+        0.890625,
+        0.83984375,
+        0.83203125,
+        0.859375,
+        0.9453125,
+        0.921875,
+        0.9765625,
+        0.9921875,
+        0.9609375,
+        0.828125,
+        0.83203125,
+        0.96875
+      ],
+      "scrambled_loop": [
+        0.9453125,
+        0.88671875,
+        0.91015625,
+        0.890625,
+        0.8515625,
+        0.83203125,
+        0.8125,
+        0.8203125,
+        0.921875,
+        0.890625,
+        0.9765625,
+        0.9921875,
+        0.9453125,
+        0.81640625,
+        0.82421875,
+        0.9453125
+      ],
+      "donor_loop": [
+        0.9453125,
+        0.87109375,
+        0.90625,
+        0.88671875,
+        0.83203125,
+        0.8203125,
+        0.8125,
+        0.80078125,
+        0.90625,
+        0.88671875,
+        0.9765625,
+        0.9921875,
+        0.92578125,
+        0.8125,
+        0.8125,
+        0.92578125
+      ]
+    },
+    "contrasts": {
+      "body_organization": {
+        "interval": [
+          0.010986328125,
+          0.025067138671875266
+        ],
+        "mean": 0.017822265625,
+        "positive_tissues": 14,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097402,
+        "supported": true,
+        "tissue_differences": [
+          0.0078125,
+          0.01953125,
+          0.01171875,
+          0.02734375,
+          0.0390625,
+          0.0078125,
+          0.01953125,
+          0.0390625,
+          0.0234375,
+          0.03125,
+          0.0,
+          0.0,
+          0.015625,
+          0.01171875,
+          0.0078125,
+          0.0234375
+        ]
+      },
+      "donor_redirection": {
+        "interval": [
+          0.00048828125,
+          0.004150390625
+        ],
+        "mean": 0.002197265625,
+        "positive_tissues": 8,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097403,
+        "supported": false,
+        "tissue_differences": [
+          0.0,
+          0.00390625,
+          0.00390625,
+          0.0,
+          0.00390625,
+          0.0078125,
+          0.00390625,
+          0.00390625,
+          -0.00390625,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.00390625,
+          0.0078125,
+          0.0
+        ]
+      },
+      "useful_repair": {
+        "interval": [
+          0.02197265625,
+          0.059326171875
+        ],
+        "mean": 0.03955078125,
+        "positive_tissues": 15,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260908097401,
+        "supported": true,
+        "tissue_differences": [
+          0.03125,
+          0.01171875,
+          0.0078125,
+          0.0390625,
+          0.01171875,
+          0.05078125,
+          0.078125,
+          0.04296875,
+          0.01953125,
+          0.05859375,
+          0.03515625,
+          0.0390625,
+          0.078125,
+          0.03125,
+          -0.015625,
+          0.11328125
+        ]
+      }
+    },
+    "verdict": "BODY_ORGANIZATION_BENEFIT_ONLY",
+    "unit": "four-message recognition probability"
+  },
+  "D099": {
+    "tissues": [
+      45000,
+      45001,
+      45002,
+      45003,
+      45004,
+      45005,
+      45006,
+      45007
+    ],
+    "primary": {
+      "definition": "minimum of direction cohort means, not mean of per-life minima",
+      "direction_means": [
+        0.643798828125,
+        0.644775390625
+      ],
+      "mean": 0.643798828125,
+      "name": "minimum_direction_pulse_averaged_duration",
+      "pointwise_block_bootstrap_95": [
+        0.587158203125,
+        0.700927734375
+      ]
+    },
+    "directions": [
+      {
+        "block_means": [
+          0.765625,
+          0.705078125,
+          0.5703125,
+          0.611328125,
+          0.517578125,
+          0.611328125,
+          0.6171875,
+          0.751953125
+        ],
+        "block_negative": 0,
+        "block_positive": 8,
+        "block_tied": 0,
+        "life_negative": 0,
+        "life_positive": 16,
+        "life_tied": 0,
+        "life_values": [
+          [
+            0.796875,
+            0.734375
+          ],
+          [
+            0.703125,
+            0.70703125
+          ],
+          [
+            0.55859375,
+            0.58203125
+          ],
+          [
+            0.58984375,
+            0.6328125
+          ],
+          [
+            0.47265625,
+            0.5625
+          ],
+          [
+            0.578125,
+            0.64453125
+          ],
+          [
+            0.6015625,
+            0.6328125
+          ],
+          [
+            0.72265625,
+            0.78125
+          ]
+        ],
+        "mean": 0.643798828125,
+        "pointwise_block_bootstrap_95": [
+          0.588623046875,
+          0.700927734375
+        ]
+      },
+      {
+        "block_means": [
+          0.775390625,
+          0.689453125,
+          0.55859375,
+          0.623046875,
+          0.53125,
+          0.609375,
+          0.609375,
+          0.76171875
+        ],
+        "block_negative": 0,
+        "block_positive": 8,
+        "block_tied": 0,
+        "life_negative": 0,
+        "life_positive": 16,
+        "life_tied": 0,
+        "life_values": [
+          [
+            0.8046875,
+            0.74609375
+          ],
+          [
+            0.6953125,
+            0.68359375
+          ],
+          [
+            0.5546875,
+            0.5625
+          ],
+          [
+            0.60546875,
+            0.640625
+          ],
+          [
+            0.4921875,
+            0.5703125
+          ],
+          [
+            0.5859375,
+            0.6328125
+          ],
+          [
+            0.58984375,
+            0.62890625
+          ],
+          [
+            0.74609375,
+            0.77734375
+          ]
+        ],
+        "mean": 0.644775390625,
+        "pointwise_block_bootstrap_95": [
+          0.588623046875,
+          0.703369140625
+        ]
+      }
+    ],
+    "recovery": [
+      {
+        "block_means": [
+          0.859375,
+          0.85546875,
+          0.87109375,
+          0.75390625,
+          0.65625,
+          0.81640625,
+          0.77734375,
+          0.82421875
+        ],
+        "block_negative": 0,
+        "block_positive": 8,
+        "block_tied": 0,
+        "life_negative": 0,
+        "life_positive": 16,
+        "life_tied": 0,
+        "life_values": [
+          [
+            0.8515625,
+            0.8671875
+          ],
+          [
+            0.84375,
+            0.8671875
+          ],
+          [
+            0.8515625,
+            0.890625
+          ],
+          [
+            0.75,
+            0.7578125
+          ],
+          [
+            0.6640625,
+            0.6484375
+          ],
+          [
+            0.7578125,
+            0.875
+          ],
+          [
+            0.7421875,
+            0.8125
+          ],
+          [
+            0.7734375,
+            0.875
+          ]
+        ],
+        "lives_ge_80": 9,
+        "mean": 0.8017578125,
+        "pointwise_block_bootstrap_95": [
+          0.75194091796875,
+          0.84375
+        ],
+        "tissues_ge_80": 5
+      },
+      {
+        "block_means": [
+          0.86328125,
+          0.796875,
+          0.6484375,
+          0.80078125,
+          0.8046875,
+          0.74609375,
+          0.79296875,
+          0.87890625
+        ],
+        "block_negative": 0,
+        "block_positive": 8,
+        "block_tied": 0,
+        "life_negative": 0,
+        "life_positive": 16,
+        "life_tied": 0,
+        "life_values": [
+          [
+            0.890625,
+            0.8359375
+          ],
+          [
+            0.8125,
+            0.78125
+          ],
+          [
+            0.6875,
+            0.609375
+          ],
+          [
+            0.78125,
+            0.8203125
+          ],
+          [
+            0.7578125,
+            0.8515625
+          ],
+          [
+            0.78125,
+            0.7109375
+          ],
+          [
+            0.78125,
+            0.8046875
+          ],
+          [
+            0.9140625,
+            0.84375
+          ]
+        ],
+        "lives_ge_80": 8,
+        "mean": 0.79150390625,
+        "pointwise_block_bootstrap_95": [
+          0.7431640625,
+          0.833984375
+        ],
+        "tissues_ge_80": 4
+      }
+    ],
+    "criteria": {
+      "d0_brief_old_drop": true,
+      "d0_brief_old_incoming_R": true,
+      "d0_brief_old_post": true,
+      "d0_brief_old_pre": true,
+      "d0_brief_old_rebound": true,
+      "d0_positive_tissues": true,
+      "d0_sustained_new_drop": true,
+      "d0_sustained_new_incoming_R": true,
+      "d0_sustained_new_post": true,
+      "d0_sustained_new_pre": true,
+      "d0_sustained_new_rebound": true,
+      "d1_brief_old_drop": true,
+      "d1_brief_old_incoming_R": true,
+      "d1_brief_old_post": true,
+      "d1_brief_old_pre": true,
+      "d1_brief_old_rebound": true,
+      "d1_positive_tissues": true,
+      "d1_sustained_new_drop": true,
+      "d1_sustained_new_incoming_R": true,
+      "d1_sustained_new_post": false,
+      "d1_sustained_new_pre": true,
+      "d1_sustained_new_rebound": true,
+      "primary_positive_interval": true
+    },
+    "unit": "new-pattern sign fidelity on the 128-site disagreement mask"
+  },
+  "L17": {
+    "tissues": [
+      10000,
+      10001,
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007
+    ],
+    "rows": [
+      {
+        "generation": 1,
+        "arm": "split_replace",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 1,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 1,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 2,
+        "arm": "split_replace",
+        "mean": 0.90625,
+        "tissue_means": [
+          0.90625,
+          1.0,
+          1.0,
+          1.0,
+          0.65625,
+          0.8125,
+          1.0,
+          0.875
+        ]
+      },
+      {
+        "generation": 2,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 2,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 3,
+        "arm": "split_replace",
+        "mean": 0.640625,
+        "tissue_means": [
+          0.59375,
+          0.78125,
+          0.8125,
+          0.6875,
+          0.46875,
+          0.5,
+          0.6875,
+          0.59375
+        ]
+      },
+      {
+        "generation": 3,
+        "arm": "protected_copy",
+        "mean": 0.99609375,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.96875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 3,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 4,
+        "arm": "split_replace",
+        "mean": 0.46484375,
+        "tissue_means": [
+          0.28125,
+          0.59375,
+          0.71875,
+          0.40625,
+          0.375,
+          0.4375,
+          0.4375,
+          0.46875
+        ]
+      },
+      {
+        "generation": 4,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 4,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 5,
+        "arm": "split_replace",
+        "mean": 0.41015625,
+        "tissue_means": [
+          0.34375,
+          0.40625,
+          0.375,
+          0.375,
+          0.4375,
+          0.34375,
+          0.4375,
+          0.5625
+        ]
+      },
+      {
+        "generation": 5,
+        "arm": "protected_copy",
+        "mean": 0.9921875,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9375,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 5,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 6,
+        "arm": "split_replace",
+        "mean": 0.34375,
+        "tissue_means": [
+          0.3125,
+          0.40625,
+          0.375,
+          0.34375,
+          0.3125,
+          0.375,
+          0.3125,
+          0.3125
+        ]
+      },
+      {
+        "generation": 6,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 6,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 7,
+        "arm": "split_replace",
+        "mean": 0.3125,
+        "tissue_means": [
+          0.25,
+          0.3125,
+          0.375,
+          0.25,
+          0.28125,
+          0.3125,
+          0.4375,
+          0.28125
+        ]
+      },
+      {
+        "generation": 7,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 7,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 8,
+        "arm": "split_replace",
+        "mean": 0.3046875,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.375,
+          0.3125,
+          0.28125,
+          0.28125,
+          0.40625,
+          0.28125
+        ]
+      },
+      {
+        "generation": 8,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 8,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 9,
+        "arm": "split_replace",
+        "mean": 0.28125,
+        "tissue_means": [
+          0.25,
+          0.28125,
+          0.25,
+          0.28125,
+          0.28125,
+          0.25,
+          0.375,
+          0.28125
+        ]
+      },
+      {
+        "generation": 9,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 9,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 10,
+        "arm": "split_replace",
+        "mean": 0.28125,
+        "tissue_means": [
+          0.25,
+          0.28125,
+          0.28125,
+          0.25,
+          0.34375,
+          0.25,
+          0.34375,
+          0.25
+        ]
+      },
+      {
+        "generation": 10,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 10,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 11,
+        "arm": "split_replace",
+        "mean": 0.2890625,
+        "tissue_means": [
+          0.25,
+          0.28125,
+          0.3125,
+          0.25,
+          0.28125,
+          0.3125,
+          0.375,
+          0.25
+        ]
+      },
+      {
+        "generation": 11,
+        "arm": "protected_copy",
+        "mean": 0.99609375,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.96875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 11,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "generation": 12,
+        "arm": "split_replace",
+        "mean": 0.2734375,
+        "tissue_means": [
+          0.25,
+          0.28125,
+          0.28125,
+          0.28125,
+          0.3125,
+          0.25,
+          0.28125,
+          0.25
+        ]
+      },
+      {
+        "generation": 12,
+        "arm": "protected_copy",
+        "mean": 1.0,
+        "tissue_means": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "generation": 12,
+        "arm": "split_reset",
+        "mean": 0.25,
+        "tissue_means": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    ],
+    "terminal_contrasts": {
+      "body_vs_reset": {
+        "mean": 0.0234375,
+        "paired_tissue_interval": [
+          0.0078125,
+          0.0390625
+        ],
+        "positive_tissues": 5,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260907183001,
+        "supported": false,
+        "tissue_differences": [
+          0.0,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.0625,
+          0.0,
+          0.03125,
+          0.0
+        ]
+      },
+      "new_record_readout_vs_reader_off": {
+        "mean": 0.01953125,
+        "paired_tissue_interval": [
+          0.0078125,
+          0.03125
+        ],
+        "positive_tissues": 5,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260907183003,
+        "supported": false,
+        "tissue_differences": [
+          0.0,
+          0.0,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.0
+        ]
+      },
+      "new_record_readout_vs_reset": {
+        "mean": 0.01953125,
+        "paired_tissue_interval": [
+          0.0078125,
+          0.03125
+        ],
+        "positive_tissues": 5,
+        "quantiles": [
+          0.008333333333333333,
+          0.9916666666666667
+        ],
+        "resamples": 10000,
+        "seed": 20260907183002,
+        "supported": false,
+        "tissue_differences": [
+          0.0,
+          0.0,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.03125,
+          0.0
+        ]
+      }
+    },
+    "verdict": "NO_QUALIFIED_REPLACEMENT_LEAD",
+    "unit": "four-stripe-message body recognition probability"
+  }
+}

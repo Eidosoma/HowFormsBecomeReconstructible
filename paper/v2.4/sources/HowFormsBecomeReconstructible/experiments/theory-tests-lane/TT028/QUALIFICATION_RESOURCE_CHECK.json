@@ -1,0 +1,34 @@
+{
+  "active_or_cpu_consuming_threads": 2,
+  "active_threads": [
+    {
+      "pid": 876313,
+      "script": "workflow.py",
+      "state": "R",
+      "ticks": 2918,
+      "tid": 876313
+    },
+    {
+      "pid": 876492,
+      "script": "prepare.py",
+      "state": "D",
+      "ticks": 399,
+      "tid": 876492
+    }
+  ],
+  "admission_pass": true,
+  "automatic_polling": false,
+  "ceiling": 12,
+  "cpus": [
+    6,
+    7
+  ],
+  "free_bytes": 163112837120,
+  "numerical_threads": 1,
+  "observed_project_threads_including_sleeping": 2,
+  "planned_workers": 2,
+  "recorded_utc": "2026-10-17T17:21:02.404724+00:00",
+  "resource_script_sha256": "e307558a2822d3961ca7695867ebd9fa5060ef22d2825eae686c584105bdf0ca",
+  "sample_seconds": 1.0129994290182367,
+  "scientific_outputs_inspected": false
+}

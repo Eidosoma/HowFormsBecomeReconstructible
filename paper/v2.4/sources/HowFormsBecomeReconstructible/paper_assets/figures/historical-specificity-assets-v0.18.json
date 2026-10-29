@@ -1,0 +1,52 @@
+{
+  "figure_id": "fig-historical-specificity",
+  "kind": "reported-estimates",
+  "png": "data-historical-specificity-v0.18.png",
+  "data": "paper_assets/data/historical-specificity-v0.18.json",
+  "data_sha256": "202f563334f8817a8cead208476da81cc1a52a169611f79e49cbf9a88d6595bb",
+  "csv": "paper_assets/data/historical-specificity-v0.18.csv",
+  "csv_sha256": "f9d566ecb3f605ab19ed34642af0fcfef0d2601ddce212bb8f3b6bf8c35e340f",
+  "plot_script": "paper_assets/plot_historical_specificity.py",
+  "plot_script_sha256": "9524a604a25afd2f5eca4677acc0a526a9c4440f9b43ec298330e94f5a0ca380",
+  "archive": "paper_assets/data/experimental-tracks-v0.12-source-records.zip",
+  "archive_sha256": "5d40707e73ece2917bbacdd87e7cec0251b4f9b40cb6424e1e81ec7d986cb35b",
+  "sources": [
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/summary.json",
+      "sha256": "3482f4acc8e58184127db6c33b41229d57b8911ccb5d28ad770b8ff8623d64b9"
+    },
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/REPORT.md",
+      "sha256": "8cf948bbe9efbb7aaa03c4ff4fa78c8755024b40bd318f7a4850645c3b26293f"
+    },
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/COMPLETE.json",
+      "sha256": "80f52dfbeb0f851df36ef179cf6b7474fd37410cd24352fd87d22ba0bddfedcc"
+    },
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/INDEPENDENT_AUDIT.json",
+      "sha256": "fddc810c7c8ae7a723ac565f238966d3d62c150bdf75b4e88c4747da72e94c96"
+    },
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/manifest.json",
+      "sha256": "c28b5de3c007ca36314491ac00a07a6d36e68f4de6b236ffa037a017357dd5e6"
+    },
+    {
+      "member": "workspace/WhereDoFormsComeFrom/experiments/E014_long_renewal/runs/confirmation_v2/inputs/E014_long_renewal/PROTOCOL.md",
+      "sha256": "83405f4236c878b3ee2cc0f785970f1dfedb2421ff01b2b086e317d480f19a06"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper_assets/figures/data-historical-specificity-v0.18.png",
+      "sha256": "7f7599ea72f5deb50ffdd42620c572e6e40dc003ce32fa71e2de5fcdd11199d8"
+    },
+    {
+      "path": "paper_assets/figures/data-historical-specificity-v0.18.svg",
+      "sha256": "b5b3ace30da3fbac6b05e995caaa8ffd35ecb5a7e6a402b003a13b4d8a2234c7"
+    }
+  ],
+  "native_estimates_verified": 32,
+  "new_inference": false,
+  "selection": "Both prespecified record budgets; all four fresh-reader checkpoints; own/foreign/protected-copy means and own-minus-foreign contrasts."
+}

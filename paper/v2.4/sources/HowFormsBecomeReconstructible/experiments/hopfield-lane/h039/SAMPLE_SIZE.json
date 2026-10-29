@@ -1,0 +1,472 @@
+{
+  "experiment": "H039",
+  "created_utc": "2026-10-17T18:09:10.996156+00:00",
+  "development": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/hopfield-lane/runs/h038_diagnostic_v1",
+  "development_manifest_sha256": "d14f6193e8952688aecc30bd31abe533545a819ced97c25a72d1885d8143b48e",
+  "source_summary_sha256": {
+    "raw/diagnostic/pilot_000.summary.json": "c8c485965a018a104839aab278624c37cebd54ac91ed8f485d94ec92e0709aff",
+    "raw/diagnostic/pilot_001.summary.json": "a9112d5be4d7b1bd5cde7e0c494b3ff83df6cdabde920402abe3891964444e09",
+    "raw/diagnostic/pilot_002.summary.json": "c1937f53127ee5f4dd30e5a2b3cbfcda8ffb98ac6df4f257d303f55f6a1853cc",
+    "raw/diagnostic/pilot_003.summary.json": "3e87789279ddc7630f27d692aeb41d657004e48c8d8721e79042d5bc45bd614f",
+    "raw/diagnostic/pilot_004.summary.json": "c79804592dbff5cab78db3a8d37383daa459a9004afe6dc775f83804f622b152",
+    "raw/diagnostic/pilot_005.summary.json": "079a70b8ba208a65b5d9db2d1b46f6c6e459c7fad6579c37e04edf2c2ba97fa8",
+    "raw/diagnostic/pilot_006.summary.json": "047b36987b8612fb36ab77b209916c92ae08a29190ea03250f451b72fd94c4eb",
+    "raw/diagnostic/pilot_007.summary.json": "f0a4bf5bae8afa67e85f5f4f73cf85598e496e59252822d511e2b8b2d1798647"
+  },
+  "source_classification": "H038 EXPOSED DEVELOPMENT ONLY",
+  "source_networks": 8,
+  "target_marginal_95pct_half_width": 0.05,
+  "sd_inflation": 1.5,
+  "multiplier": 1.96,
+  "minimum_blocks": 64,
+  "round_up_multiple": 8,
+  "required_before_rounding": 86,
+  "blocks": 88,
+  "block_ids": [
+    39039000,
+    39039001,
+    39039002,
+    39039003,
+    39039004,
+    39039005,
+    39039006,
+    39039007,
+    39039008,
+    39039009,
+    39039010,
+    39039011,
+    39039012,
+    39039013,
+    39039014,
+    39039015,
+    39039016,
+    39039017,
+    39039018,
+    39039019,
+    39039020,
+    39039021,
+    39039022,
+    39039023,
+    39039024,
+    39039025,
+    39039026,
+    39039027,
+    39039028,
+    39039029,
+    39039030,
+    39039031,
+    39039032,
+    39039033,
+    39039034,
+    39039035,
+    39039036,
+    39039037,
+    39039038,
+    39039039,
+    39039040,
+    39039041,
+    39039042,
+    39039043,
+    39039044,
+    39039045,
+    39039046,
+    39039047,
+    39039048,
+    39039049,
+    39039050,
+    39039051,
+    39039052,
+    39039053,
+    39039054,
+    39039055,
+    39039056,
+    39039057,
+    39039058,
+    39039059,
+    39039060,
+    39039061,
+    39039062,
+    39039063,
+    39039064,
+    39039065,
+    39039066,
+    39039067,
+    39039068,
+    39039069,
+    39039070,
+    39039071,
+    39039072,
+    39039073,
+    39039074,
+    39039075,
+    39039076,
+    39039077,
+    39039078,
+    39039079,
+    39039080,
+    39039081,
+    39039082,
+    39039083,
+    39039084,
+    39039085,
+    39039086,
+    39039087
+  ],
+  "endpoints": {
+    "serial_benefit_at_gain8": {
+      "per_network": [
+        0.5625,
+        0.625,
+        0.765625,
+        0.5625,
+        0.5,
+        0.640625,
+        0.21875,
+        0.515625
+      ],
+      "sd": 0.15768039467175138,
+      "inflated_sd": 0.23652059200762707,
+      "required_blocks": 86,
+      "planned_marginal_half_width": 0.049417832455901575
+    },
+    "own_minus_foreign_a": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_foreign_b": {
+      "per_network": [
+        0.578125,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.12414256704742738,
+      "inflated_sd": 0.18621385057114107,
+      "required_blocks": 54,
+      "planned_marginal_half_width": 0.03890690781036179
+    },
+    "own_minus_foreign_both": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_scrambled": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_erased": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_read_off": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_write_off": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_damaged_copy": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "own_minus_writer_scrambled": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.75,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09262720500556441,
+      "inflated_sd": 0.13894080750834661,
+      "required_blocks": 30,
+      "planned_marginal_half_width": 0.029029834097970345
+    },
+    "serial_benefit_at_gain4": {
+      "per_network": [
+        0.34375,
+        0.3125,
+        0.546875,
+        0.4375,
+        0.28125,
+        0.328125,
+        0.15625,
+        0.25
+      ],
+      "sd": 0.11833515414008275,
+      "inflated_sd": 0.1775027312101241,
+      "required_blocks": 49,
+      "planned_marginal_half_width": 0.03708683526009431
+    },
+    "uninterrupted_benefit": {
+      "per_network": [
+        0.75,
+        0.75,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09300297614285562,
+      "inflated_sd": 0.13950446421428342,
+      "required_blocks": 30,
+      "planned_marginal_half_width": 0.029147602671185026
+    },
+    "g16_4_4": {
+      "per_network": [
+        0.125,
+        0.09375,
+        0.078125,
+        0.234375,
+        0.296875,
+        0.203125,
+        0.328125,
+        0.21875
+      ],
+      "sd": 0.09184732181481163,
+      "inflated_sd": 0.13777098272221744,
+      "required_blocks": 30,
+      "planned_marginal_half_width": 0.02878541476520532
+    },
+    "g16_4_8": {
+      "per_network": [
+        0.1875,
+        0.109375,
+        0.109375,
+        0.3125,
+        0.359375,
+        0.265625,
+        0.40625,
+        0.234375
+      ],
+      "sd": 0.1096735402696013,
+      "inflated_sd": 0.16451031040440195,
+      "required_blocks": 42,
+      "planned_marginal_half_width": 0.03437224170558028
+    },
+    "g16_8_4": {
+      "per_network": [
+        0.46875,
+        0.40625,
+        0.625,
+        0.671875,
+        0.578125,
+        0.53125,
+        0.484375,
+        0.46875
+      ],
+      "sd": 0.08973450267863606,
+      "inflated_sd": 0.1346017540179541,
+      "required_blocks": 28,
+      "planned_marginal_half_width": 0.028123246571762486
+    },
+    "g16_8_8": {
+      "per_network": [
+        0.75,
+        0.734375,
+        0.875,
+        0.875,
+        0.859375,
+        0.90625,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09704046928251855,
+      "inflated_sd": 0.14556070392377785,
+      "required_blocks": 33,
+      "planned_marginal_half_width": 0.030412973422780824
+    },
+    "path_gain4": {
+      "per_network": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sd": 0.0,
+      "inflated_sd": 0.0,
+      "required_blocks": 0,
+      "planned_marginal_half_width": 0.0
+    },
+    "path_gain8": {
+      "per_network": [
+        0.75,
+        0.75,
+        0.875,
+        0.875,
+        0.875,
+        0.875,
+        0.625,
+        0.75
+      ],
+      "sd": 0.09300297614285562,
+      "inflated_sd": 0.13950446421428342,
+      "required_blocks": 30,
+      "planned_marginal_half_width": 0.029147602671185026
+    },
+    "g16_protected_gain8": {
+      "per_network": [
+        0.984375,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.984375,
+        1.0,
+        1.0
+      ],
+      "sd": 0.007232969529473058,
+      "inflated_sd": 0.010849454294209587,
+      "required_blocks": 1,
+      "planned_marginal_half_width": 0.0022668491990410792
+    },
+    "renewal_minus_protected": {
+      "per_network": [
+        -0.234375,
+        -0.265625,
+        -0.125,
+        -0.125,
+        -0.140625,
+        -0.078125,
+        -0.375,
+        -0.25
+      ],
+      "sd": 0.0987329042615914,
+      "inflated_sd": 0.14809935639238708,
+      "required_blocks": 34,
+      "planned_marginal_half_width": 0.030943391097168545
+    },
+    "g0_renewal_gain8": {
+      "per_network": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.984375,
+        1.0
+      ],
+      "sd": 0.005524271728019903,
+      "inflated_sd": 0.008286407592029855,
+      "required_blocks": 1,
+      "planned_marginal_half_width": 0.0017313346739426271
+    },
+    "terminal_minus_initial": {
+      "per_network": [
+        -0.25,
+        -0.265625,
+        -0.125,
+        -0.125,
+        -0.140625,
+        -0.09375,
+        -0.359375,
+        -0.25
+      ],
+      "sd": 0.09316689943082561,
+      "inflated_sd": 0.1397503491462384,
+      "required_blocks": 31,
+      "planned_marginal_half_width": 0.029198977057946208
+    }
+  },
+  "preexisting_raw_artifact_matches": [],
+  "no_fresh_inputs_generated": true,
+  "note": "Approximate precision planning using small exposed development sample; no coverage or power guarantee. Not simultaneous five-point precision; report attained intervals. No interim resizing or exclusions."
+}

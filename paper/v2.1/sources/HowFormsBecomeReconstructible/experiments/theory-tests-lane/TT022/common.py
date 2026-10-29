@@ -1,0 +1,90 @@
+"""TT022 files, inherited physics and explicit exposed baseline packet sources."""
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+import numpy as np
+
+ROOT = Path(__file__).resolve().parent
+LANE = ROOT.parent
+SOURCE = ROOT/'source'
+sys.path.insert(0, str(SOURCE/'codex.lawsConfirmation/src'))
+from laws_confirmation import l22_early_capture as model
+import reference as ref
+
+BLOCKS = tuple(range(21000000, 21000004))
+DISPOSABLE = (603210, 603211)
+KEYS = ('V', 'ema', 'R', 'theta')
+
+
+def now(): return datetime.now(timezone.utc).isoformat()
+def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def read_json(path): return json.loads(Path(path).read_text())
+def serialized(value): return (json.dumps(value, sort_keys=True, indent=2, allow_nan=False)+'\n').encode()
+
+
+def write_json(path, value):
+    path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('xb') as f: f.write(serialized(value))
+
+
+def arrays(path):
+    with np.load(path, allow_pickle=False) as saved:
+        return {k: saved[k].copy() for k in saved.files}
+
+
+def identities(values):
+    return {k: dict(dtype=str(v.dtype), shape=list(v.shape),
+                   sha256=hashlib.sha256(v.tobytes()).hexdigest()) for k, v in values.items()}
+
+
+def write_arrays(path, values):
+    with Path(path).open('xb') as f: np.savez_compressed(f, **values)
+    result = arrays(path)
+    assert identities(result) == identities(values)
+    return result
+
+
+def verify(hashes):
+    for path, digest in hashes.items(): assert sha(path) == digest, path
+
+
+def source_check():
+    manifest = read_json(ROOT/'SOURCE_MANIFEST.json')
+    for item in manifest['files']: assert sha(ROOT/item['snapshot']) == item['sha256']
+    for name, digest in manifest['independent_reference'].items(): assert sha(ROOT/name) == digest
+    return len(manifest['files'])
+
+
+def baseline(role, index):
+    manifest = read_json(ROOT/'BASELINE_MANIFEST.json')
+    item = manifest['rows'][f'{role}:{index}']
+    for p, digest in item['hashes'].items(): assert sha(ROOT/p) == digest
+    return arrays(ROOT/item['packets']), read_json(ROOT/item['config'])
+
+
+def baseline_check():
+    manifest = read_json(ROOT/'BASELINE_MANIFEST.json')
+    verify(manifest['evidence'])
+    for item in manifest['rows'].values():
+        for p, digest in item['hashes'].items(): assert sha(ROOT/p) == digest
+    return len(manifest['rows'])
+
+
+def runtime_hashes():
+    model.source.api()
+    names = ('common.py', 'design.py', 'kernel.py', 'audit.py', 'analysis.py', 'run.py',
+             'reference.py', 'tt019_reference.py', 'qualify.py', 'execute.py', 'freeze.py',
+             'PROTOCOL.md', 'SOURCE_MANIFEST.json', 'BASELINE_MANIFEST.json')
+    files = {ROOT/name for name in names} | {LANE/'run_python.sh'}
+    files |= {ROOT/item['snapshot'] for item in read_json(ROOT/'SOURCE_MANIFEST.json')['files']}
+    for row in read_json(ROOT/'BASELINE_MANIFEST.json')['rows'].values():
+        files |= {ROOT/p for p in row['hashes']}
+    for module in list(sys.modules.values()):
+        name = getattr(module, '__file__', None)
+        if name and 'ingressing-minds-v-ruliad-paper-ideas' in str(name):
+            raise AssertionError('live upstream import '+str(name))
+        if name and SOURCE in Path(name).resolve().parents: assert Path(name).resolve() in files
+    return {str(p): sha(p) for p in sorted(files)}

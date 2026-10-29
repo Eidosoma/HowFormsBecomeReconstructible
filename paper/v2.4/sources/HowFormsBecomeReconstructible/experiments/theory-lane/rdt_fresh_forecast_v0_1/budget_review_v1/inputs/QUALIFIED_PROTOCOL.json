@@ -1,0 +1,81 @@
+{
+  "version": "fresh_forecast_0.1",
+  "status": "PREPARED_FOR_RUNNER_QUALIFICATION",
+  "namespace": "RDT_fresh_joint_power_v0_1",
+  "qualification_namespace": "RDT_fresh_runner_qualification_v0_1",
+  "stage": "fresh_v1",
+  "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce",
+  "regimes": [
+    "matched",
+    "independent"
+  ],
+  "repeats": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cohort": {
+    "first_block": 0,
+    "eligible_blocks": 108,
+    "maximum_attempts": 216,
+    "wave_size": 8,
+    "selection": "Both expression classes required; inherited boundary-only hash/rule-balanced up to2 per class; first108 eligible IDs in completed ascending8-block waves. Preserve every attempt and surplus block."
+  },
+  "resources": {
+    "workers": 8,
+    "shared_threads": 12,
+    "hard_wall_seconds": 21600,
+    "minimum_free_bytes": 2000000000,
+    "maximum_saved_bytes": 60000000000,
+    "maximum_worker_resident_bytes": 1500000000,
+    "automatic_retry": false,
+    "automatic_resume": false,
+    "automatic_extension": false,
+    "automatic_polling": false
+  },
+  "qualification": {
+    "eligible_blocks": 2,
+    "maximum_attempts": 8,
+    "first_block": -8,
+    "wave_size": 8,
+    "hard_wall_seconds": 1800,
+    "legacy_block": 34000,
+    "fixture": "-8,-7 are ineligible; -6 has4 rows, -5 has3 with a singleton pass class; remaining4 are eligible surplus. Synthetic packets use existing fixed fixture."
+  },
+  "analysis": {
+    "margins": {
+      "tt008": 0.002,
+      "direct_rival": 0.0
+    },
+    "alpha": 0.025,
+    "weights": "Equal acquisition block, equal current_pass class, equal packet within class, equal individual squared losses across four futures.",
+    "interval": "mean +/- t.ppf(.975,B-1)*sample_sd/sqrt(B)",
+    "joint": "All four lower limits strictly exceed margins; component rejection iff upper<=margin, otherwise unresolved. Intersection-union nominal .025 under block-t assumptions, not simultaneous95% intervals.",
+    "complete_only": true,
+    "diagnostics": "Weighted calibration in ten fixed bins and additive loss mass by history and current expression; no subgroup gate."
+  },
+  "seed_contract": {
+    "adapter": "acquisition.namespace, selection.namespace, forcing.namespace, forcing.future_namespace := scope namespace + /acquisition, /selection, /probe, /future",
+    "probe_stage": "fresh_v1",
+    "future_stage": "fresh_v1/replicate_<r>",
+    "scientific_ids": "0..215",
+    "qualification_ids": "-8..-1",
+    "pairing": "Regime omitted from seed; same base forcing and injuries, matched copies cue0 into cue1. Independent futures distinguished by replicate stage; distinct probe/future namespaces. Each regime propagates its own packets."
+  },
+  "endpoint": "18 exact rewrites g15..32 from g14, followed by fresh g33 test. All4 task-aligned last32 port means strictly>.25. Earlier failures do not stop the path.",
+  "forecast_barrier": "Verify all selected block measurements and fixed probabilities before writing the full-cohort seal. No continuation without its hash and complete cohort. No model fitting or recalibration.",
+  "native_read_costs": {
+    "candidate_per_packet_regime": 64,
+    "direct_rival_per_packet_regime": 8,
+    "tt008_extra": 0,
+    "acquisition_per_attempt": 896,
+    "acquisition_flat_per_attempt": 12,
+    "measurement_flat_per_packet_regime": 3,
+    "future_per_packet_regime_repeat": 19,
+    "future_flat_per_block_regime_repeat": 19
+  },
+  "claim_boundary": "Ordinary forecasting in a selected fresh-founder panel; no RDT-specific law, endogenous maintenance or repair-benefit scheduler. Historical failed selectors/reductions remain failed.",
+  "planning_limits": "108 blocks selected using only16 exposed independent blocks and6 repeat streams. Projected joint bound .8086 conditional on uncertain effects; LOO counts68..204. Cost4h29m all eligible,5h41m at216attempt cap; hard6h stop may leave no inferential verdict.",
+  "launch": "Qualification cannot launch science. A later explicit scientific invocation requires a matching successful frozen qualification and fresh CPU admission; no automatic successor."
+}

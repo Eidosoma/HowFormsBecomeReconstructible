@@ -1,0 +1,138 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "effa4cb70b094c6193d619fff3cecf7deb6e241f32b8ea268070157df7762299",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/lr004/preflight",
+ "checked_utc": "2026-10-27T09:45:47Z",
+ "wall_s": 262.6,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/E/S4_t0": true,
+    "raw/E/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "S4_t1/dw/reference_teachers=lr003.sim.run": true,
+    "S4_t1/li4/reference_teachers=lr003.sim.run": true,
+    "LB_t0/dw/reference_teachers=lr003.sim.run": true,
+    "LB_t0/li4/reference_teachers=lr003.sim.run": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 6.230016502684066e-13,
+   "items": {
+    "S4_t1/li4/0.003/vote/case0": 4.0523140398818214e-14,
+    "F0_t0/li4/0.001/vote/case1": 3.747696597500294e-13,
+    "LB_t0/li4/0.01/pair/case2": 6.230016502684066e-13,
+    "S4_t1/dw/0.003/anchors4/case3": 2.220446049250313e-16
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "pair=vote_without_noise": true,
+    "vote_keeps_the_taught_bonds_without_noise": true,
+    "anchors4=anchors16_without_noise": true,
+    "record_never_reads_the_body": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "flip_rate/0/record+parity": true,
+    "flip_rate/0/body": true,
+    "flip_rate/0/site": true,
+    "flip_rate/0/pair": true,
+    "flip_rate/0/vote": true,
+    "flip_rate/0/anchors4": true,
+    "flip_rate/0/anchors16": true,
+    "flip_rate/0.001/record+parity": true,
+    "flip_rate/0.001/body": true,
+    "flip_rate/0.001/site": true,
+    "flip_rate/0.001/pair": true,
+    "flip_rate/0.001/vote": true,
+    "flip_rate/0.001/anchors4": true,
+    "flip_rate/0.001/anchors16": true,
+    "flip_rate/0.003/record+parity": true,
+    "flip_rate/0.003/body": true,
+    "flip_rate/0.003/site": true,
+    "flip_rate/0.003/pair": true,
+    "flip_rate/0.003/vote": true,
+    "flip_rate/0.003/anchors4": true,
+    "flip_rate/0.003/anchors16": true,
+    "flip_rate/0.01/record+parity": true,
+    "flip_rate/0.01/body": true,
+    "flip_rate/0.01/site": true,
+    "flip_rate/0.01/pair": true,
+    "flip_rate/0.01/vote": true,
+    "flip_rate/0.01/anchors4": true,
+    "flip_rate/0.01/anchors16": true,
+    "flip_rate/0.03/record+parity": true,
+    "flip_rate/0.03/body": true,
+    "flip_rate/0.03/site": true,
+    "flip_rate/0.03/pair": true,
+    "flip_rate/0.03/vote": true,
+    "flip_rate/0.03/anchors4": true,
+    "flip_rate/0.03/anchors16": true,
+    "anchors_cover_1/4": true,
+    "anchors_cover_1/16": true,
+    "vote_body_outvoted": true,
+    "vote_first_record_outvoted": true,
+    "pair_learns_only_where_the_records_agree": true,
+    "anchor_decides_at_its_cell_record_elsewhere": true
+   }
+  },
+  "Q8_labyrinths": {
+   "pass": true,
+   "items": {
+    "900754/0": {
+     "mean": -0.0098,
+     "spacing": 7.886
+    },
+    "900754/1": {
+     "mean": 0.0,
+     "spacing": 7.655
+    },
+    "900755/0": {
+     "mean": 0.0039,
+     "spacing": 7.489
+    },
+    "900755/1": {
+     "mean": -0.0098,
+     "spacing": 7.908
+    }
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 0.73,
+   "forecast_cpu_h": 8.86,
+   "worker_rss_mb": 296.9,
+   "bytes_per_task": 10590484
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_sources.csv": 79137,
+    "contrasts_bodies.csv": 26700,
+    "summary.json": 176978,
+    "predictions_scored.json": 2677,
+    "TABLES.md": 30568
+   }
+  }
+ }
+}

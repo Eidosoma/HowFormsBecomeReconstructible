@@ -1,0 +1,97 @@
+{
+  "version": "rdt_repair_repeatability_v0_1",
+  "status": "FROZEN_DEVELOPMENT_DESIGN",
+  "question": "Does the signed terminal benefit of one fixed repair vary reproducibly between the selected packets across independent future streams?",
+  "cohort": {
+    "records": 63,
+    "blocks": 16,
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "new_replicates": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selection": "All original selected g14 packets; no selection using prior outcomes."
+  },
+  "future": {
+    "namespace": "RDT_repair_repeatability_v0_1_future",
+    "seed": "PCG64 seeded by first 16 SHA256 bytes, little endian, of compact JSON [namespace,stage,replicate,*key,generation,purpose,channel].",
+    "stages": [
+      "pilot",
+      "benchmark",
+      "qualification"
+    ],
+    "same_within_pair": true,
+    "regimes_share_base_draws": true,
+    "inherited_horizon": [
+      15,
+      33
+    ],
+    "repairs_per_branch": [
+      0,
+      1
+    ]
+  },
+  "analysis": {
+    "primary": "Unclipped weighted between-packet variance of conditional paired benefit, estimated from cross-products of distinct future replicates.",
+    "estimator": "Vhat = mean over r<s of [sum_i w_i D_ir D_is - (sum_i w_i D_ir)(sum_i w_i D_is)].",
+    "weights": "w_i = 1/(2 B n_block,current_class), within each regime; B=16.",
+    "noise": "What = sum_i w_i sample_variance_r(D_ir), ddof=1.",
+    "conditional_mean": "tau_i = E[D_ir | fixed selected packet and noise regime].",
+    "primary_interval": "Delete-one-acquisition-block jackknife SE; estimate +/- t(.975,B-1)*SE. Descriptive, not exact or calibrated for 16 selected blocks. Negative estimates and interval bounds retained.",
+    "signal": "REPEATABILITY_SIGNAL only if SE>0 and lower>0; otherwise UNRESOLVED. Zero SE supplies no certainty. Each regime reported separately; both required for joint signal.",
+    "secondary": [
+      "Mean paired benefit and rescue/harm frequencies averaged over the four new replicates; equal block/class weighting.",
+      "Single-future within-packet noise, all packet differences and all block leave-out estimates.",
+      "Fixed ordinary, direct-eight and successor-sixty-four control-outcome Brier scores, averaged across new futures; no refitting."
+    ],
+    "no_old_outcomes_in_estimators": true,
+    "no_new_model_fits": true,
+    "no_scheduler_selection": true,
+    "no_subgroup_rescue": true
+  },
+  "costs": {
+    "primary_native_reads": 19152,
+    "flat_native_reads": 4864,
+    "physical_repair_calls": 63,
+    "logical_repaired_branches": 504,
+    "new_acquisition_reads": 0,
+    "new_probe_reads": 0,
+    "extra_frozen_probe_reads_per_record_regime": {
+      "tt008": 0,
+      "direct_rival": 8,
+      "candidate": 64
+    },
+    "cached_historical_probe_reads": 9072
+  },
+  "audit": {
+    "inherited_code": "Byte-identical previous frozen paired/native/action implementations; only the declared random-stream adapter is replaced at runtime.",
+    "native": "One key-only hash-min packet per block, regime and replicate, both arms, all 19 reads; independent flat trajectories and scalar endpoints.",
+    "analysis": "Independent scalar U-statistic, explicit ordered-pair covariance sums, within-packet variance, delete-block SE, event and forecast reductions.",
+    "completeness": "No analysis until all four complete new replicates pass; failures remain partial and are not summarized as a smaller study."
+  },
+  "resources": {
+    "workers": 4,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "hard_wall_seconds": 3600,
+    "qualification_wall_seconds": 300,
+    "benchmark_wall_seconds": 360,
+    "forecast_factor": 1.5,
+    "fixed_overhead_seconds": 120,
+    "maximum_worker_resident_bytes": 600000000,
+    "maximum_worker_saved_bytes": 500000000,
+    "minimum_free_disk_bytes": 4000000000,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_extension": false,
+    "automatic_successor": false,
+    "hard_wall_scope": "Entire detached job, including disposable concurrent benchmark, scientific preparation, all four replicates and final checks.",
+    "study_launch": "Within this explicitly authorized job, only after the concurrent benchmark and current CPU gates pass; no later scientific successor."
+  },
+  "scope": "Measurement development on exposed selected founders, using new streams. No new-founder validation, confirmation of RDT, repair efficacy qualification or deployment policy."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "POST_HOC_NOT_PREREGISTERED",
+  "date": "2026-10-12",
+  "exposure": "Reviewer-specified contrast; aggregate cell means and original within-history intervals already known. Specification written before computing the new interaction interval.",
+  "scope": "Full-rewrite records at horizon 32, fresh scattered-24 common reader, both-cue success; paired blocks 34000\u201334031.",
+  "contrast": "(matched_untreated - matched_permuted) - (independent_untreated - independent_permuted)",
+  "direction": "Positive means a larger loss under matched-noise rebuilding history.",
+  "unit": "32 paired independent blocks, each averaging four founders and four recipients; same block resampled in all four conditions.",
+  "bootstrap": "10000 whole-block resamples; reuse original E054 semantic PCG64 bootstrap stream; percentile two-sided 95%, linear quantile interpolation.",
+  "seed_specification": "SHA256 of compact JSON [E054,bootstrap,record_interventions], first 16 digest bytes as little-endian integer for NumPy PCG64.",
+  "multiple_comparisons": "One reviewer-requested post hoc interaction, pointwise interval, no correction for outcome-informed selection; does not change original qualification.",
+  "additional_reporting": "Transcribe the original prespecified policy-by-permutation secondary contrasts separately; no search across interventions, horizons or injuries.",
+  "checks": "Validate original mean/intervals from saved block summaries, check integer-count arithmetic and an independent resample-by-counts calculation; no simulation module imports."
+}

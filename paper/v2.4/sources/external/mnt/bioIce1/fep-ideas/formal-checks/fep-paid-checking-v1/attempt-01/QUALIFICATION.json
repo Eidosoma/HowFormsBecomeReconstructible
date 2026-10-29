@@ -1,0 +1,245 @@
+{
+  "accounting_checks": {
+    "count_bounds": 1,
+    "finite_state": 16,
+    "information_nonnegative": 16,
+    "only_paid_labels_retained": 16,
+    "paid_label_mask": 1,
+    "phase_count_closure": 1,
+    "phase_sum_closure": 1,
+    "posterior_normalized": 16,
+    "regret_closure": 1
+  },
+  "checks": {
+    "aggregate_axes": 1,
+    "averaged_cost_axes": 172,
+    "clock_initialization_and_terminal": 1,
+    "cost_components_close": 42,
+    "cost_variance_closure": 42,
+    "disabled_rule_identity": 1,
+    "disabled_rule_two_arm_identity_actions": 1,
+    "disabled_rule_two_arm_identity_gap_before": 1,
+    "disabled_rule_two_arm_identity_information": 1,
+    "disabled_rule_two_arm_identity_labels": 1,
+    "disabled_rule_two_arm_identity_planned_actions": 1,
+    "disabled_rule_two_arm_identity_posterior": 1,
+    "disabled_rule_two_arm_identity_subjective_u": 1,
+    "finite_state": 216,
+    "independent_synthetic_accounting_alarm": 1,
+    "independent_synthetic_accounting_audit_counts": 1,
+    "independent_synthetic_accounting_confident_agreement": 1,
+    "independent_synthetic_accounting_counts": 1,
+    "independent_synthetic_accounting_extra_counts": 1,
+    "independent_synthetic_accounting_first": 1,
+    "independent_synthetic_accounting_phase_counts": 1,
+    "independent_synthetic_accounting_phase_sums": 1,
+    "independent_synthetic_accounting_posterior_final": 1,
+    "independent_synthetic_accounting_predictive": 1,
+    "independent_synthetic_accounting_sums": 1,
+    "information_nonnegative": 216,
+    "interval_base_block_axes": 1846,
+    "only_paid_labels_retained": 216,
+    "panel_base_block_arm_axes": 172,
+    "phase_cost_mean_closure": 20,
+    "planned_extra_and_forced_disjoint": 216,
+    "positive_selected_exposure": 172,
+    "posterior_normalized": 216,
+    "predictive_phase_exposure": 1,
+    "previous_exact_model_qualified": 1,
+    "rule_gap_bound": 216,
+    "rule_truth_table_actions": 1,
+    "rule_truth_table_due": 1,
+    "rule_truth_table_forced": 1,
+    "scalar_actions": 72,
+    "scalar_beliefs": 72,
+    "scalar_predictions": 72,
+    "scalar_sufficient_statistics": 72,
+    "selected_count_axes": 172,
+    "serial_four_worker_fingerprint": 4,
+    "terminal_ct4_truncation": 2,
+    "terminal_information_zero": 4,
+    "unchanged_structured_evaluator_actions": 1,
+    "unchanged_structured_evaluator_extra": 1,
+    "unchanged_structured_evaluator_information": 1,
+    "unchanged_structured_evaluator_labels": 1,
+    "unchanged_structured_evaluator_posterior": 1,
+    "unchanged_structured_evaluator_subjective_u": 1
+  },
+  "independent_readback_checks": {
+    "action_range": 100,
+    "analytic_stratified_variance": 1,
+    "belief_range": 100,
+    "calibration_size": 1,
+    "complete_groups": 1,
+    "condition_count": 1,
+    "condition_identity": 75,
+    "diagnostic_audit_totals": 42,
+    "diagnostic_confident_agreement_totals": 42,
+    "diagnostic_count_totals": 42,
+    "extra_ct4_is_planned_purchase": 100,
+    "extra_ct4_purchase_total": 42,
+    "feedback_exact_mask": 100,
+    "feedback_gap_bound": 10000,
+    "finite_traces": 1,
+    "first_purchase_bound": 100,
+    "frozen_gates": 2,
+    "harm_count_interval_lower_above_zero": 2,
+    "harm_count_point_equal": 2,
+    "harm_count_point_lower": 2,
+    "independent_clock_actions": 100,
+    "independent_clock_due": 100,
+    "independent_clock_forced": 100,
+    "independent_clock_gap_before": 100,
+    "independent_regret_identity": 100,
+    "information_sign_terminal": 100,
+    "interval_fields": 1857,
+    "known_law_floor": 75,
+    "known_law_floor_exact": 75,
+    "no_double_purchase": 100,
+    "old_axis_defect_detected": 2,
+    "old_variance_defect_detected": 2,
+    "per_stratum_block_permutation": 4,
+    "phase_count_totals": 60,
+    "physical_range": 50,
+    "posterior_ranges": 100,
+    "predictive_means": 60,
+    "predictive_totals": 60,
+    "result_arms": 1,
+    "result_sample": 1,
+    "same_physical_truth": 1,
+    "scalar_interval_lower95": 1857,
+    "scalar_interval_mc_se": 1857,
+    "scalar_interval_mean": 1857,
+    "scalar_interval_upper95": 1857,
+    "scalar_rows_rectangular": 1857,
+    "signed_harms_retained": 2,
+    "trace_dimensions": 1,
+    "unequal_axes_scalar_selection": 2,
+    "zero_headroom_retained": 75
+  },
+  "parallel_records": [
+    {
+      "accounting_checks": {},
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "checks": {
+        "finite_state": 16,
+        "information_nonnegative": 16,
+        "only_paid_labels_retained": 16,
+        "planned_extra_and_forced_disjoint": 16,
+        "posterior_normalized": 16,
+        "rule_gap_bound": 16
+      },
+      "cpu_seconds": 3.0015883559999996,
+      "fallback": [
+        0,
+        0
+      ],
+      "fingerprint": "53352fa2976537f82fdc6cbcaa214a5f0bc9e2a4a135896c2f1169050b064e6d",
+      "indices": [
+        0
+      ],
+      "label": "synthetic_audit",
+      "nice": 10,
+      "threads": 1,
+      "wall_seconds": 3.037004731944762
+    },
+    {
+      "accounting_checks": {},
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "checks": {
+        "finite_state": 16,
+        "information_nonnegative": 16,
+        "only_paid_labels_retained": 16,
+        "planned_extra_and_forced_disjoint": 16,
+        "posterior_normalized": 16,
+        "rule_gap_bound": 16
+      },
+      "cpu_seconds": 3.024612493,
+      "fallback": [
+        0,
+        0
+      ],
+      "fingerprint": "353cd1c858587b4f047d04b01b7fa581228a154967f51ac3c0e7d05ffa7cd3fb",
+      "indices": [
+        1
+      ],
+      "label": "synthetic_audit",
+      "nice": 10,
+      "threads": 1,
+      "wall_seconds": 3.106504470924847
+    },
+    {
+      "accounting_checks": {},
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "checks": {
+        "finite_state": 16,
+        "information_nonnegative": 16,
+        "only_paid_labels_retained": 16,
+        "planned_extra_and_forced_disjoint": 16,
+        "posterior_normalized": 16,
+        "rule_gap_bound": 16
+      },
+      "cpu_seconds": 3.211814158,
+      "fallback": [
+        0,
+        0
+      ],
+      "fingerprint": "6f67e125047c5c716d1fa58d7a6092453b36df8e2a8a3afef3616f77cee1676a",
+      "indices": [
+        2
+      ],
+      "label": "synthetic_audit",
+      "nice": 10,
+      "threads": 1,
+      "wall_seconds": 3.2122851320309564
+    },
+    {
+      "accounting_checks": {},
+      "affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "checks": {
+        "finite_state": 16,
+        "information_nonnegative": 16,
+        "only_paid_labels_retained": 16,
+        "planned_extra_and_forced_disjoint": 16,
+        "posterior_normalized": 16,
+        "rule_gap_bound": 16
+      },
+      "cpu_seconds": 3.212367956,
+      "fallback": [
+        0,
+        0
+      ],
+      "fingerprint": "076fefcff4ac4b98cb3023540587c685890f74db7d6d97419d3ddae53b9da383",
+      "indices": [
+        3
+      ],
+      "label": "synthetic_audit",
+      "nice": 10,
+      "threads": 1,
+      "wall_seconds": 3.2143151049967855
+    }
+  ],
+  "passed": true,
+  "previous_model_qualification_sha256": "0ccb4ef6e84b925db0c1c20e409988372b873f018f8a79eeec98cf0db43e120d",
+  "seconds": 50.08155890007038
+}

@@ -1,0 +1,53 @@
+{
+  "automatic_followup_polling": false,
+  "checked_after_launching_command_returned": true,
+  "code_sha256": "3c928e4461957a89c88e0dcd83218321201306adc7abd036e4b6bef9268b3f42",
+  "completed_batch_counts_inspected": false,
+  "launch_sha256": "8ad83dd32bef3505122a4716f0d25f768ed776ba4db4b2662c554c35e8368864",
+  "main": {
+    "cpu_ticks": 76,
+    "cpus": [
+      6,
+      7
+    ],
+    "parent_pid": 1,
+    "pid": 881369,
+    "start_ticks": 19720794,
+    "state": "S",
+    "threads": 3
+  },
+  "main_pid": 881369,
+  "namespace": "/proc/881385/ns/pid:[4026531836]",
+  "recorded_utc": "2026-10-17T17:32:43.226821+00:00",
+  "scientific_effects_inspected": false,
+  "startup_check_only": true,
+  "status": "PASS",
+  "workers": [
+    {
+      "block": 28000000,
+      "cpu_ticks": 304,
+      "cpus": [
+        6
+      ],
+      "parent_pid": 881369,
+      "pid": 881376,
+      "receipt_sha256": "6a8873246e02b3002febb609f00793bd48caf5d2d0d44798161e48b260a0ef7c",
+      "start_ticks": 19720894,
+      "state": "R",
+      "threads": 1
+    },
+    {
+      "block": 28000001,
+      "cpu_ticks": 360,
+      "cpus": [
+        7
+      ],
+      "parent_pid": 881369,
+      "pid": 881373,
+      "receipt_sha256": "61596f7b6cefc11d7a874adca8745a84a79215afc43c944fc12b0830e3fa7b73",
+      "start_ticks": 19720892,
+      "state": "R",
+      "threads": 1
+    }
+  ]
+}

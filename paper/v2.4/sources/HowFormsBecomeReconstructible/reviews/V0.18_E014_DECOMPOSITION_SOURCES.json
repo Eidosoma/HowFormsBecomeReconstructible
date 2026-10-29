@@ -1,0 +1,315 @@
+{
+  "version": "0.18",
+  "date": "2026-10-10",
+  "status": "PASS",
+  "scope": "Completed post hoc E014 sign/amplitude handoff and portable statistical reproduction; no new simulations.",
+  "handoff": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/HANDOFF.md",
+  "archive": "paper_assets/data/e014-decomposition-v0.18-source-records.zip",
+  "archive_sha256": "b6fe5635f786e4ff922783bdc4f85b557c70194c8d85894e7f27d4e8fbaacfc0",
+  "sources": [
+    {
+      "path": "experiments/E001_unprescribed_capture/runs/pilot_v1/COMPLETE.json",
+      "member": "experiments/E001_unprescribed_capture/runs/pilot_v1/COMPLETE.json",
+      "bytes": 6683,
+      "sha256": "4559f720a21059313ca43bb01089ca7a5669eda3bba477ad753122af0c35e4e2"
+    },
+    {
+      "path": "experiments/E001_unprescribed_capture/runs/pilot_v1/INDEPENDENT_AUDIT.json",
+      "member": "experiments/E001_unprescribed_capture/runs/pilot_v1/INDEPENDENT_AUDIT.json",
+      "bytes": 438,
+      "sha256": "86ff76e92909af0302968fa37f9fdaddb174724546558cc5c10f41dc6e66293b"
+    },
+    {
+      "path": "experiments/E001_unprescribed_capture/runs/pilot_v1/manifest.json",
+      "member": "experiments/E001_unprescribed_capture/runs/pilot_v1/manifest.json",
+      "bytes": 2222,
+      "sha256": "01f174a85417bc16fc6c28e2beac89d33b11d9a3d9cb3250c9f6e044abc5fbb3"
+    },
+    {
+      "path": "experiments/E001_unprescribed_capture/runs/pilot_v1/summary.json",
+      "member": "experiments/E001_unprescribed_capture/runs/pilot_v1/summary.json",
+      "bytes": 107852,
+      "sha256": "57c4142be9c8f70d0058e2ef281a5f32e8fd541a3d43ba2cea03ba91f1654acb"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/HANDOFF.md",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/HANDOFF.md",
+      "bytes": 8122,
+      "sha256": "caad9b22966d870fa65df2ddeab69ca192e6bf3f4e9dc69ff9bb20ca6d67cd87"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/PLAN.md",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/PLAN.md",
+      "bytes": 4420,
+      "sha256": "eef3200f591e9d5962aa4b011917d298b3868617296c7e0b05c94b56b3da9e22"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/PORTABLE_CHECK.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/PORTABLE_CHECK.json",
+      "bytes": 4390,
+      "sha256": "9a619ca0bfcf5830d6ad62395cf8dcac18144cd124ba3da3f3aff881f4c28a99"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/README.md",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/README.md",
+      "bytes": 6520,
+      "sha256": "4017a517d117eb194345d9f2b84754ac84b906caadd9246d67403eabe0a7b6b4"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/TESTS.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/TESTS.json",
+      "bytes": 526,
+      "sha256": "309a6d607a604eb5fea6725473d5ed80a670b68f86bb6d33ffc0690660cb6333"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/analysis.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/analysis.py",
+      "bytes": 7387,
+      "sha256": "df21ec267ea198b3f9864c19ca7980e2dab0d67d5a4c426027eac7e31226e030"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/audit.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/audit.py",
+      "bytes": 6321,
+      "sha256": "42da744304530aa4633a7fdf29d4a97467e94352bef56f4e72294b95cb199293"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/SOURCE_INDEX.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/SOURCE_INDEX.json",
+      "bytes": 21583,
+      "sha256": "98ed43039ab9ff6089597bc91fa347a75533bc899aa58fdcfdb0216dbfe2a357"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/cell_counts.csv.gz",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/cell_counts.csv.gz",
+      "bytes": 1330964,
+      "sha256": "08b9a5939f99317752cda0c577fea1edf612e906a764e401476a83a856b131ad"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/endpoint_counts.csv.gz",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/data_v2/endpoint_counts.csv.gz",
+      "bytes": 563000,
+      "sha256": "c3e8d38715ffcf2e8284b25031da67eebbddf6d39c846286e9c5f06d546fec9a"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/derive.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/derive.py",
+      "bytes": 12505,
+      "sha256": "4abd75f01cd7688d6338d27665664e7f130a6ff66e6ca9d41fd0cc0740436661"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/extract.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/extract.py",
+      "bytes": 5244,
+      "sha256": "372ad3c5c8a9da12b63fae520601497b682b3ebfaa4243ffc0224e1ae876263c"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/plot.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/plot.py",
+      "bytes": 9048,
+      "sha256": "88ffafb69aaf55257ec45d43695747ae0a967e0331be14b42282d6398b3c01cb"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/AUDIT.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/AUDIT.json",
+      "bytes": 740,
+      "sha256": "4227e1d1a4ba266f246e13cc32a93bd5e8cd536350e5ce42e1be4dafa8858c90"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/FIGURE_PROVENANCE.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/FIGURE_PROVENANCE.json",
+      "bytes": 1521,
+      "sha256": "029e9178b9d325c88833eba67d0aa201daae7a414b08fb2b3c3537b5aeb4cce9"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/REPORT.md",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/REPORT.md",
+      "bytes": 7189,
+      "sha256": "c820728057ba356eefa8fd2b90cd122fe86b75633984268ce0ffe2e880ea54bf"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/checkpoint_table.csv",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/checkpoint_table.csv",
+      "bytes": 52782,
+      "sha256": "2318e33cf6fe12e25c84b21747b96775db12de8f4f8a4affbcf8ef3e84750209"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.pdf",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.pdf",
+      "bytes": 26128,
+      "sha256": "35ed0898cff94082fbe3c132f46a458c2976546f51b4396e200e7997b1bc29b4"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.png",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.png",
+      "bytes": 232274,
+      "sha256": "7aeca83a1a7cd731c8e445980279f3ffad03022a21dae9bf3725d58d90587109"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.svg",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/historical_specificity.svg",
+      "bytes": 49377,
+      "sha256": "ed5a3889a3d1fb773b2725547e4c8ce4f5a154c80d94c4a67f0aeb3c4cfaa89c"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.pdf",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.pdf",
+      "bytes": 24592,
+      "sha256": "a86640d571894f40799121842873c0238a15e7b0890e4ac39937eab57c75fa61"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.png",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.png",
+      "bytes": 153700,
+      "sha256": "110c6db31f7e6eb7a79a7607feb06f4e954b4497944bf5ac5213126a9d1aa7ee"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.svg",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/lineage_agreement.svg",
+      "bytes": 45368,
+      "sha256": "31f85d4580d43bd4a5dc293385b3645726f761ce47e6177c04488f1da40ccb09"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.pdf",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.pdf",
+      "bytes": 20766,
+      "sha256": "34204b8500d04228ef41f2af1323c50de67f01dfc3d5d0397bb2361a19c3a05f"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.png",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.png",
+      "bytes": 133402,
+      "sha256": "0c45984b84be9d370072ecf3b6799e51d1945e3c9790216b2a101993f080785d"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.svg",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/pilot_history_formation.svg",
+      "bytes": 22657,
+      "sha256": "9b59ac6251137df4d2326c701b3448aea2e14b94fd5d586ce2a396c14bf75acb"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.pdf",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.pdf",
+      "bytes": 25543,
+      "sha256": "c3371b4c2eed7e953668dba5679e5f8a19ef6aad514a0562815e455f1aaf5ccd"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.png",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.png",
+      "bytes": 240985,
+      "sha256": "69bee27c75616b886e5dc93c778bba82994bacf261a0197a26660c7f08268ec4"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.svg",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/sign_amplitude.svg",
+      "bytes": 55728,
+      "sha256": "2c9eb57317b88c4ac1bc9eb933f883fd98c3baf8e921c16b43558972626b1252"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/summary.json",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/products_v2/summary.json",
+      "bytes": 513815,
+      "sha256": "ed8ab949a862180c30cf826c25a2781757fd68f3d09fd041483428d850b075c4"
+    },
+    {
+      "path": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/tests.py",
+      "member": "experiments/E014_long_renewal/analysis/reviewer_specificity_v1/tests.py",
+      "bytes": 2443,
+      "sha256": "6d17fa5b592bf368b3cf0a6e1d14c9c7acdf6e187d77bb53c71f80e669c4e393"
+    },
+    {
+      "path": "experiments/E014_long_renewal/runs/confirmation_v2/COMPLETE.json",
+      "member": "experiments/E014_long_renewal/runs/confirmation_v2/COMPLETE.json",
+      "bytes": 45613,
+      "sha256": "80f52dfbeb0f851df36ef179cf6b7474fd37410cd24352fd87d22ba0bddfedcc"
+    },
+    {
+      "path": "experiments/E014_long_renewal/runs/confirmation_v2/INDEPENDENT_AUDIT.json",
+      "member": "experiments/E014_long_renewal/runs/confirmation_v2/INDEPENDENT_AUDIT.json",
+      "bytes": 560,
+      "sha256": "fddc810c7c8ae7a723ac565f238966d3d62c150bdf75b4e88c4747da72e94c96"
+    },
+    {
+      "path": "experiments/E014_long_renewal/runs/confirmation_v2/manifest.json",
+      "member": "experiments/E014_long_renewal/runs/confirmation_v2/manifest.json",
+      "bytes": 3223,
+      "sha256": "c28b5de3c007ca36314491ac00a07a6d36e68f4de6b236ffa037a017357dd5e6"
+    },
+    {
+      "path": "experiments/E014_long_renewal/runs/confirmation_v2/summary.json",
+      "member": "experiments/E014_long_renewal/runs/confirmation_v2/summary.json",
+      "bytes": 4069445,
+      "sha256": "3482f4acc8e58184127db6c33b41229d57b8911ccb5d28ad770b8ff8623d64b9"
+    },
+    {
+      "path": "experiments/common.py",
+      "member": "experiments/common.py",
+      "bytes": 3604,
+      "sha256": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691"
+    }
+  ],
+  "selected_evidence_note": "E43",
+  "original_qualification_unchanged": true,
+  "producer_raw_audit": {
+    "all_block_qualified_scores_exact": true,
+    "all_new_intervals_reproduced_exactly": true,
+    "auditor_sha256": "42da744304530aa4633a7fdf29d4a97467e94352bef56f4e72294b95cb199293",
+    "dynamics_rerun": false,
+    "independent_integer_histogram_and_endpoint_check": true,
+    "original_individual_scores_checked_at_extraction": 204800,
+    "pilot_context_checked": true,
+    "raw_lineage_files_independently_rescored": 128,
+    "seconds": 78.63933644001372,
+    "source_index_sha256": "98ed43039ab9ff6089597bc91fa347a75533bc899aa58fdcfdb0216dbfe2a357",
+    "status": "PASS",
+    "summaries_independently_recomputed": 3180,
+    "summary_sha256": "ed8ab949a862180c30cf826c25a2781757fd68f3d09fd041483428d850b075c4",
+    "utc": "2026-10-10T17:00:00.904487+00:00"
+  },
+  "incorporation_reproduction": {
+    "utc": "2026-10-10T17:47:16.985504+00:00",
+    "scratch": "/tmp/forms-v018-e014-portable/experiments",
+    "npz_files_present": 0,
+    "raw_fields_audited_here": false,
+    "commands": [
+      "python3 -B E014_long_renewal/analysis/reviewer_specificity_v1/derive.py --data E014_long_renewal/analysis/reviewer_specificity_v1/data_v2 --output E014_long_renewal/analysis/reviewer_specificity_v1/products_rechecked",
+      "python3 -B E014_long_renewal/analysis/reviewer_specificity_v1/audit.py --data E014_long_renewal/analysis/reviewer_specificity_v1/data_v2 --products E014_long_renewal/analysis/reviewer_specificity_v1/products_rechecked"
+    ],
+    "statistics_exactly_reproduced": 3180,
+    "pilot_context_exact": true,
+    "checkpoint_csv_byte_identical": true,
+    "summary_sha256": "298c472501e62510215fc4339c191af277a5f12d4877bf47b761a94a408b584b",
+    "audit": {
+      "all_block_qualified_scores_exact": true,
+      "all_new_intervals_reproduced_exactly": true,
+      "auditor_sha256": "42da744304530aa4633a7fdf29d4a97467e94352bef56f4e72294b95cb199293",
+      "dynamics_rerun": false,
+      "independent_integer_histogram_and_endpoint_check": false,
+      "original_individual_scores_checked_at_extraction": 204800,
+      "pilot_context_checked": true,
+      "raw_lineage_files_independently_rescored": 0,
+      "seconds": 15.654297164990567,
+      "source_index_sha256": "98ed43039ab9ff6089597bc91fa347a75533bc899aa58fdcfdb0216dbfe2a357",
+      "status": "PASS",
+      "summaries_independently_recomputed": 3180,
+      "summary_sha256": "298c472501e62510215fc4339c191af277a5f12d4877bf47b761a94a408b584b",
+      "utc": "2026-10-10T17:45:20.201547+00:00"
+    }
+  },
+  "new_post_hoc_results_incorporated": true,
+  "new_simulations": 0,
+  "unprescribed_apparatus_only": true,
+  "uncertainty": "Original 10,000 whole-block resamples; additional estimates descriptive, pointwise 95%; 64 blocks, all 256 founders and two recipients each.",
+  "scientific_limits": [
+    "Coordinate-matched signs, not translation-tolerant shape or spatial-detail loss.",
+    "Joint-count identity, not a causal partition of sign and amplitude dynamics.",
+    "Count tables are not a complete backup of continuous fields."
+  ],
+  "figure_selection": {
+    "main": "Existing Figure 3 retained unchanged.",
+    "supplement": "Supplied sign_amplitude figure copied unchanged as S5.",
+    "other_handoff_figures": "All four supplied figures preserved in the source package; lineage probes are not spliced with checkpoint readers."
+  },
+  "pdf_built": false,
+  "experimental_files_modified": false
+}

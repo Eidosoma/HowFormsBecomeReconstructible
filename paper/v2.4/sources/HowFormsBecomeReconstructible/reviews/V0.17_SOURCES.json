@@ -1,0 +1,601 @@
+{
+  "version": "0.17",
+  "selected_utc": "2026-10-09T12:44:49.337047+00:00",
+  "repository_commit_at_selection": "3d9d2b31d8485f894fe99b2b46f7ca6a207e485e",
+  "selected_experiments": [
+    "E051"
+  ],
+  "planning_only": [
+    "E052"
+  ],
+  "scope": "Add completed cue-pairing robustness only; ongoing follow-ups and E048\u2013E050 are not new result selections in this revision.",
+  "files": [
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/REPORT.md",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/REPORT.md",
+      "role": "scientific completion output",
+      "bytes": 3618,
+      "sha256": "5951b26a22f8507af5b855b3167d43c53bf39316d9534a70bc3e02359e4042db"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "role": "scientific completion output",
+      "bytes": 1275233,
+      "sha256": "9eb34a04f5295d8e8926ac502b59689b1bf074433f51b0bf644e89d413443521"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/COMPLETE.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/COMPLETE.json",
+      "role": "saved independent audit input",
+      "bytes": 130960,
+      "sha256": "aff3387d46e6f907d033d2c0046cf93d7b349c1f06243ee02600ca54567c9c62"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/audit.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/audit.py",
+      "role": "saved independent auditor identity",
+      "bytes": 20430,
+      "sha256": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/audit.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/audit.py",
+      "role": "frozen scientific input",
+      "bytes": 13872,
+      "sha256": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/model.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/model.py",
+      "role": "frozen scientific input",
+      "bytes": 7603,
+      "sha256": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E016_teaching_consistency/model.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E016_teaching_consistency/model.py",
+      "role": "frozen scientific input",
+      "bytes": 4879,
+      "sha256": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/audit.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/audit.py",
+      "role": "frozen scientific input",
+      "bytes": 15748,
+      "sha256": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/model.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/model.py",
+      "role": "frozen scientific input",
+      "bytes": 3618,
+      "sha256": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/audit.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/audit.py",
+      "role": "frozen scientific input",
+      "bytes": 23025,
+      "sha256": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/model.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/model.py",
+      "role": "frozen scientific input",
+      "bytes": 8198,
+      "sha256": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/PROTOCOL.md",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/PROTOCOL.md",
+      "role": "frozen scientific input",
+      "bytes": 7848,
+      "sha256": "768c6a802389e262b149fd4b475de58ad95e294647eaab2c32dc43913040a022"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/SOURCE_DATA.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/SOURCE_DATA.json",
+      "role": "frozen scientific input",
+      "bytes": 31147,
+      "sha256": "14ae5082807c7f7341fdc3ee5a187dc07339293bb51e4a413f341e2d1737f742"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/audit.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/audit.py",
+      "role": "frozen scientific input",
+      "bytes": 20430,
+      "sha256": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/evidence.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/evidence.py",
+      "role": "frozen scientific input",
+      "bytes": 803,
+      "sha256": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/model.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/model.py",
+      "role": "frozen scientific input",
+      "bytes": 9383,
+      "sha256": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/plot.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/plot.py",
+      "role": "frozen scientific input",
+      "bytes": 3177,
+      "sha256": "19fe755bfcf0238b72e8b2c9f568ab42f78b510d6a3001402d8b098c6ac3c5d4"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/run.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/run.py",
+      "role": "frozen scientific input",
+      "bytes": 14919,
+      "sha256": "f9645b0cd7fdaf19d664ff5ec79fd0f94eec0b64236af360f045aad1abf7b9fd"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/tests.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/tests.py",
+      "role": "frozen scientific input",
+      "bytes": 8152,
+      "sha256": "b0cb3f451d1ed0324205890ffd4c64d1f3e8fd6d4e6cd58c1b3c5faad50b19b9"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/workflow.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/workflow.py",
+      "role": "frozen scientific input",
+      "bytes": 5455,
+      "sha256": "bfd32ea992b1b8f300a24584d9d853f58b8db9f382f2e33b1b625669b410aa93"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_LICENSE.txt",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_LICENSE.txt",
+      "role": "frozen scientific input",
+      "bytes": 1307,
+      "sha256": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_SNAPSHOT.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_SNAPSHOT.json",
+      "role": "frozen scientific input",
+      "bytes": 6247,
+      "sha256": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/common.py",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/common.py",
+      "role": "frozen scientific input",
+      "bytes": 3604,
+      "sha256": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/run_python.sh",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/run_python.sh",
+      "role": "frozen scientific input",
+      "bytes": 467,
+      "sha256": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/benchmark_v1/provenance.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/figures/benchmark_v1/provenance.json",
+      "role": "saved closeout evidence",
+      "bytes": 520,
+      "sha256": "7525df1073e4166f8d004a3d65c312c3819db3c41325bac7b38f420877eab2bc"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/fixture_v1/provenance.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/figures/fixture_v1/provenance.json",
+      "role": "saved closeout evidence",
+      "bytes": 520,
+      "sha256": "551d424c38d4d4b6d873225a3dfbbd0f76a58c50daa37738204242ddb3cb9a7e"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/robustness_v1/provenance.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/figures/robustness_v1/provenance.json",
+      "role": "saved closeout evidence",
+      "bytes": 520,
+      "sha256": "e94c52077c697b440bd0c1e5601f55a5cb712ea6a8f73e2a05aef4ad0cc2aa88"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/COMPLETE.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/COMPLETE.json",
+      "role": "saved closeout evidence",
+      "bytes": 6744,
+      "sha256": "23d3b6797f386768d54e0b65ebf78ebcd719e31132a7166ae7f62968b1de5635"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/INDEPENDENT_AUDIT.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/INDEPENDENT_AUDIT.json",
+      "role": "saved closeout evidence",
+      "bytes": 662,
+      "sha256": "c0f9c3e19c6c46cd224e36994f354ba91bddf224ea2acd38d73f76549d7c1099"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/summary.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/summary.json",
+      "role": "saved closeout evidence",
+      "bytes": 340217,
+      "sha256": "b737eac0027addb3953016438396b39557079a8578cbe15edf0cc3b6472e2961"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/COMPLETE.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/COMPLETE.json",
+      "role": "saved closeout evidence",
+      "bytes": 6744,
+      "sha256": "a15226148d5393d265098ee09f17411e1b241f56d8c5fdba3a7202b26b4fe7b1"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/INDEPENDENT_AUDIT.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/INDEPENDENT_AUDIT.json",
+      "role": "saved closeout evidence",
+      "bytes": 662,
+      "sha256": "d7052ff48ebdcee2deb3288710fc8fa461f5318d8d56bed3c2e5c0faf50818b9"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/summary.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/summary.json",
+      "role": "saved closeout evidence",
+      "bytes": 339313,
+      "sha256": "be0d0a33069a4b4cb5c79c070ac492ab15714be7e095584e5727f34b974069ed"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/INDEPENDENT_AUDIT.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/INDEPENDENT_AUDIT.json",
+      "role": "saved closeout evidence",
+      "bytes": 1376,
+      "sha256": "dd621b01cde4e36f761e917a45447d5050338aafafacc663c58ac4abe8f3e495"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/README.md",
+      "archive_member": "experiments/E051_cue_pairing_robustness/README.md",
+      "role": "campaign context, protocol or status",
+      "bytes": 8788,
+      "sha256": "22942c68787b8c62d62162e2f7c13ef91d80a3355a849d3a0db07041fc96d0db"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/PROTOCOL.md",
+      "archive_member": "experiments/E051_cue_pairing_robustness/PROTOCOL.md",
+      "role": "campaign context, protocol or status",
+      "bytes": 7848,
+      "sha256": "768c6a802389e262b149fd4b475de58ad95e294647eaab2c32dc43913040a022"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/SOURCE_DATA.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/SOURCE_DATA.json",
+      "role": "campaign context, protocol or status",
+      "bytes": 31147,
+      "sha256": "14ae5082807c7f7341fdc3ee5a187dc07339293bb51e4a413f341e2d1737f742"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/analysis/closeout_v1.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/analysis/closeout_v1.json",
+      "role": "campaign context, protocol or status",
+      "bytes": 2551,
+      "sha256": "6243941ad5214bad2128ebb2df4df0bc8d2fc4570e8dacae5e61db901ad4e87d"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/analysis/freeze_v1/manifest.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/analysis/freeze_v1/manifest.json",
+      "role": "campaign context, protocol or status",
+      "bytes": 2809,
+      "sha256": "0c8239f8bedf338206a55880a1d7ce72475379ae16c230625ee1dc6ee6f1caca"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/analysis/technical_v1.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/analysis/technical_v1.json",
+      "role": "campaign context, protocol or status",
+      "bytes": 3377,
+      "sha256": "8d374602320e6fbe92869f240076b06de477294fee2f0932fdb2798cfec2e8d3"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/manifest.json",
+      "archive_member": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/manifest.json",
+      "role": "campaign context, protocol or status",
+      "bytes": 5589,
+      "sha256": "023ff8a4de1f538bf2735749d5b367c0bc1ffad5b2acc9481d6b981fd8e507e7"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/analysis/early_look_v1/REPORT.md",
+      "archive_member": "experiments/E051_cue_pairing_robustness/analysis/early_look_v1/REPORT.md",
+      "role": "campaign context, protocol or status",
+      "bytes": 3756,
+      "sha256": "a794af78602288429987d3479fbf1a40fddfff45fc0a27ad252e2545cbb9a027"
+    },
+    {
+      "path": "experiments/E052_precision_normalization/README.md",
+      "archive_member": "experiments/E052_precision_normalization/README.md",
+      "role": "planning only; no result selected",
+      "bytes": 2034,
+      "sha256": "cdc4cf39bd3f18211201869144e2e77198eeb74f4d4c26f39699ef4bf1e6484d"
+    },
+    {
+      "path": "experiments/E052_precision_normalization/DRAFT_PROTOCOL.md",
+      "archive_member": "experiments/E052_precision_normalization/DRAFT_PROTOCOL.md",
+      "role": "planning only; no result selected",
+      "bytes": 15947,
+      "sha256": "39aa4ebd904e10e0aedb98cf5fa4f26bfc2d1aee0cbdd76d4a97ef3dec355f8a"
+    },
+    {
+      "path": "experiments/E052_precision_normalization/PLAN.json",
+      "archive_member": "experiments/E052_precision_normalization/PLAN.json",
+      "role": "planning only; no result selected",
+      "bytes": 12746,
+      "sha256": "7d4df1eca2253dc608d5dd12f0484a79ad55f466d019bc5f33855bc1b551ced2"
+    },
+    {
+      "path": "experiments/REVIEW_2026-10-08_SECOND_REVIEWER.md",
+      "archive_member": "experiments/REVIEW_2026-10-08_SECOND_REVIEWER.md",
+      "role": "mechanism interpretation; not experimental evidence",
+      "bytes": 10993,
+      "sha256": "992e15cb1fc394d813bc43633b39bee44790130fd7aa5f1c6e700edcf3b15be6"
+    }
+  ],
+  "identity_checks": [
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/REPORT.md",
+      "sha256": "5951b26a22f8507af5b855b3167d43c53bf39316d9534a70bc3e02359e4042db",
+      "binding": "scientific completion output",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "sha256": "9eb34a04f5295d8e8926ac502b59689b1bf074433f51b0bf644e89d413443521",
+      "binding": "scientific completion output",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/COMPLETE.json",
+      "sha256": "aff3387d46e6f907d033d2c0046cf93d7b349c1f06243ee02600ca54567c9c62",
+      "binding": "saved independent audit input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/audit.py",
+      "sha256": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a",
+      "binding": "saved independent auditor identity",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/audit.py",
+      "sha256": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E015_functional_inheritance/model.py",
+      "sha256": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E016_teaching_consistency/model.py",
+      "sha256": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/audit.py",
+      "sha256": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E017_reader_timing/model.py",
+      "sha256": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/audit.py",
+      "sha256": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E022_reader_compensation/model.py",
+      "sha256": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/PROTOCOL.md",
+      "sha256": "768c6a802389e262b149fd4b475de58ad95e294647eaab2c32dc43913040a022",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/SOURCE_DATA.json",
+      "sha256": "14ae5082807c7f7341fdc3ee5a187dc07339293bb51e4a413f341e2d1737f742",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/audit.py",
+      "sha256": "e74a30fa48dd2a1b706d9a656bf220d09e60a3704f59b639d3985ea68db0f30a",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/evidence.py",
+      "sha256": "14e549e4fa5c8064991085acff6902846a4c398fc92c6e352a9ff3e5f1d94156",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/model.py",
+      "sha256": "2063892a2bf29d3d5a8c57e9c305dca3dc3ba1d6711b94b3d1a0a969b20170fd",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/plot.py",
+      "sha256": "19fe755bfcf0238b72e8b2c9f568ab42f78b510d6a3001402d8b098c6ac3c5d4",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/run.py",
+      "sha256": "f9645b0cd7fdaf19d664ff5ec79fd0f94eec0b64236af360f045aad1abf7b9fd",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/tests.py",
+      "sha256": "b0cb3f451d1ed0324205890ffd4c64d1f3e8fd6d4e6cd58c1b3c5faad50b19b9",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/E051_cue_pairing_robustness/workflow.py",
+      "sha256": "bfd32ea992b1b8f300a24584d9d853f58b8db9f382f2e33b1b625669b410aa93",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_LICENSE.txt",
+      "sha256": "f3356542361e8c4e5eb9ae6845723da490025a02d7a953b23813b075e164dd82",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/SOURCE_SNAPSHOT.json",
+      "sha256": "6f8d822bd9139d6ba77080c291ed239e6076e211b89aeb84177e5189c85e1d82",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/common.py",
+      "sha256": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/inputs/run_python.sh",
+      "sha256": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5",
+      "binding": "frozen scientific input",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/benchmark_v1/provenance.json",
+      "sha256": "7525df1073e4166f8d004a3d65c312c3819db3c41325bac7b38f420877eab2bc",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/fixture_v1/provenance.json",
+      "sha256": "551d424c38d4d4b6d873225a3dfbbd0f76a58c50daa37738204242ddb3cb9a7e",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/figures/robustness_v1/provenance.json",
+      "sha256": "e94c52077c697b440bd0c1e5601f55a5cb712ea6a8f73e2a05aef4ad0cc2aa88",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/COMPLETE.json",
+      "sha256": "23d3b6797f386768d54e0b65ebf78ebcd719e31132a7166ae7f62968b1de5635",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/INDEPENDENT_AUDIT.json",
+      "sha256": "c0f9c3e19c6c46cd224e36994f354ba91bddf224ea2acd38d73f76549d7c1099",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/benchmark_v1/summary.json",
+      "sha256": "b737eac0027addb3953016438396b39557079a8578cbe15edf0cc3b6472e2961",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/COMPLETE.json",
+      "sha256": "a15226148d5393d265098ee09f17411e1b241f56d8c5fdba3a7202b26b4fe7b1",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/INDEPENDENT_AUDIT.json",
+      "sha256": "d7052ff48ebdcee2deb3288710fc8fa461f5318d8d56bed3c2e5c0faf50818b9",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/fixture_v1/summary.json",
+      "sha256": "be0d0a33069a4b4cb5c79c070ac492ab15714be7e095584e5727f34b974069ed",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/COMPLETE.json",
+      "sha256": "aff3387d46e6f907d033d2c0046cf93d7b349c1f06243ee02600ca54567c9c62",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/INDEPENDENT_AUDIT.json",
+      "sha256": "dd621b01cde4e36f761e917a45447d5050338aafafacc663c58ac4abe8f3e495",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    },
+    {
+      "path": "experiments/E051_cue_pairing_robustness/runs/robustness_v1/summary.json",
+      "sha256": "9eb34a04f5295d8e8926ac502b59689b1bf074433f51b0bf644e89d413443521",
+      "binding": "saved closeout evidence",
+      "status": "match"
+    }
+  ],
+  "saved_block_means_checked": 1966,
+  "primary_decisions_checked": {
+    "paired_baseline_lower_above_075": true,
+    "noise_0999_lower_above_075": true,
+    "noise_0999_difference_lower_above_minus_005": true,
+    "reset_099_lower_above_075": true,
+    "reset_099_difference_lower_above_minus_005": true
+  },
+  "recorded_audit": {
+    "status": "PASS",
+    "utc": "2026-10-09T06:18:31.366082+00:00",
+    "blocks": 32,
+    "body_cue_observations": 1146880,
+    "terminal_cue_observations": 448512,
+    "summaries_checked": 1966
+  },
+  "recorded_closeout": {
+    "status": "PASS",
+    "utc": "2026-10-09T10:29:31.989121+00:00",
+    "scientific": {
+      "body_cue_observations": 1146880,
+      "original_outputs_verified": 1335,
+      "status": "PAIRING_ROBUSTNESS_ESTABLISHED",
+      "terminal_cue_observations": 448512
+    }
+  },
+  "raw_array_availability": {
+    "declared_npz_outputs": 1248,
+    "present_locally": 0
+  },
+  "source_package": {
+    "path": "paper_assets/data/cue-pairing-v0.17-source-records.zip",
+    "sha256": "d80bd01f468ab7e00d218c318b7cea53fa7a1124191aaf471f5fc2d23914d276",
+    "members": 46
+  },
+  "native_extract": {
+    "path": "paper_assets/data/cue-pairing-v0.17.json",
+    "sha256": "360f8a48c7cd5f47139e1e9255964cb6f46bb6268cba8446aada60d22351e556"
+  },
+  "extractor": {
+    "path": "paper_assets/extract_cue_pairing_update.py",
+    "sha256": "137164ce7cabf83729046390eff9f554242275a7b6cc127fc0bd314894974f88"
+  },
+  "limits": "Portable text/code/metadata selection, not the full raw-array/runtime archive. Saved replay and closeout are attributed to their original execution. Technical legacy-match flags apply to excluded fixtures, not to a fresh scientific cohort.",
+  "model_runs_performed": false,
+  "new_statistical_inference": false,
+  "original_audit_rerun": false
+}

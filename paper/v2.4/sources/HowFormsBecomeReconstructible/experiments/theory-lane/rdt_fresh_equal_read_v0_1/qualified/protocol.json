@@ -1,0 +1,70 @@
+{
+  "version": "equal_read_comparator_0.1",
+  "status": "COMPARATOR_PREPARATION_AND_DISPOSABLE_BENCHMARK",
+  "question": "Does a32-pair successor measurement add predictive information over64 direct reads at an equal native-read budget?",
+  "authorization": "User accepted comparator preparation and runtime pricing; no fresh founder or long-horizon study is launched.",
+  "models": {
+    "successor32": "rewrite_32",
+    "direct64": "retained_64",
+    "pooled32": "direct_pooled_32",
+    "direct8": "retained_8",
+    "tt008": "tt008"
+  },
+  "information": "All five models share the same11 boundary features, task rule, training records and ridge-logistic fitting specification. The four probe models append one success fraction. Reuse archived coefficients without fitting or tuning.",
+  "measurements": {
+    "successor32": "32 original writer reads followed by32 fresh successor evaluations:64 reads.",
+    "direct64": "64 fresh evaluations of an unchanged protected packet:64 reads.",
+    "pooled32": "32 writer-stage and32 evaluation-stage reads of the unchanged packet:64 reads.",
+    "direct8": "First8 evaluation-stage reads of the unchanged packet:8 reads.",
+    "tt008": "No extra native read beyond the shared boundary features."
+  },
+  "archive_analysis": "Recompute the five fixed archived whole-block-excluded predictors on all512 exposed records; verify their training scaling and objective gradients. Report both exposed noise-regime repeat panels. No performance-selected rival, refitting, confirmatory confidence interval or revival of the failed budget selector.",
+  "benchmark": {
+    "namespace": "RDT_equal_read_comparator_v0_1/probe",
+    "stage": "qualification_benchmark",
+    "fixtures": [
+      "empty",
+      "positive",
+      "structured",
+      "random"
+    ],
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "models": [
+      "direct8",
+      "direct64",
+      "pooled32",
+      "successor32"
+    ],
+    "workers": 4,
+    "hard_wall_seconds": 900,
+    "native_audits": "Separate flat dynamics at first native read of every branch and index32 when present; successor audit propagates its independently rewritten packet. Retain every late window, body, outgoing packet and forcing digest.",
+    "check": "Byte-exact direct8 prefix of direct64; pooled original reads equal corresponding direct64 and successor writer branches; independent scalar probability and terminal-window arithmetic.",
+    "timing": "Time each predictor standalone; include forcing, native dynamics, evidence and prediction; report audit cost separately and retain the union cost for shared measurements.",
+    "order": "Listed model order for even fixture-index plus regime-index; reverse for odd. Retain all timings without choosing a favorable order."
+  },
+  "runtime": {
+    "preferred_development_seconds": 3600,
+    "overall_maximum_seconds": 21600,
+    "shared_cpu_threads": 12,
+    "numerical_threads_per_worker": 1,
+    "maximum_worker_resident_bytes": 1500000000,
+    "minimum_free_bytes": 2000000000,
+    "maximum_saved_bytes": 2000000000,
+    "forecast_factor": 1.5,
+    "fixed_overhead_seconds": 120
+  },
+  "next_development_contract": "If later authorized, replay all64 direct evaluation reads for every one of the432 already exposed selected packets and both regimes; verify the first8 against the existing raw evidence and combine with cached32 writer reads for pooled32. Score all four existing futures only as development. Charge55,296 new primary native reads,1,728 flat audit reads and the original historical acquisition/probe/future costs; do not relabel this as untouched evaluation.",
+  "future_contract": "A prospective equal-read comparison needs separately frozen fresh-founder acquisition, all forecasts before any continuation, full cohort analysis and complete sensing-and-action cost accounting. A later reader or injury shift must be explicitly declared before its outcomes.",
+  "excluded": [
+    "TT018 status and outcomes",
+    "rdt_packet_continuation_v0_1 status and outcomes",
+    "new long-horizon outcomes",
+    "new benefit scheduler"
+  ],
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_successor": false
+}

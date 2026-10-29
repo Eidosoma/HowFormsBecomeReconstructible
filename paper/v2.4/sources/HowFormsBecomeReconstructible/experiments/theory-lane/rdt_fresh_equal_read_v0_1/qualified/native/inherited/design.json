@@ -1,0 +1,240 @@
+{
+  "status": "OUTCOME_INFORMED_DEVELOPMENT_REVISION_NOT_CONFIRMATION",
+  "version": "0.3",
+  "claim_level": "PROPOSED_EMPIRICAL_LAW",
+  "purpose": "Test forecasts from the repeatable feature vector, with direct held-out-block forecast repeatability and a cheaper fixed comparator.",
+  "features": {
+    "environments": 16,
+    "perturbation_fraction": 0.05,
+    "branches": [
+      "base",
+      "plus",
+      "minus"
+    ],
+    "transfer_steps": 64,
+    "operator_metric": "Squared Frobenius distance divided by 256, using incoming absolute-row-normalized reciprocal operators.",
+    "gain": "sqrt(sum_j,s D(A(F_j(w_s)),A(F_j(w))) / sum_j,s D(A(w_s),A(w)))",
+    "margin": "mean_j min(task_rule*transfer64(F_j(w))[port_A],-task_rule*transfer64(F_j(w))[port_B])",
+    "renewal_spread": "sqrt(mean_j D(A(F_j(w)),mean_k A(F_k(w))))) with D the squared operator distance",
+    "identity_conditioned_restoration": "max(margin,0)/(1+gain)",
+    "zero_input_distance": "Set gain=1 as neutral encoding and retain an explicit unidentifiable flag; do not discard the record.",
+    "raw_features_retained": "All incoming/perturbed/outgoing weights, masks, births, late windows, end states, per-probe signed/unsigned transfer, gain numerators/denominators and forcing commitments.",
+    "note": "Fixed operator-space three-feature model. Standalone gain precision is not an admission gate in this new outcome-informed development version. V0.2 remains failed."
+  },
+  "model": {
+    "formula": "sigmoid(beta0 + beta_m*z(margin) + beta_r*z(max(margin,0)/(1+gain)) + beta_d*z(-renewal_spread))",
+    "slopes": "all nonnegative",
+    "ridge": 0.01,
+    "standardization": "Training-only population mean/std; std<=1e-12 replaced by one.",
+    "loss": "Mean Bernoulli negative log likelihood plus 0.5*ridge*sum(slopes**2); intercept unpenalized.",
+    "optimizer": "L-BFGS-B with analytic gradient, maxiter=2000, ftol=1e-14, gtol=1e-9; projected-gradient residual <=1e-6 required.",
+    "coefficients": null,
+    "role": "Fixed-horizon empirical regression; no bound, Markov sufficiency claim or universal law."
+  },
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "kind": "native exact full rewrite from end body",
+    "beta": 3.0,
+    "extra_write_steps": 0
+  },
+  "injury": {
+    "kind": "24 distinct cells sampled uniformly without replacement outside all three protected 2x2 ports",
+    "persistent_body": false
+  },
+  "regimes": {
+    "matched": {
+      "reset_correlation": 1.0,
+      "ongoing_correlation": 1.0
+    },
+    "independent": {
+      "reset_correlation": 0.0,
+      "ongoing_correlation": 0.0
+    }
+  },
+  "forcing": {
+    "namespace": "RDT_cycle_predictor_v0_3_probe",
+    "rng": "PCG64 seeded by first 16 SHA256 bytes of compact JSON tuple, little endian",
+    "key": "namespace, stage, block, history, founder, recipient, probe index, channel; stage benchmark/pilot/development separates streams",
+    "channels": [
+      "injury",
+      "forcing",
+      "direction"
+    ],
+    "shared": "Same injury, birth and ongoing noise for baseline and both perturbations; independent environments; the two regime measurements share base random arrays."
+  },
+  "training": {
+    "source": "TT008 original exposed 512 records, blocks 34000 through 34007; all four histories and 16 cases per history.",
+    "regime": "matched",
+    "cross_validation": "Leave one whole acquisition block out; all relatives stay together.",
+    "labels": "Existing generation-32 fresh scattered-recipient terminal label after 18 rebuilds from generation 14.",
+    "status": "AUTHORIZED_NEW_DEVELOPMENT_MEASUREMENT",
+    "probe_stage": "development",
+    "measurement_budget": "Fixed operator space, sixteen baseline/plus/minus environments per record, matched cue noise, new v0.3 streams.",
+    "native_audit": "First record of each acquisition block, first probe; exact arrays plus independent sparse transfer."
+  },
+  "target": {
+    "horizon_rebuilds": 18,
+    "terminal_fresh_reads": 1,
+    "policy": "No repair; native exact writer after every rebuild.",
+    "endpoint": "Both cues in the fresh terminal recipient exceed task-aligned margin 0.25 over the final 32 observations.",
+    "secondary": "Uninterrupted performance must be scored separately; not predicted by this logistic model.",
+    "held_out_shift": "Matched reset and ongoing cue noise in training to independent reset and ongoing cue noise in continuation and terminal read. Acquisition remains matched.",
+    "cohort": "Separate future cohort only. TT018 launched before this model is fitted; excluded from prospective validation of this candidate.",
+    "cohort_status": "NOT_BOUND",
+    "prospective_status": false
+  },
+  "comparators": {
+    "cheap_anchor": "Unchanged frozen TT008 signed-transfer model.",
+    "same_budget": "Fixed ordinary models on the same 48 cycle reads and initial knowledge; additional eight-baseline-only margin and margin/spread models.",
+    "logistic_ridges": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "kernel_ridges": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "kernel_bandwidth_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "selection": "Minimum equal-block leave-one-block-out Brier across 33 ordinary rivals and the already-fitted fixed compact secondary; lexicographic tie break. No test outcome selection.",
+    "channels": "Original diagnostic channels generalized to K, plus task vectors and both metric families; initial and all 3K outgoing normalized operators. Same task and history knowledge; no extra outcome access.",
+    "probe_budget": "3K native two-cue reads, same probes for all fitted models",
+    "extra_rival_probes": 0,
+    "max_training_fits": 300,
+    "actual_training_fits": 291
+  },
+  "rejection": {
+    "score": "Mean over futures within record, then records within block, then equal blocks: Brier loss.",
+    "practical_brier_gain": 0.002,
+    "margin_status": "PROVISIONAL_OPERATIONAL_THRESHOLD_NOT_YET_QUALIFIED",
+    "margin_reason": "Keeps TT008 operational Brier threshold for comparability; the higher probe cost requires feasibility and development-variance qualification before registration.",
+    "primary_comparisons": [
+      "unchanged_TT008",
+      "selected_same_probe_rival"
+    ],
+    "interval": "Paired block-mean differences; Bonferroni one-sided 97.5% Student t lower and upper limits for each of two comparisons. Both lower limits must exceed 0.002 for joint success.",
+    "failure": "If either upper limit is <=0.002, reject the proposed practical advantage; otherwise not meeting success is unresolved. No rescue by another endpoint.",
+    "sample_size": "Use development block variance for 80% nominal power at one-sided alpha .025, round up to multiple of16, floor64 ceiling256; also report upper-SD sensitivity. If infeasible, no confirmatory launch.",
+    "qualification": "Development gain must exceed .002 against both anchors; finalize cohort, coefficients, numerical gates, resource forecast and inference code before registration."
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "automatic_polling": false,
+    "long_run_threshold_seconds": 600,
+    "pilot_wall_ceiling_seconds": 7200,
+    "development_measurement_wall_ceiling_seconds": 21600,
+    "fit_cpu_ceiling_seconds": 1800,
+    "total_wall_ceiling_seconds": 25200,
+    "maximum_resident_estimate_bytes": 2000000000,
+    "automatic_fitting_after_measurement_pass": false,
+    "automatic_confirmation": false,
+    "automatic_development_measurement_and_fitting": true,
+    "probe_environment_batch_size": 4,
+    "batching_contract": "Single numerical thread, identical keyed forcing and pointwise equations, native arrays byte-exact against sequential and flat implementations. Original cost ceilings retained."
+  },
+  "new_long_horizon_outcomes": false,
+  "training_histories": [
+    "exact_rewrite",
+    "single_tolerance_rewrite",
+    "spaced_tolerance_rewrite",
+    "clustered_tolerance_rewrite"
+  ],
+  "pilot": {
+    "blocks": [
+      34000,
+      34001,
+      34002,
+      34003,
+      34004,
+      34005,
+      34006,
+      34007
+    ],
+    "histories": [
+      "exact_rewrite",
+      "single_tolerance_rewrite",
+      "spaced_tolerance_rewrite",
+      "clustered_tolerance_rewrite"
+    ],
+    "panel": "For each of eight blocks and four history indices h: founder=(block-34000+h)%4; recipient=(3*(block-34000)+h)%4. 32 records, 8 acquisition blocks, each history and task rule balanced. No outcome selection.",
+    "panel_records": 32,
+    "budgets": [
+      4,
+      8,
+      16
+    ],
+    "regimes": [
+      "matched",
+      "independent"
+    ],
+    "replicates": 2,
+    "replicate_probe_offsets": [
+      0,
+      16
+    ],
+    "maximum_probes_per_replicate": 16,
+    "spaces": [
+      "operator",
+      "task_output"
+    ],
+    "task_output": "u(w)=(rule*mean_A(T64(w)),-rule*mean_B(T64(w))); D_u(a,b)=mean((a-b)**2). Gain and baseline renewal spread use this same metric.",
+    "operator": "Original absolute-row-normalized incoming operator, D_A(a,b)=sum((a-b)**2)/256.",
+    "gain": "sqrt(sum_j,s D(F_j(w_s),F_j(w))/sum_j,s D(w_s,w)), in the declared space; finite-direction response, not a contraction bound.",
+    "conditioning_floor_rms": 1e-10,
+    "unidentifiable": "If sqrt(sum input distances/(2K)) <= 1e-10, encode gain=1 and mark unidentifiable; any such record/regime/repeat blocks selection. A projection can map distinct records to identical outputs; a nonzero numerator is allowed and recorded.",
+    "reliability_properties": [
+      "margin",
+      "restoration",
+      "renewal_spread",
+      "log1p_gain"
+    ],
+    "concordance": "2*population_cov(x,y)/(population_var(x)+population_var(y)+(mean(x)-mean(y))**2); zero denominator -> no resolved heterogeneity, encoded zero. Every property must pass in each regime.",
+    "minimum_concordance": 0.8,
+    "minimum_block_bootstrap_95_lower": 0.5,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 2026101302,
+    "reliability_rationale": "Under equal independent additive repeat errors, concordance 0.8 corresponds to error variance at most one quarter of latent between-record variance. Lower limit 0.5 is a conservative operational screen against weak or unresolved repeatability with only eight blocks. These are engineering selection thresholds, not RDT laws or validated population guarantees.",
+    "selection": "Choose smallest K passing all checks for both regimes. If both spaces pass at that K, retain original operator space. All failures remain reported. No budget above 16 and no second chance on new random seeds in this version.",
+    "native_audit_probes": [
+      0,
+      16
+    ],
+    "native_audit": "Flat implementation for all 32 records, both regimes, probes 0 and 16; end bodies, late windows, outgoing packets must match bitwise. Independent sparse transfer absolute error <=1e-12.",
+    "new_long_horizon_outcomes": 0,
+    "status": "ARCHIVED_EXPOSED_V0_2_CONTEXT_ONLY_NO_NEW_PILOT"
+  },
+  "fitting_gate": {
+    "conditional_execution": "Proceed with fixed 16-probe operator development measurement if the inherited exposed-summary admission and <=21600 second benchmark cost ceiling hold; 291 planned fits, <=1800 CPU seconds.",
+    "prospective_readiness": "Primary requires original Brier gain/planning/extra-coefficient screens and held-out-block forecast-repeat precision in both regimes; secondary findings are exploratory only.",
+    "margin_only": "Report margin16, margin8 and margin-spread8 rivals, plus a fixed nonnegative two-feature secondary model; no relabeling of secondary success as primary success.",
+    "selection_bias": "Rival selected on the same eight-fold scores being reported; these are exploratory and selection-biased, not an unbiased estimate of the selected procedure. Final test must use disjoint fresh blocks and pre-outcome forecasts.",
+    "cohort": "No future cohort or outcome job is launched by this pipeline. Freeze fitted artifacts, then finalize the distinct held-out cohort and compute budget before future outcomes."
+  },
+  "revision": {
+    "prior_result": "V0.2 failed its complete predeclared measurement gate. It is not reopened or relabeled.",
+    "selection": "Fix operator metric and K=16 from exposed v0.2 measurements. No new precision pilot or seed retry. All three model input summaries passed at K=16; log1p gain did not.",
+    "new_admission": "Verify the committed exposed result and all three input-summary gates, preserve the failed gain gate, then fit on new probes of the same exposed 512-record training cohort.",
+    "direct_probability_precision": "For each pilot record use the model trained without its entire acquisition block, applied to the two exposed disjoint probe repeats. In each noise regime require 90th percentile absolute forecast difference <=0.10. No full-data fitted model may evaluate its own block for this precision screen.",
+    "cross_regime_shift": "Also report probability shifts between paired matched and independent measurements. These do not have corresponding independent-regime future labels in this dataset; no calibration claim.",
+    "secondary": "Fixed nonnegative logistic predictor of margin and negative operator spread from eight baseline cycles, ridge 0.01, training-only scaling. Compare with TT008 and fixed margin8/unconstrained margin-spread8 rivals. Secondary results cannot rescue primary failure.",
+    "cost_contract": "Primary uses 48 cycle reads (16 environments x 3 branches); secondary uses 8 baseline-only reads. Sixfold difference in read counts is not a sixfold wall-time claim. Fit both from shared development measurements; qualify standalone baseline execution in the benchmark.",
+    "label_status": "All 512 target labels already exposed. Leave-one-block-out development comparisons and pilot reuse remain exploratory and cannot confirm RDT.",
+    "rare_response_lead": "Exploratory diagnosis only: quantify concentration and task-pass changes from v0.2 raw probes, do not choose new predictive features from it within this version.",
+    "future_test": "Separate cohort and frozen forecasts required. TT018 remains excluded; do not inspect its results for this study."
+  }
+}

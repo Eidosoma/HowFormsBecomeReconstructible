@@ -1,0 +1,166 @@
+{
+  "version": "paired_repair_benefit_0.1",
+  "status": "BOUNDED_DEVELOPMENT_ASSAY_NOT_SCHEDULER_QUALIFICATION",
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "beta": 3.0,
+    "kind": "native exact full rewrite from final body"
+  },
+  "optimizer": {
+    "starts": 16,
+    "maximum_sweeps": 64,
+    "seed": 2026101004,
+    "update_order": "checkerboard 0 then 1; strict negative local field product",
+    "weight": "half the sum of recipient directed normalized absolute edge weights",
+    "candidates": "all initial and final states; minimum math.fsum disagreement; ties lexicographic sign bits",
+    "free_components": "smallest-index node positive in any constraint component without pinned nodes"
+  },
+  "cohort": {
+    "records": 63,
+    "blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "case_regimes": 126,
+    "selection": "All 63 prior precision-panel records without selection on continuation, repair or repair benefit. The complete previous natural futures are exposed; this is development on selected historical boundaries.",
+    "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce"
+  },
+  "regimes": [
+    "matched",
+    "independent"
+  ],
+  "arms": [
+    "no_repair",
+    "repair_once"
+  ],
+  "action": {
+    "time": "Once on the g14 packet, before g15 and before any new injury or forcing is observed.",
+    "method": "Existing recipient-only sign-graph completion, unchanged; 16 starts, at most 64 sweeps, seed 2026101004.",
+    "inputs": [
+      "current incoming 2x16x16 packet",
+      "fixed toroidal geometry",
+      "input port coordinates",
+      "frozen optimizer options"
+    ],
+    "excluded": [
+      "task rule",
+      "previous body",
+      "hidden original weights",
+      "injury mask",
+      "future noise",
+      "forecast probability",
+      "future outcome"
+    ],
+    "support": "Fill exactly zero edges with the median absolute nonzero incoming magnitude times inferred node-sign products. Preserve all nonzero bytes; an empty packet stays empty.",
+    "subsequent": "No further repairs. Both arms undergo every native full rewrite and propagate their own outgoing state after failures."
+  },
+  "future": {
+    "namespace": "RDT_paired_repair_benefit_v0_1_future",
+    "stage": "pilot",
+    "rewrites": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "terminal_generation": 33,
+    "endpoint": "Task-aligned terminal fresh-body success after 18 inherited rewrites; all four last-32-frame means strictly greater than .25.",
+    "injuries_per_read": 24,
+    "coupling": "Per key and generation, both arms share precisely the same injury, birth and noise. Noise regimes share base draws; matched copies cue0 into cue1 and independent retains both. Each branch propagates its own outputs.",
+    "seed": "First16 bytes SHA256(compact JSON [namespace,stage,*key,generation,purpose,channel]), interpreted little endian, PCG64.",
+    "replicates_per_record_regime": 1
+  },
+  "analysis": {
+    "target": "Delta(z,a)=E[Y_H(repair_once)-Y_H(no_repair)|z]; paired binary difference is rescue minus harm.",
+    "primary": "Equal acquisition-block, then equal current-expression-class weight over the selected panel. One mean net terminal repair benefit per noise regime.",
+    "prediction": "Positive average net benefit of once-only graph completion in both noise regimes is a development hypothesis motivated by earlier repair studies.",
+    "interval": "Mean +/- t(.975,B-1)*sample block SD/sqrt(B), descriptive with only 16 blocks. All block values retained. Zero sample SD does not license certainty and receives UNRESOLVED.",
+    "signal": "For nonzero block SD: lower>0 yields POSITIVE_SIGNAL, upper<0 NEGATIVE_SIGNAL, otherwise UNRESOLVED. Both regimes positive required for joint positive signal; any negative yields CONTRARY_SIGNAL; otherwise UNRESOLVED. No confirmatory or RDT-specific verdict.",
+    "secondary": [
+      "weighted rescue, harm, both-pass and neither-pass frequencies with unweighted counts",
+      "current-expression and all history diagnostics, no rescue of primary",
+      "mean benefit in five fixed risk bins [0,.2,.4,.6,.8,1], separately for all three frozen predictors, no fitting or scheduler evaluation",
+      "all three frozen predictors: control-outcome Brier, original paired block gain intervals and calibration; secondary only"
+    ],
+    "coupling_limit": "Mean treatment effect does not depend on the chosen valid coupling; rescue/harm decomposition does. One paired future does not identify a precise individual conditional effect.",
+    "no_training": true,
+    "no_policy_selection": true
+  },
+  "costs": {
+    "extra_native_probes_per_record_regime": {
+      "tt008": 0,
+      "direct_rival": 8,
+      "candidate": 64
+    },
+    "cached_probe_cost": 9072,
+    "new_probe_reads": 0,
+    "primary_future_reads": 4788,
+    "flat_future_reads": 1216,
+    "physical_unique_repair_calls": 63,
+    "logical_repair_calls_across_record_regimes": 126,
+    "optimizer_audit_calls": 63,
+    "shared_costs": "Boundary acquisition and transfer, fitting and prediction arithmetic are not free; retain previous historical costs separately. Native probe count ratio is not a wall-time ratio. Repair intervention and audit CPU recorded separately.",
+    "benchmark_excluded_from_science": true
+  },
+  "audit": {
+    "flat": "One key-only hash-min record per block in each regime, both arms, all nineteen reads. Flat path propagates its own outputs. Byte-exact bodies, windows and writer output.",
+    "repair": "Every repair compared with separate Prim/flat optimizer and independent support/magnitude construction.",
+    "independent_analysis": "Separate scalar weighted net benefits, all event counts, diagnostics and confidence calculations.",
+    "barrier": "Verify entire cache, prepare and audit all repair actions, then seal all records, branch input hashes and frozen forecasts before any future."
+  },
+  "resources": {
+    "workers": 1,
+    "numerical_threads": 1,
+    "shared_cpu_limit": 12,
+    "hard_wall_seconds": 3600,
+    "qualification_wall_seconds": 300,
+    "benchmark_wall_seconds": 240,
+    "forecast_factor": 1.5,
+    "fixed_overhead_seconds": 120,
+    "maximum_resident_bytes": 2000000000,
+    "maximum_saved_bytes": 1000000000,
+    "minimum_free_disk_bytes": 2000000000,
+    "general_ceiling_seconds": 21600,
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_extension": false,
+    "automatic_successor": false
+  },
+  "scope": "Assay and development evidence about externally supplied ordinary graph correction; no learned benefit predictor, optimal budget policy, new-founder generalization, external preregistration or RDT-specific mechanism."
+}

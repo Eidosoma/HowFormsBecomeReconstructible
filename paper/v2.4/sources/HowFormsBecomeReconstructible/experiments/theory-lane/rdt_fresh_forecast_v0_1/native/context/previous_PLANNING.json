@@ -1,0 +1,98 @@
+{
+  "status": "EXPOSED_FIXED_MODEL_PLANNING",
+  "blocks": [
+    34000,
+    34001,
+    34002,
+    34003,
+    34004,
+    34005,
+    34006,
+    34007
+  ],
+  "scores": {
+    "rewrite_32": 0.07630307850809645,
+    "retained_8": 0.07728250461358502,
+    "tt008": 0.08006451983700144
+  },
+  "comparisons": {
+    "tt008": {
+      "margin": 0.002,
+      "mean_gain": 0.003761441328904996,
+      "excess": 0.001761441328904996,
+      "sample_sd": 0.006420859125951378,
+      "upper_sd_sensitivity": 0.011539251676034989,
+      "block_values": [
+        0.008007335863986779,
+        0.007303025128517421,
+        0.0059585456605732515,
+        -0.0041908228291906964,
+        0.008490386968354241,
+        -0.0078101416633760915,
+        0.009492391710403428,
+        0.0028408097919716347
+      ],
+      "planning": {
+        "0.025": {
+          "blocks": {
+            "plugin": 112,
+            "upper_sd": 352
+          },
+          "approximate_nominal_power_at_256": 0.9922394686986793,
+          "within_inherited_cap": true
+        },
+        "0.0125": {
+          "blocks": {
+            "plugin": 144,
+            "upper_sd": 416
+          },
+          "approximate_nominal_power_at_256": 0.9836024169653115,
+          "within_inherited_cap": true
+        }
+      }
+    },
+    "retained_8": {
+      "margin": 0.0,
+      "mean_gain": 0.0009794261054885682,
+      "excess": 0.0009794261054885682,
+      "sample_sd": 0.005977619705046228,
+      "upper_sd_sensitivity": 0.010742683626458494,
+      "block_values": [
+        0.003993734521590627,
+        0.012174334870734296,
+        0.001067116653640355,
+        -0.009597657810713311,
+        2.838275939899288e-05,
+        1.9388826541836233e-07,
+        0.0005115649833588175,
+        -0.0003422610223666497
+      ],
+      "planning": {
+        "0.025": {
+          "blocks": {
+            "plugin": 304,
+            "upper_sd": 960
+          },
+          "approximate_nominal_power_at_256": 0.7428868197263541,
+          "within_inherited_cap": false
+        },
+        "0.0125": {
+          "blocks": {
+            "plugin": 368,
+            "upper_sd": 1152
+          },
+          "approximate_nominal_power_at_256": 0.6431405345239607,
+          "within_inherited_cap": false
+        }
+      }
+    }
+  },
+  "feasibility_pass": false,
+  "decision": "FIXED32_OUTCOME_PLAN_EXCEEDS_INHERITED_CAP",
+  "independent_scalar_reduction_verified": true,
+  "new_fits": 0,
+  "new_scientific_future_outcomes": 0,
+  "matched_only_effect_estimates": true,
+  "independent_noise_power_unknown": true,
+  "joint_power_unknown": true
+}

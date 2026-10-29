@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-16T18:32:32.520462+00:00",
+  "scope": "Additional full native probe reads per record and noise regime, beyond common boundary features; outcome evaluation and audits accounted separately.",
+  "models": [
+    {
+      "model": "tt008",
+      "display": "TT008 ordinary boundary predictor",
+      "features": "Shared B11: current response, historical schedule and signed/unsigned transfer features",
+      "extra_native_probe_reads": 0,
+      "retained_panel_reads": 0,
+      "standardized_features": 11,
+      "coefficients_including_intercept": 12
+    },
+    {
+      "model": "direct_rival",
+      "display": "Direct-probe / retained-eight predictor",
+      "features": "Shared B11 plus success fraction of eight direct reads of the protected original packet",
+      "extra_native_probe_reads": 8,
+      "retained_panel_reads": 1008,
+      "standardized_features": 12,
+      "coefficients_including_intercept": 13
+    },
+    {
+      "model": "candidate",
+      "display": "Fixed32 successor predictor",
+      "features": "Shared B11 plus success fraction after 32 writer reads and 32 fresh successor reads",
+      "extra_native_probe_reads": 64,
+      "retained_panel_reads": 8064,
+      "standardized_features": 12,
+      "coefficients_including_intercept": 13
+    }
+  ],
+  "records": 63,
+  "record_regimes": 126,
+  "combined_retained_first_repeat_native_reads": 9072,
+  "separate_retained_first_repeat_flat_audit_reads": 378,
+  "new_probe_reads_in_current_pilot": 0,
+  "new_future_native_reads": 2394,
+  "new_future_flat_audit_reads": 608,
+  "shared_costs": "All models receive the same B11, task knowledge and historical information. Boundary acquisition, transfer computation, model fitting/scaling and prediction arithmetic are not free; these are excluded from the additional-native-probe column and must be described separately.",
+  "historical_source_costs": {
+    "acquisition_native_reads": 14336,
+    "measurement_native_reads_both_repeats": 18144,
+    "flat_audit_reads_acquisition_and_both_repeats": 948
+  },
+  "limitations": [
+    "64/8 is an eightfold ratio of native probe-read counts, not a measured eightfold wall-time or total-cost ratio.",
+    "Marginal model-specific wall times were not separately measured; batching and shared inputs prevent assigning the joint runtime by simple division.",
+    "Cached reuse saves new compute but does not remove the original measurement cost."
+  ],
+  "source_protocol_sha256": "17a8e5570010f0d4c7879a64122f4db93eb32100a5a4d7114f7adb3b685e8f6f",
+  "models_sha256": "ba3b00ce745467d6eba9b4c098468f9e80c8858b689d4b6b2d93af045affc0ce"
+}

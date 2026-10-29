@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-16T12:23:14.627755+00:00",
+  "status": "PASS",
+  "command": [
+    "/usr/bin/gcc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-fno-associative-math",
+    "-fexcess-precision=standard",
+    "-o",
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_native_reader_speed_v0_1/build/v1/stencil.so",
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_native_reader_speed_v0_1/stencil.c"
+  ],
+  "returncode": 0,
+  "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+  "binary": "build/v1/stencil.so",
+  "binary_sha256": "2cfbe6f141dba63d8beeb5ec5d16267c2aa235f05d3f52784572c27fd88e43ed",
+  "source_sha256": "dbef1d109671c36944a2c8e5b555da58f9e98a3b20bbadd16004560531ca1e77",
+  "wall_seconds": 0.36747527999978047,
+  "numpy_version": "2.5.2",
+  "python_version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.111+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

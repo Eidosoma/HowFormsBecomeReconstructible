@@ -1,0 +1,27 @@
+{
+  "cohort_unchanged": true,
+  "new_production_dynamics": 0,
+  "no_resampling": true,
+  "original_failed_search_preserved": true,
+  "recorded_utc": "2026-10-17T17:24:18.088547+00:00",
+  "reservation_sha256": "7866644814ec3e412235ed416bf22bd7a64a350c173e839d3a3de9cb7841efb0",
+  "reviewed_hits": [
+    {
+      "actual_source_block": 21000002,
+      "conclusion": "Excluded identity 608280 occurs only as a SHA256 prefix, not a numerical identity",
+      "matches": [
+        {
+          "field_path": [
+            "arrays",
+            "s1_ema",
+            "sha256"
+          ],
+          "value": "608280befcc8da658256315a89e8e80123452220a41f7e7f7cd823dffa055af6"
+        }
+      ],
+      "path": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT027/runs/damage_v2/tissue_21000002/future_00/common/draw_03/mix000_foreign_corrected_0010.json",
+      "sha256": "359509c0050e3d45a28ba01b0431dec12bf5e4f449fe561214ece74b05812f58"
+    }
+  ],
+  "status": "PASS_FALSE_POSITIVE_ONLY"
+}

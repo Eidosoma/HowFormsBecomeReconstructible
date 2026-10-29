@@ -1,0 +1,216 @@
+{
+  "acknowledged_utc": "2026-10-16T12:30:12.185987+00:00",
+  "additional_injury_mask": true,
+  "administrative_archive": "TT024/closeout_handoff_inputs/MANIFEST.json",
+  "all_new_scientific_outcomes_now_exposed": true,
+  "arms": [
+    "full_on",
+    "subtract_on",
+    "zero_on",
+    "zero_off"
+  ],
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_sample_extension": false,
+  "automatic_successor": false,
+  "benchmark": "TT024/runs/benchmark_v1/COMPLETE.json",
+  "benchmark_saved_verification": {
+    "arrays": 2752,
+    "new_dynamics": 0,
+    "packet_handoffs": 96,
+    "records": 512
+  },
+  "benchmark_seconds": 25.416346520010848,
+  "benchmark_sha256": "16ebe842e9025d812da022eda7996968337e26ff18531b05a89d7456d3cae7a1",
+  "benchmark_status": "COMPLETE",
+  "benchmark_verification": {
+    "arm_batches": 32,
+    "max_native_error": 0.0,
+    "native_arrays": 384,
+    "new_reads": 16,
+    "new_repairs": 16,
+    "retained_repairs": 48,
+    "reused_read_slots": 80
+  },
+  "blocks": [
+    21000000,
+    21000001,
+    21000002,
+    21000003
+  ],
+  "closeout": "TT024/CLOSEOUT.json",
+  "closeout_new_dynamics": 0,
+  "closeout_seconds": 103.42670487699797,
+  "closeout_sha256": "50990b67f66340e69f9d4d649edccb65519201fbee5b3b71fb4a72454c1e67de",
+  "closeout_status": "PASS",
+  "closeout_verifier": "TT024/closeout.py",
+  "closeout_verifier_sha256": "ce479caecbc501d7c290ecd86b76a1e4b6f5ff23d4a48a919ea9e7f3331e3205",
+  "closeout_written_after_acquisition": true,
+  "closeout_written_before_effect_inspection": true,
+  "completed_blocks": 4,
+  "completed_utc": "2026-10-16T13:06:41.446078+00:00",
+  "completion": "TT024/runs/serial_v1/COMPLETE.json",
+  "completion_sha256": "6acdccc79c5eace910b2bbcc02df02407ace63181b05c801211894fc7b29c159",
+  "copied_baseline_bytes": 397249554,
+  "copied_baseline_files": 3784,
+  "cpus": [
+    6,
+    7
+  ],
+  "current_execution": "TT024/CURRENT_EXECUTION.json",
+  "deadline_seconds": 22310,
+  "effect_inspection_utc": "2026-10-16T15:15:52.477711+00:00",
+  "estimated_output_bytes": 1232383872,
+  "families": [
+    "common",
+    "residual"
+  ],
+  "forecast_seconds": 7236.577025603037,
+  "free_reserve_bytes": 2147483648,
+  "freeze": "TT024/FREEZE.json",
+  "freeze_sha256": "e463034ec8cb14c35da658f578a78d84a1a36bca506732936da74f460cfc1694",
+  "fresh_population_confirmation": false,
+  "frozen_evidence": 3801,
+  "frozen_inputs": 4093,
+  "futures_per_record": 4,
+  "generations": 8,
+  "historical_deadline_from_ack_utc_approx": "2026-10-16T18:42:02.185987+00:00",
+  "historical_forecast_completion_from_ack_utc": "2026-10-16T14:30:48.763013+00:00",
+  "historical_launch_administrative_archive": "TT024/launch_handoff_inputs/MANIFEST.json",
+  "interpretation": "TT024/INTERPRETATION.md",
+  "job": "TT024/runs/serial_v1",
+  "latest_scientific_execution_observation": "COMPLETE_AND_SAVED_CLOSEOUT_PASS",
+  "latest_scientific_execution_observation_utc": "2026-10-16T15:15:27.452163+00:00",
+  "launch": "TT024/LAUNCH.json",
+  "launch_sha256": "86e979cd2b94bfab7b46d56f6619cd09b948211f923dab76886f19ad20b016a8",
+  "log": "TT024/serial_v1.log",
+  "new_scientific_continuations_generated_before_freeze": false,
+  "next_check_trigger": null,
+  "numerical_threads": 1,
+  "original_controls_and_prefixes_exposed": true,
+  "original_run_files": 5799,
+  "original_run_unchanged": true,
+  "outcome_inspection": "TT024/RESULT_INSPECTION.json",
+  "peak_worker_rss_bytes": 58933248,
+  "pid": 394538,
+  "planned_packet_handoffs": 1152,
+  "planned_record_rows": 2048,
+  "planned_saved_arrays": 37120,
+  "planned_verification": {
+    "arm_batches": 128,
+    "max_native_error": 0.0,
+    "native_arrays": 10752,
+    "new_reads": 448,
+    "new_repairs": 448,
+    "retained_repairs": 576,
+    "reused_read_slots": 704
+  },
+  "poll_trigger": "USER_STATUS_REQUEST",
+  "population_blocks": 4,
+  "post_startup_progress_polled": true,
+  "primary_block_effects": {
+    "21000000": 0.15625,
+    "21000001": 0.328125,
+    "21000002": 0.28125,
+    "21000003": 0.3125
+  },
+  "primary_descriptive_comparison": "residual:subtract_vs_full:terminal",
+  "primary_descriptive_effect": 0.26953125,
+  "primary_draw_changes": {
+    "improved": 76,
+    "tied": 173,
+    "worsened": 7
+  },
+  "primary_interpretation": "SERIAL_GAIN_OVER_FULL_CAPTURE_WITH_REMAINING_LOSS_VERSUS_PRESERVATION",
+  "primary_record_changes": {
+    "improved": 45,
+    "tied": 17,
+    "worsened": 2
+  },
+  "proposed_followup": "TT024/NEXT_STEP.md",
+  "protocol": "TT024/PROTOCOL.md",
+  "qualification": "TT024/checks/qualification_v1/COMPLETE.json",
+  "qualification_checks": 26,
+  "qualification_seconds": 15.179135072001372,
+  "qualification_serial_parallel_array_files": 160,
+  "qualification_sha256": "888acd540b6a0331c383b56d2a175a35a975fa2dfec26b61cc7b6ec0d09754c5",
+  "randomness": "Intentional exact TT022 serial environment reuse; no new population or stochastic namespace",
+  "recorded_utc": "2026-10-16T15:22:12.177969+00:00",
+  "records_per_family": 64,
+  "report": "TT024/runs/serial_v1/REPORT.md",
+  "report_byte_identical": true,
+  "resource_admission": "TT024/PRELAUNCH_RESOURCE_CHECK.json",
+  "resource_admission_sha256": "aa007395e88b11e9127f5c01e6ee5a5176f1c1b0b0d37e3fcebc19ad4c631b33",
+  "retained_bytes_before_completion_receipt": 642017474,
+  "run_byte_limit": 2147483648,
+  "saved_verification": {
+    "arrays": 37120,
+    "new_dynamics": 0,
+    "packet_handoffs": 1152,
+    "records": 2048
+  },
+  "scientific_classification": "EXPOSED_CASE_SERIAL_FILL_SUBTRACTION_DEVELOPMENT",
+  "scientific_serial_outcomes_inspected": true,
+  "seconds": 2189.2812519860017,
+  "significance_verdict": false,
+  "starting_records_exposed": true,
+  "startup_acknowledged": true,
+  "status": "COMPLETE_EXPOSED_CASE_SERIAL_FILL_SUBTRACTION_DEVELOPMENT",
+  "status_check": "TT024/STATUS_CHECK.json",
+  "study": "TT024",
+  "successor_launched": false,
+  "summary": "TT024/runs/serial_v1/SUMMARY.json",
+  "summary_byte_identical": true,
+  "terminal_recognition": {
+    "common": {
+      "full_on": 0.484375,
+      "subtract_on": 0.671875,
+      "zero_off": 0.6875,
+      "zero_on": 0.671875
+    },
+    "residual": {
+      "full_on": 0.484375,
+      "subtract_on": 0.75390625,
+      "zero_off": 0.89453125,
+      "zero_on": 0.7421875
+    }
+  },
+  "uninterrupted_development": {
+    "common": {
+      "full_on": 0.21484375,
+      "subtract_on": 0.59765625,
+      "zero_off": 0.66796875,
+      "zero_on": 0.47265625
+    },
+    "residual": {
+      "full_on": 0.21875,
+      "subtract_on": 0.58984375,
+      "zero_off": 0.69140625,
+      "zero_on": 0.5
+    }
+  },
+  "uninterrupted_repaired": {
+    "common": {
+      "full_on": 0.15234375,
+      "subtract_on": 0.4609375,
+      "zero_off": 0.52734375,
+      "zero_on": 0.3828125
+    },
+    "residual": {
+      "full_on": 0.12890625,
+      "subtract_on": 0.43359375,
+      "zero_off": 0.47265625,
+      "zero_on": 0.44921875
+    }
+  },
+  "verification": {
+    "arm_batches": 128,
+    "max_native_error": 0.0,
+    "native_arrays": 10752,
+    "new_reads": 448,
+    "new_repairs": 448,
+    "retained_repairs": 576,
+    "reused_read_slots": 704
+  },
+  "workers": 2
+}

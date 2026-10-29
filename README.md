@@ -1,23 +1,23 @@
-# How Forms Become Reconstructible
+# How Patterns Return
 
-## Acquired Records, Reciprocal Repair, and Functional Renewal
+## Memory, Repair, and Renewal in Simulated Systems
 
-Robert Bjarnason, Eidosoma.ai. **Human-review preparation v1.2, 12 October 2026.** The public computational companion retains the selected v0.20/v1.0 evidence and adds bounded D184–D186 development, presented in a five-question main paper and separate Supporting Information. No Zenodo deposit or DOI is claimed. Continuing experiments remain separate from the selected results.
+Robert Bjarnason, Eidosoma.ai. **Human-review preparation v2.4, 28 October 2026.** The update adds selected writing-window, equal-read forecasting, cellular and multiscale results, retaining their failures and qualifications. No Zenodo deposit or DOI is claimed.
 
 The paper asks how acquired history becomes useful to a successor, how embodied reading and writing change that usefulness, and why present expression can differ from continued reconstructibility. The studies use supplied simulation models; biological generalization and a general predictive reconstruction law remain open.
 
 ### Read the paper
 
-- [Complete main PDF](paper/v1.2/how-forms-become-reconstructible-v1.2.pdf) — all 16 main figures.
-- [Supporting Information PDF](paper/v1.2/how-forms-become-reconstructible-supporting-v1.2.pdf) — all 45 methods and five supporting figures.
-- [PDF link audit](paper/v1.2/LINK_AUDIT.md) and [SI methods page index](paper/v1.2/METHODS_INDEX.md).
-- [Versioned sources, ledger and figure correspondence](paper/v1.2/README.md).
+- [Complete main PDF](paper/v2.4/how-forms-become-reconstructible-v2.4.pdf) — all 18 main figures.
+- [Supporting Information PDF](paper/v2.4/how-forms-become-reconstructible-supporting-v2.4.pdf) — all 70 methods and five supporting figures.
+- [PDF link audit](paper/v2.4/LINK_AUDIT.md) and [SI methods page index](paper/v2.4/METHODS_INDEX.md).
+- [Versioned sources, ledger and figure correspondence](paper/v2.4/README.md).
 - [Main manuscript and abstract](MANUSCRIPT.md).
-- [Current evidence notes](paper/v1.2/EVIDENCE_LEDGER.md), [supporting methods](paper/v1.2/SUPPORTING_INFORMATION.md), and [extended comparisons](paper/v1.2/EXTENDED_EVIDENCE.md).
+- [Current evidence notes](paper/v2.4/EVIDENCE_LEDGER.md), [supporting methods](paper/v2.4/SUPPORTING_INFORMATION.md), and [extended comparisons](paper/v2.4/EXTENDED_EVIDENCE.md).
 - [Experiment index](reproducibility/experiment_index.csv) and [reproduction guide](reproducibility/README.md).
 - [Included and omitted material](reproducibility/AVAILABILITY.md).
 
-The v1.2 update retains previous qualification verdicts and adds exposed active-form development, its failed baseline and finishing clarifications. The main text is reorganized around five scientific questions. All main infographics and measured figures remain in the PDF; detailed methods are in the supporting PDF, and the full ledger and extended comparisons remain here. The two PDFs have identical working-repository copies and are identified by the [package hashes](paper/v1.2/manifest.json).
+The v2.4 package incorporates E98–E116, including results developed since the last public export. The source inventory separates frozen evidence records from implementation context. The main text is reorganized around five scientific questions. All main infographics and measured figures remain in the PDF; detailed methods are in the supporting PDF, and the full ledger and extended comparisons remain here. The two PDFs have identical working-repository copies and are identified by the [package hashes](paper/v2.4/manifest.json).
 
 ### Build a reading copy
 
@@ -46,7 +46,7 @@ To redraw the historical-specificity and TT014 outcome plots from compact tables
 
 `experiments/` preserves the paper-local experiment identifiers, source code, protocols and selected compact results, including unsuccessful comparisons. `upstream/` contains source from the older non-AI tracks and the native definitions used by parity checks. `evidence/packages/` retains small files from the paper's frozen evidence packages. The [export manifest](reproducibility/export_manifest.json) and its paginated file records identify their original paths and hashes.
 
-This is a small-file review export: **all files except the four registered v1.1/v1.2 publication PDFs are at most 256 KiB**. Large raw arrays, archives and standalone raster figures remain omitted. The narrow PDF exception is recorded and hash-checked in `reproducibility/publication-files.json`. Original run records may refer to omitted files or their original machine paths. They remain historical records, not portable launch instructions. See the availability guide before attempting a full reproduction.
+This is a small-file review export: **all files except the six registered v1.1/v1.2/v2.1 publication PDFs are at most 256 KiB**. Large raw arrays, archives and standalone raster figures remain omitted. The narrow PDF exception is recorded and hash-checked in `reproducibility/publication-files.json`. Original run records may refer to omitted files or their original machine paths. They remain historical records, not portable launch instructions. See the availability guide before attempting a full reproduction.
 
 ### Status and licensing
 
@@ -54,4 +54,6 @@ This snapshot does not import the private monorepo's Git history or move active 
 
 The original code notices are retained in [LICENSES](LICENSES/README.md). Manuscript and third-party materials are not relicensed by the code's MIT notice. Citation metadata are in [CITATION.cff](CITATION.cff); no DOI or completed public deposition is claimed.
 
-The preceding [v1.1 package](paper/v1.1/README.md) remains intact. New v1.2 sources and omissions are documented in [source availability](paper/v1.2/SOURCE_AVAILABILITY.md).
+The preceding [v1.1](paper/v1.1/README.md) and [v1.2](paper/v1.2/README.md) packages remain intact. New [v2.1 sources and omissions](paper/v2.4/SOURCE_AVAILABILITY.md) are explicit.
+
+Previous [v2.1](paper/v2.1/README.md), v1.2 and v1.1 packages remain unchanged. New web paths require commit and push.

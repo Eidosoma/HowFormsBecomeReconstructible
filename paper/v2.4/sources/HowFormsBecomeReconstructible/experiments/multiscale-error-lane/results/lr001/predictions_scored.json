@@ -1,0 +1,209 @@
+{
+ "L1": {
+  "verdict": "HOLDS",
+  "bond_accuracy@20": {
+   "F0/s0.1": 1.0,
+   "F0/s0.3": 1.0,
+   "F0/s0.6": 1.0,
+   "IS/s0.1": 1.0,
+   "IS/s0.3": 1.0,
+   "IS/s0.6": 1.0
+  }
+ },
+ "L2": {
+  "verdict": "HOLDS",
+  "none_at_3e-4": {
+   "F0": {
+    "bond_err@4000": 0.4519,
+    "sign@4000": 0.5576
+   },
+   "BL": {
+    "bond_err@4000": 0.4519,
+    "sign@4000": 0.5581
+   },
+   "IS": {
+    "bond_err@4000": 0.4519,
+    "sign@4000": 0.5553
+   }
+  }
+ },
+ "L3": {
+  "verdict": "HOLDS",
+  "at_1e-3_t4000": {
+   "F0": {
+    "both_bond_err": 0.0288,
+    "both_sign": 0.9842,
+    "hebb_bond_err": 0.3452,
+    "parity_bond_err": 0.1373
+   },
+   "BL": {
+    "both_bond_err": 0.0285,
+    "both_sign": 0.9845,
+    "hebb_bond_err": 0.346,
+    "parity_bond_err": 0.1373
+   },
+   "IS": {
+    "both_bond_err": 0.0287,
+    "both_sign": 0.9843,
+    "hebb_bond_err": 0.345,
+    "parity_bond_err": 0.1373
+   }
+  }
+ },
+ "L4": {
+  "verdict": "HOLDS",
+  "sign@8000_at_3e-3": {
+   "F0/none": 0.5013,
+   "F0/hebb": 0.5011,
+   "F0/parity": 0.4963,
+   "F0/both": 0.5775,
+   "BL/none": 0.5009,
+   "BL/hebb": 0.4957,
+   "BL/parity": 0.4977,
+   "BL/both": 0.5798,
+   "IS/none": 0.4956,
+   "IS/hebb": 0.5014,
+   "IS/parity": 0.5006,
+   "IS/both": 0.5738
+  }
+ },
+ "L5": {
+  "verdict": "HOLDS",
+  "IS_flip8": {
+   "gauge": {
+    "kept@4000": 1.0,
+    "kept_min@4000": 1.0
+   },
+   "hybrid": {
+    "kept@4000": 1.0,
+    "kept_min@4000": 1.0
+   },
+   "plain": {
+    "kept@4000": 0.9731,
+    "kept_min@4000": 0.9203
+   }
+  },
+  "worst_gauge_or_hybrid_minus_plain_on_flips": 0.0
+ },
+ "L6": {
+  "verdict": "HOLDS",
+  "kill8_kept@4000": {
+   "F0": {
+    "plain": 0.983,
+    "hybrid": 0.9882,
+    "gauge": 0.7321
+   },
+   "BL": {
+    "plain": 0.9038,
+    "hybrid": 0.9135,
+    "gauge": 0.738
+   },
+   "S4": {
+    "plain": 0.9775,
+    "hybrid": 0.9829,
+    "gauge": 0.7344
+   },
+   "IS": {
+    "plain": 0.9237,
+    "hybrid": 0.9307,
+    "gauge": 0.7297
+   }
+  }
+ },
+ "L7": {
+  "verdict": "HOLDS",
+  "relink8_kept@4000": {
+   "F0": {
+    "plain": 1.0,
+    "hybrid": 1.0,
+    "hybrid+trust": 1.0
+   },
+   "BL": {
+    "plain": 0.9545,
+    "hybrid": 0.837,
+    "hybrid+trust": 0.9539
+   },
+   "S4": {
+    "plain": 1.0,
+    "hybrid": 1.0,
+    "hybrid+trust": 1.0
+   },
+   "IS": {
+    "plain": 0.9359,
+    "hybrid": 0.8528,
+    "hybrid+trust": 0.9415
+   }
+  }
+ },
+ "L8": {
+  "verdict": "HOLDS",
+  "kept_min@4000": {
+   "BL/none/kill8": 0.6859,
+   "BL/none/relink8": 0.6325,
+   "BL/plain/kill8": 0.6343,
+   "BL/plain/relink8": 0.8448,
+   "BL/gauge/kill8": 0.7163,
+   "BL/gauge/relink8": 0.6422,
+   "BL/hybrid/kill8": 0.6581,
+   "BL/hybrid/relink8": 0.6422,
+   "BL/hybrid+trust/kill8": 0.6581,
+   "BL/hybrid+trust/relink8": 0.8284,
+   "IS/none/kill8": 0.7644,
+   "IS/none/relink8": 0.5598,
+   "IS/plain/kill8": 0.6644,
+   "IS/plain/relink8": 0.6838,
+   "IS/gauge/kill8": 0.773,
+   "IS/gauge/relink8": 0.5071,
+   "IS/hybrid/kill8": 0.6793,
+   "IS/hybrid/relink8": 0.5071,
+   "IS/hybrid+trust/kill8": 0.6793,
+   "IS/hybrid+trust/relink8": 0.6208
+  }
+ },
+ "L9": {
+  "verdict": "HOLDS",
+  "t8000": {
+   "BL/0.001": {
+    "inherit_sign": 0.9994,
+    "inherit_minority": 0.9989,
+    "relearn_minority": 0.391,
+    "default_minority": 0.7917
+   },
+   "BL/0.003": {
+    "inherit_sign": 0.9983,
+    "inherit_minority": 0.9985,
+    "relearn_minority": 0.3099,
+    "default_minority": 0.7608
+   },
+   "IS/0.001": {
+    "inherit_sign": 0.9995,
+    "inherit_minority": 0.9995,
+    "relearn_minority": 0.3518,
+    "default_minority": 0.0
+   },
+   "IS/0.003": {
+    "inherit_sign": 0.9984,
+    "inherit_minority": 0.999,
+    "relearn_minority": 0.239,
+    "default_minority": 0.0017
+   }
+  }
+ },
+ "L10": {
+  "verdict": "HOLDS",
+  "record_kept@2000": {
+   "F0": {
+    "none": 1.0,
+    "record": 1.0,
+    "body": 0.8322,
+    "body_slow": 0.9217
+   },
+   "IS": {
+    "none": 1.0,
+    "record": 1.0,
+    "body": 0.6463,
+    "body_slow": 0.9186
+   }
+  }
+ }
+}

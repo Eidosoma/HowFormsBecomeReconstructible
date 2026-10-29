@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-18T10:30:09.519203+00:00",
+  "status": "SAVED_DATA_JOINT_POWER_AUDIT_COMPLETE",
+  "decision": "RETAIN_108_BLOCK_R4_PROPOSAL_FOR_RUNNER_QUALIFICATION",
+  "planning_amendment": "Replace equal .95 marginal-power requirement with direct union-bound .80 joint target; require both legacy approximation and noncentral-t calculations to meet it. Alpha, models, margins, endpoint, comparator costs and all-four-pass criterion unchanged.",
+  "selected_blocks": 108,
+  "futures_per_packet_per_regime": 4,
+  "maximum_acquisition_attempts": 216,
+  "workers": 8,
+  "all_eligible_forecast_hours": 4.480198384621278,
+  "full_cap_forecast_hours": 5.691104706343734,
+  "smaller_projected_joint_bound": 0.8086049596179499,
+  "sensitivity": "Only16 planning blocks: leave-one-block-out required count68\u2013204; half-effect420 blocks; SD-inflation220. Nominal power is conditional on uncertain estimates, not guaranteed. No1h design on the declared grid meets the planning target.",
+  "verification": {
+    "tests_passed": 10,
+    "independent_mixture_integrals": 72,
+    "maximum_integral_difference": 2.0474733020137137e-12,
+    "frozen_inputs_verified": 17,
+    "outputs_verified": 6,
+    "packet_gain_scalar_checks": 1512
+  },
+  "new_native_reads": 0,
+  "new_scientific_outcomes": 0,
+  "scientific_launch": false,
+  "next": "Prepare and qualify a separately frozen108-eligible-block runner with first-eligible block ordering,216-attempt cap, full-cohort forecast seal, four future streams, no early scientific scoring, no adaptive extension, eight-worker CPU admission and six-hour hard stop. Retain all previous scientific verdicts.",
+  "artifacts_sha256": {
+    "COMPLETE.json": "184ca75d9e21637c8a00e89e6c208e6bc16f280443102469ded7994e4d48c19b",
+    "OUTPUTS.json": "929a907e74e8d3b8657210406cce6ee5c8a189f98f8b7602b17b4b08518fb7a1",
+    "RESULTS.json": "56d080955e9c8ff6d86da1fa060546b54b6cc898591810c3022d482b0837995c",
+    "DESIGN_PROPOSAL.json": "b43b57dfda6fb1944647ea6716cddc47155e4e7854a630ca87d7e2e6017ed4c0",
+    "REPORT.md": "41d55c70ec638e17cbec4f0de99925f68c5a0fb00c56fb86a40990977cb4a1b7"
+  }
+}

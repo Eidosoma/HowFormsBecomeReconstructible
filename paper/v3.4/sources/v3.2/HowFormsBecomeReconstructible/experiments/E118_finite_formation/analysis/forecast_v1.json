@@ -1,0 +1,142 @@
+{
+  "conservative_seconds": 57382.02073475883,
+  "detach_required": true,
+  "details": [
+    {
+      "cost": 2380.9175306149514,
+      "stages": {
+        "E022": {
+          "scale": 16.0,
+          "scaled": 824.8880706056952,
+          "seconds": 51.55550441285595
+        },
+        "E055": {
+          "scale": 15.294117647058824,
+          "scaled": 47.96056964325116,
+          "seconds": 3.1358833997510374
+        },
+        "E058": {
+          "scale": 16.0,
+          "scaled": 139.058509580791,
+          "seconds": 8.691156848799437
+        },
+        "acquisition": {
+          "scale": 1.0,
+          "scaled": 1.1871211230754852,
+          "seconds": 1.1871211230754852
+        },
+        "assay_r0": {
+          "scale": 16.0,
+          "scaled": 514.5812602080405,
+          "seconds": 32.16132876300253
+        },
+        "assay_r1": {
+          "scale": 16.0,
+          "scaled": 508.07353088259697,
+          "seconds": 31.75459568016231
+        },
+        "capture": {
+          "scale": 1.0,
+          "scaled": 2.311506089521572,
+          "seconds": 2.311506089521572
+        },
+        "recovery": {
+          "scale": 16.0,
+          "scaled": 99.31917177885771,
+          "seconds": 6.207448236178607
+        },
+        "storage": {
+          "scale": 2.0,
+          "scaled": 31.11804877826944,
+          "seconds": 15.55902438913472
+        },
+        "writer": {
+          "scale": 16.0,
+          "scaled": 211.28557563200593,
+          "seconds": 13.20534847700037
+        }
+      },
+      "task": 9000981
+    },
+    {
+      "cost": 2374.6233071490083,
+      "stages": {
+        "E022": {
+          "scale": 16.0,
+          "scaled": 812.7631462775171,
+          "seconds": 50.79769664234482
+        },
+        "E055": {
+          "scale": 15.294117647058824,
+          "scaled": 48.044679188717375,
+          "seconds": 3.1413828700315207
+        },
+        "E058": {
+          "scale": 16.0,
+          "scaled": 141.41044395044446,
+          "seconds": 8.838152746902779
+        },
+        "acquisition": {
+          "scale": 1.0,
+          "scaled": 1.1413986408151686,
+          "seconds": 1.1413986408151686
+        },
+        "assay_r0": {
+          "scale": 16.0,
+          "scaled": 492.68063467368484,
+          "seconds": 30.792539667105302
+        },
+        "assay_r1": {
+          "scale": 16.0,
+          "scaled": 512.1008389592171,
+          "seconds": 32.00630243495107
+        },
+        "capture": {
+          "scale": 1.0,
+          "scaled": 2.280130707193166,
+          "seconds": 2.280130707193166
+        },
+        "recovery": {
+          "scale": 16.0,
+          "scaled": 108.0986106544733,
+          "seconds": 6.7561631659045815
+        },
+        "storage": {
+          "scale": 2.0,
+          "scaled": 30.351515824906528,
+          "seconds": 15.175757912453264
+        },
+        "writer": {
+          "scale": 16.0,
+          "scaled": 224.38762302324176,
+          "seconds": 14.02422643895261
+        }
+      },
+      "task": 9000980
+    }
+  ],
+  "expected_seconds": 19287.34024491961,
+  "forecasts_by_workers": {
+    "1": {
+      "conservative_seconds": 228808.08293903532,
+      "expected_seconds": 76429.36097967844
+    },
+    "2": {
+      "conservative_seconds": 114524.04146951766,
+      "expected_seconds": 38334.68048983922
+    },
+    "3": {
+      "conservative_seconds": 78810.2785102934,
+      "expected_seconds": 26430.092836764466
+    },
+    "4": {
+      "conservative_seconds": 57382.02073475883,
+      "expected_seconds": 19287.34024491961
+    }
+  },
+  "method": "Full recipient-width, five-formulation, 32-boundary benchmark; scale each stage including replay; fixed 32 fresh sources",
+  "storage_reserve_bytes": 16820793712,
+  "summary_allowance_seconds": 240.0,
+  "utc": "2026-10-31T13:31:59.562947+00:00",
+  "workers": 4
+}

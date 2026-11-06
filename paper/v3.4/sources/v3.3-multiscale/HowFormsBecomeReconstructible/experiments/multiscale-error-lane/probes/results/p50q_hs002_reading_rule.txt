@@ -1,0 +1,33 @@
+noise independent: SD of D(256) - D(128) 2.687 (HS001 0.64), of D(1024) - D(512) 2.687
+noise level + independent: SD of D(256) - D(128) 0.642 (HS001 0.64), of D(1024) - D(512) 0.642
+noise level + AR(1): SD of D(256) - D(128) 0.641 (HS001 0.64), of D(1024) - D(512) 0.821
+
+truth                        noise                                     C                    A256                   A1024                       B                      AH   d1024-512 hit
+plateau c1 h5                independent          PLATEAU3,drift1,neither6         PLATEAU9,drift1         PLATEAU9,drift1         PLATEAU9,drift1  PLATEAU1,drift1,neither8   1/10
+plateau c1 h5                level + independent       PLATEAU3,neither7               PLATEAU10               PLATEAU10               PLATEAU10               PLATEAU10   0/10
+plateau c1 h5                level + AR(1)             PLATEAU4,neither6               PLATEAU10               PLATEAU10               PLATEAU10               PLATEAU10   0/10
+plateau c0.5 h5              independent               PLATEAU1,neither9               PLATEAU10               PLATEAU10               PLATEAU10               neither10   0/10
+plateau c0.5 h5              level + independent  PLATEAU5,drift1,neither2,zero2   PLATEAU7,drift1,zero2   PLATEAU7,drift1,zero2   PLATEAU7,drift1,zero2  PLATEAU4,drift1,neither3,zero2   1/10
+plateau c0.5 h5              level + AR(1)        PLATEAU3,neither6,zero1          PLATEAU9,zero1          PLATEAU9,zero1          PLATEAU9,zero1  PLATEAU5,neither4,zero1   0/10
+zero h5                      independent                          zero10                  zero10                  zero10                  zero10                  zero10   0/10
+zero h5                      level + independent          neither1,zero9          PLATEAU1,zero9          PLATEAU1,zero9          PLATEAU1,zero9          neither1,zero9   0/10
+zero h5                      level + AR(1)                        zero10                  zero10                  zero10                  zero10                  zero10   0/10
+linear drift                 independent                 drift6,neither4         drift6,neither4         drift6,neither4         drift6,neither4         drift6,neither4   6/10
+linear drift                 level + independent                 drift10                 drift10                 drift10                 drift10                 drift10   10/10
+linear drift                 level + AR(1)                       drift10                 drift10                 drift10                 drift10                 drift10   10/10
+slow decay h600              independent                 drift6,neither4         drift6,neither4         drift6,neither4         drift6,neither4         drift6,neither4   6/10
+slow decay h600              level + independent                 drift10                 drift10                 drift10                 drift10                 drift10   10/10
+slow decay h600              level + AR(1)                       drift10                 drift10                 drift10                 drift10                 drift10   10/10
+fast+slow to 0, h2 600       independent                 drift3,neither7  PLATEAU5,drift3,neither2  PLATEAU5,drift3,neither2  PLATEAU5,drift3,neither2         drift3,neither7   3/10
+fast+slow to 0, h2 600       level + independent                 drift10                 drift10                 drift10                 drift10                 drift10   10/10
+fast+slow to 0, h2 600       level + AR(1)               drift9,neither1         PLATEAU1,drift9         PLATEAU1,drift9         PLATEAU1,drift9         drift9,neither1   9/10
+fast+slow to 0, h2 1200      independent                 drift1,neither9         PLATEAU9,drift1         PLATEAU9,drift1         PLATEAU9,drift1         drift1,neither9   1/10
+fast+slow to 0, h2 1200      level + independent         drift9,neither1         PLATEAU1,drift9         PLATEAU1,drift9         PLATEAU1,drift9         PLATEAU1,drift9   9/10
+fast+slow to 0, h2 1200      level + AR(1)               drift8,neither2         PLATEAU2,drift8         PLATEAU2,drift8         PLATEAU2,drift8  PLATEAU1,drift8,neither1   8/10
+fast+slow to 0, h2 2400      independent               PLATEAU1,neither9       PLATEAU9,neither1       PLATEAU9,neither1       PLATEAU9,neither1       PLATEAU1,neither9   0/10
+fast+slow to 0, h2 2400      level + independent         drift9,neither1         PLATEAU1,drift9         PLATEAU1,drift9         PLATEAU1,drift9         PLATEAU1,drift9   9/10
+fast+slow to 0, h2 2400      level + AR(1)        PLATEAU1,drift2,neither7         PLATEAU8,drift2         PLATEAU8,drift2         PLATEAU8,drift2  PLATEAU6,drift2,neither2   2/10
+fast+slow to 0, h2 4800      independent          PLATEAU3,drift1,neither6         PLATEAU9,drift1         PLATEAU9,drift1         PLATEAU9,drift1  PLATEAU1,drift1,neither8   1/10
+fast+slow to 0, h2 4800      level + independent         drift2,neither8         PLATEAU8,drift2         PLATEAU8,drift2         PLATEAU8,drift2         PLATEAU8,drift2   2/10
+fast+slow to 0, h2 4800      level + AR(1)        PLATEAU1,drift3,neither6         PLATEAU7,drift3         PLATEAU7,drift3         PLATEAU7,drift3         PLATEAU7,drift3   3/10
+finished 18:40:03Z

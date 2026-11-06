@@ -1,3 +1,11 @@
+## Current source edition — v3.4
+
+The [v3.4 package](../paper/v3.4/README.md) contains 168 evidence notes, 123 methods and selected frozen sources through 6 November. The [availability guide](../paper/v3.4/SOURCE_AVAILABILITY.md) documents split compact data, absent raw runs and audit commands. The new PDF is pending. Historical entries below retain their dates.
+
+## Current source edition — v3.1
+
+The [v3.1 package](../paper/v3.1/README.md) adds 286 frozen records, five completed development studies, 127 evidence notes and 82 methods. PDFs remain at v2.5 pending a new build. The [availability record](../paper/v3.1/SOURCE_AVAILABILITY.md) distinguishes included results, pending studies and omitted large inputs. Earlier dated entries below remain unchanged.
+
 # Reproducing the first review snapshot
 
 This repository exposes the v1.1 paper and supporting PDF alongside the unchanged v0.20/v1.0 computational evidence selection in a bounded snapshot. The supported commands have distinct scopes.

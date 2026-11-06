@@ -1,0 +1,1485 @@
+{
+  "selected_utc": "2026-11-03T12:14:15.536156+00:00",
+  "repository_head": "edc2f0f5850acac91592d69761a79eb0f62d154c",
+  "archive": "paper_assets/data/evidence-update-v3.3-multiscale-followup-source-records.zip",
+  "archive_sha256": "9ab0ff0a321415c13c7d89aae9ecea2ef81f6a61980052d76e1f0437420adc6a",
+  "archive_bytes": 1035094,
+  "groups": {
+    "AR005": {
+      "status": "16 fresh development blocks; within-tissue correction, not serial renewal",
+      "design_digest": "0176779a89e36a7e664b9b1cecbfe3c2abfa213a7422d6341243b170b8ae9b02",
+      "selected_files": 202,
+      "raw_run_available_locally": false
+    },
+    "SM006": {
+      "status": "rereads of 32 exposed TEST blocks; some new reader conditions; development",
+      "design_digest": "6300a7c7408f89b746d74b8291d38369d4bcbb4511589eecf6a8d5410d895257",
+      "selected_files": 205,
+      "raw_run_available_locally": false
+    }
+  },
+  "sources": [
+    {
+      "path": "experiments/multiscale-error-lane/PLAN_AR005.md",
+      "sha256": "cfe62233642dfbfddd3a4b1570f9063ec03ce42c63604931c2ae2509e3a96268",
+      "bytes": 18492
+    },
+    {
+      "path": "experiments/multiscale-error-lane/PLAN_IA001.md",
+      "sha256": "91446b4c77a0937963d12489f403017bdb187cb22fc495986040ab83ab7ca09e",
+      "bytes": 14023
+    },
+    {
+      "path": "experiments/multiscale-error-lane/PLAN_SM006.md",
+      "sha256": "2d8fbc15a99b0b5f924721239ffb45d0ec8b63b3b065aa7223d0de6ad87a8948",
+      "bytes": 14396
+    },
+    {
+      "path": "experiments/multiscale-error-lane/PROTOCOL.md",
+      "sha256": "e8e165e27f020098f07ef6dbb9d81b8731332a98bd9c70078b7a1c3fc7db3a42",
+      "bytes": 21435
+    },
+    {
+      "path": "experiments/multiscale-error-lane/README.md",
+      "sha256": "193c872091ec35dbcc37a649769603384bda8eb52930864a3acf593746002b69",
+      "bytes": 52958
+    },
+    {
+      "path": "experiments/multiscale-error-lane/REGISTRATION_AR005.md",
+      "sha256": "e3f6c613099eb63365de80d3a21832a25a5565d74a7048433cc40cfd3ce54c3f",
+      "bytes": 29508
+    },
+    {
+      "path": "experiments/multiscale-error-lane/REGISTRATION_SM006.md",
+      "sha256": "c8571be6dd7d6035da87403f5e1aa0be52e2d9cfdff2228253531c36e765751c",
+      "bytes": 31751
+    },
+    {
+      "path": "experiments/multiscale-error-lane/REPORT_AR005.md",
+      "sha256": "a8ce2371c3f3fb48025af4666c0ce4351e226635f4b8cd9060fc8cfb48151adc",
+      "bytes": 14366
+    },
+    {
+      "path": "experiments/multiscale-error-lane/REPORT_SM006.md",
+      "sha256": "eb1c5eb3b37b9105afec39c64160cfdd59c4ec83d09e4fe92c9054f97d052ea2",
+      "bytes": 14429
+    },
+    {
+      "path": "experiments/multiscale-error-lane/START_HERE.md",
+      "sha256": "6c4a2bc54d52cd13b5d8a448447d0b5a3189b8512f64ec235159045dfad2f8a5",
+      "bytes": 7297
+    },
+    {
+      "path": "experiments/multiscale-error-lane/SYNTHESIS.md",
+      "sha256": "fead98660d143483d648ec0a1156d031edf0a8209f9e4ab5c211dd508b8c4f71",
+      "bytes": 42671
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/analyze.py",
+      "sha256": "d586465762abf398643ab04d36b8c2147715d709740a89056fce1a210502df9b",
+      "bytes": 8050
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/checks.py",
+      "sha256": "6be20e1d9811c171dabd10332c22caeb02529cd20b8a980f78cd21f710a1a24e",
+      "bytes": 37968
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/design.py",
+      "sha256": "b18de7d0fa1f15dfe3dd6431a9d0e6c91f97a51d09827524ec4ee18a42200e0f",
+      "bytes": 12183
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/predict.py",
+      "sha256": "eb367d6982cd7f41c59da310b51ba2f81bda6c1ffd15f66e03a138391842cd4a",
+      "bytes": 9756
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/run.py",
+      "sha256": "69d052f395aadeb945449d569e007116379abdd48f624dbaef0507da4e28d0fb",
+      "bytes": 7123
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/sim.py",
+      "sha256": "ca0745eb5f734ab5a0311b312effd58efe414401dbc0685207ddcd020659c82d",
+      "bytes": 11412
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/tables.py",
+      "sha256": "09466bf05d6d3a1ef2351c15b595f268998be2d3af710f8012c5730caf0d41b2",
+      "bytes": 4826
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar001/worker.py",
+      "sha256": "ad8850abb095fe338ed70ee8e6cd66d64d60d0dafc253160722cf640af11ef6e",
+      "bytes": 4658
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/analyze.py",
+      "sha256": "c00be66cd719ff0a35efc0090da745adf47c069232f3e662e48b61ffd9bd1543",
+      "bytes": 16923
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/checks.py",
+      "sha256": "30a3971b27a46247e4d317acde3acf86dc1b8064c15d42802da91a9ae1b689b8",
+      "bytes": 43473
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/design.py",
+      "sha256": "7c01f10f24daaa650ca7eea89c20774074ac5599a753ea3899625e1a8cea71c8",
+      "bytes": 9776
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/predict.py",
+      "sha256": "989541e8378a62ce4e1b31b980444c64210ab248ede05742624696d429d74964",
+      "bytes": 9134
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/run.py",
+      "sha256": "2abee139ee43cad7e36c55b8d76e08e760444e375f22e4dc9ba16b592390295d",
+      "bytes": 7252
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/sim.py",
+      "sha256": "3cab170d2c317a975fe178431978132decc5e614797a8cabb18cd99845cfde7d",
+      "bytes": 15023
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/tables.py",
+      "sha256": "cd756bfccacf7030d7e6819a00a9d47282d7159f45b1067eacd2b0a5d0e83417",
+      "bytes": 5878
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar002/worker.py",
+      "sha256": "2ce9e125eb9dcbb049c2b04fcfc4c32b190681d89fdcf5f482f51cce91b96c0c",
+      "bytes": 6225
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/analyze.py",
+      "sha256": "b58a59eb6f7dab3cab4ae9c4574de2083ab9434cf13f9d07d1e03a7802aca08e",
+      "bytes": 14675
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/checks.py",
+      "sha256": "09d7b5919ebc17db5c075a6bd02cb41781f6b65af454f884020d19b971a026e9",
+      "bytes": 47180
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/design.py",
+      "sha256": "2b092c2d280849334e4d0fee8d11cd47e08885225fcdaed488f8c74b560832a6",
+      "bytes": 9960
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/predict.py",
+      "sha256": "20a304160f096deeeff573261267fa56f686ec0fd3ece1bb7ef4a45d340b572e",
+      "bytes": 10728
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/run.py",
+      "sha256": "c0c3977cec403f33eacbd94bc5380d18639142f00fe3f3e948845048d57d571c",
+      "bytes": 7283
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/sim.py",
+      "sha256": "496c1bdbc2db594b21c9ee4f702ad4e5ba623fd21f7de16e4ac2da8b202cd58f",
+      "bytes": 16488
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/tables.py",
+      "sha256": "307ec5b517eb9cf1b3f5e9279318c28c73cf6477b9cd3f8565091201cb3ca80c",
+      "bytes": 4238
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/worker.py",
+      "sha256": "5f58e4abdf60a92e97800a2edf527965f6691e012c9bc8dd9e8c1b2e98cad240",
+      "bytes": 8153
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/analyze.py",
+      "sha256": "5633f6467328b1312ee4a96f7475729ef2f9d7443e821b43be5e8c8ad23ba0a4",
+      "bytes": 8355
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/checks.py",
+      "sha256": "c72285dda5dd95a63bccbecff734c45fb38189ea5553038b1bec7762a9e764ec",
+      "bytes": 27174
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/design.py",
+      "sha256": "49df8695213e97531eb85a753ed12b61dd361a84d0e3e21e7b5ea5e0da205d59",
+      "bytes": 8014
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/predict.py",
+      "sha256": "350e6c29601d6a68f509ce818224c53606df9c75656e8666ee0fc11110d56850",
+      "bytes": 8848
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/run.py",
+      "sha256": "aa8e14fd8acd81b8f9cf0ba16b9fb3ec75fb6e763ce75fe34950a4d08236293d",
+      "bytes": 7443
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/tables.py",
+      "sha256": "566efb220c8f350efbc1bd869ce9c13d9d16caaa565432540a5bd2e8397ff1e2",
+      "bytes": 3052
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/worker.py",
+      "sha256": "4f047747cbc4e9a9abbe51ad5b271dd89ba21c4b2bd77c77a0379eb159fe16d5",
+      "bytes": 3189
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/analyze.py",
+      "sha256": "5335df0bce5ef06a78dd3a7bfef16f5b82e9edaa2e183806d7be0f33944e43d8",
+      "bytes": 9915
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/checks.py",
+      "sha256": "6be8eea07855e5da49f42f94618fe16cea4eb4bf0afe1543e59ad84b7958ccaa",
+      "bytes": 30516
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/design.py",
+      "sha256": "39bb88ee4b31fa0a2464918b8fc36031a2ef07804d54819071a49cadf8d83d6e",
+      "bytes": 9483
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/frozen/design.json",
+      "sha256": "526b00964d78acc4dc9e3f8031fe9af346515a98aa177ebc6cc292831833044d",
+      "bytes": 26813
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/frozen/predictions.json",
+      "sha256": "5147174ae68564b39723166ee050847223c67c9f894a028c7b3bd036ff976f7d",
+      "bytes": 4708
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/frozen/qualification_receipt.json",
+      "sha256": "15def104f50b90ec6503f5851e4dbdb067be47f34be66fc1c92f48d20f43a956",
+      "bytes": 3255
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/predict.py",
+      "sha256": "cd1a10cf65441d5b1885367267c15259c13a0cf261d4fbeafde925602173886a",
+      "bytes": 8540
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/run.py",
+      "sha256": "77d0fbc9c1aa5c9c4e44c2693039c8c25e86c4b5f90a2b6286ef379d40dd0877",
+      "bytes": 7616
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/sim.py",
+      "sha256": "cf755a3f3b13a4bb41ceb089dacb39bdfc10796adb929d62ab060b671f37e75e",
+      "bytes": 4484
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/tables.py",
+      "sha256": "b926855fbca6f71b6f64cd891b5d1722cd095139390a6ce39a73590b80c156dc",
+      "bytes": 2382
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar005/worker.py",
+      "sha256": "ed37ae0ea646b71b69bfc00078b985b8c63033f85d05f91acac88d00fc88f4d8",
+      "bytes": 3676
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/analyze.py",
+      "sha256": "7f59f770c456d617d25a77ba4555da01d7ee429491f329bbf819c82cca597c42",
+      "bytes": 5399
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/checks.py",
+      "sha256": "fc8a4d909a50cc66c48cf5eb5da9ef8d1c79e65572b29e653f2c1029a1c896d3",
+      "bytes": 24249
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/design.py",
+      "sha256": "155b3f4dda7efa2299226487dd4034b11d380d07b016f47324bc04759b83ab30",
+      "bytes": 6279
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/predict.py",
+      "sha256": "bb8380987c733cb681ddb3ce618d707828d7abd85103c3e1210cf0fde1c660f7",
+      "bytes": 9225
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/run.py",
+      "sha256": "d4f73779de28170baf6aa2ef2a899c51e4a02d498e6b34f42adde93c8d2c6785",
+      "bytes": 6983
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/sim.py",
+      "sha256": "4d957d7f1aaa940f6568b8066445ffa631454d42bdf88c1ec717886ae5dcb63b",
+      "bytes": 9112
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/tables.py",
+      "sha256": "7b4b5a54c79ec2d90ce2afed2d670d2c53cbc05791de69ca3f19c59b6e3b53e0",
+      "bytes": 3669
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be001/worker.py",
+      "sha256": "d9186dc01b7b505bc07aebbcc2f80b6b0a343e4d5dad0580f04765fd42b83c07",
+      "bytes": 3830
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/analyze.py",
+      "sha256": "cfa79935d8ed1ecbe2dcbd586b31f3731b60ef06fd76d4539624832a89b5f208",
+      "bytes": 6580
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/checks.py",
+      "sha256": "fccd37fa06c6ad5b5b7bd2f976efb648ad5ba566acf03aae5c16e7350092aaee",
+      "bytes": 25047
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/design.py",
+      "sha256": "e1f8e1255b5a118809404953e4a0318d6ecd4acc34a66e7399a29bfac78a2184",
+      "bytes": 6766
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/predict.py",
+      "sha256": "b14cd8fd8c2aeeea88e091987b116baba0eee90164b09832ab9d424209cc4186",
+      "bytes": 12840
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/run.py",
+      "sha256": "7af9e5c48cb514d72938225f1a08e675a6a02e6b4ea6fa7248145323f158b70d",
+      "bytes": 6983
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/sim.py",
+      "sha256": "98083684daab2067aad4b138e3f2e8e0fefdd2041aaa265cb8a7c0fe1039b5eb",
+      "bytes": 8740
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/static.py",
+      "sha256": "70b0ecae9596aa0d9c48157aa690edac47b792a2350db4de529cf5f327dc2dff",
+      "bytes": 4542
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/tables.py",
+      "sha256": "2aa6b74e58cb9ab0cc43a66b8559d6868cbe1b2e8a7193bad061de6abfd310e1",
+      "bytes": 4373
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be002/worker.py",
+      "sha256": "285c3923545340ba2dd7c13fd6d352ebae8444602c818b76126c3c8fa5a8f804",
+      "bytes": 3970
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/analyze.py",
+      "sha256": "fdba0d16f6f764cb97848c4f47ff3ca08e3fa0475d5fb2df1595de10cb86f9de",
+      "bytes": 7465
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/checks.py",
+      "sha256": "4c462d8edc1160d2cae9ad7ae1d95ab73153e4f3212857fe1d8e3c5f018c7a12",
+      "bytes": 28734
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/design.py",
+      "sha256": "552450607850ad31c5116b765b05a862230a56119022c01e88dfb36f5b183e0e",
+      "bytes": 9365
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/predict.py",
+      "sha256": "bee49a31c91ade11cf0aef5b806e96ed0e03fd3d944b7890281781b3f7fdc106",
+      "bytes": 18254
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/run.py",
+      "sha256": "6ef927237a4e8aa1606d0697e977f831f8fa6b7f876857141804fb6dfdd29592",
+      "bytes": 7123
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/sim.py",
+      "sha256": "6817fa1d4d179953e63c43669074ffaf20a7c4f85bf7c0a635312760992bdcd4",
+      "bytes": 10006
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/static.py",
+      "sha256": "4fa404b4c42a579737eb9de7b0b415e926636dd9ae970e17e20cbeb4a0312f89",
+      "bytes": 5382
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/tables.py",
+      "sha256": "646a49c2d739ff8dcb030ad8b6aadef113eb35bae43e0942c789b9ede7407522",
+      "bytes": 5219
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be004/worker.py",
+      "sha256": "77697f2fa1b1885051549f0024c88fc478e57152046ea5aa800e53a163cd50c1",
+      "bytes": 4244
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/analyze.py",
+      "sha256": "8ada8099a3558dbd823d47698e4a4f4ca0f05d591e6b2e6ca82491411462b03d",
+      "bytes": 7872
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/checks.py",
+      "sha256": "99eca5b2cfe239c1023de00ddd05c448ea91baca485fc8505140a4d9e1f20735",
+      "bytes": 31494
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/design.py",
+      "sha256": "0e1d6fca1a7aa5c8152c30182cfe34c1edf7ebcda7152d9a9cdf92569a86c783",
+      "bytes": 10378
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/predict.py",
+      "sha256": "3a4fb62644e6a9f825f7431ee7f0f195f13c1b8071e84fbb5a6bab1c4759565a",
+      "bytes": 17533
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/run.py",
+      "sha256": "ff93f047bbacc685d02be58bf252a0699228a218a389b329893aaf05e9ea2a32",
+      "bytes": 7123
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/sim.py",
+      "sha256": "a8ae5446de7ef24ebdb4161349816704f3e3e2bc8c0efe7aa55cf722e178897e",
+      "bytes": 11599
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/static.py",
+      "sha256": "1b849a957b0cefc2ce16ea6f65d41f727a769e01d8bb2c56ab81d97284a52c6a",
+      "bytes": 7166
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/tables.py",
+      "sha256": "e5140cb76dacc6807c22613aebb8fba41573150ea0670627d39852d16c61aee0",
+      "bytes": 4695
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be005/worker.py",
+      "sha256": "85a9485b6bda542b03bb5084928c5fbc2ce9f38a4d5901d23737b7ff0f01d655",
+      "bytes": 4313
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/analyze.py",
+      "sha256": "b54b428845a6cbf5790401c15d5bc70c183f2e89a09d95e3640048834c17c954",
+      "bytes": 8338
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/checks.py",
+      "sha256": "53bff3a6e388d1edf45ae519a0d9453b166eecdb33628484f3a1b741e57077e1",
+      "bytes": 29522
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/design.py",
+      "sha256": "146ee0c8d7ad0bd7c302b31caca3a2596c2cf403bf1f947e38d4dc5f4912ea65",
+      "bytes": 10517
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/predict.py",
+      "sha256": "7dd70f225e841124f7e7ac3ec84c098b38b7d9a63cd076c4e319a2f397f74b5f",
+      "bytes": 15700
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/run.py",
+      "sha256": "f49eca053ff990d61d6bd324b81154563343ec47577af85d47d2af9443f97c31",
+      "bytes": 7131
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/sim.py",
+      "sha256": "0efddd4a6715ce7bb5013955bbd102899a765bc900bc5b8653b5a3ee176cf9cb",
+      "bytes": 8739
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/tables.py",
+      "sha256": "cd5b31d870074aa06bab366295a2dbb7eb24abc899366fafbd923648157ee368",
+      "bytes": 5152
+    },
+    {
+      "path": "experiments/multiscale-error-lane/be006/worker.py",
+      "sha256": "2dc9b2db316c7adecce8ae47df3a4d3eec55c3fe62dafa52b40c9d0c04e213c6",
+      "bytes": 4439
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/__init__.py",
+      "sha256": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+      "bytes": 589
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/analyze.py",
+      "sha256": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+      "bytes": 10577
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/calibrate.py",
+      "sha256": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+      "bytes": 2983
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/checks.py",
+      "sha256": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+      "bytes": 17568
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/design.py",
+      "sha256": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+      "bytes": 9199
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/predict.py",
+      "sha256": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+      "bytes": 5881
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/run.py",
+      "sha256": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+      "bytes": 7186
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/sim.py",
+      "sha256": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+      "bytes": 9022
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/tables.py",
+      "sha256": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+      "bytes": 1958
+    },
+    {
+      "path": "experiments/multiscale-error-lane/br001/worker.py",
+      "sha256": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+      "bytes": 5362
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/__init__.py",
+      "sha256": "b0bc5f4b0be1a3664fc17aed0ae197b0628ea0a3eab053d72ed7dda5013f5fa1",
+      "bytes": 109
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/analyze.py",
+      "sha256": "b6e8e049ec64b1deefef51e1e1a70c6c9e3d482520a4dd55085bcc29962e61fd",
+      "bytes": 9101
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/checks.py",
+      "sha256": "33280565f3ac7a521d1d6e9fa1d753bbd084f96671c18d909688a683c351a024",
+      "bytes": 19044
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/design.py",
+      "sha256": "c006c321a97efaba172d388437ae36a43ecb3fff0f1f5b18a85a910e94d1a960",
+      "bytes": 7958
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/predict.py",
+      "sha256": "91449da942e5523b08b0ac6cdaac0f088f4651df3b7fbd65c7a5f6ca539da877",
+      "bytes": 5398
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/run.py",
+      "sha256": "9df13ada76f2a9569a220bdf3733a1e347de081c16236633a6532ad3889792d6",
+      "bytes": 7158
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/sim.py",
+      "sha256": "7ee0ad20d79112dff14fec65db5c78c9d206cabe8b3ea53beb4218a939194f21",
+      "bytes": 6096
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/tables.py",
+      "sha256": "d742799b569447877d90b9d8d0dd9a83af3173dda71a9b0bdde0d42a8d907faa",
+      "bytes": 4737
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl001/worker.py",
+      "sha256": "490e75ce95ad1f356e102cf0bb089df05a6eb56312b19c0d2adaea0e9f5bbb81",
+      "bytes": 5026
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/__init__.py",
+      "sha256": "36799ab39b9f835110d58570cc501b0dcf34f32efba5667f08d80eebb1ca6eb5",
+      "bytes": 115
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/analyze.py",
+      "sha256": "34d647e1d56ce4f906af56154570ed75a454c2d94f824656c167f8dd08f2fd80",
+      "bytes": 6992
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/checks.py",
+      "sha256": "539032e672472e0ba732318d7b05c6c9a5012b5842f98f78292a489c19cd3591",
+      "bytes": 17864
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/design.py",
+      "sha256": "045168c3fc81e99dfab31b3355901bfdf55ae84f492d60d95d30100f3e18e9cc",
+      "bytes": 5773
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/predict.py",
+      "sha256": "ac6de067ef612906815158209986a683b2882c7aab2603d8b07d125958cf6470",
+      "bytes": 4343
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/run.py",
+      "sha256": "9792d37beb52863f9c3a7021bf4c4ac43175f737e9baa57ba84af1c23abb57f9",
+      "bytes": 7009
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/sim.py",
+      "sha256": "097d089a51dd5d15a4c949df71bb60f24ad4f66f98b1a68e103043a314c187e4",
+      "bytes": 6021
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/tables.py",
+      "sha256": "45c8be55b0db9b36aa5d42fee3a7f9e1e66dfecc4f240f1af23098b4905becf6",
+      "bytes": 3225
+    },
+    {
+      "path": "experiments/multiscale-error-lane/dl002/worker.py",
+      "sha256": "94cd830de5a5c20e71dd4fe2120a32515de369f22981120dd9de11a0b0032a9c",
+      "bytes": 3527
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/analyze.py",
+      "sha256": "57b575a16ac6e43798e758a976f035fba4e3cbfe599a4b5d50dd5f110f73eaa2",
+      "bytes": 6911
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/checks.py",
+      "sha256": "a998d8b24ca31f1d4ec26f608f56470b4c1068e5476a69703192a0e89af76d3e",
+      "bytes": 24026
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/design.py",
+      "sha256": "031c2d835b72f8d93a845123bad577b524a799b144201dbd993ae3ed930351bc",
+      "bytes": 5514
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/predict.py",
+      "sha256": "6270c4e9798d5b63255877ff78ffd52fd1a2d4d1ab31a919bafe758a17b4ba6f",
+      "bytes": 14278
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/run.py",
+      "sha256": "344a3a8780cca3c022277543074236b77feede12b8f1145c3c19b8637da44b23",
+      "bytes": 6983
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/sim.py",
+      "sha256": "ef7e5c97ba13f71f083e34b577c2279c3c13545de20ce63608580c8a31d7e8ed",
+      "bytes": 8154
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/static.py",
+      "sha256": "5b3b6904730a2c76fd72c0394c5fb0fe8beba0a9a09f7bf6d5f9fbd4bb841cbc",
+      "bytes": 5111
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/tables.py",
+      "sha256": "8a48270e2481835606a67aa66b512687bc51271f41f1cbf1102892ca6fb15b84",
+      "bytes": 3300
+    },
+    {
+      "path": "experiments/multiscale-error-lane/gc001/worker.py",
+      "sha256": "091886606cc22996182b2341dc5f25f37bb5193278fda171073a446f587e6864",
+      "bytes": 3995
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/__init__.py",
+      "sha256": "6e22519496268ac8aed5f476a7a81cb624ddaf7f7b796ba582e2b0b2d00639e2",
+      "bytes": 72
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/analyze.py",
+      "sha256": "671e6090af2df117568c63c9f827809bc18d8306f5897b607ea3628f5696cbd6",
+      "bytes": 7900
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/checks.py",
+      "sha256": "dab516a5c349d6ceb829362f92b4362fa5ae9173b802c2fadb52a82ed43629cd",
+      "bytes": 24632
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/design.py",
+      "sha256": "a88d4993e23a56114e9eb72553f73c1cc6129a9c8bdd0fc86e6ad3048aa55446",
+      "bytes": 8499
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/predict.py",
+      "sha256": "d286fe43f6b70068eaf4a0cef825a7ab2b75945f9b1352d93b51632bf779b3f4",
+      "bytes": 5507
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/run.py",
+      "sha256": "15f2939ad3c3c91c81e3f1a12366dbda8377290b4e7930d3c800062d9dab6d52",
+      "bytes": 6929
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/scoring.py",
+      "sha256": "a468e0dbcd6f48afc2150a38da288b2ebca6d337b6da0b720b28829d9483814f",
+      "bytes": 4660
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/sim.py",
+      "sha256": "0865a9644a9c97a54adda76c3e623a0e73b9ce987bd572ed16e8b5b062af56a6",
+      "bytes": 19315
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/tables.py",
+      "sha256": "621caf13c363e9a5daeaa9d10566a0cf572d9df255e5a658af6ca392c7f55b04",
+      "bytes": 3365
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr001/worker.py",
+      "sha256": "4209a3a57b5a473da0ab77e8c156c51f19b8d49766a0db83f8bb3cdf68b6167b",
+      "bytes": 3388
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/__init__.py",
+      "sha256": "e0bf2ad6aebd8a2fb3e068339ef00a498e0d03ef9e6ee3775d691454bad5b793",
+      "bytes": 117
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/analyze.py",
+      "sha256": "09e086b1779cc5a596966e7b4a6147d82ddb57b9f177f000b228d7462d4399c3",
+      "bytes": 5102
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/checks.py",
+      "sha256": "051a1bdf4814937c65b188a23af5bba3751ed08bc0f7c987c028a5db057e2fa1",
+      "bytes": 18608
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/design.py",
+      "sha256": "22a1f88c64b768d595463ff3689bdc01f0478c1e1f2f3914f7fabaa2df058131",
+      "bytes": 5728
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/predict.py",
+      "sha256": "ccfc52e5f3922c24c432b3fdbf31fe25796637aaf63c3e6f2ec8afd377ff712b",
+      "bytes": 8785
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/run.py",
+      "sha256": "941218a3420dd528fe154a98b025f8bc898b5d8ea573406ced682f0ea8418da2",
+      "bytes": 7004
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/sim.py",
+      "sha256": "96cbe376120f1b3c9abd5c147b1926cd3a2d38a2380102f718417b9d554d0816",
+      "bytes": 5078
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/tables.py",
+      "sha256": "0f03b28d52584403ad58a853bf00b0b563d7ca0cd27bf592d668afe97710ee1c",
+      "bytes": 3101
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr002/worker.py",
+      "sha256": "35b8b8d0eba3070ce0228e2e6dfe339b7c9f2d525e253473a9653551caa7489d",
+      "bytes": 3477
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/__init__.py",
+      "sha256": "09076e130928f58af49097492ffae6036402bd4b8fc992b875e1078aac3f5dd9",
+      "bytes": 124
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/analyze.py",
+      "sha256": "7961d25206ab2a4cd5d8f4f608fe81f040452562117a4f94d7b6da898dbd5e8c",
+      "bytes": 4883
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/checks.py",
+      "sha256": "5d301a2f6932091c08f719f0b97552811f23e7274d1f42401a96099b3d5b842a",
+      "bytes": 20166
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/design.py",
+      "sha256": "8fd3eaf2fe9d05226ec30368a77f5b0f770b8a179e95616c8a66d8e7b43c9f92",
+      "bytes": 5317
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/predict.py",
+      "sha256": "3886dfd5560ae3e5c4262653cf5c91bf0e973e927a5630bf20c4e3093fb5373c",
+      "bytes": 8749
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/run.py",
+      "sha256": "d9e0163e1dd5aee301e8af2adc047d67d13bec5543cc37cde0f9d8aa2cf2e962",
+      "bytes": 7004
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/sim.py",
+      "sha256": "df47bbf76e1a73b455df3a3878fa48cecfb5c9077a3c680122da82eda50b1623",
+      "bytes": 6481
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/tables.py",
+      "sha256": "291d8426ef18fa0cd7351ef5c6630a87d19b38b686b9a154f68b73614380c681",
+      "bytes": 3770
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr003/worker.py",
+      "sha256": "bb3bbea168d053b362fc3d2d4d47c3d8ca1630b5248d7ec069aa66f132732d0f",
+      "bytes": 3544
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/__init__.py",
+      "sha256": "a1762c4fc9ff73d286530b714e426982d4c4ec69dd4632812b1b5f46eff8a40d",
+      "bytes": 129
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/analyze.py",
+      "sha256": "f60932ab2817f78fd22f5d2aed382edce43e505d61d2aef9780ffadda7fa9071",
+      "bytes": 4876
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/checks.py",
+      "sha256": "162a0386b3b70f51f0e7830542b15c7780a5783c6553c5ec1081f03f8144c7e7",
+      "bytes": 21998
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/design.py",
+      "sha256": "329c9dad0fd7e922799078a66bca47084c351bdc1ead80fd5fd58adab4a532cd",
+      "bytes": 6281
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/predict.py",
+      "sha256": "c822b0367deab69fe286446e2daf97949f0f05b32da0470f17f7a0638beadc74",
+      "bytes": 7268
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/run.py",
+      "sha256": "dfd5681cc6ff10abb9b90297fb83acb73659c8251d97b924f6f1b132369939e5",
+      "bytes": 7004
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/sim.py",
+      "sha256": "2384c06f9c12b22470cd67e86a7e0842c32c76cb5e70e80e835d1d32a9446666",
+      "bytes": 8972
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/tables.py",
+      "sha256": "480f4fc4c079e4e9d5e9cc8d2ca2fbfcadb35388386a362908c5ce06d3c713b4",
+      "bytes": 4037
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr004/worker.py",
+      "sha256": "915c6aeb7683a37ff3f94e89e06fd8a3862412f838eb5ccc620b3fb699824be9",
+      "bytes": 3623
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/analyze.py",
+      "sha256": "5aee0897d4de418b3217c392ccf9122d3cfb48ab3a4e5e4a451fcee2a7ba90ef",
+      "bytes": 5974
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/checks.py",
+      "sha256": "104628257e1d80e0847f0a49698dad73f124aa4f6e9b30d32b3950f8a25229b4",
+      "bytes": 24665
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/design.py",
+      "sha256": "d8a62fccfc4cf45e5bbaf92f9234054a15631cebd2b50aef79f614dc34d6d18a",
+      "bytes": 5954
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/predict.py",
+      "sha256": "9bfbe8227dfd25e3581ce9aef6166082982ef52af8e541521477e76ed7997d4a",
+      "bytes": 9259
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/run.py",
+      "sha256": "03a3ddd968bdbb56d229b4de98780f0ea364b91e7f9ade837b8f0025e1207b52",
+      "bytes": 7032
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/sim.py",
+      "sha256": "3190f27e3e4cf7133081a8bc2d3e86f008bc913d666a355607db699a4898df2c",
+      "bytes": 10348
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/tables.py",
+      "sha256": "874656575f3f4f00715478ec0082963403b47a591ddfc4d54c941d2006ce66e3",
+      "bytes": 4245
+    },
+    {
+      "path": "experiments/multiscale-error-lane/lr005/worker.py",
+      "sha256": "9e414e0b226a403e5d38080a5177cc544cbf212edd7f46b245751004f09f2f4c",
+      "bytes": 3889
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/__init__.py",
+      "sha256": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+      "bytes": 493
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/assay.py",
+      "sha256": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+      "bytes": 5578
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/engine.py",
+      "sha256": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+      "bytes": 6638
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/native.py",
+      "sha256": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+      "bytes": 3517
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/ops.py",
+      "sha256": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+      "bytes": 2752
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/score.py",
+      "sha256": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+      "bytes": 2023
+    },
+    {
+      "path": "experiments/multiscale-error-lane/mse/theory.py",
+      "sha256": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+      "bytes": 3484
+    },
+    {
+      "path": "experiments/multiscale-error-lane/msegrid/__init__.py",
+      "sha256": "d626f19334d6c7310ea4b2c1275ca93f3a1612c3bedf47e69e7cb7783e51e93f",
+      "bytes": 398
+    },
+    {
+      "path": "experiments/multiscale-error-lane/msegrid/core.py",
+      "sha256": "1f277ab621c5b8edc239a61de9abadeb782a6bbd66a843d72cad5e0a22be724e",
+      "bytes": 8388
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/analyze.py",
+      "sha256": "48d211e2788482e7692aff530f150af0cacef27dc56a11180642b4820b7fb761",
+      "bytes": 6715
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/checks.py",
+      "sha256": "51c0fefd950134526490099922a0890cd45fdc6f460feb7299352a7d2a8c36e1",
+      "bytes": 20432
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/design.py",
+      "sha256": "13ead9b2556b30d78995514fea03b6be85b35d2a6ca6117619a971f5c40833fd",
+      "bytes": 8165
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/predict.py",
+      "sha256": "63ff4f91af79da4bdee02ef6ace2325a149bc0a3069ac0d5cab03068152e5d0b",
+      "bytes": 16533
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/run.py",
+      "sha256": "a98859feb1709d6720a598ca251f385b2bc22acb4e686f42260900d61fb4fbe0",
+      "bytes": 7199
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/sim.py",
+      "sha256": "5605794bc3f010da56f3d7fd109c7cbb8b971d40c20ac9d9a69c64dabac9a99b",
+      "bytes": 7858
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/tables.py",
+      "sha256": "ba3d542dbf41c3607039678a6980fbba2d8092f15a14c0162f92632477bb0de0",
+      "bytes": 3905
+    },
+    {
+      "path": "experiments/multiscale-error-lane/np001/worker.py",
+      "sha256": "c576ee4d9afeb109ef7bfba28e6fc56c00776e1330f894f67ff79d9ade2dbc96",
+      "bytes": 4494
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/p53c_ar005_lead_check.py",
+      "sha256": "efa045348f014ba9562509ef58265646988d422f435d0516496ee8b38181e62d",
+      "bytes": 27433
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/p55c_sm006_lead_check.py",
+      "sha256": "e49719d45d43811933f5a39949aec68dcd1b13ff8345a9f5da1fb063498beb14",
+      "bytes": 24672
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p53c_ar005_lead_check.txt",
+      "sha256": "28bbc7e749387681e07c3546e4d7ab4d103fe0d17b1814657a0aaee9bfa53529",
+      "bytes": 8299
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p53c_ar005_lead_check_debug.txt",
+      "sha256": "063a345c711d5d85aee77f40d8fcee53839e190e0d13dead26814c8febd61504",
+      "bytes": 7911
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p53c_ar005_lead_check_probe.txt",
+      "sha256": "2b3c8c001767a6d4cccdc5ff869a9754c49d0f5e906711b662130cd5cd06be8e",
+      "bytes": 7299
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p53c_ar005_lead_check_tuning.txt",
+      "sha256": "2ea3a0029ba509bb9bae9ccb61c62b0fa160011dff62c18e7815078c63b5a84e",
+      "bytes": 2801
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p55c_sm006_lead_check.txt",
+      "sha256": "f721f10fc47e5f89484a95424ac7272cc792ba8797b025fbf0a3187bedd4759b",
+      "bytes": 5659
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p55c_sm006_lead_check_debug.txt",
+      "sha256": "be7d3fb71bf384e9817fd2aa4c88b93f8a0b1a81e5df8fcf67cef2673d81a8d3",
+      "bytes": 4754
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p55c_sm006_lead_check_fit.txt",
+      "sha256": "a21aae3c8a83d75c1d2f61949c79a3341e2a6032a90d0a12720b19ddeda5c775",
+      "bytes": 1674
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p55c_sm006_lead_check_preflight.txt",
+      "sha256": "ced24e10e9ca2a278d0178f1e66c2e6e79a9af0f506b9c6d53af8f2d8a602751",
+      "bytes": 5365
+    },
+    {
+      "path": "experiments/multiscale-error-lane/probes/results/p55c_sm006_lead_check_probe.txt",
+      "sha256": "299b5e31c6c13fd6bb1f31078b2b4de9aa3dc3076a0c38b2afc7aef900db8663",
+      "bytes": 5824
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar005/TABLES.md",
+      "sha256": "438ac4e113627aa09ce1d04996988143a4e973a659a4454feee129ac2e7b15e5",
+      "bytes": 7682
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar005/detectors.json",
+      "sha256": "38655c2deb3d938f9646e521ab8f92c4e879a93249c29694fc5b733dc22483e6",
+      "bytes": 8758
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar005/predictions_scored.json",
+      "sha256": "fe52717a165f0bf1ff530cf9c2d03ffbc07281e7d131e388f8c499215bd57005",
+      "bytes": 6773
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar005/summary.json",
+      "sha256": "9c18f6748bbc3a453e4fbbd6e1b6fdc7abf17ca0fbccb63a01d9405969fc7d76",
+      "bytes": 84603
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar005/utilities.json",
+      "sha256": "ba5d63fd0ce960b55a8964625aaef29a4dd152f8decb8c2a6f4429b6e6899cd9",
+      "bytes": 17020
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/sm006/RUN.md",
+      "sha256": "87bdbd3d26e5770566c265075f600f9360259322f05ca59fbf9f3b4dd02af4ef",
+      "bytes": 10924
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/sm006/TABLES.md",
+      "sha256": "e0622058cd8836c9e06ce4b1a665c88e855beada6878f546389d35822aaf4d4d",
+      "bytes": 6396
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/sm006/predictions_scored.json",
+      "sha256": "25e40bd35be1c9051fa8d79fe7282681acaf07ee0e2736f2702f2da92a3313cf",
+      "bytes": 45803
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/analyze.py",
+      "sha256": "f6b28946edaa51b83e9c3e25f533ac52373e0cdddc22b25dcdc939c013260ef4",
+      "bytes": 12631
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/checks.py",
+      "sha256": "fd8ef3201838cb2675dbd92e20c5b4f61768ccca2fea8625b9e5538b9c0b5e97",
+      "bytes": 21826
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/design.py",
+      "sha256": "f788e180a9c54abc8fa74296e6f2321893cab57fe3b71c4be7d39e8df5da3eb5",
+      "bytes": 10402
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/predict.py",
+      "sha256": "1f80f8d1874c462c1f1a2c6746cf2cd30d3160c85e9d82d6a695c2f11f3dbf93",
+      "bytes": 17235
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/run.py",
+      "sha256": "78f103e43c7b30bff6fbe95a0f2e13e7f7991832705bce116c4f069fc33bbfa0",
+      "bytes": 8604
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/sim.py",
+      "sha256": "a7f39f07db14e1b08fe8e28b1e02e9d3c36ca67dfb085491dbf8530deeb4654e",
+      "bytes": 12615
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/tables.py",
+      "sha256": "da66da5d6b7f93d1c3600f34e26468f33a7f9840c85f7b47a714fc30c277176b",
+      "bytes": 4387
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm001/worker.py",
+      "sha256": "5ad19a0fc2c3dab90441f6327bfd0cb90f8d0bc22edeb5a17d2e7362ac6be322",
+      "bytes": 4662
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/analyze.py",
+      "sha256": "b2daba35922aa43ff11dfe2bd5b9cb36309c0570e4947b73089d9396b3a21ee1",
+      "bytes": 4807
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/checks.py",
+      "sha256": "79cd1df884497cf6e285cb84663dc0789fa2e723c2ba2d62a217412e2aec62f3",
+      "bytes": 21481
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/coarse.py",
+      "sha256": "87fbbf333add8af0d938e2368a29d12262359159932533bfd3d5087f727a7277",
+      "bytes": 5238
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/design.py",
+      "sha256": "15a8d083e126d59a4cfadc96ec38981680cce2b99e9b28f3657b0e92405edbc4",
+      "bytes": 5093
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/predict.py",
+      "sha256": "8482a674f504779bcae4da5d0b03fa73570f4c4a7e9af15e234f2f4f204c793c",
+      "bytes": 14310
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/reread.py",
+      "sha256": "5d6bc73915b83d60b98b7749f99b8bf67fb1aa720b525b2ca77bcd706f2af480",
+      "bytes": 19268
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/run.py",
+      "sha256": "e69bb3b8d79c55bc7ce855fd378b87f1b8e4631d6200b5ad8826cd68574eb5df",
+      "bytes": 7569
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/tables.py",
+      "sha256": "df1cf0368801d29073af057c57a09f0e06b2f0a604925e765ae5a75c45d1169c",
+      "bytes": 3167
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm002/worker.py",
+      "sha256": "7275febcdf1aa820bcc3955da99d6448b3f026f4123da344cdd547616e062959",
+      "bytes": 5192
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/analyze.py",
+      "sha256": "c5410aa0257c6839184d2012af70a8c23440c3e134a8895de143b4a6df16cbd1",
+      "bytes": 14749
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/checks.py",
+      "sha256": "42b863fbfb099b34970059322a852b73701fa18736d2c687e4ee57dd043e6428",
+      "bytes": 25141
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/design.py",
+      "sha256": "4a8cac6edf29c25a72aa699cc9a45a5ad3aabcda03e07dc00f36d0a7392a958e",
+      "bytes": 8605
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/fitread.py",
+      "sha256": "651597c76b92b9e71034973ddaca3a4f736146e89e1124b27dbde92efbceac5f",
+      "bytes": 11338
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/predict.py",
+      "sha256": "d2aae16a321635753c3dc6023371ec40e9cc1e90d462aa5de47d24b259d45910",
+      "bytes": 13136
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/readers.py",
+      "sha256": "b6969ec0dfd958c0d2fa52f271df1b4fb9329b1d5eb91348c9ed997d3423a6b3",
+      "bytes": 3440
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/run.py",
+      "sha256": "e2d7cdc66b3f0c266dd38d52382201f018eb35f3055f5d31af09d5fe44d23bb0",
+      "bytes": 8320
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/tables.py",
+      "sha256": "47e88df3af2ac2d6fdabae3ede82475cf54be313f20dc10ec6b87498a705e615",
+      "bytes": 5212
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm003/worker.py",
+      "sha256": "731b4653d385c05502079a9cfe954ade2ac7f85ebf6e3c6a3dbcbc29a7c73a25",
+      "bytes": 5913
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/analyze.py",
+      "sha256": "fd628b7d5e0584f28f0508ccff43084ba85dfbc4633acac66d3e19cee26d98d6",
+      "bytes": 11984
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/checks.py",
+      "sha256": "580e002089dae770f8a57f22e915e9f024216d7b08224b1ccc36b969905a0229",
+      "bytes": 22939
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/design.py",
+      "sha256": "1a747169b6d78f14e61f431ec73bd28686618b317c363e36d7371d4c3e958714",
+      "bytes": 6852
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/fitread4.py",
+      "sha256": "6308386ac9a9923daa3f9abe9e00e87970f90f35dae6bb7c0b221d7d625d5915",
+      "bytes": 10144
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/predict.py",
+      "sha256": "5c12f2540be1c034da04ded3a3ca402db33e61faf5daacf3a0bceb6966f37692",
+      "bytes": 20231
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/run.py",
+      "sha256": "5fff64ae97c9d0b74ed7e681b1a00b74b441e13d8dab0771e80284c76d70fbf7",
+      "bytes": 8824
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/tables.py",
+      "sha256": "b8461b5c4d3aa3b615110a505f60d60e97c20a0bcb3c0f92bf654bac036a323e",
+      "bytes": 5596
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/worker.py",
+      "sha256": "8866030952f60f32b4e05362d2eabaefb32a77d2ca59f29adb4cec1ed0b2beb2",
+      "bytes": 2896
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/analyze.py",
+      "sha256": "b0391bb431bf5667f31968f74d45a73f4dc0bc43e67075a75383ad6365f68f96",
+      "bytes": 2485
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/checks.py",
+      "sha256": "3996e964fee63c31f3fac3f1b6b502fa3bc0972bb455c0bf682a76358f86bc83",
+      "bytes": 19752
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/design.py",
+      "sha256": "bf391cf9d6a7c1a4f4a581e00412b6d50c01cbe063e5916af04c0149bad117e3",
+      "bytes": 5883
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/predict.py",
+      "sha256": "8c56ff1ac20aaa2b5fea38a7804e07c9a3d09a5fbdb86c897ad87c737442565f",
+      "bytes": 10431
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/readers.py",
+      "sha256": "e321470e941f6af8fdc3dd6c35003bd1a4c7982f1eccedd80387f7e8f6ebed97",
+      "bytes": 3782
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/run.py",
+      "sha256": "12b2a29e0b1bc8fb74a048e36439fd6008f76dbe4468289d3f183f835e8c3f67",
+      "bytes": 7139
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/tables.py",
+      "sha256": "f5f43af0005f12476f85e0a1eb1a710934c2d6fae4b29efe952401e91e45fad3",
+      "bytes": 3102
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm005/worker.py",
+      "sha256": "1b50016ab4601ff7f0d74900004eb5e7a661bad8db2aba2c53faa7dff93234c9",
+      "bytes": 6962
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/analyze.py",
+      "sha256": "32bac11c8bb6caad50d5c01892216a999b2f05b9acc055796839646040ccb8d7",
+      "bytes": 8704
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/checks.py",
+      "sha256": "e1724208c61b45f8d7ccfeaa6301f083bf394ad4e03eeed5fc094c203b5092ba",
+      "bytes": 15298
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/design.py",
+      "sha256": "63e7716e8559ce70c3f6f66f1150022659a39f214e6f34723eb7a4f11ce1bf63",
+      "bytes": 6014
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/fitread.py",
+      "sha256": "58796240022684845fe9e4161d9dedf9be5ffea18eb15c67b7962342f3eb489e",
+      "bytes": 9878
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/design.json",
+      "sha256": "c701498bcd3720818349dbdfd3ed8ab7602d84380f6aa501bc717dd27fb1d4e9",
+      "bytes": 21360
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/fit_gain_manifest.json",
+      "sha256": "90270c1d20a3e6bbe589d2d3cf26aa590fb55327344445151018151c2791481f",
+      "bytes": 30723
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/model.json",
+      "sha256": "0eaff72d5d067442ad77ab3237715d0a2beb0fed8fa8f490f5671aec42a9a500",
+      "bytes": 8399
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/predictions.json",
+      "sha256": "143403d8a124b3d6587ef94f05f7f0ab7a06b7dc67078d08f0a663bbd5bef992",
+      "bytes": 3867
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/qualification_receipt.json",
+      "sha256": "d7bd1b3eff9ca9955ae15dab97817b12f9542b7e713907a9a271031d0dadce29",
+      "bytes": 2039
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/frozen/sensitivity_U.json",
+      "sha256": "ebadc9e89fc24ab759240efdafa3298cb10df32b3497890a03412d99b3cfb390",
+      "bytes": 1069
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/predict.py",
+      "sha256": "cbe3061e8158bb8cd76c52b555a0e9ec8cb5e0c7db5f0dda5a480873c6bfdeab",
+      "bytes": 17763
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/run.py",
+      "sha256": "6e392f6d2848ca06ec9ad0a5c10c391a61962615492d87f3fe3e57720021b702",
+      "bytes": 7162
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/tables.py",
+      "sha256": "6680ea78684f85a713bfc2913c899113d2ce1e42a8d6509cec9a0ea63d9eda0c",
+      "bytes": 3379
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm006/worker.py",
+      "sha256": "4701b859fc96343aecf0019dc85b2ee0fec290673c422ca6c5e8fbbaa08ab632",
+      "bytes": 4989
+    },
+    {
+      "path": "experiments/multiscale-error-lane/tests/test_ar005.py",
+      "sha256": "9be77cdc48efe38d2c672cb78d01090e78ab87f4ecd4a92ba078ebe3f0152950",
+      "bytes": 5132
+    },
+    {
+      "path": "experiments/multiscale-error-lane/tests/test_sm006.py",
+      "sha256": "03524e0b45401e5394355e76af0490ed680f7a05b43d748cd92807b32c60c898",
+      "bytes": 5103
+    }
+  ],
+  "scope": "Frozen implementation dependencies, protocols, compact block results and retained independent checks. No trajectories, model refits or new scientific runs.",
+  "pending": [
+    "IA001 held-out decoder results",
+    "fresh confirmation of guarded detection",
+    "portable scaling prediction",
+    "repeated-future testing of the new correction policy"
+  ]
+}

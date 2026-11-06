@@ -1,0 +1,293 @@
+{
+  "version": "3.3",
+  "checked_utc": "2026-11-02T15:22:27.189684+00:00",
+  "scope": "Compact-output arithmetic and receipt binding. AR003C native t interval reproduced; HS ratios and SM loss checked. No simulator, raw-shard replay, model fitting or bootstrap rerun.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "AR003C mean and native interval reproduced from sixteen block rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR003C benefits positive in every block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR003C criteria and preserved qualification agree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_E014_reference 2048 bytes: native difference and ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_E014_reference 128 bytes: native difference and ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HS002_development 2048 bytes: native difference and ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HS002_development 128 bytes: native difference and ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM004 predictions bind to the selected frozen model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM004 pooled late-loss values match manuscript rounding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HS001 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HS002 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR003 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR003C receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "NL004 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR004 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM004 receipt binds frozen design",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "extracted": {
+    "AR003C": {
+      "vote": 0.7019430796305338,
+      "controller": 0.8111438751220702,
+      "contrast": 0.10920079549153644,
+      "ci95": [
+        0.1044147844572757,
+        0.11398680652579718
+      ],
+      "positive_blocks": 16
+    },
+    "original_E014_reference": {
+      "independent_blocks": 64,
+      "rows": [
+        {
+          "bytes": 2048,
+          "horizon": 16,
+          "protected_gap": {
+            "mean": 2.617645263671875,
+            "ci95": [
+              2.198028564453125,
+              3.0700874328613277
+            ],
+            "block_sd": 1.8075645241326346,
+            "positive_blocks": 64
+          },
+          "D": 1.40228271484375,
+          "D_ci95": [
+            0.9254264831542969,
+            1.90887451171875
+          ],
+          "R_H": 0.5357038764208686,
+          "R_H_ci95": [
+            0.3843158520360313,
+            0.6798542782350516
+          ],
+          "renewal_minus_protected_copy": -10.94970703125
+        },
+        {
+          "bytes": 128,
+          "horizon": 16,
+          "protected_gap": {
+            "mean": 1.764678955078125,
+            "ci95": [
+              1.3725090026855469,
+              2.1866035461425777
+            ],
+            "block_sd": 1.7013133710049222,
+            "positive_blocks": 61
+          },
+          "D": 1.38702392578125,
+          "D_ci95": [
+            0.847625732421875,
+            1.953887939453125
+          ],
+          "R_H": 0.7859922178988327,
+          "R_H_ci95": [
+            0.5322030261147888,
+            1.0574331873075216
+          ],
+          "renewal_minus_protected_copy": -3.88336181640625
+        }
+      ]
+    },
+    "HS002_development": {
+      "independent_blocks": 128,
+      "rows": [
+        {
+          "bytes": 2048,
+          "horizon": 1024,
+          "protected_gap": {
+            "mean": 2.1984100341796875,
+            "ci95": [
+              1.94091796875,
+              2.458200454711914
+            ],
+            "block_sd": 1.5017929680773698,
+            "positive_blocks": 124
+          },
+          "D": 0.9189605712890625,
+          "D_ci95": [
+            0.6034755706787109,
+            1.244354248046875
+          ],
+          "R_H": 0.418011452368558,
+          "R_H_ci95": [
+            0.2876608821111344,
+            0.5434390029788284
+          ],
+          "renewal_minus_protected_copy": -13.240432739257812
+        },
+        {
+          "bytes": 128,
+          "horizon": 1024,
+          "protected_gap": {
+            "mean": 1.38702392578125,
+            "ci95": [
+              1.1333465576171875,
+              1.6490936279296875
+            ],
+            "block_sd": 1.497348382849462,
+            "positive_blocks": 106
+          },
+          "D": 1.163482666015625,
+          "D_ci95": [
+            0.8228302001953125,
+            1.5132999420166013
+          ],
+          "R_H": 0.8388338833883389,
+          "R_H_ci95": [
+            0.6398313451933254,
+            1.0442187363632882
+          ],
+          "renewal_minus_protected_copy": -3.458404541015625
+        }
+      ]
+    },
+    "SM004": {
+      "predicted_signed_loss": -0.08714840102763262,
+      "observed_signed_loss": -0.14745980721932872,
+      "previous_model_signed_loss": -0.14269637809707011
+    }
+  },
+  "inputs": [
+    {
+      "path": "experiments/multiscale-error-lane/results/ar003c/summary.json",
+      "sha256": "d6a23543c294e4c3281529bb936f0682d92582ccb62aeb8dbc775aabadcba8c2"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/ar003c/confirmation.json",
+      "sha256": "a0383d3f57e0b00655b0b44dd7f22f3c4ce5cd415dd7b48ea4827d2ec9c02f1e"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/hs001/summary_e014.json",
+      "sha256": "55482c6f01ad06476a28b6fac72e12e822570129983ec963b6c3dbd0441af2c8"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/hs002/summary.json",
+      "sha256": "eb9e03486fc109b9239ab6444a32f0ebbad7b405f4a41f8820f370507bfb5d47"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/results/sm004/predictions_scored.json",
+      "sha256": "1a26981bcb2d3500093ae69b161a9da4fc97c2ad0889f2239cff895a971dbb22"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/frozen/model.json",
+      "sha256": "d3cb24ccf9f72f665a311580679aecfbce2085e772f71208957e7a3a950f92ff"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/hs001/frozen/design.json",
+      "sha256": "56554227d3829f726a82f1e6e2060a2f366564fb6fd8a5e2d52696b72d512730"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/hs001/frozen/qualification_receipt.json",
+      "sha256": "44a5c072b1bd3794fdef10261e60c3c5bf3d6f381db13052a88b8d2c55fb172e"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/hs002/frozen/design.json",
+      "sha256": "e5c1674bc6b2f8a9237b8cf9a0fc1d831e476e0d894c524a2b49e98e2b4e5740"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/hs002/frozen/qualification_receipt.json",
+      "sha256": "badfbe76cdaf8c1f8051a125cc15210c396a0973baf57ee1462bd6903a876f58"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/frozen/design.json",
+      "sha256": "314306280d48d8872aa95afac2b997be121dea2e54b89a8eaccecb1c653297b2"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003/frozen/qualification_receipt.json",
+      "sha256": "a8ca205c4acf61370e197bf1641d38676c846b4f189185d461c3430bd7f00cc1"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003c/frozen/design.json",
+      "sha256": "732a6d090a002682b2c175e94b1c205c5139fdf32bbf03aee773b1fb6555df76"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar003c/frozen/qualification_receipt.json",
+      "sha256": "880a5c5bc533fe12b3f59e39bf6149606a32e6540ef1cd90ec96984ddd4ccb37"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/nl004/frozen/design.json",
+      "sha256": "427b78a3b924e29abdf8b0e6d8c38aea5d68b79487c8b6040075a04ff32c12e6"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/nl004/frozen/qualification_receipt.json",
+      "sha256": "99e5d695fcc029fd95bd6a07542b384915a564ba75b31c92f8b2dce6216212df"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/frozen/design.json",
+      "sha256": "e830dda336dc78d4f220857ed37ab3ca3059007ff139b2df7ce5141a5ea34cef"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/ar004/frozen/qualification_receipt.json",
+      "sha256": "433bb554adb21a2fd6c5a3954313eacbcd6c67c5d6d0f0d2f653654844d7d6b0"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/frozen/design.json",
+      "sha256": "4f6e3e5cad842990a977ae93bacec0a0b6d6f03e05cec6b37a6bc7b478080a99"
+    },
+    {
+      "path": "experiments/multiscale-error-lane/sm004/frozen/qualification_receipt.json",
+      "sha256": "a6fee567f24c7273dfd8cba78dac84949b694657501b4394ecc437417e557058"
+    }
+  ]
+}

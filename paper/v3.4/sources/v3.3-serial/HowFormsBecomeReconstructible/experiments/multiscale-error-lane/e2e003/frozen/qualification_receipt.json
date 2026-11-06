@@ -1,0 +1,100 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "E2E003",
+ "design_digest": "f65ac359f81f9484f27eae1d7f2813192b3db6d11b843c07eb8ff8b988b1099e",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e003/preflight",
+ "tasks": 16,
+ "load_1min_at_check": 34.3,
+ "checked_utc": "2026-11-04T15:42:57Z",
+ "wall_s": 948.6,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 16,
+   "bad": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "items": {
+    "every_raw_file_equals_its_manifests_sha256": true,
+    "the_generation0_replay_reproduces_every_arms_saved_state": true,
+    "without_injury_the_lineage_is_e2e002s": true,
+    "the_routed_generation_is_e2e002s_with_one_call_routed": true,
+    "every_tasks_acquisition_and_generation0_packets_equal_their_sources": true
+   },
+   "replay_task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q4_vote_default_identity": {
+   "pass": true,
+   "pairs": 96,
+   "cases_compared": 54,
+   "bad": []
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "items": {
+    "the_alias_table_is_complete": true,
+    "a_row_listed_twice_gives_the_same_lineage": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "bad": []
+  },
+  "Q7_efficacy_and_the_injury": {
+   "pass": true,
+   "items": {
+    "the_vote_rows_never_fire": true,
+    "every_sigma0_birth_cue_equals_its_incoming_records_signs": true,
+    "every_injury_flips_exactly_its_patch_and_none_on_the_uninjured_row": true,
+    "the_patches_are_disjoint_and_recompute_from_their_addresses": true,
+    "the_injury_rule_at_generation0_is_be001s_memory_event": true,
+    "the_second_record_and_the_cue_are_taken_before_the_injury": true,
+    "every_task_is_a_saved_record_of_its_stage": true
+   },
+   "vote_fired": 0,
+   "cue_disagreements": 0,
+   "injury_failures": 0,
+   "schedule": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "rows": 4
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 30.28,
+   "forecast_wall_h_12": 3.16,
+   "cpu_s_per_vote_row_generation_8_cases": 10.65,
+   "development_units_a_task": 80.0,
+   "worker_rss_mb": 340.1,
+   "w_det": 2.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 208335,
+    "TABLES.md": 15113
+   },
+   "big_git_files": [],
+   "parts_available": 12
+  }
+ }
+}

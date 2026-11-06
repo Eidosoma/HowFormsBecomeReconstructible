@@ -1,0 +1,885 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "40dedbca47faee697fd669c8ce49ed11a0cb11f3ef6434deb4ed3c6462397ffa",
+ "computed_utc": "2026-10-30T18:50:22Z",
+ "thresholds": {
+  "R1": {
+   "protected": 0.95
+  },
+  "R2": {
+   "exposed": 0.55
+  },
+  "R3": {
+   "keeps": 0.6,
+   "erodes": 0.15,
+   "loses": 0.55
+  },
+  "R4": {
+   "rewritten": 0.6
+  },
+  "R5": {
+   "phase": 0.75
+  },
+  "R6": {
+   "vote_over_body": 0.4,
+   "vote_lost": 0.6
+  },
+  "R7": {
+   "compounds": 0.1
+  },
+  "R8": {
+   "permissive": 0.9
+  },
+  "R9": {
+   "reconstructs": 0.85
+  },
+  "R10": {
+   "nothing_left": 0.25
+  },
+  "R11": {
+   "no_read": 0.1
+  },
+  "R12": {
+   "better_keeper": 0.05
+  }
+ },
+ "parts": [
+  {
+   "stmt": "R1",
+   "name": "R1 q_r(protected, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.95,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 a_r(exposed@0.001, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.55,
+   "sense": "le"
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 q_r(parity@0.001, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.6,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 q_r(parity@0.001, G1) - q_r(parity@0.001, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.15,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 a_r(parity@0.003, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.55,
+   "sense": "le"
+  },
+  {
+   "stmt": "R4",
+   "name": "R4 a_r(body@0.003, G16), non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.6,
+   "sense": "le"
+  },
+  {
+   "stmt": "R5",
+   "name": "R5 q_r(body@0.01, G16), native",
+   "items": [
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ]
+   ],
+   "threshold": 0.75,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R6",
+   "name": "R6 q_r(vote@0.001) - q_r(body@0.001) at G16, non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.4,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R6",
+   "name": "R6 a_r(vote@0.01, G16), non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.6,
+   "sense": "le"
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 a_r(body@0.001, G1) - a_r(body@0.001, G16), non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R8",
+   "name": "R8 q_r(body@0.003, G16), permissive dw",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ]
+   ],
+   "threshold": 0.9,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 rec_q(dw reading protected) - control, every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.85,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 rec_q(li4 reading protected) - control, every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.85,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 rec_q(li16n reading protected) - control, every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.85,
+   "sense": "ge"
+  },
+  {
+   "stmt": "R10",
+   "name": "R10 rec_q(dw reading body@0.003) - control, non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.25,
+   "sense": "le"
+  },
+  {
+   "stmt": "R10",
+   "name": "R10 rec_q(li4 reading body@0.003) - control, non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.25,
+   "sense": "le"
+  },
+  {
+   "stmt": "R10",
+   "name": "R10 rec_q(li16n reading body@0.003) - control, non-native",
+   "items": [
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ]
+   ],
+   "threshold": 0.25,
+   "sense": "le"
+  },
+  {
+   "stmt": "R11",
+   "name": "R11 q_r(noread, G16), every lineage",
+   "items": [
+    [
+     "dw",
+     "S4"
+    ],
+    [
+     "dw",
+     "S4s2"
+    ],
+    [
+     "dw",
+     "S8"
+    ],
+    [
+     "dw",
+     "F0"
+    ],
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li4",
+     "S8"
+    ],
+    [
+     "li4",
+     "F0"
+    ],
+    [
+     "li16n",
+     "S4"
+    ],
+    [
+     "li16n",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ],
+    [
+     "li16n",
+     "F0"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "le"
+  },
+  {
+   "stmt": "R12",
+   "name": "R12 q_r(body@0.01) - q_r(parity@0.001) at G16, native",
+   "items": [
+    [
+     "li4",
+     "S4"
+    ],
+    [
+     "li4",
+     "S4s2"
+    ],
+    [
+     "li16n",
+     "S8"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge"
+  }
+ ],
+ "statements": [
+  {
+   "id": "R1",
+   "kind": "a protected record keeps every history through sixteen renewals",
+   "rule": "HOLDS if, pooled over every lineage, the record's history specificity q after the 16th renewal under the protected route is >= 0.95, else FAILS",
+   "thresholds": {
+    "protected": 0.95
+   }
+  },
+  {
+   "id": "R2",
+   "kind": "a copy exposed to the bond noise loses the pattern",
+   "rule": "HOLDS if, pooled over every lineage, the exposed copy's agreement after the 16th renewal is <= 0.55, else FAILS",
+   "thresholds": {
+    "exposed": 0.55
+   }
+  },
+  {
+   "id": "R3",
+   "kind": "a record that keeps itself keeps part of its history at the lowest noise, losing it over generations, and none at three times that",
+   "rule": "HOLDS if, pooled over every lineage, q under parity@1e-3 after the 16th renewal is >= 0.6 and has fallen by >= 0.15 since the 1st (paired within case), and the agreement under parity@3e-3 after the 16th is <= 0.55, else FAILS",
+   "thresholds": {
+    "keeps": 0.6,
+    "erodes": 0.15,
+    "loses": 0.55
+   }
+  },
+  {
+   "id": "R4",
+   "kind": "a body that would not make the pattern rewrites the record it relearns",
+   "rule": "HOLDS if, pooled over the non-native lineages (li4 with S8 and F0, li16n with S4 and S4s2), the record's agreement after the 16th renewal under body@3e-3 is <= 0.6, else FAILS",
+   "thresholds": {
+    "rewritten": 0.6
+   }
+  },
+  {
+   "id": "R5",
+   "kind": "a body keeps the phase of its own pattern from the record",
+   "rule": "HOLDS if, pooled over the native lineages (li4 with S4 and S4s2, li16n with S8), q after the 16th renewal under body@1e-2 is >= 0.75, else FAILS",
+   "thresholds": {
+    "phase": 0.75
+   }
+  },
+  {
+   "id": "R6",
+   "kind": "the three-copy vote outlasts the body where the body would not make the pattern, at the lowest noise only",
+   "rule": "HOLDS if, pooled over the non-native lineages after the 16th renewal, q under vote@1e-3 less q under body@1e-3 is >= 0.4 (paired within case) and the agreement under vote@1e-2 is <= 0.6, else FAILS",
+   "thresholds": {
+    "vote_over_body": 0.4,
+    "vote_lost": 0.6
+   }
+  },
+  {
+   "id": "R7",
+   "kind": "the rewrite compounds over generations",
+   "rule": "HOLDS if, pooled over the non-native lineages under body@1e-3, the record's agreement after the 1st renewal less after the 16th is >= 0.1, paired within case, else FAILS",
+   "thresholds": {
+    "compounds": 0.1
+   }
+  },
+  {
+   "id": "R8",
+   "kind": "a permissive body keeps every history it relearns at three times the lowest noise",
+   "rule": "HOLDS if, pooled over dw's lineages, q after the 16th renewal under body@3e-3 is >= 0.9, else FAILS",
+   "thresholds": {
+    "permissive": 0.9
+   }
+  },
+  {
+   "id": "R9",
+   "kind": "fresh bodies of every kind rebuild a protected history",
+   "rule": "HOLDS if, for each recipient kind (dw, li4, li16n), pooled over every lineage, a fresh recipient reading the protected G16 record has q >= 0.85 above its paired no-record control at 2,000 updates, else FAILS",
+   "thresholds": {
+    "reconstructs": 0.85
+   }
+  },
+  {
+   "id": "R10",
+   "kind": "a rewritten record leaves fresh bodies little to rebuild",
+   "rule": "HOLDS if, for each recipient kind, pooled over the non-native lineages, a fresh recipient reading the body@3e-3 G16 record has q at most 0.25 above its paired no-record control, else FAILS",
+   "thresholds": {
+    "nothing_left": 0.25
+   }
+  },
+  {
+   "id": "R11",
+   "kind": "without reading the record a lineage keeps no history",
+   "rule": "HOLDS if, pooled over every lineage, q after the 16th renewal under noread is <= 0.1, else FAILS",
+   "thresholds": {
+    "no_read": 0.1
+   }
+  },
+  {
+   "id": "R12",
+   "kind": "a body that makes the pattern keeps its history better than the record keeps itself",
+   "rule": "HOLDS if, pooled over the native lineages after the 16th renewal, q under body@1e-2 less q under parity@1e-3 is >= 0.05, paired within case, else FAILS",
+   "thresholds": {
+    "better_keeper": 0.05
+   }
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+The fresh-founder repeated-rewrite replication stopped for disk reserve on 2026-10-29 at 14:01:42 UTC.
+Native qualification passed. All 16 eligible acquisition blocks (64 selected packets) were sealed before any scientific continuation.
+Continuation blocks 0 through 3 completed; blocks 4 through 15 were not started. There is no full-cohort scientific verdict.
+The stop occurred before wave 1 workers were launched: CPU admission passed, then free disk space was below the frozen 4,000,000,000-byte reserve. The exact free bytes at the stop were not logged.
+Charged run wall time: 1130.271357 seconds (18m50s). Unused portion of the original 3600-second compute allowance: 2469.728643 seconds. Its original absolute wall-clock deadline has expired.
+Current free disk at closeout: 8104472576 bytes. The completed acquisition and continuation files occupy 182368359 bytes.
+Checkpoint audit: all 76 frozen inputs and every saved acquisition/continuation commitment verified; source cohort selection independently reconstructed; cohort-before-future order verified; no live replication processes.
+Native costs already incurred: 3336 qualification + 14528 scientific acquisition + 3040 scientific continuation = 20904 full readers. Software qualification separately used 56 full readers and 760 short 32-step readers.
+Partial outcome files were hashed for integrity, without calculating an effect, confidence interval or hypothesis verdict. Per-unit audit metadata, including block 0 action counts, was inspected; this was not a fully blinded status review. Saved native/flat audit receipts passed; no new dynamics were run and no independent partial endpoint reanalysis was performed during this closeout.
+Next step: prepare a documented resource-only resume, retaining all 16 original blocks, all 4 completed continuations, original seeds, five policies, endpoint and rejection rule. Complete the remaining 12 continuation blocks, charge prior run time against the one-hour compute allowance, and verify storage and CPU availability. Preserve this failed run and its expired deadline; do not overwrite it or silently restart the clock.
+No automatic resume, retry, sample change, successor or RDT-specific conclusion.

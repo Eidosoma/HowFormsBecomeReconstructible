@@ -1,0 +1,122 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR006",
+ "design_digest": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c",
+ "ar005_digest": "0176779a89e36a7e664b9b1cecbfe3c2abfa213a7422d6341243b170b8ae9b02",
+ "ar003_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/preflight",
+ "blocks": [
+  900929,
+  900947
+ ],
+ "tag": "mse-ar006",
+ "load_1min_at_check": 28.55,
+ "checked_utc": "2026-11-03T15:26:32Z",
+ "wall_s": 652.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 16
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900929": true,
+    "raw/dw/S4_t0/900929": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 2,
+   "runs_compared": 18,
+   "arrays_compared": 648,
+   "arm_slices_compared": 1934,
+   "routed": {
+    "run_vt": true,
+    "detect": true,
+    "one": true,
+    "task_calls_the_routed_one": true
+   },
+   "reference": "AR005's debug outputs on 900799 (tag mse-ar005, frozen digest)",
+   "mismatched": {}
+  },
+  "Q4_vote_default_identity": {
+   "pass": true,
+   "n_items": 432,
+   "failed": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 450,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "ar003_frozen_design_unchanged": true,
+    "ar004_frozen_design_unchanged": true,
+    "ar005_frozen_design_unchanged": true,
+    "det_star_is_ar003s_frozen": true,
+    "det_pool_is_ar004s_frozen": true,
+    "vguard_is_ar005s_frozen": true,
+    "det_star_and_det_pool_differ_in_ring_max_alone": true,
+    "vtol_is_det_pool_with_the_split_at_vguards_f": true,
+    "a_window_det_star_holds_passes_with_the_body_agreeing": true,
+    "a_pooled_only_window_passes_with_the_body_confirming": true,
+    "a_pooled_only_window_fails_with_the_body_agreeing": true,
+    "a_window_neither_holds_fails_with_the_body_confirming": true,
+    "split_equals_det_star_united_with_the_guarded_pooled_windows_at_every_box": true,
+    "the_split_adds_windows_beyond_det_star_and_beyond_vguard": true,
+    "the_routed_detector_equals_ar005_for_vguard_and_ar002_for_det_pool": true,
+    "the_misread_changes_the_anchors_only": true,
+    "correlated_is_memory_with_the_body_flipped_on_the_patch": true,
+    "body_damage_is_the_body_flipped_alone": true,
+    "the_clock": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "correlated@0-L4: vtol alone = vtol beside vms, vpool and vguard": true,
+    "correlated@0-L4: vtol listed twice is bit-identical": true,
+    "correlated@0-L4: the split with a free surround of 1 = vpool": true,
+    "correlated@0-L4: the split with no body confirmation possible = vms": true,
+    "memory@1-L8: vtol alone = vtol beside vms, vpool and vguard": true,
+    "memory@1-L8: vtol listed twice is bit-identical": true,
+    "memory@1-L8: the split with a free surround of 1 = vpool": true,
+    "memory@1-L8: the split with no body confirmation possible = vms": true,
+    "cue@0-L4: vtol alone = vtol beside vms, vpool and vguard": true,
+    "cue@0-L4: vtol listed twice is bit-identical": true,
+    "cue@0-L4: the split with a free surround of 1 = vpool": true,
+    "cue@0-L4: the split with no body confirmation possible = vms": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 641.6,
+   "forecast_cpu_h": 22.81,
+   "forecast_wall_h_12": 2.38,
+   "worker_rss_mb": 322.1,
+   "bytes_per_task": 8251746
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 62776,
+    "detectors.json": 6115,
+    "utilities.json": 9786,
+    "predictions_scored.json": 2963,
+    "TABLES.md": 7247
+   },
+   "big_git_files": []
+  }
+ }
+}

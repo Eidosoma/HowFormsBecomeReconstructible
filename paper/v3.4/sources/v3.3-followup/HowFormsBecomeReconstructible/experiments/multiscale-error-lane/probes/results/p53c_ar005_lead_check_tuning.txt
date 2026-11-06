@@ -1,0 +1,14 @@
+0. the guard's arithmetic: on 5 synthetic states (3 cases, 16 x 16, boxes 2-12; flipped record patches, a body mostly right, scattered cue damage at several rates and anchor densities), the lead's loop equals ar005.sim.guarded_windows for the body guard at f 1, 0.5 and 0 and the density guard at 1/4, under DET_POOL's criterion and a second (n 2, q 0.75): 337920 windows, 0 differ; windows held DET_POOL f 1 10; DET_POOL f 0.5 32; DET_POOL f 0 40; DET_POOL dense 1/4 30; n 2, q 0.75 f 1 22; n 2, q 0.75 f 0.5 68; n 2, q 0.75 f 0 89; n 2, q 0.75 dense 1/4 63; the pass-all guard equals ar002.sim.cue_windows_multi exactly
+
+1. P53c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar005/tuning (tuning, DRY RUN on engineering blocks): 8 tasks, 16 files, every sha256 equal to the manifest's; digest e52c5c8580a6 (AR004's 7cd71b5b29cf and AR003's d392002671e6, their frozen sources unchanged); 2026-11-02T15:23:56Z - 2026-11-02T15:33:36Z, 1.22 CPU-h, 8 workers
+   runs: cue@0 (L 4; vote, vpool, g-body-f1, g-body-f05, g-dense-25), none@0 (L 4; vote), none@1 (L 4; g-body-f1, g-body-f05, g-dense-25), memory@1 (L 4; vms, vpool, g-body-f1, g-body-f05, g-dense-25), memory@1-L8 (L 8; vms, vpool, g-body-f1, g-body-f05, g-dense-25), memory@0 (L 4; vms, g-body-f1, g-body-f05, g-dense-25), correlated@1 (L 4; vpool, g-body-f1, g-body-f05, g-dense-25)
+   detectors in every shard: vms DET_STAR, vpool pool-n3-q1-r1, the three candidates DET_POOL with their guards
+
+2. THE TUNING RULE re-applied (the block's 64 lineage-cases a run; means)
+   g-body-f1  sheet cost cue@0 +0.00172 (<= 0.0075 True); none@1 vs the vote's none@0 +0.00000 (<= 0.0075 True); hits kept memory@0 4 x 4 -0.1191 (>= -0.01 False); Rc +0.0742 (> 0 True); reported corr1 u(vpool) - u(c) +0.2773: not eligible
+   g-body-f05 sheet cost cue@0 +0.00262 (<= 0.0075 True); none@1 vs the vote's none@0 +0.00101 (<= 0.0075 True); hits kept memory@0 4 x 4 +0.0000 (>= -0.01 True); Rc +0.1156 (> 0 True); reported corr1 u(vpool) - u(c) +0.1914: ELIGIBLE
+   g-dense-25 sheet cost cue@0 +0.01839 (<= 0.0075 False); none@1 vs the vote's none@0 +0.00623 (<= 0.0075 True); hits kept memory@0 4 x 4 +0.0000 (>= -0.01 True); Rc +0.1411 (> 0 True); reported corr1 u(vpool) - u(c) -0.0146: not eligible
+   vpool (the parent): sheet cost cue@0 +0.02110; Rc +0.1438
+   eligible ['g-body-f05']; THE CHOICE by the rule: g-body-f05; ar005/design.py's VGUARD_NAME: g-body-f05: equal
+
+4. FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch): r_in and r_all recomputed from the final records, 216 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00; a vote-default arm that never fired against the vote (at sigma 1 the vote's sigma-0 run, where it exists), both records, bit for bit: 262 of 262 lineage-cases equal

@@ -1,0 +1,43 @@
+{
+  "completed_blocks": 0,
+  "current_resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 8322379776,
+    "other_busy_capacity": 0,
+    "other_busy_processes": [],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-30T14:16:09.948303+00:00"
+  },
+  "evidence": {
+    "E115_original_anchor_components/SAMPLE_FREEZE.json": "561a53b5ce2841bc439a12a20c80f9dda63c46efbaa851caeae60778bc4bd396",
+    "E115_original_anchor_components/analysis/qualification_v1.json": "48956342b4b517faed6a9ebdaf9a60048fbc3d209600fb83437b74c154e18c9e",
+    "E115_original_anchor_components/jobs/anchor_v1/launch.json": "53e83947dce54f6c97fb204863c6f7e42a16eac729e9dd19a06dd89f1a761e2b",
+    "E115_original_anchor_components/jobs/anchor_v1/startup.json": "3647e6da93c282d605065010b408f2e6a03c257e1093ba85124d1ebc393c0ce1",
+    "E115_original_anchor_components/runs/anchor_v1/FAILED.json": "b65871e08f01292e1d4c1cb8317674100443aefdd04176bf576c6f5a66d59419",
+    "E115_original_anchor_components/runs/anchor_v1/STATUS.json": "b65871e08f01292e1d4c1cb8317674100443aefdd04176bf576c6f5a66d59419",
+    "E115_original_anchor_components/runs/anchor_v1/manifest.json": "eeeb44f7c450b59f263aae01c2576b99bdd3b8c872fcf1b24f43690e96db6783"
+  },
+  "existing_scientific_input_hashes_verified": true,
+  "failed_run": "anchor_v1",
+  "failure": "execution-time inventory rejected shared CPU capacity; exact additional processes were not saved",
+  "new_scientific_outcomes": 0,
+  "required_startup_stage": "anchored_readers_and_independent_replay",
+  "resubmission": "one explicitly reviewed anchor_v2 attempt; no retry loop or automatic successor",
+  "scientific_code_changed": false,
+  "scientific_protocol_changed": false,
+  "seconds": 7.198464423185214,
+  "startup_issue": "original startup receipt preceded completion of resource gate and source verification",
+  "status": "REVIEWED",
+  "trigger": "user status request; complete already authorised E115 after reviewed resource failure",
+  "utc": "2026-10-30T14:16:09.948485+00:00",
+  "workers": 3
+}

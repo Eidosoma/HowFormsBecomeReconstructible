@@ -1,0 +1,41 @@
+P58c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e002/debug (debug, DRY RUN on engineering records): 8 tasks, every sha256 equal to the manifest's; digest e62cb292158e; 2026-11-04T10:46:22Z - 2026-11-04T10:55:17Z, 1.14 CPU-h; 8 restored records, every sha256 equal to ar005/debug's manifest; the acquisition rebuilt by ar001.sim.prepare (8 cases a task) equal to every record's V0, R0 and T
+  the packets at generation 0 rebuilt by the lead (96 label-tasks; the policy arms from their runs, protected storage from R0, post-damage copying from ar001.sim.event): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8: largest |difference| 0.0e+00
+  identities: a vote row fired in 0 of 1152 lineage-case-generations; a birth cue at sigma 0 disagreed with its incoming record at birth in 0 of 768; a lineage cue's count differed from the lead's in 0 of 128; a vms row that had not yet fired differed from its vote partner's saved state in 0 of 590 lineage-case-horizons (it had fired by then in 178 of 768)
+
+THE PARTS (1 blocks x 8 cases; pooled over the eight unit-body pairs, one future; [95% t interval])
+  F1 u_r(vms-every) - u_r(vms-once), memory@0, g 8: not available at this stage (its rows stop before its generation)
+  F2 q_r(vms-every) - q_r(vms-once), memory@0, g 8: not available at this stage (its rows stop before its generation)
+  F3 q_r(protected+vms-every) - q_r(protected), g 8: not available at this stage (its rows stop before its generation)
+  F4 u_r(protected+vms-every) - u_r(protected), g 8: not available at this stage (its rows stop before its generation)
+  F5 u_r(protected) - u_r(vms-every), memory@0, g 8: not available at this stage (its rows stop before its generation)
+  F6 a_r(vms-once) - a_r(vms-every), none@0, g 8: not available at this stage (its rows stop before its generation)
+  F7 u_r(vms-every) - u_r(vms-once), memory@0, g 1: +0.000000 [+nan, +nan] (SD 0.000000: block nan, case/sqrt8 0.000000; halves +0.000000 +0.000000); reported
+      by item set: particular (li4 x F0) +0.000000; native (li4 x S4) +0.000000; permissive (dw) +0.000000
+
+REPORTED (the lead's): levels by label (all pairs; li4 x F0), with the tasks covering each cell
+  post+vms-every/memory@0 [vms, cue birth, sigma 0.0]: g0 u_r 0.0000 q_r +0.9609 (0.0000); g1 u_r 0.0107 q_r +0.9297 (0.0078); g3 u_r 0.0684 q_r +0.8618 (0.0508)
+  post/memory@0 [vote, cue birth, sigma 0.0]: g0 u_r 0.0000 q_r +0.9609 (0.0000); g1 u_r 0.0107 q_r +0.9297 (0.0078); g3 u_r 0.0723 q_r +0.8636 (0.0586)
+  protected [vote, cue birth, sigma 0.0]: g0 u_r 1.0000 q_r +1.0000 (1.0000); g1 u_r 0.9834 q_r +0.9653 (0.9766); g3 u_r 0.9434 q_r +0.8944 (0.9141)
+  protected+vms-every [vms, cue birth, sigma 0.0]: g0 u_r 1.0000 q_r +1.0000 (1.0000); g1 u_r 0.9834 q_r +0.9653 (0.9766); g3 u_r 0.9453 q_r +0.8937 (0.9141)
+  vms-every+lineage-cue/memory@0 [vms, cue lineage, sigma 0.0]: g0 u_r 0.7285 q_r +0.9518 (0.6328); g1 u_r 0.7354 q_r +0.9200 (0.6719); g3 u_r 0.7080 q_r +0.8540 (0.6211)
+  vms-every/memory@0 [vms, cue birth, sigma 0.0]: g0 u_r 0.7285 q_r +0.9518 (0.6328); g1 u_r 0.7236 q_r +0.9207 (0.6250); g3 u_r 0.6982 q_r +0.8555 (0.5820)
+  vms-every/memory@1 [vms, cue birth, sigma 1.0]: g0 u_r 0.4385 q_r +0.9312 (0.4375); g1 u_r 0.4443 q_r +0.8922 (0.4336); g3 u_r 0.4707 q_r +0.8278 (0.4375)
+  vms-every/none@0 [vms, cue birth, sigma 0.0]: g0 u_r 0.9873 q_r +0.9668 (0.9727); g1 u_r 0.9697 q_r +0.9325 (0.9531); g3 u_r 0.9375 q_r +0.8678 (0.8867)
+  vms-once/memory@0 [vote, cue birth, sigma 0.0]: g0 u_r 0.7285 q_r +0.9518 (0.6328); g1 u_r 0.7236 q_r +0.9207 (0.6250); g3 u_r 0.6982 q_r +0.8556 (0.5820)
+  vms-once/memory@1 [vote, cue birth, sigma 1.0]: g0 u_r 0.4385 q_r +0.9312 (0.4375); g1 u_r 0.4346 q_r +0.8961 (0.4297); g3 u_r 0.4648 q_r +0.8372 (0.4414)
+  vms-once/none@0 [vote, cue birth, sigma 0.0]: g0 u_r 0.9873 q_r +0.9668 (0.9727); g1 u_r 0.9697 q_r +0.9324 (0.9531); g3 u_r 0.9346 q_r +0.8688 (0.8828)
+  vote/memory@0 [vote, cue birth, sigma 0.0]: g0 u_r 0.2900 q_r +0.9397 (0.0977); g1 u_r 0.2793 q_r +0.9037 (0.0781); g3 u_r 0.3184 q_r +0.8450 (0.1133)
+  the lineage cue (a second channel) less vms-every, u_r g 1: +0.011719 [+nan, +nan]; li4 x F0 +0.046875
+  the lineage cue (a second channel) less vms-every, q_r g 1: -0.000610 [+nan, +nan]; li4 x F0 -0.002441
+  the lineage cue (a second channel) less vms-every, u_r g 3: +0.009766 [+nan, +nan]; li4 x F0 +0.039062
+  the lineage cue (a second channel) less vms-every, q_r g 3: -0.001465 [+nan, +nan]; li4 x F0 -0.004395
+  the firing per generation (the share of lineage-cases that fired in that generation), vms rows:
+    post+vms-every/memory@0: g1 0.000 g2 0.062 g3 0.062
+    protected+vms-every: g1 0.000 g2 0.078 g3 0.062
+    vms-every+lineage-cue/memory@0: g1 0.109 g2 0.125 g3 0.297
+    vms-every/memory@0: g1 0.141 g2 0.125 g3 0.062
+    vms-every/memory@1: g1 0.516 g2 0.422 g3 0.297
+    vms-every/none@0: g1 0.156 g2 0.125 g3 0.047
+
+AGAINST THE FROZEN READER (/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e002/debug_read/predictions_scored.json): 1 parts (values, intervals, SDs, halves, blocks, item sets; 0 registered thresholds, kinds and verdicts) largest difference 0.00e+00; 252 levels and 18 firing shares by generation, largest difference 0.00e+00; partial levels (not pooled here): 0

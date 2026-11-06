@@ -1,0 +1,58 @@
+P51c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar004/development (development): 128 tasks, 256 files, every sha256 equal to the manifest's; digest 7cd71b5b29cf (AR003's d392002671e6, its 168 frozen sources unchanged); 2026-11-01T22:57:36Z - 2026-11-02T00:49:59Z, 14.55 CPU-h, 8 workers
+runs: memory@0-L2 (L 2; vote, vms, vpool), memory@0 (L 4; vote, vms, vpool), memory@0-L8 (L 8; vote, vms, vpool), none@0 (L 4; vote, vms, vpool), cue@0 (L 4; vote, vms, vpool), memory@1-L2 (L 2; vms, vpool), memory@1 (L 4; vms, vpool), memory@1-L8 (L 8; vms, vpool), none@1 (L 4; vms, vpool), memory@0-L6 (L 6; vote, vms, vpool), memory@1-L6 (L 6; vms, vpool)
+
+REGISTERED PARTS (16 blocks; pooled over the eight unit-body pairs; [95% t interval], t(0.975, 15) = 2.1314; SD_block the larger of the block SD and the case SD / sqrt 8)
+  G1    R1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vms, memory@1): +0.095739 [+0.078070, +0.113408] (SD 0.033159: block 0.026038, case/sqrt8 0.033159)  >= +0.04: holds
+  G2    R0 = (1/3) sum over sizes of u(vpool, memory@0) - u(vms, memory@0): -0.000051 [-0.000527, +0.000425] (SD 0.000894: block 0.000868, case/sqrt8 0.000894)  >= -0.005: holds
+  G3a   the trade-off: sheet cost under cue@0, vpool less vms: +0.011842 [+0.008725, +0.014959] (SD 0.005850: block 0.005850, case/sqrt8 0.004882)  >= +0.008: holds
+  G3b   vpool's sheet cost under cue@0: +0.017691 [+0.014974, +0.020407] (SD 0.005098: block 0.004401, case/sqrt8 0.005098)  <= +0.029: holds
+  G3c   vpool's sheet cost with no event, none@0 (the confirmed 0.002 bound): -0.000009 [-0.000039, +0.000022] (SD 0.000058: block 0.000058, case/sqrt8 0.000058)  <= +0.002: holds
+  G5n   u(vpool) - u(vote) in the 4 x 4 patch, none@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)  >= -0.005: holds
+  G5n1  u(vpool, none@1) - u(vote, none@0), 4 x 4 patch: -0.007874 [-0.018200, +0.002452] (SD 0.019378: block 0.018441, case/sqrt8 0.019378)  >= -0.03: holds
+  G6_4  p(vpool on the patch | memory@1, 4 x 4): +0.520508 [+0.447293, +0.593723] (SD 0.137399: block 0.118134, case/sqrt8 0.137399)  >= +0.25: holds
+  G6_8  p(vpool on the patch | memory@1, 8 x 8): +0.502930 [+0.428757, +0.577102] (SD 0.139196: block 0.139196, case/sqrt8 0.135334)  >= +0.3: holds
+  G6d   p(on the patch | memory@1, 4 x 4), vpool - vms: +0.227539 [+0.169220, +0.285858] (SD 0.109445: block 0.097656, case/sqrt8 0.109445)  >= +0.04: holds
+  G7    W1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vote, memory@0): +0.177846 [+0.154392, +0.201300] (SD 0.044015: block 0.026327, case/sqrt8 0.044015)  >= +0.09: holds
+  VERDICTS: G1 HOLDS, G2 HOLDS, G3 HOLDS, G5 HOLDS, G6 HOLDS, G7 HOLDS
+
+REPORTED (not registered)
+  G5c (reported: the trade-off inside the patch) u(vpool) - u(vote), cue@0: -0.009216 [-0.017338, -0.001095] (SD 0.015241: block 0.013271, case/sqrt8 0.015241)
+  G4 (dropped) sheet cost under misreads with no event, vpool: +0.007772 [+0.006604, +0.008941] (SD 0.002193: block 0.002193, case/sqrt8 0.001974)
+  sheet cost none@1, vms: +0.003764 [+0.003003, +0.004525] (SD 0.001428: block 0.001330, case/sqrt8 0.001428)
+  sheet cost cue@0, vms: +0.005849 [+0.004376, +0.007322] (SD 0.002764: block 0.002764, case/sqrt8 0.002626)
+  sheet cost none@0, vms: -0.000013 [-0.000048, +0.000021] (SD 0.000064: block 0.000064, case/sqrt8 0.000064)
+  W1 vms: +0.082108 [+0.061897, +0.102318] (SD 0.037929: block 0.024317, case/sqrt8 0.037929)
+  vms misread loss (sigma 1 - sigma 0): -0.354909 [-0.381826, -0.327993] (SD 0.050513: block 0.038992, case/sqrt8 0.050513)
+  vpool misread loss (sigma 1 - sigma 0): -0.259120 [-0.284102, -0.234137] (SD 0.046883: block 0.041409, case/sqrt8 0.046883)
+  R1 at 2 x 2: +0.017334 [-0.001422, +0.036090] (SD 0.035199: block 0.035199, case/sqrt8 0.033786)
+  R1 at 4 x 4: +0.116272 [+0.082267, +0.150277] (SD 0.063815: block 0.044570, case/sqrt8 0.063815)
+  R1 at 8 x 8: +0.153610 [+0.117490, +0.189731] (SD 0.067786: block 0.061209, case/sqrt8 0.067786)
+  R0 at 2 x 2: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)
+  R0 at 4 x 4: -0.000122 [-0.001580, +0.001336] (SD 0.002736: block 0.002736, case/sqrt8 0.002662)
+  R0 at 8 x 8: -0.000031 [-0.000226, +0.000165] (SD 0.000366: block 0.000366, case/sqrt8 0.000324)
+  the recovery fraction, pooled over the sizes: 0.2698; by size: 2 x 2 1.1639; 4 x 4 0.3740; 8 x 8 0.2079
+  rates by run (fired at all / on the patch):
+    memory@0-L2   vms   0.0977 / 0.0586
+    memory@0-L2   vpool 0.0977 / 0.0586
+    memory@0      vms   0.8418 / 0.8418
+    memory@0      vpool 0.8418 / 0.8418
+    memory@0-L8   vms   1.0000 / 1.0000
+    memory@0-L8   vpool 1.0000 / 1.0000
+    none@0        vms   0.0381 / 0.0000
+    none@0        vpool 0.0381 / 0.0000
+    cue@0         vms   0.5518 / 0.0889
+    cue@0         vpool 0.9277 / 0.1523
+    memory@1-L2   vms   0.4756 / 0.0488
+    memory@1-L2   vpool 0.6855 / 0.0977
+    memory@1      vms   0.6211 / 0.2930
+    memory@1      vpool 0.8604 / 0.5205
+    memory@1-L8   vms   0.5469 / 0.2383
+    memory@1-L8   vpool 0.8369 / 0.5029
+    none@1        vms   0.4707 / 0.0508
+    none@1        vpool 0.6680 / 0.0664
+    memory@0-L6   vms   1.0000 / 1.0000
+    memory@0-L6   vpool 1.0000 / 1.0000
+    memory@1-L6   vms   0.6230 / 0.3203
+    memory@1-L6   vpool 0.8711 / 0.5723
+
+FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch): r_in and r_all recomputed from the final records, 3584 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00; a vote-default arm that never fired against the vote (at sigma 1 the vote's sigma-0 run), both records, bit for bit: 8096 of 8096 lineage-cases equal

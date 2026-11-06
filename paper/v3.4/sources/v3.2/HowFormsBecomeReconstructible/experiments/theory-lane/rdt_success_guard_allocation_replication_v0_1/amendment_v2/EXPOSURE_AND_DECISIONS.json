@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-28T21:15:30.795725+00:00",
+  "status": "RESOURCE_AMENDMENT_BEFORE_SCIENTIFIC_FUTURES",
+  "development_outcomes_exposed": true,
+  "hypothesis_outcome_informed": true,
+  "development_blocks": 21,
+  "development_packets": 84,
+  "new_target_acquisitions_observed": 14,
+  "new_target_futures_observed": 0,
+  "namespace": "RDT_success_guard_allocation_replication_v0_1",
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four packets per block, then across28 fresh acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_matched_random"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "One paired acquisition-block contrast: current-success guard minus matched-random under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, outcome-driven extension, substitution or equivalence claim.",
+    "degrees_of_freedom": 27,
+    "critical_two_sided95": 2.0518305164802846,
+    "critical_one_sided95": 1.7032884457221265,
+    "inference": "28 fresh acquisition blocks are the uncertainty unit. Quota coupling stays within each block. Packets, reads and arms are not independent replicates. Approximate paired t inference; new founders from the same declared acquisition/selection procedure."
+  },
+  "choices": [
+    "Same independent-noise primary and four policies. Matched-noise interaction not in scope.",
+    "N28 priced for roughly one hour and approximate81% plug-in power if the exposed effect repeats; no power guarantee.",
+    "First28 eligible blocks, attempt cap35; all boundary selections sealed before any future read.",
+    "No new per-packet fitted benefit estimator; no RDT-specific claim; older unresolved/negative findings unchanged.",
+    "Total5400-second hard cap includes new full native qualification; no automatic extension, retry, polling or successor."
+  ],
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "resource_amendment": {
+    "version": 2,
+    "prior_inputs_sha256": "50776b62e547e854cd2c74a4cfceb3808dd6795eb5d3a6d44c4ea6861cb6f425",
+    "reuse_manifest_sha256": "6d69e1619505788f059f718e0ac54647717f9f8d552affd9d90bd37d1af24d92",
+    "prior_charged_wall_seconds": 659.8173002619296,
+    "resumed_hard_seconds": 6500,
+    "total_charged_hard_seconds": 7200,
+    "preserved_acquisition_group_size": 7,
+    "physical_workers": 4,
+    "qualification_reused": true,
+    "imported_acquisition_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "allow_bounded_cpu_admission_wait": true,
+    "interpretation": "Resource and provenance amendment only. Same scientific prediction, namespace, cohort order, selection, controls and outcomes. No scientific futures existed at amendment."
+  },
+  "boundary_exposure": "All14 committed boundary panels and their13 eligibility outcomes were exposed at the resource stop. Selection and scientific prediction remain those frozen before their acquisition."
+}

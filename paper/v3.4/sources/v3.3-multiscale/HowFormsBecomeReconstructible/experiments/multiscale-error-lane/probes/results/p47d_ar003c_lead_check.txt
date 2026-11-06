@@ -1,0 +1,74 @@
+P47d on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar003c/confirmation (confirmation): 128 tasks, 256 files, every sha256 equal to the manifest's; digest b8149932ee6e (AR003's d392002671e6, its 168 frozen sources unchanged); 2026-11-01T18:56:42Z - 2026-11-01T20:21:50Z, 16.50 CPU-h, 12 workers, peak worker RSS 261.8 MB
+runs: none@0 (L 4; vote, det, vms), body@0 (L 4; vote, vms), memory@0 (L 4; vote, vms), correlated@0 (L 4; vote, vms), shared@0 (L 4; vote, vms), cue@0 (L 4; vote, det, vms), change@0 (L 4; vote, vms), memory@0-L2 (L 2; vote, vms), correlated@0-L2 (L 2; vote, vms), body@0-L2 (L 2; vote, vms), shared@0-L2 (L 2; vote, vms), memory@0-L8 (L 8; vote, det, vms), correlated@0-L8 (L 8; vote, det, vms), body@0-L8 (L 8; vote, det, vms), shared@0-L8 (L 8; vote, det, vms)
+
+REGISTERED CRITERIA (16 blocks; pooled over the eight unit-body pairs; 95% t interval, t(0.975, 15) = 2.1314; SD the larger of the block SD and the case SD / sqrt 8)
+  C1 U_mix(vms) - U_mix(vote): +0.109201 [+0.104415, +0.113987] (SD 0.008982: block 0.008982, case/sqrt8 0.008292); lower bound > 0: holds
+  C2 U_8(vms) - U_8(det): +0.149946 [+0.138979, +0.160914] (SD 0.020582: block 0.016962, case/sqrt8 0.020582); lower bound > 0: holds
+  C3 cue@0 r_all(vote) - r_all(vms): +0.006864 [+0.005344, +0.008383] (SD 0.002852: block 0.001891, case/sqrt8 0.002852); upper bound <= 0.01: holds
+  C3 none@0 r_all(vote) - r_all(vms): -0.000021 [-0.000153, +0.000111] (SD 0.000247: block 0.000245, case/sqrt8 0.000247); upper bound <= 0.002: holds
+  VERDICT: CONFIRMED
+  the identity: largest |u(new) + u(old) - 1| over every arm and case in change@0: 0.000e+00
+
+FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch)
+  r_in (and none's and cue's r_in_L2, r_in_L8) and r_all recomputed from the final records, 4352 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00
+  vms where it never fired against the vote, both records, bit for bit: 9297 of 9297 lineage-cases equal
+
+REPORTED (not registered)
+  C1: half-width 0.004786 against the target 0.036176; SD 0.008982 against the development's 0.011201 (ratio 0.802); difference from the development +0.000674, z +0.19
+  C2: half-width 0.010967 against the target 0.049987; SD 0.020582 against the development's 0.021990 (ratio 0.936); difference from the development -0.000015, z -0.00
+  sham_cue: SD 0.002852 against the development's 0.002433; difference from the development +0.001229
+  sham_none: SD 0.000247 against the development's 0.000102; difference from the development +0.000014
+  U(vote): U_2 0.7906; U_4 0.6918; U_8 0.6235; U_mix 0.7019
+  U(vms): U_2 0.7960; U_4 0.8002; U_8 0.8372; U_mix 0.8111
+  U(det): U_8 0.6872 (det runs at 8 x 8 and in none and cue only)
+  U_2(vms) - U_2(vote) +0.005432 [+0.000600, +0.010264] (SD 0.009068: block 0.009068, case/sqrt8 0.008503)
+  U_4(vms) - U_4(vote) +0.108437 [+0.097266, +0.119607] (SD 0.020963: block 0.020963, case/sqrt8 0.020485)
+  U_8(vms) - U_8(vote) +0.213734 [+0.210279, +0.217188] (SD 0.006483: block 0.006483, case/sqrt8 0.005994)
+  U_4(vms) - U_4(vote) in its terms (each / 8): the hits (memory, correlated) +0.108658 [+0.097403, +0.119913] (SD 0.021122: block 0.021122, case/sqrt8 0.020529); the four (none, body, shared, cue) -0.000221 [-0.000661, +0.000219] (SD 0.000826: block 0.000822, case/sqrt8 0.000826); the pair +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)
+  C1 by block: 16 of 16 positive, from +0.089101 to +0.122640
+  C2 by block: 16 of 16 positive, from +0.122833 to +0.184998
+  the cue@0 cost by block: 16 of 16 positive, from +0.003571 to +0.010284; above 0.01 in 1
+  the none@0 cost by block: 3 of 16 positive, from -0.000565 to +0.000717; above 0.002 in 0
+  u by scoring and size (pooled): arm: none body memory correlated shared cue
+    L 2 vote  0.9939 0.9939 0.6765 0.6729 0.9934 0.9939
+    L 2 det   0.9705   -      -      -      -    0.9578
+    L 2 vms   0.9932 0.9932 0.6995 0.6953 0.9929 0.9939
+    L 4 vote  0.9885 0.9885 0.3618 0.2691 0.9382 0.9885
+    L 4 det   0.9696   -      -      -      -    0.9587
+    L 4 vms   0.9888 0.9888 0.7623 0.7379 0.9379 0.9863
+    L 8 vote  0.9889 0.9889 0.0983 0.0894 0.8332 0.9889
+    L 8 det   0.9700 0.9700 0.4385 0.4333 0.7282 0.9581
+    L 8 vms   0.9890 0.9890 0.9540 0.9516 0.8332 0.9808
+  per unit-body pair: C1, C2, the cue@0 sheet cost (each the mean over blocks and cases)
+    dw  S4_t0: C1 +0.099426  C2 +0.141235  sheet cost +0.006920
+    dw  S4_t1: C1 +0.085032  C2 +0.140198  sheet cost +0.006615
+    dw  F0_t0: C1 +0.111547  C2 +0.143661  sheet cost +0.006523
+    dw  F0_t1: C1 +0.108907  C2 +0.142059  sheet cost +0.006714
+    li4 S4_t0: C1 +0.133708  C2 +0.137680  sheet cost +0.006927
+    li4 S4_t1: C1 +0.108287  C2 +0.135483  sheet cost +0.006653
+    li4 F0_t0: C1 +0.114792  C2 +0.185837  sheet cost +0.007477
+    li4 F0_t1: C1 +0.111908  C2 +0.173416  sheet cost +0.007080
+  rates by run: fired at all / on the patch; median onset where fired; mean footprint cells
+    none@0           det  0.1582 / 0.0244  onset 5026  footprint 67.2
+    none@0           vms  0.0566 / 0.0059  onset 6384  footprint 57.4
+    body@0           vms  0.0566 / 0.0059  onset 6384  footprint 57.4
+    memory@0         vms  0.8672 / 0.8496  onset 1  footprint 70.8
+    correlated@0     vms  0.8682 / 0.8506  onset 1  footprint 70.8
+    shared@0         vms  0.0537 / 0.0029  onset 6384  footprint 58.2
+    cue@0            det  0.5752 / 0.0566  onset 1  footprint 72.7
+    cue@0            vms  0.5762 / 0.0752  onset 1  footprint 68.3
+    change@0         vms  0.8789 / 0.8604  onset 1  footprint 70.9
+    memory@0-L2      vms  0.1113 / 0.0664  onset 1  footprint 56.2
+    correlated@0-L2  vms  0.1104 / 0.0664  onset 1  footprint 56.4
+    body@0-L2        vms  0.0566 / 0.0049  onset 6384  footprint 57.4
+    shared@0-L2      vms  0.0547 / 0.0020  onset 6384  footprint 58.0
+    memory@0-L8      det  0.7412 / 0.7041  onset 15  footprint 72.6
+    memory@0-L8      vms  1.0000 / 1.0000  onset 1  footprint 146.0
+    correlated@0-L8  det  0.7324 / 0.6953  onset 15  footprint 72.5
+    correlated@0-L8  vms  1.0000 / 1.0000  onset 1  footprint 146.0
+    body@0-L8        det  0.1582 / 0.0371  onset 5036  footprint 67.2
+    body@0-L8        vms  0.0566 / 0.0137  onset 6384  footprint 57.4
+    shared@0-L8      det  0.1523 / 0.0312  onset 4933  footprint 67.0
+    shared@0-L8      vms  0.0527 / 0.0098  onset 6384  footprint 58.5
+
+AGAINST THE FROZEN READER (results/ar003c/confirmation.json): largest difference in the means, bounds, SDs and block values 2.78e-17; verdict and criteria the same (CONFIRMED)

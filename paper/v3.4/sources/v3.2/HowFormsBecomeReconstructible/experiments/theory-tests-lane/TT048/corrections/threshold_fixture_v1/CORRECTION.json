@@ -1,0 +1,15 @@
+{
+  "cause": "Nominal 5% fixture used rounded weights with measured fraction .049999999999999996, just below .05; the gate correctly accepted it, but the exact-boundary fixture assertion failed.",
+  "change": "Use dyadic coupling weights with exactly 1 disagreement unit and 20 total weight units; gate remains <= .05.",
+  "failure_sha256": "04eeee4d8cbc0a7cab266fe3cedd7a16c498a73df5bf831b328a126d44cccf07",
+  "initial_diagnostic_text_corrected": true,
+  "initial_metadata_sha256": "0fc65340c4ad12e5c4648e6f9a7404282f98d2af9a6cfee91fa14e92c6e737ca",
+  "new_measured_fraction": 0.05,
+  "old_code_manifest_sha256": "0e498dc21d528ff23e40b8494ea985a3e2b3ff0e5705c3ad5d8c6c9d15a7c854",
+  "old_measured_fraction": 0.049999999999999996,
+  "production_outcomes_generated": false,
+  "receiving_assays_started": false,
+  "recorded_utc": "2026-10-30T17:39:58.717600+00:00",
+  "scientific_rule_changed": false,
+  "status": "FIXTURE_CORRECTION_BEFORE_ASSAYS"
+}

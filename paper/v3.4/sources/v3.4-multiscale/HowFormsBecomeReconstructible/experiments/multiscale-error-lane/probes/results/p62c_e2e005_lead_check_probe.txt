@@ -1,0 +1,30 @@
+P62c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e005/probe (probe, DRY RUN on engineering records): 32 tasks, every sha256 equal to the manifest's; digest ef404ab8d344; 2026-11-05T12:54:43Z - 2026-11-05T13:09:15Z, 2.02 CPU-h; 32 restored records, every sha256 equal to ar005/p53's manifest; the acquisition rebuilt by ar001.sim.prepare (4 cases a task) equal to every record's V0, R0 and T
+  the labels: every rule and packet as the plan's table (body/post, body/protected, ctl/post, ctl/protected, oracle/post, record/post, record/protected, vote/post, vote/protected)
+  the packets at generation 0 rebuilt by the lead (288 label-tasks): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8 (864 row-task-horizons): largest |difference| 0.0e+00
+  the controller's identity: where it had not yet fired, its saved state equals the record rule's on the same packet in 470 of 470 lineage-case-horizons
+
+THE PARTS (4 blocks x 4 cases; pooled over the eight unit-body pairs, one future; [95% t interval]; the rule: margin >= 1.6771 and both halves)
+  C1 u_r(ctl/post) - u_r(record/post), g 8: the controller heals more than the record rule: +0.137207 [+0.067069, +0.207345] (SD 0.044078: block 0.042143, case/sqrt4 0.044078; halves +0.169922 +0.104492); the narrowest [+0.060, +0.220]; registered >= 0.06: HOLDS
+      by item set: particular (li4 x F0) +0.083984; native (li4 x S4) +0.162109; permissive (dw) +0.151367
+  C2 q_r(ctl/protected) - q_r(record/protected), g 8: the controller's keeping against the record rule's: -0.049316 [-0.070653, -0.027979] (SD 0.013409: block 0.013409, case/sqrt4 0.009906; halves -0.038574 -0.060059); the narrowest [-0.080, -0.020]; registered [-0.08, -0.02]: HOLDS
+      by item set: particular (li4 x F0) -0.180664; native (li4 x S4) -0.003418; permissive (dw) -0.006592
+  C3 q_r(ctl/protected) - q_r(body/protected), g 8: the controller keeps more than the body rule: +0.434570 [+0.406998, +0.462143] (SD 0.017328: block 0.015387, case/sqrt4 0.017328; halves +0.423584 +0.445557); the narrowest [+0.400, +0.470]; registered >= 0.4: HOLDS
+      by item set: particular (li4 x F0) +0.633545; native (li4 x S4) +0.481689; permissive (dw) +0.311523
+  C4 F = u_r(ctl/post) - h(q_r(ctl/protected)), g 8, each block's from its own points (reported): +0.081372 [-0.014418, +0.177162] (SD 0.060199; halves +0.126326 +0.036419); the narrowest lower bound -0.020: does not register (reported)
+      by item set: particular (li4 x F0) +0.002173; native (li4 x S4) +0.157436; permissive (dw) +0.140218
+      F_RB against the record-body chord: +0.085818 [+0.002213, +0.169423]
+  VERDICTS (development: the point value against the registered threshold or band): C1 HOLDS, C2 HOLDS, C3 HOLDS; C4 reported  [not a development result]
+
+REPORTED (the lead's): the (keeping, healing) points at g 8 (all pairs; li4 x F0)
+  record: K 0.9993 (0.9990), H 0.0000 (0.0000)
+  vote: K 0.7461 (0.6602), H 0.2100 (0.1348)
+  body: K 0.5154 (0.1848), H 0.5083 (0.2383)
+  ctl: K 0.9500 (0.8184), H 0.1372 (0.0840)
+  oracle: H 0.4761 (0.2168)
+  the controller's firing by generation: the share firing / the ever-fired share by then / the footprint's mean share of the patch per firing (li4 x F0: the share firing / the patch share)
+    ctl/post: g1 0.445/0.445/0.363 (1.000/0.047) g2 0.297/0.445/0.062 (1.000/0.039) g3 0.320/0.469/0.120 (1.000/0.045) g4 0.289/0.484/0.081 (1.000/0.031) g5 0.312/0.484/0.062 (1.000/0.020) g6 0.281/0.484/0.104 (1.000/0.008) g7 0.305/0.500/0.045 (1.000/0.000) g8 0.297/0.508/0.058 (1.000/0.000)
+    ctl/protected: g1 0.297/0.297/0.044 (1.000/0.053) g2 0.273/0.297/0.089 (1.000/0.098) g3 0.281/0.297/0.111 (1.000/0.125) g4 0.273/0.305/0.037 (1.000/0.041) g5 0.273/0.305/0.034 (1.000/0.037) g6 0.250/0.305/0.004 (1.000/0.004) g7 0.266/0.312/0.026 (1.000/0.027) g8 0.266/0.312/0.053 (1.000/0.057)
+    oracle/post: g1 1.000/1.000/1.000 (1.000/1.000) g2 1.000/1.000/1.000 (1.000/1.000) g3 1.000/1.000/1.000 (1.000/1.000) g4 1.000/1.000/1.000 (1.000/1.000) g5 1.000/1.000/1.000 (1.000/1.000) g6 1.000/1.000/1.000 (1.000/1.000) g7 1.000/1.000/1.000 (1.000/1.000) g8 1.000/1.000/1.000 (1.000/1.000)
+
+AGAINST THE FROZEN READER (/tmp/claude-35835/-e-project1-e-aif-2026pg01-1345-Research-HowFormsBecomeReconstructible-experiments-multiscale-error-lane/940a0bc6-d263-4c2b-a287-422759268bb9/scratchpad/p62c/reader_probe/predictions_scored.json): 4 parts (C4 included; values, intervals, SDs, halves, blocks; 3 thresholds and verdicts) largest difference 2.78e-17; 1008 levels (overall and by item set; the reader rounds to 5 decimals) largest difference 5.0e-06, 1008 of 1008 equal after the same rounding; 12 frontier readings (the points, the line at the controller's keeping, F and F_RB at the pooled points and over the blocks) largest difference 5.55e-17; 96 firing rows (the share firing, the ever-fired share, the patch share per firing) largest difference 0.00e+00

@@ -1,0 +1,164 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "only": null,
+ "design_digest": "d69d35868e45fd5c4f2688507fc6ba4b7e9357ba53d2998d092fe42fd605c3b0",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm008/preflight",
+ "stage": "preflight",
+ "tasks": 4,
+ "checked_utc": "2026-11-05T17:26:46Z",
+ "wall_s": 837.3,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 4,
+   "branches_a_future": 1872,
+   "futures": 1,
+   "reads": [
+    1000,
+    2000,
+    4000,
+    8000
+   ],
+   "bad": [],
+   "missing": [],
+   "seconds": 0.0
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    900779
+   ],
+   "arrays": 14,
+   "differ": [],
+   "seconds": 837.2
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "kappa0/li4/k1-corner/absorbing": true,
+   "kappa0/li4/k4-checker/sealed": true,
+   "kappa0/li4/k8/sealed": true,
+   "kappa0/li4/iso8/absorbing": true,
+   "kappa0/li4/k1-corner/absorbing/paper": true,
+   "kappa0/li4/k1-corner/absorbing/shared": true,
+   "sm007/li4/k0/absorbing": true,
+   "sm007/li4/k0/sealed": true,
+   "sm007/li4/k0/absorbing/paper": true,
+   "sm007/li4/k0/absorbing/shared": true,
+   "sm007/li4/iso8/healthy": true,
+   "sm007/li4/k8/absorbing": true,
+   "sm007/li4/k8/sealed": true,
+   "sm007/li4/k8/absorbing/paper": true,
+   "sm007/li4/k8/absorbing/shared": true,
+   "sm007/li4/iso8/struggling": true,
+   "kappa0/dw/k1-corner/absorbing": true,
+   "kappa0/dw/k4-checker/sealed": true,
+   "kappa0/dw/k8/sealed": true,
+   "kappa0/dw/iso8/absorbing": true,
+   "kappa0/dw/k1-corner/absorbing/paper": true,
+   "kappa0/dw/k1-corner/absorbing/shared": true,
+   "sm007/dw/k0/absorbing": true,
+   "sm007/dw/k0/sealed": true,
+   "sm007/dw/k0/absorbing/paper": true,
+   "sm007/dw/k0/absorbing/shared": true,
+   "sm007/dw/iso8/healthy": true,
+   "sm007/dw/k8/absorbing": true,
+   "sm007/dw/k8/sealed": true,
+   "sm007/dw/k8/absorbing/paper": true,
+   "sm007/dw/k8/absorbing/shared": true,
+   "sm007/dw/iso8/struggling": true,
+   "sm007_frozen_sources": true,
+   "isolated/0.5": true,
+   "isolated/2.0": true,
+   "paper_stress_recomputed": true,
+   "records_rehash": true,
+   "seconds": 46.1
+  },
+  "Q4_replay": {
+   "pass": true,
+   "trace_exposures": true,
+   "trace_gains": true,
+   "end_to_end_k1corner_group3_by_future": [
+    true
+   ],
+   "task": [
+    "ar005/preflight",
+    "dw",
+    900779
+   ],
+   "window": 8000,
+   "seconds": 51.8
+  },
+  "Q5_controls": {
+   "pass": true,
+   "layout": true,
+   "paper_emits_eq1": true,
+   "paper_mixing_identity_trace": true,
+   "paper_mixing_identity_shards": true,
+   "paper_identity_sheets": 256,
+   "iso8_feels_no_other_sheet": true,
+   "seconds": 39.6
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "tasks": 4,
+   "bad": [],
+   "seconds": 3.0
+  },
+  "Q7_information": {
+   "pass": true,
+   "record_unchanged": true,
+   "template_scores_only": true,
+   "sign_complemented": true,
+   "paper_stress_reads_no_body": true,
+   "restorations_matched": true,
+   "tasks_are_declared": true,
+   "seconds": 65.4
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "arrangements": 30,
+   "differ": [],
+   "seconds": 65.6
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_phase_b_cpu_h": 10.71,
+   "forecast_with_headroom_cpu_h": 13.39,
+   "headroom": 1.25,
+   "cap": 14.0,
+   "futures": {
+    "preflight": 1,
+    "development": 1
+   },
+   "forecast_wall_h_10": 1.07,
+   "cpu_s_per_branch_update": 7.150858039529914e-05,
+   "worker_rss_mb": 351.9,
+   "forecasts_by_trim_cpu_h": {
+    "as drafted, one future": 10.71,
+    "sealed only k0, k1-corner, k7-corner, k8, one future": 8.15,
+    "as drafted, no lambda 2, one future": 9.24,
+    "sealed 4, no lambda 2, one future": 6.68,
+    "as drafted, two futures": 21.42,
+    "sealed only k0, k1-corner, k7-corner, k8, two futures": 16.29,
+    "as drafted, no lambda 2, two futures": 18.49,
+    "sealed 4, no lambda 2, two futures": 13.36
+   },
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 62893,
+    "TABLES.md": 12863
+   },
+   "parts_scored": 6,
+   "unavailable": [],
+   "out": "/e/scratch/e-aif-2026pg01-1345/cache/tmp/tmp0ukrd4pr",
+   "seconds": 5.9
+  }
+ }
+}

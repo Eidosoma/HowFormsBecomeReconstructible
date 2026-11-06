@@ -1,0 +1,84 @@
+{
+  "schema_version": "E123.interface.v1",
+  "scope": "Resource origins for the verified E014 development fixture; no decoder features are fitted",
+  "A_background": {
+    "source_array": "background",
+    "role": "Shared formation context available to every observer; not separately supplied to the native ordinary recipient",
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8",
+    "transform": "None",
+    "historical_target_specific": false
+  },
+  "A_factor": {
+    "source": "Public protocol configuration integer, factor 1 or 4",
+    "role": "Shared codec setting; not a retained historical array",
+    "native_dtype": null,
+    "native_representation": "JSON/Python integer",
+    "exported_dtype": "<i8",
+    "transform": "Exact integer serialization",
+    "lossy": false
+  },
+  "D": {
+    "source_array": "prototype",
+    "axes": ["candidate", "row", "column"],
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8",
+    "transform": "None",
+    "role": "Complete within-block evaluator dictionary, never native writer input"
+  },
+  "R": {
+    "checkpoint_source": "checkpoint_packets[checkpoint,own_slot,recipient,arm]",
+    "lifecycle_source": "incoming[generation-1,own_slot,recipient,arm]",
+    "native_dtype": "|u1",
+    "exported_dtype": "|u1",
+    "transform": "Lossless slice; no decoding performed in payload"
+  },
+  "B": {
+    "checkpoint_source": "checkpoint_read[checkpoint,own_slot,recipient,arm]",
+    "lifecycle_source": "generation_read[generation-1,own_slot,recipient,arm]",
+    "components": ["v", "ema", "ref"],
+    "instant": "After 300 read steps, before any subsequent writing",
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8",
+    "transform": "Lossless slice; learned reference remains part of body state"
+  },
+  "O": {
+    "checkpoint_source": null,
+    "lifecycle_source": "outgoing[generation-1,own_slot,recipient,arm]",
+    "native_dtype": "|u1",
+    "exported_dtype": "|u1",
+    "transform": "Lossless slice of actual emitted record"
+  },
+  "B_postwrite": {
+    "checkpoint_source": null,
+    "lifecycle_source": "generation_written[generation-1,own_slot,recipient,arm,:3]",
+    "instant": "After 1000 writing steps",
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8",
+    "transform": "Lossless slice"
+  },
+  "written_field": {
+    "source": "generation_written[generation-1,own_slot,recipient,arm,3]",
+    "role": "Field that produced O, inventoried separately from body; excluded from observer whitelist",
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8"
+  },
+  "birth": {
+    "source": "checkpoint_birth or generation_birth at [time,own_slot,recipient,0]",
+    "native_dtype": "<f8",
+    "exported_dtype": "<f8",
+    "role": "Retained recipient initial activity; excluded from initial observer whitelist"
+  },
+  "challenge_mask": {
+    "source": "checkpoint_mask or generation_mask at [time,own_slot,recipient]",
+    "native_dtype": "|b1",
+    "exported_dtype": "|b1",
+    "role": "Generated mask; challenge not applied to selected routes; excluded from observers"
+  },
+  "labels_and_grouping": {
+    "storage": "Separate adjoining JSON metadata; native count CSV for scoring only",
+    "historical_donor": "own/protected_own: f; foreign: (f+1)%4",
+    "native_target": "f in every route",
+    "allowed_as_decoder_inputs": false
+  }
+}

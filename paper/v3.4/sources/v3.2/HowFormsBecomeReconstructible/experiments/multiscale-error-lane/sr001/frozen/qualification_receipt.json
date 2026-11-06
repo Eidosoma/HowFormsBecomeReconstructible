@@ -1,0 +1,224 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "40dedbca47faee697fd669c8ce49ed11a0cb11f3ef6434deb4ed3c6462397ffa",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sr001/preflight",
+ "blocks": [
+  900940,
+  900942
+ ],
+ "tag": "mse-sr001",
+ "load_1min_at_check": 25.85,
+ "checked_utc": "2026-10-30T19:09:40Z",
+ "wall_s": 347.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "failed": [],
+   "tasks": 24,
+   "seconds": 0.0
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "li4",
+    "S8",
+    900940
+   ],
+   "seconds": 338.6
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": [
+    [
+     "li4",
+     "S8",
+     "np001.stage1",
+     [
+      true,
+      true,
+      true,
+      true
+     ]
+    ],
+    [
+     "li4",
+     "S8",
+     "np001.successor",
+     [
+      true,
+      true
+     ]
+    ],
+    [
+     "dw",
+     "S4s2",
+     "np001.stage1",
+     [
+      true,
+      true,
+      true,
+      true
+     ]
+    ],
+    [
+     "dw",
+     "S4s2",
+     "np001.successor",
+     [
+      true,
+      true
+     ]
+    ],
+    [
+     "li4",
+     "S4s2",
+     "np001.stage1",
+     [
+      true,
+      true,
+      true,
+      true
+     ]
+    ],
+    [
+     "li4",
+     "S4s2",
+     "np001.successor",
+     [
+      true,
+      true
+     ]
+    ],
+    [
+     "dw",
+     "S8",
+     "np001.stage1",
+     [
+      true,
+      true,
+      true,
+      true
+     ]
+    ],
+    [
+     "dw",
+     "S8",
+     "np001.successor",
+     [
+      true,
+      true
+     ]
+    ],
+    [
+     "li4",
+     "F0",
+     "lr004.run",
+     [
+      true,
+      true,
+      true,
+      true
+     ]
+    ]
+   ],
+   "seconds": 0.0
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "items": [
+    [
+     "li4",
+     "S8",
+     "body@0.003",
+     1,
+     0.0,
+     0.0,
+     true
+    ],
+    [
+     "li16n",
+     "S4",
+     "vote@0.01",
+     4,
+     0.0,
+     0.0,
+     true
+    ],
+    [
+     "dw",
+     "F0",
+     "parity@0.01",
+     6,
+     0.0,
+     0.0,
+     true
+    ],
+    [
+     "li4",
+     "S4s2",
+     "noread",
+     3,
+     0.0,
+     0.0,
+     true
+    ],
+    [
+     "li16n",
+     "S8",
+     "protected",
+     7,
+     0.0,
+     0.0,
+     true
+    ]
+   ],
+   "seconds": 4.0
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "checked": 200,
+   "failed": [],
+   "seconds": 0.4
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "failed": [],
+   "seconds": 0.4
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "failed": [],
+   "seconds": 0.8
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "generation": true,
+   "recipient": true,
+   "seconds": 1.5
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h_12_workers": 1.85,
+   "forecast_cpu_h": 19.34,
+   "longest_task_wall_s": 383.37,
+   "peak_rss_mb": 262.4,
+   "disk_need_gb": 1.27,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "returncode": 0,
+   "largest_file_bytes": 88254,
+   "files": {
+    "contrasts.csv": 19648,
+    "recipients.json": 37990,
+    "predictions_scored.json": 3917,
+    "TABLES.md": 27902,
+    "curves.json": 88254
+   },
+   "stderr_tail": "",
+   "seconds": 1.4
+  }
+ }
+}

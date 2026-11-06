@@ -1,0 +1,95 @@
+{
+  "all_outcomes_previously_exposed": true,
+  "axes": [
+    "block",
+    "regime",
+    "record",
+    "method",
+    "policy",
+    "future"
+  ],
+  "blocks": [
+    14000000,
+    14000001,
+    14000002,
+    14000003,
+    14000032,
+    14000033,
+    14000034,
+    14000035
+  ],
+  "categories": [
+    "intended",
+    "opposite",
+    "same_sign",
+    "tied",
+    "empty"
+  ],
+  "criteria": [
+    "nonempty",
+    "cost",
+    "anchored",
+    "uniform",
+    "agreement",
+    "stationary"
+  ],
+  "groups": [
+    "all",
+    "initial_pass",
+    "initial_fail",
+    "history:0",
+    "history:1",
+    "history:2",
+    "history:3"
+  ],
+  "methods": [
+    "G",
+    "M"
+  ],
+  "policies": [
+    "preserve",
+    "proposal",
+    "full_0",
+    "full_0.025",
+    "full_0.05",
+    "full_0.075",
+    "full_0.1",
+    "full_0.15",
+    "full_0.2",
+    "full_0.3",
+    "full_1",
+    "drop_cost",
+    "drop_anchored",
+    "drop_uniform",
+    "drop_agreement",
+    "drop_stationary",
+    "opposite_majorities",
+    "shape_anchored",
+    "shape_consensus",
+    "shape_consensus_0.05",
+    "shape_consensus_0.1",
+    "shape_consensus_0.2"
+  ],
+  "policy_selector_fields": [
+    "agreement",
+    "anchored",
+    "consensus_majorities",
+    "cost",
+    "nonempty",
+    "port_sums",
+    "shape",
+    "stationary",
+    "uniform"
+  ],
+  "population_confirmation": false,
+  "regimes": [
+    "original",
+    "missing10",
+    "signflip10",
+    "mixed_unmarked",
+    "opposite_history",
+    "balanced_aligned",
+    "balanced_wrong",
+    "erased"
+  ]
+}

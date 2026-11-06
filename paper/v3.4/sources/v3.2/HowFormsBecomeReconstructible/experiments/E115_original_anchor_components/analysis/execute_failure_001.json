@@ -1,0 +1,6 @@
+{
+  "action": "execute",
+  "automatic_restart": false,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E115_original_anchor_components/run.py\", line 228, in <module>\n    elif a.action=='execute':cap_cpus(a.workers);execute(a.mode,a.name,a.workers)\n                                                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E115_original_anchor_components/run.py\", line 82, in execute\n    status('RUNNING','source_verification');dump(run/'resources.json',inventory(workers));reg=data.registry(all_files=True)\n                                                                      ~~~~~~~~~^^^^^^^^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E084_magnitude_placement/workflow.py\", line 37, in inventory\n    assert workers is None or workers+capacity<=12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "utc": "2026-10-29T13:06:07.867005+00:00"
+}

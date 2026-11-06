@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-01",
+  "source": "Explicit user priority: E107 forecasting evidence and population, followed by equal-total-cost probe-depth comparison.",
+  "active": "Retained-cohort probe-depth development launched: 80 blocks, 638 cases, six workers, 47-minute conservative forecast, one-hour hard cap; detached and unpolled. E107 complete; IA001 review queued.",
+  "order": [
+    {
+      "priority": 1,
+      "task": "E107 saved-evidence reporting and target population",
+      "status": "COMPLETE_VERIFIED",
+      "requirements": [
+        "Recover sealed forecasts, 2552 individual future outcomes, acquisition and selection manifests before any new cohort.",
+        "Keep matched and independent regimes separate.",
+        "Preserve original equal-block equal-current-class primary estimand and verdict.",
+        "Report failing/passing classes, own-acquisition population expansion, absolute Brier, terminal prevalence, fixed-development constant skill, calibration, and paired source-block uncertainty.",
+        "Account for task-orientation balancing and ineligible blocks; do not infer absent populations.",
+        "Current-expression prevalence differs from terminal-success prevalence. Never import TT008 failure prevalence for reweighting.",
+        "Label extensions retrospective; no refitting or recalibration of sealed forecasts.",
+        "Deliver compact CSV/JSON, reproducible analysis, provenance, and manuscript handoff in git."
+      ],
+      "package": "rdt_fresh_equal_read_reporting_v0_1",
+      "closeout_sha256": "c8f07f6be55b52078a76d27613f99aed028fca692eed64f3d4cfc99c74172901"
+    },
+    {
+      "priority": 2,
+      "task": "Equal-total-cost zero-, one-, two-rewrite probe comparison",
+      "status": "POST_HOC_DEVELOPMENT_LAUNCHED_AFTER_VERIFIED_COST_QUALIFICATION",
+      "requirements": [
+        "Charge writing, body updates, terminal reads and feature computation; reduce branch counts for deeper probes as needed.",
+        "Freeze models and analysis before fresh confirmation.",
+        "Report by current class and cue-noise regime; probe-depth benefit is a hypothesis, not implied by contraction.",
+        "Preserve existing frozen/running protocols; target one hour where sufficient, never exceed the authorized six-hour ceiling."
+      ],
+      "package": "rdt_probe_depth_cost_v0_1/amendment_v2",
+      "technical_freeze_sha256": "e037d22231e8e3dc1366fb7c84ec4a6dd81fc6e7d6b20784d8b4c8524ac2111c",
+      "job": "rdt_probe_depth_cost_v0_1/amendment_v2/jobs/technical_v2",
+      "launch_utc": "2026-11-01T15:43:59.759002+00:00",
+      "hard_wall_seconds": 3600,
+      "scientific_comparison_launched": true,
+      "automatic_successor": false,
+      "next_gate": "Let this bounded retained-data run finish without assistant polling. Verify completion, saved-model and score audits, source/output hashes, and all class/regime results; commit compact predictions, costs, deployment candidates and manuscript handoff. No automatic fresh confirmation.",
+      "previous_failed_attempt": {
+        "package": "rdt_probe_depth_cost_v0_1",
+        "technical_freeze_sha256": "52d8cd3f8a0add2364c3f90d48b9c8e388b1286d49f472419548cb737f13de35",
+        "job": "rdt_probe_depth_cost_v0_1/jobs/technical_v1",
+        "launch_utc": "2026-11-01T14:51:49Z",
+        "hard_wall_seconds": 1800,
+        "status": "FAILED_BEFORE_FIRST_COMPLETED_MEASUREMENT",
+        "error": "ff_common has no attribute audit",
+        "failure_preserved": "rdt_probe_depth_cost_v0_1/jobs/technical_v1/run/FAILURE.json"
+      },
+      "conservative_runtime_forecast_seconds": 2509.9017570866276,
+      "semantic_tests_passed": 7,
+      "native_integration_smoke_cases_passed": 12,
+      "technical_report": "rdt_probe_depth_cost_v0_1/reporting_v2/results_v1/REPORT.txt",
+      "technical_closeout_sha256": "fd5ac5a9cebc140d826641e920a9ece2d1b3c4d85c049578fe0b1146839a175b",
+      "technical_elapsed_wall_seconds": 1048.4447535888758,
+      "technical_maximum_stratum_cpu_ratio": 1.0409633593757892,
+      "fresh_confirmation_launched": false,
+      "technical_model_fits": 0,
+      "development": {
+        "scope": "POST_HOC_RETAINED_DEVELOPMENT",
+        "code_commit": "5b34cd432f85b4146c2272422d8d966fd296c69c",
+        "freeze_sha256": "abfc1818085598ba2e7247dad7ecda68c5c103ab620b5bb5124ab665e22ade72",
+        "job": "rdt_probe_depth_development_v0_1/jobs/development_v1",
+        "launch_utc": "2026-11-02T11:37:26.267991+00:00",
+        "pid": 3315733,
+        "workers": 6,
+        "conservative_forecast_seconds": 2824.2438904650694,
+        "hard_wall_seconds": 3600,
+        "source_blocks": 80,
+        "record_regime_cases": 638,
+        "fresh_confirmation_launched": false,
+        "automatic_retry": false,
+        "automatic_successor": false,
+        "launch_receipt": "rdt_probe_depth_development_v0_1/DEVELOPMENT_LAUNCH_2026_11_02.json",
+        "qualification_tests_passed": 9
+      }
+    },
+    {
+      "priority": 3,
+      "task": "Common historical-identity decoder reporting and information-source interpretation",
+      "status": "QUEUED_AFTER_E107_AND_EQUAL_TOTAL_COST_PROBES",
+      "request": "rdt_information_source_reporting_v0_1/REQUEST.txt",
+      "requirements": [
+        "Review retained TT021/NL003 decoder freezes and shared compact interface before fitting.",
+        "Keep bytes, predictive historical information, and native reconstruction separate.",
+        "Inventory oracle label access in forecasting/guards; no causal/additive information allocation.",
+        "Preserve manuscript hold, current frozen/running protocols, protected outcomes, and separate forecasting/pruning/specificity tracks.",
+        "No new simulations or external lane messages authorized by this queue item."
+      ],
+      "ready_reviews": [
+        {
+          "analysis": "IA001",
+          "assay": "NL003",
+          "status": "DRAFT_AWAITING_THEORY_REVIEW_BEFORE_FITTING",
+          "intake": "rdt_information_source_reporting_v0_1/IA001_REVIEW_INTAKE_2026_11_01.json",
+          "commit": "ac71f83a15183b22829533ffc320cd776e5f23b2",
+          "checks": [
+            "Whole-block grouping, including both units and all regions",
+            "Decoder input leakage and code-reading trace control",
+            "Whole-block uncertainty, probability-floor sensitivity, shuffled-label controls"
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_duration_study": {
+    "status": "FORECASTS_FROZEN_UNEVALUATED",
+    "package": "rdt_pruning_duration_forecast_v0_1",
+    "freeze_sha256": "a163973f0cc155380b53a1249d0ad4bb3265165c95341ccbff017b67ec14cbad",
+    "rule": "Use shared E119; no duplicate simulations or automated polling. Scientific outcomes remain unopened."
+  },
+  "other_theory_leads": "DEFERRED",
+  "updated_utc": "2026-11-02T11:38:22.370438+00:00"
+}

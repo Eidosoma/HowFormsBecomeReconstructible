@@ -1,0 +1,661 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "5d85402c46b31442b4bd8aecfee8154239f5535bbc7113e45915c517920ee586",
+ "computed_utc": "2026-10-30T20:50:55Z",
+ "thresholds": {
+  "N1": {
+   "repair": 0.9,
+   "overwrite": 0.0
+  },
+  "N2": {
+   "repair": 0.3,
+   "keep": 0.6
+  },
+  "N3": {
+   "cost": 0.05
+  },
+  "N4": {
+   "cells": 0.3,
+   "regions": 0.92
+  },
+  "N5": {
+   "protect": 0.05
+  },
+  "N6": {
+   "erase": 0.03
+  },
+  "N7": {
+   "repair": 0.5,
+   "overwrite": 0.0
+  },
+  "N8": {
+   "contrast": 0.5
+  },
+  "N9": {
+   "impose": 0.0
+  },
+  "N10": {
+   "tissue": 0.9,
+   "successor": 0.4
+  },
+  "N11": {
+   "successor": 0.5
+  },
+  "N12": {
+   "successor": 0.0
+  },
+  "N13": {
+   "successor": 0.04
+  },
+  "N14": {
+   "cells": 0.3
+  },
+  "N15": {
+   "crosses": 0.5
+  },
+  "N16": {
+   "crosses": 0.02
+  },
+  "N17": {
+   "imposed": 0.0,
+   "against_l1": 0.3
+  },
+  "N18": {
+   "contrast": 0.5
+  },
+  "N19": {
+   "erosion": 0.05
+  }
+ },
+ "parts": [
+  {
+   "stmt": "N1",
+   "name": "N1 none: ev(copy-k0.75/R), record",
+   "threshold": 0.9,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N1",
+   "name": "N1 none: spec(foreign-k0.75/none), record",
+   "threshold": 0.0,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 none: ev(copy-k0.5/R), record",
+   "threshold": 0.3,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.5/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 none: spec(foreign-k0.5/none), record",
+   "threshold": 0.6,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.5/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N3",
+   "name": "N3 none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, record",
+   "threshold": 0.05,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/min_reg_ok_A",
+     "copy-k0.75/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/min_reg_ok_A",
+     "own-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N4",
+   "name": "N4 dw: min_cell(off/none), record",
+   "threshold": 0.3,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/min_cell_ok_A",
+     "off/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N4",
+   "name": "N4 dw: min_reg(off/none), record",
+   "threshold": 0.92,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/min_reg_ok_A",
+     "off/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N5",
+   "name": "N5 dw: min_reg(copy-k0.25) - min_reg(off), intact, record",
+   "threshold": 0.05,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/min_reg_ok_A",
+     "copy-k0.25/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/min_reg_ok_A",
+     "off/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N6",
+   "name": "N6 dw: spec(off) - spec(foreign-k0.25), intact, record",
+   "threshold": 0.03,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "off/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.25/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N7",
+   "name": "N7 dw: ev(copy-k0.75/R), record",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N7",
+   "name": "N7 dw: spec(foreign-k0.75/none), record",
+   "threshold": 0.0,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N8",
+   "name": "N8 dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), record",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/k_spec_reg",
+     "copy-k0.75/K"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/k_spec_reg",
+     "foreign-k0.75/K"
+    ]
+   ]
+  },
+  {
+   "stmt": "N9",
+   "name": "N9 dw: k_spec(foreign-k0.75/K), record",
+   "threshold": 0.0,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/k_spec_reg",
+     "foreign-k0.75/K"
+    ]
+   ]
+  },
+  {
+   "stmt": "N10",
+   "name": "N10 none: ev(copy-k0.75/R), record",
+   "threshold": 0.9,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N10",
+   "name": "N10 none: ev(copy-k0.75/R), recipient",
+   "threshold": 0.4,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "s/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N11",
+   "name": "N11 dw: ev(copy-k0.75/R), recipient",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "s/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N12",
+   "name": "N12 dw: spec(foreign-k0.75/none), recipient",
+   "threshold": 0.0,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "s/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N13",
+   "name": "N13 dw: min_reg(copy-k0.25) - min_reg(off), intact, recipient",
+   "threshold": 0.04,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "s/min_reg_ok_A",
+     "copy-k0.25/none"
+    ],
+    [
+     -1,
+     "dw",
+     "s/min_reg_ok_A",
+     "off/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N14",
+   "name": "N14 dw: min_cell(acqA), recipient",
+   "threshold": 0.3,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "s/min_cell_ok_A",
+     "acqA"
+    ]
+   ]
+  },
+  {
+   "stmt": "N15",
+   "name": "N15 none: ev(copy-k0.75/R), coded - L1-only recipient",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "c/ev_reg_ok",
+     "copy-k0.75/R"
+    ],
+    [
+     -1,
+     "none",
+     "s/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "N16",
+   "name": "N16 dw: min_reg(copy-k0.25) - min_reg(off), intact, coded recipient",
+   "threshold": 0.02,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "c/min_reg_ok_A",
+     "copy-k0.25/none"
+    ],
+    [
+     -1,
+     "dw",
+     "c/min_reg_ok_A",
+     "off/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N17",
+   "name": "N17 none: spec(foreign-k0.75/none), coded recipient",
+   "threshold": 0.0,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "c/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N17",
+   "name": "N17 none: spec(foreign-k0.75/none), L1-only - coded recipient",
+   "threshold": 0.3,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "s/spec_reg",
+     "foreign-k0.75/none"
+    ],
+    [
+     -1,
+     "none",
+     "c/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "N18",
+   "name": "N18 dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), coded recipient",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "c/k_spec_reg",
+     "copy-k0.75/K"
+    ],
+    [
+     -1,
+     "dw",
+     "c/k_spec_reg",
+     "foreign-k0.75/K"
+    ]
+   ]
+  },
+  {
+   "stmt": "N19",
+   "name": "N19 none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, coded recipient",
+   "threshold": 0.05,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "c/min_reg_ok_A",
+     "copy-k0.75/none"
+    ],
+    [
+     -1,
+     "none",
+     "c/min_reg_ok_A",
+     "own-k0.75/none"
+    ]
+   ]
+  }
+ ],
+ "statements": [
+  {
+   "id": "N1",
+   "kind": "gain decides, not truth, with acquired references",
+   "claim": "In NL001's stores with no body, a faithful copy of the acquired coarse reference at 0.75 x KC repairs at least 0.9 of four coherently flipped regions, while another history's reference at the same gain leaves the intact tissue's differing regions at most 0.0 toward its own history (specificity), on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: ev(copy-k0.75/R), record >= 0.9; none: spec(foreign-k0.75/none), record <= 0, else FAILS",
+   "thresholds": {
+    "repair": 0.9,
+    "overwrite": 0.0
+   }
+  },
+  {
+   "id": "N2",
+   "kind": "a weak descending gain neither repairs nor overwrites",
+   "claim": "In the stores with no body, at 0.5 x KC the faithful copy repairs at most 0.3 of the flipped regions, and another history's reference leaves the intact tissue's specificity at least 0.6, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: ev(copy-k0.5/R), record <= 0.3; none: spec(foreign-k0.5/none), record >= 0.6, else FAILS",
+   "thresholds": {
+    "repair": 0.3,
+    "keep": 0.6
+   }
+  },
+  {
+   "id": "N3",
+   "kind": "a reference read from the developing body carries the body's erosion",
+   "claim": "In the stores with no body, at 0.75 x KC the faithful copy keeps at least 0.05 more of A's minority regions than the reference read from A's body at the end of acquisition, intact tissue, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, record >= 0.05, else FAILS",
+   "thresholds": {
+    "cost": 0.05
+   }
+  },
+  {
+   "id": "N4",
+   "kind": "a developing body erodes the acquired detail",
+   "claim": "With the body, no descending correction and no damage, the record keeps at most 0.3 of A's minority cells and at most 0.92 of A's minority regions after 2,000 updates, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: min_cell(off/none), record <= 0.3; dw: min_reg(off/none), record <= 0.92, else FAILS",
+   "thresholds": {
+    "cells": 0.3,
+    "regions": 0.92
+   }
+  },
+  {
+   "id": "N5",
+   "kind": "a faithful reference protects history against the body at a weak gain",
+   "claim": "With the body and no damage, the faithful copy at 0.25 x KC keeps at least 0.05 more of A's minority regions than no descending correction, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: min_reg(copy-k0.25) - min_reg(off), intact, record >= 0.05, else FAILS",
+   "thresholds": {
+    "protect": 0.05
+   }
+  },
+  {
+   "id": "N6",
+   "kind": "a wrong reference erodes history at the same weak gain",
+   "claim": "With the body and no damage, another history's reference at 0.25 x KC lowers the record's specificity by at least 0.03 against no descending correction, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: spec(off) - spec(foreign-k0.25), intact, record >= 0.03, else FAILS",
+   "thresholds": {
+    "erase": 0.03
+   }
+  },
+  {
+   "id": "N7",
+   "kind": "in the body, repairing coherent damage needs a gain at which a wrong reference overwrites",
+   "claim": "With the body, the faithful copy at 0.75 x KC repairs at least 0.5 of four coherently flipped regions, while another history's reference at the same gain leaves the intact record's specificity at most 0.0, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: ev(copy-k0.75/R), record >= 0.5; dw: spec(foreign-k0.75/none), record <= 0, else FAILS",
+   "thresholds": {
+    "repair": 0.5,
+    "overwrite": 0.0
+   }
+  },
+  {
+   "id": "N8",
+   "kind": "after a kill, the same pathway fills the square toward whichever history its reference holds",
+   "claim": "With the body, after a 2 x 2 square of regions holding one of A's minority regions is killed (cells, bonds and body, the codes kept), the killed square's specificity (its regions where A and B differ: the share at A's sign less the share at B's) is at least 0.5 higher under the faithful copy at 0.75 x KC than under another history's reference at the same gain, paired within case, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), record >= 0.5, else FAILS",
+   "thresholds": {
+    "contrast": 0.5
+   }
+  },
+  {
+   "id": "N9",
+   "kind": "a wrong reference fills a killed square with its own history",
+   "claim": "With the body, after the same kill, another history's reference at 0.75 x KC leaves the killed square's differing regions at most 0.0 toward A's history (specificity), on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: k_spec(foreign-k0.75/K), record <= 0, else FAILS",
+   "thresholds": {
+    "impose": 0.0
+   }
+  },
+  {
+   "id": "N10",
+   "kind": "in the stores, the successor re-expresses the relations, not the repaired state",
+   "claim": "In the stores with no body, the faithful copy at 0.75 x KC repairs at least 0.9 of the flipped regions in the record, yet a fresh body reading that record keeps at most 0.4 of them, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: ev(copy-k0.75/R), record >= 0.9; none: ev(copy-k0.75/R), recipient <= 0.4, else FAILS",
+   "thresholds": {
+    "tissue": 0.9,
+    "successor": 0.4
+   }
+  },
+  {
+   "id": "N11",
+   "kind": "in the body, relearning carries the repair across the successor boundary",
+   "claim": "With the body, a fresh body reading the record repaired by the faithful copy at 0.75 x KC keeps at least 0.5 of the flipped regions, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: ev(copy-k0.75/R), recipient >= 0.5, else FAILS",
+   "thresholds": {
+    "successor": 0.5
+   }
+  },
+  {
+   "id": "N12",
+   "kind": "a wrong reference's overwrite crosses the successor boundary",
+   "claim": "With the body, a fresh body reading the record left by another history's reference at 0.75 x KC (no damage) has specificity at most 0.0, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: spec(foreign-k0.75/none), recipient <= 0, else FAILS",
+   "thresholds": {
+    "successor": 0.0
+   }
+  },
+  {
+   "id": "N13",
+   "kind": "the weak-gain protection does not cross the successor boundary",
+   "claim": "With the body and no damage, a fresh body reading the record protected by the faithful copy at 0.25 x KC keeps at most 0.04 more of A's minority regions than one reading the record left with no descending correction, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: min_reg(copy-k0.25) - min_reg(off), intact, recipient <= 0.04, else FAILS",
+   "thresholds": {
+    "successor": 0.04
+   }
+  },
+  {
+   "id": "N14",
+   "kind": "the finest scale cannot cross into a developing body",
+   "claim": "A fresh body reading A's acquired record itself, protected, keeps at most 0.3 of A's minority cells, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: min_cell(acqA), recipient <= 0.3, else FAILS",
+   "thresholds": {
+    "cells": 0.3
+   }
+  },
+  {
+   "id": "N15",
+   "kind": "in the stores, the copy's repair crosses when the codes cross",
+   "claim": "In the stores with no body, a fresh body reading the record repaired by the faithful copy at 0.75 x KC together with the copy's codes keeps at least 0.5 more of the four flipped regions than one reading the record alone, paired within case, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: ev(copy-k0.75/R), coded - L1-only recipient >= 0.5, else FAILS",
+   "thresholds": {
+    "crosses": 0.5
+   }
+  },
+  {
+   "id": "N16",
+   "kind": "in the body, the weak-gain protection crosses in part when the codes cross",
+   "claim": "With the body and no damage, a fresh body reading the record protected by the faithful copy at 0.25 x KC together with its codes keeps at least 0.02 more of A's minority regions than one reading the record left with no descending correction (which passes no codes), on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: min_reg(copy-k0.25) - min_reg(off), intact, coded recipient >= 0.02, else FAILS",
+   "thresholds": {
+    "crosses": 0.02
+   }
+  },
+  {
+   "id": "N17",
+   "kind": "in the stores, a foreign code crossing imposes the other history where the record alone gives back A's",
+   "claim": "In the stores with no body and no damage, a fresh body reading the record left by another history's reference at 0.75 x KC together with that reference's codes has specificity at most 0.0, and at least 0.3 lower than one reading the record alone, paired within case, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: spec(foreign-k0.75/none), coded recipient <= 0; none: spec(foreign-k0.75/none), L1-only - coded recipient >= 0.3, else FAILS",
+   "thresholds": {
+    "imposed": 0.0,
+    "against_l1": 0.3
+   }
+  },
+  {
+   "id": "N18",
+   "kind": "after a kill, the coded successor fills the square toward whichever history its codes hold",
+   "claim": "With the body, after the kill, a fresh body reading the record together with the faithful copy's codes at 0.75 x KC has the killed square's specificity at least 0.5 higher than one reading the record with another history's codes at the same gain, paired within case, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), coded recipient >= 0.5, else FAILS",
+   "thresholds": {
+    "contrast": 0.5
+   }
+  },
+  {
+   "id": "N19",
+   "kind": "codes read from the developing body carry its erosion across the successor boundary",
+   "claim": "In the stores with no body and no damage, a fresh body reading the record with the faithful copy's codes at 0.75 x KC keeps at least 0.05 more of A's minority regions than one reading the record with the codes read from A's body at the same gain, on average",
+   "rule": "HOLDS if, on the mean over the development blocks at the last read, none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, coded recipient >= 0.05, else FAILS",
+   "thresholds": {
+    "erosion": 0.05
+   }
+  }
+ ]
+}

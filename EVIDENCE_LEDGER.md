@@ -1,3 +1,5 @@
+> **Current edition: v3.4.** See the [current source](paper/v3.4/EVIDENCE_LEDGER.md). The dated document below is the preserved original review export.
+
 # Evidence ledger - working manuscript v0.20
 
 **v0.20 update, 12 October 2026:** E83–E89 add fresh serial repair, capture timing, completed cellular timing, a Hopfield confirmation, fresh-founder recipient matching, repair-budget tests and exact-state rescue. E77's previously pending TT015 replay is now complete. The [new selection](reproducibility/AVAILABILITY.md#omitted-sources) freezes 150 records; original campaign verdicts remain unchanged. Hopfield, reset-robustness, active-form and FEP work continue beyond this selection.

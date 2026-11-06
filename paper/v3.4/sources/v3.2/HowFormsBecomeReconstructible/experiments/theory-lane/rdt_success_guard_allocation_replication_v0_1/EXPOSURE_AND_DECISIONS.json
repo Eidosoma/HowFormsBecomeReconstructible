@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-28T13:39:20.168371+00:00",
+  "status": "PRE_SCIENTIFIC_ACQUISITION",
+  "development_outcomes_exposed": true,
+  "hypothesis_outcome_informed": true,
+  "development_blocks": 21,
+  "development_packets": 84,
+  "new_target_acquisitions_observed": 0,
+  "new_target_futures_observed": 0,
+  "namespace": "RDT_success_guard_allocation_replication_v0_1",
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four packets per block, then across28 fresh acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_matched_random"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "One paired acquisition-block contrast: current-success guard minus matched-random under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, outcome-driven extension, substitution or equivalence claim.",
+    "degrees_of_freedom": 27,
+    "critical_two_sided95": 2.0518305164802846,
+    "critical_one_sided95": 1.7032884457221265,
+    "inference": "28 fresh acquisition blocks are the uncertainty unit. Quota coupling stays within each block. Packets, reads and arms are not independent replicates. Approximate paired t inference; new founders from the same declared acquisition/selection procedure."
+  },
+  "choices": [
+    "Same independent-noise primary and four policies. Matched-noise interaction not in scope.",
+    "N28 priced for roughly one hour and approximate81% plug-in power if the exposed effect repeats; no power guarantee.",
+    "First28 eligible blocks, attempt cap35; all boundary selections sealed before any future read.",
+    "No new per-packet fitted benefit estimator; no RDT-specific claim; older unresolved/negative findings unchanged.",
+    "Total5400-second hard cap includes new full native qualification; no automatic extension, retry, polling or successor."
+  ],
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ]
+}

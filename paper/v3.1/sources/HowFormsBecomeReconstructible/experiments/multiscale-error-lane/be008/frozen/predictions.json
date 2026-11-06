@@ -1,0 +1,1009 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "eea5a41438d81fb3add62efb260530f795c342999057924cac60eb5da4babb07",
+ "computed_utc": "2026-10-29T22:13:39Z",
+ "thresholds": {
+  "N1": {
+   "sensors": 0.1,
+   "loss": 0.02
+  },
+  "N2": {
+   "intact": 0.05,
+   "early": 0.02,
+   "late": 0.03,
+   "repaired": 0.1
+  },
+  "N3": {
+   "dose": 0.1
+  },
+  "N4": {
+   "interaction": 0.025,
+   "same": 0.02
+  },
+  "N5": {
+   "quiet": 0.05,
+   "intact": 0.04
+  },
+  "N6": {
+   "sheet": 0.05,
+   "same": 0.01
+  }
+ },
+ "parts": [
+  {
+   "stmt": "N1",
+   "name": "N1 sensors(AL, 1) - sensors(AL-n, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N1",
+   "name": "N1 loss(AL, 1) - loss(AL-n, 1), equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 sensors(AL-n, 0.5) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 sensors(AL-n, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 loss(AL-n, 0.5), equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 loss(AL-n, 1), equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 loss(AL-n, 2), equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.03,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N2",
+   "name": "N2 sensors(AL-n, 2) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N3",
+   "name": "N3 sensors(AL, 1) - sensors(AL-m, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N4",
+   "name": "N4 (sensors(SL-m, 1) - sensors(SL, 1)) - (sensors(AL-m, 1) - sensors(AL-n, 1)) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.025,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N4",
+   "name": "N4 sensors(SL, 1) - sensors(AL-n, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "N5",
+   "name": "N5 quiet(AL, 1000) - quiet(AL-n, 1000) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N5",
+   "name": "N5 quiet(AL-n, 1000) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.04,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N5",
+   "name": "N5 quiet(SL, 1000) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.04,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "N6",
+   "name": "N6 sheet(SL, 4000) - sheet(SL-m, 4000) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "N6",
+   "name": "N6 sheet(AL-n, 4000) - sheet(AL-m, 4000) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.01,
+   "sense": "abs",
+   "pooled": true
+  }
+ ],
+ "statements": [
+  {
+   "id": "N1",
+   "kind": "with the other bonds relearning fast, the lane's bond noise erodes the evidence",
+   "claim": "With the arbiter at 3e-4, every other bond at the lane's 0.01 and a commitment of 15,000 updates, the lane's bond noise (1e-3) has repaired at least 0.1 more of the damaged patch's anchored cells by T* (6.5 h) than noise scaled to 3e-5, and a signal arriving at T* loses at least 0.02 more of a 4 x 4 memory repair against a prompt one, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, the share of the patch's anchored cells right at the delayed signal's first update at m = 1 is larger for dial-AL than for dial-AL-n by >= 0.1, and loss(AL, 1) - loss(AL-n, 1) >= 0.02, where loss(c, m) is dial-c's r_in in memory4@0 at 4,000 less its r_in in memory4@round(m T*(3e-4)) 4,000 updates after that signal's start, else FAILS",
+   "thresholds": {
+    "sensors": 0.1,
+    "loss": 0.02
+   }
+  },
+  {
+   "id": "N2",
+   "kind": "with the noise scaled alone, the arbiter's clock returns",
+   "claim": "With every other bond still at the lane's 0.01 but the bond noise scaled to 3e-5, at most 5 per cent of the patch's anchored cells are repaired by half of T* or T*, a signal then loses no more than 0.02 against a prompt one, and one at twice T* loses at least 0.03, with at least 10 per cent of the anchored cells repaired by then, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, for dial-AL-n the share of the patch's anchored cells right at the delayed signal's first update is <= 0.05 at m = 0.5 and 1 and >= 0.1 at m = 2, and loss(AL-n, m) is <= 0.02 at m = 0.5 and 1 and >= 0.03 at m = 2, else FAILS",
+   "thresholds": {
+    "intact": 0.05,
+    "early": 0.02,
+    "late": 0.03,
+    "repaired": 0.1
+   }
+  },
+  {
+   "id": "N3",
+   "kind": "the erosion grows with the noise",
+   "claim": "At the lane's relearning rate, the lane's bond noise (1e-3) has repaired at least 0.1 more of the patch's anchored cells by T* than a tenth of it (1e-4), on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, the share of the patch's anchored cells right at the delayed signal's first update at m = 1 is larger for dial-AL than for dial-AL-m by >= 0.1, else FAILS",
+   "thresholds": {
+    "dose": 0.1
+   }
+  },
+  {
+   "id": "N4",
+   "kind": "slow relearning elsewhere lets moderate noise erode the evidence",
+   "claim": "What raising the bond noise from 3e-5 to 1e-4 adds to the anchored cells repaired by T* is at least 0.025 larger with every other bond relearning at 3e-4 than at 0.01, while at 3e-5 the two relearning rates leave the same share repaired within 0.02, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, at m = 1, (sensors(SL-m) - sensors(SL)) - (sensors(AL-m) - sensors(AL-n)) >= 0.025 and |sensors(SL) - sensors(AL-n)| <= 0.02, where sensors(c) is the share of the patch's anchored cells right at dial-c's delayed signal's first update, else FAILS",
+   "thresholds": {
+    "interaction": 0.025,
+    "same": 0.02
+   }
+  },
+  {
+   "id": "N5",
+   "kind": "without a signal, before T* only the lane's noise erodes the evidence",
+   "claim": "With no signal, by 1,000 updates (3.3 h) the lane's bond noise has repaired at least 0.05 more of the patch's anchored cells than scaled noise, and with scaled noise, at either relearning rate, at most 4 per cent are repaired, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs in memory4@0 at t = 1,000, the share of the patch's anchored cells right under never-AL exceeds never-AL-n's by >= 0.05, and is <= 0.04 under never-AL-n and under never-SL, else FAILS",
+   "thresholds": {
+    "quiet": 0.05,
+    "intact": 0.04
+   }
+  },
+  {
+   "id": "N6",
+   "kind": "moderate noise with slow relearning degrades the whole record",
+   "claim": "With no signal, at 4,000 updates the sheet's record under bond noise 1e-4 is at least 0.05 worse than under 3e-5 when every other bond relearns at 3e-4, and within 0.01 of it when they relearn at 0.01, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs in memory4@0 at t = 4,000, never-SL's r_all exceeds never-SL-m's by >= 0.05, and |never-AL-n's r_all - never-AL-m's| <= 0.01, else FAILS",
+   "thresholds": {
+    "sheet": 0.05,
+    "same": 0.01
+   }
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "1d13005e4ee323a7bf8e213891fbb35d184653952daf95103efbbdcf1ab8c915",
+ "computed_utc": "2026-10-31T14:17:48Z",
+ "best": "vote",
+ "thresholds": {
+  "D1": 1e-12,
+  "D2": -0.03,
+  "D3m": 0.7,
+  "D3c": 0.7,
+  "D3n": 0.5,
+  "D4": -0.005,
+  "D5c": 0.01,
+  "D5n": 0.002,
+  "D6c": 0.4,
+  "D6u": 0.02,
+  "D7": 0.0,
+  "D7c": -0.005,
+  "D8n": 0.005,
+  "D8m": -0.1
+ },
+ "parts": [
+  {
+   "stmt": "D1",
+   "name": "D1 max over arms and cases of abs(u(new) + u(old) - 1), change@0 and change@1",
+   "sense": "le",
+   "key": "D1",
+   "threshold": 1e-12
+  },
+  {
+   "stmt": "D2",
+   "name": "D2 U(det) - U(BEST)",
+   "sense": "ge",
+   "key": "D2",
+   "threshold": -0.03
+  },
+  {
+   "stmt": "D3",
+   "name": "D3 p(det fires on the patch | memory)",
+   "sense": "ge",
+   "key": "D3m",
+   "threshold": 0.7
+  },
+  {
+   "stmt": "D3",
+   "name": "D3 p(det fires on the patch | correlated)",
+   "sense": "ge",
+   "key": "D3c",
+   "threshold": 0.7
+  },
+  {
+   "stmt": "D3",
+   "name": "D3 p(det fires at all | none)",
+   "sense": "le",
+   "key": "D3n",
+   "threshold": 0.5
+  },
+  {
+   "stmt": "D4",
+   "name": "D4 U(det) - U_pred(det)",
+   "sense": "ge",
+   "key": "D4",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "D5",
+   "name": "D5 sheet cost under scattered cue damage: r_all(rest) - r_all(det), cue@0",
+   "sense": "le",
+   "key": "D5c",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "D5",
+   "name": "D5 sheet cost with no event: r_all(rest) - r_all(det), none@0",
+   "sense": "le",
+   "key": "D5n",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "D6",
+   "name": "D6 p(fires on the patch | correlated): det - det-v",
+   "sense": "ge",
+   "key": "D6c",
+   "threshold": 0.4
+  },
+  {
+   "stmt": "D6",
+   "name": "D6 U(det) - U(det-v)",
+   "sense": "ge",
+   "key": "D6u",
+   "threshold": 0.02
+  },
+  {
+   "stmt": "D7",
+   "name": "D7 (U(det) - U(rest)) - (U_ctrl(0.9, 0.1) - U(rest)) / 2",
+   "sense": "ge",
+   "key": "D7",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "D7",
+   "name": "D7 U(det) - U_ceiling",
+   "sense": "ge",
+   "key": "D7c",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "D8",
+   "name": "D8 sheet cost under misread cues with no event: r_all(rest) - r_all(det), none@1",
+   "sense": "le",
+   "key": "D8n",
+   "threshold": 0.005
+  },
+  {
+   "stmt": "D8",
+   "name": "D8 u(det, memory) misread - exact",
+   "sense": "le",
+   "key": "D8m",
+   "threshold": -0.1
+  }
+ ],
+ "statements": [
+  {
+   "id": "D1",
+   "claim": "on the information-limit pair the tissue's detector cannot win: its controller ties like every arm",
+   "rule": "HOLDS if, in change@0 and change@1, the largest abs(u(arm, change/new) + u(arm, change/old) - 1) over every arm (the detectors' included) and case is at most 1e-12, else FAILS (derived identity)"
+  },
+  {
+   "id": "D2",
+   "claim": "the controller driven by the tissue's own detector is not worse than the best fixed policy by more than 0.03 (non-inferiority; whether it beats the vote is the development's 95% interval, reported, and the confirmation's test)",
+   "rule": "HOLDS if U(det) - U(BEST) >= -0.03, else FAILS"
+  },
+  {
+   "id": "D3",
+   "claim": "the detector finds memory and correlated damage on the patch and stays quiet with no event",
+   "rule": "HOLDS if det fires with its footprint on the patch in at least 0.7 of memory-damage lineage-cases and 0.7 of correlated-damage ones, and fires at all in at most 0.5 of no-event ones, else FAILS"
+  },
+  {
+   "id": "D4",
+   "claim": "making the signal costs little: the declared signal's exact value at det's own firing predicts U(det) from below",
+   "rule": "HOLDS if U(det) - U_pred(det) >= -0.005, else FAILS (U_pred: per lineage-case and scoring, fire x u(dial) + (1 - fire) x u(rest))"
+  },
+  {
+   "id": "D5",
+   "claim": "the tissue's false alarms cost the sheet within AR001C's harm bound",
+   "rule": "HOLDS if r_all(rest) - r_all(det) is at most 0.01 under scattered cue damage (cue@0) and at most 0.002 with no event (none@0), else FAILS"
+  },
+  {
+   "id": "D6",
+   "claim": "a detector built from the copies mostly misses an error they share; the independent cue's sees it and is worth more",
+   "rule": "HOLDS if, in correlated damage, det's rate of firing with its footprint on the patch exceeds det-v's by at least 0.4, and U(det) - U(det-v) >= 0.02, else FAILS"
+  },
+  {
+   "id": "D7",
+   "claim": "the tissue's signal keeps at least half of the declared signal's worth at AR001C's confirmed point, and reaches the ceiling of a signal sent promptly over the patch",
+   "rule": "HOLDS if (U(det) - U(rest)) - (U_ctrl(0.9, 0.1) - U(rest)) / 2 >= 0.0 and U(det) - U_ceiling >= -0.005, else FAILS"
+  },
+  {
+   "id": "D8",
+   "claim": "misread cues cost the detector: false alarms with no event, and lost hits in memory damage",
+   "rule": "HOLDS if, under GC001's misread (sigma 1) against the exact cue, r_all(rest) - r_all(det) with no event is at most 0.005, and u(det, memory) misread - exact <= -0.1, else FAILS"
+  }
+ ]
+}

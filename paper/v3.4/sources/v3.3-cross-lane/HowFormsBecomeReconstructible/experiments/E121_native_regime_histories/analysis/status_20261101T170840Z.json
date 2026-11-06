@@ -1,0 +1,60 @@
+{
+  "checked_utc": "2026-11-01T17:08:40.527838+00:00",
+  "reason": "User-requested status check",
+  "run": "E121_native_regime_histories/runs/histories_v1",
+  "observed_status": {
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "completed_blocks": [
+      1210000,
+      1210001,
+      1210002,
+      1210003,
+      1210004,
+      1210005
+    ],
+    "pid": 2922974,
+    "seconds": 12640.576604022877,
+    "stage": "lineages_and_independent_replay",
+    "status": "RUNNING",
+    "total_blocks": 32,
+    "utc": "2026-11-01T17:00:50.645532+00:00",
+    "workers": 2
+  },
+  "active_progress": [
+    {
+      "generation": 0,
+      "stage": "ancestry_g24",
+      "task": 1210006,
+      "utc": "2026-11-01T17:08:14.121137+00:00"
+    },
+    {
+      "generation": 0,
+      "stage": "ancestry_g16",
+      "task": 1210007,
+      "utc": "2026-11-01T17:08:40.414266+00:00"
+    }
+  ],
+  "completed_reports_pass": 6,
+  "run_and_job_input_hashes_verified": true,
+  "failed_marker_present": false,
+  "complete_marker_present": false,
+  "revised_timing": {
+    "total_seconds": 66928.82500554621,
+    "completion_utc": "2026-11-02T08:05:38.427175+00:00",
+    "basis": "Mean runtime of completed independently verified blocks, fixed worker count, plus frozen analysis allowance; provisional, not a confidence interval.",
+    "completed_block_seconds": [
+      4221.274039420066,
+      4523.7621007477865,
+      4392.010075699072,
+      4441.330877824919,
+      3780.4754304420203,
+      3671.956852945965
+    ],
+    "recent_four_mean_seconds": 4071.443309227994
+  },
+  "outcomes_inspected": false,
+  "protocol_changed": false,
+  "automatic_monitoring": false
+}

@@ -1,0 +1,13 @@
+{
+  "fix": "Canonicalize checkpoint keys to strings before comparing paired RNG signatures; add mixed-memory/JSON regression fixture.",
+  "issue": "JSON checkpoint keys change int to str; direct sorted serialization falsely reports different streams when a trajectory is cached.",
+  "prior_code_manifest_sha256": "847228f1a6fa8b8bc9c5c55ffbc68ee221d6cbe2dfc4c711d4d897100241a7e2",
+  "prior_physical_preflight_status": "PASS",
+  "prior_preflight_complete_sha256": "e658a67ccd39421ecf72cd7ef9eeeb8c54eafee1c2b5de4eabb29223994bc1eb",
+  "production_generated": false,
+  "recorded_utc": "2026-10-28T22:40:57.195811+00:00",
+  "reproduced": true,
+  "seed_or_cohort_changed": false,
+  "source_dynamics_changed": false,
+  "status": "IDENTIFIED_BEFORE_FULL_QUALIFICATION"
+}

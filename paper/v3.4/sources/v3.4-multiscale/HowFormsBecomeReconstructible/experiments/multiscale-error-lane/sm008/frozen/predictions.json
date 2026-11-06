@@ -1,0 +1,169 @@
+{
+ "study": "SM008",
+ "design_digest": "d69d35868e45fd5c4f2688507fc6ba4b7e9357ba53d2998d092fe42fd605c3b0",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "X1": -0.03,
+  "X2": 0.01,
+  "X3": -0.03,
+  "X4": [
+   -0.01,
+   0.01
+  ]
+ },
+ "frozen_utc": "2026-11-05T16:46:35Z",
+ "registered": [
+  {
+   "id": "X1",
+   "part": "a(F0 at corner 0 | k1-corner) - a(F0 at corner 0 | k8), absorbing: a lone struggler among healthy neighbours",
+   "kind": "le",
+   "threshold": -0.03
+  },
+  {
+   "id": "X2",
+   "part": "a(S4 at corner 0 | k7-corner) - a(S4 at corner 0 | k0), absorbing: a lone healthy sheet among strugglers",
+   "kind": "ge",
+   "threshold": 0.01
+  },
+  {
+   "id": "X3",
+   "part": "X1 with the edge sealed",
+   "kind": "le",
+   "threshold": -0.03
+  },
+  {
+   "id": "X4",
+   "part": "group mean at k4-half - the mean of the k0 and k8 group means, absorbing",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.01
+   ]
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "X5",
+   "part": "X1 under the preprint's stress (an identity: exactly 0 by the layout)"
+  },
+  {
+   "id": "X6",
+   "part": "a(F0 at inner 1 | k1-inner) - a(F0 at corner 0 | k1-corner), absorbing: the lone struggler's position"
+  }
+ ],
+ "reported": [
+  {
+   "id": "X1/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(F0 at corner 0 | k1-corner) - a(F0 at corner 0 | k8), absorbing: a lone struggler among healthy neighbours"
+  },
+  {
+   "id": "X2/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(S4 at corner 0 | k7-corner) - a(S4 at corner 0 | k0), absorbing: a lone healthy sheet among strugglers"
+  },
+  {
+   "id": "X3/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X1 with the edge sealed"
+  },
+  {
+   "id": "X4/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): group mean at k4-half - the mean of the k0 and k8 group means, absorbing"
+  },
+  {
+   "id": "X5/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X1 under the preprint's stress (an identity: exactly 0 by the layout)"
+  },
+  {
+   "id": "X6/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(F0 at inner 1 | k1-inner) - a(F0 at corner 0 | k1-corner), absorbing: the lone struggler's position"
+  },
+  {
+   "id": "CL/absorbing",
+   "part": "clustering (absorbing): a(struggling | k4-half) - a(struggling | k4-checker), the same mix of corners and inner cells"
+  },
+  {
+   "id": "K2/absorbing",
+   "part": "k2 (absorbing): a(struggling | k2-adjacent, an inner pair) - a(struggling | k2-apart, opposite corners)"
+  },
+  {
+   "id": "CL/absorbing/dw",
+   "part": "clustering (absorbing, dw): a(struggling | k4-half) - a(struggling | k4-checker), the same mix of corners and inner cells"
+  },
+  {
+   "id": "K2/absorbing/dw",
+   "part": "k2 (absorbing, dw): a(struggling | k2-adjacent, an inner pair) - a(struggling | k2-apart, opposite corners)"
+  },
+  {
+   "id": "CL/sealed",
+   "part": "clustering (sealed): a(struggling | k4-half) - a(struggling | k4-checker), the same mix of corners and inner cells"
+  },
+  {
+   "id": "K2/sealed",
+   "part": "k2 (sealed): a(struggling | k2-adjacent, an inner pair) - a(struggling | k2-apart, opposite corners)"
+  },
+  {
+   "id": "CL/sealed/dw",
+   "part": "clustering (sealed, dw): a(struggling | k4-half) - a(struggling | k4-checker), the same mix of corners and inner cells"
+  },
+  {
+   "id": "K2/sealed/dw",
+   "part": "k2 (sealed, dw): a(struggling | k2-adjacent, an inner pair) - a(struggling | k2-apart, opposite corners)"
+  },
+  {
+   "id": "X1/shared",
+   "part": "lambda 2: a(struggler at corner 0 | k1-corner) - a(same | k8)"
+  },
+  {
+   "id": "X2/shared",
+   "part": "lambda 2: a(healthy at corner 0 | k7-corner) - a(same | k0)"
+  },
+  {
+   "id": "X1/shared/dw",
+   "part": "dw, lambda 2: X1"
+  },
+  {
+   "id": "X2/shared/dw",
+   "part": "dw, lambda 2: X2"
+  },
+  {
+   "id": "P8/absorbing",
+   "part": "pure struggling (absorbing): a(at inner 1) - a(at corner 0)"
+  },
+  {
+   "id": "P0/absorbing",
+   "part": "pure healthy (absorbing): a(at inner 1) - a(at corner 0)"
+  },
+  {
+   "id": "P8/sealed",
+   "part": "pure struggling (sealed): a(at inner 1) - a(at corner 0)"
+  },
+  {
+   "id": "P0/sealed",
+   "part": "pure healthy (sealed): a(at inner 1) - a(at corner 0)"
+  },
+  {
+   "id": "X1/exposure",
+   "part": "X1's exposure (window mean): the struggler at corner 0, k1-corner - k8"
+  },
+  {
+   "id": "X2/exposure",
+   "part": "X2's exposure (window mean): the healthy sheet at corner 0, k7-corner - k0"
+  },
+  {
+   "id": "X1/gain",
+   "part": "X1's gain (window mean): the struggler at corner 0, k1-corner - k8"
+  },
+  {
+   "id": "X2/gain",
+   "part": "X2's gain (window mean): the healthy sheet at corner 0, k7-corner - k0"
+  },
+  {
+   "id": "X1/stress",
+   "part": "X1's stress (window mean): the struggler at corner 0, k1-corner - k8"
+  },
+  {
+   "id": "X2/stress",
+   "part": "X2's stress (window mean): the healthy sheet at corner 0, k7-corner - k0"
+  }
+ ],
+ "predict_sha256": "e2530f1e87994a58e6239bef2bfc781bb5990d4ebc224b6a71a8b5f0fb789b0c"
+}

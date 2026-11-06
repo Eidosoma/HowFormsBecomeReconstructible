@@ -1,0 +1,114 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR006C",
+ "design_digest": "ddcec8709f440dfa3cc15d66c9021dc0fdb235d4c00ac0beded9980b83e3d84d",
+ "ar006_digest": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006c/preflight",
+ "stage": "preflight",
+ "blocks": [
+  900969,
+  900989
+ ],
+ "tag": "mse-ar006",
+ "load_1min_at_check": 64.56,
+ "checked_utc": "2026-11-04T11:06:51Z",
+ "wall_s": 601.6,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 16,
+   "size_free_runs": [
+    "cue@0",
+    "none@0"
+   ]
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900969": true,
+    "raw/dw/S4_t0/900969": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 16,
+   "runs_compared": 80,
+   "arrays_compared": 2752,
+   "arm_slices_compared": 5856,
+   "fresh_task": "dw/S4_t0/900948",
+   "fresh_mismatches": [],
+   "reference_digests": {
+    "900948": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c",
+    "900929": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c"
+   },
+   "reference": "AR006's full development task on 900948 (its debug root) and 900929 (its preflight root), tag mse-ar006, AR006's frozen digest",
+   "mismatched": {}
+  },
+  "Q4_vote_default_identity": {
+   "pass": true,
+   "n_items": 112,
+   "failed": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 176,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_declaration_and_boundary": {
+   "pass": true,
+   "items": {
+    "ar006_frozen_design_and_sources_unchanged": true,
+    "every_run_is_ar006s_registered_run_with_a_subset_of_its_arms": true,
+    "the_arms_are_the_vote_vms_and_vtol_only": true,
+    "vms_and_vtol_are_ar006s_frozen_detectors": true,
+    "the_tag_best_and_controller_are_ar006s": true,
+    "the_task_is_ar006s_routed_task": true,
+    "the_thresholds_are_ar006s_registered_ones": true,
+    "the_development_values_recompute_from_ar006s_development": true,
+    "the_confirmation_blocks_reserve_and_halves": true,
+    "the_debug_and_preflight_blocks_are_ar006s_engineering_blocks": true,
+    "enrol_takes_each_stage_under_its_purpose": true,
+    "no_shard_raw_state_or_record_of_any_of_the_30_blocks_exists": true
+   },
+   "drawn": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory@1-L8: vtol alone = vtol beside vms": true,
+    "memory@1-L8: vms alone = vms beside vtol": true,
+    "memory@1-L8: vtol listed twice is bit-identical": true,
+    "cue@0-L4: vtol alone = vtol beside vms": true,
+    "cue@0-L4: vms alone = vms beside vtol": true,
+    "cue@0-L4: vtol listed twice is bit-identical": true,
+    "correlated@0-L4: vtol alone = vtol beside vms": true,
+    "correlated@0-L4: vms alone = vms beside vtol": true,
+    "correlated@0-L4: vtol listed twice is bit-identical": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 255.1,
+   "forecast_cpu_h": 13.6,
+   "forecast_wall_h_12": 1.38,
+   "worker_rss_mb": 276.7,
+   "bytes_per_task": 3235581
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 10625,
+    "confirmation.json": 2412,
+    "TABLES.md": 4568
+   },
+   "big_git_files": []
+  }
+ }
+}

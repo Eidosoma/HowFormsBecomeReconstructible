@@ -1,0 +1,73 @@
+{
+  "version": "3.3",
+  "checked_utc": "2026-11-03T12:14:16.003002+00:00",
+  "source_archive_sha256": "9ab0ff0a321415c13c7d89aae9ecea2ef81f6a61980052d76e1f0437420adc6a",
+  "scope": "Archive/source/qualification hashes and 70 compact block means/interval calculations. Retained SDs are used as supplied; no trajectory replay, raw endpoint scoring, fitting, bootstrap or independent uncertainty re-estimation.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "selected archive hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all selected members bind to intake",
+      "passed": true,
+      "detail": {
+        "files": 291
+      }
+    },
+    {
+      "name": "ar005 frozen implementation dependencies",
+      "passed": true,
+      "detail": {
+        "files": 185
+      }
+    },
+    {
+      "name": "ar005 implementation qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm006 frozen implementation dependencies",
+      "passed": true,
+      "detail": {
+        "files": 186
+      }
+    },
+    {
+      "name": "sm006 implementation qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR005 block means and interval arithmetic",
+      "passed": true,
+      "detail": {
+        "contrasts": 39,
+        "errors": [],
+        "interval_scope": "Uses retained conservative SD, not a raw case-level recomputation."
+      }
+    },
+    {
+      "name": "SM006 block means and interval arithmetic",
+      "passed": true,
+      "detail": {
+        "contrasts": 31,
+        "errors": [],
+        "interval_scope": "Uses retained combined TEST/FIT SD; no model refit or uncertainty re-estimation."
+      }
+    },
+    {
+      "name": "SM006 reported advance and residual error coexist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM006 model is selected J4",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

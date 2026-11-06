@@ -1,0 +1,142 @@
+Repeated guarded rewriting versus one successful rewrite: scientific closeout
+
+Status: COMPLETE_AUDITED_CLOSED
+Frozen decision: REPEATED_REWRITE_DEVELOPMENT_SUPPORTED
+Run completed: 2026-10-28T22:50:43.757259+00:00
+Independent closeout: 2026-10-29T12:04:33.436875+00:00
+
+The single frozen development prediction was supported. Ongoing guarded rewriting
+achieved 1662/2016 successful original-task reads over g16..33 (82.4405%), versus
+1606/2016 (79.6627%) for one successful rewrite followed by protected retention.
+The paired mean difference was +2.7778 percentage points, with a two-sided 95% t
+interval [+1.4424,+4.1131] and one-sided 95% lower limit +1.6692. Inference uses
+28 acquisition blocks (df27), not 112 independent packets or 2016 independent reads.
+The prediction and analysis were fixed before these new continuations. The founders
+and their earlier continuation outcomes were already exposed, and motivated this
+hypothesis. This is development evidence on an exposed panel with fresh future
+randomness, not fresh-founder confirmation or external preregistration.
+
+policy                          mean success %   terminal %   uninterrupted %   rewrites
+Always rewrite                         76.3889      75.8929           70.5357       2016
+Matched random allocation              74.3552      75.0000           63.3929       1643
+Ongoing current-success guard          82.4405      86.6071           67.8571       1643
+Protected retention                    64.4345      70.5357           25.8929          0
+One successful rewrite                 79.6627      83.0357           52.6786         98
+
+Average success has denominator 2016 reads per policy (112 packets times18 later
+reads). Terminal and uninterrupted success each have denominator112. In the table's
+policy order, terminal counts are85,84,97,79,93 and uninterrupted counts79,71,76,29,59.
+Uninterrupted success means success on all18 g16..33 reads; it excludes the shared
+pre-action g15 read. All scores evaluate the original acquired rule, including its
+sign, not any arbitrary stable output. The denominator for rewrite opportunities is
+2016 per policy, although actual rewrite counts differ.
+
+What the comparison supports
+Rewriting once on first success produced307 extra successful reads over protected
+retention, while continued guarded updating added56 more. Thus the first-rewrite
+policy captured84.57% of the observed ongoing-guard improvement over protected
+retention in this panel (307 of363 extra reads). This percentage is a descriptive
+comparison, with no separate precision or equivalence claim. It does not decompose
+an individual lineage's causal trajectory into independent additive mechanisms.
+
+The ongoing guard made1643 rewrites; the new policy made98, with14 packets never
+rewriting. The1545 additional guarded updates generated the positive whole-policy
+contrast. The primary policies therefore differ in rewrite count as well as continued
+feedback. This design does not isolate every contribution of count, timing and
+adaptivity. Matched random allocation still matches the ongoing guard's1643 rewrites
+exactly within each block and generation, and gives a descriptive guard advantage
+of +8.0853 points, two-sided95% interval [+1.8149,+14.3557]. It is supplied with the
+contemporaneous guard group total K and is a coupled diagnostic comparator.
+It does not match the single-rewrite policy's count or schedule.
+
+Both primary policies execute the same number of reads and candidate constructions
+in this assay. Declining promotion does not recover that computation. The much lower
+rewrite count is not a measured wall-time or total-compute saving. Known task labels,
+protected records, recurring cues and the reader/writer apparatus are supplied.
+
+Separate secondary endpoints
+Guard minus one successful rewrite: terminal +3.5714 points, descriptive95% interval
+[+0.1170,+7.0259]; uninterrupted +15.1786 points, interval [+7.5595,+22.7976]. These
+are unadjusted secondary comparisons, not additional confirmatory tests.
+Always rewriting had79 uninterrupted packets versus76 for the ongoing guard:
+guard-minus-always was -2.6786 points, interval [-8.1745,+2.8174]. The result does
+not justify calling the guard best on every endpoint. Guard-minus-always average
+success was +6.0516 points, interval [+0.4987,+11.6045]. All ordinary controls and
+all paired secondary contrasts remain in ANALYSIS.json.
+
+Descriptive recovery decomposition
+Thirty-four packets failed the shared pre-action g15 read. They contributed269 later
+successes for the guard and251 for the single-rewrite policy, out of612 opportunities,
+a difference of18 reads. The78 initial passes contributed1393 versus1355 successes
+out of1404 opportunities, a difference of38. Those strata contribute0.8929 and1.8849
+percentage points respectively to the entire-cohort primary difference. The residual
+benefit of repeated rewriting in this comparison must not be conflated with the
+prior guard-versus-random contrast that motivated it.
+
+The guard, single-rewrite and protected policies have identical first-success times
+by construction: their records and forcing are identical until the first successful
+read. In the initial-failure stratum,20 packets had a later success in each of those
+three policies. That shared first recovery is a structural identity, not independent
+evidence of a recovery mechanism. The guard and single-rewrite policies then differed
+in later occupancy, terminal success (19 versus18) and uninterrupted success (6 versus4).
+
+Design, audit and cost
+All28 selected blocks and112 original g14 packets from the preceding closed
+replication were reused without a new subset. Each block retains two originally
+passing and two failing packets. The namespace, primary contrast, cohort, five
+policies, g15..33 horizon, injury24/244 non-port cells and independent cue-noise regime
+were frozen before new native qualification and target futures. The original2048-step
+reader and beta3 writer were unchanged; a successful read requires all four original-
+rule-aligned late means above0.25. The single-rewrite policy uses its own current
+read and one persistent boolean per packet. It rewrites on its first success at
+g15..32, never again; g33-only success cannot produce an inherited rewrite.
+
+All30 software checks passed before freezing73 input files. Software preparation
+cost56 full2048-step and760 short32-step reader evaluations, measured separately.
+Full native qualification passed on four disposable units before target release.
+Every policy, packet and generation used an independently propagated flat-reader
+chain, scalar endpoint checks and separate persistent state for the single-rewrite
+policy. The run's own scalar analysis verified256 summaries and10 recovery cells.
+
+The post-completion independent audit imports no study modules and ran no new native
+dynamics. It verified all73 inputs and332 manifested outputs, original source packet
+identities and release ordering; rescored12160 saved native readouts; checked640
+complete saved flat policy chains; independently regenerated subset orders and
+checked576 actual decision quotas (504 target), every record inheritance step,
+and all persistent single-rewrite memory. It verified all560 target outcome records,
+256 exact-rational policy/primary block reductions and2 descriptive recovery
+contributions. Saved flat dynamics were checked; this closeout is not a third new
+simulation or a full noise-forcing rerun. All checks passed.
+
+Full native cost: target10640 primary+10640 independent flat; qualification1520
+primary+1520 independent flat =24320 full reader evaluations. No new acquisition,
+teaching episodes, estimation probes or fitted models. The source study's cost
+remains in its provenance and is not erased by reusing its packets.
+
+Combined detached run time: 1523.404 seconds (25m23s), below the3600-second cap.
+Qualification including startup and checks:180.148 seconds. Target and analysis:
+1343.230 seconds. Four one-thread workers plus one parent reserve;
+eight four-worker batches; all nine CPU admissions passed within the shared12-thread
+allowance. No capacity waiting, automatic retry, budget extension or successor.
+The recorded parent PID1247307 was absent on the successful read-only host check at
+closeout. The first host-check approval review timed out; its permitted single retry
+succeeded. This did not affect scientific files or the experiment.
+
+Interpretation and limits
+The study supports an added finite-continuation benefit from continued ordinary
+success-conditioned rewriting after an initial successful rewrite, on these exposed
+founders under this disturbance distribution. One rewrite accounts for much of the
+observed gain over protected retention, but does not match the ongoing guard on the
+primary endpoint. The result neither qualifies a compact RDT predictor nor establishes
+an RDT-specific mechanism, autonomous apparatus maintenance, transfer to a new reader
+or a general law. It supplies no new matched-noise or noise-interaction test.
+The earlier allocation replication and noise-precision results remain supported;
+the six-test replication remains unresolved; historical-guard and conditional-benefit
+failures remain closed. This result does not retroactively qualify those candidates.
+
+No successor has been launched. A next claim or experiment needs a separate frozen
+prediction, comparison and budget. This completed panel is now exposed evidence for
+any subsequent design; a fresh-founder replication would be a separate study.
+
+Evidence: runs/single_rewrite_v1/COMPLETE.json, OUTPUTS.json and ANALYSIS.json;
+checks/INDEPENDENT_CLOSEOUT_AUDIT.json; checks/SCIENTIFIC_CLOSEOUT.json.

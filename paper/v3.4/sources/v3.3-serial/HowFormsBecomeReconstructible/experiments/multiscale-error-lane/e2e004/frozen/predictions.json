@@ -1,0 +1,378 @@
+{
+ "study": "E2E004",
+ "design_digest": "880ac18190f058cbc6add1a61bbf9dd29907c70c0fc148cf3d6c7414fece1074",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "G1": 0.18,
+  "G2": 0.2,
+  "G3": [
+   0.19,
+   0.27
+  ],
+  "G4": [
+   -0.28,
+   -0.1
+  ]
+ },
+ "frozen_utc": "2026-11-04T15:42:42Z",
+ "registered": [
+  {
+   "id": "G1",
+   "part": "the vote keeps more history than the body route: q_r(vote/protected) - q_r(body/protected), g 8",
+   "kind": "ge",
+   "threshold": 0.18
+  },
+  {
+   "id": "G2",
+   "part": "the body route heals an inherited error more: u_r(body/post) - u_r(vote/post), g 8",
+   "kind": "ge",
+   "threshold": 0.2
+  },
+  {
+   "id": "G3",
+   "part": "the record route against the vote, keeping: q_r(record/protected) - q_r(vote/protected), g 8",
+   "kind": "in",
+   "threshold": [
+    0.19,
+    0.27
+   ]
+  },
+  {
+   "id": "G4",
+   "part": "the record route against the vote, healing: u_r(record/post) - u_r(vote/post), g 8",
+   "kind": "in",
+   "threshold": [
+    -0.28,
+    -0.1
+   ]
+  }
+ ],
+ "candidates_reported": [],
+ "reported": [
+  {
+   "id": "R-keep-vb-q_r-1",
+   "part": "q_r(vote/protected) - q_r(body/protected), g 1"
+  },
+  {
+   "id": "R-keep-rv-q_r-1",
+   "part": "q_r(record/protected) - q_r(vote/protected), g 1"
+  },
+  {
+   "id": "R-keep-v1v-q_r-1",
+   "part": "q_r(vote1/protected) - q_r(vote/protected), g 1 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-q_r-1",
+   "part": "q_r(vote1/protected) - q_r(body/protected), g 1"
+  },
+  {
+   "id": "R-keep-vb-u_r-1",
+   "part": "u_r(vote/protected) - u_r(body/protected), g 1"
+  },
+  {
+   "id": "R-keep-rv-u_r-1",
+   "part": "u_r(record/protected) - u_r(vote/protected), g 1"
+  },
+  {
+   "id": "R-keep-v1v-u_r-1",
+   "part": "u_r(vote1/protected) - u_r(vote/protected), g 1 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_r-1",
+   "part": "u_r(vote1/protected) - u_r(body/protected), g 1"
+  },
+  {
+   "id": "R-keep-vb-u_v-1",
+   "part": "u_v(vote/protected) - u_v(body/protected), g 1"
+  },
+  {
+   "id": "R-keep-rv-u_v-1",
+   "part": "u_v(record/protected) - u_v(vote/protected), g 1"
+  },
+  {
+   "id": "R-keep-v1v-u_v-1",
+   "part": "u_v(vote1/protected) - u_v(vote/protected), g 1 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_v-1",
+   "part": "u_v(vote1/protected) - u_v(body/protected), g 1"
+  },
+  {
+   "id": "R-heal-bv-u_r-1",
+   "part": "u_r(body/post) - u_r(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-rv-u_r-1",
+   "part": "u_r(record/post) - u_r(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-v1v-u_r-1",
+   "part": "u_r(vote1/post) - u_r(vote/post), g 1 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_r-1",
+   "part": "u_r(vote1/post) - u_r(body/post), g 1"
+  },
+  {
+   "id": "R-heal-bv-u_v-1",
+   "part": "u_v(body/post) - u_v(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-rv-u_v-1",
+   "part": "u_v(record/post) - u_v(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-v1v-u_v-1",
+   "part": "u_v(vote1/post) - u_v(vote/post), g 1 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_v-1",
+   "part": "u_v(vote1/post) - u_v(body/post), g 1"
+  },
+  {
+   "id": "R-heal-bv-q_r-1",
+   "part": "q_r(body/post) - q_r(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-rv-q_r-1",
+   "part": "q_r(record/post) - q_r(vote/post), g 1"
+  },
+  {
+   "id": "R-heal-v1v-q_r-1",
+   "part": "q_r(vote1/post) - q_r(vote/post), g 1 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-q_r-1",
+   "part": "q_r(vote1/post) - q_r(body/post), g 1"
+  },
+  {
+   "id": "R-keep-vb-q_r-3",
+   "part": "q_r(vote/protected) - q_r(body/protected), g 3"
+  },
+  {
+   "id": "R-keep-rv-q_r-3",
+   "part": "q_r(record/protected) - q_r(vote/protected), g 3"
+  },
+  {
+   "id": "R-keep-v1v-q_r-3",
+   "part": "q_r(vote1/protected) - q_r(vote/protected), g 3 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-q_r-3",
+   "part": "q_r(vote1/protected) - q_r(body/protected), g 3"
+  },
+  {
+   "id": "R-keep-vb-u_r-3",
+   "part": "u_r(vote/protected) - u_r(body/protected), g 3"
+  },
+  {
+   "id": "R-keep-rv-u_r-3",
+   "part": "u_r(record/protected) - u_r(vote/protected), g 3"
+  },
+  {
+   "id": "R-keep-v1v-u_r-3",
+   "part": "u_r(vote1/protected) - u_r(vote/protected), g 3 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_r-3",
+   "part": "u_r(vote1/protected) - u_r(body/protected), g 3"
+  },
+  {
+   "id": "R-keep-vb-u_v-3",
+   "part": "u_v(vote/protected) - u_v(body/protected), g 3"
+  },
+  {
+   "id": "R-keep-rv-u_v-3",
+   "part": "u_v(record/protected) - u_v(vote/protected), g 3"
+  },
+  {
+   "id": "R-keep-v1v-u_v-3",
+   "part": "u_v(vote1/protected) - u_v(vote/protected), g 3 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_v-3",
+   "part": "u_v(vote1/protected) - u_v(body/protected), g 3"
+  },
+  {
+   "id": "R-heal-bv-u_r-3",
+   "part": "u_r(body/post) - u_r(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-rv-u_r-3",
+   "part": "u_r(record/post) - u_r(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-v1v-u_r-3",
+   "part": "u_r(vote1/post) - u_r(vote/post), g 3 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_r-3",
+   "part": "u_r(vote1/post) - u_r(body/post), g 3"
+  },
+  {
+   "id": "R-heal-bv-u_v-3",
+   "part": "u_v(body/post) - u_v(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-rv-u_v-3",
+   "part": "u_v(record/post) - u_v(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-v1v-u_v-3",
+   "part": "u_v(vote1/post) - u_v(vote/post), g 3 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_v-3",
+   "part": "u_v(vote1/post) - u_v(body/post), g 3"
+  },
+  {
+   "id": "R-heal-bv-q_r-3",
+   "part": "q_r(body/post) - q_r(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-rv-q_r-3",
+   "part": "q_r(record/post) - q_r(vote/post), g 3"
+  },
+  {
+   "id": "R-heal-v1v-q_r-3",
+   "part": "q_r(vote1/post) - q_r(vote/post), g 3 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-q_r-3",
+   "part": "q_r(vote1/post) - q_r(body/post), g 3"
+  },
+  {
+   "id": "R-keep-vb-q_r-8",
+   "part": "q_r(vote/protected) - q_r(body/protected), g 8"
+  },
+  {
+   "id": "R-keep-rv-q_r-8",
+   "part": "q_r(record/protected) - q_r(vote/protected), g 8"
+  },
+  {
+   "id": "R-keep-v1v-q_r-8",
+   "part": "q_r(vote1/protected) - q_r(vote/protected), g 8 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-q_r-8",
+   "part": "q_r(vote1/protected) - q_r(body/protected), g 8"
+  },
+  {
+   "id": "R-keep-vb-u_r-8",
+   "part": "u_r(vote/protected) - u_r(body/protected), g 8"
+  },
+  {
+   "id": "R-keep-rv-u_r-8",
+   "part": "u_r(record/protected) - u_r(vote/protected), g 8"
+  },
+  {
+   "id": "R-keep-v1v-u_r-8",
+   "part": "u_r(vote1/protected) - u_r(vote/protected), g 8 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_r-8",
+   "part": "u_r(vote1/protected) - u_r(body/protected), g 8"
+  },
+  {
+   "id": "R-keep-vb-u_v-8",
+   "part": "u_v(vote/protected) - u_v(body/protected), g 8"
+  },
+  {
+   "id": "R-keep-rv-u_v-8",
+   "part": "u_v(record/protected) - u_v(vote/protected), g 8"
+  },
+  {
+   "id": "R-keep-v1v-u_v-8",
+   "part": "u_v(vote1/protected) - u_v(vote/protected), g 8 (the second copy)"
+  },
+  {
+   "id": "R-keep-v1b-u_v-8",
+   "part": "u_v(vote1/protected) - u_v(body/protected), g 8"
+  },
+  {
+   "id": "R-heal-bv-u_r-8",
+   "part": "u_r(body/post) - u_r(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-rv-u_r-8",
+   "part": "u_r(record/post) - u_r(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-v1v-u_r-8",
+   "part": "u_r(vote1/post) - u_r(vote/post), g 8 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_r-8",
+   "part": "u_r(vote1/post) - u_r(body/post), g 8"
+  },
+  {
+   "id": "R-heal-bv-u_v-8",
+   "part": "u_v(body/post) - u_v(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-rv-u_v-8",
+   "part": "u_v(record/post) - u_v(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-v1v-u_v-8",
+   "part": "u_v(vote1/post) - u_v(vote/post), g 8 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-u_v-8",
+   "part": "u_v(vote1/post) - u_v(body/post), g 8"
+  },
+  {
+   "id": "R-heal-bv-q_r-8",
+   "part": "q_r(body/post) - q_r(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-rv-q_r-8",
+   "part": "q_r(record/post) - q_r(vote/post), g 8"
+  },
+  {
+   "id": "R-heal-v1v-q_r-8",
+   "part": "q_r(vote1/post) - q_r(vote/post), g 8 (the second copy)"
+  },
+  {
+   "id": "R-heal-v1b-q_r-8",
+   "part": "q_r(vote1/post) - q_r(body/post), g 8"
+  },
+  {
+   "id": "R-vms-body-1",
+   "part": "u_r(body/vms) - u_r(body/post), g 1 (the repaired record)"
+  },
+  {
+   "id": "R-vms-body-3",
+   "part": "u_r(body/vms) - u_r(body/post), g 3 (the repaired record)"
+  },
+  {
+   "id": "R-vms-body-8",
+   "part": "u_r(body/vms) - u_r(body/post), g 8 (the repaired record)"
+  },
+  {
+   "id": "R-vms-vote-1",
+   "part": "u_r(vote/vms) - u_r(vote/post), g 1 (the repaired record)"
+  },
+  {
+   "id": "R-vms-vote-3",
+   "part": "u_r(vote/vms) - u_r(vote/post), g 3 (the repaired record)"
+  },
+  {
+   "id": "R-vms-vote-8",
+   "part": "u_r(vote/vms) - u_r(vote/post), g 8 (the repaired record)"
+  },
+  {
+   "id": "R-vms-record-1",
+   "part": "u_r(record/vms) - u_r(record/post), g 1 (the repaired record)"
+  },
+  {
+   "id": "R-vms-record-3",
+   "part": "u_r(record/vms) - u_r(record/post), g 3 (the repaired record)"
+  },
+  {
+   "id": "R-vms-record-8",
+   "part": "u_r(record/vms) - u_r(record/post), g 8 (the repaired record)"
+  }
+ ],
+ "predict_sha256": "4f507d1951b89d56ae77a25930cd24123c780bb8279e3a31bbc7fde259658dd5"
+}

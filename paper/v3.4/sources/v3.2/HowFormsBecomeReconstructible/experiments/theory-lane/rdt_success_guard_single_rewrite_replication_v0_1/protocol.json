@@ -1,0 +1,233 @@
+{
+  "reader": {
+    "dt": 0.2,
+    "noise": 0.02,
+    "birth_sd": 0.05,
+    "observe_steps": 32,
+    "read_steps": 2048,
+    "settling_steps": 1024,
+    "margin": 0.25
+  },
+  "writer": {
+    "kind": "byte-identical exact native writer",
+    "beta": 3.0
+  },
+  "generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "decision_generations": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "primary_generations": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "injury_levels": [
+    24
+  ],
+  "regimes": [
+    "independent"
+  ],
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "version": "0.1",
+  "status": "FIXED_FRESH_FOUNDER_DESIGN_PENDING_SOFTWARE_QUALIFICATION",
+  "namespace": "RDT_success_guard_single_rewrite_replication_v0_1",
+  "stages": [
+    "qualification",
+    "scientific"
+  ],
+  "repeat": 0,
+  "policies": [
+    "always_promote",
+    "matched_random",
+    "writer_success_guard",
+    "protected_retain",
+    "first_success_once"
+  ],
+  "qualification_blocks": [
+    -2,
+    -1
+  ],
+  "source_pricing_sha256": "6d085a4165ad4d99eebd9aeb395eb9b2a65b66bd01727c7786d575be938ba6cf",
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four original g14 packets per block, then across16 fresh acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_first_success_once"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "Single paired acquisition-block contrast: ongoing current-success guard minus one successful rewrite then retain, under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, sample extension, primary substitution or equivalence claim.",
+    "degrees_of_freedom": 15,
+    "critical_two_sided95": 2.131449545559776,
+    "critical_one_sided95": 1.753050355692572,
+    "inference": "16 fresh acquisition blocks are the paired uncertainty unit, df15. Packets, repeated reads and arms are not independent replicates. Same declared acquisition/selection distribution, policies, horizon and disturbance. Approximate paired t intervals; hypothesis and sample informed by exposed development data."
+  },
+  "allocation": {
+    "rule": "At each g15..32, count K current successful guard reads among the four packets in this block and noise regime. Guard promotes precisely those successful candidates. The matched-random arm promotes a uniform K-subset of its own four candidates, regardless of its own current results. Ordinary arm always promotes; protected arm never promotes. g33 outgoing candidates are not inherited.",
+    "seed": "First16 SHA256 bytes, little-endian, of compact JSON [namespace,stage,block,0,generation,promotion_subset]. PCG64 permutation of [0,1,2,3], choose firstK. Regime and injury are excluded so both noise regimes share subset order. Separate from native forcing streams.",
+    "schedule": "All current reads precede the count. No future observations, donor outcomes from other blocks or later target decisions can enter the current action. Guard never depends on the matched-random arm.",
+    "apparatus": "Matched-random is a coupled diagnostic comparator supplied with the guard group contemporaneous aggregate K. It has no per-packet success input, but is not a standalone feedback-free scheduler. Both own reads and the donor guard reads are retained in total computation accounting.",
+    "matching": "Exactly equal rewrite counts per block, noise regime and generation; no claim of equal counts per packet or historical stratum."
+  },
+  "secondary": "Descriptive all-policy original-rule average, terminal, uninterrupted, opposite-rule and rewrite endpoints; g14 classes and shared pre-action g15 expression strata. Also report first rewrite and additional guard rewrites; any conditional decomposition is descriptive. No secondary endpoint rescues a failed primary.",
+  "forcing": "PCG64 seed from first16 SHA256 bytes, little-endian, of compact JSON [namespace,stage,*key,0,generation,purpose,channel]. Channel injury gives a uniform permutation of the244 non-port cells; take first24. Channel forcing gives2049x2x16x16 normal draws. Exclude injury count, policy and noise regime from seed. Matched copies cue0 birth/noise to cue1; independent keeps both. All policies share forcing and evolve their own packets.",
+  "qualification": "One four-worker mixed wave: one exact legacy acquisition replay, one fresh disposable acquisition, two full five-policy continuation units. Full audits of all packets and policies at every generation, separately tracked persistent single-rewrite memory, source boundary and teaching checks. The measured full-cap timing gate must pass before any scientific acquisition.",
+  "resource": {
+    "workers": 4,
+    "parent_reserve": 1,
+    "numerical_threads": 1,
+    "shared_limit": 12,
+    "qualification_seconds": 600,
+    "target_seconds": 3400,
+    "combined_seconds": 3600,
+    "historical_continuation_floor": 262.6917151429225,
+    "continuation_waves": 4,
+    "multiplier": 1.5,
+    "overhead": 180,
+    "completion_reserve": 120,
+    "max_saved_bytes": 3000000000,
+    "min_free_bytes": 4000000000,
+    "max_worker_resident_bytes": 1500000000,
+    "capacity_wait_seconds": 180,
+    "capacity_check_interval_seconds": 30,
+    "historical_acquisition_floor": 160.70274131791666,
+    "acquisition_waves_cap": 5
+  },
+  "counts": {
+    "target_selected_blocks": 16,
+    "target_selected_packets": 64,
+    "acquisition_attempt_cap": 20,
+    "qualification_acquisition_units": 2,
+    "qualification_continuation_units": 2,
+    "target_continuation_units": 16,
+    "target_outcomes": 320,
+    "primary_native_reads_per_unit": 380,
+    "flat_native_reads_per_unit": 380,
+    "target_primary_reads": 6080,
+    "target_flat_reads": 6080,
+    "qualification_primary_continuation_reads": 760,
+    "qualification_flat_continuation_reads": 760,
+    "acquisition_primary_reads_per_attempt": 896,
+    "acquisition_flat_reads_per_attempt": 12,
+    "target_acquisition_primary_cap": 17920,
+    "target_acquisition_flat_cap": 240,
+    "qualification_acquisition_primary_reads": 1792,
+    "qualification_acquisition_flat_reads": 24,
+    "total_full_native_reads_minimum": 30024,
+    "total_full_native_reads_cap": 33656,
+    "target_teaching_episodes_cap": 40,
+    "qualification_teaching_episodes": 4
+  },
+  "exposure": "Development effect, block variance, previous acquisition yield and computational timing are exposed and informed this design. Scientific acquisition, selection, continuation and allocation namespaces are new. Freeze before any scientific acquisition; source cohort complete before any scientific future. Prospective fresh-founder replication within one programme, not external preregistration or an independent laboratory. No RDT-specific validation.",
+  "software_test_count": 38,
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_extension": false,
+  "automatic_successor": false,
+  "benchmark_can_release_this_fixed_target": true,
+  "single_rewrite": {
+    "rule": "At g15..32, rewrite from this arm's own current candidate iff its own current read succeeds and it has never rewritten before. Then permanently retain that packet. If no success occurs before g33 it never rewrites. A g33-only success cannot cause inheritance.",
+    "memory": "One persistent boolean per packet per regime, initialized false and set only by an executed rewrite. It never resets after a failure, rebuild or new generation.",
+    "information": "No future outcome or another policy's label enters this rule. The guard, protected and single-rewrite arms share the same original record until first success; their first-success identity is structural.",
+    "hypothesis": "Repeated success-conditioned updates improve finite mean continuation beyond preserving the first successful rewrite.",
+    "limits": "Paired policy benefit; different rewrite counts between the two primary policies. This does not separate every effect of action count/timing from adaptivity. The retained matched-random control matches the ongoing guard, not the single-rewrite policy. No RDT-specific mechanism claim."
+  },
+  "qualification_acquisition_blocks": [
+    -2
+  ],
+  "legacy_block": 34000,
+  "cohort": {
+    "eligible_blocks": 16,
+    "maximum_attempts": 20,
+    "wave_size": 4,
+    "attempt_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "packets_per_class": 2,
+    "selection": "First16 eligible fresh acquisition blocks in ascending ID, assessed after complete four-block waves. Same boundary-only rule-balanced minimum-hash selector: two g14 failures and two successes per block. Retain all attempts, rejections and surplus. No target futures until the entire16-block cohort is sealed. No replacement after future outcomes."
+  },
+  "sample_size_planning": {
+    "selected_blocks": 16,
+    "prior_development_blocks": 28,
+    "observed_effect": 0.02777777777777778,
+    "observed_sd": 0.03443813827842809,
+    "plug_in_power_observed_effect": 0.9237886991038315,
+    "plug_in_power_2pp": 0.7161537231508697,
+    "plug_in_power_1_5pp": 0.5072545931281727,
+    "power_not_guaranteed": true,
+    "budget_rationale": "Largest tested cohort size in four-block increments whose conservative full-cap cost leaves room for a four-worker qualification wave inside3600 seconds. All five policies, native dynamics and primary contrast are retained. Choose sample before any new acquisition; no later down-sizing."
+  }
+}

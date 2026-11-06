@@ -1,0 +1,1858 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "a36ac25892a1c1f017abd06330f921ba38a99f0d43190d6413789efd6096e4c5",
+ "computed_utc": "2026-10-30T15:21:44Z",
+ "thresholds": {
+  "G1": {
+   "kept": -0.02,
+   "closed": 0.05
+  },
+  "G2": {
+   "mixture": 0.05
+  },
+  "G3": {
+   "proportional": 0.07
+  },
+  "G4": {
+   "lo": 0.05,
+   "hi": 0.65
+  },
+  "G5": {
+   "full": 0.9,
+   "early": 0.75,
+   "late": 0.1
+  },
+  "G6": {
+   "earlier": 0.03
+  }
+ },
+ "parts": [
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 900) - gain(SL, 900) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": -0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 1800) - gain(SL, 1800) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": -0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 3600) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 4500) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 5400) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 gain(C12, 7200) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(900) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(1800) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(2700) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(3600) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(4500) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(5400) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dev_case(7200) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(900) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(1800) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(2700) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(3600) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(4500) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(5400) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dev_cell(7200) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.07,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 gain(CASE, 3600) - 0.05 gain(CASE, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 gain(CELL, 3600) - 0.05 gain(CELL, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 0.65 gain(CASE, 0) - gain(CASE, 3600) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 0.65 gain(CELL, 0) - gain(CELL, 3600) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 gain(CASE, 900) - 0.9 gain(CASE, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 gain(CELL, 900) - 0.9 gain(CELL, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 gain(CASE, 1800) - 0.75 gain(CASE, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 gain(CELL, 1800) - 0.75 gain(CELL, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 0.1 gain(CASE, 0) - gain(CASE, 7200) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 0.1 gain(CELL, 0) - gain(CELL, 7200) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 gain(C12, 2700) - gain(CELL, 2700) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.03,
+   "sense": "ge",
+   "pooled": true
+  }
+ ],
+ "statements": [
+  {
+   "id": "G1",
+   "kind": "one execution time still closes the window as a step",
+   "claim": "With every case and cell executing at 12 h (BE007's C12), a late signal 3 or 6 h after a 4 x 4 memory damage (ending before the execution) is worth at most 0.02 less over no signal than with no execution, and one 12, 15, 18 or 24 h late is worth at most 0.05 over no signal, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(C12, D) - gain(SL, D) >= -0.02 at D = 900 and 1,800, and gain(C12, D) <= 0.05 at D = 3,600, 4,500, 5,400 and 7,200, where gain(c, D) is dial-c's r_in in memory4@D at D + 4,000 less never-c's r_in in memory4@0 at the same read, else FAILS",
+   "thresholds": {
+    "kept": -0.02,
+    "closed": 0.05
+   }
+  },
+  {
+   "id": "G2",
+   "kind": "spread between cases gives the mixture of all-or-none cases",
+   "claim": "With each case executing at its own drawn time, a late signal's worth at every delay from 3 to 24 h equals, within 0.05, the mean over cases of the case's worth with no execution if the case has not yet executed when the signal starts and of nothing if it has, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, |gain(CASE, D) - pred_case(D)| <= 0.05 at every D, where pred_case(D) is the mean over cases of [the case's tau_x >= D + 2] x the case's gain(SL, D), else FAILS",
+   "thresholds": {
+    "mixture": 0.05
+   }
+  },
+  {
+   "id": "G3",
+   "kind": "spread between cells gives a decline in proportion to the cells not yet executed",
+   "claim": "With each footprint cell executing at its own drawn time, a late signal's worth at every delay from 3 to 24 h equals, within 0.07, the mean over cases of the share of the case's patch cells not yet executed when the signal starts times the case's worth with no execution, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, |gain(CELL, D) - pred_cell(D)| <= 0.07 at every D, where pred_cell(D) is the mean over cases of the share of the case's patch cells with tau_x >= D + 2 x the case's gain(SL, D), else FAILS",
+   "thresholds": {
+    "proportional": 0.07
+   }
+  },
+  {
+   "id": "G4",
+   "kind": "with spread, part of the effect remains at 12 h",
+   "claim": "With execution times spread between cases or between cells around 12 h, a signal 12 h after the damage keeps between 5 % and 65 % of the prompt signal's worth, on average (one execution time at 12 h keeps none, G1; the planarian landmark, octanol keeping under 60 % of its effect after 12 h, is compared in the report, not registered)",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(c, 3,600) >= 0.05 gain(c, 0) and gain(c, 3,600) <= 0.65 gain(c, 0) for c = CASE and CELL, where gain(c, 0) is dial-c's r_in less never-c's in memory4@0 at 4,000, else FAILS",
+   "thresholds": {
+    "lo": 0.05,
+    "hi": 0.65
+   }
+  },
+  {
+   "id": "G5",
+   "kind": "with spread, the effect is full early and gone late",
+   "claim": "With execution times spread between cases or between cells, a signal 3 h after the damage keeps at least 90 % of the prompt signal's worth, one 6 h after at least 75 % and one 24 h after at most 10 %, on average (planarian octanol works best within 3-6 h and not at all later)",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(c, 900) >= 0.9 gain(c, 0), gain(c, 1,800) >= 0.75 gain(c, 0) and gain(c, 7,200) <= 0.1 gain(c, 0) for c = CASE and CELL, else FAILS",
+   "thresholds": {
+    "full": 0.9,
+    "early": 0.75,
+    "late": 0.1
+   }
+  },
+  {
+   "id": "G6",
+   "kind": "with spread between cells, the decline begins before the median execution time",
+   "claim": "A signal 9 h after the damage is worth at least 0.03 less over no signal with execution times spread between cells than with every case and cell executing at 12 h, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(C12, 2,700) - gain(CELL, 2,700) >= 0.03, else FAILS",
+   "thresholds": {
+    "earlier": 0.03
+   }
+  }
+ ]
+}

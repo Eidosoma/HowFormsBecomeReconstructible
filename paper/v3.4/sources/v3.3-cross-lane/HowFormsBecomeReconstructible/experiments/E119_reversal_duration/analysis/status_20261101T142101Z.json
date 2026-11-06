@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-11-01T14:21:01.060781+00:00",
+  "reason": "User-requested status check",
+  "run": "E119_reversal_duration/runs/duration_v1",
+  "observed_status": {
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "completed_blocks": [
+      41000,
+      41001
+    ],
+    "pid": 2922651,
+    "seconds": 2055.72728250199,
+    "stage": "lineages_and_independent_replay",
+    "status": "RUNNING",
+    "total_blocks": 32,
+    "utc": "2026-11-01T14:03:53.212358+00:00",
+    "workers": 2
+  },
+  "active_progress": [
+    {
+      "generation": 0,
+      "stage": "none_g4_assay_r1",
+      "task": 41002,
+      "utc": "2026-11-01T14:20:46.245951+00:00"
+    },
+    {
+      "generation": 0,
+      "stage": "none_g4_assay_r0",
+      "task": 41003,
+      "utc": "2026-11-01T14:20:05.972336+00:00"
+    }
+  ],
+  "completed_reports_pass": 2,
+  "run_and_job_input_hashes_verified": true,
+  "failed_marker_present": false,
+  "revised_timing": {
+    "total_seconds": 32858.14104235917,
+    "completion_utc": "2026-11-01T22:37:15.370072+00:00",
+    "basis": "Mean runtime of completed independently verified blocks, two workers, plus frozen analysis allowance; provisional, not a confidence interval.",
+    "completed_block_seconds": [
+      2052.7108123099897,
+      2032.056817984907
+    ]
+  },
+  "outcomes_inspected": false,
+  "protocol_changed": false,
+  "automatic_monitoring": false,
+  "e121_timing_note": null
+}

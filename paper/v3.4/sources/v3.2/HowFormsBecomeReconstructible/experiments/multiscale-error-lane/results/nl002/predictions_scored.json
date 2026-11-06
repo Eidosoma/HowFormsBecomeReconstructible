@@ -1,0 +1,197 @@
+{
+ "N1": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N1 none: ev(copy-k0.75/R), record": {
+    "value": 0.98046875,
+    "pass": true
+   },
+   "N1 none: spec(foreign-k0.75/none), record": {
+    "value": -0.38696493880305083,
+    "pass": true
+   }
+  }
+ },
+ "N2": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N2 none: ev(copy-k0.5/R), record": {
+    "value": 0.013671875,
+    "pass": true
+   },
+   "N2 none: spec(foreign-k0.5/none), record": {
+    "value": 0.8247261217531251,
+    "pass": true
+   }
+  }
+ },
+ "N3": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N3 none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, record": {
+    "value": 0.1385498046875,
+    "pass": true
+   }
+  }
+ },
+ "N4": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N4 dw: min_cell(off/none), record": {
+    "value": 0.1652984619140625,
+    "pass": true
+   },
+   "N4 dw: min_reg(off/none), record": {
+    "value": 0.8441162109375,
+    "pass": true
+   }
+  }
+ },
+ "N5": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N5 dw: min_reg(copy-k0.25) - min_reg(off), intact, record": {
+    "value": 0.096923828125,
+    "pass": true
+   }
+  }
+ },
+ "N6": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N6 dw: spec(off) - spec(foreign-k0.25), intact, record": {
+    "value": 0.05897226136005895,
+    "pass": true
+   }
+  }
+ },
+ "N7": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N7 dw: ev(copy-k0.75/R), record": {
+    "value": 0.791015625,
+    "pass": true
+   },
+   "N7 dw: spec(foreign-k0.75/none), record": {
+    "value": -0.4698810354600427,
+    "pass": true
+   }
+  }
+ },
+ "N8": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N8 dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), record": {
+    "value": 1.080109126984127,
+    "pass": true
+   }
+  }
+ },
+ "N9": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N9 dw: k_spec(foreign-k0.75/K), record": {
+    "value": -0.5360863095238095,
+    "pass": true
+   }
+  }
+ },
+ "N10": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N10 none: ev(copy-k0.75/R), record": {
+    "value": 0.98046875,
+    "pass": true
+   },
+   "N10 none: ev(copy-k0.75/R), recipient": {
+    "value": 0.126953125,
+    "pass": true
+   }
+  }
+ },
+ "N11": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N11 dw: ev(copy-k0.75/R), recipient": {
+    "value": 0.732421875,
+    "pass": true
+   }
+  }
+ },
+ "N12": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N12 dw: spec(foreign-k0.75/none), recipient": {
+    "value": -0.2895608086483127,
+    "pass": true
+   }
+  }
+ },
+ "N13": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N13 dw: min_reg(copy-k0.25) - min_reg(off), intact, recipient": {
+    "value": 0.015869140625,
+    "pass": true
+   }
+  }
+ },
+ "N14": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N14 dw: min_cell(acqA), recipient": {
+    "value": 0.17510986328125,
+    "pass": true
+   }
+  }
+ },
+ "N15": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N15 none: ev(copy-k0.75/R), coded - L1-only recipient": {
+    "value": 0.78515625,
+    "pass": true
+   }
+  }
+ },
+ "N16": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N16 dw: min_reg(copy-k0.25) - min_reg(off), intact, coded recipient": {
+    "value": 0.044921875,
+    "pass": true
+   }
+  }
+ },
+ "N17": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N17 none: spec(foreign-k0.75/none), coded recipient": {
+    "value": -0.2984112662797896,
+    "pass": true
+   },
+   "N17 none: spec(foreign-k0.75/none), L1-only - coded recipient": {
+    "value": 0.5843022479662148,
+    "pass": true
+   }
+  }
+ },
+ "N18": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N18 dw: k_spec(copy-k0.75/K) - k_spec(foreign-k0.75/K), coded recipient": {
+    "value": 0.9454365079365079,
+    "pass": true
+   }
+  }
+ },
+ "N19": {
+  "verdict": "HOLDS",
+  "parts": {
+   "N19 none: min_reg(copy-k0.75) - min_reg(own-k0.75), intact, coded recipient": {
+    "value": 0.1405029296875,
+    "pass": true
+   }
+  }
+ }
+}

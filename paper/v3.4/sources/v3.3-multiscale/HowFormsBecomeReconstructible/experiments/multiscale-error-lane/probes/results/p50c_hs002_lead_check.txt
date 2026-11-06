@@ -1,0 +1,56 @@
+P50c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/hs002/development (development): 128 tasks, 384 files, every sha256 equal to the manifest's; digest a749f0b50ac4; 2026-11-01T20:45:22Z - 2026-11-01T22:31:04Z, 20.40 CPU-h; HS001's sources (development, digest 4336d7a7a62e): 256 files, every sha256 equal to HS001's recorded one and the raw ones to those HS002's shards name; budgets [1, 4]; the plateau rule as frozen: AH
+
+REGISTERED STATEMENTS (128 blocks x 8 lineages; points; [95% t interval], t(0.975, 127) = 1.9788; SD_block the larger of the block SD and the lineage SD / sqrt 8)
+  H1 2,048 B: Q(rewrite) - Q(erased) at 1,024: +16.464615 [+15.325636, +17.603594]  SD 6.512003 (block 6.512003, lineage/sqrt8 4.524260)  >= +8: holds
+  H1 2,048 B: Q(foreign) - Q(erased) at 1,024: +15.545654 [+14.345875, +16.745434]  SD 6.859621 (block 6.859621, lineage/sqrt8 4.555909)  >= +8: holds
+  H1 128 B: Q(rewrite) - Q(erased) at 1,024: +17.882538 [+16.772049, +18.993027]  SD 6.349113 (block 6.349113, lineage/sqrt8 4.361780)  >= +9: holds
+  H1 128 B: Q(foreign) - Q(erased) at 1,024: +16.719055 [+15.528464, +17.909646]  SD 6.807089 (block 6.807089, lineage/sqrt8 4.523418)  >= +7: holds
+  H2 128 B: D(1024) - D(256), lower side: -0.018311 [-0.043173, +0.006552]  SD 0.142148 (block 0.139459, lineage/sqrt8 0.142148)  >= -0.3: holds
+  H2 128 B: D(1024) - D(256), upper side: -0.018311 [-0.043173, +0.006552]  SD 0.142148 (block 0.139459, lineage/sqrt8 0.142148)  <= +0.3: holds
+  H3 2,048 B: Q(rewrite) at 1,024 - Q(copy): -13.240433 [-13.931801, -12.549064]  SD 3.952834 (block 3.952834, lineage/sqrt8 1.926142)  <= -8: holds
+  H3 128 B: Q(rewrite) at 1,024 - Q(copy): -3.458405 [-3.998514, -2.918295]  SD 3.088023 (block 3.088023, lineage/sqrt8 1.636314)  <= -1: holds
+  VERDICTS: H1 HOLDS, H2 HOLDS, H3 HOLDS
+
+PRESPECIFIED MEASUREMENTS (block means, points; intervals: percentiles over E014's generator's 10,000 whole-block resamples; the fits coded here)
+
+ 2,048 bytes (the question): the reference +2.198 [+1.941, +2.458] (resolved)
+    D(n): 1:+1.997 2:+1.795 3:+1.679 4:+1.521 6:+1.493 8:+1.408 12:+1.278 16:+1.260 24:+1.170 32:+1.125 48:+1.098 64:+1.081 96:+1.105 128:+1.116 192:+1.033 256:+1.012 320:+0.932 384:+0.911 448:+0.856 512:+0.816 640:+0.816 768:+0.818 896:+0.832 1024:+0.919
+  D(n), 2,048 bytes (the question):
+    M1 c +0.9582 [+0.6404, +1.2531], a +0.8879 [+0.6167, +1.1588], h 8.375 [4.170, 122.214]; resamples at the grid's ends 0; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0021]
+    M2 c +0.8227 [+0.4757, +1.1244], h1 3.28 [1.18, 5.49], h2 177.9 [21.8, 549.9], a1 +0.747, a2 +0.385; SSE(M0) - SSE(M1) 0.9111 [0.1942, 1.9266]; SSE(M1) - SSE(M2) 0.1995 [0.0378, 0.4438]
+    D(1024) - D(512) +0.1030 [-0.0256, +0.2419]; D(1024) - D(256) -0.0935 [-0.2731, +0.0893]; the late mean (768, 896, 1,024) +0.8563 [+0.5527, +1.1651]; the drift bound: a decay toward zero needs a half-life of at least 11152 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  R_H(n), 2,048 bytes (the question):
+    M1 c +0.4359 [+0.3075, +0.5431], a +0.4039 [+0.2854, +0.5247], h 8.375 [4.170, 122.214]; resamples at the grid's ends 0; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0010]
+    M2 c +0.3742 [+0.2266, +0.4912], h1 3.28 [1.18, 5.49], h2 177.9 [21.8, 549.9], a1 +0.340, a2 +0.175; SSE(M0) - SSE(M1) 0.1885 [0.0410, 0.3943]; SSE(M1) - SSE(M2) 0.0413 [0.0078, 0.0929]
+    D(1024) - D(512) +0.0469 [-0.0115, +0.1103]; D(1024) - D(256) -0.0425 [-0.1234, +0.0415]; the late mean (768, 896, 1,024) +0.3895 [+0.2650, +0.5094]; the drift bound: a decay toward zero needs a half-life of at least 11259 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  the floor Q(rewrite) - Q(erased), 2,048 bytes (the question):
+    M1 c +17.0631 [+15.9783, +18.1784], a +10.5420 [+9.8148, +11.2855], h 5.683 [5.201, 6.225]; resamples at the grid's ends 0; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0000]
+    M2 c +16.5322 [+15.4237, +17.6616], h1 4.30 [3.93, 4.61], h2 140.8 [72.0, 214.7], a1 +9.773, a2 +1.641; SSE(M0) - SSE(M1) 178.2576 [152.6960, 206.5221]; SSE(M1) - SSE(M2) 3.7106 [2.3526, 5.4816]
+    D(1024) - D(512) -0.2239 [-0.3697, -0.0866]; D(1024) - D(256) -0.6023 [-0.8396, -0.3849]; the late mean (768, 896, 1,024) +16.5007 [+15.3922, +17.6380]; the drift bound: a decay toward zero needs a half-life of at least 15844 rewrites
+    READING (as frozen, AH): a slow drift; by the rule as first declared: a slow drift
+    basins, the concordance excess at 1,024 (256): rewrite +6.984 [+5.352, +8.646] (+7.619); foreign +6.898 [+5.288, +8.548] (+7.336); erased -0.715 [-2.816, +1.310] (-0.895); background -0.703 [-2.080, +0.716] (-0.489); READING: kept to 1,024
+
+ 128 bytes (reported): the reference +1.387 [+1.133, +1.649] (resolved)
+    D(n): 1:+1.393 2:+1.352 3:+1.333 4:+1.285 6:+1.215 8:+1.210 12:+1.223 16:+1.216 24:+1.212 32:+1.206 48:+1.210 64:+1.162 96:+1.176 128:+1.173 192:+1.162 256:+1.182 320:+1.168 384:+1.162 448:+1.187 512:+1.170 640:+1.184 768:+1.178 896:+1.169 1024:+1.163
+  D(n), 128 bytes (reported):
+    M1 c +1.1809 [+0.8357, +1.5199], a +0.2160 [-0.0827, +0.4629], h 2.876 [0.561, 50.920]; resamples at the grid's ends 76; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [-0.0000, +0.0000]
+    M2 c +1.1718 [+0.8235, +1.5204], h1 1.92 [0.20, 14.88], h2 36.1 [0.6, 66.5], a1 +0.184, a2 +0.048; SSE(M0) - SSE(M1) 0.0637 [0.0030, 0.3503]; SSE(M1) - SSE(M2) 0.0032 [0.0003, 0.0335]
+    D(1024) - D(512) -0.0069 [-0.0301, +0.0160]; D(1024) - D(256) -0.0183 [-0.0423, +0.0053]; the late mean (768, 896, 1,024) +1.1703 [+0.8307, +1.5163]; the drift bound: a decay toward zero needs a half-life of at least 13604 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  R_H(n), 128 bytes (reported):
+    M1 c +0.8514 [+0.6524, +1.0513], a +0.1558 [-0.0605, +0.3309], h 2.876 [0.561, 50.920]; resamples at the grid's ends 76; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [-0.0000, +0.0000]
+    M2 c +0.8449 [+0.6438, +1.0504], h1 1.92 [0.20, 14.88], h2 36.1 [0.6, 66.5], a1 +0.132, a2 +0.035; SSE(M0) - SSE(M1) 0.0331 [0.0017, 0.1778]; SSE(M1) - SSE(M2) 0.0016 [0.0002, 0.0181]
+    D(1024) - D(512) -0.0050 [-0.0223, +0.0117]; D(1024) - D(256) -0.0132 [-0.0323, +0.0037]; the late mean (768, 896, 1,024) +0.8438 [+0.6468, +1.0481]; the drift bound: a decay toward zero needs a half-life of at least 13220 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  the floor Q(rewrite) - Q(erased), 128 bytes (reported):
+    M1 c +17.9175 [+16.8243, +19.0003], a +4.6480 [+4.1106, +5.2181], h 2.814 [2.313, 3.532]; resamples at the grid's ends 0; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0000]
+    M2 c +17.8892 [+16.7842, +18.9788], h1 1.84 [0.20, 2.47], h2 6.3 [2.6, 16.3], a1 +3.260, a2 +1.533; SSE(M0) - SSE(M1) 32.3779 [24.7715, 41.6507]; SSE(M1) - SSE(M2) 0.1118 [0.0106, 0.5305]
+    D(1024) - D(512) -0.0061 [-0.0385, +0.0267]; D(1024) - D(256) -0.0191 [-0.0485, +0.0099]; the late mean (768, 896, 1,024) +17.8752 [+16.7707, +18.9699]; the drift bound: a decay toward zero needs a half-life of at least 164597 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+    basins, the concordance excess at 1,024 (256): rewrite +7.959 [+6.217, +9.688] (+7.959); foreign +7.751 [+6.095, +9.416] (+7.751); erased -1.265 [-3.198, +0.696] (-1.265); background +0.321 [-0.960, +1.628] (+0.326); READING: kept to 1,024
+
+FROM THE RAW PACKETS (E001's unpack): the concordance at the eight new checkpoints, every arm, founder and block, against the shards: largest difference 0.0e+00; the final packets equal to the 1,024 checkpoint's: every block and budget
+  the turnover at 2,048 bytes (decoded sign cells differing from rewrite 256's record, mean over blocks, founders and recipients), rewrite / foreign / erased / background: 320: 0.0093/0.0082/0.0063/0.0088; 384: 0.0122/0.0107/0.0089/0.0119; 448: 0.0151/0.0132/0.0112/0.0141; 512: 0.0178/0.0152/0.0127/0.0156; 640: 0.0214/0.0186/0.0147/0.0219; 768: 0.0224/0.0211/0.0170/0.0240; 896: 0.0245/0.0227/0.0181/0.0261; 1024: 0.0263/0.0260/0.0193/0.0275
+  the turnover at 128 bytes (decoded sign cells differing from rewrite 256's record, mean over blocks, founders and recipients), rewrite / foreign / erased / background: 320: 0.0000/0.0000/0.0000/0.0000; 384: 0.0000/0.0000/0.0000/0.0000; 448: 0.0000/0.0000/0.0000/0.0000; 512: 0.0000/0.0000/0.0000/0.0000; 640: 0.0000/0.0000/0.0000/0.0002; 768: 0.0000/0.0000/0.0000/0.0002; 896: 0.0000/0.0000/0.0000/0.0005; 1024: 0.0000/0.0000/0.0000/0.0005

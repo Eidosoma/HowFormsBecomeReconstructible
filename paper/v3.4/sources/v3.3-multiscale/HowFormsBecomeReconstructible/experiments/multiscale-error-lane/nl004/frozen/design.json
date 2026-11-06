@@ -1,0 +1,1114 @@
+{
+ "study": "NL004",
+ "digest": "b567d2f8fee29e54fc80b9ca94e364f5c7653c8af09682b826e8810d416893a3",
+ "frozen_utc": "2026-11-01T12:36:48Z",
+ "sources": {
+  "br001/__init__.py": "86e031c3d4d7fa1e4d912abd962cc620102b7b2cbafaba19327b815ac1d57c4d",
+  "br001/analyze.py": "7136f5824f89799567a0dfd6638bfce77de1be8c07dbf5554a483ca031793f2c",
+  "br001/calibrate.py": "ae6aada33644a3f9baefeab17597afef1b30269b4927cf6da2fda98120fd71aa",
+  "br001/checks.py": "6babb161d307e9b2471741f80d468a0947745c600884c9b5c9fa9710f06b30e0",
+  "br001/design.py": "b962b5989403f185dc4726b4e505dc2f0fd2e1877e733c04f6a72e16eeb1b0d3",
+  "br001/predict.py": "3a8a1a13ef8f2cb6eb3cf68e18a46e4fa56c79d0cd2e2b84d32947a3fa5a1210",
+  "br001/run.py": "a0e2237c577541ebc19ae6e97e9c5b81c7460f5599d870b95eecfb7a5db5117b",
+  "br001/sim.py": "9b3b269141e281dc061959edf4274171ef10a9260823646aeba002e27cf60528",
+  "br001/tables.py": "6684b47b44bed87872f94dbb73513bdafc834daa1148099dacbd57cb4c27d659",
+  "br001/worker.py": "571a37ac9b0ed6c2c353fade3d8990edd30c72b5f8bf9ca660f2ba76188551a6",
+  "dl001/__init__.py": "b0bc5f4b0be1a3664fc17aed0ae197b0628ea0a3eab053d72ed7dda5013f5fa1",
+  "dl001/analyze.py": "b6e8e049ec64b1deefef51e1e1a70c6c9e3d482520a4dd55085bcc29962e61fd",
+  "dl001/checks.py": "33280565f3ac7a521d1d6e9fa1d753bbd084f96671c18d909688a683c351a024",
+  "dl001/design.py": "c006c321a97efaba172d388437ae36a43ecb3fff0f1f5b18a85a910e94d1a960",
+  "dl001/predict.py": "91449da942e5523b08b0ac6cdaac0f088f4651df3b7fbd65c7a5f6ca539da877",
+  "dl001/run.py": "9df13ada76f2a9569a220bdf3733a1e347de081c16236633a6532ad3889792d6",
+  "dl001/sim.py": "7ee0ad20d79112dff14fec65db5c78c9d206cabe8b3ea53beb4218a939194f21",
+  "dl001/tables.py": "d742799b569447877d90b9d8d0dd9a83af3173dda71a9b0bdde0d42a8d907faa",
+  "dl001/worker.py": "490e75ce95ad1f356e102cf0bb089df05a6eb56312b19c0d2adaea0e9f5bbb81",
+  "dl002/__init__.py": "36799ab39b9f835110d58570cc501b0dcf34f32efba5667f08d80eebb1ca6eb5",
+  "dl002/analyze.py": "34d647e1d56ce4f906af56154570ed75a454c2d94f824656c167f8dd08f2fd80",
+  "dl002/checks.py": "539032e672472e0ba732318d7b05c6c9a5012b5842f98f78292a489c19cd3591",
+  "dl002/design.py": "045168c3fc81e99dfab31b3355901bfdf55ae84f492d60d95d30100f3e18e9cc",
+  "dl002/predict.py": "ac6de067ef612906815158209986a683b2882c7aab2603d8b07d125958cf6470",
+  "dl002/run.py": "9792d37beb52863f9c3a7021bf4c4ac43175f737e9baa57ba84af1c23abb57f9",
+  "dl002/sim.py": "097d089a51dd5d15a4c949df71bb60f24ad4f66f98b1a68e103043a314c187e4",
+  "dl002/tables.py": "45c8be55b0db9b36aa5d42fee3a7f9e1e66dfecc4f240f1af23098b4905becf6",
+  "dl002/worker.py": "94cd830de5a5c20e71dd4fe2120a32515de369f22981120dd9de11a0b0032a9c",
+  "lr001/__init__.py": "6e22519496268ac8aed5f476a7a81cb624ddaf7f7b796ba582e2b0b2d00639e2",
+  "lr001/analyze.py": "671e6090af2df117568c63c9f827809bc18d8306f5897b607ea3628f5696cbd6",
+  "lr001/checks.py": "dab516a5c349d6ceb829362f92b4362fa5ae9173b802c2fadb52a82ed43629cd",
+  "lr001/design.py": "a88d4993e23a56114e9eb72553f73c1cc6129a9c8bdd0fc86e6ad3048aa55446",
+  "lr001/predict.py": "d286fe43f6b70068eaf4a0cef825a7ab2b75945f9b1352d93b51632bf779b3f4",
+  "lr001/run.py": "15f2939ad3c3c91c81e3f1a12366dbda8377290b4e7930d3c800062d9dab6d52",
+  "lr001/scoring.py": "a468e0dbcd6f48afc2150a38da288b2ebca6d337b6da0b720b28829d9483814f",
+  "lr001/sim.py": "0865a9644a9c97a54adda76c3e623a0e73b9ce987bd572ed16e8b5b062af56a6",
+  "lr001/tables.py": "621caf13c363e9a5daeaa9d10566a0cf572d9df255e5a658af6ca392c7f55b04",
+  "lr001/worker.py": "4209a3a57b5a473da0ab77e8c156c51f19b8d49766a0db83f8bb3cdf68b6167b",
+  "lr002/__init__.py": "e0bf2ad6aebd8a2fb3e068339ef00a498e0d03ef9e6ee3775d691454bad5b793",
+  "lr002/analyze.py": "09e086b1779cc5a596966e7b4a6147d82ddb57b9f177f000b228d7462d4399c3",
+  "lr002/checks.py": "051a1bdf4814937c65b188a23af5bba3751ed08bc0f7c987c028a5db057e2fa1",
+  "lr002/design.py": "22a1f88c64b768d595463ff3689bdc01f0478c1e1f2f3914f7fabaa2df058131",
+  "lr002/predict.py": "ccfc52e5f3922c24c432b3fdbf31fe25796637aaf63c3e6f2ec8afd377ff712b",
+  "lr002/run.py": "941218a3420dd528fe154a98b025f8bc898b5d8ea573406ced682f0ea8418da2",
+  "lr002/sim.py": "96cbe376120f1b3c9abd5c147b1926cd3a2d38a2380102f718417b9d554d0816",
+  "lr002/tables.py": "0f03b28d52584403ad58a853bf00b0b563d7ca0cd27bf592d668afe97710ee1c",
+  "lr002/worker.py": "35b8b8d0eba3070ce0228e2e6dfe339b7c9f2d525e253473a9653551caa7489d",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "msegrid/__init__.py": "d626f19334d6c7310ea4b2c1275ca93f3a1612c3bedf47e69e7cb7783e51e93f",
+  "msegrid/core.py": "1f277ab621c5b8edc239a61de9abadeb782a6bbd66a843d72cad5e0a22be724e",
+  "nl001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "nl001/analyze.py": "14e85fe6ff969cffb6fc7576745130c1973b59434e7c2b5791346c35c85be8fa",
+  "nl001/checks.py": "ad9b0465b5a3bf2821cb0fd244a5e59fdfe3d4d187bb839d51c59dba9ffce99e",
+  "nl001/design.py": "18c1429b7b5d51568f48d82aba6131037990fbfacfece8effd8e3db56159759b",
+  "nl001/predict.py": "378a6f34107ffe08b0c92245a252c68f2481ef640652ae778c7cd4385bc3c108",
+  "nl001/run.py": "8b45664eae117dd8eb76510b54904e96f10f514885021a7babbb3e7f91e6c797",
+  "nl001/sim.py": "d6bf0c0459c46e49c5a159c5b72735ebbe53a842d8432c03520746112f936e2b",
+  "nl001/tables.py": "e2878dec5e927471c950350c936be564e53e8391faff90600ec5c3b309bf5d4b",
+  "nl001/worker.py": "73604fa08ad240fd800501a9a49b5ba4516c912079207d78ad43079cbfd45881",
+  "nl002/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "nl002/analyze.py": "e51ff17faadfaadab06480399d2c8a28527986ce650ca9f9f5c2134e98c2f300",
+  "nl002/checks.py": "76be0efa397fa75fdd1339d76da816ff28d9fb744bfa66bf5913f2bdfca94540",
+  "nl002/design.py": "e8d9b2f97429b7d5a8c856adc3cb97572c4250edfe350a935429db75cc063ef7",
+  "nl002/predict.py": "717fa98c8521f0fff9055b9a3a1f2a1726aff9c48f3f68d695bd66cec0d2ba23",
+  "nl002/run.py": "67de2c231421953fc2ff5a45f33a988abc9719ae85d747baf07487c751cbe459",
+  "nl002/sim.py": "3fb1ac81e59d0b72b808c867bddbd2358ce2d3b40499bb59edfd524947a14e6a",
+  "nl002/tables.py": "7ffa2f175744bb7a003ed94785720a4603d01e5189a1f72db7c15e6d3c21f654",
+  "nl002/worker.py": "6a1c5a50d7b8e7d1399e9a501cfb00307ae9289b2ab9e6a71f5b43e730476da5",
+  "nl003/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "nl003/analyze.py": "9935e620c038982265860a7e83a2c6c08fd4556bd09e34c8f886557d5fe3050a",
+  "nl003/checks.py": "1e42601e6c1c3961bddaabe6f435850b1319803b9561f77913d9991f2fc0b60b",
+  "nl003/design.py": "66f29173622ce5ce446368c46e29526df9bfafe051dcbff4ce644fc3f80634b7",
+  "nl003/predict.py": "52bb2d6e08fe0dc484647b6bf9961a2686198c56caa249cce97346f2474ac993",
+  "nl003/run.py": "ff6d08a9eec72081facba468cf341d3ee79ccf96ad850dca8a7d734739d1a0ec",
+  "nl003/sim.py": "a12a69a81acdef1feda230e158f0253c983a387b6f50f62ce79b4c8cd555c076",
+  "nl003/tables.py": "f3e2fad7a7b8dbe1729398dcb7dfbcb7977be9926e898aceb5433ae683bb4302",
+  "nl003/worker.py": "0ea8feb9e035c91c477b47b1f89362dac0baceb959809fb8019f7aab2938ed60",
+  "nl004/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "nl004/analyze.py": "a3d4534f3427378bbf204c9c321b7e41f3e134e25586e13b48d323f9b75762f1",
+  "nl004/checks.py": "4ecb1dfec4d90b1f02c919f28b6825e5446cdae1bd3b21ec7c5a8ede3e6a464c",
+  "nl004/design.py": "c34cdd3498babd8ac1b3e73aec91a9f539c004036fa0072c95571e8a26dfd11e",
+  "nl004/predict.py": "4ebdc169ef14be3f6a4dc28ade02d2235b0725847d4823346ea33e12fcf47283",
+  "nl004/run.py": "0d670ecdc13d2b9c0f6f8116d76b259083f4c32a48ae08f5526784baee0fa61b",
+  "nl004/sim.py": "4ab281a8737143b5657ab9690cfdaa08a8d768c8192a0764ec4d9259062182c6",
+  "nl004/tables.py": "fb40e67f1423349e66a7c6984ad857f84d747febf4cb12f1f15fc0a01f0f2f5d",
+  "nl004/worker.py": "a08d48610c73c4f3f99312943b9d7641213c65c4b7987ada20be9343fb9c5db4"
+ },
+ "design": {
+  "study": "NL004",
+  "tag": "mse-nl004",
+  "probe_tag": "mse-p48",
+  "identities": {
+   "probe": [
+    900129,
+    900130,
+    900131,
+    900132
+   ],
+   "preflight": [
+    900133,
+    900134
+   ],
+   "debug": [
+    900135,
+    900136
+   ],
+   "development": [
+    910517,
+    910518,
+    910519,
+    910520,
+    910521,
+    910594,
+    910595,
+    910596,
+    910597,
+    910598,
+    910599,
+    910873,
+    910874,
+    910875,
+    910876,
+    910877
+   ]
+  },
+  "tuning_blocks": [
+   900125,
+   900126,
+   900127,
+   900128
+  ],
+  "smoke_blocks": [
+   900137,
+   900138
+  ],
+  "spare_blocks": [
+   900186,
+   900187,
+   900188,
+   900189,
+   900190,
+   900191
+  ],
+  "reserve_blocks": [
+   910523,
+   910524,
+   910525,
+   910527,
+   910862,
+   910863,
+   910864,
+   910865
+  ],
+  "purpose": {
+   "probe": "engineering",
+   "preflight": "engineering",
+   "debug": "engineering",
+   "smoke": "engineering",
+   "development": "development"
+  },
+  "stage_tag": {
+   "probe": "mse-p48",
+   "preflight": "mse-nl004",
+   "debug": "mse-nl004",
+   "smoke": "mse-nl004",
+   "development": "mse-nl004"
+  },
+  "nl003_digest": "ece312e2b4f86d4373c3aceeeb623a544c9122b5c0baad085d59e44ea0502d11",
+  "density": 4,
+  "vmin": 0.2,
+  "rule": {
+   "n": 1,
+   "q": 0.75,
+   "ring": 0,
+   "ring_max": 0
+  },
+  "gains": [
+   0.5,
+   0.75,
+   1.0
+  ],
+  "kstar": 0.75,
+  "anchors": {
+   "A": "sign(R0_A) at the sites (NL003's given anchors; = the record's commitment at the branch); K kills the square's",
+   "Mv": "sign(V0_A), the acquired body, at the sites, none where V0_A = 0; K kills the square's",
+   "Me": "sign(r) just after the event, before the first descending increment, none where r = 0",
+   "Mt250": "sign(r) at the end of update 250, none where r = 0; no anchors before",
+   "Mt1000": "sign(r) at the end of update 1,000, none where r = 0; no anchors before",
+   "Mpre": "sign of A's record at the end of settle (msegrid.acquire, teach 0, release 0); K kills the square's",
+   "Mmid": "sign of A's record after 100 teaching steps (msegrid.acquire, release 0); K kills the square's",
+   "Mmidc": "as Mmid, only where that record is confident (|R| >= 0.2); K kills the square's",
+   "S1e-2": "a slow copy: a(0) = A's (K: 0 in the square); after each record step a <- a + 0.01 (sign(r) - a)",
+   "S1e-3": "a slow copy: a(0) = A's (K: 0 in the square); after each record step a <- a + 0.001 (sign(r) - a)"
+  },
+  "t_c": {
+   "Mt250": 250,
+   "Mt1000": 1000
+  },
+  "eta": {
+   "S1e-2": 0.01,
+   "S1e-3": 0.001
+  },
+  "teach_k": {
+   "Mpre": 0,
+   "Mmid": 100,
+   "Mmidc": 100
+  },
+  "confident": [
+   "Mmidc"
+  ],
+  "events": [
+   "none",
+   "R",
+   "K",
+   "change"
+  ],
+  "change": "B's acquired record, body and moving average in the regions where A and B differ; bonds from the record",
+  "arms": [
+   {
+    "name": "off",
+    "ref": "off",
+    "k2": 0.0,
+    "k3": 0.0,
+    "arb": ""
+   },
+   {
+    "name": "copy-k0.75",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "foreign-k0.75",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "corrupt-k0.75",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "copy-k0.75+A",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "foreign-k0.75+A",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "corrupt-k0.75+A",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "copy-k0.75+Mv",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "foreign-k0.75+Mv",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "corrupt-k0.75+Mv",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "copy-k0.75+Me",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Me"
+   },
+   {
+    "name": "foreign-k0.75+Me",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Me"
+   },
+   {
+    "name": "copy-k0.75+Mt250",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt250"
+   },
+   {
+    "name": "foreign-k0.75+Mt250",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt250"
+   },
+   {
+    "name": "corrupt-k0.75+Mt250",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt250"
+   },
+   {
+    "name": "copy-k0.75+Mt1000",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt1000"
+   },
+   {
+    "name": "foreign-k0.75+Mt1000",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt1000"
+   },
+   {
+    "name": "corrupt-k0.75+Mt1000",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mt1000"
+   },
+   {
+    "name": "copy-k0.75+Mpre",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mpre"
+   },
+   {
+    "name": "foreign-k0.75+Mpre",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mpre"
+   },
+   {
+    "name": "corrupt-k0.75+Mpre",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mpre"
+   },
+   {
+    "name": "copy-k0.75+Mmid",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmid"
+   },
+   {
+    "name": "foreign-k0.75+Mmid",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmid"
+   },
+   {
+    "name": "corrupt-k0.75+Mmid",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmid"
+   },
+   {
+    "name": "copy-k0.75+Mmidc",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmidc"
+   },
+   {
+    "name": "foreign-k0.75+Mmidc",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmidc"
+   },
+   {
+    "name": "corrupt-k0.75+Mmidc",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "Mmidc"
+   },
+   {
+    "name": "copy-k0.75+S1e-2",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-2"
+   },
+   {
+    "name": "foreign-k0.75+S1e-2",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-2"
+   },
+   {
+    "name": "corrupt-k0.75+S1e-2",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-2"
+   },
+   {
+    "name": "copy-k0.75+S1e-3",
+    "ref": "copy",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "foreign-k0.75+S1e-3",
+    "ref": "foreign",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "corrupt-k0.75+S1e-3",
+    "ref": "corrupt",
+    "k2": 0.75,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "copy-k0.5",
+    "ref": "copy",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "foreign-k0.5",
+    "ref": "foreign",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "corrupt-k0.5",
+    "ref": "corrupt",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "copy-k0.5+A",
+    "ref": "copy",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "foreign-k0.5+A",
+    "ref": "foreign",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "corrupt-k0.5+A",
+    "ref": "corrupt",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "copy-k0.5+Mv",
+    "ref": "copy",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "foreign-k0.5+Mv",
+    "ref": "foreign",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "corrupt-k0.5+Mv",
+    "ref": "corrupt",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "copy-k0.5+S1e-3",
+    "ref": "copy",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "foreign-k0.5+S1e-3",
+    "ref": "foreign",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "corrupt-k0.5+S1e-3",
+    "ref": "corrupt",
+    "k2": 0.5,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "copy-k1",
+    "ref": "copy",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "foreign-k1",
+    "ref": "foreign",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "corrupt-k1",
+    "ref": "corrupt",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": ""
+   },
+   {
+    "name": "copy-k1+A",
+    "ref": "copy",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "foreign-k1+A",
+    "ref": "foreign",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "corrupt-k1+A",
+    "ref": "corrupt",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "A"
+   },
+   {
+    "name": "copy-k1+Mv",
+    "ref": "copy",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "foreign-k1+Mv",
+    "ref": "foreign",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "corrupt-k1+Mv",
+    "ref": "corrupt",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "Mv"
+   },
+   {
+    "name": "copy-k1+S1e-3",
+    "ref": "copy",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "foreign-k1+S1e-3",
+    "ref": "foreign",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   },
+   {
+    "name": "corrupt-k1+S1e-3",
+    "ref": "corrupt",
+    "k2": 1.0,
+    "k3": 1.0,
+    "arb": "S1e-3"
+   }
+  ],
+  "labels": [
+   [
+    "off",
+    "none"
+   ],
+   [
+    "copy-k0.75",
+    "none"
+   ],
+   [
+    "foreign-k0.75",
+    "none"
+   ],
+   [
+    "corrupt-k0.75",
+    "none"
+   ],
+   [
+    "copy-k0.75+A",
+    "none"
+   ],
+   [
+    "foreign-k0.75+A",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+A",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mv",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mv",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mv",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mt250",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mt250",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mt250",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mt1000",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mt1000",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mt1000",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mpre",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mpre",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mpre",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mmid",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mmid",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mmid",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mmidc",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mmidc",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+Mmidc",
+    "none"
+   ],
+   [
+    "copy-k0.75+S1e-2",
+    "none"
+   ],
+   [
+    "foreign-k0.75+S1e-2",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+S1e-2",
+    "none"
+   ],
+   [
+    "copy-k0.75+S1e-3",
+    "none"
+   ],
+   [
+    "foreign-k0.75+S1e-3",
+    "none"
+   ],
+   [
+    "corrupt-k0.75+S1e-3",
+    "none"
+   ],
+   [
+    "copy-k0.5",
+    "none"
+   ],
+   [
+    "foreign-k0.5",
+    "none"
+   ],
+   [
+    "corrupt-k0.5",
+    "none"
+   ],
+   [
+    "copy-k0.5+A",
+    "none"
+   ],
+   [
+    "foreign-k0.5+A",
+    "none"
+   ],
+   [
+    "corrupt-k0.5+A",
+    "none"
+   ],
+   [
+    "copy-k0.5+Mv",
+    "none"
+   ],
+   [
+    "foreign-k0.5+Mv",
+    "none"
+   ],
+   [
+    "corrupt-k0.5+Mv",
+    "none"
+   ],
+   [
+    "copy-k0.5+S1e-3",
+    "none"
+   ],
+   [
+    "foreign-k0.5+S1e-3",
+    "none"
+   ],
+   [
+    "corrupt-k0.5+S1e-3",
+    "none"
+   ],
+   [
+    "copy-k1",
+    "none"
+   ],
+   [
+    "foreign-k1",
+    "none"
+   ],
+   [
+    "corrupt-k1",
+    "none"
+   ],
+   [
+    "copy-k1+A",
+    "none"
+   ],
+   [
+    "foreign-k1+A",
+    "none"
+   ],
+   [
+    "corrupt-k1+A",
+    "none"
+   ],
+   [
+    "copy-k1+Mv",
+    "none"
+   ],
+   [
+    "foreign-k1+Mv",
+    "none"
+   ],
+   [
+    "corrupt-k1+Mv",
+    "none"
+   ],
+   [
+    "copy-k1+S1e-3",
+    "none"
+   ],
+   [
+    "foreign-k1+S1e-3",
+    "none"
+   ],
+   [
+    "corrupt-k1+S1e-3",
+    "none"
+   ],
+   [
+    "off",
+    "R"
+   ],
+   [
+    "copy-k0.75",
+    "R"
+   ],
+   [
+    "copy-k0.75+A",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mv",
+    "R"
+   ],
+   [
+    "copy-k0.75+Me",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mt250",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mt1000",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mpre",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mmid",
+    "R"
+   ],
+   [
+    "copy-k0.75+Mmidc",
+    "R"
+   ],
+   [
+    "copy-k0.75+S1e-2",
+    "R"
+   ],
+   [
+    "copy-k0.75+S1e-3",
+    "R"
+   ],
+   [
+    "copy-k0.5",
+    "R"
+   ],
+   [
+    "copy-k0.5+A",
+    "R"
+   ],
+   [
+    "copy-k0.5+Mv",
+    "R"
+   ],
+   [
+    "copy-k0.5+S1e-3",
+    "R"
+   ],
+   [
+    "copy-k1",
+    "R"
+   ],
+   [
+    "copy-k1+A",
+    "R"
+   ],
+   [
+    "copy-k1+Mv",
+    "R"
+   ],
+   [
+    "copy-k1+S1e-3",
+    "R"
+   ],
+   [
+    "off",
+    "K"
+   ],
+   [
+    "copy-k0.75",
+    "K"
+   ],
+   [
+    "foreign-k0.75",
+    "K"
+   ],
+   [
+    "copy-k0.75+A",
+    "K"
+   ],
+   [
+    "foreign-k0.75+A",
+    "K"
+   ],
+   [
+    "copy-k0.75+Mv",
+    "K"
+   ],
+   [
+    "foreign-k0.75+Mv",
+    "K"
+   ],
+   [
+    "copy-k0.75+S1e-2",
+    "K"
+   ],
+   [
+    "foreign-k0.75+S1e-2",
+    "K"
+   ],
+   [
+    "copy-k0.75+S1e-3",
+    "K"
+   ],
+   [
+    "foreign-k0.75+S1e-3",
+    "K"
+   ],
+   [
+    "off",
+    "change"
+   ],
+   [
+    "copy-k0.75",
+    "change"
+   ],
+   [
+    "foreign-k0.75",
+    "change"
+   ],
+   [
+    "copy-k0.75+A",
+    "change"
+   ],
+   [
+    "foreign-k0.75+A",
+    "change"
+   ],
+   [
+    "copy-k0.75+Me",
+    "change"
+   ],
+   [
+    "foreign-k0.75+Me",
+    "change"
+   ]
+  ],
+  "recipients": [
+   [
+    "off",
+    "none"
+   ],
+   [
+    "copy-k0.75",
+    "none"
+   ],
+   [
+    "foreign-k0.75",
+    "none"
+   ],
+   [
+    "copy-k0.75+A",
+    "none"
+   ],
+   [
+    "foreign-k0.75+A",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mv",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mv",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mt250",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mt250",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mt1000",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mt1000",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mpre",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mpre",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mmid",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mmid",
+    "none"
+   ],
+   [
+    "copy-k0.75+Mmidc",
+    "none"
+   ],
+   [
+    "foreign-k0.75+Mmidc",
+    "none"
+   ],
+   [
+    "copy-k0.75+S1e-2",
+    "none"
+   ],
+   [
+    "foreign-k0.75+S1e-2",
+    "none"
+   ],
+   [
+    "copy-k0.75+S1e-3",
+    "none"
+   ],
+   [
+    "foreign-k0.75+S1e-3",
+    "none"
+   ]
+  ],
+  "parent_gated": [
+   [
+    "copy-k0.75+A",
+    "none"
+   ],
+   [
+    "foreign-k0.75+A",
+    "none"
+   ]
+  ],
+  "successor_anchors": "made at birth from the inherited record: sign(r) where r != 0, the case's sites, fixed",
+  "window": 2000,
+  "reads": [
+   250,
+   1000,
+   2000
+  ],
+  "window2": 2000,
+  "reads2": [
+   500,
+   1000,
+   2000
+  ]
+ }
+}

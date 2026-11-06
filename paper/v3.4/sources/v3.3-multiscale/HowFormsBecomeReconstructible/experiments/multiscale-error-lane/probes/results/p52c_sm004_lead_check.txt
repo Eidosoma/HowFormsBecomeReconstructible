@@ -1,0 +1,51 @@
+P52c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm004/test (test): 96 tasks, every sha256 equal to the manifest's; digest 33a8a24747b0; 2026-11-02T00:40:11Z - 2026-11-02T02:01:18Z
+  FIT: 48 rereads at g 1 and 2 (SM003), 32 at g 4 (SM004, digest 33a8a24747b0), 48 SM001 FIT shards, every sha256 equal to its manifest's; the model file sha256 d3cb24ccf9f72f66 (the committed one), model sha256 0409b6cc10b7, chosen H1
+  rows: 864 FIT condition means (equal to the frozen blob's fit_means exactly; 648 at g 1 and 2); 459 conditions in the stage
+  the model by the declared rule: LOBO H0 0.073469, H1 0.067170, H2 0.065940, H3 0.065944, H4 0.065521, H5 0.065297, H6 0.065298; chosen H1 (within the tolerance by 0.000127); the frozen blob: H1, LOBO H0 0.073469, H1 0.067170, H2 0.065940, H3 0.065944, H4 0.065521, H5 0.065297, H6 0.065298
+  the lead's refit of H1: FIT R2 0.882083 (the blob's 0.882083); its predictions at the 459 conditions against the frozen model's: largest |difference| 4.2e-08
+     FIT bias (E - the model) at g 1: -0.000934
+     FIT bias (E - the model) at g 2: -0.003792
+     FIT bias (E - the model) at g 4: +0.007357
+  the parametric (21 terms) refitted on the 864 means by the lead: against the blob's at the stage's conditions, largest |difference| 4.4e-08
+
+REGISTERED PARTS (16 blocks x 8 cases; SD = sqrt(SD_T^2 + SD_F^2); [95% t interval], t(0.975, 15) = 2.1314)
+  N1 the g-2 offset: refinement at g 2, E - the model (81 conditions)
+     -0.032609 [-0.056624, -0.008594]  SD 0.045069 (SD_T 0.029836, SD_F 0.033779: single 0.033779, jackknife 0.033590)  threshold (-0.1, 0.05): HOLDS
+  N2 the g-4 shortfall: refinement at g 4, E - the model (81 conditions)
+     -0.015903 [-0.036088, +0.004282]  SD 0.037880 (SD_T 0.027838, SD_F 0.025691: single 0.025691, jackknife 0.025520)  threshold (-0.05, 0.08): HOLDS
+  N3 the late loss: refinement at g 1, m 2, (E - E twin) - (the model - the model at the twin) (27 conditions)
+     -0.060311 [-0.085685, -0.034937]  SD 0.047618 (SD_T 0.030221, SD_F 0.036800: single 0.034463, jackknife 0.036800)  threshold (-0.16, 0.01): HOLDS
+  N4 the prompt loss: the same at m 0 (54 conditions)
+     +0.007125 [-0.013443, +0.027693]  SD 0.038598 (SD_T 0.027956, SD_F 0.026614: single 0.025208, jackknife 0.026614)  threshold (-0.07, 0.06): HOLDS
+  N5 the larger sheet: transfer at g 1, 2 and 4, E - the model (216 conditions)
+     -0.006455 [-0.026429, +0.013520]  SD 0.037485 (SD_T 0.031512, SD_F 0.020301: single 0.020189, jackknife 0.020301)  threshold (-0.07, 0.06): HOLDS
+  N6 the matched-reader gain at g 2: (E - E twin at g/2) - (the model - the model at the twin at g/2) (81 conditions)
+     -0.021181 [-0.047064, +0.004703]  SD 0.048575 (SD_T 0.032737, SD_F 0.035886: single 0.034816, jackknife 0.035886)  threshold (-0.1, 0.08): HOLDS
+  N7 the same at g 4 (81 conditions)
+     -0.006331 [-0.027838, +0.015175]  SD 0.040361 (SD_T 0.035388, SD_F 0.019408: single 0.019298, jackknife 0.019408)  threshold (-0.05, 0.09): HOLDS
+  N8 closer than F4 at g 4: refinement, |E - F4| - |E - the model| (81 conditions)
+     +0.045455 [+0.035096, +0.055813]  SD 0.019440 (SD_T 0.011469, SD_F 0.015696: single 0.015696, jackknife 0.015310)  threshold 0.02: HOLDS
+  VERDICTS: N1 HOLDS, N2 HOLDS, N3 HOLDS, N4 HOLDS, N5 HOLDS, N6 HOLDS, N7 HOLDS, N8 HOLDS
+
+REPORTED (scored the same way)
+  N9  closer than F4 at g 2: refinement, |E - F4| - |E - the model|: +0.016536 [+0.009581, +0.023490] (SD_T 0.009292, SD_F 0.009165; halves +0.019745 +0.013327)
+  N10 the late loss kept against F4: refinement at g 1, late, |F4's loss error| - |the model's loss error|: -0.015012 [-0.020082, -0.009941] (SD_T 0.005193, SD_F 0.007974; halves -0.015478 -0.014546)
+  R7  refinement at g 2, E - F4 (SM003's R1): +0.040844 [+0.018029, +0.063659] (SD_T 0.029836, SD_F 0.030708; halves +0.050587 +0.031102)
+  R8  refinement at g 4, E - F4 (SM003's M7): +0.072453 [+0.052045, +0.092861] (SD_T 0.027838, SD_F 0.026303; halves +0.076660 +0.068246)
+  R16 the observed late loss at g 1, E - E twin: -0.147460 [-0.163563, -0.131356] (SD_T 0.030221, SD_F 0.000000; halves -0.141730 -0.153189)
+  R17 E - E twin at g/2 at g 2 (SM003's M4): +0.073559 [+0.056115, +0.091004] (SD_T 0.032737, SD_F 0.000000; halves +0.071756 +0.075362)
+  R18 the same at g 4 (SM003's M5): +0.054969 [+0.036111, +0.073826] (SD_T 0.035388, SD_F 0.000000; halves +0.053143 +0.056794)
+  R10 refinement at g 2, |E - the parametric| - |E - the model|: -0.002513 [-0.007255, +0.002228] (SD_T 0.001746, SD_F 0.008726; halves -0.002023 -0.003004)
+  R11 refinement at g 4, |E - the parametric| - |E - the model|: -0.006786 [-0.012399, -0.001172] (SD_T 0.002351, SD_F 0.010269; halves -0.007338 -0.006233)
+  R12 refinement at g 2, |E - the 4-NN| - |E - the model|: +0.006025 [+0.001072, +0.010978] (SD_T 0.003202, SD_F 0.008726; halves +0.005548 +0.006502)
+  R13 refinement at g 4, |E - the 4-NN| - |E - the model|: -0.007121 [-0.013108, -0.001134] (SD_T 0.004560, SD_F 0.010269; halves -0.007360 -0.006881)
+  the predicted refinement loss at g 1, late, from the FIT alone: the model -0.087148, F4 -0.142696; observed -0.147460
+  the predicted refinement loss at g 1, prompt, from the FIT alone: the model -0.034361, F4 -0.068093; observed -0.027236
+  the model's bias at g 2, late (refinement, E - the model): -0.085634 (27 conditions)
+  the model's bias at g 2, prompt (refinement, E - the model): -0.006097 (54 conditions)
+  the model's bias at g 4, late (refinement, E - the model): -0.056412 (27 conditions)
+  the model's bias at g 4, prompt (refinement, E - the model): +0.004351 (54 conditions)
+
+THE REPORTED SENSITIVITIES ON TEST (Amendment 1; numbers, no thresholds)
+  H2: N1 -0.048156; N2 -0.029509; N3 -0.059137; N4 -0.026527; N5 -0.007281; N6 -0.043262; N7 -0.015506; N8 +0.052848; N9 +0.021513; N10 -0.015297
+  H5: N1 -0.038357; N2 -0.034825; N3 -0.050616; N4 -0.011723; N5 -0.006641; N6 -0.032803; N7 -0.024891; N8 +0.052191; N9 +0.019075; N10 -0.025231

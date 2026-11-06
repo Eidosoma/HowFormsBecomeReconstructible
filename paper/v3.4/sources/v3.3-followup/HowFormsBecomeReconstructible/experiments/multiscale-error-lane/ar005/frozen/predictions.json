@@ -1,0 +1,156 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "0176779a89e36a7e664b9b1cecbfe3c2abfa213a7422d6341243b170b8ae9b02",
+ "computed_utc": "2026-11-02T16:33:55Z",
+ "best": "vote",
+ "controller": "vguard",
+ "vguard_name": "g-body-f05",
+ "thresholds": {
+  "K1": 0.01,
+  "K2a": 0.002,
+  "K2b": 0.01,
+  "K3a": 0.01,
+  "K3b": 0.0,
+  "K4": -0.01,
+  "K5": 0.12,
+  "K6a": 0.4,
+  "K6b": 0.37,
+  "K6c0": 0.08,
+  "K6c1": 0.02,
+  "K7a": -0.005,
+  "K7b": -0.005
+ },
+ "k_share": 0.25,
+ "parts": [
+  {
+   "stmt": "K1",
+   "name": "K1 sheet cost under scattered cue damage: r_all(vote) - r_all(vguard), cue@0",
+   "sense": "le",
+   "key": "K1",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 (a) sheet cost with no event: r_all(vote) - r_all(vguard), none@0",
+   "sense": "le",
+   "key": "K2a",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 (b) sheet cost under misreads with no event: r_all(vote, none@0) - r_all(vguard, none@1)",
+   "sense": "le",
+   "key": "K2b",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 (a) R1 = (1/2) sum over sizes 4, 8 of u(vguard, memory@1) - u(vms, memory@1)",
+   "sense": "ge",
+   "key": "K3a",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 (b) the share kept: R1(vguard) - k R1(vpool)",
+   "sense": "ge",
+   "key": "K3b",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "K4",
+   "name": "K4 R0 = (1/2) sum over sizes 4, 8 of u(vguard, memory@0) - u(vms, memory@0)",
+   "sense": "ge",
+   "key": "K4",
+   "threshold": -0.01
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 W1 = (1/2) sum over sizes 4, 8 of u(vguard, memory@1) - u(vote, memory@0)",
+   "sense": "ge",
+   "key": "K5",
+   "threshold": 0.12
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 (a) u(vpool) - u(vguard) in correlated damage, 4 x 4, sigma 0",
+   "sense": "le",
+   "key": "K6a",
+   "threshold": 0.4
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 (b) u(vpool) - u(vguard) in correlated damage, 4 x 4, sigma 1",
+   "sense": "le",
+   "key": "K6b",
+   "threshold": 0.37
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 (c) u(vguard) - u(vote) in correlated damage, 4 x 4, sigma 0",
+   "sense": "ge",
+   "key": "K6c0",
+   "threshold": 0.08
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 (c) u(vguard, correlated@1) - u(vote, correlated@0), 4 x 4",
+   "sense": "ge",
+   "key": "K6c1",
+   "threshold": 0.02
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 u(vguard) - u(vote) in the 4 x 4 patch, none@0",
+   "sense": "ge",
+   "key": "K7a",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 u(vguard, none@1) - u(vote, none@0) in the 4 x 4 patch",
+   "sense": "ge",
+   "key": "K7b",
+   "threshold": -0.005
+  }
+ ],
+ "dropped": [],
+ "reported": [],
+ "statements": [
+  {
+   "id": "K1",
+   "claim": "under scattered cue damage the guarded controller's false alarms cost intact tissue within the confirmed bound",
+   "rule": "HOLDS if r_all(vote) - r_all(vguard) in cue@0 <= 0.01, else FAILS"
+  },
+  {
+   "id": "K2",
+   "claim": "with no event its false alarms cost intact tissue within the confirmed bound, and under misreads within AR003's E9 bound",
+   "rule": "HOLDS if r_all(vote) - r_all(vguard) in none@0 <= 0.002 and r_all(vote, none@0) - r_all(vguard, none@1) <= 0.01, else FAILS"
+  },
+  {
+   "id": "K3",
+   "claim": "under misread cues the guard keeps the pooled detector's recovery over the confirmed controller",
+   "rule": "HOLDS if R1 = (1/2) sum over sizes 4, 8 of u(vguard, memory@1) - u(vms, memory@1) >= 0.01 and R1(vguard) - 0.25 R1(vpool) >= 0.0, else FAILS"
+  },
+  {
+   "id": "K4",
+   "claim": "at sigma 0 it keeps the confirmed controller's hits (non-inferiority)",
+   "rule": "HOLDS if R0 = (1/2) sum over sizes 4, 8 of u(vguard, memory@0) - u(vms, memory@0) >= -0.01, else FAILS"
+  },
+  {
+   "id": "K5",
+   "claim": "under misread cues the controller still beats the best fixed policy",
+   "rule": "HOLDS if W1 = (1/2) sum over sizes 4, 8 of u(vguard, memory@1) - u(vote, memory@0) >= 0.12, else FAILS"
+  },
+  {
+   "id": "K6",
+   "claim": "the blind spot, measured: where body and record share the error the guard gives up at most a measured part of the pooled detector's worth, and keeps at least a measured part of its worth over the vote",
+   "rule": "HOLDS if u(vpool) - u(vguard) in correlated damage at 4 x 4 is at most 0.4 at sigma 0 and 0.37 at sigma 1, and u(vguard) - u(vote) there is at least 0.08 at sigma 0 and 0.02 at sigma 1 (against the vote's sigma-0 run), else FAILS"
+  },
+  {
+   "id": "K7",
+   "claim": "it gives up nothing to the vote where nothing needs correcting (non-inferiority)",
+   "rule": "HOLDS if u(vguard) - u(vote) in the 4 x 4 patch is at least -0.005 in none@0, and u(vguard, none@1) - u(vote, none@0) >= -0.005, else FAILS"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+0. the split guard's arithmetic: on 5 synthetic states (3 cases, 16 x 16, boxes 2-12), the lead's loop's W0 | (W1 & B) equals ar006.sim.windows at every box, 42240 windows, 0 differ; ar006.sim.windows equals ar002.sim.cue_windows_multi (DET_STAR) united with ar005.sim.guarded_windows (DET_POOL, f 0.5) exactly; windows held: W0 12, W1 25, W1&B 22, vtol 24, added 12 (added: the guarded pooled-only windows vtol holds beyond DET_STAR)
+
+1. P57c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/debug (debug, DRY RUN on engineering blocks): 8 tasks, 16 files, every sha256 equal to the manifest's; digest 963f47e2cf71 (AR005's 0176779a89e3 and AR003's d392002671e6, their frozen sources unchanged); 2026-11-03T13:17:50Z - 2026-11-03T13:32:01Z, 1.33 CPU-h, 8 workers
+   runs: memory@0 (L 4; vote, vms, vtol), memory@0-L8 (L 8; vote, vms, vtol), memory@1 (L 4; vms, vpool, vguard, vtol), memory@1-L8 (L 8; vms, vpool, vguard, vtol), none@0 (L 4; vote, vms, vtol), none@1 (L 4; vms, vtol), cue@0 (L 4; vote, vms, vpool, vtol), correlated@0 (L 4; vote, vms, vpool, vguard, vtol), correlated@1 (L 4; vms, vpool, vguard, vtol)
+   detectors in every shard: vms DET_STAR, vpool pool-n3-q1-r1, vguard DET_POOL + g-body-f05, vtol DET_POOL + the split (the clean surround free, the tolerated window body-checked at f 0.5)
+
+2. THE PARTS (1 blocks; pooled over the eight unit-body pairs; [95% t interval], t(0.975, 0) = nan; SD_block the max rule)
+   K1   vtol's sheet cost under scattered cue damage, cue@0: +0.010880 [+nan, +nan] (SD 0.003339: block nan, case/sqrt8 0.003339; halves +0.010880 +0.010880)  [reported: dropped by the rule]
+   K2a  vtol's sheet cost with no event, none@0: -0.000076 [+nan, +nan] (SD 0.000076: block nan, case/sqrt8 0.000076; halves -0.000076 -0.000076)  <= +0.002: holds
+   K2b  vtol's sheet cost, none@1 against the vote's none@0: +0.002747 [+nan, +nan] (SD 0.001557: block nan, case/sqrt8 0.001557; halves +0.002747 +0.002747)  <= +0.01: holds
+   K3a  R1 = mean over 4, 8 of u(vtol, memory@1) - u(vms, memory@1): +0.130615 [+nan, +nan] (SD 0.049064: block nan, case/sqrt8 0.049064; halves +0.130615 +0.130615)  >= +0.04: holds
+   K4   R0 = mean over 4, 8 of u(vtol, memory@0) - u(vms, memory@0): +0.000000 [+nan, +nan] (SD 0.000000: block nan, case/sqrt8 0.000000; halves +0.000000 +0.000000)  >= -0.005: holds
+   K5a  correlated@0: u(vtol) - u(vms): +0.000000 [+nan, +nan] (SD 0.000000: block nan, case/sqrt8 0.000000; halves +0.000000 +0.000000)  >= -0.005: holds
+   K5b  correlated@0: u(vtol) - u(vguard): +0.411133 [+nan, +nan] (SD 0.073865: block nan, case/sqrt8 0.073865; halves +0.411133 +0.411133)  >= +0.25: holds
+   K5c  correlated@1: u(vtol) - u(vms): +0.021484 [+nan, +nan] (SD 0.021484: block nan, case/sqrt8 0.021484; halves +0.021484 +0.021484)  >= -0.03: holds
+   K5d  correlated@1: u(vtol) - u(vguard): +0.199219 [+nan, +nan] (SD 0.068745: block nan, case/sqrt8 0.068745; halves +0.199219 +0.199219)  >= +0.0: holds
+   K6   W1 = mean over 4, 8 of u(vtol, memory@1) - u(vote, memory@0): +0.303955 [+nan, +nan] (SD 0.056930: block nan, case/sqrt8 0.056930; halves +0.303955 +0.303955)  >= +0.12: holds
+   K7a  u(vtol) - u(vote) in the 4 x 4 patch, none@0: +0.000000 [+nan, +nan] (SD 0.000000: block nan, case/sqrt8 0.000000; halves +0.000000 +0.000000)  >= -0.005: holds
+   K7b  u(vtol, none@1) - u(vote, none@0), 4 x 4 patch: +0.000000 [+nan, +nan] (SD 0.000000: block nan, case/sqrt8 0.000000; halves +0.000000 +0.000000)  >= -0.005: holds
+   K3b  R1(vtol) - k R1(vpool) >= 0:
+        at the registered k 0.5: +0.061279 [+nan, +nan] (SD 0.024479: block nan, case/sqrt8 0.024479; halves +0.061279 +0.061279)  >= 0: holds
+   VERDICTS: K2 HOLDS, K3 HOLDS, K4 HOLDS, K5 HOLDS, K6 HOLDS, K7 HOLDS; K1 reported (dropped by the rule)  [not a development result]
+        (R1(vpool): +0.138672 [+nan, +nan] (SD 0.051036: block nan, case/sqrt8 0.051036; halves +0.138672 +0.138672); the share R1(vtol) / R1(vpool) 0.9419)
+
+   REPORTED (not registered)
+   vms's sheet cost, cue@0: +0.008667 [+nan, +nan] (SD 0.003885: block nan, case/sqrt8 0.003885; halves +0.008667 +0.008667)
+   vpool's sheet cost, cue@0: +0.025360 [+nan, +nan] (SD 0.005394: block nan, case/sqrt8 0.005394; halves +0.025360 +0.025360)
+   vms's sheet cost, none@0: -0.000076 [+nan, +nan] (SD 0.000076: block nan, case/sqrt8 0.000076; halves -0.000076 -0.000076)
+   vms's sheet cost, none@1: +0.002747 [+nan, +nan] (SD 0.001557: block nan, case/sqrt8 0.001557; halves +0.002747 +0.002747)
+   u(vtol) - u(vote) inside the patch, cue@0: -0.029297 [+nan, +nan] (SD 0.029297: block nan, case/sqrt8 0.029297; halves -0.029297 -0.029297)
+   R1 at 4 x 4: vtol +0.133789 [+nan, +nan] (SD 0.065288: block nan, case/sqrt8 0.065288; halves +0.133789 +0.133789)
+   R1 at 8 x 8: vtol +0.127441 [+nan, +nan] (SD 0.060148: block nan, case/sqrt8 0.060148; halves +0.127441 +0.127441)
+   rates by run (fired at all / on the patch):
+     memory@0      vms    0.8750 / 0.8750
+     memory@0      vtol   0.8750 / 0.8750
+     memory@0-L8   vms    1.0000 / 1.0000
+     memory@0-L8   vtol   1.0000 / 1.0000
+     memory@1      vms    0.5625 / 0.4375
+     memory@1      vpool  0.8906 / 0.7344
+     memory@1      vguard 0.6719 / 0.6562
+     memory@1      vtol   0.7344 / 0.6719
+     memory@1-L8   vms    0.4062 / 0.2812
+     memory@1-L8   vpool  0.8125 / 0.6562
+     memory@1-L8   vguard 0.5312 / 0.5156
+     memory@1-L8   vtol   0.6406 / 0.5156
+     none@0        vms    0.0156 / 0.0000
+     none@0        vtol   0.0156 / 0.0000
+     none@1        vms    0.3125 / 0.0000
+     none@1        vtol   0.3125 / 0.0000
+     cue@0         vms    0.5000 / 0.1250
+     cue@0         vpool  1.0000 / 0.2500
+     cue@0         vtol   0.6562 / 0.1250
+     correlated@0  vms    0.8750 / 0.8750
+     correlated@0  vpool  0.8750 / 0.8750
+     correlated@0  vguard 0.2969 / 0.2812
+     correlated@0  vtol   0.8750 / 0.8750
+     correlated@1  vms    0.5625 / 0.4375
+     correlated@1  vpool  0.8750 / 0.7188
+     correlated@1  vguard 0.1875 / 0.1719
+     correlated@1  vtol   0.6094 / 0.4844
+
+3. FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch): r_in and r_all recomputed from the final records, 256 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00; a vote-default arm that never fired against the vote, both records, bit for bit: 642 of 642 lineage-cases equal
+   the derivation's branch identities (checked, failures): onset_min 256 checked, 0 fail; vms_branch 107 checked, 0 fail; vguard_branch 32 checked, 0 fail; union_zone 44 checked, 0 fail; not_before_vpool 320 checked, 0 fail; not_after_vms 576 checked, 0 fail

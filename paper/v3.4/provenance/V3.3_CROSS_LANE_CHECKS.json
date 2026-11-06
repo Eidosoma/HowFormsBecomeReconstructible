@@ -1,0 +1,164 @@
+{
+  "version": "3.3",
+  "checked_utc": "2026-11-02T19:34:43.856246+00:00",
+  "scope": "Source/archive hashes; E107 scores from frozen probabilities and outcomes; E123 arithmetic; SM005 block means; copied exact FEP bounds and gate counts. Other effects transcribed from completed reports. No simulator, model fitting, bootstrap or full native replay.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "selected source archive hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all archived source members bind to selection",
+      "passed": true,
+      "detail": {
+        "selected_files": 337,
+        "bad": []
+      }
+    },
+    {
+      "name": "E107 completed export hashes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "E107 full selected/future inclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E107 acquisition prevalence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E107 absolute Brier, prevalence and calibration reproduced from frozen rows",
+      "passed": true,
+      "detail": {
+        "score_groups": 72,
+        "errors": []
+      }
+    },
+    {
+      "name": "E123 selected closeout outputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E123 primary score arithmetic and unresolved interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E123 four-candidate identity scores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM005 reader effects reproduced from 32 block values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SM005 quoted recovery and dominant-length limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FEP independent readback binds completed source manifest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FEP copied scientific output hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FEP exact infeasibility bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FEP partial usefulness does not pass complete conjunction",
+      "passed": true,
+      "detail": {
+        "stable": 18,
+        "always_recovery": 18,
+        "hybrid_recovery": 11
+      }
+    },
+    {
+      "name": "H106 retained report includes both verdicts and copying boundary",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "extracted": {
+    "E107/balanced/matched": {
+      "brier": 0.12200116176369714,
+      "terminal_success": 0.6304687499999976
+    },
+    "E107/balanced/independent": {
+      "brier": 0.09298532199045996,
+      "terminal_success": 0.6679687499999954
+    },
+    "E107/population/matched": {
+      "brier": 0.11775703471949184,
+      "terminal_success": 0.7850097656250016
+    },
+    "E107/population/independent": {
+      "brier": 0.055243416828210976,
+      "terminal_success": 0.8615722656250019
+    },
+    "E123_primary": {
+      "ci95_bits": [
+        -0.0018642980263006573,
+        0.014067553810924454
+      ],
+      "direction": "record_loss_minus_joint_loss",
+      "mean_bits": 0.006064495615497207,
+      "source_blocks": 64
+    },
+    "SM005": {
+      "L1": {
+        "value": 0.04656021683304399,
+        "ci95": [
+          0.04125536613342563,
+          0.051865067532662346
+        ]
+      },
+      "L2": {
+        "value": 0.1911231146918403,
+        "ci95": [
+          0.1794892216904499,
+          0.20275700769323068
+        ]
+      },
+      "L3": {
+        "value": 0.03195246943721065,
+        "ci95": [
+          0.012603123247706606,
+          0.05130181562671469
+        ]
+      },
+      "L4": {
+        "value": 0.18605324074074076,
+        "ci95": [
+          0.17149923738982642,
+          0.2006072440916551
+        ]
+      }
+    },
+    "FEP": {
+      "lower": -0.00018444299814242613,
+      "upper": -1.4200220347005141e-05,
+      "selected_policy_gate_counts": {
+        "stable": 18,
+        "always_recovery": 18,
+        "hybrid_recovery": 11
+      }
+    }
+  }
+}

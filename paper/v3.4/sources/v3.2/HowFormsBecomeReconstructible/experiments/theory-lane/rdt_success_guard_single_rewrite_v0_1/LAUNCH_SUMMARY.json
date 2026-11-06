@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-28T22:26:15.656734+00:00",
+  "status": "LAUNCHED_STARTUP_VERIFIED_NO_FURTHER_POLLING",
+  "launch": {
+    "utc": "2026-10-28T22:25:20.335625+00:00",
+    "pid": 1247307,
+    "pgid": 1247307,
+    "inputs": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_single_rewrite_v0_1/jobs/single_rewrite_v1/inputs",
+    "output": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_single_rewrite_v0_1/runs/single_rewrite_v1",
+    "input_manifest_sha256": "b951cea2d453c7f90318714685f92d9cb2afdb652dcd5ff30e6c1020ef9149ca",
+    "combined_hard_seconds": 3600,
+    "estimated_historical_minutes": [
+      25.0,
+      45.0
+    ],
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_successor": false
+  },
+  "startup": {
+    "utc": "2026-10-28T22:25:23.336101+00:00",
+    "pid": 1247307,
+    "returncode": null,
+    "start_present": true,
+    "status_present": true,
+    "single_startup_check": true
+  },
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four packets per block, then across all 28 exposed acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_first_success_once"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "Single paired acquisition-block contrast: ongoing current-success guard minus one successful rewrite then retain, under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, sample extension, primary substitution or equivalence claim.",
+    "degrees_of_freedom": 27,
+    "critical_two_sided95": 2.0518305164802846,
+    "critical_one_sided95": 1.7032884457221265,
+    "inference": "28 exposed acquisition blocks are the uncertainty unit. Fresh future randomness; conditional exposed-panel development estimand. Packets, time points and arms are not independent replicates. Approximate paired t intervals."
+  },
+  "source_exposure": "All 28 blocks and all 112 original g14 packets from the previous completed replication are reused without selection. Its outcomes motivated the hypothesis (79.26% of guard-minus-random extra later successes arose from shared-g15 failures). All are now exposed development data. New namespace/future and allocation streams; no fresh-founder confirmation claim. No power claim for this unmeasured primary contrast.",
+  "policies": [
+    "always_promote",
+    "matched_random",
+    "writer_success_guard",
+    "protected_retain",
+    "first_success_once"
+  ],
+  "source_blocks": 28,
+  "source_packets": 112,
+  "target_outcomes": 560,
+  "full_native_reads_planned_including_qualification": 24320,
+  "new_native_acquisitions": 0,
+  "new_teaching_episodes": 0,
+  "software_tests_passed": 30,
+  "software_wall_seconds": 17.618671057978645,
+  "software_full_reads_separate": 56,
+  "software_short32_reads_separate": 760,
+  "input_files": 73,
+  "cpu_other_threads_at_launch": 2,
+  "planned_threads": 5,
+  "shared_thread_limit": 12,
+  "target_requires_full_horizon_qualification": true,
+  "qualification_outcome_not_polled": true,
+  "prior_scientific_decisions_unchanged": true,
+  "RDT_specific_validation": false,
+  "test_card": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_single_rewrite_v0_1/jobs/single_rewrite_v1/inputs/context/TEST_CARD.txt",
+  "handoff": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_single_rewrite_v0_1/checks/HANDOFF.json",
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_successor": false
+}

@@ -1,0 +1,39 @@
+0. the erasure sizes recomputed from the island tests by the declared rule (agreement >= 0.5): equal to sm006/design.py's EPS in all 18 entries; censored at the largest island tested: 32/2/f4, 32/4/f1, 64/4/f1
+   32/1/f1 3; 32/1/f2 4; 32/1/f2r2 6; 32/1/f4 6; 32/2/f1 8; 32/2/f2 10; 32/2/f2r2 12; 32/2/f4 16; 32/4/f1 16; 64/1/f1 3; 64/1/f2 4; 64/1/f2r2 6; 64/1/f4 8; 64/2/f1 8; 64/2/f2 10; 64/2/f2r2 12; 64/2/f4 16; 64/4/f1 24
+
+1. FIT: 48 rereads at g 1 and 2 (SM003), 32 at g 4 (SM004), 48 gain rereads (SM006, reread digest 0a422b0fe0cd, design digest 6300a7c7408f), 48 SM001 FIT shards: every sha256 equal to its manifest's; 1836 condition means (864 at the base gain, 972 gain variants)
+
+2. THE FAMILY (the plan's words): J0 17 terms, rank 17, cond 36.4, LOBO 0.089079; J1 18 terms, rank 18, cond 36.5, LOBO 0.086382; J2 19 terms, rank 19, cond 36.9, LOBO 0.086242; J3 20 terms, rank 20, cond 38.6, LOBO 0.085233; J4 17 terms, rank 17, cond 15.3, LOBO 0.083073; J5 18 terms, rank 18, cond 15.4, LOBO 0.082941; J6 19 terms, rank 19, cond 29.1, LOBO 0.082896
+   the best admissible 0.082896; within 0.002: ['J4', 'J5', 'J6']; CHOSEN by the rule: J4 (17 terms)
+   the lead's fit of J4 on the 1836 means: R2 0.823657; FIT bias (E - the model) by grain and factor: g 1 f1 -0.0213; g 1 f2 +0.0219; g 1 f2r2 +0.0334; g 1 f4 +0.0086; g 2 f1 +0.0010; g 2 f2 -0.0153; g 2 f2r2 -0.0184; g 2 f4 +0.0138; g 4 f1 +0.0271
+   the frozen blob (sha256 0eaff72d5d067442): chosen J4; its predictions at the FIT means against the lead's fit: largest |difference| 2.1e-08
+   the sensitivity U: J4 on the 1458 FIT means whose erasure size is not censored (dropped: 32/2/f4, 32/4/f1; 378 means)
+
+3. P55c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm006/probe (probe, DRY RUN on engineering records): 24 tasks, every sha256 equal to the manifest's; digest 6300a7c7408f; the source records and SM005's refined E(6) shards: 60 files, every sha256 equal to its study's manifest
+   rows: 945 stage conditions; the lead's predictions equal the frozen blob's
+
+   THE PARTS (4 blocks x 8 cases; SD = sqrt(SD_T^2 + SD_F^2); [95% t interval]; the rule: each margin >= 1.6771, both halves)
+   S1  the late loss from FIT alone: refined, base g 1, late, (E - E twin) - (the model - the model at the twin) (27 conditions)
+        -0.042770 [-0.149930, +0.064391] SD 0.067345 (SD_T 0.030834, SD_F 0.059872: single 0.058365, jackknife 0.059872); halves -0.045966 -0.039573; the narrowest band [-0.16, +0.08]; registered band [-0.16, +0.08]: HOLDS
+   S2  the late loss against H1: |H1's loss error| - |the model's loss error| (27 conditions)
+        +0.030179 [-0.005304, +0.065662] SD 0.022299 (SD_T 0.015393, SD_F 0.016134: single 0.016134, jackknife 0.014058); halves +0.017671 +0.042687; the narrowest bound >= -0.01: NOT above 0: reported; reported
+   S3  E(4), blind: every unit, g 1, eps 4, E - the model (162 conditions)
+        +0.032527 [-0.040713, +0.105766] SD 0.046027 (SD_T 0.032420, SD_F 0.032672: single 0.032672, jackknife 0.032622); halves +0.008057 +0.056997; the narrowest band [-0.05, +0.11]; registered band [-0.05, +0.11]: HOLDS
+   S4  E(8), blind: every unit, g 1, gain x 1/4, E - the model (162 conditions)
+        +0.065428 [-0.007870, +0.138725] SD 0.046064 (SD_T 0.029405, SD_F 0.035458: single 0.035151, jackknife 0.035458); halves +0.060763 +0.070092; the narrowest band [-0.02, +0.15]; registered band [-0.02, +0.15]: HOLDS
+   S5  the erasure's recovery at gain x 1/4, blind: refined, late, (E(8) - E base) - (the model at eps 8 - at the base) (27 conditions)
+        +0.133247 [-0.000776, +0.267270] SD 0.084226 (SD_T 0.043056, SD_F 0.072390: single 0.071178, jackknife 0.072390); halves +0.147651 +0.118843; the narrowest band [-0.01, +0.28]; registered band [-0.01, +0.28]: HOLDS
+   S6  the same at eps 4 (27 conditions)
+        +0.092017 [+0.020001, +0.164034] SD 0.045259 (SD_T 0.033461, SD_F 0.030475: single 0.029158, jackknife 0.030475); halves +0.098139 +0.085896; the narrowest band [+0.01, +0.17]; registered band [+0.01, +0.17]: HOLDS
+   S7  closer than H1 at the blind targets: every unit, g 1, eps 4 and 8, |E - H1| - |E - the model| (324 conditions)
+        +0.042233 [+0.010044, +0.074421] SD 0.020229 (SD_T 0.011177, SD_F 0.016861: single 0.014636, jackknife 0.016861); halves +0.035421 +0.049045; the narrowest bound >= +0.00: NOT above 0: reported; reported
+   S8  the g-2 offset kept: refined, g 2, E - the model (81 conditions)
+        -0.037570 [-0.091250, +0.016111] SD 0.033735 (SD_T 0.024752, SD_F 0.022922: single 0.022922, jackknife 0.022441); halves -0.047697 -0.027442; the narrowest band [-0.10, +0.02]; registered band [-0.10, +0.02]: HOLDS
+   S9  the g-4 shortfall kept: refined, g 4, E - the model (81 conditions)
+        +0.068564 [+0.009157, +0.127971] SD 0.037334 (SD_T 0.025259, SD_F 0.027492: single 0.026844, jackknife 0.027492); halves +0.050000 +0.087128; the narrowest band [+0.00, +0.14]; registered band [+0.00, +0.14]: HOLDS
+   S10 the prompt loss kept: refined, base g 1, prompt, as S1 (54 conditions)
+        +0.004708 [-0.067489, +0.076906] SD 0.045372 (SD_T 0.023779, SD_F 0.038642: single 0.038241, jackknife 0.038642); halves +0.002762 +0.006655; the narrowest band [-0.08, +0.09]; registered band [-0.08, +0.09]: HOLDS
+   S11 the larger sheet kept: transfer, g 1, 2 and 4, E - the model (216 conditions)
+        +0.015162 [-0.041319, +0.071643] SD 0.035495 (SD_T 0.029660, SD_F 0.019498: single 0.019144, jackknife 0.019498); halves -0.004844 +0.035168; the narrowest band [-0.05, +0.08]; registered band [-0.05, +0.08]: HOLDS
+   the refinement loss at g 1, late: observed -0.164818; predicted from FIT by the model -0.122048, by H1 -0.087148
+   the refinement loss at g 1, prompt: observed -0.036917; predicted from FIT by the model -0.041626, by H1 -0.034361

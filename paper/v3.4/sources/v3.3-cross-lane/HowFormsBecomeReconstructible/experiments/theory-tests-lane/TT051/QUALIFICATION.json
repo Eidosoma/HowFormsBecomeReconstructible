@@ -1,0 +1,54 @@
+{
+  "benchmark_base_fits": 197,
+  "benchmark_calibration_fits": 98,
+  "benchmark_seconds": 9.3372837100178,
+  "conservative_forecast_seconds": 1542.6399610228837,
+  "fixtures": {
+    "calibration_cases": 9,
+    "fit_audits": [
+      {
+        "gradient_max": 1.3259484249504919e-12,
+        "loss_error": 0.0
+      },
+      {
+        "gradient_max": 9.80421473173454e-13,
+        "loss_error": 1.1102230246251565e-16
+      },
+      {
+        "gradient_max": 5.93206039845029e-14,
+        "loss_error": 1.1102230246251565e-16
+      },
+      {
+        "gradient_max": 2.096842144361233e-11,
+        "loss_error": 0.0
+      },
+      {
+        "gradient_max": 4.1898023668118095e-09,
+        "loss_error": 0.0
+      },
+      {
+        "gradient_max": 2.6202234856657902e-09,
+        "loss_error": 1.1102230246251565e-16
+      },
+      {
+        "gradient_max": 2.605606873058025e-09,
+        "loss_error": 0.0
+      }
+    ],
+    "future_interface_rejections": 3,
+    "maximum_transfer_error": 1.3877787807814457e-17,
+    "status": "PASS"
+  },
+  "forecast_formula": "2 times9 families times9 full/fold fits timeslargest-dimension outer fold, plus30s; caching can reduce actual work",
+  "leakage": {
+    "held_out_block": 0,
+    "labels_flipped": 96,
+    "predictions_byte_identical": true,
+    "selection_unchanged": true,
+    "status": "PASS"
+  },
+  "results_of_benchmark_not_used_for_model_selection": true,
+  "seconds": 14.008765477919951,
+  "status": "PASS",
+  "utc": "2026-11-01T13:56:35.394647+00:00"
+}

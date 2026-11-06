@@ -1,0 +1,254 @@
+{
+ "study": "SM007",
+ "design_digest": "6f83374954e2fc02e8d09e4f2a3a65a9e74c54bb5401257be04d2f6494a4d8e4",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "M1": 0.02,
+  "M2": 0.01,
+  "M3": 0.07,
+  "M4": 0.05,
+  "M5": [
+   -0.02,
+   0.01
+  ],
+  "M6": [
+   -0.02,
+   0.02
+  ],
+  "M7": 0.03,
+  "M8": 0.03,
+  "M9": [
+   -0.005,
+   0.005
+  ]
+ },
+ "G": {
+  "x": [
+   0.5090082074909773,
+   0.6356806457833734,
+   0.694254532659141,
+   0.7129764808205573,
+   0.9579486203336247,
+   1.2040685738328956
+  ],
+  "y": [
+   0.838958740234375,
+   0.8636550903320312,
+   0.874664306640625,
+   0.880828857421875,
+   0.9018707275390625,
+   0.9168243408203125
+  ]
+ },
+ "G_N": {
+  "x": [
+   1.0,
+   2.0,
+   4.0,
+   8.0
+  ],
+  "y": [
+   0.838958740234375,
+   0.8636550903320312,
+   0.8882675170898438,
+   0.8988265991210938
+  ]
+ },
+ "G_f": {
+  "x": [
+   0.1733779871352354,
+   0.2381296360449045,
+   0.27420567560992254,
+   0.29231018130568714,
+   0.381601003274356,
+   0.4761121262431013
+  ],
+  "y": [
+   0.838958740234375,
+   0.8636550903320312,
+   0.874664306640625,
+   0.880828857421875,
+   0.9018707275390625,
+   0.9168243408203125
+  ]
+ },
+ "G_source": "probes/results/p61b_sm007_margins.json",
+ "frozen_utc": "2026-11-05T13:33:07Z",
+ "registered": [
+  {
+   "id": "M1",
+   "part": "a(2x4/absorbing) - a(1x8/absorbing): geometry at equal membership, N 8",
+   "kind": "ge",
+   "threshold": 0.02
+  },
+  {
+   "id": "M2",
+   "part": "a(2x2/absorbing) - a(1x4/absorbing): geometry at equal membership, N 4",
+   "kind": "ge",
+   "threshold": 0.01
+  },
+  {
+   "id": "M3",
+   "part": "a(1x8/sealed) - a(1x8/absorbing): sealing rescues the elongated group",
+   "kind": "ge",
+   "threshold": 0.07
+  },
+  {
+   "id": "M4",
+   "part": "a(2x4/absorbing) - a(iso8/absorbing): the shared group against isolated sheets",
+   "kind": "ge",
+   "threshold": 0.05
+  },
+  {
+   "id": "M5",
+   "part": "a(2x4/absorbing) - a(2x4/absorbing/uniform): the distribution against the mean",
+   "kind": "in",
+   "threshold": [
+    -0.02,
+    0.01
+   ]
+  },
+  {
+   "id": "M6",
+   "part": "a(2x4/absorbing/rearranged) - a(2x4/absorbing): where the signal arrives",
+   "kind": "in",
+   "threshold": [
+    -0.02,
+    0.02
+   ]
+  },
+  {
+   "id": "M7",
+   "part": "G's mean absolute error over the eight new absorbing shapes at lambda (P61: interior leave-one-out)",
+   "kind": "le",
+   "threshold": 0.03
+  },
+  {
+   "id": "M8",
+   "part": "G's mean absolute error over the shapes absorbing at lambda2 (P61: the six pilot shapes)",
+   "kind": "le",
+   "threshold": 0.03
+  },
+  {
+   "id": "M9",
+   "part": "a(2x4/sealed) - a(1x8/sealed): geometry without leakage",
+   "kind": "in",
+   "threshold": [
+    -0.005,
+    0.005
+   ]
+  }
+ ],
+ "candidates_reported": [],
+ "reported": [
+  {
+   "id": "RP1a",
+   "part": "paper's stress: a(2x4/absorbing/paper) - a(1x8/absorbing/paper)"
+  },
+  {
+   "id": "RP1b",
+   "part": "paper's stress: a(2x4/sealed/paper) - a(2x4/absorbing/paper)"
+  },
+  {
+   "id": "RP1c",
+   "part": "paper's stress: a(2x4/absorbing/paper) - a(iso8/absorbing/paper)"
+  },
+  {
+   "id": "RP2/iso8/absorbing",
+   "part": "a(iso8/absorbing/paper) - a(iso8/absorbing): the paper's stress against the ruled one"
+  },
+  {
+   "id": "RP2/2x4/absorbing",
+   "part": "a(2x4/absorbing/paper) - a(2x4/absorbing): the paper's stress against the ruled one"
+  },
+  {
+   "id": "RP2/2x4/sealed",
+   "part": "a(2x4/sealed/paper) - a(2x4/sealed): the paper's stress against the ruled one"
+  },
+  {
+   "id": "RP2/1x8/absorbing",
+   "part": "a(1x8/absorbing/paper) - a(1x8/absorbing): the paper's stress against the ruled one"
+  },
+  {
+   "id": "RP3/iso8/absorbing",
+   "part": "rescued(iso8/absorbing/paper) - rescued(iso8/absorbing)"
+  },
+  {
+   "id": "RP3/2x4/absorbing",
+   "part": "rescued(2x4/absorbing/paper) - rescued(2x4/absorbing)"
+  },
+  {
+   "id": "RP3/2x4/sealed",
+   "part": "rescued(2x4/sealed/paper) - rescued(2x4/sealed)"
+  },
+  {
+   "id": "RP3/1x8/absorbing",
+   "part": "rescued(1x8/absorbing/paper) - rescued(1x8/absorbing)"
+  },
+  {
+   "id": "R1a",
+   "part": "a(2x4/half) - a(2x4/absorbing)"
+  },
+  {
+   "id": "R1b",
+   "part": "a(1x8/half) - a(1x8/absorbing)"
+  },
+  {
+   "id": "R2",
+   "part": "a(iso8/sealed) - a(iso8/absorbing): sealing without a group"
+  },
+  {
+   "id": "R3",
+   "part": "a(iso8/absorbing) - a(nofield): a sheet's own field"
+  },
+  {
+   "id": "R4",
+   "part": "a(undisturbed) - a(nofield): the disturbance"
+  },
+  {
+   "id": "R5a",
+   "part": "shared point: a(2x4/absorbing/shared) - a(iso8/absorbing/shared)"
+  },
+  {
+   "id": "R5b",
+   "part": "shared point: a(2x4/sealed/shared) - a(2x4/absorbing/shared)"
+  },
+  {
+   "id": "R5c",
+   "part": "shared point: a(2x4/absorbing/shared) - a(1x8/absorbing/shared)"
+  },
+  {
+   "id": "R6a",
+   "part": "a(sq8/absorbing) - a(1x8/absorbing)"
+  },
+  {
+   "id": "R6b",
+   "part": "a(2x3/absorbing) - a(1x6/absorbing)"
+  },
+  {
+   "id": "R7a",
+   "part": "equal x: a(iso8/absorbing/l2) - a(1x2/absorbing)"
+  },
+  {
+   "id": "R7b",
+   "part": "equal x: a(2x2/absorbing/l2) - a(2x4/absorbing)"
+  },
+  {
+   "id": "R8a",
+   "part": "at lambda2: a(2x4/absorbing/l2) - a(1x8/absorbing/l2)"
+  },
+  {
+   "id": "R8b",
+   "part": "at lambda2: a(2x2/absorbing/l2) - a(1x4/absorbing/l2)"
+  },
+  {
+   "id": "R9a",
+   "part": "a(1x8/absorbing) - a(1x8/absorbing/uniform)"
+  },
+  {
+   "id": "R9b",
+   "part": "a(1x8/absorbing/rearranged) - a(1x8/absorbing)"
+  }
+ ],
+ "predict_sha256": "8514461d3c6293bf42db28e1e0c75a9931c461621e792538aaca8a83bde69ac2"
+}

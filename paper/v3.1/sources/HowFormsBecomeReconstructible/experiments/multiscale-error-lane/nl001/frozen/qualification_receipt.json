@@ -1,0 +1,98 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "080514adf8a2a432504fc9cc9b52d89e6201e554e6d542e4f979b2522db89105",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/nl001/preflight",
+ "blocks": [
+  900564,
+  900565
+ ],
+ "load_1min_at_check": 54.01,
+ "checked_utc": "2026-10-29T20:39:34Z",
+ "wall_s": 33.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "bad": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": "C3/900564"
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "L1_vs_record_step": true,
+    "L2abs_vs_lr001_gauge": true,
+    "frame_vs_lr001_quarters": true
+   }
+  },
+  "Q4_replay": {
+   "pass": true,
+   "max_abs_difference": 6.661338147750939e-16,
+   "items": {
+    "L1L2rL3/B": 4.440892098500626e-16,
+    "L1L2L3-k3x8/C3": 6.661338147750939e-16
+   }
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "items": {
+    "none/900564/rel_is_abs": true,
+    "none/900564/derived_near_abs": true,
+    "none/900565/rel_is_abs": true,
+    "none/900565/derived_near_abs": true,
+    "F/900564/rel_is_abs": true,
+    "F/900564/derived_near_abs": true,
+    "F/900565/rel_is_abs": true,
+    "F/900565/derived_near_abs": true,
+    "R/900564/rel_is_abs": true,
+    "R/900564/derived_near_abs": true,
+    "R/900565/rel_is_abs": true,
+    "R/900565/derived_near_abs": true,
+    "K/900564/rel_is_abs": true,
+    "K/900565/rel_is_abs": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "n_items": 192,
+   "failed": []
+  },
+  "Q8_pairing_case_matched": {
+   "pass": true,
+   "items": {
+    "twice_identical": true,
+    "alone_equals_batch": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 1.24,
+   "forecast_wall_h": 0.12,
+   "worker_rss_mb": 319.4,
+   "bytes_per_task": 2930294
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary_F.json": 5693,
+    "summary_R.json": 11859,
+    "predictions_scored.json": 10550,
+    "summary_C3.json": 12746,
+    "summary_C2.json": 8953,
+    "summary_none.json": 11756,
+    "summary_K.json": 7584,
+    "summary_FRB.json": 15798,
+    "summary_B.json": 16174
+   },
+   "too_big": {}
+  }
+ }
+}

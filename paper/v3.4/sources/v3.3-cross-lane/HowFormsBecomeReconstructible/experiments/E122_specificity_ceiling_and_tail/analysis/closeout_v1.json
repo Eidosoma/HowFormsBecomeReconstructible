@@ -1,0 +1,32 @@
+{
+  "automatic_successor": false,
+  "checks": {
+    "all_boundaries_saved": true,
+    "all_sources_retained": true,
+    "all_steps_independently_replayed": false,
+    "both_budgets": true,
+    "independent_checkpoint_reads": 1024,
+    "independent_replay_generations": [
+      17,
+      32,
+      64,
+      128,
+      256
+    ],
+    "independent_sum_count_checks": 12288,
+    "new_decoder_fitted": false,
+    "observer_feedback": false,
+    "old_checkpoint_projection_exact": true,
+    "protected_copy_exact": true,
+    "source_blocks": 64,
+    "status": "PASS"
+  },
+  "complete_sha256": "2d2f8b72227e585b0dd4220544ee176742a5e8c031cf27bd61237758763f636c",
+  "figures_inspected": true,
+  "inputs_verified": 22,
+  "outputs_verified": 418,
+  "retained_bytes": 941255249,
+  "seconds": 10013.838822189951,
+  "status": "PASS",
+  "utc": "2026-11-02T17:22:35.343167+00:00"
+}

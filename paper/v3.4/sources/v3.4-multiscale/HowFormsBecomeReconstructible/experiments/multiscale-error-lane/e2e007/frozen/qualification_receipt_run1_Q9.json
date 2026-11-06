@@ -1,0 +1,159 @@
+{
+ "status": "FAIL",
+ "failed": [
+  "Q9_resources"
+ ],
+ "study": "E2E007",
+ "design_digest": "81c28217755990fb070d4ca9387cc69627f004762d873432d301df3b59efca2a",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e007/preflight",
+ "tasks": 8,
+ "load_1min_at_check": 87.21,
+ "checked_utc": "2026-11-06T00:31:39Z",
+ "wall_s": 832.3,
+ "cpu_s": 826.5,
+ "only": null,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 8,
+   "bad": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "items": {
+    "every_raw_file_equals_its_manifests_sha256": true,
+    "none_and_raise_under_memory_injury_equal_e2e006s_vote_none_and_vote_shared": true,
+    "p66s_bridges_stand_phase_a_and_amendment_1": true,
+    "the_routed_generation_is_e2e002s_with_two_calls_routed": true,
+    "every_tasks_acquisition_and_generation0_packets_equal_their_sources": true
+   },
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ],
+   "rows": {
+    "relax/memory": {
+     "V": true,
+     "r": true,
+     "H": true,
+     "W": true
+    },
+    "raise/body": {
+     "V": true,
+     "r": true,
+     "H": true,
+     "W": true
+    },
+    "relax-matched/memory": {
+     "V": true,
+     "r": true,
+     "H": true,
+     "W": true
+    }
+   }
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "items": {
+    "the_alias_table_is_complete": true,
+    "a_field_row_listed_twice_gives_the_same_lineage": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "bad": [],
+   "fresh_bad": [],
+   "fresh_task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ],
+   "fresh_horizons_rescored_from_saved_states": 8
+  },
+  "Q7_efficacy_injuries_and_field": {
+   "pass": true,
+   "items": {
+    "the_vote_rows_never_fire": true,
+    "every_sigma0_birth_cue_equals_its_incoming_records_signs": true,
+    "every_injury_flips_exactly_its_patch_memory_in_the_record_body_in_V_and_E": true,
+    "the_patches_are_disjoint_and_recompute_from_their_addresses": true,
+    "the_injury_rule_at_generation0_is_be001s_memory_event": true,
+    "the_second_record_and_the_cue_are_taken_before_the_injury": true,
+    "every_task_is_a_saved_record_of_its_stage": true,
+    "the_realized_response_is_kappa_x_the_exposure_on_every_field_row": true,
+    "no_exposure_on_a_field_free_row": true,
+    "the_body_flip_is_exactly_the_patch_at_t_body_and_nothing_at_other_updates": true,
+    "a_body_row_enters_each_generation_with_its_record_uninjured_a_memory_row_with_the_patch_flipped": true,
+    "a_field_free_row_in_a_mixed_call_equals_its_field_free_run": true,
+    "every_field_row_at_kappa0_equals_none": true,
+    "an_empty_body_patch_equals_no_injury": true,
+    "another_target_leaves_every_state_and_exposure_unchanged": true,
+    "another_patch_mask_given_to_the_generation_leaves_every_state_and_exposure_unchanged": true,
+    "the_observer_is_output_only": true
+   },
+   "vote_fired": 0,
+   "cue_disagreements": 0,
+   "injury_failures": 0,
+   "response_mismatches": 0,
+   "field_free_exposures": 0,
+   "schedule": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "rows": 7
+  },
+  "Q9_resources": {
+   "pass": false,
+   "forecast_phase_b_cpu_h": 29.87,
+   "forecast_phase_b_cpu_h_with_headroom": 37.34,
+   "development_cpu_h": 27.74,
+   "preflight_cpu_h": 1.73,
+   "preflight_measured": true,
+   "checks_cpu_h": 0.4,
+   "forecast_wall_h_10": 3.41,
+   "cpu_s_per_vote_row_generation_8_cases": 9.4,
+   "development_units_a_task": 83.0,
+   "preflight_units_a_task": 83.0,
+   "development_tasks": 128,
+   "preflight_tasks": 8,
+   "worker_rss_mb": 268.7,
+   "w_field": 0.5,
+   "cap": 35.0,
+   "cap_status": "the lead's, 23:16:21Z (Amendment 1)",
+   "headroom": 1.25
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 125210,
+    "TABLES.md": 59584,
+    "levels.json": 183631
+   },
+   "big_git_files": [],
+   "parts_available": 7
+  }
+ }
+}

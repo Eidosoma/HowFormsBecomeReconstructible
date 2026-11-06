@@ -1,0 +1,161 @@
+{
+ "study": "HS001",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/hs001/preflight",
+ "design_digest": "4336d7a7a62ec450e3b41be2dea084ac86437aecc7cfd0312021ebfca59cad26",
+ "run_digest": "4336d7a7a62ec450e3b41be2dea084ac86437aecc7cfd0312021ebfca59cad26",
+ "started_utc": "2026-11-01T14:45:43Z",
+ "Q1": {
+  "pass": true,
+  "blocks": 2,
+  "problems": [],
+  "cpu_s": 0.0
+ },
+ "Q2": {
+  "pass": true,
+  "block": 950020,
+  "differing": [],
+  "cpu_s": 187.5
+ },
+ "Q3": {
+  "e014_block_12000": {
+   "simulate_equal": true,
+   "published_rows": 1344,
+   "largest_difference": 0.0
+  },
+  "subset_vs_ten_arms_16_generations": {
+   "block": 950021,
+   "equal": true
+  },
+  "e_sources_unchanged": true,
+  "pass": true,
+  "cpu_s": 77.5
+ },
+ "Q4": {
+  "pass": true,
+  "block": 950020,
+  "budgets": {
+   "1": {
+    "packets_192_equal": true,
+    "scores_192_equal": true,
+    "first_generation_equal": true
+   },
+   "4": {
+    "packets_192_equal": true,
+    "scores_192_equal": true,
+    "first_generation_equal": true
+   }
+  },
+  "cpu_s": 47.7
+ },
+ "Q5": {
+  "pass": true,
+  "block": 950020,
+  "budgets": {
+   "1": {
+    "probes_reread_equal": true,
+    "probes_equal_ten_arm_panel": true,
+    "copy_equals_rewrite_record_read": true,
+    "copy_foreign_is_next_founder": true,
+    "copy_foreign_equals_foreign_arm_start": true,
+    "export_packets_equal_raw": true,
+    "export_prototypes_equal_raw": true
+   },
+   "4": {
+    "probes_reread_equal": true,
+    "probes_equal_ten_arm_panel": true,
+    "copy_equals_rewrite_record_read": true,
+    "copy_foreign_is_next_founder": true,
+    "copy_foreign_equals_foreign_arm_start": true,
+    "export_packets_equal_raw": true,
+    "export_prototypes_equal_raw": true
+   },
+   "labels": {
+    "lineage": true,
+    "protected": true,
+    "one_candidate_set": true
+   }
+  },
+  "cpu_s": 0.7
+ },
+ "Q6": {
+  "pass": true,
+  "block": 950021,
+  "budgets": {
+   "1": {
+    "ck_scores": true,
+    "field_sd": true,
+    "concordance": true,
+    "export_fields_reproduce_Q_S_A": true,
+    "export_fields_reproduced_from_packets": true
+   },
+   "4": {
+    "ck_scores": true,
+    "field_sd": true,
+    "concordance": true,
+    "export_fields_reproduce_Q_S_A": true,
+    "export_fields_reproduced_from_packets": true
+   }
+  },
+  "cpu_s": 3.8
+ },
+ "Q7": {
+  "pass": true,
+  "items": {
+   "noiseless c 1.0 a 2.0 h 8.0": true,
+   "noiseless c 0.0 a 3.0 h 20.0": true,
+   "noiseless c -0.5 a 1.5 h 3.0": true,
+   "noiseless c 0.3 a 1.0 h 60.0": true,
+   "coverage of c, fast decays (nominal 0.95)": 0.95,
+   "fast decays identified": 1.0,
+   "slow decays (h 300) flagged not identified": 0.975,
+   "a near-zero reference is not reported as a ratio": true,
+   "M2 recovers two timescales": true
+  },
+  "cpu_s": 56.0
+ },
+ "Q8": {
+  "pass": true,
+  "block": 950020,
+  "budgets": {
+   "1": {
+    "rewrite_alone_equals_batch": true,
+    "arm_listed_twice_identical": true
+   },
+   "4": {
+    "rewrite_alone_equals_batch": true,
+    "arm_listed_twice_identical": true
+   }
+  },
+  "cpu_s": 4.0
+ },
+ "Q9": {
+  "pass": true,
+  "cpu_s_per_block": 191.265,
+  "forecast_cpu_h": 10.2008,
+  "forecast_wall_h_12_workers": 0.9775766666666665,
+  "development_blocks": 128,
+  "e014_continuation_blocks": 64,
+  "worker_rss_mb": 54.1,
+  "bytes_per_block": 9961572.0,
+  "disk_free_bytes": 220200280522752,
+  "cpu_s": 0.0
+ },
+ "Q10": {
+  "pass": true,
+  "sizes": {
+   "predictions_scored.json": 2623,
+   "TABLES.md": 7470,
+   "arrays.npz": 44997,
+   "summary.json": 135268,
+   "EXPORT_MANIFEST.json": 12647
+  },
+  "parts_computed": 8,
+  "verdicts_opened": false,
+  "cpu_s": 51.2
+ },
+ "status": "PASS",
+ "failed": [],
+ "finished_utc": "2026-11-01T14:52:52Z",
+ "cpu_s": 428.5
+}

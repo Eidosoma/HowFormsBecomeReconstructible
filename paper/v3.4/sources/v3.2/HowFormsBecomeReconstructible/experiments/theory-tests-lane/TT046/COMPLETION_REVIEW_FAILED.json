@@ -1,0 +1,6 @@
+{
+  "error": "AssertionError()",
+  "recorded_utc": "2026-10-29T12:11:25.638931+00:00",
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/review.py\", line 416, in <module>\n    try:main()\n        ~~~~^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/review.py\", line 369, in main\n    n,o,s,w=endpoint_custody(index,sub,cases,data,complete['outputs']);endpoints+=n;original_endpoints+=o;source_arrays+=s;writer_scores+=w\n            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/review.py\", line 236, in endpoint_custody\n    writers,births_saved,source_arrays,writer_scores=source_custody(sub,index,cases)\n                                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/review.py\", line 218, in source_custody\n    m=info['metadata'];assert m['input_sha256']==digest(state_bytes(start))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

@@ -1,0 +1,171 @@
+{
+ "study": "SM005",
+ "design_digest": "8b759268ac24d287dfd0efacf65f713cfe3d2499be307e24fccc3e78adb0ac2e",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "L1": [
+   0.02,
+   0.1
+  ],
+  "L2": [
+   0.14,
+   0.32
+  ],
+  "L3": [
+   -0.12,
+   0.24
+  ],
+  "L4": [
+   0.13,
+   0.33
+  ],
+  "L5": [
+   -0.04,
+   0.28
+  ],
+  "P1": [
+   0.0,
+   0.07
+  ],
+  "P2": [
+   0.05,
+   0.22
+  ],
+  "P3": [
+   -0.1,
+   0.17
+  ],
+  "P4": [
+   0.05,
+   0.22
+  ],
+  "K1p": [
+   -0.2,
+   -0.01
+  ],
+  "K2": [
+   0.0,
+   0.21
+  ]
+ },
+ "frozen_utc": "2026-11-02T15:46:18Z",
+ "registered": [
+  {
+   "id": "L1",
+   "part": "late (m 2): V_C = E_C - E_base, the coupling length's recovery",
+   "kind": "band",
+   "threshold": [
+    0.02,
+    0.1
+   ]
+  },
+  {
+   "id": "L2",
+   "part": "late: V_E = E_E - E_base, the erasure size's recovery",
+   "kind": "band",
+   "threshold": [
+    0.14,
+    0.32
+   ]
+  },
+  {
+   "id": "L3",
+   "part": "late: V_B = E_B - E_base, the bond grain's recovery",
+   "kind": "band",
+   "threshold": [
+    -0.12,
+    0.24
+   ]
+  },
+  {
+   "id": "L4",
+   "part": "late: F = E_cg - E_base, the fully scaled reader's recovery",
+   "kind": "band",
+   "threshold": [
+    0.13,
+    0.33
+   ]
+  },
+  {
+   "id": "L5",
+   "part": "late: A = V_C + V_E + V_B - F, the additivity",
+   "kind": "band",
+   "threshold": [
+    -0.04,
+    0.28
+   ]
+  },
+  {
+   "id": "P1",
+   "part": "prompt (m 0): V_C",
+   "kind": "band",
+   "threshold": [
+    0.0,
+    0.07
+   ]
+  },
+  {
+   "id": "P2",
+   "part": "prompt: V_E",
+   "kind": "band",
+   "threshold": [
+    0.05,
+    0.22
+   ]
+  },
+  {
+   "id": "P3",
+   "part": "prompt: V_B",
+   "kind": "band",
+   "threshold": [
+    -0.1,
+    0.17
+   ]
+  },
+  {
+   "id": "P4",
+   "part": "prompt: F",
+   "kind": "band",
+   "threshold": [
+    0.05,
+    0.22
+   ]
+  },
+  {
+   "id": "K1p",
+   "part": "prompt: B - E, the contrast",
+   "kind": "band",
+   "threshold": [
+    -0.2,
+    -0.01
+   ]
+  },
+  {
+   "id": "K2",
+   "part": "late: F - (V_C + V_B), the additivity with the overlap removed (B already carries the erasure)",
+   "kind": "band",
+   "threshold": [
+    0.0,
+    0.21
+   ]
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "K1",
+   "part": "late: B - E = E_B - E_E, the bond grain's recovery beyond the erasure it brings",
+   "why": "not supported by P54 (Amendment 1's condition)"
+  }
+ ],
+ "reported": [
+  "shares late and prompt (whole-block bootstrap, HS001's ratio rule)",
+  "the prompt additivity",
+  "late less prompt per variant",
+  "each reader's E, generic recovery and phase",
+  "L1-L5 by unit and by patch size",
+  "the halves by source (SM003's 16, SM004's 16)"
+ ],
+ "boot": 10000,
+ "boot_seed": 20261102,
+ "predict_sha256": "8c56ff1ac20aaa2b5fea38a7804e07c9a3d09a5fbdb86c897ad87c737442565f"
+}

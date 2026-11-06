@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-29T13:27:32.441062+00:00",
+  "status": "FIXED_BEFORE_NEW_ACQUISITION",
+  "hypothesis_selected_after_development": true,
+  "development_decision": "REPEATED_REWRITE_DEVELOPMENT_SUPPORTED",
+  "fresh_scientific_acquisitions_generated": 0,
+  "fresh_scientific_futures_generated": 0,
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four original g14 packets per block, then across16 fresh acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_first_success_once"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "Single paired acquisition-block contrast: ongoing current-success guard minus one successful rewrite then retain, under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, sample extension, primary substitution or equivalence claim.",
+    "degrees_of_freedom": 15,
+    "critical_two_sided95": 2.131449545559776,
+    "critical_one_sided95": 1.753050355692572,
+    "inference": "16 fresh acquisition blocks are the paired uncertainty unit, df15. Packets, repeated reads and arms are not independent replicates. Same declared acquisition/selection distribution, policies, horizon and disturbance. Approximate paired t intervals; hypothesis and sample informed by exposed development data."
+  },
+  "cohort": {
+    "eligible_blocks": 16,
+    "maximum_attempts": 20,
+    "wave_size": 4,
+    "attempt_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "packets_per_class": 2,
+    "selection": "First16 eligible fresh acquisition blocks in ascending ID, assessed after complete four-block waves. Same boundary-only rule-balanced minimum-hash selector: two g14 failures and two successes per block. Retain all attempts, rejections and surplus. No target futures until the entire16-block cohort is sealed. No replacement after future outcomes."
+  },
+  "design_change_from_development": "16 new blocks instead of28 exposed blocks; same five policies, original-rule criterion, primary contrast, horizon and disturbance. Sample and full-cap qualification fixed before new data.",
+  "resource_contract": "3600 seconds absolute combined cap; unused qualification time can serve the target within that cap; no reset or extension.",
+  "prior_conditional_candidate": "STOP_CONDITIONAL_CANDIDATE unchanged",
+  "prior_historical_guard": "GUARD_CONTINUATION_SCREEN_FAILED unchanged",
+  "prior_six_test_replication": "REPLICATION_UNRESOLVED unchanged",
+  "prior_noise_precision": "ALL_THREE_PREDICTIONS_SUPPORTED unchanged",
+  "prior_allocation_replication": "ALLOCATION_REPLICATION_SUPPORTED unchanged",
+  "RDT_specific_validation": false,
+  "external_preregistration": false,
+  "independent_laboratory_replication": false,
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_extension": false,
+  "automatic_successor": false
+}

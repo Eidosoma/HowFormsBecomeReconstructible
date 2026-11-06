@@ -1,0 +1,109 @@
+P56c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e001/development (development): 128 tasks, every sha256 equal to the manifest's; digest 63f1a499c4b5; 2026-11-03T14:20:51Z - 2026-11-03T17:10:35Z, 29.64 CPU-h; 128 restored records, every sha256 equal to ar005/development's manifest; the acquisition rebuilt by ar001.sim.prepare equal to every record's V0, R0 and T
+  the packets at generation 0 rebuilt by the lead (2688 label-tasks; the policy arms from their runs, protected storage from R0, post-damage copying from ar001.sim.event): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8: largest |difference| 0.0e+00
+
+THE PARTS (16 blocks x 8 cases; pooled over the eight unit-body pairs and the futures; [95% t interval])
+  E1 Delta_vguard(1): the repair crosses the first renewal: +0.326263 [+0.279108, +0.373419] (SD 0.088494; halves +0.330139 +0.322388); registered >= 0.2: HOLDS
+  E2 Delta_vguard(8): it lasts eight renewals: +0.164734 [+0.135558, +0.193910] (SD 0.054753; halves +0.172302 +0.157166); registered >= 0.08: HOLDS
+  E3 Delta_vms(8): the confirmed controller's: +0.171173 [+0.142653, +0.199693] (SD 0.053522; halves +0.184387 +0.157959); registered >= 0.07: HOLDS
+  E4 Delta_vguard(8) - Delta_vguard(0): the advantage's change through renewal: -0.225281 [-0.259535, -0.191027] (SD 0.064283; halves -0.212952 -0.237610); registered (-0.35, -0.15): HOLDS
+  E5 u_r(protected, 8) - u_r(vguard, memory@0, 8): protected storage's lead: +0.096008 [+0.071590, +0.120427] (SD 0.045826; halves +0.109863 +0.082153); registered (0.005, 0.18): HOLDS
+  E6 u_r(vguard, memory@0, 8) - u_r(post-damage, memory@0, 8): +0.211090 [+0.183365, +0.238815] (SD 0.052030; halves +0.214172 +0.208008); registered >= 0.15: HOLDS
+  E7 u_r(vguard, memory@1, 8) - u_r(vms, memory@1, 8): the misread recovery after renewal: +0.035583 [+0.019765, +0.051402] (SD 0.029686; halves +0.037537 +0.033630); reported
+  E8 a_r(vote, none@0, 8) - a_r(vguard, none@0, 8): the no-event cost in later generations: -0.000035 [-0.000078, +0.000007] (SD 0.000080; halves -0.000049 -0.000022); registered <= 0.002: HOLDS
+  E9 u_v(vguard, memory@0, 1) - u_v(vote, memory@0, 1): the first successor's own reconstruction: +0.307220 [+0.261475, +0.352966] (SD 0.085848; halves +0.310974 +0.303467); registered >= 0.18: HOLDS
+
+REPORTED (the lead's)
+  u_r memory@0     g 0: protected 1.0000; post 0.0000; vote 0.3375; vms 0.7375; vguard 0.7275
+  u_r memory@0     g 1: protected 0.9587; post 0.2280; vote 0.4119; vms 0.7465; vguard 0.7382
+  u_r memory@0     g 3: protected 0.8864; post 0.3959; vote 0.4851; vms 0.7291; vguard 0.7231
+  u_r memory@0     g 8: protected 0.8001; post 0.4930; vote 0.5393; vms 0.7105; vguard 0.7041
+  u_r memory@1     g 0: protected 1.0000; post 0.0000; vote 0.3375; vms 0.4503; vguard 0.5220
+  u_r memory@1     g 1: protected 0.9587; post 0.2280; vote 0.4119; vms 0.4977; vguard 0.5592
+  u_r memory@1     g 3: protected 0.8864; post 0.3959; vote 0.4851; vms 0.5386; vguard 0.5856
+  u_r memory@1     g 8: protected 0.8001; post 0.4930; vote 0.5393; vms 0.5702; vguard 0.6057
+  u_r none@0       g 0: protected 1.0000; post 1.0000; vote 0.9899; vms 0.9899; vguard 0.9899
+  u_r none@0       g 1: protected 0.9587; post 0.9587; vote 0.9452; vms 0.9451; vguard 0.9452
+  u_r none@0       g 3: protected 0.8864; post 0.8864; vote 0.8772; vms 0.8777; vguard 0.8771
+  u_r none@0       g 8: protected 0.8001; post 0.8001; vote 0.7988; vms 0.7990; vguard 0.7990
+  u_r cue@0        g 0: protected 1.0000; post 1.0000; vote 0.9899; vms 0.9888; vguard 0.9883
+  u_r cue@0        g 1: protected 0.9587; post 0.9587; vote 0.9452; vms 0.9464; vguard (not run to 1)
+  u_r cue@0        g 3: protected 0.8864; post 0.8864; vote 0.8772; vms 0.8832; vguard (not run to 3)
+  u_r cue@0        g 8: protected 0.8001; post 0.8001; vote 0.7988; vms (not run to 8); vguard (not run to 8)
+  u_r correlated@0 g 0: protected 1.0000; post 0.0000; vote 0.2505; vms 0.7108; vguard 0.3801
+  u_r correlated@0 g 1: protected 0.9587; post 0.2280; vote 0.3492; vms 0.7284; vguard 0.4415
+  u_r correlated@0 g 3: protected 0.8864; post 0.3959; vote 0.4705; vms 0.7237; vguard 0.5236
+  u_r correlated@0 g 8: protected 0.8001; post 0.4930; vote (not run to 8); vms (not run to 8); vguard (not run to 8)
+  controls at g 1: own protected 0.9587, foreign protected 0.4764, no reading 0.7301; q_r own +0.8932, foreign -0.0142
+  controls at g 3: own protected 0.8864, foreign protected 0.4897, no reading 0.6306; q_r own +0.7398, foreign -0.0229
+
+REPORTED PARTS, paired within futures (the lead's extension after the development's values; by item set)
+  E1                       +0.326263 [+0.279108, +0.373419] (SD 0.088494; halves +0.330139 +0.322388); native +0.3778; particular +0.3499; permissive +0.2887
+  E2                       +0.164734 [+0.135558, +0.193910] (SD 0.054753; halves +0.172302 +0.157166); native +0.1171; particular +0.1587; permissive +0.1916
+  E3                       +0.171173 [+0.142653, +0.199693] (SD 0.053522; halves +0.184387 +0.157959); native +0.1211; particular +0.1622; permissive +0.2007
+  E4                       -0.225281 [-0.259535, -0.191027] (SD 0.064283; halves -0.212952 -0.237610); native -0.3834; particular -0.2629; permissive -0.1274
+  E5                       +0.096008 [+0.071590, +0.120427] (SD 0.045826; halves +0.109863 +0.082153); native +0.0676; particular +0.1211; permissive +0.0977
+  E6                       +0.211090 [+0.183365, +0.238815] (SD 0.052030; halves +0.214172 +0.208008); native +0.1316; particular +0.1925; permissive +0.2601
+  E7                       +0.035583 [+0.019765, +0.051402] (SD 0.029686; halves +0.037537 +0.033630); native +0.0259; particular +0.0494; permissive +0.0335
+  E8                       -0.000035 [-0.000078, +0.000007] (SD 0.000080; halves -0.000049 -0.000022); native -0.0002; particular -0.0000; permissive +0.0000
+  E9                       +0.307220 [+0.261475, +0.352966] (SD 0.085848; halves +0.310974 +0.303467); native +0.3474; particular +0.3153; permissive +0.2831
+  R-vms-0                  +0.400024 [+0.348883, +0.451166] (SD 0.095974; halves +0.402954 +0.397095); native +0.5029; particular +0.4377; permissive +0.3297
+  R-vms-1                  +0.334595 [+0.288416, +0.380774] (SD 0.086662; halves +0.345764 +0.323425); native +0.3813; particular +0.3594; permissive +0.2988
+  R-vms-3                  +0.244019 [+0.207059, +0.280978] (SD 0.069360; halves +0.251038 +0.237000); native +0.2302; particular +0.2610; permissive +0.2424
+  R-vms-8                  +0.171173 [+0.142653, +0.199693] (SD 0.053522; halves +0.184387 +0.157959); native +0.1211; particular +0.1622; permissive +0.2007
+  R-mismatch0              +0.020874 [+0.009827, +0.031921] (SD 0.020731; halves +0.016479 +0.025269); native -0.0273; particular +0.0964; permissive +0.0072
+  R-own-foreign-q-1        +0.905235 [+0.891993, +0.918478] (SD 0.024852; halves +0.897461 +0.913010); native +0.8936; particular +0.8545; permissive +0.9364
+  R-own-foreign-u-1        +0.247375 [+0.201762, +0.292989] (SD 0.085601; halves +0.209229 +0.285522); native +0.2500; particular +0.0515; permissive +0.3440
+  R-noread-q-1             +0.627068 [+0.607592, +0.646543] (SD 0.036549; halves +0.622421 +0.631714); native +0.8032; particular +0.4394; permissive +0.6329
+  R-unint-vote-1           +0.001099 [-0.002131, +0.004328] (SD 0.006061; halves +0.001831 +0.000366); native +0.0000; particular +0.0032; permissive +0.0006
+  R-Q-vote-1               -0.023499 [-0.039129, -0.007868] (SD 0.029333; halves -0.014648 -0.032349); native +0.0088; particular -0.1111; permissive +0.0042
+  R-unint-vms-1            +0.002441 [-0.000598, +0.005481] (SD 0.005704; halves +0.003418 +0.001465); native +0.0000; particular +0.0107; permissive -0.0005
+  R-Q-vms-1                -0.033813 [-0.048101, -0.019526] (SD 0.026813; halves -0.031738 -0.035889); native +0.0125; particular -0.1497; permissive +0.0010
+  R-unint-vguard-1         +0.002991 [-0.000198, +0.006180] (SD 0.005985; halves +0.004150 +0.001831); native +0.0000; particular +0.0129; permissive -0.0005
+  R-Q-vguard-1             -0.034302 [-0.048815, -0.019789] (SD 0.027236; halves -0.031616 -0.036987); native +0.0122; particular -0.1499; permissive +0.0002
+  R-own-foreign-q-3        +0.762192 [+0.741240, +0.783144] (SD 0.039320; halves +0.751526 +0.772858); native +0.7502; particular +0.5974; permissive +0.8506
+  R-own-foreign-u-3        +0.240601 [+0.200618, +0.280583] (SD 0.075033; halves +0.225952 +0.255249); native +0.2922; particular -0.0496; permissive +0.3599
+  R-noread-q-3             +0.660835 [+0.637952, +0.683719] (SD 0.042945; halves +0.656418 +0.665253); native +0.7471; particular +0.4410; permissive +0.7276
+  R-unint-vote-3           -0.016418 [-0.025937, -0.006900] (SD 0.017863; halves -0.018066 -0.014771); native -0.0081; particular -0.0251; permissive -0.0162
+  R-Q-vote-3               -0.013489 [-0.028353, +0.001375] (SD 0.027894; halves -0.001953 -0.025024); native +0.0112; particular -0.0691; permissive +0.0020
+  R-unint-vms-3            +0.000732 [-0.009625, +0.011090] (SD 0.019438; halves +0.001465 +0.000000); native +0.0054; particular +0.0007; permissive -0.0016
+  R-Q-vms-3                -0.020386 [-0.033373, -0.007398] (SD 0.024373; halves -0.018677 -0.022095); native +0.0042; particular -0.0815; permissive -0.0021
+  R-unint-vguard-3         +0.000122 [-0.010440, +0.010684] (SD 0.019822; halves -0.000610 +0.000854); native +0.0044; particular +0.0002; permissive -0.0021
+  R-Q-vguard-3             -0.021545 [-0.034638, -0.008453] (SD 0.024570; halves -0.020142 -0.022949); native +0.0039; particular -0.0847; permissive -0.0027
+  R-protected-q-8          +0.530148 [+0.511718, +0.548577] (SD 0.034585; halves +0.521942 +0.538353); native +0.5359; particular +0.1673; permissive +0.7087
+  R-protected-noread-q-3   +0.078499 [+0.067642, +0.089355] (SD 0.020374; halves +0.074020 +0.082977); native -0.0197; particular +0.1166; permissive +0.1086
+  R-cue@0-1                +0.000427 [-0.002461, +0.003315] (SD 0.005419; halves -0.001221 +0.002075); native -0.0005; particular +0.0022; permissive +0.0000
+  R-cue@0-3                -0.002319 [-0.007759, +0.003120] (SD 0.010208; halves -0.004883 +0.000244); native +0.0000; particular -0.0093; permissive +0.0000
+  R-correlated@0-1         +0.092346 [+0.070249, +0.114443] (SD 0.041468; halves +0.104126 +0.080566); native +0.1868; particular +0.0117; permissive +0.0854
+  R-correlated@0-3         +0.053101 [+0.038369, +0.067832] (SD 0.027646; halves +0.059937 +0.046265); native +0.1025; particular +0.0100; permissive +0.0499
+  R-E7-at-0                +0.071777 [+0.041554, +0.102001] (SD 0.056719; halves +0.065918 +0.077637); native +0.0942; particular +0.0859; permissive +0.0535
+  levels, the mean over the futures that ran the row in each task (u_r):
+    memory@0     g 1: protected 0.9587; post 0.2280; vote 0.4119; vms 0.7465; vguard 0.7382
+    memory@0     g 3: protected 0.8864; post 0.3959; vote 0.4851; vms 0.7291; vguard 0.7231
+    memory@0     g 8: protected 0.8001; post 0.4930; vote 0.5393; vms 0.7105; vguard 0.7041
+    memory@1     g 1: protected 0.9587; post 0.2280; vote 0.4119; vms 0.4977; vguard 0.5592
+    memory@1     g 3: protected 0.8864; post 0.3959; vote 0.4851; vms 0.5386; vguard 0.5856
+    memory@1     g 8: protected 0.8001; post 0.4930; vote 0.5393; vms 0.5702; vguard 0.6057
+    none@0       g 1: protected 0.9587; post 0.9587; vote 0.9452; vms 0.9451; vguard 0.9452
+    none@0       g 3: protected 0.8864; post 0.8864; vote 0.8772; vms 0.8777; vguard 0.8771
+    none@0       g 8: protected 0.8001; post 0.8001; vote 0.7988; vms 0.7990; vguard 0.7990
+    cue@0        g 1: protected 0.9587; post 0.9587; vote 0.9452; vms 0.9464; vguard 0.9480
+    cue@0        g 3: protected 0.8864; post 0.8864; vote 0.8772; vms 0.8832; vguard 0.8786
+    cue@0        g 8: protected 0.8001; post 0.8001; vote 0.7988; vms (not run to 8); vguard (not run to 8)
+    correlated@0 g 1: protected 0.9587; post 0.2280; vote 0.3492; vms 0.7284; vguard 0.4415
+    correlated@0 g 3: protected 0.8864; post 0.3959; vote 0.4705; vms 0.7237; vguard 0.5236
+    correlated@0 g 8: protected 0.8001; post 0.4930; vote (not run to 8); vms (not run to 8); vguard (not run to 8)
+    foreign/protected        u_r g 1 0.4764, g 3 0.4897; q_r g 1 -0.0142, g 3 -0.0229
+    foreign/vguard/memory@0  u_r g 1 0.4883, g 3 0.4813; q_r g 1 -0.0192, g 3 -0.0246
+    noread/protected         u_r g 1 0.7301, g 3 0.6306; q_r g 1 +0.2640, g 3 +0.0785
+    unint/vote/memory@0      u_r g 1 0.4100, g 3 0.4662; q_r g 1 +0.8223, g 3 +0.7392
+    unint/vms/memory@0       u_r g 1 0.7464, g 3 0.7285; q_r g 1 +0.8400, g 3 +0.7561
+    unint/vguard/memory@0    u_r g 1 0.7386, g 3 0.7220; q_r g 1 +0.8396, g 3 +0.7559
+    Q/vote/memory@0          u_r g 1 0.3854, g 3 0.4692; q_r g 1 +0.8381, g 3 +0.6845
+    Q/vms/memory@0           u_r g 1 0.7101, g 3 0.7073; q_r g 1 +0.8541, g 3 +0.6992
+    Q/vguard/memory@0        u_r g 1 0.7014, g 3 0.7004; q_r g 1 +0.8538, g 3 +0.6983
+  E8's rows: vguard's none@0 packet its own (not the vote's) in 29 of 128 tasks; a_r(vote) - a_r(vguard) at g 8 nonzero in 9 of 1024 cases (mean over the futures), largest |difference| 0.0166
+  vguard/cue@0 at g 8 exists in 48 of 128 tasks (where its packet is the vote's and rides a main row)
+  the futures' spread at g 8 (the SD of u_r across the futures per case, ddof 1, the mean): protected 0.0848; vote/memory@0 0.0988; vms/memory@0 0.0903; vguard/memory@0 0.0896; post/memory@0 0.0978
+  AGAINST THE FROZEN READER (results/e2e001/predictions_scored.json; 9 parts, 30 reported, 2429 levels): largest |difference| value 0.0e+00, interval 0.0e+00, halves 0.0e+00, item sets 0.0e+00; levels 0.0e+00; the futures' spread 1.4e-17
+  the frozen reader's levels over only some tasks (a side label aliased to a main row in some tasks and run to g 3 in the rest; not a level, used by no part): ['vguard/cue@0 g 8']

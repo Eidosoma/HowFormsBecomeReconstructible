@@ -1,0 +1,41 @@
+E107 manuscript handoff — do not insert while the manuscript hold remains
+
+The original E107 equal-block, equal-current-class result is unchanged: successor32
+improves Brier score over both equal-read controls in matched and independent
+cue-noise regimes. Absolute successor32 Brier scores are .122001 and .092985;
+terminal-success prevalences under these balanced weights are 63.047% and 66.797%.
+Superiority over direct8 in the independent regime remains unresolved.
+
+The target population needs an explicit qualification. Selection requires both
+g14 current-expression classes and balances task orientation within class where
+possible. All 80 attempted blocks qualified in this run. Of their 5120 acquired
+records, 868 (16.953%) failed current expression; that is distinct from terminal
+failure. The original 50/50 class weighting is an intentional diagnostic estimand.
+
+A retrospective expansion using this study’s block/class/orientation counts
+estimates the realized acquired-record mixture under exchangeability of the
+hash-ranked selection within those cells. Successor32 Brier becomes .117757
+(matched) and .055243 (independent), with estimated terminal success 78.501% and
+86.157%. The direct64-minus-successor32 advantages are .004566 [.002452,.007475]
+and .001370 [.000355,.002411], respectively (paired source-block bootstrap 95%).
+These are additional retrospective estimates, not a replacement primary verdict.
+They do not supply outcomes for excluded all-one-class blocks or other generators.
+
+The advantage is concentrated in currently failing records. Under matched noise,
+currently passing records have no resolved Brier gain over a constant .865234375
+fixed from 443/512 development terminal labels. In independent noise, near-zero
+population-average calibration bias combines overprediction in failing records
+with underprediction in passing records. Report the class curves alongside the
+aggregate, and identify the development-constant reference when reporting skill.
+
+All probabilities remain frozen. Current and terminal scores use supplied true
+task orientation; these are known-task forecasts, not label-blind identity
+decoders or evidence specific to RDT. Existing direct-read controls and computational
+costs remain prominent. A later depth-0/1/2 comparison must match total work,
+including captures/writing, body updates, terminal reads and feature computation;
+equal native-read counts alone are not a complete cost qualification.
+
+Supporting evidence: SCIENTIFIC_REPORT.txt; results_v1/SUMMARY.json, summary.csv,
+weights.csv, forecasts.csv, outcomes.csv, calibration.csv and block_scores.csv;
+INPUTS_AND_COSTS.json. ANALYSIS_PLAN.txt and PROVENANCE.json state the inclusion,
+weighting, baseline, uncertainty and source contracts. No manuscript file was edited.

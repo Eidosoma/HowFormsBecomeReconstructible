@@ -1,0 +1,241 @@
+{
+  "utc": "2026-10-31T11:03:23.270795+00:00",
+  "status": "PASS",
+  "script_sha256": "fed88ff9ffe3e7d69377925914435cb4d20aa47b6390f172b917b7e3fda875d4",
+  "scientific_input_sha256": "13c38438056b96bb18d4b57edc1296bbbd82ddf626942853bcb983d5f4f6c60c",
+  "controller_input_sha256": "5bf293b5561316e1ccf3052e71357f6effea5e1153d937bba37456c3a408d580",
+  "complete_sha256": "5cc36b7fd9f8769c6937f3f83a0008f49e15dd19cfc30afda576de529ab279e9",
+  "output_manifest_sha256": "b8bce739a155c842781e6c423c3c0e58fac432d7225eb42653eaabef81d9ff95",
+  "scientific_input_files_verified": 76,
+  "controller_input_files_verified": 8,
+  "output_files_verified": 562,
+  "preserved_stopped_run_files": 503,
+  "byte_identical_imported_files": 426,
+  "acquisition_commitments_verified": 18,
+  "boundary_rows_scored_and_selection_hashes_checked": 1152,
+  "source_packets_verified": 64,
+  "complete_target_outcomes_verified": 320,
+  "units_verified": 18,
+  "raw_readouts_rescored": 6840,
+  "saved_flat_chains_verified": 360,
+  "actual_decision_quota_checks": 324,
+  "target_decision_quota_checks": 288,
+  "policy_state_totals": {
+    "qualification": {
+      "guard_rewrites": 72,
+      "random_rewrites": 72,
+      "single_rewrites": 4,
+      "single_retention_after_use": 68,
+      "additional_guard_rewrites": 68
+    },
+    "scientific": {
+      "guard_rewrites": 808,
+      "random_rewrites": 808,
+      "single_rewrites": 49,
+      "single_retention_after_use": 789,
+      "additional_guard_rewrites": 759
+    }
+  },
+  "exact_policy_and_primary_block_summaries": 256,
+  "exact_descriptive_recovery_contributions": 2,
+  "primary": {
+    "mean": 0.005208333333333333,
+    "lower": -0.0018774568532425612,
+    "upper": 0.012294123519909227,
+    "lower_one_sided95": -0.0006195067076456917,
+    "upper_one_sided95": 0.011036173374312359,
+    "leave_one_block_out_min": 0.003703703703703704,
+    "leave_one_block_out_max": 0.006481481481481481
+  },
+  "all_policy_means": {
+    "always_promote": {
+      "downstream_successes": 0.6111111111111112,
+      "terminal": 0.609375,
+      "uninterrupted": 0.578125,
+      "opposite_reads": 0.04600694444444445,
+      "promotions": 1.0
+    },
+    "matched_random": {
+      "downstream_successes": 0.6970486111111112,
+      "terminal": 0.6875,
+      "uninterrupted": 0.5625,
+      "opposite_reads": 0.046875,
+      "promotions": 0.7013888888888888
+    },
+    "writer_success_guard": {
+      "downstream_successes": 0.7126736111111112,
+      "terminal": 0.75,
+      "uninterrupted": 0.59375,
+      "opposite_reads": 0.0390625,
+      "promotions": 0.7013888888888888
+    },
+    "protected_retain": {
+      "downstream_successes": 0.609375,
+      "terminal": 0.65625,
+      "uninterrupted": 0.234375,
+      "opposite_reads": 0.04079861111111111,
+      "promotions": 0.0
+    },
+    "first_success_once": {
+      "downstream_successes": 0.7074652777777778,
+      "terminal": 0.734375,
+      "uninterrupted": 0.578125,
+      "opposite_reads": 0.0390625,
+      "promotions": 0.042534722222222224
+    }
+  },
+  "all_policy_counts": {
+    "always_promote": {
+      "downstream_successes": 704,
+      "terminal": 39,
+      "uninterrupted": 37,
+      "opposite_reads": 53,
+      "promotions": 1152
+    },
+    "matched_random": {
+      "downstream_successes": 803,
+      "terminal": 44,
+      "uninterrupted": 36,
+      "opposite_reads": 54,
+      "promotions": 808
+    },
+    "writer_success_guard": {
+      "downstream_successes": 821,
+      "terminal": 48,
+      "uninterrupted": 38,
+      "opposite_reads": 45,
+      "promotions": 808,
+      "extra_rewrites_over_single": 759
+    },
+    "protected_retain": {
+      "downstream_successes": 702,
+      "terminal": 42,
+      "uninterrupted": 15,
+      "opposite_reads": 47,
+      "promotions": 0
+    },
+    "first_success_once": {
+      "downstream_successes": 815,
+      "terminal": 47,
+      "uninterrupted": 37,
+      "opposite_reads": 45,
+      "promotions": 49
+    }
+  },
+  "recovery_descriptive": {
+    "shared_g15_fail": {
+      "cells": {
+        "always_promote": {
+          "packets": 29,
+          "downstream_success_count": 126,
+          "downstream_read_count": 522,
+          "terminal_count": 7,
+          "uninterrupted_count": 7,
+          "any_g16_33_success_count": 7
+        },
+        "matched_random": {
+          "packets": 29,
+          "downstream_success_count": 224,
+          "downstream_read_count": 522,
+          "terminal_count": 13,
+          "uninterrupted_count": 8,
+          "any_g16_33_success_count": 13
+        },
+        "writer_success_guard": {
+          "packets": 29,
+          "downstream_success_count": 213,
+          "downstream_read_count": 522,
+          "terminal_count": 14,
+          "uninterrupted_count": 8,
+          "any_g16_33_success_count": 15
+        },
+        "protected_retain": {
+          "packets": 29,
+          "downstream_success_count": 135,
+          "downstream_read_count": 522,
+          "terminal_count": 9,
+          "uninterrupted_count": 1,
+          "any_g16_33_success_count": 15
+        },
+        "first_success_once": {
+          "packets": 29,
+          "downstream_success_count": 207,
+          "downstream_read_count": 522,
+          "terminal_count": 13,
+          "uninterrupted_count": 7,
+          "any_g16_33_success_count": 15
+        }
+      },
+      "whole_cohort_contribution": 0.005208333333333333
+    },
+    "shared_g15_pass": {
+      "cells": {
+        "always_promote": {
+          "packets": 35,
+          "downstream_success_count": 578,
+          "downstream_read_count": 630,
+          "terminal_count": 32,
+          "uninterrupted_count": 30,
+          "any_g16_33_success_count": 34
+        },
+        "matched_random": {
+          "packets": 35,
+          "downstream_success_count": 579,
+          "downstream_read_count": 630,
+          "terminal_count": 31,
+          "uninterrupted_count": 28,
+          "any_g16_33_success_count": 34
+        },
+        "writer_success_guard": {
+          "packets": 35,
+          "downstream_success_count": 608,
+          "downstream_read_count": 630,
+          "terminal_count": 34,
+          "uninterrupted_count": 30,
+          "any_g16_33_success_count": 34
+        },
+        "protected_retain": {
+          "packets": 35,
+          "downstream_success_count": 567,
+          "downstream_read_count": 630,
+          "terminal_count": 33,
+          "uninterrupted_count": 14,
+          "any_g16_33_success_count": 35
+        },
+        "first_success_once": {
+          "packets": 35,
+          "downstream_success_count": 608,
+          "downstream_read_count": 630,
+          "terminal_count": 34,
+          "uninterrupted_count": 30,
+          "any_g16_33_success_count": 34
+        }
+      },
+      "whole_cohort_contribution": 0.0
+    }
+  },
+  "descriptive_single_rewrite_share_of_guard_gain_over_retention": 0.9495798319327731,
+  "cpu_admissions_checked": 12,
+  "completed_worker_batches_checked": 9,
+  "full_native_readers_including_qualification": 30024,
+  "new_readers_after_resume": 9120,
+  "software_full_readers_separate": 56,
+  "software_short32_readers_separate": 760,
+  "controller_software_reader_calls": 0,
+  "wall_seconds": 1754.791939648101,
+  "resumed_wall_seconds": 624.5205827530008,
+  "target_charged_seconds": 1575.2525590977166,
+  "calendar_pause_seconds_excluded": 100439.69584107399,
+  "capacity_wait_seconds": 0,
+  "native_worker_cpu_seconds": 5567.927572996,
+  "closeout_audit_wall_seconds": 10.541199557948858,
+  "new_native_dynamics": 0,
+  "new_model_fits": 0,
+  "scope": "Independent saved evidence verification, source selection, raw scalar endpoints, full saved flat chains, allocation RNG, persistent single-rewrite memory, record inheritance, exact block reductions, unchanged imports and resource costs. No new native simulation or full forcing rerun.",
+  "decision": "REPEATED_REWRITE_REPLICATION_UNRESOLVED",
+  "prospective_fresh_founders_within_programme": true,
+  "hypothesis_and_sample_informed_by_development": true,
+  "external_preregistration": false,
+  "RDT_specific_validation": false,
+  "automatic_successor": false
+}

@@ -1,0 +1,216 @@
+{
+  "all_sources_retained": true,
+  "before_matched_scientific_outcomes": true,
+  "old_outcomes_known": true,
+  "qualification_sha256": "04c6c7c246c44a27c190f2ad43a27eae515529fc9ee5e8341e8c907cc0d873a2",
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 13131505664,
+    "other_busy_capacity": 4,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1252130,
+        "sampled_cpu_percent": 98.46430521054673,
+        "threads": 1,
+        "ticks": 14804
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1252131,
+        "sampled_cpu_percent": 99.4489482626522,
+        "threads": 1,
+        "ticks": 14839
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1252132,
+        "sampled_cpu_percent": 99.4489482626522,
+        "threads": 1,
+        "ticks": 14872
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1252133,
+        "sampled_cpu_percent": 99.4489482626522,
+        "threads": 1,
+        "ticks": 15019
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-28T22:41:40.947163+00:00"
+  },
+  "settings": {
+    "absolute_noise_offsets": true,
+    "attenuation_only": true,
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "blocks": [
+      1120000,
+      1120001,
+      1120002,
+      1120003,
+      1120004,
+      1120005,
+      1120006,
+      1120007,
+      1120008,
+      1120009,
+      1120010,
+      1120011,
+      1120012,
+      1120013,
+      1120014,
+      1120015,
+      1120016,
+      1120017,
+      1120018,
+      1120019,
+      1120020,
+      1120021,
+      1120022,
+      1120023,
+      1120024,
+      1120025,
+      1120026,
+      1120027,
+      1120028,
+      1120029,
+      1120030,
+      1120031
+    ],
+    "bootstrap_samples": 10000,
+    "components": [
+      "OO",
+      "ON",
+      "NO",
+      "NN"
+    ],
+    "conditions": [
+      "OOO",
+      "OON",
+      "ONO",
+      "ONN",
+      "NOO",
+      "NON",
+      "NNO",
+      "NNN"
+    ],
+    "confidence": 0.95,
+    "config": {
+      "birth_sd": 0.05,
+      "dt": 0.2,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "recipients": 4
+    },
+    "contrast": "gross matched m sensitivity minus gross matched d sensitivity of C-F success",
+    "draws": [
+      0,
+      1
+    ],
+    "fixed_birth": "O",
+    "free_cells": "living cells excluding cue clamp; output ports included",
+    "full_scale_diagonal_states_reused_exactly": true,
+    "inference_scope": "new controlled intervention on known sources, not fresh-source confirmation",
+    "initial_bounds": [
+      -2.0,
+      2.0
+    ],
+    "initial_clipping": false,
+    "matched_outcomes_unseen_at_freeze": true,
+    "max_workers": 4,
+    "mode": "scientific",
+    "new_injuries": false,
+    "new_source_blocks": 0,
+    "new_streams": false,
+    "norm": "mean absolute component difference over free cells, pooled equally across C/F",
+    "old_outcomes_known": true,
+    "original_later_streams": [
+      "O",
+      "N"
+    ],
+    "pair_common_scales": true,
+    "paired_cue_noise": true,
+    "placement": "symmetric about each original O/N component midpoint",
+    "positive_criterion": "95% whole-source interval lower bound strictly above zero",
+    "primary": "matched_shared_minus_cue_delta_both",
+    "primary_group": "mixture/pooled/pooled/eligible",
+    "prior_primary_unchanged": true,
+    "reader": {
+      "read_steps": 2048,
+      "settling_steps": 1024
+    },
+    "recipients": 4,
+    "resource_limit_seconds": 43200,
+    "scales": "target/original_component_size; zero original norm gives zero scale",
+    "scopes": [
+      "all",
+      "eligible",
+      "affected",
+      "erased"
+    ],
+    "source_recipe": "all completed E112 sources, first safe four-cycle witness unchanged",
+    "source_selection": false,
+    "summary_allowance_seconds": 180,
+    "switch_step": 1024,
+    "target": "min(original_m_size,original_d_size)",
+    "timing_margin": 3,
+    "variant_specific_norms_not_forced_equal": true,
+    "variants": [
+      "C",
+      "F"
+    ],
+    "witness_reselection": false,
+    "writer_dynamics_repeated": false,
+    "zero_targets_retained": true
+  },
+  "utc": "2026-10-28T22:41:41.451484+00:00"
+}

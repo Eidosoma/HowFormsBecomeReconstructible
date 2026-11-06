@@ -1,0 +1,102 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "6300a7c7408f89b746d74b8291d38369d4bcbb4511589eecf6a8d5410d895257",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm006/preflight",
+ "stage": "preflight",
+ "tasks": 12,
+ "checked_utc": "2026-11-02T18:57:17Z",
+ "wall_s": 279.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 12,
+   "bad": [],
+   "fit_gain_tasks": 48,
+   "seconds": 0.1
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "sm004/preflight",
+    "W16_x64",
+    "900470"
+   ],
+   "arrays": 54,
+   "differ": [],
+   "seconds": 279.0
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "every_task_bridge": true,
+   "every_fit_gain_control_bridge": true,
+   "fit_gain_task_rerun_bit_for_bit": true,
+   "seconds": 145.2
+  },
+  "Q4_replay": {
+   "pass": true,
+   "branch": [
+    "sm004/preflight",
+    "W16_x64_r2",
+    "900470",
+    "L8",
+    "dial-c2-m2-t3000",
+    "case 0",
+    0.25
+   ],
+   "max_dV": 2.220446049250313e-16,
+   "E_replay": 0.484375,
+   "E": 0.484375,
+   "seconds": 1.0
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "controls_alike_across_factors": true,
+   "seconds": 0.0
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "max_abs_diff": 0.0,
+   "seconds": 0.6
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "eps_measured": {
+    "64/1/f1": 3,
+    "64/1/f2": 4,
+    "64/1/f2r2": 6,
+    "64/1/f4": 8
+   },
+   "eps_equal_design": true,
+   "tasks_are_saved_records": true,
+   "seconds": 121.7
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "listed_twice": true,
+   "reordered": true,
+   "seconds": 14.8
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_test_cpu_h": 16.9,
+   "fit_gain_cpu_h": 2.91,
+   "forecast_dev_cpu_h": 19.82,
+   "forecast_test_wall_h_12": 1.41,
+   "worker_rss_mb": 463.4,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "refit_equals_frozen": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 22140,
+    "TABLES.md": 6391,
+    "model.json": 8399
+   },
+   "parts_scored": 11,
+   "seconds": 19.1
+  }
+ }
+}

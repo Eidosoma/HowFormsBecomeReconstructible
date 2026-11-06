@@ -1,0 +1,946 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "85eae1621a5e0cb94c3604a6835604a97478171e280d9eb69c53ee3676a3d712",
+ "computed_utc": "2026-10-29T15:16:15Z",
+ "thresholds": {
+  "R1": {
+   "sharp": 0.5,
+   "perm": 0.25
+  },
+  "R2": {
+   "sharp": -0.5,
+   "perm": -0.25
+  },
+  "R3": {
+   "wins": 0.5,
+   "sharp": -0.5,
+   "perm": -0.25
+  },
+  "R4": {
+   "sharp": 1.0,
+   "perm": 0.25
+  },
+  "R5": {
+   "kept": 0.5,
+   "lost": 0.0
+  },
+  "S1": {
+   "stays": -0.5
+  },
+  "S2": {
+   "exact": 0.95,
+   "takes": 0.5
+  },
+  "S3": {
+   "split": 0.5,
+   "wins": 0.5,
+   "harder": 0.3
+  },
+  "S4": {
+   "lost": 0.5,
+   "won": 0.5
+  }
+ },
+ "parts": [
+  {
+   "stmt": "R1",
+   "name": "R1 li2, li4: q under intact@0.02",
+   "items": [
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R1",
+   "name": "R1 dw, li16: q under intact@0.05",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.25,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 li2, li4: q under intact@0.005",
+   "items": [
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ]
+   ],
+   "threshold": -0.5,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 dw, li16: q under intact@0.005",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": -0.25,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 every body: q under body (gain 0.2)",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 li2, li4: q under body@0.02",
+   "items": [
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ]
+   ],
+   "threshold": -0.5,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 dw, li16: q under body@0.02",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": -0.25,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "R4",
+   "name": "R4 li2, li4: q(intact@0.02) - q(body@0.02)",
+   "items": [
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ]
+   ],
+   "threshold": 1.0,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R4",
+   "name": "R4 dw, li16: q(intact@0.05) - q(body@0.05)",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.25,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R5",
+   "name": "R5 every body: the record's q_rel under body (gain 0.2)",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "R5",
+   "name": "R5 every body: the record's q_rel under body@0.02",
+   "items": [
+    [
+     "dw",
+     "C4s1"
+    ],
+    [
+     "dw",
+     "C4s2"
+    ],
+    [
+     "dw",
+     "C4s3"
+    ],
+    [
+     "li2",
+     "C4s1"
+    ],
+    [
+     "li2",
+     "C4s2"
+    ],
+    [
+     "li2",
+     "C4s3"
+    ],
+    [
+     "li4",
+     "C4s1"
+    ],
+    [
+     "li4",
+     "C4s2"
+    ],
+    [
+     "li4",
+     "C4s3"
+    ],
+    [
+     "li16",
+     "C4s1"
+    ],
+    [
+     "li16",
+     "C4s2"
+    ],
+    [
+     "li16",
+     "C4s3"
+    ]
+   ],
+   "threshold": 0.0,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "S1",
+   "name": "S1 alone: q, a period held against the record's",
+   "items": [
+    [
+     "li2",
+     "C48"
+    ],
+    [
+     "li4",
+     "C48"
+    ],
+    [
+     "dw",
+     "C84"
+    ],
+    [
+     "li16",
+     "C84"
+    ]
+   ],
+   "threshold": -0.5,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "S2",
+   "name": "S2 intact: align, every body, C84 and C48",
+   "items": [
+    [
+     "dw",
+     "C84"
+    ],
+    [
+     "dw",
+     "C48"
+    ],
+    [
+     "li2",
+     "C84"
+    ],
+    [
+     "li2",
+     "C48"
+    ],
+    [
+     "li4",
+     "C84"
+    ],
+    [
+     "li4",
+     "C48"
+    ],
+    [
+     "li16",
+     "C84"
+    ],
+    [
+     "li16",
+     "C48"
+    ]
+   ],
+   "threshold": 0.95,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "S2",
+   "name": "S2 newborns of the intact C84 and C48 records: align",
+   "items": [
+    [
+     "dw",
+     "C84",
+     "dw"
+    ],
+    [
+     "dw",
+     "C84",
+     "li2"
+    ],
+    [
+     "dw",
+     "C84",
+     "li4"
+    ],
+    [
+     "dw",
+     "C84",
+     "li16"
+    ],
+    [
+     "dw",
+     "C48",
+     "dw"
+    ],
+    [
+     "dw",
+     "C48",
+     "li2"
+    ],
+    [
+     "dw",
+     "C48",
+     "li4"
+    ],
+    [
+     "dw",
+     "C48",
+     "li16"
+    ]
+   ],
+   "threshold": 0.95,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "S2",
+   "name": "S2 record1: q, every body, C84 and C48",
+   "items": [
+    [
+     "dw",
+     "C84"
+    ],
+    [
+     "dw",
+     "C48"
+    ],
+    [
+     "li2",
+     "C84"
+    ],
+    [
+     "li2",
+     "C48"
+    ],
+    [
+     "li4",
+     "C84"
+    ],
+    [
+     "li4",
+     "C48"
+    ],
+    [
+     "li16",
+     "C84"
+    ],
+    [
+     "li16",
+     "C48"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "S3",
+   "name": "S3 body (gain 0.2): q, a period held against the record's",
+   "items": [
+    [
+     "li2",
+     "C48"
+    ],
+    [
+     "li4",
+     "C48"
+    ],
+    [
+     "dw",
+     "C84"
+    ],
+    [
+     "li16",
+     "C84"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "S3",
+   "name": "S3 body (gain 0.2): q, the other spacing conflicts",
+   "items": [
+    [
+     "li2",
+     "C84"
+    ],
+    [
+     "li4",
+     "C84"
+    ],
+    [
+     "dw",
+     "C48"
+    ],
+    [
+     "li16",
+     "C48"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "S3",
+   "name": "S3 body (gain 0.2): phase-conflict q (mean of C4s1-C4s3) - spacing q, held",
+   "items": [
+    [
+     "li2",
+     "C48"
+    ],
+    [
+     "li4",
+     "C48"
+    ],
+    [
+     "dw",
+     "C84"
+    ],
+    [
+     "li16",
+     "C84"
+    ]
+   ],
+   "threshold": 0.3,
+   "sense": "ge",
+   "pooled": false
+  },
+  {
+   "stmt": "S4",
+   "name": "S4 newborns of the held conflicts' body records: q",
+   "items": [
+    [
+     "li2",
+     "C48",
+     "dw"
+    ],
+    [
+     "li2",
+     "C48",
+     "li2"
+    ],
+    [
+     "li2",
+     "C48",
+     "li4"
+    ],
+    [
+     "li2",
+     "C48",
+     "li16"
+    ],
+    [
+     "li4",
+     "C48",
+     "dw"
+    ],
+    [
+     "li4",
+     "C48",
+     "li2"
+    ],
+    [
+     "li4",
+     "C48",
+     "li4"
+    ],
+    [
+     "li4",
+     "C48",
+     "li16"
+    ],
+    [
+     "dw",
+     "C84",
+     "dw"
+    ],
+    [
+     "dw",
+     "C84",
+     "li2"
+    ],
+    [
+     "dw",
+     "C84",
+     "li4"
+    ],
+    [
+     "dw",
+     "C84",
+     "li16"
+    ],
+    [
+     "li16",
+     "C84",
+     "dw"
+    ],
+    [
+     "li16",
+     "C84",
+     "li2"
+    ],
+    [
+     "li16",
+     "C84",
+     "li4"
+    ],
+    [
+     "li16",
+     "C84",
+     "li16"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "le",
+   "pooled": false
+  },
+  {
+   "stmt": "S4",
+   "name": "S4 newborns of the other spacing conflicts' body records: q",
+   "items": [
+    [
+     "li2",
+     "C84",
+     "dw"
+    ],
+    [
+     "li2",
+     "C84",
+     "li2"
+    ],
+    [
+     "li2",
+     "C84",
+     "li4"
+    ],
+    [
+     "li2",
+     "C84",
+     "li16"
+    ],
+    [
+     "li4",
+     "C84",
+     "dw"
+    ],
+    [
+     "li4",
+     "C84",
+     "li2"
+    ],
+    [
+     "li4",
+     "C84",
+     "li4"
+    ],
+    [
+     "li4",
+     "C84",
+     "li16"
+    ],
+    [
+     "dw",
+     "C48",
+     "dw"
+    ],
+    [
+     "dw",
+     "C48",
+     "li2"
+    ],
+    [
+     "dw",
+     "C48",
+     "li4"
+    ],
+    [
+     "dw",
+     "C48",
+     "li16"
+    ],
+    [
+     "li16",
+     "C48",
+     "dw"
+    ],
+    [
+     "li16",
+     "C48",
+     "li2"
+    ],
+    [
+     "li16",
+     "C48",
+     "li4"
+    ],
+    [
+     "li16",
+     "C48",
+     "li16"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": false
+  }
+ ],
+ "statements": [
+  {
+   "id": "R1",
+   "title": "a protected record wins the phase race down to a low read gain",
+   "words": "Read at gain 0.02 (li2, li4) or 0.05 (dw, li16), a record the body cannot write still moves every body nearer the record's phase than its own in every phase conflict",
+   "rule": "HOLDS if at t = 4,000 in C4s1, C4s2 and C4s3 the body's q under 'intact@0.02' is >= 0.5 for li2 and li4 and under 'intact@0.05' is >= 0.25 for dw and li16, else FAILS"
+  },
+  {
+   "id": "R2",
+   "title": "below it, the body keeps its own phase",
+   "words": "Read at gain 0.005, the same protected record leaves every body nearer its own initial phase",
+   "rule": "HOLDS if at t = 4,000 in C4s1, C4s2 and C4s3 the body's q under 'intact@0.005' is <= -0.5 for li2 and li4 and <= -0.25 for dw and li16, else FAILS"
+  },
+  {
+   "id": "R3",
+   "title": "a record relearned from the body wins the race at gain 0.2 and loses it at 0.02",
+   "words": "With its bonds relearned from the body under bond noise 1e-2, the record moves every body to its phase at gain 0.2 (NP001's N8), and at gain 0.02 every body stays nearer its own initial phase",
+   "rule": "HOLDS if at t = 4,000 in C4s1, C4s2 and C4s3 every body's q under 'body' is >= 0.5, and under 'body@0.02' is <= -0.5 for li2 and li4 and <= -0.25 for dw and li16, else FAILS"
+  },
+  {
+   "id": "R4",
+   "title": "relearning from the body moves the turn above the protected record's",
+   "words": "At the gain where the protected record still switches every body (0.02 for li2 and li4, 0.05 for dw and li16), the record relearned from the body moves the body's phase preference less, paired within each case",
+   "rule": "HOLDS if at t = 4,000 in C4s1, C4s2 and C4s3 the body's q under 'intact@g' exceeds its q under 'body@g' by >= 1.0 for li2 and li4 (g = 0.02) and by >= 0.25 for dw and li16 (g = 0.05), else FAILS"
+  },
+  {
+   "id": "R5",
+   "title": "the record that loses the race loses its history",
+   "words": "A record relearned from the body holds the history's relations (in either sign) while it wins the race (gain 0.2), and holds the body's initial relations more than the history's once it has lost it (gain 0.02)",
+   "rule": "HOLDS if at t = 4,000 in C4s1, C4s2 and C4s3 every body's record q_rel under 'body' is >= 0.5 and under 'body@0.02' is <= 0.0, else FAILS"
+  },
+  {
+   "id": "S1",
+   "title": "with no record read, a body keeps its present period",
+   "words": "Read nothing, li2 and li4 keep their period-8 stripes against a period-16 record (C48) and dw and li16 keep their period-16 stripes against a period-8 record (C84)",
+   "rule": "HOLDS if at t = 4,000 the body's q under 'alone' is <= -0.5 for li2 and li4 in C48 and for dw and li16 in C84, else FAILS"
+  },
+  {
+   "id": "S2",
+   "title": "a record the body never writes wins every spacing conflict, and newborns take its period",
+   "words": "Every body reading an intact record of the other period takes it exactly, a record relearned from itself with parity moves every body to its period, and a newborn of every kind reading the intact record takes its period exactly",
+   "rule": "HOLDS if the align under 'intact' at t = 4,000 is >= 0.95 for every body in C84 and C48, every newborn's align reading the 'intact' C84 and C48 records at t = 2,000 is >= 0.95, and the body's q under 'record1' at t = 4,000 is >= 0.5 for every body in C84 and C48, else FAILS"
+  },
+  {
+   "id": "S3",
+   "title": "relearned from the body, the record wins two kinds of spacing conflict and not the other two",
+   "words": "At gain 0.2 with bonds relearned from the body, the record does not move li2 or li4 off period 8 (C48), nor dw or li16 off period 16 (C84), nearer its own period than q 0.5, and it does so less than in the phase conflicts; it moves li2 and li4 to period 8 (C84) and dw and li16 to period 16 (C48)",
+   "rule": "HOLDS if at t = 4,000 the body's q under 'body' is <= 0.5 for li2 and li4 in C48 and dw and li16 in C84, >= 0.5 for li2 and li4 in C84 and dw and li16 in C48, and each of the first four is below the same body's mean q under 'body' over C4s1-C4s3 by >= 0.3, else FAILS"
+  },
+  {
+   "id": "S4",
+   "title": "newborns inherit what the race left in the record",
+   "words": "Newborns of every kind reading a spacing conflict's record relearned from the body (gain 0.2, 1e-2) lean to the record's period less than q 0.5 where the record did not win (li2 and li4 in C48, dw and li16 in C84), and more where it won (li2 and li4 in C84, dw and li16 in C48)",
+   "rule": "HOLDS if at t = 2,000 every successor's q reading the 'body' record is <= 0.5 for li2's and li4's C48 and dw's and li16's C84 records and >= 0.5 for li2's and li4's C84 and dw's and li16's C48 records, else FAILS"
+  }
+ ]
+}

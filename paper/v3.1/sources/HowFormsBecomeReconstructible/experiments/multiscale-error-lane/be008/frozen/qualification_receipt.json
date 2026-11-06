@@ -1,0 +1,112 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "eea5a41438d81fb3add62efb260530f795c342999057924cac60eb5da4babb07",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/be008/preflight",
+ "load_1min_at_check": 41.52,
+ "checked_utc": "2026-10-29T22:25:35Z",
+ "wall_s": 182.2,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "params_AL_equal_be006": true,
+    "params_SL_equal_be006": true,
+    "S4_t1/dw/memory4@0": true,
+    "S4_t1/dw/memory4@1959": true,
+    "S4_t1/li4/memory4@0": true,
+    "S4_t1/li4/memory4@1959": true,
+    "LB_t0/dw/memory4@0": true,
+    "LB_t0/dw/memory4@1959": true,
+    "LB_t0/li4/memory4@0": true,
+    "LB_t0/li4/memory4@1959": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 2.3839263896263674e-13,
+   "items": {
+    "F0_t0/dw/memory4@979/dial-AL-n/case0": 2.220446049250313e-16,
+    "S4_t1/li4/memory4@0/never-SL-m/case1": 1.3605783166781293e-13,
+    "LB_t0/dw/memory4@1959/dial-AL-m/case2": 4.440892098500626e-16,
+    "F0_t1/li4/memory4@3918/dial-SL/case3": 2.3839263896263674e-13,
+    "S4_t0/dw/memory4@0/never-AL/case4": 2.220446049250313e-16
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "F0_t0/dw/memory4,no signal:dial-AL=never-AL": true,
+    "F0_t0/dw/memory4,no signal:dial-AL-m=never-AL-m": true,
+    "F0_t0/dw/memory4,no signal:dial-AL-n=never-AL-n": true,
+    "F0_t0/dw/memory4,no signal:dial-SL-m=never-SL-m": true,
+    "F0_t0/dw/memory4,no signal:dial-SL=never-SL": true,
+    "F0_t0/li4/memory4,no signal:dial-AL=never-AL": true,
+    "F0_t0/li4/memory4,no signal:dial-AL-m=never-AL-m": true,
+    "F0_t0/li4/memory4,no signal:dial-AL-n=never-AL-n": true,
+    "F0_t0/li4/memory4,no signal:dial-SL-m=never-SL-m": true,
+    "F0_t0/li4/memory4,no signal:dial-SL=never-SL": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "delays_round_m_t_star": true,
+    "signal_on_for_exactly_its_updates": true,
+    "onset_for_dials_hit_and_sensors_for_all": true,
+    "bond_crosses_zero_after_ceil_t_star": true,
+    "arbiter_cells_are_the_anchored_disagreeing_uncommitted": true,
+    "every_clock_commits_for_15000": true,
+    "cuts_are_exact_quantiles": true,
+    "quieter_flips_are_a_subset": true
+   }
+  },
+  "Q8_static_case_matched": {
+   "pass": true,
+   "max_abs_onset_minus_case_static": 0.0,
+   "reported_not_gated": {
+    "AL-m": 0.0,
+    "AL-n": 0.0,
+    "SL-m": 0.0,
+    "SL": 0.0
+   },
+   "prompt_onset_mean": 0.5703125,
+   "case_static_mean": 0.5703125
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 1.18,
+   "forecast_cpu_h": 11.6,
+   "worker_rss_mb": 347.2,
+   "bytes_per_task": 4081616
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_arms.csv": 116071,
+    "summary_dw.json": 71112,
+    "summary_li4.json": 71235,
+    "traces.json": 64074,
+    "predictions_scored.json": 7964,
+    "TABLES.md": 20603
+   },
+   "predictions": "/e/project1/e-aif-2026pg01-1345/Research/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/be008/frozen/predictions.json"
+  }
+ }
+}

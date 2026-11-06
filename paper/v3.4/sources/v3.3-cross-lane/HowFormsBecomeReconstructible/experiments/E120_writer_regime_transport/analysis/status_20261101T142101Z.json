@@ -1,0 +1,59 @@
+{
+  "checked_utc": "2026-11-01T14:21:01.060781+00:00",
+  "reason": "User-requested status check",
+  "run": "E120_writer_regime_transport/runs/transport_v1",
+  "observed_status": {
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "completed_blocks": [
+      41000,
+      41001,
+      41002,
+      41003,
+      41004,
+      41005
+    ],
+    "pid": 2922955,
+    "seconds": 2985.7641820530407,
+    "stage": "lineages_and_independent_replay",
+    "status": "RUNNING",
+    "total_blocks": 32,
+    "utc": "2026-11-01T14:19:47.112750+00:00",
+    "workers": 2
+  },
+  "active_progress": [
+    {
+      "generation": 0,
+      "stage": "immediate_r1",
+      "task": 41006,
+      "utc": "2026-11-01T14:20:28.203420+00:00"
+    },
+    {
+      "generation": 0,
+      "stage": "immediate_r0",
+      "task": 41007,
+      "utc": "2026-11-01T14:19:47.274540+00:00"
+    }
+  ],
+  "completed_reports_pass": 6,
+  "run_and_job_input_hashes_verified": true,
+  "failed_marker_present": false,
+  "revised_timing": {
+    "total_seconds": 15973.048048551505,
+    "completion_utc": "2026-11-01T17:56:13.982872+00:00",
+    "basis": "Mean runtime of completed independently verified blocks, two workers, plus frozen analysis allowance; provisional, not a confidence interval.",
+    "completed_block_seconds": [
+      994.2400927499402,
+      969.3250117739663,
+      1000.1670739029068,
+      982.945898182923,
+      971.3903374860529,
+      1004.3246041110251
+    ]
+  },
+  "outcomes_inspected": false,
+  "protocol_changed": false,
+  "automatic_monitoring": false,
+  "e121_timing_note": null
+}

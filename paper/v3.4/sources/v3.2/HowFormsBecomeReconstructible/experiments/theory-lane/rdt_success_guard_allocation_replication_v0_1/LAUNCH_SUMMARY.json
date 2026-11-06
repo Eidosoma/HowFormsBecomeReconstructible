@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-28T13:53:55.416204+00:00",
+  "status": "LAUNCHED_AFTER_SOFTWARE_QUALIFICATION",
+  "launch": {
+    "utc": "2026-10-28T13:52:54.925028+00:00",
+    "pid": 1065443,
+    "pgid": 1065443,
+    "inputs": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/jobs/replication_v1/inputs",
+    "output": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/runs/replication_v1",
+    "input_manifest_sha256": "50776b62e547e854cd2c74a4cfceb3808dd6795eb5d3a6d44c4ea6861cb6f425",
+    "combined_hard_seconds": 5400,
+    "estimated_historical_minutes": [
+      40.0,
+      55.0
+    ],
+    "automatic_polling": false,
+    "automatic_retry": false,
+    "automatic_successor": false
+  },
+  "single_startup_check": {
+    "utc": "2026-10-28T13:52:57.925374+00:00",
+    "pid": 1065443,
+    "returncode": null,
+    "start_present": true,
+    "status_present": true,
+    "single_startup_check": true
+  },
+  "software_tests": 29,
+  "software_peak_resident_bytes": 187543552,
+  "selected_fresh_blocks": 28,
+  "selected_packets": 112,
+  "maximum_acquisition_attempts": 35,
+  "independent_noise_only": true,
+  "primary": "Guard minus matched-random average original-task success at g16..33, with exact block-generation rewrite counts and timing.",
+  "qualification_required_before_new_acquisitions": true,
+  "native_qualification_reused": false,
+  "input_files": 72,
+  "software_full_reads_all_attempts": 96,
+  "software_and_diagnostic_short_reads_exact_lower_bound": 1216,
+  "software_and_diagnostic_short_reads_upper_bound": 1824,
+  "note": "Failed software_v1 used fixed planned read accounting; its exact short-read cost is unknown, at most608. software_v2 measured0; software_v3 measured608; bounded diagnostic measured608. All attempts preserved. No scientific rule or budget changed.",
+  "native_job_full_read_cap": 53960,
+  "new_acquisitions_or_outcomes_inspected_after_launch": false,
+  "handoff": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/checks/HANDOFF.json",
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_successor": false
+}

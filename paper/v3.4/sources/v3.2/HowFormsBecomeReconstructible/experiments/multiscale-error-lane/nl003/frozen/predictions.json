@@ -1,0 +1,325 @@
+{
+ "study": "NL003",
+ "design_digest": "ece312e2b4f86d4373c3aceeeb623a544c9122b5c0baad085d59e44ea0502d11",
+ "thresholds": {
+  "G1": {
+   "repair": 0.95,
+   "keep": 0.95
+  },
+  "G2": {
+   "repair": 0.6,
+   "keep": 0.6
+  },
+  "G3": {
+   "protect_none": 1.25,
+   "protect_dw": 1.1,
+   "repair_cost_none": -0.01,
+   "repair_cost_dw": -0.11
+  },
+  "G4": {
+   "keep_none": 0.95,
+   "keep_dw": 0.75
+  },
+  "G5": {
+   "align_gain": 0.03
+  },
+  "G6": {
+   "crosses": 0.85,
+   "gated": 0.6
+  },
+  "G7": {
+   "blind": 0.5,
+   "outside": 1.05
+  },
+  "G8": {
+   "admits": -0.4
+  }
+ },
+ "parts": [
+  {
+   "stmt": "G1",
+   "name": "G1 none: ev(copy-k0.75+A/R), record",
+   "threshold": 0.95,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "G1",
+   "name": "G1 none: spec(foreign-k0.75+A/none), record",
+   "threshold": 0.95,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dw: ev(copy-k0.75+A/R), record",
+   "threshold": 0.6,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 dw: spec(foreign-k0.75+A/none), record",
+   "threshold": 0.6,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 none: spec(foreign-k0.75+A/none) - spec(foreign-k0.75/none), record",
+   "threshold": 1.25,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dw: spec(foreign-k0.75+A/none) - spec(foreign-k0.75/none), record",
+   "threshold": 1.1,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 none: ev(copy-k0.75+A/R) - ev(copy-k0.75/R), record",
+   "threshold": -0.01,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 dw: ev(copy-k0.75+A/R) - ev(copy-k0.75/R), record",
+   "threshold": -0.11,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 none: spec(corrupt-k0.75+A/none), record",
+   "threshold": 0.95,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "corrupt-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G4",
+   "name": "G4 dw: spec(corrupt-k0.75+A/none), record",
+   "threshold": 0.75,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "corrupt-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 dw: align_A(copy-k0.75+A/none) - align_A(copy-k0.75/none), record",
+   "threshold": 0.03,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/align_A",
+     "copy-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/align_A",
+     "copy-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 dw: s/spec(foreign-k0.75+A/none) - s/spec(foreign-k0.75/none), the L1-only recipient",
+   "threshold": 0.85,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "s/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "s/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 dw: g/spec(foreign-k0.75+A/none), the gated coded recipient",
+   "threshold": 0.6,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "g/spec_reg",
+     "foreign-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "G7",
+   "name": "G7 dw: [spec(foreign-k0.75+A/K) - spec(foreign-k0.75/K)] - [k_spec(foreign-k0.75+A/K) - k_spec(foreign-k0.75/K)], record (the protection over the sheet less inside the killed square)",
+   "threshold": 0.5,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/K"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/K"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/k_spec_reg",
+     "foreign-k0.75+A/K"
+    ],
+    [
+     1,
+     "dw",
+     "t/r/k_spec_reg",
+     "foreign-k0.75/K"
+    ]
+   ]
+  },
+  {
+   "stmt": "G7",
+   "name": "G7 dw: spec(foreign-k0.75+A/K) - spec(foreign-k0.75/K), record (the whole sheet)",
+   "threshold": 1.05,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/K"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/K"
+    ]
+   ]
+  },
+  {
+   "stmt": "G8",
+   "name": "G8 dw: spec(foreign-k0.75+A/change), record (anchors and reference both carry B)",
+   "threshold": -0.4,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/change"
+    ]
+   ]
+  }
+ ],
+ "written_utc": "2026-10-31T22:22:54Z"
+}

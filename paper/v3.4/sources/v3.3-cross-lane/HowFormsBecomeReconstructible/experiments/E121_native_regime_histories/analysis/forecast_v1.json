@@ -1,0 +1,54 @@
+{
+  "analysis_allowance_seconds": 180.0,
+  "benchmark_seconds": 190.800872531021,
+  "conservative_seconds": 132116.62097442895,
+  "detach_required": true,
+  "expected_seconds": 44158.873658142984,
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 81081380864,
+    "other_busy_capacity": 2,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 2917760,
+        "sampled_cpu_percent": 99.87959436306927,
+        "threads": 1,
+        "ticks": 75830
+      },
+      {
+        "affinity": [
+          7
+        ],
+        "pid": 2917761,
+        "sampled_cpu_percent": 99.87959436306927,
+        "threads": 1,
+        "ticks": 76097
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-11-01T13:29:09.186289+00:00"
+  },
+  "scaled_per_source_seconds": 2748.6796036339365,
+  "stage_scales": {
+    "acquisition": 1.0,
+    "dynamics": 16.0,
+    "storage": 2.0
+  },
+  "storage_reserve_bytes": 15988688080,
+  "study": "histories",
+  "timing_margin": 3,
+  "utc": "2026-11-01T13:29:09.186387+00:00",
+  "workers": 2
+}

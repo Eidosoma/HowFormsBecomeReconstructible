@@ -1,0 +1,65 @@
+P63c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e006/debug (debug, DRY RUN on engineering records): 8 task-files, every sha256 equal to its manifest's; digest 87fee7d37ad4; 2026-11-05T13:11:25Z - 2026-11-05T13:22:22Z, 1.26 CPU-h; 8 restored records, every sha256 equal to ar006/debug's manifest; the acquisition rebuilt by ar001.sim.prepare (purpose engineering; 8 cases a task) equal to every record's V0, R0 and T
+  the labels: every row as the plan's table (protected, uninjured, vote/isolated, vote/isolated-matched, vote/none, vote/shared, vote/shared-early, vote/shared-late, vote/shared-retained, vtol-every, vtol-every/shared)
+  the injury schedule recomputed by the lead (64 case-tasks x 3 generations; at most 1 rejected attempts): every corner and attempt equal to the shard's, the same in every root; the patches disjoint
+  the packets at generation 0 rebuilt by the lead (88 label-tasks): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states (176 row-task-horizons; own patch, union, whole sheet): largest |difference| 0.0e+00
+  the fresh successors re-scored from their saved final states: not saved at this stage (their reads are taken as written)
+  kappa by the declared rule from P63k's reference exposures (1 / the mean exposure, four significant figures): full 1.944, early 1.947, late 1.94, isolated 7.878
+    equal to the design's (kappa 1.944, early 1.947, late 1.94, isolated 7.878)
+  identities: a vote row fired in 0 of 1728 lineage-case-generations; a vtol birth cue disagreed at birth in 0 of 384; an injury check failed in 0 of 1920 (the ceiling: 0 of 192 not 'no injury'); a field-free row's exposure was not 0 in 0 of 768 case-generations x 4 quantities; every field branch's realized response equals its kappa x its window's mean exposure in 1344 case-generations (largest relative difference 1.1e-14: the response acted only inside its window)
+
+THE PARTS (1 blocks x 8 cases; pooled over the eight unit-body pairs, one future; [95% t interval])
+  H1 U_v(vote/shared) - U_v(vote/isolated), g 8: not available at this stage
+  H2 q_r(vote/shared) - q_r(vote/isolated), g 8: not available at this stage
+  H3 the fresh successor's U_v, vote/shared - vote/isolated, after g 8: not available at this stage
+  N1 U_v(vote/shared) - U_v(vote/isolated-matched), g 8: the neighbours' signal at a matched response: not available at this stage
+  N2 q_r(vote/shared) - q_r(vote/isolated-matched), g 8: not available at this stage
+  N3 the fresh U_v, vote/shared - vote/isolated-matched, after g 8: not available at this stage
+  R1 U_v(vote/isolated-matched) - U_v(vote/none), g 8: the response at the shared row's size, private signals: not available at this stage
+  R2 q_r(vote/isolated-matched) - q_r(vote/none), g 8: not available at this stage
+  R3 the fresh U_v, vote/isolated-matched - vote/none, after g 8: not available at this stage
+  H5 U_v(vote/shared-early) - U_v(vote/shared-late), g 3: early against late at matched exposure: -0.007568 [+nan, +nan] (SD 0.004117: block nan, case/sqrt8 0.004117; halves -0.007568 -0.007568); registered [-0.04, 0.02]: HOLDS
+      by item set: particular (li4 x F0) -0.055664; native (li4 x S4) +0.083984; permissive (dw) -0.029297
+  VERDICTS (development: the point value against the registered threshold or band): H5 HOLDS  [not a development result]
+
+REPORTED (the lead's)
+  the levels (all pairs; li4 x F0 in parentheses): U_v, q_r, a_v at g 0, 1, 3, 8; the fresh U_v after 1, 3, 8
+  protected [vote; field none, -, window -; copy True]: g0 U_v 0.9883 (1.0000) q_r +1.0000 (+1.0000) a_v 0.9932; g1 U_v 0.5967 (0.4355) q_r +0.9221 (+0.9033) a_v 0.9311; g3 U_v 0.7625 (0.6211) q_r +0.9163 (+0.8809) a_v 0.9310; x1 U_v 0.9468 (0.8008); x3 U_v 0.9512 (0.8203)
+  uninjured [vote; field none, -, window -; copy False]: g0 U_v 0.9209 (0.6914) q_r +0.9647 (+0.9517) a_v 0.9420; g1 U_v 0.9541 (0.8359) q_r +0.9233 (+0.8921) a_v 0.9342; g3 U_v 0.9407 (0.7959) q_r +0.8619 (+0.8018) a_v 0.9238; x1 U_v 0.9277 (0.7559); x3 U_v 0.9302 (0.7656)
+  vote/isolated [vote; field isolated, reset, window full; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2588 (0.0586) q_r +0.8513 (+0.8013) a_v 0.9275; g3 U_v 0.2437 (0.0889) q_r +0.7377 (+0.6558) a_v 0.8879; x1 U_v 0.3110 (0.0879); x3 U_v 0.2900 (0.1025)
+  vote/isolated-matched [vote; field isolated, reset, window full; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2095 (0.0859) q_r +0.8357 (+0.7832) a_v 0.9407; g3 U_v 0.1885 (0.1064) q_r +0.7058 (+0.6245) a_v 0.8863; x1 U_v 0.3042 (0.1055); x3 U_v 0.2864 (0.0996)
+  vote/none [vote; field none, -, window -; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.3208 (0.0840) q_r +0.8564 (+0.8091) a_v 0.9152; g3 U_v 0.3083 (0.1045) q_r +0.7473 (+0.6680) a_v 0.8825; x1 U_v 0.3506 (0.1348); x3 U_v 0.3354 (0.1279)
+  vote/shared [vote; field shared, reset, window full; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2129 (0.0820) q_r +0.8359 (+0.7832) a_v 0.9395; g3 U_v 0.1895 (0.1016) q_r +0.7074 (+0.6191) a_v 0.8850; x1 U_v 0.3101 (0.1055); x3 U_v 0.2859 (0.0977)
+  vote/shared-early [vote; field shared, reset, window early; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2734 (0.0664) q_r +0.8473 (+0.8018) a_v 0.9118; g3 U_v 0.2488 (0.0742) q_r +0.7313 (+0.6533) a_v 0.8732; x1 U_v 0.3057 (0.0996); x3 U_v 0.2747 (0.0801)
+  vote/shared-late [vote; field shared, reset, window late; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2700 (0.1191) q_r +0.8468 (+0.7910) a_v 0.9461; g3 U_v 0.2563 (0.1299) q_r +0.7280 (+0.6372) a_v 0.8981; x1 U_v 0.3330 (0.1055); x3 U_v 0.3232 (0.1064)
+  vote/shared-retained [vote; field shared, retain, window full; copy False]: g0 U_v 0.3281 (0.0586) q_r +0.9335 (+0.9136) a_v 0.9328; g1 U_v 0.2129 (0.0820) q_r +0.8359 (+0.7832) a_v 0.9395; g3 U_v 0.1895 (0.1016) q_r +0.7074 (+0.6191) a_v 0.8850; x1 U_v 0.3101 (0.1055); x3 U_v 0.2859 (0.0977)
+  vtol-every [vtol; field none, -, window -; copy False]: g0 U_v 0.7959 (0.4844) q_r +0.9547 (+0.9360) a_v 0.9399; g1 U_v 0.8071 (0.5605) q_r +0.9032 (+0.8604) a_v 0.9296; g3 U_v 0.8005 (0.5283) q_r +0.8293 (+0.7578) a_v 0.9137; x1 U_v 0.8003 (0.5293); x3 U_v 0.7986 (0.5225)
+  vtol-every/shared [vtol; field shared, reset, window full; copy False]: g0 U_v 0.7959 (0.4844) q_r +0.9547 (+0.9360) a_v 0.9399; g1 U_v 0.8042 (0.6836) q_r +0.8823 (+0.8335) a_v 0.9577; g3 U_v 0.7700 (0.6133) q_r +0.7861 (+0.6978) a_v 0.9217; x1 U_v 0.7930 (0.5312); x3 U_v 0.7686 (0.4961)
+  the exposures per generation (the mean x a generation; the realized integrated response kappa x x, kexp x 8,000):
+    vote/isolated: g1 0.115/1,792 g2 0.118/1,834 g3 0.120/1,866
+    vote/isolated-matched: g1 0.104/6,573 g2 0.107/6,761 g3 0.110/6,927
+    vote/shared: g1 0.422/6,559 g2 0.434/6,745 g3 0.444/6,902
+    vote/shared-early: g1 0.458/3,263 g2 0.471/3,357 g3 0.481/3,420
+    vote/shared-late: g1 0.457/3,281 g2 0.469/3,356 g3 0.479/3,428
+    vote/shared-retained: g1 0.422/6,559 g2 0.434/6,746 g3 0.444/6,903
+    vtol-every/shared: g1 0.423/6,575 g2 0.434/6,750 g3 0.444/6,907
+    vote/isolated-matched / vote/shared, integrated response: g1 1.002 g2 1.002 g3 1.004
+    vote/shared-early / vote/shared-late, integrated response: g1 0.995 g2 1.000 g3 0.998
+    vote/isolated / vote/shared, integrated response: g1 0.273 g2 0.272 g3 0.270
+  contrasts reported (g 3, the stage's last generation; the fresh after g 3): every field row against vote/none; shared against the isolated rows; the comparators against vote/shared
+    vote/isolated - vote/none: U_v -0.0647 [+nan, +nan]; q_r -0.0096 [+nan, +nan]; fresh U_v -0.0454 [+nan, +nan]
+    vote/isolated-matched - vote/none: U_v -0.1199 [+nan, +nan]; q_r -0.0415 [+nan, +nan]; fresh U_v -0.0491 [+nan, +nan]
+    vote/shared - vote/none: U_v -0.1189 [+nan, +nan]; q_r -0.0399 [+nan, +nan]; fresh U_v -0.0496 [+nan, +nan]
+    vote/shared-early - vote/none: U_v -0.0596 [+nan, +nan]; q_r -0.0160 [+nan, +nan]; fresh U_v -0.0608 [+nan, +nan]
+    vote/shared-late - vote/none: U_v -0.0520 [+nan, +nan]; q_r -0.0193 [+nan, +nan]; fresh U_v -0.0122 [+nan, +nan]
+    vote/shared-retained - vote/none: U_v -0.1189 [+nan, +nan]; q_r -0.0399 [+nan, +nan]; fresh U_v -0.0496 [+nan, +nan]
+    vtol-every/shared - vote/none: U_v +0.4617 [+nan, +nan]; q_r +0.0388 [+nan, +nan]; fresh U_v +0.4331 [+nan, +nan]
+    vote/shared - vote/isolated-matched: U_v +0.0010 [+nan, +nan]; q_r +0.0016 [+nan, +nan]; fresh U_v -0.0005 [+nan, +nan]
+    vote/isolated-matched - vote/isolated: U_v -0.0552 [+nan, +nan]; q_r -0.0319 [+nan, +nan]; fresh U_v -0.0037 [+nan, +nan]
+    vote/shared - vote/isolated: U_v -0.0542 [+nan, +nan]; q_r -0.0303 [+nan, +nan]; fresh U_v -0.0042 [+nan, +nan]
+    protected - vote/shared: U_v +0.5730 [+nan, +nan]; q_r +0.2089 [+nan, +nan]; fresh U_v +0.6653 [+nan, +nan]
+    vtol-every - vote/shared: U_v +0.6111 [+nan, +nan]; q_r +0.1219 [+nan, +nan]; fresh U_v +0.5127 [+nan, +nan]
+
+  (the reader ran under design bdbd135dd2ee, the run under 87fee7d37ad4)
+
+AGAINST THE FROZEN READER (/tmp/claude-35835/-e-project1-e-aif-2026pg01-1345-Research-HowFormsBecomeReconstructible-experiments-multiscale-error-lane/940a0bc6-d263-4c2b-a287-422759268bb9/scratchpad/p63c/reader_debug/predictions_scored.json): 1 parts (values, intervals, SDs, halves, blocks, item sets; 1 registered thresholds, kinds and verdicts; 0 narrowest thresholds in the reader's kind) largest difference 0.00e+00; 572 levels (lineage and fresh), largest difference 1.11e-16; partial levels (not pooled here): 0; 84 exposure means, largest difference 1.11e-16

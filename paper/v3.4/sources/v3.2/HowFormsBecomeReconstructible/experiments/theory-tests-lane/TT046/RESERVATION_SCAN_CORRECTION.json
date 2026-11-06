@@ -1,0 +1,20 @@
+{
+  "status": "ADMINISTRATIVE_IMPLEMENTATION_CORRECTION",
+  "failed_or_stopped": [
+    {
+      "code": "TT046/admin/reserve.py",
+      "sha256": "977c3fb8d5531aeb89f7467923c5977277a659cae3842c7921d81d9f5ca41523",
+      "reason": "600-second timeout"
+    },
+    {
+      "code": "TT046/admin/reserve_v2.py",
+      "sha256": "9654fd8ab35e0208c78cd8a5a6ef97e5f41b78416903b20a2870186ef449fde6",
+      "reason": "Stopped before reliance; word boundaries miss underscore-delimited numeric filenames"
+    }
+  ],
+  "new_code": "TT046/admin/reserve_v3.py",
+  "new_code_sha256": "8eefd638e0a79425a650e169d395a264d15c81a27dadfe5b1fdb26010ed74623",
+  "scope": "Current HowFormsBecomeReconstructible project plus dedicated lane archive; selected metadata/text <=2 MiB; not other Random-Replications projects or global non-use proof",
+  "production_generated": false,
+  "cohort_unchanged": true
+}

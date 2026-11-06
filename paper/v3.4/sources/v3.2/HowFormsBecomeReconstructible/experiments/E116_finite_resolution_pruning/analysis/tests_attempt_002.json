@@ -1,0 +1,6 @@
+{
+  "seconds": 8.159413449000567,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E116_finite_resolution_pruning/tests.py\", line 132, in <module>\n    resource=inventory(1);data.registry(full=True);checks=unit();reports=[] if args.unit else references()\n                                                                                              ~~~~~~~~~~^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E116_finite_resolution_pruning/tests.py\", line 116, in references\n    reused,work=dynamics.resolve(pk[None],[0.],task,cfg,phase,g,cache,None,'reference')\n                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E116_finite_resolution_pruning/dynamics.py\", line 39, in resolve\n    for offset in range(0,len(new),cfg['chunk_records']):\n                                   ~~~^^^^^^^^^^^^^^^^^\nKeyError: 'chunk_records'\n",
+  "utc": "2026-10-30T17:55:05.961944+00:00"
+}

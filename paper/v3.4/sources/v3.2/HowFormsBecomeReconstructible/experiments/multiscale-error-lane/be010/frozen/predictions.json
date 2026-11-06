@@ -1,0 +1,1554 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "871ad1725f3bf5cd6d1863e672c8ff274f61cc1f764d7dbfbce045466745f577",
+ "computed_utc": "2026-10-30T15:36:55Z",
+ "thresholds": {
+  "R1": {
+   "closed": 0.05
+  },
+  "R2": {
+   "open": 0.2
+  },
+  "R3": {
+   "closed": 0.05,
+   "open": 0.2
+  },
+  "R4": {
+   "alone": 0.05
+  },
+  "R5": {
+   "alone": 0.5
+  },
+  "R6": {
+   "rim": 0.2,
+   "partial": 0.1
+  },
+  "R7": {
+   "narrow": 0.02,
+   "drug_over_rim": 0.2
+  },
+  "R8": {
+   "wound": 0.1,
+   "drug": 0.04
+  },
+  "R9": {
+   "blocked": 0.001,
+   "exposed": 0.003
+  }
+ },
+ "parts": [
+  {
+   "stmt": "R1",
+   "name": "R1 gain(N, 0) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R1",
+   "name": "R1 gain(N, 0.5) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R1",
+   "name": "R1 gain(N, 1) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R1",
+   "name": "R1 gain(N, 2) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 gain(R, 0) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 gain(R, 0.5) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 gain(R, 1) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 gain(R, 2) at T_W + 3918 + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 gain(R0, 2) at T_W + 3918 + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R4",
+   "name": "R4 alone(R) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R5",
+   "name": "R5 alone(W) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R5",
+   "name": "R5 alone(W) at T_W + 500 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.5,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R6",
+   "name": "R6 alone(W) - alone(K) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R6",
+   "name": "R6 alone(K) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(K, 0) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(K, 0.5) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(K, 1) at T_W + d + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(R, 0) - gain(K, 0) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(R, 0.5) - gain(K, 0.5) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R7",
+   "name": "R7 gain(R, 1) - gain(K, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R8",
+   "name": "R8 cost(W) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "R8",
+   "name": "R8 cost(R) at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.04,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 sham(N) r_all at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 sham(W) r_all at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "R9",
+   "name": "R9 sham(R) r_all at T_W + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.003,
+   "sense": "ge",
+   "pooled": true
+  }
+ ],
+ "statements": [
+  {
+   "id": "R1",
+   "kind": "without a reset the executed decision stays closed",
+   "claim": "With no second event, a signal 26.1 h after a 4 x 4 memory damage, or 3.3, 6.5 or 13.1 h later still, after the tissue executed its default outcome at 12 h, repairs at most 0.05 more than no signal at the same time, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, dial-N's r_in in memory4@w+d at T_W + d + 4,000 exceeds never-N's r_in in memory4@w+3918 at the same read by at most 0.05, for d = round(m T*), m = 0, 0.5, 1 and 2, else FAILS",
+   "thresholds": {
+    "closed": 0.05
+   }
+  },
+  {
+   "id": "R2",
+   "kind": "a reset drug reopens the window",
+   "claim": "After every commitment is cleared at 26.1 h (cells, records and bonds untouched), a signal at once or 3.3 or 6.5 h later repairs at least 0.2 more of the damaged patch than the drug alone at the same time, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, dial-R's r_in in memory4@w+d at T_W + d + 4,000 exceeds never-R's r_in in memory4@w+3918 at the same read by >= 0.2, for m = 0, 0.5 and 1, else FAILS",
+   "thresholds": {
+    "open": 0.2
+   }
+  },
+  {
+   "id": "R3",
+   "kind": "re-execution closes the reopened window",
+   "claim": "After the drug, a signal 13.1 h later (after the tissue executes again, 12 h after the drug) repairs at most 0.05 more than the drug alone; without that second execution the same signal repairs at least 0.2 more, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at T_W + 3,918 + 4,000 in memory4@w+3918, dial-R's r_in exceeds never-R's by at most 0.05 and dial-R0's exceeds never-R0's by >= 0.2, else FAILS",
+   "thresholds": {
+    "closed": 0.05,
+    "open": 0.2
+   }
+  },
+  {
+   "id": "R4",
+   "kind": "the drug alone repairs almost nothing",
+   "claim": "With no signal, clearing every commitment repairs at most 0.05 of the damaged patch by 13.3 h after the drug, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, never-R's r_in at T_W + 4,000 in memory4@w+3918 exceeds never-N's at the same read by at most 0.05, else FAILS",
+   "thresholds": {
+    "alone": 0.05
+   }
+  },
+  {
+   "id": "R5",
+   "kind": "a new wound alone repairs the executed damage",
+   "claim": "With no signal, a new wound at the damaged patch (newborn cells, every contact touching them untrained, the positional cue kept) repairs at least half of the patch within 1.7 h, and still by 13.3 h, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, never-W's r_in in memory4@w+3918 exceeds never-N's by >= 0.5 at T_W + 500 and at T_W + 4,000, else FAILS",
+   "thresholds": {
+    "alone": 0.5
+   }
+  },
+  {
+   "id": "R6",
+   "kind": "the rim's junctions carry the executed state into the regrowth",
+   "claim": "With no signal, a new wound that keeps the rim's contacts repairs at least 0.2 less of the patch than one that untrains them, but still at least 0.1, by 13.3 h after the wound, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at T_W + 4,000 in memory4@w+3918, never-W's r_in less never-K's is >= 0.2 and never-K's r_in less never-N's is >= 0.1, else FAILS",
+   "thresholds": {
+    "rim": 0.2,
+    "partial": 0.1
+   }
+  },
+  {
+   "id": "R7",
+   "kind": "a wound that keeps the rim leaves a narrow window",
+   "claim": "After a new wound that keeps the rim's contacts, a signal at once or 3.3 or 6.5 h later repairs at least 0.02 more than the wound alone, and at least 0.2 less than the same signal after the drug, paired within each case, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(K, m) >= 0.02 and gain(R, m) - gain(K, m) >= 0.2 for m = 0, 0.5 and 1, where gain(x, m) is dial-x's r_in in memory4@w+round(m T*) at T_W + round(m T*) + 4,000 less never-x's in memory4@w+3918 at the same read, else FAILS",
+   "thresholds": {
+    "narrow": 0.02,
+    "drug_over_rim": 0.2
+   }
+  },
+  {
+   "id": "R8",
+   "kind": "a wound costs an undamaged patch, the drug little",
+   "claim": "Where nothing was wrong, a new wound at the patch at 26.1 h leaves its record at least 0.1 worse 13.3 h later, and the drug at most 0.04 worse, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at T_W + 4,000 in none4@w+0, never-N's r_in less never-W's is >= 0.1 and never-N's less never-R's is at most 0.04, else FAILS",
+   "thresholds": {
+    "wound": 0.1,
+    "drug": 0.04
+   }
+  },
+  {
+   "id": "R9",
+   "kind": "the drug re-exposes the tissue to a sham, a wound does not",
+   "claim": "A sham signal right after the reset at 26.1 h, in a tissue with a quarter of its anchors corrupted, costs the sheet's record at most 0.001 with no reset or after a new wound, and at least 0.003 after the drug, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at T_W + 4,000 in cue4@w+0, never-x's r_all less dial-x's is at most 0.001 for x = N and W, and >= 0.003 for x = R, else FAILS",
+   "thresholds": {
+    "blocked": 0.001,
+    "exposed": 0.003
+   }
+  }
+ ]
+}

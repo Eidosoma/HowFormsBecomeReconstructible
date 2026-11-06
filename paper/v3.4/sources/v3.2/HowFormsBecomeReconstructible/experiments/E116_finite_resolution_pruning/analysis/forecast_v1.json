@@ -1,0 +1,36 @@
+{
+  "conservative_seconds": 54717.762314059844,
+  "detach_required": true,
+  "effective_conservative_resource_limit_seconds": 64800,
+  "expected_seconds": 18534.705660576958,
+  "fixed_shape_scientific_array_bytes_bound": 5252556960,
+  "forecasts_by_workers": {
+    "1": {
+      "conservative_seconds": 198933.08811865593,
+      "expected_seconds": 66606.48092877565
+    },
+    "2": {
+      "conservative_seconds": 102789.53758225853,
+      "expected_seconds": 34558.630749976524
+    },
+    "3": {
+      "conservative_seconds": 70741.68740345941,
+      "expected_seconds": 23876.01402371014
+    },
+    "4": {
+      "conservative_seconds": 54717.762314059844,
+      "expected_seconds": 18534.705660576958
+    }
+  },
+  "method": "Original full-width measured runtime formula; fixed cohort and pre-deduplication work bound. Storage dimensions corrected by resource amendment 1.",
+  "new_record_steps_upper_bound": 292552704,
+  "original_conservative_resource_limit_seconds": 43200,
+  "resource_amendment_sha256": "09ef156a604e23f628ede7e8b5b9b225c90867f48560624f1eea86f849ff28e8",
+  "seconds_per_new_record_step_with_replay": 0.0002231234955943839,
+  "static_seconds_per_block": 27.747551027219743,
+  "step_trace_scientific_bytes_bound": 86507520,
+  "storage_reserve_bytes": 10710435472,
+  "summary_allowance_seconds": 443.1773338355124,
+  "utc": "2026-10-30T18:09:25.874951+00:00",
+  "workers": 4
+}

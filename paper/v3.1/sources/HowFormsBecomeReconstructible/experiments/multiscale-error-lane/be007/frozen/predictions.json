@@ -1,0 +1,2326 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "1ad4f8637de5792b29f256a020d5223146ad2ffcdae7de7d3de9b8b7f1d66c4e",
+ "computed_utc": "2026-10-29T21:26:23Z",
+ "thresholds": {
+  "E1": {
+   "loss": 0.02
+  },
+  "E2": {
+   "worth": 0.05
+  },
+  "E3": {
+   "drop": 0.2
+  },
+  "E4": {
+   "refused": 0.05,
+   "adopted": 0.1
+  },
+  "E5": {
+   "blocked": 0.001,
+   "costs": 0.001
+  },
+  "E6": {
+   "frozen": 0.005,
+   "continues": 0.02,
+   "slower": 0.01
+  },
+  "E7": {
+   "hit": 0.1
+  }
+ },
+ "parts": [
+  {
+   "stmt": "E1",
+   "name": "E1 loss(SL, 0.5) = prompt(SL) at 4000 - late(SL, 0.5) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(SL, 1) = prompt(SL) at 4000 - late(SL, 1) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(C6, 0.5) = prompt(C6) at 4000 - late(C6, 0.5) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(C12, 0.5) = prompt(C12) at 4000 - late(C12, 0.5) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(C12, 1) = prompt(C12) at 4000 - late(C12, 1) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(F12, 0.5) = prompt(F12) at 4000 - late(F12, 0.5) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E1",
+   "name": "E1 loss(F12, 1) = prompt(F12) at 4000 - late(F12, 1) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C6, 1) = late(C6, 1) - none(C6) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C6, 2) = late(C6, 2) - none(C6) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C6, 4) = late(C6, 4) - none(C6) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C12, 2) = late(C12, 2) - none(C12) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C12, 4) = late(C12, 4) - none(C12) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(C24, 4) = late(C24, 4) - none(C24) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(F12, 2) = late(F12, 2) - none(F12) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 gain(F12, 4) = late(F12, 4) - none(F12) at D + 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 gain(C12, 1) - gain(C6, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 gain(C24, 2) - gain(C12, 2) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 gain(SL, 4) - gain(C24, 4) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 adopt(C6) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 adopt(C12) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 adopt(F12) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 adopt(SL) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 adopt(C24) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 sham(C6) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 sham(C12) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 sham(F12) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 sham(SL) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 sham(C24) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 rise(C6) = none(C6) at 12000 - none(C6) at 2000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.005,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 rise(C12) = none(C12) at 12000 - none(C12) at 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.005,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 rise(C24) = none(C24) at 12000 - none(C24) at 7918 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.005,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 rise(SL) = none(SL) at 12000 - none(SL) at 2000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 rise(SL) - rise(F12) from 4000 to 12000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.01,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C6, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C6, 2) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C6, 4) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C12, 2) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C12, 4) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 hit(C24, 4) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  }
+ ],
+ "statements": [
+  {
+   "id": "E1",
+   "kind": "execution after the evidence clock keeps its onset",
+   "claim": "With no execution, and with execution after the evidence clock T* (at 12 h, by commitment or by the cue fading; at 6 h only before it), a signal half of T* or T* after a 4 x 4 memory damage (3.3 or 6.5 h) repairs no more than 0.02 below a prompt one at equal elapsed time, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, dial-c's r_in in memory4@0 at t = 4,000 exceeds its r_in in memory4@round(m T*) at t = round(m T*) + 4,000 by at most 0.02, for clocks SL, C12 and F12 at m = 0.5 and 1 and for C6 at m = 0.5, else FAILS",
+   "thresholds": {
+    "loss": 0.02
+   }
+  },
+  {
+   "id": "E2",
+   "kind": "after execution a late signal is worth almost nothing",
+   "claim": "A signal that arrives after the tissue has executed its default outcome (commitment at 6, 12 or 24 h, or the cue fading at 12 h) repairs a 4 x 4 memory damage at most 0.05 more than no signal at the same time, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, dial-c's r_in in memory4@D at D + 4,000 exceeds never-c's r_in in memory4@0 at the same read by at most 0.05, for C6 at m = 1, 2 and 4, C12 at m = 2 and 4, C24 at m = 4 and F12 at m = 2 and 4 (D = round(m T*)), else FAILS",
+   "thresholds": {
+    "worth": 0.05
+   }
+  },
+  {
+   "id": "E3",
+   "kind": "the window closes when the tissue executes",
+   "claim": "At each delay of 1, 2 and 4 T* (6.5, 13.1 and 26.1 h), a late signal is worth at least 0.2 more over no signal in a tissue that has not yet executed than in one that has just executed (commitment at 6, 12 and 24 h), paired within each case, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, gain(C12, 1) - gain(C6, 1), gain(C24, 2) - gain(C12, 2) and gain(SL, 4) - gain(C24, 4) are each >= 0.2, where gain(c, m) is dial-c's r_in in memory4@round(m T*) at round(m T*) + 4,000 less never-c's r_in in memory4@0 at the same read, else FAILS",
+   "thresholds": {
+    "drop": 0.2
+   }
+  },
+  {
+   "id": "E4",
+   "kind": "execution refuses a late legitimate change",
+   "claim": "A signal 13.1 h after a legitimate 4 x 4 change adopts at most 0.05 of it over no signal once the tissue has executed (commitment at 6 or 12 h, or the cue fading at 12 h), and at least 0.1 with no execution or with execution only at 24 h, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 7,918 in change4@3918, dial-c's r_in exceeds never-c's by at most 0.05 for C6, C12 and F12, and by >= 0.1 for SL and C24, else FAILS",
+   "thresholds": {
+    "refused": 0.05,
+    "adopted": 0.1
+   }
+  },
+  {
+   "id": "E5",
+   "kind": "execution blocks a late sham",
+   "claim": "A sham signal 13.1 h after scattered cue corruption costs the sheet's record at most 0.001 once the tissue has executed (commitment at 6 or 12 h, or the cue fading at 12 h), and at least 0.001 with no execution or with execution only at 24 h, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 7,918 in cue4@3918, never-c's r_all less dial-c's is at most 0.001 for C6, C12 and F12, and >= 0.001 for SL and C24, else FAILS",
+   "thresholds": {
+    "blocked": 0.001,
+    "costs": 0.001
+   }
+  },
+  {
+   "id": "E6",
+   "kind": "with no signal, commitment freezes the damage and fade slows its repair",
+   "claim": "With no signal, once the tissue has committed (at 6, 12 or 24 h) the damaged patch's slow repair stops: it changes by at most 0.005 from the first read after the commitment to 40 h. Without execution it continues, by at least 0.02 from 6.7 h to 40 h. With the cue faded at 12 h it continues more slowly than without execution, by at least 0.01 from 13.3 h to 40 h, paired within each case, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, |never-c's r_in in memory4@0 at t = 12,000 less its r_in at the first read after tau_x| <= 0.005 for C6 (from 2,000), C12 (from 4,000) and C24 (from 7,918); never-SL's r_in rises by >= 0.02 from 2,000 to 12,000; and never-SL's rise from 4,000 to 12,000 exceeds never-F12's by >= 0.01, else FAILS",
+   "thresholds": {
+    "frozen": 0.005,
+    "continues": 0.02,
+    "slower": 0.01
+   }
+  },
+  {
+   "id": "E7",
+   "kind": "after execution by commitment a late signal still triggers cells",
+   "claim": "A signal that arrives after the tissue has committed to its outcome still triggers at least a tenth of the damaged patch, on average, though it repairs almost nothing (E2)",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, the share of the patch ever triggered by dial-c in memory4@round(m T*) is >= 0.1 for C6 at m = 1, 2 and 4, C12 at m = 2 and 4, and C24 at m = 4, else FAILS",
+   "thresholds": {
+    "hit": 0.1
+   }
+  }
+ ]
+}

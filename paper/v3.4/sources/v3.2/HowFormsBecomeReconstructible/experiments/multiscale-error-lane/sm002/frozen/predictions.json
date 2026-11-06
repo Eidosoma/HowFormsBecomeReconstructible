@@ -1,0 +1,226 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "19cb3a35c1a0f61ad0c9c60e4c441513a6814ce133f494acd1fa3cb844edaaa7",
+ "computed_utc": "2026-10-31T13:22:32Z",
+ "thresholds": {
+  "T1": -0.05,
+  "T2lo": -0.06,
+  "T2hi": 0.09,
+  "T3": 0.1,
+  "T4": 0.04,
+  "T5": 0.0,
+  "T6": 0.1,
+  "T7u": -0.05,
+  "T7cg": -0.05,
+  "T8": -0.05
+ },
+ "parts": [
+  {
+   "stmt": "T1",
+   "name": "T1 late (m 2), unscaled reader: mean (E_u - E_u(twin)) <= -0.05",
+   "contrast": "late: E_u - E_u(twin)",
+   "threshold": -0.05,
+   "sense": "le"
+  },
+  {
+   "stmt": "T2",
+   "name": "T2 late (m 2), scaled reader: mean (E_cg - E_u(twin)) >= -0.06",
+   "contrast": "late: E_cg - E_u(twin)",
+   "threshold": -0.06,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T2",
+   "name": "T2 late (m 2), scaled reader: mean (E_cg - E_u(twin)) <= 0.09",
+   "contrast": "late: E_cg - E_u(twin)",
+   "threshold": 0.09,
+   "sense": "le"
+  },
+  {
+   "stmt": "T3",
+   "name": "T3 late (m 2), the same records: mean (E_cg - E_u) >= 0.10",
+   "contrast": "late: E_cg - E_u (refined)",
+   "threshold": 0.1,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T4",
+   "name": "T4 late (m 2): mean ((E_cg - E_u) - (E_cg - E_u)(twin)) >= 0.04",
+   "contrast": "late: (E_cg - E_u) - (E_cg - E_u)(twin)",
+   "threshold": 0.04,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T5",
+   "name": "T5 late (m 2), the twins: mean (E_cg(twin) - E_u(twin)) >= 0",
+   "contrast": "late: E_cg(twin) - E_u(twin)",
+   "threshold": 0.0,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T6",
+   "name": "T6 prompt (m 0), scaled reader: mean (E_cg - E_u(twin)) >= -0.1",
+   "contrast": "prompt: E_cg - E_u(twin)",
+   "threshold": -0.1,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T6",
+   "name": "T6 prompt (m 0), scaled reader: mean (E_cg - E_u(twin)) <= 0.1",
+   "contrast": "prompt: E_cg - E_u(twin)",
+   "threshold": 0.1,
+   "sense": "le"
+  },
+  {
+   "stmt": "T7",
+   "name": "T7 prompt (m 0), x2 < 1, unscaled reader: mean (E_u - E_u(twin)) <= -0.05",
+   "contrast": "prompt_lt: E_u - E_u(twin)",
+   "threshold": -0.05,
+   "sense": "le"
+  },
+  {
+   "stmt": "T7",
+   "name": "T7 prompt (m 0), x2 < 1, scaled reader: mean (E_cg - E_u(twin)) >= -0.05",
+   "contrast": "prompt_lt: E_cg - E_u(twin)",
+   "threshold": -0.05,
+   "sense": "ge"
+  },
+  {
+   "stmt": "T8",
+   "name": "T8 late (m 2), unscaled reader: mean ((E_u - gen_u) - (E_u - gen_u)(twin)) <= -0.05",
+   "contrast": "late: phase_u - phase_u(twin)",
+   "threshold": -0.05,
+   "sense": "le"
+  }
+ ],
+ "reported": [
+  "late, L 16: E_cg - E_u(twin)",
+  "late, L 16: E_u - E_u(twin)",
+  "late, L 4: E_cg - E_u(twin)",
+  "late, L 4: E_u - E_u(twin)",
+  "late, L 8: E_cg - E_u(twin)",
+  "late, L 8: E_u - E_u(twin)",
+  "late: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "late: E_cg - (E_u + E_u(twin)) / 2",
+  "late: E_cg - E_u (refined)",
+  "late: E_cg - E_u(twin)",
+  "late: E_cg(twin) - E_u(twin)",
+  "late: E_cg_ctrl - E_u_ctrl (refined)",
+  "late: E_u - E_u(twin)",
+  "late: gen_cg - gen_u(twin)",
+  "late: gen_u - gen_u(twin)",
+  "late: mean E_cg (refine)",
+  "late: mean E_cg (transfer)",
+  "late: mean E_u (refine)",
+  "late: mean E_u (transfer)",
+  "late: mean gen_cg (refine)",
+  "late: mean gen_cg (transfer)",
+  "late: mean gen_u (refine)",
+  "late: mean gen_u (transfer)",
+  "late: mean r_in (refine)",
+  "late: mean r_in (transfer)",
+  "late: mean ties (refine)",
+  "late: phase_cg - phase_u(twin)",
+  "late: phase_u - phase_u(twin)",
+  "late: r_in - r_in(twin)",
+  "late: share_cg - share_u(twin)",
+  "late: share_u - share_u(twin)",
+  "late_gt: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "late_gt: E_cg - (E_u + E_u(twin)) / 2",
+  "late_gt: E_cg - E_u (refined)",
+  "late_gt: E_cg - E_u(twin)",
+  "late_gt: E_cg(twin) - E_u(twin)",
+  "late_gt: E_u - E_u(twin)",
+  "late_lt: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "late_lt: E_cg - (E_u + E_u(twin)) / 2",
+  "late_lt: E_cg - E_u (refined)",
+  "late_lt: E_cg - E_u(twin)",
+  "late_lt: E_cg(twin) - E_u(twin)",
+  "late_lt: E_u - E_u(twin)",
+  "prompt, L 16: E_cg - E_u(twin)",
+  "prompt, L 16: E_u - E_u(twin)",
+  "prompt, L 4: E_cg - E_u(twin)",
+  "prompt, L 4: E_u - E_u(twin)",
+  "prompt, L 8: E_cg - E_u(twin)",
+  "prompt, L 8: E_u - E_u(twin)",
+  "prompt: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "prompt: E_cg - (E_u + E_u(twin)) / 2",
+  "prompt: E_cg - E_u (refined)",
+  "prompt: E_cg - E_u(twin)",
+  "prompt: E_cg(twin) - E_u(twin)",
+  "prompt: E_cg_ctrl - E_u_ctrl (refined)",
+  "prompt: E_u - E_u(twin)",
+  "prompt: gen_cg - gen_u(twin)",
+  "prompt: gen_u - gen_u(twin)",
+  "prompt: mean E_cg (refine)",
+  "prompt: mean E_cg (transfer)",
+  "prompt: mean E_u (refine)",
+  "prompt: mean E_u (transfer)",
+  "prompt: mean gen_cg (refine)",
+  "prompt: mean gen_cg (transfer)",
+  "prompt: mean gen_u (refine)",
+  "prompt: mean gen_u (transfer)",
+  "prompt: mean r_in (refine)",
+  "prompt: mean r_in (transfer)",
+  "prompt: mean ties (refine)",
+  "prompt: phase_cg - phase_u(twin)",
+  "prompt: phase_u - phase_u(twin)",
+  "prompt: r_in - r_in(twin)",
+  "prompt: share_cg - share_u(twin)",
+  "prompt: share_u - share_u(twin)",
+  "prompt_gt: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "prompt_gt: E_cg - (E_u + E_u(twin)) / 2",
+  "prompt_gt: E_cg - E_u (refined)",
+  "prompt_gt: E_cg - E_u(twin)",
+  "prompt_gt: E_cg(twin) - E_u(twin)",
+  "prompt_gt: E_u - E_u(twin)",
+  "prompt_lt: (E_cg - E_u) - (E_cg - E_u)(twin)",
+  "prompt_lt: E_cg - (E_u + E_u(twin)) / 2",
+  "prompt_lt: E_cg - E_u (refined)",
+  "prompt_lt: E_cg - E_u(twin)",
+  "prompt_lt: E_cg(twin) - E_u(twin)",
+  "prompt_lt: E_u - E_u(twin)"
+ ],
+ "statements": [
+  {
+   "id": "T1",
+   "claim": "doubling every declared length lowers the late signal's reconstruction under the unscaled reader (SM001's S4 on fresh blocks)",
+   "rule": "HOLDS if, over the 27 refined conditions with the signal at 2 T* (m 2), the mean of E_u less E_u of the twin is <= -0.05, else FAILS"
+  },
+  {
+   "id": "T2",
+   "claim": "with the reader scaled with the lengths, at most 0.06 of the late loss remains",
+   "rule": "HOLDS if, over the refined conditions with m 2, the mean of E_cg less E_u of the twin lies within [-0.06, 0.09], else FAILS"
+  },
+  {
+   "id": "T3",
+   "claim": "on the same records, the scaled reader recovers the late loss",
+   "rule": "HOLDS if, over the refined conditions with m 2, the mean of E_cg less E_u is >= 0.10, else FAILS"
+  },
+  {
+   "id": "T4",
+   "claim": "the scaled reader's gain is specific to the doubled lengths",
+   "rule": "HOLDS if, over the refined conditions with m 2, the mean of (E_cg - E_u) less the twin's (E_cg - E_u) is >= 0.04, else FAILS"
+  },
+  {
+   "id": "T5",
+   "claim": "a reader at twice the grain also reads the half-scale tissue better (the control)",
+   "rule": "HOLDS if, over the twins of the refined conditions with m 2, the mean of E_cg less E_u is >= 0, else FAILS"
+  },
+  {
+   "id": "T6",
+   "claim": "under the prompt signal, the doubled lengths read with the scaled reader as the twin reads with the unscaled one",
+   "rule": "HOLDS if, over the 54 refined conditions with m 0, the mean of E_cg less E_u of the twin lies within [-0.1, 0.1], else FAILS"
+  },
+  {
+   "id": "T7",
+   "claim": "where the patch is smaller than the coupling length, the unscaled reader loses even under the prompt signal, and the scaled reader loses at most 0.05",
+   "rule": "HOLDS if, over the refined conditions with m 0 and L / lam_rest < 1, the mean of E_u less E_u of the twin is <= -0.05 and the mean of E_cg less E_u of the twin is >= -0.05, else FAILS"
+  },
+  {
+   "id": "T8",
+   "claim": "the unscaled reader's late loss is a loss of the acquired phase (SM001's P42d on fresh blocks)",
+   "rule": "HOLDS if, over the refined conditions with m 2, the mean of (E_u - gen_u) less the twin's (E_u - gen_u) is <= -0.05, else FAILS"
+  }
+ ]
+}

@@ -1,0 +1,545 @@
+{
+ "study": "NL004",
+ "design_digest": "b567d2f8fee29e54fc80b9ca94e364f5c7653c8af09682b826e8810d416893a3",
+ "thresholds": {
+  "H1": {
+   "none": -0.9,
+   "dw": -0.5
+  },
+  "H2": {
+   "none": 1.25,
+   "dw": 1.05
+  },
+  "H3": {
+   "lost_none": 0.8,
+   "lost_dw": 0.65,
+   "refuses_none": 0.2,
+   "refuses_dw": 0.1
+  },
+  "H4": {
+   "protect_none": 0.85,
+   "protect_dw": 1.0,
+   "align_dw": 0.03
+  },
+  "H5": {
+   "protect_fast_none": 1.3,
+   "protect_fast_dw": 1.15,
+   "protect_slow_none": 1.3,
+   "protect_slow_dw": 1.1,
+   "repair_fast_none": -0.85,
+   "repair_fast_dw": -0.45,
+   "repair_slow_none": -0.07,
+   "repair_slow_dw": -0.06
+  },
+  "H6": {
+   "kept": 0.6,
+   "lost": -0.3,
+   "as_parent": -0.02
+  },
+  "H7": {
+   "admits_none": -0.95,
+   "admits_dw": -0.8,
+   "defends_none": -1.45,
+   "defends_dw": -1.25
+  }
+ },
+ "parts": [
+  {
+   "stmt": "H1",
+   "name": "H1 none: ev(copy-k0.75+Me/R) - ev(copy-k0.75/R), record (anchors made after the injury)",
+   "threshold": -0.9,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+Me/R"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H1",
+   "name": "H1 dw: ev(copy-k0.75+Me/R) - ev(copy-k0.75/R), record (anchors made after the injury)",
+   "threshold": -0.5,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+Me/R"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H2",
+   "name": "H2 none: spec(foreign-k0.75+A/none) - spec(foreign-k0.75+Mt1000/none), record (protection lost by a commitment at 1,000)",
+   "threshold": 1.25,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mt1000/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H2",
+   "name": "H2 dw: spec(foreign-k0.75+A/none) - spec(foreign-k0.75+Mt1000/none), record (protection lost by a commitment at 1,000)",
+   "threshold": 1.05,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mt1000/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H3",
+   "name": "H3 none: spec(foreign-k0.75+A/none) - spec(foreign-k0.75+Mpre/none), record (protection lost by anchors made before the history)",
+   "threshold": 0.8,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mpre/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H3",
+   "name": "H3 none: ref_all(copy-k0.75+Mpre/none) - ref_all(copy-k0.75+A/none), the arbiter (the faithful copy refused by them)",
+   "threshold": 0.2,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/a/ref_all",
+     "copy-k0.75+Mpre/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/a/ref_all",
+     "copy-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H3",
+   "name": "H3 dw: spec(foreign-k0.75+A/none) - spec(foreign-k0.75+Mpre/none), record (protection lost by anchors made before the history)",
+   "threshold": 0.65,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mpre/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H3",
+   "name": "H3 dw: ref_all(copy-k0.75+Mpre/none) - ref_all(copy-k0.75+A/none), the arbiter (the faithful copy refused by them)",
+   "threshold": 0.1,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/a/ref_all",
+     "copy-k0.75+Mpre/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/a/ref_all",
+     "copy-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H4",
+   "name": "H4 none: spec(foreign-k0.75+Mv/none) - spec(foreign-k0.75/none), record (protection by body-made anchors)",
+   "threshold": 0.85,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mv/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H4",
+   "name": "H4 dw: spec(foreign-k0.75+Mv/none) - spec(foreign-k0.75/none), record (protection by body-made anchors)",
+   "threshold": 1.0,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+Mv/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H4",
+   "name": "H4 dw: align_A(copy-k0.75+Mv/none) - align_A(copy-k0.75/none), record (the faithful arm's gain with body-made anchors)",
+   "threshold": 0.03,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/align_A",
+     "copy-k0.75+Mv/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/align_A",
+     "copy-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 none: spec(foreign-k0.75+S1e-2/none) - spec(foreign-k0.75/none), record (a slow copy's protection)",
+   "threshold": 1.3,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+S1e-2/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 dw: spec(foreign-k0.75+S1e-2/none) - spec(foreign-k0.75/none), record (a slow copy's protection)",
+   "threshold": 1.15,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+S1e-2/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 none: spec(foreign-k0.75+S1e-3/none) - spec(foreign-k0.75/none), record (a slow copy's protection)",
+   "threshold": 1.3,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+S1e-3/none"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 dw: spec(foreign-k0.75+S1e-3/none) - spec(foreign-k0.75/none), record (a slow copy's protection)",
+   "threshold": 1.1,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+S1e-3/none"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 none: ev(copy-k0.75+S1e-2/R) - ev(copy-k0.75+A/R), record (the repair a slow copy's learning costs)",
+   "threshold": -0.85,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+S1e-2/R"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 dw: ev(copy-k0.75+S1e-2/R) - ev(copy-k0.75+A/R), record (the repair a slow copy's learning costs)",
+   "threshold": -0.45,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+S1e-2/R"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 none: ev(copy-k0.75+S1e-3/R) - ev(copy-k0.75+A/R), record (the repair a slow copy's learning costs)",
+   "threshold": -0.07,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+S1e-3/R"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H5",
+   "name": "H5 dw: ev(copy-k0.75+S1e-3/R) - ev(copy-k0.75+A/R), record (the repair a slow copy's learning costs)",
+   "threshold": -0.06,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+S1e-3/R"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/ev_reg_ok",
+     "copy-k0.75+A/R"
+    ]
+   ]
+  },
+  {
+   "stmt": "H6",
+   "name": "H6 dw: m/spec(foreign-k0.75+A/none), the successor-made gated recipient after a protected parent",
+   "threshold": 0.6,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "m/spec_reg",
+     "foreign-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H6",
+   "name": "H6 dw: m/spec(foreign-k0.75/none), the successor-made gated recipient after an overwritten parent",
+   "threshold": -0.3,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "m/spec_reg",
+     "foreign-k0.75/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H6",
+   "name": "H6 dw: m/spec(foreign-k0.75+A/none) - g/spec(foreign-k0.75+A/none), the successor's own anchors against the parent's given ones",
+   "threshold": -0.02,
+   "sense": "ge",
+   "terms": [
+    [
+     1,
+     "dw",
+     "m/spec_reg",
+     "foreign-k0.75+A/none"
+    ],
+    [
+     -1,
+     "dw",
+     "g/spec_reg",
+     "foreign-k0.75+A/none"
+    ]
+   ]
+  },
+  {
+   "stmt": "H7",
+   "name": "H7 none: spec(foreign-k0.75+Me/change), record (the tissue and the reference carry B; scored against A)",
+   "threshold": -0.95,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "foreign-k0.75+Me/change"
+    ]
+   ]
+  },
+  {
+   "stmt": "H7",
+   "name": "H7 none: spec(copy-k0.75+Me/change) - spec(copy-k0.75/change), record (the carried change defended against the faithful copy)",
+   "threshold": -1.45,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "none",
+     "t/r/spec_reg",
+     "copy-k0.75+Me/change"
+    ],
+    [
+     -1,
+     "none",
+     "t/r/spec_reg",
+     "copy-k0.75/change"
+    ]
+   ]
+  },
+  {
+   "stmt": "H7",
+   "name": "H7 dw: spec(foreign-k0.75+Me/change), record (the tissue and the reference carry B; scored against A)",
+   "threshold": -0.8,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "foreign-k0.75+Me/change"
+    ]
+   ]
+  },
+  {
+   "stmt": "H7",
+   "name": "H7 dw: spec(copy-k0.75+Me/change) - spec(copy-k0.75/change), record (the carried change defended against the faithful copy)",
+   "threshold": -1.25,
+   "sense": "le",
+   "terms": [
+    [
+     1,
+     "dw",
+     "t/r/spec_reg",
+     "copy-k0.75+Me/change"
+    ],
+    [
+     -1,
+     "dw",
+     "t/r/spec_reg",
+     "copy-k0.75/change"
+    ]
+   ]
+  }
+ ],
+ "written_utc": "2026-11-01T12:36:49Z"
+}

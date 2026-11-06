@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+"""Independent full-loss Bayesian audit and variable-persistence probability flow."""
+from collections import defaultdict
+from datetime import datetime, timezone
+from fractions import Fraction as Q
+from pathlib import Path
+import gzip
+import json
+import math
+import sys
+import time
+
+import readback_fep_burst_learning as previous
+
+sys.set_int_max_str_digits(0)
+flow, load, sha = previous.flow, previous.load, previous.sha
+K = Q(19568652557, 204800000000)
+schedule_graph, pool_vertices, summary = previous.schedule_graph, previous.pool_vertices, previous.summary
+
+
+class Bayesian(previous.Bayesian):
+    def coefficients(self, mu):
+        weights = {t: [Q(1, self.T)
+            + (Q(2, self.T - j + 1) if j != 0 and j <= t else Q(0))
+            + (Q(2 * mu, self.T) if j == 0 else Q(0))
+            for _, j, _ in self.states] for t in range(1, self.T + 1)}
+        denominator = math.lcm(*(p.denominator for row in weights.values() for p in row))
+        return denominator, {t: [int(p * denominator) for p in row] for t, row in weights.items()}
+
+
+def training(graph, T):
+    settings = {}
+    for alpha in (Q(0), Q(3, 4)):
+        rows = [previous.physical(graph, T, tau, alpha) for tau in [None, *range(1, T + 1)]]
+        s = rows[0]['cost'] / T
+        b = (s + sum(w['cost'] for w in rows[1:]) / (T * T)) / 2
+        r = sum(w['recovery'] for w in rows[1:]) / T
+        settings[str(alpha)] = dict(worlds=rows, stable=s, B=b, R=r, C=b+r)
+    return dict(settings=settings, C=sum(v['C'] for v in settings.values()) / 2,
+                S=[settings[k]['stable'] for k in ('0', '3/4')])
+
+
+def forward(graph, qs, T, tau, profile):
+    assert len(profile) == T - 1
+    scales = [20 * a.denominator for a in profile]
+    normalizer = 20 * math.prod(scales)
+    transitions = []
+    for a, scale in zip(profile, scales):
+        zero = Q(1, 20) * (1-a)
+        one = zero + a
+        transitions.append(((int((1-zero)*scale), int(zero*scale)),
+                            (int((1-one)*scale), int(one*scale))))
+    # node, error, last label, last wrong, ever wrongly confident,
+    # adopted orientation, purchased after reversal, inverted after reversal.
+    states = {(0, 0, -1, False, False, False, False, False): 19,
+              (0, 1, -1, False, False, False, False, False): 1}
+    totals = {k: 0 for k in (*flow.RAW, 'inverse_delay', 'inverse_missing', 'pre_inverse')}
+    visits, repeats, terminal = [0]*len(graph), [0]*len(graph), 0
+    for t in range(1, T+1):
+        following = defaultdict(int)
+        lift = math.prod(scales[t-1:])
+        truth = int(tau is not None and t >= tau)
+        for (i, z, last, last_bad, seen, adopted, acquired, inverted), mass in states.items():
+            if not mass:
+                continue
+            node = graph[i]
+            assert node['t'] == t
+            buy = node['action'] == 'B'
+            label = z ^ truth
+            error = int(not buy and label != int(node['action'] == 'R'))
+            v = qs[i]
+            wrong = False if v is None else (v['q'] if not truth else 1-v['q']) >= Q(19, 20)
+            adopt = adopted or (truth and v is not None and v['q'] >= Q(9, 10))
+            got = acquired or (truth and buy)
+            saw = seen or wrong
+            inv = inverted or (truth and node['action'] == 'R')
+            weight = mass * lift
+            visits[i] += weight
+            totals['errors'] += weight * error
+            totals['purchases'] += weight * buy
+            totals['wrong95'] += weight * wrong
+            totals['wrong95_errors'] += weight * wrong * error
+            totals['false_adoption'] += weight * int(not truth and v is not None and v['q'] >= Q(9, 10))
+            totals['pre_inverse'] += weight * int(not truth and node['action'] == 'R')
+            if truth:
+                totals['post_errors'] += weight * error
+                totals['post_purchases'] += weight * buy
+                totals['delay'] += weight * int(not got)
+                totals['adoption_delay'] += weight * int(not adopt)
+                totals['inverse_delay'] += weight * int(not inv)
+            if buy and last_bad and z and last == label:
+                totals['repeat_events'] += weight
+                repeats[i] += weight
+                if v is not None:
+                    change = (v['post'][label]-v['q']) * (1-2*truth)
+                    totals['repeat_increases'] += weight * int(change > 0)
+            child = node['children'][str(label) if buy else 'N']
+            if t == T:
+                assert child is None
+                terminal += mass
+                for key, value in [('missing', not got), ('any_wrong95', saw),
+                                   ('adoption_missing', not adopt), ('inverse_missing', not inv)]:
+                    totals[key] += mass * int(value)
+            else:
+                for nextz, probability in enumerate(transitions[t-1][z]):
+                    if probability:
+                        following[(child, nextz, label if buy else last, bool(z) if buy else last_bad,
+                                   saw, adopt, got, inv)] += mass * probability
+        states = following
+    assert terminal == normalizer
+    result = dict(onset=tau, **{k: Q(v, normalizer) for k, v in totals.items()})
+    if qs[0] is None:
+        result.update({k: None for k in flow.BELIEF})
+    else:
+        brier, confidence, gain = Q(0), Q(0), Q(0)
+        for i, node in enumerate(graph):
+            truth = int(tau is not None and node['t'] >= tau)
+            q = qs[i]['q']
+            brier += Q(visits[i], normalizer) * (q-truth)**2
+            confidence += Q(visits[i], normalizer) * (Q(1, 2)+abs(q-Q(1, 2)))
+            gain += Q(repeats[i], normalizer) * (qs[i]['post'][1-truth]-q) * (1-2*truth)
+        result.update(brier=brier, confidence=confidence, repeat_gain=gain)
+    result['cost'] = result['errors'] + result['purchases']/10
+    result['post_cost'] = result['post_errors'] + result['post_purchases']/10
+    result['recovery'] = None if tau is None else result['post_cost']/(T-tau+1)
+    return result
+
+
+def profiles():
+    return {
+        'training_00': [Q(0)] * 9,
+        'training_75': [Q(3, 4)] * 9,
+        'constant_20': [Q(1, 5)] * 9,
+        'constant_40': [Q(2, 5)] * 9,
+        'constant_60': [Q(3, 5)] * 9,
+        'constant_80': [Q(4, 5)] * 9,
+        'alternating_low': [Q(0), Q(9,10), Q(0), Q(9,10), Q(0), Q(9,10), Q(0), Q(9,10), Q(0)],
+        'alternating_high': [Q(9,10), Q(0), Q(9,10), Q(0), Q(9,10), Q(0), Q(9,10), Q(0), Q(9,10)],
+        'onset_after_5': [Q(0), Q(0), Q(0), Q(0), Q(9,10), Q(9,10), Q(9,10), Q(9,10), Q(9,10)],
+        'offset_after_5': [Q(9,10), Q(9,10), Q(9,10), Q(9,10), Q(0), Q(0), Q(0), Q(0), Q(0)],
+    }
+
+
+def main():
+    start=time.monotonic();a=Path(sys.argv[1]);counts={};totals=dict(bellman_states=0,candidate_graph_states=0,fixed_schedules=0,physical_graph_worlds=0)
+    def check(k,ok):
+        counts[k]=counts.get(k,0)+1
+        if not ok:raise AssertionError(k)
+    def equal(u,v,k):
+        if isinstance(v,dict):
+            check(k+':keys',set(u)==set(v))
+            for key,x in v.items():equal(u[key],x,k)
+        elif isinstance(v,(list,tuple)):
+            check(k+':length',len(u)==len(v))
+            for x,y in zip(u,v):equal(x,y,k)
+        elif isinstance(v,Q):check(k,Q(u)==v)
+        else:check(k,u==v)
+    f,manifest,freeze,started,graphs,mixes,selection,schedules,result=[load(a/n) for n in ('FREEZE.json','MANIFEST.json','CANDIDATE_FREEZE.json',
+        'TEST_STARTED.json','EVAL_GRAPHS.json','EVAL_MIXTURES.json','SELECTION.json','SCHEDULES.json','RESULTS.json')]
+    check('complete',manifest['status']=='COMPLETE')
+    for n,h in f['inputs'].items():check('source_hash',sha(n)==h)
+    for n,h in f['snapshots'].items():check('snapshot_hash',sha(a/'inputs'/n)==h)
+    for n,h in manifest['outputs'].items():check('output_hash',sha(a/n)==h)
+    for n,h in freeze['training_files'].items():check('candidate_freeze_hash',sha(a/n)==h)
+    check('freeze_order',freeze['created']<started['utc']<=manifest['finished'] and started['candidate_freeze_sha256']==sha(a/'CANDIDATE_FREEZE.json'))
+    check('freeze_precedes_test',all(n not in freeze['training_files'] for n in ('RESULTS.json','TEST_STARTED.json')))
+    check('frozen_eval_identity',freeze['evaluation_graphs_sha256']==sha(a/'EVAL_GRAPHS.json') and freeze['evaluation_mixtures_sha256']==sha(a/'EVAL_MIXTURES.json'))
+    model=Bayesian(10);candidates={};costs={};mus=(0,1,2,4,8,16)
+
+    for frozen in (False,True):
+        for mu in mus:
+            name=f'{"ablated" if frozen else "full"}_mu{mu:02d}';p=load(a/'candidates'/f'{name}.json');candidates[name]=p
+            with gzip.open(a/'bellman'/f'{name}.jsonl.gz','rt',encoding='utf-8') as inp:
+                header=json.loads(next(inp));values={(row[0],tuple(row[1])):row[2] for row in map(json.loads,inp)}
+            den,coeff=model.coefficients(mu)
+            check('bellman_metadata',header['T']==10 and header['D']==80 and header['frozen']==frozen and Q(header['mu'])==mu
+                  and header['utility_denominator']==p['utility_denominator']==den and header['states']==len(values)==p['bellman_states'])
+            def normalized(t,w):return Q(values[t,w],10*den*sum(w)*80**(10-t))
+            def scores(t,w):
+                total=sum(v*c for v,c in zip(w,coeff[t]));risk=sum(v*c for v,c,(_,j,z) in zip(w,coeff[t],model.states) if int(0<j<=t)^z)
+                out=dict(F=Q(risk,den*sum(w)),R=Q(total-risk,den*sum(w)),B=Q(total,10*den*sum(w)))
+                if t<10:
+                    nxt,prob=model.step(t,w,None,frozen);check('unobserved_mass',prob==1)
+                    out['F']+=normalized(t+1,nxt);out['R']+=normalized(t+1,nxt)
+                    probs=[]
+                    for d in (0,1):
+                        nxt,prob=model.step(t,w,d,frozen);probs.append(prob);out['B']+=prob*normalized(t+1,nxt)
+                    check('purchased_mass',sum(probs)==1)
+                return out
+            for (t,w),value in values.items():
+                check('canonical_weights',len(w)==44 and min(w)>0 and math.gcd(*w)==1 and isinstance(value,int))
+                check('normalized_bellman',normalized(t,w)==min(scores(t,w).values()));totals['bellman_states']+=1
+            equal(p['subjective_root'],normalized(1,model.prior),'bayesian_root')
+            graph=p['graph'];check('graph_root',tuple(graph[0]['weights'])==model.prior)
+            for n in graph:
+                t=n['t'];w=tuple(n['weights']);sc=scores(t,w);best=min(('B','F','R'),key=lambda c:sc[c])
+                check('matched_bayesian_action',n['action']==best);totals['candidate_graph_states']+=1
+                equal({k:n[k] for k in model.fields(t,w)},model.fields(t,w),'graph_beliefs')
+                for label,child in n['children'].items():
+                    if t==10:check('terminal_child',child is None)
+                    else:
+                        nw,_=model.step(t,w,None if label=='N' else int(label),frozen)
+                        check('posterior_edge',graph[child]['t']==t+1 and tuple(graph[child]['weights'])==nw)
+            c=training(graph,10);equal(p['training'],c,'candidate_training');costs[name]=c
+            check('subjective_cost_identity',Q(p['subjective_root'])==(c['settings']['0']['C']+mu*c['settings']['0']['stable'] if frozen else c['C']+mu*sum(c['S'])/2))
+    for prefix in ('full','ablated'):
+        name=prefix+'_floor';p=load(a/'candidates'/f'{name}.json');candidates[name]=p
+        check('floor_rule',all(n['action']=='F' and tuple(n['weights'])==model.prior for n in p['graph']))
+        costs[name]=training(p['graph'],10);equal(p['training'],costs[name],'floor_training')
+    vertices=pool_vertices({n:v for n,v in costs.items() if n.startswith('full_')},K)
+    key=lambda r:(r['C'],len(r['components']),tuple(c['policy'] for c in r['components']),tuple(c['weight'] for c in r['components']))
+    expected=min(vertices,key=key);equal(selection['selected'],expected,'finite_pool_optimum')
+    canon=lambda r:tuple((c['policy'],Q(c['weight'])) for c in r['components'])
+    expected_vertices={canon(p):p for p in vertices};actual_vertices={canon(p):p for p in selection['vertices']}
+    check('vertex_set',set(expected_vertices)==set(actual_vertices))
+    for k,v in expected_vertices.items():equal(actual_vertices[k],v,'feasible_vertex')
+    equal(freeze['selected'],expected,'frozen_selection')
+
+    best=None;best_graph=None
+    for row in schedules['records']:
+        mask=row['mask'];graph=schedule_graph(model,mask);cost=training(graph,10)
+        equal(row['training'],cost,'all_fixed_schedules');totals['fixed_schedules']+=1
+        if max(cost['S'])<=K and (best is None or (cost['C'],mask)<(best['training']['C'],best['mask'])):
+            best=dict(mask=mask,training=cost);best_graph=graph
+    check('all_masks',sorted(row['mask'] for row in schedules['records'])==list(range(1024)))
+    equal(schedules['selected'],best,'best_fixed_schedule');equal(graphs['graphs']['fixed_schedule']['graph'],best_graph,'fixed_schedule_identity')
+    check('frozen_schedule',freeze['fixed_schedule']==best['mask'])
+    # Clear the large normalized filter cache before the physical held-out audit.
+    model.step.cache_clear()
+    previous=next(Path(n).parent for n in f['inputs'] if 'fep-noise-sequence-v1/' in n and n.endswith('/GRAPHS.json'))
+    original=load(previous/'GRAPHS.json');original_mix=load(previous/'MIXTURES.json')
+    for name,p in original['graphs'].items():equal(graphs['graphs'][name],p,'original_graph_identity')
+    for name,cs in original_mix.items():equal(mixes[name],cs,'original_mixture_identity')
+    equal(mixes['reliability'],expected['components'],'selected_weights')
+    equal(mixes['matched_bayesian'],expected['components'],'matched_bayesian_weights')
+    equal(mixes['frozen_reliability'],[dict(policy=c['policy'].replace('full_','ablated_',1),weight=c['weight']) for c in expected['components']],'ablated_weights')
+    for name,p in graphs['graphs'].items():
+        if name in candidates:equal(p,{k:candidates[name][k] for k in ('graph','belief')},'candidate_graph_identity')
+    for n in graphs['graphs']['conservative']['graph']:
+        t=n['t'];direction=n['direction'];count=n['opposite_count'];action='B' if t%2==0 else 'R' if direction else 'F'
+        check('conservative_rule',n['action']==action)
+        for label,child in n['children'].items():
+            if t==10:check('conservative_terminal',child is None);continue
+            direction2,count2=direction,count
+            if label!='N':
+                d=int(label)
+                if d==direction:count2=0
+                elif count:direction2,count2=d,0
+                else:count2=1
+            nn=graphs['graphs']['conservative']['graph'][child]
+            check('conservative_transition',(nn['t'],nn['direction'],nn['opposite_count'])==(t+1,direction2,count2))
+    roster = profiles(); heldout = list(roster)[2:]
+    equal(result['profiles'], roster, 'physical_profiles')
+    equal(result['heldout_profiles'], heldout, 'heldout_roster')
+    equal(f['profiles'], roster, 'source_frozen_profiles')
+    equal(freeze['heldout_profiles'], heldout, 'candidate_frozen_profiles')
+    model_record = load(a/'MODEL.json')
+    check('all_onsets_in_loss', model_record['loss_onsets']==list(range(1,11)))
+    equal(model_record['prior'], model.prior, 'model_prior')
+    check('model_dimensions', model_record['T']==10 and model_record['D']==80 and model_record['objective']=='mean full-prior B+R')
+    predecessor = next(Path(n).parent for n in f['inputs'] if 'fep-burst-learning-v1/' in n and n.endswith('/EVAL_GRAPHS.json'))
+    oldgraphs = load(predecessor/'EVAL_GRAPHS.json')['graphs']
+    oldmixes = load(predecessor/'EVAL_MIXTURES.json')
+    oldresults = load(predecessor/'RESULTS.json')
+    for name in ('reliability','frozen_reliability'):
+        equal(mixes['previous_'+name], [dict(policy='previous_'+c['policy'],weight=c['weight']) for c in oldmixes[name]], 'previous_weights')
+        for c in oldmixes[name]:
+            equal(graphs['graphs']['previous_'+c['policy']], oldgraphs[c['policy']], 'previous_graph_identity')
+    for name in ('always','conservative'):
+        equal(graphs['graphs'][name],oldgraphs[name],'fixed_control_identity')
+    reconstructed={}
+    for label, profile in roster.items():
+        saved=result['cases'][label];ps={}
+        equal(saved['profile'],profile,'case_profile')
+        for name,p in graphs['graphs'].items():
+            qs=flow.beliefs(p['graph'],p['belief']);ws=[]
+            for tau in [None,*range(1,11)]:
+                row=forward(p['graph'],qs,10,tau,profile);ws.append(row);totals['physical_graph_worlds']+=1
+            ps[name]=dict(worlds=ws,summary=summary(ws))
+        for name,cs in mixes.items():
+            ws=[]
+            for j,tau in enumerate([None,*range(1,11)]):
+                row=dict(onset=tau)
+                for k in ps[cs[0]['policy']]['worlds'][j]:
+                    if k=='onset':continue
+                    values=[(Q(c['weight']),ps[c['policy']]['worlds'][j][k]) for c in cs]
+                    row[k]=None if any(v is None for _,v in values) else sum(w*v for w,v in values)
+                ws.append(row)
+            ps[name]=dict(components=cs,worlds=ws,summary=summary(ws))
+        equal(saved['policies'],ps,'heldout_metrics');check('heldout_label',saved['held_out_pattern']==(label in heldout));reconstructed[label]=ps
+        h=ps['hybrid']['summary'];gs={}
+        for name,p in ps.items():
+            s=p['summary'];gs[name]=dict(stable=s['stable']<=K,always_recovery=s['R']<Q(1,10),hybrid_recovery=s['R']<h['R'],
+                matched_stable=s['stable']<=h['stable'],hybrid_full=s['B']<h['B'],always_full=s['B']<Q(1,10))
+        equal(saved['gates'],gs,'heldout_gates')
+        s=ps['reliability']
+        for name in saved['comparisons']:
+            control=ps[name]
+            expected_comp=dict(summary={k:None if control['summary'][k] is None else v-control['summary'][k] for k,v in s['summary'].items()},
+                worlds=[dict(onset=u['onset'],full=(u['cost']-v['cost'])/10,recovery=None if u['recovery'] is None else u['recovery']-v['recovery']) for u,v in zip(s['worlds'],control['worlds'])])
+            equal(saved['comparisons'][name],expected_comp,'heldout_comparison')
+        equal(ps['matched_bayesian']['worlds'],ps['reliability']['worlds'],'matched_planner_function')
+    equal(result['primary_pass'],all(all(result['cases'][label]['gates']['reliability'][k] for k in ('stable','always_recovery','hybrid_recovery')) for label in heldout),'primary_outcome')
+    mechanism={}
+    for label in heldout:
+        ps=reconstructed[label];full=ps['reliability']['summary'];abl=ps['frozen_reliability']['summary']
+        mechanism[label]=dict(lower_R=full['R']<abl['R'],lower_J=full['J']<abl['J'],full_stable=full['stable']<=K,ablated_stable=abl['stable']<=K)
+    equal(result['mechanism'],mechanism,'mechanism_outcomes')
+    reproduction_checks=0
+    for label,alpha in [('training_00','0'),('training_75','3/4')]:
+        for name in ('reliability','frozen_reliability'):
+            old=oldresults['cases'][alpha]['policies'][name]
+            current=reconstructed[label]['previous_'+name]
+            equal(old['worlds'],current['worlds'],'previous_physical_reproduction')
+            equal(old['summary'],current['summary'],'previous_summary_reproduction')
+            reproduction_checks+=sum(len(w) for w in current['worlds'])+len(current['summary'])
+    reproduction=load(a/'REPRODUCTION.json')
+    check('reproduction_count',reproduction['passed'] and reproduction['checks']==reproduction_checks)
+    check('objective_label',selection['objective']=='mean training full-prior B+R')
+    report=dict(passed=True,completed=datetime.now(timezone.utc).isoformat(),seconds=time.monotonic()-start,total_checks=sum(counts.values()),checks=counts,totals=totals,
+        manifest_sha256=sha(a/'MANIFEST.json'),source_sha256=sha(__file__),
+        method='Independent normalized Bayesian Bellman equations, Cramer-rule finite-pool vertices, all 1024 fixed schedules, full-onset loss, candidate freeze chronology and variable-persistence augmented-state physical/diagnostic verification.')
+    with (a/'READBACK.json').open('x') as out:json.dump(report,out,indent=2,sort_keys=True);out.write('\n')
+    print(json.dumps(report,sort_keys=True))
+
+
+if __name__=='__main__':main()

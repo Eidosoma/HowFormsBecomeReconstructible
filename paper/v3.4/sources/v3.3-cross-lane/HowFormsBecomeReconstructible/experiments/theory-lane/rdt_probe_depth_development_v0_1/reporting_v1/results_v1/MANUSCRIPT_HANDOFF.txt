@@ -1,0 +1,72 @@
+Probe-depth development: manuscript handoff, 2 November 2026
+
+The added rewrite improves forecasting chiefly for currently failing records.
+The original balanced comparison favors depth two in both noise regimes, but
+the independent-noise interval is barely above zero. Passing-record contrasts
+are unresolved, and both overall acquisition-weighted intervals include zero.
+These are post hoc grouped-development findings on 80 previously exposed source
+blocks, not fresh confirmation or evidence specific to RDT.
+
+Brier gain = depth1 minus depth2; positive favors the extra rewrite.
+Intervals: pointwise 95% whole-source-block bootstrap, 10000 common draws.
+balanced / matched: +0.0035352 [+0.0007895, +0.0064543]
+balanced / independent: +0.0021241 [+0.0000171, +0.0044722]
+balanced_fail / matched: +0.0066079 [+0.0013523, +0.0122869]
+balanced_fail / independent: +0.0045475 [+0.0003692, +0.0092226]
+balanced_pass / matched: +0.0004625 [-0.0014529, +0.0023827]
+balanced_pass / independent: -0.0002993 [-0.0008503, +0.0001538]
+population / matched: +0.0014425 [-0.0002690, +0.0030656]
+population / independent: +0.0005177 [-0.0003024, +0.0013910]
+population_fail / matched: +0.0070966 [+0.0027710, +0.0121216]
+population_fail / independent: +0.0045939 [+0.0003602, +0.0091440]
+population_pass / matched: +0.0002883 [-0.0015777, +0.0021181]
+population_pass / independent: -0.0003144 [-0.0008686, +0.0001423]
+
+Balanced absolute Brier (lower is better):
+matched: boundary=0.132205, cheap_all=0.136040, no_body_expression=0.132194, direct8=0.126324, depth0=0.126055, depth1=0.114219, depth2=0.110684
+independent: boundary=0.091872, cheap_all=0.096658, no_body_expression=0.103098, direct8=0.085251, depth0=0.084578, depth1=0.083441, depth2=0.081317
+
+All newly fitted models use the same grouped tuning/calibration rules. Each
+probe model gets the same 70 cheap boundary inputs plus its own probe fraction.
+The ordinary full-feature comparator remains primary; the no-body model is
+separate. All fixed E107 and TT051 reference predictions are preserved. Their
+different training and TT051 related-source exposure preclude treating those
+reference columns as same-training held-source comparisons.
+
+Cost: 60/30/20 branches for zero/one/two rewrites charge 60 native body reads
+and captures each; 0/30/40 writes are inherited and 60/30/20 reads are terminal.
+Each read advances both cue bodies for 2048 synchronous steps. Saved first
+writes are charged to standalone depth-two inference despite reuse here.
+The one-source technical panel met the 5% CPU tolerance (worst ratio 1.040963);
+population CPU equality and wall-time equality are not established.
+The cheaper direct8 comparator charges 8 native reads (16384 two-cue steps),
+8 terminal captures and no inherited writes; ordinary models add zero probes.
+Their common current-boundary inputs are supplied state, not free acquisition.
+Feature, native measurement, training/calibration and final inference costs
+are reported separately. Final probability timing alone excludes feature work.
+
+Completed all 638 cases in 19.28 wall minutes with six
+single-thread workers, within the one-hour cap. New work: 25520 primary native
+reads and 1276 independent flat-audit reads; no new founders or target futures.
+All 5104 new held-fold probabilities and 216 score groups passed scalar audit.
+
+Population expansion uses this study's 5120 acquired records: 868 currently
+failing and 4252 passing (16.953125% failure). Selection is by current class
+and taught orientation within source blocks. All 80 acquired blocks were
+eligible; expansion requires within-cell hash-rank exchangeability and cannot
+recover populations absent from this design. Terminal-success prevalence is
+distinct: population matched 0.785010; independent 0.861572. The unchanged
+development constant is 443/512. All calibration bins and skill estimates
+remain in saved/analysis, including unresolved skill for matched passers.
+
+Intervals condition on held-fold predictions; overlapping cross-validation
+training and model-selection uncertainty are not fully propagated. All 80
+sources were previously exposed. Supplied true orientation makes this
+known-task forecasting, not label-blind historical-identity decoding.
+
+The next forecasting test should preserve the fixed model alternatives and
+class/regime reporting on untouched sources, with qualified total costs.
+Class-targeted use is a lead, not an already-tested adaptive scheduler.
+Forecast improvement does not estimate paired intervention benefit.
+No fresh confirmation is launched by this closeout. The manuscript hold and
+the separate protected pruning-duration forecasts remain unchanged.

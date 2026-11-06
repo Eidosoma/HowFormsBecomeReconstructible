@@ -1,0 +1,108 @@
+P48c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/nl004/development (development): 32 tasks, 64 files, every sha256 equal to the manifest's; digest b567d2f8fee2; rule {'n': 1, 'q': 0.75, 'ring': 0, 'ring_max': 0}; 2026-11-01T13:02:11Z - 2026-11-01T13:51:56Z, 8.95 CPU-h, 12 workers, peak worker RSS 985.7 MB
+
+REGISTERED PARTS (16 blocks x 8 cases; [95% t interval], t(0.975, 15) = 2.1314; SD_block the larger of the block SD and the case SD / sqrt 8; the rule: each margin >= 1.6771, both halves passing)
+  H1 stores: ev(copy+Me/R) - ev(copy/R): -0.962891 [-0.981665, -0.944116]  SD 0.035233 (block 0.026068, case/sqrt8 0.035233)  <= -0.90: holds
+  H1 body: ev(copy+Me/R) - ev(copy/R): -0.675781 [-0.725876, -0.625687]  SD 0.094010 (block 0.094010, case/sqrt8 0.088984)  <= -0.50: holds
+  H2 stores: spec(foreign+A/none) - spec(foreign+Mt1000/none): +1.360299 [+1.340194, +1.380403]  SD 0.037730 (block 0.036039, case/sqrt8 0.037730)  >= +1.25: holds
+  H2 body: spec(foreign+A/none) - spec(foreign+Mt1000/none): +1.132760 [+1.112058, +1.153461]  SD 0.038850 (block 0.034764, case/sqrt8 0.038850)  >= +1.05: holds
+  H3 stores: spec(foreign+A/none) - spec(foreign+Mpre/none): +0.939899 [+0.919550, +0.960249]  SD 0.038189 (block 0.032315, case/sqrt8 0.038189)  >= +0.80: holds
+  H3 body: spec(foreign+A/none) - spec(foreign+Mpre/none): +0.772573 [+0.752707, +0.792439]  SD 0.037282 (block 0.030477, case/sqrt8 0.037282)  >= +0.65: holds
+  H3 stores: ref_all(copy+Mpre/none) - ref_all(copy+A/none): +0.255035 [+0.249747, +0.260324]  SD 0.009925 (block 0.008823, case/sqrt8 0.009925)  >= +0.20: holds
+  H3 body: ref_all(copy+Mpre/none) - ref_all(copy+A/none): +0.174469 [+0.166995, +0.181943]  SD 0.014026 (block 0.014026, case/sqrt8 0.012798)  >= +0.10: holds
+  H4 stores: protection(Mv) = spec(foreign+Mv/none) - spec(foreign/none): +1.039604 [+0.998496, +1.080712]  SD 0.077145 (block 0.077145, case/sqrt8 0.043278)  >= +0.85: holds
+  H4 body: protection(Mv) = spec(foreign+Mv/none) - spec(foreign/none): +1.121344 [+1.079003, +1.163684]  SD 0.079458 (block 0.079458, case/sqrt8 0.045789)  >= +1.00: holds
+  H4 body: align_A(copy+Mv/none) - align_A(copy/none): +0.044035 [+0.041619, +0.046451]  SD 0.004534 (block 0.004156, case/sqrt8 0.004534)  >= +0.03: holds
+  H5 stores: protection(S1e-2): +1.379813 [+1.358685, +1.400941]  SD 0.039650 (block 0.039650, case/sqrt8 0.037054)  >= +1.30: holds
+  H5 body: protection(S1e-2): +1.214091 [+1.194218, +1.233965]  SD 0.037296 (block 0.037296, case/sqrt8 0.035295)  >= +1.15: holds
+  H5 stores: protection(S1e-3): +1.379813 [+1.358685, +1.400941]  SD 0.039650 (block 0.039650, case/sqrt8 0.037054)  >= +1.30: holds
+  H5 body: protection(S1e-3): +1.181697 [+1.161104, +1.202289]  SD 0.038645 (block 0.038645, case/sqrt8 0.035861)  >= +1.10: holds
+  H5 stores: ev(copy+S1e-2/R) - ev(copy+A/R): -0.962891 [-0.981665, -0.944116]  SD 0.035233 (block 0.026068, case/sqrt8 0.035233)  <= -0.85: holds
+  H5 body: ev(copy+S1e-2/R) - ev(copy+A/R): -0.666016 [-0.720982, -0.611049]  SD 0.103153 (block 0.103153, case/sqrt8 0.093645)  <= -0.45: holds
+  H5 stores: ev(copy+S1e-3/R) - ev(copy+A/R): -0.009766 [-0.020668, +0.001137]  SD 0.020460 (block 0.018815, case/sqrt8 0.020460)  >= -0.07: holds
+  H5 body: ev(copy+S1e-3/R) - ev(copy+A/R): -0.001953 [-0.021102, +0.017195]  SD 0.035935 (block 0.035113, case/sqrt8 0.035935)  >= -0.06: holds
+  H6 body: m/spec(foreign+A/none), the successor-made gated recipient after a protected parent: +0.685279 [+0.672477, +0.698080]  SD 0.024024 (block 0.024024, case/sqrt8 0.022320)  >= +0.60: holds
+  H6 body: m/spec(foreign/none), the same after an overwritten parent: -0.384486 [-0.402911, -0.366062]  SD 0.034577 (block 0.032100, case/sqrt8 0.034577)  <= -0.30: holds
+  H6 body: m/spec(foreign+A/none) - g/spec(foreign+A/none), own anchors less the parent's: -0.000976 [-0.004720, +0.002768]  SD 0.007026 (block 0.006508, case/sqrt8 0.007026)  >= -0.02: holds
+  H7 stores: spec(foreign+Me/change): -0.999210 [-1.000090, -0.998331]  SD 0.001651 (block 0.001517, case/sqrt8 0.001651)  <= -0.95: holds
+  H7 body: spec(foreign+Me/change): -0.876315 [-0.885878, -0.866753]  SD 0.017945 (block 0.017263, case/sqrt8 0.017945)  <= -0.80: holds
+  H7 stores: spec(copy+Me/change) - spec(copy/change): -1.521556 [-1.540314, -1.502798]  SD 0.035203 (block 0.032438, case/sqrt8 0.035203)  <= -1.45: holds
+  H7 body: spec(copy+Me/change) - spec(copy/change): -1.308928 [-1.330586, -1.287270]  SD 0.040644 (block 0.037047, case/sqrt8 0.040644)  <= -1.25: holds
+  VERDICTS: H1 HOLDS, H2 HOLDS, H3 HOLDS, H4 HOLDS, H5 HOLDS, H6 HOLDS, H7 HOLDS
+
+FROM THE RAW FINAL STATES (the lead's own region signs and scoring)
+  the premise: sign(R0_A) differs from A's template at 0 of 1,048,576 cells; min |R0_A| 0.2801 (VMIN 0.2): the branch commitment from the record is the given anchors
+  the anchors made at the branch against their declared sources (sites, value 0 = none, K's square removed), differing cells: A 0 over 512 branches, Me 0 over 96 branches, Mmid 0 over 128 branches, Mmidc 0 over 128 branches, Mpre 0 over 128 branches, Mv 0 over 448 branches
+  the slow copies' anchors against sign(a): 0 differing cells; every gated branch's anchor shares (present, at A's, at B's sign) against the shards': largest difference 0.00e+00
+  the successor's anchors made at birth (present, at A's sign) against the shards', 672 label-blocks: largest difference 0.00e+00
+  the shards' last-read endpoints recomputed from the final records, largest difference: spec_reg 0.00e+00, align_A 0.00e+00, ev_reg_ok 0.00e+00, k_spec_reg 0.00e+00
+
+REPORTED (not registered)
+  every anchor code at 0.75 x KC (last read): spec foreign/none, protection (share of A's), spec corrupt/none, repair ev copy/R (change from off), align copy/none, refused share copy/none
+    off    stores -0.390                   +0.239  0.973  1.000
+    A      stores +0.990  +1.380 (1.00)  +0.994  0.973 (+0.000)  1.000  0.000
+    Mv     stores +0.650  +1.040 (0.75)  +0.797  0.930 (-0.043)  1.000  0.036
+    Mt250  stores -0.275  +0.115 (0.08)  +0.323  0.814 (-0.158)  1.000  0.000
+    Mt1000 stores -0.370  +0.020 (0.01)  +0.250  0.963 (-0.010)  1.000  0.000
+    Mpre   stores +0.050  +0.440 (0.32)  +0.485  0.652 (-0.320)  1.000  0.255
+    Mmid   stores +0.657  +1.047 (0.76)  +0.817  0.904 (-0.068)  1.000  0.037
+    Mmidc  stores +0.714  +1.104 (0.80)  +0.844  0.949 (-0.023)  1.000  0.026
+    S1e-2  stores +0.990  +1.380 (1.00)  +0.994  0.010 (-0.963)  1.000  0.000
+    S1e-3  stores +0.990  +1.380 (1.00)  +0.994  0.963 (-0.010)  1.000  0.000
+    Me     stores repair 0.010; its R regions' anchors at A's sign 0.000
+    off    body   -0.477                   +0.245  0.799  0.813
+    A      body   +0.693  +1.171 (1.00)  +0.824  0.787 (-0.012)  0.861  0.125
+    Mv     body   +0.644  +1.121 (0.96)  +0.762  0.775 (-0.023)  0.857  0.154
+    Mt250  body   -0.386  +0.091 (0.08)  +0.303  0.781 (-0.018)  0.829  0.078
+    Mt1000 body   -0.439  +0.038 (0.03)  +0.261  0.799 (+0.000)  0.813  0.049
+    Mpre   body   -0.079  +0.398 (0.34)  +0.406  0.574 (-0.225)  0.823  0.299
+    Mmid   body   +0.365  +0.843 (0.72)  +0.642  0.717 (-0.082)  0.846  0.147
+    Mmidc  body   +0.429  +0.906 (0.77)  +0.681  0.736 (-0.062)  0.848  0.160
+    S1e-2  body   +0.737  +1.214 (1.04)  +0.839  0.121 (-0.678)  0.864  0.137
+    S1e-3  body   +0.705  +1.182 (1.01)  +0.821  0.785 (-0.014)  0.861  0.128
+    Me     body   repair 0.123; its R regions' anchors at A's sign 0.000
+  the anchors' shares: at A's sign over the sites, on A's minority cells; Mmidc present
+    Mv     stores 0.821  0.208  present 1.000
+    Mpre   stores 0.499  0.496  present 1.000
+    Mmid   stores 0.787  0.712  present 1.000
+    Mmidc  stores 0.440  0.356  present 0.464
+    Mv     body   0.821  0.208  present 1.000
+    Mpre   body   0.499  0.496  present 1.000
+    Mmid   body   0.787  0.712  present 1.000
+    Mmidc  body   0.440  0.356  present 0.464
+  the slow copies against the given anchors, per case (spec foreign/none): cases equal / all
+    S1e-2 stores: 128 / 128; mean difference +0.0000
+    S1e-3 stores: 128 / 128; mean difference +0.0000
+    S1e-2 body: 8 / 128; mean difference +0.0436
+    S1e-3 body: 28 / 128; mean difference +0.0112
+  the race: the R regions' anchors at A's sign, and the repair, at reads 250 / 1,000 / 2,000 (copy+X/R)
+    A      stores anchors 1.000 1.000 1.000; repair 0.615 0.973 0.973; minority-cell anchors at A's sign (copy/none) 1.000 1.000 1.000
+    S1e-2  stores anchors 0.000 0.000 0.000; repair 0.006 0.010 0.010; minority-cell anchors at A's sign (copy/none) 1.000 1.000 1.000
+    S1e-3  stores anchors 1.000 0.864 0.870; repair 0.615 0.965 0.963; minority-cell anchors at A's sign (copy/none) 1.000 1.000 1.000
+    A      body   anchors 1.000 1.000 1.000; repair 0.701 0.795 0.787; minority-cell anchors at A's sign (copy/none) 1.000 1.000 1.000
+    S1e-2  body   anchors 0.091 0.156 0.165; repair 0.061 0.111 0.121; minority-cell anchors at A's sign (copy/none) 0.235 0.170 0.166
+    S1e-3  body   anchors 1.000 0.678 0.648; repair 0.701 0.791 0.785; minority-cell anchors at A's sign (copy/none) 1.000 0.193 0.173
+  the gain sweep: spec foreign/none, ev copy/R, spec corrupt/none for off, A, Mv, S1e-3
+    k0.5  stores +0.797, 0.000, +0.885 | +0.999, 0.000, +1.000 | +0.978, 0.000, +0.980 | +0.999, 0.000, +1.000
+    k0.5  body   +0.294, 0.297, +0.610 | +0.810, 0.281, +0.868 | +0.774, 0.268, +0.821 | +0.816, 0.219, +0.870
+    k0.75 stores -0.390, 0.973, +0.239 | +0.990, 0.973, +0.994 | +0.650, 0.930, +0.797 | +0.990, 0.963, +0.994
+    k0.75 body   -0.477, 0.799, +0.245 | +0.693, 0.787, +0.824 | +0.644, 0.775, +0.762 | +0.705, 0.785, +0.821
+    k1    stores -0.459, 1.000, +0.174 | +0.985, 1.000, +0.992 | +0.621, 0.961, +0.781 | +0.985, 0.998, +0.992
+    k1    body   -0.538, 0.855, +0.171 | +0.653, 0.896, +0.800 | +0.583, 0.887, +0.731 | +0.655, 0.895, +0.797
+  the successors: the successor-made gated recipient's spec after foreign+X/none (and after the arbiter off)
+    stores: off -0.277; A +0.982; Mv +0.632; Mt250 -0.186; Mt1000 -0.269; Mpre +0.093; Mmid +0.638; Mmidc +0.717; S1e-2 +0.982; S1e-3 +0.982; parent-gated (A) +0.982; record-only after foreign+A +0.995, ungated coded -0.162
+    body: off -0.384; A +0.685; Mv +0.631; Mt250 -0.331; Mt1000 -0.374; Mpre -0.030; Mmid +0.383; Mmidc +0.450; S1e-2 +0.731; S1e-3 +0.697; parent-gated (A) +0.686; record-only after foreign+A +0.698, ungated coded -0.308
+  K (H8, reported by the lead's ruling): spec over the sheet and inside the killed square (k_spec), foreign+X/K; k_spec(foreign+S1e-3/K) - k_spec(foreign+A/K) per case
+    stores: off -0.389 / -0.404; A +0.970 / -0.164; Mv +0.635 / -0.208; S1e-2 +0.970 / -0.164; S1e-3 +0.970 / -0.164
+      S1e-2: foreign +0.000000 [+0.000000, +0.000000] (SD 0.0000), nonzero in 0 of 115 defined cases; copy +0.000000, nonzero in 0; the square's differing-region sites at B's sign 0.452
+      S1e-3: foreign +0.000000 [+0.000000, +0.000000] (SD 0.0000), nonzero in 0 of 115 defined cases; copy +0.000000, nonzero in 0; the square's differing-region sites at B's sign 0.464
+    body: off -0.478 / -0.532; A +0.674 / -0.414; Mv +0.624 / -0.479; S1e-2 +0.719 / -0.283; S1e-3 +0.689 / -0.284
+      S1e-2: foreign +0.130952 [+0.026644, +0.235261] (SD 0.1958), nonzero in 33 of 115 defined cases; copy -0.059995, nonzero in 21; the square's differing-region sites at B's sign 0.572
+      S1e-3: foreign +0.130022 [+0.026190, +0.233855] (SD 0.1949), nonzero in 32 of 115 defined cases; copy -0.073016, nonzero in 23; the square's differing-region sites at B's sign 0.578
+  change: spec against A, copy/change (off, A, Me); foreign/change (off, A, Me)
+    stores: copy +0.535, +0.477, -0.987; foreign -0.859, -0.867, -0.999
+    body: copy +0.572, +0.554, -0.737; foreign -0.713, -0.636, -0.876
+  late commitments: the final spec foreign+Mt/none against the arbiter-off twin's at t_c
+    Mt250 stores: -0.275 against -0.134
+    Mt1000 stores: -0.370 against -0.382
+    Mt250 body: -0.386 against -0.360
+    Mt1000 body: -0.439 against -0.467

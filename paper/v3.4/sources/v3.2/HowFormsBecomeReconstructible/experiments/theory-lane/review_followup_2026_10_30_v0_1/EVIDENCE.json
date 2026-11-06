@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-30T17:34:15.379252+00:00",
+  "scope": "Review reconciliation and proposed test design; no new native dynamics or model fits.",
+  "source_sha256": {
+    "rdt_scaled_probe_transfer_v0_1/REPORT.md": "f0addec75de91e946350d03273dc3f02544836e271e0a30c6d8542f4c5dfb259",
+    "rdt_scaled_probe_transfer_v0_1/closeout/v1/RESULTS.json": "c31d5b8ab2d7ca025f1ca4200231ad9810f8db9d3105acd2707807c251eae1bd",
+    "rdt_injury_transfer_v0_1/runs/development_v1/REPORT.md": "50c853a3fd0637d63b8fa3f5540fd31177e73265d3316499ec1387b0518bb864",
+    "rdt_injury_transfer_v0_1/diagnostics/heavy_injury_review_v1/REPORT.md": "281a71c55c86ee9320f5f0b82127a11dc43024a69019008a2344aaf53880bc3c",
+    "rdt_success_guard_allocation_v0_1/SCIENTIFIC_REPORT.txt": "6481e060442f21aa54b44643db15e79b5f787d61b35d13e973075e8af2b29ec9",
+    "rdt_success_guard_allocation_v0_1/FRESH_FOUNDER_REPLICATION_REFERENCE.json": "674cc36824012ab546f2251e21c56e6b496945a1e70f5a59693b35e92cb5170b",
+    "rdt_success_guard_allocation_replication_v0_1/amendment_v2/SCIENTIFIC_REPORT.txt": "c7acc489efebc249ae03ba7ffe398c7fa60bce186e328160a22c295aab40aefc",
+    "rdt_success_guard_allocation_replication_v0_1/amendment_v2/checks/SCIENTIFIC_CLOSEOUT.json": "d817f8a671197f8ab8f6a8f6249c39dde89f4b6366024ab870bd38e5dfef35c7",
+    "rdt_success_guard_allocation_replication_v0_1/amendment_v2/runs/replication_v2/COMPLETE.json": "b8a20f3a28bb4aa3865aa9e569fbea08a6329ebf92ec7838cf8c5ffee475f09b",
+    "rdt_success_guard_allocation_replication_v0_1/amendment_v2/runs/replication_v2/OUTPUTS.json": "19caa847413c1eb5a7a371606db33e9463ae307f88f931a7f92d1530ecf64be9",
+    "rdt_success_guard_allocation_replication_v0_1/amendment_v2/runs/replication_v2/ANALYSIS.json": "186059c76498abdec14d3dc7bd4c7a68307521bcef1d797bdff97db79c8e96ef",
+    "rdt_conditional_benefit_repeat_v0_1/REPORT.txt": "4276872f768d2529ef62b35996bc1b6d09bd89a135523ad85adff25acb8b969d",
+    "rdt_conditional_benefit_repeat_v0_1/protocol.json": "f5abaadfe8537b250f034069dfc8fb7c640432c1f3b1edb9a403a9e39e3a9750",
+    "rdt_repair_repeatability_v0_1/runs/pilot_v1/REPORT.md": "b41e361726ee69f504db0170a442386e73f36a4294da71edcb99aa86dd9cfde9",
+    "rdt_repair_repeatability_v0_1/protocol.json": "96a9a408dd74ca943094515c5d807977c0b091909b5c7e7728fe82b5eb572e2f",
+    "rdt_success_guard_single_rewrite_replication_v0_1/RESOURCE_STOP_REPORT.txt": "f508c4c4988781bd626f929f4c501a95a8ff212dce5130bdcda0900dc2c07ffd",
+    "rdt_success_guard_single_rewrite_replication_v0_1/checks/RESOURCE_STOP_CLOSEOUT.json": "2f2d67861a8258a27df805849cb88360d6463e3232cc25c676d0074521fd1b0d",
+    "rdt_injury_transfer_v0_1/jobs/qualification_v1/inputs/parent/qualified/FROZEN_MODELS.json": "7650b66727cd3779ba8e9d95b2aac8f6b3c3bcdbfd5e940ee3a6e3782e2488ca",
+    "rdt_injury_transfer_v0_1/parent/qualified/native/inherited/reference/lineage_dynamics.py": "76ad580d8af167ac394b5667b550208a4a8fc25175b5bdfaab987744ed962358",
+    "rdt_injury_transfer_v0_1/parent/qualified/native/inherited/reference/writer_audit.py": "3a0a30a4b2ae9a483bc52d16af51754c44982168942367483d12950d8491deac"
+  },
+  "recovered_completion": {
+    "status": "COMPLETE_AUDITED_CLOSED",
+    "decision": "ALLOCATION_REPLICATION_SUPPORTED",
+    "completed_utc": "2026-10-28T21:52:32.824183+00:00",
+    "selected_blocks": 28,
+    "selected_packets": 112,
+    "primary": {
+      "mean": 0.13392857142857142,
+      "lower": 0.06314258084607027,
+      "upper": 0.20471456201107258,
+      "lower_one_sided95": 0.07516691499069283,
+      "decision": "SUPPORTED"
+    }
+  },
+  "verification": "Rechecked4 closeout-bound hashes (input manifest, completion, output manifest, scientific report),4 manifested analysis/audit/report hashes, and the proposed original model-bundle hash. Relies on the already completed independent scientific audit; did not rerun it or all native dynamics.",
+  "original_scientific_artifacts_modified": false,
+  "new_native_reads": 0,
+  "new_fits": 0,
+  "automatic_launch": false,
+  "protected_sources_not_inspected": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ]
+}

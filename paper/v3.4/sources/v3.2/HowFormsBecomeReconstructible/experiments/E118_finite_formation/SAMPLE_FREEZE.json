@@ -1,0 +1,179 @@
+{
+  "before_scientific_acquisition": true,
+  "old_outcomes_known": false,
+  "qualification_sha256": "4cd5a86d00a6ab73db9d1529e31819fb735fa5e7478dd13ed49b917c71159c74",
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 89283817472,
+    "other_busy_capacity": 2,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 2458665,
+        "sampled_cpu_percent": 100.72056450488616,
+        "threads": 1,
+        "ticks": 54801
+      },
+      {
+        "affinity": [
+          7
+        ],
+        "pid": 2458668,
+        "sampled_cpu_percent": 38.51080407539765,
+        "threads": 1,
+        "ticks": 55081
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-31T13:31:59.533791+00:00"
+  },
+  "settings": {
+    "absolute_floor": 0.5,
+    "acquisition_fixed_unit_scaffold": true,
+    "acquisition_weight_feedback": false,
+    "all_sources_retained": true,
+    "ancestry_generations": 32,
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "blocks": [
+      1180000,
+      1180001,
+      1180002,
+      1180003,
+      1180004,
+      1180005,
+      1180006,
+      1180007,
+      1180008,
+      1180009,
+      1180010,
+      1180011,
+      1180012,
+      1180013,
+      1180014,
+      1180015,
+      1180016,
+      1180017,
+      1180018,
+      1180019,
+      1180020,
+      1180021,
+      1180022,
+      1180023,
+      1180024,
+      1180025,
+      1180026,
+      1180027,
+      1180028,
+      1180029,
+      1180030,
+      1180031
+    ],
+    "body": {
+      "birth_sd": 0.05,
+      "body_pre_steps": 2048,
+      "body_settling_steps": 1024,
+      "dt": 0.2,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "pulse_amplitude": 1.0,
+      "pulse_sites": 64,
+      "pulse_steps": 32,
+      "recipients": 4,
+      "recovery_steps": 0,
+      "writer_beta": 3.0
+    },
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": [
+      "E118",
+      "finite_formation"
+    ],
+    "chunk_records": 128,
+    "common_coordinate_comparison": false,
+    "confidence": 0.95,
+    "config": {
+      "birth_sd": 0.05,
+      "dt": 0.2,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "recipients": 4,
+      "writer_beta": 3.0
+    },
+    "conservative_resource_limit_seconds": 172800,
+    "continuation_generations": 3,
+    "draws": [
+      0,
+      1
+    ],
+    "finite_acquisition_from_first_commit": true,
+    "holding_steps_omitted": 128,
+    "max_workers": 4,
+    "mode": "scientific",
+    "new_source_blocks": 32,
+    "no_outcome_selection": true,
+    "old_scientific_cases_pooled": false,
+    "own_pre_channel_repair_tags": true,
+    "primary_population": "mixture/pooled/pooled",
+    "primary_regime": "T1F1Q1",
+    "primary_requires_all_ten": true,
+    "recipients": 4,
+    "regimes": [
+      "T0F0Q0",
+      "T1F0Q0",
+      "T0F1Q0",
+      "T0F0Q1",
+      "T1F1Q1"
+    ],
+    "retention_allowance": 0.05,
+    "shared_cpu_ceiling": 12,
+    "source_config": {
+      "birth_sd": 0.05,
+      "capture_steps": 128,
+      "dt": 0.2,
+      "founders": 4,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "read_steps": 512,
+      "recipients": 4,
+      "side": 16,
+      "teach_steps": 512,
+      "teacher_gain": 2.0,
+      "writer_beta": 3.0
+    },
+    "source_selection": false,
+    "source_steps": {
+      "read_steps": 2048,
+      "settling_steps": 1024
+    },
+    "source_tags": [
+      "E016",
+      "E022",
+      "E055",
+      "E058",
+      "E077"
+    ],
+    "steps": {
+      "read_steps": 2048,
+      "settling_steps": 1024
+    },
+    "summary_allowance_seconds": 240,
+    "timing_margin": 3
+  },
+  "source_registry_sha256": "cad86929507f9b05d424390e55157f7e96b53cc3ff3e8c295ab5710b2c7d40e4",
+  "utc": "2026-10-31T13:31:59.752342+00:00"
+}

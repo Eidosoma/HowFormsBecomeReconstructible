@@ -1,0 +1,255 @@
+{
+ "study": "E2E002",
+ "design_digest": "3c1753d0fccb8afc10e388d3a67deb94e3c947b7e7051e5fdf1e221bd647661a",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "F1": [
+   -0.005,
+   0.01
+  ],
+  "F2": [
+   -0.01,
+   0.005
+  ],
+  "F3": [
+   -0.01,
+   0.01
+  ],
+  "F4": [
+   -0.005,
+   0.01
+  ],
+  "F5": [
+   0.02,
+   0.25
+  ],
+  "F6": 0.005
+ },
+ "frozen_utc": "2026-11-04T11:20:00Z",
+ "registered": [
+  {
+   "id": "F1",
+   "part": "acting in every generation, the repaired patch: u_r(vms-every) - u_r(vms-once), memory@0, g 8 (equivalence band)",
+   "kind": "in",
+   "threshold": [
+    -0.005,
+    0.01
+   ]
+  },
+  {
+   "id": "F2",
+   "part": "the lineage's history: q_r(vms-every) - q_r(vms-once), memory@0, g 8 (equivalence band)",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.005
+   ]
+  },
+  {
+   "id": "F3",
+   "part": "repeated repair on protected storage, its history: q_r(protected+vms-every) - q_r(protected), g 8 (equivalence band)",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.01
+   ]
+  },
+  {
+   "id": "F4",
+   "part": "and its patch: u_r(protected+vms-every) - u_r(protected), g 8 (equivalence band)",
+   "kind": "in",
+   "threshold": [
+    -0.005,
+    0.01
+   ]
+  },
+  {
+   "id": "F5",
+   "part": "passive protected storage against the full arm: u_r(protected) - u_r(vms-every), memory@0, g 8",
+   "kind": "in",
+   "threshold": [
+    0.02,
+    0.25
+   ]
+  },
+  {
+   "id": "F6",
+   "part": "the no-event cost of acting in every generation: a_r(vms-once) - a_r(vms-every), none@0, g 8",
+   "kind": "le",
+   "threshold": 0.005
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "F7",
+   "part": "the first successor's own repair: u_r(vms-every) - u_r(vms-once), memory@0, g 1"
+  }
+ ],
+ "reported": [
+  {
+   "id": "R-F1-1",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@0, g 1"
+  },
+  {
+   "id": "R-F2-1",
+   "part": "q_r(vms-every) - q_r(vms-once), memory@0, g 1"
+  },
+  {
+   "id": "R-uv-1",
+   "part": "u_v(vms-every) - u_v(vms-once), memory@0, g 1"
+  },
+  {
+   "id": "R-F3-1",
+   "part": "q_r(protected+vms-every) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-F4-1",
+   "part": "u_r(protected+vms-every) - u_r(protected), g 1"
+  },
+  {
+   "id": "R-vote-1",
+   "part": "u_r(vms-every) - u_r(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-once-vote-1",
+   "part": "u_r(vms-once) - u_r(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-post-1",
+   "part": "u_r(vms-every) - u_r(post), memory@0, g 1"
+  },
+  {
+   "id": "R-F6-1",
+   "part": "a_r(vms-once) - a_r(vms-every), none@0, g 1"
+  },
+  {
+   "id": "R-m1-1",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@1, g 1"
+  },
+  {
+   "id": "R-F1-3",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@0, g 3"
+  },
+  {
+   "id": "R-F2-3",
+   "part": "q_r(vms-every) - q_r(vms-once), memory@0, g 3"
+  },
+  {
+   "id": "R-uv-3",
+   "part": "u_v(vms-every) - u_v(vms-once), memory@0, g 3"
+  },
+  {
+   "id": "R-F3-3",
+   "part": "q_r(protected+vms-every) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-F4-3",
+   "part": "u_r(protected+vms-every) - u_r(protected), g 3"
+  },
+  {
+   "id": "R-vote-3",
+   "part": "u_r(vms-every) - u_r(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-once-vote-3",
+   "part": "u_r(vms-once) - u_r(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-post-3",
+   "part": "u_r(vms-every) - u_r(post), memory@0, g 3"
+  },
+  {
+   "id": "R-F6-3",
+   "part": "a_r(vms-once) - a_r(vms-every), none@0, g 3"
+  },
+  {
+   "id": "R-m1-3",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@1, g 3"
+  },
+  {
+   "id": "R-F1-8",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@0, g 8"
+  },
+  {
+   "id": "R-F2-8",
+   "part": "q_r(vms-every) - q_r(vms-once), memory@0, g 8"
+  },
+  {
+   "id": "R-uv-8",
+   "part": "u_v(vms-every) - u_v(vms-once), memory@0, g 8"
+  },
+  {
+   "id": "R-F3-8",
+   "part": "q_r(protected+vms-every) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-F4-8",
+   "part": "u_r(protected+vms-every) - u_r(protected), g 8"
+  },
+  {
+   "id": "R-vote-8",
+   "part": "u_r(vms-every) - u_r(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-once-vote-8",
+   "part": "u_r(vms-once) - u_r(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-post-8",
+   "part": "u_r(vms-every) - u_r(post), memory@0, g 8"
+  },
+  {
+   "id": "R-F6-8",
+   "part": "a_r(vms-once) - a_r(vms-every), none@0, g 8"
+  },
+  {
+   "id": "R-m1-8",
+   "part": "u_r(vms-every) - u_r(vms-once), memory@1, g 8"
+  },
+  {
+   "id": "R-postvms-1",
+   "part": "u_r(post+vms-every) - u_r(post), memory@0, g 1"
+  },
+  {
+   "id": "R-postvms-3",
+   "part": "u_r(post+vms-every) - u_r(post), memory@0, g 3"
+  },
+  {
+   "id": "R-lineagecue-1",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-every), memory@0, g 1"
+  },
+  {
+   "id": "R-lineagecue-q-1",
+   "part": "q_r(vms-every, the lineage's cue: a second channel) - q_r(vms-every), memory@0, g 1"
+  },
+  {
+   "id": "R-lineagecue-once-1",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-once), memory@0, g 1"
+  },
+  {
+   "id": "R-lineagecue-3",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-every), memory@0, g 3"
+  },
+  {
+   "id": "R-lineagecue-q-3",
+   "part": "q_r(vms-every, the lineage's cue: a second channel) - q_r(vms-every), memory@0, g 3"
+  },
+  {
+   "id": "R-lineagecue-once-3",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-once), memory@0, g 3"
+  },
+  {
+   "id": "R-lineagecue-8",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-every), memory@0, g 8"
+  },
+  {
+   "id": "R-lineagecue-q-8",
+   "part": "q_r(vms-every, the lineage's cue: a second channel) - q_r(vms-every), memory@0, g 8"
+  },
+  {
+   "id": "R-lineagecue-once-8",
+   "part": "u_r(vms-every, the lineage's cue: a second channel) - u_r(vms-once), memory@0, g 8"
+  }
+ ],
+ "predict_sha256": "78f246ad189c689c321e527a5fd162808cec875b900af30a1e3aae5063d6c01b"
+}

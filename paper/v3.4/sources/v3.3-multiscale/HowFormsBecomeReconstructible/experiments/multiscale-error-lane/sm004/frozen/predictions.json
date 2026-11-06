@@ -1,0 +1,314 @@
+{
+ "study": "SM004",
+ "design_digest": "33a8a24747b0ca7a846d648c944eb90f5ba735a4ed211d52c64e6380906e4e41",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "N1": [
+   -0.1,
+   0.05
+  ],
+  "N2": [
+   -0.05,
+   0.08
+  ],
+  "N3": [
+   -0.16,
+   0.01
+  ],
+  "N4": [
+   -0.07,
+   0.06
+  ],
+  "N5": [
+   -0.07,
+   0.06
+  ],
+  "N6": [
+   -0.1,
+   0.08
+  ],
+  "N7": [
+   -0.05,
+   0.09
+  ],
+  "N8": 0.02
+ },
+ "frozen_utc": "2026-11-02T00:17:07Z",
+ "registered": [
+  {
+   "id": "N1",
+   "part": "the g-2 offset: refinement at g = 2, E - the model",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.1,
+    0.05
+   ]
+  },
+  {
+   "id": "N2",
+   "part": "the g-4 shortfall: refinement at g = 4, E - the model",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.05,
+    0.08
+   ]
+  },
+  {
+   "id": "N3",
+   "part": "the late loss: refinement read at g = 1, late (m 2): (E - E twin) - (the model - the model at the twin)",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.16,
+    0.01
+   ]
+  },
+  {
+   "id": "N4",
+   "part": "the prompt loss: refinement read at g = 1, prompt (m 0): the same",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.07,
+    0.06
+   ]
+  },
+  {
+   "id": "N5",
+   "part": "the larger sheet: transfer at g = 1, 2 and 4, E - the model",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.07,
+    0.06
+   ]
+  },
+  {
+   "id": "N6",
+   "part": "the matched-reader gain at g = 2: (E - E twin at g/2) - (the model - the model at the twin at g/2)",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.1,
+    0.08
+   ]
+  },
+  {
+   "id": "N7",
+   "part": "the same at g = 4",
+   "uses": [
+    "new"
+   ],
+   "kind": "in",
+   "threshold": [
+    -0.05,
+    0.09
+   ]
+  },
+  {
+   "id": "N8",
+   "part": "closer than F4 at g = 4: refinement, |E - F4| - |E - the model|",
+   "uses": [
+    "new",
+    "f4"
+   ],
+   "kind": "ge",
+   "threshold": 0.02
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "N9",
+   "part": "closer than F4 at g = 2: refinement, |E - F4| - |E - the model|",
+   "uses": [
+    "new",
+    "f4"
+   ],
+   "kind": "ge"
+  },
+  {
+   "id": "N10",
+   "part": "the late loss kept against F4: refinement read at g = 1, late: |F4's loss error| - |the model's loss error|",
+   "uses": [
+    "new",
+    "f4"
+   ],
+   "kind": "ge"
+  }
+ ],
+ "reported": [
+  {
+   "id": "R1",
+   "part": "refinement, g = 1: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R2",
+   "part": "refinement, g = 1, late: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R3",
+   "part": "refinement, g = 1, prompt: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R4",
+   "part": "transfer, g = 1: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R5",
+   "part": "transfer, g = 2: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R6",
+   "part": "transfer, g = 4: E - the model",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R7",
+   "part": "refinement, g = 2: E - F4 (SM003's R1)",
+   "uses": [
+    "f4"
+   ]
+  },
+  {
+   "id": "R8",
+   "part": "refinement, g = 4: E - F4 (SM003's M7)",
+   "uses": [
+    "f4"
+   ]
+  },
+  {
+   "id": "R9",
+   "part": "refinement, g = 1: |E - the parametric| - |E - the model|",
+   "uses": [
+    "par",
+    "new"
+   ]
+  },
+  {
+   "id": "R10",
+   "part": "refinement, g = 2: |E - the parametric| - |E - the model|",
+   "uses": [
+    "par",
+    "new"
+   ]
+  },
+  {
+   "id": "R11",
+   "part": "refinement, g = 4: |E - the parametric| - |E - the model|",
+   "uses": [
+    "par",
+    "new"
+   ]
+  },
+  {
+   "id": "R12",
+   "part": "refinement, g = 2: |E - the 4-NN| - |E - the model|",
+   "uses": [
+    "nn",
+    "new"
+   ]
+  },
+  {
+   "id": "R13",
+   "part": "refinement, g = 4: |E - the 4-NN| - |E - the model|",
+   "uses": [
+    "nn",
+    "new"
+   ]
+  },
+  {
+   "id": "R14",
+   "part": "refinement, g = 1: |E - SM001's model| - |E - the model|",
+   "uses": [
+    "new"
+   ]
+  },
+  {
+   "id": "R15",
+   "part": "refinement, g = 4: |E - the parametric with (log2 g)^2| - |E - the model|",
+   "uses": [
+    "par2",
+    "new"
+   ]
+  },
+  {
+   "id": "R16",
+   "part": "refinement read at g = 1, late: E - E twin (the observed loss)",
+   "uses": []
+  },
+  {
+   "id": "R17",
+   "part": "refinement at g = 2: E - E twin at g/2 (SM003's M4)",
+   "uses": []
+  },
+  {
+   "id": "R18",
+   "part": "refinement at g = 4: E - E twin at g/2 (SM003's M5)",
+   "uses": []
+  },
+  {
+   "id": "R19",
+   "part": "the same at g = 2, late",
+   "uses": []
+  },
+  {
+   "id": "R20",
+   "part": "the same at g = 2, prompt",
+   "uses": []
+  },
+  {
+   "id": "R21",
+   "part": "the same at g = 4, late",
+   "uses": []
+  },
+  {
+   "id": "R22",
+   "part": "the same at g = 4, prompt",
+   "uses": []
+  }
+ ],
+ "sensitivities": {
+  "H2": {
+   "file": "sm004/frozen/sensitivity_H2.json",
+   "sha256": "6268fcb6d56ccaad4dfb130245dd86961900f60df8aaa8948ca82cba32336bfc",
+   "scored": "N1-N10 as numbers on TEST, no thresholds"
+  },
+  "H5": {
+   "file": "sm004/frozen/sensitivity_H5.json",
+   "sha256": "d645f17c4298c9a94a08a461ab11ae1f465280875c24b0591cd0f1aa0fb7b18c",
+   "scored": "N1-N10 as numbers on TEST, no thresholds"
+  }
+ },
+ "predict_sha256": "5c12f2540be1c034da04ded3a3ca402db33e61faf5daacf3a0bceb6966f37692"
+}

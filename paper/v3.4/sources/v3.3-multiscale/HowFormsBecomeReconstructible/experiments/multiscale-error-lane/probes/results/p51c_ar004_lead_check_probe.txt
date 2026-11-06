@@ -1,0 +1,65 @@
+P51c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar004/p51 (probe, DRY RUN on engineering blocks): 32 tasks, 64 files, every sha256 equal to the manifest's; digest 7cd71b5b29cf (AR003's d392002671e6, its 168 frozen sources unchanged); 2026-11-01T21:37:23Z - 2026-11-01T22:00:28Z, 3.00 CPU-h, 8 workers
+runs: memory@0-L2 (L 2; vote, vms, vpool), memory@0 (L 4; vote, vms, vpool), memory@0-L8 (L 8; vote, vms, vpool), none@0 (L 4; vote, vms, vpool), cue@0 (L 4; vote, vms, vpool), memory@1-L2 (L 2; vms, vpool), memory@1 (L 4; vms, vpool), memory@1-L8 (L 8; vms, vpool), none@1 (L 4; vms, vpool)
+
+REGISTERED PARTS (4 blocks; pooled over the eight unit-body pairs; [95% t interval], t(0.975, 3) = 3.1824; SD_block the larger of the block SD and the case SD / sqrt 8; the rule: margin >= 1.6771 and both halves)
+  G1    R1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vms, memory@1): +0.098796 [+0.052324, +0.145267] (SD 0.029205: block 0.020320, case/sqrt8 0.029205)  >= +0.04: holds
+        margin 2.0132; halves +0.089966 +0.107625; rule ok
+  G2    R0 = (1/3) sum over sizes of u(vpool, memory@0) - u(vms, memory@0): +0.000081 [-0.000570, +0.000733] (SD 0.000410: block 0.000410, case/sqrt8 0.000369)  >= -0.005: holds
+        margin 12.4056; halves +0.000163 +0.000000; rule ok
+  G3a   the trade-off: sheet cost under cue@0, vpool less vms: +0.014996 [+0.008642, +0.021350] (SD 0.003993: block 0.003975, case/sqrt8 0.003993)  >= +0.008: holds
+        margin 1.7519; halves +0.014771 +0.015221; rule ok
+  G3b   vpool's sheet cost under cue@0: +0.021950 [+0.015668, +0.028231] (SD 0.003947: block 0.002296, case/sqrt8 0.003947)  <= +0.029: holds
+        margin 1.7860; halves +0.020851 +0.023048; rule ok
+  G3c   vpool's sheet cost with no event, none@0 (the confirmed 0.002 bound): +0.000130 [-0.000283, +0.000542] (SD 0.000259: block 0.000259, case/sqrt8 0.000237)  <= +0.002: holds
+        margin 7.2101; halves +0.000000 +0.000259; rule ok
+  G5n   u(vpool) - u(vote) in the 4 x 4 patch, none@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)  >= -0.005: holds
+        margin inf; halves +0.000000 +0.000000; rule ok (SD 0: a declared allowance)
+  G5n1  u(vpool, none@1) - u(vote, none@0), 4 x 4 patch: -0.006836 [-0.021134, +0.007462] (SD 0.008986: block 0.008986, case/sqrt8 0.007581)  >= -0.03: holds
+        margin 2.5779; halves -0.003906 -0.009766; rule ok
+  G6_4  p(vpool on the patch | memory@1, 4 x 4): +0.613281 [+0.299855, +0.926708] (SD 0.196972: block 0.196972, case/sqrt8 0.132990)  >= +0.25: holds
+        margin 1.8443; halves +0.601562 +0.625000; rule ok
+  G6_8  p(vpool on the patch | memory@1, 8 x 8): +0.539062 [+0.324393, +0.753732] (SD 0.134908: block 0.106357, case/sqrt8 0.134908)  >= +0.3: holds
+        margin 1.7720; halves +0.515625 +0.562500; rule ok
+  G6d   p(on the patch | memory@1, 4 x 4), vpool - vms: +0.230469 [+0.055358, +0.405580] (SD 0.110048: block 0.108535, case/sqrt8 0.110048)  >= +0.04: holds
+        margin 1.7308; halves +0.273438 +0.187500; rule ok
+  G7    W1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vote, memory@0): +0.209778 [+0.098274, +0.321281] (SD 0.070074: block 0.070074, case/sqrt8 0.045197)  >= +0.09: holds
+        margin 1.7093; halves +0.217896 +0.201660; rule ok
+  VERDICTS: G1 HOLDS, G2 HOLDS, G3 HOLDS, G5 HOLDS, G6 HOLDS, G7 HOLDS  [a dry run on engineering blocks: not a development result]
+
+REPORTED (not registered)
+  G5c (reported: the trade-off inside the patch) u(vpool) - u(vote), cue@0: -0.032471 [-0.105983, +0.041042] (SD 0.046199: block 0.039703, case/sqrt8 0.046199)
+  G4 (dropped) sheet cost under misreads with no event, vpool: +0.010094 [+0.005914, +0.014273] (SD 0.002627: block 0.001842, case/sqrt8 0.002627)
+  sheet cost none@1, vms: +0.005070 [+0.002297, +0.007843] (SD 0.001743: block 0.001472, case/sqrt8 0.001743)
+  sheet cost cue@0, vms: +0.006954 [+0.001192, +0.012717] (SD 0.003621: block 0.003621, case/sqrt8 0.002146)
+  sheet cost none@0, vms: +0.000130 [-0.000283, +0.000542] (SD 0.000259: block 0.000259, case/sqrt8 0.000237)
+  W1 vms: +0.110982 [+0.017711, +0.204253] (SD 0.058616: block 0.058616, case/sqrt8 0.040627)
+  vms misread loss (sigma 1 - sigma 0): -0.318970 [-0.383807, -0.254133] (SD 0.040747: block 0.013238, case/sqrt8 0.040747)
+  vpool misread loss (sigma 1 - sigma 0): -0.220256 [-0.288469, -0.152042] (SD 0.042868: block 0.027315, case/sqrt8 0.042868)
+  R1 at 2 x 2: +0.015625 [-0.055608, +0.086858] (SD 0.044766: block 0.044766, case/sqrt8 0.033909)
+  R1 at 4 x 4: +0.090820 [+0.013760, +0.167881] (SD 0.048428: block 0.037881, case/sqrt8 0.048428)
+  R1 at 8 x 8: +0.189941 [+0.068895, +0.310988] (SD 0.076071: block 0.070321, case/sqrt8 0.076071)
+  R0 at 2 x 2: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)
+  R0 at 4 x 4: +0.000244 [-0.001711, +0.002199] (SD 0.001229: block 0.001229, case/sqrt8 0.001106)
+  R0 at 8 x 8: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000)
+  the recovery fraction, pooled over the sizes: 0.3097; by size: 2 x 2 0.7619; 4 x 4 0.4170; 8 x 8 0.2643
+  rates by run (fired at all / on the patch):
+    memory@0-L2   vms   0.1797 / 0.1250
+    memory@0-L2   vpool 0.1797 / 0.1250
+    memory@0      vms   0.7812 / 0.7812
+    memory@0      vpool 0.7852 / 0.7852
+    memory@0-L8   vms   1.0000 / 1.0000
+    memory@0-L8   vpool 1.0000 / 1.0000
+    none@0        vms   0.0547 / 0.0000
+    none@0        vpool 0.0547 / 0.0000
+    cue@0         vms   0.6797 / 0.0938
+    cue@0         vpool 0.9688 / 0.1875
+    memory@1-L2   vms   0.5625 / 0.1094
+    memory@1-L2   vpool 0.7695 / 0.1758
+    memory@1      vms   0.7422 / 0.3828
+    memory@1      vpool 0.9414 / 0.6133
+    memory@1-L8   vms   0.6211 / 0.2109
+    memory@1-L8   vpool 0.8984 / 0.5391
+    none@1        vms   0.5312 / 0.0469
+    none@1        vpool 0.7383 / 0.1406
+
+FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch): r_in and r_all recomputed from the final records, 736 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00; a vote-default arm that never fired against the vote (at sigma 1 the vote's sigma-0 run), both records, bit for bit: 1667 of 1667 lineage-cases equal

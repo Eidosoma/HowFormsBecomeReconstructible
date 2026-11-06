@@ -1,0 +1,105 @@
+{
+  "common_setup": {
+    "lattice": "16x16 torus; 256 cells, two reciprocal weight planes",
+    "ports": "Three protected 2x2 ports; cue port clamped, two output ports scored",
+    "histories": [
+      "exact_rewrite",
+      "single_tolerance_rewrite",
+      "spaced_tolerance_rewrite",
+      "clustered_tolerance_rewrite"
+    ],
+    "acquisition_regime": "matched birth and ongoing cue noise",
+    "probe_future_regimes": "matched or independent birth AND ongoing cue noise; injury distribution unchanged"
+  },
+  "common_boundary_features": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "feature": "Four g14 supplying-body cue/port means multiplied by the true orientation and prescribed output signs",
+      "true_orientation_used": true
+    },
+    {
+      "indices": [
+        4,
+        5
+      ],
+      "feature": "Minimum aligned margin and its strict >.25 success indicator",
+      "true_orientation_used": true
+    },
+    {
+      "indices": [
+        6
+      ],
+      "feature": "Unsigned 64-step normalized cue-transfer access to the output ports",
+      "true_orientation_used": false
+    },
+    {
+      "indices": [
+        7,
+        8,
+        9
+      ],
+      "feature": "Three history indicators with one omitted reference history",
+      "true_orientation_used": false
+    },
+    {
+      "indices": [
+        10
+      ],
+      "feature": "Signed 64-step normalized cue transfer aligned to the true orientation",
+      "true_orientation_used": true
+    }
+  ],
+  "model_extra": {
+    "successor32": "One scalar: success fraction from 32 independent writer-then-successor-evaluation probes",
+    "direct64": "One scalar: success fraction from 64 unchanged-packet reads",
+    "pooled32": "One scalar: pooled success over 32 current-packet writer-body reads and 32 unchanged-packet evaluations",
+    "direct8": "One scalar: success fraction from first eight unchanged-packet evaluations",
+    "tt008": "No extra probe; all 11 common boundary features retained"
+  },
+  "label_access": "The supplied true task orientation enters feature preprocessing, signed transfer, probe success and terminal scoring. It is not a separate numeric coefficient input; the pipeline nevertheless uses the answer. These are task-success forecasters, not label-blind orientation decoders.",
+  "record_and_body": "Features combine the g14 outgoing packet with already observed g14 supplying-body responses and history. No extra current outgoing-packet read defines current_pass.",
+  "observer_and_storage": "Known ports/lattice/task, trained coefficients and stored incoming packet are supplied resources; no autonomous apparatus maintenance or identity-information claim.",
+  "current_costs": {
+    "models": {
+      "successor32": {
+        "primary_native_reads": 64,
+        "standalone_cpu_seconds_excluding_audit": 13.1360075825,
+        "source": "Actual eight-worker joint benchmark; audits excluded"
+      },
+      "direct64": {
+        "primary_native_reads": 64,
+        "standalone_cpu_seconds_excluding_audit": 13.044953172875,
+        "source": "Actual eight-worker joint benchmark; audits excluded"
+      },
+      "pooled32": {
+        "primary_native_reads": 64,
+        "standalone_cpu_seconds_excluding_audit": 12.908793549624999,
+        "source": "Earlier four-worker standalone benchmark; audits excluded"
+      },
+      "direct8": {
+        "primary_native_reads": 8,
+        "standalone_cpu_seconds_excluding_audit": 1.6294943117499987,
+        "source": "Earlier four-worker standalone benchmark; audits excluded"
+      },
+      "tt008": {
+        "primary_native_reads": 0,
+        "standalone_cpu_seconds_excluding_audit": null,
+        "source": "Boundary/prediction CPU not separately timed; zero additional native probes"
+      }
+    },
+    "limits": "Marginal probe costs exclude shared boundary acquisition and training. Native-read equality is not equality of total application costs."
+  },
+  "capture_accounting": "The unchanged fast_reader.read_batch computes outgoing capture even on terminal evaluation reads where that output is not inherited. Count this work in future equal-total-cost comparisons.",
+  "source_hashes": {
+    "context/PREDICTOR_COSTS.json": "4246280d95e840e3da1bf91f8505ba6ebc2e1068d8fc997aa3d70591b8886a6b",
+    "qualified/native/acquisition.py": "02a51241efecd23b078e761da9f25852a9ed75938659d167b94279970d767359",
+    "qualified/native/probes.py": "4de507d0e0336dcc78a2ce37b30945b95787fd16f04354d00a0c86a2b788a9c0",
+    "qualified/native/fast_reader.py": "f3de5abfde02c6e040afc7ffe002081440769594cb37f2d3cfe3f2bdbc5c9cc0",
+    "qualified/native/inherited/engine.py": "220094ece6864a742ac296f0f083bf145123e827194e57e3b79fda5ddefe1189"
+  }
+}

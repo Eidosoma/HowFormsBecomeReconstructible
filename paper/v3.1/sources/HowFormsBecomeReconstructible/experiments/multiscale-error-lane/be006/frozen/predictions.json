@@ -1,0 +1,1686 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "9a05edca1f253d144c9c55dcb717f910da76426ba14153aacee0e2a7bd03ffe0",
+ "computed_utc": "2026-10-29T15:48:22Z",
+ "thresholds": {
+  "K1": {
+   "early": 0.02,
+   "late": 0.05,
+   "late4": 0.05,
+   "elapsed": 0.05,
+   "elapsed4": 0.05
+  },
+  "K2": {
+   "early": 0.02,
+   "late": 0.05
+  },
+  "K3": {
+   "intact": 0.05,
+   "repaired": 0.15
+  },
+  "K4": {
+   "sensors": 0.1,
+   "loss": 0.03
+  },
+  "K5": {
+   "gain": 0.2
+  },
+  "K6": {
+   "carry": 0.1
+  },
+  "K7": {
+   "more": 0.1
+  },
+  "K8": {
+   "none": 0.05
+  },
+  "K9": {
+   "sham": 0.001
+  },
+  "K10": {
+   "repair": 0.02,
+   "adopt": 0.05
+  }
+ },
+ "parts": [
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) - late(SL, 0.5) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) - late(SL, 1) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) - late(SL, 2) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) - late(SL, 4) at 12000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) at 4000 - late(SL, 2) at 8000, equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K1",
+   "name": "K1 prompt(SL) at 4000 - late(SL, 4) at 12000, equal elapsed time (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 late(F, 0.5) - prompt(F) at 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 late(F, 1) - prompt(F) at 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 prompt(F) - late(F, 2) at 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 prompt(F) - late(F, 4) at 4000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 sensors(SL, 0.5) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 sensors(SL, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "le",
+   "pooled": true
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 sensors(SL, 2) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.15,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K4",
+   "name": "K4 sensors(A, 1) - sensors(SL, 1) (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K4",
+   "name": "K4 loss(A, 1) - loss(SL, 1) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.03,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 prompt(A) - none(A) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 prompt(SL) - none(SL) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.2,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 prompt(SL) - prompt(S) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 adopt(SL) - adopt(S) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 (prompt(SL) - prompt(S)) - (prompt(AL) - prompt(A)) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 (adopt(SL) - adopt(S)) - (adopt(AL) - adopt(A)) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.1,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K8",
+   "name": "K8 prompt(S) - none(S) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "K8",
+   "name": "K8 adopt(S) - adopt(never-S) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "abs",
+   "pooled": true
+  },
+  {
+   "stmt": "K9",
+   "name": "K9 cost(AL) - cost(A) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K9",
+   "name": "K9 cost(SL) - cost(S) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.001,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K10",
+   "name": "K10 prompt(AL) - prompt(A) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.02,
+   "sense": "ge",
+   "pooled": true
+  },
+  {
+   "stmt": "K10",
+   "name": "K10 adopt(AL) - adopt(A) at 8000 (pooled)",
+   "items": [
+    [
+     "S4_t0",
+     "dw"
+    ],
+    [
+     "S4_t0",
+     "li4"
+    ],
+    [
+     "S4_t1",
+     "dw"
+    ],
+    [
+     "S4_t1",
+     "li4"
+    ],
+    [
+     "LB_t0",
+     "dw"
+    ],
+    [
+     "LB_t0",
+     "li4"
+    ],
+    [
+     "LB_t1",
+     "dw"
+    ],
+    [
+     "LB_t1",
+     "li4"
+    ],
+    [
+     "F0_t0",
+     "dw"
+    ],
+    [
+     "F0_t0",
+     "li4"
+    ],
+    [
+     "F0_t1",
+     "dw"
+    ],
+    [
+     "F0_t1",
+     "li4"
+    ]
+   ],
+   "threshold": 0.05,
+   "sense": "ge",
+   "pooled": true
+  }
+ ],
+ "statements": [
+  {
+   "id": "K1",
+   "kind": "with the whole clock calibrated, the deadline is the arbiter's clock, in hours",
+   "claim": "With every bond relearning at the calibrated pace (T* = 1,959 updates, 6.5 h at 300 updates an hour) and a commitment of 15,000 updates, a signal that arrives half of T* or T* after a 4 x 4 memory damage repairs it no more than 0.02 below a prompt one, and one that arrives 2 or 4 times T* after it repairs it less than a prompt one, read at the same time and at equal elapsed time since each signal's start, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, dial-SL's r_in in memory4@round(m T*(3e-4)) is no more than 0.02 below its r_in in memory4@0 for m = 0.5 and 1 (both at t = 8,000), below it by >= 0.05 for m = 2 (t = 8,000) and by >= 0.05 for m = 4 (t = 12,000); and, at equal elapsed time since each signal's start, dial-SL's r_in in memory4@round(2 T*) at t = 8,000 and in memory4@round(4 T*) at t = 12,000 are below its r_in in memory4@0 at t = 4,000 by >= 0.05 and >= 0.05, else FAILS",
+   "thresholds": {
+    "early": 0.02,
+    "late": 0.05,
+    "late4": 0.05,
+    "elapsed": 0.05,
+    "elapsed4": 0.05
+   }
+  },
+  {
+   "id": "K2",
+   "kind": "at the lane's rate the deadline is BE005's (the bridge)",
+   "claim": "With the arbiter at the lane's 0.01 (BE005's dial-e0.01), a signal half of T* or T* late repairs within 0.02 of a prompt one, and one 2 or 4 times T* late repairs less by at least 0.05, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 4,000, dial-F's r_in in memory4@round(m T*(0.01)) is within 0.02 of its r_in in memory4@0 for m = 0.5 and 1, and below it by >= 0.05 for m = 2 and 4, else FAILS",
+   "thresholds": {
+    "early": 0.02,
+    "late": 0.05
+   }
+  },
+  {
+   "id": "K3",
+   "kind": "with the whole clock calibrated, the sensors keep the arbiter's clock",
+   "claim": "When a delayed signal arrives under the fully calibrated clock, at most 5 per cent of the damaged patch's anchored cells have been repaired at half of T* or at T*, and at least 15 per cent at twice T*",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, the share of the patch's anchored cells whose record is right at dial-SL's delayed signal's first update is <= 0.05 at m = 0.5 and at m = 1, and >= 0.15 at m = 2, else FAILS",
+   "thresholds": {
+    "intact": 0.05,
+    "repaired": 0.15
+   }
+  },
+  {
+   "id": "K4",
+   "kind": "with only the arbiter calibrated, the evidence erodes before its clock",
+   "claim": "At T* after the damage, the arbiter slowed alone (A) has had at least 0.1 more of the patch's anchored cells repaired than the fully calibrated clock (SL), and its late signal loses at least 0.03 more of the repair, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs, the share of the patch's anchored cells right at the delayed signal's first update at m = 1 is larger for dial-A than for dial-SL by >= 0.1, and loss(A, 1) - loss(SL, 1) >= 0.03 at t = 8,000, where loss(c, m) is dial-c's r_in in memory4@0 less its r_in in memory4@round(m T*(3e-4)), else FAILS",
+   "thresholds": {
+    "sensors": 0.1,
+    "loss": 0.03
+   }
+  },
+  {
+   "id": "K5",
+   "kind": "a prompt signal still pays at calibrated clocks",
+   "claim": "A prompt signal repairs at least 0.2 more of a 4 x 4 memory damage than the same tissue with no signal, with the arbiter calibrated (A) and with the whole clock and the commitment calibrated (SL)",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000, dial-A's r_in in memory4@0 exceeds never-A's by >= 0.2, and dial-SL's exceeds never-SL's by >= 0.2, else FAILS",
+   "thresholds": {
+    "gain": 0.2
+   }
+  },
+  {
+   "id": "K6",
+   "kind": "when execution is slow, the commitment must outlast it",
+   "claim": "With every bond relearning at the calibrated pace, a commitment of 15,000 updates repairs a 4 x 4 memory damage and adopts a legitimate 4 x 4 change more than one of 300 updates, by at least 0.1 each, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000, dial-SL's r_in exceeds dial-S's by >= 0.1 in memory4@0 and in change4@0, else FAILS",
+   "thresholds": {
+    "carry": 0.1
+   }
+  },
+  {
+   "id": "K7",
+   "kind": "a long commitment is worth more when execution is slow",
+   "claim": "What a commitment of 15,000 updates adds over one of 300 to a prompt repair of a 4 x 4 memory damage, and to the adoption of a legitimate 4 x 4 change, is larger by at least 0.1 with every bond relearning at the calibrated pace than with only the arbiter calibrated, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000, (dial-SL's r_in - dial-S's) - (dial-AL's r_in - dial-A's) is >= 0.1 in memory4@0 and in change4@0, else FAILS",
+   "thresholds": {
+    "more": 0.1
+   }
+  },
+  {
+   "id": "K8",
+   "kind": "a commitment that lapses before its execution is worth nothing",
+   "claim": "With every bond relearning at the calibrated pace and a commitment of 300 updates, a prompt signal repairs a 4 x 4 memory damage and adopts a legitimate 4 x 4 change within 0.05 of the same tissue with no signal, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000, dial-S's r_in is within 0.05 of never-S's in memory4@0 and in change4@0, else FAILS",
+   "thresholds": {
+    "none": 0.05
+   }
+  },
+  {
+   "id": "K9",
+   "kind": "a long commitment raises a sham's cost",
+   "claim": "A prompt sham over scattered cue corruption costs the sheet's record at least 0.001 more with a commitment of 15,000 updates than with one of 300, with only the arbiter calibrated and with the whole clock calibrated, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000 in cue4@0, cost(AL) - cost(A) and cost(SL) - cost(S) are each >= 0.001, where cost(c) is never-c's r_all less dial-c's, else FAILS",
+   "thresholds": {
+    "sham": 0.001
+   }
+  },
+  {
+   "id": "K10",
+   "kind": "even when execution is fast, a long commitment adds",
+   "claim": "With only the arbiter calibrated, a commitment of 15,000 updates repairs a 4 x 4 memory damage at least 0.02 more, and adopts a legitimate 4 x 4 change at least 0.05 more, than one of 300 updates, on average",
+   "rule": "HOLDS if on average over the twelve unit-body pairs at t = 8,000, dial-AL's r_in exceeds dial-A's by >= 0.02 in memory4@0 and by >= 0.05 in change4@0, else FAILS",
+   "thresholds": {
+    "repair": 0.02,
+    "adopt": 0.05
+   }
+  }
+ ]
+}

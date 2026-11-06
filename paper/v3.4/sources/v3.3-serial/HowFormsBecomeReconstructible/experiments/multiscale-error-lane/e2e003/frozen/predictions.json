@@ -1,0 +1,326 @@
+{
+ "study": "E2E003",
+ "design_digest": "f65ac359f81f9484f27eae1d7f2813192b3db6d11b843c07eb8ff8b988b1099e",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "J1a": 0.31,
+  "J1b": 0.05,
+  "J2a": 0.08,
+  "J2b": [
+   -0.04,
+   0.02
+  ],
+  "J3a": 0.28,
+  "J3b": 0.04,
+  "J3c": 0.06,
+  "J3d": [
+   -0.04,
+   0.03
+  ],
+  "J4a": [
+   -0.02,
+   0.02
+  ],
+  "J4b": [
+   -0.03,
+   0.01
+  ],
+  "J5a": [
+   0.09,
+   0.25
+  ],
+  "J5b": [
+   0.06,
+   0.13
+  ]
+ },
+ "frozen_utc": "2026-11-04T14:56:27Z",
+ "registered": [
+  {
+   "id": "J1a",
+   "part": "U(vtol-every) - U(vote), memory@0, g 8: every generation against the best fixed policy, the accumulated damage",
+   "kind": "ge",
+   "threshold": 0.31
+  },
+  {
+   "id": "J1b",
+   "part": "q_r(vtol-every) - q_r(vote), memory@0, g 8: and the lineage's history",
+   "kind": "ge",
+   "threshold": 0.05
+  },
+  {
+   "id": "J2a",
+   "part": "U(vtol-every) - U(vote), memory@1, g 8: under misreads in every generation",
+   "kind": "ge",
+   "threshold": 0.08
+  },
+  {
+   "id": "J2b",
+   "part": "q_r(vtol-every) - q_r(vote), memory@1, g 8 (equivalence band, Amendment 1)",
+   "kind": "in",
+   "threshold": [
+    -0.04,
+    0.02
+   ]
+  },
+  {
+   "id": "J3a",
+   "part": "U(vtol-every) - U(vtol-once), memory@0, g 8: every against once",
+   "kind": "ge",
+   "threshold": 0.28
+  },
+  {
+   "id": "J3b",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@0, g 8",
+   "kind": "ge",
+   "threshold": 0.04
+  },
+  {
+   "id": "J3c",
+   "part": "U(vtol-every) - U(vtol-once), memory@1, g 8",
+   "kind": "ge",
+   "threshold": 0.06
+  },
+  {
+   "id": "J3d",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@1, g 8 (equivalence band, Amendment 1)",
+   "kind": "in",
+   "threshold": [
+    -0.04,
+    0.03
+   ]
+  },
+  {
+   "id": "J4a",
+   "part": "U(vtol-every) - U(vms-every), memory@1, g 8: the misread recovery, generation after generation (equivalence band, Amendment 1)",
+   "kind": "in",
+   "threshold": [
+    -0.02,
+    0.02
+   ]
+  },
+  {
+   "id": "J4b",
+   "part": "q_r(vtol-every) - q_r(vms-every), memory@1, g 8 (equivalence band, Amendment 1)",
+   "kind": "in",
+   "threshold": [
+    -0.03,
+    0.01
+   ]
+  },
+  {
+   "id": "J5a",
+   "part": "U(uninjured) - U(vtol-every), memory@0, g 8: how close to an uninjured lineage (band)",
+   "kind": "in",
+   "threshold": [
+    0.09,
+    0.25
+   ]
+  },
+  {
+   "id": "J5b",
+   "part": "q_r(uninjured) - q_r(vtol-every), memory@0, g 8 (band)",
+   "kind": "in",
+   "threshold": [
+    0.06,
+    0.13
+   ]
+  }
+ ],
+ "candidates_reported": [],
+ "reported": [
+  {
+   "id": "R-J1a-1",
+   "part": "U(vtol-every) - U(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-J1b-1",
+   "part": "q_r(vtol-every) - q_r(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-J2a-1",
+   "part": "U(vtol-every) - U(vote), memory@1, g 1"
+  },
+  {
+   "id": "R-J2b-1",
+   "part": "q_r(vtol-every) - q_r(vote), memory@1, g 1 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J3a-1",
+   "part": "U(vtol-every) - U(vtol-once), memory@0, g 1"
+  },
+  {
+   "id": "R-J3b-1",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@0, g 1"
+  },
+  {
+   "id": "R-J3c-1",
+   "part": "U(vtol-every) - U(vtol-once), memory@1, g 1"
+  },
+  {
+   "id": "R-J3d-1",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@1, g 1 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J4a-1",
+   "part": "U(vtol-every) - U(vms-every), memory@1, g 1"
+  },
+  {
+   "id": "R-J4b-1",
+   "part": "q_r(vtol-every) - q_r(vms-every), memory@1, g 1 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J5a-1",
+   "part": "U(uninjured) - U(vtol-every), memory@0, g 1"
+  },
+  {
+   "id": "R-J5b-1",
+   "part": "q_r(uninjured) - q_r(vtol-every), memory@0, g 1 (band)"
+  },
+  {
+   "id": "R-own-every-vote-1",
+   "part": "u_r(vtol-every) - u_r(vote) on the generation's own patch, memory@0, g 1"
+  },
+  {
+   "id": "R-own-every-once-1",
+   "part": "u_r(vtol-every) - u_r(vtol-once) on the own patch, memory@0, g 1"
+  },
+  {
+   "id": "R-a-every-vote-1",
+   "part": "a_r(vtol-every) - a_r(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-once-vote-1",
+   "part": "U(vtol-once) - U(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-ceiling-vote-1",
+   "part": "U(uninjured) - U(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-ceiling-once-1",
+   "part": "U(uninjured) - U(vtol-once), memory@0, g 1"
+  },
+  {
+   "id": "R-vms0-1",
+   "part": "U(vtol-every) - U(vms-every), memory@0, g 1 (the optional row)"
+  },
+  {
+   "id": "R-vms1-vote-1",
+   "part": "U(vms-every) - U(vote), memory@1, g 1"
+  },
+  {
+   "id": "R-J1a-3",
+   "part": "U(vtol-every) - U(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-J1b-3",
+   "part": "q_r(vtol-every) - q_r(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-J2a-3",
+   "part": "U(vtol-every) - U(vote), memory@1, g 3"
+  },
+  {
+   "id": "R-J2b-3",
+   "part": "q_r(vtol-every) - q_r(vote), memory@1, g 3 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J3a-3",
+   "part": "U(vtol-every) - U(vtol-once), memory@0, g 3"
+  },
+  {
+   "id": "R-J3b-3",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@0, g 3"
+  },
+  {
+   "id": "R-J3c-3",
+   "part": "U(vtol-every) - U(vtol-once), memory@1, g 3"
+  },
+  {
+   "id": "R-J3d-3",
+   "part": "q_r(vtol-every) - q_r(vtol-once), memory@1, g 3 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J4a-3",
+   "part": "U(vtol-every) - U(vms-every), memory@1, g 3"
+  },
+  {
+   "id": "R-J4b-3",
+   "part": "q_r(vtol-every) - q_r(vms-every), memory@1, g 3 (equivalence band, Amendment 1)"
+  },
+  {
+   "id": "R-J5a-3",
+   "part": "U(uninjured) - U(vtol-every), memory@0, g 3"
+  },
+  {
+   "id": "R-J5b-3",
+   "part": "q_r(uninjured) - q_r(vtol-every), memory@0, g 3 (band)"
+  },
+  {
+   "id": "R-own-every-vote-3",
+   "part": "u_r(vtol-every) - u_r(vote) on the generation's own patch, memory@0, g 3"
+  },
+  {
+   "id": "R-own-every-once-3",
+   "part": "u_r(vtol-every) - u_r(vtol-once) on the own patch, memory@0, g 3"
+  },
+  {
+   "id": "R-a-every-vote-3",
+   "part": "a_r(vtol-every) - a_r(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-once-vote-3",
+   "part": "U(vtol-once) - U(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-ceiling-vote-3",
+   "part": "U(uninjured) - U(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-ceiling-once-3",
+   "part": "U(uninjured) - U(vtol-once), memory@0, g 3"
+  },
+  {
+   "id": "R-vms0-3",
+   "part": "U(vtol-every) - U(vms-every), memory@0, g 3 (the optional row)"
+  },
+  {
+   "id": "R-vms1-vote-3",
+   "part": "U(vms-every) - U(vote), memory@1, g 3"
+  },
+  {
+   "id": "R-own-every-vote-8",
+   "part": "u_r(vtol-every) - u_r(vote) on the generation's own patch, memory@0, g 8"
+  },
+  {
+   "id": "R-own-every-once-8",
+   "part": "u_r(vtol-every) - u_r(vtol-once) on the own patch, memory@0, g 8"
+  },
+  {
+   "id": "R-a-every-vote-8",
+   "part": "a_r(vtol-every) - a_r(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-once-vote-8",
+   "part": "U(vtol-once) - U(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-ceiling-vote-8",
+   "part": "U(uninjured) - U(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-ceiling-once-8",
+   "part": "U(uninjured) - U(vtol-once), memory@0, g 8"
+  },
+  {
+   "id": "R-vms0-8",
+   "part": "U(vtol-every) - U(vms-every), memory@0, g 8 (the optional row)"
+  },
+  {
+   "id": "R-vms1-vote-8",
+   "part": "U(vms-every) - U(vote), memory@1, g 8"
+  }
+ ],
+ "predict_sha256": "778306ff1a75eedfcc1f214090b8d98f7b02e83e336527349b0ab13fe36a1fba"
+}

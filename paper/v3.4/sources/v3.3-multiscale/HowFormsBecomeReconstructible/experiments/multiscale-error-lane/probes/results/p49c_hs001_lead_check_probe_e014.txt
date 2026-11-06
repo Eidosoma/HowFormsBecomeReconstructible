@@ -1,0 +1,59 @@
+P49c, part 1: E014's published cohort (12000-12063, post hoc, descriptive), with E014's own functions; 204,800 published rows read
+  the bridge: the copy read against E014's published after_16 copy scores, 1024 rows: largest difference 0.0e+00
+  block 12000's lifecycle by E014's own simulate against its published rows (3,200, every stage, arm, founder and recipient, both budgets): largest difference 0.0e+00
+  2,048 bytes: Q(copy) 76.553%, Q(copy_foreign) 73.935%; the reference +2.618 [+2.198, +3.070] (E014's index sets); positive in 64 of 64 blocks; ratio reported True
+    after  1: D +2.103 [+1.659, +2.579]  R_H 0.803 [0.720, 0.880]
+    after  3: D +1.919 [+1.398, +2.474]  R_H 0.733 [0.607, 0.845]
+    after  8: D +1.601 [+1.125, +2.120]  R_H 0.611 [0.473, 0.740]
+    after 16: D +1.402 [+0.925, +1.909]  R_H 0.536 [0.384, 0.680]
+    after 16 less after 1: D -0.700 [-1.032, -0.375], as a share of the reference -0.268 [-0.386, -0.148]
+  128 bytes: Q(copy) 68.266%, Q(copy_foreign) 66.502%; the reference +1.765 [+1.373, +2.187] (E014's index sets); positive in 61 of 64 blocks; ratio reported True
+    after  1: D +1.482 [+1.042, +1.943]  R_H 0.840 [0.720, 0.939]
+    after  3: D +1.392 [+0.975, +1.833]  R_H 0.789 [0.643, 0.931]
+    after  8: D +1.264 [+0.722, +1.825]  R_H 0.716 [0.465, 0.954]
+    after 16: D +1.387 [+0.848, +1.954]  R_H 0.786 [0.532, 1.057]
+    after 16 less after 1: D -0.095 [-0.505, +0.334], as a share of the reference -0.054 [-0.279, +0.204]
+  CPU 55.5 s
+
+P49c, part 2, on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/hs001/p49 (probe, DRY RUN on engineering blocks): 8 tasks, 16 files, every sha256 equal to the manifest's; digest f0222e5cf1de; 2026-11-01T14:03:50Z - 2026-11-01T14:07:12Z, 0.42 CPU-h
+
+REGISTERED PARTS (8 blocks x 8 lineages; points; [95% t interval], t(0.975, 7) = 2.3646; SD_block the larger of the block SD and the lineage SD / sqrt 8; the rule: margin >= 1.6771 and both halves)
+  H1 2,048 B: Q(rewrite) - Q(erased) at 256: +14.801025 [+11.720637, +17.881414]  SD 3.684583 (block 2.555967, lineage/sqrt8 3.684583)  >= +8: holds
+       margin 1.8458; halves +14.916992 +14.685059; rule ok
+  H1 2,048 B: Q(foreign) - Q(erased) at 256: +14.508057 [+11.364987, +17.651126]  SD 3.759559 (block 2.816406, lineage/sqrt8 3.759559)  >= +8: holds
+       margin 1.7311; halves +14.660645 +14.355469; rule ok
+  H1 128 B: Q(rewrite) - Q(erased) at 256: +16.412354 [+12.968092, +19.856615]  SD 4.119827 (block 4.119827, lineage/sqrt8 3.825705)  >= +9: holds
+       margin 1.7992; halves +18.322754 +14.501953; rule ok
+  H1 128 B: Q(foreign) - Q(erased) at 256: +14.874268 [+11.083567, +18.664969]  SD 4.534218 (block 4.534218, lineage/sqrt8 3.753388)  >= +7: holds
+       margin 1.7366; halves +16.271973 +13.476562; rule ok
+  H2 128 B: D(256) - D(16), lower side: -0.146484 [-0.301117, +0.008148]  SD 0.184963 (block 0.149932, lineage/sqrt8 0.184963)  >= -0.5: holds
+       margin 1.9113; halves -0.158691 -0.134277; rule ok
+  H2 128 B: D(256) - D(16), upper side: -0.146484 [-0.301117, +0.008148]  SD 0.184963 (block 0.149932, lineage/sqrt8 0.184963)  <= +0.2: holds
+       margin 1.8733; halves -0.158691 -0.134277; rule ok
+  H3 2,048 B: Q(rewrite) at 256 - Q(copy): -13.275146 [-15.629620, -10.920673]  SD 2.816285 (block 2.816285, lineage/sqrt8 1.615560)  <= -8: holds
+       margin 1.8731; halves -14.135742 -12.414551; rule ok
+  H3 128 B: Q(rewrite) at 256 - Q(copy): -3.747559 [-5.053796, -2.441321]  SD 1.562446 (block 1.562446, lineage/sqrt8 1.212187)  <= -1: holds
+       margin 1.7585; halves -3.320312 -4.174805; rule ok
+  VERDICTS: H1 HOLDS, H2 HOLDS, H3 HOLDS  [a dry run on engineering blocks: not a development result]
+
+PRESPECIFIED MEASUREMENTS (block means, points; intervals: E014's generator, 10,000 whole-block resamples)
+  2,048 bytes: the reference +1.727 [+1.038, +2.423] (8 of 8 blocks positive; resolved)
+    D(n): 1:+1.501 2:+1.740 3:+1.648 4:+1.373 6:+1.184 8:+0.757 12:+0.659 16:+0.580 24:+0.659 32:+0.671 48:+0.562 64:+0.269 96:+0.360 128:+0.409 192:+0.348 256:+0.293
+    R_H(n) point values: 1:0.869 2:1.007 3:0.954 4:0.795 6:0.686 8:0.438 12:0.382 16:0.336 24:0.382 32:0.389 48:0.325 64:0.155 96:0.208 128:0.237 192:0.201 256:0.170
+    D(16) - D(1): -0.922 [-1.581, -0.208]
+    late mean of D over 128, 192, 256: +0.350 [-0.124, +0.865]
+    late slope D(256) - D(128): -0.116 [-0.464, +0.140]
+    M1 on D: c +0.4107 [-0.0261, +0.7960], a +1.3234 [+0.6439, +2.1734], h 5.755 [1.762, 31.743]; resamples at the grid end 3; SSE(M0) - SSE(M1) 0.7865; reading: decay to a plateau indistinguishable from zero
+    M1 on R_H: c +0.2377 [-0.0165, +0.5229], a +0.7662 [+0.4402, +1.2665], h 5.755 [1.762, 31.743]; resamples at the grid end 3; SSE(M0) - SSE(M1) 0.2636; reading: decay to a plateau indistinguishable from zero
+    the replicate-concordance excess at 256 (shards), rewrite +8.008, foreign +9.001, erased -0.724, background -1.339; Q(rewrite) - Q(background) at 256 +1.367
+  128 bytes: the reference +1.166 [+0.562, +1.862] (7 of 8 blocks positive; NOT resolved: lower bound below half the estimate)
+    D(n): 1:+1.147 2:+1.019 3:+1.031 4:+0.952 6:+1.123 8:+1.447 12:+1.489 16:+1.685 24:+1.562 32:+1.630 48:+1.581 64:+1.593 96:+1.532 128:+1.562 192:+1.569 256:+1.538
+    R_H(n) point values: 1:0.984 2:0.874 3:0.885 4:0.817 6:0.963 8:1.241 12:1.277 16:1.445 24:1.340 32:1.398 48:1.356 64:1.366 96:1.314 128:1.340 192:1.346 256:1.319  [not reported as a ratio: the reference is not resolved]
+    D(16) - D(1): +0.537 [-0.885, +2.106]
+    late mean of D over 128, 192, 256: +1.556 [+0.244, +3.025]
+    late slope D(256) - D(128): -0.024 [-0.110, +0.067]
+    M1 on D: c +1.5912 [+0.2721, +3.0918], a -0.6347 [-2.1733, +0.9725], h 5.384 [0.250, 9.533]; resamples at the grid end 0; SSE(M0) - SSE(M1) 0.7928; reading: a plateau above zero
+    M1 on R_H: c +1.3649 [+0.2209, +3.6629], a -0.5444 [-2.5971, +0.6902], h 5.384 [0.250, 9.533]; resamples at the grid end 0; SSE(M0) - SSE(M1) 0.5833; reading: a plateau above zero
+    the replicate-concordance excess at 256 (shards), rewrite +5.404, foreign +9.766, erased +1.367, background +1.172; Q(rewrite) - Q(background) at 256 +3.900
+
+FROM THE RAW PACKETS (E001's unpack): the replicate concordance recomputed at every checkpoint, arm, founder and block, against the shards: largest difference 0.0e+00

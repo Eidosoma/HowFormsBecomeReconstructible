@@ -1,0 +1,932 @@
+{
+ "study": "E2E006",
+ "digest": "bdbd135dd2eeeb57724c5bd9f22103cbb65a22925f359a42ae91db9a2e0e022d",
+ "frozen_utc": "2026-11-05T14:20:13Z",
+ "sources": {
+  "ar001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar001/analyze.py": "d586465762abf398643ab04d36b8c2147715d709740a89056fce1a210502df9b",
+  "ar001/checks.py": "6be20e1d9811c171dabd10332c22caeb02529cd20b8a980f78cd21f710a1a24e",
+  "ar001/design.py": "b18de7d0fa1f15dfe3dd6431a9d0e6c91f97a51d09827524ec4ee18a42200e0f",
+  "ar001/predict.py": "eb367d6982cd7f41c59da310b51ba2f81bda6c1ffd15f66e03a138391842cd4a",
+  "ar001/run.py": "69d052f395aadeb945449d569e007116379abdd48f624dbaef0507da4e28d0fb",
+  "ar001/sim.py": "ca0745eb5f734ab5a0311b312effd58efe414401dbc0685207ddcd020659c82d",
+  "ar001/tables.py": "09466bf05d6d3a1ef2351c15b595f268998be2d3af710f8012c5730caf0d41b2",
+  "ar001/worker.py": "ad8850abb095fe338ed70ee8e6cd66d64d60d0dafc253160722cf640af11ef6e",
+  "ar002/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar002/analyze.py": "c00be66cd719ff0a35efc0090da745adf47c069232f3e662e48b61ffd9bd1543",
+  "ar002/checks.py": "30a3971b27a46247e4d317acde3acf86dc1b8064c15d42802da91a9ae1b689b8",
+  "ar002/design.py": "7c01f10f24daaa650ca7eea89c20774074ac5599a753ea3899625e1a8cea71c8",
+  "ar002/predict.py": "989541e8378a62ce4e1b31b980444c64210ab248ede05742624696d429d74964",
+  "ar002/run.py": "2abee139ee43cad7e36c55b8d76e08e760444e375f22e4dc9ba16b592390295d",
+  "ar002/sim.py": "3cab170d2c317a975fe178431978132decc5e614797a8cabb18cd99845cfde7d",
+  "ar002/tables.py": "cd756bfccacf7030d7e6819a00a9d47282d7159f45b1067eacd2b0a5d0e83417",
+  "ar002/worker.py": "2ce9e125eb9dcbb049c2b04fcfc4c32b190681d89fdcf5f482f51cce91b96c0c",
+  "ar003/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar003/analyze.py": "b58a59eb6f7dab3cab4ae9c4574de2083ab9434cf13f9d07d1e03a7802aca08e",
+  "ar003/checks.py": "09d7b5919ebc17db5c075a6bd02cb41781f6b65af454f884020d19b971a026e9",
+  "ar003/design.py": "2b092c2d280849334e4d0fee8d11cd47e08885225fcdaed488f8c74b560832a6",
+  "ar003/predict.py": "20a304160f096deeeff573261267fa56f686ec0fd3ece1bb7ef4a45d340b572e",
+  "ar003/run.py": "c0c3977cec403f33eacbd94bc5380d18639142f00fe3f3e948845048d57d571c",
+  "ar003/sim.py": "496c1bdbc2db594b21c9ee4f702ad4e5ba623fd21f7de16e4ac2da8b202cd58f",
+  "ar003/tables.py": "307ec5b517eb9cf1b3f5e9279318c28c73cf6477b9cd3f8565091201cb3ca80c",
+  "ar003/worker.py": "5f58e4abdf60a92e97800a2edf527965f6691e012c9bc8dd9e8c1b2e98cad240",
+  "ar004/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar004/analyze.py": "5633f6467328b1312ee4a96f7475729ef2f9d7443e821b43be5e8c8ad23ba0a4",
+  "ar004/checks.py": "c72285dda5dd95a63bccbecff734c45fb38189ea5553038b1bec7762a9e764ec",
+  "ar004/design.py": "49df8695213e97531eb85a753ed12b61dd361a84d0e3e21e7b5ea5e0da205d59",
+  "ar004/predict.py": "350e6c29601d6a68f509ce818224c53606df9c75656e8666ee0fc11110d56850",
+  "ar004/run.py": "aa8e14fd8acd81b8f9cf0ba16b9fb3ec75fb6e763ce75fe34950a4d08236293d",
+  "ar004/tables.py": "566efb220c8f350efbc1bd869ce9c13d9d16caaa565432540a5bd2e8397ff1e2",
+  "ar004/worker.py": "4f047747cbc4e9a9abbe51ad5b271dd89ba21c4b2bd77c77a0379eb159fe16d5",
+  "ar005/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar005/analyze.py": "5335df0bce5ef06a78dd3a7bfef16f5b82e9edaa2e183806d7be0f33944e43d8",
+  "ar005/checks.py": "6be8eea07855e5da49f42f94618fe16cea4eb4bf0afe1543e59ad84b7958ccaa",
+  "ar005/design.py": "39bb88ee4b31fa0a2464918b8fc36031a2ef07804d54819071a49cadf8d83d6e",
+  "ar005/predict.py": "cd1a10cf65441d5b1885367267c15259c13a0cf261d4fbeafde925602173886a",
+  "ar005/run.py": "77d0fbc9c1aa5c9c4e44c2693039c8c25e86c4b5f90a2b6286ef379d40dd0877",
+  "ar005/sim.py": "cf755a3f3b13a4bb41ceb089dacb39bdfc10796adb929d62ab060b671f37e75e",
+  "ar005/tables.py": "b926855fbca6f71b6f64cd891b5d1722cd095139390a6ce39a73590b80c156dc",
+  "ar005/worker.py": "ed37ae0ea646b71b69bfc00078b985b8c63033f85d05f91acac88d00fc88f4d8",
+  "ar006/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar006/analyze.py": "b21be3f41877f4e819ed1afa9a5c6969f2b9fe5b6c78e215e4aab83240cc22bb",
+  "ar006/checks.py": "5046aeedb91d224c89cd29d571503eee239476361a2ff434781997d87bc7138b",
+  "ar006/design.py": "c71670a29facc2eb6023d3f77b7568804c84dd4ee8ffc7e29828a49110239308",
+  "ar006/predict.py": "1e34af4e5b6a78fad448b0fa92023d52f0f17c4dc1a8e08cbab6520df944ae58",
+  "ar006/run.py": "6aedf5177ec23af63d1f6b8c1a492afbedfeebf4a8a0e2411d84ee58e34e379a",
+  "ar006/sim.py": "a5919713b2271a4b6876404cf8254f4415e3c6ee42b3f61706eaeadc3824c17f",
+  "ar006/tables.py": "2ff9335f8fb8318fb7068afa18ef32927e9a6bd089f0bfee36e318c84bd3e526",
+  "ar006/worker.py": "c4f8087c5c29b20b47aa5f3b6405ce02506c894919c4cc583a240aeff3d01282",
+  "be001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "be001/analyze.py": "7f59f770c456d617d25a77ba4555da01d7ee429491f329bbf819c82cca597c42",
+  "be001/checks.py": "fc8a4d909a50cc66c48cf5eb5da9ef8d1c79e65572b29e653f2c1029a1c896d3",
+  "be001/design.py": "155b3f4dda7efa2299226487dd4034b11d380d07b016f47324bc04759b83ab30",
+  "be001/predict.py": "bb8380987c733cb681ddb3ce618d707828d7abd85103c3e1210cf0fde1c660f7",
+  "be001/run.py": "d4f73779de28170baf6aa2ef2a899c51e4a02d498e6b34f42adde93c8d2c6785",
+  "be001/sim.py": "4d957d7f1aaa940f6568b8066445ffa631454d42bdf88c1ec717886ae5dcb63b",
+  "be001/tables.py": "7b4b5a54c79ec2d90ce2afed2d670d2c53cbc05791de69ca3f19c59b6e3b53e0",
+  "be001/worker.py": "d9186dc01b7b505bc07aebbcc2f80b6b0a343e4d5dad0580f04765fd42b83c07",
+  "be002/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "be002/analyze.py": "cfa79935d8ed1ecbe2dcbd586b31f3731b60ef06fd76d4539624832a89b5f208",
+  "be002/checks.py": "fccd37fa06c6ad5b5b7bd2f976efb648ad5ba566acf03aae5c16e7350092aaee",
+  "be002/design.py": "e1f8e1255b5a118809404953e4a0318d6ecd4acc34a66e7399a29bfac78a2184",
+  "be002/predict.py": "b14cd8fd8c2aeeea88e091987b116baba0eee90164b09832ab9d424209cc4186",
+  "be002/run.py": "7af9e5c48cb514d72938225f1a08e675a6a02e6b4ea6fa7248145323f158b70d",
+  "be002/sim.py": "98083684daab2067aad4b138e3f2e8e0fefdd2041aaa265cb8a7c0fe1039b5eb",
+  "be002/static.py": "70b0ecae9596aa0d9c48157aa690edac47b792a2350db4de529cf5f327dc2dff",
+  "be002/tables.py": "2aa6b74e58cb9ab0cc43a66b8559d6868cbe1b2e8a7193bad061de6abfd310e1",
+  "be002/worker.py": "285c3923545340ba2dd7c13fd6d352ebae8444602c818b76126c3c8fa5a8f804",
+  "be005/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "be005/analyze.py": "8ada8099a3558dbd823d47698e4a4f4ca0f05d591e6b2e6ca82491411462b03d",
+  "be005/checks.py": "99eca5b2cfe239c1023de00ddd05c448ea91baca485fc8505140a4d9e1f20735",
+  "be005/design.py": "0e1d6fca1a7aa5c8152c30182cfe34c1edf7ebcda7152d9a9cdf92569a86c783",
+  "be005/predict.py": "3a4fb62644e6a9f825f7431ee7f0f195f13c1b8071e84fbb5a6bab1c4759565a",
+  "be005/run.py": "ff93f047bbacc685d02be58bf252a0699228a218a389b329893aaf05e9ea2a32",
+  "be005/sim.py": "a8ae5446de7ef24ebdb4161349816704f3e3e2bc8c0efe7aa55cf722e178897e",
+  "be005/static.py": "1b849a957b0cefc2ce16ea6f65d41f727a769e01d8bb2c56ab81d97284a52c6a",
+  "be005/tables.py": "e5140cb76dacc6807c22613aebb8fba41573150ea0670627d39852d16c61aee0",
+  "be005/worker.py": "85a9485b6bda542b03bb5084928c5fbc2ce9f38a4d5901d23737b7ff0f01d655",
+  "be006/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "be006/analyze.py": "b54b428845a6cbf5790401c15d5bc70c183f2e89a09d95e3640048834c17c954",
+  "be006/checks.py": "53bff3a6e388d1edf45ae519a0d9453b166eecdb33628484f3a1b741e57077e1",
+  "be006/design.py": "146ee0c8d7ad0bd7c302b31caca3a2596c2cf403bf1f947e38d4dc5f4912ea65",
+  "be006/predict.py": "7dd70f225e841124f7e7ac3ec84c098b38b7d9a63cd076c4e319a2f397f74b5f",
+  "be006/run.py": "f49eca053ff990d61d6bd324b81154563343ec47577af85d47d2af9443f97c31",
+  "be006/sim.py": "0efddd4a6715ce7bb5013955bbd102899a765bc900bc5b8653b5a3ee176cf9cb",
+  "be006/tables.py": "cd5b31d870074aa06bab366295a2dbb7eb24abc899366fafbd923648157ee368",
+  "be006/worker.py": "2dc9b2db316c7adecce8ae47df3a4d3eec55c3fe62dafa52b40c9d0c04e213c6",
+  "dl001/__init__.py": "b0bc5f4b0be1a3664fc17aed0ae197b0628ea0a3eab053d72ed7dda5013f5fa1",
+  "dl001/analyze.py": "b6e8e049ec64b1deefef51e1e1a70c6c9e3d482520a4dd55085bcc29962e61fd",
+  "dl001/checks.py": "33280565f3ac7a521d1d6e9fa1d753bbd084f96671c18d909688a683c351a024",
+  "dl001/design.py": "c006c321a97efaba172d388437ae36a43ecb3fff0f1f5b18a85a910e94d1a960",
+  "dl001/predict.py": "91449da942e5523b08b0ac6cdaac0f088f4651df3b7fbd65c7a5f6ca539da877",
+  "dl001/run.py": "9df13ada76f2a9569a220bdf3733a1e347de081c16236633a6532ad3889792d6",
+  "dl001/sim.py": "7ee0ad20d79112dff14fec65db5c78c9d206cabe8b3ea53beb4218a939194f21",
+  "dl001/tables.py": "d742799b569447877d90b9d8d0dd9a83af3173dda71a9b0bdde0d42a8d907faa",
+  "dl001/worker.py": "490e75ce95ad1f356e102cf0bb089df05a6eb56312b19c0d2adaea0e9f5bbb81",
+  "dl002/__init__.py": "36799ab39b9f835110d58570cc501b0dcf34f32efba5667f08d80eebb1ca6eb5",
+  "dl002/analyze.py": "34d647e1d56ce4f906af56154570ed75a454c2d94f824656c167f8dd08f2fd80",
+  "dl002/checks.py": "539032e672472e0ba732318d7b05c6c9a5012b5842f98f78292a489c19cd3591",
+  "dl002/design.py": "045168c3fc81e99dfab31b3355901bfdf55ae84f492d60d95d30100f3e18e9cc",
+  "dl002/predict.py": "ac6de067ef612906815158209986a683b2882c7aab2603d8b07d125958cf6470",
+  "dl002/run.py": "9792d37beb52863f9c3a7021bf4c4ac43175f737e9baa57ba84af1c23abb57f9",
+  "dl002/sim.py": "097d089a51dd5d15a4c949df71bb60f24ad4f66f98b1a68e103043a314c187e4",
+  "dl002/tables.py": "45c8be55b0db9b36aa5d42fee3a7f9e1e66dfecc4f240f1af23098b4905becf6",
+  "dl002/worker.py": "94cd830de5a5c20e71dd4fe2120a32515de369f22981120dd9de11a0b0032a9c",
+  "e2e001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "e2e001/checks.py": "15d08a4ed0226c5829a337f5065b76c4d6e535ec1e251f26f8c4c24a80223433",
+  "e2e001/design.py": "ad77eb6ad7c5b8b25e6b3e2eda2f708a84c61db074bf3dc62305aedf0416e92a",
+  "e2e001/predict.py": "12980aded6ab4c01b83854228c5bc967d316522cbc43d63630695865989eeb73",
+  "e2e001/run.py": "e7812a91c5dae8661c407d01d59d3c876f511cd71bb18e49dcb71aa667579c4c",
+  "e2e001/sim.py": "dd6e12d1a196029ebb14406f4e1eacbcf9476e606cea59bfe18cdc7e2fc60fcd",
+  "e2e001/tables.py": "9d4b07f59513c916a5b24556c59148442ee496c9df6e3d14846defc09f29a390",
+  "e2e001/worker.py": "7cf883495928e2c50a46f7be953e6e584512958728d52c20111b23bfd5b8788b",
+  "e2e002/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "e2e002/checks.py": "d50af022ebbe6ca6717e5661658c2ac16c8715e0da630d35db20b9597682ba62",
+  "e2e002/design.py": "561f7982e60c6c2d41fa67b21720a91f379bb1f77781b6cb5a29dacf1beb913c",
+  "e2e002/predict.py": "78f246ad189c689c321e527a5fd162808cec875b900af30a1e3aae5063d6c01b",
+  "e2e002/run.py": "ccaa1c00d53a8fd69a388971b606a1517b8131ccfafddcf6e8f7b0e882c2f421",
+  "e2e002/sim.py": "6b2798651f3b11f0920664d6a0625b372d66329ee1569af7b6a2091c25fce86f",
+  "e2e002/tables.py": "940451811aca5ccd44a8c9ce6a8a3e43b723361ebba2b1a69ad00575033d71bb",
+  "e2e002/worker.py": "4e69152260721c708d1b5a1e518b6e8ac9ccceeed83b4d2d40cd730d96d11bed",
+  "e2e003/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "e2e003/checks.py": "b6c0752a9c2f953163a3030e43a674bef2d347f545f4336ef39a4b74f9accca0",
+  "e2e003/design.py": "5a64d797e4f44a863e7bde160319d43a253aed78b756d7a8175bd6195f37ea38",
+  "e2e003/predict.py": "778306ff1a75eedfcc1f214090b8d98f7b02e83e336527349b0ab13fe36a1fba",
+  "e2e003/run.py": "97df986b16b6c4760dd3c5d5393f7ed73298c3f0a16aa322de51e952191df0ef",
+  "e2e003/sim.py": "00925fd6aff49eb80652868d7ea3d6d449b3387db69bd96fa80e731fc3e79c46",
+  "e2e003/tables.py": "c5b953030d9068e266c5dd2e717749d4853ba4caa6262b0f5bb07173b1011d1c",
+  "e2e003/worker.py": "f7c140d402ad97ee403fb766d82932f87e4fff9ba8d47e31c2a56826417fa51e",
+  "e2e006/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "e2e006/checks.py": "6b9b04c2b09bfe01013f4a628ac52204d4c0be190048e2a4d13a93e5d065ca23",
+  "e2e006/design.py": "3c4a47037aa254d84fbaeadfd4e1d43442097c13e6c00a68ad9cd41df4c37b8b",
+  "e2e006/predict.py": "8ff8b8e01dbb573dded544e7f08e9b8f58547cfb148932bc0ea5f2e4ae81f9c5",
+  "e2e006/run.py": "4a3cdb995a2bf05acfa4d1ce51db85b4f17b10bde93693acf9488e42e2da8d58",
+  "e2e006/sim.py": "44396c4d7a07a5798f29a0728d88d0c01d3838973a70924a64c0724ceba6ec46",
+  "e2e006/tables.py": "20827b132d691c60b4059f4bbd7278bdb34b75d9bdc025134e5ecf41af9707af",
+  "e2e006/worker.py": "5b9d41894a0d34b182145c46f614f64d136a576811ae22659aca33d64905d8b9",
+  "gc001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gc001/analyze.py": "57b575a16ac6e43798e758a976f035fba4e3cbfe599a4b5d50dd5f110f73eaa2",
+  "gc001/checks.py": "a998d8b24ca31f1d4ec26f608f56470b4c1068e5476a69703192a0e89af76d3e",
+  "gc001/design.py": "031c2d835b72f8d93a845123bad577b524a799b144201dbd993ae3ed930351bc",
+  "gc001/predict.py": "6270c4e9798d5b63255877ff78ffd52fd1a2d4d1ab31a919bafe758a17b4ba6f",
+  "gc001/run.py": "344a3a8780cca3c022277543074236b77feede12b8f1145c3c19b8637da44b23",
+  "gc001/sim.py": "ef7e5c97ba13f71f083e34b577c2279c3c13545de20ce63608580c8a31d7e8ed",
+  "gc001/static.py": "5b3b6904730a2c76fd72c0394c5fb0fe8beba0a9a09f7bf6d5f9fbd4bb841cbc",
+  "gc001/tables.py": "8a48270e2481835606a67aa66b512687bc51271f41f1cbf1102892ca6fb15b84",
+  "gc001/worker.py": "091886606cc22996182b2341dc5f25f37bb5193278fda171073a446f587e6864",
+  "lr001/__init__.py": "6e22519496268ac8aed5f476a7a81cb624ddaf7f7b796ba582e2b0b2d00639e2",
+  "lr001/analyze.py": "671e6090af2df117568c63c9f827809bc18d8306f5897b607ea3628f5696cbd6",
+  "lr001/checks.py": "dab516a5c349d6ceb829362f92b4362fa5ae9173b802c2fadb52a82ed43629cd",
+  "lr001/design.py": "a88d4993e23a56114e9eb72553f73c1cc6129a9c8bdd0fc86e6ad3048aa55446",
+  "lr001/predict.py": "d286fe43f6b70068eaf4a0cef825a7ab2b75945f9b1352d93b51632bf779b3f4",
+  "lr001/run.py": "15f2939ad3c3c91c81e3f1a12366dbda8377290b4e7930d3c800062d9dab6d52",
+  "lr001/scoring.py": "a468e0dbcd6f48afc2150a38da288b2ebca6d337b6da0b720b28829d9483814f",
+  "lr001/sim.py": "0865a9644a9c97a54adda76c3e623a0e73b9ce987bd572ed16e8b5b062af56a6",
+  "lr001/tables.py": "621caf13c363e9a5daeaa9d10566a0cf572d9df255e5a658af6ca392c7f55b04",
+  "lr001/worker.py": "4209a3a57b5a473da0ab77e8c156c51f19b8d49766a0db83f8bb3cdf68b6167b",
+  "lr002/__init__.py": "e0bf2ad6aebd8a2fb3e068339ef00a498e0d03ef9e6ee3775d691454bad5b793",
+  "lr002/analyze.py": "09e086b1779cc5a596966e7b4a6147d82ddb57b9f177f000b228d7462d4399c3",
+  "lr002/checks.py": "051a1bdf4814937c65b188a23af5bba3751ed08bc0f7c987c028a5db057e2fa1",
+  "lr002/design.py": "22a1f88c64b768d595463ff3689bdc01f0478c1e1f2f3914f7fabaa2df058131",
+  "lr002/predict.py": "ccfc52e5f3922c24c432b3fdbf31fe25796637aaf63c3e6f2ec8afd377ff712b",
+  "lr002/run.py": "941218a3420dd528fe154a98b025f8bc898b5d8ea573406ced682f0ea8418da2",
+  "lr002/sim.py": "96cbe376120f1b3c9abd5c147b1926cd3a2d38a2380102f718417b9d554d0816",
+  "lr002/tables.py": "0f03b28d52584403ad58a853bf00b0b563d7ca0cd27bf592d668afe97710ee1c",
+  "lr002/worker.py": "35b8b8d0eba3070ce0228e2e6dfe339b7c9f2d525e253473a9653551caa7489d",
+  "lr003/__init__.py": "09076e130928f58af49097492ffae6036402bd4b8fc992b875e1078aac3f5dd9",
+  "lr003/analyze.py": "7961d25206ab2a4cd5d8f4f608fe81f040452562117a4f94d7b6da898dbd5e8c",
+  "lr003/checks.py": "5d301a2f6932091c08f719f0b97552811f23e7274d1f42401a96099b3d5b842a",
+  "lr003/design.py": "8fd3eaf2fe9d05226ec30368a77f5b0f770b8a179e95616c8a66d8e7b43c9f92",
+  "lr003/predict.py": "3886dfd5560ae3e5c4262653cf5c91bf0e973e927a5630bf20c4e3093fb5373c",
+  "lr003/run.py": "d9e0163e1dd5aee301e8af2adc047d67d13bec5543cc37cde0f9d8aa2cf2e962",
+  "lr003/sim.py": "df47bbf76e1a73b455df3a3878fa48cecfb5c9077a3c680122da82eda50b1623",
+  "lr003/tables.py": "291d8426ef18fa0cd7351ef5c6630a87d19b38b686b9a154f68b73614380c681",
+  "lr003/worker.py": "bb3bbea168d053b362fc3d2d4d47c3d8ca1630b5248d7ec069aa66f132732d0f",
+  "lr004/__init__.py": "a1762c4fc9ff73d286530b714e426982d4c4ec69dd4632812b1b5f46eff8a40d",
+  "lr004/analyze.py": "f60932ab2817f78fd22f5d2aed382edce43e505d61d2aef9780ffadda7fa9071",
+  "lr004/checks.py": "162a0386b3b70f51f0e7830542b15c7780a5783c6553c5ec1081f03f8144c7e7",
+  "lr004/design.py": "329c9dad0fd7e922799078a66bca47084c351bdc1ead80fd5fd58adab4a532cd",
+  "lr004/predict.py": "c822b0367deab69fe286446e2daf97949f0f05b32da0470f17f7a0638beadc74",
+  "lr004/run.py": "dfd5681cc6ff10abb9b90297fb83acb73659c8251d97b924f6f1b132369939e5",
+  "lr004/sim.py": "2384c06f9c12b22470cd67e86a7e0842c32c76cb5e70e80e835d1d32a9446666",
+  "lr004/tables.py": "480f4fc4c079e4e9d5e9cc8d2ca2fbfcadb35388386a362908c5ce06d3c713b4",
+  "lr004/worker.py": "915c6aeb7683a37ff3f94e89e06fd8a3862412f838eb5ccc620b3fb699824be9",
+  "lr005/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "lr005/analyze.py": "5aee0897d4de418b3217c392ccf9122d3cfb48ab3a4e5e4a451fcee2a7ba90ef",
+  "lr005/checks.py": "104628257e1d80e0847f0a49698dad73f124aa4f6e9b30d32b3950f8a25229b4",
+  "lr005/design.py": "d8a62fccfc4cf45e5bbaf92f9234054a15631cebd2b50aef79f614dc34d6d18a",
+  "lr005/predict.py": "9bfbe8227dfd25e3581ce9aef6166082982ef52af8e541521477e76ed7997d4a",
+  "lr005/run.py": "03a3ddd968bdbb56d229b4de98780f0ea364b91e7f9ade837b8f0025e1207b52",
+  "lr005/sim.py": "3190f27e3e4cf7133081a8bc2d3e86f008bc913d666a355607db699a4898df2c",
+  "lr005/tables.py": "874656575f3f4f00715478ec0082963403b47a591ddfc4d54c941d2006ce66e3",
+  "lr005/worker.py": "9e414e0b226a403e5d38080a5177cc544cbf212edd7f46b245751004f09f2f4c",
+  "mse/__init__.py": "fa7e51561446cbcd643acb4d1ffcd4b580a66bce5319b2628f28c29645f141fd",
+  "mse/assay.py": "cc88e489caf0fced8963b739f35570d3116926f3adde6249f0f4240c01563e48",
+  "mse/engine.py": "9b68a335ba52e85fa154d3ea55839f98f418dbd16697f0d887c0003f01a451d9",
+  "mse/native.py": "6fdf2719c8a9596d1968c94b7bd51cc07b4a5c4bea373201128a235f022d9e24",
+  "mse/ops.py": "e286b2c23e07296c5e3030a25a0e4f1c7a4dda91705fd260667d4a96580db687",
+  "mse/score.py": "fdc4de61dfeb4f99f6786c6ab8fda5c5d6ccaf9ecfada89130d1829b4ce80eef",
+  "mse/theory.py": "c6e5a7dadf6bf06d52ebaaba031401a0c3549c3cfa58186e75bdf14eb55865b9",
+  "msefield/__init__.py": "adb3e0df400af8d36374f93490b464253df29da8892b06041ea2ca3541d909ee",
+  "msefield/core.py": "5865c9ddabf6e2e935c50b93fcddfdbc5d5e7b2d4f1c2cfe8f9d756bc41aa442",
+  "msegrid/__init__.py": "d626f19334d6c7310ea4b2c1275ca93f3a1612c3bedf47e69e7cb7783e51e93f",
+  "msegrid/core.py": "1f277ab621c5b8edc239a61de9abadeb782a6bbd66a843d72cad5e0a22be724e",
+  "np001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "np001/analyze.py": "48d211e2788482e7692aff530f150af0cacef27dc56a11180642b4820b7fb761",
+  "np001/checks.py": "51c0fefd950134526490099922a0890cd45fdc6f460feb7299352a7d2a8c36e1",
+  "np001/design.py": "13ead9b2556b30d78995514fea03b6be85b35d2a6ca6117619a971f5c40833fd",
+  "np001/predict.py": "63ff4f91af79da4bdee02ef6ace2325a149bc0a3069ac0d5cab03068152e5d0b",
+  "np001/run.py": "a98859feb1709d6720a598ca251f385b2bc22acb4e686f42260900d61fb4fbe0",
+  "np001/sim.py": "5605794bc3f010da56f3d7fd109c7cbb8b971d40c20ac9d9a69c64dabac9a99b",
+  "np001/tables.py": "ba3d542dbf41c3607039678a6980fbba2d8092f15a14c0162f92632477bb0de0",
+  "np001/worker.py": "c576ee4d9afeb109ef7bfba28e6fc56c00776e1330f894f67ff79d9ade2dbc96",
+  "sr001/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sr001/analyze.py": "85c1480e35cb9b8a3aad454b8b18506669eaf53f3c3eb591b97a9e5121c48788",
+  "sr001/checks.py": "e85ae3da7b0e667635e3b513d85da914d0a448b6f49d3a91cf8cd275af895645",
+  "sr001/design.py": "f2d36366001b4b3420d15bf579b9d6e158b0561fc2a0a6c4adbbc1f5a71c57ea",
+  "sr001/predict.py": "e150968474d38edf0dda2bb0a335e3de57df1f6faeb33eefd52ba64b1661c184",
+  "sr001/run.py": "a4397462101e07fd8cad80b013086e147c8d4b9c6c412b8135463079d76a4e76",
+  "sr001/sim.py": "628a8f7e3f96c33718612211ba763e09b081c66742f323f2eb1a8d4ee83aa621",
+  "sr001/tables.py": "5999d3b24d4e75950f23cf844ab4209a7d4c45d58e58ab7f56726f9c5d8cd115",
+  "sr001/worker.py": "dce96861cf6cc20c121d030483e926f986d545dee2c0a493e0f7b01d30e8d0c6"
+ },
+ "design": {
+  "study": "E2E006",
+  "tag": "mse-e2e006",
+  "probe_tag": "mse-p63",
+  "clock": {
+   "eta_a": 0.0003,
+   "eta": 0.0003,
+   "rate": 2.9999999999999997e-05,
+   "tau_c": 15000
+  },
+  "t_gen": 8000,
+  "horizons": [
+   1,
+   3,
+   8
+  ],
+  "g_main": 8,
+  "g_debug": 3,
+  "policies": {
+   "vote": {
+    "never": true
+   },
+   "vms": {
+    "cue": {
+     "boxes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "n": 3,
+     "q": 1.0,
+     "ring": 2,
+     "ring_max": 0,
+     "dwell": 1
+    },
+    "body": null
+   },
+   "vtol": {
+    "cue": {
+     "boxes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "n": 3,
+     "q": 1.0,
+     "ring": 2,
+     "ring_max": 1,
+     "dwell": 1
+    },
+    "body": null,
+    "guard": {
+     "kind": "split",
+     "f": 0.5,
+     "free_ring_max": 0
+    }
+   }
+  },
+  "injury": {
+   "situation": "memory",
+   "size": 4,
+   "stream": [
+    "e2e003",
+    "injury"
+   ],
+   "rule": "per case and generation, the first attempt (address(tag, block, message, parent, 'e2e003', 'injury', g, attempt)) whose patch is disjoint from generation 0's patch and every earlier generation's"
+  },
+  "field": {
+   "module": "msefield",
+   "commit": "fb934f1f10",
+   "D": 0.25,
+   "gamma": 0.0625,
+   "leakage": 1.0,
+   "dt": 1.0,
+   "m": 4,
+   "margin": 0,
+   "positions": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "isolated_positions": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     0,
+     8
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     0,
+     12
+    ],
+    [
+     0,
+     14
+    ]
+   ],
+   "stress": "a sheet's mean |r - V-tilde| over its cells (the record's pull on its body): its own state only",
+   "emission": "equal to the stress",
+   "response": "the body's reading gain x (1 + kappa x exposure), inside the row's window",
+   "kappa": 1.944,
+   "kappa_early": 1.947,
+   "kappa_late": 1.94,
+   "kappa_isolated": 7.878,
+   "kappa_rule": "kappa x the shared group's mean exposure in the reference configuration (shared, full window, kappa 0: the field computed, no response; the debug record's 8 tasks, generations 1-8, tag mse-p63k) = 1, the exposure x(t) being what the response reads at update t; kappa_early, kappa_late: the same with the mean over updates 1-4,000 and 4,001-8,000, so the two windows carry equal integrated kappa x exposure (4,000 a generation in the reference); kappa_isolated: the same rule on the isolated reference; each rounded to four significant figures"
+  },
+  "group": "shared: the task's eight cases, one sheet each, at FIELD['positions'] (rectangle(2, 4)) in one Medium; isolated: the same eight sheets in one Medium at FIELD['isolated_positions'], non-adjacent cells, so eight disconnected blocks, each with its own absorbing boundary and no diffusion between them",
+  "windows": {
+   "full": [
+    1,
+    8000
+   ],
+   "early": [
+    1,
+    4000
+   ],
+   "late": [
+    4001,
+    8000
+   ]
+  },
+  "core": [
+   {
+    "label": "vote/none",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "vote/isolated",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "isolated",
+    "medium": "reset",
+    "window": "full"
+   },
+   {
+    "label": "vote/shared",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "full"
+   },
+   {
+    "label": "vote/isolated-matched",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "isolated",
+    "medium": "reset",
+    "window": "full",
+    "kappa_key": "isolated"
+   },
+   {
+    "label": "vote/shared-early",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 3,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "early"
+   },
+   {
+    "label": "vote/shared-late",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 3,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "late"
+   },
+   {
+    "label": "protected",
+    "packet": "protected",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "vtol-every",
+    "packet": "vtol/memory@0",
+    "policy": "vtol",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   }
+  ],
+  "optional": {},
+  "protected_copy": [
+   "protected"
+  ],
+  "rows_a": [
+   {
+    "label": "vote/none",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "vote/isolated",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "isolated",
+    "medium": "reset",
+    "window": "full"
+   },
+   {
+    "label": "vote/shared",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "full"
+   },
+   {
+    "label": "vote/shared-retained",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "retain",
+    "window": "full"
+   },
+   {
+    "label": "vote/shared-early",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "early"
+   },
+   {
+    "label": "vote/shared-late",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "late"
+   },
+   {
+    "label": "protected",
+    "packet": "protected",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "vtol-every",
+    "packet": "vtol/memory@0",
+    "policy": "vtol",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "uninjured",
+    "packet": "vote/none@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": false,
+    "field": "none",
+    "medium": "-",
+    "window": "-"
+   },
+   {
+    "label": "vtol-every/shared",
+    "packet": "vtol/memory@0",
+    "policy": "vtol",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "shared",
+    "medium": "reset",
+    "window": "full"
+   },
+   {
+    "label": "vote/isolated-matched",
+    "packet": "vote/memory@0",
+    "policy": "vote",
+    "sigma": 0.0,
+    "stop": 8,
+    "injured": true,
+    "field": "isolated",
+    "medium": "reset",
+    "window": "full",
+    "kappa_key": "isolated"
+   }
+  ],
+  "p63_rows": [
+   "vote/isolated",
+   "vote/shared",
+   "vote/shared-retained",
+   "vote/shared-early",
+   "vote/shared-late"
+  ],
+  "p63x_rows": [
+   "vote/isolated-matched",
+   "vote/none"
+  ],
+  "g_early_late": 3,
+  "fresh_at": [
+   1,
+   3,
+   8
+  ],
+  "fresh": {
+   "policy": "vote",
+   "injured": false,
+   "field": "none",
+   "names": [
+    "e2e006",
+    "fresh"
+   ]
+  },
+  "stage_fresh_at": {
+   "preflight": [
+    8
+   ],
+   "development": [
+    8
+   ]
+  },
+  "save_fresh_stages": [
+   "probe_x",
+   "preflight",
+   "development"
+  ],
+  "sources": {
+   "ar006/p57": {
+    "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/p57",
+    "tag": "mse-p57",
+    "purpose": "engineering"
+   },
+   "ar006/debug": {
+    "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/debug",
+    "tag": "mse-ar006",
+    "purpose": "engineering"
+   },
+   "ar006/preflight": {
+    "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/preflight",
+    "tag": "mse-ar006",
+    "purpose": "engineering"
+   },
+   "ar006/development": {
+    "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006/development",
+    "tag": "mse-ar006",
+    "purpose": "confirmation"
+   }
+  },
+  "stages": {
+   "probe": {
+    "ar006/p57": [
+     900917,
+     900919
+    ]
+   },
+   "debug": {
+    "ar006/debug": [
+     900948
+    ]
+   },
+   "preflight": {
+    "ar006/preflight": [
+     900929
+    ]
+   },
+   "development": {
+    "ar006/development": [
+     925614,
+     925615,
+     925616,
+     925617,
+     925618,
+     925619,
+     925620,
+     925621,
+     925622,
+     925624,
+     925626,
+     925627,
+     925628,
+     925630,
+     925633,
+     925634
+    ]
+   },
+   "probe_x": {
+    "ar006/p57": [
+     900917,
+     900919
+    ]
+   },
+   "kappa": {
+    "ar006/debug": [
+     900948
+    ]
+   }
+  },
+  "stage_tag": {
+   "probe": "mse-p63",
+   "probe_x": "mse-p63",
+   "kappa": "mse-p63k",
+   "debug": "mse-e2e006",
+   "preflight": "mse-e2e006",
+   "development": "mse-e2e006"
+  },
+  "stage_lineages": {
+   "probe": [
+    "vote/isolated",
+    "vote/shared",
+    "vote/shared-retained",
+    "vote/shared-early",
+    "vote/shared-late"
+   ],
+   "probe_x": [
+    "vote/isolated-matched",
+    "vote/none"
+   ],
+   "kappa": [
+    "vote/isolated@k0",
+    "vote/shared@k0"
+   ],
+   "debug": [
+    "vote/none",
+    "vote/isolated",
+    "vote/shared",
+    "vote/shared-retained",
+    "vote/shared-early",
+    "vote/shared-late",
+    "protected",
+    "vtol-every",
+    "uninjured",
+    "vtol-every/shared",
+    "vote/isolated-matched"
+   ],
+   "preflight": [
+    "vote/none",
+    "vote/isolated",
+    "vote/shared",
+    "vote/isolated-matched",
+    "vote/shared-early",
+    "vote/shared-late",
+    "protected",
+    "vtol-every"
+   ],
+   "development": [
+    "vote/none",
+    "vote/isolated",
+    "vote/shared",
+    "vote/isolated-matched",
+    "vote/shared-early",
+    "vote/shared-late",
+    "protected",
+    "vtol-every"
+   ]
+  },
+  "futures": {
+   "probe": 1,
+   "probe_x": 1,
+   "kappa": 1,
+   "debug": 1,
+   "preflight": 1,
+   "development": 1
+  },
+  "stage_parents": {},
+  "stage_stop_cap": {
+   "debug": 3
+  },
+  "stage_kappa": {
+   "kappa": 0.0
+  },
+  "stage_scored": {
+   "kappa": false
+  },
+  "kappa_tag": "mse-p63k",
+  "halves": {
+   "probe": [
+    [
+     900917
+    ],
+    [
+     900919
+    ]
+   ],
+   "probe_x": [
+    [
+     900917
+    ],
+    [
+     900919
+    ]
+   ],
+   "development": [
+    [
+     925614,
+     925615,
+     925616,
+     925617,
+     925618,
+     925619,
+     925620,
+     925621
+    ],
+    [
+     925622,
+     925624,
+     925626,
+     925627,
+     925628,
+     925630,
+     925633,
+     925634
+    ]
+   ]
+  },
+  "bodies": [
+   "dw",
+   "li4"
+  ],
+  "units": [
+   "S4_t0",
+   "S4_t1",
+   "F0_t0",
+   "F0_t1"
+  ],
+  "item_sets": {
+   "native": [
+    [
+     "li4",
+     "S4_t0"
+    ],
+    [
+     "li4",
+     "S4_t1"
+    ]
+   ],
+   "particular": [
+    [
+     "li4",
+     "F0_t0"
+    ],
+    [
+     "li4",
+     "F0_t1"
+    ]
+   ],
+   "permissive": [
+    [
+     "dw",
+     "S4_t0"
+    ],
+    [
+     "dw",
+     "S4_t1"
+    ],
+    [
+     "dw",
+     "F0_t0"
+    ],
+    [
+     "dw",
+     "F0_t1"
+    ]
+   ]
+  },
+  "k_rule": 1.6770509831248424,
+  "step": 0.01,
+  "step_near0": 0.005,
+  "at_most_max": 0.05,
+  "c_q": 0.75,
+  "size": 4,
+  "side": 32,
+  "ar001_digest": "051af4cc7450c7b649b75d0abdf63ef0c8fd68b7935707b9bd35535e47fc00b1",
+  "ar006_digest": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c",
+  "e2e002_digest": "3c1753d0fccb8afc10e388d3a67deb94e3c947b7e7051e5fdf1e221bd647661a",
+  "e2e003_digest": "f65ac359f81f9484f27eae1d7f2813192b3db6d11b843c07eb8ff8b988b1099e"
+ },
+ "amendment_4": {
+  "utc": "2026-11-05T15:20:10Z",
+  "source": "e2e006/checks.py",
+  "was": "a7f2dfbb9eafed13f949b187323660f67769ce71e3da07226422b1b82c05abee",
+  "now": "6b9b04c2b09bfe01013f4a628ac52204d4c0be190048e2a4d13a93e5d065ca23",
+  "why": "the --only helper renamed from want to chosen (11 places, plus one comment) after the preflight's first Q1-Q10 run crashed in Q6 (a name collision with Q5's local list); no check's logic changed; the lead's word of 15:17:48Z"
+ }
+}

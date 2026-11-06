@@ -1,0 +1,227 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "051af4cc7450c7b649b75d0abdf63ef0c8fd68b7935707b9bd35535e47fc00b1",
+ "computed_utc": "2026-10-30T23:20:01Z",
+ "best": "vote",
+ "thresholds": {
+  "A1": 1e-12,
+  "A2": 0.04,
+  "A3": 0.0,
+  "A4": 0.03,
+  "A4d": 0.04,
+  "A5r": 0.3,
+  "A5b": 0.1,
+  "A5v": 0.1,
+  "A6c": 0.01,
+  "A6n": 0.002,
+  "A7": 0.1,
+  "A8n": 0.02,
+  "A8m": 0.2,
+  "A9late": 0.0,
+  "A9early": -0.02,
+  "A10off": 0.05,
+  "A10half": -0.15,
+  "A10wide": 0.02,
+  "A11c": 0.0,
+  "A11n": 0.0
+ },
+ "parts": [
+  {
+   "stmt": "A1",
+   "name": "A1 max over arms and cases of abs(u(new) + u(old) - 1), change@0 and change@1",
+   "sense": "le",
+   "key": "A1",
+   "threshold": 1e-12
+  },
+  {
+   "stmt": "A2",
+   "name": "A2 U_ctrl(h 1, f 0) - U(BEST)",
+   "sense": "ge",
+   "key": "A2",
+   "threshold": 0.04
+  },
+  {
+   "stmt": "A3",
+   "name": "A3 U_ctrl(h 0.75, f 0.25) - U(BEST)",
+   "sense": "ge",
+   "key": "A3",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "A4",
+   "name": "A4 U_ctrl(h 0.5, f 0.5) - U(BEST)",
+   "sense": "le",
+   "key": "A4",
+   "threshold": 0.03
+  },
+  {
+   "stmt": "A4",
+   "name": "A4 U_ctrl(h 1, f 0) - U_ctrl(h 1, f 1)",
+   "sense": "ge",
+   "key": "A4d",
+   "threshold": 0.04
+  },
+  {
+   "stmt": "A5",
+   "name": "A5 u(dial, correlated) - u(record, correlated)",
+   "sense": "ge",
+   "key": "A5r",
+   "threshold": 0.3
+  },
+  {
+   "stmt": "A5",
+   "name": "A5 u(dial, correlated) - u(body, correlated)",
+   "sense": "ge",
+   "key": "A5b",
+   "threshold": 0.1
+  },
+  {
+   "stmt": "A5",
+   "name": "A5 u(dial, correlated) - u(vote, correlated)",
+   "sense": "ge",
+   "key": "A5v",
+   "threshold": 0.1
+  },
+  {
+   "stmt": "A6",
+   "name": "A6 sham cost to the sheet, cue@0: r_all(rest) - r_all(dial)",
+   "sense": "le",
+   "key": "A6c",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "A6",
+   "name": "A6 sham cost to the sheet, none@0: r_all(rest) - r_all(dial)",
+   "sense": "le",
+   "key": "A6n",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "A7",
+   "name": "A7 cue@0 sheet: r_all(arbiter) - r_all(latch)",
+   "sense": "ge",
+   "key": "A7",
+   "threshold": 0.1
+  },
+  {
+   "stmt": "A8",
+   "name": "A8 u(record, none) - u(body, none)",
+   "sense": "ge",
+   "key": "A8n",
+   "threshold": 0.02
+  },
+  {
+   "stmt": "A8",
+   "name": "A8 u(body, memory) - u(record, memory)",
+   "sense": "ge",
+   "key": "A8m",
+   "threshold": 0.2
+  },
+  {
+   "stmt": "A9",
+   "name": "A9 u(dial-m2, memory) - u(dial, memory)",
+   "sense": "le",
+   "key": "A9late",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "A9",
+   "name": "A9 u(dial-m0.5, memory) - u(dial, memory)",
+   "sense": "ge",
+   "key": "A9early",
+   "threshold": -0.02
+  },
+  {
+   "stmt": "A10",
+   "name": "A10 u(dial-s6, memory) - u(rest, memory)",
+   "sense": "le",
+   "key": "A10off",
+   "threshold": 0.05
+  },
+  {
+   "stmt": "A10",
+   "name": "A10 u(dial-s4, memory) - u(dial, memory)",
+   "sense": "le",
+   "key": "A10half",
+   "threshold": -0.15
+  },
+  {
+   "stmt": "A10",
+   "name": "A10 sham(cue@0, dial-d8) - sham(cue@0, dial)",
+   "sense": "ge",
+   "key": "A10wide",
+   "threshold": 0.02
+  },
+  {
+   "stmt": "A11",
+   "name": "A11 u(dial, change/new) misread - exact",
+   "sense": "le",
+   "key": "A11c",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "A11",
+   "name": "A11 u(dial, none) misread - exact",
+   "sense": "le",
+   "key": "A11n",
+   "threshold": 0.0
+  }
+ ],
+ "statements": [
+  {
+   "id": "A1",
+   "claim": "on the information-limit pair every policy ties, the controller included",
+   "rule": "HOLDS if, in change@0 and change@1, the largest abs(u(arm, change/new) + u(arm, change/old) - 1) over every arm and case is at most 1e-12, else FAILS (derived identity)"
+  },
+  {
+   "id": "A2",
+   "claim": "with a perfect signal the controller beats the best fixed policy",
+   "rule": "HOLDS if U_ctrl(h 1, f 0) - U(BEST) >= 0.04, else FAILS"
+  },
+  {
+   "id": "A3",
+   "claim": "and with a moderately reliable one",
+   "rule": "HOLDS if U_ctrl(h 0.75, f 0.25) - U(BEST) >= 0, else FAILS"
+  },
+  {
+   "id": "A4",
+   "claim": "an uninformative signal buys nothing; discrimination is what pays",
+   "rule": "HOLDS if U_ctrl(h 0.5, f 0.5) - U(BEST) <= 0.03 and U_ctrl(h 1, f 0) - U_ctrl(h 1, f 1) >= 0.04, else FAILS"
+  },
+  {
+   "id": "A5",
+   "claim": "copies cannot repair an error they share; the signalled cue can",
+   "rule": "HOLDS if, in correlated errors, u(dial) - u(record) >= 0.3, u(dial) - u(body) >= 0.1 and u(dial) - u(vote) >= 0.1, else FAILS"
+  },
+  {
+   "id": "A6",
+   "claim": "a false alarm costs the sheet little",
+   "rule": "HOLDS if r_all(rest) - r_all(dial) is at most 0.01 under scattered cue damage and at most 0.002 with no event (a derived bound; BE002's floor), else FAILS"
+  },
+  {
+   "id": "A7",
+   "claim": "a cue latch held for the calibrated commitment turns scattered cue corruption into lasting false re-specification",
+   "rule": "HOLDS if, under scattered cue damage, r_all(arbiter) - r_all(latch) >= 0.1, else FAILS"
+  },
+  {
+   "id": "A8",
+   "claim": "which source to trust depends on the situation",
+   "rule": "HOLDS if u(record, none) - u(body, none) >= 0.02 and u(body, memory) - u(record, memory) >= 0.2, else FAILS"
+  },
+  {
+   "id": "A9",
+   "claim": "the evidence clock bounds the controller",
+   "rule": "HOLDS if, in memory damage, u(dial-m2) - u(dial) <= 0 and u(dial-m0.5) - u(dial) >= -0.02, else FAILS"
+  },
+  {
+   "id": "A10",
+   "claim": "the signal must be where the damage is",
+   "rule": "HOLDS if, in memory damage, u(dial-s6) - u(rest) <= 0.05 and u(dial-s4) - u(dial) <= -0.15, and under scattered cue damage sham(dial-d8) - sham(dial) >= 0.02, else FAILS"
+  },
+  {
+   "id": "A11",
+   "claim": "misread cues cost the controller",
+   "rule": "HOLDS if, at GC001's sigma 1 against sigma 0, the differences in u(dial, change/new) and in u(dial, none) are each <= 0, else FAILS"
+  }
+ ]
+}

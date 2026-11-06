@@ -1,0 +1,269 @@
+{
+  "all_sources_retained": true,
+  "before_anchored_scientific_outcomes": true,
+  "old_outcomes_known": true,
+  "qualification_sha256": "48956342b4b517faed6a9ebdaf9a60048fbc3d209600fb83437b74c154e18c9e",
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "free_bytes": 10680725504,
+    "other_busy_capacity": 9,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1515969,
+        "sampled_cpu_percent": 64.2425414776265,
+        "threads": 1,
+        "ticks": 68391
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1515972,
+        "sampled_cpu_percent": 70.9544487961845,
+        "threads": 1,
+        "ticks": 68324
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1515973,
+        "sampled_cpu_percent": 87.25479514125391,
+        "threads": 1,
+        "ticks": 69425
+      },
+      {
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "pid": 1515974,
+        "sampled_cpu_percent": 86.29595123860277,
+        "threads": 1,
+        "ticks": 68913
+      },
+      {
+        "affinity": [
+          2
+        ],
+        "pid": 1516756,
+        "sampled_cpu_percent": 81.50173172534704,
+        "threads": 6,
+        "ticks": 56456
+      },
+      {
+        "affinity": [
+          7
+        ],
+        "pid": 1518506,
+        "sampled_cpu_percent": 91.09017075185847,
+        "threads": 1,
+        "ticks": 31908
+      },
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 1518509,
+        "sampled_cpu_percent": 48.901039035208235,
+        "threads": 1,
+        "ticks": 28171
+      },
+      {
+        "affinity": [
+          4
+        ],
+        "pid": 1518812,
+        "sampled_cpu_percent": 58.489478061719645,
+        "threads": 1,
+        "ticks": 26538
+      },
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 1520136,
+        "sampled_cpu_percent": 47.94219513255709,
+        "threads": 3,
+        "ticks": 3652
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-29T13:05:27.073650+00:00"
+  },
+  "settings": {
+    "absolute_noise_offsets": true,
+    "anchor_and_later_average": "equal weight across O/N original anchors and O/N later noise",
+    "anchored_outcomes_unseen_at_freeze": true,
+    "attenuation_only": true,
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "blocks": [
+      1120000,
+      1120001,
+      1120002,
+      1120003,
+      1120004,
+      1120005,
+      1120006,
+      1120007,
+      1120008,
+      1120009,
+      1120010,
+      1120011,
+      1120012,
+      1120013,
+      1120014,
+      1120015,
+      1120016,
+      1120017,
+      1120018,
+      1120019,
+      1120020,
+      1120021,
+      1120022,
+      1120023,
+      1120024,
+      1120025,
+      1120026,
+      1120027,
+      1120028,
+      1120029,
+      1120030,
+      1120031
+    ],
+    "bootstrap_samples": 10000,
+    "components": [
+      "OB",
+      "OM",
+      "OD",
+      "NB",
+      "NM",
+      "ND"
+    ],
+    "conditions": [
+      "OBO",
+      "OBN",
+      "OMO",
+      "OMN",
+      "ODO",
+      "ODN",
+      "NBO",
+      "NBN",
+      "NMO",
+      "NMN",
+      "NDO",
+      "NDN"
+    ],
+    "confidence": 0.95,
+    "config": {
+      "birth_sd": 0.05,
+      "dt": 0.2,
+      "margin": 0.25,
+      "noise": 0.02,
+      "observe_steps": 32,
+      "recipients": 4
+    },
+    "contrast": "gross anchored m sensitivity minus gross anchored d sensitivity of C-F success",
+    "draws": [
+      0,
+      1
+    ],
+    "exact_archived_reuse": "baseline or scale 0/1 only, by state-derived scale; partial scales get new readers",
+    "fixed_birth": "O",
+    "free_cells": "living cells excluding cue clamp; output ports included",
+    "inference_scope": "new controlled intervention on known sources, not fresh-source confirmation",
+    "initial_arithmetic": "anchor + scale*(original full-component target - anchor); exact endpoints at scale 0 or 1",
+    "initial_bounds": [
+      -2.0,
+      2.0
+    ],
+    "initial_clipping": false,
+    "max_workers": 4,
+    "mode": "scientific",
+    "new_injuries": false,
+    "new_source_blocks": 0,
+    "new_streams": false,
+    "norm": "mean absolute component difference over free cells, pooled equally across C/F",
+    "old_outcomes_known": true,
+    "original_later_streams": [
+      "O",
+      "N"
+    ],
+    "pair_common_scales": true,
+    "paired_cue_noise": true,
+    "placement": "from each original OO/NN diagonal state toward the opposite component; other component fixed",
+    "positive_criterion": "95% whole-source interval lower bound strictly above zero",
+    "primary": "anchored_shared_minus_cue_delta_both",
+    "primary_group": "mixture/pooled/pooled/eligible",
+    "prior_primaries_unchanged": true,
+    "reader": {
+      "read_steps": 2048,
+      "settling_steps": 1024
+    },
+    "recipients": 4,
+    "resource_limit_seconds": 43200,
+    "scales": "E114 target/original component size; zero original norm gives zero scale",
+    "scopes": [
+      "all",
+      "eligible",
+      "affected",
+      "erased"
+    ],
+    "source_recipe": "all completed E112 sources and unchanged safe four-cycle witnesses; E114 scales unchanged",
+    "source_selection": false,
+    "summary_allowance_seconds": 180,
+    "switch_step": 1024,
+    "target": "min(original_m_size,original_d_size)",
+    "timing_margin": 3,
+    "variant_specific_norms_not_forced_equal": true,
+    "variants": [
+      "C",
+      "F"
+    ],
+    "witness_reselection": false,
+    "writer_dynamics_repeated": false,
+    "zero_targets_retained": true
+  },
+  "utc": "2026-10-29T13:05:28.144987+00:00"
+}

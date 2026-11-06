@@ -1,0 +1,6 @@
+{
+  "error": "AssertionError()",
+  "recorded_utc": "2026-10-30T17:38:17.580100+00:00",
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT048/preflight.py\", line 24, in <module>\n    try:main()\n        ~~~~^^\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT048/preflight.py\", line 10, in main\n    proof=checks.run();write(directory/'FIXTURES.json',proof)\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT048/checks.py\", line 34, in run\n    assert methods.eligible(g,c)['weighted_disagreement']==.05 and methods.eligible(g,c)['eligible']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

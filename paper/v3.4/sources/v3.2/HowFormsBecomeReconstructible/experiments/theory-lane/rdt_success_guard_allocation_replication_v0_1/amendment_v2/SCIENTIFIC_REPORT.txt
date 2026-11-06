@@ -1,0 +1,141 @@
+Fresh-founder success-guard allocation replication: scientific closeout
+
+Status: COMPLETE_AUDITED_CLOSED
+Frozen decision: ALLOCATION_REPLICATION_SUPPORTED
+Run completed: 2026-10-28T21:52:32.824183+00:00
+Closeout: 2026-10-28T22:02:50.038591+00:00
+
+The single frozen primary prediction passed. With independent cue noise, the
+current-success guard achieved 1685/2016 successful original-task reads at g16..33
+(83.5813%), versus 1415/2016 (70.1885%) for matched random allocation. The paired
+mean difference was +13.3929 percentage points, two-sided 95% t interval
+[+6.3143,+20.4715]; the one-sided 95% lower limit was +7.5167 points. The uncertainty
+unit is the acquisition block: 28 blocks, df27. The 112 packets and 2016 repeated
+read opportunities per policy are not independent replicates. The frozen criterion
+was a nondegenerate one-sided lower limit above zero. No additional primary was
+substituted, and no outcome-driven extension or optional stopping was performed.
+
+policy                      g16..33 mean %   g33 terminal %   uninterrupted %   rewrites %
+Always promote                    71.8254          70.5357           66.9643     100.0000
+Matched random allocation         70.1885          69.6429           62.5000      82.4405
+Current-success guard             83.5813          85.7143           71.4286      82.4405
+Protected retain                  65.5754          68.7500           33.9286       0.0000
+
+Terminal and uninterrupted endpoints each have denominator112. Counts in the table's
+policy order are terminal79,78,96,77 and uninterrupted75,70,80,38. Uninterrupted means
+success on all18 post-action reads g16..33, excluding the shared pre-action g15 read.
+All endpoints score the original acquired rule, not an arbitrary stable output.
+
+Guard and matched random each used exactly1662 rewrites out of2016 decisions.
+Their aggregate rewrite counts matched within every block and decision generation
+(g15..32). This rules out a difference in aggregate rewrite frequency or timing as
+the explanation for their observed contrast within this design. Counts were not
+matched within individual packets or historical classes. At each step the random
+policy receives K, the guard's contemporaneous number of successful packets, then
+rewrites a uniform subset of K of its own four packets. It is a coupled diagnostic
+control, not a standalone scheduler. All four policies have their own evolving
+records and receive paired native forcing. All pay for native reads and candidate
+construction, including rejected candidates; the guard donor computation is counted.
+
+Secondary endpoints and recovery
+The guard-minus-random terminal difference was +16.0714 points, descriptive two-sided
+95% interval[+8.0626,+24.0802]. Its uninterrupted difference was +8.9286 points,
+interval[+2.9039,+14.9532]. The guard-minus-always-promote average difference was
++11.7560 points, interval[+6.7434,+16.7685]; versus protected retain it was +18.0060
+points, interval[+13.6616,+22.3503]. These intervals are unadjusted secondary summaries,
+not additional confirmatory tests. Unlike this cohort, the preceding development
+cohort had a negative point difference for guard versus random uninterrupted success;
+that earlier observation remains in the record.
+
+Among39 shared g15 failures, the guard yielded375/702 later successes versus161/702
+for random, with at least one later success in24 versus11 packets and terminal
+success in24 versus9. Among73 initial passes, the later-success totals were1310/1314
+versus1254/1314. The strata contribute214 and56 of the270 extra successful reads:
+79.26% of the overall difference came from the initial-failure stratum. These are
+descriptive decompositions of this completed study, not a frozen recovery prediction.
+Guard and protected retain have identical first-success times by construction: both
+keep the same original record until the guard first passes. Their shared first
+recovery supplies no independent evidence of a recovery mechanism. Subsequent
+retention, average occupancy, terminal expression and uninterrupted success remain
+separate endpoints.
+
+Design and provenance
+The original scientific prediction, sample size, namespace, controls and selection
+rule were frozen before acquisition. The development evidence and its effect size
+informed the hypothesis and sample size; this is a prospective replication on fresh
+founders within the same programme, not external preregistration or an independent
+laboratory replication. Its domain is the declared balanced acquisition procedure:
+four original g14 packets per block, two g14 failures and two g14 passes. Random
+injury affects24 of244 non-port cells. Only independent cue noise was tested here;
+there is no fresh matched-noise comparison or noise-interaction test in this study.
+The reader used2048 steps,1024 settling steps,dt0.2,cue noise0.02,birth SD0.05 and
+32 late frames; success required all four original-rule aligned means above0.25.
+The original beta3 writer and exact-zero returning-edge fallback were unchanged.
+
+All35 acquisition attempts are preserved. First28 eligible blocks were selected
+in the frozen block order, after complete logical seven-block acquisition groups.
+Blocks6 and23 were ineligible;30..34 were eligible surplus. The selected cohort and
+policy seal preceded FUTURE_RELEASE at2026-10-28T21:35:52.159618+00:00, and all target
+continuations began after that release. g15 is a shared pre-action read; g15..32
+provide18 rewrite decisions, and the terminal g33 candidate is not inherited.
+
+The first attempt stopped at the shared CPU admission gate after659.817 seconds,
+with14 committed acquisitions and passed native qualification but no target futures.
+Resource amendment2 reused those exact14 acquisitions and qualification, retained
+all scientific fields and stream identities, and reduced physical workers from7 to4.
+Logical seven-block acquisition groups remained intact as physical4+3 batches.
+No scientific continuation outcomes existed at amendment. Original commitments and
+failure records retain their original hashes and were not overwritten.
+
+Cost and verification
+Resumed run: 1861.329 seconds (31m01s).
+Earlier stopped attempt charged once: 659.817 seconds (11m00s).
+Combined charged run time: 2521.146 seconds (42m01s), within the
+7200-second combined cap and below one hour. This is the sum of run durations;
+it excludes the pause between attempts and preparation/closeout work. The amended
+run used four one-thread workers plus one parent reserve, with a shared allowance
+of12 threads. All14 CPU admissions passed;13 worker batches completed with no
+capacity waiting. The recorded parent PID1222631 was absent on the host when checked
+at2026-10-28 21:53UTC. No successor or retry was launched.
+
+Full reader evaluations, counting imported work and qualification exactly once:
+  Scientific acquisition:31360 primary+420 flat=31780 (70 teaching episodes).
+  Scientific continuation:8512 primary+8512 full flat=17024.
+  Reused qualification acquisition:2688 primary+36 flat=2724 (6 teaching episodes).
+  Reused qualification continuation:1216 primary+1216 full flat=2432.
+  Combined native total:53960. Newly run after the amendment:36092.
+All software preparations separately add128 full reads and1824..2432 short32-step
+reads including the diagnostic. The uncertainty reflects an earlier failed software
+attempt's unmeasured executed short-read count; planned counts are not presented as
+measured cost. The original launcher memory-history failures and their correction
+remain recorded. The final amended software qualification passed all38 checks.
+
+Independent closeout verified83 amended input files and1095 output files, plus72
+original inputs and443 stopped-run artifacts. It verified35 acquisition commitments,
+independently checked2240 g14 boundary labels and selection hashes, reconstructed
+selection and selected packet identity, and re-scored9728 saved native continuation
+readouts across28 target and4 reused qualification units. It checked512 saved full
+flat-reader policy chains,576 actual block-generation quotas (504 target), action RNG,
+record inheritance,448 target outcome records,169 exact-rational block summaries,
+and8 descriptive recovery cells. The audit imports no study modules and generated
+no new native dynamics. It checks saved full flat evidence; it does not claim a new
+third implementation of the native dynamics or a full forcing rerun.
+
+Interpretation
+This strengthens the evidence that selecting rewrites by current task success can
+improve finite continuation beyond matched aggregate rewrite count and timing under
+this acquisition and disturbance distribution. It does not establish an RDT-specific
+mechanism, a general continuation law, a validated short-probe predictor, or autonomous
+maintenance. Known task labels, protected retained storage, recurring cues, reader
+and writer are supplied. No compact RDT reduction was fitted or tested in this study.
+The previous noise-precision result remains supported, the earlier six-test study
+remains unresolved, and the historical-guard and conditional-benefit failures remain
+closed. This result does not retroactively qualify them.
+
+Next scientific decision: use this qualified ordinary feedback policy and the matched
+allocation control as explicit comparators for any proposed RDT prediction or repair
+schedule. A further prediction, computational budget and rejection criterion must be
+fixed before new outcomes. This closeout creates no successor study or launch.
+
+Evidence: runs/replication_v2/COMPLETE.json, OUTPUTS.json, ANALYSIS.json;
+checks/INDEPENDENT_CLOSEOUT_AUDIT.json; checks/SCIENTIFIC_CLOSEOUT.json.

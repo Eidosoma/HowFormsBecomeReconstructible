@@ -1,0 +1,147 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "7cd71b5b29cf573292c240f5245e1d0df45ca368c05b277079b7775631b94233",
+ "computed_utc": "2026-11-01T22:33:46Z",
+ "best": "vote",
+ "controller": "vpool",
+ "thresholds": {
+  "G1": 0.04,
+  "G2": -0.005,
+  "G3a": 0.008,
+  "G3b": 0.029,
+  "G3c": 0.002,
+  "G5n": -0.005,
+  "G5n1": -0.03,
+  "G6_4": 0.25,
+  "G6_8": 0.3,
+  "G6d": 0.04,
+  "G7": 0.09
+ },
+ "parts": [
+  {
+   "stmt": "G1",
+   "name": "G1 R1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vms, memory@1)",
+   "sense": "ge",
+   "key": "G1",
+   "threshold": 0.04
+  },
+  {
+   "stmt": "G2",
+   "name": "G2 R0 = (1/3) sum over sizes of u(vpool, memory@0) - u(vms, memory@0)",
+   "sense": "ge",
+   "key": "G2",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 (a) the trade-off: sheet cost under scattered cue damage, vpool less vms, cue@0",
+   "sense": "ge",
+   "key": "G3a",
+   "threshold": 0.008
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 (b) vpool's sheet cost under scattered cue damage: r_all(vote) - r_all(vpool), cue@0",
+   "sense": "le",
+   "key": "G3b",
+   "threshold": 0.029
+  },
+  {
+   "stmt": "G3",
+   "name": "G3 (c) vpool's sheet cost with no event: r_all(vote) - r_all(vpool), none@0 (the confirmed bound)",
+   "sense": "le",
+   "key": "G3c",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 u(vpool) - u(vote) in the 4 x 4 patch, none@0",
+   "sense": "ge",
+   "key": "G5n",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "G5",
+   "name": "G5 u(vpool, none@1) - u(vote, none@0) in the 4 x 4 patch",
+   "sense": "ge",
+   "key": "G5n1",
+   "threshold": -0.03
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 p(vpool fires on the patch | memory@1, 4 x 4)",
+   "sense": "ge",
+   "key": "G6_4",
+   "threshold": 0.25
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 p(vpool fires on the patch | memory@1, 8 x 8)",
+   "sense": "ge",
+   "key": "G6_8",
+   "threshold": 0.3
+  },
+  {
+   "stmt": "G6",
+   "name": "G6 p(on the patch | memory@1, 4 x 4): vpool - vms",
+   "sense": "ge",
+   "key": "G6d",
+   "threshold": 0.04
+  },
+  {
+   "stmt": "G7",
+   "name": "G7 W1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vote, memory@0)",
+   "sense": "ge",
+   "key": "G7",
+   "threshold": 0.09
+  }
+ ],
+ "dropped": [
+  {
+   "stmt": "G4",
+   "name": "G4 sheet cost under misreads with no event: r_all(vote, none@0) - r_all(vpool, none@1)",
+   "sense": "le",
+   "key": "G4",
+   "threshold": 0.01,
+   "why": "AR003's E9 bound 0.01, as planned; on P51 +0.010094 (halves +0.008522, +0.011665), margin -0.04: the value and the second half exceed it"
+  }
+ ],
+ "reported": [
+  {
+   "name": "G5's cue@0 part, u(vpool) - u(vote) in the 4 x 4 patch, cue@0: the trade-off inside the patch",
+   "why": "on P51 -0.0325, patch cells lost to the vote in 17 of 256 lineage-cases against vms's 1; the -0.11 the rule allowed bounds nothing a reader can use"
+  }
+ ],
+ "statements": [
+  {
+   "id": "G1",
+   "claim": "under misread cues the pooled detector recovers worth the confirmed controller loses",
+   "rule": "HOLDS if R1 = (1/3) sum over sizes 2, 4, 8 of u(vpool, memory@1) - u(vms, memory@1) >= 0.04, else FAILS"
+  },
+  {
+   "id": "G2",
+   "claim": "at sigma 0 it keeps the confirmed controller's hits (non-inferiority)",
+   "rule": "HOLDS if R0 = (1/3) sum over sizes of u(vpool, memory@0) - u(vms, memory@0) >= -0.005, else FAILS"
+  },
+  {
+   "id": "G3",
+   "claim": "the trade-off: pooling's false alarms under scattered cue damage cost intact tissue more than the confirmed controller's, by at least a measured amount, and at most a measured amount in all (the confirmed 0.01 bound is reported beside it as context, not claimed); with no event at sigma 0 they cost it within the confirmed bound",
+   "rule": "HOLDS if (r_all(vote) - r_all(vpool)) - (r_all(vote) - r_all(vms)) in cue@0 >= 0.008, r_all(vote) - r_all(vpool) in cue@0 <= 0.029, and r_all(vote) - r_all(vpool) in none@0 <= 0.002, else FAILS"
+  },
+  {
+   "id": "G5",
+   "claim": "it gives up nothing to the vote with no event, with or without misread cues (non-inferiority)",
+   "rule": "HOLDS if u(vpool) - u(vote) in the 4 x 4 patch is at least -0.005 in none@0, and u(vpool, none@1) - u(vote, none@0) >= -0.03, else FAILS"
+  },
+  {
+   "id": "G6",
+   "claim": "it finds memory damage on the patch under misread cues, more often than the confirmed controller",
+   "rule": "HOLDS if vpool fires with its footprint on the patch in at least 0.25 of memory@1 lineage-cases at 4 x 4 and 0.3 at 8 x 8, and its 4 x 4 rate exceeds vms's by at least 0.04, else FAILS"
+  },
+  {
+   "id": "G7",
+   "claim": "under misread cues the controller still beats the best fixed policy over the sizes",
+   "rule": "HOLDS if W1 = (1/3) sum over sizes of u(vpool, memory@1) - u(vote, memory@0) >= 0.09, else FAILS"
+  }
+ ]
+}

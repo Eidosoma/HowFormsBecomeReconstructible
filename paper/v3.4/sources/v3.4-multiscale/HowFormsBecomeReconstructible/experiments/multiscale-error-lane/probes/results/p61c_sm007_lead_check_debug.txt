@@ -1,0 +1,48 @@
+P61c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm007/debug (debug, DRY RUN on engineering records): 4 task-files, every sha256 equal to the manifest's; digest 6f83374954e2; 58 arrangements; futures [0, 1]; every restored record's sha256 and rebuilt acquisition equal
+  the layout: in every task every arrangement covers its 8 cases in the plan's cyclic groups (every case at least once; a case's value the mean over its sheets), the same births and noise per case in every arrangement
+  the endpoint rescored from the saved final bodies (4072 sheets): largest |difference| in sign and a_v 0.0e+00
+
+  G refitted by the lead from P61's pilot values (x = L_eff / lambda from the lead's own operator, m 8): knots (0.5090, 0.8390), (0.6357, 0.8637), (0.6943, 0.8747), (0.7130, 0.8808), (0.9579, 0.9019), (1.2041, 0.9168)
+
+THE PARTS (1 blocks x 8 cases; per case the mean over the four pairs and the futures; [95% t interval])
+  M1 a(2x4/absorbing) - a(1x8/absorbing): +0.027969 [+nan, +nan] (SD 0.003305: block nan, case/sqrt8 0.003305; halves +0.027969 +0.027969); registered >= 0.02: HOLDS
+      by item set: particular (li4 x F0) +0.064636; native (li4 x S4) +0.013184; permissive (dw) +0.017029
+  M2 a(2x2/absorbing) - a(1x4/absorbing): +0.020767 [+nan, +nan] (SD 0.003014: block nan, case/sqrt8 0.003014; halves +0.020767 +0.020767); registered >= 0.01: HOLDS
+      by item set: particular (li4 x F0) +0.041626; native (li4 x S4) +0.011047; permissive (dw) +0.015198
+  M3 a(1x8/sealed) - a(1x8/absorbing): +0.065323 [+nan, +nan] (SD 0.002536: block nan, case/sqrt8 0.002536; halves +0.065323 +0.065323); registered >= 0.07: FAILS
+      by item set: particular (li4 x F0) +0.175781; native (li4 x S4) +0.026611; permissive (dw) +0.029449
+  M4 a(2x4/absorbing) - a(iso8/absorbing): +0.061417 [+nan, +nan] (SD 0.004674: block nan, case/sqrt8 0.004674; halves +0.061417 +0.061417); registered >= 0.05: HOLDS
+      by item set: particular (li4 x F0) +0.117004; native (li4 x S4) +0.032471; permissive (dw) +0.048096
+  M5 a(2x4/absorbing) - a(2x4/absorbing/uniform): -0.000702 [+nan, +nan] (SD 0.003966: block nan, case/sqrt8 0.003966; halves -0.000702 -0.000702); registered [-0.02, 0.01]: HOLDS
+      by item set: particular (li4 x F0) -0.001526; native (li4 x S4) -0.001465; permissive (dw) +0.000092
+  M6 a(2x4/absorbing/rearranged) - a(2x4/absorbing): -0.001144 [+nan, +nan] (SD 0.007212: block nan, case/sqrt8 0.007212; halves -0.001144 -0.001144); registered [-0.02, 0.02]: HOLDS
+      by item set: particular (li4 x F0) +0.000122; native (li4 x S4) +0.000366; permissive (dw) -0.002533
+  M7 G's mean absolute error, the new shapes at lambda (P61: interior leave-one-out): +0.037920 [+nan, +nan] (SD nan: block nan, case/sqrt1 nan; halves +0.037920 +0.037920); registered <= 0.03: FAILS
+  M8 G's mean absolute error, absorbing at lambda2: +0.038644 [+nan, +nan] (SD nan: block nan, case/sqrt1 nan; halves +0.038644 +0.038644); registered <= 0.03: FAILS
+  M9 a(2x4/sealed) - a(1x8/sealed): -0.000061 [+nan, +nan] (SD 0.000033: block nan, case/sqrt8 0.000033; halves -0.000061 -0.000061); registered [-0.005, 0.005]: HOLDS
+      by item set: particular (li4 x F0) +0.000000; native (li4 x S4) -0.000122; permissive (dw) -0.000061
+  VERDICTS (development: the point value against the registered threshold or band): M1 HOLDS, M2 HOLDS, M3 FAILS, M4 HOLDS, M5 HOLDS, M6 HOLDS, M7 FAILS, M8 FAILS, M9 HOLDS  [not a development result]
+
+REPORTED (the lead's)
+  the plan's f by the lead's operator, checked against the plan's own values: sealed 2x4 1.000000000000, 1x8 1.000000000000; half leak at lambda 0.5 2x4 0.557, 1x8 0.391 (the plan: 0.557 and 0.391)
+  f absorbing at lambda (the lead's): iso8 0.1734, 1x2 0.2381, 2x2 0.3816, 1x4 0.2742, 2x4 0.4761, 1x8 0.2923, 1x3 0.2621, 2x3 0.4440, 1x6 0.2863, L4 0.2831, T4 0.2945, plus5 0.3179, L6 0.2924, sq8 0.4885
+  M7's cells: G's error 0.037920, the headcount curve G_N's 0.038099, the field-factor curve G_f's 0.040322; G - G_N by block -0.000179 [+nan, +nan]; G - G_f -0.002402 [+nan, +nan]
+  M8's cells: G's error 0.038644, the headcount curve G_N's 0.053328, the field-factor curve G_f's 0.039744; G - G_N by block -0.014684 [+nan, +nan]; G - G_f -0.001100 [+nan, +nan]
+  the paper's stress (reported; all pairs [95% t]; li4 x F0):
+    RP1a paper's stress: a(2x4/absorbing/paper) - a(1x8/absorbing/paper): +0.023270 [+nan, +nan]; li4 x F0 +0.086914
+    RP1b paper's stress: a(2x4/sealed/paper) - a(2x4/absorbing/paper): +0.030746 [+nan, +nan]; li4 x F0 +0.121216
+    RP1c paper's stress: a(2x4/absorbing/paper) - a(iso8/absorbing/paper): +0.049454 [+nan, +nan]; li4 x F0 +0.152466
+    RP2/iso8/absorbing a(iso8/absorbing/paper) - a(iso8/absorbing): the paper's stress against the ruled one: +0.029022 [+nan, +nan]; li4 x F0 -0.014221
+    RP2/2x4/absorbing a(2x4/absorbing/paper) - a(2x4/absorbing): the paper's stress against the ruled one: +0.017059 [+nan, +nan]; li4 x F0 +0.021240
+    RP2/2x4/sealed a(2x4/sealed/paper) - a(2x4/sealed): the paper's stress against the ruled one: +0.010513 [+nan, +nan]; li4 x F0 +0.031311
+    RP2/1x8/absorbing a(1x8/absorbing/paper) - a(1x8/absorbing): the paper's stress against the ruled one: +0.021759 [+nan, +nan]; li4 x F0 -0.001038
+    RP3/iso8/absorbing rescued(iso8/absorbing/paper) - rescued(iso8/absorbing): +0.296875 [+nan, +nan]; li4 x F0 +0.000000
+    RP3/2x4/absorbing rescued(2x4/absorbing/paper) - rescued(2x4/absorbing): +0.000000 [+nan, +nan]; li4 x F0 +0.000000
+    RP3/2x4/sealed rescued(2x4/sealed/paper) - rescued(2x4/sealed): +0.000000 [+nan, +nan]; li4 x F0 +0.000000
+    RP3/1x8/absorbing rescued(1x8/absorbing/paper) - rescued(1x8/absorbing): +0.156250 [+nan, +nan]; li4 x F0 +0.000000
+  x = L_eff / lambda (the lead's operator): iso8 0.5090, 1x2 0.6357, 2x2 0.9579, 1x4 0.6943, 2x4 1.2041, 1x8 0.7130, 1x3 0.6769, 2x3 1.1200, 1x6 0.7079, L4 0.7293, T4 0.7782, plus5 0.8594, L6 0.7398, sq8 1.2748
+  the levels at 8,000 (all pairs; li4 x F0): 1x2/absorbing 0.9105 (0.7667); 1x2/absorbing/l2 0.9259 (0.7939); 1x2/sealed 0.9884 (0.9642); 1x3/absorbing 0.9166 (0.7785); 1x3/absorbing/l2 0.9319 (0.8067); 1x3/sealed 0.9883 (0.9641); 1x4/absorbing 0.9191 (0.7809); 1x4/absorbing/l2 0.9337 (0.8114); 1x4/sealed 0.9884 (0.9642); 1x6/absorbing 0.9206 (0.7852); 1x6/absorbing/l2 0.9354 (0.8141); 1x6/sealed 0.9884 (0.9642); 1x8/absorbing 0.9231 (0.7884); 1x8/absorbing/l2 0.9379 (0.8190); 1x8/absorbing/paper 0.9448 (0.7874); 1x8/absorbing/rearranged 0.9229 (0.7910); 1x8/absorbing/shared 0.7958 (0.6276); 1x8/absorbing/uniform 0.9229 (0.7891); 1x8/half 0.9406 (0.8259); 1x8/sealed 0.9884 (0.9642); 2x2/absorbing 0.9398 (0.8226); 2x2/absorbing/l2 0.9502 (0.8499); 2x2/sealed 0.9884 (0.9642); 2x3/absorbing 0.9484 (0.8466); 2x3/absorbing/l2 0.9570 (0.8694); 2x3/sealed 0.9883 (0.9641); 2x4/absorbing 0.9510 (0.8530); 2x4/absorbing/l2 0.9594 (0.8759); 2x4/absorbing/paper 0.9681 (0.8743); 2x4/absorbing/rearranged 0.9499 (0.8531); 2x4/absorbing/shared 0.8360 (0.6682); 2x4/absorbing/uniform 0.9517 (0.8546); 2x4/half 0.9596 (0.8763); 2x4/sealed 0.9883 (0.9642); 2x4/sealed/paper 0.9988 (0.9955); 2x4/sealed/shared 0.9883 (0.9642); L4/absorbing 0.9203 (0.7849); L4/absorbing/l2 0.9351 (0.8147); L4/sealed 0.9884 (0.9642); L6/absorbing 0.9217 (0.7874); L6/absorbing/l2 0.9361 (0.8160); L6/sealed 0.9884 (0.9642); T4/absorbing 0.9224 (0.7899); T4/absorbing/l2 0.9365 (0.8176); T4/sealed 0.9884 (0.9642); iso8/absorbing 0.8896 (0.7360); iso8/absorbing/l2 0.9081 (0.7634); iso8/absorbing/paper 0.9186 (0.7218); iso8/absorbing/shared 0.7736 (0.6075); iso8/sealed 0.9883 (0.9641); nofield 0.7414 (0.5814); plus5/absorbing 0.9267 (0.8009); plus5/absorbing/l2 0.9397 (0.8279); plus5/sealed 0.9883 (0.9641); sq8/absorbing 0.9511 (0.8537); sq8/absorbing/l2 0.9594 (0.8755); sq8/sealed 0.9884 (0.9642); undisturbed 0.9348 (0.7531)
+
+  the reader's reported items: 27 contrasts (a and rescued; values, SDs, intervals, blocks, item sets) and 10 competitor errors recomputed by the lead, largest difference 5.55e-17
+
+AGAINST THE FROZEN READER (/tmp/claude-35835/-e-project1-e-aif-2026pg01-1345-Research-HowFormsBecomeReconstructible-experiments-multiscale-error-lane/940a0bc6-d263-4c2b-a287-422759268bb9/scratchpad/p61c/reader_debug/predictions_scored.json): 9 parts (values, intervals, SDs, halves, blocks; 9 thresholds and verdicts) largest difference 2.08e-17; 58 levels, largest difference 0.00e+00; G's knots 1.11e-15

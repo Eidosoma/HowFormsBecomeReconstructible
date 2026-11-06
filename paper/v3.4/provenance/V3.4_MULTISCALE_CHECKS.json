@@ -1,0 +1,591 @@
+{
+  "version": "3.4",
+  "checked_utc": "2026-11-06T12:11:41.055254+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "source archive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source members",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e005 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e005 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e005 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e005 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 16,
+        "intervals": 4,
+        "errors": []
+      }
+    },
+    {
+      "name": "sm007 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm007 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm007 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm007 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 148,
+        "intervals": 46,
+        "errors": []
+      }
+    },
+    {
+      "name": "e2e006 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e006 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e006 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e006 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 40,
+        "intervals": 10,
+        "errors": []
+      }
+    },
+    {
+      "name": "sm008 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm008 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm008 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm008 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 34,
+        "intervals": 34,
+        "errors": []
+      }
+    },
+    {
+      "name": "sm009 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm009 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm009 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sm009 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 43,
+        "intervals": 43,
+        "errors": []
+      }
+    },
+    {
+      "name": "e2e007 source dependencies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e007 qualified design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e007 complete development result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e007 compact block arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 28,
+        "intervals": 7,
+        "errors": []
+      }
+    },
+    {
+      "name": "adaptive-switch frontier remains reported development",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "adaptive switching costs protected-history specificity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sealed-geometry contrast remains bounded, not strictly zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shared-versus-matched response lies inside declared bands",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shared versus matched has a small nonzero body effect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "relaxation helps memory-injury successors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "relaxation lowers body-injury current agreement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stronger reading does not gain body-injury terminal agreement",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "arithmetic_totals": {
+    "means": 309,
+    "intervals": 144
+  },
+  "scientific_replay": false,
+  "scope": "Recompute saved block means, SDs and interval arithmetic using retained case SDs; no raw-state rescoring or model execution.",
+  "highlights": {
+    "e2e005": {
+      "C1": {
+        "value": 0.1087646484375,
+        "ci95": [
+          0.08681017887719092,
+          0.13071911799780908
+        ],
+        "registered": true,
+        "holds": true
+      },
+      "C2": {
+        "value": -0.0441131591796875,
+        "ci95": [
+          -0.04962881447932548,
+          -0.03859750388004952
+        ],
+        "registered": true,
+        "holds": true
+      },
+      "C3": {
+        "value": 0.42291259765625,
+        "ci95": [
+          0.41021779227304156,
+          0.43560740303945844
+        ],
+        "registered": true,
+        "holds": true
+      },
+      "C4": {
+        "value": 0.0614533736205235,
+        "ci95": [
+          0.042921043354878986,
+          0.07998570388616802
+        ],
+        "registered": false
+      }
+    },
+    "sm007": {
+      "M1": {
+        "value": 0.03331565856933594,
+        "ci95": [
+          0.030939288506139077,
+          0.0356920286325328
+        ],
+        "holds": true
+      },
+      "M2": {
+        "value": 0.023874282836914062,
+        "ci95": [
+          0.02180575480934849,
+          0.025942810864479634
+        ],
+        "holds": true
+      },
+      "M3": {
+        "value": 0.0820150375366211,
+        "ci95": [
+          0.07654545659023844,
+          0.08748461848300375
+        ],
+        "holds": true
+      },
+      "M4": {
+        "value": 0.07111740112304688,
+        "ci95": [
+          0.06670240776535062,
+          0.07553239448074313
+        ],
+        "holds": true
+      },
+      "M5": {
+        "value": -0.001102447509765625,
+        "ci95": [
+          -0.003797739201383044,
+          0.001592844181851794
+        ],
+        "holds": true
+      },
+      "M6": {
+        "value": 5.14984130859375e-05,
+        "ci95": [
+          -0.004682144866926998,
+          0.004785141693098873
+        ],
+        "holds": true
+      },
+      "M7": {
+        "value": 0.01689083731851656,
+        "ci95": [
+          0.010959507442872246,
+          0.022822167194160872
+        ],
+        "holds": true
+      },
+      "M8": {
+        "value": 0.01701269856961163,
+        "ci95": [
+          0.011062858517098654,
+          0.022962538622124603
+        ],
+        "holds": true
+      },
+      "M9": {
+        "value": -2.765655517578125e-05,
+        "ci95": [
+          -8.158769677686626e-05,
+          2.6274586425303756e-05
+        ],
+        "holds": true
+      }
+    },
+    "e2e006": {
+      "H1": {
+        "value": -0.05903455946180555,
+        "ci95": [
+          -0.06576012672238991,
+          -0.0523089922012212
+        ],
+        "holds": true
+      },
+      "H2": {
+        "value": -0.0583648681640625,
+        "ci95": [
+          -0.063236154768532,
+          -0.053493581559593
+        ],
+        "holds": true
+      },
+      "H3": {
+        "value": -0.019341362847222224,
+        "ci95": [
+          -0.02573128593624475,
+          -0.012951439758199696
+        ],
+        "holds": true
+      },
+      "H5": {
+        "value": -0.006317138671875,
+        "ci95": [
+          -0.01285250317029503,
+          0.0002182258265450293
+        ],
+        "holds": true
+      },
+      "N1": {
+        "value": 0.002739800347222223,
+        "ci95": [
+          0.00021174236318131315,
+          0.005267858331263133
+        ],
+        "holds": true
+      },
+      "N2": {
+        "value": -0.00040435791015625,
+        "ci95": [
+          -0.003545451792995323,
+          0.002736735972682823
+        ],
+        "holds": true
+      },
+      "N3": {
+        "value": 0.0006849500868055542,
+        "ci95": [
+          -0.002056758416684963,
+          0.0034266585902960715
+        ],
+        "holds": true
+      },
+      "R1": {
+        "value": -0.11815049913194445,
+        "ci95": [
+          -0.12564358737727097,
+          -0.11065741088661793
+        ],
+        "holds": true
+      },
+      "R2": {
+        "value": -0.0887298583984375,
+        "ci95": [
+          -0.09342644326711898,
+          -0.08403327352975602
+        ],
+        "holds": true
+      },
+      "R3": {
+        "value": -0.04939778645833333,
+        "ci95": [
+          -0.05692506186307273,
+          -0.04187051105359393
+        ],
+        "holds": true
+      }
+    },
+    "sm008": {
+      "X1": {
+        "value": -0.03255462646484375,
+        "ci95": [
+          -0.03374475405411559,
+          -0.03136449887557191
+        ],
+        "holds": true
+      },
+      "X2": {
+        "value": 0.0213623046875,
+        "ci95": [
+          0.018487859675805823,
+          0.024236749699194177
+        ],
+        "holds": true
+      },
+      "X3": {
+        "value": -0.04102325439453125,
+        "ci95": [
+          -0.04244726048310968,
+          -0.03959924830595282
+        ],
+        "holds": true
+      },
+      "X4": {
+        "value": -0.0021724700927734375,
+        "ci95": [
+          -0.0027135535752394148,
+          -0.0016313866103074605
+        ],
+        "holds": true
+      },
+      "X5": {
+        "value": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "X6": {
+        "value": 0.0353851318359375,
+        "ci95": [
+          0.033248816315450194,
+          0.037521447356424806
+        ]
+      }
+    },
+    "sm009": {
+      "Y1": {
+        "value": 0.06185150146484375,
+        "ci95": [
+          0.06022823154385969,
+          0.06347477138582781
+        ],
+        "holds": true
+      },
+      "Y2": {
+        "value": -0.01129913330078125,
+        "ci95": [
+          -0.012131449117023508,
+          -0.010466817484538992
+        ],
+        "holds": true
+      },
+      "Y3": {
+        "value": 0.003238677978515625,
+        "ci95": [
+          0.002737253062367969,
+          0.003740102894663281
+        ]
+      },
+      "Y4": {
+        "value": 0.02927398681640625,
+        "ci95": [
+          0.028131788584092005,
+          0.030416185048720495
+        ],
+        "holds": true
+      }
+    },
+    "e2e007": {
+      "Z1": {
+        "value": 0.21318223741319445,
+        "ci95": [
+          0.20372822475832755,
+          0.22263625006806134
+        ],
+        "holds": true
+      },
+      "Z2": {
+        "value": 0.11504364013671875,
+        "ci95": [
+          0.10786787926769677,
+          0.12221940100574073
+        ],
+        "holds": true
+      },
+      "Z3": {
+        "value": -0.020270453559027776,
+        "ci95": [
+          -0.02531182608810635,
+          -0.015229081029949201
+        ],
+        "holds": true
+      },
+      "Z4": {
+        "value": 0.10079616970486112,
+        "ci95": [
+          0.08640823099930547,
+          0.11518410841041676
+        ],
+        "holds": true
+      },
+      "Z5": {
+        "value": -0.05332438151041667,
+        "ci95": [
+          -0.059024424112058965,
+          -0.04762433890877438
+        ],
+        "holds": true
+      },
+      "Z1x": {
+        "value": 0.2292819552951389,
+        "ci95": [
+          0.2188896064237315,
+          0.23967430416654628
+        ],
+        "holds": true
+      },
+      "Z3x": {
+        "value": -0.028415256076388888,
+        "ci95": [
+          -0.03241518376972561,
+          -0.02441532838305217
+        ],
+        "holds": true
+      }
+    },
+    "e2e007_levels": {
+      "none/memory": {
+        "none/memory|U|8": 0.3346828884548611,
+        "none/memory|U_v|8": 0.3655259874131944,
+        "none/memory|U_raw|8": 0.3346828884548611,
+        "none/memory|agree_U|8": 0.8940700954861112,
+        "none/memory|u_r|8": 0.29791259765625,
+        "none/memory|u_v|8": 0.3231201171875,
+        "none/memory|a_r|8": 0.8081207275390625,
+        "none/memory|a_v|8": 0.8005123138427734,
+        "none/memory|q_r|8": 0.5342330932617188,
+        "none/memory|q_v|8": 0.5167312622070312
+      },
+      "raise/memory": {
+        "raise/memory|U|8": 0.2404106987847222,
+        "raise/memory|U_v|8": 0.24445936414930552,
+        "raise/memory|U_raw|8": 0.2404106987847222,
+        "raise/memory|agree_U|8": 0.9523857964409721,
+        "raise/memory|u_r|8": 0.18902587890625,
+        "raise/memory|u_v|8": 0.1868896484375,
+        "raise/memory|a_r|8": 0.7573575973510742,
+        "raise/memory|a_v|8": 0.767176628112793,
+        "raise/memory|q_r|8": 0.43975067138671875,
+        "raise/memory|q_v|8": 0.44843292236328125
+      },
+      "relax/memory": {
+        "relax/memory|U|8": 0.6126437717013888,
+        "relax/memory|U_v|8": 0.5787082248263888,
+        "relax/memory|U_raw|8": 0.6126437717013888,
+        "relax/memory|agree_U|8": 0.813720703125,
+        "relax/memory|u_r|8": 0.63604736328125,
+        "relax/memory|u_v|8": 0.553955078125,
+        "relax/memory|a_r|8": 0.8668651580810547,
+        "relax/memory|a_v|8": 0.7670230865478516,
+        "relax/memory|q_r|8": 0.6492767333984375,
+        "relax/memory|q_v|8": 0.4602813720703125
+      },
+      "relax-matched/memory": {
+        "relax-matched/memory|U|8": 0.5556708441840277,
+        "relax-matched/memory|U_v|8": 0.5485975477430556,
+        "relax-matched/memory|U_raw|8": 0.5556708441840277,
+        "relax-matched/memory|agree_U|8": 0.8415730794270835,
+        "relax-matched/memory|u_r|8": 0.55908203125,
+        "relax-matched/memory|u_v|8": 0.5235595703125,
+        "relax-matched/memory|a_r|8": 0.8567485809326172,
+        "relax-matched/memory|a_v|8": 0.7919855117797852,
+        "relax-matched/memory|q_r|8": 0.6262283325195312,
+        "relax-matched/memory|q_v|8": 0.5105514526367188
+      }
+    }
+  }
+}

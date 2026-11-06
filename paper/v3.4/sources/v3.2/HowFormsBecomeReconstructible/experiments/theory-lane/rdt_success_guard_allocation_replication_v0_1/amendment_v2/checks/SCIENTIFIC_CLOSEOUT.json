@@ -1,0 +1,257 @@
+{
+  "utc": "2026-10-28T22:02:50.038591+00:00",
+  "status": "COMPLETE_AUDITED_CLOSED",
+  "decision": "ALLOCATION_REPLICATION_SUPPORTED",
+  "completed_run": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/amendment_v2/runs/replication_v2",
+  "active_pid": null,
+  "active_run": null,
+  "complete_sha256": "b8a20f3a28bb4aa3865aa9e569fbea08a6329ebf92ec7838cf8c5ffee475f09b",
+  "input_manifest_sha256": "27252383ef0b4e103f57a4c6575825dd0320d1759416bb62bcb69dd50cb577da",
+  "output_manifest_sha256": "19caa847413c1eb5a7a371606db33e9463ae307f88f931a7f92d1530ecf64be9",
+  "cohort_sha256": "15a8bd31ed5d12d321df82cbfade5c156a89f17092ff5ff838c2a0ab658149d2",
+  "policy_seal_sha256": "19deb129b15da54b712dafe29c6c3aef96fb547d3e12c56dc3282b0f2d9b1273",
+  "qualification_reused": true,
+  "qualification_sha256": "d423a860cc39c64f6e00750a15ac257dd357b748ffe5f5277f9d86be26e0602d",
+  "qualification_reuse_sha256": "4daa39b0123d3356ad75b5d5030fd98b5d2cf9857c7ecca42f47ad9e71f8ab60",
+  "independent_closeout_audit": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/amendment_v2/checks/INDEPENDENT_CLOSEOUT_AUDIT.json",
+  "independent_closeout_audit_sha256": "a106a241b7bb01e3eb3e59f30624014645a1c0c92f991d1defc677551767eb5d",
+  "scientific_report": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-lane/rdt_success_guard_allocation_replication_v0_1/amendment_v2/SCIENTIFIC_REPORT.txt",
+  "scientific_report_sha256": "c7acc489efebc249ae03ba7ffe398c7fa60bce186e328160a22c295aab40aefc",
+  "input_files_verified": 83,
+  "output_files_verified": 1095,
+  "prior_input_files_verified": 72,
+  "prior_output_files_verified": 443,
+  "acquisition_attempts": 35,
+  "imported_acquisition_attempts": 14,
+  "new_acquisition_attempts": 21,
+  "selected_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "selected_packets": 112,
+  "ineligible_blocks": [
+    6,
+    23
+  ],
+  "surplus_blocks": [
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "complete_target_outcomes_verified": 448,
+  "raw_readouts_rescored": 9728,
+  "exact_rational_block_summaries": 169,
+  "actual_decision_quotas_verified": 576,
+  "target_decision_quotas_verified": 504,
+  "rewrites_each_guard_and_random": 1662,
+  "primary": {
+    "mean": 0.13392857142857142,
+    "lower": 0.06314258084607029,
+    "upper": 0.20471456201107258,
+    "lower_one_sided95": 0.07516691499069285,
+    "upper_one_sided95": 0.19269022786645001
+  },
+  "primary_uncertainty_unit": "28 acquisition blocks; paired t, df27",
+  "all_policy_endpoint_means": {
+    "independent": {
+      "always_promote": {
+        "downstream_successes": 0.7182539682539683,
+        "terminal": 0.7053571428571429,
+        "uninterrupted": 0.6696428571428571,
+        "opposite_reads": 0.026785714285714284,
+        "promotions": 1.0
+      },
+      "matched_random": {
+        "downstream_successes": 0.7018849206349206,
+        "terminal": 0.6964285714285714,
+        "uninterrupted": 0.625,
+        "opposite_reads": 0.025793650793650792,
+        "promotions": 0.8244047619047619
+      },
+      "writer_success_guard": {
+        "downstream_successes": 0.8358134920634921,
+        "terminal": 0.8571428571428571,
+        "uninterrupted": 0.7142857142857143,
+        "opposite_reads": 0.010912698412698412,
+        "promotions": 0.8244047619047619
+      },
+      "protected_retain": {
+        "downstream_successes": 0.6557539682539683,
+        "terminal": 0.6875,
+        "uninterrupted": 0.3392857142857143,
+        "opposite_reads": 0.013888888888888888,
+        "promotions": 0.0
+      }
+    }
+  },
+  "all_policy_endpoint_counts": {
+    "always_promote": {
+      "downstream_successes": 1448,
+      "terminal": 79,
+      "uninterrupted": 75,
+      "promotions": 2016
+    },
+    "matched_random": {
+      "downstream_successes": 1415,
+      "terminal": 78,
+      "uninterrupted": 70,
+      "promotions": 1662
+    },
+    "writer_success_guard": {
+      "downstream_successes": 1685,
+      "terminal": 96,
+      "uninterrupted": 80,
+      "promotions": 1662
+    },
+    "protected_retain": {
+      "downstream_successes": 1322,
+      "terminal": 77,
+      "uninterrupted": 38,
+      "promotions": 0
+    }
+  },
+  "secondary_intervals_confirmatory": false,
+  "recovery_descriptive": {
+    "independent": {
+      "shared_g15_fail": {
+        "always_promote": {
+          "packets": 39,
+          "downstream_success_count": 142,
+          "downstream_read_count": 702,
+          "terminal_count": 8,
+          "uninterrupted_count": 6,
+          "any_g16_33_success_count": 8
+        },
+        "matched_random": {
+          "packets": 39,
+          "downstream_success_count": 161,
+          "downstream_read_count": 702,
+          "terminal_count": 9,
+          "uninterrupted_count": 6,
+          "any_g16_33_success_count": 11
+        },
+        "writer_success_guard": {
+          "packets": 39,
+          "downstream_success_count": 375,
+          "downstream_read_count": 702,
+          "terminal_count": 24,
+          "uninterrupted_count": 11,
+          "any_g16_33_success_count": 24
+        },
+        "protected_retain": {
+          "packets": 39,
+          "downstream_success_count": 175,
+          "downstream_read_count": 702,
+          "terminal_count": 14,
+          "uninterrupted_count": 2,
+          "any_g16_33_success_count": 24
+        }
+      },
+      "shared_g15_pass": {
+        "always_promote": {
+          "packets": 73,
+          "downstream_success_count": 1306,
+          "downstream_read_count": 1314,
+          "terminal_count": 71,
+          "uninterrupted_count": 69,
+          "any_g16_33_success_count": 73
+        },
+        "matched_random": {
+          "packets": 73,
+          "downstream_success_count": 1254,
+          "downstream_read_count": 1314,
+          "terminal_count": 69,
+          "uninterrupted_count": 64,
+          "any_g16_33_success_count": 70
+        },
+        "writer_success_guard": {
+          "packets": 73,
+          "downstream_success_count": 1310,
+          "downstream_read_count": 1314,
+          "terminal_count": 72,
+          "uninterrupted_count": 69,
+          "any_g16_33_success_count": 73
+        },
+        "protected_retain": {
+          "packets": 73,
+          "downstream_success_count": 1147,
+          "downstream_read_count": 1314,
+          "terminal_count": 63,
+          "uninterrupted_count": 36,
+          "any_g16_33_success_count": 73
+        }
+      }
+    }
+  },
+  "full_native_reader_evaluations_including_reused_qualification": 53960,
+  "new_native_reader_evaluations_after_amendment": 36092,
+  "software_full_readers_separate": 128,
+  "software_and_diagnostic_short32_reads_bounds": [
+    1824,
+    2432
+  ],
+  "teaching_episodes_including_reused_qualification": 76,
+  "new_fits": 0,
+  "new_estimation_probes": 0,
+  "charged_wall_seconds": 2521.14580464107,
+  "resumed_wall_seconds": 1861.3285043791402,
+  "prior_charged_wall_seconds": 659.8173002619296,
+  "capacity_wait_seconds": 0,
+  "cpu_admissions_verified": 14,
+  "worker_batches_verified": 13,
+  "software_tests_passed": 38,
+  "final_process_state": "ABSENT",
+  "final_process_evidence": "Host /proc/1222631 was absent on elevated read-only inspection at 2026-10-28 21:53UTC during this closeout turn.",
+  "exposure": {
+    "design": "Exposed development contrast and variance informed hypothesis and sample size; original scientific freeze preceded scientific acquisition.",
+    "resource_amendment": "14 prior acquisition attempts and native qualification exposed before resource-only amendment; no scientific continuation outcomes existed.",
+    "cohort": "All35 attempts preserved; first28 eligible; complete cohort and policy seals preceded all target futures.",
+    "target": "All completed target outcomes and histories accessed during closeout on2026-10-28; now exposed development evidence for any subsequent hypothesis.",
+    "prospective_within_programme_fresh_founder_replication": true,
+    "external_preregistration": false,
+    "independent_laboratory_replication": false
+  },
+  "scope": "Independent-noise regime, injury24, balanced g14 packet selection, g16..33 endpoint; coupled matched-count random allocation comparator.",
+  "prior_resource_stop_preserved": true,
+  "prior_six_test_decision": "REPLICATION_UNRESOLVED unchanged",
+  "prior_noise_precision_decision": "ALL_THREE_PREDICTIONS_SUPPORTED unchanged",
+  "prior_development_allocation_decision": "DEVELOPMENT_ALLOCATION_ADVANTAGE_SUPPORTED unchanged",
+  "prior_historical_guard_failure_preserved": true,
+  "prior_conditional_benefit_failure_preserved": true,
+  "RDT_specific_validation": false,
+  "new_native_dynamics_for_closeout": 0,
+  "automatic_successor": false,
+  "automatic_retry": false,
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ]
+}

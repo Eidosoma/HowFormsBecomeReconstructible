@@ -1,0 +1,179 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "963f47e2cf7100798e4f8b3d10b5868a26f9f36aea1447cc04062f62f117de1c",
+ "computed_utc": "2026-11-03T14:27:05Z",
+ "best": "vote",
+ "controller": "vtol",
+ "vtol": {
+  "cue": {
+   "boxes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "n": 3,
+   "q": 1.0,
+   "ring": 2,
+   "ring_max": 1,
+   "dwell": 1
+  },
+  "body": null,
+  "guard": {
+   "kind": "split",
+   "f": 0.5,
+   "free_ring_max": 0
+  }
+ },
+ "thresholds": {
+  "K2a": 0.002,
+  "K2b": 0.01,
+  "K3a": 0.04,
+  "K3b": 0.0,
+  "K4": -0.005,
+  "K5a": -0.005,
+  "K5b": 0.25,
+  "K5c": -0.03,
+  "K5d": 0.0,
+  "K6": 0.12,
+  "K7a": -0.005,
+  "K7b": -0.005
+ },
+ "k_share": 0.5,
+ "parts": [
+  {
+   "stmt": "K2",
+   "name": "K2 (a) sheet cost with no event: r_all(vote) - r_all(vtol), none@0",
+   "sense": "le",
+   "key": "K2a",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "K2",
+   "name": "K2 (b) sheet cost under misreads with no event: r_all(vote, none@0) - r_all(vtol, none@1)",
+   "sense": "le",
+   "key": "K2b",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 (a) R1 = (1/2) sum over sizes 4, 8 of u(vtol, memory@1) - u(vms, memory@1)",
+   "sense": "ge",
+   "key": "K3a",
+   "threshold": 0.04
+  },
+  {
+   "stmt": "K3",
+   "name": "K3 (b) the share kept: R1(vtol) - k R1(vpool)",
+   "sense": "ge",
+   "key": "K3b",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "K4",
+   "name": "K4 R0 = (1/2) sum over sizes 4, 8 of u(vtol, memory@0) - u(vms, memory@0)",
+   "sense": "ge",
+   "key": "K4",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 (a) u(vtol) - u(vms) in correlated damage, 4 x 4, sigma 0",
+   "sense": "ge",
+   "key": "K5a",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 (b) u(vtol) - u(vguard) in correlated damage, 4 x 4, sigma 0",
+   "sense": "ge",
+   "key": "K5b",
+   "threshold": 0.25
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 (c) u(vtol) - u(vms) in correlated damage, 4 x 4, sigma 1",
+   "sense": "ge",
+   "key": "K5c",
+   "threshold": -0.03
+  },
+  {
+   "stmt": "K5",
+   "name": "K5 (d) u(vtol) - u(vguard) in correlated damage, 4 x 4, sigma 1",
+   "sense": "ge",
+   "key": "K5d",
+   "threshold": 0.0
+  },
+  {
+   "stmt": "K6",
+   "name": "K6 W1 = (1/2) sum over sizes 4, 8 of u(vtol, memory@1) - u(vote, memory@0)",
+   "sense": "ge",
+   "key": "K6",
+   "threshold": 0.12
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 u(vtol) - u(vote) in the 4 x 4 patch, none@0",
+   "sense": "ge",
+   "key": "K7a",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "K7",
+   "name": "K7 u(vtol, none@1) - u(vote, none@0) in the 4 x 4 patch",
+   "sense": "ge",
+   "key": "K7b",
+   "threshold": -0.005
+  }
+ ],
+ "dropped": [
+  {
+   "stmt": "K1",
+   "name": "K1 sheet cost under scattered cue damage: r_all(vote) - r_all(vtol), cue@0",
+   "sense": "le",
+   "key": "K1",
+   "threshold": 0.01,
+   "why": "the confirmed bound 0.01, as planned; on P57 +0.008713 (sd_block 0.002786, halves +0.009705, +0.007721), margin 0.46 against the rule's 1.68: P57 cannot support it; not registered (the lead's ruling (a) at phase A), reported at the development with its 95% interval beside the confirmed 0.01"
+  }
+ ],
+ "reported": [],
+ "statements": [
+  {
+   "id": "K2",
+   "claim": "with no event its false alarms cost intact tissue within the confirmed bound, and under misreads within AR003's E9 bound",
+   "rule": "HOLDS if r_all(vote) - r_all(vtol) in none@0 <= 0.002 and r_all(vote, none@0) - r_all(vtol, none@1) <= 0.01, else FAILS"
+  },
+  {
+   "id": "K3",
+   "claim": "under misread cues it keeps the pooled detector's recovery over the confirmed controller",
+   "rule": "HOLDS if R1 = (1/2) sum over sizes 4, 8 of u(vtol, memory@1) - u(vms, memory@1) >= 0.04 and R1(vtol) - 0.5 R1(vpool) >= 0.0, else FAILS"
+  },
+  {
+   "id": "K4",
+   "claim": "at sigma 0 it keeps the confirmed controller's hits (non-inferiority)",
+   "rule": "HOLDS if R0 = (1/2) sum over sizes 4, 8 of u(vtol, memory@0) - u(vms, memory@0) >= -0.005, else FAILS"
+  },
+  {
+   "id": "K5",
+   "claim": "the blind spot resolved: where body and record share the error it is not worse than the confirmed controller, and it gains over the fully guarded one",
+   "rule": "HOLDS if in correlated damage at 4 x 4 u(vtol) - u(vms) >= -0.005 and u(vtol) - u(vguard) >= 0.25 at sigma 0, and u(vtol) - u(vms) >= -0.03 and u(vtol) - u(vguard) >= 0.0 at sigma 1, else FAILS"
+  },
+  {
+   "id": "K6",
+   "claim": "under misread cues the controller still beats the best fixed policy",
+   "rule": "HOLDS if W1 = (1/2) sum over sizes 4, 8 of u(vtol, memory@1) - u(vote, memory@0) >= 0.12, else FAILS"
+  },
+  {
+   "id": "K7",
+   "claim": "it gives up nothing to the vote with no event, with or without misread cues (non-inferiority)",
+   "rule": "HOLDS if u(vtol) - u(vote) in the 4 x 4 patch is at least -0.005 in none@0, and u(vtol, none@1) - u(vote, none@0) >= -0.005, else FAILS"
+  }
+ ]
+}

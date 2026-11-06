@@ -1,0 +1,109 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "ef404ab8d3441ccb03bc437d04bff5a21de55c4da17e7165fcae89e4c64b6fe7",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e005/preflight",
+ "stage": "preflight",
+ "tasks": 16,
+ "checked_utc": "2026-11-05T14:07:02Z",
+ "wall_s": 432.0,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 16,
+   "bad": [],
+   "missing": [],
+   "seconds": 0.2
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t0",
+    900779
+   ],
+   "arrays": 138,
+   "differ": [],
+   "seconds": 432.0
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "raw_files": 16,
+   "raw_differ": [],
+   "task_bridges_differ": [],
+   "bridge_task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t0",
+    900779
+   ],
+   "updates": 1000,
+   "bit_for_bit": {
+    "fixed routes = e2e004.sim.generation": true,
+    "protected: never-opening switch = record": true,
+    "protected: whole-sheet switch = body": true,
+    "post/memory@0: never-opening switch = record": true,
+    "post/memory@0: whole-sheet switch = body": true
+   },
+   "seconds": 10.3
+  },
+  "Q4_never_fired_is_record": {
+   "pass": true,
+   "case_horizons": 768,
+   "never_fired": 456,
+   "fired_by_then": 312,
+   "never_fired_differ_from_record": [],
+   "seconds": 0.1
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "complete": true,
+   "rows_share_packets": true,
+   "listed_twice_identical": true,
+   "aliases": {},
+   "seconds": 1.2
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "compared": 96,
+   "differ": [],
+   "seconds": 1.5
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "detector_reads_V_and_r_only": true,
+   "footprint_and_open_bonds": true,
+   "fresh_switch_each_generation": true,
+   "oracle_opens_at_read_from_over_the_patch": true,
+   "post_damage_patch_only": true,
+   "tasks_are_saved_records": true,
+   "seconds": 4.8
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "reordered_identical": true,
+   "seconds": 3.6
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_dev_cpu_h": 15.2,
+   "forecast_dev_wall_h_10": 1.52,
+   "cpu_s_per_branch_generation": 0.7422,
+   "dev_branch_generations": 73728,
+   "worker_rss_mb": 261.9,
+   "cap": 27.0,
+   "seconds": 54.2
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 109753,
+    "TABLES.md": 43496
+   },
+   "parts_scored": 4,
+   "seconds": 1.3
+  }
+ }
+}

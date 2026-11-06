@@ -1,0 +1,1308 @@
+{
+ "study": "E2E006",
+ "design_digest": "bdbd135dd2eeeb57724c5bd9f22103cbb65a22925f359a42ae91db9a2e0e022d",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "H1": -0.05,
+  "H2": -0.04,
+  "H3": -0.01,
+  "H5": [
+   -0.04,
+   0.02
+  ],
+  "N1": [
+   -0.01,
+   0.01
+  ],
+  "N2": [
+   -0.01,
+   0.02
+  ],
+  "N3": [
+   -0.01,
+   0.01
+  ],
+  "R1": -0.09,
+  "R2": -0.08,
+  "R3": -0.02
+ },
+ "frozen_utc": "2026-11-05T14:20:14Z",
+ "meaningful_margin_n": [
+  -0.03,
+  0.03
+ ],
+ "registered": [
+  {
+   "id": "H1",
+   "part": "the group at one kappa, present organization: U_v(vote/shared) - U_v(vote/isolated), g 8 (reversed after P63)",
+   "kind": "le",
+   "threshold": -0.05
+  },
+  {
+   "id": "H2",
+   "part": "the group at one kappa, history: q_r(vote/shared) - q_r(vote/isolated), g 8 (reversed after P63)",
+   "kind": "le",
+   "threshold": -0.04
+  },
+  {
+   "id": "H3",
+   "part": "the group at one kappa, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated, after g 8 (reversed after P63)",
+   "kind": "le",
+   "threshold": -0.01
+  },
+  {
+   "id": "H5",
+   "part": "early against late assistance at matched exposure: U_v(vote/shared-early) - U_v(vote/shared-late), g 3",
+   "kind": "in",
+   "threshold": [
+    -0.04,
+    0.02
+   ]
+  },
+  {
+   "id": "N1",
+   "part": "the neighbours' signal at a matched mean response, present organization: U_v(vote/shared) - U_v(vote/isolated-matched), g 8",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.01
+   ]
+  },
+  {
+   "id": "N2",
+   "part": "the neighbours' signal at a matched mean response, history: q_r(vote/shared) - q_r(vote/isolated-matched), g 8",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.02
+   ]
+  },
+  {
+   "id": "N3",
+   "part": "the neighbours' signal at a matched mean response, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 8",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.01
+   ]
+  },
+  {
+   "id": "R1",
+   "part": "the response at the shared row's size, private signals only, present organization: U_v(vote/isolated-matched) - U_v(vote/none), g 8",
+   "kind": "le",
+   "threshold": -0.09
+  },
+  {
+   "id": "R2",
+   "part": "the response at the shared row's size, private signals only, history: q_r(vote/isolated-matched) - q_r(vote/none), g 8",
+   "kind": "le",
+   "threshold": -0.08
+  },
+  {
+   "id": "R3",
+   "part": "the response at the shared row's size, private signals only, what the record carries: the fresh successor's U_v, vote/isolated-matched - vote/none, after g 8",
+   "kind": "le",
+   "threshold": -0.02
+  }
+ ],
+ "candidates_reported": [],
+ "reported": [
+  {
+   "id": "R-H1-1",
+   "part": "the group at one kappa, present organization: U_v(vote/shared) - U_v(vote/isolated), g 8 (reversed after P63) [at g 1]"
+  },
+  {
+   "id": "R-H2-1",
+   "part": "the group at one kappa, history: q_r(vote/shared) - q_r(vote/isolated), g 8 (reversed after P63) [at g 1]"
+  },
+  {
+   "id": "R-H3-1",
+   "part": "the group at one kappa, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated, after g 8 (reversed after P63) [at g 1]"
+  },
+  {
+   "id": "R-H5-1",
+   "part": "early against late assistance at matched exposure: U_v(vote/shared-early) - U_v(vote/shared-late), g 3 [at g 1]"
+  },
+  {
+   "id": "R-N1-1",
+   "part": "the neighbours' signal at a matched mean response, present organization: U_v(vote/shared) - U_v(vote/isolated-matched), g 8 [at g 1]"
+  },
+  {
+   "id": "R-N2-1",
+   "part": "the neighbours' signal at a matched mean response, history: q_r(vote/shared) - q_r(vote/isolated-matched), g 8 [at g 1]"
+  },
+  {
+   "id": "R-N3-1",
+   "part": "the neighbours' signal at a matched mean response, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 8 [at g 1]"
+  },
+  {
+   "id": "R-R1-1",
+   "part": "the response at the shared row's size, private signals only, present organization: U_v(vote/isolated-matched) - U_v(vote/none), g 8 [at g 1]"
+  },
+  {
+   "id": "R-R2-1",
+   "part": "the response at the shared row's size, private signals only, history: q_r(vote/isolated-matched) - q_r(vote/none), g 8 [at g 1]"
+  },
+  {
+   "id": "R-R3-1",
+   "part": "the response at the shared row's size, private signals only, what the record carries: the fresh successor's U_v, vote/isolated-matched - vote/none, after g 8 [at g 1]"
+  },
+  {
+   "id": "R-sh-iso-U_v-1",
+   "part": "U_v(vote/shared) - U_v(vote/isolated), g 1"
+  },
+  {
+   "id": "R-sh-iso-q_r-1",
+   "part": "q_r(vote/shared) - q_r(vote/isolated), g 1"
+  },
+  {
+   "id": "R-sh-iso-a_v-1",
+   "part": "a_v(vote/shared) - a_v(vote/isolated), g 1"
+  },
+  {
+   "id": "R-sh-iso-U-1",
+   "part": "U(vote/shared) - U(vote/isolated), g 1"
+  },
+  {
+   "id": "R-sh-iso-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-sh-iso-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-sh-ism-U_v-1",
+   "part": "U_v(vote/shared) - U_v(vote/isolated-matched), g 1"
+  },
+  {
+   "id": "R-sh-ism-q_r-1",
+   "part": "q_r(vote/shared) - q_r(vote/isolated-matched), g 1"
+  },
+  {
+   "id": "R-sh-ism-a_v-1",
+   "part": "a_v(vote/shared) - a_v(vote/isolated-matched), g 1"
+  },
+  {
+   "id": "R-sh-ism-U-1",
+   "part": "U(vote/shared) - U(vote/isolated-matched), g 1"
+  },
+  {
+   "id": "R-sh-ism-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 1"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated-matched, after g 1"
+  },
+  {
+   "id": "R-sh-ism-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated-matched, after g 1"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated-matched, after g 1"
+  },
+  {
+   "id": "R-ism-none-U_v-1",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/none), g 1"
+  },
+  {
+   "id": "R-ism-none-q_r-1",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/none), g 1"
+  },
+  {
+   "id": "R-ism-none-a_v-1",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/none), g 1"
+  },
+  {
+   "id": "R-ism-none-U-1",
+   "part": "U(vote/isolated-matched) - U(vote/none), g 1"
+  },
+  {
+   "id": "R-ism-none-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/none, after g 1"
+  },
+  {
+   "id": "R-ism-none-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/none, after g 1"
+  },
+  {
+   "id": "R-ism-none-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/none, after g 1"
+  },
+  {
+   "id": "R-ism-none-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/none, after g 1"
+  },
+  {
+   "id": "R-iso-none-U_v-1",
+   "part": "U_v(vote/isolated) - U_v(vote/none), g 1"
+  },
+  {
+   "id": "R-iso-none-q_r-1",
+   "part": "q_r(vote/isolated) - q_r(vote/none), g 1"
+  },
+  {
+   "id": "R-iso-none-a_v-1",
+   "part": "a_v(vote/isolated) - a_v(vote/none), g 1"
+  },
+  {
+   "id": "R-iso-none-U-1",
+   "part": "U(vote/isolated) - U(vote/none), g 1"
+  },
+  {
+   "id": "R-iso-none-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated - vote/none, after g 1"
+  },
+  {
+   "id": "R-iso-none-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/isolated - vote/none, after g 1"
+  },
+  {
+   "id": "R-iso-none-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/isolated - vote/none, after g 1"
+  },
+  {
+   "id": "R-iso-none-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/isolated - vote/none, after g 1"
+  },
+  {
+   "id": "R-sh-none-U_v-1",
+   "part": "U_v(vote/shared) - U_v(vote/none), g 1"
+  },
+  {
+   "id": "R-sh-none-q_r-1",
+   "part": "q_r(vote/shared) - q_r(vote/none), g 1"
+  },
+  {
+   "id": "R-sh-none-a_v-1",
+   "part": "a_v(vote/shared) - a_v(vote/none), g 1"
+  },
+  {
+   "id": "R-sh-none-U-1",
+   "part": "U(vote/shared) - U(vote/none), g 1"
+  },
+  {
+   "id": "R-sh-none-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared - vote/none, after g 1"
+  },
+  {
+   "id": "R-sh-none-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/shared - vote/none, after g 1"
+  },
+  {
+   "id": "R-sh-none-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/shared - vote/none, after g 1"
+  },
+  {
+   "id": "R-sh-none-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/shared - vote/none, after g 1"
+  },
+  {
+   "id": "R-ism-iso-U_v-1",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/isolated), g 1"
+  },
+  {
+   "id": "R-ism-iso-q_r-1",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/isolated), g 1"
+  },
+  {
+   "id": "R-ism-iso-a_v-1",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/isolated), g 1"
+  },
+  {
+   "id": "R-ism-iso-U-1",
+   "part": "U(vote/isolated-matched) - U(vote/isolated), g 1"
+  },
+  {
+   "id": "R-ism-iso-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_r-1",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-ism-iso-fresh-a_v-1",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_v-1",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/isolated, after g 1"
+  },
+  {
+   "id": "R-isolated-pro-U_v-1",
+   "part": "U_v(vote/isolated) - U_v(protected), g 1"
+  },
+  {
+   "id": "R-isolated-pro-q_r-1",
+   "part": "q_r(vote/isolated) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-isolated-pro-a_v-1",
+   "part": "a_v(vote/isolated) - a_v(protected), g 1"
+  },
+  {
+   "id": "R-isolated-pro-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated - protected, after g 1"
+  },
+  {
+   "id": "R-isolated-vtol-U_v-1",
+   "part": "U_v(vote/isolated) - U_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-vtol-q_r-1",
+   "part": "q_r(vote/isolated) - q_r(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-vtol-a_v-1",
+   "part": "a_v(vote/isolated) - a_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-vtol-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated - vtol-every, after g 1"
+  },
+  {
+   "id": "R-shared-pro-U_v-1",
+   "part": "U_v(vote/shared) - U_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-pro-q_r-1",
+   "part": "q_r(vote/shared) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-shared-pro-a_v-1",
+   "part": "a_v(vote/shared) - a_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-pro-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared - protected, after g 1"
+  },
+  {
+   "id": "R-shared-vtol-U_v-1",
+   "part": "U_v(vote/shared) - U_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-vtol-q_r-1",
+   "part": "q_r(vote/shared) - q_r(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-vtol-a_v-1",
+   "part": "a_v(vote/shared) - a_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-vtol-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared - vtol-every, after g 1"
+  },
+  {
+   "id": "R-isolated-matched-pro-U_v-1",
+   "part": "U_v(vote/isolated-matched) - U_v(protected), g 1"
+  },
+  {
+   "id": "R-isolated-matched-pro-q_r-1",
+   "part": "q_r(vote/isolated-matched) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-isolated-matched-pro-a_v-1",
+   "part": "a_v(vote/isolated-matched) - a_v(protected), g 1"
+  },
+  {
+   "id": "R-isolated-matched-pro-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated-matched - protected, after g 1"
+  },
+  {
+   "id": "R-isolated-matched-vtol-U_v-1",
+   "part": "U_v(vote/isolated-matched) - U_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-matched-vtol-q_r-1",
+   "part": "q_r(vote/isolated-matched) - q_r(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-matched-vtol-a_v-1",
+   "part": "a_v(vote/isolated-matched) - a_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-isolated-matched-vtol-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vtol-every, after g 1"
+  },
+  {
+   "id": "R-shared-early-pro-U_v-1",
+   "part": "U_v(vote/shared-early) - U_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-early-pro-q_r-1",
+   "part": "q_r(vote/shared-early) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-shared-early-pro-a_v-1",
+   "part": "a_v(vote/shared-early) - a_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-early-pro-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared-early - protected, after g 1"
+  },
+  {
+   "id": "R-shared-early-vtol-U_v-1",
+   "part": "U_v(vote/shared-early) - U_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-early-vtol-q_r-1",
+   "part": "q_r(vote/shared-early) - q_r(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-early-vtol-a_v-1",
+   "part": "a_v(vote/shared-early) - a_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-early-vtol-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared-early - vtol-every, after g 1"
+  },
+  {
+   "id": "R-shared-late-pro-U_v-1",
+   "part": "U_v(vote/shared-late) - U_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-late-pro-q_r-1",
+   "part": "q_r(vote/shared-late) - q_r(protected), g 1"
+  },
+  {
+   "id": "R-shared-late-pro-a_v-1",
+   "part": "a_v(vote/shared-late) - a_v(protected), g 1"
+  },
+  {
+   "id": "R-shared-late-pro-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared-late - protected, after g 1"
+  },
+  {
+   "id": "R-shared-late-vtol-U_v-1",
+   "part": "U_v(vote/shared-late) - U_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-late-vtol-q_r-1",
+   "part": "q_r(vote/shared-late) - q_r(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-late-vtol-a_v-1",
+   "part": "a_v(vote/shared-late) - a_v(vtol-every), g 1"
+  },
+  {
+   "id": "R-shared-late-vtol-fresh-U_v-1",
+   "part": "the fresh successor's U_v, vote/shared-late - vtol-every, after g 1"
+  },
+  {
+   "id": "R-ret-sh-U_v-1",
+   "part": "U_v(vote/shared-retained) - U_v(vote/shared), g 1 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-q_r-1",
+   "part": "q_r(vote/shared-retained) - q_r(vote/shared), g 1 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-fresh-U_v-1",
+   "part": "the fresh successor's U_v, retained - shared, after g 1 (P63 only)"
+  },
+  {
+   "id": "R-ea-la-q_r-1",
+   "part": "q_r(vote/shared-early) - q_r(vote/shared-late), g 1"
+  },
+  {
+   "id": "R-ea-la-fresh-U_v-1",
+   "part": "the fresh successor's U_v, early - late, after g 1"
+  },
+  {
+   "id": "R-H1-3",
+   "part": "the group at one kappa, present organization: U_v(vote/shared) - U_v(vote/isolated), g 8 (reversed after P63) [at g 3]"
+  },
+  {
+   "id": "R-H2-3",
+   "part": "the group at one kappa, history: q_r(vote/shared) - q_r(vote/isolated), g 8 (reversed after P63) [at g 3]"
+  },
+  {
+   "id": "R-H3-3",
+   "part": "the group at one kappa, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated, after g 8 (reversed after P63) [at g 3]"
+  },
+  {
+   "id": "R-N1-3",
+   "part": "the neighbours' signal at a matched mean response, present organization: U_v(vote/shared) - U_v(vote/isolated-matched), g 8 [at g 3]"
+  },
+  {
+   "id": "R-N2-3",
+   "part": "the neighbours' signal at a matched mean response, history: q_r(vote/shared) - q_r(vote/isolated-matched), g 8 [at g 3]"
+  },
+  {
+   "id": "R-N3-3",
+   "part": "the neighbours' signal at a matched mean response, what the record carries: the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 8 [at g 3]"
+  },
+  {
+   "id": "R-R1-3",
+   "part": "the response at the shared row's size, private signals only, present organization: U_v(vote/isolated-matched) - U_v(vote/none), g 8 [at g 3]"
+  },
+  {
+   "id": "R-R2-3",
+   "part": "the response at the shared row's size, private signals only, history: q_r(vote/isolated-matched) - q_r(vote/none), g 8 [at g 3]"
+  },
+  {
+   "id": "R-R3-3",
+   "part": "the response at the shared row's size, private signals only, what the record carries: the fresh successor's U_v, vote/isolated-matched - vote/none, after g 8 [at g 3]"
+  },
+  {
+   "id": "R-sh-iso-U_v-3",
+   "part": "U_v(vote/shared) - U_v(vote/isolated), g 3"
+  },
+  {
+   "id": "R-sh-iso-q_r-3",
+   "part": "q_r(vote/shared) - q_r(vote/isolated), g 3"
+  },
+  {
+   "id": "R-sh-iso-a_v-3",
+   "part": "a_v(vote/shared) - a_v(vote/isolated), g 3"
+  },
+  {
+   "id": "R-sh-iso-U-3",
+   "part": "U(vote/shared) - U(vote/isolated), g 3"
+  },
+  {
+   "id": "R-sh-iso-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-sh-iso-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-sh-ism-U_v-3",
+   "part": "U_v(vote/shared) - U_v(vote/isolated-matched), g 3"
+  },
+  {
+   "id": "R-sh-ism-q_r-3",
+   "part": "q_r(vote/shared) - q_r(vote/isolated-matched), g 3"
+  },
+  {
+   "id": "R-sh-ism-a_v-3",
+   "part": "a_v(vote/shared) - a_v(vote/isolated-matched), g 3"
+  },
+  {
+   "id": "R-sh-ism-U-3",
+   "part": "U(vote/shared) - U(vote/isolated-matched), g 3"
+  },
+  {
+   "id": "R-sh-ism-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 3"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated-matched, after g 3"
+  },
+  {
+   "id": "R-sh-ism-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated-matched, after g 3"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated-matched, after g 3"
+  },
+  {
+   "id": "R-ism-none-U_v-3",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/none), g 3"
+  },
+  {
+   "id": "R-ism-none-q_r-3",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/none), g 3"
+  },
+  {
+   "id": "R-ism-none-a_v-3",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/none), g 3"
+  },
+  {
+   "id": "R-ism-none-U-3",
+   "part": "U(vote/isolated-matched) - U(vote/none), g 3"
+  },
+  {
+   "id": "R-ism-none-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/none, after g 3"
+  },
+  {
+   "id": "R-ism-none-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/none, after g 3"
+  },
+  {
+   "id": "R-ism-none-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/none, after g 3"
+  },
+  {
+   "id": "R-ism-none-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/none, after g 3"
+  },
+  {
+   "id": "R-iso-none-U_v-3",
+   "part": "U_v(vote/isolated) - U_v(vote/none), g 3"
+  },
+  {
+   "id": "R-iso-none-q_r-3",
+   "part": "q_r(vote/isolated) - q_r(vote/none), g 3"
+  },
+  {
+   "id": "R-iso-none-a_v-3",
+   "part": "a_v(vote/isolated) - a_v(vote/none), g 3"
+  },
+  {
+   "id": "R-iso-none-U-3",
+   "part": "U(vote/isolated) - U(vote/none), g 3"
+  },
+  {
+   "id": "R-iso-none-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated - vote/none, after g 3"
+  },
+  {
+   "id": "R-iso-none-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/isolated - vote/none, after g 3"
+  },
+  {
+   "id": "R-iso-none-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/isolated - vote/none, after g 3"
+  },
+  {
+   "id": "R-iso-none-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/isolated - vote/none, after g 3"
+  },
+  {
+   "id": "R-sh-none-U_v-3",
+   "part": "U_v(vote/shared) - U_v(vote/none), g 3"
+  },
+  {
+   "id": "R-sh-none-q_r-3",
+   "part": "q_r(vote/shared) - q_r(vote/none), g 3"
+  },
+  {
+   "id": "R-sh-none-a_v-3",
+   "part": "a_v(vote/shared) - a_v(vote/none), g 3"
+  },
+  {
+   "id": "R-sh-none-U-3",
+   "part": "U(vote/shared) - U(vote/none), g 3"
+  },
+  {
+   "id": "R-sh-none-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared - vote/none, after g 3"
+  },
+  {
+   "id": "R-sh-none-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/shared - vote/none, after g 3"
+  },
+  {
+   "id": "R-sh-none-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/shared - vote/none, after g 3"
+  },
+  {
+   "id": "R-sh-none-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/shared - vote/none, after g 3"
+  },
+  {
+   "id": "R-ism-iso-U_v-3",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/isolated), g 3"
+  },
+  {
+   "id": "R-ism-iso-q_r-3",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/isolated), g 3"
+  },
+  {
+   "id": "R-ism-iso-a_v-3",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/isolated), g 3"
+  },
+  {
+   "id": "R-ism-iso-U-3",
+   "part": "U(vote/isolated-matched) - U(vote/isolated), g 3"
+  },
+  {
+   "id": "R-ism-iso-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_r-3",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-ism-iso-fresh-a_v-3",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_v-3",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/isolated, after g 3"
+  },
+  {
+   "id": "R-isolated-pro-U_v-3",
+   "part": "U_v(vote/isolated) - U_v(protected), g 3"
+  },
+  {
+   "id": "R-isolated-pro-q_r-3",
+   "part": "q_r(vote/isolated) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-isolated-pro-a_v-3",
+   "part": "a_v(vote/isolated) - a_v(protected), g 3"
+  },
+  {
+   "id": "R-isolated-pro-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated - protected, after g 3"
+  },
+  {
+   "id": "R-isolated-vtol-U_v-3",
+   "part": "U_v(vote/isolated) - U_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-vtol-q_r-3",
+   "part": "q_r(vote/isolated) - q_r(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-vtol-a_v-3",
+   "part": "a_v(vote/isolated) - a_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-vtol-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated - vtol-every, after g 3"
+  },
+  {
+   "id": "R-shared-pro-U_v-3",
+   "part": "U_v(vote/shared) - U_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-pro-q_r-3",
+   "part": "q_r(vote/shared) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-shared-pro-a_v-3",
+   "part": "a_v(vote/shared) - a_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-pro-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared - protected, after g 3"
+  },
+  {
+   "id": "R-shared-vtol-U_v-3",
+   "part": "U_v(vote/shared) - U_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-vtol-q_r-3",
+   "part": "q_r(vote/shared) - q_r(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-vtol-a_v-3",
+   "part": "a_v(vote/shared) - a_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-vtol-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared - vtol-every, after g 3"
+  },
+  {
+   "id": "R-isolated-matched-pro-U_v-3",
+   "part": "U_v(vote/isolated-matched) - U_v(protected), g 3"
+  },
+  {
+   "id": "R-isolated-matched-pro-q_r-3",
+   "part": "q_r(vote/isolated-matched) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-isolated-matched-pro-a_v-3",
+   "part": "a_v(vote/isolated-matched) - a_v(protected), g 3"
+  },
+  {
+   "id": "R-isolated-matched-pro-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated-matched - protected, after g 3"
+  },
+  {
+   "id": "R-isolated-matched-vtol-U_v-3",
+   "part": "U_v(vote/isolated-matched) - U_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-matched-vtol-q_r-3",
+   "part": "q_r(vote/isolated-matched) - q_r(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-matched-vtol-a_v-3",
+   "part": "a_v(vote/isolated-matched) - a_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-isolated-matched-vtol-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vtol-every, after g 3"
+  },
+  {
+   "id": "R-shared-early-pro-U_v-3",
+   "part": "U_v(vote/shared-early) - U_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-early-pro-q_r-3",
+   "part": "q_r(vote/shared-early) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-shared-early-pro-a_v-3",
+   "part": "a_v(vote/shared-early) - a_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-early-pro-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared-early - protected, after g 3"
+  },
+  {
+   "id": "R-shared-early-vtol-U_v-3",
+   "part": "U_v(vote/shared-early) - U_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-early-vtol-q_r-3",
+   "part": "q_r(vote/shared-early) - q_r(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-early-vtol-a_v-3",
+   "part": "a_v(vote/shared-early) - a_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-early-vtol-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared-early - vtol-every, after g 3"
+  },
+  {
+   "id": "R-shared-late-pro-U_v-3",
+   "part": "U_v(vote/shared-late) - U_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-late-pro-q_r-3",
+   "part": "q_r(vote/shared-late) - q_r(protected), g 3"
+  },
+  {
+   "id": "R-shared-late-pro-a_v-3",
+   "part": "a_v(vote/shared-late) - a_v(protected), g 3"
+  },
+  {
+   "id": "R-shared-late-pro-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared-late - protected, after g 3"
+  },
+  {
+   "id": "R-shared-late-vtol-U_v-3",
+   "part": "U_v(vote/shared-late) - U_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-late-vtol-q_r-3",
+   "part": "q_r(vote/shared-late) - q_r(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-late-vtol-a_v-3",
+   "part": "a_v(vote/shared-late) - a_v(vtol-every), g 3"
+  },
+  {
+   "id": "R-shared-late-vtol-fresh-U_v-3",
+   "part": "the fresh successor's U_v, vote/shared-late - vtol-every, after g 3"
+  },
+  {
+   "id": "R-ret-sh-U_v-3",
+   "part": "U_v(vote/shared-retained) - U_v(vote/shared), g 3 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-q_r-3",
+   "part": "q_r(vote/shared-retained) - q_r(vote/shared), g 3 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-fresh-U_v-3",
+   "part": "the fresh successor's U_v, retained - shared, after g 3 (P63 only)"
+  },
+  {
+   "id": "R-ea-la-q_r-3",
+   "part": "q_r(vote/shared-early) - q_r(vote/shared-late), g 3"
+  },
+  {
+   "id": "R-ea-la-fresh-U_v-3",
+   "part": "the fresh successor's U_v, early - late, after g 3"
+  },
+  {
+   "id": "R-H5-8",
+   "part": "early against late assistance at matched exposure: U_v(vote/shared-early) - U_v(vote/shared-late), g 3 [at g 8]"
+  },
+  {
+   "id": "R-sh-iso-U_v-8",
+   "part": "U_v(vote/shared) - U_v(vote/isolated), g 8"
+  },
+  {
+   "id": "R-sh-iso-q_r-8",
+   "part": "q_r(vote/shared) - q_r(vote/isolated), g 8"
+  },
+  {
+   "id": "R-sh-iso-a_v-8",
+   "part": "a_v(vote/shared) - a_v(vote/isolated), g 8"
+  },
+  {
+   "id": "R-sh-iso-U-8",
+   "part": "U(vote/shared) - U(vote/isolated), g 8"
+  },
+  {
+   "id": "R-sh-iso-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-sh-iso-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-sh-iso-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-sh-ism-U_v-8",
+   "part": "U_v(vote/shared) - U_v(vote/isolated-matched), g 8"
+  },
+  {
+   "id": "R-sh-ism-q_r-8",
+   "part": "q_r(vote/shared) - q_r(vote/isolated-matched), g 8"
+  },
+  {
+   "id": "R-sh-ism-a_v-8",
+   "part": "a_v(vote/shared) - a_v(vote/isolated-matched), g 8"
+  },
+  {
+   "id": "R-sh-ism-U-8",
+   "part": "U(vote/shared) - U(vote/isolated-matched), g 8"
+  },
+  {
+   "id": "R-sh-ism-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared - vote/isolated-matched, after g 8"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/shared - vote/isolated-matched, after g 8"
+  },
+  {
+   "id": "R-sh-ism-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/shared - vote/isolated-matched, after g 8"
+  },
+  {
+   "id": "R-sh-ism-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/shared - vote/isolated-matched, after g 8"
+  },
+  {
+   "id": "R-ism-none-U_v-8",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/none), g 8"
+  },
+  {
+   "id": "R-ism-none-q_r-8",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/none), g 8"
+  },
+  {
+   "id": "R-ism-none-a_v-8",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/none), g 8"
+  },
+  {
+   "id": "R-ism-none-U-8",
+   "part": "U(vote/isolated-matched) - U(vote/none), g 8"
+  },
+  {
+   "id": "R-ism-none-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/none, after g 8"
+  },
+  {
+   "id": "R-ism-none-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/none, after g 8"
+  },
+  {
+   "id": "R-ism-none-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/none, after g 8"
+  },
+  {
+   "id": "R-ism-none-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/none, after g 8"
+  },
+  {
+   "id": "R-iso-none-U_v-8",
+   "part": "U_v(vote/isolated) - U_v(vote/none), g 8"
+  },
+  {
+   "id": "R-iso-none-q_r-8",
+   "part": "q_r(vote/isolated) - q_r(vote/none), g 8"
+  },
+  {
+   "id": "R-iso-none-a_v-8",
+   "part": "a_v(vote/isolated) - a_v(vote/none), g 8"
+  },
+  {
+   "id": "R-iso-none-U-8",
+   "part": "U(vote/isolated) - U(vote/none), g 8"
+  },
+  {
+   "id": "R-iso-none-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated - vote/none, after g 8"
+  },
+  {
+   "id": "R-iso-none-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/isolated - vote/none, after g 8"
+  },
+  {
+   "id": "R-iso-none-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/isolated - vote/none, after g 8"
+  },
+  {
+   "id": "R-iso-none-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/isolated - vote/none, after g 8"
+  },
+  {
+   "id": "R-sh-none-U_v-8",
+   "part": "U_v(vote/shared) - U_v(vote/none), g 8"
+  },
+  {
+   "id": "R-sh-none-q_r-8",
+   "part": "q_r(vote/shared) - q_r(vote/none), g 8"
+  },
+  {
+   "id": "R-sh-none-a_v-8",
+   "part": "a_v(vote/shared) - a_v(vote/none), g 8"
+  },
+  {
+   "id": "R-sh-none-U-8",
+   "part": "U(vote/shared) - U(vote/none), g 8"
+  },
+  {
+   "id": "R-sh-none-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared - vote/none, after g 8"
+  },
+  {
+   "id": "R-sh-none-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/shared - vote/none, after g 8"
+  },
+  {
+   "id": "R-sh-none-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/shared - vote/none, after g 8"
+  },
+  {
+   "id": "R-sh-none-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/shared - vote/none, after g 8"
+  },
+  {
+   "id": "R-ism-iso-U_v-8",
+   "part": "U_v(vote/isolated-matched) - U_v(vote/isolated), g 8"
+  },
+  {
+   "id": "R-ism-iso-q_r-8",
+   "part": "q_r(vote/isolated-matched) - q_r(vote/isolated), g 8"
+  },
+  {
+   "id": "R-ism-iso-a_v-8",
+   "part": "a_v(vote/isolated-matched) - a_v(vote/isolated), g 8"
+  },
+  {
+   "id": "R-ism-iso-U-8",
+   "part": "U(vote/isolated-matched) - U(vote/isolated), g 8"
+  },
+  {
+   "id": "R-ism-iso-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_r-8",
+   "part": "the fresh successor's q_r, vote/isolated-matched - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-ism-iso-fresh-a_v-8",
+   "part": "the fresh successor's a_v, vote/isolated-matched - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-ism-iso-fresh-q_v-8",
+   "part": "the fresh successor's q_v, vote/isolated-matched - vote/isolated, after g 8"
+  },
+  {
+   "id": "R-isolated-pro-U_v-8",
+   "part": "U_v(vote/isolated) - U_v(protected), g 8"
+  },
+  {
+   "id": "R-isolated-pro-q_r-8",
+   "part": "q_r(vote/isolated) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-isolated-pro-a_v-8",
+   "part": "a_v(vote/isolated) - a_v(protected), g 8"
+  },
+  {
+   "id": "R-isolated-pro-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated - protected, after g 8"
+  },
+  {
+   "id": "R-isolated-vtol-U_v-8",
+   "part": "U_v(vote/isolated) - U_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-vtol-q_r-8",
+   "part": "q_r(vote/isolated) - q_r(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-vtol-a_v-8",
+   "part": "a_v(vote/isolated) - a_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-vtol-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated - vtol-every, after g 8"
+  },
+  {
+   "id": "R-shared-pro-U_v-8",
+   "part": "U_v(vote/shared) - U_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-pro-q_r-8",
+   "part": "q_r(vote/shared) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-shared-pro-a_v-8",
+   "part": "a_v(vote/shared) - a_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-pro-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared - protected, after g 8"
+  },
+  {
+   "id": "R-shared-vtol-U_v-8",
+   "part": "U_v(vote/shared) - U_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-vtol-q_r-8",
+   "part": "q_r(vote/shared) - q_r(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-vtol-a_v-8",
+   "part": "a_v(vote/shared) - a_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-vtol-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared - vtol-every, after g 8"
+  },
+  {
+   "id": "R-isolated-matched-pro-U_v-8",
+   "part": "U_v(vote/isolated-matched) - U_v(protected), g 8"
+  },
+  {
+   "id": "R-isolated-matched-pro-q_r-8",
+   "part": "q_r(vote/isolated-matched) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-isolated-matched-pro-a_v-8",
+   "part": "a_v(vote/isolated-matched) - a_v(protected), g 8"
+  },
+  {
+   "id": "R-isolated-matched-pro-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated-matched - protected, after g 8"
+  },
+  {
+   "id": "R-isolated-matched-vtol-U_v-8",
+   "part": "U_v(vote/isolated-matched) - U_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-matched-vtol-q_r-8",
+   "part": "q_r(vote/isolated-matched) - q_r(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-matched-vtol-a_v-8",
+   "part": "a_v(vote/isolated-matched) - a_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-isolated-matched-vtol-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/isolated-matched - vtol-every, after g 8"
+  },
+  {
+   "id": "R-shared-early-pro-U_v-8",
+   "part": "U_v(vote/shared-early) - U_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-early-pro-q_r-8",
+   "part": "q_r(vote/shared-early) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-shared-early-pro-a_v-8",
+   "part": "a_v(vote/shared-early) - a_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-early-pro-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared-early - protected, after g 8"
+  },
+  {
+   "id": "R-shared-early-vtol-U_v-8",
+   "part": "U_v(vote/shared-early) - U_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-early-vtol-q_r-8",
+   "part": "q_r(vote/shared-early) - q_r(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-early-vtol-a_v-8",
+   "part": "a_v(vote/shared-early) - a_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-early-vtol-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared-early - vtol-every, after g 8"
+  },
+  {
+   "id": "R-shared-late-pro-U_v-8",
+   "part": "U_v(vote/shared-late) - U_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-late-pro-q_r-8",
+   "part": "q_r(vote/shared-late) - q_r(protected), g 8"
+  },
+  {
+   "id": "R-shared-late-pro-a_v-8",
+   "part": "a_v(vote/shared-late) - a_v(protected), g 8"
+  },
+  {
+   "id": "R-shared-late-pro-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared-late - protected, after g 8"
+  },
+  {
+   "id": "R-shared-late-vtol-U_v-8",
+   "part": "U_v(vote/shared-late) - U_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-late-vtol-q_r-8",
+   "part": "q_r(vote/shared-late) - q_r(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-late-vtol-a_v-8",
+   "part": "a_v(vote/shared-late) - a_v(vtol-every), g 8"
+  },
+  {
+   "id": "R-shared-late-vtol-fresh-U_v-8",
+   "part": "the fresh successor's U_v, vote/shared-late - vtol-every, after g 8"
+  },
+  {
+   "id": "R-ret-sh-U_v-8",
+   "part": "U_v(vote/shared-retained) - U_v(vote/shared), g 8 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-q_r-8",
+   "part": "q_r(vote/shared-retained) - q_r(vote/shared), g 8 (P63 only)"
+  },
+  {
+   "id": "R-ret-sh-fresh-U_v-8",
+   "part": "the fresh successor's U_v, retained - shared, after g 8 (P63 only)"
+  },
+  {
+   "id": "R-ea-la-q_r-8",
+   "part": "q_r(vote/shared-early) - q_r(vote/shared-late), g 8"
+  },
+  {
+   "id": "R-ea-la-fresh-U_v-8",
+   "part": "the fresh successor's U_v, early - late, after g 8"
+  }
+ ],
+ "predict_sha256": "8ff8b8e01dbb573dded544e7f08e9b8f58547cfb148932bc0ea5f2e4ae81f9c5"
+}

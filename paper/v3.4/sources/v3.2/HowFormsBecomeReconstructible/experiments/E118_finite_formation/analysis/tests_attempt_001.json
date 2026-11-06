@@ -1,0 +1,175 @@
+{
+  "checks": [
+    "grid_ties_even_signed_zero_subnormals",
+    "identity_channel_and_idempotence",
+    "exact_and_tolerance_capture_independently_checked",
+    "physical_absence_stays_absent",
+    "positive_floor_attenuates_without_deletion",
+    "zero_drive_at_zero_denominator",
+    "pre_channel_tags_retain_grid_erased_noops",
+    "empty_selections_retained",
+    "mixture_uses_only_own_history",
+    "full_width_all_regime_ancestry_replay",
+    "independent_cue_pulse_noise_and_sham_equality",
+    "all_ten_unchanged_gates_required_strictly",
+    "five_condition_matched_contrasts"
+  ],
+  "complete_reference_replay": true,
+  "excluded_report": {
+    "all_cases_endpoints_and_harms_retained": true,
+    "all_new_steps_independently_replayed": true,
+    "ancestry_record_steps": 102720,
+    "condition_rows": 160,
+    "context_draw_rows": 32,
+    "endpoint_record_steps": 531456,
+    "endpoint_reports": [
+      {
+        "all_new_steps_independently_replayed": true,
+        "archive_outcomes": 0,
+        "chunks": 1,
+        "deduplicated_new_outcomes": 12,
+        "new_record_steps": 11264,
+        "new_records": 88,
+        "record_outcomes": 100,
+        "seconds": 1.5307103681843728,
+        "stage": "recovery",
+        "unique_records": 88
+      },
+      {
+        "all_new_steps_independently_replayed": true,
+        "archive_outcomes": 0,
+        "chunks": 2,
+        "deduplicated_new_outcomes": 4,
+        "new_record_steps": 90112,
+        "new_records": 176,
+        "record_outcomes": 180,
+        "seconds": 12.385571779217571,
+        "stage": "writer",
+        "unique_records": 176
+      },
+      {
+        "all_new_steps_independently_replayed": true,
+        "archive_outcomes": 0,
+        "chunks": 4,
+        "deduplicated_new_outcomes": 12,
+        "new_record_steps": 215040,
+        "new_records": 420,
+        "record_outcomes": 432,
+        "seconds": 32.051348958630115,
+        "stage": "assay_r0",
+        "unique_records": 420
+      },
+      {
+        "all_new_steps_independently_replayed": true,
+        "archive_outcomes": 0,
+        "chunks": 4,
+        "deduplicated_new_outcomes": 12,
+        "new_record_steps": 215040,
+        "new_records": 420,
+        "record_outcomes": 432,
+        "seconds": 29.22739157010801,
+        "stage": "assay_r1",
+        "unique_records": 420
+      }
+    ],
+    "erased_rows": 96,
+    "excluded_reference_exact": true,
+    "finite_from_first_commit": true,
+    "own_lineage_donors": true,
+    "seconds": 99.25952426507138,
+    "static_other_seconds": 0.5591615338344127,
+    "status": "PASS",
+    "task": 9000980,
+    "timings": {
+      "E022": 13.335930631496012,
+      "E055": 0.7918242409359664,
+      "E058": 2.2736228548455983,
+      "acquisition": 1.2791374090593308,
+      "assay_r0": 32.11741776904091,
+      "assay_r1": 29.291421761037782,
+      "capture": 1.9611957240849733,
+      "recovery": 1.547256332822144,
+      "storage": 3.689777354011312,
+      "writer": 12.412778653902933
+    },
+    "utc": "2026-10-31T12:59:53.145658+00:00"
+  },
+  "inputs_sha256": {
+    "E015_functional_inheritance/audit.py": "c50e9fd8372ddfd20c15aa88c93a7ca4467fd6df529637bdf8c763dc26ce68f1",
+    "E015_functional_inheritance/model.py": "2c76d0bfbc923d2252aaf22e1770724943a5b12ea4abda2258605450b8eb9672",
+    "E016_teaching_consistency/model.py": "cf35213bd43610c73dcb0796e56e59d7332d8eb9ef4abdd35679a4476b1d5582",
+    "E017_reader_timing/audit.py": "f01ec8dead938f0b2f707693a2e8755200b4e29af02976cbd5df853040d464b7",
+    "E017_reader_timing/model.py": "db9cf72735deb61daaeb05b7961dab5f49e0990836dc195aa1b69302590364b6",
+    "E022_reader_compensation/audit.py": "9a2b6c03b483c7b353dabc8e9c9137726217c9a84d0c65a84a1da901cbb0dcab",
+    "E022_reader_compensation/model.py": "88a1f3a667b3115c87536b8c17169bf5bc932c9cbf97833cc1991eb460ee84d3",
+    "E054_record_interventions/audit_model.py": "a4b50c8acf4f29d4fff1e395ef7cc4f3de6f6bb5951128cd77374639b0d07018",
+    "E054_record_interventions/model.py": "e9811fa68ccf132450a375d6ead7f274f5072bb229eaf1b83b8be5d81e20caed",
+    "E054_record_interventions/plan.py": "882f44110c13f0a0c734990c6584b06869a23068e507008fe649e43f36895480",
+    "E055_stress_capture_recovery/audit_model.py": "073c954ffe6b5ce1b50a4e55fff0cfbe8e69835835f8999c260b6061e3fb167a",
+    "E055_stress_capture_recovery/model.py": "e584799e1ddbff9de5ad7c20a22d5c9e3e5ce492e1bea7ae9528d6f2c487a55c",
+    "E055_stress_capture_recovery/plan.py": "6b257f8e70cdde639c1571465ba106cfe68470f7f896bf71455d2de264524f86",
+    "E056_sign_magnitude_substitution/plan.py": "dc74e43d613da3e97a472cbf92a3eb4ec91046c30d192e2feac893d05da09129",
+    "E057_fresh_capture_confirmation/plan.py": "8d2363837fd4683513a3d070437dfaa2071d599198c5fca0ee24648ef83f6891",
+    "E065_fresh_compatibility_confirmation/plan.py": "ef062c869041d8ddba959a3b6d989048fd2426d9378bfb1a46e2b704d8c212fb",
+    "E067_ordinary_mixture_rebuilding/plan.py": "704daedeb436fbc3a39490482eca0a817bb5105929604a5cdf134eb39e53ad3c",
+    "E068_fresh_recovery_confirmation/plan.py": "fab13c1f6289214f59484cd06c21c3d937308f921fd736759601e9758e772eaa",
+    "E073_saved_cohort_reversal_replication/plan.py": "08abce13a91545351daaf64227d6b7ffc8bbd0375ec8fd507db2af92a051da50",
+    "E077_fresh_reconstruction_tradeoff/audit_model.py": "8d9de2a18c66e310ad3ad3cf51de2a637ad007e93ace793b45abd43dd8f626dd",
+    "E077_fresh_reconstruction_tradeoff/model.py": "815ef37124380e98fc98509388f61c6bf003ef66a4449cdcd6a40f5b66273b47",
+    "E077_fresh_reconstruction_tradeoff/plan.py": "4ccdc1ca035c9abc4464ebb1c0825b5de14a9188a498773c302dc77118a07523",
+    "E081_fresh_strength_pattern/plan.py": "83ec0415f8ff875ad9e132cb9dbd0419835408d27534e137eac9be2a1735d828",
+    "E098_writer_pairing_tradeoff/plan.py": "fe57cfd7ddc8d9def5c37eb7c934a4b3bc3a4aa4a83c2592ba485cc534f42947",
+    "E116_finite_resolution_pruning/PLAN.json": "e4b450c768f949f869938224825fdb8bc0b16ed6bf00eeb3e6143128c5f0dbca",
+    "E116_finite_resolution_pruning/audit.py": "f6df893a06dfa0f24b963759e87626d5b574913279e8f9cb0c034852dbc4898e",
+    "E116_finite_resolution_pruning/data.py": "70cb1d75f7681d1ce2b14eff9c48c1ad0a44a047592f06d56cb6fd22e718d06e",
+    "E116_finite_resolution_pruning/dynamics.py": "4c433685388c70a38e3f7f57ce9600e5a1d651c4b3b3b4a0c105741ca180ecc2",
+    "E116_finite_resolution_pruning/model.py": "9c710aec3424abcbe5e63afa6301dd1e819d0f0fe65724b963304e8002db49fc",
+    "E116_finite_resolution_pruning/plan.py": "b6035423c94b9b45e018bb03d8446ce3b88334ab4a1ceda93f6362ae57c8e29f",
+    "E118_finite_formation/DATA_DICTIONARY.md": "7d1e8d5c6c440ea3cd97921aa2cfc439c7d24d3f197503de1a3f00c6d3a5e6b3",
+    "E118_finite_formation/PROTOCOL.md": "a1eddfed7a9fa4f14415ee2e4ef7ebc35e4ff25afb5802ff5e249b0c4f82a1c9",
+    "E118_finite_formation/audit.py": "d88f5c4417fc9a4f81c9baca38163b0f43fea4c2605a4d3823a339caf7fddbdf",
+    "E118_finite_formation/data.py": "4c54d00c9d063dc680d8791275152456a24d6f2ae1b75054dbfa19f79d4981d3",
+    "E118_finite_formation/experiment.py": "a20abfa0539c19c66e326db3bb8d06541e1d244bfe47924390639a90e427b575",
+    "E118_finite_formation/inference.py": "863779c177567b219d60738efae5a4fa11a7c54a7457c19b70a5f820d33435ce",
+    "E118_finite_formation/model.py": "20e28164a4021863e0aa6ae3dfce4eb050188b3d767c89a2ba2e077338d30863",
+    "E118_finite_formation/plan.py": "654c0b07db2a19a7c82eb0ee0b15bb34377c793953618e277e5a661f0e99df0c",
+    "E118_finite_formation/run.py": "6a302d91646e1c5af2949c09d1b967ff8abe69682f3f2a10acc88c88ff3982bc",
+    "E118_finite_formation/tests.py": "01c2d2ebad6ac366a56f6d37002332ed590a4891b578136f0fde4e64ca9c01da",
+    "RUN_POLICY.md": "a53765a80aa71e852545302ae1e781f387828bf364a72252d747d0faf0820f83",
+    "common.py": "2196c57c0b4aeff4652d3f33cb73d5780f2808fc57d3f77cc803a8853a430691",
+    "run_python.sh": "e52c7295c19683f8c3158c7564cda627babe30a2fecce7f4d91f99e4503dcda5"
+  },
+  "registry_sha256": "cad86929507f9b05d424390e55157f7e96b53cc3ff3e8c295ab5710b2c7d40e4",
+  "resources": {
+    "affinity": [
+      0
+    ],
+    "free_bytes": 90074857472,
+    "other_busy_capacity": 2,
+    "other_busy_processes": [
+      {
+        "affinity": [
+          7
+        ],
+        "pid": 2449329,
+        "sampled_cpu_percent": 99.74672990343473,
+        "threads": 1,
+        "ticks": 17627
+      },
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 2449332,
+        "sampled_cpu_percent": 99.74672990343473,
+        "threads": 1,
+        "ticks": 17630
+      }
+    ],
+    "total_cpu_ceiling": 12,
+    "utc": "2026-10-31T12:58:11.840264+00:00"
+  },
+  "seconds": 102.39183238008991,
+  "status": "PASS",
+  "utc": "2026-10-31T12:59:53.159018+00:00"
+}

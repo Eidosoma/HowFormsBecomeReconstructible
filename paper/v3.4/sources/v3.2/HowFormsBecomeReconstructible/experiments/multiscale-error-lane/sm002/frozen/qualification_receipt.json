@@ -1,0 +1,107 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "19cb3a35c1a0f61ad0c9c60e4c441513a6814ce133f494acd1fa3cb844edaaa7",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm002/preflight",
+ "blocks": [
+  900334,
+  900335
+ ],
+ "tag": "mse-sm002",
+ "load_1min_at_check": 14.33,
+ "checked_utc": "2026-10-31T13:56:05Z",
+ "wall_s": 1066.0,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "bad": [],
+   "tasks": 12,
+   "seconds": 0.1
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "W4_x64",
+    900334
+   ],
+   "differ": [],
+   "seconds": 528.3
+  },
+  "Q3_engine": {
+   "pass": true,
+   "a_sm002_task_equals_sm001_task": true,
+   "a_items": 63,
+   "b_coarse_grain_returns_the_record": true,
+   "b_V_bit_for_bit": true,
+   "b_coarse_endpoints_bit_for_bit": true,
+   "b_lifted_in_equals_unlifted": true,
+   "c_values": true,
+   "c_majority_and_ties": true,
+   "c_zero_relation_tie_is_plus_one": true,
+   "seconds": 512.7
+  },
+  "Q4_replay": {
+   "pass": true,
+   "branch": [
+    "W16_x64_r2",
+    "L8",
+    "dial-c2-m2-t3000",
+    "case 0"
+   ],
+   "max_dV": 2.220446049250313e-16,
+   "E_replay": 0.875,
+   "E_cg": 0.875,
+   "seconds": 18.7
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "controls_alike_across_sizes": true,
+   "cg_control_alike_across_units": true,
+   "seconds": 0.0
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "max_abs_diff": 0.0,
+   "seconds": 0.1
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "refined_doubled_from_twins": true,
+   "twins_on_the_same_blocks": true,
+   "patch_sizes": true,
+   "corner_equals_twins": true,
+   "signal_windows": true,
+   "ties_recount_equal": true,
+   "max_tied_edge_fraction": 0.2138671875,
+   "cg_stream_differs": true,
+   "T_star": true,
+   "seconds": 0.1
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "listed_twice": true,
+   "reordered": true,
+   "seconds": 5.1
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_dev_cpu_h": 17.41,
+   "forecast_dev_wall_h_12": 1.45,
+   "worker_rss_mb": 1425.9,
+   "disk_headroom": true,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 7206,
+    "TABLES.md": 30927,
+    "reported.json": 32331
+   },
+   "statements": 8,
+   "reported": 86,
+   "seconds": 1.0
+  }
+ }
+}

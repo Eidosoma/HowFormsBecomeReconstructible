@@ -1,0 +1,2795 @@
+{
+  "classification": "DECLARED_FACTORIAL_INTERACTIONS_EXPANDED_AT_CLOSEOUT",
+  "panels": {
+    "all": [
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0004969783354678296,
+              0.002364017210803454,
+              -0.002261238606106739,
+              -0.004374661024370735,
+              -0.003916477465930187,
+              -0.0018479678663253837,
+              0.00027123930713041566,
+              0.0009380379967251387
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0026690361631349553,
+              0.00035101536389259524
+            ],
+            "contexts": 1024,
+            "estimate": -0.0011655035979427331,
+            "hoeffding_pointwise_95": [
+              -7.683747834157308,
+              7.681416826961423
+            ],
+            "negative_contexts": 522,
+            "positive_contexts": 502,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0078125,
+              0.0078125,
+              0.0078125,
+              -0.0078125,
+              -0.0078125,
+              -0.0078125,
+              0.0,
+              0.0078125
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.00390625,
+              0.005859375
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 5,
+            "positive_contexts": 6,
+            "tied_contexts": 1013
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.0021091116927516563,
+              0.011285355574817245,
+              0.012665108933367298,
+              -0.004423209354402381,
+              -0.02245756233137707,
+              -0.027281052863542495,
+              9.920765120897479e-05,
+              0.004506118666798275
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0133602044494934,
+              0.005381302627706645
+            ],
+            "contexts": 1024,
+            "estimate": -0.003464393176985226,
+            "hoeffding_pointwise_95": [
+              -7.686046723736351,
+              7.67911793738238
+            ],
+            "negative_contexts": 553,
+            "positive_contexts": 471,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 1024,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 1024
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0007530005934267208,
+              0.0016317821129453276,
+              0.0035241132131060052,
+              -0.0061114895704931635,
+              -0.00330030276285659,
+              -0.0025236324795894576,
+              0.0002683375505624531,
+              -0.0004597809542833328
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0029522730742661805,
+              0.0009130631476133214
+            ],
+            "contexts": 1024,
+            "estimate": -0.0009654966855044349,
+            "hoeffding_pointwise_95": [
+              -7.68354782724487,
+              7.6816168338738615
+            ],
+            "negative_contexts": 524,
+            "positive_contexts": 500,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0078125,
+              0.0078125,
+              0.0078125,
+              -0.0078125,
+              0.0,
+              -0.015625,
+              0.0,
+              0.0078125
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0048828125,
+              0.005859375
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 5,
+            "positive_contexts": 7,
+            "tied_contexts": 1012
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.0012425841061155614,
+              0.010367111153771792,
+              0.016620198616570644,
+              -0.01226967374840102,
+              -0.017202526459379582,
+              -0.024565353938664804,
+              8.860519964865347e-05,
+              -0.0010606650916054816
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01257935383400586,
+              0.0050799465106832
+            ],
+            "contexts": 1024,
+            "estimate": -0.003658111046771919,
+            "hoeffding_pointwise_95": [
+              -7.686240441606137,
+              7.678924219512594
+            ],
+            "negative_contexts": 557,
+            "positive_contexts": 467,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 1024,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 1024
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.001232931349571365,
+              0.0012167679173207017,
+              -0.0005003853852831765,
+              0.0033600308209863513,
+              0.0019011622264601346,
+              0.0026429360339240877,
+              -2.321773998803005e-05,
+              1.0305779082317489e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -7.748857774601607e-05,
+              0.0019743179670895757
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009218335378663777,
+            "hoeffding_pointwise_95": [
+              -7.6816604970214994,
+              7.683504164097232
+            ],
+            "negative_contexts": 733,
+            "positive_contexts": 291,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0078125,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0029296875
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 1023
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.004129377426603705,
+              0.0009117780019148423,
+              0.001949848461688249,
+              0.00837973184457119,
+              0.0045197676530173425,
+              0.00972273032845465,
+              -6.67088631554987e-05,
+              0.0025421983361832165
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0001660894376738607,
+              0.0058910717438524175
+            ],
+            "contexts": 1024,
+            "estimate": 0.0029787460420087858,
+            "hoeffding_pointwise_95": [
+              -7.6796035845173565,
+              7.685561076601375
+            ],
+            "negative_contexts": 629,
+            "positive_contexts": 392,
+            "tied_contexts": 3
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 1024,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 1024
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0014889536075302547,
+              0.0004845328194625757,
+              0.0052849664339295705,
+              0.001623202274863923,
+              0.0025173369295337293,
+              0.0019672714206600142,
+              -2.6119496555992598e-05,
+              -0.001387513171926155
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.00022801908588586877,
+              0.0026197875711979697
+            ],
+            "contexts": 1024,
+            "estimate": 0.0011218404503046762,
+            "hoeffding_pointwise_95": [
+              -7.681460490109061,
+              7.68370417100967
+            ],
+            "negative_contexts": 739,
+            "positive_contexts": 285,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0078125,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0029296875
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 1,
+            "positive_contexts": 2,
+            "tied_contexts": 1021
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.0032628498399676097,
+              -6.466419130610009e-06,
+              0.0059049381448915955,
+              0.000533267450572549,
+              0.009774803525014836,
+              0.012438429253332339,
+              -7.731131471582002e-05,
+              -0.003024585422220539
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0008073383850632067,
+              0.006766244560305387
+            ],
+            "contexts": 1024,
+            "estimate": 0.0027850281722220926,
+            "hoeffding_pointwise_95": [
+              -7.6797973023871435,
+              7.685367358731588
+            ],
+            "negative_contexts": 627,
+            "positive_contexts": 393,
+            "tied_contexts": 4
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 1024,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 1024
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.013218476995071704,
+              0.012791159454539826,
+              -0.011228095561872766,
+              -0.005354132549520908,
+              -0.0014811225439559446,
+              -0.010145262526413332,
+              0.003777158009233306,
+              -0.012255694174203989
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01000300264199961,
+              0.0016228137714729585
+            ],
+            "contexts": 1024,
+            "estimate": -0.004639308360908189,
+            "hoeffding_pointwise_95": [
+              -7.687221638920274,
+              7.677943022198457
+            ],
+            "negative_contexts": 492,
+            "positive_contexts": 532,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.0234375,
+              0.0078125,
+              0.0,
+              0.0078125,
+              0.0,
+              -0.0078125,
+              0.0,
+              -0.015625
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01171875,
+              0.0029296875
+            ],
+            "contexts": 1024,
+            "estimate": -0.00390625,
+            "hoeffding_pointwise_95": [
+              -1.9245518326398414,
+              1.9167393326398414
+            ],
+            "negative_contexts": 22,
+            "positive_contexts": 17,
+            "tied_contexts": 985
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.05668284423089163,
+              0.021037682774057972,
+              -0.02154675178106477,
+              -0.0030129176136651295,
+              0.0032515437944718737,
+              -0.016385925756691306,
+              9.72458335539388e-05,
+              -0.03342325590350968
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.02911185631019267,
+              0.0014484987869186113
+            ],
+            "contexts": 1024,
+            "estimate": -0.013333152860467342,
+            "hoeffding_pointwise_95": [
+              -7.695915483419833,
+              7.669249177698898
+            ],
+            "negative_contexts": 493,
+            "positive_contexts": 531,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0078125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0029296875
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 1023
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              0.0021999176657627496,
+              0.008747748364035832,
+              -0.0073224233493535615,
+              -0.0038894861098015213,
+              0.0013105572064527767,
+              0.0010960015267149983,
+              2.133718901495274e-07,
+              -0.016061268345994775
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.00681718201511282,
+              0.0026885761761604983
+            ],
+            "contexts": 1024,
+            "estimate": -0.0017398424587866687,
+            "hoeffding_pointwise_95": [
+              -7.684322173018153,
+              7.680842488100579
+            ],
+            "negative_contexts": 486,
+            "positive_contexts": 538,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0078125,
+              0.0078125,
+              0.0,
+              0.015625,
+              0.0078125,
+              0.015625,
+              -0.0078125,
+              -0.0234375
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005859375,
+              0.0107421875
+            ],
+            "contexts": 1024,
+            "estimate": 0.0029296875,
+            "hoeffding_pointwise_95": [
+              -1.9177158951398414,
+              1.9235752701398414
+            ],
+            "negative_contexts": 18,
+            "positive_contexts": 20,
+            "tied_contexts": 986
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.002653533136352573,
+              0.01978891652529304,
+              -0.018046909217442883,
+              -0.0012659856069211807,
+              0.012948992643885453,
+              0.019188148593573047,
+              -0.015422214239133853,
+              -0.04862432825895461
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0202046769052558,
+              0.009253260778719862
+            ],
+            "contexts": 1024,
+            "estimate": -0.004260864087006695,
+            "hoeffding_pointwise_95": [
+              -7.6868431946463724,
+              7.678321466472359
+            ],
+            "negative_contexts": 487,
+            "positive_contexts": 537,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 1024,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 1024
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.018545558248764367,
+              0.0046689530980585855,
+              -0.0038035101486275638,
+              -0.0007597542945694375,
+              -0.003328318711149066,
+              -0.011231515936242617,
+              -4.749138016661916e-06,
+              1.0313991752562745e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.009201577139654643,
+              0.0001577220250967988
+            ],
+            "contexts": 1024,
+            "estimate": -0.00412426742344482,
+            "hoeffding_pointwise_95": [
+              -7.686706597982811,
+              7.6784580631359205
+            ],
+            "negative_contexts": 569,
+            "positive_contexts": 455,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.0390625,
+              0.015625,
+              0.0,
+              -0.0078125,
+              -0.0078125,
+              -0.0234375,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0185546875,
+              0.001953125
+            ],
+            "contexts": 1024,
+            "estimate": -0.0078125,
+            "hoeffding_pointwise_95": [
+              -1.9284580826398414,
+              1.9128330826398414
+            ],
+            "negative_contexts": 11,
+            "positive_contexts": 3,
+            "tied_contexts": 1010
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.07018229400512818,
+              0.0018230899696768084,
+              -0.00042926720341914437,
+              0.0008211288703224734,
+              -0.013203481564156695,
+              -0.02726141289482383,
+              2.0957057991124323e-06,
+              5.272822685299703e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.03116682937123278,
+              -0.0008081481882128862
+            ],
+            "contexts": 1024,
+            "estimate": -0.013547176611859557,
+            "hoeffding_pointwise_95": [
+              -7.696129507171225,
+              7.669035153947506
+            ],
+            "negative_contexts": 528,
+            "positive_contexts": 496,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0078125,
+              0.0078125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0048828125
+            ],
+            "contexts": 1024,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 2,
+            "tied_contexts": 1022
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.003127163587929915,
+              0.0006255420075545869,
+              0.00010216206389164202,
+              0.0007048921451499612,
+              -0.0005366389607403451,
+              9.748116885710599e-06,
+              -0.0037816937753598194,
+              -0.0037952601800382213
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0025802243398060816,
+              -3.152787973147797e-05
+            ],
+            "contexts": 1024,
+            "estimate": -0.0012248015213233,
+            "hoeffding_pointwise_95": [
+              -7.683807132080689,
+              7.681357529038042
+            ],
+            "negative_contexts": 596,
+            "positive_contexts": 428,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.0078125,
+              0.015625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.0078125,
+              -0.0078125
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0048828125,
+              0.0048828125
+            ],
+            "contexts": 1024,
+            "estimate": -0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9216221451398414,
+              1.9196690201398414
+            ],
+            "negative_contexts": 3,
+            "positive_contexts": 2,
+            "tied_contexts": 1019
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.01615298291058912,
+              0.0005743237209118804,
+              0.003070575360202743,
+              0.0025680608770663913,
+              -0.003506032714743111,
+              0.008312661455440523,
+              -0.015517364366888678,
+              -0.015148344128591913
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.010970599118639238,
+              0.0015812097172835122
+            ],
+            "contexts": 1024,
+            "estimate": -0.004474887838398911,
+            "hoeffding_pointwise_95": [
+              -7.687057218397765,
+              7.678107442720966
+            ],
+            "negative_contexts": 535,
+            "positive_contexts": 489,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0078125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0029296875
+            ],
+            "contexts": 1024,
+            "estimate": 0.0009765625,
+            "hoeffding_pointwise_95": [
+              -1.9196690201398414,
+              1.9216221451398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 1023
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      }
+    ],
+    "mixture": [
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.000994014688994382,
+              0.004727428606627532,
+              -0.004522385604738227,
+              -0.008749440983474915,
+              -0.007833387811985372,
+              -0.0036959372981351093,
+              0.0005425535199280892,
+              0.0018790646203941525
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005338265995708985,
+              0.0007021415462515556
+            ],
+            "contexts": 512,
+            "estimate": -0.002330764955047279,
+            "hoeffding_pointwise_95": [
+              -7.684913095514413,
+              7.680251565604318
+            ],
+            "negative_contexts": 269,
+            "positive_contexts": 243,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.015625,
+              0.015625,
+              0.015625,
+              -0.015625,
+              -0.015625,
+              -0.015625,
+              0.0,
+              0.015625
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0078125,
+              0.01171875
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 5,
+            "positive_contexts": 6,
+            "tied_contexts": 501
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.004218346029259323,
+              0.006929804189954241,
+              0.02533032801703461,
+              -0.008849930065051973,
+              -0.044916670862678566,
+              -0.05456207552302411,
+              0.00019835345728115973,
+              0.009014849492310332
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.02737001542680352,
+              0.007583148908657237
+            ],
+            "contexts": 512,
+            "estimate": -0.008884210915429203,
+            "hoeffding_pointwise_95": [
+              -7.691466541474795,
+              7.673698119643936
+            ],
+            "negative_contexts": 270,
+            "positive_contexts": 242,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0015062159068016288,
+              0.0032629632794778348,
+              0.007048315735679292,
+              -0.012222062157212225,
+              -0.006600600975371625,
+              -0.005047244121295188,
+              0.0005366976782587497,
+              -0.0009187181611115206
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005904077012448508,
+              0.0018262791519523798
+            ],
+            "contexts": 512,
+            "estimate": -0.0019308580785470388,
+            "hoeffding_pointwise_95": [
+              -7.684513188637912,
+              7.680651472480819
+            ],
+            "negative_contexts": 275,
+            "positive_contexts": 237,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.015625,
+              0.015625,
+              0.015625,
+              -0.015625,
+              0.0,
+              -0.03125,
+              0.0,
+              0.015625
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.009765625,
+              0.01171875
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 5,
+            "positive_contexts": 7,
+            "tied_contexts": 500
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.002486553919005423,
+              0.0051006168671545145,
+              0.03324048814853896,
+              -0.024538841886549805,
+              -0.034405033173637155,
+              -0.0491307000501719,
+              0.00017719509016721788,
+              -0.00212063576399294
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.02590762220159778,
+              0.007356069681991035
+            ],
+            "contexts": 512,
+            "estimate": -0.009270433085937066,
+            "hoeffding_pointwise_95": [
+              -7.6918527636453025,
+              7.673311897473429
+            ],
+            "negative_contexts": 272,
+            "positive_contexts": 240,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0024653261181245625,
+              0.002434557406041162,
+              -0.0009992948051306696,
+              0.006717526317372865,
+              0.0038023332361563867,
+              0.005286485038543575,
+              -4.61578740023866e-05,
+              3.0264108990450244e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0001533914817818435,
+              0.003947995974776489
+            ],
+            "contexts": 512,
+            "estimate": 0.0018450484137308527,
+            "hoeffding_pointwise_95": [
+              -7.680737282145635,
+              7.684427378973097
+            ],
+            "negative_contexts": 327,
+            "positive_contexts": 185,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.015625,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.005859375
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 511
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.008258323287258137,
+              0.00181896436235801,
+              0.003900636471600171,
+              0.01675188069068942,
+              0.009039211102531988,
+              0.019446023839143595,
+              -0.00013336728783869538,
+              0.005105637106121949
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.00033359768514455517,
+              0.011788545094177757
+            ],
+            "contexts": 512,
+            "estimate": 0.005958832874668538,
+            "hoeffding_pointwise_95": [
+              -7.676623497684697,
+              7.688541163434034
+            ],
+            "negative_contexts": 274,
+            "positive_contexts": 237,
+            "tied_contexts": 1
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0029775273359318065,
+              0.0009700920788914655,
+              0.01057140653528685,
+              0.003244905143635556,
+              0.005035120072770129,
+              0.0039351782153834985,
+              -5.2013715671726096e-05,
+              -0.0027675186725152246
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.00045467514798413176,
+              0.005240248472576174
+            ],
+            "contexts": 512,
+            "estimate": 0.0022449552902310925,
+            "hoeffding_pointwise_95": [
+              -7.680337375269135,
+              7.684827285849597
+            ],
+            "negative_contexts": 336,
+            "positive_contexts": 176,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.015625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.005859375
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 1,
+            "positive_contexts": 2,
+            "tied_contexts": 509
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.0065265311770042345,
+              -1.0222960441715387e-05,
+              0.011810796603104525,
+              0.0010629688691915905,
+              0.01955084879157341,
+              0.024877399311995806,
+              -0.00015452565495263724,
+              -0.0060298481501813205
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0016125531030365327,
+              0.013532809802275817
+            ],
+            "contexts": 512,
+            "estimate": 0.005572610704160677,
+            "hoeffding_pointwise_95": [
+              -7.677009719855205,
+              7.688154941263527
+            ],
+            "negative_contexts": 285,
+            "positive_contexts": 225,
+            "tied_contexts": 2
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.010008277992877679,
+              0.008632775895982934,
+              -0.011583033212652836,
+              -0.012088701780736694,
+              -0.0030137881444940702,
+              -0.030034390718472005,
+              0.006959891324190018,
+              -0.007683731629109704
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.015626586751835845,
+              0.0002154469521040901
+            ],
+            "contexts": 512,
+            "estimate": -0.007352407032271254,
+            "hoeffding_pointwise_95": [
+              -7.689934737591637,
+              7.675229923527095
+            ],
+            "negative_contexts": 255,
+            "positive_contexts": 257,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.015625,
+              -0.03125,
+              0.0,
+              0.015625,
+              0.0,
+              -0.03125,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01953125,
+              0.001953125
+            ],
+            "contexts": 512,
+            "estimate": -0.0078125,
+            "hoeffding_pointwise_95": [
+              -1.9284580826398414,
+              1.9128330826398414
+            ],
+            "negative_contexts": 9,
+            "positive_contexts": 5,
+            "tied_contexts": 498
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.04781113727029004,
+              -0.027675518485685634,
+              -0.025656344445824934,
+              -0.009725420427542021,
+              0.0064948894561706995,
+              -0.0523147918024118,
+              -0.001884535309692,
+              0.00015542085139906824
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.03465678756783935,
+              -0.006149607778141833
+            ],
+            "contexts": 512,
+            "estimate": -0.01980217967923458,
+            "hoeffding_pointwise_95": [
+              -7.7023845102386,
+              7.662780150880131
+            ],
+            "negative_contexts": 245,
+            "positive_contexts": 267,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.015625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.005859375
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 511
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              0.005410684469642763,
+              0.0005654178987398728,
+              -0.0037716436728226985,
+              -0.009161775227960457,
+              0.0025707470648700494,
+              -0.0075518320067749604,
+              -0.0005939081528787363,
+              -0.007698948885611361
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005975066563907155,
+              0.0008900288093576461
+            ],
+            "contexts": 512,
+            "estimate": -0.0025289073140994413,
+            "hoeffding_pointwise_95": [
+              -7.685111237873465,
+              7.680053423245266
+            ],
+            "negative_contexts": 252,
+            "positive_contexts": 260,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.015625,
+              -0.03125,
+              0.0,
+              0.03125,
+              0.015625,
+              0.015625,
+              -0.015625,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.009765625,
+              0.015625
+            ],
+            "contexts": 512,
+            "estimate": 0.00390625,
+            "hoeffding_pointwise_95": [
+              -1.9167393326398414,
+              1.9245518326398414
+            ],
+            "negative_contexts": 7,
+            "positive_contexts": 9,
+            "tied_contexts": 496
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.0013935225055460368,
+              -0.030095426049268827,
+              -0.018656724482620787,
+              -0.006242099345658416,
+              0.025871727956162653,
+              0.01883325955815983,
+              -0.03292346361189421,
+              5.0466838203869785e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01915694779853272,
+              0.008502084046641996
+            ],
+            "contexts": 512,
+            "estimate": -0.005569472705307741,
+            "hoeffding_pointwise_95": [
+              -7.688151803264674,
+              7.6770128578540575
+            ],
+            "negative_contexts": 239,
+            "positive_contexts": 273,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.02167325129379504,
+              0.009338509643721637,
+              -0.007607072101078813,
+              -0.001519146524267643,
+              -0.0066565758078553,
+              -0.022463064313099496,
+              -9.558836222336275e-06,
+              2.064769586724224e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.013667113448809784,
+              0.00036999083001406583
+            ],
+            "contexts": 512,
+            "estimate": -0.006321188942091219,
+            "hoeffding_pointwise_95": [
+              -7.688903519501457,
+              7.676261141617275
+            ],
+            "negative_contexts": 289,
+            "positive_contexts": 223,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.046875,
+              0.03125,
+              0.0,
+              -0.015625,
+              -0.015625,
+              -0.046875,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.029296875,
+              0.005859375
+            ],
+            "contexts": 512,
+            "estimate": -0.01171875,
+            "hoeffding_pointwise_95": [
+              -1.9323643326398414,
+              1.9089268326398414
+            ],
+            "negative_contexts": 9,
+            "positive_contexts": 3,
+            "tied_contexts": 500
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.07872338251576935,
+              0.0036448661517963013,
+              -0.0008585194801238378,
+              0.0016437018010510799,
+              -0.02640696431374175,
+              -0.054522796126467855,
+              4.184218617773813e-06,
+              0.00010553013694686986
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.04020814328314132,
+              -0.0016164305097722722
+            ],
+            "contexts": 512,
+            "estimate": -0.019389172515961346,
+            "hoeffding_pointwise_95": [
+              -7.701971503075327,
+              7.663193158043405
+            ],
+            "negative_contexts": 267,
+            "positive_contexts": 245,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.015625,
+              0.015625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.009765625
+            ],
+            "contexts": 512,
+            "estimate": 0.00390625,
+            "hoeffding_pointwise_95": [
+              -1.9167393326398414,
+              1.9245518326398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 2,
+            "tied_contexts": 510
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.006254288831274597,
+              0.0012711516464785763,
+              0.0002043174387513346,
+              0.001407780028508596,
+              -0.0010720405984911798,
+              1.9494398597550257e-05,
+              -0.007563358313291091,
+              5.430439365584558e-06
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0038612023437499332,
+              0.0005443973156429491
+            ],
+            "contexts": 512,
+            "estimate": -0.0014976892239194034,
+            "hoeffding_pointwise_95": [
+              -7.684080019783285,
+              7.681084641335446
+            ],
+            "negative_contexts": 288,
+            "positive_contexts": 224,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.015625,
+              0.03125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.015625,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0078125,
+              0.009765625
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 2,
+            "positive_contexts": 2,
+            "tied_contexts": 508
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.03230576775102535,
+              0.0012249585882131101,
+              0.006141100483080301,
+              0.005127022882934679,
+              -0.00703012581374979,
+              0.016625255234103783,
+              -0.031034744083584438,
+              5.761237516783274e-07
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01683648623057162,
+              0.005424937439799866
+            ],
+            "contexts": 512,
+            "estimate": -0.005156465542034504,
+            "hoeffding_pointwise_95": [
+              -7.6877387961014,
+              7.677425865017331
+            ],
+            "negative_contexts": 263,
+            "positive_contexts": 249,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.015625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.005859375
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 1,
+            "tied_contexts": 511
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      }
+    ],
+    "native": [
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              5.8018058722748844e-08,
+              6.058149793763956e-07,
+              -9.160747525258206e-08,
+              1.1893473344549987e-07,
+              4.3288012499791834e-07,
+              1.5654843419851683e-09,
+              -7.490566725784978e-08,
+              -2.9886269438750626e-06
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -1.0820790142584625e-06,
+              2.805078630987737e-07
+            ],
+            "contexts": 512,
+            "estimate": -2.4224083818761833e-07,
+            "hoeffding_pointwise_95": [
+              -7.682582572800204,
+              7.682582088318528
+            ],
+            "negative_contexts": 253,
+            "positive_contexts": 259,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          },
+          "minimum_margin": {
+            "block_values": [
+              1.2264375601311992e-07,
+              0.01564090695968025,
+              -1.1015030000930629e-07,
+              3.5113562472186693e-06,
+              1.5461999244249444e-06,
+              -3.020406088259653e-08,
+              6.184513678985423e-08,
+              -2.612158713780665e-06
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -5.427828339916383e-07,
+              0.005865874134639563
+            ],
+            "contexts": 512,
+            "estimate": 0.001955424561458753,
+            "hoeffding_pointwise_95": [
+              -7.680626905997907,
+              7.684537755120824
+            ],
+            "negative_contexts": 283,
+            "positive_contexts": 229,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              2.147199481871212e-07,
+              6.009464128208485e-07,
+              -8.930946727948516e-08,
+              -9.16983774102223e-07,
+              -4.55034155537673e-09,
+              -2.0837883727559126e-08,
+              -2.2577133843449532e-08,
+              -8.437474551450247e-07
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -4.667141067466818e-07,
+              1.8450932307186157e-07
+            ],
+            "contexts": 512,
+            "estimate": -1.3529246183064357e-07,
+            "hoeffding_pointwise_95": [
+              -7.682582465851827,
+              7.682582195266904
+            ],
+            "negative_contexts": 249,
+            "positive_contexts": 263,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          },
+          "minimum_margin": {
+            "block_values": [
+              1.3857067742987963e-06,
+              0.015633605440389074,
+              -9.091539766842684e-08,
+              -5.056102522320305e-07,
+              -1.974512200964007e-08,
+              -7.827157703227394e-09,
+              1.5309130089059125e-08,
+              -6.944192180231601e-07
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -2.8641152927740003e-07,
+              0.005862710519317459
+            ],
+            "contexts": 512,
+            "estimate": 0.001954210992393228,
+            "hoeffding_pointwise_95": [
+              -7.680628119566973,
+              7.684536541551759
+            ],
+            "negative_contexts": 285,
+            "positive_contexts": 227,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -5.365810181673716e-07,
+              -1.0215713997585932e-06,
+              -1.475965435683443e-06,
+              2.535324599838018e-06,
+              -8.783236117582138e-09,
+              -6.129706954004568e-07,
+              -2.776059736734997e-07,
+              -9.652550825815266e-06
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -4.017362536294897e-06,
+              4.6591303315397567e-07
+            ],
+            "contexts": 512,
+            "estimate": -1.3813379980972743e-06,
+            "hoeffding_pointwise_95": [
+              -7.682583711897363,
+              7.682580949221368
+            ],
+            "negative_contexts": 406,
+            "positive_contexts": 106,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          },
+          "minimum_margin": {
+            "block_values": [
+              -4.3156594927207573e-07,
+              4.591641471674577e-06,
+              -9.395482236725122e-07,
+              7.582998452958234e-06,
+              3.24203502696796e-07,
+              -5.631822342991311e-07,
+              -5.0438472302006404e-08,
+              -2.124043375551586e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -7.609269277446324e-06,
+              3.169487743875444e-06
+            ],
+            "contexts": 512,
+            "estimate": -1.3407906509664973e-06,
+            "hoeffding_pointwise_95": [
+              -7.682583671350017,
+              7.682580989768715
+            ],
+            "negative_contexts": 355,
+            "positive_contexts": 155,
+            "tied_contexts": 2
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 0,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -3.798791287029993e-07,
+              -1.0264399663141403e-06,
+              -1.473667427710346e-06,
+              1.4994060922902952e-06,
+              -4.462137026708772e-07,
+              -6.353740634700011e-07,
+              -2.2527744025909943e-07,
+              -7.507671337085228e-06
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -3.2353700961432535e-06,
+              8.243380408917585e-08
+            ],
+            "contexts": 512,
+            "estimate": -1.2743896217402996e-06,
+            "hoeffding_pointwise_95": [
+              -7.682583604948987,
+              7.682581056169744
+            ],
+            "negative_contexts": 403,
+            "positive_contexts": 109,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          },
+          "minimum_margin": {
+            "block_values": [
+              8.314970690136007e-07,
+              -2.7098778195046302e-06,
+              -9.203133213315785e-07,
+              3.566031953507534e-06,
+              -1.2417415437377885e-06,
+              -5.408053311197619e-07,
+              -9.69744790028015e-08,
+              -1.9322694259758355e-05
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -7.711146828561783e-06,
+              7.850317260102457e-07
+            ],
+            "contexts": 512,
+            "estimate": -2.5543597164917226e-06,
+            "hoeffding_pointwise_95": [
+              -7.682584884919082,
+              7.682579776199649
+            ],
+            "negative_contexts": 342,
+            "positive_contexts": 168,
+            "tied_contexts": 2
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_flip": 1,
+          "L": 1,
+          "L_flip": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.01642867599726573,
+              0.016949543013096726,
+              -0.010873157911092696,
+              0.0013804366816948764,
+              5.154305658218103e-05,
+              0.009743865665645349,
+              0.0005944246942765951,
+              -0.016827656719298274
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.009518178862385667,
+              0.005868709385189222
+            ],
+            "contexts": 512,
+            "estimate": -0.0019262096895451214,
+            "hoeffding_pointwise_95": [
+              -7.684508540248911,
+              7.680656120869821
+            ],
+            "negative_contexts": 237,
+            "positive_contexts": 275,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.03125,
+              0.046875,
+              0.0,
+              0.0,
+              0.0,
+              0.015625,
+              0.0,
+              -0.03125
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.015625,
+              0.015625
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 13,
+            "positive_contexts": 12,
+            "tied_contexts": 487
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.06555455119149323,
+              0.0697508840338016,
+              -0.017437159116304612,
+              0.0036995852002118038,
+              8.198132773047824e-06,
+              0.0195429402890292,
+              0.002079026976799878,
+              -0.06700193265841844
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0347167372875124,
+              0.021387876221458053
+            ],
+            "contexts": 512,
+            "estimate": -0.006864126041700095,
+            "hoeffding_pointwise_95": [
+              -7.689446456601066,
+              7.675718204517666
+            ],
+            "negative_contexts": 248,
+            "positive_contexts": 264,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_native_magnitude"
+      },
+      {
+        "coefficients": {
+          "C_flip_low": 1,
+          "C_low": -1,
+          "L_flip_low": -1,
+          "L_low": 1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.0010108491381172705,
+              0.016930078829331792,
+              -0.010873203025884431,
+              0.0013828030083574243,
+              5.0367348035503575e-05,
+              0.009743835060204958,
+              0.0005943348966590345,
+              -0.024423587806378183
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.009345784784779595,
+              0.006711045641767116
+            ],
+            "contexts": 512,
+            "estimate": -0.0009507776034738964,
+            "hoeffding_pointwise_95": [
+              -7.683533108162839,
+              7.681631552955892
+            ],
+            "negative_contexts": 234,
+            "positive_contexts": 278,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.046875,
+              0.0,
+              0.0,
+              0.0,
+              0.015625,
+              0.0,
+              -0.046875
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.015625,
+              0.01953125
+            ],
+            "contexts": 512,
+            "estimate": 0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9186924576398414,
+              1.9225987076398414
+            ],
+            "negative_contexts": 11,
+            "positive_contexts": 11,
+            "tied_contexts": 490
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.003913543767159105,
+              0.0696732590998549,
+              -0.01743709395226498,
+              0.003710128131816051,
+              2.6257331608257363e-05,
+              0.019543037628986244,
+              0.002079035133626506,
+              -0.0972991233561131
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.035732960037850356,
+              0.025179793056035675
+            ],
+            "contexts": 512,
+            "estimate": -0.0029522554687056515,
+            "hoeffding_pointwise_95": [
+              -7.685534586028071,
+              7.67963007509066
+            ],
+            "negative_contexts": 248,
+            "positive_contexts": 264,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "sign_low_magnitude"
+      },
+      {
+        "coefficients": {
+          "C": -1,
+          "C_low": 1,
+          "L": 1,
+          "L_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -0.01541786520373369,
+              -6.03447604466574e-07,
+              5.1803823684717795e-08,
+              -3.620648712319291e-07,
+              -6.161444283296971e-08,
+              3.244061426085909e-08,
+              6.056018901244228e-08,
+              -1.971236211675137e-08
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005781814494351296,
+              -1.3442773455969878e-08
+            ],
+            "contexts": 512,
+            "estimate": -0.0019273459047984228,
+            "hoeffding_pointwise_95": [
+              -7.684509676464164,
+              7.680654984654567
+            ],
+            "negative_contexts": 280,
+            "positive_contexts": 232,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              -0.03125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.01171875,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": -0.00390625,
+            "hoeffding_pointwise_95": [
+              -1.9245518326398414,
+              1.9167393326398414
+            ],
+            "negative_contexts": 2,
+            "positive_contexts": 0,
+            "tied_contexts": 510
+          },
+          "minimum_margin": {
+            "block_values": [
+              -0.06164120549448701,
+              1.313787557319238e-06,
+              -1.4926714451043966e-08,
+              -1.4440604061329715e-06,
+              1.1854283579054714e-09,
+              -2.9663179799618855e-08,
+              7.192980451051884e-09,
+              -7.368324087580667e-08
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.023115635831345235,
+              3.167190588537213e-07
+            ],
+            "contexts": 512,
+            "estimate": -0.007705180707757767,
+            "hoeffding_pointwise_95": [
+              -7.690287511267123,
+              7.674877149851608
+            ],
+            "negative_contexts": 261,
+            "positive_contexts": 251,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_native_sign"
+      },
+      {
+        "coefficients": {
+          "C_flip": -1,
+          "C_flip_low": 1,
+          "L_flip": 1,
+          "L_flip_low": -1
+        },
+        "horizon": 1,
+        "metrics": {
+          "aligned_transfer": {
+            "block_values": [
+              -3.834458523529344e-08,
+              -2.0067631369403288e-05,
+              6.689031949517999e-09,
+              2.004261791326359e-06,
+              -1.237322989510424e-06,
+              1.835173870940593e-09,
+              -2.9237428548090777e-08,
+              -0.007595950799442027
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.0028510479656064036,
+              3.3536316957890966e-07
+            ],
+            "contexts": 512,
+            "estimate": -0.000951913818727197,
+            "hoeffding_pointwise_95": [
+              -7.683534244378093,
+              7.681630416740639
+            ],
+            "negative_contexts": 308,
+            "positive_contexts": 204,
+            "tied_contexts": 0
+          },
+          "both": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.015625
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.005859375,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": -0.001953125,
+            "hoeffding_pointwise_95": [
+              -1.9225987076398414,
+              1.9186924576398414
+            ],
+            "negative_contexts": 1,
+            "positive_contexts": 0,
+            "tied_contexts": 511
+          },
+          "minimum_margin": {
+            "block_values": [
+              -1.980701528883546e-07,
+              -7.631114638934847e-05,
+              5.02373251851264e-08,
+              9.098871198104028e-06,
+              1.8060384263567444e-05,
+              6.767677726560173e-08,
+              1.5349807079372522e-08,
+              -0.03029726438093551
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              -0.011369883516824516,
+              5.686032148662528e-06
+            ],
+            "contexts": 512,
+            "estimate": -0.0037933101347633184,
+            "hoeffding_pointwise_95": [
+              -7.686375640694129,
+              7.6787890204246025
+            ],
+            "negative_contexts": 272,
+            "positive_contexts": 240,
+            "tied_contexts": 0
+          },
+          "opposite_rule_success": {
+            "block_values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "blocks": 8,
+            "bootstrap_pointwise_95": [
+              0.0,
+              0.0
+            ],
+            "contexts": 512,
+            "estimate": 0.0,
+            "hoeffding_pointwise_95": [
+              -1.9206455826398414,
+              1.9206455826398414
+            ],
+            "negative_contexts": 0,
+            "positive_contexts": 0,
+            "tied_contexts": 512
+          }
+        },
+        "name": "magnitude_flipped_sign"
+      }
+    ]
+  }
+}

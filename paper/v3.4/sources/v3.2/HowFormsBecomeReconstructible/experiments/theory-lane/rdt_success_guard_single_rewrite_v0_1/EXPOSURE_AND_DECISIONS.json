@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-28T22:16:46.645245+00:00",
+  "status": "DRAFT_FIXED_DEVELOPMENT_PROTOCOL",
+  "source": "All source founders and prior continuation outcomes are exposed. New namespace supplies fresh future randomness. Development only.",
+  "source_prior_result": "ALLOCATION_REPLICATION_SUPPORTED",
+  "hypothesis_selected_after_source_outcomes": true,
+  "next_outcomes_available": false,
+  "primary": {
+    "endpoint": "Mean original-rule success fraction at g16..33 across four packets per block, then across all 28 exposed acquisition blocks.",
+    "components": [
+      "24_independent_guard_minus_first_success_once"
+    ],
+    "margin": 0.0,
+    "alpha": 0.05,
+    "criterion": "Single paired acquisition-block contrast: ongoing current-success guard minus one successful rewrite then retain, under independent noise. Support iff nondegenerate one-sided95% t lower>0; contradiction iff nondegenerate one-sided95% upper<=0; otherwise unresolved. No optional stopping, sample extension, primary substitution or equivalence claim.",
+    "degrees_of_freedom": 27,
+    "critical_two_sided95": 2.0518305164802846,
+    "critical_one_sided95": 1.7032884457221265,
+    "inference": "28 exposed acquisition blocks are the uncertainty unit. Fresh future randomness; conditional exposed-panel development estimand. Packets, time points and arms are not independent replicates. Approximate paired t intervals."
+  },
+  "sample_rationale": "All 28 prior selected blocks; complete exposed panel, no outcome-selected subset. One-hour feasibility screen, not a power-qualified confirmatory sample.",
+  "prior_conditional_candidate": "STOP_CONDITIONAL_CANDIDATE unchanged",
+  "prior_historical_guard": "GUARD_CONTINUATION_SCREEN_FAILED unchanged",
+  "prior_six_test_replication": "REPLICATION_UNRESOLVED unchanged",
+  "prior_noise_precision": "ALL_THREE_PREDICTIONS_SUPPORTED unchanged",
+  "prior_allocation_replication": "ALLOCATION_REPLICATION_SUPPORTED unchanged",
+  "RDT_specific_validation": false,
+  "user_runtime_preference": "Aim for one hour; this study has a 3600-second detached-run hard cap. No automatic extension.",
+  "protected_sources": [
+    "TT018",
+    "rdt_packet_continuation_v0_1"
+  ],
+  "automatic_polling": false,
+  "automatic_retry": false,
+  "automatic_successor": false
+}

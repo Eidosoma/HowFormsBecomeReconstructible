@@ -1,0 +1,62 @@
+tasks 192 files checked 384 sha256 mismatches [] digest 9a05edca1f25
+run: 2026-10-29T16:40:41Z to 2026-10-29T18:26:05Z, wall 6324 s, cpu 72977 s (20.27 CPU-h), peak worker RSS 337.2 MB, 12 workers, 1-min load at start 38.27
+T* = 58.48 and 1958.99 updates (0.19 h and 6.53 h at 300 updates an hour)
+
+== statements (pooled over the twelve unit-body pairs)
+K1 prompt(SL) - late(SL, 0.5) at 8000                          -0.021037 [-0.026772, -0.015302] pos 0/16  SD 0.0108 (3.81 SD)  rule le 0.02  ok
+K1 prompt(SL) - late(SL, 1) at 8000                            -0.025228 [-0.034462, -0.015994] pos 1/16  SD 0.0173 (2.61 SD)  rule le 0.02  ok
+K1 prompt(SL) - late(SL, 2) at 8000                            +0.084229 [+0.061887, +0.106570] pos 16/16  SD 0.0419 (0.82 SD)  rule ge 0.05  ok
+K1 prompt(SL) - late(SL, 4) at 12000                           +0.119914 [+0.096971, +0.142856] pos 16/16  SD 0.0431 (1.62 SD)  rule ge 0.05  ok
+K1 prompt(SL)@4000 - late(SL, 2)@8000 (equal elapsed)          +0.076619 [+0.051039, +0.102200] pos 16/16  SD 0.0480 (0.55 SD)  rule ge 0.05  ok
+K1 prompt(SL)@4000 - late(SL, 4)@12000 (equal elapsed)         +0.105021 [+0.078950, +0.131092] pos 16/16  SD 0.0489 (1.12 SD)  rule ge 0.05  ok
+K2 late(F, 0.5) - prompt(F) at 4000                            -0.001790 [-0.004290, +0.000710] pos 4/16  SD 0.0047 (3.88 SD)  rule abs 0.02  ok
+K2 late(F, 1) - prompt(F) at 4000                              -0.003377 [-0.006011, -0.000744] pos 3/16  SD 0.0049 (3.36 SD)  rule abs 0.02  ok
+K2 prompt(F) - late(F, 2) at 4000                              +0.141479 [+0.119278, +0.163681] pos 16/16  SD 0.0417 (2.20 SD)  rule ge 0.05  ok
+K2 prompt(F) - late(F, 4) at 4000                              +0.149414 [+0.126564, +0.172265] pos 16/16  SD 0.0429 (2.32 SD)  rule ge 0.05  ok
+K3 sensors(SL, 0.5)                                            +0.000000 [+0.000000, +0.000000] pos 0/16  SD 0.0000 (inf SD)  rule le 0.05  ok
+K3 sensors(SL, 1)                                              +0.000595 [-0.000673, +0.001864] pos 1/16  SD 0.0024 (20.75 SD)  rule le 0.05  ok
+K3 sensors(SL, 2)                                              +0.254875 [+0.237184, +0.272565] pos 16/16  SD 0.0332 (3.16 SD)  rule ge 0.15  ok
+K4 sensors(A, 1) - sensors(SL, 1)                              +0.267101 [+0.241368, +0.292835] pos 16/16  SD 0.0483 (3.46 SD)  rule ge 0.1  ok
+K4 loss(A, 1) - loss(SL, 1) at 8000                            +0.080200 [+0.058458, +0.101942] pos 15/16  SD 0.0408 (1.23 SD)  rule ge 0.03  ok
+K5 prompt(A) - none(A) at 8000                                 +0.310384 [+0.272827, +0.347941] pos 16/16  SD 0.0705 (1.57 SD)  rule ge 0.2  ok
+K5 prompt(SL) - none(SL) at 8000                               +0.485514 [+0.436458, +0.534571] pos 16/16  SD 0.0921 (3.10 SD)  rule ge 0.2  ok
+K6 prompt(SL) - prompt(S) at 8000                              +0.461711 [+0.414771, +0.508650] pos 16/16  SD 0.0881 (4.11 SD)  rule ge 0.1  ok
+K6 adopt(SL) - adopt(S) at 8000                                +0.526123 [+0.474273, +0.577973] pos 16/16  SD 0.0973 (4.38 SD)  rule ge 0.1  ok
+K7 (prompt SL - S) - (prompt AL - A)                           +0.391276 [+0.345227, +0.437326] pos 16/16  SD 0.0864 (3.37 SD)  rule ge 0.1  ok
+K7 (adopt SL - S) - (adopt AL - A)                             +0.367513 [+0.326155, +0.408871] pos 16/16  SD 0.0776 (3.45 SD)  rule ge 0.1  ok
+K8 prompt(S) - none(S) at 8000                                 +0.023804 [+0.009839, +0.037768] pos 13/16  SD 0.0262 (1.00 SD)  rule abs 0.05  ok
+K8 adopt(S) - adopt(never-S) at 8000                           +0.005412 [-0.004445, +0.015269] pos 10/16  SD 0.0185 (2.41 SD)  rule abs 0.05  ok
+K9 cost(AL) - cost(A)                                          +0.002642 [+0.002221, +0.003062] pos 16/16  SD 0.0008 (2.08 SD)  rule ge 0.001  ok
+K9 cost(SL) - cost(S)                                          +0.005267 [+0.004294, +0.006239] pos 16/16  SD 0.0018 (2.34 SD)  rule ge 0.001  ok
+K10 prompt(AL) - prompt(A) at 8000                             +0.070435 [+0.058457, +0.082412] pos 16/16  SD 0.0225 (2.24 SD)  rule ge 0.02  ok
+K10 adopt(AL) - adopt(A) at 8000                               +0.158610 [+0.138146, +0.179074] pos 16/16  SD 0.0384 (2.83 SD)  rule ge 0.05  ok
+
+verdicts: {'K1': 'HOLDS', 'K2': 'HOLDS', 'K3': 'HOLDS', 'K4': 'HOLDS', 'K5': 'HOLDS', 'K6': 'HOLDS', 'K7': 'HOLDS', 'K8': 'HOLDS', 'K9': 'HOLDS', 'K10': 'HOLDS'}
+
+== the prompt signal over time: pooled r_in by read (hours at 300 updates an hour)
+   dial-F    500 (1.7 h): 0.5272 1000 (3.3 h): 0.5306 2000 (6.7 h): 0.5366 3000 (10.0 h): 0.5401 4000 (13.3 h): 0.5444 6000 (20.0 h): 0.5528 8000 (26.7 h): 0.5595 10000 (33.3 h): 0.5640 12000 (40.0 h): 0.5636
+   never-F   500 (1.7 h): 0.1116 1000 (3.3 h): 0.1253 2000 (6.7 h): 0.1392 3000 (10.0 h): 0.1561 4000 (13.3 h): 0.1701 6000 (20.0 h): 0.2026 8000 (26.7 h): 0.2266 10000 (33.3 h): 0.2464 12000 (40.0 h): 0.2616
+   dial-A    500 (1.7 h): 0.5272 1000 (3.3 h): 0.5278 2000 (6.7 h): 0.5151 3000 (10.0 h): 0.5099 4000 (13.3 h): 0.5096 6000 (20.0 h): 0.5148 8000 (26.7 h): 0.5180 10000 (33.3 h): 0.5194 12000 (40.0 h): 0.5196
+   never-A   500 (1.7 h): 0.0212 1000 (3.3 h): 0.0582 2000 (6.7 h): 0.1027 3000 (10.0 h): 0.1342 4000 (13.3 h): 0.1516 6000 (20.0 h): 0.1864 8000 (26.7 h): 0.2076 10000 (33.3 h): 0.2279 12000 (40.0 h): 0.2441
+   dial-AL   500 (1.7 h): 0.5290 1000 (3.3 h): 0.5350 2000 (6.7 h): 0.5429 3000 (10.0 h): 0.5515 4000 (13.3 h): 0.5584 6000 (20.0 h): 0.5757 8000 (26.7 h): 0.5884 10000 (33.3 h): 0.5981 12000 (40.0 h): 0.6053
+   never-AL  500 (1.7 h): 0.0212 1000 (3.3 h): 0.0582 2000 (6.7 h): 0.1025 3000 (10.0 h): 0.1338 4000 (13.3 h): 0.1511 6000 (20.0 h): 0.1853 8000 (26.7 h): 0.2071 10000 (33.3 h): 0.2262 12000 (40.0 h): 0.2426
+   dial-S    500 (1.7 h): 0.3809 1000 (3.3 h): 0.3226 2000 (6.7 h): 0.0240 3000 (10.0 h): 0.0861 4000 (13.3 h): 0.0997 6000 (20.0 h): 0.1169 8000 (26.7 h): 0.1289 10000 (33.3 h): 0.1422 12000 (40.0 h): 0.1507
+   never-S   500 (1.7 h): 0.0000 1000 (3.3 h): 0.0000 2000 (6.7 h): 0.0415 3000 (10.0 h): 0.0649 4000 (13.3 h): 0.0723 6000 (20.0 h): 0.0910 8000 (26.7 h): 0.1051 10000 (33.3 h): 0.1191 12000 (40.0 h): 0.1281
+   dial-SL   500 (1.7 h): 0.5409 1000 (3.3 h): 0.5531 2000 (6.7 h): 0.5815 3000 (10.0 h): 0.5823 4000 (13.3 h): 0.5830 6000 (20.0 h): 0.5865 8000 (26.7 h): 0.5906 10000 (33.3 h): 0.5959 12000 (40.0 h): 0.5979
+   never-SL  500 (1.7 h): 0.0000 1000 (3.3 h): 0.0000 2000 (6.7 h): 0.0415 3000 (10.0 h): 0.0649 4000 (13.3 h): 0.0723 6000 (20.0 h): 0.0910 8000 (26.7 h): 0.1051 10000 (33.3 h): 0.1191 12000 (40.0 h): 0.1281
+
+== late signals: loss against the prompt signal at the scoring read, and the sensors repaired at the signal
+   F   m 0.5 (D 29, 0.1 h): loss +0.0018, sensors 0.0000 | m 1 (D 58, 0.2 h): loss +0.0034, sensors 0.0000 | m 2 (D 117, 0.4 h): loss +0.1415, sensors 0.3730 | m 4 (D 234, 0.8 h): loss +0.1494, sensors 0.4085
+   A   m 0.5 (D 979, 3.3 h): loss +0.0441, sensors 0.1475 | m 1 (D 1959, 6.5 h): loss +0.0550, sensors 0.2677 | m 2 (D 3918, 13.1 h): loss +0.0660, sensors 0.3838 | m 4 (D 7836, 26.1 h): loss +0.0618, sensors 0.4448
+   AL  m 1 (D 1959, 6.5 h): loss +0.0648, sensors 0.2671 | m 2 (D 3918, 13.1 h): loss +0.0884, sensors 0.3836
+   SL  m 0.5 (D 979, 3.3 h): loss -0.0210, sensors 0.0000 | m 1 (D 1959, 6.5 h): loss -0.0252, sensors 0.0006 | m 2 (D 3918, 13.1 h): loss +0.0842, sensors 0.2549 | m 4 (D 7836, 26.1 h): loss +0.1199, sensors 0.3090
+   SL at equal elapsed time since each signal's start (prompt read at 4,000 - D... as registered, and the early m):
+     m 0.5: prompt@1000 - late@2000 -0.0246; m 1: prompt@2000 - late@4000 -0.0281; m 2: prompt@4000 - late@8000 +0.0766; m 4: prompt@4000 - late@12000 +0.1050
+   SL keeps of the prompt gain over no signal: at 2 T* (8,000) 0.4013 of 0.4855 = 0.8265; at 4 T* (12,000) 0.3499 of 0.4698 = 0.7447
+   A at 4 T* (12,000): loss +0.0618
+
+== adoption of a legitimate 4 x 4 change at 8,000, and a prompt sham's cost to the sheet
+   adoption: dial-A 0.4116 never-A 0.1054 dial-AL 0.5702 never-AL 0.1053 dial-S 0.0588 never-S 0.0534 dial-SL 0.5850 never-SL 0.0534
+   sham cost: A +0.0020 AL +0.0047 S +0.0000 SL +0.0053
+   S's dip: prompt(S) - none(S) at 2,000 -0.0176; at 1,000 +0.3226
+done

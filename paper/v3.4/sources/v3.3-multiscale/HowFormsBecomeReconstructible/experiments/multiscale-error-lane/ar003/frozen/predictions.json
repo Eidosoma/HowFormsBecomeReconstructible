@@ -1,0 +1,237 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "computed_utc": "2026-11-01T13:25:00Z",
+ "best": "vote",
+ "controller": "vms",
+ "thresholds": {
+  "E1": 1e-12,
+  "E2": 0.09,
+  "E3_2": 0.06,
+  "E3_4": 0.03,
+  "E3_8": 0.11,
+  "E4f": 0.005,
+  "E4s": 0.08,
+  "E5_4": 0.0,
+  "E5_8": 0.0,
+  "E6c": 0.01,
+  "E6n": 0.002,
+  "E7m4": 0.6,
+  "E7c4": 0.6,
+  "E7m8": 0.95,
+  "E7c8": 0.95,
+  "E7n": 0.05,
+  "E8f": -0.005,
+  "E8s": -0.01,
+  "E9u": 0.05,
+  "E9n": 0.01,
+  "E10": -0.005
+ },
+ "shares": {
+  "E5_4": 0.9,
+  "E5_8": 0.9
+ },
+ "parts": [
+  {
+   "stmt": "E1",
+   "name": "E1 max over arms and cases of abs(u(new) + u(old) - 1), change@0",
+   "sense": "le",
+   "key": "E1",
+   "threshold": 1e-12
+  },
+  {
+   "stmt": "E2",
+   "name": "E2 U_mix(vms) - U_mix(vote)",
+   "sense": "ge",
+   "key": "E2",
+   "threshold": 0.09
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 U_2(vms) - U_2(det)",
+   "sense": "ge",
+   "key": "E3_2",
+   "threshold": 0.06
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 U_4(vms) - U_4(det)",
+   "sense": "ge",
+   "key": "E3_4",
+   "threshold": 0.03
+  },
+  {
+   "stmt": "E3",
+   "name": "E3 U_8(vms) - U_8(det)",
+   "sense": "ge",
+   "key": "E3_8",
+   "threshold": 0.11
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 four scorings at 4 (none, body, shared, cue): (1/8) sum u(vms) - u(ms)",
+   "sense": "ge",
+   "key": "E4f",
+   "threshold": 0.005
+  },
+  {
+   "stmt": "E4",
+   "name": "E4 U_2(vms) - U_2(ms)",
+   "sense": "ge",
+   "key": "E4s",
+   "threshold": 0.08
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 kept at 4: (u(vms) - u(vote)) - k (u(vdial) - u(vote)), memory + correlated",
+   "sense": "ge",
+   "key": "E5_4",
+   "threshold": 0.0,
+   "k": 0.9
+  },
+  {
+   "stmt": "E5",
+   "name": "E5 kept at 8: (u(vms) - u(vote)) - k (u(vdial) - u(vote)), memory + correlated",
+   "sense": "ge",
+   "key": "E5_8",
+   "threshold": 0.0,
+   "k": 0.9
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 sheet cost under scattered cue damage: r_all(vote) - r_all(vms), cue@0",
+   "sense": "le",
+   "key": "E6c",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "E6",
+   "name": "E6 sheet cost with no event: r_all(vote) - r_all(vms), none@0",
+   "sense": "le",
+   "key": "E6n",
+   "threshold": 0.002
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 p(vms fires on the patch | memory, 4 x 4)",
+   "sense": "ge",
+   "key": "E7m4",
+   "threshold": 0.6
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 p(vms fires on the patch | correlated, 4 x 4)",
+   "sense": "ge",
+   "key": "E7c4",
+   "threshold": 0.6
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 p(vms fires on the patch | memory, 8 x 8)",
+   "sense": "ge",
+   "key": "E7m8",
+   "threshold": 0.95
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 p(vms fires on the patch | correlated, 8 x 8)",
+   "sense": "ge",
+   "key": "E7c8",
+   "threshold": 0.95
+  },
+  {
+   "stmt": "E7",
+   "name": "E7 p(vms fires at all | none)",
+   "sense": "le",
+   "key": "E7n",
+   "threshold": 0.05
+  },
+  {
+   "stmt": "E8",
+   "name": "E8 four scorings at 4: (1/8) sum u(vms) - u(vote)",
+   "sense": "ge",
+   "key": "E8f",
+   "threshold": -0.005
+  },
+  {
+   "stmt": "E8",
+   "name": "E8 U_2(vms) - U_2(vote)",
+   "sense": "ge",
+   "key": "E8s",
+   "threshold": -0.01
+  },
+  {
+   "stmt": "E9",
+   "name": "E9 under misread cues (sigma 1), memory damage: u(vms) - u(det), memory@1",
+   "sense": "ge",
+   "key": "E9u",
+   "threshold": 0.05
+  },
+  {
+   "stmt": "E9",
+   "name": "E9 under misread cues with no event: r_all(vote) - r_all(vms), none@1 (the vote's none@0)",
+   "sense": "le",
+   "key": "E9n",
+   "threshold": 0.01
+  },
+  {
+   "stmt": "E10",
+   "name": "E10 price at 4 x 4 over memory and correlated: (1/8) sum u(vms) - (fire u(vdial) + (1 - fire) u(vote))",
+   "sense": "ge",
+   "key": "E10",
+   "threshold": -0.005
+  }
+ ],
+ "statements": [
+  {
+   "id": "E1",
+   "claim": "on the information-limit pair no arm can win: every arm ties, the controller included",
+   "rule": "HOLDS if, in change@0, the largest abs(u(arm, change/new) + u(arm, change/old) - 1) over every arm and case is at most 1e-12, else FAILS (derived identity)"
+  },
+  {
+   "id": "E2",
+   "claim": "over the declared mix of injury sizes the controller (DET_STAR with the vote as its default) beats the best fixed policy",
+   "rule": "HOLDS if U_mix(vms) - U_mix(vote) >= 0.09, else FAILS"
+  },
+  {
+   "id": "E3",
+   "claim": "the controller beats or matches AR002's controller (det with the rest default) at each size",
+   "rule": "HOLDS if U_2(vms) - U_2(det) >= 0.06, U_4(vms) - U_4(det) >= 0.03 and U_8(vms) - U_8(det) >= 0.11, else FAILS"
+  },
+  {
+   "id": "E4",
+   "claim": "the vote default is worth something of its own: against the same detector with the rest default, where nothing needs correcting and at 2 x 2",
+   "rule": "HOLDS if (1/8) sum over none, body, shared and cue at 4 x 4 of u(vms) - u(ms) >= 0.005 and U_2(vms) - U_2(ms) >= 0.08, else FAILS"
+  },
+  {
+   "id": "E5",
+   "claim": "the controller keeps a declared share of the declared signal's worth (vdial: the signal sent promptly over the patch under the same default) at 4 x 4 and at 8 x 8",
+   "rule": "HOLDS if, summed over memory and correlated damage, (u(vms) - u(vote)) - k (u(vdial) - u(vote)) >= 0.0 at 4 x 4 with k = 0.9 and >= 0.0 at 8 x 8 with k = 0.9, else FAILS"
+  },
+  {
+   "id": "E6",
+   "claim": "the controller's false alarms cost intact tissue within the confirmed harm bound",
+   "rule": "HOLDS if r_all(vote) - r_all(vms) is at most 0.01 under scattered cue damage (cue@0) and at most 0.002 with no event (none@0), else FAILS"
+  },
+  {
+   "id": "E7",
+   "claim": "the detector finds memory and correlated damage on the patch at 4 x 4 and 8 x 8, and seldom fires with no event",
+   "rule": "HOLDS if vms fires with its footprint on the patch in at least 0.6 and 0.6 of memory and correlated lineage-cases at 4 x 4 and 0.95 and 0.95 at 8 x 8, and fires at all in at most 0.05 of no-event lineage-cases, else FAILS"
+  },
+  {
+   "id": "E8",
+   "claim": "the controller gives up nothing where nothing is wrong, and nothing at 2 x 2, against the vote (non-inferiority)",
+   "rule": "HOLDS if (1/8) sum over none, body, shared and cue at 4 x 4 of u(vms) - u(vote) >= -0.005 and U_2(vms) - U_2(vote) >= -0.01, else FAILS"
+  },
+  {
+   "id": "E9",
+   "claim": "under misread cues (GC001's sigma 1) the controller keeps an advantage over AR002's controller in memory damage, and its false alarms with no event cost the sheet within the confirmed bound",
+   "rule": "HOLDS if u(vms) - u(det) in memory@1 >= 0.05 and r_all(vote) - r_all(vms) with no event under misreads (none@1, against the vote's none@0) <= 0.01, else FAILS"
+  },
+  {
+   "id": "E10",
+   "claim": "making the signal costs nothing: the declared signal's exact value at the controller's own firing predicts its value in memory and correlated damage at 4 x 4",
+   "rule": "HOLDS if (1/8) sum over memory and correlated at 4 x 4 of u(vms) - (fire x u(vdial) + (1 - fire) x u(vote)), per lineage-case, >= -0.005, else FAILS"
+  }
+ ]
+}

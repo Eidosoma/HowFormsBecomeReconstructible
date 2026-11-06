@@ -1,0 +1,124 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "8b759268ac24d287dfd0efacf65f713cfe3d2499be307e24fccc3e78adb0ac2e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm005/preflight",
+ "stage": "preflight",
+ "tasks": 6,
+ "load_1min_at_check": 23.48,
+ "checked_utc": "2026-11-02T15:59:39Z",
+ "wall_s": 347.9,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 6,
+   "bad": [],
+   "seconds": 0.1
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "sm004/preflight",
+    "W16_x64_r2",
+    "900470"
+   ],
+   "arrays": 90,
+   "differ": [],
+   "seconds": 347.8
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "record": [
+    "sm004/preflight",
+    "W16_x64_r2",
+    "900470",
+    "L4"
+   ],
+   "a_every_task_bridge_equal": true,
+   "b_cg_returns_record": true,
+   "b_cg_equals_successor_at_half_side": true,
+   "c_C_at_base_setting": true,
+   "c_E_at_gain_x1": true,
+   "c_B_bond_map_identity_on_2_grain": true,
+   "c_B_on_2_grain_equals_base": true,
+   "seconds": 131.1
+  },
+  "Q4_replay": {
+   "pass": true,
+   "branch": [
+    "sm004/preflight",
+    "W16_x64_r2",
+    "900470",
+    "L8",
+    "dial-c2-m2-t3000",
+    "case 0"
+   ],
+   "C": {
+    "max_dV": 2.220446049250313e-16,
+    "E_replay": 0.15625,
+    "E": 0.15625
+   },
+   "E": {
+    "max_dV": 2.498001805406602e-16,
+    "E_replay": 0.421875,
+    "E": 0.421875
+   },
+   "B": {
+    "max_dV": 2.220446049250313e-16,
+    "E_replay": 0.234375,
+    "E": 0.234375
+   },
+   "seconds": 3.3
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "controls_alike_base_E_B": true,
+   "seconds": 0.0
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "max_abs_diff": 0.0,
+   "seconds": 0.2
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "erasure_sizes": {
+    "base": 3,
+    "C": 3,
+    "E": 6,
+    "B": 6
+   },
+   "C_holds_base_erasure": true,
+   "E_doubles_erasure": true,
+   "C_multiplier": -0.025381429760092878,
+   "C_stable": true,
+   "conditions": true,
+   "tasks_are_saved_records": true,
+   "seconds": 119.3
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "listed_twice": true,
+   "reordered": true,
+   "seconds": 11.8
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_dev_cpu_h": 10.04,
+   "forecast_dev_wall_h_12": 0.84,
+   "worker_rss_mb": 458.9,
+   "disk_headroom": true,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 12663,
+    "TABLES.md": 3858
+   },
+   "parts_scored": 12,
+   "seconds": 0.9
+  }
+ }
+}

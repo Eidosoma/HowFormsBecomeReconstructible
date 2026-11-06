@@ -1,0 +1,52 @@
+P57d on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006c/debug (debug, DRY RUN on engineering blocks): 16 tasks, 32 files, every sha256 equal to the manifest's; digest ddcec8709f44; AR006's 963f47e2cf71 (194 sources), AR005's and AR003's frozen sources unchanged; 2026-11-04T10:21:41Z - 2026-11-04T10:29:09Z, 0.97 CPU-h, 8 workers
+runs: memory@1 (L 4; vms, vtol), memory@1-L8 (L 8; vms, vtol), none@0 (L 4; vote, vms, vtol), cue@0 (L 4; vote, vms, vtol), correlated@0 (L 4; vms, vtol)
+detectors in every shard: vms DET_STAR; vtol DET_POOL with the split guard (the clean surround free, the tolerated window body-checked at f 0.5), AR006's frozen ones
+
+REGISTERED CRITERIA (2 blocks; pooled over the eight unit-body pairs; 95% t interval, t(0.975, 1) = 12.7062; SD the larger of the block SD and the case SD / sqrt 8)
+  K1, vtol's sheet cost, cue@0: +0.010109 [-0.018081, +0.038298] (SD 0.003138: block 0.001090, case/sqrt8 0.003138; halves +0.009338 +0.010880); upper bound <= +0.01: FAILS
+  K1, vtol's sheet cost, none@0: -0.000038 [-0.000523, +0.000447] (SD 0.000054: block 0.000054, case/sqrt8 0.000054; halves +0.000000 -0.000076); upper bound <= +0.002: holds
+  K3 (a), R1 = mean over 4, 8 of u(vtol) - u(vms), memory@1: +0.143372 [-0.258967, +0.545710] (SD 0.044781: block 0.018040, case/sqrt8 0.044781; halves +0.156128 +0.130615); lower bound >= +0.04: FAILS
+  K5 (a), u(vtol) - u(vms), correlated@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000; halves +0.000000 +0.000000); lower bound >= -0.005: holds
+  VERDICT: NOT CONFIRMED (failed: K1, K3a)  [a dry run on engineering blocks: not a confirmation result]
+
+FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch)
+  r_in and r_all recomputed from the final records, 192 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00
+  a vote-default arm where it never fired against the vote, both records, bit for bit: 352 of 352 lineage-cases equal (cue@0 and none@0)
+  vtol against vms, 640 lineage-cases in the five runs: vtol's onset later than vms's in 0; neither fired 262; the same onset and zone 236 (vtol equals vms, both records, in 236); the same onset, vtol's zone the larger (a union) 48; vtol first (a guarded pooled window) 94
+
+REPORTED (not registered)
+  K1, vtol's sheet cost, cue@0: SD 0.003138 against the development's 0.002883 (ratio 1.088); difference from the development +0.002379, z +1.02; by block from +0.009338 to +0.010880
+  K1, vtol's sheet cost, none@0: SD 0.000054 against the development's 0.000066 (ratio 0.817); difference from the development -0.000012, z -0.29; by block from -0.000076 to +0.000000
+  K3 (a), R1 = mean over 4, 8 of u(vtol) - u(vms), memory@1: SD 0.044781 against the development's 0.040717 (ratio 1.100); difference from the development +0.050950, z +1.53; by block from +0.130615 to +0.156128
+  K5 (a), u(vtol) - u(vms), correlated@0: SD 0.000000 against the development's 0.001465 (ratio 0.000); difference from the development -0.000366, z -1.00; by block from +0.000000 to +0.000000
+  vms's sheet cost, cue@0: +0.007843 [-0.021475, +0.037161] (SD 0.003263: block 0.001165, case/sqrt8 0.003263; halves +0.007019 +0.008667)
+  vtol's cost less vms's, cue@0: +0.002266 [-0.006012, +0.010544] (SD 0.000921: block 0.000076, case/sqrt8 0.000921; halves +0.002319 +0.002213)
+  vms's sheet cost, none@0: -0.000038 [-0.000523, +0.000447] (SD 0.000054: block 0.000054, case/sqrt8 0.000054; halves +0.000000 -0.000076)
+  vtol's cost less vms's, none@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000; halves +0.000000 +0.000000)
+  R1 at 4 x 4: +0.118164 [-0.466507, +0.702836] (SD 0.065075: block 0.022097, case/sqrt8 0.065075; halves +0.102539 +0.133789)
+  R1 at 8 x 8: +0.168579 [-0.354125, +0.691283] (SD 0.058177: block 0.058177, case/sqrt8 0.057005; halves +0.209717 +0.127441)
+  u(vtol) - u(vote) inside the patch, cue@0: -0.018555 [-0.207961, +0.170851] (SD 0.021081: block 0.015192, case/sqrt8 0.021081; halves -0.007812 -0.029297)
+  per unit-body pair: K1 cue@0, K3 (a), K5 (a) (each the mean over blocks and cases)
+    dw  S4_t0: K1 cue@0 +0.008545  K3 (a) +0.095703  K5 (a) +0.000000
+    dw  S4_t1: K1 cue@0 +0.008606  K3 (a) +0.078613  K5 (a) +0.000000
+    dw  F0_t0: K1 cue@0 +0.008667  K3 (a) +0.144531  K5 (a) +0.000000
+    dw  F0_t1: K1 cue@0 +0.008911  K3 (a) +0.194336  K5 (a) +0.000000
+    li4 S4_t0: K1 cue@0 +0.008789  K3 (a) +0.146484  K5 (a) +0.000000
+    li4 S4_t1: K1 cue@0 +0.008484  K3 (a) +0.116699  K5 (a) +0.000000
+    li4 F0_t0: K1 cue@0 +0.015076  K3 (a) +0.193848  K5 (a) +0.000000
+    li4 F0_t1: K1 cue@0 +0.013794  K3 (a) +0.176758  K5 (a) +0.000000
+  rates by run: fired at all / on the patch; median onset where fired; mean footprint cells
+    cue@0         vms  0.5625 / 0.1250  onset 1  footprint 83.0
+    cue@0         vtol 0.6719 / 0.1328  onset 1  footprint 82.7
+    none@0        vms  0.0078 / 0.0000  onset 6238  footprint 49.0
+    none@0        vtol 0.0078 / 0.0000  onset 6238  footprint 49.0
+    memory@1      vms  0.5156 / 0.3594  onset 1  footprint 75.5
+    memory@1      vtol 0.7031 / 0.5781  onset 1  footprint 77.2
+    memory@1-L8   vms  0.4062 / 0.2812  onset 1  footprint 88.3
+    memory@1-L8   vtol 0.6953 / 0.6016  onset 1  footprint 98.8
+    correlated@0  vms  0.8750 / 0.8750  onset 1  footprint 75.4
+    correlated@0  vtol 0.8750 / 0.8750  onset 1  footprint 75.4
+
+AGAINST THE FROZEN READER (/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar006c/debug/analysis_dry_run/confirmation.json): largest difference in the means, bounds, SDs and block values 3.47e-18; verdict and criteria the same (NOT CONFIRMED)
+
+THE BRIDGE (the lead's, not ar006c.checks' Q3): the 16 debug tasks on 900948 and 900929 against AR006's own full task there (its debug and preflight roots, digest 963f47e2cf71), shards and raw states: 32 file pairs, 2592 arrays (704 whole, the rest by 4240 arm slices), every reference file's sha256 equal to its manifest's; AR006's runs not in AR006C: correlated@1, memory@0, memory@0-L8, none@1; differences: 0

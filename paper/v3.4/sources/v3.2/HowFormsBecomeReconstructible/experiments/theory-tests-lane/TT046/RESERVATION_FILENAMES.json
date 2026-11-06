@@ -1,0 +1,28 @@
+{
+  "command": [
+    "rg",
+    "--files",
+    "--hidden",
+    "--no-ignore",
+    "--threads",
+    "1",
+    "-g",
+    "!**/.git/**",
+    "-g",
+    "!**/.venv/**",
+    "-g",
+    "!**/__pycache__/**",
+    "-g",
+    "!**/theory-tests-lane/TT046/**",
+    "-g",
+    "!**/storage_archives/2026-10-28_completed-runs_v2/**",
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible",
+    "/mnt/datasets/theory-tests-lane-archive"
+  ],
+  "files": 959753,
+  "roots": [
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible",
+    "/mnt/datasets/theory-tests-lane-archive"
+  ],
+  "sha256": "e3020cda3ade907ed4c9af7a51f0183afe30a87db4de6263ae047c5bbacd4032"
+}

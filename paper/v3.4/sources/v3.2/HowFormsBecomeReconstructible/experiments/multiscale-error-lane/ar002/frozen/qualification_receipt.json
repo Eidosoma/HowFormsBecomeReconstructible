@@ -1,0 +1,154 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "1d13005e4ee323a7bf8e213891fbb35d184653952daf95103efbbdcf1ab8c915",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar002/preflight",
+ "blocks": [
+  900356,
+  900357
+ ],
+ "tag": "mse-ar002",
+ "load_1min_at_check": 18.25,
+ "checked_utc": "2026-10-31T14:57:09Z",
+ "wall_s": 757.3,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "n_items": 40,
+   "failed": []
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 8.875677970365814e-13,
+   "items": {
+    "S4_t1/li4/memory@0/det/case0": {
+     "max_abs": 3.730349362740526e-14,
+     "onset": 1,
+     "detector_exact": true
+    },
+    "F0_t0/dw/correlated@0/det/case1": {
+     "max_abs": 4.440892098500626e-16,
+     "onset": 1,
+     "detector_exact": true
+    },
+    "S4_t0/dw/cue@0/det/case2": {
+     "max_abs": 2.220446049250313e-16,
+     "onset": 0,
+     "detector_exact": true
+    },
+    "F0_t1/li4/memory@0/det-v/case3": {
+     "max_abs": 8.712475185745916e-14,
+     "onset": 1,
+     "detector_exact": true
+    },
+    "S4_t1/dw/change@1/det/case4": {
+     "max_abs": 4.440892098500626e-16,
+     "onset": 1433,
+     "detector_exact": true
+    },
+    "F0_t0/li4/body@0/det/case5": {
+     "max_abs": 8.875677970365814e-13,
+     "onset": 0,
+     "detector_exact": true
+    },
+    "S4_t1/dw/memory@0-L8/det-ms/case6": {
+     "max_abs": 2.220446049250313e-16,
+     "onset": 1,
+     "detector_exact": true
+    }
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 625,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "memory_and_correlated_invert_the_patch_record_with_consistent_bonds": true,
+    "body_and_correlated_invert_the_patch_body": true,
+    "shared_kills_record_inside_bonds_and_anchors": true,
+    "cue_flips_exactly_a_quarter_of_the_anchors": true,
+    "change_flips_exactly_the_patch_anchors_and_target": true,
+    "the_misread_changes_anchors_only": true,
+    "an_island_of_disagreeing_anchors_fires_the_cue_channel_over_its_window": true,
+    "one_disagreeing_anchor_in_the_surround_stops_it": true,
+    "fewer_than_n_disagreeing_anchors_do_not_fire": true,
+    "the_body_channel_fires_at_its_threshold_in_a_window_and_not_one_below": true,
+    "a_window_must_hold_its_dwell": true,
+    "an_8x8_island_fires_det_ms_and_not_det_and_a_4x4_island_fires_both": true,
+    "det_ms_windows_equal_the_single_box_channel_at_every_box_and_det_at_4": true,
+    "each_fired_det_is_on_for_min_1000_8001_minus_onset_and_never_unfired": true,
+    "the_clock": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory: det listed twice is bit-identical": true,
+    "memory: det-v alone equals det-v with others": true,
+    "memory: det-ms equals det-ms with other arms": true,
+    "cue: det listed twice is bit-identical": true,
+    "cue: det-v alone equals det-v with others": true,
+    "cue: det-ms equals det-ms with other arms": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 25.79,
+   "forecast_wall_h_12": 2.69,
+   "worker_rss_mb": 291.1,
+   "bytes_per_task": 13120697
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 155994,
+    "detectors.json": 8818,
+    "utilities.json": 36226,
+    "side_arms.json": 8169,
+    "sizes.json": 16043,
+    "predictions_scored.json": 3273,
+    "TABLES.md": 13347
+   },
+   "big_git_files": []
+  }
+ },
+ "gates": {
+  "det_ms_sheet_cost_under_scattered_cue_damage_le_0.01": {
+   "value": 0.00628662109375,
+   "pass": true
+  },
+  "det_ms_rate_on_the_patch_at_L8_at_least_det_s": {
+   "values": {
+    "memory": {
+     "det-ms": 1.0,
+     "det": 0.8671875
+    },
+    "correlated": {
+     "det-ms": 1.0,
+     "det": 0.859375
+    }
+   },
+   "pass": true
+  }
+ }
+}

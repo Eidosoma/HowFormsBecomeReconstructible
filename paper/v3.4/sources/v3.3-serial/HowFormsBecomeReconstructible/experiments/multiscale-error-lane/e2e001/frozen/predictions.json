@@ -1,0 +1,207 @@
+{
+ "study": "E2E001",
+ "design_digest": "63f1a499c4b58006d84f932814dd4bc93135282928427f93419eec0d4ae70297",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "E1": 0.2,
+  "E2": 0.08,
+  "E3": 0.07,
+  "E4": [
+   -0.35,
+   -0.15
+  ],
+  "E5": [
+   0.005,
+   0.18
+  ],
+  "E6": 0.15,
+  "E8": 0.002,
+  "E9": 0.18
+ },
+ "frozen_utc": "2026-11-03T13:49:17Z",
+ "registered": [
+  {
+   "id": "E1",
+   "part": "the repair crosses the first renewal: u_r(vguard) - u_r(vote), memory@0, g 1",
+   "kind": "ge",
+   "threshold": 0.2
+  },
+  {
+   "id": "E2",
+   "part": "it lasts eight renewals: u_r(vguard) - u_r(vote), memory@0, g 8",
+   "kind": "ge",
+   "threshold": 0.08
+  },
+  {
+   "id": "E3",
+   "part": "the confirmed controller's: u_r(vms) - u_r(vote), memory@0, g 8",
+   "kind": "ge",
+   "threshold": 0.07
+  },
+  {
+   "id": "E4",
+   "part": "the advantage's change through renewal: [u_r(vguard) - u_r(vote)] at g 8 less at g 0, memory@0",
+   "kind": "in",
+   "threshold": [
+    -0.35,
+    -0.15
+   ]
+  },
+  {
+   "id": "E5",
+   "part": "protected storage's lead after renewal: u_r(protected) - u_r(vguard), memory@0, g 8",
+   "kind": "in",
+   "threshold": [
+    0.005,
+    0.18
+   ]
+  },
+  {
+   "id": "E6",
+   "part": "repair against unrepaired copying after renewal: u_r(vguard) - u_r(post-damage), memory@0, g 8",
+   "kind": "ge",
+   "threshold": 0.15
+  },
+  {
+   "id": "E8",
+   "part": "the no-event cost in later generations: a_r(vote) - a_r(vguard), none@0, g 8",
+   "kind": "le",
+   "threshold": 0.002
+  },
+  {
+   "id": "E9",
+   "part": "the first successor's own reconstruction: u_v(vguard) - u_v(vote), memory@0, g 1",
+   "kind": "ge",
+   "threshold": 0.18
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "E7",
+   "part": "the misread recovery after renewal: u_r(vguard) - u_r(vms), memory@1, g 8"
+  }
+ ],
+ "reported": [
+  {
+   "id": "R-vms-0",
+   "part": "u_r(vms) - u_r(vote), memory@0, g 0"
+  },
+  {
+   "id": "R-vms-1",
+   "part": "u_r(vms) - u_r(vote), memory@0, g 1"
+  },
+  {
+   "id": "R-vms-3",
+   "part": "u_r(vms) - u_r(vote), memory@0, g 3"
+  },
+  {
+   "id": "R-vms-8",
+   "part": "u_r(vms) - u_r(vote), memory@0, g 8"
+  },
+  {
+   "id": "R-mismatch0",
+   "part": "mismatch at g 0 in the patch, vguard less vote: (1 - agree_in(vguard)) - (1 - agree_in(vote)), memory@0"
+  },
+  {
+   "id": "R-own-foreign-q-1",
+   "part": "q_r(protected) - q_r(foreign protected), g 1"
+  },
+  {
+   "id": "R-own-foreign-u-1",
+   "part": "u_r(vguard) - u_r(foreign vguard), memory@0, g 1"
+  },
+  {
+   "id": "R-noread-q-1",
+   "part": "q_r(protected) - q_r(disabled reading), g 1"
+  },
+  {
+   "id": "R-unint-vote-1",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vote, memory@0, g 1"
+  },
+  {
+   "id": "R-Q-vote-1",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vote, memory@0, g 1"
+  },
+  {
+   "id": "R-unint-vms-1",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vms, memory@0, g 1"
+  },
+  {
+   "id": "R-Q-vms-1",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vms, memory@0, g 1"
+  },
+  {
+   "id": "R-unint-vguard-1",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vguard, memory@0, g 1"
+  },
+  {
+   "id": "R-Q-vguard-1",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vguard, memory@0, g 1"
+  },
+  {
+   "id": "R-own-foreign-q-3",
+   "part": "q_r(protected) - q_r(foreign protected), g 3"
+  },
+  {
+   "id": "R-own-foreign-u-3",
+   "part": "u_r(vguard) - u_r(foreign vguard), memory@0, g 3"
+  },
+  {
+   "id": "R-noread-q-3",
+   "part": "q_r(protected) - q_r(disabled reading), g 3"
+  },
+  {
+   "id": "R-unint-vote-3",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vote, memory@0, g 3"
+  },
+  {
+   "id": "R-Q-vote-3",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vote, memory@0, g 3"
+  },
+  {
+   "id": "R-unint-vms-3",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vms, memory@0, g 3"
+  },
+  {
+   "id": "R-Q-vms-3",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vms, memory@0, g 3"
+  },
+  {
+   "id": "R-unint-vguard-3",
+   "part": "u_r(uninterrupted, approximate) - u_r(lineage), vguard, memory@0, g 3"
+  },
+  {
+   "id": "R-Q-vguard-3",
+   "part": "u_r(Q boundary) - u_r(SR001's packet), vguard, memory@0, g 3"
+  },
+  {
+   "id": "R-protected-q-8",
+   "part": "q_r(protected), g 8 (the route's own erosion)"
+  },
+  {
+   "id": "R-protected-noread-q-3",
+   "part": "q_r(disabled reading), g 3 (the native baseline)"
+  },
+  {
+   "id": "R-cue@0-1",
+   "part": "u_r(vguard) - u_r(vote), cue@0, g 1"
+  },
+  {
+   "id": "R-cue@0-3",
+   "part": "u_r(vguard) - u_r(vote), cue@0, g 3"
+  },
+  {
+   "id": "R-correlated@0-1",
+   "part": "u_r(vguard) - u_r(vote), correlated@0, g 1"
+  },
+  {
+   "id": "R-correlated@0-3",
+   "part": "u_r(vguard) - u_r(vote), correlated@0, g 3"
+  },
+  {
+   "id": "R-E7-at-0",
+   "part": "u_r(vguard) - u_r(vms), memory@1, g 0"
+  }
+ ],
+ "predict_sha256": "12980aded6ab4c01b83854228c5bc967d316522cbc43d63630695865989eeb73"
+}

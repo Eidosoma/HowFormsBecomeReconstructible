@@ -1,0 +1,41 @@
+{
+  "controller_pid": 2917756,
+  "further_automatic_polling": false,
+  "one_startup_check": true,
+  "phase": "QUALIFICATION_RUNNING",
+  "resource_admission": {
+    "active_project_threads": 1,
+    "ceiling": 12,
+    "free_bytes": 82272645120,
+    "numerical_threads_per_worker": 1,
+    "pass_admission": true,
+    "planned_cpus": [
+      6,
+      7
+    ],
+    "utc": "2026-11-01T13:16:17.447471+00:00",
+    "workers": 2
+  },
+  "status": "STARTUP_CONFIRMED",
+  "utc": "2026-11-01T13:17:08.523773+00:00",
+  "workers": [
+    {
+      "affinity": [
+        6
+      ],
+      "block": 50999990,
+      "cpu": 6,
+      "pid": 2917760,
+      "utc": "2026-11-01T13:16:17.726659+00:00"
+    },
+    {
+      "affinity": [
+        7
+      ],
+      "block": 50999991,
+      "cpu": 7,
+      "pid": 2917761,
+      "utc": "2026-11-01T13:16:17.727939+00:00"
+    }
+  ]
+}

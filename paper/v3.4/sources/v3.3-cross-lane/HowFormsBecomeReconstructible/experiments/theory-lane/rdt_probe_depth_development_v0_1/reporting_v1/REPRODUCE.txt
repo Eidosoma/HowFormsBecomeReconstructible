@@ -1,0 +1,44 @@
+The frozen development code and all compact predictions, outcomes, weights and
+scores are in git. results_v1/CLOSEOUT.json hashes the published evidence.
+MANUSCRIPT_HANDOFF.txt gives the bounded interpretation; saved/analysis contains
+every condition, including null and unfavorable contrasts. The eight final
+deployment candidates are saved/fitting/MODELS.json, separately sealed from the
+held-fold models and predictions.
+
+To recheck provenance and republish from retained run storage, from theory-lane:
+  PYTHONDONTWRITEBYTECODE=1 python3 rdt_probe_depth_development_v0_1/reporting_v1/closeout.py --output /tmp/probe_depth_closeout_reproduction
+Use a new destination. This verifies files and copies outcomes; it performs no
+simulation, training, model selection or calibration.
+
+To reproduce the complete numerical scoring from published compact fields, run
+the following from theory-lane using the existing PlasticHeredity virtualenv:
+
+PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python - <<'PY'
+from pathlib import Path
+import hashlib, json, shutil, sys, time
+root = Path('rdt_probe_depth_development_v0_1').resolve()
+published = root/'reporting_v1/results_v1'
+dest = Path('/tmp/probe_depth_score_reproduction')
+dest.mkdir(exist_ok=False)
+(dest/'fitting').mkdir()
+for name in ('SCORING.npz', 'SCORING_SCHEMA.json', 'PREDICTION_SEAL.json',
+             'HELD_FOLD_PREDICTIONS.csv', 'COMPLETE.json'):
+    shutil.copyfile(published/'saved/fitting'/name, dest/'fitting'/name)
+sys.path.insert(0, str(root))
+from pc_common import verify_freeze
+verify_freeze()
+from pc_score import main
+main(dest, time.time()+300)
+for path in (published/'saved/analysis').glob('*'):
+    if path.name == 'SUMMARY.json':
+        continue  # Includes execution-specific CPU/wall timing.
+    assert path.read_bytes() == (dest/'analysis'/path.name).read_bytes(), path.name
+print('All numerical CSVs and report reproduced exactly; no model refit.')
+PY
+
+The scoring uses the frozen seed 10720261102 and 10000 whole-block bootstrap
+draws. It requires NumPy and the frozen local comparator imports, not native
+simulation. No old predictor is recalibrated. Raw arrays and detailed fit/probe
+receipts remain in the run directory named by SOURCE_MANIFEST.json; all are
+hash-bound by saved/OUTPUTS.json. Copied SCORING.npz retains the exact native
+numeric fields and targets, with an internal dtype/shape/content-hash index.

@@ -1,0 +1,204 @@
+{
+  "utc": "2026-10-28T22:00:02.444549+00:00",
+  "status": "PASS",
+  "script_sha256": "c66979ae30f2ee4ce950b5333152d51cae34e99ce3fa95b162744a6abe2f145f",
+  "input_manifest_sha256": "27252383ef0b4e103f57a4c6575825dd0320d1759416bb62bcb69dd50cb577da",
+  "complete_sha256": "b8a20f3a28bb4aa3865aa9e569fbea08a6329ebf92ec7838cf8c5ffee475f09b",
+  "output_manifest_sha256": "19caa847413c1eb5a7a371606db33e9463ae307f88f931a7f92d1530ecf64be9",
+  "input_files_verified": 83,
+  "output_files_verified": 1095,
+  "prior_input_files_verified": 72,
+  "prior_output_files_verified": 443,
+  "acquisition_commitments_verified": 35,
+  "boundary_rows_independently_checked": 2240,
+  "selected_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "selected_packets": 112,
+  "ineligible_blocks": [
+    6,
+    23
+  ],
+  "surplus_blocks": [
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "target_outcomes_verified": 448,
+  "units_verified": 32,
+  "raw_readouts_rescored": 9728,
+  "saved_flat_chains_verified": 512,
+  "actual_decision_quota_checks": 576,
+  "target_decision_quota_checks": 504,
+  "target_rewrites_each_guard_and_random": {
+    "independent": 1662
+  },
+  "allocation_branch_coverage": {
+    "qualification": {
+      "interior": 72,
+      "different": 63
+    },
+    "scientific": {
+      "interior": 287,
+      "different": 211
+    }
+  },
+  "exact_rational_block_summaries": 169,
+  "primary": {
+    "mean": 0.13392857142857142,
+    "lower": 0.06314258084607029,
+    "upper": 0.20471456201107258,
+    "lower_one_sided95": 0.07516691499069285,
+    "upper_one_sided95": 0.19269022786645001
+  },
+  "all_policy_means": {
+    "independent": {
+      "always_promote": {
+        "downstream_successes": 0.7182539682539683,
+        "terminal": 0.7053571428571429,
+        "uninterrupted": 0.6696428571428571,
+        "opposite_reads": 0.026785714285714284,
+        "promotions": 1.0
+      },
+      "matched_random": {
+        "downstream_successes": 0.7018849206349206,
+        "terminal": 0.6964285714285714,
+        "uninterrupted": 0.625,
+        "opposite_reads": 0.025793650793650792,
+        "promotions": 0.8244047619047619
+      },
+      "writer_success_guard": {
+        "downstream_successes": 0.8358134920634921,
+        "terminal": 0.8571428571428571,
+        "uninterrupted": 0.7142857142857143,
+        "opposite_reads": 0.010912698412698412,
+        "promotions": 0.8244047619047619
+      },
+      "protected_retain": {
+        "downstream_successes": 0.6557539682539683,
+        "terminal": 0.6875,
+        "uninterrupted": 0.3392857142857143,
+        "opposite_reads": 0.013888888888888888,
+        "promotions": 0.0
+      }
+    }
+  },
+  "recovery_descriptive": {
+    "independent": {
+      "shared_g15_fail": {
+        "always_promote": {
+          "packets": 39,
+          "downstream_success_count": 142,
+          "downstream_read_count": 702,
+          "terminal_count": 8,
+          "uninterrupted_count": 6,
+          "any_g16_33_success_count": 8
+        },
+        "matched_random": {
+          "packets": 39,
+          "downstream_success_count": 161,
+          "downstream_read_count": 702,
+          "terminal_count": 9,
+          "uninterrupted_count": 6,
+          "any_g16_33_success_count": 11
+        },
+        "writer_success_guard": {
+          "packets": 39,
+          "downstream_success_count": 375,
+          "downstream_read_count": 702,
+          "terminal_count": 24,
+          "uninterrupted_count": 11,
+          "any_g16_33_success_count": 24
+        },
+        "protected_retain": {
+          "packets": 39,
+          "downstream_success_count": 175,
+          "downstream_read_count": 702,
+          "terminal_count": 14,
+          "uninterrupted_count": 2,
+          "any_g16_33_success_count": 24
+        }
+      },
+      "shared_g15_pass": {
+        "always_promote": {
+          "packets": 73,
+          "downstream_success_count": 1306,
+          "downstream_read_count": 1314,
+          "terminal_count": 71,
+          "uninterrupted_count": 69,
+          "any_g16_33_success_count": 73
+        },
+        "matched_random": {
+          "packets": 73,
+          "downstream_success_count": 1254,
+          "downstream_read_count": 1314,
+          "terminal_count": 69,
+          "uninterrupted_count": 64,
+          "any_g16_33_success_count": 70
+        },
+        "writer_success_guard": {
+          "packets": 73,
+          "downstream_success_count": 1310,
+          "downstream_read_count": 1314,
+          "terminal_count": 72,
+          "uninterrupted_count": 69,
+          "any_g16_33_success_count": 73
+        },
+        "protected_retain": {
+          "packets": 73,
+          "downstream_success_count": 1147,
+          "downstream_read_count": 1314,
+          "terminal_count": 63,
+          "uninterrupted_count": 36,
+          "any_g16_33_success_count": 73
+        }
+      }
+    }
+  },
+  "cpu_admissions_checked": 14,
+  "worker_batches_checked": 13,
+  "full_native_readers_including_reused_qualification": 53960,
+  "new_native_readers_in_amendment": 36092,
+  "software_full_readers_all_preparations_separate": 128,
+  "software_and_diagnostic_short32_reads_lower_bound": 1824,
+  "software_and_diagnostic_short32_reads_upper_bound": 2432,
+  "charged_total_wall_seconds": 2521.14580464107,
+  "resumed_wall_seconds": 1861.3285043791402,
+  "prior_charged_wall_seconds": 659.8173002619296,
+  "capacity_wait_seconds": 0,
+  "closeout_audit_wall_seconds": 6.625027192058042,
+  "new_native_dynamics": 0,
+  "scope": "Independent post-completion hash checks, original binding/reuse checks, acquisition g14 scalar labels and selection ranks, initial packet identity, raw continuation scoring, saved full flat chains, quota RNG/action/inheritance checks and exact block reductions. No native dynamics or full noise forcing rerun.",
+  "decision": "ALLOCATION_REPLICATION_SUPPORTED",
+  "prospective_within_programme_replication": true,
+  "RDT_specific_validation": false
+}

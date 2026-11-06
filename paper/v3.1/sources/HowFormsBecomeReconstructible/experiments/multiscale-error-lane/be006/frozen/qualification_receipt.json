@@ -1,0 +1,134 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "9a05edca1f253d144c9c55dcb717f910da76426ba14153aacee0e2a7bd03ffe0",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/be006/preflight",
+ "load_1min_at_check": 37.94,
+ "checked_utc": "2026-10-29T16:39:41Z",
+ "wall_s": 359.3,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "S4_t1/dw/memory4@0": true,
+    "S4_t1/dw/memory4@58": true,
+    "S4_t1/dw/memory4@1959": true,
+    "S4_t1/dw/change4@0": true,
+    "S4_t1/dw/cue4@0": true,
+    "S4_t1/li4/memory4@0": true,
+    "S4_t1/li4/memory4@58": true,
+    "S4_t1/li4/memory4@1959": true,
+    "S4_t1/li4/change4@0": true,
+    "S4_t1/li4/cue4@0": true,
+    "LB_t0/dw/memory4@0": true,
+    "LB_t0/dw/memory4@58": true,
+    "LB_t0/dw/memory4@1959": true,
+    "LB_t0/dw/change4@0": true,
+    "LB_t0/dw/cue4@0": true,
+    "LB_t0/li4/memory4@0": true,
+    "LB_t0/li4/memory4@58": true,
+    "LB_t0/li4/memory4@1959": true,
+    "LB_t0/li4/change4@0": true,
+    "LB_t0/li4/cue4@0": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 1.278775696444967e-12,
+   "items": {
+    "F0_t0/dw/memory4@979/dial-SL/case0": 2.220446049250313e-16,
+    "S4_t1/li4/change4@0/dial-S/case1": 4.2826853174915414e-14,
+    "LB_t0/dw/cue4@0/dial-AL/case2": 4.440892098500626e-16,
+    "F0_t1/li4/cue4@0/never-S/case3": 1.278775696444967e-12,
+    "S4_t0/dw/memory4@3918/dial-A/case4": 3.469446951953614e-16
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "F0_t0/dw/memory4,no signal:dial-F=never-F": true,
+    "F0_t0/dw/memory4,no signal:dial-A=never-A": true,
+    "F0_t0/dw/memory4,no signal:dial-AL=never-AL": true,
+    "F0_t0/dw/memory4,no signal:dial-S=never-S": true,
+    "F0_t0/dw/memory4,no signal:dial-SL=never-SL": true,
+    "F0_t0/dw/change4,no signal:dial-F=never-F": true,
+    "F0_t0/dw/change4,no signal:dial-A=never-A": true,
+    "F0_t0/dw/change4,no signal:dial-AL=never-AL": true,
+    "F0_t0/dw/change4,no signal:dial-S=never-S": true,
+    "F0_t0/dw/change4,no signal:dial-SL=never-SL": true,
+    "F0_t0/li4/memory4,no signal:dial-F=never-F": true,
+    "F0_t0/li4/memory4,no signal:dial-A=never-A": true,
+    "F0_t0/li4/memory4,no signal:dial-AL=never-AL": true,
+    "F0_t0/li4/memory4,no signal:dial-S=never-S": true,
+    "F0_t0/li4/memory4,no signal:dial-SL=never-SL": true,
+    "F0_t0/li4/change4,no signal:dial-F=never-F": true,
+    "F0_t0/li4/change4,no signal:dial-A=never-A": true,
+    "F0_t0/li4/change4,no signal:dial-AL=never-AL": true,
+    "F0_t0/li4/change4,no signal:dial-S=never-S": true,
+    "F0_t0/li4/change4,no signal:dial-SL=never-SL": true,
+    "lu=fft_uniform": true,
+    "lu=cg_footprint": true
+   },
+   "max_lu_fft": 3.552713678800501e-15,
+   "max_lu_cg": 1.1760370455249358e-11
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "delays_round_m_t_star": true,
+    "signal_on_for_exactly_its_updates": true,
+    "onset_for_dials_hit_and_sensors_for_all": true,
+    "bond_crosses_zero_after_ceil_t_star": true,
+    "arbiter_cells_are_the_anchored_disagreeing_uncommitted": true,
+    "committed_for_tau_c_updates_its_trigger_included": true,
+    "cuts_are_exact_quantiles": true,
+    "slower_flips_are_a_subset": true
+   }
+  },
+  "Q8_static_case_matched": {
+   "pass": true,
+   "max_abs_onset_minus_case_static": 0.0,
+   "reported_not_gated": {
+    "dial-A": 0.0,
+    "dial-SL": 0.0
+   },
+   "prompt_onset_mean": 0.57421875,
+   "case_static_mean": 0.57421875
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 2.0,
+   "forecast_cpu_h": 19.77,
+   "worker_rss_mb": 323.3,
+   "bytes_per_task": 6583610
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_arms.csv": 37873,
+    "summary_dw.json": 194634,
+    "summary_li4.json": 195329,
+    "traces.json": 153298,
+    "predictions_scored.json": 13393,
+    "TABLES.md": 40335
+   },
+   "predictions": "/e/project1/e-aif-2026pg01-1345/Research/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/be006/frozen/predictions.json"
+  }
+ }
+}

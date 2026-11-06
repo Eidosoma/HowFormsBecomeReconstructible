@@ -1,0 +1,204 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "a36ac25892a1c1f017abd06330f921ba38a99f0d43190d6413789efd6096e4c5",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/be009/preflight",
+ "load_1min_at_check": 19.67,
+ "checked_utc": "2026-10-30T15:57:53Z",
+ "wall_s": 330.5,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "S4_t1/dw/memory4@0": true,
+    "S4_t1/dw/memory4@900": true,
+    "S4_t1/dw/memory4@3600": true,
+    "S4_t1/dw/memory4@7200": true,
+    "S4_t1/li4/memory4@0": true,
+    "S4_t1/li4/memory4@900": true,
+    "S4_t1/li4/memory4@3600": true,
+    "S4_t1/li4/memory4@7200": true,
+    "LB_t0/dw/memory4@0": true,
+    "LB_t0/dw/memory4@900": true,
+    "LB_t0/dw/memory4@3600": true,
+    "LB_t0/dw/memory4@7200": true,
+    "LB_t0/li4/memory4@0": true,
+    "LB_t0/li4/memory4@900": true,
+    "LB_t0/li4/memory4@3600": true,
+    "LB_t0/li4/memory4@7200": true
+   }
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 1.7627566073485923e-13,
+   "items": {
+    "F0_t0/dw/memory4@2700/dial-CASE/case0": 4.440892098500626e-16,
+    "S4_t1/li4/memory4@3600/dial-CELL/case1": 1.0538792061254298e-13,
+    "LB_t0/dw/memory4@900/dial-CELL/case2": 2.220446049250313e-16,
+    "F0_t1/li4/memory4@1800/dial-C12/case3": 1.7627566073485923e-13,
+    "S4_t0/dw/memory4@900/dial-SL/case4": 2.220446049250313e-16
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "items": {
+    "F0_t0/dw/memory4,no signal:dial-SL=never-SL": true,
+    "F0_t0/dw/memory4,no signal:dial-C12=never-C12": true,
+    "F0_t0/dw/memory4,no signal:dial-CASE=never-CASE": true,
+    "F0_t0/dw/memory4,no signal:dial-CELL=never-CELL": true,
+    "F0_t0/dw/memory4@2700 to 4,000, every draw 3,600:dial-CASE=dial-C12": true,
+    "F0_t0/dw/memory4@2700 to 4,000, every draw 3,600:dial-CELL=dial-C12": true,
+    "F0_t0/li4/memory4,no signal:dial-SL=never-SL": true,
+    "F0_t0/li4/memory4,no signal:dial-C12=never-C12": true,
+    "F0_t0/li4/memory4,no signal:dial-CASE=never-CASE": true,
+    "F0_t0/li4/memory4,no signal:dial-CELL=never-CELL": true,
+    "F0_t0/li4/memory4@2700 to 4,000, every draw 3,600:dial-CASE=dial-C12": true,
+    "F0_t0/li4/memory4@2700 to 4,000, every draw 3,600:dial-CELL=dial-C12": true,
+    "S4_t0/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "S4_t0/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "S4_t0/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "S4_t0/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "S4_t0/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "S4_t0/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "S4_t0/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "S4_t0/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "S4_t0/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "S4_t0/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "S4_t0/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "S4_t0/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "S4_t1/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "S4_t1/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "S4_t1/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "S4_t1/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "S4_t1/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "S4_t1/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "S4_t1/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "S4_t1/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "S4_t1/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "S4_t1/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "S4_t1/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "S4_t1/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "LB_t0/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "LB_t0/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "LB_t0/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "LB_t0/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "LB_t0/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "LB_t0/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "LB_t0/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "LB_t0/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "LB_t0/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "LB_t0/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "LB_t0/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "LB_t0/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "LB_t1/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "LB_t1/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "LB_t1/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "LB_t1/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "LB_t1/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "LB_t1/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "LB_t1/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "LB_t1/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "LB_t1/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "LB_t1/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "LB_t1/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "LB_t1/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "F0_t0/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "F0_t0/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "F0_t0/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "F0_t0/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "F0_t0/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "F0_t0/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "F0_t0/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "F0_t0/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "F0_t0/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "F0_t0/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "F0_t0/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "F0_t0/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "F0_t1/dw/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "F0_t1/dw/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "F0_t1/dw/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "F0_t1/dw/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "F0_t1/dw/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "F0_t1/dw/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "F0_t1/li4/memory4@0:dial-C12=SL at the 4 reads before 3600": true,
+    "F0_t1/li4/memory4@0:never-C12=SL at the 4 reads before 3600": true,
+    "F0_t1/li4/memory4@0:dial-CASE=SL at the 3 reads before 2742": true,
+    "F0_t1/li4/memory4@0:never-CASE=SL at the 3 reads before 2742": true,
+    "F0_t1/li4/memory4@0:dial-CELL=SL at the 1 reads before 1000": true,
+    "F0_t1/li4/memory4@0:never-CELL=SL at the 1 reads before 1000": true,
+    "lu=fft_uniform": true,
+    "lu=cg_footprint": true
+   },
+   "max_lu_fft": 3.1086244689504383e-15,
+   "max_lu_cg": 1.095856738686507e-11
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "delays_as_declared": true,
+    "signal_on_for_exactly_its_updates": true,
+    "onset_for_dials_hit_and_sensors_for_all": true,
+    "executed_and_exec_pre_recorded_exactly_for_commit_arms": true,
+    "draws_equal_design_same_in_every_task_case_and_cell_streams_differ": true,
+    "cell_draws_median_within_3pct_cv_0.37_0.43": true,
+    "bond_crosses_zero_after_ceil_t_star": true,
+    "commit_at_t_executes_exactly_the_cells_mapped_to_t_uncommitted_confident": true,
+    "no_change_at_an_update_in_no_cells_map": true,
+    "committed_for_tau_c_updates_its_commitment_included": true,
+    "cut_is_the_exact_quantile": true
+   },
+   "cell_draws": {
+    "n": 16384,
+    "median": 3575.0,
+    "cv": 0.4059867443544327
+   }
+  },
+  "Q8_static_case_matched": {
+   "pass": true,
+   "max_abs_onset_minus_case_static": 0.0,
+   "reported_not_gated": {
+    "dial-C12": 0.0,
+    "dial-CASE": 0.0,
+    "dial-CELL": 0.0
+   },
+   "prompt_onset_mean": 0.484375,
+   "case_static_mean": 0.484375
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_wall_h": 1.7,
+   "forecast_cpu_h": 16.74,
+   "worker_rss_mb": 311.2,
+   "bytes_per_task": 5992034
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "contrasts_arms.csv": 172224,
+    "summary_dw.json": 163955,
+    "summary_li4.json": 164896,
+    "traces.json": 128866,
+    "predictions_scored.json": 15062,
+    "reported.json": 9449,
+    "TABLES.md": 48901
+   },
+   "predictions": "/e/project1/e-aif-2026pg01-1345/Research/HowFormsBecomeReconstructible/experiments/multiscale-error-lane/be009/frozen/predictions.json"
+  }
+ }
+}

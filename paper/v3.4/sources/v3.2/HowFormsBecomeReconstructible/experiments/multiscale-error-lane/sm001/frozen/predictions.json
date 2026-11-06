@@ -1,0 +1,320 @@
+{
+ "status": "FROZEN_BEFORE_DEVELOPMENT_OUTCOMES",
+ "design_digest": "da31d5f049f3e7fb7032d3ee602d589448ddb46e8f6bb705f5ee73075734004e",
+ "computed_utc": "2026-10-31T02:38:05Z",
+ "thresholds": {
+  "S1": 0.15,
+  "S2": 0.15,
+  "S3": 0.1,
+  "S4": -0.05,
+  "S5": 0.0,
+  "S6": -0.05,
+  "S7": 0.0,
+  "S8": 0.0
+ },
+ "parts": [
+  {
+   "stmt": "S1",
+   "name": "S1 transfer: mean (E_64 - E_32 at the same lengths) >= -0.15",
+   "stage": "test",
+   "threshold": -0.15,
+   "sense": "ge",
+   "reference": [
+    "obs",
+    "E"
+   ]
+  },
+  {
+   "stmt": "S1",
+   "name": "S1 transfer: mean (E_64 - E_32 at the same lengths) <= 0.15",
+   "stage": "test",
+   "threshold": 0.15,
+   "sense": "le",
+   "reference": [
+    "obs",
+    "E"
+   ]
+  },
+  {
+   "stmt": "S2",
+   "name": "S2 transfer: mean (E - model) >= -0.15",
+   "stage": "test",
+   "threshold": -0.15,
+   "sense": "ge",
+   "reference": [
+    "model",
+    null
+   ]
+  },
+  {
+   "stmt": "S2",
+   "name": "S2 transfer: mean (E - model) <= 0.15",
+   "stage": "test",
+   "threshold": 0.15,
+   "sense": "le",
+   "reference": [
+    "model",
+    null
+   ]
+  },
+  {
+   "stmt": "S3",
+   "name": "S3 refinement, prompt (m 0): mean (E - E_twin) >= -0.1",
+   "stage": "test",
+   "threshold": -0.1,
+   "sense": "ge",
+   "reference": null
+  },
+  {
+   "stmt": "S3",
+   "name": "S3 refinement, prompt (m 0): mean (E - E_twin) <= 0.1",
+   "stage": "test",
+   "threshold": 0.1,
+   "sense": "le",
+   "reference": null
+  },
+  {
+   "stmt": "S4",
+   "name": "S4 refinement, late (m 2): mean (E - E_twin) <= -0.05",
+   "stage": "test",
+   "threshold": -0.05,
+   "sense": "le",
+   "reference": null
+  },
+  {
+   "stmt": "S5",
+   "name": "S5 refinement, prompt (m 0): mean (episode r_in - r_in_twin) >= 0",
+   "stage": "test",
+   "threshold": 0.0,
+   "sense": "ge",
+   "reference": null
+  },
+  {
+   "stmt": "S6",
+   "name": "S6 refinement, late (m 2): mean ((E - r_in) - (E_twin - r_in_twin)) <= -0.05",
+   "stage": "test",
+   "threshold": -0.05,
+   "sense": "le",
+   "reference": null
+  },
+  {
+   "stmt": "S7",
+   "name": "S7 geometry (w 16): mean (E_mid - E_cross) >= 0",
+   "stage": "test",
+   "threshold": 0.0,
+   "sense": "ge",
+   "reference": null
+  },
+  {
+   "stmt": "S8",
+   "name": "S8 FIT, late (m 2, 4): mean (E at (2 lam, 2 w, 2 L) - E at (lam, w, L)) <= 0",
+   "stage": "fit",
+   "threshold": 0.0,
+   "sense": "le",
+   "reference": null
+  }
+ ],
+ "reported": [
+  {
+   "stmt": "F3",
+   "name": "F3 full refinement, prompt (m 0): mean (E_refined - E_32 at the same x) >= -0.1",
+   "stage": "test",
+   "threshold": -0.1,
+   "sense": "ge",
+   "reference": [
+    "obs",
+    "E"
+   ]
+  },
+  {
+   "stmt": "F3",
+   "name": "F3 full refinement, prompt (m 0): mean (E_refined - E_32 at the same x) <= 0.1",
+   "stage": "test",
+   "threshold": 0.1,
+   "sense": "le",
+   "reference": [
+    "obs",
+    "E"
+   ]
+  },
+  {
+   "stmt": "F4",
+   "name": "F4 full refinement, late (m 2): mean (E_refined - E_32 at the same x) <= -0.02",
+   "stage": "test",
+   "threshold": -0.02,
+   "sense": "le",
+   "reference": [
+    "obs",
+    "E"
+   ]
+  },
+  {
+   "stmt": "F5",
+   "name": "F5 full refinement, prompt (m 0): mean (episode r_in refined - r_in at 32, the same x) >= 0.02",
+   "stage": "test",
+   "threshold": 0.02,
+   "sense": "ge",
+   "reference": [
+    "obs",
+    "r_in"
+   ]
+  },
+  {
+   "stmt": "F6",
+   "name": "F6 full refinement, late (m 2): mean (E - model) <= -0.04",
+   "stage": "test",
+   "threshold": -0.04,
+   "sense": "le",
+   "reference": [
+    "model",
+    null
+   ]
+  },
+  {
+   "stmt": "R1",
+   "name": "R1 refinement, late (m 2): mean (episode r_in - r_in_twin)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": null
+  },
+  {
+   "stmt": "R2",
+   "name": "R2 refinement, prompt (m 0): mean ((E - r_in) - (E_twin - r_in_twin)) <= 0",
+   "stage": "test",
+   "threshold": 0.0,
+   "sense": "le",
+   "reference": null
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 refinement, late (m 2), L 4: mean (E - E_twin)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": null
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 refinement, late (m 2), L 8: mean (E - E_twin)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": null
+  },
+  {
+   "stmt": "R3",
+   "name": "R3 refinement, late (m 2), L 16: mean (E - E_twin)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": null
+  },
+  {
+   "stmt": "C",
+   "name": "C transfer: mean (|E - 4-NN| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C transfer: mean (|E - parametric| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C refine: mean (|E - 4-NN| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C refine: mean (|E - parametric| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C mid: mean (|E - 4-NN| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C mid: mean (|E - parametric| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C cross: mean (|E - 4-NN| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  },
+  {
+   "stmt": "C",
+   "name": "C cross: mean (|E - parametric| - |E - model|)",
+   "stage": "test",
+   "threshold": null,
+   "sense": null,
+   "reference": "na"
+  }
+ ],
+ "statements": [
+  {
+   "id": "S1",
+   "claim": "more cells at the same lengths leave the reconstruction unchanged",
+   "rule": "HOLDS if, over the transfer conditions, the mean of E at 64 x 64 less the FIT stage's E at the same lengths lies within [-0.15, 0.15], else FAILS"
+  },
+  {
+   "id": "S2",
+   "claim": "the frozen model predicts the larger sheet at the same lengths",
+   "rule": "HOLDS if, over the transfer conditions, the mean of E less the frozen model lies within [-0.15, 0.15], else FAILS"
+  },
+  {
+   "id": "S3",
+   "claim": "doubling every declared length leaves the prompt signal's reconstruction unchanged",
+   "rule": "HOLDS if, over the refined conditions with the prompt signal (m 0), the mean of E less E of the twin lies within [-0.1, 0.1], else FAILS"
+  },
+  {
+   "id": "S4",
+   "claim": "doubling every declared length lowers the late signal's reconstruction",
+   "rule": "HOLDS if, over the refined conditions with the signal at 2 T* (m 2), the mean of E less E of the twin is <= -0.05, else FAILS"
+  },
+  {
+   "id": "S5",
+   "claim": "doubling every declared length does not lower the episode's own repair under the prompt signal",
+   "rule": "HOLDS if, over the refined conditions with m 0, the mean of the episode's r_in less the twin's is >= 0, else FAILS"
+  },
+  {
+   "id": "S6",
+   "claim": "the late signal's loss under doubling is the successor's, not the episode's",
+   "rule": "HOLDS if, over the refined conditions with m 2, the mean of (E - r_in) less the twin's (E - r_in) is <= -0.05, else FAILS"
+  },
+  {
+   "id": "S7",
+   "claim": "a wall costs the reconstruction",
+   "rule": "HOLDS if, at w 16, the mean over (L, arm) of E with the patch mid-stripe less E with it straddling a wall is >= 0, else FAILS"
+  },
+  {
+   "id": "S8",
+   "claim": "within one sheet, doubling every declared length lowers a late signal's reconstruction",
+   "rule": "HOLDS if, on the FIT stage, over every pair of conditions with the same delay (m 2 or 4) and commitment, one at (2 lam, 2 w, 2 L) and one at (lam, w, L), the mean of E at the doubled lengths less E at the undoubled is <= 0, else FAILS"
+  }
+ ]
+}

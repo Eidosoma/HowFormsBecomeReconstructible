@@ -1,0 +1,98 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR004",
+ "design_digest": "7cd71b5b29cf573292c240f5245e1d0df45ca368c05b277079b7775631b94233",
+ "ar003_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar004/preflight",
+ "blocks": [
+  900263,
+  900264
+ ],
+ "tag": "mse-ar004",
+ "load_1min_at_check": 59.31,
+ "checked_utc": "2026-11-01T22:56:12Z",
+ "wall_s": 434.2,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 16
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900263": true,
+    "raw/dw/S4_t0/900263": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 2,
+   "runs_compared": 14,
+   "arrays_compared": 452,
+   "arm_slices_compared": 720,
+   "reference": "AR003's debug outputs on 900158 (tag mse-ar003, frozen digest)",
+   "mismatched": {}
+  },
+  "Q4_vote_default_identity": {
+   "pass": true,
+   "n_items": 352,
+   "failed": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 370,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "ar003_frozen_design_unchanged": true,
+    "det_star_is_ar003s_frozen": true,
+    "det_pool_is_the_tunings_choice": true,
+    "a_minority_of_agreeing_anchors_fires_q075_not_q1": true,
+    "ring_max_1_tolerates_1_in_the_surround_not_2": true,
+    "ring_max_2_tolerates_2_in_the_surround_not_3": true,
+    "fewer_than_n_disagreeing_do_not_fire": true,
+    "det_pool_windows_equal_the_single_box_channel_at_every_box": true,
+    "the_misread_changes_the_anchors_only": true,
+    "the_clock": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory@1-L8: vpool alone = vpool beside vms and the vote": true,
+    "memory@1-L8: vpool listed twice is bit-identical": true,
+    "cue@0-L4: vpool alone = vpool beside vms and the vote": true,
+    "cue@0-L4: vpool listed twice is bit-identical": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 399.7,
+   "forecast_cpu_h": 14.21,
+   "forecast_wall_h_8": 2.16,
+   "worker_rss_mb": 288.3,
+   "bytes_per_task": 7244719
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 54519,
+    "detectors.json": 4783,
+    "utilities.json": 6347,
+    "predictions_scored.json": 2792,
+    "TABLES.md": 5609
+   },
+   "big_git_files": []
+  }
+ }
+}

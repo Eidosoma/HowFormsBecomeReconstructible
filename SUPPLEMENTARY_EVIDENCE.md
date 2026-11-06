@@ -1,3 +1,5 @@
+> **Current edition: v3.4.** See the [current source](paper/v3.4/EXTENDED_EVIDENCE.md). The dated document below is the preserved original review export.
+
 # Detailed background evidence
 
 **v0.20 update, 12 October 2026:** new sections D.7.11, D.8.9–D.8.10 and D.9.4 retain repair-policy, serial-confirmation, capture-timing and Hopfield comparisons. Section D.7.7 adds fresh founders. P32's complete cellular panel is specified in C.40/E85. TT015's previously pending audit is now complete; TT016 is a separate fresh confirmation. Earlier dated entries describe their original selection, not current pending status.

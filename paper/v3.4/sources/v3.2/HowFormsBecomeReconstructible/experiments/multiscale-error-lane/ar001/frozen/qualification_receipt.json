@@ -1,0 +1,102 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "051af4cc7450c7b649b75d0abdf63ef0c8fd68b7935707b9bd35535e47fc00b1",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar001/preflight",
+ "blocks": [
+  900029,
+  900031
+ ],
+ "tag": "mse-ar001",
+ "load_1min_at_check": 20.72,
+ "checked_utc": "2026-10-30T23:50:35Z",
+ "wall_s": 626.1,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "n_items": 44,
+   "failed": []
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 1.8569867865636525e-12,
+   "items": {
+    "S4_t1/li4/change@0/dial/case0": 4.5574655160862676e-14,
+    "F0_t0/dw/correlated@0/latch/case1": 2.220446049250313e-16,
+    "S4_t0/dw/memory@0/vote/case2": 2.220446049250313e-16,
+    "F0_t1/li4/memory@1/arbiter/case3": 1.8569867865636525e-12,
+    "S4_t1/dw/shared@0/body/case4": 2.220446049250313e-16,
+    "F0_t0/li4/cue@0/dial-d8/case5": 3.211875210240578e-13
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 354,
+   "failed": [],
+   "max_lu_fft": 3.1086244689504383e-15,
+   "max_lu_cg": 1.1764367258138009e-11
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "memory_and_correlated_invert_the_patch_record_with_consistent_bonds": true,
+    "body_and_correlated_invert_the_patch_body": true,
+    "shared_kills_record_inside_bonds_and_anchors": true,
+    "cue_flips_exactly_a_quarter_of_the_anchors": true,
+    "change_flips_exactly_the_patch_anchors_and_target": true,
+    "the_misread_changes_anchors_only": true,
+    "footprints_have_their_declared_sizes_and_overlaps": true,
+    "every_dial_on_for_exactly_1000_updates_every_other_arm_never": true,
+    "onset_for_the_dials_only": true,
+    "dial_delays_are_round_m_t_star": true,
+    "the_clock": true,
+    "bond_crosses_zero_after_ceil_t_star": true,
+    "the_latch_holds_its_decision_for_exactly_its_hold": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory: latch listed twice is bit-identical": true,
+    "memory: reordering the arms changes no branch": true,
+    "correlated: latch listed twice is bit-identical": true,
+    "correlated: reordering the arms changes no branch": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 21.81,
+   "forecast_wall_h_12": 2.28,
+   "worker_rss_mb": 491.2,
+   "bytes_per_task": 14870346
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 192489,
+    "reliability.json": 7514,
+    "ranking.json": 1812,
+    "side_arms.json": 23341,
+    "predictions_scored.json": 4677,
+    "TABLES.md": 6157
+   }
+  }
+ }
+}

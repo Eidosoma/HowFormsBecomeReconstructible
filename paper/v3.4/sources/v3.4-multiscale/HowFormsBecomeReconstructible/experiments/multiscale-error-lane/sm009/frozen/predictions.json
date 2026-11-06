@@ -1,0 +1,203 @@
+{
+ "study": "SM009",
+ "design_digest": "ac70e78cf6ce6737876c2e3ee52ff1fd823ec7a36a43bf3cb2a8060f93dade7a",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "Y1": 0.05,
+  "Y2": -0.005,
+  "Y4": [
+   0.02,
+   0.04
+  ]
+ },
+ "frozen_utc": "2026-11-05T23:18:24Z",
+ "registered": [
+  {
+   "id": "Y1",
+   "part": "a(struggler at corner 0 | k1-corner) under O - under P: the lone struggler's own need against pooling",
+   "kind": "ge",
+   "threshold": 0.05
+  },
+  {
+   "id": "Y2",
+   "part": "a(healthy at corner 0 | k7-corner) under O - under P: the lone healthy sheet among strugglers",
+   "kind": "le",
+   "threshold": -0.005
+  },
+  {
+   "id": "Y4",
+   "part": "a(struggler at corner 0 | k8) under O - under P: the pure struggling group",
+   "kind": "in",
+   "threshold": [
+    0.02,
+    0.04
+   ]
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "Y3",
+   "part": "the group mean at k4-half, O - P",
+   "kind": "ge"
+  }
+ ],
+ "reported": [
+  {
+   "id": "Y1/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(struggler at corner 0 | k1-corner) under O - under P: the lone struggler's own need against pooling"
+  },
+  {
+   "id": "Y2/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(healthy at corner 0 | k7-corner) under O - under P: the lone healthy sheet among strugglers"
+  },
+  {
+   "id": "Y3/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k4-half, O - P"
+  },
+  {
+   "id": "Y4/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(struggler at corner 0 | k8) under O - under P: the pure struggling group"
+  },
+  {
+   "id": "X1/P",
+   "part": "X1 under P: a(struggler at corner 0 | k1-corner) - a(the same | k8)"
+  },
+  {
+   "id": "X1/P/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X1 under P: a(struggler at corner 0 | k1-corner) - a(the same | k8)"
+  },
+  {
+   "id": "X2/P",
+   "part": "X2 under P: a(healthy at corner 0 | k7-corner) - a(the same | k0)"
+  },
+  {
+   "id": "X2/P/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X2 under P: a(healthy at corner 0 | k7-corner) - a(the same | k0)"
+  },
+  {
+   "id": "X1/O",
+   "part": "X1 under O: a(struggler at corner 0 | k1-corner) - a(the same | k8)"
+  },
+  {
+   "id": "X1/O/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X1 under O: a(struggler at corner 0 | k1-corner) - a(the same | k8)"
+  },
+  {
+   "id": "X2/O",
+   "part": "X2 under O: a(healthy at corner 0 | k7-corner) - a(the same | k0)"
+  },
+  {
+   "id": "X2/O/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): X2 under O: a(healthy at corner 0 | k7-corner) - a(the same | k0)"
+  },
+  {
+   "id": "O-P/k0",
+   "part": "a(healthy at corner 0 | k0), O - P: the pure healthy group (Y2's position term)"
+  },
+  {
+   "id": "O-P/k0/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(healthy at corner 0 | k0), O - P: the pure healthy group (Y2's position term)"
+  },
+  {
+   "id": "X3/P",
+   "part": "X1 under P with the edge sealed"
+  },
+  {
+   "id": "Y1/inner",
+   "part": "a(struggler at inner 1 | k1-inner), O - P: the lone struggler at an inner cell"
+  },
+  {
+   "id": "Y1/inner/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): a(struggler at inner 1 | k1-inner), O - P: the lone struggler at an inner cell"
+  },
+  {
+   "id": "O-P/group/k0",
+   "part": "the group mean at k0, O - P"
+  },
+  {
+   "id": "O-P/group/k0/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k0, O - P"
+  },
+  {
+   "id": "O-P/group/k1-corner",
+   "part": "the group mean at k1-corner, O - P"
+  },
+  {
+   "id": "O-P/group/k1-corner/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k1-corner, O - P"
+  },
+  {
+   "id": "O-P/group/k1-inner",
+   "part": "the group mean at k1-inner, O - P"
+  },
+  {
+   "id": "O-P/group/k1-inner/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k1-inner, O - P"
+  },
+  {
+   "id": "O-P/group/k2-apart",
+   "part": "the group mean at k2-apart, O - P"
+  },
+  {
+   "id": "O-P/group/k2-apart/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k2-apart, O - P"
+  },
+  {
+   "id": "O-P/group/k4-half",
+   "part": "the group mean at k4-half, O - P"
+  },
+  {
+   "id": "O-P/group/k4-half/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k4-half, O - P"
+  },
+  {
+   "id": "O-P/group/k4-checker",
+   "part": "the group mean at k4-checker, O - P"
+  },
+  {
+   "id": "O-P/group/k4-checker/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k4-checker, O - P"
+  },
+  {
+   "id": "O-P/group/k7-corner",
+   "part": "the group mean at k7-corner, O - P"
+  },
+  {
+   "id": "O-P/group/k7-corner/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k7-corner, O - P"
+  },
+  {
+   "id": "O-P/group/k8",
+   "part": "the group mean at k8, O - P"
+  },
+  {
+   "id": "O-P/group/k8/dw",
+   "part": "dw (weaker S4_t1, stronger F0_t1): the group mean at k8, O - P"
+  },
+  {
+   "id": "Y1/gain",
+   "part": "Y1's gain (window mean): the lone struggler at corner 0, k1-corner, O - P"
+  },
+  {
+   "id": "Y2/gain",
+   "part": "Y2's gain (window mean): the lone healthy sheet at corner 0, k7-corner, O - P"
+  },
+  {
+   "id": "Y1/stress",
+   "part": "Y1's stress (window mean): the lone struggler at corner 0, k1-corner, O - P"
+  },
+  {
+   "id": "Y2/stress",
+   "part": "Y2's stress (window mean): the lone healthy sheet at corner 0, k7-corner, O - P"
+  },
+  {
+   "id": "Y1/exposure",
+   "part": "Y1's exposure (window mean): the lone struggler at corner 0, k1-corner, O - P"
+  },
+  {
+   "id": "Y2/exposure",
+   "part": "Y2's exposure (window mean): the lone healthy sheet at corner 0, k7-corner, O - P"
+  }
+ ],
+ "predict_sha256": "8fc91c4dc576be6b5a15de12e380135da5696e753b961c7ec9f86e9743473aae"
+}

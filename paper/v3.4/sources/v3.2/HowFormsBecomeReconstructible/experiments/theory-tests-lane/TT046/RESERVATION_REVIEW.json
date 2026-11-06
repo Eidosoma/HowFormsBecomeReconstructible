@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    46010000,
+    46010001,
+    46010002,
+    46010003,
+    46010004,
+    46010005,
+    46010006,
+    46010007,
+    46010008,
+    46010009,
+    46010010,
+    46010011,
+    46010012,
+    46010013,
+    46010014,
+    46010015,
+    46010016,
+    46010017,
+    46010018,
+    46010019,
+    46010020,
+    46010021,
+    46010022,
+    46010023,
+    46010024,
+    46010025,
+    46010026,
+    46010027,
+    46010028,
+    46010029,
+    46010030,
+    46010031
+  ],
+  "limitations": "Bounded current project and dedicated archive; other projects and global non-use are not verified.",
+  "own_planning_matches_reviewed": [
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "46010000\u201346010031. It checked {reservation['filename_count']:,} filenames and\n"
+      },
+      "line_number": 49,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/handoff.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "    assert numeric.search(b'tissue_46010000/CONFIG.json') and not numeric.search(b'tissue_1460100000')\n"
+      },
+      "line_number": 20,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/reserve_v3.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "    assert subprocess.run(['rg','--quiet',pattern],input=b'tissue_46010000').returncode==0\n"
+      },
+      "line_number": 21,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/reserve_v3.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "BLOCKS = tuple(range(46010000, 46010032))\n"
+      },
+      "line_number": 14,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/common.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "source blocks 46010000\u201346010031, reserved before any production dynamics.\n"
+      },
+      "line_number": 5,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/PROTOCOL.md"
+      }
+    }
+  ],
+  "own_study_excluded_from_prior_use_interpretation": true,
+  "own_study_glob_did_not_exclude_all_content": true,
+  "prior_use_matches": [],
+  "recorded_utc": "2026-10-28T22:37:36.793066+00:00",
+  "reservation_sha256": "72fb36b4308389dc51cb88cbd23fcdc7556045027aa1c6255fdb6fbfb18c6ce3",
+  "review_code_sha256": "b2feea51f4e4134c24e8f1c0d012be2fbc2ba88d8725a49b7dfa537ff0befca7",
+  "scope": "Accessible project/archive filenames and selected case-insensitive text/metadata globs <=2 MiB; no symlink traversal or binary content scan. Search receipt retained, not per-file content hashes. Not a global non-use proof.",
+  "source_dynamics_generated": false,
+  "status": "PASS_NO_PRIOR_USE_MATCH"
+}

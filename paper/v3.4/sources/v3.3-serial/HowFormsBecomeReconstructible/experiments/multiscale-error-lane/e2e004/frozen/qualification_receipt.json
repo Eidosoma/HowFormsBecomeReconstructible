@@ -1,0 +1,119 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "880ac18190f058cbc6add1a61bbf9dd29907c70c0fc148cf3d6c7414fece1074",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e004/preflight",
+ "stage": "preflight",
+ "tasks": 16,
+ "checked_utc": "2026-11-04T16:08:12Z",
+ "wall_s": 407.8,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 16,
+   "bad": [],
+   "missing": [],
+   "seconds": 0.0
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t0",
+    900779
+   ],
+   "arrays": 50,
+   "differ": [],
+   "seconds": 407.7
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "raw_files": 16,
+   "raw_differ": [],
+   "task_bridges_differ": [],
+   "replay_task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t0",
+    900779
+   ],
+   "replay_bit_for_bit": {
+    "memory@0/record": true,
+    "memory@0/body": true,
+    "memory@0/vote": true,
+    "memory@0/vote second record": true,
+    "none@0/record": true,
+    "none@0/body": true,
+    "none@0/vote": true,
+    "none@0/vote second record": true
+   },
+   "seconds": 80.3
+  },
+  "Q4_replay": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t0",
+    900779
+   ],
+   "replays": {
+    "ar001 source/record": true,
+    "ar001 source/body": true,
+    "ar001 source/vote": true,
+    "e2e001 generation/body": true,
+    "e2e002 generation/vote": true
+   },
+   "seconds": 36.3
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "complete": true,
+   "rows_share_packets": true,
+   "listed_twice_identical": true,
+   "aliases": {},
+   "seconds": 1.6
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "compared": 96,
+   "differ": [],
+   "seconds": 1.9
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "second_record_is_incoming": true,
+   "groups_by_route": true,
+   "vote1_rule": true,
+   "post_damage_patch_only": true,
+   "tasks_are_saved_records": true,
+   "seconds": 0.6
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "reordered_identical": true,
+   "seconds": 2.9
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_dev_cpu_h": 18.82,
+   "forecast_dev_wall_h_12": 1.57,
+   "cpu_s_per_branch_generation": 1.0339,
+   "dev_branch_generations": 65536,
+   "worker_rss_mb": 257.1,
+   "cap": 20.0,
+   "seconds": 59.3
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 90609,
+    "TABLES.md": 20058
+   },
+   "parts_scored": 4,
+   "seconds": 4.4
+  }
+ }
+}

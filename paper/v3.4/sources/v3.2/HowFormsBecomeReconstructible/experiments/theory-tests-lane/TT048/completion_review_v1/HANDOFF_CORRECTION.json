@@ -1,0 +1,6 @@
+{
+  "issue": "Administrative handoff used an exclusive-create JSON helper for an existing live status file; FileExistsError stopped before replacing that file.",
+  "recorded_utc": "2026-10-31T11:04:33.475954+00:00",
+  "resolution": "Continue from preserved document snapshots with atomic JSON replacement. Do not repeat report or root-document writes.",
+  "scientific_inputs_and_outputs_unchanged": true
+}

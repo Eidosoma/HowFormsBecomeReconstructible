@@ -1,0 +1,899 @@
+{
+ "study": "E2E007",
+ "design_digest": "81c28217755990fb070d4ca9387cc69627f004762d873432d301df3b59efca2a",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "Z1": 0.17,
+  "Z2": 0.09,
+  "Z3": 0.02,
+  "Z4": 0.07,
+  "Z5": -0.03,
+  "Z1x": 0.19,
+  "Z3x": -0.01
+ },
+ "frozen_utc": "2026-11-06T00:02:31Z",
+ "registered": [
+  {
+   "id": "Z1",
+   "part": "the opposite response under memory injury, present organization: U_v(relax/memory) - U_v(none/memory), g 8",
+   "kind": "ge",
+   "threshold": 0.17
+  },
+  {
+   "id": "Z2",
+   "part": "the opposite response under memory injury, history: q_r(relax/memory) - q_r(none/memory), g 8",
+   "kind": "ge",
+   "threshold": 0.09
+  },
+  {
+   "id": "Z3",
+   "part": "the ruled response under body injury, present organization: U_v(raise/body) - U_v(none/body), g 8 (at most: reversed after P66's values, Amendment 1)",
+   "kind": "le",
+   "threshold": 0.02
+  },
+  {
+   "id": "Z4",
+   "part": "the interaction: [U_v(raise/body) - U_v(none/body)] - [U_v(raise/memory) - U_v(none/memory)], g 8",
+   "kind": "ge",
+   "threshold": 0.07
+  },
+  {
+   "id": "Z5",
+   "part": "the opposite response under body injury: U_v(relax/body) - U_v(none/body), g 8",
+   "kind": "le",
+   "threshold": -0.03
+  },
+  {
+   "id": "Z1x",
+   "part": "what the record carries, the opposite response under memory injury: the fresh successor's U_v, relax/memory - none/memory, after g 8",
+   "kind": "ge",
+   "threshold": 0.19
+  },
+  {
+   "id": "Z3x",
+   "part": "what the record carries, the ruled response under body injury: the fresh successor's U_v, raise/body - none/body, after g 8 (at most: reversed after P66's values, Amendment 1)",
+   "kind": "le",
+   "threshold": -0.01
+  }
+ ],
+ "candidates_reported": [],
+ "reported": [
+  {
+   "id": "R-Z1-1",
+   "part": "the opposite response under memory injury, present organization: U_v(relax/memory) - U_v(none/memory), g 8 [at g 1]"
+  },
+  {
+   "id": "R-Z2-1",
+   "part": "the opposite response under memory injury, history: q_r(relax/memory) - q_r(none/memory), g 8 [at g 1]"
+  },
+  {
+   "id": "R-Z3-1",
+   "part": "the ruled response under body injury, present organization: U_v(raise/body) - U_v(none/body), g 8 (at most: reversed after P66's values, Amendment 1) [at g 1]"
+  },
+  {
+   "id": "R-Z4-1",
+   "part": "the interaction: [U_v(raise/body) - U_v(none/body)] - [U_v(raise/memory) - U_v(none/memory)], g 8 [at g 1]"
+  },
+  {
+   "id": "R-Z5-1",
+   "part": "the opposite response under body injury: U_v(relax/body) - U_v(none/body), g 8 [at g 1]"
+  },
+  {
+   "id": "R-Z1-3",
+   "part": "the opposite response under memory injury, present organization: U_v(relax/memory) - U_v(none/memory), g 8 [at g 3]"
+  },
+  {
+   "id": "R-Z2-3",
+   "part": "the opposite response under memory injury, history: q_r(relax/memory) - q_r(none/memory), g 8 [at g 3]"
+  },
+  {
+   "id": "R-Z3-3",
+   "part": "the ruled response under body injury, present organization: U_v(raise/body) - U_v(none/body), g 8 (at most: reversed after P66's values, Amendment 1) [at g 3]"
+  },
+  {
+   "id": "R-Z4-3",
+   "part": "the interaction: [U_v(raise/body) - U_v(none/body)] - [U_v(raise/memory) - U_v(none/memory)], g 8 [at g 3]"
+  },
+  {
+   "id": "R-Z5-3",
+   "part": "the opposite response under body injury: U_v(relax/body) - U_v(none/body), g 8 [at g 3]"
+  },
+  {
+   "id": "R-raise-none-memory-U_v-1",
+   "part": "U_v(raise/memory) - U_v(none/memory), g 1"
+  },
+  {
+   "id": "R-raise-none-memory-q_r-1",
+   "part": "q_r(raise/memory) - q_r(none/memory), g 1"
+  },
+  {
+   "id": "R-raise-none-memory-a_v-1",
+   "part": "a_v(raise/memory) - a_v(none/memory), g 1"
+  },
+  {
+   "id": "R-raise-none-memory-U-1",
+   "part": "U(raise/memory) - U(none/memory), g 1"
+  },
+  {
+   "id": "R-relax-none-memory-U_v-1",
+   "part": "U_v(relax/memory) - U_v(none/memory), g 1"
+  },
+  {
+   "id": "R-relax-none-memory-q_r-1",
+   "part": "q_r(relax/memory) - q_r(none/memory), g 1"
+  },
+  {
+   "id": "R-relax-none-memory-a_v-1",
+   "part": "a_v(relax/memory) - a_v(none/memory), g 1"
+  },
+  {
+   "id": "R-relax-none-memory-U-1",
+   "part": "U(relax/memory) - U(none/memory), g 1"
+  },
+  {
+   "id": "R-raise-none-body-U_v-1",
+   "part": "U_v(raise/body) - U_v(none/body), g 1"
+  },
+  {
+   "id": "R-raise-none-body-q_r-1",
+   "part": "q_r(raise/body) - q_r(none/body), g 1"
+  },
+  {
+   "id": "R-raise-none-body-a_v-1",
+   "part": "a_v(raise/body) - a_v(none/body), g 1"
+  },
+  {
+   "id": "R-raise-none-body-U-1",
+   "part": "U(raise/body) - U(none/body), g 1"
+  },
+  {
+   "id": "R-relax-none-body-U_v-1",
+   "part": "U_v(relax/body) - U_v(none/body), g 1"
+  },
+  {
+   "id": "R-relax-none-body-q_r-1",
+   "part": "q_r(relax/body) - q_r(none/body), g 1"
+  },
+  {
+   "id": "R-relax-none-body-a_v-1",
+   "part": "a_v(relax/body) - a_v(none/body), g 1"
+  },
+  {
+   "id": "R-relax-none-body-U-1",
+   "part": "U(relax/body) - U(none/body), g 1"
+  },
+  {
+   "id": "R-relax-raise-memory-U_v-1",
+   "part": "U_v(relax/memory) - U_v(raise/memory), g 1"
+  },
+  {
+   "id": "R-relax-raise-memory-q_r-1",
+   "part": "q_r(relax/memory) - q_r(raise/memory), g 1"
+  },
+  {
+   "id": "R-relax-raise-memory-a_v-1",
+   "part": "a_v(relax/memory) - a_v(raise/memory), g 1"
+  },
+  {
+   "id": "R-relax-raise-memory-U-1",
+   "part": "U(relax/memory) - U(raise/memory), g 1"
+  },
+  {
+   "id": "R-relax-raise-body-U_v-1",
+   "part": "U_v(relax/body) - U_v(raise/body), g 1"
+  },
+  {
+   "id": "R-relax-raise-body-q_r-1",
+   "part": "q_r(relax/body) - q_r(raise/body), g 1"
+  },
+  {
+   "id": "R-relax-raise-body-a_v-1",
+   "part": "a_v(relax/body) - a_v(raise/body), g 1"
+  },
+  {
+   "id": "R-relax-raise-body-U-1",
+   "part": "U(relax/body) - U(raise/body), g 1"
+  },
+  {
+   "id": "R-matched-none-memory-U_v-1",
+   "part": "U_v(relax-matched/memory) - U_v(none/memory), g 1"
+  },
+  {
+   "id": "R-matched-none-memory-q_r-1",
+   "part": "q_r(relax-matched/memory) - q_r(none/memory), g 1"
+  },
+  {
+   "id": "R-matched-none-memory-a_v-1",
+   "part": "a_v(relax-matched/memory) - a_v(none/memory), g 1"
+  },
+  {
+   "id": "R-matched-none-memory-U-1",
+   "part": "U(relax-matched/memory) - U(none/memory), g 1"
+  },
+  {
+   "id": "R-matched-relax-memory-U_v-1",
+   "part": "U_v(relax-matched/memory) - U_v(relax/memory), g 1"
+  },
+  {
+   "id": "R-matched-relax-memory-q_r-1",
+   "part": "q_r(relax-matched/memory) - q_r(relax/memory), g 1"
+  },
+  {
+   "id": "R-matched-relax-memory-a_v-1",
+   "part": "a_v(relax-matched/memory) - a_v(relax/memory), g 1"
+  },
+  {
+   "id": "R-matched-relax-memory-U-1",
+   "part": "U(relax-matched/memory) - U(relax/memory), g 1"
+  },
+  {
+   "id": "R-inter-q_r-1",
+   "part": "the interaction in q_r, g 1"
+  },
+  {
+   "id": "R-raise-none-memory-U_v-3",
+   "part": "U_v(raise/memory) - U_v(none/memory), g 3"
+  },
+  {
+   "id": "R-raise-none-memory-q_r-3",
+   "part": "q_r(raise/memory) - q_r(none/memory), g 3"
+  },
+  {
+   "id": "R-raise-none-memory-a_v-3",
+   "part": "a_v(raise/memory) - a_v(none/memory), g 3"
+  },
+  {
+   "id": "R-raise-none-memory-U-3",
+   "part": "U(raise/memory) - U(none/memory), g 3"
+  },
+  {
+   "id": "R-relax-none-memory-U_v-3",
+   "part": "U_v(relax/memory) - U_v(none/memory), g 3"
+  },
+  {
+   "id": "R-relax-none-memory-q_r-3",
+   "part": "q_r(relax/memory) - q_r(none/memory), g 3"
+  },
+  {
+   "id": "R-relax-none-memory-a_v-3",
+   "part": "a_v(relax/memory) - a_v(none/memory), g 3"
+  },
+  {
+   "id": "R-relax-none-memory-U-3",
+   "part": "U(relax/memory) - U(none/memory), g 3"
+  },
+  {
+   "id": "R-raise-none-body-U_v-3",
+   "part": "U_v(raise/body) - U_v(none/body), g 3"
+  },
+  {
+   "id": "R-raise-none-body-q_r-3",
+   "part": "q_r(raise/body) - q_r(none/body), g 3"
+  },
+  {
+   "id": "R-raise-none-body-a_v-3",
+   "part": "a_v(raise/body) - a_v(none/body), g 3"
+  },
+  {
+   "id": "R-raise-none-body-U-3",
+   "part": "U(raise/body) - U(none/body), g 3"
+  },
+  {
+   "id": "R-relax-none-body-U_v-3",
+   "part": "U_v(relax/body) - U_v(none/body), g 3"
+  },
+  {
+   "id": "R-relax-none-body-q_r-3",
+   "part": "q_r(relax/body) - q_r(none/body), g 3"
+  },
+  {
+   "id": "R-relax-none-body-a_v-3",
+   "part": "a_v(relax/body) - a_v(none/body), g 3"
+  },
+  {
+   "id": "R-relax-none-body-U-3",
+   "part": "U(relax/body) - U(none/body), g 3"
+  },
+  {
+   "id": "R-relax-raise-memory-U_v-3",
+   "part": "U_v(relax/memory) - U_v(raise/memory), g 3"
+  },
+  {
+   "id": "R-relax-raise-memory-q_r-3",
+   "part": "q_r(relax/memory) - q_r(raise/memory), g 3"
+  },
+  {
+   "id": "R-relax-raise-memory-a_v-3",
+   "part": "a_v(relax/memory) - a_v(raise/memory), g 3"
+  },
+  {
+   "id": "R-relax-raise-memory-U-3",
+   "part": "U(relax/memory) - U(raise/memory), g 3"
+  },
+  {
+   "id": "R-relax-raise-body-U_v-3",
+   "part": "U_v(relax/body) - U_v(raise/body), g 3"
+  },
+  {
+   "id": "R-relax-raise-body-q_r-3",
+   "part": "q_r(relax/body) - q_r(raise/body), g 3"
+  },
+  {
+   "id": "R-relax-raise-body-a_v-3",
+   "part": "a_v(relax/body) - a_v(raise/body), g 3"
+  },
+  {
+   "id": "R-relax-raise-body-U-3",
+   "part": "U(relax/body) - U(raise/body), g 3"
+  },
+  {
+   "id": "R-matched-none-memory-U_v-3",
+   "part": "U_v(relax-matched/memory) - U_v(none/memory), g 3"
+  },
+  {
+   "id": "R-matched-none-memory-q_r-3",
+   "part": "q_r(relax-matched/memory) - q_r(none/memory), g 3"
+  },
+  {
+   "id": "R-matched-none-memory-a_v-3",
+   "part": "a_v(relax-matched/memory) - a_v(none/memory), g 3"
+  },
+  {
+   "id": "R-matched-none-memory-U-3",
+   "part": "U(relax-matched/memory) - U(none/memory), g 3"
+  },
+  {
+   "id": "R-matched-relax-memory-U_v-3",
+   "part": "U_v(relax-matched/memory) - U_v(relax/memory), g 3"
+  },
+  {
+   "id": "R-matched-relax-memory-q_r-3",
+   "part": "q_r(relax-matched/memory) - q_r(relax/memory), g 3"
+  },
+  {
+   "id": "R-matched-relax-memory-a_v-3",
+   "part": "a_v(relax-matched/memory) - a_v(relax/memory), g 3"
+  },
+  {
+   "id": "R-matched-relax-memory-U-3",
+   "part": "U(relax-matched/memory) - U(relax/memory), g 3"
+  },
+  {
+   "id": "R-inter-q_r-3",
+   "part": "the interaction in q_r, g 3"
+  },
+  {
+   "id": "R-raise-none-memory-U_v-8",
+   "part": "U_v(raise/memory) - U_v(none/memory), g 8"
+  },
+  {
+   "id": "R-raise-none-memory-q_r-8",
+   "part": "q_r(raise/memory) - q_r(none/memory), g 8"
+  },
+  {
+   "id": "R-raise-none-memory-a_v-8",
+   "part": "a_v(raise/memory) - a_v(none/memory), g 8"
+  },
+  {
+   "id": "R-raise-none-memory-U-8",
+   "part": "U(raise/memory) - U(none/memory), g 8"
+  },
+  {
+   "id": "R-relax-none-memory-U_v-8",
+   "part": "U_v(relax/memory) - U_v(none/memory), g 8"
+  },
+  {
+   "id": "R-relax-none-memory-q_r-8",
+   "part": "q_r(relax/memory) - q_r(none/memory), g 8"
+  },
+  {
+   "id": "R-relax-none-memory-a_v-8",
+   "part": "a_v(relax/memory) - a_v(none/memory), g 8"
+  },
+  {
+   "id": "R-relax-none-memory-U-8",
+   "part": "U(relax/memory) - U(none/memory), g 8"
+  },
+  {
+   "id": "R-raise-none-body-U_v-8",
+   "part": "U_v(raise/body) - U_v(none/body), g 8"
+  },
+  {
+   "id": "R-raise-none-body-q_r-8",
+   "part": "q_r(raise/body) - q_r(none/body), g 8"
+  },
+  {
+   "id": "R-raise-none-body-a_v-8",
+   "part": "a_v(raise/body) - a_v(none/body), g 8"
+  },
+  {
+   "id": "R-raise-none-body-U-8",
+   "part": "U(raise/body) - U(none/body), g 8"
+  },
+  {
+   "id": "R-relax-none-body-U_v-8",
+   "part": "U_v(relax/body) - U_v(none/body), g 8"
+  },
+  {
+   "id": "R-relax-none-body-q_r-8",
+   "part": "q_r(relax/body) - q_r(none/body), g 8"
+  },
+  {
+   "id": "R-relax-none-body-a_v-8",
+   "part": "a_v(relax/body) - a_v(none/body), g 8"
+  },
+  {
+   "id": "R-relax-none-body-U-8",
+   "part": "U(relax/body) - U(none/body), g 8"
+  },
+  {
+   "id": "R-relax-raise-memory-U_v-8",
+   "part": "U_v(relax/memory) - U_v(raise/memory), g 8"
+  },
+  {
+   "id": "R-relax-raise-memory-q_r-8",
+   "part": "q_r(relax/memory) - q_r(raise/memory), g 8"
+  },
+  {
+   "id": "R-relax-raise-memory-a_v-8",
+   "part": "a_v(relax/memory) - a_v(raise/memory), g 8"
+  },
+  {
+   "id": "R-relax-raise-memory-U-8",
+   "part": "U(relax/memory) - U(raise/memory), g 8"
+  },
+  {
+   "id": "R-relax-raise-body-U_v-8",
+   "part": "U_v(relax/body) - U_v(raise/body), g 8"
+  },
+  {
+   "id": "R-relax-raise-body-q_r-8",
+   "part": "q_r(relax/body) - q_r(raise/body), g 8"
+  },
+  {
+   "id": "R-relax-raise-body-a_v-8",
+   "part": "a_v(relax/body) - a_v(raise/body), g 8"
+  },
+  {
+   "id": "R-relax-raise-body-U-8",
+   "part": "U(relax/body) - U(raise/body), g 8"
+  },
+  {
+   "id": "R-matched-none-memory-U_v-8",
+   "part": "U_v(relax-matched/memory) - U_v(none/memory), g 8"
+  },
+  {
+   "id": "R-matched-none-memory-q_r-8",
+   "part": "q_r(relax-matched/memory) - q_r(none/memory), g 8"
+  },
+  {
+   "id": "R-matched-none-memory-a_v-8",
+   "part": "a_v(relax-matched/memory) - a_v(none/memory), g 8"
+  },
+  {
+   "id": "R-matched-none-memory-U-8",
+   "part": "U(relax-matched/memory) - U(none/memory), g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-U_v-8",
+   "part": "U_v(relax-matched/memory) - U_v(relax/memory), g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-q_r-8",
+   "part": "q_r(relax-matched/memory) - q_r(relax/memory), g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-a_v-8",
+   "part": "a_v(relax-matched/memory) - a_v(relax/memory), g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-U-8",
+   "part": "U(relax-matched/memory) - U(relax/memory), g 8"
+  },
+  {
+   "id": "R-inter-q_r-8",
+   "part": "the interaction in q_r, g 8"
+  },
+  {
+   "id": "R-raise-none-memory-fresh-U_v-8",
+   "part": "the fresh successor's U_v, raise/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-raise-none-memory-fresh-q_r-8",
+   "part": "the fresh successor's q_r, raise/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-raise-none-memory-fresh-a_v-8",
+   "part": "the fresh successor's a_v, raise/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-raise-none-memory-fresh-q_v-8",
+   "part": "the fresh successor's q_v, raise/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-relax-none-memory-fresh-U_v-8",
+   "part": "the fresh successor's U_v, relax/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-relax-none-memory-fresh-q_r-8",
+   "part": "the fresh successor's q_r, relax/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-relax-none-memory-fresh-a_v-8",
+   "part": "the fresh successor's a_v, relax/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-relax-none-memory-fresh-q_v-8",
+   "part": "the fresh successor's q_v, relax/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-raise-none-body-fresh-U_v-8",
+   "part": "the fresh successor's U_v, raise/body - none/body, after g 8"
+  },
+  {
+   "id": "R-raise-none-body-fresh-q_r-8",
+   "part": "the fresh successor's q_r, raise/body - none/body, after g 8"
+  },
+  {
+   "id": "R-raise-none-body-fresh-a_v-8",
+   "part": "the fresh successor's a_v, raise/body - none/body, after g 8"
+  },
+  {
+   "id": "R-raise-none-body-fresh-q_v-8",
+   "part": "the fresh successor's q_v, raise/body - none/body, after g 8"
+  },
+  {
+   "id": "R-relax-none-body-fresh-U_v-8",
+   "part": "the fresh successor's U_v, relax/body - none/body, after g 8"
+  },
+  {
+   "id": "R-relax-none-body-fresh-q_r-8",
+   "part": "the fresh successor's q_r, relax/body - none/body, after g 8"
+  },
+  {
+   "id": "R-relax-none-body-fresh-a_v-8",
+   "part": "the fresh successor's a_v, relax/body - none/body, after g 8"
+  },
+  {
+   "id": "R-relax-none-body-fresh-q_v-8",
+   "part": "the fresh successor's q_v, relax/body - none/body, after g 8"
+  },
+  {
+   "id": "R-matched-none-memory-fresh-U_v-8",
+   "part": "the fresh successor's U_v, relax-matched/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-matched-none-memory-fresh-q_r-8",
+   "part": "the fresh successor's q_r, relax-matched/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-matched-none-memory-fresh-a_v-8",
+   "part": "the fresh successor's a_v, relax-matched/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-matched-none-memory-fresh-q_v-8",
+   "part": "the fresh successor's q_v, relax-matched/memory - none/memory, after g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-fresh-U_v-8",
+   "part": "the fresh successor's U_v, relax-matched/memory - relax/memory, after g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-fresh-q_r-8",
+   "part": "the fresh successor's q_r, relax-matched/memory - relax/memory, after g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-fresh-a_v-8",
+   "part": "the fresh successor's a_v, relax-matched/memory - relax/memory, after g 8"
+  },
+  {
+   "id": "R-matched-relax-memory-fresh-q_v-8",
+   "part": "the fresh successor's q_v, relax-matched/memory - relax/memory, after g 8"
+  },
+  {
+   "id": "R-inter-fresh-U_v-8",
+   "part": "the interaction in the fresh successor's U_v, after g 8"
+  },
+  {
+   "id": "R-agree_pre-raise-none-body-1",
+   "part": "the observer's agreement at 'pre', raise/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_pre-relax-none-body-1",
+   "part": "the observer's agreement at 'pre', relax/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_pre-raise-none-memory-1",
+   "part": "the observer's agreement at 'pre', raise/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_pre-relax-none-memory-1",
+   "part": "the observer's agreement at 'pre', relax/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_pre-matched-none-memory-1",
+   "part": "the observer's agreement at 'pre', relax-matched/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p80-raise-none-body-1",
+   "part": "the observer's agreement at 'p80', raise/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p80-relax-none-body-1",
+   "part": "the observer's agreement at 'p80', relax/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p80-raise-none-memory-1",
+   "part": "the observer's agreement at 'p80', raise/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p80-relax-none-memory-1",
+   "part": "the observer's agreement at 'p80', relax/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p80-matched-none-memory-1",
+   "part": "the observer's agreement at 'p80', relax-matched/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p16-raise-none-body-1",
+   "part": "the observer's agreement at 'p16', raise/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p16-relax-none-body-1",
+   "part": "the observer's agreement at 'p16', relax/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p16-raise-none-memory-1",
+   "part": "the observer's agreement at 'p16', raise/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p16-relax-none-memory-1",
+   "part": "the observer's agreement at 'p16', relax/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p16-matched-none-memory-1",
+   "part": "the observer's agreement at 'p16', relax-matched/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p4-raise-none-body-1",
+   "part": "the observer's agreement at 'p4', raise/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p4-relax-none-body-1",
+   "part": "the observer's agreement at 'p4', relax/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_p4-raise-none-memory-1",
+   "part": "the observer's agreement at 'p4', raise/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p4-relax-none-memory-1",
+   "part": "the observer's agreement at 'p4', relax/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_p4-matched-none-memory-1",
+   "part": "the observer's agreement at 'p4', relax-matched/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_end-raise-none-body-1",
+   "part": "the observer's agreement at 'end', raise/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_end-relax-none-body-1",
+   "part": "the observer's agreement at 'end', relax/body - none/body, g 1"
+  },
+  {
+   "id": "R-agree_end-raise-none-memory-1",
+   "part": "the observer's agreement at 'end', raise/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_end-relax-none-memory-1",
+   "part": "the observer's agreement at 'end', relax/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_end-matched-none-memory-1",
+   "part": "the observer's agreement at 'end', relax-matched/memory - none/memory, g 1"
+  },
+  {
+   "id": "R-agree_pre-raise-none-body-3",
+   "part": "the observer's agreement at 'pre', raise/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_pre-relax-none-body-3",
+   "part": "the observer's agreement at 'pre', relax/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_pre-raise-none-memory-3",
+   "part": "the observer's agreement at 'pre', raise/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_pre-relax-none-memory-3",
+   "part": "the observer's agreement at 'pre', relax/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_pre-matched-none-memory-3",
+   "part": "the observer's agreement at 'pre', relax-matched/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p80-raise-none-body-3",
+   "part": "the observer's agreement at 'p80', raise/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p80-relax-none-body-3",
+   "part": "the observer's agreement at 'p80', relax/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p80-raise-none-memory-3",
+   "part": "the observer's agreement at 'p80', raise/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p80-relax-none-memory-3",
+   "part": "the observer's agreement at 'p80', relax/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p80-matched-none-memory-3",
+   "part": "the observer's agreement at 'p80', relax-matched/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p16-raise-none-body-3",
+   "part": "the observer's agreement at 'p16', raise/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p16-relax-none-body-3",
+   "part": "the observer's agreement at 'p16', relax/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p16-raise-none-memory-3",
+   "part": "the observer's agreement at 'p16', raise/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p16-relax-none-memory-3",
+   "part": "the observer's agreement at 'p16', relax/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p16-matched-none-memory-3",
+   "part": "the observer's agreement at 'p16', relax-matched/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p4-raise-none-body-3",
+   "part": "the observer's agreement at 'p4', raise/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p4-relax-none-body-3",
+   "part": "the observer's agreement at 'p4', relax/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_p4-raise-none-memory-3",
+   "part": "the observer's agreement at 'p4', raise/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p4-relax-none-memory-3",
+   "part": "the observer's agreement at 'p4', relax/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_p4-matched-none-memory-3",
+   "part": "the observer's agreement at 'p4', relax-matched/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_end-raise-none-body-3",
+   "part": "the observer's agreement at 'end', raise/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_end-relax-none-body-3",
+   "part": "the observer's agreement at 'end', relax/body - none/body, g 3"
+  },
+  {
+   "id": "R-agree_end-raise-none-memory-3",
+   "part": "the observer's agreement at 'end', raise/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_end-relax-none-memory-3",
+   "part": "the observer's agreement at 'end', relax/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_end-matched-none-memory-3",
+   "part": "the observer's agreement at 'end', relax-matched/memory - none/memory, g 3"
+  },
+  {
+   "id": "R-agree_pre-raise-none-body-8",
+   "part": "the observer's agreement at 'pre', raise/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_pre-relax-none-body-8",
+   "part": "the observer's agreement at 'pre', relax/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_pre-raise-none-memory-8",
+   "part": "the observer's agreement at 'pre', raise/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_pre-relax-none-memory-8",
+   "part": "the observer's agreement at 'pre', relax/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_pre-matched-none-memory-8",
+   "part": "the observer's agreement at 'pre', relax-matched/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p80-raise-none-body-8",
+   "part": "the observer's agreement at 'p80', raise/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p80-relax-none-body-8",
+   "part": "the observer's agreement at 'p80', relax/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p80-raise-none-memory-8",
+   "part": "the observer's agreement at 'p80', raise/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p80-relax-none-memory-8",
+   "part": "the observer's agreement at 'p80', relax/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p80-matched-none-memory-8",
+   "part": "the observer's agreement at 'p80', relax-matched/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p16-raise-none-body-8",
+   "part": "the observer's agreement at 'p16', raise/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p16-relax-none-body-8",
+   "part": "the observer's agreement at 'p16', relax/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p16-raise-none-memory-8",
+   "part": "the observer's agreement at 'p16', raise/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p16-relax-none-memory-8",
+   "part": "the observer's agreement at 'p16', relax/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p16-matched-none-memory-8",
+   "part": "the observer's agreement at 'p16', relax-matched/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p4-raise-none-body-8",
+   "part": "the observer's agreement at 'p4', raise/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p4-relax-none-body-8",
+   "part": "the observer's agreement at 'p4', relax/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_p4-raise-none-memory-8",
+   "part": "the observer's agreement at 'p4', raise/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p4-relax-none-memory-8",
+   "part": "the observer's agreement at 'p4', relax/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_p4-matched-none-memory-8",
+   "part": "the observer's agreement at 'p4', relax-matched/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_end-raise-none-body-8",
+   "part": "the observer's agreement at 'end', raise/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_end-relax-none-body-8",
+   "part": "the observer's agreement at 'end', relax/body - none/body, g 8"
+  },
+  {
+   "id": "R-agree_end-raise-none-memory-8",
+   "part": "the observer's agreement at 'end', raise/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_end-relax-none-memory-8",
+   "part": "the observer's agreement at 'end', relax/memory - none/memory, g 8"
+  },
+  {
+   "id": "R-agree_end-matched-none-memory-8",
+   "part": "the observer's agreement at 'end', relax-matched/memory - none/memory, g 8"
+  }
+ ],
+ "predict_sha256": "76d53f076cb34e6a767f81b7b964c0c293e5ecbc971ce6c7e2d125cfc1b4d8f8"
+}

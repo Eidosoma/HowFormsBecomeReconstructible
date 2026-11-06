@@ -1,0 +1,320 @@
+{
+ "D1": {
+  "verdict": "HOLDS",
+  "words": "Each scale's errors are repaired by a level at that scale. Scattered fine flips are repaired by every arm. Coherent regional errors (a region's records flipped with its boundary bonds, so the record holds no trace) are repaired by every arm with a region code and by no arm without one, a block code of up to 8 times the lane's gain included. A coherent block error is not repaired by the record alone or with a region code.",
+  "rule": "HOLDS if at t = 2,000 every base arm's fine_ok under F is >= 0.95; regions_ok under R is >= 0.5 for L1L2, L1L2L3, L1L2rL3 and L1L2L3d and <= 0.5 for L1, L1L3, L1L3-k3x4 and L1L3-k3x8; and block_ok under B is <= 0.5 for L1 and L1L2, else FAILS.",
+  "parts": {
+   "fine flips repaired, every base arm": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.95,
+    "bound": "static",
+    "items": {
+     "L1/F/fine_ok": 1.0,
+     "L1L2/F/fine_ok": 1.0,
+     "L1L3/F/fine_ok": 1.0,
+     "L1L2L3/F/fine_ok": 1.0,
+     "L1L2rL3/F/fine_ok": 1.0,
+     "L1L2L3d/F/fine_ok": 1.0
+    }
+   },
+   "regional errors repaired with a region code": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2/R/regions_ok": 1.0,
+     "L1L2L3/R/regions_ok": 1.0,
+     "L1L2rL3/R/regions_ok": 1.0,
+     "L1L2L3d/R/regions_ok": 1.0
+    }
+   },
+   "regional errors left without one": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1/R/regions_ok": 0.0,
+     "L1L3/R/regions_ok": 0.0,
+     "L1L3-k3x4/R/regions_ok": 0.0,
+     "L1L3-k3x8/R/regions_ok": 0.0
+    }
+   },
+   "block error left without a block code": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1/B/block_ok": 0.0,
+     "L1L2/B/block_ok": 0.0
+    }
+   }
+  }
+ },
+ "D2": {
+  "verdict": "HOLDS",
+  "words": "Under damage at three scales at once (fine flips, four coherent regional errors and a coherent block error), the relative three-level hierarchy repairs every scale, while the record alone, the record with a block code, and the absolute and derived hierarchies each leave the block (and without a region code the regions) wrong.",
+  "rule": "HOLDS if at t = 2,000 under FRB the cell_err of L1L2rL3 is <= 0.01, and the cell_err of each of L1, L1L3, L1L2, L1L2L3 and L1L2L3d is >= 0.05, else FAILS.",
+  "parts": {
+   "the relative hierarchy repairs every scale": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.01,
+    "bound": "probe",
+    "items": {
+     "L1L2rL3/FRB/cell_err": 0.001262664794921875
+    }
+   },
+   "the others leave the block": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.05,
+    "bound": "probe",
+    "items": {
+     "L1/FRB/cell_err": 0.078125,
+     "L1L3/FRB/cell_err": 0.07796287536621094,
+     "L1L2/FRB/cell_err": 0.06262016296386719,
+     "L1L2L3/FRB/cell_err": 0.06256103515625,
+     "L1L2L3d/FRB/cell_err": 0.06259536743164062
+    }
+   }
+  }
+ },
+ "C1": {
+  "verdict": "HOLDS",
+  "words": "Where nothing is damaged, no level costs anything: every arm keeps the pattern, the strongest block codes included.",
+  "rule": "HOLDS if at t = 2,000 under none the cell_err of every arm run there is <= 0.001, else FAILS.",
+  "parts": {
+   "no damage, every arm": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.001,
+    "bound": "static",
+    "items": {
+     "L1/none/cell_err": 0.0,
+     "L1L2/none/cell_err": 0.0,
+     "L1L3/none/cell_err": 0.0,
+     "L1L2L3/none/cell_err": 0.0,
+     "L1L2rL3/none/cell_err": 0.0,
+     "L1L2L3d/none/cell_err": 0.0,
+     "L1L2L3-k3x2/none/cell_err": 0.0,
+     "L1L2L3-k3x3/none/cell_err": 0.0,
+     "L1L2L3-k3x4/none/cell_err": 0.0,
+     "L1L2L3-k3x5/none/cell_err": 0.0,
+     "L1L2L3-k3x6/none/cell_err": 0.0,
+     "L1L2L3-k3x8/none/cell_err": 0.0,
+     "L1L3-k3x4/none/cell_err": 0.0,
+     "L1L3-k3x8/none/cell_err": 0.0
+    }
+   }
+  }
+ },
+ "T1": {
+  "verdict": "HOLDS",
+  "words": "The region code overrides the record by its gain, whether it is right or wrong. At 0.75 and 1 times the lane's gain it repairs coherent regional errors and imposes a corrupted region store on its region; at 0.25 and 0.5 times it does neither.",
+  "rule": "HOLDS if at t = 2,000 regions_ok under R is >= 0.5 for L1L2-k2x0.75 and L1L2 and <= 0.5 for L1L2-k2x0.25 and L1L2-k2x0.5, and c2_ok under C2 is <= 0.5 for L1L2-k2x0.75 and L1L2 and >= 0.5 for L1L2-k2x0.25 and L1L2-k2x0.5, else FAILS.",
+  "parts": {
+   "strong: repairs": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2-k2x0.75/R/regions_ok": 1.0,
+     "L1L2/R/regions_ok": 1.0
+    }
+   },
+   "weak: does not repair": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2-k2x0.25/R/regions_ok": 0.0,
+     "L1L2-k2x0.5/R/regions_ok": 0.0
+    }
+   },
+   "strong: imposes a corrupted store": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2-k2x0.75/C2/c2_ok": 0.0,
+     "L1L2/C2/c2_ok": 0.0
+    }
+   },
+   "weak: does not impose": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2-k2x0.25/C2/c2_ok": 1.0,
+     "L1L2-k2x0.5/C2/c2_ok": 1.0
+    }
+   }
+  }
+ },
+ "T2": {
+  "verdict": "HOLDS",
+  "words": "An absolute block code overrides the record and the region codes by its gain, whether it is right or wrong. At up to 3 times the lane's gain it neither repairs a coherent block error that corrupted the region codes too nor imposes a corrupted block store; at 5 times and more it does both.",
+  "rule": "HOLDS if at t = 2,000 block_ok under B is <= 0.5 for L1L2L3, L1L2L3-k3x2 and L1L2L3-k3x3 and >= 0.5 for L1L2L3-k3x5, -k3x6 and -k3x8, and block_ok under C3 is >= 0.5 for L1L2L3, -k3x2 and -k3x3 and <= 0.5 for -k3x5, -k3x6 and -k3x8, else FAILS.",
+  "parts": {
+   "weak: does not repair": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3/B/block_ok": 0.0,
+     "L1L2L3-k3x2/B/block_ok": 0.0,
+     "L1L2L3-k3x3/B/block_ok": 0.0
+    }
+   },
+   "strong: repairs": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3-k3x5/B/block_ok": 0.9765625,
+     "L1L2L3-k3x6/B/block_ok": 1.0,
+     "L1L2L3-k3x8/B/block_ok": 1.0
+    }
+   },
+   "weak: does not impose": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3/C3/block_ok": 1.0,
+     "L1L2L3-k3x2/C3/block_ok": 1.0,
+     "L1L2L3-k3x3/C3/block_ok": 1.0
+    }
+   },
+   "strong: imposes a corrupted store": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3-k3x5/C3/block_ok": 0.0078125,
+     "L1L2L3-k3x6/C3/block_ok": 0.0,
+     "L1L2L3-k3x8/C3/block_ok": 0.0
+    }
+   }
+  }
+ },
+ "T3": {
+  "verdict": "HOLDS",
+  "words": "A block code that overrides a coherent block error restores the block's sign but not its minority regions: with the region codes corrupted, or with no region code, the block's minority regions stay wrong.",
+  "rule": "HOLDS if at t = 2,000 under B, for L1L2L3-k3x5, -k3x6, -k3x8, L1L3-k3x4 and L1L3-k3x8, block_ok is >= 0.5 and bmin_ok is <= 0.5, else FAILS.",
+  "parts": {
+   "the block's sign restored": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3-k3x5/B/block_ok": 0.9765625,
+     "L1L2L3-k3x6/B/block_ok": 1.0,
+     "L1L2L3-k3x8/B/block_ok": 1.0,
+     "L1L3-k3x4/B/block_ok": 1.0,
+     "L1L3-k3x8/B/block_ok": 1.0
+    }
+   },
+   "its minority regions not": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3-k3x5/B/bmin_ok": 0.0,
+     "L1L2L3-k3x6/B/bmin_ok": 0.0,
+     "L1L2L3-k3x8/B/bmin_ok": 0.0,
+     "L1L3-k3x4/B/bmin_ok": 0.0,
+     "L1L3-k3x8/B/bmin_ok": 0.0
+    }
+   }
+  }
+ },
+ "T4": {
+  "verdict": "HOLDS",
+  "words": "In the relative hierarchy (region codes held relative to the block's store) the block store dictates at every gain tested: a coherent block error is repaired with its minority regions, and a corrupted block store re-specifies the whole block, its minority regions included.",
+  "rule": "HOLDS if at t = 2,000, for L1L2rL3 and L1L2rL3-k3x0.25, block_ok and bmin_ok under B are >= 0.5 and block_ok and bmin_ok under C3 are <= 0.5, else FAILS.",
+  "parts": {
+   "repairs the block and its minority regions": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2rL3/B/block_ok": 1.0,
+     "L1L2rL3/B/bmin_ok": 1.0,
+     "L1L2rL3-k3x0.25/B/block_ok": 1.0,
+     "L1L2rL3-k3x0.25/B/bmin_ok": 1.0
+    }
+   },
+   "imposes a corrupted store, minority regions included": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2rL3/C3/block_ok": 0.0,
+     "L1L2rL3/C3/bmin_ok": 0.0,
+     "L1L2rL3-k3x0.25/C3/block_ok": 0.0,
+     "L1L2rL3-k3x0.25/C3/bmin_ok": 0.0
+    }
+   }
+  }
+ },
+ "T5": {
+  "verdict": "HOLDS",
+  "words": "A block code derived from the region codes, with no store of its own, neither repairs a coherent block error that corrupted those codes nor is corrupted by a block store.",
+  "rule": "HOLDS if at t = 2,000 L1L2L3d's block_ok is <= 0.5 under B and >= 0.5 under C3, else FAILS.",
+  "parts": {
+   "does not repair": {
+    "pass": true,
+    "sense": "le",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3d/B/block_ok": 0.0
+    }
+   },
+   "is not corrupted": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.5,
+    "bound": "static",
+    "items": {
+     "L1L2L3d/C3/block_ok": 1.0
+    }
+   }
+  }
+ },
+ "K1": {
+  "verdict": "HOLDS",
+  "words": "In a wound that kills every copy at the region scale and below (a 2 x 2 square of regions), a block code fills the killed regions with the block's majority: killed minority regions are restored at least 0.15 less often with a block code than without one.",
+  "rule": "HOLDS if at t = 2,000 under K the kill_min_ok of L1 less L1L3's, of L1L2 less L1L2L3's, and of L1L2 less L1L2rL3's (paired within block) are each >= 0.15, else FAILS.",
+  "parts": {
+   "killed minority regions, without minus with a block code": {
+    "pass": true,
+    "sense": "ge",
+    "threshold": 0.15,
+    "bound": "probe",
+    "items": {
+     "L1-L1L3/K/kill_min_ok": 0.4453125,
+     "L1L2-L1L2L3/K/kill_min_ok": 0.4375,
+     "L1L2-L1L2rL3/K/kill_min_ok": 0.4375
+    }
+   }
+  }
+ }
+}

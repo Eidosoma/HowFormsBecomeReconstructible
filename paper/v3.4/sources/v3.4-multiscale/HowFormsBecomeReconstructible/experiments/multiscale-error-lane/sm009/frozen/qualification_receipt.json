@@ -1,0 +1,142 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "only": null,
+ "design_digest": "ac70e78cf6ce6737876c2e3ee52ff1fd823ec7a36a43bf3cb2a8060f93dade7a",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm009/preflight",
+ "stage": "preflight",
+ "tasks": 4,
+ "checked_utc": "2026-11-05T23:37:27Z",
+ "wall_s": 437.9,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 4,
+   "branches_a_future": 1184,
+   "futures": 1,
+   "reads": [
+    1000,
+    2000,
+    4000,
+    8000
+   ],
+   "bad": [],
+   "missing": [],
+   "seconds": 0.0
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    900779
+   ],
+   "arrays": 14,
+   "differ": [],
+   "seconds": 437.9
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "kappa0/li4/k1-corner/absorbing/P": true,
+   "kappa0/li4/k4-half/absorbing/O": true,
+   "kappa0/li4/iso8/absorbing/O": true,
+   "kappa0/li4/k8/sealed/P": true,
+   "P_equals_sm008/li4": true,
+   "O_identity/li4": true,
+   "kappa0/dw/k1-corner/absorbing/P": true,
+   "kappa0/dw/k4-half/absorbing/O": true,
+   "kappa0/dw/iso8/absorbing/O": true,
+   "kappa0/dw/k8/sealed/P": true,
+   "P_equals_sm008/dw": true,
+   "O_identity/dw": true,
+   "sm008_sm007_frozen_sources": true,
+   "field_factor/2x4": true,
+   "field_factor/iso8": true,
+   "records_rehash": true,
+   "seconds": 47.4
+  },
+  "Q4_replay": {
+   "pass": true,
+   "end_to_end_k1corner_group3/P": [
+    true
+   ],
+   "end_to_end_k1corner_group3/O": [
+    true
+   ],
+   "task": [
+    "ar005/preflight",
+    "dw",
+    900779
+   ],
+   "window": 8000,
+   "seconds": 9.4
+  },
+  "Q5_controls": {
+   "pass": true,
+   "layout": true,
+   "O_identity_shards": true,
+   "O_identity_sheets": 2048,
+   "drivers_from_trace": true,
+   "gains_from_drivers": true,
+   "seconds": 19.3
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "tasks": 4,
+   "bad": [],
+   "seconds": 3.6
+  },
+  "Q7_information": {
+   "pass": true,
+   "record_unchanged": true,
+   "template_scores_only": true,
+   "sign_complemented": true,
+   "O_reads_no_neighbour": true,
+   "P_feels_the_neighbour": true,
+   "restorations_matched": true,
+   "tasks_are_declared": true,
+   "seconds": 36.4
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "arrangements": 20,
+   "differ": [],
+   "seconds": 36.6
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_phase_b_cpu_h": 5.01,
+   "forecast_with_headroom_cpu_h": 6.27,
+   "headroom": 1.25,
+   "cap": 8.0,
+   "futures": {
+    "preflight": 1,
+    "development": 1
+   },
+   "forecast_wall_h_10": 0.5,
+   "cpu_s_per_branch_update": 5.292836782094594e-05,
+   "worker_rss_mb": 308.9,
+   "forecasts_by_trim_cpu_h": {
+    "as ruled (Amendment 1), one future": 5.01,
+    "O on iso8 only (O is the same in every composition), one future": 2.85,
+    "as ruled, no sealed, one future": 4.47,
+    "as ruled (Amendment 1), two futures": 10.03,
+    "O on iso8 only (O is the same in every composition), two futures": 5.69,
+    "as ruled, no sealed, two futures": 8.94
+   },
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 57876,
+    "TABLES.md": 13740
+   },
+   "parts_scored": 4,
+   "unavailable": [],
+   "out": "/e/scratch/e-aif-2026pg01-1345/cache/tmp/tmpx1rydixi",
+   "seconds": 1.8
+  }
+ }
+}

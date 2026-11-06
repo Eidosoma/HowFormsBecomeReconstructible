@@ -1,0 +1,160 @@
+{
+ "status": "FAIL",
+ "failed": [
+  "Q1_complete_finite"
+ ],
+ "design_digest": "5d85402c46b31442b4bd8aecfee8154239f5535bbc7113e45915c517920ee586",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/nl002/preflight",
+ "blocks": [
+  900808,
+  900809
+ ],
+ "load_1min_at_check": 13.9,
+ "checked_utc": "2026-10-30T21:18:43Z",
+ "wall_s": 621.5,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": false,
+   "bad": [
+    [
+     "dw",
+     900809,
+     "t/r/k_spec_reg",
+     [
+      3,
+      63,
+      8
+     ]
+    ],
+    [
+     "dw",
+     900809,
+     "s/k_spec_reg",
+     [
+      3,
+      66,
+      8
+     ]
+    ],
+    [
+     "dw",
+     900809,
+     "c/k_spec_reg",
+     [
+      3,
+      63,
+      8
+     ]
+    ],
+    [
+     "dw",
+     900809,
+     "t/v/k_spec_reg",
+     [
+      3,
+      63,
+      8
+     ]
+    ],
+    [
+     "none",
+     900809,
+     "t/r/k_spec_reg",
+     [
+      3,
+      63,
+      8
+     ]
+    ],
+    [
+     "none",
+     900809,
+     "s/k_spec_reg",
+     [
+      3,
+      66,
+      8
+     ]
+    ],
+    [
+     "none",
+     900809,
+     "c/k_spec_reg",
+     [
+      3,
+      63,
+      8
+     ]
+    ]
+   ]
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "differ": []
+  },
+  "Q3_engine": {
+   "pass": true,
+   "nl001_bridge": true,
+   "relearn_equals_lr002": true,
+   "body_is_dl001": true
+  },
+  "Q4_replay": {
+   "pass": true,
+   "copy-k0.75/K": {
+    "max_dr": 4.440892098500626e-16,
+    "max_dv": 2.220446049250313e-16,
+    "bonds_differ": 0
+   },
+   "foreign-k2/R": {
+    "max_dr": 4.440892098500626e-16,
+    "max_dv": 4.440892098500626e-16,
+    "bonds_differ": 0
+   }
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "recipients_alike_across_units": true,
+   "cap_idle_at_k0.25": true,
+   "cap_binds_at_k2": true,
+   "coded_off_equals_l1_only": true
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "max_abs_diff": 0.0
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "A_is_nl001": true,
+   "B_blocks_match": true,
+   "minority_regions_4_each": true,
+   "minority_cells_2_each": true,
+   "L2_is_pm_Rstar": true,
+   "corrupt_count_matched": true,
+   "R_exact": true,
+   "K_exact": true
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "dw": true,
+   "none": true
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 7.65,
+   "forecast_wall_h_12": 0.73,
+   "worker_rss_mb": 1021.8,
+   "bytes_per_task": 17450158
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 3663,
+    "contrasts_arms.csv": 177540,
+    "summary_dw.json": 177209,
+    "summary_none.json": 127398
+   },
+   "too_big": {}
+  }
+ }
+}

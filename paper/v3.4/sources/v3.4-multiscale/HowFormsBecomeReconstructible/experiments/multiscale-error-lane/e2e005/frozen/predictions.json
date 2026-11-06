@@ -1,0 +1,390 @@
+{
+ "study": "E2E005",
+ "design_digest": "ef404ab8d3441ccb03bc437d04bff5a21de55c4da17e7165fcae89e4c64b6fe7",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "C1": 0.06,
+  "C2": [
+   -0.08,
+   -0.02
+  ],
+  "C3": 0.4
+ },
+ "frozen_utc": "2026-11-05T13:44:10Z",
+ "registered": [
+  {
+   "id": "C1",
+   "part": "the controller heals more than the record rule: u_r(ctl/post) - u_r(record/post), g 8",
+   "kind": "ge",
+   "threshold": 0.06
+  },
+  {
+   "id": "C2",
+   "part": "the controller keeps the history as the record rule does: q_r(ctl/protected) - q_r(record/protected), g 8",
+   "kind": "in",
+   "threshold": [
+    -0.08,
+    -0.02
+   ]
+  },
+  {
+   "id": "C3",
+   "part": "the controller keeps more than the body rule: q_r(ctl/protected) - q_r(body/protected), g 8",
+   "kind": "ge",
+   "threshold": 0.4
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "C4",
+   "part": "the controller's healing beyond the fixed rules' line at its own keeping: F = u_r(ctl/post) - h(q_r(ctl/protected)), g 8 (a block statistic)"
+  }
+ ],
+ "reported": [
+  {
+   "id": "R-heal-cr-u_r-1",
+   "part": "u_r(ctl/post) - u_r(record/post), g 1: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_r-1",
+   "part": "u_r(ctl/post) - u_r(body/post), g 1: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_r-1",
+   "part": "u_r(ctl/post) - u_r(vote/post), g 1: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_r-1",
+   "part": "u_r(ctl/protected) - u_r(record/protected), g 1: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_r-1",
+   "part": "u_r(ctl/protected) - u_r(body/protected), g 1: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_r-1",
+   "part": "u_r(ctl/protected) - u_r(vote/protected), g 1: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_r-1",
+   "part": "u_r(oracle/post) - u_r(ctl/post), g 1: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_r-1",
+   "part": "u_r(oracle/post) - u_r(record/post), g 1: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_r-1",
+   "part": "u_r(oracle/post) - u_r(body/post), g 1: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-q_r-1",
+   "part": "q_r(ctl/post) - q_r(record/post), g 1: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-q_r-1",
+   "part": "q_r(ctl/post) - q_r(body/post), g 1: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-q_r-1",
+   "part": "q_r(ctl/post) - q_r(vote/post), g 1: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-q_r-1",
+   "part": "q_r(ctl/protected) - q_r(record/protected), g 1: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-q_r-1",
+   "part": "q_r(ctl/protected) - q_r(body/protected), g 1: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-q_r-1",
+   "part": "q_r(ctl/protected) - q_r(vote/protected), g 1: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-q_r-1",
+   "part": "q_r(oracle/post) - q_r(ctl/post), g 1: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-q_r-1",
+   "part": "q_r(oracle/post) - q_r(record/post), g 1: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-q_r-1",
+   "part": "q_r(oracle/post) - q_r(body/post), g 1: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-u_v-1",
+   "part": "u_v(ctl/post) - u_v(record/post), g 1: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_v-1",
+   "part": "u_v(ctl/post) - u_v(body/post), g 1: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_v-1",
+   "part": "u_v(ctl/post) - u_v(vote/post), g 1: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_v-1",
+   "part": "u_v(ctl/protected) - u_v(record/protected), g 1: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_v-1",
+   "part": "u_v(ctl/protected) - u_v(body/protected), g 1: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_v-1",
+   "part": "u_v(ctl/protected) - u_v(vote/protected), g 1: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_v-1",
+   "part": "u_v(oracle/post) - u_v(ctl/post), g 1: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_v-1",
+   "part": "u_v(oracle/post) - u_v(record/post), g 1: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_v-1",
+   "part": "u_v(oracle/post) - u_v(body/post), g 1: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-u_r-3",
+   "part": "u_r(ctl/post) - u_r(record/post), g 3: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_r-3",
+   "part": "u_r(ctl/post) - u_r(body/post), g 3: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_r-3",
+   "part": "u_r(ctl/post) - u_r(vote/post), g 3: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_r-3",
+   "part": "u_r(ctl/protected) - u_r(record/protected), g 3: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_r-3",
+   "part": "u_r(ctl/protected) - u_r(body/protected), g 3: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_r-3",
+   "part": "u_r(ctl/protected) - u_r(vote/protected), g 3: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_r-3",
+   "part": "u_r(oracle/post) - u_r(ctl/post), g 3: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_r-3",
+   "part": "u_r(oracle/post) - u_r(record/post), g 3: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_r-3",
+   "part": "u_r(oracle/post) - u_r(body/post), g 3: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-q_r-3",
+   "part": "q_r(ctl/post) - q_r(record/post), g 3: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-q_r-3",
+   "part": "q_r(ctl/post) - q_r(body/post), g 3: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-q_r-3",
+   "part": "q_r(ctl/post) - q_r(vote/post), g 3: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-q_r-3",
+   "part": "q_r(ctl/protected) - q_r(record/protected), g 3: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-q_r-3",
+   "part": "q_r(ctl/protected) - q_r(body/protected), g 3: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-q_r-3",
+   "part": "q_r(ctl/protected) - q_r(vote/protected), g 3: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-q_r-3",
+   "part": "q_r(oracle/post) - q_r(ctl/post), g 3: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-q_r-3",
+   "part": "q_r(oracle/post) - q_r(record/post), g 3: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-q_r-3",
+   "part": "q_r(oracle/post) - q_r(body/post), g 3: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-u_v-3",
+   "part": "u_v(ctl/post) - u_v(record/post), g 3: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_v-3",
+   "part": "u_v(ctl/post) - u_v(body/post), g 3: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_v-3",
+   "part": "u_v(ctl/post) - u_v(vote/post), g 3: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_v-3",
+   "part": "u_v(ctl/protected) - u_v(record/protected), g 3: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_v-3",
+   "part": "u_v(ctl/protected) - u_v(body/protected), g 3: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_v-3",
+   "part": "u_v(ctl/protected) - u_v(vote/protected), g 3: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_v-3",
+   "part": "u_v(oracle/post) - u_v(ctl/post), g 3: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_v-3",
+   "part": "u_v(oracle/post) - u_v(record/post), g 3: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_v-3",
+   "part": "u_v(oracle/post) - u_v(body/post), g 3: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-u_r-8",
+   "part": "u_r(ctl/post) - u_r(record/post), g 8: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_r-8",
+   "part": "u_r(ctl/post) - u_r(body/post), g 8: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_r-8",
+   "part": "u_r(ctl/post) - u_r(vote/post), g 8: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_r-8",
+   "part": "u_r(ctl/protected) - u_r(record/protected), g 8: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_r-8",
+   "part": "u_r(ctl/protected) - u_r(body/protected), g 8: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_r-8",
+   "part": "u_r(ctl/protected) - u_r(vote/protected), g 8: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_r-8",
+   "part": "u_r(oracle/post) - u_r(ctl/post), g 8: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_r-8",
+   "part": "u_r(oracle/post) - u_r(record/post), g 8: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_r-8",
+   "part": "u_r(oracle/post) - u_r(body/post), g 8: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-q_r-8",
+   "part": "q_r(ctl/post) - q_r(record/post), g 8: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-q_r-8",
+   "part": "q_r(ctl/post) - q_r(body/post), g 8: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-q_r-8",
+   "part": "q_r(ctl/post) - q_r(vote/post), g 8: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-q_r-8",
+   "part": "q_r(ctl/protected) - q_r(record/protected), g 8: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-q_r-8",
+   "part": "q_r(ctl/protected) - q_r(body/protected), g 8: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-q_r-8",
+   "part": "q_r(ctl/protected) - q_r(vote/protected), g 8: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-q_r-8",
+   "part": "q_r(oracle/post) - q_r(ctl/post), g 8: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-q_r-8",
+   "part": "q_r(oracle/post) - q_r(record/post), g 8: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-q_r-8",
+   "part": "q_r(oracle/post) - q_r(body/post), g 8: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-heal-cr-u_v-8",
+   "part": "u_v(ctl/post) - u_v(record/post), g 8: the controller against the record rule, post"
+  },
+  {
+   "id": "R-heal-cb-u_v-8",
+   "part": "u_v(ctl/post) - u_v(body/post), g 8: the controller against the body rule, post"
+  },
+  {
+   "id": "R-heal-cv-u_v-8",
+   "part": "u_v(ctl/post) - u_v(vote/post), g 8: the controller against the vote, post"
+  },
+  {
+   "id": "R-keep-cr-u_v-8",
+   "part": "u_v(ctl/protected) - u_v(record/protected), g 8: the controller against the record rule, protected"
+  },
+  {
+   "id": "R-keep-cb-u_v-8",
+   "part": "u_v(ctl/protected) - u_v(body/protected), g 8: the controller against the body rule, protected"
+  },
+  {
+   "id": "R-keep-cv-u_v-8",
+   "part": "u_v(ctl/protected) - u_v(vote/protected), g 8: the controller against the vote, protected"
+  },
+  {
+   "id": "R-oracle-c-u_v-8",
+   "part": "u_v(oracle/post) - u_v(ctl/post), g 8: the oracle against the controller (where-to-switch), post"
+  },
+  {
+   "id": "R-oracle-r-u_v-8",
+   "part": "u_v(oracle/post) - u_v(record/post), g 8: the oracle against the record rule, post"
+  },
+  {
+   "id": "R-oracle-b-u_v-8",
+   "part": "u_v(oracle/post) - u_v(body/post), g 8: the oracle against the body rule, post"
+  },
+  {
+   "id": "R-frontier-1",
+   "part": "F, the controller's healing beyond the fixed rules' line, g 1"
+  },
+  {
+   "id": "R-frontier-3",
+   "part": "F, the controller's healing beyond the fixed rules' line, g 3"
+  },
+  {
+   "id": "R-frontier-RB-1",
+   "part": "F_RB, beyond the record-body chord alone, g 1"
+  },
+  {
+   "id": "R-frontier-RB-3",
+   "part": "F_RB, beyond the record-body chord alone, g 3"
+  },
+  {
+   "id": "R-frontier-RB-8",
+   "part": "F_RB, beyond the record-body chord alone, g 8"
+  }
+ ],
+ "predict_sha256": "45f41c8118f7e156fdc07b2619cb9d9bb34c8651009ab0dc9838b3abe10ed71b"
+}

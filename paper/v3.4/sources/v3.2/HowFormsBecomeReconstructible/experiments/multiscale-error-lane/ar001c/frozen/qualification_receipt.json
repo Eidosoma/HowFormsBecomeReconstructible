@@ -1,0 +1,62 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR001C",
+ "design_digest": "a78866e1421d49cb345003c20920e1cf13f0f7234f92308013bc0f4011693357",
+ "ar001_digest": "051af4cc7450c7b649b75d0abdf63ef0c8fd68b7935707b9bd35535e47fc00b1",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar001c/qualify",
+ "blocks": [
+  900029,
+  900033
+ ],
+ "tag": "mse-ar001",
+ "load_1min_at_check": 7.44,
+ "checked_utc": "2026-10-31T02:35:41Z",
+ "wall_s": 143.3,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 32
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900029": true,
+    "raw/dw/S4_t0/900029": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 32,
+   "branches_compared": 672,
+   "reference": "AR001's preflight (900029-900030) and debug (900031-900032) outputs",
+   "mismatched": {}
+  },
+  "Q9_resources": {
+   "pass": true,
+   "reduced": {
+    "cpu_s_per_task": 155.1,
+    "forecast_cpu_h": 5.51,
+    "forecast_wall_h_12": 0.57,
+    "tasks": 128,
+    "worker_rss_mb": 260.8,
+    "bytes_per_task": 4021817
+   },
+   "full_from_ar001_development": {
+    "cpu_s_per_task": 643.7,
+    "cpu_h": 22.89,
+    "wall_h_12": 2.09,
+    "worker_rss_mb": 492.0
+   }
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "confirmation.json": 4610,
+    "TABLES.md": 1632
+   }
+  }
+ }
+}

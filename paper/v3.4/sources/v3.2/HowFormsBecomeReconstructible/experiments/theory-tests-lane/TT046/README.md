@@ -1,0 +1,127 @@
+# TT046 — confirmed damage-dependent one-read packet benefit
+
+**TT046 is complete and independently reviewed. All four predeclared primary
+tests passed on 32 new source blocks.** Production finished at 05:06:52 UTC on
+29 October 2026, taking **6 hours 6 minutes 6 seconds on two CPUs**. All processes
+have exited; no successor is running.
+
+In the stated residual/own source population, the actual late-written packet
+has higher average fresh-recipient usefulness than preservation after full
+replacement, at both 900 and 1000 updates. Its packet benefit also exceeds the
+intact-packet effect at both horizons. This confirms the specific directional
+mean claim selected from TT045 development. It does not establish a generally
+beneficial rewriting rule, benefit for every record, or serial hereditary capacity.
+
+The four co-primary results are percentage-point differences in target-success
+credit, with paired source-block inference:
+
+| Primary contrast and horizon | Mean (pp) | Adjusted one-sided lower bound (pp) | Pointwise two-sided 95% interval (pp) |
+|---|---:|---:|---|
+| Full replacement, 900 | +15.9485 | +14.8040 | [+14.9575, +16.9394] |
+| Full replacement, 1000 | +15.3870 | +14.2234 | [+14.3795, +16.3944] |
+| Full minus intact packet effect, 900 | +17.3370 | +15.9549 | [+16.1403, +18.5337] |
+| Full minus intact packet effect, 1000 | +16.7282 | +15.4828 | [+15.6499, +17.8065] |
+
+All four adjusted lower bounds exceed zero, satisfying the frozen joint gate.
+The adjustment is Bonferroni over four tests, alpha .0125 each, with 31 degrees
+of freedom. Student-t coverage is approximate. The predeclared distribution-free
+Hoeffding sensitivity remains inconclusive: its lower bounds are negative for
+all four endpoints. Thus confirmation is under the specified approximate block
+test; it is not a distribution-free guarantee. No extension, seed selection,
+new threshold or secondary endpoint rescued the result.
+
+At the 1000-update fresh-recipient readout:
+
+| Incoming condition | Preserved packet (%) | Late-written packet (%) | Change (pp) |
+|---|---:|---:|---:|
+| Intact | 88.6841 | 87.3428 | -1.3412 |
+| Half-mixed | 81.8604 | 81.9641 | +0.1038 |
+| Full replacement | 25.0000 | 40.3870 | +15.3870 |
+
+These percentages are mean tied-winner target credit, including fractional ties.
+The full-replacement benefit is positive in every one of the 32 blocks at both
+horizons. It is +15.9485 points at 900 and +15.3870 at 1000. Continuing-state
+packet benefits are also positive in every block at both horizons, with means
++16.0217 and +15.3564 points; those are secondary results. Full-replacement
+fresh-recipient success remains about 40%, despite the clear gain from 25%.
+
+Intact mean effects are negative at both horizons (-1.3885 and -1.3412 points),
+and half-mixed mean effects are close to zero (+0.2457 and +0.1038). These control
+means are descriptive; the primary test includes the full-minus-intact difference,
+not a separate claim of intact harm or half-mixed equivalence. Half mixing means
+an amplitude mixture with noise, not half the message information erased.
+
+Paired harms are retained. The 1000-update fresh-state injury-case counts,
+after averaging each case's four actual starting states and eight futures, are:
+
+| Incoming condition | Harm | Tie | Gain |
+|---|---:|---:|---:|
+| Intact | 299 | 1563 | 186 |
+| Half-mixed | 293 | 1457 | 298 |
+| Full replacement | 242 | 993 | 813 |
+
+Each row contains 2,048 dependent injury cases from 512 source positions in
+32 blocks. In full replacement, 242 cases have negative sampled mean effects
+despite the positive block means. These signs describe the retained estimates;
+eight futures do not precisely identify every record's true expected effect.
+Source-position, injury-case and position/future counts remain separate, as do
+paired 900-to-1000 signs. All source histories, messages, masks, damage levels
+and target/donor/template/opposite credits were retained.
+
+Continuous margins remain separate secondary outcomes. At 1000, fresh-state
+packet effects on target-versus-best-other margin are -0.00129542 for intact,
++0.01298554 for half mixing and +0.08458440 for full replacement. The half-mixed
+margin gain coexists with a near-zero winner-credit change. Neither metric
+substitutes for the other or measures future descendants after further writing.
+
+Population uncertainty uses the 32 full source-block estimates, including finite
+sampling of births/futures. Conditional Monte Carlo uncertainty instead holds
+source records and starting states fixed. For example, the full-replacement
+1000-update packet effect has population SE 0.4940 points and conditional MC SE
+0.2102 points. Masks, positions and births within a block/future are dependent;
+they were not counted as extra population units. Eight futures per fixed state
+give coarse local estimates, and zero sampled variance is not certainty.
+
+The source population is newly generated by the unchanged audited recipe, with
+residual packets and own-body history only. Four fresh births receive all eight
+new futures; states, packets, damage levels and masks share the appropriate
+paired randomness within each block. One new corruption realization is sampled
+per source block, so this does not estimate an individual record's full response
+to possible corruptions. Teaching/source noise remains coupled across task
+messages. The bounded identity scan and reviewed self-matches are documented in
+RESERVATION.json and RESERVATION_REVIEW.json; other projects and global non-use
+were not verified. These production outcomes are now exposed.
+
+Writing is fixed at updates 901–1000 of one body episode. Both actual packets
+are then read with feedback and writing off, native memory updating, and the
+same finite 256-float64 channel (2048 bytes per record). The continuing profile
+uses the preserved body's state for both packets. No adaptive policy, separate
+body-source information intervention, serial rewriting, indefinite stability or
+uninterrupted-performance claim follows. The confirmed narrow claim and its
+harms can now enter the evidence synthesis; no new experiment is launched.
+
+Production independently replayed 21,504 receiving batches (516,096 native
+arrays), 768 writing batches (18,432 arrays), and the new source stages (1,504
+arrays). Native discrepancies were zero. Qualification passed exact serial/
+parallel comparison; that comparison was not repeated for production. The
+separate saved-data review checked 67,999 output
+files, all 5,376 condition/block reductions,
+491,520 endpoint vectors,
+11,796,480 margin entries and all local/global
+means, paired errors, signs and counts. It independently recomputed the primary
+population variance and inverted the Student-t CDF for the decision bounds.
+Source, writer, birth, packet and original-control custody also passed.
+
+See [frozen report](runs/confirmation_v1/REPORT.md), [frozen confirmation](runs/confirmation_v1/CONFIRMATION.json),
+[reviewed findings](FINDINGS.json), [closeout](CLOSEOUT.json), [protocol](PROTOCOL.md)
+and [execution record](EXECUTION.md).
+
+
+The user authorized [TT047](../TT047/README.md), now launched for excluded
+qualification and conditional development. It crosses voltage/EMA and slow
+memory origins at late-writing onset on four exposed TT046 blocks. TT046
+confirmation and frozen results remain unchanged. No serial run is launched.
+
+TT047 has since stopped at its shared-disk reserve guard with two blocks complete.
+All work is retained; recovery is proposed and has not started. TT046 findings
+are unchanged. See [TT047 status](../TT047/README.md).

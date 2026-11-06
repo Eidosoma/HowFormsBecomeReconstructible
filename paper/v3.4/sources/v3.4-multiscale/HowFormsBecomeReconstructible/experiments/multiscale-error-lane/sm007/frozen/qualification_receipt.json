@@ -1,0 +1,139 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "SM007",
+ "design_digest": "6f83374954e2fc02e8d09e4f2a3a65a9e74c54bb5401257be04d2f6494a4d8e4",
+ "freeze_commit": "98e4de5ef1",
+ "freeze_commit_utc": "2026-11-05T13:33:56Z",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm007/preflight",
+ "tasks": 8,
+ "checked_utc": "2026-11-05T13:52:55Z",
+ "wall_s": 454.9,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 8,
+   "branches_a_future": 509,
+   "futures": 2,
+   "reads": [
+    1000,
+    2000,
+    4000,
+    8000
+   ],
+   "bad": [],
+   "missing": [],
+   "seconds": 0.0
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t1",
+    900779
+   ],
+   "arrays": 12,
+   "differ": [],
+   "seconds": 454.9
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "kappa0/dw/2x4/absorbing": true,
+   "kappa0/dw/iso8/absorbing/shared": true,
+   "kappa0/dw/nofield": true,
+   "kappa0/dw/undisturbed": true,
+   "kappa0/li4/2x4/absorbing": true,
+   "kappa0/li4/iso8/absorbing/shared": true,
+   "kappa0/li4/nofield": true,
+   "kappa0/li4/undisturbed": true,
+   "functions_e2e006": true,
+   "medium_e2e006/shared": true,
+   "medium_e2e006/isolated": true,
+   "isolated/0.5/absorbing": true,
+   "isolated/0.5/half": true,
+   "isolated/0.5/sealed": true,
+   "isolated/0.4/absorbing": true,
+   "isolated/0.4/half": true,
+   "isolated/0.4/sealed": true,
+   "isolated/2.0/absorbing": true,
+   "isolated/2.0/half": true,
+   "isolated/2.0/sealed": true,
+   "p61q": true,
+   "paper_stress_recomputed": true,
+   "paper_stress_holds_high": true,
+   "records_rehash": true,
+   "seconds": 9.6
+  },
+  "Q4_replay": {
+   "pass": true,
+   "trace_exposures": true,
+   "trace_gains": true,
+   "end_to_end_2x4_by_future": [
+    true,
+    true
+   ],
+   "task": [
+    "ar005/preflight",
+    "dw",
+    "F0_t1",
+    900779
+   ],
+   "window": 8000,
+   "seconds": 20.7
+  },
+  "Q5_controls": {
+   "pass": true,
+   "nofield": true,
+   "undisturbed": true,
+   "uniform": true,
+   "rearranged": true,
+   "paper": true,
+   "seconds": 9.4
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "tasks": 8,
+   "bad": [],
+   "seconds": 2.9
+  },
+  "Q7_information": {
+   "pass": true,
+   "record_unchanged": true,
+   "template_scores_only": true,
+   "sign_complemented": true,
+   "paper_stress_reads_no_body": true,
+   "restorations_matched": true,
+   "tasks_are_declared": true,
+   "seconds": 17.9
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "arrangements": 58,
+   "differ": [],
+   "seconds": 17.8
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_phase_b_cpu_h": 10.16,
+   "forecast_wall_h_10": 1.02,
+   "cpu_s_per_branch_update": 6.240514489194498e-05,
+   "worker_rss_mb": 166.8,
+   "cap": 15.0,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 69957,
+    "TABLES.md": 14285
+   },
+   "parts_scored": 9,
+   "unavailable": [],
+   "out": "/e/scratch/e-aif-2026pg01-1345/cache/tmp/tmp1ffu6r0c",
+   "seconds": 1.4
+  }
+ }
+}

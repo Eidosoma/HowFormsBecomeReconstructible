@@ -1,0 +1,31 @@
+P50c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/hs002/e014 (e014): 64 tasks, 128 files, every sha256 equal to the manifest's; digest a749f0b50ac4; 2026-11-01T22:31:09Z - 2026-11-01T22:59:07Z, 4.99 CPU-h; HS001's sources (e014, digest 4336d7a7a62e): 128 files, every sha256 equal to HS001's recorded one and the raw ones to those HS002's shards name; budgets [1]; the plateau rule as frozen: AH
+
+REGISTERED STATEMENTS (64 blocks x 8 lineages; points; [95% t interval], t(0.975, 63) = 1.9983; SD_block the larger of the block SD and the lineage SD / sqrt 8)
+  H1 2,048 B: Q(rewrite) - Q(erased) at 1,024: +16.217804 [+14.481582, +17.954026]  SD 6.950656 (block 6.950656, lineage/sqrt8 4.380325)  >= +8: holds
+  H1 2,048 B: Q(foreign) - Q(erased) at 1,024: +14.954376 [+13.016461, +16.892291]  SD 7.758097 (block 7.758097, lineage/sqrt8 4.663046)  >= +8: holds
+  H3 2,048 B: Q(rewrite) at 1,024 - Q(copy): -13.565063 [-14.722983, -12.407144]  SD 4.635525 (block 4.635525, lineage/sqrt8 2.090316)  <= -8: holds
+  VERDICTS: H1 HOLDS, H3 HOLDS  [reported only: E014's published lineages, continued]
+
+PRESPECIFIED MEASUREMENTS (block means, points; intervals: percentiles over E014's generator's 10,000 whole-block resamples; the fits coded here)
+
+ 2,048 bytes (the question): the reference +2.618 [+2.198, +3.070] (resolved)
+    D(n): 1:+2.103 2:+1.931 3:+1.919 4:+1.886 6:+1.675 8:+1.601 12:+1.373 16:+1.402 24:+1.215 32:+1.163 48:+1.137 64:+1.074 96:+1.024 128:+0.996 192:+1.060 256:+0.987 320:+0.979 384:+1.002 448:+1.084 512:+1.138 640:+1.206 768:+1.272 896:+1.227 1024:+1.263
+  D(n), 2,048 bytes (the question):
+    M1 c +1.1038 [+0.6312, +1.5941], a +0.9720 [+0.5633, +1.4016], h 7.232 [3.612, 15.221]; resamples at the grid's ends 1; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0000]
+    M2 c +50.1817 [+0.6854, +94.6880], h1 9.61 [1.24, 24.71], h2 127187.7 [12.2, 127187.7], a1 +1.054, a2 -49.191; SSE(M0) - SSE(M1) 2.1296 [0.6972, 4.2225]; SSE(M1) - SSE(M2) 0.0882 [0.0128, 0.4287]
+    D(1024) - D(512) +0.1251 [-0.0465, +0.3166]; D(1024) - D(256) +0.2762 [+0.0381, +0.4936]; the late mean (768, 896, 1,024) +1.2540 [+0.7294, +1.7998]; the drift bound: a decay toward zero needs a half-life of at least 8502 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  R_H(n), 2,048 bytes (the question):
+    M1 c +0.4217 [+0.2604, +0.5806], a +0.3713 [+0.2289, +0.5084], h 7.232 [3.612, 15.221]; resamples at the grid's ends 1; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0000]
+    M2 c +19.1705 [+0.2773, +35.0047], h1 9.61 [1.24, 24.71], h2 127187.7 [12.2, 127187.7], a1 +0.403, a2 -18.792; SSE(M0) - SSE(M1) 0.3108 [0.1180, 0.5378]; SSE(M1) - SSE(M2) 0.0129 [0.0020, 0.0632]
+    D(1024) - D(512) +0.0478 [-0.0190, +0.1150]; D(1024) - D(256) +0.1055 [+0.0153, +0.1836]; the late mean (768, 896, 1,024) +0.4791 [+0.2996, +0.6542]; the drift bound: a decay toward zero needs a half-life of at least 7965 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+  the floor Q(rewrite) - Q(erased), 2,048 bytes (the question):
+    M1 c +16.5868 [+14.9588, +18.1983], a +10.0723 [+8.9662, +11.1755], h 6.215 [5.423, 7.240]; resamples at the grid's ends 0; identified (h's upper bound <= 256); remaining at 1,024 +0.0000 [+0.0000, +0.0000]
+    M2 c +16.2982 [+14.6000, +17.9749], h1 4.35 [2.83, 5.02], h2 57.8 [14.7, 130.4], a1 +8.911, a2 +1.822; SSE(M0) - SSE(M1) 170.9413 [134.4203, 211.0797]; SSE(M1) - SSE(M2) 2.6561 [1.3168, 4.7984]
+    D(1024) - D(512) -0.0771 [-0.3037, +0.1411]; D(1024) - D(256) -0.2869 [-0.6371, +0.0336]; the late mean (768, 896, 1,024) +16.2249 [+14.5278, +17.9129]; the drift bound: a decay toward zero needs a half-life of at least 18865 rewrites
+    READING (as frozen, AH): a plateau within 1,024 rewrites; by the rule as first declared: a plateau within 1,024 rewrites
+    basins, the concordance excess at 1,024 (256): rewrite +8.192 [+5.916, +10.627] (+8.059); foreign +7.509 [+5.052, +10.201] (+8.261); erased +2.734 [-0.025, +5.483] (+2.681); background -1.138 [-3.100, +0.951] (-1.065); READING: kept to 1,024
+
+FROM THE RAW PACKETS (E001's unpack): the concordance at the eight new checkpoints, every arm, founder and block, against the shards: largest difference 0.0e+00; the final packets equal to the 1,024 checkpoint's: every block and budget
+  the turnover at 2,048 bytes (decoded sign cells differing from rewrite 256's record, mean over blocks, founders and recipients), rewrite / foreign / erased / background: 320: 0.0095/0.0109/0.0063/0.0107; 384: 0.0126/0.0147/0.0078/0.0160; 448: 0.0155/0.0185/0.0090/0.0207; 512: 0.0188/0.0221/0.0099/0.0239; 640: 0.0197/0.0274/0.0130/0.0268; 768: 0.0236/0.0321/0.0150/0.0307; 896: 0.0262/0.0337/0.0167/0.0324; 1024: 0.0284/0.0359/0.0178/0.0341

@@ -1,0 +1,113 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR005",
+ "design_digest": "0176779a89e36a7e664b9b1cecbfe3c2abfa213a7422d6341243b170b8ae9b02",
+ "ar004_digest": "7cd71b5b29cf573292c240f5245e1d0df45ca368c05b277079b7775631b94233",
+ "ar003_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar005/preflight",
+ "blocks": [
+  900779,
+  900789
+ ],
+ "tag": "mse-ar005",
+ "load_1min_at_check": 25.67,
+ "checked_utc": "2026-11-02T17:14:37Z",
+ "wall_s": 749.7,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 16
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900779": true,
+    "raw/dw/S4_t0/900779": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 2,
+   "runs_compared": 18,
+   "arrays_compared": 612,
+   "arm_slices_compared": 1382,
+   "routed": {
+    "run_vg": true,
+    "one": true,
+    "task_calls_the_routed_one": true
+   },
+   "reference": "AR004's debug outputs on 900265 (tag mse-ar004, frozen digest)",
+   "mismatched": {}
+  },
+  "Q4_vote_default_identity": {
+   "pass": true,
+   "n_items": 576,
+   "failed": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 594,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "ar003_frozen_design_unchanged": true,
+    "ar004_frozen_design_unchanged": true,
+    "det_star_is_ar003s_frozen": true,
+    "det_pool_is_ar004s_frozen": true,
+    "vguard_is_the_tunings_choice": true,
+    "body_guard_passes_a_window_the_body_confirms": true,
+    "body_guard_half_confirmed_passes_f05_not_f1": true,
+    "body_guard_rejects_a_window_the_body_does_not_confirm": true,
+    "an_unconfident_body_confirms_nothing": true,
+    "density_guard_passes_at_its_density_not_above": true,
+    "pass_all_body_guard_equals_cue_windows_multi_at_every_box": true,
+    "pass_all_dense_guard_equals_cue_windows_multi_at_every_box": true,
+    "guarded_detect_with_a_pass_all_guard_equals_ar002_detect": true,
+    "the_misread_changes_the_anchors_only": true,
+    "correlated_is_memory_with_the_body_flipped_on_the_patch": true,
+    "body_damage_is_the_body_flipped_alone": true,
+    "the_clock": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory@1-L8: vguard alone = vguard beside vms, the vote and vpool": true,
+    "memory@1-L8: vguard listed twice is bit-identical": true,
+    "memory@1-L8: a pass-all guarded arm = vpool": true,
+    "cue@0-L4: vguard alone = vguard beside vms, the vote and vpool": true,
+    "cue@0-L4: vguard listed twice is bit-identical": true,
+    "cue@0-L4: a pass-all guarded arm = vpool": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 790.6,
+   "forecast_cpu_h": 28.11,
+   "forecast_wall_h_12": 2.92,
+   "worker_rss_mb": 312.8,
+   "bytes_per_task": 11009680
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 83799,
+    "detectors.json": 7969,
+    "utilities.json": 9668,
+    "predictions_scored.json": 3313,
+    "TABLES.md": 7645
+   },
+   "big_git_files": []
+  }
+ }
+}

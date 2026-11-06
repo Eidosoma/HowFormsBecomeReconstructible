@@ -1,0 +1,186 @@
+{
+ "study": "HS002",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/hs002/preflight",
+ "design_digest": "a749f0b50ac4160533f8b7eb68754c693571ebf9e10cb7725d8bbe3475526ae3",
+ "run_digest": "a749f0b50ac4160533f8b7eb68754c693571ebf9e10cb7725d8bbe3475526ae3",
+ "started_utc": "2026-11-01T19:27:11Z",
+ "Q1": {
+  "pass": true,
+  "blocks": 2,
+  "problems": [],
+  "cpu_s": 0.0
+ },
+ "Q2": {
+  "pass": true,
+  "block": 950020,
+  "differing": [],
+  "cpu_s": 571.6
+ },
+ "Q3": {
+  "continuation_vs_uninterrupted": {
+   "1": {
+    "packets": true,
+    "lineage_reads": true,
+    "checkpoint_reads": true,
+    "recipient_states": true,
+    "first_256_equal_hs001_run": true,
+    "end": 320
+   },
+   "4": {
+    "packets": true,
+    "lineage_reads": true,
+    "checkpoint_reads": true,
+    "recipient_states": true,
+    "first_256_equal_hs001_run": true,
+    "end": 320
+   }
+  },
+  "saved_256_equal_in_memory": {
+   "block": 950021,
+   "1": true,
+   "4": true
+  },
+  "source_records_checked": 2,
+  "hs001_and_e_sources_unchanged": true,
+  "pass": true,
+  "cpu_s": 674.0
+ },
+ "Q4": {
+  "pass": true,
+  "block": 950020,
+  "budgets": {
+   "1": {
+    "packets_640": true,
+    "scores_640": true,
+    "lineage_reads_513_640": true
+   },
+   "4": {
+    "packets_640": true,
+    "scores_640": true,
+    "lineage_reads_513_640": true
+   }
+  },
+  "cpu_s": 94.6
+ },
+ "Q5": {
+  "pass": true,
+  "block": 950020,
+  "checks": {
+   "1": {
+    "final_is_1024": true,
+    "export_packets_equal_raw": true
+   },
+   "4": {
+    "final_is_1024": true,
+    "export_packets_equal_raw": true
+   },
+   "export": {
+    "prototypes_equal_hs001": true,
+    "labels": true
+   }
+  },
+  "cpu_s": 0.0
+ },
+ "Q6": {
+  "pass": true,
+  "block": 950021,
+  "budgets": {
+   "1": {
+    "Q_S_A": true,
+    "field_sd": true,
+    "concordance": true,
+    "export_fields_equal_reread": true
+   },
+   "4": {
+    "Q_S_A": true,
+    "field_sd": true,
+    "concordance": true,
+    "export_fields_equal_reread": true
+   }
+  },
+  "cpu_s": 1.0
+ },
+ "Q7": {
+  "pass": true,
+  "items": {
+   "fit1 equals hs001.fit on HS001's checkpoints": true,
+   "fit2 equals hs001.fit": true,
+   "noiseless c 1.0 a 1.0 h 5.0": true,
+   "noiseless c 0.0 a 2.0 h 30.0": true,
+   "noiseless c 0.5 a -0.5 h 3.0": true,
+   "calibrated readings (10 cohorts a truth)": {
+    "plateau c1 a1 h5": {
+     "a plateau within 1,024 rewrites": 9,
+     "a slow drift": 1
+    },
+    "zero c0 a2 h5": {
+     "decay to zero or below within 1,024 rewrites": 8,
+     "a plateau within 1,024 rewrites": 1,
+     "neither resolved": 1
+    },
+    "linear drift": {
+     "a slow drift": 10
+    },
+    "slow decay c0 a2 h600": {
+     "a slow drift": 10
+    },
+    "fast+slow to zero (a1 1.0 h5, a2 1.1 h2 600)": {
+     "a slow drift": 10
+    }
+   },
+   "plateau: at least 8 of 10 read as plateaus": true,
+   "zero: at least 8 of 10 as decay to zero, at most 1 of 10 as a plateau": true,
+   "drift: at least 8 of 10 as slow drifts, none as plateaus": true,
+   "slow decay h600: none as plateaus": true,
+   "fast+slow decay to zero: none as plateaus": true,
+   "reported: independent-noise cohorts": {
+    "sd 1.2 plateau": "neither resolved (as first declared: neither resolved)",
+    "sd 1.2 drift": "a slow drift (as first declared: a slow drift)",
+    "sd 1.2 slow decay": "a slow drift (as first declared: a slow drift)",
+    "sd 1.2 zero": "decay to zero or below within 1,024 rewrites (as first declared: decay to zero or below within 1,024 rewrites)",
+    "sd 2.2 plateau": "neither resolved (as first declared: neither resolved)",
+    "sd 2.2 drift": "a slow drift (as first declared: a slow drift)",
+    "sd 2.2 slow decay": "a slow drift (as first declared: a slow drift)",
+    "sd 2.2 zero": "decay to zero or below within 1,024 rewrites (as first declared: decay to zero or below within 1,024 rewrites)"
+   },
+   "coverage of c (nominal 0.95)": 0.975
+  },
+  "cpu_s": 138.3
+ },
+ "Q8": {
+  "pass": true,
+  "block": 950020,
+  "rewrite_alone_equals_batch": {
+   "1": true,
+   "4": true
+  },
+  "cpu_s": 1.1
+ },
+ "Q9": {
+  "pass": true,
+  "cpu_s_per_block_budget": 285.06,
+  "forecast_cpu_h": 25.338666666666665,
+  "forecast_wall_h_12_workers": 2.4282888888888885,
+  "worker_rss_mb": 45.5,
+  "bytes_per_block": 5994444.0,
+  "disk_free_bytes": 220186850361344,
+  "cpu_s": 0.0
+ },
+ "Q10": {
+  "pass": true,
+  "sizes": {
+   "predictions_scored.json": 2627,
+   "TABLES.md": 9674,
+   "summary.json": 147825,
+   "EXPORT_MANIFEST.json": 10660
+  },
+  "parts_computed": 8,
+  "verdicts_opened": false,
+  "cpu_s": 100.5
+ },
+ "status": "PASS",
+ "failed": [],
+ "finished_utc": "2026-11-01T19:53:36Z",
+ "cpu_s": 1581.0
+}

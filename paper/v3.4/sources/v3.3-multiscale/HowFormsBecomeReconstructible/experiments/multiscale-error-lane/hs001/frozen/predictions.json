@@ -1,0 +1,73 @@
+{
+ "study": "HS001",
+ "design_digest": "4336d7a7a62ec450e3b41be2dea084ac86437aecc7cfd0312021ebfca59cad26",
+ "written_utc": "2026-11-01T14:41:08Z",
+ "units": "percentage points of E014's qualified agreement Q against the own founder; block means over the eight founder x recipient lineages; scored on the 128 development blocks",
+ "parts": [
+  {
+   "id": "H1",
+   "words": "2,048 bytes: Q(rewrite) - Q(erased) after 256 rewrites",
+   "sense": "ge",
+   "threshold": 8.0
+  },
+  {
+   "id": "H1",
+   "words": "2,048 bytes: Q(foreign) - Q(erased) after 256 rewrites",
+   "sense": "ge",
+   "threshold": 8.0
+  },
+  {
+   "id": "H1",
+   "words": "128 bytes: Q(rewrite) - Q(erased) after 256 rewrites",
+   "sense": "ge",
+   "threshold": 9.0
+  },
+  {
+   "id": "H1",
+   "words": "128 bytes: Q(foreign) - Q(erased) after 256 rewrites",
+   "sense": "ge",
+   "threshold": 7.0
+  },
+  {
+   "id": "H2",
+   "words": "128 bytes: D(256) - D(16), the lower side",
+   "sense": "ge",
+   "threshold": -0.5
+  },
+  {
+   "id": "H2",
+   "words": "128 bytes: D(256) - D(16), the upper side",
+   "sense": "le",
+   "threshold": 0.2
+  },
+  {
+   "id": "H3",
+   "words": "2,048 bytes: Q(rewrite) - Q(copy) after 256 rewrites",
+   "sense": "le",
+   "threshold": -8.0
+  },
+  {
+   "id": "H3",
+   "words": "128 bytes: Q(rewrite) - Q(copy) after 256 rewrites",
+   "sense": "le",
+   "threshold": -1.0
+  }
+ ],
+ "statements": {
+  "H1": "Renewal keeps the record against no record: after 256 rewrites, records renewed from an acquired record (own or foreign) stay far above records renewed from no record, at both budgets.",
+  "H2": "At 128 bytes the founder-specific contrast is flat from 16 to 256 rewrites: D(256) - D(16) lies in [-0.5, +0.2].",
+  "H3": "Renewal does not recover the protected copy's fidelity: after 256 rewrites own-record renewal stays below the protected own copy, at both budgets."
+ },
+ "prespecified_measurements": {
+  "M-a, the reference and R_H": "Delta_P and R_H(n) at both budgets and every checkpoint, numerator, denominator and ratio together; the ratio reported only if the reference's 95% lower bound is at least half its estimate; R_H well below 1 at 16: renewal keeps a fraction of the protected records' readable specificity; near 1: nearly all; above 1: renewal makes the founders' difference more readable than a protected copy does",
+  "M-b, the asymptote": "hs001.fit on D(n) and R_H(n) at each budget: a plateau above zero, a plateau indistinguishable from zero, a plateau below zero, or not identified within 256 rewrites (M1's 95% upper bound of h above 64); M1 a decay or a rise (a free in sign); M2's c, the late mean and slope beside it",
+  "M-c, the 2,048-byte decline": "D(16) - D(1) at 2,048 bytes (the reviewer's Figure 4D) with its interval; the same at 128 bytes",
+  "M-d, the replicate concordance": "same-founder less cross-founder sign agreement of the decoded records at every checkpoint and lineage arm; a lasting excess for rewrite and foreign well above the founder-free arms (erased, background) reads as basins kept, one at their level as mixing; it measures initial-condition information kept, D measures closeness to the founder's prototype against a foreign founder's lineages",
+  "M-e, the floors' course": "Q(rewrite) - Q(erased) and Q(rewrite) - Q(background) at every checkpoint, M1 fitted to the first"
+ },
+ "rules": {
+  "ratio": "reported as a ratio only if the reference's 95% lower bound >= 0.5 x its estimate",
+  "fit": "hs001.fit (PLAN_HS001.md): M1 c + a rho^(n-1) by profile least squares on the 16 checkpoint means, M0, M2; 10,000 whole-block resamples, rng('E014', 'bootstrap')",
+  "identified": "M1's 95% upper bound of the half-life <= 64 rewrites"
+ }
+}

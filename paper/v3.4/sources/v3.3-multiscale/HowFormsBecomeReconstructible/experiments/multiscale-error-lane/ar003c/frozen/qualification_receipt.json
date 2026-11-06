@@ -1,0 +1,122 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR003C",
+ "design_digest": "b8149932ee6ee05291edf3efad737beacde7b1669f4372153f4d2aa7da539de7",
+ "ar003_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar003c/requal",
+ "blocks": [
+  900162,
+  900163
+ ],
+ "tag": "mse-ar003",
+ "load_1min_at_check": 39.38,
+ "checked_utc": "2026-11-01T18:38:42Z",
+ "wall_s": 454.3,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 16
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900162": true,
+    "raw/dw/S4_t0/900162": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 8,
+   "arrays_compared": 3784,
+   "arm_slices_compared": 8368,
+   "branches_compared": 288,
+   "reference": "AR003's full development task (ar003.worker.run_task, unchanged) on 900162",
+   "mismatched": {}
+  },
+  "Q4_detectors_firing_onset_footprint": {
+   "pass": true,
+   "arm_runs_compared": 168,
+   "lineage_cases_fired": {
+    "det": 148,
+    "vms": 344
+   },
+   "lineage_cases": 1344,
+   "mismatched": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 624,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_declaration_and_boundary": {
+   "pass": true,
+   "items": {
+    "ar003_frozen_design_unchanged": true,
+    "every_reduced_run_is_ar003s_run_with_a_subset_of_its_arms": true,
+    "arms_are_vote_det_vms_only_and_no_misread_run": true,
+    "runs_are_those_c1_c3_need": true,
+    "det_and_vms_detectors_are_ar003s_frozen": true,
+    "tag_best_controller_harm_weights": true,
+    "development_values_recompute": true,
+    "the_rules_block_counts_recompute": true,
+    "confirmation_blocks_in_range_and_clear": true,
+    "no_block_from_920000_drawn": true
+   },
+   "development_recompute": {
+    "c1": true,
+    "c2": true,
+    "sham_cue": true,
+    "sham_none": true
+   },
+   "rule_counts": {
+    "c1": [
+     3,
+     4
+    ],
+    "c2": [
+     4,
+     5
+    ]
+   },
+   "drawn": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory@L8: vms alone = vms beside vdial and the vote": true,
+    "memory@L8: vms listed twice is bit-identical": true,
+    "memory@L8: det alone = det beside ms": true,
+    "cue@L4: vms alone = vms beside vdial and the vote": true,
+    "cue@L4: vms listed twice is bit-identical": true,
+    "cue@L4: det alone = det beside ms": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 457.5,
+   "forecast_cpu_h": 16.27,
+   "forecast_wall_h_12": 1.7,
+   "tasks": 128,
+   "worker_rss_mb": 260.7,
+   "bytes_per_task": 8651435
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 21220,
+    "confirmation.json": 2173,
+    "TABLES.md": 4518
+   },
+   "big_git_files": [],
+   "criteria_computed": true,
+   "verdict_read": false
+  }
+ }
+}

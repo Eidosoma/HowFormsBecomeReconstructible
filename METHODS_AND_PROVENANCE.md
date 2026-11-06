@@ -1,3 +1,5 @@
+> **Current edition: v3.4.** See the [current source](paper/v3.4/SUPPORTING_INFORMATION.md). The dated document below is the preserved original review export.
+
 # Central methods and campaign provenance
 
 Working manuscript v0.20, with a dated 12 October 2026 addition. C.38–C.44 specify serial repair, capture timing, the completed cellular pause panel, the supporting Hopfield model, fresh-founder recipient matching, repair budgets and saved-boundary rescue. All twenty existing figures and earlier contracts remain distinct. Source extraction verifies retained reports, native summaries and available receipt bindings without simulation, fitting or original audit reruns. Ongoing outcomes are excluded.

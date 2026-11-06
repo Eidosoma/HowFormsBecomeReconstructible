@@ -1,0 +1,52 @@
+{
+  "d145_single_offset_channel": {
+    "ambiguous_offset_probability": "23/465",
+    "assumptions": "Family-balanced sampling; uniform draws within each frozen pool; decoder knows pools and sees the offset but no family label, labelled seed, or outcome.",
+    "bayes_accuracy": 0.9838709677419355,
+    "bayes_accuracy_fraction": "61/62",
+    "intersection": [
+      [
+        0,
+        8
+      ]
+    ],
+    "mutual_information_bits": 0.9549458006209655,
+    "pool_sizes": {
+      "A": 15,
+      "B": 31
+    },
+    "posterior_A_at_ambiguous_offset": "31/46",
+    "scope": "Not a measured effect, native-writer use estimate, or the B-only primary comparison. Conditional on a fixed family, family entropy is zero.",
+    "target": "family A or B with equal prior; one q=+1 offset observed"
+  },
+  "date": "2026-11-01",
+  "payload_arithmetic": {
+    "functional_512_weight_float64_bytes": 4096,
+    "limitations": "Array payloads omit code and metadata. NL003 packed bytes are a hypothetical binary-sign encoding, not the native dense archive, and exclude positions/masks, codes and gauge information. These counts are not mutual information.",
+    "nl003_anchor_sign_values_before_losses": 1024,
+    "nl003_ideal_binary_signs_only_packed_bytes": 128,
+    "spatial_compact_float64_bytes": 128,
+    "spatial_full_float64_bytes": 2048,
+    "two_template_float64_guide_bytes": 4096
+  },
+  "script_sha256": "984bd5498022422f81edd5443bf81808ff474fe75e1e8a4f418e805d60d1cb86",
+  "source_sha256": {
+    "../PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.lawsConfirmation/L20-extension-1/serial-compatible-feedback/PROTOCOL_V1.md": "e133390ec83c38a31a6eb4b2130bb1a040bbbee78e7215e712e444162db4d3f8",
+    "SUPPORTING_INFORMATION.md": "aff02d5eec06e4dc05521f328b5243e2b1989c26d55e03d5c877421e33f84c3e",
+    "experiments/multiscale-error-lane/REGISTRATION_NL003.md": "9b7d70aa95ebdd985462f2fa834628b6ae09094d76b7538494e8e81648bfff24",
+    "experiments/multiscale-error-lane/nl003/sim.py": "a12a69a81acdef1feda230e158f0253c983a387b6f50f62ce79b4c8cd555c076",
+    "experiments/multiscale-error-lane/nl003/worker.py": "0ea8feb9e035c91c477b47b1f89362dac0baceb959809fb8019f7aab2938ed60",
+    "experiments/theory-tests-lane/TT021/PROTOCOL.md": "923843b606a194481bbd28c9607559e5ce8e7a96482e970e64ebb5c56818834f"
+  },
+  "status": "analytic_protocol_deductions_not_empirical_decoding",
+  "tt021_common_packet_identity_bound": {
+    "assumptions": "Four messages equally likely; common incoming packets and allowed setup identical within each opposite-message pair, conditional on tissue/replicate. No body, target label, label-encoding metadata or message-dependent control supplied to the decoder.",
+    "equal_size_indistinguishable_pairs": 2,
+    "message_count": 4,
+    "packet_only_accuracy_upper_bound": 0.5,
+    "packet_only_message_information_upper_bound_bits": 1.0,
+    "scope": "An upper bound implied by pairwise identity, not a decoder performance measurement; it does not assume the two pairs themselves are distinguishable.",
+    "uniform_message_entropy_bits": 2.0,
+    "within_pair_polarity_information_bits": 0
+  }
+}

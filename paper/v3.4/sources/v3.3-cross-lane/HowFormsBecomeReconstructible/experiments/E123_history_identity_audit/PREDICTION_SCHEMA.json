@@ -1,0 +1,61 @@
+{
+  "schema_version": "E123.interface.v1",
+  "status": "EMPTY_TABLE_SPECIFICATION_NOT_A_DECODER_FREEZE",
+  "common_format": "theory-lane/rdt_information_source_reporting_v0_1/reviews_2026_11_02/COMMON_REPORTING_FORMAT.txt",
+  "target": {
+    "target_id": "acquisition_founder_four_way",
+    "labels": [0, 1, 2, 3],
+    "prior": [0.25, 0.25, 0.25, 0.25],
+    "dictionary": "Four observed prototypes within the same independent background block",
+    "coordinate_tolerance": "None; original coordinates",
+    "native_target_is_separate": true
+  },
+  "columns": [
+    "analysis_id", "source_block_id", "record_id", "pair_id", "regime", "unit",
+    "condition", "boundary", "horizon", "factor", "packet_bytes", "fold_id",
+    "exposure_status", "target_id", "true_label", "candidate_dictionary_id",
+    "candidate_label_mapping", "input_set_id", "decoder_id", "model_sha256",
+    "scaler_sha256", "feature_schema_sha256", "raw_p0", "raw_p1", "raw_p2", "raw_p3",
+    "scored_p0", "scored_p1", "scored_p2", "scored_p3", "probability_rule_id",
+    "categorical_decision", "tie_flag", "sample_weight_numerator",
+    "sample_weight_denominator", "prior_weight_profile_id", "native_outcome_id",
+    "native_target", "native_qualified_count", "native_sign_count",
+    "native_amplitude_count", "native_cells"
+  ],
+  "integer_columns": [
+    "source_block_id", "horizon", "factor", "packet_bytes", "true_label",
+    "categorical_decision", "native_target", "native_qualified_count",
+    "native_sign_count", "native_amplitude_count", "native_cells"
+  ],
+  "probability_columns": [
+    "raw_p0", "raw_p1", "raw_p2", "raw_p3", "scored_p0", "scored_p1", "scored_p2", "scored_p3"
+  ],
+  "permitted_resource_whitelist": {
+    "setup": ["A_background", "A_factor", "D"],
+    "record": ["A_background", "A_factor", "D", "R"],
+    "body": ["A_background", "A_factor", "D", "B"],
+    "joint": ["A_background", "A_factor", "D", "R", "B"],
+    "outgoing": ["A_background", "A_factor", "D", "O"],
+    "body_postwrite": ["A_background", "A_factor", "D", "B_postwrite"]
+  },
+  "validation": [
+    "One unique row per analysis, decoder, input set and source case boundary",
+    "Finite normalized raw and scored probability vectors with all four labels",
+    "No outgoing view at a nonwriting checkpoint",
+    "Group all descendants and dictionary copies by source block",
+    "No metadata or native outcome columns passed to any decoder",
+    "Declare tie handling, smoothing and weights before fitting",
+    "Seal predictions, model/scaler/feature hashes, splits and targets before scoring",
+    "Publish per-block counts and missingness on the same inclusion set"
+  ],
+  "unfrozen_analysis_choices": [
+    "Primary boundary and paired comparison",
+    "Exact features and stronger regularized comparator",
+    "Grouped outer and inner folds",
+    "Scaling, tuning and calibration",
+    "Probability floor and sensitivity",
+    "Categorical ties and optional fractional sensitivity",
+    "Shuffled-label null mapping and candidate permutation checks",
+    "Cost budget and whole-block uncertainty treatment of shared training"
+  ]
+}

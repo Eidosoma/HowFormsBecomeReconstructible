@@ -1,0 +1,43 @@
+P60c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e004/development (development): 128 tasks, every sha256 equal to the manifest's; digest 880ac18190f0; 2026-11-04T16:10:18Z - 2026-11-04T17:51:52Z, 16.84 CPU-h; 128 restored records, every sha256 equal to ar005/development's manifest; the acquisition rebuilt by ar001.sim.prepare (8 cases a task) equal to every record's V0, R0 and T
+  the labels: every route and packet as the plan's table (body/post, body/protected, record/post, record/protected, vote/post, vote/protected, vote1/post, vote1/protected)
+  the packets at generation 0 rebuilt by the lead (1024 label-tasks; protected storage from R0, post-damage copying from ar001.sim.event, a restored arm from its run): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8 (3072 row-task-horizons): largest |difference| 0.0e+00
+
+THE PARTS (16 blocks x 8 cases; pooled over the eight unit-body pairs, one future; [95% t interval])
+  G1 q_r(vote/protected) - q_r(body/protected), g 8: the vote keeps more history: +0.226173 [+0.213351, +0.238996] (SD 0.024063: block 0.024063, case/sqrt8 0.013298; halves +0.234894 +0.217453); registered >= 0.18: HOLDS
+      by item set: particular (li4 x F0) +0.504395; native (li4 x S4) +0.186188; permissive (dw) +0.107056
+  G2 u_r(body/post) - u_r(vote/post), g 8: the body route heals more: +0.329712 [+0.305939, +0.353485] (SD 0.044614: block 0.039382, case/sqrt8 0.044614; halves +0.326172 +0.333252); registered >= 0.2: HOLDS
+      by item set: particular (li4 x F0) +0.141357; native (li4 x S4) +0.404785; permissive (dw) +0.386353
+  G3 q_r(record/protected) - q_r(vote/protected), g 8: the record route against the vote, keeping: +0.241234 [+0.233832, +0.248636] (SD 0.013890: block 0.013890, case/sqrt8 0.010457; halves +0.247910 +0.234558); registered [0.19, 0.27]: HOLDS
+      by item set: particular (li4 x F0) +0.327393; native (li4 x S4) +0.271271; permissive (dw) +0.183136
+  G4 u_r(record/post) - u_r(vote/post), g 8: the record route against the vote, healing: -0.168701 [-0.184046, -0.153356] (SD 0.028798: block 0.015973, case/sqrt8 0.028798; halves -0.175171 -0.162231); registered [-0.28, -0.1]: HOLDS
+      by item set: particular (li4 x F0) -0.103516; native (li4 x S4) -0.245850; permissive (dw) -0.162720
+  VERDICTS (development: the point value against the registered threshold or band): G1 HOLDS, G2 HOLDS, G3 HOLDS, G4 HOLDS
+
+THE DECLARED TRADE-OFF READING (reported; generation 8): the routes by q_r(protected), most first, and by u_r(post), least first; it holds where the two orders coincide
+  every route run (as declared), all: keeping record 0.9984, vote 0.7571, body 0.5309, vote1 0.4036; healing (least first) record 0.0024, vote 0.1711, vote1 0.3645, body 0.5009: does not hold
+  every route run (as declared), particular (li4 x F0): keeping record 0.9984, vote 0.6710, vote1 0.3624, body 0.1666; healing (least first) record 0.0024, vote 0.1060, body 0.2473, vote1 0.2898: does not hold
+  every route run (as declared), native (li4 x S4): keeping record 0.9984, vote 0.7271, body 0.5409, vote1 0.4029; healing (least first) record 0.0024, vote 0.2483, vote1 0.3940, body 0.6531: does not hold
+  every route run (as declared), permissive (dw): keeping record 0.9984, vote 0.8152, body 0.7082, vote1 0.4245; healing (least first) record 0.0024, vote 0.1652, vote1 0.3871, body 0.5515: does not hold
+  the three fixed rules (added after P60's values), all: keeping record 0.9984, vote 0.7571, body 0.5309; healing (least first) record 0.0024, vote 0.1711, body 0.5009: HOLDS
+  the three fixed rules (added after P60's values), particular (li4 x F0): keeping record 0.9984, vote 0.6710, body 0.1666; healing (least first) record 0.0024, vote 0.1060, body 0.2473: HOLDS
+  the three fixed rules (added after P60's values), native (li4 x S4): keeping record 0.9984, vote 0.7271, body 0.5409; healing (least first) record 0.0024, vote 0.2483, body 0.6531: HOLDS
+  the three fixed rules (added after P60's values), permissive (dw): keeping record 0.9984, vote 0.8152, body 0.7082; healing (least first) record 0.0024, vote 0.1652, body 0.5515: HOLDS
+
+VOTE1, THE SECOND COPY AND THE RULE (reported, as declared; generation 8)
+  vote1 against the vote: the second copy, q_r(protected): -0.353531 [-0.362371, -0.344691]; by item set particular (li4 x F0) -0.308594; native (li4 x S4) -0.324188; permissive (dw) -0.390671
+  vote1 against the vote: the second copy, u_r(post): +0.193359 [+0.176225, +0.210494]; by item set particular (li4 x F0) +0.183838; native (li4 x S4) +0.145752; permissive (dw) +0.221924
+  vote1 against the body: the rule, q_r(protected): -0.127357 [-0.144818, -0.109897]; by item set particular (li4 x F0) +0.195801; native (li4 x S4) -0.138000; permissive (dw) -0.283615
+  vote1 against the body: the rule, u_r(post): -0.136353 [-0.167207, -0.105498]; by item set particular (li4 x F0) +0.042480; native (li4 x S4) -0.259033; permissive (dw) -0.164429
+
+REPORTED (the lead's): levels by label, u_r and q_r (all pairs; li4 x F0 u_r in parentheses), with partial cells marked
+  body/post [body]: g0 u_r 0.0000 (0.0000) q_r +0.9573; g1 u_r 0.2231 (0.0911) q_r +0.8590; g3 u_r 0.3929 (0.1594) q_r +0.7139; g8 u_r 0.5009 (0.2473) q_r +0.5062
+  body/protected [body]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9587 (0.8953) q_r +0.8959; g3 u_r 0.8973 (0.7532) q_r +0.7455; g8 u_r 0.8088 (0.5916) q_r +0.5309
+  record/post [record]: g0 u_r 0.0000 (0.0000) q_r +0.9573; g1 u_r 0.0000 (0.0000) q_r +0.9571; g3 u_r 0.0010 (0.0010) q_r +0.9565; g8 u_r 0.0024 (0.0024) q_r +0.9561
+  record/protected [record]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 1.0000 (1.0000) q_r +0.9997; g3 u_r 0.9990 (0.9990) q_r +0.9990; g8 u_r 0.9976 (0.9976) q_r +0.9984
+  vote/post [vote]: g0 u_r 0.0000 (0.0000) q_r +0.9573; g1 u_r 0.0173 (0.0112) q_r +0.9252; g3 u_r 0.0661 (0.0405) q_r +0.8609; g8 u_r 0.1711 (0.1060) q_r +0.7272
+  vote/protected [vote]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9897 (0.9863) q_r +0.9652; g3 u_r 0.9672 (0.9504) q_r +0.8969; g8 u_r 0.9075 (0.8501) q_r +0.7571
+  vote1/post [vote1]: g0 u_r 0.0000 (0.0000) q_r +0.9573; g1 u_r 0.0437 (0.0378) q_r +0.8806; g3 u_r 0.1794 (0.1416) q_r +0.7053; g8 u_r 0.3645 (0.2898) q_r +0.3886
+  vote1/protected [vote1]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9672 (0.9626) q_r +0.9169; g3 u_r 0.8889 (0.8469) q_r +0.7337; g8 u_r 0.7284 (0.6477) q_r +0.4036
+
+AGAINST THE FROZEN READER (results/e2e004/predictions_scored.json): 4 parts (values, intervals, SDs, halves, blocks, item sets; 4 registered thresholds, kinds and verdicts) largest difference 0.00e+00; 224 levels, largest difference 0.00e+00; partial levels (not pooled here): 0; 8 trade-off readings (both orders equal), largest difference 0.00e+00

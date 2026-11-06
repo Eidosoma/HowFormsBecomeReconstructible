@@ -1,0 +1,10 @@
+0. the erasure sizes recomputed from the island tests by the declared rule (agreement >= 0.5): equal to sm006/design.py's EPS in all 18 entries; censored at the largest island tested: 32/2/f4, 32/4/f1, 64/4/f1
+   32/1/f1 3; 32/1/f2 4; 32/1/f2r2 6; 32/1/f4 6; 32/2/f1 8; 32/2/f2 10; 32/2/f2r2 12; 32/2/f4 16; 32/4/f1 16; 64/1/f1 3; 64/1/f2 4; 64/1/f2r2 6; 64/1/f4 8; 64/2/f1 8; 64/2/f2 10; 64/2/f2r2 12; 64/2/f4 16; 64/4/f1 24
+
+1. FIT: 48 rereads at g 1 and 2 (SM003), 32 at g 4 (SM004), 48 gain rereads (SM006, reread digest 0a422b0fe0cd, design digest 6300a7c7408f), 48 SM001 FIT shards: every sha256 equal to its manifest's; 1836 condition means (864 at the base gain, 972 gain variants)
+
+2. THE FAMILY (the plan's words): J0 17 terms, rank 17, cond 36.4, LOBO 0.089079; J1 18 terms, rank 18, cond 36.5, LOBO 0.086382; J2 19 terms, rank 19, cond 36.9, LOBO 0.086242; J3 20 terms, rank 20, cond 38.6, LOBO 0.085233; J4 17 terms, rank 17, cond 15.3, LOBO 0.083073; J5 18 terms, rank 18, cond 15.4, LOBO 0.082941; J6 19 terms, rank 19, cond 29.1, LOBO 0.082896
+   the best admissible 0.082896; within 0.002: ['J4', 'J5', 'J6']; CHOSEN by the rule: J4 (17 terms)
+   the lead's fit of J4 on the 1836 means: R2 0.823657; FIT bias (E - the model) by grain and factor: g 1 f1 -0.0213; g 1 f2 +0.0219; g 1 f2r2 +0.0334; g 1 f4 +0.0086; g 2 f1 +0.0010; g 2 f2 -0.0153; g 2 f2r2 -0.0184; g 2 f4 +0.0138; g 4 f1 +0.0271
+   the frozen blob (sha256 0eaff72d5d067442): chosen J4; its predictions at the FIT means against the lead's fit: largest |difference| 2.1e-08
+   the sensitivity U: J4 on the 1458 FIT means whose erasure size is not censored (dropped: 32/2/f4, 32/4/f1; 378 means)

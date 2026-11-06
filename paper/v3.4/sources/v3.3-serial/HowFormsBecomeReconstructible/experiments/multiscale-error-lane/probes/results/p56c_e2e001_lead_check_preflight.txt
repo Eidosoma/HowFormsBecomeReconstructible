@@ -1,0 +1,38 @@
+P56c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e001/preflight (preflight, DRY RUN on engineering records): 16 tasks, every sha256 equal to the manifest's; digest 63f1a499c4b5; 2026-11-03T13:50:14Z - 2026-11-03T14:08:46Z, 3.78 CPU-h; 16 restored records, every sha256 equal to ar005/preflight's manifest; the acquisition rebuilt by ar001.sim.prepare equal to every record's V0, R0 and T
+  the packets at generation 0 rebuilt by the lead (336 label-tasks; the policy arms from their runs, protected storage from R0, post-damage copying from ar001.sim.event): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8: largest |difference| 0.0e+00
+
+THE PARTS (2 blocks x 8 cases; pooled over the eight unit-body pairs and the futures; [95% t interval])
+  E1 Delta_vguard(1): the repair crosses the first renewal: +0.336670 [-0.296268, +0.969607] (SD 0.070447; halves +0.288086 +0.385254); registered >= 0.2: HOLDS
+  E2 Delta_vguard(8): it lasts eight renewals: +0.169434 [-0.229077, +0.567944] (SD 0.044355; halves +0.153320 +0.185547); registered >= 0.08: HOLDS
+  E3 Delta_vms(8): the confirmed controller's: +0.169434 [-0.229077, +0.567944] (SD 0.044355; halves +0.153320 +0.185547); registered >= 0.07: HOLDS
+  E4 Delta_vguard(8) - Delta_vguard(0): the advantage's change through renewal: -0.236328 [-0.956016, +0.483359] (SD 0.080102; halves -0.179688 -0.292969); registered (-0.35, -0.15): HOLDS
+  E5 u_r(protected, 8) - u_r(vguard, memory@0, 8): protected storage's lead: +0.110107 [-0.260243, +0.480458] (SD 0.041220; halves +0.131348 +0.088867); registered (0.005, 0.18): HOLDS
+  E6 u_r(vguard, memory@0, 8) - u_r(post-damage, memory@0, 8): +0.225586 [-0.172271, +0.623443] (SD 0.044282; halves +0.223145 +0.228027); registered >= 0.15: HOLDS
+  E7 u_r(vguard, memory@1, 8) - u_r(vms, memory@1, 8): the misread recovery after renewal: +0.025146 [-0.204413, +0.254706] (SD 0.025550; halves +0.020996 +0.029297); reported
+  E8 a_r(vote, none@0, 8) - a_r(vguard, none@0, 8): the no-event cost in later generations: +0.000069 [-0.000804, +0.000941] (SD 0.000097; halves +0.000000 +0.000137); registered <= 0.002: HOLDS
+  E9 u_v(vguard, memory@0, 1) - u_v(vote, memory@0, 1): the first successor's own reconstruction: +0.312988 [-0.295097, +0.921074] (SD 0.067681; halves +0.271484 +0.354492); registered >= 0.18: HOLDS
+
+REPORTED (the lead's)
+  u_r memory@0     g 0: protected 1.0000; post 0.0000; vote 0.3608; vms 0.7666; vguard 0.7666
+  u_r memory@0     g 1: protected 0.9487; post 0.2300; vote 0.4170; vms 0.7537; vguard 0.7537
+  u_r memory@0     g 3: protected 0.8770; post 0.3889; vote 0.4724; vms 0.7168; vguard 0.7168
+  u_r memory@0     g 8: protected 0.8123; post 0.4766; vote 0.5327; vms 0.7021; vguard 0.7021
+  u_r memory@1     g 0: protected 1.0000; post 0.0000; vote 0.3608; vms 0.4580; vguard 0.5249
+  u_r memory@1     g 1: protected 0.9487; post 0.2300; vote 0.4170; vms 0.5044; vguard 0.5559
+  u_r memory@1     g 3: protected 0.8770; post 0.3889; vote 0.4724; vms 0.5332; vguard 0.5703
+  u_r memory@1     g 8: protected 0.8123; post 0.4766; vote 0.5327; vms 0.5698; vguard 0.5950
+  u_r none@0       g 0: protected 1.0000; post 1.0000; vote 0.9868; vms 0.9868; vguard 0.9868
+  u_r none@0       g 1: protected 0.9487; post 0.9487; vote 0.9312; vms 0.9312; vguard 0.9312
+  u_r none@0       g 3: protected 0.8770; post 0.8770; vote 0.8608; vms 0.8604; vguard 0.8608
+  u_r none@0       g 8: protected 0.8123; post 0.8123; vote 0.8027; vms 0.8030; vguard 0.8027
+  u_r cue@0        g 0: protected 1.0000; post 1.0000; vote 0.9868; vms 0.9868; vguard 0.9814
+  u_r cue@0        g 1: protected 0.9487; post 0.9487; vote 0.9312; vms 0.9297; vguard (not run to 1)
+  u_r cue@0        g 3: protected 0.8770; post 0.8770; vote 0.8608; vms 0.8672; vguard (not run to 3)
+  u_r cue@0        g 8: protected 0.8123; post 0.8123; vote 0.8027; vms (not run to 8); vguard (not run to 8)
+  u_r correlated@0 g 0: protected 1.0000; post 0.0000; vote 0.2510; vms 0.7295; vguard 0.4048
+  u_r correlated@0 g 1: protected 0.9487; post 0.2300; vote 0.3350; vms 0.7300; vguard 0.4497
+  u_r correlated@0 g 3: protected 0.8770; post 0.3889; vote 0.4521; vms 0.6929; vguard 0.5200
+  u_r correlated@0 g 8: protected 0.8123; post 0.4766; vote (not run to 8); vms (not run to 8); vguard (not run to 8)
+  controls at g 1: own protected 0.9487, foreign protected 0.4849, no reading 0.7471; q_r own +0.8793, foreign -0.0142
+  controls at g 3: own protected 0.8770, foreign protected 0.5215, no reading 0.6387; q_r own +0.7214, foreign -0.0213

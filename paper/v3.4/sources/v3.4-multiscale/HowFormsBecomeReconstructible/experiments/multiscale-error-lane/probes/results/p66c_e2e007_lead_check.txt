@@ -1,0 +1,63 @@
+P66c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e007/development (development): 128 task-files, every sha256 equal to its manifest's; digest 81c282177559; 2026-11-06T01:17:33Z - 2026-11-06T03:40:07Z, 23.34 CPU-h; 128 restored records, every sha256 equal to ar006/development's manifest; the acquisition rebuilt by ar001.sim.prepare (purpose confirmation; 8 cases a task) equal to every record's V0, R0 and T
+  the labels: every row as the plan's table (none/body, none/memory, raise/body, raise/memory, relax-matched/memory, relax/body, relax/memory)
+  the injury schedule recomputed by the lead (1024 case-tasks x 8 generations; at most 4 rejected attempts): every corner and attempt equal to the shard's, the same in every root; the patches disjoint
+  the packets at generation 0 rebuilt by the lead (896 label-tasks): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states (2688 row-task-horizons; own patch, union, whole sheet): largest |difference| 0.0e+00
+  the fresh successors re-scored from their saved final states: 896 row-task-tests, largest |difference| 0.0e+00
+  kappa' by the declared closed-loop rule from P66k's trials (the quadratic through kappa' 1.0, 1.4, 1.8 at raise's integrated 6,713.9): root 1.40024, rounded 1.4, equal to the design's 1.4
+  kappa: E2E006's 1.944, declared; the size-matched relax's kappa' 1.4; every row's recorded kappa equal to its declared one
+  identities: a vote row fired in 0 of 57344 lineage-case-generations; an injury check (the memory flip and the body flip) failed in 0 of 57344; a field-free row's exposure was not 0 in 0 of 16384 case-generations x 4 quantities; every field branch's realized response equals its kappa x its window's mean exposure in 40960 case-generations (largest relative difference 1.5e-14: the response acted only inside its window)
+
+THE PARTS (16 blocks x 8 cases; pooled over the eight unit-body pairs, one future; [95% t interval])
+  Z1 U_v(relax) - U_v(none), memory injury, g 8: +0.213182 [+0.203728, +0.222636] (SD 0.017742: block 0.017742, case/sqrt8 0.015118; halves +0.215291 +0.211073); registered >= 0.17: HOLDS
+      by item set: particular (li4 x F0) +0.143338; native (li4 x S4) +0.299669; permissive (dw) +0.204861
+  Z2 q_r(relax) - q_r(none), memory injury, g 8: +0.115044 [+0.107868, +0.122219] (SD 0.013466: block 0.013466, case/sqrt8 0.011348; halves +0.118927 +0.111160); registered >= 0.09: HOLDS
+      by item set: particular (li4 x F0) +0.140015; native (li4 x S4) +0.130005; permissive (dw) +0.095078
+  Z3 U_v(raise) - U_v(none), body injury, g 8: -0.020270 [-0.025312, -0.015229] (SD 0.009461: block 0.009461, case/sqrt8 0.006922; halves -0.017103 -0.023437); registered <= 0.02: HOLDS
+      by item set: particular (li4 x F0) +0.008681; native (li4 x S4) -0.053819; permissive (dw) -0.017971
+  Z4 the interaction: [U_v(raise) - U_v(none)] body - [the same] memory, g 8: +0.100796 [+0.086408, +0.115184] (SD 0.027001: block 0.027001, case/sqrt8 0.016058; halves +0.108371 +0.093221); registered >= 0.07: HOLDS
+      by item set: particular (li4 x F0) -0.004232; native (li4 x S4) +0.075114; permissive (dw) +0.166151
+  Z5 U_v(relax) - U_v(none), body injury, g 8: -0.053324 [-0.059024, -0.047624] (SD 0.010697: block 0.008672, case/sqrt8 0.010697; halves -0.053887 -0.052762); registered <= -0.03: HOLDS
+      by item set: particular (li4 x F0) -0.064941; native (li4 x S4) -0.007297; permissive (dw) -0.070530
+  Z1x the fresh successor's U_v, relax - none, memory injury, after g 8: +0.229282 [+0.218890, +0.239674] (SD 0.019503: block 0.019503, case/sqrt8 0.018379; halves +0.233385 +0.225179); registered >= 0.19: HOLDS
+      by item set: particular (li4 x F0) +0.160889; native (li4 x S4) +0.251980; permissive (dw) +0.252129
+  Z3x the fresh successor's U_v, raise - none, body injury, after g 8: -0.028415 [-0.032415, -0.024415] (SD 0.007506: block 0.007506, case/sqrt8 0.006349; halves -0.024929 -0.031901); registered <= -0.01: HOLDS
+      by item set: particular (li4 x F0) -0.046360; native (li4 x S4) -0.034342; permissive (dw) -0.016479
+  VERDICTS (development: the point value against the registered threshold or band): Z1 HOLDS, Z2 HOLDS, Z3 HOLDS, Z4 HOLDS, Z5 HOLDS, Z1x HOLDS, Z3x HOLDS
+
+REPORTED (the lead's)
+  the levels (all pairs; li4 x F0 in parentheses): U_v, q_r, a_v at g 0, 1, 3, 8; the fresh U_v after 1, 3, 8
+  none/body [vote; target body; response none; field none]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.6432 (0.4419) q_r +0.9019 (+0.8702) a_v 0.9205; g3 U_v 0.7842 (0.5955) q_r +0.8422 (+0.7915) a_v 0.9065; g8 U_v 0.8327 (0.6451) q_r +0.7074 (+0.6103) a_v 0.8727; x8 U_v 0.8279 (0.6383)
+  none/memory [vote; target memory; response none; field none]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.3243 (0.1089) q_r +0.8731 (+0.8349) a_v 0.9107; g3 U_v 0.3340 (0.1287) q_r +0.7654 (+0.7007) a_v 0.8779; g8 U_v 0.3655 (0.1717) q_r +0.5342 (+0.4236) a_v 0.8005; x8 U_v 0.3773 (0.1794)
+  raise/body [vote; target body; response raise; field shared]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.6600 (0.5482) q_r +0.8836 (+0.8347) a_v 0.9554; g3 U_v 0.7924 (0.6711) q_r +0.7942 (+0.7056) a_v 0.9222; g8 U_v 0.8125 (0.6538) q_r +0.6106 (+0.4604) a_v 0.8537; x8 U_v 0.7995 (0.5920)
+  raise/memory [vote; target memory; response raise; field shared]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.2354 (0.1097) q_r +0.8525 (+0.8033) a_v 0.9418; g3 U_v 0.2034 (0.1030) q_r +0.7137 (+0.6278) a_v 0.8841; g8 U_v 0.2445 (0.1846) q_r +0.4398 (+0.3177) a_v 0.7672; x8 U_v 0.3223 (0.1839)
+  relax-matched/memory [vote; target memory; response relax; field shared]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.4787 (0.1982) q_r +0.8897 (+0.8586) a_v 0.8633; g3 U_v 0.5218 (0.2371) q_r +0.8066 (+0.7588) a_v 0.8419; g8 U_v 0.5486 (0.2812) q_r +0.6262 (+0.5352) a_v 0.7920; x8 U_v 0.5554 (0.3052)
+  relax/body [vote; target body; response relax; field shared]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.6503 (0.3981) q_r +0.9115 (+0.8898) a_v 0.8503; g3 U_v 0.7496 (0.5169) q_r +0.8649 (+0.8404) a_v 0.8403; g8 U_v 0.7794 (0.5802) q_r +0.7609 (+0.7226) a_v 0.8095; x8 U_v 0.8402 (0.6659)
+  relax/memory [vote; target memory; response relax; field shared]: g0 U_v 0.3345 (0.0896) q_r +0.9370 (+0.9176) a_v 0.9277; g1 U_v 0.5097 (0.2136) q_r +0.8934 (+0.8625) a_v 0.8447; g3 U_v 0.5517 (0.2556) q_r +0.8163 (+0.7669) a_v 0.8199; g8 U_v 0.5787 (0.3150) q_r +0.6493 (+0.5636) a_v 0.7670; x8 U_v 0.6065 (0.3403)
+  the exposures per generation (the mean x a generation; the recorded response kappa x x, kexp x 8,000):
+    raise/body: g1 0.424/6,594 g2 0.432/6,712 g3 0.438/6,815 g4 0.446/6,931 g5 0.451/7,020 g6 0.458/7,118 g7 0.464/7,210 g8 0.468/7,281
+    raise/memory: g1 0.426/6,627 g2 0.436/6,778 g3 0.445/6,920 g4 0.455/7,080 g5 0.464/7,211 g6 0.473/7,351 g7 0.481/7,482 g8 0.488/7,592
+    relax-matched/memory: g1 0.613/6,863 g2 0.624/6,984 g3 0.630/7,053 g4 0.640/7,168 g5 0.647/7,244 g6 0.651/7,290 g7 0.658/7,370 g8 0.660/7,393
+    relax/body: g1 0.649/10,087 g2 0.659/10,254 g3 0.666/10,364 g4 0.676/10,512 g5 0.687/10,691 g6 0.696/10,821 g7 0.702/10,924 g8 0.709/11,024
+    relax/memory: g1 0.654/10,174 g2 0.668/10,382 g3 0.677/10,532 g4 0.693/10,773 g5 0.701/10,901 g6 0.710/11,044 g7 0.720/11,193 g8 0.725/11,275
+    relax/memory / raise/memory, the recorded response: g1 1.535 g2 1.532 g3 1.522 g4 1.522 g5 1.512 g6 1.502 g7 1.496 g8 1.485
+    relax-matched/memory / raise/memory, the recorded response: g1 1.036 g2 1.030 g3 1.019 g4 1.012 g5 1.005 g6 0.992 g7 0.985 g8 0.974
+    relax/body / raise/body, the recorded response: g1 1.530 g2 1.528 g3 1.521 g4 1.517 g5 1.523 g6 1.520 g7 1.515 g8 1.514
+  the observer: the patch's agreement around the body flip, the mean over generations (pre / +100 / +500 / +2,000 / end):
+    none/body: 0.916 / 0.913 / 0.921 / 0.922 / 0.927
+    none/memory: 0.809 / 0.819 / 0.846 / 0.866 / 0.899
+    raise/body: 0.964 / 0.966 / 0.968 / 0.969 / 0.971
+    raise/memory: 0.919 / 0.924 / 0.932 / 0.939 / 0.954
+    relax-matched/memory: 0.644 / 0.659 / 0.714 / 0.776 / 0.830
+    relax/body: 0.835 / 0.787 / 0.820 / 0.825 / 0.827
+    relax/memory: 0.598 / 0.615 / 0.681 / 0.747 / 0.794
+  contrasts reported (g 8; the fresh after g 8): every response against none under each target; the size-matched relax
+    raise/memory - none/memory: U_v -0.1211 [-0.1320, -0.1102] (li4 x F0 +0.0129); q_r -0.0945 [-0.1000, -0.0890] (li4 x F0 -0.1058); fresh U_v -0.0549 [-0.0640, -0.0458] (li4 x F0 +0.0045)
+    relax/memory - none/memory: U_v +0.2132 [+0.2037, +0.2226] (li4 x F0 +0.1433); q_r +0.1150 [+0.1079, +0.1222] (li4 x F0 +0.1400); fresh U_v +0.2293 [+0.2189, +0.2397] (li4 x F0 +0.1609)
+    raise/body - none/body: U_v -0.0203 [-0.0253, -0.0152] (li4 x F0 +0.0087); q_r -0.0968 [-0.1016, -0.0919] (li4 x F0 -0.1498); fresh U_v -0.0284 [-0.0324, -0.0244] (li4 x F0 -0.0464)
+    relax/body - none/body: U_v -0.0533 [-0.0590, -0.0476] (li4 x F0 -0.0649); q_r +0.0536 [+0.0495, +0.0576] (li4 x F0 +0.1124); fresh U_v +0.0123 [+0.0091, +0.0155] (li4 x F0 +0.0276)
+    relax-matched/memory - none/memory: U_v +0.1831 [+0.1724, +0.1937] (li4 x F0 +0.1095); q_r +0.0920 [+0.0855, +0.0985] (li4 x F0 +0.1116); fresh U_v +0.1782 [+0.1676, +0.1887] (li4 x F0 +0.1258)
+    relax-matched/memory - relax/memory: U_v -0.0301 [-0.0360, -0.0242] (li4 x F0 -0.0338); q_r -0.0230 [-0.0269, -0.0192] (li4 x F0 -0.0284); fresh U_v -0.0511 [-0.0567, -0.0456] (li4 x F0 -0.0351)
+    the q_r interaction [raise - none] body - memory: -0.0023 [-0.0079, +0.0034]
+
+AGAINST THE FROZEN READER (results/e2e007/predictions_scored.json): 7 parts (values, intervals, SDs, halves, blocks, item sets; 7 registered thresholds, kinds and verdicts; 0 narrowest thresholds in the reader's kind) largest difference 8.33e-17; 672 levels (lineage and fresh), largest difference 2.22e-16; partial levels (not pooled here): 0; 160 exposure means, largest difference 4.44e-16

@@ -1,0 +1,76 @@
+0. the guard's arithmetic: on 5 synthetic states (3 cases, 16 x 16, boxes 2-12; flipped record patches, a body mostly right, scattered cue damage at several rates and anchor densities), the lead's loop equals ar005.sim.guarded_windows for the body guard at f 1, 0.5 and 0 and the density guard at 1/4, under DET_POOL's criterion and a second (n 2, q 0.75): 337920 windows, 0 differ; windows held DET_POOL f 1 10; DET_POOL f 0.5 32; DET_POOL f 0 40; DET_POOL dense 1/4 30; n 2, q 0.75 f 1 22; n 2, q 0.75 f 0.5 68; n 2, q 0.75 f 0 89; n 2, q 0.75 dense 1/4 63; the pass-all guard equals ar002.sim.cue_windows_multi exactly
+
+1. P53c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar005/development (development): 128 tasks, 256 files, every sha256 equal to the manifest's; digest 0176779a89e3 (AR004's 7cd71b5b29cf and AR003's d392002671e6, their frozen sources unchanged); 2026-11-02T17:15:32Z - 2026-11-02T19:47:03Z, 27.08 CPU-h, 12 workers
+   runs: memory@0-L2 (L 2; vote, vms, vpool, vguard), memory@0 (L 4; vote, vms, vpool, vguard), memory@0-L8 (L 8; vote, vms, vpool, vguard), memory@1-L2 (L 2; vms, vpool, vguard), memory@1 (L 4; vms, vpool, vguard), memory@1-L8 (L 8; vms, vpool, vguard), none@0 (L 4; vote, vms, vpool, vguard), none@1 (L 4; vms, vpool, vguard), cue@0 (L 4; vote, vms, vpool, vguard), correlated@0 (L 4; vote, vms, vpool, vguard), correlated@1 (L 4; vms, vpool, vguard), body@0 (L 4; vote, vms, vpool, vguard)
+   detectors in every shard: vms DET_STAR, vpool pool-n3-q1-r1, vguard DET_POOL + g-body-f05
+
+3. THE PARTS (16 blocks; pooled over the eight unit-body pairs; [95% t interval], t(0.975, 15) = 2.1314; SD_block the max rule)
+   K1   vguard's sheet cost under scattered cue damage, cue@0: +0.002479 [+0.001889, +0.003068] (SD 0.001106: block 0.001106, case/sqrt8 0.000853; halves +0.002241 +0.002716)  <= +0.01: holds
+   K2a  vguard's sheet cost with no event, none@0: -0.000008 [-0.000054, +0.000039] (SD 0.000087: block 0.000087, case/sqrt8 0.000085; halves -0.000050 +0.000034)  <= +0.002: holds
+   K2b  vguard's sheet cost, none@1 against the vote's none@0: +0.001024 [+0.000603, +0.001446] (SD 0.000791: block 0.000773, case/sqrt8 0.000791; halves +0.000843 +0.001205)  <= +0.01: holds
+   K3a  R1g = mean over 4, 8 of u(vguard, memory@1) - u(vms, memory@1): +0.098778 [+0.075568, +0.121988] (SD 0.043557: block 0.043557, case/sqrt8 0.040573; halves +0.095963 +0.101593)  >= +0.01: holds
+   K4   R0g = mean over 4, 8 of u(vguard, memory@0) - u(vms, memory@0): -0.005188 [-0.009824, -0.000552] (SD 0.008700: block 0.008254, case/sqrt8 0.008700; halves -0.008865 -0.001511)  >= -0.01: holds
+   K5   W1g = mean over 4, 8 of u(vguard, memory@1) - u(vote, memory@0): +0.217888 [+0.182699, +0.253076] (SD 0.066037: block 0.066037, case/sqrt8 0.052369; halves +0.228531 +0.207245)  >= +0.12: holds
+   K6a  u(vpool) - u(vguard), correlated@0: +0.331909 [+0.282474, +0.381345] (SD 0.092773: block 0.081142, case/sqrt8 0.092773; halves +0.307495 +0.356323)  <= +0.4: holds
+   K6b  u(vpool) - u(vguard), correlated@1: +0.212585 [+0.176256, +0.248914] (SD 0.068177: block 0.053680, case/sqrt8 0.068177; halves +0.204346 +0.220825)  <= +0.37: holds
+   K6c0 u(vguard) - u(vote), correlated@0: +0.129578 [+0.102997, +0.156158] (SD 0.049883: block 0.046915, case/sqrt8 0.049883; halves +0.148682 +0.110474)  >= +0.08: holds
+   K6c1 u(vguard, correlated@1) - u(vote, correlated@0): +0.050354 [+0.031578, +0.069130] (SD 0.035236: block 0.035236, case/sqrt8 0.030026; halves +0.056885 +0.043823)  >= +0.02: holds
+   K7a  u(vguard) - u(vote) in the 4 x 4 patch, none@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000; halves +0.000000 +0.000000)  >= -0.005: holds
+   K7b  u(vguard, none@1) - u(vote, none@0), 4 x 4 patch: -0.000183 [-0.001262, +0.000895] (SD 0.002024: block 0.002024, case/sqrt8 0.001975; halves -0.000732 +0.000366)  >= -0.005: holds
+   K3b  R1g - 0.25 R1p: +0.070091 [+0.052452, +0.087731] (SD 0.033103: block 0.033103, case/sqrt8 0.031781; halves +0.066906 +0.073277)  >= 0: holds; margin 2.117
+        (R1p, vpool's contrast: +0.114746 [+0.091054, +0.138438] (SD 0.044462: block 0.044462, case/sqrt8 0.039195; halves +0.116226 +0.113266); the share R1g / R1p 0.8608)
+   VERDICTS: K1 HOLDS, K2 HOLDS, K3 HOLDS, K4 HOLDS, K5 HOLDS, K6 HOLDS, K7 HOLDS
+
+   REPORTED (not registered)
+   vpool's sheet cost, cue@0: +0.019277 [+0.016497, +0.022056] (SD 0.005216: block 0.005216, case/sqrt8 0.005018; halves +0.018873 +0.019680)
+   vms's sheet cost, cue@0: +0.005592 [+0.004235, +0.006949] (SD 0.002547: block 0.002547, case/sqrt8 0.002514; halves +0.004671 +0.006514)
+   vpool's sheet cost, none@0: -0.000003 [-0.000105, +0.000099] (SD 0.000191: block 0.000191, case/sqrt8 0.000186; halves -0.000072 +0.000067)
+   vms's sheet cost, none@0: -0.000003 [-0.000105, +0.000099] (SD 0.000191: block 0.000191, case/sqrt8 0.000186; halves -0.000072 +0.000067)
+   vpool's sheet cost, none@1: +0.008875 [+0.007579, +0.010171] (SD 0.002433: block 0.002058, case/sqrt8 0.002433; halves +0.009171 +0.008579)
+   vms's sheet cost, none@1: +0.003954 [+0.003105, +0.004803] (SD 0.001593: block 0.001044, case/sqrt8 0.001593; halves +0.004055 +0.003853)
+   u(vguard) - u(vote) inside the patch, cue@0: -0.001648 [-0.003555, +0.000260] (SD 0.003580: block 0.003321, case/sqrt8 0.003580; halves -0.000366 -0.002930)
+   u(vguard) - u(vote), body@0: +0.000000 [+0.000000, +0.000000] (SD 0.000000: block 0.000000, case/sqrt8 0.000000; halves +0.000000 +0.000000)
+   vguard's sheet cost, body@0: -0.000008 [-0.000054, +0.000039] (SD 0.000087: block 0.000087, case/sqrt8 0.000085; halves -0.000050 +0.000034)
+   R1g at 2 x 2: +0.008545 [-0.005092, +0.022182] (SD 0.025593: block 0.025163, case/sqrt8 0.025593; halves +0.000977 +0.016113)
+   R1g at 4 x 4: +0.071777 [+0.041554, +0.102001] (SD 0.056719: block 0.049204, case/sqrt8 0.056719; halves +0.065918 +0.077637); R1p: +0.090332 [+0.060838, +0.119826] (SD 0.055350: block 0.049957, case/sqrt8 0.055350; halves +0.091797 +0.088867)
+   R1g at 8 x 8: +0.125778 [+0.081906, +0.169651] (SD 0.082334: block 0.082334, case/sqrt8 0.061864; halves +0.126007 +0.125549); R1p: +0.139160 [+0.096000, +0.182321] (SD 0.080998: block 0.080998, case/sqrt8 0.060842; halves +0.140656 +0.137665)
+   the recovery fraction (vguard over vms's misread loss), sizes 4 and 8: 0.1949
+   rates by run (fired at all / on the patch):
+     memory@0-L2   vms    0.0898 / 0.0488
+     memory@0-L2   vpool  0.0898 / 0.0488
+     memory@0-L2   vguard 0.0713 / 0.0449
+     memory@0      vms    0.7842 / 0.7822
+     memory@0      vpool  0.7852 / 0.7832
+     memory@0      vguard 0.7617 / 0.7617
+     memory@0-L8   vms    1.0000 / 1.0000
+     memory@0-L8   vpool  1.0000 / 1.0000
+     memory@0-L8   vguard 1.0000 / 1.0000
+     memory@1-L2   vms    0.4961 / 0.0557
+     memory@1-L2   vpool  0.6973 / 0.1328
+     memory@1-L2   vguard 0.1992 / 0.0684
+     memory@1      vms    0.6465 / 0.2959
+     memory@1      vpool  0.8770 / 0.4814
+     memory@1      vguard 0.5293 / 0.4307
+     memory@1-L8   vms    0.5840 / 0.2109
+     memory@1-L8   vpool  0.8779 / 0.4697
+     memory@1-L8   vguard 0.4990 / 0.4121
+     none@0        vms    0.0449 / 0.0010
+     none@0        vpool  0.0449 / 0.0010
+     none@0        vguard 0.0283 / 0.0000
+     none@1        vms    0.4736 / 0.0371
+     none@1        vpool  0.6875 / 0.0947
+     none@1        vguard 0.1406 / 0.0137
+     cue@0         vms    0.5078 / 0.0469
+     cue@0         vpool  0.9346 / 0.1484
+     cue@0         vguard 0.2354 / 0.0215
+     correlated@0  vms    0.7852 / 0.7832
+     correlated@0  vpool  0.7861 / 0.7842
+     correlated@0  vguard 0.2871 / 0.2676
+     correlated@1  vms    0.6436 / 0.2930
+     correlated@1  vpool  0.8799 / 0.4844
+     correlated@1  vguard 0.2422 / 0.1240
+     body@0        vms    0.0449 / 0.0010
+     body@0        vpool  0.0449 / 0.0010
+     body@0        vguard 0.0283 / 0.0000
+
+4. FROM THE RAW FINAL STATES (the lead's own scoring; the patch from be001.sim.patch): r_in and r_all recomputed from the final records, 5504 arm-runs x 8 cases: largest difference 0.00e+00 and 0.00e+00; a vote-default arm that never fired against the vote (at sigma 1 the vote's sigma-0 run, where it exists), both records, bit for bit: 18608 of 18608 lineage-cases equal

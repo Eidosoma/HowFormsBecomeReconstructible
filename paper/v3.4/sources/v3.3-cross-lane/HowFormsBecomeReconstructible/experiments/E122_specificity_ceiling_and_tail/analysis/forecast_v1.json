@@ -1,0 +1,53 @@
+{
+  "conservative_seconds": 25142.91096115485,
+  "detach_required": true,
+  "disk_reserve_bytes": 3790424704,
+  "expected_seconds": 8380.97032038495,
+  "measured_analysis_seconds": 3.601698111044243,
+  "measured_full_block_seconds": 512.5606450240593,
+  "resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "busy": [
+      {
+        "affinity": [
+          0
+        ],
+        "pid": 3357936,
+        "sampled_cpu_percent": 98.94232828944946,
+        "threads": 1,
+        "ticks": 29444
+      },
+      {
+        "affinity": [
+          6
+        ],
+        "pid": 3358579,
+        "sampled_cpu_percent": 100.92117485523846,
+        "threads": 1,
+        "ticks": 21087
+      }
+    ],
+    "busy_capacity": 2,
+    "free_bytes": 67373187072,
+    "preferred_cpus": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "utc": "2026-11-02T13:56:32.058165+00:00"
+  },
+  "utc": "2026-11-02T13:56:32.058240+00:00",
+  "workers": 4
+}

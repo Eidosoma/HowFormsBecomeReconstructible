@@ -1,0 +1,18 @@
+# Split compact source
+
+This retained table/document exceeds the per-file limit or is a compressed CSV. The ordered UTF-8 parts concatenate to the complete payload without changing values. Use `python3 scripts/materialize_v3_4_sources.py` from the repository root to restore native paths under ignored `generated/v3.4/`. Gzip tables are losslessly decompressed for export and recompressed on materialization; their gzip container bytes can differ. The inventory retains both original-source and uncompressed-payload hashes.
+
+- [part-001.txt](part-001.txt)
+- [part-002.txt](part-002.txt)
+- [part-003.txt](part-003.txt)
+- [part-004.txt](part-004.txt)
+- [part-005.txt](part-005.txt)
+- [part-006.txt](part-006.txt)
+- [part-007.txt](part-007.txt)
+- [part-008.txt](part-008.txt)
+- [part-009.txt](part-009.txt)
+- [part-010.txt](part-010.txt)
+- [part-011.txt](part-011.txt)
+- [part-012.txt](part-012.txt)
+- [part-013.txt](part-013.txt)
+- [part-014.txt](part-014.txt)

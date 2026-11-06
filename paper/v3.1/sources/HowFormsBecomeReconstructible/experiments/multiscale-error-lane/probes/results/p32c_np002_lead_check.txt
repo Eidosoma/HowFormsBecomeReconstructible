@@ -1,0 +1,96 @@
+tasks 320 files checked 640 sha256 mismatches [] digest 85eae1621a5e
+run: 2026-10-29T15:38:53Z to 2026-10-29T16:06:05Z, wall 1632 s, cpu 19389 s (5.39 CPU-h), peak worker RSS 208.5 MB, 12 workers, 1-min load at start 44.91
+stage-1 conditions ['alone', 'intact', 'body1', 'record1', 'body', 'body3', 'intact@0.1', 'body@0.1', 'intact@0.05', 'body@0.05', 'intact@0.02', 'body@0.02', 'intact@0.01', 'body@0.01', 'intact@0.005', 'body@0.005'] | stage-2 branches ['intact', 'body1', 'record1', 'body', 'body3', 'none'] | blocks 910340 to 910355 (16)
+
+== aliases on these blocks (the registration's 'by construction'; Q5 checked them on the preflight blocks)
+1024 alias groups: 1024 identical across the four stage-1 bodies
+
+== statements (t = 4,000 in stage 1, t = 2,000 in stage 2; block means over 16 blocks)
+R1 q intact@0.02 >= 0.5, li2 li4                                n= 6 +0.993652 to +0.999166; worst ('li2', 'C4s1') +0.993652 (SD 0.0020, 248.64 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+R1 q intact@0.05 >= 0.25, dw li16                               n= 6 +0.623393 to +0.997070; worst ('dw', 'C4s3') +0.623393 (SD 0.1286, 2.90 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.25: ok
+R2 q intact@0.005 <= -0.5, li2 li4                              n= 6 -0.989624 to -0.612579; worst ('li2', 'C4s2') -0.612579 (SD 0.1746, 0.64 SD from the bound, 12/16 blocks pass); halves ['ok', 'ok']; rule le -0.5: ok
+R2 q intact@0.005 <= -0.25, dw li16                             n= 6 -0.822428 to -0.646912; worst ('dw', 'C4s1') -0.646912 (SD 0.2506, 1.58 SD from the bound, 15/16 blocks pass); halves ['ok', 'ok']; rule le -0.25: ok
+R3 q body (0.2) >= 0.5, every body                              n=12 +0.929667 to +0.997681; worst ('dw', 'C4s3') +0.929667 (SD 0.0872, 4.93 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+R3 q body@0.02 <= -0.5, li2 li4                                 n= 6 -0.995605 to -0.836711; worst ('li2', 'C4s3') -0.836711 (SD 0.0838, 4.02 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le -0.5: ok
+R3 q body@0.02 <= -0.25, dw li16                                n= 6 -0.863342 to -0.746663; worst ('dw', 'C4s3') -0.746663 (SD 0.2153, 2.29 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le -0.25: ok
+R4 q intact@0.02 - q body@0.02 >= 1.0, li2 li4                  n= 6 +1.834676 to +1.993103; worst ('li2', 'C4s3') +1.834676 (SD 0.0839, 9.95 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 1.0: ok
+R4 q intact@0.05 - q body@0.05 >= 0.25, dw li16                 n= 6 +0.749980 to +1.752686; worst ('dw', 'C4s3') +0.749980 (SD 0.1412, 2.23 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.25: ok
+R5 record q_rel body (0.2) >= 0.5, every body                   n=12 +0.884399 to +0.945862; worst ('dw', 'C4s3') +0.884399 (SD 0.0899, 4.28 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+R5 record q_rel body@0.02 <= 0, every body                      n=12 -0.963989 to -0.283356; worst ('li16', 'C4s2') -0.283356 (SD 0.0934, 2.08 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le 0.0: ok
+S1 q alone <= -0.5, li2 li4 in C48, dw li16 in C84              n= 4 -0.999908 to -0.989502; worst ('li2', 'C48') -0.989502 (SD 0.0030, 109.43 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le -0.5: ok
+S2 align intact >= 0.95, every body in C84 and C48              n= 8 +0.999992 to +1.000000; worst ('li2', 'C84') +0.999992 (SD 0.0000, 1638.15 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+S2 newborn align reading intact >= 0.95 (dw's run; aliases)     n= 8 +0.999992 to +1.000000; worst ('li2', 'C84') +0.999992 (SD 0.0000, 1638.15 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.95: ok
+S2 q record1 >= 0.5, every body in C84 and C48                  n= 8 +0.978912 to +0.997009; worst ('li4', 'C48') +0.978912 (SD 0.0048, 99.95 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+S3 q body <= 0.5, the held conflicts                            n= 4 -0.310638 to +0.339447; worst ('li2', 'C48') +0.339447 (SD 0.0687, 1.83 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le 0.5: ok
+S3 q body >= 0.5, the other conflicts                           n= 4 +0.972961 to +0.996796; worst ('li2', 'C84') +0.972961 (SD 0.0059, 80.13 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+S3 mean phase q(body) - held spacing q(body) >= 0.3             n= 4 +0.628187 to +1.278303; worst ('li2', 'C48') +0.628187 (SD 0.0676, 3.73 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.3: ok
+S4 newborn q reading the held conflicts' body records <= 0.5    n=16 -0.367371 to +0.386841; worst ('li2', 'C48', 'dw') +0.386841 (SD 0.0528, 1.56 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule le 0.5: ok
+S4 newborn q reading the other conflicts' body records >= 0.5   n=16 +0.626038 to +0.928650; worst ('dw', 'C48', 'li4') +0.626038 (SD 0.0245, 5.15 SD from the bound, 16/16 blocks pass); halves ['ok', 'ok']; rule ge 0.5: ok
+
+verdicts: {'R1': 'HOLDS', 'R2': 'HOLDS', 'R3': 'HOLDS', 'R4': 'HOLDS', 'R5': 'HOLDS', 'S1': 'HOLDS', 'S2': 'HOLDS', 'S3': 'HOLDS', 'S4': 'HOLDS'}
+
+== the race (phase conflicts): body q at t = 4,000, range over K = 1-3 [and the mean], by gain
+   dw    intact 0.2: +1.000 to +1.000 | 0.1: +1.000 to +1.000 | 0.05: +0.623 to +0.939 | 0.02: -0.262 to -0.046 | 0.01: -0.663 to -0.437 | 0.005: -0.760 to -0.647
+   dw    body   0.2: +0.930 to +0.988 | 0.1: +0.118 to +0.666 | 0.05: -0.596 to -0.127 | 0.02: -0.766 to -0.747 | 0.01: -0.815 to -0.810 | 0.005: -0.830 to -0.814
+   li2   intact 0.2: +1.000 to +1.000 | 0.1: +1.000 to +1.000 | 0.05: +0.998 to +0.999 | 0.02: +0.994 to +0.998 | 0.01: +0.577 to +0.982 | 0.005: -0.754 to -0.613
+   li2   body   0.2: +0.949 to +0.980 | 0.1: +0.880 to +0.997 | 0.05: -0.005 to +0.633 | 0.02: -0.990 to -0.837 | 0.01: -0.988 to -0.983 | 0.005: -0.990 to -0.983
+   li4   intact 0.2: +1.000 to +1.000 | 0.1: +1.000 to +1.000 | 0.05: +0.999 to +1.000 | 0.02: +0.997 to +0.999 | 0.01: -0.565 to -0.339 | 0.005: -0.990 to -0.977
+   li4   body   0.2: +0.983 to +0.995 | 0.1: +0.579 to +0.999 | 0.05: -0.273 to -0.004 | 0.02: -0.996 to -0.980 | 0.01: -0.996 to -0.994 | 0.005: -0.997 to -0.994
+   li16  intact 0.2: +1.000 to +1.000 | 0.1: +1.000 to +1.000 | 0.05: +0.967 to +0.997 | 0.02: -0.110 to +0.226 | 0.01: -0.733 to -0.677 | 0.005: -0.822 to -0.814
+   li16  body   0.2: +0.995 to +0.998 | 0.1: +0.200 to +0.898 | 0.05: -0.756 to -0.160 | 0.02: -0.863 to -0.809 | 0.01: -0.858 to -0.834 | 0.005: -0.853 to -0.844
+   the record's q_rel under body@g, range over K (and every body):
+   dw    0.2: +0.884 to +0.939 | 0.1: +0.230 to +0.640 | 0.05: -0.574 to -0.151 | 0.02: -0.772 to -0.291 | 0.01: -0.787 to -0.244 | 0.005: -0.787 to -0.237
+   li2   0.2: +0.885 to +0.904 | 0.1: +0.949 to +0.952 | 0.05: -0.012 to +0.608 | 0.02: -0.959 to -0.608 | 0.01: -0.958 to -0.347 | 0.005: -0.957 to -0.291
+   li4   0.2: +0.926 to +0.932 | 0.1: +0.948 to +0.959 | 0.05: -0.409 to -0.004 | 0.02: -0.964 to -0.434 | 0.01: -0.964 to -0.312 | 0.005: -0.964 to -0.282
+   li16  0.2: +0.945 to +0.946 | 0.1: +0.193 to +0.860 | 0.05: -0.729 to -0.240 | 0.02: -0.833 to -0.283 | 0.01: -0.829 to -0.254 | 0.005: -0.824 to -0.235
+   the record's q_bond under body@g at 4,000 (reported):
+   dw    0.2: +0.448 to +0.483 | 0.1: +0.011 to +0.334 | 0.05: -0.299 to -0.028 | 0.02: -0.386 to -0.354 | 0.01: -0.405 to -0.390 | 0.005: -0.407 to -0.397
+   li2   0.2: +0.444 to +0.460 | 0.1: +0.407 to +0.492 | 0.05: -0.002 to +0.316 | 0.02: -0.497 to -0.326 | 0.01: -0.496 to -0.479 | 0.005: -0.494 to -0.490
+   li4   0.2: +0.476 to +0.480 | 0.1: +0.185 to +0.494 | 0.05: -0.060 to -0.001 | 0.02: -0.502 to -0.484 | 0.01: -0.502 to -0.498 | 0.005: -0.502 to -0.498
+   li16  0.2: +0.487 to +0.489 | 0.1: +0.027 to +0.447 | 0.05: -0.374 to -0.030 | 0.02: -0.433 to -0.401 | 0.01: -0.429 to -0.411 | 0.005: -0.425 to -0.417
+   time course, body q at 1,000 / 2,000 / 4,000, every body and K:
+   intact@0.02  dw:-0.52/-0.37/-0.17 li2:+0.80/+1.00/+1.00 li4:+0.32/+0.89/+1.00 li16:-0.56/-0.29/+0.06
+   intact@0.01  dw:-0.73/-0.64/-0.57 li2:-0.44/+0.15/+0.80 li4:-0.88/-0.73/-0.48 li16:-0.83/-0.76/-0.70
+   body         dw:+0.98/+0.98/+0.97 li2:+0.96/+0.96/+0.97 li4:+0.98/+0.99/+0.99 li16:+1.00/+1.00/+1.00
+   body@0.1     dw:+0.36/+0.35/+0.34 li2:+0.93/+0.94/+0.96 li4:+0.85/+0.86/+0.86 li16:+0.45/+0.45/+0.44
+   body@0.05    dw:-0.51/-0.42/-0.38 li2:+0.16/+0.18/+0.21 li4:-0.11/-0.12/-0.13 li16:-0.62/-0.56/-0.50
+   body@0.02    dw:-0.79/-0.77/-0.76 li2:-0.90/-0.91/-0.92 li4:-0.98/-0.99/-0.99 li16:-0.88/-0.85/-0.84
+
+== the spacing conflicts: body q at t = 4,000 by condition, and the record's q_rel and q_bond under body
+   C84 dw    alone -0.994  intact +1.000  body1 +0.995  record1 +0.994  body -0.311  body3 -0.420 | race intact@g: 0.1:+0.82 0.05:-0.02 0.02:-0.80 0.01:-0.90 0.005:-0.95 | body@g: 0.1:-0.54 0.05:-0.85 0.02:-0.98 0.01:-0.99 0.005:-0.99 | record q_rel body -0.278, q_bond body -0.300
+   C84 li2   alone -0.023  intact +1.000  body1 +1.000  record1 +0.990  body +0.973  body3 +0.984 | race intact@g: 0.1:+1.00 0.05:+1.00 0.02:+1.00 0.01:+0.99 0.005:+0.82 | body@g: 0.1:+1.00 0.05:+0.87 0.02:+0.55 0.01:+0.38 0.005:+0.22 | record q_rel body +0.906, q_bond body +0.422
+   C84 li4   alone -0.036  intact +1.000  body1 +1.000  record1 +0.992  body +0.993  body3 +0.997 | race intact@g: 0.1:+1.00 0.05:+1.00 0.02:+1.00 0.01:+1.00 0.005:+0.88 | body@g: 0.1:+1.00 0.05:+0.99 0.02:+0.70 0.01:+0.49 0.005:+0.26 | record q_rel body +0.934, q_bond body +0.467
+   C84 li16  alone -1.000  intact +1.000  body1 +1.000  record1 +0.994  body +0.099  body3 -0.761 | race intact@g: 0.1:+1.00 0.05:-0.11 0.02:-0.85 0.01:-0.98 0.005:-1.00 | body@g: 0.1:-0.82 0.05:-0.95 0.02:-1.00 0.01:-1.00 0.005:-1.00 | record q_rel body +0.103, q_bond body -0.137
+   C48 dw    alone -0.838  intact +1.000  body1 +1.000  record1 +0.997  body +0.994  body3 +0.974 | race intact@g: 0.1:+1.00 0.05:+1.00 0.02:+0.14 0.01:-0.50 0.005:-0.68 | body@g: 0.1:+0.79 0.05:+0.34 0.02:-0.56 0.01:-0.73 0.005:-0.79 | record q_rel body +0.946, q_bond body +0.496
+   C48 li2   alone -0.990  intact +1.000  body1 +0.999  record1 +0.986  body +0.339  body3 +0.141 | race intact@g: 0.1:+1.00 0.05:+1.00 0.02:-0.55 0.01:-0.94 0.005:-0.98 | body@g: 0.1:-0.48 0.05:-0.95 0.02:-0.96 0.01:-0.98 0.005:-0.99 | record q_rel body +0.191, q_bond body +0.363
+   C48 li4   alone -0.997  intact +1.000  body1 +0.993  record1 +0.979  body +0.080  body3 -0.244 | race intact@g: 0.1:+1.00 0.05:-0.44 0.02:-0.91 0.01:-0.99 0.005:-1.00 | body@g: 0.1:-0.92 0.05:-0.94 0.02:-0.99 0.01:-0.99 0.005:-1.00 | record q_rel body -0.021, q_bond body +0.336
+   C48 li16  alone -0.842  intact +1.000  body1 +1.000  record1 +0.997  body +0.997  body3 +0.996 | race intact@g: 0.1:+1.00 0.05:+1.00 0.02:+0.45 0.01:-0.64 0.005:-0.78 | body@g: 0.1:+0.93 0.05:+0.78 0.02:-0.75 0.01:-0.80 0.005:-0.82 | record q_rel body +0.948, q_bond body +0.495
+   spacing (the body's wavelength) under alone / intact / body:
+   C84 dw 13.8/8.0/13.3 li2 8.1/8.0/7.9 li4 7.9/8.0/8.0 li16 13.7/8.0/11.0
+   C48 dw 9.5/13.6/13.7 li2 8.0/12.9/8.5 li4 8.0/12.6/7.6 li16 8.7/13.6/13.7
+   the record at low gain where the body kept its period (reported): q_rel and q_bond under body@0.02 and body@0.005
+   li2   C48: body q -0.963/-0.986; q_rel +0.611/+0.673; q_bond -0.472/-0.483
+   li4   C48: body q -0.990/-0.996; q_rel +0.666/+0.672; q_bond -0.494/-0.498
+   dw    C84: body q -0.978/-0.992; q_rel +0.656/+0.659; q_bond -0.501/-0.501
+   li16  C84: body q -0.999/-1.000; q_rel +0.673/+0.677; q_bond -0.500/-0.500
+   li2   C84: body q +0.550/+0.220; q_rel +0.523/+0.122; q_bond +0.003/-0.268
+   li4   C84: body q +0.699/+0.262; q_rel +0.671/+0.241; q_bond +0.078/-0.287
+   dw    C48: body q -0.562/-0.787; q_rel +0.545/+0.602; q_bond -0.134/-0.298
+   li16  C48: body q -0.746/-0.825; q_rel +0.624/+0.631; q_bond -0.320/-0.346
+
+== newborns (spacing conflicts) at t = 2,000: q reading each stage-1 body's record, range over the four kinds
+   C84 dw    intact +1.000 to +1.000  body1 +0.993 to +0.994  record1 +0.990 to +0.994  body -0.367 to -0.036  body3 -0.443 to -0.035  none -0.029 to +0.005
+   C84 li2   intact +1.000 to +1.000  body1 +0.997 to +0.999  record1 +0.990 to +0.994  body +0.780 to +0.825  body3 +0.613 to +0.693  none -0.029 to +0.005
+   C84 li4   intact +1.000 to +1.000  body1 +0.997 to +0.999  record1 +0.990 to +0.994  body +0.798 to +0.844  body3 +0.626 to +0.702  none -0.029 to +0.005
+   C84 li16  intact +1.000 to +1.000  body1 +0.998 to +0.999  record1 +0.990 to +0.994  body +0.000 to +0.224  body3 -0.726 to -0.295  none -0.029 to +0.005
+   C48 dw    intact +1.000 to +1.000  body1 +0.995 to +1.000  record1 +0.978 to +0.997  body +0.626 to +0.927  body3 +0.426 to +0.863  none -0.005 to +0.029
+   C48 li2   intact +1.000 to +1.000  body1 +0.993 to +0.999  record1 +0.978 to +0.997  body +0.220 to +0.387  body3 +0.054 to +0.215  none -0.005 to +0.029
+   C48 li4   intact +1.000 to +1.000  body1 +0.988 to +0.998  record1 +0.978 to +0.997  body +0.048 to +0.109  body3 -0.198 to -0.079  none -0.005 to +0.029
+   C48 li16  intact +1.000 to +1.000  body1 +0.995 to +1.000  record1 +0.978 to +0.997  body +0.628 to +0.929  body3 +0.436 to +0.878  none -0.005 to +0.029
+   newborns reading nothing: align C84/dw 0.501 C84/li2 0.492 C84/li4 0.501 C84/li16 0.499 C48/dw 0.499 C48/li2 0.501 C48/li4 0.500 C48/li16 0.513
+
+== checks on the measures
+   bodies within 0.15 of a template's inverse (align or align_b < 0.15, per case at 4,000): 3 of 40960: {('li2', 'C4s3', 'body@0.02'): 2, ('li4', 'C84', 'alone'): 1}
+   (|q - q_abs| at the block level is not an inversion test: the two differ for mixed bodies; largest 0.523)
+   K = 2 under body@0.02, record q_rel by body: dw -0.291 li2 -0.608 li4 -0.434 li16 -0.283
+done

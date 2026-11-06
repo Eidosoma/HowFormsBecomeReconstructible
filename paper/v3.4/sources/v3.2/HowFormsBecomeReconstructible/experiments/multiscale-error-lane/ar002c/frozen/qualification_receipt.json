@@ -1,0 +1,101 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "AR002C",
+ "design_digest": "64314e0f93012e87121777ebd6e3f83e05c04b93d2b0ccdec0dc1e6f604ed9da",
+ "ar002_digest": "1d13005e4ee323a7bf8e213891fbb35d184653952daf95103efbbdcf1ab8c915",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar002c/qualify",
+ "blocks": [
+  900356,
+  900357,
+  900358,
+  900359
+ ],
+ "tag": "mse-ar002",
+ "load_1min_at_check": 28.16,
+ "checked_utc": "2026-10-31T18:29:35Z",
+ "wall_s": 242.7,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": [],
+   "tasks": 32
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0/900356": true,
+    "raw/dw/S4_t0/900356": true
+   }
+  },
+  "Q3_bridge_bit_for_bit": {
+   "pass": true,
+   "tasks_compared": 32,
+   "arrays_compared": 7072,
+   "arm_slices_compared": 22976,
+   "branches_compared": 896,
+   "reference": "AR002's preflight (900356-900357) and debug (900358-900359) outputs",
+   "mismatched": {}
+  },
+  "Q4_det_firing_onset_footprint": {
+   "pass": true,
+   "runs_compared": 224,
+   "lineage_cases_fired": 1061,
+   "lineage_cases": 1792,
+   "mismatched": []
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 768,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_declaration_and_boundary": {
+   "pass": true,
+   "items": {
+    "ar002_frozen_design_unchanged": true,
+    "runs_are_the_seven_sigma0_situations_with_vote_rest_dial_det": true,
+    "every_reduced_arm_is_in_ar002s_run": true,
+    "det_is_ar002s_frozen_detector": true,
+    "tag_best_point_harm_weights": true,
+    "development_values_recompute": true,
+    "confirmation_blocks_in_range_and_clear_of_ar001": true,
+    "no_block_from_920000_drawn": true
+   },
+   "drawn": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory: det alone = det beside det-v and det-ms": true,
+    "memory: det listed twice is bit-identical": true,
+    "cue: det alone = det beside det-v and det-ms": true,
+    "cue: det listed twice is bit-identical": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "cpu_s_per_task": 238.7,
+   "forecast_cpu_h": 10.61,
+   "forecast_wall_h_12": 1.09,
+   "tasks": 160,
+   "worker_rss_mb": 258.4,
+   "bytes_per_task": 5235037
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 17238,
+    "confirmation.json": 2542,
+    "TABLES.md": 4279
+   },
+   "big_git_files": [],
+   "criteria_computed": true,
+   "verdict_read": false
+  }
+ }
+}

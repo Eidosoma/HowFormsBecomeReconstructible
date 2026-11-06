@@ -1,0 +1,220 @@
+{
+ "study": "SM006",
+ "design_digest": "6300a7c7408f89b746d74b8291d38369d4bcbb4511589eecf6a8d5410d895257",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "S1": [
+   -0.16,
+   0.08
+  ],
+  "S3": [
+   -0.05,
+   0.11
+  ],
+  "S4": [
+   -0.02,
+   0.15
+  ],
+  "S5": [
+   -0.01,
+   0.28
+  ],
+  "S6": [
+   0.01,
+   0.17
+  ],
+  "S8": [
+   -0.1,
+   0.02
+  ],
+  "S9": [
+   0.0,
+   0.14
+  ],
+  "S10": [
+   -0.08,
+   0.09
+  ],
+  "S11": [
+   -0.05,
+   0.08
+  ]
+ },
+ "frozen_utc": "2026-11-02T18:44:08Z",
+ "registered": [
+  {
+   "id": "S1",
+   "part": "the late loss from FIT alone: refinement, base g 1, late: (E - E twin) - (the model - the model at the twin)",
+   "kind": "in",
+   "threshold": [
+    -0.16,
+    0.08
+   ]
+  },
+  {
+   "id": "S3",
+   "part": "E(4), blind: every unit, g 1, gain x 1/2: E - the model",
+   "kind": "in",
+   "threshold": [
+    -0.05,
+    0.11
+   ]
+  },
+  {
+   "id": "S4",
+   "part": "E(8), blind: every unit, g 1, gain x 1/4: E - the model",
+   "kind": "in",
+   "threshold": [
+    -0.02,
+    0.15
+   ]
+  },
+  {
+   "id": "S5",
+   "part": "the erasure's recovery at eps 8, blind: refinement, late: (E(8) - E base) - (the model at 8 - at the base)",
+   "kind": "in",
+   "threshold": [
+    -0.01,
+    0.28
+   ]
+  },
+  {
+   "id": "S6",
+   "part": "the same at eps 4",
+   "kind": "in",
+   "threshold": [
+    0.01,
+    0.17
+   ]
+  },
+  {
+   "id": "S8",
+   "part": "the g-2 offset kept: refinement, g 2: E - the model",
+   "kind": "in",
+   "threshold": [
+    -0.1,
+    0.02
+   ]
+  },
+  {
+   "id": "S9",
+   "part": "the g-4 shortfall kept: refinement, g 4: E - the model",
+   "kind": "in",
+   "threshold": [
+    0.0,
+    0.14
+   ]
+  },
+  {
+   "id": "S10",
+   "part": "the prompt loss kept: refinement, base g 1, prompt: as S1",
+   "kind": "in",
+   "threshold": [
+    -0.08,
+    0.09
+   ]
+  },
+  {
+   "id": "S11",
+   "part": "the larger sheet kept: transfer, base g 1, 2 and 4: E - the model",
+   "kind": "in",
+   "threshold": [
+    -0.05,
+    0.08
+   ]
+  }
+ ],
+ "candidates_reported": [
+  {
+   "id": "S2",
+   "part": "the late loss against H1: |H1's loss error| - |the model's loss error|"
+  },
+  {
+   "id": "S7",
+   "part": "closer than H1 at the blind targets: every unit, g 1, eps 4 and 8: |E - H1| - |E - the model|"
+  }
+ ],
+ "reported": [
+  {
+   "id": "R1",
+   "part": "E(6), refinement (not blind): E - the model"
+  },
+  {
+   "id": "R2",
+   "part": "E(6), transfer (blind): E - the model"
+  },
+  {
+   "id": "R3",
+   "part": "the erasure's recovery at eps 6 (SM005's V_E): refinement, late"
+  },
+  {
+   "id": "R4",
+   "part": "the matched-reader gain at g 2: (E - E twin at g/2) - (the model - at the twin at g/2)"
+  },
+  {
+   "id": "R5",
+   "part": "the same at g 4"
+  },
+  {
+   "id": "R6",
+   "part": "H1 on S1: the late loss"
+  },
+  {
+   "id": "R7",
+   "part": "H1 on S3: E(4)"
+  },
+  {
+   "id": "R8",
+   "part": "H1 on S4: E(8)"
+  },
+  {
+   "id": "R9",
+   "part": "H1 on S5: the recovery at eps 8"
+  },
+  {
+   "id": "R10",
+   "part": "the observed late loss, base g 1: E - E twin"
+  },
+  {
+   "id": "R11",
+   "part": "the observed recovery at eps 8: E(8) - E base, refinement, late"
+  },
+  {
+   "id": "R12",
+   "part": "H1 on S6: the recovery at eps 4"
+  },
+  {
+   "id": "R13",
+   "part": "H1 on S8: g 2, refinement"
+  },
+  {
+   "id": "R14",
+   "part": "H1 on S9: g 4, refinement"
+  },
+  {
+   "id": "R15",
+   "part": "H1 on S10: the prompt loss"
+  },
+  {
+   "id": "R16",
+   "part": "H1 on S11: the larger sheet"
+  },
+  {
+   "id": "R17",
+   "part": "S2's first term: |H1's late-loss error|"
+  },
+  {
+   "id": "R18",
+   "part": "S2's second term: |the model's late-loss error|"
+  },
+  {
+   "id": "R19",
+   "part": "S7's first term: |E - H1| at the blind targets"
+  },
+  {
+   "id": "R20",
+   "part": "S7's second term: |E - the model| at the blind targets"
+  }
+ ],
+ "predict_sha256": "cbe3061e8158bb8cd76c52b555a0e9ec8cb5e0c7db5f0dda5a480873c6bfdeab"
+}

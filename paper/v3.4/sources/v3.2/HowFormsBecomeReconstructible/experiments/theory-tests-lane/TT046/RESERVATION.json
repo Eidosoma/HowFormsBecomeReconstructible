@@ -1,0 +1,168 @@
+{
+  "blocks": [
+    46010000,
+    46010001,
+    46010002,
+    46010003,
+    46010004,
+    46010005,
+    46010006,
+    46010007,
+    46010008,
+    46010009,
+    46010010,
+    46010011,
+    46010012,
+    46010013,
+    46010014,
+    46010015,
+    46010016,
+    46010017,
+    46010018,
+    46010019,
+    46010020,
+    46010021,
+    46010022,
+    46010023,
+    46010024,
+    46010025,
+    46010026,
+    46010027,
+    46010028,
+    46010029,
+    46010030,
+    46010031
+  ],
+  "content_hashes": {},
+  "content_scan_command": [
+    "rg",
+    "--json",
+    "--stats",
+    "--hidden",
+    "--no-ignore",
+    "--threads",
+    "1",
+    "--max-filesize",
+    "2M",
+    "--iglob",
+    "*.py",
+    "--iglob",
+    "*.md",
+    "--iglob",
+    "*.toml",
+    "--iglob",
+    "*.yaml",
+    "--iglob",
+    "*.yml",
+    "--iglob",
+    "*{CONFIG,RESERVATION,SEEDS,RANDOMNESS,FREEZE,PLAN,MANIFEST,EXPOSURE,CURRENT,STATUS,PROTOCOL}*.{json,jsonl}",
+    "--iglob",
+    "exposure_register.jsonl",
+    "--iglob",
+    "prediction_intake_status.json",
+    "-g",
+    "!**/.git/**",
+    "-g",
+    "!**/.venv/**",
+    "-g",
+    "!**/__pycache__/**",
+    "-g",
+    "!**/theory-tests-lane/TT046/**",
+    "-g",
+    "!**/storage_archives/2026-10-28_completed-runs_v2/**",
+    "(^|[^0-9])460100(?:[0-2][0-9]|3[01])([^0-9]|$)",
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible",
+    "/mnt/datasets/theory-tests-lane-archive"
+  ],
+  "content_scan_sha256": "dff81f31097d3b9e8de1f2064d121a399f413875f77250d8e04e44547661ca32",
+  "content_scan_summary": {
+    "elapsed_total": {
+      "human": "24.963232s",
+      "nanos": 963232356,
+      "secs": 24
+    },
+    "stats": {
+      "bytes_printed": 2456,
+      "bytes_searched": 486178179,
+      "elapsed": {
+        "human": "20.403227s",
+        "nanos": 403226745,
+        "secs": 20
+      },
+      "matched_lines": 5,
+      "matches": 5,
+      "searches": 45878,
+      "searches_with_match": 4
+    }
+  },
+  "excluded": [
+    608280,
+    608281
+  ],
+  "filename_count": 959753,
+  "filename_stream_sha256": "e3020cda3ade907ed4c9af7a51f0183afe30a87db4de6263ae047c5bbacd4032",
+  "matches": [
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "46010000\u201346010031. It checked {reservation['filename_count']:,} filenames and\n"
+      },
+      "line_number": 49,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/handoff.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "    assert numeric.search(b'tissue_46010000/CONFIG.json') and not numeric.search(b'tissue_1460100000')\n"
+      },
+      "line_number": 20,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/reserve_v3.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "    assert subprocess.run(['rg','--quiet',pattern],input=b'tissue_46010000').returncode==0\n"
+      },
+      "line_number": 21,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/admin/reserve_v3.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "BLOCKS = tuple(range(46010000, 46010032))\n"
+      },
+      "line_number": 14,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/common.py"
+      }
+    },
+    {
+      "kind": "small_text_or_metadata",
+      "line": {
+        "text": "source blocks 46010000\u201346010031, reserved before any production dynamics.\n"
+      },
+      "line_number": 5,
+      "path": {
+        "text": "/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/theory-tests-lane/TT046/PROTOCOL.md"
+      }
+    }
+  ],
+  "own_study_excluded": true,
+  "recorded_utc": "2026-10-28T22:35:47.756470+00:00",
+  "roots": [
+    "/home/robert/Random-Replications/HowFormsBecomeReconstructible",
+    "/mnt/datasets/theory-tests-lane-archive"
+  ],
+  "scope": "Accessible project/archive filenames and selected case-insensitive text/metadata globs <=2 MiB; no symlink traversal or binary content scan. Search receipt retained, not per-file content hashes. Not a global non-use proof.",
+  "seconds": 36.71941224881448,
+  "source_dynamics_generated": false,
+  "status": "REVIEW_REQUIRED",
+  "supersedes_failed_implementation": "admin/reserve.py timed out; admin/reserve_v2.py was stopped before reliance to correct numeric filename boundaries. See RESERVATION_SCAN_CORRECTION.json.",
+  "text_files_searched": 45878
+}

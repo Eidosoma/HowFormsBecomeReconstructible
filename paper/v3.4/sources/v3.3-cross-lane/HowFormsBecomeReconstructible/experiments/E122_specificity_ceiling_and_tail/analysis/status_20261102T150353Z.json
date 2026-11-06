@@ -1,0 +1,87 @@
+{
+  "checked_utc": "2026-11-02T15:03:53.486214+00:00",
+  "reason": "User-requested status check",
+  "observed_status": {
+    "automatic_extension": false,
+    "automatic_restart": false,
+    "automatic_successor": false,
+    "completed_blocks": [
+      12002,
+      12000,
+      12003,
+      12001,
+      12005,
+      12004,
+      12006,
+      12007,
+      12008,
+      12009,
+      12011,
+      12010,
+      12012,
+      12013,
+      12014,
+      12015,
+      12016,
+      12017,
+      12018,
+      12019,
+      12020,
+      12021,
+      12022,
+      12023
+    ],
+    "pid": 3360221,
+    "seconds": 3708.902449049987,
+    "stage": "continuing_retained_lineages",
+    "status": "RUNNING",
+    "total_blocks": 64,
+    "utc": "2026-11-02T14:59:20.693749+00:00",
+    "workers": 4
+  },
+  "active_progress": [
+    {
+      "block": 12024,
+      "factor": 4,
+      "generation": 32,
+      "stage": "actual_rewrite",
+      "utc": "2026-11-02T15:03:52.948414+00:00"
+    },
+    {
+      "block": 12025,
+      "factor": 1,
+      "generation": 256,
+      "stage": "actual_rewrite",
+      "utc": "2026-11-02T15:03:52.300752+00:00"
+    },
+    {
+      "block": 12026,
+      "factor": 1,
+      "generation": 239,
+      "stage": "actual_rewrite",
+      "utc": "2026-11-02T15:03:52.304491+00:00"
+    },
+    {
+      "block": 12027,
+      "factor": 1,
+      "generation": 253,
+      "stage": "actual_rewrite",
+      "utc": "2026-11-02T15:03:53.253067+00:00"
+    }
+  ],
+  "completed_blocks_verified": 24,
+  "both_budgets_pass": true,
+  "run_and_job_input_hashes_verified": true,
+  "failed_marker_present": false,
+  "complete_marker_present": false,
+  "revised_timing": {
+    "mean_completed_block_seconds": 611.2199876250719,
+    "recent_four_mean_seconds": 604.2966556855827,
+    "expected_total_seconds": 9959.51980200115,
+    "expected_finish_utc": "2026-11-02T16:43:30.368387+00:00",
+    "basis": "Mean completed full-block wall time at four workers plus frozen overhead allowance; provisional, not a confidence interval."
+  },
+  "scientific_outcomes_inspected": false,
+  "protocol_changed": false,
+  "automatic_monitoring": false
+}

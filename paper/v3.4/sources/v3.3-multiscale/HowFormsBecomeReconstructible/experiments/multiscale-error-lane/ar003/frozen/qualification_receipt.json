@@ -1,0 +1,131 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "d392002671e648280d9746a336276d9fbf03e17d44c7d144802d9b7f9e84a47e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/ar003/preflight",
+ "blocks": [
+  900156,
+  900157
+ ],
+ "tag": "mse-ar003",
+ "load_1min_at_check": 23.82,
+ "checked_utc": "2026-11-01T14:15:42Z",
+ "wall_s": 823.4,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "missing": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "tasks": {
+    "shards/dw/S4_t0": true,
+    "raw/dw/S4_t0": true
+   }
+  },
+  "Q3_engine": {
+   "pass": true,
+   "n_items": 56,
+   "failed": []
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "max_abs_difference": 3.5877412152274246e-12,
+   "items": {
+    "S4_t1/li4/memory@0/vms/case0": {
+     "max_abs": 1.8693380177126073e-14,
+     "onset": 1,
+     "detector_exact": true,
+     "bonds_exact": true
+    },
+    "F0_t0/dw/correlated@0-L8/vms/case1": {
+     "max_abs": 4.440892098500626e-16,
+     "onset": 1,
+     "detector_exact": true,
+     "bonds_exact": true
+    },
+    "S4_t0/dw/memory@0-L2/vms/case2": {
+     "max_abs": 2.3592239273284576e-16,
+     "onset": 0,
+     "detector_exact": true,
+     "bonds_exact": true
+    },
+    "F0_t1/li4/cue@0/vms/case3": {
+     "max_abs": 3.5877412152274246e-12,
+     "onset": 3373,
+     "detector_exact": true,
+     "bonds_exact": true
+    },
+    "S4_t1/dw/memory@0/vdial/case4": {
+     "max_abs": 2.220446049250313e-16,
+     "onset": 1,
+     "detector_exact": true,
+     "bonds_exact": true
+    }
+   }
+  },
+  "Q5_aliases_exact": {
+   "pass": true,
+   "n_items": 576,
+   "failed": []
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "mismatched": []
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "items": {
+    "memory_and_correlated_invert_the_patch_record_with_consistent_bonds": true,
+    "body_and_correlated_invert_the_patch_body": true,
+    "shared_kills_record_inside_bonds_and_anchors": true,
+    "cue_flips_exactly_a_quarter_of_the_anchors": true,
+    "change_flips_exactly_the_patch_anchors_and_target": true,
+    "the_misread_changes_anchors_only": true,
+    "the_second_record_at_t0": true,
+    "no_commitment_gives_the_vote_s_targets_exactly": true,
+    "a_committed_cell_s_four_bonds_take_rel_t_and_the_others_the_vote_s": true,
+    "triggers_only_inside_the_footprint_during_the_window": true,
+    "no_trigger_after_the_window_the_slow_state_decays": true,
+    "an_island_at_each_box_of_det_star_fires_it_over_the_island": true,
+    "one_disagreeing_anchor_in_the_surround_stops_the_window": true,
+    "fewer_than_n_disagreeing_anchors_do_not_fire": true,
+    "det_star_windows_equal_the_single_box_channel_at_every_box": true,
+    "each_fired_arm_is_on_for_min_1000_8001_minus_onset_and_never_unfired": true,
+    "the_clock": true,
+    "cut_is_the_exact_quantile": true
+   }
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "items": {
+    "memory@L4: vms listed twice is bit-identical": true,
+    "memory@L4: vms alone equals vms with others": true,
+    "cue@L4: vms listed twice is bit-identical": true,
+    "cue@L4: vms alone equals vms with others": true,
+    "correlated@L8: vms listed twice is bit-identical": true,
+    "correlated@L8: vms alone equals vms with others": true
+   }
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_cpu_h": 34.57,
+   "forecast_wall_h_12": 3.62,
+   "worker_rss_mb": 288.5,
+   "bytes_per_task": 13736667
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "summary.json": 130815,
+    "detectors.json": 9460,
+    "utilities.json": 25167,
+    "side_arms.json": 5452,
+    "predictions_scored.json": 4997,
+    "TABLES.md": 10535
+   },
+   "big_git_files": []
+  }
+ }
+}

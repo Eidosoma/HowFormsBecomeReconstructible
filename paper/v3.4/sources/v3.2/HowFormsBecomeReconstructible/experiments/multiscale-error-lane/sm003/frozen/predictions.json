@@ -1,0 +1,166 @@
+{
+ "study": "SM003",
+ "design_digest": "e43a1098197466c5a57a24049548a701b3431cae163da3e9b4adfaa1849655d2",
+ "k_rule": 1.6770509831248424,
+ "thresholds": {
+  "M1": [
+   -0.09,
+   0.08
+  ],
+  "M2": [
+   -0.11,
+   0.07
+  ],
+  "M3": [
+   -0.04,
+   0.1
+  ],
+  "M4": [
+   0.02,
+   0.16
+  ],
+  "M5": [
+   0.02,
+   0.14
+  ],
+  "M7": 0.04
+ },
+ "frozen_utc": "2026-10-31T22:22:56Z",
+ "registered": [
+  {
+   "id": "M1",
+   "part": "transfer, g = 1 and 2: E - the model",
+   "uses_model": true,
+   "kind": "in",
+   "threshold": [
+    -0.09,
+    0.08
+   ]
+  },
+  {
+   "id": "M2",
+   "part": "refinement read at g = 1, late (m 2): (E - E twin) - (the model - the model's twin)",
+   "uses_model": true,
+   "kind": "in",
+   "threshold": [
+    -0.11,
+    0.07
+   ]
+  },
+  {
+   "id": "M3",
+   "part": "refinement read at g = 1, prompt (m 0): (E - E twin) - (the model - the model's twin)",
+   "uses_model": true,
+   "kind": "in",
+   "threshold": [
+    -0.04,
+    0.1
+   ]
+  },
+  {
+   "id": "M4",
+   "part": "refinement read at g = 2 against the twin read at g = 1 (the model: 0)",
+   "uses_model": false,
+   "kind": "in",
+   "threshold": [
+    0.02,
+    0.16
+   ]
+  },
+  {
+   "id": "M5",
+   "part": "refinement read at g = 4 against the twin read at g = 2 (the model: 0)",
+   "uses_model": false,
+   "kind": "in",
+   "threshold": [
+    0.02,
+    0.14
+   ]
+  },
+  {
+   "id": "M7",
+   "part": "refinement, g = 4: E - the model",
+   "uses_model": true,
+   "kind": "ge",
+   "threshold": 0.04
+  }
+ ],
+ "reported": [
+  {
+   "id": "R1",
+   "part": "refinement, g = 2: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R2",
+   "part": "refinement, g = 1: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R3",
+   "part": "refinement, g = 1, late: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R4",
+   "part": "refinement, g = 1: |E - SM001's model| - |E - the model|",
+   "uses_model": true
+  },
+  {
+   "id": "R5",
+   "part": "refinement, g = 1: E - SM001's model",
+   "uses_model": false
+  },
+  {
+   "id": "R6",
+   "part": "refinement read at g = 1, late: E - E twin (observed)",
+   "uses_model": false
+  },
+  {
+   "id": "R7",
+   "part": "transfer, g = 4: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R8",
+   "part": "refinement, g = 1: |E - the parametric| - |E - the model|",
+   "uses_model": true
+  },
+  {
+   "id": "R9",
+   "part": "refinement, g = 2: |E - the parametric| - |E - the model|",
+   "uses_model": true
+  },
+  {
+   "id": "R10",
+   "part": "refinement, g = 2: |E - the 4-NN (ties exact)| - |E - the model|",
+   "uses_model": true
+  },
+  {
+   "id": "R11",
+   "part": "refinement, g = 4: |E - the 4-NN (ties exact)| - |E - the model|",
+   "uses_model": true
+  },
+  {
+   "id": "R12",
+   "part": "refinement, g = 4: |E - the parametric (21 terms)| - |E - the model| (the withdrawn M6)",
+   "uses_model": true
+  },
+  {
+   "id": "R13",
+   "part": "transfer, g = 1: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R14",
+   "part": "transfer, g = 2: E - the model",
+   "uses_model": true
+  },
+  {
+   "id": "R15",
+   "part": "refinement read at g = 2 against the twin read at g = 1, late (m 2): SM002's T2 on fresh blocks",
+   "uses_model": false
+  }
+ ],
+ "predict_sha256": "d2aae16a321635753c3dc6023371ec40e9cc1e90d462aa5de47d24b259d45910"
+}

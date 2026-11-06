@@ -1,0 +1,14 @@
+{
+  "before_scientific_outcomes": true,
+  "benchmark": "benchmark_v1",
+  "benchmark_complete_sha256": "0161941d5d779c4493f04395eaf91ff61e1d0d6bee06f449b10af6f61b34b98e",
+  "benchmark_outputs_verified": 152,
+  "design_change": false,
+  "issue": "Zero alpha multiplies signed zero before addition; numerical values agree but zero-target states can differ in signed-zero bits.",
+  "old_run_and_snapshots_retained": true,
+  "planned_fix": "Use the identical midpoint directly at alpha==0 in both implementations; preserve byte-equality check.",
+  "reproduction": "Excluded synthetic_sources; set both histories masked [8,8] to -0.; set scales and targets to zero; verify_sizes rejects.",
+  "status": "TECHNICAL_ISSUE",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\n  File \"/home/robert/Random-Replications/HowFormsBecomeReconstructible/experiments/E114_matched_component_amplitude/normalization.py\", line 63, in verify_sizes\n    for state in states.values():assert state[zero].tobytes()==states['OO'][zero].tobytes()\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "utc": "2026-10-28T22:39:06.816876+00:00"
+}

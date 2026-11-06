@@ -1,0 +1,184 @@
+{
+  "version": "3.3",
+  "checked_utc": "2026-11-05T12:27:19.585449+00:00",
+  "source_archive_sha256": "72c556dd3bb7e4058fbf8ba5728904a786ff6f244847825c6f7d618c20de7a59",
+  "means_checked": 353,
+  "intervals_checked": 257,
+  "scope": "Frozen source/qualification hashes, block means, block SDs, interval arithmetic using retained case-level SDs, and stated result boundaries. No raw-state rescoring, trajectory replay, fit or independent case-level uncertainty re-estimation.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "source archive hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source members",
+      "passed": true,
+      "detail": {
+        "files": 336
+      }
+    },
+    {
+      "name": "ar006 frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 194
+      }
+    },
+    {
+      "name": "ar006 qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar006 compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 38,
+        "intervals": 38,
+        "errors": []
+      }
+    },
+    {
+      "name": "ar006c frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 202
+      }
+    },
+    {
+      "name": "ar006c qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ar006c compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 4,
+        "intervals": 4,
+        "errors": []
+      }
+    },
+    {
+      "name": "AR006C three criteria with four required bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AR006C average bound is not a per-block guarantee",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e001 frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 191
+      }
+    },
+    {
+      "name": "e2e001 qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e001 compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 66,
+        "intervals": 39,
+        "errors": []
+      }
+    },
+    {
+      "name": "e2e002 frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 199
+      }
+    },
+    {
+      "name": "e2e002 qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e002 compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 64,
+        "intervals": 43,
+        "errors": []
+      }
+    },
+    {
+      "name": "E2E002 small effect remains within declared equivalence band",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e004 frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 207
+      }
+    },
+    {
+      "name": "e2e004 qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e004 compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 88,
+        "intervals": 76,
+        "errors": []
+      }
+    },
+    {
+      "name": "E2E004 full-rule trade-off fails while three-rule ordering holds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e003 frozen dependencies",
+      "passed": true,
+      "detail": {
+        "files": 216
+      }
+    },
+    {
+      "name": "e2e003 qualification binds design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "e2e003 compact arithmetic",
+      "passed": true,
+      "detail": {
+        "means": 93,
+        "intervals": 57,
+        "errors": []
+      }
+    },
+    {
+      "name": "E2E003 one failed equivalence part retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E2E003 misread repair is not improved history specificity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main serial table binds retained pooled levels",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

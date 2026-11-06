@@ -1,0 +1,759 @@
+{
+  "absolute": {
+    "actual/ridge/body": {
+      "accuracy": 0.3291015625,
+      "accuracy_ci95": [
+        0.3017578125,
+        0.359375
+      ],
+      "balanced_accuracy": 0.3291015625,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          94,
+          58,
+          70,
+          34
+        ],
+        [
+          68,
+          94,
+          43,
+          51
+        ],
+        [
+          69,
+          67,
+          72,
+          48
+        ],
+        [
+          73,
+          59,
+          47,
+          77
+        ]
+      ],
+      "correct": 337,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9423179914557638,
+      "log_loss_bits_ci95": [
+        1.9070090249143268,
+        1.9762129775101693
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.05768200854423622,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.9422713369003446,
+        "1e-09": 1.942318039643597
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/ridge/joint": {
+      "accuracy": 0.33984375,
+      "accuracy_ci95": [
+        0.3115234375,
+        0.37109375
+      ],
+      "balanced_accuracy": 0.33984375,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          97,
+          61,
+          65,
+          33
+        ],
+        [
+          64,
+          101,
+          43,
+          48
+        ],
+        [
+          65,
+          66,
+          77,
+          48
+        ],
+        [
+          74,
+          61,
+          48,
+          73
+        ]
+      ],
+      "correct": 348,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9370782905863924,
+      "log_loss_bits_ci95": [
+        1.9004168306356963,
+        1.9723899075556033
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.06292170941360764,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.9370394356570504,
+        "1e-09": 1.937078331144019
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/ridge/record": {
+      "accuracy": 0.3310546875,
+      "accuracy_ci95": [
+        0.30078125,
+        0.365234375
+      ],
+      "balanced_accuracy": 0.3310546875,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          97,
+          61,
+          70,
+          28
+        ],
+        [
+          73,
+          91,
+          44,
+          48
+        ],
+        [
+          65,
+          64,
+          82,
+          45
+        ],
+        [
+          67,
+          69,
+          51,
+          69
+        ]
+      ],
+      "correct": 339,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9431427862018897,
+      "log_loss_bits_ci95": [
+        1.910135038917863,
+        1.9747333896520738
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.05685721379811026,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.943136500044785,
+        "1e-09": 1.9431427936756402
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/template/body": {
+      "accuracy": 0.3203125,
+      "accuracy_ci95": [
+        0.29296875,
+        0.349609375
+      ],
+      "balanced_accuracy": 0.3203125,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          94,
+          71,
+          60,
+          31
+        ],
+        [
+          64,
+          100,
+          40,
+          52
+        ],
+        [
+          67,
+          75,
+          72,
+          42
+        ],
+        [
+          78,
+          74,
+          42,
+          62
+        ]
+      ],
+      "correct": 328,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9435802623187575,
+      "log_loss_bits_ci95": [
+        1.9097543705093,
+        1.9753558719071052
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.05641973768124253,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.943551082973898,
+        "1e-09": 1.9435802927309078
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/template/joint": {
+      "accuracy": 0.3212890625,
+      "accuracy_ci95": [
+        0.2958984375,
+        0.34765625
+      ],
+      "balanced_accuracy": 0.3212890625,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          90,
+          74,
+          61,
+          31
+        ],
+        [
+          62,
+          103,
+          40,
+          51
+        ],
+        [
+          64,
+          77,
+          74,
+          41
+        ],
+        [
+          77,
+          75,
+          42,
+          62
+        ]
+      ],
+      "correct": 329,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9443908184677001,
+      "log_loss_bits_ci95": [
+        1.910427808259424,
+        1.9760893902358383
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.05560918153229988,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.9443592175841329,
+        "1e-09": 1.944390851293946
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/template/record": {
+      "accuracy": 0.3203125,
+      "accuracy_ci95": [
+        0.2968505859375,
+        0.345703125
+      ],
+      "balanced_accuracy": 0.3203125,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          89,
+          73,
+          63,
+          31
+        ],
+        [
+          62,
+          103,
+          40,
+          51
+        ],
+        [
+          62,
+          78,
+          74,
+          42
+        ],
+        [
+          76,
+          76,
+          42,
+          62
+        ]
+      ],
+      "correct": 328,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.9454931652363228,
+      "log_loss_bits_ci95": [
+        1.911350560807786,
+        1.9771147482834297
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.05450683476367724,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.9454567871341424,
+        "1e-09": 1.9454932028392722
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 0
+    },
+    "actual/uniform/setup": {
+      "accuracy": 0.25,
+      "accuracy_ci95": [
+        0.25,
+        0.25
+      ],
+      "balanced_accuracy": 0.25,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ]
+      ],
+      "correct": 256,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.0,
+      "log_loss_bits_ci95": [
+        2.0,
+        2.0
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.0,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0,
+        "1e-09": 2.0
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 1024
+    },
+    "shuffled/ridge/body": {
+      "accuracy": 0.244140625,
+      "accuracy_ci95": [
+        0.2265625,
+        0.26171875
+      ],
+      "balanced_accuracy": 0.244140625,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          43,
+          71,
+          56,
+          86
+        ],
+        [
+          48,
+          67,
+          58,
+          83
+        ],
+        [
+          50,
+          67,
+          60,
+          79
+        ],
+        [
+          48,
+          71,
+          57,
+          80
+        ]
+      ],
+      "correct": 250,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.0025384981433447,
+      "log_loss_bits_ci95": [
+        1.999054332256947,
+        2.0065588829059715
+      ],
+      "n": 1024,
+      "predictive_information_bits": -0.002538498143344725,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0025238267159953,
+        "1e-09": 2.002538512833321
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 512
+    },
+    "shuffled/ridge/joint": {
+      "accuracy": 0.2392578125,
+      "accuracy_ci95": [
+        0.22165527343750002,
+        0.2568359375
+      ],
+      "balanced_accuracy": 0.2392578125,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          42,
+          75,
+          57,
+          82
+        ],
+        [
+          57,
+          71,
+          53,
+          75
+        ],
+        [
+          57,
+          76,
+          54,
+          69
+        ],
+        [
+          56,
+          70,
+          52,
+          78
+        ]
+      ],
+      "correct": 245,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.002780809835981,
+      "log_loss_bits_ci95": [
+        1.998751878347469,
+        2.0071772787154933
+      ],
+      "n": 1024,
+      "predictive_information_bits": -0.0027808098359809463,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0027635710855636,
+        "1e-09": 2.002780827099973
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 384
+    },
+    "shuffled/ridge/record": {
+      "accuracy": 0.2626953125,
+      "accuracy_ci95": [
+        0.2421875,
+        0.2841796875
+      ],
+      "balanced_accuracy": 0.2626953125,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          54,
+          71,
+          53,
+          78
+        ],
+        [
+          62,
+          70,
+          54,
+          70
+        ],
+        [
+          56,
+          74,
+          62,
+          64
+        ],
+        [
+          57,
+          63,
+          53,
+          83
+        ]
+      ],
+      "correct": 269,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 1.999453580016773,
+      "log_loss_bits_ci95": [
+        1.9950010538375282,
+        2.0042083038953127
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.00054641998322702,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 1.999450879490556,
+        "1e-09": 1.9994535827380095
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 256
+    },
+    "shuffled/template/body": {
+      "accuracy": 0.25,
+      "accuracy_ci95": [
+        0.25,
+        0.25
+      ],
+      "balanced_accuracy": 0.25,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ]
+      ],
+      "correct": 256,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.0,
+      "log_loss_bits_ci95": [
+        2.0,
+        2.0
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.0,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0,
+        "1e-09": 2.0
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 1024
+    },
+    "shuffled/template/joint": {
+      "accuracy": 0.25,
+      "accuracy_ci95": [
+        0.25,
+        0.25
+      ],
+      "balanced_accuracy": 0.25,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ]
+      ],
+      "correct": 256,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.0,
+      "log_loss_bits_ci95": [
+        2.0,
+        2.0
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.0,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0,
+        "1e-09": 2.0
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 1024
+    },
+    "shuffled/template/record": {
+      "accuracy": 0.25,
+      "accuracy_ci95": [
+        0.25,
+        0.25
+      ],
+      "balanced_accuracy": 0.25,
+      "chance_accuracy": 0.25,
+      "confusion": [
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ],
+        [
+          72,
+          52,
+          64,
+          68
+        ]
+      ],
+      "correct": 256,
+      "identical_candidate_tie_count": 0,
+      "interval_scope": "Descriptive paired block bootstrap of saved cross-fitted predictions; training dependence not removed",
+      "log_loss_bits": 2.0,
+      "log_loss_bits_ci95": [
+        2.0,
+        2.0
+      ],
+      "n": 1024,
+      "predictive_information_bits": 0.0,
+      "prior_log_loss_bits": 2.0,
+      "sensitivity_log_loss_bits": {
+        "0.001": 2.0,
+        "1e-09": 2.0
+      },
+      "smoothing_epsilon": 1e-06,
+      "source_blocks": 64,
+      "tie_count": 1024
+    }
+  },
+  "comparisons": {
+    "actual/ridge": {
+      "ci95_bits": [
+        -0.0018642980263006573,
+        0.014067553810924454
+      ],
+      "direction": "record_loss_minus_joint_loss",
+      "mean_bits": 0.006064495615497207,
+      "source_blocks": 64
+    },
+    "actual/template": {
+      "ci95_bits": [
+        3.51646381490319e-05,
+        0.0021868693246435886
+      ],
+      "direction": "record_loss_minus_joint_loss",
+      "mean_bits": 0.0011023467686226388,
+      "source_blocks": 64
+    },
+    "shuffled/ridge": {
+      "ci95_bits": [
+        -0.006691854663278084,
+        -4.165105789935289e-05
+      ],
+      "direction": "record_loss_minus_joint_loss",
+      "mean_bits": -0.00332722981920785,
+      "source_blocks": 64
+    },
+    "shuffled/template": {
+      "ci95_bits": [
+        0.0,
+        0.0
+      ],
+      "direction": "record_loss_minus_joint_loss",
+      "mean_bits": 0.0,
+      "source_blocks": 64
+    }
+  },
+  "costs": {
+    "calibration_seconds": 2.1339029686059803,
+    "dataset_costs": {
+      "feature_seconds": 30.026018070522696,
+      "retrieval_seconds": 149.21603413647972,
+      "storage_seconds": 19.32917827181518
+    },
+    "duplicate_probability_checks": 97280,
+    "elapsed_prediction_phase_seconds": 396.2067168301437,
+    "fitting_tuning_calibration_seconds": 316.3810328033287,
+    "inference_seconds": 0.564771183533594,
+    "model_fit_seconds": 311.49175417097285,
+    "native_reader_costs_are_in_dataset_source_manifest": true,
+    "validation_prediction_seconds": 1.2813662027474493
+  },
+  "null_diagnostics": [],
+  "original_predictions": "E123_history_identity_audit/runs/retained_v2/predictions/predictions.csv.gz",
+  "primary": {
+    "ci95_bits": [
+      -0.0018642980263006573,
+      0.014067553810924454
+    ],
+    "direction": "record_loss_minus_joint_loss",
+    "mean_bits": 0.006064495615497207,
+    "source_blocks": 64
+  },
+  "source_blocks": 64,
+  "source_manifest": "E123_history_identity_audit/runs/retained_v2/dataset/DATASET_MANIFEST.json"
+}

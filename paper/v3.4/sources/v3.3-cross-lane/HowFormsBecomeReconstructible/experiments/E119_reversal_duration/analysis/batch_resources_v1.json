@@ -1,0 +1,33 @@
+{
+  "free_bytes": 81253486592,
+  "no_outcome_triggered_launch": true,
+  "per_study": {
+    "duration": {
+      "conservative_seconds": 59144.00599466264,
+      "expected_seconds": 19834.668664887547,
+      "storage_reserve_bytes": 7263401248,
+      "workers": 2
+    },
+    "histories": {
+      "conservative_seconds": 132116.62097442895,
+      "expected_seconds": 44158.873658142984,
+      "storage_reserve_bytes": 15988688080,
+      "workers": 2
+    },
+    "transport": {
+      "conservative_seconds": 25248.496088773012,
+      "expected_seconds": 8536.165362924337,
+      "storage_reserve_bytes": 3952270768,
+      "workers": 2
+    }
+  },
+  "priorities": [
+    "duration",
+    "transport",
+    "histories"
+  ],
+  "status": "PASS",
+  "total_scientific_workers": 6,
+  "total_storage_reserve_bytes": 27204360096,
+  "utc": "2026-11-01T13:29:19.004180+00:00"
+}

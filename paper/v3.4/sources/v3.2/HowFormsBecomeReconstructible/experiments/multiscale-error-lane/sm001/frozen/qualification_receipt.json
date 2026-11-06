@@ -1,0 +1,114 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "design_digest": "da31d5f049f3e7fb7032d3ee602d589448ddb46e8f6bb705f5ee73075734004e",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/sm001/preflight",
+ "blocks": [
+  900042,
+  900043
+ ],
+ "tag": "mse-sm001",
+ "load_1min_at_check": 7.4,
+ "checked_utc": "2026-10-31T03:16:19Z",
+ "wall_s": 842.6,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "bad": [],
+   "tasks": 22,
+   "seconds": 0.1
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "W4_x32",
+    900042
+   ],
+   "differ": [],
+   "seconds": 633.0
+  },
+  "Q3_engine": {
+   "pass": true,
+   "items": {
+    "prepare_S4": true,
+    "prepare_S8": true,
+    "prepare_F0": true,
+    "run_memory4@0": true,
+    "successor_memory4@0": true,
+    "run_memory4@58": true,
+    "successor_memory4@58": true
+   },
+   "seconds": 32.7
+  },
+  "Q4_replay": {
+   "pass": true,
+   "W4_x32/L4/dial-c1-m0-t300": {
+    "max_dV": 2.220446049250313e-16,
+    "max_dr": 0.0,
+    "bonds_differ": 0
+   },
+   "W8_x64_r2/L8/dial-c2-m2-t3000": {
+    "max_dV": 2.220446049250313e-16,
+    "max_dr": 0.0,
+    "bonds_differ": 0
+   },
+   "W16_x64_cross/L8/dial-c0.5-m0-t30": {
+    "max_dV": 4.440892098500626e-16,
+    "max_dr": 0.0,
+    "bonds_differ": 0
+   },
+   "seconds": 171.1
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "control_alike_across_sizes": true,
+   "delayed_equals_never_before_onset": true,
+   "seconds": 0.6
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "max_abs_diff": 0.0,
+   "note": "an absolute 1/64 for every patch size (one site of an 8 x 8 patch): the raw states are float32, so a site within 1e-6 of zero may change sign",
+   "seconds": 0.2
+  },
+  "Q7_efficacy": {
+   "pass": true,
+   "T_star": true,
+   "patch_sizes": true,
+   "signal_windows": true,
+   "refinement_doubles_every_length": true,
+   "event_flips_exactly_the_patch": true,
+   "footprint_is_the_dilation": true,
+   "mid_and_cross": true,
+   "seconds": 1.2
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "listed_twice": true,
+   "reordered": true,
+   "seconds": 2.8
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_fit_cpu_h": 9.67,
+   "forecast_test_cpu_h": 19.46,
+   "forecast_test_wall_h_12": 1.62,
+   "worker_rss_mb": 1629.7,
+   "disk_headroom": true,
+   "seconds": 0.0
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 5443,
+    "TABLES.md": 26922,
+    "model.json": 109646,
+    "reported.json": 8545
+   },
+   "statements": 8,
+   "reported": 8,
+   "seconds": 1.0
+  }
+ }
+}

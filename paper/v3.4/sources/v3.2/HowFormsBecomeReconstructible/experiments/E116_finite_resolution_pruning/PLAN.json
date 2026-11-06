@@ -1,0 +1,177 @@
+{
+  "arithmetic": "float64, unchanged; fixed-grid record representation is a separate intervention",
+  "automatic_extension": false,
+  "automatic_successor": false,
+  "blocks": [
+    1120000,
+    1120001,
+    1120002,
+    1120003,
+    1120004,
+    1120005,
+    1120006,
+    1120007,
+    1120008,
+    1120009,
+    1120010,
+    1120011,
+    1120012,
+    1120013,
+    1120014,
+    1120015,
+    1120016,
+    1120017,
+    1120018,
+    1120019,
+    1120020,
+    1120021,
+    1120022,
+    1120023,
+    1120024,
+    1120025,
+    1120026,
+    1120027,
+    1120028,
+    1120029,
+    1120030,
+    1120031
+  ],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": [
+    "E116",
+    "finite_resolution_pruning"
+  ],
+  "context_draw_rows": 4096,
+  "contexts_per_block": 64,
+  "cue_birth_correlation": 1.0,
+  "damage_cells": 24,
+  "endpoints": [
+    "I0",
+    "P0",
+    "I1",
+    "P1"
+  ],
+  "founders": 4,
+  "grid_rule": "delta*rint(w/delta), ties to even; zero-grid branch exact identity; not a 16-bit payload claim",
+  "implementation_complete": false,
+  "independent_units": 32,
+  "inference": "all ten requirements must pass; fixed whole-source bootstrap; report pointwise 95% bounds without claiming simultaneous coverage; secondary factorial contrasts separate",
+  "launched": false,
+  "new_scientific_outcomes": false,
+  "normalization": "use max(D,epsilon) when D>0; exactly zero drive when D=0; applies to writer-body and native final reader",
+  "observe_steps": 32,
+  "primary_population": "mixture, sham/pulse pooled, both terminal draws pooled, all cases",
+  "primary_regime": "T1F1Q1",
+  "primary_requirements": [
+    "CI95(P0-I0).lower > 0",
+    "CI95(P1-I1).upper < 0",
+    "CI95(I0_T1F1Q1).lower > 0.5",
+    "CI95(P0_T1F1Q1).lower > 0.5",
+    "CI95(I1_T1F1Q1).lower > 0.5",
+    "CI95(P1_T1F1Q1).lower > 0.5",
+    "CI95(I0_T1F1Q1 - I0_T0F0Q0).lower > -0.05",
+    "CI95(P0_T1F1Q1 - P0_T0F0Q0).lower > -0.05",
+    "CI95(I1_T1F1Q1 - I1_T0F0Q0).lower > -0.05",
+    "CI95(P1_T1F1Q1 - P1_T0F0Q0).lower > -0.05"
+  ],
+  "pruning_mask": "original E112 source_pruning eligible mask, unchanged across all eight regimes, retain quantization-induced noops",
+  "question": "Does immediate pruning benefit and later reconstruction harm persist under finite writer/storage/normalization rules with useful absolute performance?",
+  "read_steps": 2048,
+  "recipients": 4,
+  "reference_regime": "T0F0Q0",
+  "regimes": [
+    {
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "T0F0Q0",
+      "tolerance": 0.0
+    },
+    {
+      "denominator_floor": 0.0,
+      "grid_step": 1.52587890625e-05,
+      "id": "T0F0Q1",
+      "tolerance": 0.0
+    },
+    {
+      "denominator_floor": 0.0001,
+      "grid_step": 0.0,
+      "id": "T0F1Q0",
+      "tolerance": 0.0
+    },
+    {
+      "denominator_floor": 0.0001,
+      "grid_step": 1.52587890625e-05,
+      "id": "T0F1Q1",
+      "tolerance": 0.0
+    },
+    {
+      "denominator_floor": 0.0,
+      "grid_step": 0.0,
+      "id": "T1F0Q0",
+      "tolerance": 0.0001
+    },
+    {
+      "denominator_floor": 0.0,
+      "grid_step": 1.52587890625e-05,
+      "id": "T1F0Q1",
+      "tolerance": 0.0001
+    },
+    {
+      "denominator_floor": 0.0001,
+      "grid_step": 0.0,
+      "id": "T1F1Q0",
+      "tolerance": 0.0001
+    },
+    {
+      "denominator_floor": 0.0001,
+      "grid_step": 1.52587890625e-05,
+      "id": "T1F1Q1",
+      "tolerance": 0.0001
+    }
+  ],
+  "retention_scope": "both original endpoints, all absolute outcomes, individual gains/harms, erased controls and every source",
+  "runtime_policy": "full-width excluded benchmark, price new steps/replay/storage, cap shared CPUs at 12 and workers at 4; detach >600 seconds; no outcome-dependent extension",
+  "secondary": [
+    "conditional effects of T/F/Q",
+    "all two-way and three-way interactions",
+    "common-reader versus native-reader effects",
+    "native population",
+    "sham/pulse",
+    "draw-specific results",
+    "continuous margins and aligned/signed transfer",
+    "3x3 immediate/later pruning-event tables"
+  ],
+  "settling_steps": 1024,
+  "source": "complete E112 prediction_v1 starting records; no four-cycle eligibility filter",
+  "stage_two": "separate fresh-source acquisition-and-renewal test under the finite formulation, with no ideal-history packet supplied; no automatic launch",
+  "status": "PLANNING_ONLY_NOT_FROZEN",
+  "storage_boundaries": [
+    "quantize a copy of archived I0 before the first intervention reader",
+    "prune unchanged original selected coordinates once",
+    "quantize each captured outgoing packet once"
+  ],
+  "terminal_cue_noise_correlation": 1.0,
+  "terminal_draws": [
+    0,
+    1
+  ],
+  "terminal_reader_panels": "native floor for every regime plus common zero-floor assay of floor-positive outputs; deduplicate exact calls",
+  "user_chosen_absolute_floor": 0.5,
+  "user_chosen_retention_allowance": 0.05,
+  "utc": "2026-10-30T17:34:27.671747+00:00",
+  "workload": {
+    "all_terminal_record_outcomes": 147456,
+    "archived_terminal_record_outcomes": 18432,
+    "archived_writer_panels": 1,
+    "new_terminal_record_continuations": 129024,
+    "new_terminal_record_steps": 264241152,
+    "new_writer_record_continuations": 13824,
+    "new_writer_record_steps": 28311552,
+    "note": "upper bound before exact no-op deduplication; each record continuation has two cue episodes; independent replay additional; no ancestry generation",
+    "record_slots": 9,
+    "terminal_panels_per_draw": 16,
+    "unique_writer_panels": 4
+  },
+  "writer_cue_noise_correlation": 1.0,
+  "writer_rule": "q=d_i*d_j from tanh(beta*v); ordinary coactivity if abs(q)<=tau on available edges; contrast otherwise"
+}

@@ -1,0 +1,37 @@
+P60c on /e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e004/probe (probe, DRY RUN on engineering records): 32 tasks, every sha256 equal to the manifest's; digest 880ac18190f0; 2026-11-04T15:15:41Z - 2026-11-04T15:26:35Z, 1.92 CPU-h; 32 restored records, every sha256 equal to ar005/p53's manifest; the acquisition rebuilt by ar001.sim.prepare (4 cases a task) equal to every record's V0, R0 and T
+  the labels: every route and packet as the plan's table (body/post, body/protected, record/post, record/protected, vote/post, vote/protected, vote1/post, vote1/protected)
+  the packets at generation 0 rebuilt by the lead (256 label-tasks; protected storage from R0, post-damage copying from ar001.sim.event, a restored arm from its run): every endpoint equal to the stage's within 0.0e+00
+  the successors re-scored by the lead from the saved states at horizons 1, 3 and 8 (768 row-task-horizons): largest |difference| 0.0e+00
+
+THE PARTS (4 blocks x 4 cases; pooled over the eight unit-body pairs, one future; [95% t interval]; the rule: margin >= 1.6771 and both halves)
+  G1 q_r(vote/protected) - q_r(body/protected), g 8: the vote keeps more history: +0.237976 [+0.189106, +0.286846] (SD 0.030712: block 0.030712, case/sqrt4 0.020783; halves +0.212769 +0.263184); the narrowest [+0.180, +0.290]; registered >= 0.18: HOLDS
+      by item set: particular (li4 x F0) +0.518555; native (li4 x S4) +0.180664; permissive (dw) +0.126343
+  G2 u_r(body/post) - u_r(vote/post), g 8: the body route heals more: +0.313477 [+0.205868, +0.421085] (SD 0.067626: block 0.033050, case/sqrt4 0.067626; halves +0.337891 +0.289062); the narrowest [+0.200, +0.430]; registered >= 0.2: HOLDS
+      by item set: particular (li4 x F0) +0.117188; native (li4 x S4) +0.447266; permissive (dw) +0.344727
+  G3 q_r(record/protected) - q_r(vote/protected), g 8: the record route against the vote, keeping: +0.232971 [+0.200381, +0.265561] (SD 0.020481: block 0.020481, case/sqrt4 0.014381; halves +0.220459 +0.245483); the narrowest [+0.190, +0.270]; registered [0.19, 0.27]: HOLDS
+      by item set: particular (li4 x F0) +0.306885; native (li4 x S4) +0.272217; permissive (dw) +0.176392
+  G4 u_r(record/post) - u_r(vote/post), g 8: the record route against the vote, healing: -0.187500 [-0.268923, -0.106077] (SD 0.051170: block 0.018252, case/sqrt4 0.051170; halves -0.181641 -0.193359); the narrowest [-0.280, -0.100]; registered [-0.28, -0.1]: HOLDS
+      by item set: particular (li4 x F0) -0.111328; native (li4 x S4) -0.269531; permissive (dw) -0.184570
+  VERDICTS (development: the point value against the registered threshold or band): G1 HOLDS, G2 HOLDS, G3 HOLDS, G4 HOLDS  [not a development result]
+
+THE DECLARED TRADE-OFF READING (reported; generation 8): the routes by q_r(protected), most first, and by u_r(post), least first; it holds where the two orders coincide
+  every route run (as declared), all: keeping record 0.9980, vote 0.7651, body 0.5271, vote1 0.4027; healing (least first) record 0.0000, vote 0.1875, vote1 0.3936, body 0.5010: does not hold
+  every route run (as declared), particular (li4 x F0): keeping record 0.9985, vote 0.6917, vote1 0.3643, body 0.1731; healing (least first) record 0.0000, vote 0.1113, body 0.2285, vote1 0.3242: does not hold
+  every route run (as declared), native (li4 x S4): keeping record 0.9976, vote 0.7253, body 0.5447, vote1 0.3977; healing (least first) record 0.0000, vote 0.2695, vote1 0.3945, body 0.7168: does not hold
+  every route run (as declared), permissive (dw): keeping record 0.9980, vote 0.8217, body 0.6953, vote1 0.4244; healing (least first) record 0.0000, vote 0.1846, vote1 0.4277, body 0.5293: does not hold
+  the three fixed rules (added after P60's values), all: keeping record 0.9980, vote 0.7651, body 0.5271; healing (least first) record 0.0000, vote 0.1875, body 0.5010: HOLDS
+  the three fixed rules (added after P60's values), particular (li4 x F0): keeping record 0.9985, vote 0.6917, body 0.1731; healing (least first) record 0.0000, vote 0.1113, body 0.2285: HOLDS
+  the three fixed rules (added after P60's values), native (li4 x S4): keeping record 0.9976, vote 0.7253, body 0.5447; healing (least first) record 0.0000, vote 0.2695, body 0.7168: HOLDS
+  the three fixed rules (added after P60's values), permissive (dw): keeping record 0.9980, vote 0.8217, body 0.6953; healing (least first) record 0.0000, vote 0.1846, body 0.5293: HOLDS
+
+REPORTED (the lead's): levels by label, u_r and q_r (all pairs; li4 x F0 u_r in parentheses), with partial cells marked
+  body/post [body]: g0 u_r 0.0000 (0.0000) q_r +0.9512; g1 u_r 0.2744 (0.1211) q_r +0.8355; g3 u_r 0.4067 (0.1504) q_r +0.6825; g8 u_r 0.5010 (0.2285) q_r +0.4968
+  body/protected [body]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9521 (0.9062) q_r +0.8771; g3 u_r 0.8730 (0.7129) q_r +0.7200; g8 u_r 0.8145 (0.5762) q_r +0.5271
+  record/post [record]: g0 u_r 0.0000 (0.0000) q_r +0.9512; g1 u_r 0.0000 (0.0000) q_r +0.9509; g3 u_r 0.0000 (0.0000) q_r +0.9504; g8 u_r 0.0000 (0.0000) q_r +0.9492
+  record/protected [record]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 1.0000 (1.0000) q_r +0.9998; g3 u_r 1.0000 (1.0000) q_r +0.9993; g8 u_r 1.0000 (1.0000) q_r +0.9980
+  vote/post [vote]: g0 u_r 0.0000 (0.0000) q_r +0.9512; g1 u_r 0.0225 (0.0098) q_r +0.9197; g3 u_r 0.0864 (0.0508) q_r +0.8551; g8 u_r 0.1875 (0.1113) q_r +0.7243
+  vote/protected [vote]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9902 (0.9785) q_r +0.9634; g3 u_r 0.9512 (0.9316) q_r +0.8939; g8 u_r 0.9292 (0.8652) q_r +0.7651
+  vote1/post [vote1]: g0 u_r 0.0000 (0.0000) q_r +0.9512; g1 u_r 0.0664 (0.0684) q_r +0.8672; g3 u_r 0.2090 (0.1895) q_r +0.6959; g8 u_r 0.3936 (0.3242) q_r +0.3741
+  vote1/protected [vote1]: g0 u_r 1.0000 (1.0000) q_r +1.0000; g1 u_r 0.9561 (0.9473) q_r +0.9080; g3 u_r 0.8809 (0.8418) q_r +0.7321; g8 u_r 0.7422 (0.6836) q_r +0.4027
+
+AGAINST THE FROZEN READER (/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e004/probe_read/predictions_scored.json): 4 parts (values, intervals, SDs, halves, blocks, item sets; 4 registered thresholds, kinds and verdicts) largest difference 0.00e+00; 224 levels, largest difference 0.00e+00; partial levels (not pooled here): 0; 8 trade-off readings (both orders equal), largest difference 0.00e+00

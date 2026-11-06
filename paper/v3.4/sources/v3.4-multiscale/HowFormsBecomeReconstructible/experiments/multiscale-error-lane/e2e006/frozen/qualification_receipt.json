@@ -1,0 +1,148 @@
+{
+ "status": "PASS",
+ "failed": [],
+ "study": "E2E006",
+ "design_digest": "bdbd135dd2eeeb57724c5bd9f22103cbb65a22925f359a42ae91db9a2e0e022d",
+ "stage": "preflight",
+ "root": "/e/scratch/e-aif-2026pg01-1345/runs/multiscale-error-lane/e2e006/preflight",
+ "tasks": 8,
+ "load_1min_at_check": 77.23,
+ "checked_utc": "2026-11-05T15:14:54Z",
+ "wall_s": 990.1,
+ "cpu_s": 972.3,
+ "only": null,
+ "checks": {
+  "Q1_complete_finite": {
+   "pass": true,
+   "tasks": 8,
+   "bad": []
+  },
+  "Q2_serial_equals_parallel": {
+   "pass": true,
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q3_bridges": {
+   "pass": true,
+   "items": {
+    "every_raw_file_equals_its_manifests_sha256": true,
+    "field_free_the_lineage_is_e2e003s": true,
+    "p63s_full_length_bridge_stands": true,
+    "the_routed_generation_is_e2e002s_with_two_calls_routed": true,
+    "every_tasks_acquisition_and_generation0_packets_equal_their_sources": true
+   },
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ]
+  },
+  "Q4_independent_replay": {
+   "pass": true,
+   "task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ],
+   "rows": {
+    "vote/shared": {
+     "V": true,
+     "r": true,
+     "H": true,
+     "W": true
+    },
+    "vote/isolated": {
+     "V": true,
+     "r": true,
+     "H": true,
+     "W": true
+    }
+   }
+  },
+  "Q5_aliases": {
+   "pass": true,
+   "items": {
+    "the_alias_table_is_complete": true,
+    "a_field_row_listed_twice_gives_the_same_lineage": true
+   }
+  },
+  "Q6_reanalysis": {
+   "pass": true,
+   "bad": [],
+   "fresh_bad": [],
+   "fresh_task": [
+    "ar006/preflight",
+    "dw",
+    "F0_t0",
+    900929
+   ],
+   "fresh_horizons_rescored_from_saved_states": 8
+  },
+  "Q7_efficacy_injury_and_field": {
+   "pass": true,
+   "items": {
+    "the_vote_rows_never_fire": true,
+    "every_sigma0_birth_cue_equals_its_incoming_records_signs": true,
+    "every_injury_flips_exactly_its_patch_and_none_on_an_uninjured_row": true,
+    "the_patches_are_disjoint_and_recompute_from_their_addresses": true,
+    "the_injury_rule_at_generation0_is_be001s_memory_event": true,
+    "the_second_record_the_cue_and_the_protected_copy_are_taken_before_the_injury": true,
+    "every_task_is_a_saved_record_of_its_stage": true,
+    "the_windows_kappa_x_the_windows_exposure_and_nothing_outside": true,
+    "no_exposure_on_a_field_free_row": true,
+    "a_field_free_row_in_a_mixed_call_equals_its_field_free_run": true,
+    "reset_a_new_zero_medium_at_birth_retain_the_same_medium_carried": true,
+    "protected_copying_hands_on_the_incoming_packet": true,
+    "another_target_leaves_every_state_and_exposure_unchanged": true,
+    "another_patch_mask_given_to_the_generation_leaves_every_state_and_exposure_unchanged": true
+   },
+   "vote_fired": 0,
+   "cue_disagreements": 0,
+   "injury_failures": 0,
+   "window_mismatches": 0,
+   "field_free_exposures": 0,
+   "schedule": []
+  },
+  "Q8_pairing": {
+   "pass": true,
+   "rows": 5
+  },
+  "Q9_resources": {
+   "pass": true,
+   "forecast_phase_b_cpu_h": 31.5,
+   "forecast_phase_b_cpu_h_with_headroom": 39.37,
+   "development_cpu_h": 29.08,
+   "preflight_cpu_h": 1.82,
+   "preflight_measured": true,
+   "checks_cpu_h": 0.6,
+   "forecast_wall_h_10": 3.57,
+   "cpu_s_per_vote_row_generation_8_cases": 9.854,
+   "development_units_a_task": 83.0,
+   "preflight_units_a_task": 83.0,
+   "development_tasks": 128,
+   "preflight_tasks": 8,
+   "worker_rss_mb": 294.4,
+   "w_det": 2.0,
+   "w_field": 0.5,
+   "cap": 40.0,
+   "headroom": 1.25
+  },
+  "Q10_reader_dry_run": {
+   "pass": true,
+   "stderr": "",
+   "sizes": {
+    "predictions_scored.json": 138140,
+    "TABLES.md": 43035,
+    "levels.json": 132976
+   },
+   "big_git_files": [],
+   "parts_available": 10
+  }
+ }
+}

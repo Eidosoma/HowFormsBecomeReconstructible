@@ -2,17 +2,19 @@
 
 ## Memory, Repair, and Renewal in Simulated Systems
 
-Robert Bjarnason, Eidosoma.ai. **Human-review PDFs v2.5, 29 October 2026.** Four connected experimental chapters separate acquired history, present expression and successor usefulness. Selected new findings concern body preference, conditional writing, unseen Hopfield query combinations, recipient conditions and recovery costs. Development and fresh confirmations retain their separate scopes. No DOI or Zenodo deposit is claimed.
+Robert Bjarnason, Eidosoma.ai. **Working source edition v3.4 — 6 November 2026.** Four chapters distinguish acquired historical specificity, present expression and successor usefulness. An early evidence roadmap identifies the principal causal tests and their limits. Six newer multiscale studies examine how shared signals and response direction affect acquired history; all six remain development evidence.
 
 ### Read the paper
 
-- [Main v2.5 PDF](paper/v2.5/how-forms-become-reconstructible-v2.5.pdf) — 42 pages, all twenty main figures.
-- [Supporting v2.5 PDF](paper/v2.5/how-forms-become-reconstructible-supporting-v2.5.pdf) — 98 pages, 79 methods/display entries and five figures.
-- [Main source](paper/v2.5/MANUSCRIPT.md), [supporting guide](paper/v2.5/SUPPORTING_INFORMATION.md), and [124 evidence notes](paper/v2.5/EVIDENCE_LEDGER.md).
-- [SI page index](paper/v2.5/METHODS_INDEX.md), [figure map](paper/v2.5/FIGURE_MAP.md), [PDF link audit](paper/v2.5/LINK_AUDIT.md), and [source availability](paper/v2.5/SOURCE_AVAILABILITY.md).
-- [Latest lane review](paper/v2.5/provenance/V2.5_POST_PULL_LANE_REVIEW_2026-10-29.md) and [package hashes](paper/v2.5/manifest.json).
+- [Main v3.4 manuscript](paper/v3.4/MANUSCRIPT.md) and [Supporting Information](paper/v3.4/SUPPORTING_INFORMATION.md).
+- [168 evidence notes](paper/v3.4/EVIDENCE_LEDGER.md), [123 methods](paper/v3.4/METHODS_INDEX.md) and [figures](paper/v3.4/FIGURE_MAP.md).
+- [Review revision](paper/v3.4/provenance/V3.4_EXTERNAL_REVIEW_RESPONSE.md), [availability](paper/v3.4/SOURCE_AVAILABILITY.md), [source inventory](paper/v3.4/source-inventory.json) and [package hashes](paper/v3.4/manifest.json).
+- [Open claims](paper/v3.4/planning/OPEN_CLAIMS_TRACKER.md) and [agreed multiscale follow-ups](paper/v3.4/planning/LANE_WORKPLAN.md#multiscale-review-followups).
+- **Latest public rendered edition: v2.5.** [Main PDF](paper/v2.5/how-forms-become-reconstructible-v2.5.pdf) and [Supporting PDF](paper/v2.5/how-forms-become-reconstructible-supporting-v2.5.pdf).
 
-The source selection was published before rendering. These matching PDFs and their page index are prepared for the author's next push. Both PDFs also remain in the working paper repository. Earlier versioned packages are unchanged.
+The v3.4 PDFs have not yet been built. All twenty main and five supporting figures remain in the working manuscript; this small-file export retains their captions and available SVG previews. It does not present an older PDF as the new edition.
+
+Version 2.5 was deposited on Zenodo according to the author. This is a working source revision; no new DOI or deposit is asserted. The GitHub repository name remains unchanged.
 
 ### Build a reading copy
 
@@ -39,12 +41,15 @@ To redraw the historical-specificity and TT014 outcome plots from compact tables
 
 ### Repository contents and scope
 
-The current versioned sources are under `paper/v2.5/`; inherited source dependencies retain their earlier versioned locations. Root `experiments/`, `upstream/` and `evidence/packages/` are the historical review export, not a second updated copy of every campaign. The versioned evidence links are authoritative for v2.5. Frozen reports and protocols are distinguished from implementation context in the source inventory.
+The authoritative current package is `paper/v3.4/`. Its separate frozen source trees contain code, protocols, retained checks and compact results from the v3.2–v3.4 intakes. Earlier dependencies keep their earlier versioned paths. Oversized compact tables are split losslessly and can be restored under ignored `generated/`; no raw trajectory archives or active jobs are copied.
 
-All files are at most 256 KiB except the ten registered v1.1/v1.2/v2.1/v2.4/v2.5 main/SI PDFs. Large raw arrays, archives, standalone raster images and oversized metadata remain omitted. Some original launchers require external model files or original machine paths; this is not a complete portable execution closure. Source hashes do not mean that dynamics or statistical analyses were independently rerun during packaging.
+```bash
+python3 scripts/materialize_v3_4_sources.py --verify-only
+bash scripts/run_python.sh scripts/check_multiscale_v3_4.py
+```
 
-The exact [v2.4](paper/v2.4/README.md), [v2.1](paper/v2.1/README.md), [v1.2](paper/v1.2/README.md) and [v1.1](paper/v1.1/README.md) packages remain unchanged. No active job or private Git history is copied, and no commit or push is performed by the export scripts.
+These commands verify packaging and saved arithmetic, not scientific cohort reproduction. Missing raw inputs and report-only results remain explicit in the availability guide. All new files are at most 256 KiB. Historical publication PDFs retain their existing size exceptions. The author commits and pushes the prepared changes.
 
 ### Licensing and citation
 
-Original notices remain in [LICENSES](LICENSES/README.md). Manuscript and third-party materials are not relicensed by the code's MIT notice. [CITATION.cff](CITATION.cff) identifies this working source version without an assigned DOI.
+Original notices remain in [LICENSES](LICENSES/README.md). Manuscript and third-party materials are not relicensed by the code's MIT notice. [CITATION.cff](CITATION.cff) records the working source version; no v3.4 DOI is invented.
